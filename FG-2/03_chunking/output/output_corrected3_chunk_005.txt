@@ -1,0 +1,5 @@
+Headings: ['DECISION TAKEN']
+Source: output_corrected3
+---
+    1. The Empowered Committee accorded its in-principle approval for establishment of ICT Lab, Smart Classroom, Virtual Reality Lab, Atal Tinkering Lab (ATL), Digital Library and Teacher Resource Package ( Tablet).
+1. 2.1) The department will ensure that necessary financial Q administrative approval is obtained from the competent authority.

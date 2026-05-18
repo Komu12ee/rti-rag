@@ -1,0 +1,5 @@
+Headings: ['AGENDA # 09']
+Source: output_corrected2.md
+Text: [...] O8) The Empowered Committee accorded in-principle approval of implementation of Court Case Monitoring System (CCMS) - 8.1) The Committee further directed to include the Home Police Department also for implementation. pilot
+Fpproval for Extension of tenure of current System Integrator of Integrated CProcurement System from 1st April 2024 to 315t March 2025 0r till Exit Management Process, whichever is earlier.
+09` The Empowered Committee accorded approval of Extension of tenure of st current System Integrator of Integrated e- Procurement System from April 2024 to 319 March 2025 or till Exit Management Process, whichever is earlier. [...]

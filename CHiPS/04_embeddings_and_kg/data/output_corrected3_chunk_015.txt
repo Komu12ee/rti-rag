@@ -1,0 +1,5 @@
+Headings: ['DECISION TAKEN']
+Source: output_corrected3.md
+Text: [...] Approval for extension of tenure of *Chhattisgarh Center of Geo informatics (CGCOG) Project in State of Chhattisgarh for the 3 years from lst April 2025 to 31st March 2028.
+    1. The Empowered Committee deferred the agenda Point till next meeting
+Regarding the need of empowered committee constituted for implementation of information technology projects in the state in the present circumstances. [...]

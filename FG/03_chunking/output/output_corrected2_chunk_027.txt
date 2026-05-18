@@ -1,0 +1,11 @@
+Headings: ['Empowered Committee Members']
+Source: output_corrected2
+---
+- 1 Smt. Niharika Barik Singh, Principal Secretary, Government of Chhattisgarh, Department of Electronics & Information Technology Panchayat and Rural Development.
+- 3 Shri Rajat Kumar, Secretary, Government of Chhattisgarh, Department of Commerce and Industries .
+- 2 Shri Pardeshi Siddhartha Komal, Secretary, Government of Chhattisgarh, Department of School Education
+- Shri Ankit Anand, Secretary, Government of Chhattisgarh, Department of Housing & Environment.
+- 5 Shri Chandan Kumar, Special Secretary , Government 0f Chhattisgarh, Department of Finance and Health & Family welfare
+- 7 Shri SK. Kori, Chief Engineer, Government of Chhattisgarh, Department of Public Works Department.
+- 0 Shri Rishabh Parashar Deputy Secretary, Government of Chhattisgarh, Department of Finance.
+- 8 Shri $.1[. Shrivastava, Chief Engineer, Government of Chhattisgarh Department of Public Works Department.

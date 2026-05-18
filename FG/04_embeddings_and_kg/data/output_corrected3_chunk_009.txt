@@ -1,0 +1,6 @@
+Headings: ['DECISION TAKEN']
+Source: output_corrected3.md
+Text: [...] Approval for Procurement of Aadhaar Enrolment Kits for the Implementation of the Aadhaar In House Model
+- The Empowered Committee accorded its in-principle approval of Procurement of Aadhaar Enrolment Kits for the Implementation of the Aadhaar In House Model in the Chhattisgarh State.
+- 4.1) The department will ensurc that necessary financial administrative approval is obtained from the competent authority.
+Approval for the implementation of CG State Portal Project for a period of next 3 years. [...]

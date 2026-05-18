@@ -1,0 +1,4 @@
+Headings: ['AGENDA #1']
+Source: output_corrected3
+---
+Approval of 6Oth Empowered Committee Meeting minutes.

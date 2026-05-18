@@ -1,0 +1,4 @@
+Headings: ['DECISION TAKEN']
+Source: output_corrected3
+---
+    1. The Empowered Committee deferred the agenda Point till next meeting

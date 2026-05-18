@@ -1,0 +1,5 @@
+Headings: ['AGENDA # 3']
+Source: output_corrected3.md
+Text: [...] 1. The Empowered Committee accorded its in-principle approval for establishment of ICT Lab, Smart Classroom, Virtual Reality Lab, Atal Tinkering Lab (ATL), Digital Library and Teacher Resource Package ( Tablet). 1. 2.1) The department will ensure that necessary financial Q administrative approval is obtained from the competent authority.
+रु. 10 लाख तक के समस्त कार्यों को ऑफलाईन मैनुअल निविदा के माध्यम से तथा रु. 10 लाख से अधिक के कार्यों की समस्त निविदायें ई टेण्डरिंग ऑनलाईन) के माध्यम से क्रियान्वित किये जाने के संबंध में अनुमोदन
+- The Empowered Committee accorded its approval of procurement value more than Rs. 10,00,000.00/ (Rupees Ten Lakh only) in all the Government Offices should be through e Procurement only as proposed in the agenda note. [...]

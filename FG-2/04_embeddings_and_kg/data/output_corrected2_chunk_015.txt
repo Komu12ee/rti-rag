@@ -1,0 +1,5 @@
+Headings: ['DECISION TAKEN']
+Source: output_corrected2.md
+Text: [...] सामान्य प्रशासन विभाग, मंत्रालय में हार्डवेयर क्रय किये जाने हेतु राज्य शासन द्वारा गठित सशक्त समिति से अनुमोदन प्राप्त करने के सबंध मे|
+    1. राज्य सशक्त समिति द्वारा सामान्य प्रशासन विभाग मंत्रालय में हार्डवेयर क्रय किये जाने हेतु सैद्वांतिक अनुमोदन प्रदान किया गया
+Approval for implementation of Court Case Monitoring System (CCMSJ for 0 period of One year. [...]

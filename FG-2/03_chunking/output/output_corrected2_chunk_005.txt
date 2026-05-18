@@ -1,0 +1,4 @@
+Headings: ['DECISION TAKEN']
+Source: output_corrected2
+---
+- The Empowered Committee accorded its in-principle approval of Implementation of Atal Monitoring Portal (CM Dashboard)

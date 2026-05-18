@@ -1,0 +1,5 @@
+Headings: ['DECISION TAKEN']
+Source: output_corrected2.md
+Text: [...] Approval of extension of Chhattisgarh State Data Centre (CGSDC) Project for 12 st Months (lst Apr 2024 to 31 March 202S) for Exit Management and On-boarding of New system integrator
+1. The Empowered Committee accorded approval of extension of Chhattisgarh State Data Centre (CGSDC) Project for 12 Months (lst 2024 to 31" March 2025) for Exit Management and On-boarding of New System Integrator Apr
+Approval of extension to existing Agency for Operation & Maintenance of Wi-Fi Infrastructure setup at Mantralaya and HoD Building for continuity of services. [...]
