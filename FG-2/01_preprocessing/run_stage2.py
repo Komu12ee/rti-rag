@@ -9,6 +9,7 @@ Usage:
 import argparse
 import logging
 import os
+import shutil
 import sys
 from pathlib import Path
 
@@ -60,12 +61,18 @@ def main():
         logging.info(f"Processing single document: {input_path.name}")
         result = pipeline.process(input_path)
         _print_summary(result)
+        _move_processed_pdf(result.source_pdf)
+        _cleanup_stage1_dir(input_path)
     else:
         # Root directory with multiple documents
         logging.info(f"Processing all documents in: {input_path}")
         results = pipeline.process_all(input_path)
         for result in results:
             _print_summary(result)
+            _move_processed_pdf(result.source_pdf)
+            doc_dir = input_path / Path(result.source_pdf).stem
+            if doc_dir.exists():
+                _cleanup_stage1_dir(doc_dir)
         total_pages  = sum(r.total_pages for r in results)
         total_tables = sum(len(r.all_tables) for r in results)
         logging.info(f"Done — {len(results)} doc(s), {total_pages} pages, {total_tables} tables extracted.")
@@ -83,6 +90,46 @@ def _print_summary(result):
         logging.info(f"  Headings :")
         for h in headings[:10]:
             logging.info(f"    [{h.element_type.value}] {h.text[:80]}")
+
+
+def _move_processed_pdf(source_pdf: str) -> None:
+    """Move processed PDFs from input_pdfs to used_files."""
+    src = Path(source_pdf)
+    if not src.exists():
+        return
+
+    used_dir = Path(__file__).parent / "used_files"
+    used_dir.mkdir(parents=True, exist_ok=True)
+
+    dest = used_dir / src.name
+    if dest.exists():
+        stem = dest.stem
+        suffix = dest.suffix
+        counter = 1
+        while True:
+            candidate = used_dir / f"{stem}_{counter}{suffix}"
+            if not candidate.exists():
+                dest = candidate
+                break
+            counter += 1
+
+    try:
+        shutil.move(str(src), str(dest))
+        logging.info(f"Moved source PDF to used_files: {dest}")
+    except OSError as exc:
+        logging.warning(f"Could not move source PDF {src} to used_files: {exc}")
+
+
+def _cleanup_stage1_dir(stage1_dir: Path) -> None:
+    """Remove Stage 1 output folder after Stage 2 completes."""
+    if not stage1_dir.exists():
+        return
+
+    try:
+        shutil.rmtree(stage1_dir)
+        logging.info(f"Removed Stage 1 output: {stage1_dir}")
+    except OSError as exc:
+        logging.warning(f"Could not remove Stage 1 output {stage1_dir}: {exc}")
 
 
 if __name__ == "__main__":

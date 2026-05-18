@@ -94,7 +94,7 @@ class DocumentElement:
     bbox: BoundingBox | None = None
     level: int = 0             # heading level (1, 2, 3...) if heading
     table: Table | None = None  # populated only for TABLE elements
-    confidence: float = 1.0    # OCR confidence if available
+    confidence: float | None = None  # OCR confidence if available
 
     def to_dict(self) -> dict:
         """Serialize to a plain dict for JSON output."""
@@ -134,6 +134,7 @@ class PageOCRResult:
     page_num: int
     elements: list[DocumentElement] = field(default_factory=list)
     raw_text: str = ""  # full plain text of the page
+    confidence: float | None = None  # average OCR box confidence
 
     @property
     def tables(self) -> list[DocumentElement]:
@@ -194,6 +195,7 @@ class DocumentOCRResult:
                 {
                     "page_num": p.page_num + 1,
                     "text": p.raw_text,
+                    "confidence": None if p.confidence is None else round(p.confidence, 3),
                     "num_elements": len(p.elements),
                     "elements": [e.to_dict() for e in p.elements],
                 }

@@ -17,6 +17,7 @@ picture elements and treat captions as regular paragraphs.
 """
 
 import logging
+import math
 import tempfile
 from pathlib import Path
 
@@ -173,6 +174,46 @@ def _extract_table(docling_table) -> Table:
     return table
 
 
+def _extract_item_confidence(item) -> float | None:
+    """Extract OCR confidence for a Docling item when available."""
+    for attr in ("confidence", "conf", "score", "ocr_confidence", "text_confidence"):
+        if hasattr(item, attr):
+            val = getattr(item, attr)
+            if isinstance(val, (int, float)):
+                return float(val)
+
+    if hasattr(item, "prov") and item.prov:
+        prov = item.prov[0] if isinstance(item.prov, list) else item.prov
+        for attr in ("confidence", "score"):
+            if hasattr(prov, attr):
+                val = getattr(prov, attr)
+                if isinstance(val, (int, float)):
+                    return float(val)
+
+    return None
+
+
+def _get_page_ocr_confidence(conv_res, page_num: int) -> float | None:
+    """Read page OCR confidence from ConversionResult.confidence."""
+    conf_report = getattr(conv_res, "confidence", None)
+    if conf_report is None:
+        return None
+
+    pages = getattr(conf_report, "pages", None)
+    if not pages:
+        return None
+
+    if 1 in pages:
+        score = getattr(pages[1], "ocr_score", None)
+        if score is None:
+            return None
+        if isinstance(score, float) and math.isnan(score):
+            return None
+        return float(score)
+
+    return None
+
+
 def _maybe_downscale(image_path: Path) -> tuple[str, bool]:
     """Downscale image if it exceeds OCR_MAX_PIXELS to prevent MemoryError.
 
@@ -277,6 +318,8 @@ def process_image(
             if level == 0:
                 level = 1
 
+        elem_confidence = _extract_item_confidence(item)
+
         elements.append(DocumentElement(
             element_type=elem_type,
             text=text,
@@ -284,6 +327,7 @@ def process_image(
             bbox=bbox,
             level=level,
             table=table_obj,
+            confidence=elem_confidence,
         ))
 
     # Fallback: if iterate_items gave nothing, use the markdown text
@@ -295,10 +339,13 @@ def process_image(
         ))
         logger.info(f"    Page {page_num}: no structure detected, using full text")
 
+    page_confidence = _get_page_ocr_confidence(result, page_num)
+
     return PageOCRResult(
         page_num=page_num,
         elements=elements,
         raw_text=raw_text,
+        confidence=page_confidence,
     )
 
 

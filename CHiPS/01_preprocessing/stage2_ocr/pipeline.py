@@ -9,16 +9,52 @@ Writes to:  stage2_output/<doc_name>/structured.json + structured.md
 """
 
 import gc
+import math
 import json
 import logging
+import os
+import shutil
+import tempfile
+import zipfile
 from pathlib import Path
 
-from .config import DEFAULT_OUTPUT_DIR, OUTPUT_FORMATS
+from dotenv import load_dotenv
+import fitz
+
+from .config import (
+    DEFAULT_OUTPUT_DIR,
+    OUTPUT_FORMATS,
+    PAGE_CONFIDENCE_THRESHOLD,
+    SARVAM_OCR_THRESHOLD,
+)
 from .docling_ocr import create_converter, process_image
 from .models import DocumentOCRResult, PageOCRResult, DocumentElement, ElementType
 from .postprocess import postprocess_page_text, extract_critical_fields
 
 logger = logging.getLogger(__name__)
+load_dotenv()
+
+
+def _low_confidence_pages(
+    page_confidences: dict[int, float | None],
+    threshold: float,
+) -> list[int]:
+    return sorted(
+        page_no
+        for page_no, score in page_confidences.items()
+        if score is None or score < threshold
+    )
+
+
+def _source_map_from_confidences(
+    page_confidences: dict[int, float | None],
+    low_pages: list[int],
+) -> dict[int, str]:
+    low_set = set(low_pages)
+    return {
+        page_no: ("sarvam" if page_no in low_set else "docling")
+        for page_no in sorted(page_confidences.keys())
+    }
 
 
 class OCRPipeline:
@@ -83,6 +119,7 @@ class OCRPipeline:
             total_pages=total_pages,
         )
 
+        page_image_paths: dict[int, Path] = {}
         for page_meta in meta["pages"]:
             page_num = page_meta["page_num"]
             image_path = Path(page_meta["image_path"])
@@ -94,6 +131,8 @@ class OCRPipeline:
             if not image_path.exists():
                 logger.warning(f"  Page {page_num}: image not found at {image_path}, skipping")
                 continue
+
+            page_image_paths[page_num + 1] = image_path
 
             logger.info(f"  Page {page_num + 1}/{total_pages}...")
 
@@ -110,6 +149,7 @@ class OCRPipeline:
                         page_num=page_num,
                     )],
                     raw_text=f"[OCR failed for this page: {type(e).__name__}]",
+                    confidence=None,
                 )
 
             # Log summary
@@ -153,6 +193,7 @@ class OCRPipeline:
         # Attach metadata for JSON output
         result._critical_fields = all_critical_fields
         result._quality_flags = all_quality_flags
+        result._page_image_paths = page_image_paths
 
         # Save outputs
         self._save_outputs(result, doc_output_dir)
@@ -196,24 +237,279 @@ class OCRPipeline:
     def _save_outputs(self, result: DocumentOCRResult, output_dir: Path) -> None:
         """Save OCR results in configured formats."""
 
-        if "json" in OUTPUT_FORMATS:
-            json_path = output_dir / "structured.json"
-            output = result.to_dict()
-            # Attach critical fields and quality flags
-            output["critical_fields"] = getattr(result, "_critical_fields", {})
-            output["quality_flags"] = getattr(result, "_quality_flags", [])
-            with open(json_path, "w", encoding="utf-8") as f:
-                json.dump(output, f, indent=2, ensure_ascii=False)
-            logger.info(f"  Saved: {json_path}")
-
-        if "md" in OUTPUT_FORMATS:
-            md_path = output_dir / "structured.md"
-            with open(md_path, "w", encoding="utf-8") as f:
-                f.write(result.to_markdown())
-            logger.info(f"  Saved: {md_path}")
+        output = result.to_dict()
+        # Attach critical fields and quality flags
+        output["critical_fields"] = getattr(result, "_critical_fields", {})
+        output["quality_flags"] = getattr(result, "_quality_flags", [])
 
         if "txt" in OUTPUT_FORMATS:
             txt_path = output_dir / "full_text.txt"
             with open(txt_path, "w", encoding="utf-8") as f:
                 f.write(result.full_text)
             logger.info(f"  Saved: {txt_path}")
+
+        # Confidence sidecar (per-page ocr_score and source only)
+        page_confidences = {
+            (p.page_num + 1): p.confidence
+            for p in result.pages
+        }
+        low_pages = _low_confidence_pages(page_confidences, PAGE_CONFIDENCE_THRESHOLD)
+        source_map = _source_map_from_confidences(page_confidences, low_pages)
+
+        document_name = Path(result.source_pdf).name
+        confidence_path = output_dir / f"{document_name}_confidence.json"
+        confidence_payload = {
+            "pages": [
+                {
+                    "page_number": page_no,
+                    "ocr_score": page_confidences.get(page_no),
+                    "source": source_map.get(page_no),
+                }
+                for page_no in sorted(page_confidences.keys())
+            ]
+        }
+
+        with open(confidence_path, "w", encoding="utf-8") as f:
+            json.dump(confidence_payload, f, indent=2)
+        logger.info(f"  Saved: {confidence_path}")
+
+        # Sarvam fallback OCR for low-confidence pages (per-page)
+        page_image_paths = getattr(result, "_page_image_paths", {})
+        sarvam_outputs = _run_sarvam_fallback(
+            output_dir=output_dir,
+            page_image_paths=page_image_paths,
+            page_confidences=page_confidences,
+            threshold=SARVAM_OCR_THRESHOLD,
+        )
+
+        if "md" in OUTPUT_FORMATS:
+            md_path = output_dir / "structured.md"
+            merged_md = _merge_markdown(result, sarvam_outputs)
+            with open(md_path, "w", encoding="utf-8") as f:
+                f.write(merged_md)
+            logger.info(f"  Saved: {md_path}")
+
+        if "json" in OUTPUT_FORMATS:
+            json_path = output_dir / "structured.json"
+            merged_json = _merge_json(output, sarvam_outputs, source_map)
+            with open(json_path, "w", encoding="utf-8") as f:
+                json.dump(merged_json, f, indent=2, ensure_ascii=False)
+            logger.info(f"  Saved: {json_path}")
+
+        # Cleanup per-page Sarvam files after merge (keep only merged outputs)
+        for page_outputs in sarvam_outputs.values():
+            md_path = page_outputs.get("md")
+            if md_path:
+                try:
+                    Path(md_path).unlink(missing_ok=True)
+                except OSError:
+                    logger.warning("  Could not remove %s", md_path)
+            json_path = page_outputs.get("json")
+            if json_path:
+                try:
+                    Path(json_path).unlink(missing_ok=True)
+                except OSError:
+                    logger.warning("  Could not remove %s", json_path)
+
+        # Consolidated confidence log (append-only)
+        log_path = self.output_dir / "confidence_log.json"
+        log_entries = []
+        if log_path.exists():
+            try:
+                with open(log_path, "r", encoding="utf-8") as f:
+                    log_entries = json.load(f)
+                    if not isinstance(log_entries, list):
+                        log_entries = []
+            except json.JSONDecodeError:
+                log_entries = []
+
+        doc_stem = Path(document_name).stem
+        for page_no in sorted(page_confidences.keys()):
+            log_entries.append(
+                {
+                    "document_name": doc_stem,
+                    "page_number": page_no,
+                    "ocr_score": page_confidences.get(page_no),
+                }
+            )
+
+        with open(log_path, "w", encoding="utf-8") as f:
+            json.dump(log_entries, f, indent=2)
+        logger.info(f"  Updated: {log_path}")
+
+
+def _image_to_pdf(image_path: Path, pdf_path: Path) -> None:
+    """Create a single-page PDF from a page image."""
+    doc = fitz.open()
+    img = fitz.open(str(image_path))
+    rect = img[0].rect
+    page = doc.new_page(width=rect.width, height=rect.height)
+    page.insert_image(rect, filename=str(image_path))
+    doc.save(str(pdf_path))
+    doc.close()
+    img.close()
+
+
+def _downscale_image(image_path: Path, output_path: Path, scale: float) -> None:
+    """Downscale an image by a scale factor and save it."""
+    img = fitz.open(str(image_path))
+    pix = img[0].get_pixmap(matrix=fitz.Matrix(scale, scale))
+    pix.save(str(output_path))
+    img.close()
+
+
+def _run_sarvam_fallback(
+    output_dir: Path,
+    page_image_paths: dict[int, Path],
+    page_confidences: dict[int, float | None],
+    threshold: float,
+) -> dict[int, dict[str, Path]]:
+    """Run Sarvam Document Intelligence for low-confidence pages."""
+    max_pdf_bytes = 5 * 1024 * 1024
+    max_downscale_attempts = 3
+    api_key = os.getenv("SARVAM_API_KEY", "")
+    if not api_key:
+        logger.warning("SARVAM_API_KEY not set; skipping Sarvam OCR fallback.")
+        return {}
+
+    try:
+        from sarvamai import SarvamAI
+    except ImportError:
+        logger.warning("sarvamai package not installed; skipping Sarvam OCR fallback.")
+        return {}
+
+    client = SarvamAI(api_subscription_key=api_key)
+
+    outputs: dict[int, dict[str, Path]] = {}
+
+    for page_no, score in page_confidences.items():
+        if score is None or score >= threshold:
+            continue
+        image_path = page_image_paths.get(page_no)
+        if not image_path or not image_path.exists():
+            continue
+
+        with tempfile.TemporaryDirectory() as tmpdir:
+            tmpdir_path = Path(tmpdir)
+            pdf_path = tmpdir_path / f"page_{page_no:04d}.pdf"
+            zip_path = tmpdir_path / "output.zip"
+
+            current_image = image_path
+            for attempt in range(max_downscale_attempts):
+                _image_to_pdf(current_image, pdf_path)
+                pdf_size = pdf_path.stat().st_size
+                if pdf_size <= max_pdf_bytes:
+                    break
+
+                if attempt == max_downscale_attempts - 1:
+                    size_mb = pdf_size / (1024 * 1024)
+                    logger.warning(
+                        "  Page %s: Sarvam input PDF is %.2f MB (> 5 MB) after downscaling; skipping",
+                        page_no,
+                        size_mb,
+                    )
+                    current_image = None
+                    break
+
+                scale = math.sqrt(max_pdf_bytes / pdf_size) * 0.95
+                if scale >= 1.0:
+                    scale = 0.9
+                scale = max(scale, 0.25)
+                scaled_path = tmpdir_path / f"page_{page_no:04d}_scaled_{attempt + 1}.png"
+                _downscale_image(current_image, scaled_path, scale)
+                current_image = scaled_path
+
+            if current_image is None:
+                continue
+
+            job = client.document_intelligence.create_job(
+                language="hi-IN",
+                output_format="md",
+            )
+            job.upload_file(str(pdf_path))
+            job.start()
+            job.wait_until_complete()
+            job.download_output(str(zip_path))
+
+            with zipfile.ZipFile(zip_path, "r") as zf:
+                zf.extractall(tmpdir_path)
+
+            md_files = list(tmpdir_path.rglob("*.md"))
+            json_files = list(tmpdir_path.rglob("*.json"))
+
+            if md_files:
+                dest_md = output_dir / f"page_{page_no:04d}_sarvam.md"
+                shutil.copyfile(md_files[0], dest_md)
+
+            if json_files:
+                dest_json = output_dir / f"page_{page_no:04d}_sarvam.json"
+                shutil.copyfile(json_files[0], dest_json)
+
+            if md_files or json_files:
+                outputs[page_no] = {
+                    "md": dest_md if md_files else None,
+                    "json": dest_json if json_files else None,
+                }
+
+    return outputs
+
+
+def _merge_markdown(result: DocumentOCRResult, sarvam_outputs: dict[int, dict[str, Path]]) -> str:
+    """Merge Docling and Sarvam markdown outputs by page."""
+    parts: list[str] = []
+    for page in result.pages:
+        page_no = page.page_num + 1
+        parts.append(f"<!-- Page {page_no} -->")
+
+        sarvam_md = None
+        if page_no in sarvam_outputs:
+            md_path = sarvam_outputs[page_no].get("md")
+            if md_path:
+                sarvam_md = Path(md_path).read_text(encoding="utf-8")
+
+        if sarvam_md is not None:
+            parts.append(_strip_embedded_images(sarvam_md).strip())
+        elif page.raw_text.strip():
+            parts.append(page.raw_text)
+
+        parts.append("")
+
+    return "\n\n".join(parts)
+
+
+def _strip_embedded_images(text: str) -> str:
+    """Remove embedded base64 image markdown lines."""
+    return "\n".join(
+        line for line in text.splitlines()
+        if not line.lstrip().startswith("![Image](data:image")
+    )
+
+
+def _merge_json(output: dict, sarvam_outputs: dict[int, dict[str, Path]], source_map: dict[int, str]) -> dict:
+    """Merge Docling and Sarvam JSON outputs by page."""
+    pages = output.get("pages", [])
+    for page in pages:
+        page_no = page.get("page_num")
+        if page_no in sarvam_outputs:
+            md_text = None
+            md_path = sarvam_outputs[page_no].get("md")
+            if md_path:
+                md_text = _strip_embedded_images(Path(md_path).read_text(encoding="utf-8"))
+
+            sarvam_json = None
+            json_path = sarvam_outputs[page_no].get("json")
+            if json_path:
+                try:
+                    sarvam_json = json.loads(Path(json_path).read_text(encoding="utf-8"))
+                except json.JSONDecodeError:
+                    sarvam_json = None
+
+            page["text"] = md_text or ""
+            page["elements"] = []
+            page["num_elements"] = 0
+            page["source"] = source_map.get(page_no, "docling")
+            page["sarvam_json"] = sarvam_json
+        else:
+            page["source"] = source_map.get(page_no, "docling")
+
+    return output

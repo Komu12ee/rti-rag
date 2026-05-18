@@ -3,21 +3,20 @@
 from pathlib import Path
 
 # ---------- PDF-to-Image ----------
-DPI = 300  # Minimum for reliable Devanagari OCR
+DPI = 450  # Preserve tiny punctuation for OCR
 IMAGE_FORMAT = "png"  # Lossless — no artifacts introduced
 
 # ---------- Deskew ----------
 # Maximum angle correction (degrees). Pages tilted beyond this are likely
 # landscape or rotated 90°, not just slightly skewed from scanning.
 MAX_SKEW_ANGLE = 15.0
-# Minimum angle to bother correcting — smaller than this has negligible effect.
-MIN_SKEW_ANGLE = 0.5
+# Minimum angle to bother correcting — skip tiny angles to preserve dots.
+MIN_SKEW_ANGLE = 1.5
 
 # ---------- Denoise ----------
 # Connected components with area < this are treated as noise speckles.
-# Only these tiny dots get removed via inpainting. Set conservatively —
-# Devanagari matras, punctuation, and anusvara must be preserved.
-MIN_COMPONENT_AREA = 15
+# Set low to preserve punctuation and Devanagari micro-components.
+MIN_COMPONENT_AREA = 3
 
 # ---------- Stamp / Annotation Detection ----------
 # HSV ranges for common government stamp colors.

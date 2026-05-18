@@ -1,6 +1,6 @@
 """Orchestration pipeline — runs all Stage 1 steps on a PDF.
 
-For each page:  PDF → Image (300 DPI) → Deskew → Denoise → Stamp Detection
+For each page:  PDF → Image (450 DPI) → Deskew → Denoise → Stamp Detection
 
 Produces a per-page result with the cleaned image and metadata, plus saves
 processed images to disk for Stage 2 (OCR) to consume.
@@ -12,8 +12,9 @@ import cv2
 import numpy as np
 from dataclasses import dataclass, field, asdict
 from pathlib import Path
+from PIL import Image
 
-from .config import DEFAULT_OUTPUT_DIR, IMAGE_FORMAT
+from .config import DEFAULT_OUTPUT_DIR, IMAGE_FORMAT, DPI
 from .pdf_to_image import pdf_to_images, get_page_count
 from .deskew import deskew
 from .denoise import denoise
@@ -97,7 +98,7 @@ class ImagePrepPipeline:
             debug_dir.mkdir(exist_ok=True)
 
         # Step 1: Convert all pages to images
-        logger.info(f"  Converting PDF to images at 300 DPI...")
+        logger.info(f"  Converting PDF to images at {DPI} DPI...")
         page_images = pdf_to_images(pdf_path)
         total_pages = len(page_images)
         logger.info(f"  {total_pages} pages converted.")
@@ -143,12 +144,13 @@ class ImagePrepPipeline:
             )
 
         # --- Denoise ---
-        denoised, noise_stats = denoise(deskewed)
-        if noise_stats["speckles_removed"] > 0:
-            logger.info(
-                f"    Removed {noise_stats['speckles_removed']} speckles "
-                f"(noise ratio: {noise_stats['noise_ratio']:.4f})"
-            )
+        # Disabled to preserve tiny punctuation and micro-components.
+        denoised = deskewed
+        noise_stats = {
+            "speckles_removed": 0,
+            "noise_ratio": 0.0,
+            "denoise_disabled": True,
+        }
         if debug_dir:
             cv2.imwrite(
                 str(debug_dir / f"page_{page_num:04d}_denoised.{IMAGE_FORMAT}"),
@@ -176,10 +178,24 @@ class ImagePrepPipeline:
         if self.mask_stamps_in_output and stamp_result.mask is not None:
             final_image = mask_stamps(denoised, stamp_result.mask)
 
-        # Save cleaned image
+        # Save cleaned image using PIL (handles Unicode paths better than cv2)
         image_filename = f"page_{page_num:04d}.{IMAGE_FORMAT}"
         image_path = doc_output_dir / image_filename
-        cv2.imwrite(str(image_path), final_image)
+        
+        # Convert BGR (OpenCV) to RGB for PIL
+        if len(final_image.shape) == 3:
+            final_image_rgb = cv2.cvtColor(final_image, cv2.COLOR_BGR2RGB)
+        else:
+            final_image_rgb = final_image
+        
+        pil_image = Image.fromarray(final_image_rgb)
+        pil_image.save(str(image_path))
+        
+        # Verify write succeeded
+        if not image_path.exists():
+            logger.error(f"    Failed to save image to {image_path}")
+        else:
+            logger.debug(f"    Saved image to {image_path}")
 
         return PageResult(
             page_num=page_num,

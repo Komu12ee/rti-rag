@@ -35,9 +35,18 @@ def _find_speckle_mask(gray: np.ndarray, min_area: int) -> tuple[np.ndarray, int
     speckle_mask: uint8 image, 255 where speckles are, 0 elsewhere.
     speckle_count: number of speckle components found.
     """
-    # Binarize — used ONLY for detection, not reconstruction
-    _, binary = cv2.threshold(
-        gray, 0, 255, cv2.THRESH_BINARY_INV + cv2.THRESH_OTSU
+    # Enhance faint punctuation and matras before detection
+    clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8, 8))
+    gray = clahe.apply(gray)
+
+    # Adaptive threshold for local contrast preservation
+    binary = cv2.adaptiveThreshold(
+        gray,
+        255,
+        cv2.ADAPTIVE_THRESH_GAUSSIAN_C,
+        cv2.THRESH_BINARY_INV,
+        31,
+        15,
     )
 
     num_labels, labels, stats, _ = cv2.connectedComponentsWithStats(
@@ -47,11 +56,47 @@ def _find_speckle_mask(gray: np.ndarray, min_area: int) -> tuple[np.ndarray, int
     speckle_mask = np.zeros_like(gray)
     speckle_count = 0
 
+    # Collect larger components as text anchors
+    large_boxes: list[tuple[int, int, int, int]] = []
+    for label in range(1, num_labels):
+        area = stats[label, cv2.CC_STAT_AREA]
+        if area >= min_area:
+            x, y, w, h = (
+                stats[label, cv2.CC_STAT_LEFT],
+                stats[label, cv2.CC_STAT_TOP],
+                stats[label, cv2.CC_STAT_WIDTH],
+                stats[label, cv2.CC_STAT_HEIGHT],
+            )
+            large_boxes.append((x, y, w, h))
+
+    def _near_text_component(cx: int, cy: int, box: tuple[int, int, int, int], max_dist: int) -> bool:
+        x, y, w, h = box
+        within_vert = (y - 2) <= cy <= (y + h + 2)
+        if within_vert:
+            return True
+        dx = 0
+        if cx < x:
+            dx = x - cx
+        elif cx > x + w:
+            dx = cx - (x + w)
+        dy = 0
+        if cy < y:
+            dy = y - cy
+        elif cy > y + h:
+            dy = cy - (y + h)
+        return (dx * dx + dy * dy) <= (max_dist * max_dist)
+
+    max_dist = max(5, int(min(gray.shape[:2]) * 0.01))
+
     for label in range(1, num_labels):  # skip background
         area = stats[label, cv2.CC_STAT_AREA]
         if area < min_area:
-            speckle_mask[labels == label] = 255
-            speckle_count += 1
+            cx = int(stats[label, cv2.CC_STAT_LEFT] + stats[label, cv2.CC_STAT_WIDTH] / 2)
+            cy = int(stats[label, cv2.CC_STAT_TOP] + stats[label, cv2.CC_STAT_HEIGHT] / 2)
+            keep = any(_near_text_component(cx, cy, box, max_dist) for box in large_boxes)
+            if not keep:
+                speckle_mask[labels == label] = 255
+                speckle_count += 1
 
     return speckle_mask, speckle_count
 
@@ -76,8 +121,9 @@ def denoise(image: np.ndarray) -> tuple[np.ndarray, dict]:
         - 'speckles_removed': count of tiny components erased
         - 'noise_ratio': fraction of page pixels that were speckles
     """
-    result = image.copy()
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+    clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8, 8))
+    gray = clahe.apply(gray)
 
     # Find speckle locations (tiny noise dots)
     speckle_mask, speckle_count = _find_speckle_mask(gray, MIN_COMPONENT_AREA)
@@ -85,14 +131,13 @@ def denoise(image: np.ndarray) -> tuple[np.ndarray, dict]:
     noise_ratio = noise_pixels / max(gray.size, 1)
 
     # Replace speckle pixels with local background color via inpainting.
-    # This fills each speckle dot with the surrounding background so there's
-    # no harsh white spot on tinted or off-white paper.
+    # Small radius preserves nearby punctuation edges.
     if speckle_count > 0:
-        result = cv2.inpaint(result, speckle_mask, inpaintRadius=3, flags=cv2.INPAINT_TELEA)
+        gray = cv2.inpaint(gray, speckle_mask, inpaintRadius=1, flags=cv2.INPAINT_TELEA)
 
     stats = {
         "speckles_removed": speckle_count,
         "noise_ratio": round(noise_ratio, 6),
     }
 
-    return result, stats
+    return gray, stats

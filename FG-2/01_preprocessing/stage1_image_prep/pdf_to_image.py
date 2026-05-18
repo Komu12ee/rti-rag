@@ -1,4 +1,4 @@
-"""Convert each page of a PDF to a high-resolution image (300 DPI).
+"""Convert each page of a PDF to a high-resolution image (450 DPI).
 
 Uses PyMuPDF (fitz) which is a self-contained library — no external
 poppler installation required, works cleanly on Windows / Colab / Linux.
@@ -12,7 +12,7 @@ from .config import DPI
 
 
 def pdf_to_images(pdf_path: str | Path) -> list[np.ndarray]:
-    """Convert every page of a PDF to a list of BGR numpy arrays at 300 DPI.
+    """Convert every page of a PDF to a list of BGR numpy arrays at 450 DPI.
 
     Parameters
     ----------
@@ -48,7 +48,7 @@ def pdf_to_images(pdf_path: str | Path) -> list[np.ndarray]:
 
 
 def pdf_page_to_image(pdf_path: str | Path, page_num: int) -> np.ndarray:
-    """Convert a single page of a PDF to a BGR numpy array at 300 DPI.
+    """Convert a single page of a PDF to a BGR numpy array at 450 DPI.
 
     Parameters
     ----------
