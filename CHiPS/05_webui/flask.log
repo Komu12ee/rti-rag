@@ -1,0 +1,61 @@
+[Web UI] Found RAG module at: D:\Code\CRV2\CHiPS\04_embeddings_and_kg\scripts\rag_pipeline.py
+Loading embedding model...
+Fetching 30 files:   0%|          | 0/30 [00:00<?, ?it/s]Fetching 30 files: 100%|##########| 30/30 [00:00<00:00, 73029.09it/s]
+Loading reranker model...
+Warning: Could not import RAG pipeline: 'charmap' codec can't encode character '\u26a0' in position 0: character maps to <undefined>
+
+======================================================================
+Traceback (most recent call last):
+  File "D:\Code\CRV2\CHiPS\05_webui\app.py", line 471, in <module>
+    print("\U0001f680 CHiPS-RAG Pipeline (Internal Backend)")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\av071\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f680' in position 0: character maps to <undefined>
+[launcher] exited with code 1 (signal: null)
+[Web UI] Found RAG module at: D:\Code\CRV2\CHiPS\04_embeddings_and_kg\scripts\rag_pipeline.py
+Loading embedding model...
+Fetching 30 files:   0%|          | 0/30 [00:00<?, ?it/s]Fetching 30 files: 100%|██████████| 30/30 [00:00<00:00, 195690.70it/s]
+Loading reranker model...
+⚠ Could not import knowledge graph modules: No module named 'knowledge_graph'
+Connecting to local Qdrant at D:\Code\CRV2\CHiPS\04_embeddings_and_kg\db\qdrant_local...
+✓ Connected to local embedded Qdrant
+✓ Sarvam AI configured with model: sarvam-105b
+
+======================================================================
+🚀 CHiPS-RAG Pipeline (Internal Backend)
+======================================================================
+
+RAG Pipeline Status: ✅ Available
+Environment: development
+
+ℹ️  This Flask server is INTERNAL ONLY.
+   Authentication is handled by Express.js at :3000
+
+Starting Flask server on http://0.0.0.0:5001 (debug: False)
+Press Ctrl+C to stop the server
+
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://10.64.1.148:5001
+Press CTRL+C to quit
+127.0.0.1 - - [18/May/2026 15:48:33] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [18/May/2026 15:48:35] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [18/May/2026 15:50:57] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [18/May/2026 15:51:07] "GET /api/examples HTTP/1.1" 200 -
+127.0.0.1 - - [18/May/2026 15:51:07] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [18/May/2026 15:51:09] "POST /api/init HTTP/1.1" 200 -
+127.0.0.1 - - [18/May/2026 15:51:09] "GET /api/db-status HTTP/1.1" 200 -
+[Web UI] Found RAG module at: D:\Code\CRV2\CHiPS\04_embeddings_and_kg\scripts\rag_pipeline.py
+Loading embedding model...
+Fetching 30 files:   0%|          | 0/30 [00:00<?, ?it/s]Fetching 30 files: 100%|██████████| 30/30 [00:00<00:00, 207638.81it/s]
+Loading reranker model...
+⚠ Could not import knowledge graph modules: No module named 'knowledge_graph'
+Connecting to local Qdrant at D:\Code\CRV2\CHiPS\04_embeddings_and_kg\db\qdrant_local...
+✗ Failed to initialize local Qdrant: Storage folder D:\Code\CRV2\CHiPS\04_embeddings_and_kg\db\qdrant_local is already accessed by another instance of Qdrant client. If you require concurrent access, use Qdrant server instead.
+Make sure D:\Code\CRV2\CHiPS\04_embeddings_and_kg\db\qdrant_local is writable
+[launcher] exited with code 1 (signal: null)

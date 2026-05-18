@@ -11,6 +11,11 @@ from flask import Flask, request, jsonify, send_file
 from datetime import datetime
 from pathlib import Path
 
+for stream_name in ('stdout', 'stderr'):
+    stream = getattr(sys, stream_name, None)
+    if hasattr(stream, 'reconfigure'):
+        stream.reconfigure(encoding='utf-8', errors='replace')
+
 
 
 # Add parent directory to path for imports
@@ -475,8 +480,8 @@ if __name__ == '__main__':
     print("\nℹ️  This Flask server is INTERNAL ONLY.")
     print("   Authentication is handled by Express.js at :3000")
     
-    flask_host = '0.0.0.0'
-    flask_port = 5000
+    flask_host = os.getenv('FLASK_HOST', '0.0.0.0')
+    flask_port = int(os.getenv('FLASK_PORT', '5000'))
     flask_debug = os.getenv('FLASK_DEBUG', 'False').lower() == 'true'
     
     print(f"\nStarting Flask server on http://{flask_host}:{flask_port} (debug: {flask_debug})")

@@ -145,3 +145,49 @@ Emitted 'error' event on Server instance at:
 
 Node.js v20.20.2
 [launcher] exited with code 1 (signal: null)
+
+═══════════════════════════════════════════════════════════
+  CHiPS-RAG  –  Express UI Server
+═══════════════════════════════════════════════════════════
+  UI      →  http://0.0.0.0:3001
+  Flask   →  http://localhost:5001  (proxied, JWT-guarded)
+  Mode    →  development
+═══════════════════════════════════════════════════════════
+
+[0mGET /health [32m200[0m 12.076 ms - 7420[0m
+[0mGET /health [32m200[0m 1.703 ms - 7420[0m
+[0mGET /health [32m200[0m 118.672 ms - 7420[0m
+[0mGET / [36m304[0m 356.599 ms - -[0m
+[0mGET /style.css [36m304[0m 113.196 ms - -[0m
+[0mGET /app.js [36m304[0m 120.295 ms - -[0m
+node:events:502
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use 0.0.0.0:3001
+    at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+    at listenInCluster (node:net:1965:12)
+    at doListen (node:net:2139:7)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1944:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '0.0.0.0',
+  port: 3001
+}
+
+Node.js v20.20.2
+[launcher] exited with code 1 (signal: null)
+[auth] Login successful: admin
+[0mPOST /auth/login [32m200[0m 629.649 ms - 232[0m
+[proxy] → GET http://localhost:5001/api/examples
+[proxy] → GET http://localhost:5001/api/health
+[0mGET /api/examples [32m200[0m 163.603 ms - 328[0m
+[0mGET /api/health [32m200[0m 78.408 ms - 113[0m
+[proxy] → POST http://localhost:5001/api/init
+[0mPOST /api/init [32m200[0m 349.935 ms - 185[0m
+[proxy] → GET http://localhost:5001/api/db-status
+[0mGET /api/db-status [32m200[0m 268.247 ms - 138[0m

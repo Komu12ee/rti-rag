@@ -6,6 +6,7 @@ const http = require('http');
 const path = require('path');
 
 const PROJECT_ROOT = path.resolve(__dirname, '..', '..', '..');
+const PYTHON_EXE = process.env.PYTHON_EXE || path.join(PROJECT_ROOT, '.venv', 'Scripts', 'python.exe');
 
 const SELECTION_PORT = 3000;
 const CHIPS_NODE_PORT = 3001;
@@ -18,6 +19,9 @@ const FG2_FLASK_PORT = 5003;
 const CHIPS_NODE_DIR = path.join(PROJECT_ROOT, 'CHiPS', '05_webui', 'nodejs');
 const FG_NODE_DIR = path.join(PROJECT_ROOT, 'FG', '05_webui', 'nodejs');
 const FG2_NODE_DIR = path.join(PROJECT_ROOT, 'FG-2', '05_webui', 'nodejs');
+const CHIPS_FLASK_DIR = path.join(PROJECT_ROOT, 'CHiPS', '05_webui');
+const FG_FLASK_DIR = path.join(PROJECT_ROOT, 'FG', '05_webui');
+const FG2_FLASK_DIR = path.join(PROJECT_ROOT, 'FG-2', '05_webui');
 
 const CHIPS_SERVER_PATH = path.join(CHIPS_NODE_DIR, 'server.js');
 const FG_SERVER_PATH = path.join(FG_NODE_DIR, 'server.js');
@@ -32,6 +36,7 @@ const PIPELINES = {
         nodePort: CHIPS_NODE_PORT,
         flaskPort: CHIPS_FLASK_PORT,
         cwd: CHIPS_NODE_DIR,
+        flaskCwd: CHIPS_FLASK_DIR,
         serverPath: CHIPS_SERVER_PATH,
         appPath: CHIPS_APP_PATH,
     },
@@ -40,6 +45,7 @@ const PIPELINES = {
         nodePort: FG_NODE_PORT,
         flaskPort: FG_FLASK_PORT,
         cwd: FG_NODE_DIR,
+        flaskCwd: FG_FLASK_DIR,
         serverPath: FG_SERVER_PATH,
         appPath: FG_APP_PATH,
     },
@@ -48,6 +54,7 @@ const PIPELINES = {
         nodePort: FG2_NODE_PORT,
         flaskPort: FG2_FLASK_PORT,
         cwd: FG2_NODE_DIR,
+        flaskCwd: FG2_FLASK_DIR,
         serverPath: FG2_SERVER_PATH,
         appPath: FG2_APP_PATH,
     },
@@ -85,9 +92,9 @@ function getPipelineConfig(pipelineName) {
     return PIPELINES[pipelineName] || null;
 }
 
-function isServerAlive(port) {
+function isServerAlive(port, healthPath = '/health') {
     return new Promise((resolve) => {
-        const req = http.get(`http://localhost:${port}/health`, (res) => {
+        const req = http.get(`http://localhost:${port}${healthPath}`, (res) => {
             resolve(res.statusCode === 200);
         });
         req.on('error', () => resolve(false));
@@ -98,10 +105,10 @@ function isServerAlive(port) {
     });
 }
 
-async function waitForServer(port, timeout = 30000) {
+async function waitForServer(port, timeout = 30000, healthPath = '/health') {
     const startedAt = Date.now();
     while (Date.now() - startedAt < timeout) {
-        if (await isServerAlive(port)) {
+        if (await isServerAlive(port, healthPath)) {
             return true;
         }
         await new Promise((resolve) => setTimeout(resolve, 500));
@@ -109,7 +116,7 @@ async function waitForServer(port, timeout = 30000) {
     return false;
 }
 
-function spawnPipeline(pipeline) {
+function spawnNodePipeline(pipeline) {
     const logStream = fs.createWriteStream(path.join(pipeline.cwd, 'server.log'), { flags: 'a' });
     const child = spawn('node', ['server.js'], {
         cwd: pipeline.cwd,
@@ -137,13 +144,78 @@ function spawnPipeline(pipeline) {
     child.on('exit', (code, signal) => {
         logStream.write(`[launcher] exited with code ${code} (signal: ${signal})\n`);
         logStream.end();
-        runningProcesses.delete(pipeline.name);
+        const running = runningProcesses.get(pipeline.name);
+        if (running?.node === child) {
+            running.node = null;
+        }
+        if (running && !running.node && !running.flask) {
+            runningProcesses.delete(pipeline.name);
+        }
     });
 
     child.on('error', (err) => {
         logStream.write(`[launcher] failed to spawn: ${err.message}\n`);
         logStream.end();
-        runningProcesses.delete(pipeline.name);
+        const running = runningProcesses.get(pipeline.name);
+        if (running?.node === child) {
+            running.node = null;
+        }
+        if (running && !running.node && !running.flask) {
+            runningProcesses.delete(pipeline.name);
+        }
+    });
+
+    return child;
+}
+
+function spawnFlaskPipeline(pipeline) {
+    const logStream = fs.createWriteStream(path.join(pipeline.flaskCwd, 'flask.log'), { flags: 'a' });
+    const child = spawn(PYTHON_EXE, ['app.py'], {
+        cwd: pipeline.flaskCwd,
+        stdio: ['ignore', 'pipe', 'pipe'],
+        env: {
+            ...process.env,
+            FLASK_HOST: '0.0.0.0',
+            FLASK_PORT: String(pipeline.flaskPort),
+            PYTHONIOENCODING: 'utf-8',
+            PYTHONUTF8: '1',
+        },
+    });
+
+    if (child.stdout) {
+        child.stdout.on('data', (data) => {
+            logStream.write(data);
+        });
+    }
+
+    if (child.stderr) {
+        child.stderr.on('data', (data) => {
+            logStream.write(data);
+        });
+    }
+
+    child.on('exit', (code, signal) => {
+        logStream.write(`[launcher] exited with code ${code} (signal: ${signal})\n`);
+        logStream.end();
+        const running = runningProcesses.get(pipeline.name);
+        if (running?.flask === child) {
+            running.flask = null;
+        }
+        if (running && !running.node && !running.flask) {
+            runningProcesses.delete(pipeline.name);
+        }
+    });
+
+    child.on('error', (err) => {
+        logStream.write(`[launcher] failed to spawn: ${err.message}\n`);
+        logStream.end();
+        const running = runningProcesses.get(pipeline.name);
+        if (running?.flask === child) {
+            running.flask = null;
+        }
+        if (running && !running.node && !running.flask) {
+            runningProcesses.delete(pipeline.name);
+        }
     });
 
     return child;
@@ -157,16 +229,31 @@ async function launchPipeline(pipelineName) {
     const processKey = pipeline.name;
 
     const running = runningProcesses.get(processKey);
-    if (running) {
+    if (running?.node && running?.flask && !running.node.killed && !running.flask.killed) {
         return { success: true, url: `http://localhost:${pipeline.nodePort}` };
     }
 
-    const child = spawnPipeline(pipeline);
-    runningProcesses.set(processKey, child);
+    if (running) {
+        running.node?.kill('SIGTERM');
+        running.flask?.kill('SIGTERM');
+        runningProcesses.delete(processKey);
+    }
+
+    const flaskChild = spawnFlaskPipeline(pipeline);
+    const flaskReady = await waitForServer(pipeline.flaskPort, 180000, '/api/health');
+    if (!flaskReady) {
+        flaskChild.kill('SIGTERM');
+        runningProcesses.delete(processKey);
+        return { success: false, error: 'Flask backend failed to start' };
+    }
+
+    const nodeChild = spawnNodePipeline(pipeline);
+    runningProcesses.set(processKey, { node: nodeChild, flask: flaskChild });
 
     const ready = await waitForServer(pipeline.nodePort, 30000);
     if (!ready) {
-        child.kill('SIGTERM');
+        nodeChild.kill('SIGTERM');
+        flaskChild.kill('SIGTERM');
         runningProcesses.delete(processKey);
         return { success: false, error: 'Pipeline failed to start' };
     }
@@ -175,8 +262,9 @@ async function launchPipeline(pipelineName) {
 }
 
 function killAllPipelines() {
-    for (const child of runningProcesses.values()) {
-        child.kill('SIGTERM');
+    for (const running of runningProcesses.values()) {
+        running.node?.kill('SIGTERM');
+        running.flask?.kill('SIGTERM');
     }
     runningProcesses.clear();
 }

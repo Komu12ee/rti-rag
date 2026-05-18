@@ -1,0 +1,22 @@
+2026-05-18 15:37:59: Fetching 30 files:   0%|          | 0/30 [00:00<?, ?it/s]
+2026-05-18 15:37:59: Fetching 30 files: 100%|##########| 30/30 [00:00<00:00, 39844.56it/s]
+2026-05-18 15:38:12: Traceback (most recent call last):
+2026-05-18 15:38:12:   File "D:\Code\CRV2\CHiPS\05_webui\app.py", line 471, in <module>
+2026-05-18 15:38:12:     print("\U0001f680 CHiPS-RAG Pipeline (Internal Backend)")
+2026-05-18 15:38:12:     ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-18 15:38:12:   File "C:\Users\av071\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+2026-05-18 15:38:12:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+2026-05-18 15:38:12:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-18 15:38:12: UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f680' in position 0: character maps to <undefined>
+2026-05-18 15:39:38: Fetching 30 files:   0%|          | 0/30 [00:00<?, ?it/s]
+2026-05-18 15:39:38: Fetching 30 files: 100%|##########| 30/30 [00:00<00:00, 83662.98it/s]
+2026-05-18 15:40:23: Fetching 30 files:   0%|          | 0/30 [00:00<?, ?it/s]
+2026-05-18 15:40:23: Fetching 30 files: 100%|##########| 30/30 [00:00<00:00, 34971.96it/s]
+2026-05-18 15:40:28: Traceback (most recent call last):
+2026-05-18 15:40:28:   File "D:\Code\CRV2\CHiPS\05_webui\app.py", line 471, in <module>
+2026-05-18 15:40:28:     print("\U0001f680 CHiPS-RAG Pipeline (Internal Backend)")
+2026-05-18 15:40:28:     ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-18 15:40:28:   File "C:\Users\av071\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+2026-05-18 15:40:28:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+2026-05-18 15:40:28:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-18 15:40:28: UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f680' in position 0: character maps to <undefined>
