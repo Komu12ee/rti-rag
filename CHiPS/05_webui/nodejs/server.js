@@ -4,21 +4,12 @@ const express = require('express');
 const { createProxyMiddleware } = require('http-proxy-middleware');
 const morgan = require('morgan');
 const path = require('path');
-const authRoutes = require('./routes/auth');
 
-const PORT = process.env.PORT || 3001;
-const FLASK_PORT = process.env.FLASK_PORT || 5001;
-const FLASK_URL = `http://localhost:${FLASK_PORT}`;
-const IS_PROD = process.env.NODE_ENV === 'production';
+const { PORT, FLASK_URL, IS_PROD } = require('./config');
 const authMiddleware = require('./middleware/auth');
+const authRouter = require('./routes/auth');
 
 const app = express();
-
-// Allow selection server (http://localhost:3000) to access pipeline UIs
-app.use(require('cors')({ origin: 'http://localhost:3000', credentials: true }));
-
-// Parse JSON bodies for /auth/login requests
-app.use(express.json());
 
 // ─── Logging ────────────────────────────────────────────────────────────────
 app.use(morgan(IS_PROD ? 'combined' : 'dev'));
@@ -39,10 +30,10 @@ app.use(
   })
 );
 
-// Auth endpoints (/auth/login, /auth/logout)
-app.use('/auth', authRoutes);
-
-
+// ─── Auth routes (/auth/login, /auth/logout) ────────────────────────────────
+// express.json() scoped ONLY to /auth — never globally.
+// Global express.json() consumes the body stream before the proxy can forward it.
+app.use('/auth', express.json(), authRouter);
 
 // ─── Proxies ─────────────────────────────────────────────────────────────────
 // hpm v3 strips the mount path before forwarding (e.g. /api/query → /query).
@@ -86,9 +77,18 @@ const pdfProxy = createProxyMiddleware({
   },
 });
 
-// JWT guard runs first, then proxy
-app.use('/api', authMiddleware, apiProxy);
-app.use('/01_preprocessing', authMiddleware, pdfProxy);
+// JWT guard runs first, then proxy — allow disabling auth when no users configured
+const { loadUsers } = require('./config');
+const users = loadUsers();
+const AUTH_ENABLED = process.env.JWT_AUTH_ENABLED !== 'false' && Object.keys(users).length > 0;
+if (AUTH_ENABLED) {
+  app.use('/api', authMiddleware, apiProxy);
+  app.use('/01_preprocessing', authMiddleware, pdfProxy);
+} else {
+  console.warn('[server] WARNING: Authentication disabled — no users configured or JWT_AUTH_ENABLED=false');
+  app.use('/api', apiProxy);
+  app.use('/01_preprocessing', pdfProxy);
+}
 
 // ─── SPA fallback ───────────────────────────────────────────────────────────
 app.get('*', (_req, res) => {

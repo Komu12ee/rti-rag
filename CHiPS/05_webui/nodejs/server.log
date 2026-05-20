@@ -1,150 +1,3 @@
-node:events:502
-      throw er; // Unhandled 'error' event
-      ^
-
-Error: listen EADDRINUSE: address already in use 0.0.0.0:3001
-    at Server.setupListenHandle [as _listen2] (node:net:1908:16)
-    at listenInCluster (node:net:1965:12)
-    at doListen (node:net:2139:7)
-    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
-Emitted 'error' event on Server instance at:
-    at emitErrorNT (node:net:1944:8)
-    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
-  code: 'EADDRINUSE',
-  errno: -4091,
-  syscall: 'listen',
-  address: '0.0.0.0',
-  port: 3001
-}
-
-Node.js v20.20.2
-[launcher] exited with code 1 (signal: null)
-node:events:502
-      throw er; // Unhandled 'error' event
-      ^
-
-Error: listen EADDRINUSE: address already in use 0.0.0.0:3001
-    at Server.setupListenHandle [as _listen2] (node:net:1908:16)
-    at listenInCluster (node:net:1965:12)
-    at doListen (node:net:2139:7)
-    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
-Emitted 'error' event on Server instance at:
-    at emitErrorNT (node:net:1944:8)
-    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
-  code: 'EADDRINUSE',
-  errno: -4091,
-  syscall: 'listen',
-  address: '0.0.0.0',
-  port: 3001
-}
-
-Node.js v20.20.2
-[launcher] exited with code 1 (signal: null)
-node:events:502
-      throw er; // Unhandled 'error' event
-      ^
-
-Error: listen EADDRINUSE: address already in use 0.0.0.0:3001
-    at Server.setupListenHandle [as _listen2] (node:net:1908:16)
-    at listenInCluster (node:net:1965:12)
-    at doListen (node:net:2139:7)
-    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
-Emitted 'error' event on Server instance at:
-    at emitErrorNT (node:net:1944:8)
-    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
-  code: 'EADDRINUSE',
-  errno: -4091,
-  syscall: 'listen',
-  address: '0.0.0.0',
-  port: 3001
-}
-
-Node.js v20.20.2
-[launcher] exited with code 1 (signal: null)
-node:events:502
-      throw er; // Unhandled 'error' event
-      ^
-
-Error: listen EADDRINUSE: address already in use 0.0.0.0:3001
-    at Server.setupListenHandle [as _listen2] (node:net:1908:16)
-    at listenInCluster (node:net:1965:12)
-    at doListen (node:net:2139:7)
-    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
-Emitted 'error' event on Server instance at:
-    at emitErrorNT (node:net:1944:8)
-    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
-  code: 'EADDRINUSE',
-  errno: -4091,
-  syscall: 'listen',
-  address: '0.0.0.0',
-  port: 3001
-}
-
-Node.js v20.20.2
-[launcher] exited with code 1 (signal: null)
-node:events:502
-      throw er; // Unhandled 'error' event
-      ^
-
-Error: listen EADDRINUSE: address already in use 0.0.0.0:3001
-    at Server.setupListenHandle [as _listen2] (node:net:1908:16)
-    at listenInCluster (node:net:1965:12)
-    at doListen (node:net:2139:7)
-    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
-Emitted 'error' event on Server instance at:
-    at emitErrorNT (node:net:1944:8)
-    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
-  code: 'EADDRINUSE',
-  errno: -4091,
-  syscall: 'listen',
-  address: '0.0.0.0',
-  port: 3001
-}
-
-Node.js v20.20.2
-[launcher] exited with code 1 (signal: null)
-node:events:502
-      throw er; // Unhandled 'error' event
-      ^
-
-Error: listen EADDRINUSE: address already in use 0.0.0.0:3001
-    at Server.setupListenHandle [as _listen2] (node:net:1908:16)
-    at listenInCluster (node:net:1965:12)
-    at doListen (node:net:2139:7)
-    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
-Emitted 'error' event on Server instance at:
-    at emitErrorNT (node:net:1944:8)
-    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
-  code: 'EADDRINUSE',
-  errno: -4091,
-  syscall: 'listen',
-  address: '0.0.0.0',
-  port: 3001
-}
-
-Node.js v20.20.2
-[launcher] exited with code 1 (signal: null)
-node:events:502
-      throw er; // Unhandled 'error' event
-      ^
-
-Error: listen EADDRINUSE: address already in use 0.0.0.0:3001
-    at Server.setupListenHandle [as _listen2] (node:net:1908:16)
-    at listenInCluster (node:net:1965:12)
-    at doListen (node:net:2139:7)
-    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
-Emitted 'error' event on Server instance at:
-    at emitErrorNT (node:net:1944:8)
-    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
-  code: 'EADDRINUSE',
-  errno: -4091,
-  syscall: 'listen',
-  address: '0.0.0.0',
-  port: 3001
-}
-
-Node.js v20.20.2
-[launcher] exited with code 1 (signal: null)
 
 ═══════════════════════════════════════════════════════════
   CHiPS-RAG  –  Express UI Server
@@ -154,241 +7,30 @@ Node.js v20.20.2
   Mode    →  development
 ═══════════════════════════════════════════════════════════
 
-[0mGET /health [32m200[0m 12.076 ms - 7420[0m
-[0mGET /health [32m200[0m 1.703 ms - 7420[0m
-[0mGET /health [32m200[0m 118.672 ms - 7420[0m
-[0mGET / [36m304[0m 356.599 ms - -[0m
-[0mGET /style.css [36m304[0m 113.196 ms - -[0m
-[0mGET /app.js [36m304[0m 120.295 ms - -[0m
-node:events:502
-      throw er; // Unhandled 'error' event
-      ^
-
-Error: listen EADDRINUSE: address already in use 0.0.0.0:3001
-    at Server.setupListenHandle [as _listen2] (node:net:1908:16)
-    at listenInCluster (node:net:1965:12)
-    at doListen (node:net:2139:7)
-    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
-Emitted 'error' event on Server instance at:
-    at emitErrorNT (node:net:1944:8)
-    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
-  code: 'EADDRINUSE',
-  errno: -4091,
-  syscall: 'listen',
-  address: '0.0.0.0',
-  port: 3001
-}
-
-Node.js v20.20.2
-[launcher] exited with code 1 (signal: null)
+[0mGET /health [32m200[0m 4.955 ms - 8039[0m
+[0mGET / [32m200[0m 1.449 ms - 8039[0m
+[0mGET /style.css [32m200[0m 2.929 ms - 20099[0m
+[0mGET /app.js [32m200[0m 3.948 ms - 20552[0m
 [auth] Login successful: admin
-[0mPOST /auth/login [32m200[0m 629.649 ms - 232[0m
+[0mPOST /auth/login [32m200[0m 126.125 ms - 232[0m
 [proxy] → GET http://localhost:5001/api/examples
 [proxy] → GET http://localhost:5001/api/health
-[0mGET /api/examples [32m200[0m 163.603 ms - 328[0m
-[0mGET /api/health [32m200[0m 78.408 ms - 113[0m
+[0mGET /api/examples [32m200[0m 26.846 ms - 328[0m
+[0mGET /api/health [32m200[0m 9.942 ms - 113[0m
 [proxy] → POST http://localhost:5001/api/init
-[0mPOST /api/init [32m200[0m 349.935 ms - 185[0m
-[proxy] → GET http://localhost:5001/api/db-status
-[0mGET /api/db-status [32m200[0m 268.247 ms - 138[0m
-[proxy] → POST http://localhost:5001/api/query
-[0mPOST /api/query [0m-[0m - ms - -[0m
-[0mGET / [36m304[0m 2.555 ms - -[0m
-[0mGET /app.js [36m304[0m 1.431 ms - -[0m
-[0mGET /style.css [36m304[0m 7.131 ms - -[0m
-[proxy] → GET http://localhost:5001/api/examples
-[proxy] → GET http://localhost:5001/api/health
-[0mGET /api/examples [32m200[0m 32.149 ms - 328[0m
-[0mGET /api/health [32m200[0m 40.723 ms - 112[0m
-[proxy] → GET http://localhost:5001/api/db-status
-[0mGET /api/db-status [32m200[0m 16.925 ms - 138[0m
+[0mPOST /api/init [33m400[0m 6.851 ms - 249[0m
 [proxy] → POST http://localhost:5001/api/init
-[0mPOST /api/init [32m200[0m 27.240 ms - 185[0m
-[proxy] → GET http://localhost:5001/api/db-status
-[0mGET /api/db-status [32m200[0m 31.508 ms - 138[0m
+[0mPOST /api/init [33m400[0m 5.965 ms - 249[0m
 [proxy] → POST http://localhost:5001/api/init
-[0mPOST /api/init [32m200[0m 138.268 ms - 185[0m
-[proxy] → GET http://localhost:5001/api/db-status
-[0mGET /api/db-status [32m200[0m 272.510 ms - 138[0m
-[proxy] → POST http://localhost:5001/api/query
-[proxy] → POST http://localhost:5001/api/settings
-[0mPOST /api/query [0m-[0m - ms - -[0m
-[0mPOST /api/settings [0m-[0m - ms - -[0m
-[0mGET / [36m304[0m 3.184 ms - -[0m
-[0mGET /style.css [36m304[0m 2.289 ms - -[0m
-[0mGET /app.js [36m304[0m 2.422 ms - -[0m
-[proxy] → GET http://localhost:5001/api/examples
-[proxy] → GET http://localhost:5001/api/health
-[0mGET /api/examples [32m200[0m 51.081 ms - 328[0m
-[0mGET /api/health [32m200[0m 77.991 ms - 112[0m
-[proxy] → GET http://localhost:5001/api/db-status
-[0mGET /api/db-status [32m200[0m 30.804 ms - 138[0m
-[0mGET / [36m304[0m 1.636 ms - -[0m
-[0mGET /style.css [36m304[0m 2.117 ms - -[0m
-[0mGET /app.js [36m304[0m 2.692 ms - -[0m
-[proxy] → GET http://localhost:5001/api/examples
-[proxy] → GET http://localhost:5001/api/health
-[0mGET /api/examples [32m200[0m 35.178 ms - 328[0m
-[0mGET /api/health [32m200[0m 49.935 ms - 112[0m
-[proxy] → GET http://localhost:5001/api/db-status
-[0mGET /api/db-status [32m200[0m 30.400 ms - 138[0m
-[0mGET / [36m304[0m 1.561 ms - -[0m
-[0mGET /style.css [36m304[0m 2.534 ms - -[0m
-[0mGET /app.js [36m304[0m 5.535 ms - -[0m
-[proxy] → GET http://localhost:5001/api/examples
-[proxy] → GET http://localhost:5001/api/health
-[0mGET /api/examples [32m200[0m 75.581 ms - 328[0m
-[0mGET /api/health [32m200[0m 93.598 ms - 112[0m
-[proxy] → GET http://localhost:5001/api/db-status
-[0mGET /api/db-status [0m-[0m - ms - -[0m
-[0mGET / [36m304[0m 9.806 ms - -[0m
-[0mGET /style.css [36m304[0m 5.128 ms - -[0m
-[0mGET /app.js [36m304[0m 4.550 ms - -[0m
-[proxy] → GET http://localhost:5001/api/examples
-[proxy] → GET http://localhost:5001/api/health
-[0mGET /api/examples [32m200[0m 18.816 ms - 328[0m
-[0mGET /api/health [32m200[0m 23.611 ms - 112[0m
-[proxy] → GET http://localhost:5001/api/db-status
-[0mGET /api/db-status [32m200[0m 12.512 ms - 138[0m
-[proxy] → POST http://localhost:5001/api/query
-[0mPOST /api/query [0m-[0m - ms - -[0m
-[0mGET /health [32m200[0m 5.216 ms - 7420[0m
-[0mGET / [36m304[0m 25.126 ms - -[0m
-[0mGET /style.css [36m304[0m 50.595 ms - -[0m
-[0mGET /app.js [36m304[0m 40.024 ms - -[0m
-[proxy] → GET http://localhost:5001/api/examples
-[proxy] → GET http://localhost:5001/api/health
-[0mGET /api/examples [32m200[0m 88.324 ms - 328[0m
-[0mGET /api/health [32m200[0m 94.435 ms - 112[0m
-[proxy] → GET http://localhost:5001/api/db-status
-[0mGET /api/db-status [32m200[0m 30.822 ms - 138[0m
-node:events:502
-      throw er; // Unhandled 'error' event
-      ^
-
-Error: listen EADDRINUSE: address already in use 0.0.0.0:3001
-    at Server.setupListenHandle [as _listen2] (node:net:1908:16)
-    at listenInCluster (node:net:1965:12)
-    at doListen (node:net:2139:7)
-    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
-Emitted 'error' event on Server instance at:
-    at emitErrorNT (node:net:1944:8)
-    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
-  code: 'EADDRINUSE',
-  errno: -4091,
-  syscall: 'listen',
-  address: '0.0.0.0',
-  port: 3001
-}
-
-Node.js v20.20.2
-[launcher] exited with code 1 (signal: null)
-[0mGET /health [32m200[0m 2.083 ms - 7420[0m
-[0mGET / [36m304[0m 2.044 ms - -[0m
-[0mGET /style.css [36m304[0m 1.884 ms - -[0m
-[0mGET /app.js [36m304[0m 4.077 ms - -[0m
-[proxy] → GET http://localhost:5001/api/examples
-[proxy] → GET http://localhost:5001/api/health
-[0mGET /api/examples [32m200[0m 68.964 ms - 328[0m
-[0mGET /api/health [32m200[0m 89.714 ms - 112[0m
-[proxy] → GET http://localhost:5001/api/db-status
-[0mGET /api/db-status [32m200[0m 17.097 ms - 138[0m
-node:events:502
-      throw er; // Unhandled 'error' event
-      ^
-
-Error: listen EADDRINUSE: address already in use 0.0.0.0:3001
-    at Server.setupListenHandle [as _listen2] (node:net:1908:16)
-    at listenInCluster (node:net:1965:12)
-    at doListen (node:net:2139:7)
-    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
-Emitted 'error' event on Server instance at:
-    at emitErrorNT (node:net:1944:8)
-    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
-  code: 'EADDRINUSE',
-  errno: -4091,
-  syscall: 'listen',
-  address: '0.0.0.0',
-  port: 3001
-}
-
-Node.js v20.20.2
-[launcher] exited with code 1 (signal: null)
-[0mPOST /auth/logout [32m200[0m 0.960 ms - 16[0m
-[auth] Login successful: admin
-[0mPOST /auth/login [32m200[0m 243.353 ms - 232[0m
-[proxy] → GET http://localhost:5001/api/examples
-[proxy] → GET http://localhost:5001/api/health
-[0mGET /api/examples [32m200[0m 66.703 ms - 328[0m
-[0mGET /api/health [32m200[0m 108.279 ms - 112[0m
-[proxy] → GET http://localhost:5001/api/db-status
-[0mGET /api/db-status [32m200[0m 52.282 ms - 138[0m
-[proxy] → POST http://localhost:5001/api/query
-[0mPOST /api/query [0m-[0m - ms - -[0m
-[0mGET /api/health [33m401[0m 0.614 ms - 55[0m
-[0mGET /api/health [33m401[0m 0.786 ms - 55[0m
-[0mGET /api/health [33m401[0m 1.511 ms - 55[0m
-[0mGET /health [32m200[0m 4.194 ms - 7420[0m
-node:events:502
-      throw er; // Unhandled 'error' event
-      ^
-
-Error: listen EADDRINUSE: address already in use 0.0.0.0:3001
-    at Server.setupListenHandle [as _listen2] (node:net:1908:16)
-    at listenInCluster (node:net:1965:12)
-    at doListen (node:net:2139:7)
-    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
-Emitted 'error' event on Server instance at:
-    at emitErrorNT (node:net:1944:8)
-    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
-  code: 'EADDRINUSE',
-  errno: -4091,
-  syscall: 'listen',
-  address: '0.0.0.0',
-  port: 3001
-}
-
-Node.js v20.20.2
-[launcher] exited with code 1 (signal: null)
-[0mGET /health [32m200[0m 1.417 ms - 7420[0m
-[0mGET / [36m304[0m 0.533 ms - -[0m
-[0mGET /style.css [36m304[0m 1.514 ms - -[0m
-[0mGET /app.js [36m304[0m 1.118 ms - -[0m
-node:events:502
-      throw er; // Unhandled 'error' event
-      ^
-
-Error: listen EADDRINUSE: address already in use 0.0.0.0:3001
-    at Server.setupListenHandle [as _listen2] (node:net:1908:16)
-    at listenInCluster (node:net:1965:12)
-    at doListen (node:net:2139:7)
-    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
-Emitted 'error' event on Server instance at:
-    at emitErrorNT (node:net:1944:8)
-    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
-  code: 'EADDRINUSE',
-  errno: -4091,
-  syscall: 'listen',
-  address: '0.0.0.0',
-  port: 3001
-}
-
-Node.js v20.20.2
-[launcher] exited with code 1 (signal: null)
-[auth] Login successful: admin
-[0mPOST /auth/login [32m200[0m 79.728 ms - 232[0m
-[proxy] → GET http://localhost:5001/api/examples
-[proxy] → GET http://localhost:5001/api/health
-[0mGET /api/examples [32m200[0m 8.491 ms - 328[0m
-[0mGET /api/health [32m200[0m 12.155 ms - 112[0m
-[proxy] → GET http://localhost:5001/api/db-status
-[0mGET /api/db-status [32m200[0m 6.829 ms - 138[0m
+[0mPOST /api/init [33m400[0m 6.676 ms - 249[0m
 [proxy] → POST http://localhost:5001/api/init
-[0mPOST /api/init [32m200[0m 4.463 ms - 185[0m
-[proxy] → GET http://localhost:5001/api/db-status
-[0mGET /api/db-status [32m200[0m 4.317 ms - 138[0m
-[proxy] → POST http://localhost:5001/api/query
-[launcher] exited with code 3221225786 (signal: null)
+[0mPOST /api/init [33m400[0m 5.849 ms - 249[0m
+[proxy] → POST http://localhost:5001/api/init
+[0mPOST /api/init [33m400[0m 5.970 ms - 249[0m
+[proxy] → POST http://localhost:5001/api/init
+[0mPOST /api/init [33m400[0m 5.228 ms - 249[0m
+[proxy] → POST http://localhost:5001/api/init
+[0mPOST /api/init [33m400[0m 6.005 ms - 249[0m
 
 ═══════════════════════════════════════════════════════════
   CHiPS-RAG  –  Express UI Server
@@ -398,44 +40,42 @@ Node.js v20.20.2
   Mode    →  development
 ═══════════════════════════════════════════════════════════
 
-[0mGET /health [32m200[0m 5.699 ms - 7420[0m
-[0mGET / [36m304[0m 1.115 ms - -[0m
-[0mGET /style.css [36m304[0m 1.148 ms - -[0m
-[0mGET /app.js [36m304[0m 1.042 ms - -[0m
-
-═══════════════════════════════════════════════════════════
-  CHiPS-RAG  –  Express UI Server
-═══════════════════════════════════════════════════════════
-  UI      →  http://0.0.0.0:3001
-  Flask   →  http://localhost:5001  (proxied, JWT-guarded)
-  Mode    →  development
-═══════════════════════════════════════════════════════════
-
-[0mGET /health [32m200[0m 6.954 ms - 7420[0m
-[0mGET / [36m304[0m 0.835 ms - -[0m
-[0mGET /app.js [36m304[0m 1.139 ms - -[0m
-[0mGET /style.css [36m304[0m 1.281 ms - -[0m
-
-═══════════════════════════════════════════════════════════
-  CHiPS-RAG  –  Express UI Server
-═══════════════════════════════════════════════════════════
-  UI      →  http://0.0.0.0:3001
-  Flask   →  http://localhost:5001  (proxied, JWT-guarded)
-  Mode    →  development
-═══════════════════════════════════════════════════════════
-
-[0mGET /health [32m200[0m 5.179 ms - 7420[0m
-[0mGET / [36m304[0m 0.956 ms - -[0m
-[0mGET /app.js [36m304[0m 0.698 ms - -[0m
-[0mGET /style.css [36m304[0m 0.742 ms - -[0m
-[auth] Login successful: admin
-[0mPOST /auth/login [32m200[0m 109.758 ms - 232[0m
+[0mGET /health [32m200[0m 5.488 ms - 8039[0m
+[0mGET / [36m304[0m 0.945 ms - -[0m
+[0mGET /style.css [36m304[0m 0.715 ms - -[0m
+[0mGET /app.js [36m304[0m 0.614 ms - -[0m
 [proxy] → GET http://localhost:5001/api/examples
 [proxy] → GET http://localhost:5001/api/health
-[0mGET /api/examples [32m200[0m 22.941 ms - 328[0m
-[0mGET /api/health [32m200[0m 9.325 ms - 139[0m
+[0mGET /api/examples [32m200[0m 21.994 ms - 328[0m
+[0mGET /api/health [32m200[0m 23.130 ms - 113[0m
 [proxy] → POST http://localhost:5001/api/init
-[0mPOST /api/init [32m200[0m 15925.960 ms - 185[0m
+[0mPOST /api/init [33m400[0m 40.725 ms - 252[0m
+[proxy] → POST http://localhost:5001/api/init
+[0mPOST /api/init [33m400[0m 6.523 ms - 252[0m
+[proxy] → POST http://localhost:5001/api/init
+[0mPOST /api/init [33m400[0m 5.862 ms - 252[0m
+[proxy] → POST http://localhost:5001/api/init
+[0mPOST /api/init [33m400[0m 9.244 ms - 252[0m
+
+═══════════════════════════════════════════════════════════
+  CHiPS-RAG  –  Express UI Server
+═══════════════════════════════════════════════════════════
+  UI      →  http://0.0.0.0:3001
+  Flask   →  http://localhost:5001  (proxied, JWT-guarded)
+  Mode    →  development
+═══════════════════════════════════════════════════════════
+
+[0mGET /health [32m200[0m 6.253 ms - 8039[0m
+[0mGET / [36m304[0m 0.958 ms - -[0m
+[0mGET /app.js [36m304[0m 0.884 ms - -[0m
+[0mGET /style.css [36m304[0m 1.174 ms - -[0m
+[proxy] → GET http://localhost:5001/api/examples
+[proxy] → GET http://localhost:5001/api/health
+[0mGET /api/examples [32m200[0m 21.221 ms - 328[0m
+[0mGET /api/health [32m200[0m 21.776 ms - 113[0m
+[proxy] → POST http://localhost:5001/api/init
+[0mPOST /api/init [32m200[0m 88.934 ms - 185[0m
 [proxy] → GET http://localhost:5001/api/db-status
-[0mGET /api/db-status [32m200[0m 5.271 ms - 138[0m
+[0mGET /api/db-status [32m200[0m 5.826 ms - 138[0m
 [proxy] → POST http://localhost:5001/api/query
+[0mPOST /api/query [32m200[0m 16102.074 ms - 2873[0m

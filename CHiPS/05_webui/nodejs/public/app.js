@@ -4,6 +4,7 @@
  * Handles login → token storage → RAG UI.
  * All /api/* requests include Authorization: Bearer <token>.
  * On any 401 response the app redirects back to the login screen.
+ * PDFs are fetched as blobs using the auth token and shown in a half-screen panel.
  */
 
 'use strict';
@@ -25,9 +26,10 @@ const session = {
 
 // ── State ─────────────────────────────────────────────────────────────────
 const state = {
-  initialized: false,
-  loading:     false,
-  lastResults: [],
+  initialized:  false,
+  loading:      false,
+  lastResults:  [],
+  pdfBlobUrl:   null,   // current blob URL so we can revoke it on close
 };
 
 // ── DOM refs ──────────────────────────────────────────────────────────────
@@ -35,30 +37,30 @@ const $ = id => document.getElementById(id);
 
 const ui = {
   // login
-  loginScreen:   $('login-screen'),
-  loginForm:     $('login-form'),
-  loginUsername: $('login-username'),
-  loginPassword: $('login-password'),
-  loginError:    $('login-error'),
-  loginSubmit:   $('login-submit'),
-  loginBtnText:  $('login-btn-text'),
+  loginScreen:     $('login-screen'),
+  loginForm:       $('login-form'),
+  loginUsername:   $('login-username'),
+  loginPassword:   $('login-password'),
+  loginError:      $('login-error'),
+  loginSubmit:     $('login-submit'),
+  loginBtnText:    $('login-btn-text'),
   loginBtnSpinner: $('login-btn-spinner'),
 
   // app shell
-  appShell:      $('app-shell'),
-  userDisplay:   $('user-display'),
-  btnLogout:     $('btn-logout'),
+  appShell:    $('app-shell'),
+  userDisplay: $('user-display'),
+  btnLogout:   $('btn-logout'),
 
   // rag ui
-  btnInit:       $('btn-init'),
-  btnSend:       $('btn-send'),
-  queryInput:    $('query-input'),
-  queryStatus:   $('query-status'),
-  queryTiming:   $('query-timing'),
-  chatEmpty:     $('chat-empty'),
-  chatMessages:  $('chat-messages'),
-  exampleList:   $('example-list'),
-  footerTime:    $('footer-time'),
+  btnInit:      $('btn-init'),
+  btnSend:      $('btn-send'),
+  queryInput:   $('query-input'),
+  queryStatus:  $('query-status'),
+  queryTiming:  $('query-timing'),
+  chatEmpty:    $('chat-empty'),
+  chatMessages: $('chat-messages'),
+  exampleList:  $('example-list'),
+  footerTime:   $('footer-time'),
 
   stPipelineDot: document.querySelector('#st-pipeline .status-dot'),
   stPipelineVal: $('st-pipeline-val'),
@@ -71,10 +73,19 @@ const ui = {
   numResultsLbl: $('num-results-display'),
   kgToggle:      $('kg-toggle'),
 
+  // source chunk drawer (right)
   drawerOverlay: $('drawer-overlay'),
   sourceDrawer:  $('source-drawer'),
   drawerBody:    $('drawer-body'),
   drawerClose:   $('drawer-close'),
+
+  // pdf panel (left half)
+  pdfPanel:      $('pdf-panel'),
+  pdfOverlay:    $('pdf-overlay'),
+  pdfIframe:     $('pdf-iframe'),
+  pdfTitle:      $('pdf-title'),
+  pdfClose:      $('pdf-close'),
+  pdfLoading:    $('pdf-loading'),
 
   toastContainer: $('toast-container'),
 };
@@ -94,7 +105,6 @@ const api = {
     const res  = await fetch(path, opts);
     const json = await res.json().catch(() => ({}));
 
-    // Any 401 → session expired, kick back to login
     if (res.status === 401) {
       session.clear();
       showLogin(json.expired
@@ -106,13 +116,24 @@ const api = {
     return { ok: res.ok, status: res.status, data: json };
   },
 
-  // Auth (no token needed)
+  // Fetch a PDF as a blob (uses auth token, stays in same page)
+  async fetchPdf(path) {
+    const res = await fetch(path, {
+      headers: { 'Authorization': `Bearer ${session.token()}` },
+    });
+    if (res.status === 401) {
+      session.clear();
+      showLogin('Your session has expired. Please sign in again.');
+      throw new Error('UNAUTHENTICATED');
+    }
+    if (!res.ok) throw new Error(`PDF fetch failed: ${res.status}`);
+    return res.blob();
+  },
+
   login:    (username, password) =>
     api._request('POST', '/auth/login', { username, password }, false),
   logout:   () =>
     api._request('POST', '/auth/logout', undefined, false),
-
-  // RAG (token required)
   health:   ()     => api._request('GET',  '/api/health'),
   init:     ()     => api._request('POST', '/api/init'),
   dbStatus: ()     => api._request('GET',  '/api/db-status'),
@@ -135,7 +156,6 @@ function showLogin(errorMsg) {
 function showApp() {
   ui.loginScreen.classList.add('hidden');
   ui.appShell.classList.remove('hidden');
-
   const user = session.user();
   if (user) ui.userDisplay.textContent = user.username;
 }
@@ -161,14 +181,12 @@ async function handleLogin(e) {
     return;
   }
 
-  // Show spinner
   ui.loginSubmit.disabled = true;
   ui.loginBtnText.classList.add('hidden');
   ui.loginBtnSpinner.classList.remove('hidden');
 
   try {
     const { ok, data } = await api.login(username, password);
-
     if (ok && data.success) {
       session.save(data.token, data.user);
       showApp();
@@ -191,6 +209,8 @@ async function handleLogin(e) {
 async function handleLogout() {
   await api.logout().catch(() => {});
   session.clear();
+  closePdfPanel();
+  closeDrawer();
   showLogin();
   toast('Signed out.', 'info', 2000);
 }
@@ -277,7 +297,6 @@ function disableQueryBar(msg = 'Loading…') {
   ui.btnSend.disabled        = true;
   ui.queryStatus.textContent = msg;
 }
-
 function autoResize() {
   ui.queryInput.style.height = 'auto';
   ui.queryInput.style.height = `${ui.queryInput.scrollHeight}px`;
@@ -294,13 +313,13 @@ function escapeHtml(str) {
 
 function appendMessage(role, text, meta = {}) {
   hideChatEmpty();
-  const msg      = document.createElement('div');
-  msg.className  = `msg${role === 'thinking' ? ' msg-thinking' : ''}`;
+  const msg     = document.createElement('div');
+  msg.className = `msg${role === 'thinking' ? ' msg-thinking' : ''}`;
 
-  const roleEl   = document.createElement('div');
-  roleEl.className = 'msg-role';
-  const label    = role === 'user' ? 'YOU' : role === 'assistant' ? 'ASSISTANT' : 'THINKING';
-  roleEl.innerHTML =
+  const roleEl      = document.createElement('div');
+  roleEl.className  = 'msg-role';
+  const label       = role === 'user' ? 'YOU' : role === 'assistant' ? 'ASSISTANT' : 'THINKING';
+  roleEl.innerHTML  =
     `<span class="msg-role-accent">◈</span> ${label}` +
     (meta.timing ? `<span class="timing-chip">${meta.timing}</span>` : '');
   msg.appendChild(roleEl);
@@ -320,7 +339,7 @@ function appendMessage(role, text, meta = {}) {
       .join('');
 
     if (role === 'assistant' && meta.results?.length) {
-      const btn = document.createElement('button');
+      const btn     = document.createElement('button');
       btn.className = 'sources-btn';
       btn.innerHTML = `<span class="source-count">${meta.results.length}</span> View sources`;
       btn.addEventListener('click', () => openDrawer(meta.results));
@@ -348,7 +367,7 @@ async function sendQuery() {
   const thinkingEl = appendMessage('thinking', '');
 
   try {
-    const numCtx     = parseInt(ui.numResults.value, 10);
+    const numCtx       = parseInt(ui.numResults.value, 10);
     const { ok, data } = await api.query(text, numCtx);
     thinkingEl.remove();
 
@@ -376,30 +395,86 @@ async function sendQuery() {
   updateFooterTime();
 }
 
-// ── Source drawer ─────────────────────────────────────────────────────────
+// ── PDF panel ─────────────────────────────────────────────────────────────
+async function openPdfPanel(fname) {
+  // Show panel immediately with loading state
+  ui.pdfTitle.textContent   = fname;
+  ui.pdfIframe.src          = '';
+  ui.pdfLoading.classList.remove('hidden');
+  ui.pdfIframe.classList.add('hidden');
+  ui.pdfPanel.classList.remove('hidden');
+  ui.pdfOverlay.classList.remove('hidden');
+
+  try {
+    const pdfPath = `/01_preprocessing/used_files/${encodeURIComponent(fname)}`;
+    const blob    = await api.fetchPdf(pdfPath);
+
+    // Revoke previous blob URL to free memory
+    if (state.pdfBlobUrl) {
+      URL.revokeObjectURL(state.pdfBlobUrl);
+    }
+
+    state.pdfBlobUrl = URL.createObjectURL(blob);
+    ui.pdfIframe.src = state.pdfBlobUrl;
+
+    // Show iframe once loaded
+    ui.pdfIframe.onload = () => {
+      ui.pdfLoading.classList.add('hidden');
+      ui.pdfIframe.classList.remove('hidden');
+    };
+  } catch (err) {
+    if (err.message !== 'UNAUTHENTICATED') {
+      ui.pdfLoading.classList.add('hidden');
+      ui.pdfPanel.innerHTML +=
+        `<div class="pdf-error">Could not load PDF: ${escapeHtml(err.message)}</div>`;
+      toast('Could not load PDF', 'error');
+    }
+  }
+}
+
+function closePdfPanel() {
+  ui.pdfPanel.classList.add('hidden');
+  ui.pdfOverlay.classList.add('hidden');
+  ui.pdfIframe.src = '';
+  if (state.pdfBlobUrl) {
+    URL.revokeObjectURL(state.pdfBlobUrl);
+    state.pdfBlobUrl = null;
+  }
+}
+
+// ── Source drawer (right panel) ───────────────────────────────────────────
 function openDrawer(results) {
   ui.drawerBody.innerHTML = '';
+
   results.forEach(r => {
     const card     = document.createElement('div');
     card.className = 'source-card';
     const score    = typeof r.score === 'number' ? r.score.toFixed(3) : '—';
     const fname    = r.actual_pdf || r.source || 'unknown';
-    const pdfUrl   = `/01_preprocessing/used_files/${encodeURIComponent(fname)}`;
+
     card.innerHTML = `
       <div class="source-card-header">
         <span class="source-rank">#${r.rank}</span>
-        <span class="source-filename">
-          <a href="${pdfUrl}" target="_blank" rel="noopener">${escapeHtml(fname)}</a>
-        </span>
+        <span class="source-filename">${escapeHtml(fname)}</span>
         <span class="source-score">${score}</span>
       </div>
       <div class="source-excerpt">${escapeHtml(r.excerpt || r.text?.slice(0,300) || '')}</div>
     `;
+
+    // View PDF button — fetches with auth token, shows in half-screen panel
+    const pdfBtn     = document.createElement('button');
+    pdfBtn.className = 'pdf-open-btn';
+    pdfBtn.innerHTML = '⬡ View PDF';
+    pdfBtn.addEventListener('click', () => openPdfPanel(fname));
+    card.appendChild(pdfBtn);
+
     ui.drawerBody.appendChild(card);
   });
+
   ui.drawerOverlay.classList.remove('hidden');
   ui.sourceDrawer.classList.remove('hidden');
 }
+
 function closeDrawer() {
   ui.drawerOverlay.classList.add('hidden');
   ui.sourceDrawer.classList.add('hidden');
@@ -431,9 +506,8 @@ async function pushSettings() {
   }).catch(() => {});
 }
 
-// ── RAG UI boot (called after successful login) ───────────────────────────
+// ── RAG UI boot ───────────────────────────────────────────────────────────
 async function bootRagUI() {
-  // Start the sidebar clock
   setInterval(() => {
     const now = new Date();
     ui.footerTime.textContent =
@@ -442,7 +516,6 @@ async function bootRagUI() {
 
   loadExamples();
 
-  // Check if pipeline is already warm
   try {
     const { ok, data } = await api.health();
     if (ok && data.pipeline_initialized) {
@@ -456,7 +529,6 @@ async function bootRagUI() {
     setAllStatus('error','unreachable','error','—','error','—');
   }
 
-  // Event listeners (attached once)
   ui.btnInit.addEventListener('click', initPipeline);
   ui.btnSend.addEventListener('click', sendQuery);
 
@@ -474,23 +546,27 @@ async function bootRagUI() {
   ui.numResults.addEventListener('change', pushSettings);
   ui.kgToggle.addEventListener('change',   pushSettings);
 
+  // Drawer close
   ui.drawerClose.addEventListener('click',   closeDrawer);
   ui.drawerOverlay.addEventListener('click', closeDrawer);
-  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeDrawer(); });
+
+  // PDF panel close
+  ui.pdfClose.addEventListener('click',   closePdfPanel);
+  ui.pdfOverlay.addEventListener('click', closePdfPanel);
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') { closeDrawer(); closePdfPanel(); }
+  });
 }
 
 // ── Entry point ───────────────────────────────────────────────────────────
 function boot() {
-  // Logout button (always wired regardless of login state)
   ui.btnLogout.addEventListener('click', handleLogout);
-
-  // Login form
   ui.loginForm.addEventListener('submit', handleLogin);
   ui.loginPassword.addEventListener('keydown', e => {
     if (e.key === 'Enter') handleLogin(e);
   });
 
-  // If a valid token already exists in sessionStorage, go straight to app
   if (session.exists()) {
     showApp();
     bootRagUI();

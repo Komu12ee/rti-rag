@@ -434,3 +434,61 @@ Node.js v20.20.2
 [proxy] → GET http://localhost:5002/api/db-status
 [0mGET /api/examples [32m200[0m 14.415 ms - 328[0m
 [0mGET /api/db-status [32m200[0m 15.416 ms - 149[0m
+
+═══════════════════════════════════════════════════════════
+  CHiPS-RAG  –  Express UI Server
+═══════════════════════════════════════════════════════════
+  UI      →  http://0.0.0.0:3002
+  Flask   →  http://localhost:5002  (proxied, JWT-guarded)
+  Mode    →  development
+═══════════════════════════════════════════════════════════
+
+[0mGET /health [32m200[0m 7.276 ms - 7420[0m
+[0mGET / [36m304[0m 0.953 ms - -[0m
+[0mGET /app.js [36m304[0m 0.641 ms - -[0m
+[0mGET /style.css [36m304[0m 0.719 ms - -[0m
+[proxy] → GET http://localhost:5002/api/examples
+[proxy] → GET http://localhost:5002/api/db-status
+[0mGET /api/db-status [32m200[0m 15.152 ms - 149[0m
+[0mGET /api/examples [32m200[0m 18.228 ms - 328[0m
+[0mGET / [36m304[0m 0.710 ms - -[0m
+[0mGET /style.css [36m304[0m 1.161 ms - -[0m
+[0mGET /app.js [36m304[0m 0.807 ms - -[0m
+[proxy] → GET http://localhost:5002/api/examples
+[proxy] → GET http://localhost:5002/api/db-status
+[0mGET /api/examples [32m200[0m 5.998 ms - 328[0m
+[0mGET /api/db-status [32m200[0m 6.459 ms - 149[0m
+[0mGET / [36m304[0m 0.595 ms - -[0m
+[0mGET /style.css [36m304[0m 1.255 ms - -[0m
+[0mGET /app.js [36m304[0m 1.260 ms - -[0m
+[proxy] → GET http://localhost:5002/api/examples
+[proxy] → GET http://localhost:5002/api/db-status
+[0mGET /api/examples [32m200[0m 6.258 ms - 328[0m
+[0mGET /api/db-status [32m200[0m 7.148 ms - 149[0m
+[0mGET /health [32m200[0m 1.528 ms - 7420[0m
+
+═══════════════════════════════════════════════════════════
+  CHiPS-RAG  –  Express UI Server
+═══════════════════════════════════════════════════════════
+  UI      →  http://0.0.0.0:3002
+  Flask   →  http://localhost:5002  (proxied, JWT-guarded)
+  Mode    →  development
+═══════════════════════════════════════════════════════════
+
+[proxy] → POST http://localhost:5002/api/init
+[0mGET / [36m304[0m 4.386 ms - -[0m
+[0mGET /style.css [36m304[0m 1.587 ms - -[0m
+[0mGET /app.js [32m200[0m 6.703 ms - 15896[0m
+[0mGET /? [32m200[0m 2.331 ms - 7420[0m
+[0mGET /style.css [36m304[0m 1.190 ms - -[0m
+[0mGET /app.js [36m304[0m 1.298 ms - -[0m
+[0mPOST /api/init [32m200[0m 13307.735 ms - 185[0m
+[0mGET /? [36m304[0m 0.794 ms - -[0m
+[0mGET /app.js [36m304[0m 0.650 ms - -[0m
+[0mGET /style.css [36m304[0m 0.670 ms - -[0m
+[0mGET /? [36m304[0m 0.903 ms - -[0m
+[0mGET /style.css [36m304[0m 1.421 ms - -[0m
+[0mGET /app.js [36m304[0m 0.949 ms - -[0m
+[0mGET / [36m304[0m 0.744 ms - -[0m
+[0mGET /style.css [36m304[0m 1.897 ms - -[0m
+[0mGET /app.js [36m304[0m 2.590 ms - -[0m

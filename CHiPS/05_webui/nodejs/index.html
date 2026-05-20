@@ -180,6 +180,27 @@
     <div id="drawer-body"></div>
   </aside>
 
+  <!-- ── PDF panel (half screen, slides in from left) ─────────── -->
+  <div id="pdf-overlay" class="hidden"></div>
+  <aside id="pdf-panel" class="hidden">
+    <div class="pdf-panel-header">
+      <div class="pdf-panel-title-row">
+        <span class="section-label">DOCUMENT</span>
+        <button id="pdf-close" aria-label="Close PDF">✕</button>
+      </div>
+      <div id="pdf-title" class="pdf-filename"></div>
+    </div>
+    <div class="pdf-panel-body">
+      <div id="pdf-loading" class="pdf-loading">
+        <div class="thinking-dot"></div>
+        <div class="thinking-dot"></div>
+        <div class="thinking-dot"></div>
+        <span>Loading PDF2026</span>
+      </div>
+      <iframe id="pdf-iframe" class="hidden" title="PDF viewer"></iframe>
+    </div>
+  </aside>
+
   <!-- ── Toast ─────────────────────────────────────────────────── -->
   <div id="toast-container" aria-live="polite"></div>
 

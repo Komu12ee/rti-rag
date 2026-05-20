@@ -113,7 +113,6 @@ const api = {
 
   // RAG (token required)
   health: () => api._request('GET', '/api/health'),
-  init: () => api._request('POST', '/api/init'),
   dbStatus: () => api._request('GET', '/api/db-status'),
   examples: () => api._request('GET', '/api/examples'),
   settings: (body) => api._request(body ? 'POST' : 'GET', '/api/settings', body),
@@ -219,15 +218,6 @@ function updateFooterTime() {
     `Updated ${now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}`;
 }
 
-// ── Init pipeline ─────────────────────────────────────────────────────────
-// Manual init removed - auto-launch handles initialization on pm2 start
-// This function retained for backwards compatibility if needed
-async function initPipeline() {
-  console.log('[UI] Manual init button pressed - pipeline should be auto-initialized by pm2');
-  await refreshDbStatus();
-  enableQueryBar();
-}
-
 async function refreshDbStatus() {
   try {
     const { ok, data } = await api.dbStatus();
@@ -311,45 +301,23 @@ function appendMessage(role, text, meta = {}) {
 }
 
 // ── Send query ────────────────────────────────────────────────────────────
-async function sendQuery() {
-  const text = ui.queryInput.value.trim();
-  if (!text || state.loading) return;
-
-  state.loading = true;
-  disableQueryBar('Retrieving…');
-  appendMessage('user', text);
-  ui.queryInput.value = '';
-  autoResize();
-
-  const thinkingEl = appendMessage('thinking', '');
-
-  try {
-    const numCtx = parseInt(ui.numResults.value, 10);
-    const { ok, data } = await api.query(text, numCtx);
-    thinkingEl.remove();
-
-    if (ok && data.success) {
-      state.lastResults = data.results || [];
-      appendMessage('assistant', data.answer, {
-        timing: data.execution_time,
-        results: state.lastResults,
-      });
-      ui.queryTiming.textContent = data.execution_time;
-    } else {
-      appendMessage('assistant', `⚠ ${data.error || 'Unknown error'}`);
-      toast(data.error || 'Query failed', 'error');
-    }
-  } catch (err) {
-    if (err.message !== 'UNAUTHENTICATED') {
-      thinkingEl.remove();
-      appendMessage('assistant', '⚠ Network error — is the backend running?');
-      toast('Network error', 'error');
-    }
-  }
-
-  state.loading = false;
+// Manual init removed - auto-launch handles initialization on pm2 start
+// This function retained for backwards compatibility if needed
+async function initPipeline() {
+  console.log('[UI] Manual init button pressed - pipeline should be auto-initialized by pm2');
+  await refreshDbStatus();
   enableQueryBar();
-  updateFooterTime();
+} catch (err) {
+  if (err.message !== 'UNAUTHENTICATED') {
+    thinkingEl.remove();
+    appendMessage('assistant', '⚠ Network error — is the backend running?');
+    toast('Network error', 'error');
+  }
+}
+
+state.loading = false;
+enableQueryBar();
+updateFooterTime();
 }
 
 // ── Source drawer ─────────────────────────────────────────────────────────
@@ -407,7 +375,7 @@ async function pushSettings() {
   }).catch(() => { });
 }
 
-// ── RAG UI boot (called after successful login) ───────────────────────────
+// ── RAG UI boot (auto-started) ───────────────────────────────────────────
 async function bootRagUI() {
   // Start the sidebar clock
   setInterval(() => {
@@ -418,7 +386,6 @@ async function bootRagUI() {
 
   loadExamples();
 
-  // Check if pipeline is already initialized by auto-launch
   try {
     await refreshDbStatus();
     enableQueryBar();
@@ -428,7 +395,6 @@ async function bootRagUI() {
 
   // Event listeners (attached once)
   ui.btnSend.addEventListener('click', sendQuery);
-
   ui.queryInput.addEventListener('keydown', e => {
     if (e.key === 'Enter' && !e.shiftKey) {
       e.preventDefault();
