@@ -2,10 +2,16 @@ import os
 import json
 import atexit
 import time
+import sys
 from pathlib import Path
 import requests
 from qdrant_client import QdrantClient
 from FlagEmbedding import BGEM3FlagModel, FlagReranker
+
+for stream_name in ("stdout", "stderr"):
+    stream = getattr(sys, stream_name, None)
+    if hasattr(stream, "reconfigure"):
+        stream.reconfigure(encoding="utf-8", errors="replace")
 
 # ── Timing Utilities ───────────────────────────────────────────
 _pipeline_start = None
@@ -40,17 +46,25 @@ def _print_timing_summary():
 def _get_config():
     """Load configuration with environment variable overrides."""
     root = Path(__file__).resolve().parents[2]  # CHiPPY directory
+    qdrant_mode = os.getenv("QDRANT_MODE", "local").lower()
     return {
         "chunk_dir": Path(os.getenv("CHIPPY_CHUNK_DIR", str(root.parent / "chunking" / "output_child_first"))),
         "collection": os.getenv("CHIPPY_QDRANT_COLLECTION", "db3"),
+        "qdrant_mode": qdrant_mode,
         "qdrant_local_path": Path(
             os.getenv(
                 "CHIPPY_QDRANT_LOCAL_PATH",
                 str(root / "04_embeddings_and_kg" / "db" / "qdrant_local")
             )
         ),
+        "qdrant_host": os.getenv("QDRANT_HOST", "localhost"),
+        "qdrant_port": int(os.getenv("QDRANT_PORT", "6333")),
+        "qdrant_api_key": os.getenv("QDRANT_API_KEY", None),
+        "qdrant_timeout": int(os.getenv("QDRANT_TIMEOUT", "60")),
         "encode_batch_size": 8,
         "max_length": 1024,
+        "qdrant_connect_retries": int(os.getenv("CHIPPY_QDRANT_CONNECT_RETRIES", "3")),
+        "qdrant_connect_delay": float(os.getenv("CHIPPY_QDRANT_CONNECT_DELAY", "1.5")),
     }
 
 CFG = _get_config()
@@ -130,83 +144,109 @@ def extract_highlighted_excerpt(chunk_text, query_words, max_length=300):
         excerpt = excerpt[:max_length].rsplit(' ', 1)[0] + '...'
     
     return excerpt.strip()
-    """Extract the most relevant part of chunk text containing query words.
-    
-    Args:
-        chunk_text: Full chunk text
-        query_words: List of important words from the query
-        max_length: Max length of excerpt
-    
-    Returns:
-        Highlighted excerpt with query words in context
-    """
-    sentences = chunk_text.split('. ')
-    best_sentences = []
-    
-    for sentence in sentences:
-        sentence_lower = sentence.lower()
-        if any(word.lower() in sentence_lower for word in query_words if len(word) > 3):
-            best_sentences.append(sentence.strip())
-    
-    if best_sentences:
-        excerpt = '. '.join(best_sentences[:2])  # Take first 2 matching sentences
-    else:
-        excerpt = chunk_text[:max_length]
-    
-    # Truncate if too long
-    if len(excerpt) > max_length:
-        excerpt = excerpt[:max_length].rsplit(' ', 1)[0] + '...'
-    
-    return excerpt.strip()
 
-# ── Load models ────────────────────────────────────────────────
-print("Loading embedding model...")
-model = BGEM3FlagModel("BAAI/bge-m3", use_fp16=True)
-model.return_sparse = True  # Enable sparse embeddings generation
-
-print("Loading reranker model...")
-reranker = FlagReranker("BAAI/bge-reranker-v2-m3", use_fp16=True)
-
-# ── Load Knowledge Graph (if available) ────────────────────────
+# Models and KG will be lazy-loaded on first retrieval to avoid heavy import-time work
+model = None
+reranker = None
 kg_retriever = None
-if USE_KNOWLEDGE_GRAPH:
-    try:
-        from knowledge_graph import DocumentKnowledgeGraph
-        from kg_retriever import KnowledgeGraphRetriever
-        
-        print("Loading knowledge graph...")
-        kg = DocumentKnowledgeGraph()
-        kg_path = os.path.join(os.path.dirname(__file__), "knowledge_graph.json")
-        
-        if os.path.exists(kg_path):
-            kg.load(kg_path)
-            kg_retriever = KnowledgeGraphRetriever(kg, model)
-            print(f"✓ Knowledge graph loaded: {len(kg.entities)} entities")
-        else:
-            print(f"⚠ Knowledge graph not found at {kg_path}")
-            print("  Run 'python build_knowledge_graph.py' to create it")
-            USE_KNOWLEDGE_GRAPH = False
-    except ImportError as e:
-        print(f"⚠ Could not import knowledge graph modules: {e}")
-        USE_KNOWLEDGE_GRAPH = False
+kg = None
+_models_loaded = False
 
-# ── Connect to Qdrant (local embedded mode) ────────────────────
-print(f"Connecting to local Qdrant at {CFG['qdrant_local_path']}...")
-try:
+def ensure_models_loaded():
+    """Load embedding, reranker and KG models on first use."""
+    global model, reranker, kg_retriever, kg, _models_loaded
+    if _models_loaded:
+        return
+
+    print("Loading embedding model (deferred)...")
+    model = BGEM3FlagModel("BAAI/bge-m3", use_fp16=True)
+    model.return_sparse = True
+
+    print("Loading reranker model (deferred)...")
+    reranker = FlagReranker("BAAI/bge-reranker-v2-m3", use_fp16=True)
+
+    # Load Knowledge Graph (if available)
+    if USE_KNOWLEDGE_GRAPH:
+        try:
+            from knowledge_graph import DocumentKnowledgeGraph
+            from kg_retriever import KnowledgeGraphRetriever
+
+            print("Loading knowledge graph (deferred)...")
+            kg = DocumentKnowledgeGraph()
+            kg_path = os.path.join(os.path.dirname(__file__), "knowledge_graph.json")
+
+            if os.path.exists(kg_path):
+                kg.load(kg_path)
+                kg_retriever = KnowledgeGraphRetriever(kg, model)
+                print(f"✓ Knowledge graph loaded: {len(kg.entities)} entities")
+            else:
+                print(f"⚠ Knowledge graph not found at {kg_path}")
+                print("  Run 'python build_knowledge_graph.py' to create it")
+                kg_retriever = None
+        except ImportError as e:
+            print(f"⚠ Could not import knowledge graph modules: {e}")
+            kg_retriever = None
+
+    _models_loaded = True
+
+client = None
+
+
+def _connect_qdrant_once():
+    """Create a Qdrant client using the configured local or remote mode."""
+    if CFG["qdrant_mode"] == "remote":
+        print(f"Connecting to remote Qdrant at {CFG['qdrant_host']}:{CFG['qdrant_port']}...")
+        qdrant = QdrantClient(
+            host=CFG["qdrant_host"],
+            port=CFG["qdrant_port"],
+            api_key=CFG["qdrant_api_key"],
+            timeout=CFG["qdrant_timeout"],
+        )
+        qdrant.get_collections()
+        print(f"✓ Connected to remote Qdrant at {CFG['qdrant_host']}:{CFG['qdrant_port']}")
+        return qdrant
+
+    print(f"Connecting to local Qdrant at {CFG['qdrant_local_path']}...")
     CFG["qdrant_local_path"].mkdir(parents=True, exist_ok=True)
-    client = QdrantClient(path=str(CFG["qdrant_local_path"]))
-    client.get_collections()
+    qdrant = QdrantClient(path=str(CFG["qdrant_local_path"]))
+    qdrant.get_collections()
     print("✓ Connected to local embedded Qdrant")
-except Exception as e:
-    print(f"✗ Failed to initialize local Qdrant: {e}")
-    print(f"Make sure {CFG['qdrant_local_path']} is writable")
-    exit(1)
+    return qdrant
+
+
+def ensure_qdrant_client():
+    """Create the module-level Qdrant client on demand with a short retry for stale locks."""
+    global client
+    if client is not None:
+        return client
+
+    last_error = None
+    for attempt in range(1, CFG["qdrant_connect_retries"] + 1):
+        try:
+            client = _connect_qdrant_once()
+            return client
+        except Exception as e:
+            last_error = e
+            message = str(e)
+            if "already accessed by another instance" in message and attempt < CFG["qdrant_connect_retries"]:
+                wait_seconds = CFG["qdrant_connect_delay"] * attempt
+                print(
+                    f"[RAG] Local Qdrant is still locked; retrying in {wait_seconds:.1f}s "
+                    f"({attempt}/{CFG['qdrant_connect_retries']})..."
+                )
+                time.sleep(wait_seconds)
+                continue
+            break
+
+    raise RuntimeError(
+        f"Unable to initialize Qdrant in {CFG['qdrant_mode']} mode: {last_error}"
+    ) from last_error
 
 
 def _cleanup_qdrant():
     """Explicitly close Qdrant client on exit to avoid shutdown import errors."""
     try:
-        if 'client' in globals():
+        if client is not None:
             client.close()
     except Exception:
         pass  # Suppress cleanup errors during shutdown
@@ -282,6 +322,9 @@ def expand_query(original_query):
 def perform_single_retrieval(query):
     """Perform single query retrieval and return results."""
     try:
+        ensure_models_loaded()
+        qdrant = ensure_qdrant_client()
+
         # Encode query with explicit batch_size to ensure sparse embeddings are generated
         # Using batch_size=1 explicitly ensures consistent behavior with batch encoding
         query_encoding = model.encode(
@@ -313,7 +356,7 @@ def perform_single_retrieval(query):
             query_sparse = lex_weights
         
         # Dense search
-        dense_results = client.query_points(
+        dense_results = qdrant.query_points(
             collection_name=COLLECTION_NAME,
             query=query_dense,
             limit=20
@@ -342,6 +385,7 @@ def multi_query_retrieval(query):
     - More robust to query phrasing variations
     """
     _mark_time("MULTI_QUERY_RETRIEVAL")
+    ensure_models_loaded()
     
     if not USE_MULTI_QUERY:
         # Fall back to single query
@@ -658,6 +702,7 @@ def retrieve_context(query, num_context=5, use_kg=True):
         import traceback
         traceback.print_exc()
         _mark_time("RETRIEVE_CONTEXT")
+        return None
 
 # ── Helper: Generate answer with Llama 3.3 70B via Groq API ─────
 def generate_answer(query, context_results):

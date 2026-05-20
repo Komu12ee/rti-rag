@@ -1,0 +1,359 @@
+
+======================================================================
+CHiPS-RAG Pipeline (Internal Backend)
+======================================================================
+
+RAG Pipeline Status: Deferred (loaded on demand)
+Environment: development
+
+This Flask server is INTERNAL ONLY.
+Authentication is handled by Express.js at :3000
+
+Starting Flask server on http://0.0.0.0:5002 (debug: False)
+Press Ctrl+C to stop the server
+
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://10.64.1.148:5002
+Press CTRL+C to quit
+127.0.0.1 - - [18/May/2026 16:08:28] "GET /api/health HTTP/1.1" 200 -
+
+======================================================================
+CHiPS-RAG Pipeline (Internal Backend)
+======================================================================
+
+RAG Pipeline Status: Deferred (loaded on demand)
+Environment: development
+
+This Flask server is INTERNAL ONLY.
+Authentication is handled by Express.js at :3000
+
+Starting Flask server on http://0.0.0.0:5002 (debug: False)
+Press Ctrl+C to stop the server
+
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://10.64.1.148:5002
+Press CTRL+C to quit
+127.0.0.1 - - [18/May/2026 16:14:18] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [18/May/2026 16:17:18] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [18/May/2026 16:17:18] "GET /api/health HTTP/1.1" 200 -
+
+======================================================================
+CHiPS-RAG Pipeline (Internal Backend)
+======================================================================
+
+RAG Pipeline Status: Deferred (loaded on demand)
+Environment: development
+
+This Flask server is INTERNAL ONLY.
+Authentication is handled by Express.js at :3000
+
+Starting Flask server on http://0.0.0.0:5002 (debug: False)
+Press Ctrl+C to stop the server
+
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://10.64.1.148:5002
+Press CTRL+C to quit
+[launcher] exited with code 3221225786 (signal: null)
+
+======================================================================
+CHiPS-RAG Pipeline (Internal Backend)
+======================================================================
+
+RAG Pipeline Status: Deferred (loaded on demand)
+Environment: development
+
+This Flask server is INTERNAL ONLY.
+Authentication is handled by Express.js at :3000
+
+Starting Flask server on http://0.0.0.0:5002 (debug: False)
+Press Ctrl+C to stop the server
+
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://10.66.246.232:5002
+Press CTRL+C to quit
+127.0.0.1 - - [19/May/2026 13:10:01] "GET /api/health HTTP/1.1" 200 -
+
+======================================================================
+CHiPS-RAG Pipeline (Internal Backend)
+======================================================================
+
+RAG Pipeline Status: Deferred (loaded on demand)
+Environment: development
+
+This Flask server is INTERNAL ONLY.
+Authentication is handled by Express.js at :3000
+
+Starting Flask server on http://0.0.0.0:5002 (debug: False)
+Press Ctrl+C to stop the server
+
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://10.66.246.232:5002
+Press CTRL+C to quit
+127.0.0.1 - - [19/May/2026 13:10:46] "GET /api/health HTTP/1.1" 200 -
+
+======================================================================
+CHiPS-RAG Pipeline (Internal Backend)
+======================================================================
+
+RAG Pipeline Status: Deferred (loaded on demand)
+Environment: development
+
+This Flask server is INTERNAL ONLY.
+Authentication is handled by Express.js at :3000
+
+Starting Flask server on http://0.0.0.0:5002 (debug: False)
+Press Ctrl+C to stop the server
+
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://10.66.246.232:5002
+Press CTRL+C to quit
+127.0.0.1 - - [19/May/2026 13:14:29] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [19/May/2026 13:14:30] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [19/May/2026 13:14:30] "GET /api/examples HTTP/1.1" 200 -
+[Web UI] Found RAG module at: D:\Code\CRV2\FG\04_embeddings_and_kg\scripts\rag_pipeline.py
+Loading embedding model...
+Fetching 30 files:   0%|          | 0/30 [00:00<?, ?it/s]Fetching 30 files: 100%|██████████| 30/30 [00:00<00:00, 22465.47it/s]
+127.0.0.1 - - [19/May/2026 13:15:48] "POST /api/init HTTP/1.1" 200 -
+127.0.0.1 - - [19/May/2026 13:15:48] "GET /api/db-status HTTP/1.1" 200 -
+
+======================================================================
+CHiPS-RAG Pipeline (Internal Backend)
+======================================================================
+
+RAG Pipeline Status: Deferred (loaded on demand)
+Environment: development
+
+This Flask server is INTERNAL ONLY.
+Authentication is handled by Express.js at :3000
+
+Starting Flask server on http://0.0.0.0:5002 (debug: False)
+Press Ctrl+C to stop the server
+
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://10.66.246.232:5002
+Press CTRL+C to quit
+127.0.0.1 - - [19/May/2026 13:23:15] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [19/May/2026 13:23:16] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [19/May/2026 13:23:16] "GET /api/examples HTTP/1.1" 200 -
+127.0.0.1 - - [19/May/2026 13:23:22] "GET /api/examples HTTP/1.1" 200 -
+127.0.0.1 - - [19/May/2026 13:23:22] "GET /api/health HTTP/1.1" 200 -
+
+======================================================================
+CHiPS-RAG Pipeline (Internal Backend)
+======================================================================
+
+RAG Pipeline Status: Deferred (loaded on demand)
+Environment: development
+
+This Flask server is INTERNAL ONLY.
+Authentication is handled by Express.js at :3000
+
+Starting Flask server on http://0.0.0.0:5002 (debug: False)
+Press Ctrl+C to stop the server
+
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://10.66.246.232:5002
+Press CTRL+C to quit
+127.0.0.1 - - [19/May/2026 13:34:34] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [19/May/2026 13:34:35] "GET /api/examples HTTP/1.1" 200 -
+127.0.0.1 - - [19/May/2026 13:34:35] "GET /api/health HTTP/1.1" 200 -
+[Web UI] Found RAG module at: D:\Code\CRV2\FG\04_embeddings_and_kg\scripts\rag_pipeline.py
+127.0.0.1 - - [19/May/2026 13:34:56] "POST /api/init HTTP/1.1" 200 -
+127.0.0.1 - - [19/May/2026 13:34:56] "GET /api/db-status HTTP/1.1" 200 -
+127.0.0.1 - - [19/May/2026 15:52:09] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [19/May/2026 15:52:09] "GET /api/examples HTTP/1.1" 200 -
+127.0.0.1 - - [19/May/2026 15:52:09] "GET /api/db-status HTTP/1.1" 200 -
+
+======================================================================
+CHiPS-RAG Pipeline (Internal Backend)
+======================================================================
+
+RAG Pipeline Status: Deferred (loaded on demand)
+Environment: development
+
+This Flask server is INTERNAL ONLY.
+Authentication is handled by Express.js at :3000
+
+Starting Flask server on http://0.0.0.0:5002 (debug: False)
+Press Ctrl+C to stop the server
+
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://10.62.168.199:5002
+Press CTRL+C to quit
+127.0.0.1 - - [20/May/2026 11:53:29] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:53:30] "GET /api/examples HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:53:30] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:54:39] "GET /api/examples HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:54:39] "GET /api/health HTTP/1.1" 200 -
+[Web UI] Found RAG module at: D:\Code\CRV2\FG\04_embeddings_and_kg\scripts\rag_pipeline.py
+[Web UI] Found RAG module at: D:\Code\CRV2\FG\04_embeddings_and_kg\scripts\rag_pipeline.py
+127.0.0.1 - - [20/May/2026 11:55:14] "POST /api/init HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:55:14] "GET /api/db-status HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:55:18] "POST /api/init HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:56:43] "GET /api/health HTTP/1.1" 200 -
+
+======================================================================
+CHiPS-RAG Pipeline (Internal Backend)
+======================================================================
+
+RAG Pipeline Status: Deferred (loaded on demand)
+Environment: development
+
+This Flask server is INTERNAL ONLY.
+Authentication is handled by Express.js at :3000
+
+Starting Flask server on http://0.0.0.0:5002 (debug: False)
+Press Ctrl+C to stop the server
+
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://10.62.168.199:5002
+Press CTRL+C to quit
+127.0.0.1 - - [20/May/2026 11:56:47] "GET /api/examples HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:56:47] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:56:47] "GET /api/examples HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:56:47] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:56:47] "GET /api/examples HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:56:47] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:56:48] "GET /api/examples HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:56:48] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:56:48] "GET /api/examples HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:56:48] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:56:54] "GET /api/examples HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:56:54] "GET /api/health HTTP/1.1" 200 -
+[Web UI] Found RAG module at: D:\Code\CRV2\FG\04_embeddings_and_kg\scripts\rag_pipeline.py
+127.0.0.1 - - [20/May/2026 11:57:21] "POST /api/init HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:57:21] "GET /api/db-status HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:57:25] "GET /api/health HTTP/1.1" 200 -
+
+======================================================================
+CHiPS-RAG Pipeline (Internal Backend)
+======================================================================
+
+RAG Pipeline Status: Deferred (loaded on demand)
+Environment: development
+
+This Flask server is INTERNAL ONLY.
+Authentication is handled by Express.js at :3000
+
+Starting Flask server on http://0.0.0.0:5002 (debug: False)
+Press Ctrl+C to stop the server
+
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://10.62.168.199:5002
+Press CTRL+C to quit
+127.0.0.1 - - [20/May/2026 11:57:27] "GET /api/examples HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:57:28] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:57:28] "GET /api/examples HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:57:28] "GET /api/health HTTP/1.1" 200 -
+[Web UI] Found RAG module at: D:\Code\CRV2\FG\04_embeddings_and_kg\scripts\rag_pipeline.py
+[Web UI] Found RAG module at: D:\Code\CRV2\FG\04_embeddings_and_kg\scripts\rag_pipeline.py
+127.0.0.1 - - [20/May/2026 11:57:38] "POST /api/init HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:57:44] "GET /api/examples HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:57:44] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:57:47] "POST /api/init HTTP/1.1" 400 -
+127.0.0.1 - - [20/May/2026 11:57:48] "GET /api/db-status HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:57:52] "GET /api/examples HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:57:52] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:57:57] "GET /api/db-status HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:58:03] "POST /api/init HTTP/1.1" 400 -
+127.0.0.1 - - [20/May/2026 11:58:26] "POST /api/init HTTP/1.1" 400 -
+
+======================================================================
+CHiPS-RAG Pipeline (Internal Backend)
+======================================================================
+
+RAG Pipeline Status: Deferred (loaded on demand)
+Environment: development
+
+This Flask server is INTERNAL ONLY.
+Authentication is handled by Express.js at :3000
+
+Starting Flask server on http://0.0.0.0:5002 (debug: False)
+Press Ctrl+C to stop the server
+
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://10.62.168.199:5002
+Press CTRL+C to quit
+127.0.0.1 - - [20/May/2026 12:04:27] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 12:04:28] "GET /api/db-status HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 12:04:28] "GET /api/examples HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 12:04:30] "GET /api/examples HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 12:04:30] "GET /api/db-status HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 12:12:40] "GET /api/examples HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 12:12:40] "GET /api/db-status HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 12:12:40] "GET /api/examples HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 12:12:40] "GET /api/db-status HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 12:12:41] "GET /api/examples HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 12:12:41] "GET /api/db-status HTTP/1.1" 200 -
+
+======================================================================
+CHiPS-RAG Pipeline (Internal Backend)
+======================================================================
+
+RAG Pipeline Status: Deferred (loaded on demand)
+Environment: development
+
+This Flask server is INTERNAL ONLY.
+Authentication is handled by Express.js at :3000
+
+Starting Flask server on http://0.0.0.0:5002 (debug: False)
+Press Ctrl+C to stop the server
+
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://10.62.168.199:5002
+Press CTRL+C to quit
+127.0.0.1 - - [20/May/2026 12:17:32] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 12:17:33] "GET /api/examples HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 12:17:33] "GET /api/db-status HTTP/1.1" 200 -

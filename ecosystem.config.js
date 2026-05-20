@@ -18,6 +18,7 @@ module.exports = {
             env: {
                 NODE_ENV: 'development',
                 PORT: 3000,
+                AUTO_LAUNCH_PIPELINES: 'fg2',  // Only FG-2 for now (avoids Qdrant lock); use server mode for concurrent access
             },
         }
     ]

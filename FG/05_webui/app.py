@@ -57,11 +57,15 @@ def _build_initialize_pipeline(rag_module):
         }
 
         client = getattr(rag_module, 'client', None)
+        ensure_qdrant_client = getattr(rag_module, 'ensure_qdrant_client', None)
         collection_name = getattr(rag_module, 'COLLECTION_NAME', None)
         if collection_name is None and hasattr(rag_module, 'CFG'):
             collection_name = rag_module.CFG.get('collection')
 
         try:
+            if client is None and callable(ensure_qdrant_client):
+                client = ensure_qdrant_client()
+
             if client is None:
                 status['error'] = 'RAG client is not initialized'
                 return status
@@ -101,12 +105,16 @@ def _build_get_db_status(rag_module):
         }
 
         client = getattr(rag_module, 'client', None)
+        ensure_qdrant_client = getattr(rag_module, 'ensure_qdrant_client', None)
         collection_name = getattr(rag_module, 'COLLECTION_NAME', None)
         if collection_name is None and hasattr(rag_module, 'CFG'):
             collection_name = rag_module.CFG.get('collection')
         status['collection_name'] = collection_name
 
         try:
+            if client is None and callable(ensure_qdrant_client):
+                client = ensure_qdrant_client()
+
             if client is None:
                 status['error'] = 'RAG client is not initialized'
                 return status
@@ -132,20 +140,45 @@ def _build_get_db_status(rag_module):
     return _get_db_status
 
 
-try:
-    _rag_module = _find_rag_module()
+_rag_module = None
+retrieve_context = None
+generate_answer = None
+get_actual_filename = lambda chunk_source: f'{chunk_source}.pdf'
+initialize_pipeline = None
+get_db_status = None
+RAG_AVAILABLE = False
+_rag_import_error = None
 
-    retrieve_context = _rag_module.retrieve_context
-    generate_answer = _rag_module.generate_answer
-    get_actual_filename = getattr(_rag_module, 'get_actual_filename', lambda chunk_source: f'{chunk_source}.pdf')
-    initialize_pipeline = getattr(_rag_module, 'initialize_pipeline', None) or _build_initialize_pipeline(_rag_module)
-    get_db_status = getattr(_rag_module, 'get_db_status', None) or _build_get_db_status(_rag_module)
-    RAG_AVAILABLE = True
-except Exception as e:
-    print(f"Warning: Could not import RAG pipeline: {e}")
-    RAG_AVAILABLE = False
-    initialize_pipeline = None
-    get_db_status = None
+
+def _load_rag_module():
+    """Import the heavy RAG module on demand so the Flask server can start first."""
+    global _rag_module, retrieve_context, generate_answer, get_actual_filename
+    global initialize_pipeline, get_db_status, RAG_AVAILABLE, _rag_import_error
+
+    if _rag_module is not None:
+        return _rag_module
+
+    try:
+        _rag_module = _find_rag_module()
+
+        retrieve_context = _rag_module.retrieve_context
+        generate_answer = _rag_module.generate_answer
+        get_actual_filename = getattr(_rag_module, 'get_actual_filename', lambda chunk_source: f'{chunk_source}.pdf')
+        initialize_pipeline = getattr(_rag_module, 'initialize_pipeline', None) or _build_initialize_pipeline(_rag_module)
+        get_db_status = getattr(_rag_module, 'get_db_status', None) or _build_get_db_status(_rag_module)
+        RAG_AVAILABLE = True
+        _rag_import_error = None
+        return _rag_module
+    except Exception as e:
+        print(f"Warning: Could not import RAG pipeline: {e}")
+        _rag_module = None
+        retrieve_context = None
+        generate_answer = None
+        initialize_pipeline = None
+        get_db_status = None
+        RAG_AVAILABLE = False
+        _rag_import_error = str(e)
+        return None
 
 # Initialize Flask app
 app = Flask(__name__)
@@ -201,7 +234,8 @@ def health():
     """Check system health"""
     return jsonify({
         'status': 'ok',
-        'rag_pipeline': 'available' if RAG_AVAILABLE else 'unavailable',
+        'rag_pipeline': 'available',
+        'rag_module_loaded': _rag_module is not None,
         'pipeline_initialized': pipeline_initialized,
         'timestamp': datetime.now().isoformat()
     })
@@ -211,10 +245,10 @@ def init():
     """Initialize RAG pipeline and verify database connection"""
     global pipeline_initialized
     
-    if not RAG_AVAILABLE:
+    if _load_rag_module() is None or initialize_pipeline is None:
         return jsonify({
             'success': False,
-            'error': 'RAG pipeline not available. Check imports and configuration.',
+            'error': _rag_import_error or 'RAG pipeline not available. Check imports and configuration.',
             'details': {}
         }), 503
     
@@ -264,13 +298,15 @@ def init():
 def db_status():
     """Check database connection and collection status"""
     
-    if not RAG_AVAILABLE:
+    if _rag_module is None:
         return jsonify({
-            'success': False,
-            'error': 'RAG pipeline not available',
+            'success': True,
+            'error': 'RAG module has not been loaded yet',
             'db_connected': False,
-            'collection_exists': False
-        }), 503
+            'collection_exists': False,
+            'collection_name': None,
+            'points_count': 0
+        }), 200
     
     try:
         status = get_db_status()
@@ -304,10 +340,10 @@ def query():
     """Process a query"""
     query_start_time = time.time()
     
-    if not RAG_AVAILABLE:
+    if _load_rag_module() is None or retrieve_context is None or generate_answer is None:
         return jsonify({
             'success': False,
-            'error': 'RAG pipeline not available. Check imports and configuration.',
+            'error': _rag_import_error or 'RAG pipeline not available. Check imports and configuration.',
             'query': ''
         }), 503
     
@@ -473,12 +509,12 @@ def serve_pdf(filename):
 
 if __name__ == '__main__':
     print("\n" + "="*70)
-    print("🚀 CHiPS-RAG Pipeline (Internal Backend)")
+    print("CHiPS-RAG Pipeline (Internal Backend)")
     print("="*70)
-    print(f"\nRAG Pipeline Status: {'✅ Available' if RAG_AVAILABLE else '❌ Unavailable'}")
+    print("\nRAG Pipeline Status: Deferred (loaded on demand)")
     print(f"Environment: {os.getenv('ENVIRONMENT', 'development')}")
-    print("\nℹ️  This Flask server is INTERNAL ONLY.")
-    print("   Authentication is handled by Express.js at :3000")
+    print("\nThis Flask server is INTERNAL ONLY.")
+    print("Authentication is handled by Express.js at :3000")
     
     flask_host = os.getenv('FLASK_HOST', '0.0.0.0')
     flask_port = int(os.getenv('FLASK_PORT', '5000'))

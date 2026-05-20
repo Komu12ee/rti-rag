@@ -15,6 +15,9 @@ const { initializeDatabase, closeDatabase } = require('./utils/db-utils');
 const { initializeEmailService } = require('./utils/email-utils');
 const otpAuthRouter = require('./routes/otp-auth');
 const selectRouter = require('./routes/select');
+const { launchPipeline } = require('./server/utils/pipelines');
+const http = require('http');
+const { URL } = require('url');
 
 const app = express();
 
@@ -85,6 +88,56 @@ const server = app.listen(PORT, '0.0.0.0', () => {
     console.log('═══════════════════════════════════════════════════════════');
     console.log('');
 });
+
+// Auto-launch pipelines and initialize them when selection server starts
+async function autoLaunchAndInit() {
+    const list = process.env.AUTO_LAUNCH_PIPELINES || 'fg,fg2';
+    const pipelines = list.split(',').map(s => s.trim()).filter(Boolean);
+
+    for (const p of pipelines) {
+        try {
+            console.log(`[auto-launch] Launching pipeline: ${p}`);
+            const res = await launchPipeline(p);
+            if (!res.success) {
+                console.error(`[auto-launch] Failed to launch ${p}: ${res.error}`);
+                continue;
+            }
+
+            // Wait a short moment for node proxy to settle
+            await new Promise(r => setTimeout(r, 1000));
+
+            const initUrl = new URL('/api/init', res.url).toString();
+            console.log(`[auto-launch] Initializing pipeline via ${initUrl}`);
+
+            await new Promise((resolve) => {
+                const req = http.request(initUrl, { method: 'POST', timeout: 120000 }, (resp) => {
+                    let data = '';
+                    resp.on('data', (chunk) => data += chunk);
+                    resp.on('end', () => {
+                        console.log(`[auto-launch] Init response for ${p}: ${resp.statusCode}`);
+                        resolve();
+                    });
+                });
+                req.on('error', (err) => {
+                    console.error(`[auto-launch] Init request failed for ${p}: ${err.message}`);
+                    resolve();
+                });
+                req.on('timeout', () => {
+                    req.destroy();
+                    console.error(`[auto-launch] Init request timed out for ${p}`);
+                    resolve();
+                });
+                req.end();
+            });
+
+        } catch (err) {
+            console.error(`[auto-launch] Error launching ${p}: ${err.message}`);
+        }
+    }
+}
+
+// Run auto-launch but don't block server startup
+autoLaunchAndInit().catch(err => console.error('[auto-launch] Unexpected error:', err));
 
 // ─── Graceful shutdown ───────────────────────────────────────────────────────
 process.on('SIGTERM', () => {

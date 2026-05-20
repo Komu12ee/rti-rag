@@ -10,23 +10,23 @@
 
 // ── Token storage (sessionStorage: cleared on tab/browser close) ──────────
 const TOKEN_KEY = 'chips_rag_token';
-const USER_KEY  = 'chips_rag_user';
+const USER_KEY = 'chips_rag_user';
 
 const session = {
-  save(token, user)  {
+  save(token, user) {
     sessionStorage.setItem(TOKEN_KEY, token);
     sessionStorage.setItem(USER_KEY, JSON.stringify(user));
   },
-  token()  { return sessionStorage.getItem(TOKEN_KEY); },
-  user()   { try { return JSON.parse(sessionStorage.getItem(USER_KEY)); } catch { return null; } },
-  clear()  { sessionStorage.removeItem(TOKEN_KEY); sessionStorage.removeItem(USER_KEY); },
+  token() { return sessionStorage.getItem(TOKEN_KEY); },
+  user() { try { return JSON.parse(sessionStorage.getItem(USER_KEY)); } catch { return null; } },
+  clear() { sessionStorage.removeItem(TOKEN_KEY); sessionStorage.removeItem(USER_KEY); },
   exists() { return !!sessionStorage.getItem(TOKEN_KEY); },
 };
 
 // ── State ─────────────────────────────────────────────────────────────────
 const state = {
   initialized: false,
-  loading:     false,
+  loading: false,
   lastResults: [],
 };
 
@@ -35,46 +35,45 @@ const $ = id => document.getElementById(id);
 
 const ui = {
   // login
-  loginScreen:   $('login-screen'),
-  loginForm:     $('login-form'),
+  loginScreen: $('login-screen'),
+  loginForm: $('login-form'),
   loginUsername: $('login-username'),
   loginPassword: $('login-password'),
-  loginError:    $('login-error'),
-  loginSubmit:   $('login-submit'),
-  loginBtnText:  $('login-btn-text'),
+  loginError: $('login-error'),
+  loginSubmit: $('login-submit'),
+  loginBtnText: $('login-btn-text'),
   loginBtnSpinner: $('login-btn-spinner'),
 
   // app shell
-  appShell:      $('app-shell'),
-  userDisplay:   $('user-display'),
-  btnLogout:     $('btn-logout'),
+  appShell: $('app-shell'),
+  userDisplay: $('user-display'),
+  btnLogout: $('btn-logout'),
 
   // rag ui
-  btnInit:       $('btn-init'),
-  btnSend:       $('btn-send'),
-  queryInput:    $('query-input'),
-  queryStatus:   $('query-status'),
-  queryTiming:   $('query-timing'),
-  chatEmpty:     $('chat-empty'),
-  chatMessages:  $('chat-messages'),
-  exampleList:   $('example-list'),
-  footerTime:    $('footer-time'),
+  btnSend: $('btn-send'),
+  queryInput: $('query-input'),
+  queryStatus: $('query-status'),
+  queryTiming: $('query-timing'),
+  chatEmpty: $('chat-empty'),
+  chatMessages: $('chat-messages'),
+  exampleList: $('example-list'),
+  footerTime: $('footer-time'),
 
   stPipelineDot: document.querySelector('#st-pipeline .status-dot'),
   stPipelineVal: $('st-pipeline-val'),
-  stDbDot:       document.querySelector('#st-db .status-dot'),
-  stDbVal:       $('st-db-val'),
-  stDocsDot:     document.querySelector('#st-docs .status-dot'),
-  stDocsVal:     $('st-docs-val'),
+  stDbDot: document.querySelector('#st-db .status-dot'),
+  stDbVal: $('st-db-val'),
+  stDocsDot: document.querySelector('#st-docs .status-dot'),
+  stDocsVal: $('st-docs-val'),
 
-  numResults:    $('num-results'),
+  numResults: $('num-results'),
   numResultsLbl: $('num-results-display'),
-  kgToggle:      $('kg-toggle'),
+  kgToggle: $('kg-toggle'),
 
   drawerOverlay: $('drawer-overlay'),
-  sourceDrawer:  $('source-drawer'),
-  drawerBody:    $('drawer-body'),
-  drawerClose:   $('drawer-close'),
+  sourceDrawer: $('source-drawer'),
+  drawerBody: $('drawer-body'),
+  drawerClose: $('drawer-close'),
 
   toastContainer: $('toast-container'),
 };
@@ -91,7 +90,7 @@ const api = {
     const opts = { method, headers };
     if (body !== undefined) opts.body = JSON.stringify(body);
 
-    const res  = await fetch(path, opts);
+    const res = await fetch(path, opts);
     const json = await res.json().catch(() => ({}));
 
     // Any 401 → session expired, kick back to login
@@ -107,18 +106,18 @@ const api = {
   },
 
   // Auth (no token needed)
-  login:    (username, password) =>
+  login: (username, password) =>
     api._request('POST', '/auth/login', { username, password }, false),
-  logout:   () =>
+  logout: () =>
     api._request('POST', '/auth/logout', undefined, false),
 
   // RAG (token required)
-  health:   ()     => api._request('GET',  '/api/health'),
-  init:     ()     => api._request('POST', '/api/init'),
-  dbStatus: ()     => api._request('GET',  '/api/db-status'),
-  examples: ()     => api._request('GET',  '/api/examples'),
+  health: () => api._request('GET', '/api/health'),
+  init: () => api._request('POST', '/api/init'),
+  dbStatus: () => api._request('GET', '/api/db-status'),
+  examples: () => api._request('GET', '/api/examples'),
   settings: (body) => api._request(body ? 'POST' : 'GET', '/api/settings', body),
-  query:    (q, n) => api._request('POST', '/api/query', { query: q, num_results: n }),
+  query: (q, n) => api._request('POST', '/api/query', { query: q, num_results: n }),
 };
 
 // ── Screen switching ──────────────────────────────────────────────────────
@@ -128,7 +127,7 @@ function showLogin(errorMsg) {
   ui.loginUsername.value = '';
   ui.loginPassword.value = '';
   if (errorMsg) showLoginError(errorMsg);
-  else          hideLoginError();
+  else hideLoginError();
   ui.loginUsername.focus();
 }
 
@@ -189,7 +188,7 @@ async function handleLogin(e) {
 
 // ── Logout ────────────────────────────────────────────────────────────────
 async function handleLogout() {
-  await api.logout().catch(() => {});
+  await api.logout().catch(() => { });
   session.clear();
   showLogin();
   toast('Signed out.', 'info', 2000);
@@ -207,12 +206,12 @@ function toast(message, type = 'info', duration = 3500) {
 // ── Status helpers ────────────────────────────────────────────────────────
 function setStatusRow(dot, val, stateVal, text) {
   dot.dataset.state = stateVal;
-  val.textContent   = text;
+  val.textContent = text;
 }
 function setAllStatus(ps, pt, ds, dt, qs, qt) {
   setStatusRow(ui.stPipelineDot, ui.stPipelineVal, ps, pt);
-  setStatusRow(ui.stDbDot,       ui.stDbVal,       ds, dt);
-  setStatusRow(ui.stDocsDot,     ui.stDocsVal,     qs, qt);
+  setStatusRow(ui.stDbDot, ui.stDbVal, ds, dt);
+  setStatusRow(ui.stDocsDot, ui.stDocsVal, qs, qt);
 }
 function updateFooterTime() {
   const now = new Date();
@@ -221,33 +220,12 @@ function updateFooterTime() {
 }
 
 // ── Init pipeline ─────────────────────────────────────────────────────────
+// Manual init removed - auto-launch handles initialization on pm2 start
+// This function retained for backwards compatibility if needed
 async function initPipeline() {
-  ui.btnInit.disabled = true;
-  ui.btnInit.textContent = 'Initialising…';
-  setAllStatus('loading','checking…','loading','checking…','loading','checking…');
-
-  try {
-    const { ok, data } = await api.init();
-    if (ok && data.success) {
-      state.initialized = true;
-      toast('Pipeline initialised successfully', 'success');
-      await refreshDbStatus();
-      enableQueryBar();
-    } else {
-      setAllStatus('error','failed','error','—','error','—');
-      toast(data.error || 'Initialisation failed', 'error', 5000);
-      ui.btnInit.textContent = 'Retry Init';
-      ui.btnInit.disabled = false;
-    }
-  } catch (err) {
-    if (err.message !== 'UNAUTHENTICATED') {
-      setAllStatus('error','unreachable','error','—','error','—');
-      toast('Cannot reach backend', 'error');
-      ui.btnInit.textContent = 'Retry Init';
-      ui.btnInit.disabled = false;
-    }
-  }
-  updateFooterTime();
+  console.log('[UI] Manual init button pressed - pipeline should be auto-initialized by pm2');
+  await refreshDbStatus();
+  enableQueryBar();
 }
 
 async function refreshDbStatus() {
@@ -255,26 +233,24 @@ async function refreshDbStatus() {
     const { ok, data } = await api.dbStatus();
     if (ok) {
       const pipeOk = data.db_connected && data.collection_exists;
-      const count  = data.points_count ?? 0;
+      const count = data.points_count ?? 0;
       setAllStatus(
         pipeOk ? 'ok' : 'error', pipeOk ? 'ready' : 'error',
         data.db_connected ? 'ok' : 'error', data.db_connected ? 'connected' : 'disconnected',
-        data.db_connected ? 'ok' : 'idle',  data.db_connected ? `${count.toLocaleString()} pts` : '—',
+        data.db_connected ? 'ok' : 'idle', data.db_connected ? `${count.toLocaleString()} pts` : '—',
       );
-      ui.btnInit.textContent = pipeOk ? 'Re-initialise' : 'Retry Init';
-      ui.btnInit.disabled = false;
     }
-  } catch (_) {}
+  } catch (_) { }
   updateFooterTime();
 }
 
 // ── Query bar ─────────────────────────────────────────────────────────────
 function enableQueryBar() {
-  ui.btnSend.disabled        = false;
+  ui.btnSend.disabled = false;
   ui.queryStatus.textContent = 'Ready';
 }
 function disableQueryBar(msg = 'Loading…') {
-  ui.btnSend.disabled        = true;
+  ui.btnSend.disabled = true;
   ui.queryStatus.textContent = msg;
 }
 
@@ -288,24 +264,24 @@ function hideChatEmpty() { ui.chatEmpty.style.display = 'none'; }
 
 function escapeHtml(str) {
   return str
-    .replace(/&/g,'&amp;').replace(/</g,'&lt;')
-    .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
 
 function appendMessage(role, text, meta = {}) {
   hideChatEmpty();
-  const msg      = document.createElement('div');
-  msg.className  = `msg${role === 'thinking' ? ' msg-thinking' : ''}`;
+  const msg = document.createElement('div');
+  msg.className = `msg${role === 'thinking' ? ' msg-thinking' : ''}`;
 
-  const roleEl   = document.createElement('div');
+  const roleEl = document.createElement('div');
   roleEl.className = 'msg-role';
-  const label    = role === 'user' ? 'YOU' : role === 'assistant' ? 'ASSISTANT' : 'THINKING';
+  const label = role === 'user' ? 'YOU' : role === 'assistant' ? 'ASSISTANT' : 'THINKING';
   roleEl.innerHTML =
     `<span class="msg-role-accent">◈</span> ${label}` +
     (meta.timing ? `<span class="timing-chip">${meta.timing}</span>` : '');
   msg.appendChild(roleEl);
 
-  const body     = document.createElement('div');
+  const body = document.createElement('div');
   body.className = `msg-body ${role}-body`;
 
   if (role === 'thinking') {
@@ -316,7 +292,7 @@ function appendMessage(role, text, meta = {}) {
   } else {
     body.innerHTML = escapeHtml(text)
       .split('\n\n').filter(Boolean)
-      .map(p => `<p style="margin-bottom:.6em">${p.replace(/\n/g,'<br>')}</p>`)
+      .map(p => `<p style="margin-bottom:.6em">${p.replace(/\n/g, '<br>')}</p>`)
       .join('');
 
     if (role === 'assistant' && meta.results?.length) {
@@ -348,14 +324,14 @@ async function sendQuery() {
   const thinkingEl = appendMessage('thinking', '');
 
   try {
-    const numCtx     = parseInt(ui.numResults.value, 10);
+    const numCtx = parseInt(ui.numResults.value, 10);
     const { ok, data } = await api.query(text, numCtx);
     thinkingEl.remove();
 
     if (ok && data.success) {
       state.lastResults = data.results || [];
       appendMessage('assistant', data.answer, {
-        timing:  data.execution_time,
+        timing: data.execution_time,
         results: state.lastResults,
       });
       ui.queryTiming.textContent = data.execution_time;
@@ -380,11 +356,11 @@ async function sendQuery() {
 function openDrawer(results) {
   ui.drawerBody.innerHTML = '';
   results.forEach(r => {
-    const card     = document.createElement('div');
+    const card = document.createElement('div');
     card.className = 'source-card';
-    const score    = typeof r.score === 'number' ? r.score.toFixed(3) : '—';
-    const fname    = r.actual_pdf || r.source || 'unknown';
-    const pdfUrl   = `/01_preprocessing/used_files/${encodeURIComponent(fname)}`;
+    const score = typeof r.score === 'number' ? r.score.toFixed(3) : '—';
+    const fname = r.actual_pdf || r.source || 'unknown';
+    const pdfUrl = `/01_preprocessing/used_files/${encodeURIComponent(fname)}`;
     card.innerHTML = `
       <div class="source-card-header">
         <span class="source-rank">#${r.rank}</span>
@@ -393,7 +369,7 @@ function openDrawer(results) {
         </span>
         <span class="source-score">${score}</span>
       </div>
-      <div class="source-excerpt">${escapeHtml(r.excerpt || r.text?.slice(0,300) || '')}</div>
+      <div class="source-excerpt">${escapeHtml(r.excerpt || r.text?.slice(0, 300) || '')}</div>
     `;
     ui.drawerBody.appendChild(card);
   });
@@ -421,14 +397,14 @@ async function loadExamples() {
       });
       ui.exampleList.appendChild(li);
     });
-  } catch (_) {}
+  } catch (_) { }
 }
 
 async function pushSettings() {
   await api.settings({
-    kg_enabled:  ui.kgToggle.checked,
+    kg_enabled: ui.kgToggle.checked,
     num_results: parseInt(ui.numResults.value, 10),
-  }).catch(() => {});
+  }).catch(() => { });
 }
 
 // ── RAG UI boot (called after successful login) ───────────────────────────
@@ -437,27 +413,20 @@ async function bootRagUI() {
   setInterval(() => {
     const now = new Date();
     ui.footerTime.textContent =
-      now.toLocaleTimeString([], { hour:'2-digit', minute:'2-digit', second:'2-digit' });
+      now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
   }, 1000);
 
   loadExamples();
 
-  // Check if pipeline is already warm
+  // Check if pipeline is already initialized by auto-launch
   try {
-    const { ok, data } = await api.health();
-    if (ok && data.pipeline_initialized) {
-      state.initialized = true;
-      await refreshDbStatus();
-      enableQueryBar();
-    } else {
-      setAllStatus('idle','—','idle','—','idle','—');
-    }
+    await refreshDbStatus();
+    enableQueryBar();
   } catch (_) {
-    setAllStatus('error','unreachable','error','—','error','—');
+    setAllStatus('loading', 'warming…', 'loading', 'connecting…', 'loading', 'initializing…');
   }
 
   // Event listeners (attached once)
-  ui.btnInit.addEventListener('click', initPipeline);
   ui.btnSend.addEventListener('click', sendQuery);
 
   ui.queryInput.addEventListener('keydown', e => {
@@ -468,13 +437,13 @@ async function bootRagUI() {
   });
   ui.queryInput.addEventListener('input', autoResize);
 
-  ui.numResults.addEventListener('input',  () => {
+  ui.numResults.addEventListener('input', () => {
     ui.numResultsLbl.textContent = ui.numResults.value;
   });
   ui.numResults.addEventListener('change', pushSettings);
-  ui.kgToggle.addEventListener('change',   pushSettings);
+  ui.kgToggle.addEventListener('change', pushSettings);
 
-  ui.drawerClose.addEventListener('click',   closeDrawer);
+  ui.drawerClose.addEventListener('click', closeDrawer);
   ui.drawerOverlay.addEventListener('click', closeDrawer);
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeDrawer(); });
 }
@@ -484,19 +453,9 @@ function boot() {
   // Logout button (always wired regardless of login state)
   ui.btnLogout.addEventListener('click', handleLogout);
 
-  // Login form
-  ui.loginForm.addEventListener('submit', handleLogin);
-  ui.loginPassword.addEventListener('keydown', e => {
-    if (e.key === 'Enter') handleLogin(e);
-  });
-
-  // If a valid token already exists in sessionStorage, go straight to app
-  if (session.exists()) {
-    showApp();
-    bootRagUI();
-  } else {
-    showLogin();
-  }
+  // Skip login: show the app immediately and boot RAG UI
+  showApp();
+  bootRagUI();
 }
 
 boot();

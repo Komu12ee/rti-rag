@@ -10,7 +10,6 @@ const PORT = process.env.PORT || 3002;
 const FLASK_PORT = process.env.FLASK_PORT || 5002;
 const FLASK_URL = `http://localhost:${FLASK_PORT}`;
 const IS_PROD = process.env.NODE_ENV === 'production';
-const authMiddleware = require('./middleware/auth');
 
 const app = express();
 
@@ -86,9 +85,9 @@ const pdfProxy = createProxyMiddleware({
   },
 });
 
-// JWT guard runs first, then proxy
-app.use('/api', authMiddleware, apiProxy);
-app.use('/01_preprocessing', authMiddleware, pdfProxy);
+// No JWT guard — 2nd layer auth removed
+app.use('/api', apiProxy);
+app.use('/01_preprocessing', pdfProxy);
 
 // ─── SPA fallback ───────────────────────────────────────────────────────────
 app.get('*', (_req, res) => {

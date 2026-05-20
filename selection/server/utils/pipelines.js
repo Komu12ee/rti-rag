@@ -23,6 +23,10 @@ const CHIPS_FLASK_DIR = path.join(PROJECT_ROOT, 'CHiPS', '05_webui');
 const FG_FLASK_DIR = path.join(PROJECT_ROOT, 'FG', '05_webui');
 const FG2_FLASK_DIR = path.join(PROJECT_ROOT, 'FG-2', '05_webui');
 
+const CHIPS_QDRANT_LOCAL_PATH = path.join(PROJECT_ROOT, 'CHiPS', '04_embeddings_and_kg', 'db', 'qdrant_local_chips');
+const FG_QDRANT_LOCAL_PATH = path.join(PROJECT_ROOT, 'FG', '04_embeddings_and_kg', 'db', 'qdrant_local_fg');
+const FG2_QDRANT_LOCAL_PATH = path.join(PROJECT_ROOT, 'FG-2', '04_embeddings_and_kg', 'db', 'qdrant_local_fg2');
+
 const CHIPS_SERVER_PATH = path.join(CHIPS_NODE_DIR, 'server.js');
 const FG_SERVER_PATH = path.join(FG_NODE_DIR, 'server.js');
 const FG2_SERVER_PATH = path.join(FG2_NODE_DIR, 'server.js');
@@ -39,6 +43,7 @@ const PIPELINES = {
         flaskCwd: CHIPS_FLASK_DIR,
         serverPath: CHIPS_SERVER_PATH,
         appPath: CHIPS_APP_PATH,
+        qdrantLocalPath: CHIPS_QDRANT_LOCAL_PATH,
     },
     fg: {
         name: 'fg',
@@ -48,6 +53,7 @@ const PIPELINES = {
         flaskCwd: FG_FLASK_DIR,
         serverPath: FG_SERVER_PATH,
         appPath: FG_APP_PATH,
+        qdrantLocalPath: FG_QDRANT_LOCAL_PATH,
     },
     fg2: {
         name: 'fg2',
@@ -57,6 +63,7 @@ const PIPELINES = {
         flaskCwd: FG2_FLASK_DIR,
         serverPath: FG2_SERVER_PATH,
         appPath: FG2_APP_PATH,
+        qdrantLocalPath: FG2_QDRANT_LOCAL_PATH,
     },
 };
 PIPELINES.finance = PIPELINES.fg;
@@ -169,6 +176,10 @@ function spawnNodePipeline(pipeline) {
 }
 
 function spawnFlaskPipeline(pipeline) {
+    if (pipeline.qdrantLocalPath) {
+        fs.mkdirSync(pipeline.qdrantLocalPath, { recursive: true });
+    }
+
     const logStream = fs.createWriteStream(path.join(pipeline.flaskCwd, 'flask.log'), { flags: 'a' });
     const child = spawn(PYTHON_EXE, ['app.py'], {
         cwd: pipeline.flaskCwd,
@@ -177,6 +188,7 @@ function spawnFlaskPipeline(pipeline) {
             ...process.env,
             FLASK_HOST: '0.0.0.0',
             FLASK_PORT: String(pipeline.flaskPort),
+            CHIPPY_QDRANT_LOCAL_PATH: pipeline.qdrantLocalPath,
             PYTHONIOENCODING: 'utf-8',
             PYTHONUTF8: '1',
         },
