@@ -4,9 +4,36 @@
  * Handles login → token storage → RAG UI.
  * All /api/* requests include Authorization: Bearer <token>.
  * On any 401 response the app redirects back to the login screen.
+ * PDFs are fetched as blobs using the auth token and shown in a half-screen panel.
  */
 
 'use strict';
+
+const THEME_KEY = 'chips_rag_theme';
+
+function applyTheme(theme) {
+  document.body.dataset.theme = theme;
+  const toggle = document.getElementById('theme-toggle');
+  if (toggle) {
+    toggle.textContent = theme === 'light' ? 'Dark mode' : 'Light mode';
+    toggle.setAttribute('aria-label', theme === 'light' ? 'Switch to dark mode' : 'Switch to light mode');
+  }
+}
+
+function initTheme() {
+  const savedTheme = localStorage.getItem(THEME_KEY);
+  const theme = savedTheme === 'light' ? 'light' : 'dark';
+  applyTheme(theme);
+
+  const toggle = document.getElementById('theme-toggle');
+  if (toggle) {
+    toggle.addEventListener('click', () => {
+      const nextTheme = document.body.dataset.theme === 'light' ? 'dark' : 'light';
+      localStorage.setItem(THEME_KEY, nextTheme);
+      applyTheme(nextTheme);
+    });
+  }
+}
 
 // ── Token storage (sessionStorage: cleared on tab/browser close) ──────────
 const TOKEN_KEY = 'chips_rag_token';
@@ -28,6 +55,7 @@ const state = {
   initialized: false,
   loading: false,
   lastResults: [],
+  pdfBlobUrl: null,   // current blob URL so we can revoke it on close
 };
 
 // ── DOM refs ──────────────────────────────────────────────────────────────
@@ -50,6 +78,7 @@ const ui = {
   btnLogout: $('btn-logout'),
 
   // rag ui
+  btnInit: $('btn-init'),
   btnSend: $('btn-send'),
   queryInput: $('query-input'),
   queryStatus: $('query-status'),
@@ -66,14 +95,19 @@ const ui = {
   stDocsDot: document.querySelector('#st-docs .status-dot'),
   stDocsVal: $('st-docs-val'),
 
-  numResults: $('num-results'),
-  numResultsLbl: $('num-results-display'),
-  kgToggle: $('kg-toggle'),
-
+  // source chunk drawer (right)
   drawerOverlay: $('drawer-overlay'),
   sourceDrawer: $('source-drawer'),
   drawerBody: $('drawer-body'),
   drawerClose: $('drawer-close'),
+
+  // pdf panel (left half)
+  pdfPanel: $('pdf-panel'),
+  pdfOverlay: $('pdf-overlay'),
+  pdfIframe: $('pdf-iframe'),
+  pdfTitle: $('pdf-title'),
+  pdfClose: $('pdf-close'),
+  pdfLoading: $('pdf-loading'),
 
   toastContainer: $('toast-container'),
 };
@@ -93,7 +127,6 @@ const api = {
     const res = await fetch(path, opts);
     const json = await res.json().catch(() => ({}));
 
-    // Any 401 → session expired, kick back to login
     if (res.status === 401) {
       session.clear();
       showLogin(json.expired
@@ -105,13 +138,24 @@ const api = {
     return { ok: res.ok, status: res.status, data: json };
   },
 
-  // Auth (no token needed)
+  // Fetch a PDF as a blob (uses auth token, stays in same page)
+  async fetchPdf(path) {
+    const res = await fetch(path, {
+      headers: { 'Authorization': `Bearer ${session.token()}` },
+    });
+    if (res.status === 401) {
+      session.clear();
+      showLogin('Your session has expired. Please sign in again.');
+      throw new Error('UNAUTHENTICATED');
+    }
+    if (!res.ok) throw new Error(`PDF fetch failed: ${res.status}`);
+    return res.blob();
+  },
+
   login: (username, password) =>
     api._request('POST', '/auth/login', { username, password }, false),
   logout: () =>
     api._request('POST', '/auth/logout', undefined, false),
-
-  // RAG (token required)
   health: () => api._request('GET', '/api/health'),
   init: () => api._request('POST', '/api/init'),
   dbStatus: () => api._request('GET', '/api/db-status'),
@@ -134,7 +178,6 @@ function showLogin(errorMsg) {
 function showApp() {
   ui.loginScreen.classList.add('hidden');
   ui.appShell.classList.remove('hidden');
-
   const user = session.user();
   if (user) ui.userDisplay.textContent = user.username;
 }
@@ -160,14 +203,12 @@ async function handleLogin(e) {
     return;
   }
 
-  // Show spinner
   ui.loginSubmit.disabled = true;
   ui.loginBtnText.classList.add('hidden');
   ui.loginBtnSpinner.classList.remove('hidden');
 
   try {
     const { ok, data } = await api.login(username, password);
-
     if (ok && data.success) {
       session.save(data.token, data.user);
       showApp();
@@ -190,6 +231,8 @@ async function handleLogin(e) {
 async function handleLogout() {
   await api.logout().catch(() => { });
   session.clear();
+  closePdfPanel();
+  closeDrawer();
   showLogin();
   toast('Signed out.', 'info', 2000);
 }
@@ -220,12 +263,33 @@ function updateFooterTime() {
 }
 
 // ── Init pipeline ─────────────────────────────────────────────────────────
-// Manual init removed - auto-launch handles initialization on pm2 start
-// This function retained for backwards compatibility if needed
 async function initPipeline() {
-  console.log('[UI] Manual init button pressed - pipeline should be auto-initialized by pm2');
-  await refreshDbStatus();
-  enableQueryBar();
+  ui.btnInit.disabled = true;
+  ui.btnInit.textContent = 'Refreshing…';
+  setAllStatus('loading', 'checking…', 'loading', 'checking…', 'loading', 'checking…');
+
+  try {
+    const { ok, data } = await api.init();
+    if (ok && data.success) {
+      state.initialized = true;
+      toast('Bot refreshed successfully', 'success');
+      await refreshDbStatus();
+      enableQueryBar();
+    } else {
+      setAllStatus('error', 'failed', 'error', '—', 'error', '—');
+      toast(data.error || 'Initialisation failed', 'error', 5000);
+      ui.btnInit.textContent = 'Retry Refresh';
+      ui.btnInit.disabled = false;
+    }
+  } catch (err) {
+    if (err.message !== 'UNAUTHENTICATED') {
+      setAllStatus('error', 'unreachable', 'error', '—', 'error', '—');
+      toast('Cannot reach backend', 'error');
+      ui.btnInit.textContent = 'Retry Refresh';
+      ui.btnInit.disabled = false;
+    }
+  }
+  updateFooterTime();
 }
 
 async function refreshDbStatus() {
@@ -239,6 +303,8 @@ async function refreshDbStatus() {
         data.db_connected ? 'ok' : 'error', data.db_connected ? 'connected' : 'disconnected',
         data.db_connected ? 'ok' : 'idle', data.db_connected ? `${count.toLocaleString()} pts` : '—',
       );
+      ui.btnInit.textContent = pipeOk ? 'Refresh Bot' : 'Retry Refresh';
+      ui.btnInit.disabled = false;
     }
   } catch (_) { }
   updateFooterTime();
@@ -253,7 +319,6 @@ function disableQueryBar(msg = 'Loading…') {
   ui.btnSend.disabled = true;
   ui.queryStatus.textContent = msg;
 }
-
 function autoResize() {
   ui.queryInput.style.height = 'auto';
   ui.queryInput.style.height = `${ui.queryInput.scrollHeight}px`;
@@ -318,14 +383,14 @@ async function sendQuery() {
   state.loading = true;
   disableQueryBar('Retrieving…');
   appendMessage('user', text);
+  addToLastPrompts(text);
   ui.queryInput.value = '';
   autoResize();
 
   const thinkingEl = appendMessage('thinking', '');
 
   try {
-    const numCtx = parseInt(ui.numResults.value, 10);
-    const { ok, data } = await api.query(text, numCtx);
+    const { ok, data } = await api.query(text, 3);
     thinkingEl.remove();
 
     if (ok && data.success) {
@@ -352,81 +417,137 @@ async function sendQuery() {
   updateFooterTime();
 }
 
-// ── Source drawer ─────────────────────────────────────────────────────────
+// ── PDF panel ─────────────────────────────────────────────────────────────
+async function openPdfPanel(fname) {
+  // Show panel immediately with loading state
+  ui.pdfTitle.textContent = fname;
+  ui.pdfIframe.src = '';
+  ui.pdfLoading.classList.remove('hidden');
+  ui.pdfIframe.classList.add('hidden');
+  ui.pdfPanel.classList.remove('hidden');
+  ui.pdfOverlay.classList.remove('hidden');
+
+  try {
+    const pdfPath = `/01_preprocessing/used_files/${encodeURIComponent(fname)}`;
+    const blob = await api.fetchPdf(pdfPath);
+
+    // Revoke previous blob URL to free memory
+    if (state.pdfBlobUrl) {
+      URL.revokeObjectURL(state.pdfBlobUrl);
+    }
+
+    state.pdfBlobUrl = URL.createObjectURL(blob);
+    ui.pdfIframe.src = state.pdfBlobUrl;
+
+    // Show iframe once loaded
+    ui.pdfIframe.onload = () => {
+      ui.pdfLoading.classList.add('hidden');
+      ui.pdfIframe.classList.remove('hidden');
+    };
+  } catch (err) {
+    if (err.message !== 'UNAUTHENTICATED') {
+      ui.pdfLoading.classList.add('hidden');
+      ui.pdfPanel.innerHTML +=
+        `<div class="pdf-error">Could not load PDF: ${escapeHtml(err.message)}</div>`;
+      toast('Could not load PDF', 'error');
+    }
+  }
+}
+
+function closePdfPanel() {
+  ui.pdfPanel.classList.add('hidden');
+  ui.pdfOverlay.classList.add('hidden');
+  ui.pdfIframe.src = '';
+  if (state.pdfBlobUrl) {
+    URL.revokeObjectURL(state.pdfBlobUrl);
+    state.pdfBlobUrl = null;
+  }
+}
+
+// ── Source drawer (right panel) ───────────────────────────────────────────
 function openDrawer(results) {
   ui.drawerBody.innerHTML = '';
+
   results.forEach(r => {
     const card = document.createElement('div');
     card.className = 'source-card';
     const score = typeof r.score === 'number' ? r.score.toFixed(3) : '—';
     const fname = r.actual_pdf || r.source || 'unknown';
-    const pdfUrl = `/01_preprocessing/used_files/${encodeURIComponent(fname)}`;
+
     card.innerHTML = `
       <div class="source-card-header">
         <span class="source-rank">#${r.rank}</span>
-        <span class="source-filename">
-          <a href="${pdfUrl}" target="_blank" rel="noopener">${escapeHtml(fname)}</a>
-        </span>
+        <span class="source-filename">${escapeHtml(fname)}</span>
         <span class="source-score">${score}</span>
       </div>
       <div class="source-excerpt">${escapeHtml(r.excerpt || r.text?.slice(0, 300) || '')}</div>
     `;
+
+    // View PDF button — fetches with auth token, shows in half-screen panel
+    const pdfBtn = document.createElement('button');
+    pdfBtn.className = 'pdf-open-btn';
+    pdfBtn.innerHTML = '⬡ View PDF';
+    pdfBtn.addEventListener('click', () => openPdfPanel(fname));
+    card.appendChild(pdfBtn);
+
     ui.drawerBody.appendChild(card);
   });
+
   ui.drawerOverlay.classList.remove('hidden');
   ui.sourceDrawer.classList.remove('hidden');
 }
+
 function closeDrawer() {
   ui.drawerOverlay.classList.add('hidden');
   ui.sourceDrawer.classList.add('hidden');
 }
 
-// ── Examples ──────────────────────────────────────────────────────────────
-async function loadExamples() {
-  try {
-    const { ok, data } = await api.examples();
-    if (!ok) return;
-    ui.exampleList.innerHTML = '';
-    (data.examples || []).forEach(ex => {
-      const li = document.createElement('li');
-      li.textContent = ex;
-      li.addEventListener('click', () => {
-        ui.queryInput.value = ex;
-        autoResize();
-        ui.queryInput.focus();
-      });
-      ui.exampleList.appendChild(li);
+// ── Last Prompts (session history) ────────────────────────────────────────
+const sessionPrompts = [];
+
+function addToLastPrompts(text) {
+  // Avoid duplicate consecutive entries
+  if (sessionPrompts[sessionPrompts.length - 1] === text) return;
+  sessionPrompts.push(text);
+
+  ui.exampleList.innerHTML = '';
+  // Show newest first, up to 20
+  [...sessionPrompts].reverse().slice(0, 20).forEach(prompt => {
+    const li = document.createElement('li');
+    li.textContent = prompt;
+    li.title = prompt;
+    li.addEventListener('click', () => {
+      ui.queryInput.value = prompt;
+      autoResize();
+      ui.queryInput.focus();
     });
-  } catch (_) { }
+    ui.exampleList.appendChild(li);
+  });
 }
 
-async function pushSettings() {
-  await api.settings({
-    kg_enabled: ui.kgToggle.checked,
-    num_results: parseInt(ui.numResults.value, 10),
-  }).catch(() => { });
-}
 
-// ── RAG UI boot (called after successful login) ───────────────────────────
+// ── RAG UI boot ───────────────────────────────────────────────────────────
 async function bootRagUI() {
-  // Start the sidebar clock
   setInterval(() => {
     const now = new Date();
     ui.footerTime.textContent =
       now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
   }, 1000);
 
-  loadExamples();
-
-  // Check if pipeline is already initialized by auto-launch
   try {
-    await refreshDbStatus();
-    enableQueryBar();
+    const { ok, data } = await api.health();
+    if (ok && data.pipeline_initialized) {
+      state.initialized = true;
+      await refreshDbStatus();
+      enableQueryBar();
+    } else {
+      setAllStatus('idle', '—', 'idle', '—', 'idle', '—');
+    }
   } catch (_) {
-    setAllStatus('loading', 'warming…', 'loading', 'connecting…', 'loading', 'initializing…');
+    setAllStatus('error', 'unreachable', 'error', '—', 'error', '—');
   }
 
-  // Event listeners (attached once)
+  ui.btnInit.addEventListener('click', initPipeline);
   ui.btnSend.addEventListener('click', sendQuery);
 
   ui.queryInput.addEventListener('keydown', e => {
@@ -437,25 +558,30 @@ async function bootRagUI() {
   });
   ui.queryInput.addEventListener('input', autoResize);
 
-  ui.numResults.addEventListener('input', () => {
-    ui.numResultsLbl.textContent = ui.numResults.value;
-  });
-  ui.numResults.addEventListener('change', pushSettings);
-  ui.kgToggle.addEventListener('change', pushSettings);
-
+  // Drawer close
   ui.drawerClose.addEventListener('click', closeDrawer);
   ui.drawerOverlay.addEventListener('click', closeDrawer);
-  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeDrawer(); });
+
+  // PDF panel close
+  ui.pdfClose.addEventListener('click', closePdfPanel);
+  ui.pdfOverlay.addEventListener('click', closePdfPanel);
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') { closeDrawer(); closePdfPanel(); }
+  });
 }
 
 // ── Entry point ───────────────────────────────────────────────────────────
 function boot() {
-  // Logout button (always wired regardless of login state)
   ui.btnLogout.addEventListener('click', handleLogout);
+  // Skip login UI for FG-2 deployment (no auth). Boot the app immediately.
+  // Keep logout handler available if someone wants to clear state.
+  try { ui.loginForm.removeEventListener && ui.loginForm.removeEventListener('submit', handleLogin); } catch (_) { }
+  try { ui.loginPassword.removeEventListener && ui.loginPassword.removeEventListener('keydown', handleLogin); } catch (_) { }
 
-  // Skip login: show the app immediately and boot RAG UI
   showApp();
   bootRagUI();
 }
 
+initTheme();
 boot();

@@ -671,3 +671,5 @@
 2026-05-12 13:01:05: 
 2026-05-12 13:01:05: Node.js v20.20.2
 2026-05-20 13:28:47: [auto-launch] Init request failed for fg2: 
+2026-05-21 00:17:32: [auto-launch] Init request timed out for fg
+2026-05-21 00:17:32: [auto-launch] Init request failed for fg: socket hang up

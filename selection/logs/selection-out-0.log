@@ -1028,3 +1028,303 @@
 2026-05-20 13:53:51: [0mPOST /select/launch [32m200[0m 1.514 ms - 58[0m
 2026-05-20 13:54:47: [0mPOST /select/launch [32m200[0m 1.008 ms - 58[0m
 2026-05-20 13:54:50: [0mPOST /select/launch [32m200[0m 0.838 ms - 58[0m
+2026-05-20 16:37:30: [db] Initialized SQLite at ./data/auth.db
+2026-05-20 16:37:30: [email] Email service initialized
+2026-05-20 16:37:30: [server] OTP authentication enabled
+2026-05-20 16:37:30: [auto-launch] Launching pipeline: fg
+2026-05-20 16:37:30: 
+2026-05-20 16:37:30: ═══════════════════════════════════════════════════════════
+2026-05-20 16:37:30:   CHiPS-RAG  –  Selection & Auth Server
+2026-05-20 16:37:30: ═══════════════════════════════════════════════════════════
+2026-05-20 16:37:30:   URL     →  http://0.0.0.0:3000
+2026-05-20 16:37:30:   Mode    →  development
+2026-05-20 16:37:30:   OTP     →  Enabled
+2026-05-20 16:37:30: ═══════════════════════════════════════════════════════════
+2026-05-20 16:37:30: 
+2026-05-20 16:37:33: [auto-launch] Initializing pipeline via http://localhost:3002/api/init
+2026-05-20 16:37:36: [0mGET / [32m200[0m 6.362 ms - 682[0m
+2026-05-20 16:37:36: [0mGET /otp-auth.js [36m304[0m 2.551 ms - -[0m
+2026-05-20 16:37:36: [0mGET /init.js [36m304[0m 4.560 ms - -[0m
+2026-05-20 16:37:36: [0mGET /otp-auth.css [36m304[0m 1.936 ms - -[0m
+2026-05-20 16:37:41: [otp-auth] Login successful: av07112004@gmail.com
+2026-05-20 16:37:41: [0mPOST /otp-auth/login [32m200[0m 116.907 ms - 56[0m
+2026-05-20 16:37:41: [0mGET /select [36m304[0m 2.219 ms - -[0m
+2026-05-20 16:37:51: [auto-launch] Init response for fg: 200
+2026-05-20 16:37:51: [auto-launch] Launching pipeline: fg2
+2026-05-20 16:37:52: [0mPOST /select/launch [32m200[0m 9789.575 ms - 58[0m
+2026-05-20 16:37:53: [auto-launch] Initializing pipeline via http://localhost:3003/api/init
+2026-05-20 16:38:03: [auto-launch] Init response for fg2: 200
+2026-05-20 16:38:45: [0mGET / [36m304[0m 1.653 ms - -[0m
+2026-05-20 16:38:45: [0mGET /otp-auth.css [36m304[0m 2.818 ms - -[0m
+2026-05-20 16:38:45: [0mGET /otp-auth.js [36m304[0m 3.176 ms - -[0m
+2026-05-20 16:38:45: [0mGET /init.js [36m304[0m 6.537 ms - -[0m
+2026-05-20 16:38:49: [otp-auth] Login successful: av07112004@gmail.com
+2026-05-20 16:38:49: [0mPOST /otp-auth/login [32m200[0m 189.560 ms - 56[0m
+2026-05-20 16:38:49: [0mGET /select [36m304[0m 2.847 ms - -[0m
+2026-05-20 16:38:50: [0mPOST /select/launch [32m200[0m 1.467 ms - 58[0m
+2026-05-20 16:41:33: [0mPOST /select/launch [32m200[0m 1.187 ms - 58[0m
+2026-05-20 16:42:16: [otp-auth] Login successful: av07112004@gmail.com
+2026-05-20 16:42:16: [0mPOST /otp-auth/login [32m200[0m 192.057 ms - 56[0m
+2026-05-20 16:42:16: [0mGET /select [36m304[0m 1.162 ms - -[0m
+2026-05-20 16:42:20: [0mPOST /select/launch [32m200[0m 0.931 ms - 58[0m
+2026-05-20 16:42:27: [0mPOST /select/launch [32m200[0m 1.212 ms - 58[0m
+2026-05-20 17:08:11: [db] Initialized SQLite at ./data/auth.db
+2026-05-20 17:08:11: [email] Email service initialized
+2026-05-20 17:08:11: [server] OTP authentication enabled
+2026-05-20 17:08:11: [auto-launch] Launching pipeline: fg
+2026-05-20 17:08:11: 
+2026-05-20 17:08:11: ═══════════════════════════════════════════════════════════
+2026-05-20 17:08:11:   CHiPS-RAG  –  Selection & Auth Server
+2026-05-20 17:08:11: ═══════════════════════════════════════════════════════════
+2026-05-20 17:08:11:   URL     →  http://0.0.0.0:3000
+2026-05-20 17:08:11:   Mode    →  development
+2026-05-20 17:08:11:   OTP     →  Enabled
+2026-05-20 17:08:11: ═══════════════════════════════════════════════════════════
+2026-05-20 17:08:11: 
+2026-05-20 17:08:12: [auto-launch] Initializing pipeline via http://localhost:3002/api/init
+2026-05-20 17:08:12: [auto-launch] Init response for fg: 502
+2026-05-20 17:08:12: [auto-launch] Launching pipeline: fg2
+2026-05-20 17:08:16: [auto-launch] Initializing pipeline via http://localhost:3003/api/init
+2026-05-20 17:08:25: [auto-launch] Init response for fg2: 200
+2026-05-20 17:08:45: [0mPOST /select/launch [32m200[0m 11810.273 ms - 58[0m
+2026-05-20 17:08:55: [0mGET /select [36m304[0m 3.073 ms - -[0m
+2026-05-20 17:08:59: [0mGET / [36m304[0m 1.699 ms - -[0m
+2026-05-20 17:08:59: [0mGET /otp-auth.css [36m304[0m 1.842 ms - -[0m
+2026-05-20 17:08:59: [0mGET /otp-auth.js [36m304[0m 2.423 ms - -[0m
+2026-05-20 17:08:59: [0mGET /init.js [36m304[0m 1.589 ms - -[0m
+2026-05-20 17:09:01: [otp-auth] Login successful: av07112004@gmail.com
+2026-05-20 17:09:01: [0mPOST /otp-auth/login [32m200[0m 96.034 ms - 56[0m
+2026-05-20 17:09:01: [0mGET /select [36m304[0m 0.960 ms - -[0m
+2026-05-20 17:09:08: [0mPOST /select/launch [32m200[0m 0.788 ms - 58[0m
+2026-05-21 00:15:27: [db] Initialized SQLite at ./data/auth.db
+2026-05-21 00:15:27: [email] Email service initialized
+2026-05-21 00:15:27: [server] OTP authentication enabled
+2026-05-21 00:15:27: [auto-launch] Launching pipeline: fg
+2026-05-21 00:15:27: 
+2026-05-21 00:15:27: ═══════════════════════════════════════════════════════════
+2026-05-21 00:15:27:   CHiPS-RAG  –  Selection & Auth Server
+2026-05-21 00:15:27: ═══════════════════════════════════════════════════════════
+2026-05-21 00:15:27:   URL     →  http://0.0.0.0:3000
+2026-05-21 00:15:27:   Mode    →  development
+2026-05-21 00:15:27:   OTP     →  Enabled
+2026-05-21 00:15:27: ═══════════════════════════════════════════════════════════
+2026-05-21 00:15:27: 
+2026-05-21 00:15:32: [auto-launch] Initializing pipeline via http://localhost:3002/api/init
+2026-05-21 00:15:37: [0mGET / [36m304[0m 5.754 ms - -[0m
+2026-05-21 00:15:37: [0mGET /otp-auth.css [36m304[0m 3.533 ms - -[0m
+2026-05-21 00:15:37: [0mGET /otp-auth.js [36m304[0m 5.110 ms - -[0m
+2026-05-21 00:15:37: [0mGET /init.js [36m304[0m 3.074 ms - -[0m
+2026-05-21 00:15:47: [otp-auth] Login successful: av07112004@gmail.com
+2026-05-21 00:15:47: [0mPOST /otp-auth/login [32m200[0m 229.101 ms - 56[0m
+2026-05-21 00:15:47: [0mGET /select [36m304[0m 2.930 ms - -[0m
+2026-05-21 00:16:34: [0mPOST /select/launch [32m200[0m 1.691 ms - 58[0m
+2026-05-21 00:16:34: [0mPOST /select/launch [0m-[0m - ms - -[0m
+2026-05-21 00:16:47: [0mPOST /select/launch [0m-[0m - ms - -[0m
+2026-05-21 00:16:47: [0mGET /select [36m304[0m 1.122 ms - -[0m
+2026-05-21 00:16:48: [0mPOST /select/launch [32m200[0m 0.675 ms - 58[0m
+2026-05-21 00:17:32: [auto-launch] Launching pipeline: fg2
+2026-05-21 00:17:34: [0mPOST /select/launch [32m200[0m 1566.077 ms - 58[0m
+2026-05-21 00:17:35: [auto-launch] Initializing pipeline via http://localhost:3003/api/init
+2026-05-21 00:17:58: [auto-launch] Init response for fg2: 200
+2026-05-21 00:18:21: [0mGET /select [36m304[0m 1.180 ms - -[0m
+2026-05-21 00:18:23: [0mPOST /select/launch [32m200[0m 34.936 ms - 58[0m
+2026-05-21 00:18:31: [0mGET /select [36m304[0m 1.012 ms - -[0m
+2026-05-21 00:18:32: [0mPOST /select/launch [32m200[0m 31.587 ms - 58[0m
+2026-05-21 00:18:43: [0mPOST /select/launch [32m200[0m 0.834 ms - 58[0m
+2026-05-21 00:19:41: [0mPOST /select/launch [32m200[0m 0.925 ms - 58[0m
+2026-05-21 00:28:37: [db] Initialized SQLite at ./data/auth.db
+2026-05-21 00:28:37: [email] Email service initialized
+2026-05-21 00:28:37: [server] OTP authentication enabled
+2026-05-21 00:28:37: [auto-launch] Launching pipeline: fg
+2026-05-21 00:28:37: 
+2026-05-21 00:28:37: ═══════════════════════════════════════════════════════════
+2026-05-21 00:28:37:   CHiPS-RAG  –  Selection & Auth Server
+2026-05-21 00:28:37: ═══════════════════════════════════════════════════════════
+2026-05-21 00:28:37:   URL     →  http://0.0.0.0:3000
+2026-05-21 00:28:37:   Mode    →  development
+2026-05-21 00:28:37:   OTP     →  Enabled
+2026-05-21 00:28:37: ═══════════════════════════════════════════════════════════
+2026-05-21 00:28:37: 
+2026-05-21 00:28:39: [auto-launch] Initializing pipeline via http://localhost:3002/api/init
+2026-05-21 00:28:45: [0mGET / [36m304[0m 5.285 ms - -[0m
+2026-05-21 00:28:45: [0mGET /otp-auth.js [36m304[0m 2.826 ms - -[0m
+2026-05-21 00:28:45: [0mGET /init.js [36m304[0m 2.394 ms - -[0m
+2026-05-21 00:28:45: [0mGET /otp-auth.css [36m304[0m 0.796 ms - -[0m
+2026-05-21 00:28:51: [otp-auth] Login successful: av07112004@gmail.com
+2026-05-21 00:28:51: [0mPOST /otp-auth/login [32m200[0m 121.203 ms - 56[0m
+2026-05-21 00:28:51: [0mGET /select [36m304[0m 2.945 ms - -[0m
+2026-05-21 00:28:53: [auto-launch] Init response for fg: 200
+2026-05-21 00:28:53: [auto-launch] Launching pipeline: fg2
+2026-05-21 00:28:56: [auto-launch] Initializing pipeline via http://localhost:3003/api/init
+2026-05-21 00:29:04: [0mPOST /select/launch [32m200[0m 11796.534 ms - 58[0m
+2026-05-21 00:29:08: [auto-launch] Init response for fg2: 200
+2026-05-21 00:29:09: [0mPOST /select/launch [32m200[0m 1.338 ms - 58[0m
+2026-05-21 00:31:34: [0mPOST /select/launch [32m200[0m 0.982 ms - 58[0m
+2026-05-21 00:31:56: [0mGET /select [36m304[0m 0.903 ms - -[0m
+2026-05-21 00:31:57: [0mPOST /select/launch [32m200[0m 0.673 ms - 58[0m
+2026-05-21 00:33:36: [db] Initialized SQLite at ./data/auth.db
+2026-05-21 00:33:36: [email] Email service initialized
+2026-05-21 00:33:36: [server] OTP authentication enabled
+2026-05-21 00:33:36: [auto-launch] Launching pipeline: fg
+2026-05-21 00:33:36: 
+2026-05-21 00:33:36: ═══════════════════════════════════════════════════════════
+2026-05-21 00:33:36:   CHiPS-RAG  –  Selection & Auth Server
+2026-05-21 00:33:36: ═══════════════════════════════════════════════════════════
+2026-05-21 00:33:36:   URL     →  http://0.0.0.0:3000
+2026-05-21 00:33:36:   Mode    →  development
+2026-05-21 00:33:36:   OTP     →  Enabled
+2026-05-21 00:33:36: ═══════════════════════════════════════════════════════════
+2026-05-21 00:33:36: 
+2026-05-21 00:33:37: [auto-launch] Initializing pipeline via http://localhost:3002/api/init
+2026-05-21 00:33:49: [auto-launch] Init response for fg: 200
+2026-05-21 00:33:49: [auto-launch] Launching pipeline: fg2
+2026-05-21 00:33:51: [auto-launch] Initializing pipeline via http://localhost:3003/api/init
+2026-05-21 00:33:59: [0mGET / [36m304[0m 3.601 ms - -[0m
+2026-05-21 00:33:59: [0mGET /otp-auth.js [36m304[0m 2.866 ms - -[0m
+2026-05-21 00:33:59: [0mGET /init.js [36m304[0m 4.076 ms - -[0m
+2026-05-21 00:33:59: [0mGET /otp-auth.css [36m304[0m 2.554 ms - -[0m
+2026-05-21 00:34:01: [otp-auth] Login successful: av07112004@gmail.com
+2026-05-21 00:34:01: [0mPOST /otp-auth/login [32m200[0m 120.750 ms - 56[0m
+2026-05-21 00:34:01: [0mGET /select [36m304[0m 2.042 ms - -[0m
+2026-05-21 00:34:02: [auto-launch] Init response for fg2: 200
+2026-05-21 00:34:14: [0mPOST /select/launch [32m200[0m 11301.628 ms - 58[0m
+2026-05-21 00:35:00: [0mPOST /select/launch [32m200[0m 0.909 ms - 58[0m
+2026-05-21 00:43:07: [db] Initialized SQLite at ./data/auth.db
+2026-05-21 00:43:07: [email] Email service initialized
+2026-05-21 00:43:07: [server] OTP authentication enabled
+2026-05-21 00:43:07: [auto-launch] Launching pipeline: fg
+2026-05-21 00:43:07: 
+2026-05-21 00:43:07: ═══════════════════════════════════════════════════════════
+2026-05-21 00:43:07:   CHiPS-RAG  –  Selection & Auth Server
+2026-05-21 00:43:07: ═══════════════════════════════════════════════════════════
+2026-05-21 00:43:07:   URL     →  http://0.0.0.0:3000
+2026-05-21 00:43:07:   Mode    →  development
+2026-05-21 00:43:07:   OTP     →  Enabled
+2026-05-21 00:43:07: ═══════════════════════════════════════════════════════════
+2026-05-21 00:43:07: 
+2026-05-21 00:43:08: [auto-launch] Initializing pipeline via http://localhost:3002/api/init
+2026-05-21 00:43:15: [0mGET /select [36m304[0m 5.005 ms - -[0m
+2026-05-21 00:43:16: [0mPOST /select/launch [32m200[0m 21.909 ms - 58[0m
+2026-05-21 00:43:20: [auto-launch] Init response for fg: 200
+2026-05-21 00:43:20: [auto-launch] Launching pipeline: fg2
+2026-05-21 00:43:22: [auto-launch] Initializing pipeline via http://localhost:3003/api/init
+2026-05-21 00:43:34: [auto-launch] Init response for fg2: 200
+2026-05-21 00:43:44: [0mPOST /select/launch [32m200[0m 0.868 ms - 58[0m
+2026-05-21 00:46:47: [db] Initialized SQLite at ./data/auth.db
+2026-05-21 00:46:47: [email] Email service initialized
+2026-05-21 00:46:47: [server] OTP authentication enabled
+2026-05-21 00:46:47: [auto-launch] Launching pipeline: fg
+2026-05-21 00:46:47: 
+2026-05-21 00:46:47: ═══════════════════════════════════════════════════════════
+2026-05-21 00:46:47:   CHiPS-RAG  –  Selection & Auth Server
+2026-05-21 00:46:47: ═══════════════════════════════════════════════════════════
+2026-05-21 00:46:47:   URL     →  http://0.0.0.0:3000
+2026-05-21 00:46:47:   Mode    →  development
+2026-05-21 00:46:47:   OTP     →  Enabled
+2026-05-21 00:46:47: ═══════════════════════════════════════════════════════════
+2026-05-21 00:46:47: 
+2026-05-21 00:46:48: [auto-launch] Initializing pipeline via http://localhost:3002/api/init
+2026-05-21 00:46:57: [0mGET / [36m304[0m 3.654 ms - -[0m
+2026-05-21 00:46:57: [0mGET /otp-auth.js [36m304[0m 2.792 ms - -[0m
+2026-05-21 00:46:57: [0mGET /init.js [36m304[0m 1.017 ms - -[0m
+2026-05-21 00:46:57: [0mGET /otp-auth.css [36m304[0m 1.196 ms - -[0m
+2026-05-21 00:47:00: [otp-auth] Login successful: av07112004@gmail.com
+2026-05-21 00:47:00: [0mPOST /otp-auth/login [32m200[0m 148.001 ms - 56[0m
+2026-05-21 00:47:00: [0mGET /select [36m304[0m 2.122 ms - -[0m
+2026-05-21 00:47:01: [0mPOST /select/launch [32m200[0m 1.976 ms - 58[0m
+2026-05-21 00:47:05: [auto-launch] Init response for fg: 200
+2026-05-21 00:47:05: [auto-launch] Launching pipeline: fg2
+2026-05-21 00:47:07: [auto-launch] Initializing pipeline via http://localhost:3003/api/init
+2026-05-21 00:47:13: [0mGET /select [36m304[0m 0.931 ms - -[0m
+2026-05-21 00:47:22: [auto-launch] Init response for fg2: 200
+2026-05-21 00:47:28: [0mPOST /select/launch [32m200[0m 13901.510 ms - 58[0m
+2026-05-21 00:48:34: [0mGET / [36m304[0m 0.671 ms - -[0m
+2026-05-21 00:48:34: [0mGET /otp-auth.js [36m304[0m 1.046 ms - -[0m
+2026-05-21 00:48:34: [0mGET /init.js [36m304[0m 0.905 ms - -[0m
+2026-05-21 00:48:34: [0mGET /otp-auth.css [36m304[0m 0.891 ms - -[0m
+2026-05-21 00:48:36: [0mGET / [36m304[0m 1.096 ms - -[0m
+2026-05-21 00:48:36: [0mGET /otp-auth.css [36m304[0m 1.577 ms - -[0m
+2026-05-21 00:48:36: [0mGET /otp-auth.js [36m304[0m 2.669 ms - -[0m
+2026-05-21 00:48:36: [0mGET /init.js [36m304[0m 1.362 ms - -[0m
+2026-05-21 00:48:38: [otp-auth] Login successful: av07112004@gmail.com
+2026-05-21 00:48:38: [0mPOST /otp-auth/login [32m200[0m 79.535 ms - 56[0m
+2026-05-21 00:48:38: [0mGET /select [36m304[0m 1.176 ms - -[0m
+2026-05-21 00:48:39: [0mPOST /select/launch [32m200[0m 0.629 ms - 58[0m
+2026-05-21 00:59:21: [db] Initialized SQLite at ./data/auth.db
+2026-05-21 00:59:21: [email] Email service initialized
+2026-05-21 00:59:21: [server] OTP authentication enabled
+2026-05-21 00:59:21: [auto-launch] Launching pipeline: fg
+2026-05-21 00:59:22: 
+2026-05-21 00:59:22: ═══════════════════════════════════════════════════════════
+2026-05-21 00:59:22:   CHiPS-RAG  –  Selection & Auth Server
+2026-05-21 00:59:22: ═══════════════════════════════════════════════════════════
+2026-05-21 00:59:22:   URL     →  http://0.0.0.0:3000
+2026-05-21 00:59:22:   Mode    →  development
+2026-05-21 00:59:22:   OTP     →  Enabled
+2026-05-21 00:59:22: ═══════════════════════════════════════════════════════════
+2026-05-21 00:59:22: 
+2026-05-21 00:59:24: [auto-launch] Initializing pipeline via http://localhost:3002/api/init
+2026-05-21 00:59:36: [0mGET / [36m304[0m 4.156 ms - -[0m
+2026-05-21 00:59:36: [0mGET /otp-auth.js [36m304[0m 1.355 ms - -[0m
+2026-05-21 00:59:36: [0mGET /init.js [36m304[0m 0.701 ms - -[0m
+2026-05-21 00:59:36: [0mGET /otp-auth.css [36m304[0m 0.824 ms - -[0m
+2026-05-21 00:59:38: [auto-launch] Init response for fg: 200
+2026-05-21 00:59:38: [auto-launch] Launching pipeline: fg2
+2026-05-21 00:59:40: [otp-auth] Login successful: av07112004@gmail.com
+2026-05-21 00:59:40: [0mPOST /otp-auth/login [32m200[0m 118.238 ms - 56[0m
+2026-05-21 00:59:40: [0mGET /select [36m304[0m 1.987 ms - -[0m
+2026-05-21 00:59:40: [auto-launch] Initializing pipeline via http://localhost:3003/api/init
+2026-05-21 00:59:53: [auto-launch] Init response for fg2: 200
+2026-05-21 01:00:19: [0mPOST /select/launch [32m200[0m 1.284 ms - 58[0m
+2026-05-21 01:00:19: [0mPOST /select/launch [0m-[0m - ms - -[0m
+2026-05-21 01:01:05: [0mPOST /select/launch [31m503[0m 41601.525 ms - 52[0m
+2026-05-21 01:03:16: [0mGET /select [36m304[0m 0.991 ms - -[0m
+2026-05-21 01:04:10: [db] Initialized SQLite at ./data/auth.db
+2026-05-21 01:04:10: [email] Email service initialized
+2026-05-21 01:04:10: [server] OTP authentication enabled
+2026-05-21 01:04:10: [auto-launch] Launching pipeline: fg
+2026-05-21 01:04:10: 
+2026-05-21 01:04:10: ═══════════════════════════════════════════════════════════
+2026-05-21 01:04:10:   CHiPS-RAG  –  Selection & Auth Server
+2026-05-21 01:04:10: ═══════════════════════════════════════════════════════════
+2026-05-21 01:04:10:   URL     →  http://0.0.0.0:3000
+2026-05-21 01:04:10:   Mode    →  development
+2026-05-21 01:04:10:   OTP     →  Enabled
+2026-05-21 01:04:10: ═══════════════════════════════════════════════════════════
+2026-05-21 01:04:10: 
+2026-05-21 01:04:12: [auto-launch] Initializing pipeline via http://localhost:3002/api/init
+2026-05-21 01:04:26: [auto-launch] Init response for fg: 200
+2026-05-21 01:04:26: [auto-launch] Launching pipeline: fg2
+2026-05-21 01:04:28: [auto-launch] Initializing pipeline via http://localhost:3003/api/init
+2026-05-21 01:04:42: [auto-launch] Init response for fg2: 200
+2026-05-21 01:07:31: [0mGET /select [36m304[0m 6.434 ms - -[0m
+2026-05-21 01:07:32: [0mGET /select [36m304[0m 1.556 ms - -[0m
+2026-05-21 01:07:32: [0mGET /select [36m304[0m 1.105 ms - -[0m
+2026-05-21 01:07:32: [0mGET /select [36m304[0m 0.930 ms - -[0m
+2026-05-21 01:07:45: [0mPOST /select/launch [32m200[0m 11849.535 ms - 58[0m
+2026-05-21 01:10:59: [db] Initialized SQLite at ./data/auth.db
+2026-05-21 01:10:59: [email] Email service initialized
+2026-05-21 01:10:59: [server] OTP authentication enabled
+2026-05-21 01:10:59: [auto-launch] Launching pipeline: fg
+2026-05-21 01:10:59: 
+2026-05-21 01:10:59: ═══════════════════════════════════════════════════════════
+2026-05-21 01:10:59:   CHiPS-RAG  –  Selection & Auth Server
+2026-05-21 01:10:59: ═══════════════════════════════════════════════════════════
+2026-05-21 01:10:59:   URL     →  http://0.0.0.0:3000
+2026-05-21 01:10:59:   Mode    →  development
+2026-05-21 01:10:59:   OTP     →  Enabled
+2026-05-21 01:10:59: ═══════════════════════════════════════════════════════════
+2026-05-21 01:10:59: 
+2026-05-21 01:11:00: [auto-launch] Initializing pipeline via http://localhost:3002/api/init
+2026-05-21 01:11:12: [0mGET / [36m304[0m 3.295 ms - -[0m
+2026-05-21 01:11:12: [0mGET /otp-auth.js [36m304[0m 2.674 ms - -[0m
+2026-05-21 01:11:12: [0mGET /init.js [36m304[0m 2.318 ms - -[0m
+2026-05-21 01:11:12: [0mGET /otp-auth.css [36m304[0m 1.069 ms - -[0m
+2026-05-21 01:11:13: [auto-launch] Init response for fg: 200
+2026-05-21 01:11:13: [auto-launch] Launching pipeline: fg2
+2026-05-21 01:11:15: [auto-launch] Initializing pipeline via http://localhost:3003/api/init
+2026-05-21 01:11:21: [otp-auth] Login successful: av07112004@gmail.com
+2026-05-21 01:11:21: [0mPOST /otp-auth/login [32m200[0m 114.683 ms - 56[0m
+2026-05-21 01:11:21: [0mGET /select [36m304[0m 2.550 ms - -[0m
+2026-05-21 01:11:28: [auto-launch] Init response for fg2: 200
+2026-05-21 01:11:35: [0mPOST /select/launch [32m200[0m 12357.452 ms - 58[0m

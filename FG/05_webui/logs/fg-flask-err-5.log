@@ -1,34 +1,0 @@
-2026-05-18 15:37:59: Fetching 30 files:   0%|          | 0/30 [00:00<?, ?it/s]
-2026-05-18 15:37:59: Fetching 30 files: 100%|##########| 30/30 [00:00<00:00, 10647.24it/s]
-2026-05-18 15:37:59: 
-2026-05-18 15:39:38: Fetching 30 files:   0%|          | 0/30 [00:00<?, ?it/s]
-2026-05-18 15:39:38: Fetching 30 files: 100%|##########| 30/30 [00:00<00:00, 17830.40it/s]
-2026-05-18 15:39:48: Traceback (most recent call last):
-2026-05-18 15:39:48:   File "D:\Code\CRV2\FG\05_webui\app.py", line 471, in <module>
-2026-05-18 15:39:48:     print("\U0001f680 CHiPS-RAG Pipeline (Internal Backend)")
-2026-05-18 15:39:48:     ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-05-18 15:39:48:   File "C:\Users\av071\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
-2026-05-18 15:39:48:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]
-2026-05-18 15:39:48:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-05-18 15:39:48: UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f680' in position 0: character maps to <undefined>
-2026-05-18 15:40:10: Fetching 30 files:   0%|          | 0/30 [00:00<?, ?it/s]
-2026-05-18 15:40:10: Fetching 30 files: 100%|##########| 30/30 [00:00<00:00, 205603.14it/s]
-2026-05-18 15:40:13: Traceback (most recent call last):
-2026-05-18 15:40:13:   File "D:\Code\CRV2\FG\05_webui\app.py", line 471, in <module>
-2026-05-18 15:40:13:     print("\U0001f680 CHiPS-RAG Pipeline (Internal Backend)")
-2026-05-18 15:40:13:     ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-05-18 15:40:13:   File "C:\Users\av071\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
-2026-05-18 15:40:13:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]
-2026-05-18 15:40:13:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-05-18 15:40:13: UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f680' in position 0: character maps to <undefined>
-2026-05-18 15:40:39: Fetching 30 files:   0%|          | 0/30 [00:00<?, ?it/s]
-2026-05-18 15:40:39: Fetching 30 files: 100%|##########| 30/30 [00:00<00:00, 21553.46it/s]
-2026-05-18 15:40:39: 
-2026-05-18 15:40:44: Traceback (most recent call last):
-2026-05-18 15:40:44:   File "D:\Code\CRV2\FG\05_webui\app.py", line 471, in <module>
-2026-05-18 15:40:44:     print("\U0001f680 CHiPS-RAG Pipeline (Internal Backend)")
-2026-05-18 15:40:44:     ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-05-18 15:40:44:   File "C:\Users\av071\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
-2026-05-18 15:40:44:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]
-2026-05-18 15:40:44:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-05-18 15:40:44: UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f680' in position 0: character maps to <undefined>

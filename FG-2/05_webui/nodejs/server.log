@@ -352,3 +352,212 @@ Node.js v20.20.2
 [0mGET /api/db-status [32m200[0m 11.134 ms - 138[0m
 [proxy] → POST http://localhost:5003/api/query
 [0mPOST /api/query [0m-[0m - ms - -[0m
+
+═══════════════════════════════════════════════════════════
+  CHiPS-RAG  –  Express UI Server
+═══════════════════════════════════════════════════════════
+  UI      →  http://0.0.0.0:3003
+  Flask   →  http://localhost:5003  (proxied, JWT-guarded)
+  Mode    →  development
+═══════════════════════════════════════════════════════════
+
+[0mGET /health [32m200[0m 6.435 ms - 7420[0m
+[proxy] → POST http://localhost:5003/api/init
+[0mPOST /api/init [32m200[0m 10600.191 ms - 185[0m
+[0mGET / [36m304[0m 3.070 ms - -[0m
+[0mGET /app.js [36m304[0m 1.674 ms - -[0m
+[0mGET /style.css [36m304[0m 2.176 ms - -[0m
+[proxy] → GET http://localhost:5003/api/examples
+[proxy] → GET http://localhost:5003/api/db-status
+[0mGET /api/examples [32m200[0m 16.753 ms - 328[0m
+[0mGET /api/db-status [32m200[0m 19.289 ms - 138[0m
+
+═══════════════════════════════════════════════════════════
+  CHiPS-RAG  –  Express UI Server
+═══════════════════════════════════════════════════════════
+  UI      →  http://0.0.0.0:3003
+  Flask   →  http://localhost:5003  (proxied, JWT-guarded)
+  Mode    →  development
+═══════════════════════════════════════════════════════════
+
+[0mGET /health [32m200[0m 6.501 ms - 7298[0m
+[proxy] → POST http://localhost:5003/api/init
+[0mPOST /api/init [32m200[0m 9641.390 ms - 185[0m
+[0mGET / [32m200[0m 2.605 ms - 7298[0m
+[0mGET /app.js [32m200[0m 1.649 ms - 20078[0m
+[0mGET /style.css [32m200[0m 1.235 ms - 20260[0m
+[0mGET / [36m304[0m 1.083 ms - -[0m
+[0mGET /style.css [36m304[0m 1.693 ms - -[0m
+[0mGET /app.js [36m304[0m 1.146 ms - -[0m
+[auth] Login successful: admin
+[0mPOST /auth/login [32m200[0m 103.304 ms - 232[0m
+[proxy] → GET http://localhost:5003/api/health
+[0mGET /api/health [32m200[0m 6.788 ms - 137[0m
+[proxy] → GET http://localhost:5003/api/db-status
+[0mGET /api/db-status [32m200[0m 6.826 ms - 138[0m
+[proxy] → POST http://localhost:5003/api/init
+[0mPOST /api/init [32m200[0m 5.767 ms - 185[0m
+[proxy] → GET http://localhost:5003/api/db-status
+[0mGET /api/db-status [32m200[0m 6.480 ms - 138[0m
+[proxy] → POST http://localhost:5003/api/init
+[0mPOST /api/init [32m200[0m 5.346 ms - 185[0m
+[proxy] → GET http://localhost:5003/api/db-status
+[0mGET /api/db-status [32m200[0m 5.231 ms - 138[0m
+
+═══════════════════════════════════════════════════════════
+  CHiPS-RAG  –  Express UI Server
+═══════════════════════════════════════════════════════════
+  UI      →  http://0.0.0.0:3003
+  Flask   →  http://localhost:5003  (proxied, JWT-guarded)
+  Mode    →  development
+═══════════════════════════════════════════════════════════
+
+node:events:502
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use 0.0.0.0:3003
+    at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+    at listenInCluster (node:net:1965:12)
+    at doListen (node:net:2139:7)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1944:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '0.0.0.0',
+  port: 3003
+}
+
+Node.js v20.20.2
+[launcher] exited with code 1 (signal: null)
+[0mGET /health [32m200[0m 6.763 ms - 7298[0m
+[0mGET /health [32m200[0m 1.377 ms - 7298[0m
+[0mGET / [36m304[0m 1.810 ms - -[0m
+[0mGET /app.js [36m304[0m 0.968 ms - -[0m
+[0mGET /style.css [36m304[0m 1.069 ms - -[0m
+[proxy] → GET http://localhost:5003/api/health
+[0mGET /api/health [32m200[0m 32.780 ms - 139[0m
+[proxy] → POST http://localhost:5003/api/init
+[0mPOST /api/init [32m200[0m 22815.037 ms - 185[0m
+[0mGET / [36m304[0m 0.965 ms - -[0m
+[0mGET /style.css [36m304[0m 0.993 ms - -[0m
+[0mGET /app.js [36m304[0m 0.790 ms - -[0m
+[proxy] → GET http://localhost:5003/api/health
+[0mGET /api/health [32m200[0m 8.112 ms - 137[0m
+[proxy] → GET http://localhost:5003/api/db-status
+[0mGET /api/db-status [32m200[0m 7.711 ms - 138[0m
+[proxy] → POST http://localhost:5003/api/init
+[0mPOST /api/init [32m200[0m 5.421 ms - 185[0m
+[proxy] → GET http://localhost:5003/api/db-status
+[0mGET /api/db-status [32m200[0m 5.543 ms - 138[0m
+[proxy] → POST http://localhost:5003/api/query
+[0mPOST /api/query [0m-[0m - ms - -[0m
+
+═══════════════════════════════════════════════════════════
+  CHiPS-RAG  –  Express UI Server
+═══════════════════════════════════════════════════════════
+  UI      →  http://0.0.0.0:3003
+  Flask   →  http://localhost:5003  (proxied, JWT-guarded)
+  Mode    →  development
+═══════════════════════════════════════════════════════════
+
+[0mGET /health [32m200[0m 5.774 ms - 7298[0m
+[proxy] → POST http://localhost:5003/api/init
+[0mPOST /api/init [32m200[0m 12486.745 ms - 185[0m
+[0mGET / [36m304[0m 2.113 ms - -[0m
+[0mGET /style.css [36m304[0m 0.683 ms - -[0m
+[0mGET /app.js [32m200[0m 4.400 ms - 20238[0m
+[proxy] → GET http://localhost:5003/api/health
+[0mGET /api/health [32m200[0m 8.827 ms - 137[0m
+[proxy] → GET http://localhost:5003/api/db-status
+[0mGET /api/db-status [32m200[0m 8.050 ms - 138[0m
+[proxy] → POST http://localhost:5003/api/query
+[0mPOST /api/query [0m-[0m - ms - -[0m
+
+═══════════════════════════════════════════════════════════
+  CHiPS-RAG  –  Express UI Server
+═══════════════════════════════════════════════════════════
+  UI      →  http://0.0.0.0:3003
+  Flask   →  http://localhost:5003  (proxied, JWT-guarded)
+  Mode    →  development
+═══════════════════════════════════════════════════════════
+
+[0mGET /health [32m200[0m 5.296 ms - 7298[0m
+[proxy] → POST http://localhost:5003/api/init
+[0mPOST /api/init [32m200[0m 11455.605 ms - 185[0m
+[proxy] → GET http://localhost:5003/api/db-status
+[0mGET /api/db-status [32m200[0m 5.182 ms - 138[0m
+[proxy] → GET http://localhost:5003/api/db-status
+[0mGET /api/db-status [32m200[0m 3.640 ms - 138[0m
+
+═══════════════════════════════════════════════════════════
+  CHiPS-RAG  –  Express UI Server
+═══════════════════════════════════════════════════════════
+  UI      →  http://0.0.0.0:3003
+  Flask   →  http://localhost:5003  (proxied, no auth)
+  Mode    →  development
+═══════════════════════════════════════════════════════════
+
+[0mGET /health [32m200[0m 6.104 ms - 7298[0m
+[proxy] → POST http://localhost:5003/api/init
+[0mPOST /api/init [32m200[0m 12339.030 ms - 185[0m
+[0mGET / [36m304[0m 1.488 ms - -[0m
+[0mGET /app.js [36m304[0m 0.842 ms - -[0m
+[0mGET /style.css [36m304[0m 0.935 ms - -[0m
+[proxy] → GET http://localhost:5003/api/health
+[0mGET /api/health [32m200[0m 9.780 ms - 137[0m
+[proxy] → GET http://localhost:5003/api/db-status
+[0mGET /api/db-status [32m200[0m 8.942 ms - 138[0m
+[proxy] → POST http://localhost:5003/api/query
+[0mPOST /api/query [32m200[0m 8013.495 ms - 2877[0m
+
+═══════════════════════════════════════════════════════════
+  CHiPS-RAG  –  Express UI Server
+═══════════════════════════════════════════════════════════
+  UI      →  http://0.0.0.0:3003
+  Flask   →  http://localhost:5003  (proxied, no auth)
+  Mode    →  development
+═══════════════════════════════════════════════════════════
+
+[0mGET /health [32m200[0m 10.188 ms - 7289[0m
+[proxy] → POST http://localhost:5003/api/init
+[0mPOST /api/init [32m200[0m 14250.014 ms - 185[0m
+
+═══════════════════════════════════════════════════════════
+  CHiPS-RAG  –  Express UI Server
+═══════════════════════════════════════════════════════════
+  UI      →  http://0.0.0.0:3003
+  Flask   →  http://localhost:5003  (proxied, no auth)
+  Mode    →  development
+═══════════════════════════════════════════════════════════
+
+[0mGET /health [32m200[0m 6.042 ms - 7289[0m
+[proxy] → POST http://localhost:5003/api/init
+[0mPOST /api/init [32m200[0m 13065.721 ms - 185[0m
+
+═══════════════════════════════════════════════════════════
+  CHiPS-RAG  –  Express UI Server
+═══════════════════════════════════════════════════════════
+  UI      →  http://0.0.0.0:3003
+  Flask   →  http://localhost:5003  (proxied, no auth)
+  Mode    →  development
+═══════════════════════════════════════════════════════════
+
+[0mGET /health [32m200[0m 7.210 ms - 7289[0m
+[proxy] → POST http://localhost:5003/api/init
+[0mPOST /api/init [32m200[0m 14130.684 ms - 185[0m
+
+═══════════════════════════════════════════════════════════
+  CHiPS-RAG  –  Express UI Server
+═══════════════════════════════════════════════════════════
+  UI      →  http://0.0.0.0:3003
+  Flask   →  http://localhost:5003  (proxied, no auth)
+  Mode    →  development
+═══════════════════════════════════════════════════════════
+
+[0mGET /health [32m200[0m 6.060 ms - 7289[0m
+[proxy] → POST http://localhost:5003/api/init
+[0mPOST /api/init [32m200[0m 12859.599 ms - 185[0m

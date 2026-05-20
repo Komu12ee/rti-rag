@@ -11,25 +11,25 @@
 
 // ── Token storage (sessionStorage: cleared on tab/browser close) ──────────
 const TOKEN_KEY = 'chips_rag_token';
-const USER_KEY  = 'chips_rag_user';
+const USER_KEY = 'chips_rag_user';
 
 const session = {
-  save(token, user)  {
+  save(token, user) {
     sessionStorage.setItem(TOKEN_KEY, token);
     sessionStorage.setItem(USER_KEY, JSON.stringify(user));
   },
-  token()  { return sessionStorage.getItem(TOKEN_KEY); },
-  user()   { try { return JSON.parse(sessionStorage.getItem(USER_KEY)); } catch { return null; } },
-  clear()  { sessionStorage.removeItem(TOKEN_KEY); sessionStorage.removeItem(USER_KEY); },
+  token() { return sessionStorage.getItem(TOKEN_KEY); },
+  user() { try { return JSON.parse(sessionStorage.getItem(USER_KEY)); } catch { return null; } },
+  clear() { sessionStorage.removeItem(TOKEN_KEY); sessionStorage.removeItem(USER_KEY); },
   exists() { return !!sessionStorage.getItem(TOKEN_KEY); },
 };
 
 // ── State ─────────────────────────────────────────────────────────────────
 const state = {
-  initialized:  false,
-  loading:      false,
-  lastResults:  [],
-  pdfBlobUrl:   null,   // current blob URL so we can revoke it on close
+  initialized: false,
+  loading: false,
+  lastResults: [],
+  pdfBlobUrl: null,   // current blob URL so we can revoke it on close
 };
 
 // ── DOM refs ──────────────────────────────────────────────────────────────
@@ -37,55 +37,51 @@ const $ = id => document.getElementById(id);
 
 const ui = {
   // login
-  loginScreen:     $('login-screen'),
-  loginForm:       $('login-form'),
-  loginUsername:   $('login-username'),
-  loginPassword:   $('login-password'),
-  loginError:      $('login-error'),
-  loginSubmit:     $('login-submit'),
-  loginBtnText:    $('login-btn-text'),
+  loginScreen: $('login-screen'),
+  loginForm: $('login-form'),
+  loginUsername: $('login-username'),
+  loginPassword: $('login-password'),
+  loginError: $('login-error'),
+  loginSubmit: $('login-submit'),
+  loginBtnText: $('login-btn-text'),
   loginBtnSpinner: $('login-btn-spinner'),
 
   // app shell
-  appShell:    $('app-shell'),
+  appShell: $('app-shell'),
   userDisplay: $('user-display'),
-  btnLogout:   $('btn-logout'),
+  btnLogout: $('btn-logout'),
 
   // rag ui
-  btnInit:      $('btn-init'),
-  btnSend:      $('btn-send'),
-  queryInput:   $('query-input'),
-  queryStatus:  $('query-status'),
-  queryTiming:  $('query-timing'),
-  chatEmpty:    $('chat-empty'),
+  btnInit: $('btn-init'),
+  btnSend: $('btn-send'),
+  queryInput: $('query-input'),
+  queryStatus: $('query-status'),
+  queryTiming: $('query-timing'),
+  chatEmpty: $('chat-empty'),
   chatMessages: $('chat-messages'),
-  exampleList:  $('example-list'),
-  footerTime:   $('footer-time'),
+  exampleList: $('example-list'),
+  footerTime: $('footer-time'),
 
   stPipelineDot: document.querySelector('#st-pipeline .status-dot'),
   stPipelineVal: $('st-pipeline-val'),
-  stDbDot:       document.querySelector('#st-db .status-dot'),
-  stDbVal:       $('st-db-val'),
-  stDocsDot:     document.querySelector('#st-docs .status-dot'),
-  stDocsVal:     $('st-docs-val'),
-
-  numResults:    $('num-results'),
-  numResultsLbl: $('num-results-display'),
-  kgToggle:      $('kg-toggle'),
+  stDbDot: document.querySelector('#st-db .status-dot'),
+  stDbVal: $('st-db-val'),
+  stDocsDot: document.querySelector('#st-docs .status-dot'),
+  stDocsVal: $('st-docs-val'),
 
   // source chunk drawer (right)
   drawerOverlay: $('drawer-overlay'),
-  sourceDrawer:  $('source-drawer'),
-  drawerBody:    $('drawer-body'),
-  drawerClose:   $('drawer-close'),
+  sourceDrawer: $('source-drawer'),
+  drawerBody: $('drawer-body'),
+  drawerClose: $('drawer-close'),
 
   // pdf panel (left half)
-  pdfPanel:      $('pdf-panel'),
-  pdfOverlay:    $('pdf-overlay'),
-  pdfIframe:     $('pdf-iframe'),
-  pdfTitle:      $('pdf-title'),
-  pdfClose:      $('pdf-close'),
-  pdfLoading:    $('pdf-loading'),
+  pdfPanel: $('pdf-panel'),
+  pdfOverlay: $('pdf-overlay'),
+  pdfIframe: $('pdf-iframe'),
+  pdfTitle: $('pdf-title'),
+  pdfClose: $('pdf-close'),
+  pdfLoading: $('pdf-loading'),
 
   toastContainer: $('toast-container'),
 };
@@ -102,7 +98,7 @@ const api = {
     const opts = { method, headers };
     if (body !== undefined) opts.body = JSON.stringify(body);
 
-    const res  = await fetch(path, opts);
+    const res = await fetch(path, opts);
     const json = await res.json().catch(() => ({}));
 
     if (res.status === 401) {
@@ -130,16 +126,16 @@ const api = {
     return res.blob();
   },
 
-  login:    (username, password) =>
+  login: (username, password) =>
     api._request('POST', '/auth/login', { username, password }, false),
-  logout:   () =>
+  logout: () =>
     api._request('POST', '/auth/logout', undefined, false),
-  health:   ()     => api._request('GET',  '/api/health'),
-  init:     ()     => api._request('POST', '/api/init'),
-  dbStatus: ()     => api._request('GET',  '/api/db-status'),
-  examples: ()     => api._request('GET',  '/api/examples'),
+  health: () => api._request('GET', '/api/health'),
+  init: () => api._request('POST', '/api/init'),
+  dbStatus: () => api._request('GET', '/api/db-status'),
+  examples: () => api._request('GET', '/api/examples'),
   settings: (body) => api._request(body ? 'POST' : 'GET', '/api/settings', body),
-  query:    (q, n) => api._request('POST', '/api/query', { query: q, num_results: n }),
+  query: (q, n) => api._request('POST', '/api/query', { query: q, num_results: n }),
 };
 
 // ── Screen switching ──────────────────────────────────────────────────────
@@ -149,7 +145,7 @@ function showLogin(errorMsg) {
   ui.loginUsername.value = '';
   ui.loginPassword.value = '';
   if (errorMsg) showLoginError(errorMsg);
-  else          hideLoginError();
+  else hideLoginError();
   ui.loginUsername.focus();
 }
 
@@ -207,7 +203,7 @@ async function handleLogin(e) {
 
 // ── Logout ────────────────────────────────────────────────────────────────
 async function handleLogout() {
-  await api.logout().catch(() => {});
+  await api.logout().catch(() => { });
   session.clear();
   closePdfPanel();
   closeDrawer();
@@ -227,12 +223,12 @@ function toast(message, type = 'info', duration = 3500) {
 // ── Status helpers ────────────────────────────────────────────────────────
 function setStatusRow(dot, val, stateVal, text) {
   dot.dataset.state = stateVal;
-  val.textContent   = text;
+  val.textContent = text;
 }
 function setAllStatus(ps, pt, ds, dt, qs, qt) {
   setStatusRow(ui.stPipelineDot, ui.stPipelineVal, ps, pt);
-  setStatusRow(ui.stDbDot,       ui.stDbVal,       ds, dt);
-  setStatusRow(ui.stDocsDot,     ui.stDocsVal,     qs, qt);
+  setStatusRow(ui.stDbDot, ui.stDbVal, ds, dt);
+  setStatusRow(ui.stDocsDot, ui.stDocsVal, qs, qt);
 }
 function updateFooterTime() {
   const now = new Date();
@@ -243,27 +239,27 @@ function updateFooterTime() {
 // ── Init pipeline ─────────────────────────────────────────────────────────
 async function initPipeline() {
   ui.btnInit.disabled = true;
-  ui.btnInit.textContent = 'Initialising…';
-  setAllStatus('loading','checking…','loading','checking…','loading','checking…');
+  ui.btnInit.textContent = 'Refreshing…';
+  setAllStatus('loading', 'checking…', 'loading', 'checking…', 'loading', 'checking…');
 
   try {
     const { ok, data } = await api.init();
     if (ok && data.success) {
       state.initialized = true;
-      toast('Pipeline initialised successfully', 'success');
+      toast('Bot refreshed successfully', 'success');
       await refreshDbStatus();
       enableQueryBar();
     } else {
-      setAllStatus('error','failed','error','—','error','—');
+      setAllStatus('error', 'failed', 'error', '—', 'error', '—');
       toast(data.error || 'Initialisation failed', 'error', 5000);
-      ui.btnInit.textContent = 'Retry Init';
+      ui.btnInit.textContent = 'Retry Refresh';
       ui.btnInit.disabled = false;
     }
   } catch (err) {
     if (err.message !== 'UNAUTHENTICATED') {
-      setAllStatus('error','unreachable','error','—','error','—');
+      setAllStatus('error', 'unreachable', 'error', '—', 'error', '—');
       toast('Cannot reach backend', 'error');
-      ui.btnInit.textContent = 'Retry Init';
+      ui.btnInit.textContent = 'Retry Refresh';
       ui.btnInit.disabled = false;
     }
   }
@@ -275,26 +271,26 @@ async function refreshDbStatus() {
     const { ok, data } = await api.dbStatus();
     if (ok) {
       const pipeOk = data.db_connected && data.collection_exists;
-      const count  = data.points_count ?? 0;
+      const count = data.points_count ?? 0;
       setAllStatus(
         pipeOk ? 'ok' : 'error', pipeOk ? 'ready' : 'error',
         data.db_connected ? 'ok' : 'error', data.db_connected ? 'connected' : 'disconnected',
-        data.db_connected ? 'ok' : 'idle',  data.db_connected ? `${count.toLocaleString()} pts` : '—',
+        data.db_connected ? 'ok' : 'idle', data.db_connected ? `${count.toLocaleString()} pts` : '—',
       );
-      ui.btnInit.textContent = pipeOk ? 'Re-initialise' : 'Retry Init';
+      ui.btnInit.textContent = pipeOk ? 'Refresh Bot' : 'Retry Refresh';
       ui.btnInit.disabled = false;
     }
-  } catch (_) {}
+  } catch (_) { }
   updateFooterTime();
 }
 
 // ── Query bar ─────────────────────────────────────────────────────────────
 function enableQueryBar() {
-  ui.btnSend.disabled        = false;
+  ui.btnSend.disabled = false;
   ui.queryStatus.textContent = 'Ready';
 }
 function disableQueryBar(msg = 'Loading…') {
-  ui.btnSend.disabled        = true;
+  ui.btnSend.disabled = true;
   ui.queryStatus.textContent = msg;
 }
 function autoResize() {
@@ -307,24 +303,24 @@ function hideChatEmpty() { ui.chatEmpty.style.display = 'none'; }
 
 function escapeHtml(str) {
   return str
-    .replace(/&/g,'&amp;').replace(/</g,'&lt;')
-    .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
 
 function appendMessage(role, text, meta = {}) {
   hideChatEmpty();
-  const msg     = document.createElement('div');
+  const msg = document.createElement('div');
   msg.className = `msg${role === 'thinking' ? ' msg-thinking' : ''}`;
 
-  const roleEl      = document.createElement('div');
-  roleEl.className  = 'msg-role';
-  const label       = role === 'user' ? 'YOU' : role === 'assistant' ? 'ASSISTANT' : 'THINKING';
-  roleEl.innerHTML  =
+  const roleEl = document.createElement('div');
+  roleEl.className = 'msg-role';
+  const label = role === 'user' ? 'YOU' : role === 'assistant' ? 'ASSISTANT' : 'THINKING';
+  roleEl.innerHTML =
     `<span class="msg-role-accent">◈</span> ${label}` +
     (meta.timing ? `<span class="timing-chip">${meta.timing}</span>` : '');
   msg.appendChild(roleEl);
 
-  const body     = document.createElement('div');
+  const body = document.createElement('div');
   body.className = `msg-body ${role}-body`;
 
   if (role === 'thinking') {
@@ -335,11 +331,11 @@ function appendMessage(role, text, meta = {}) {
   } else {
     body.innerHTML = escapeHtml(text)
       .split('\n\n').filter(Boolean)
-      .map(p => `<p style="margin-bottom:.6em">${p.replace(/\n/g,'<br>')}</p>`)
+      .map(p => `<p style="margin-bottom:.6em">${p.replace(/\n/g, '<br>')}</p>`)
       .join('');
 
     if (role === 'assistant' && meta.results?.length) {
-      const btn     = document.createElement('button');
+      const btn = document.createElement('button');
       btn.className = 'sources-btn';
       btn.innerHTML = `<span class="source-count">${meta.results.length}</span> View sources`;
       btn.addEventListener('click', () => openDrawer(meta.results));
@@ -361,20 +357,20 @@ async function sendQuery() {
   state.loading = true;
   disableQueryBar('Retrieving…');
   appendMessage('user', text);
+  addToLastPrompts(text);
   ui.queryInput.value = '';
   autoResize();
 
   const thinkingEl = appendMessage('thinking', '');
 
   try {
-    const numCtx       = parseInt(ui.numResults.value, 10);
-    const { ok, data } = await api.query(text, numCtx);
+    const { ok, data } = await api.query(text, 3);
     thinkingEl.remove();
 
     if (ok && data.success) {
       state.lastResults = data.results || [];
       appendMessage('assistant', data.answer, {
-        timing:  data.execution_time,
+        timing: data.execution_time,
         results: state.lastResults,
       });
       ui.queryTiming.textContent = data.execution_time;
@@ -398,8 +394,8 @@ async function sendQuery() {
 // ── PDF panel ─────────────────────────────────────────────────────────────
 async function openPdfPanel(fname) {
   // Show panel immediately with loading state
-  ui.pdfTitle.textContent   = fname;
-  ui.pdfIframe.src          = '';
+  ui.pdfTitle.textContent = fname;
+  ui.pdfIframe.src = '';
   ui.pdfLoading.classList.remove('hidden');
   ui.pdfIframe.classList.add('hidden');
   ui.pdfPanel.classList.remove('hidden');
@@ -407,7 +403,7 @@ async function openPdfPanel(fname) {
 
   try {
     const pdfPath = `/01_preprocessing/used_files/${encodeURIComponent(fname)}`;
-    const blob    = await api.fetchPdf(pdfPath);
+    const blob = await api.fetchPdf(pdfPath);
 
     // Revoke previous blob URL to free memory
     if (state.pdfBlobUrl) {
@@ -447,10 +443,10 @@ function openDrawer(results) {
   ui.drawerBody.innerHTML = '';
 
   results.forEach(r => {
-    const card     = document.createElement('div');
+    const card = document.createElement('div');
     card.className = 'source-card';
-    const score    = typeof r.score === 'number' ? r.score.toFixed(3) : '—';
-    const fname    = r.actual_pdf || r.source || 'unknown';
+    const score = typeof r.score === 'number' ? r.score.toFixed(3) : '—';
+    const fname = r.actual_pdf || r.source || 'unknown';
 
     card.innerHTML = `
       <div class="source-card-header">
@@ -458,11 +454,11 @@ function openDrawer(results) {
         <span class="source-filename">${escapeHtml(fname)}</span>
         <span class="source-score">${score}</span>
       </div>
-      <div class="source-excerpt">${escapeHtml(r.excerpt || r.text?.slice(0,300) || '')}</div>
+      <div class="source-excerpt">${escapeHtml(r.excerpt || r.text?.slice(0, 300) || '')}</div>
     `;
 
     // View PDF button — fetches with auth token, shows in half-screen panel
-    const pdfBtn     = document.createElement('button');
+    const pdfBtn = document.createElement('button');
     pdfBtn.className = 'pdf-open-btn';
     pdfBtn.innerHTML = '⬡ View PDF';
     pdfBtn.addEventListener('click', () => openPdfPanel(fname));
@@ -480,41 +476,37 @@ function closeDrawer() {
   ui.sourceDrawer.classList.add('hidden');
 }
 
-// ── Examples ──────────────────────────────────────────────────────────────
-async function loadExamples() {
-  try {
-    const { ok, data } = await api.examples();
-    if (!ok) return;
-    ui.exampleList.innerHTML = '';
-    (data.examples || []).forEach(ex => {
-      const li = document.createElement('li');
-      li.textContent = ex;
-      li.addEventListener('click', () => {
-        ui.queryInput.value = ex;
-        autoResize();
-        ui.queryInput.focus();
-      });
-      ui.exampleList.appendChild(li);
+// ── Last Prompts (session history) ────────────────────────────────────────
+const sessionPrompts = [];
+
+function addToLastPrompts(text) {
+  // Avoid duplicate consecutive entries
+  if (sessionPrompts[sessionPrompts.length - 1] === text) return;
+  sessionPrompts.push(text);
+
+  ui.exampleList.innerHTML = '';
+  // Show newest first, up to 20
+  [...sessionPrompts].reverse().slice(0, 20).forEach(prompt => {
+    const li = document.createElement('li');
+    li.textContent = prompt;
+    li.title = prompt;
+    li.addEventListener('click', () => {
+      ui.queryInput.value = prompt;
+      autoResize();
+      ui.queryInput.focus();
     });
-  } catch (_) {}
+    ui.exampleList.appendChild(li);
+  });
 }
 
-async function pushSettings() {
-  await api.settings({
-    kg_enabled:  ui.kgToggle.checked,
-    num_results: parseInt(ui.numResults.value, 10),
-  }).catch(() => {});
-}
 
 // ── RAG UI boot ───────────────────────────────────────────────────────────
 async function bootRagUI() {
   setInterval(() => {
     const now = new Date();
     ui.footerTime.textContent =
-      now.toLocaleTimeString([], { hour:'2-digit', minute:'2-digit', second:'2-digit' });
+      now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
   }, 1000);
-
-  loadExamples();
 
   try {
     const { ok, data } = await api.health();
@@ -523,10 +515,10 @@ async function bootRagUI() {
       await refreshDbStatus();
       enableQueryBar();
     } else {
-      setAllStatus('idle','—','idle','—','idle','—');
+      setAllStatus('idle', '—', 'idle', '—', 'idle', '—');
     }
   } catch (_) {
-    setAllStatus('error','unreachable','error','—','error','—');
+    setAllStatus('error', 'unreachable', 'error', '—', 'error', '—');
   }
 
   ui.btnInit.addEventListener('click', initPipeline);
@@ -540,18 +532,12 @@ async function bootRagUI() {
   });
   ui.queryInput.addEventListener('input', autoResize);
 
-  ui.numResults.addEventListener('input',  () => {
-    ui.numResultsLbl.textContent = ui.numResults.value;
-  });
-  ui.numResults.addEventListener('change', pushSettings);
-  ui.kgToggle.addEventListener('change',   pushSettings);
-
   // Drawer close
-  ui.drawerClose.addEventListener('click',   closeDrawer);
+  ui.drawerClose.addEventListener('click', closeDrawer);
   ui.drawerOverlay.addEventListener('click', closeDrawer);
 
   // PDF panel close
-  ui.pdfClose.addEventListener('click',   closePdfPanel);
+  ui.pdfClose.addEventListener('click', closePdfPanel);
   ui.pdfOverlay.addEventListener('click', closePdfPanel);
 
   document.addEventListener('keydown', e => {
@@ -562,6 +548,7 @@ async function bootRagUI() {
 // ── Entry point ───────────────────────────────────────────────────────────
 function boot() {
   ui.btnLogout.addEventListener('click', handleLogout);
+
   ui.loginForm.addEventListener('submit', handleLogin);
   ui.loginPassword.addEventListener('keydown', e => {
     if (e.key === 'Enter') handleLogin(e);

@@ -4,7 +4,6 @@ const express = require('express');
 const { createProxyMiddleware } = require('http-proxy-middleware');
 const morgan = require('morgan');
 const path = require('path');
-const authRoutes = require('./routes/auth');
 
 const PORT = process.env.PORT || 3002;
 const FLASK_PORT = process.env.FLASK_PORT || 5002;
@@ -15,9 +14,6 @@ const app = express();
 
 // Allow selection server (http://localhost:3000) to access pipeline UIs
 app.use(require('cors')({ origin: 'http://localhost:3000', credentials: true }));
-
-// Parse JSON bodies for /auth/login requests
-app.use(express.json());
 
 // ─── Logging ────────────────────────────────────────────────────────────────
 app.use(morgan(IS_PROD ? 'combined' : 'dev'));
@@ -37,11 +33,6 @@ app.use(
     etag: true,
   })
 );
-
-// Auth endpoints (/auth/login, /auth/logout)
-app.use('/auth', authRoutes);
-
-
 
 // ─── Proxies ─────────────────────────────────────────────────────────────────
 // hpm v3 strips the mount path before forwarding (e.g. /api/query → /query).
@@ -101,7 +92,7 @@ app.listen(PORT, '0.0.0.0', () => {
   console.log('  CHiPS-RAG  –  Express UI Server');
   console.log('═══════════════════════════════════════════════════════════');
   console.log(`  UI      →  http://0.0.0.0:${PORT}`);
-  console.log(`  Flask   →  ${FLASK_URL}  (proxied, JWT-guarded)`);
+  console.log(`  Flask   →  ${FLASK_URL}  (proxied, no auth)`);
   console.log(`  Mode    →  ${IS_PROD ? 'production' : 'development'}`);
   console.log('═══════════════════════════════════════════════════════════');
   console.log('');
