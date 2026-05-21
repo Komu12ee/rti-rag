@@ -1380,3 +1380,7 @@
 2026-05-21 12:20:19: [auto-launch] Launching pipeline: fg2
 2026-05-21 12:20:21: [auto-launch] Initializing pipeline via http://localhost:3003/api/init
 2026-05-21 12:20:32: [auto-launch] Init response for fg2: 200
+2026-05-21 12:25:26: [otp-auth] Login successful: av07112004@gmail.com
+2026-05-21 12:25:26: [0mPOST /otp-auth/login [32m200[0m 131.076 ms - 56[0m
+2026-05-21 12:25:26: [0mGET /select [36m304[0m 1.957 ms - -[0m
+2026-05-21 12:25:38: [0mPOST /select/launch [32m200[0m 10763.544 ms - 58[0m

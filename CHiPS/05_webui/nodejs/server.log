@@ -355,3 +355,33 @@ Node.js v20.20.2
 [0mGET /api/db-status [32m200[0m 7.998 ms - 138[0m
 [proxy] → POST http://localhost:5001/api/query
 [0mPOST /api/query [32m200[0m 11138.295 ms - 3239[0m
+
+═══════════════════════════════════════════════════════════
+  CHiPS-RAG  –  Express UI Server
+═══════════════════════════════════════════════════════════
+  UI      →  http://0.0.0.0:3001
+  Flask   →  http://localhost:5001  (proxied, JWT-guarded)
+  Mode    →  development
+═══════════════════════════════════════════════════════════
+
+[0mGET /health [32m200[0m 5.831 ms - 7166[0m
+[0mGET / [32m200[0m 1.686 ms - 7166[0m
+[0mGET /style.css [32m200[0m 1.647 ms - 20643[0m
+[0mGET /app.js [32m200[0m 2.837 ms - 19859[0m
+[auth] Login successful: admin
+[0mPOST /auth/login [32m200[0m 132.627 ms - 232[0m
+[proxy] → GET http://localhost:5001/api/health
+[0mGET /api/health [32m200[0m 27.630 ms - 113[0m
+[proxy] → POST http://localhost:5001/api/init
+[0mPOST /api/init [32m200[0m 87.297 ms - 185[0m
+[proxy] → GET http://localhost:5001/api/db-status
+[0mGET /api/db-status [32m200[0m 8.324 ms - 138[0m
+[proxy] → POST http://localhost:5001/api/query
+[0mPOST /api/query [32m200[0m 18959.187 ms - 36872[0m
+[0mGET / [36m304[0m 1.285 ms - -[0m
+[0mGET /app.js [36m304[0m 1.790 ms - -[0m
+[0mGET /style.css [36m304[0m 0.792 ms - -[0m
+[proxy] → GET http://localhost:5001/api/health
+[0mGET /api/health [32m200[0m 8.226 ms - 112[0m
+[proxy] → GET http://localhost:5001/api/db-status
+[0mGET /api/db-status [32m200[0m 8.986 ms - 138[0m

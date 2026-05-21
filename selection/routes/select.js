@@ -139,8 +139,8 @@ router.get('/', (req, res) => {
         </div>
         
         <!-- Content -->
-        <h2 class="text-lg font-bold mb-2" style="color: var(--text-primary);">Finance / GAD RAG</h2>
-        <p class="text-sm mb-6" style="color: var(--text-secondary);">Finance and general administration document analysis</p>
+        <h2 class="text-lg font-bold mb-2" style="color: var(--text-primary);">Finance RAG</h2>
+        <p class="text-sm mb-6" style="color: var(--text-secondary);">Finance document analysis bot</p>
         
         <!-- Button -->
         <button class="launch-btn w-full py-3 px-4 rounded-lg font-medium text-white flex items-center justify-center gap-2 transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2" data-pipeline="finance" style="background-color: var(--button-primary); focus-visible:ring-color: var(--button-primary);">
@@ -164,8 +164,8 @@ router.get('/', (req, res) => {
         </div>
         
         <!-- Content -->
-        <h2 class="text-lg font-bold mb-2" style="color: var(--text-primary);">Finance / GAD RAG (FG-2)</h2>
-        <p class="text-sm mb-6" style="color: var(--text-secondary);">Alternate Finance pipeline (FG-2 folder)</p>
+        <h2 class="text-lg font-bold mb-2" style="color: var(--text-primary);">GAD RAG</h2>
+        <p class="text-sm mb-6" style="color: var(--text-secondary);">GAD assistant</p>
         
         <!-- Button -->
         <button class="launch-btn w-full py-3 px-4 rounded-lg font-medium text-white flex items-center justify-center gap-2 transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2" data-pipeline="fg2" style="background-color: var(--button-primary); focus-visible:ring-color: var(--button-primary);">
