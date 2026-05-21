@@ -1,0 +1,62 @@
+{
+  "pdf_path": "D:\\Code\\CRV2\\FG\\01_preprocessing\\01_preprocessing\\input_pdfs\\8_शासकीय_व्यय_में_मितव्ययिता_एवं_वित्तीय_अनुशासन.pdf",
+  "total_pages": 4,
+  "pages": [
+    {
+      "page_num": 0,
+      "skew_angle": 0.0,
+      "noise_stats": {
+        "speckles_removed": 0,
+        "noise_ratio": 0.0,
+        "denoise_disabled": true
+      },
+      "has_stamps": false,
+      "has_handwriting": false,
+      "stamp_count": 0,
+      "stamp_regions": [],
+      "image_path": "D:\\Code\\CRV2\\FG\\01_preprocessing\\01_preprocessing\\stage1_output\\8_शासकीय_व्यय_में_मितव्ययिता_एवं_वित्तीय_अनुशासन\\page_0000.png"
+    },
+    {
+      "page_num": 1,
+      "skew_angle": 0.0,
+      "noise_stats": {
+        "speckles_removed": 0,
+        "noise_ratio": 0.0,
+        "denoise_disabled": true
+      },
+      "has_stamps": false,
+      "has_handwriting": false,
+      "stamp_count": 0,
+      "stamp_regions": [],
+      "image_path": "D:\\Code\\CRV2\\FG\\01_preprocessing\\01_preprocessing\\stage1_output\\8_शासकीय_व्यय_में_मितव्ययिता_एवं_वित्तीय_अनुशासन\\page_0001.png"
+    },
+    {
+      "page_num": 2,
+      "skew_angle": 0.0,
+      "noise_stats": {
+        "speckles_removed": 0,
+        "noise_ratio": 0.0,
+        "denoise_disabled": true
+      },
+      "has_stamps": false,
+      "has_handwriting": false,
+      "stamp_count": 0,
+      "stamp_regions": [],
+      "image_path": "D:\\Code\\CRV2\\FG\\01_preprocessing\\01_preprocessing\\stage1_output\\8_शासकीय_व्यय_में_मितव्ययिता_एवं_वित्तीय_अनुशासन\\page_0002.png"
+    },
+    {
+      "page_num": 3,
+      "skew_angle": 0.0,
+      "noise_stats": {
+        "speckles_removed": 0,
+        "noise_ratio": 0.0,
+        "denoise_disabled": true
+      },
+      "has_stamps": false,
+      "has_handwriting": false,
+      "stamp_count": 0,
+      "stamp_regions": [],
+      "image_path": "D:\\Code\\CRV2\\FG\\01_preprocessing\\01_preprocessing\\stage1_output\\8_शासकीय_व्यय_में_मितव्ययिता_एवं_वित्तीय_अनुशासन\\page_0003.png"
+    }
+  ]
+}

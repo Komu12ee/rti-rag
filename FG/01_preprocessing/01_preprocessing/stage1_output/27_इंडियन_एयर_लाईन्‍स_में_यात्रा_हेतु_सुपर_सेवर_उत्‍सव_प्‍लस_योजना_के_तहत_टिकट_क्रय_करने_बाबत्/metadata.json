@@ -1,0 +1,112 @@
+{
+  "pdf_path": "D:\\Code\\CRV2\\FG\\01_preprocessing\\01_preprocessing\\input_pdfs\\27_इंडियन_एयर_लाईन्‍स_में_यात्रा_हेतु_सुपर_सेवर_उत्‍सव_प्‍लस_योजना_के_तहत_टिकट_क्रय_करने_बाबत्.pdf",
+  "total_pages": 6,
+  "pages": [
+    {
+      "page_num": 0,
+      "skew_angle": 0.0,
+      "noise_stats": {
+        "speckles_removed": 0,
+        "noise_ratio": 0.0,
+        "denoise_disabled": true
+      },
+      "has_stamps": false,
+      "has_handwriting": false,
+      "stamp_count": 0,
+      "stamp_regions": [],
+      "image_path": "D:\\Code\\CRV2\\FG\\01_preprocessing\\01_preprocessing\\stage1_output\\27_इंडियन_एयर_लाईन्‍स_में_यात्रा_हेतु_सुपर_सेवर_उत्‍सव_प्‍लस_योजना_के_तहत_टिकट_क्रय_करने_बाबत्\\page_0000.png"
+    },
+    {
+      "page_num": 1,
+      "skew_angle": 0.0,
+      "noise_stats": {
+        "speckles_removed": 0,
+        "noise_ratio": 0.0,
+        "denoise_disabled": true
+      },
+      "has_stamps": false,
+      "has_handwriting": false,
+      "stamp_count": 0,
+      "stamp_regions": [],
+      "image_path": "D:\\Code\\CRV2\\FG\\01_preprocessing\\01_preprocessing\\stage1_output\\27_इंडियन_एयर_लाईन्‍स_में_यात्रा_हेतु_सुपर_सेवर_उत्‍सव_प्‍लस_योजना_के_तहत_टिकट_क्रय_करने_बाबत्\\page_0001.png"
+    },
+    {
+      "page_num": 2,
+      "skew_angle": 0.0,
+      "noise_stats": {
+        "speckles_removed": 0,
+        "noise_ratio": 0.0,
+        "denoise_disabled": true
+      },
+      "has_stamps": false,
+      "has_handwriting": false,
+      "stamp_count": 0,
+      "stamp_regions": [],
+      "image_path": "D:\\Code\\CRV2\\FG\\01_preprocessing\\01_preprocessing\\stage1_output\\27_इंडियन_एयर_लाईन्‍स_में_यात्रा_हेतु_सुपर_सेवर_उत्‍सव_प्‍लस_योजना_के_तहत_टिकट_क्रय_करने_बाबत्\\page_0002.png"
+    },
+    {
+      "page_num": 3,
+      "skew_angle": 0.0,
+      "noise_stats": {
+        "speckles_removed": 0,
+        "noise_ratio": 0.0,
+        "denoise_disabled": true
+      },
+      "has_stamps": true,
+      "has_handwriting": true,
+      "stamp_count": 1,
+      "stamp_regions": [
+        {
+          "x": 562,
+          "y": 3686,
+          "w": 2480,
+          "h": 72,
+          "color": "blue",
+          "area_ratio": 0.00498,
+          "is_circular": false,
+          "confidence": 0.6
+        }
+      ],
+      "image_path": "D:\\Code\\CRV2\\FG\\01_preprocessing\\01_preprocessing\\stage1_output\\27_इंडियन_एयर_लाईन्‍स_में_यात्रा_हेतु_सुपर_सेवर_उत्‍सव_प्‍लस_योजना_के_तहत_टिकट_क्रय_करने_बाबत्\\page_0003.png"
+    },
+    {
+      "page_num": 4,
+      "skew_angle": 0.0,
+      "noise_stats": {
+        "speckles_removed": 0,
+        "noise_ratio": 0.0,
+        "denoise_disabled": true
+      },
+      "has_stamps": true,
+      "has_handwriting": true,
+      "stamp_count": 1,
+      "stamp_regions": [
+        {
+          "x": 604,
+          "y": 2546,
+          "w": 1913,
+          "h": 73,
+          "color": "blue",
+          "area_ratio": 0.00376,
+          "is_circular": false,
+          "confidence": 0.6
+        }
+      ],
+      "image_path": "D:\\Code\\CRV2\\FG\\01_preprocessing\\01_preprocessing\\stage1_output\\27_इंडियन_एयर_लाईन्‍स_में_यात्रा_हेतु_सुपर_सेवर_उत्‍सव_प्‍लस_योजना_के_तहत_टिकट_क्रय_करने_बाबत्\\page_0004.png"
+    },
+    {
+      "page_num": 5,
+      "skew_angle": 0.0,
+      "noise_stats": {
+        "speckles_removed": 0,
+        "noise_ratio": 0.0,
+        "denoise_disabled": true
+      },
+      "has_stamps": false,
+      "has_handwriting": false,
+      "stamp_count": 0,
+      "stamp_regions": [],
+      "image_path": "D:\\Code\\CRV2\\FG\\01_preprocessing\\01_preprocessing\\stage1_output\\27_इंडियन_एयर_लाईन्‍स_में_यात्रा_हेतु_सुपर_सेवर_उत्‍सव_प्‍लस_योजना_के_तहत_टिकट_क्रय_करने_बाबत्\\page_0005.png"
+    }
+  ]
+}

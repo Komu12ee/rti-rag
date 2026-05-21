@@ -1,0 +1,48 @@
+{
+  "pdf_path": "D:\\Code\\CRV2\\FG\\01_preprocessing\\01_preprocessing\\input_pdfs\\19_राज्‍य_मंत्रालय_के_नवीन_भवन_में_स्‍थानांतरण_के_फलस्‍वरूप_शासकीय_वाहनों_की_ईंधन_सीमा_में_वृद्धि।.pdf",
+  "total_pages": 3,
+  "pages": [
+    {
+      "page_num": 0,
+      "skew_angle": 0.0,
+      "noise_stats": {
+        "speckles_removed": 0,
+        "noise_ratio": 0.0,
+        "denoise_disabled": true
+      },
+      "has_stamps": false,
+      "has_handwriting": false,
+      "stamp_count": 0,
+      "stamp_regions": [],
+      "image_path": "D:\\Code\\CRV2\\FG\\01_preprocessing\\01_preprocessing\\stage1_output\\19_राज्‍य_मंत्रालय_के_नवीन_भवन_में_स्‍थानांतरण_के_फलस्‍वरूप_शासकीय_वाहनों_की_ईंधन_सीमा_में_वृद्धि।\\page_0000.png"
+    },
+    {
+      "page_num": 1,
+      "skew_angle": 0.0,
+      "noise_stats": {
+        "speckles_removed": 0,
+        "noise_ratio": 0.0,
+        "denoise_disabled": true
+      },
+      "has_stamps": false,
+      "has_handwriting": false,
+      "stamp_count": 0,
+      "stamp_regions": [],
+      "image_path": "D:\\Code\\CRV2\\FG\\01_preprocessing\\01_preprocessing\\stage1_output\\19_राज्‍य_मंत्रालय_के_नवीन_भवन_में_स्‍थानांतरण_के_फलस्‍वरूप_शासकीय_वाहनों_की_ईंधन_सीमा_में_वृद्धि।\\page_0001.png"
+    },
+    {
+      "page_num": 2,
+      "skew_angle": 0.0,
+      "noise_stats": {
+        "speckles_removed": 0,
+        "noise_ratio": 0.0,
+        "denoise_disabled": true
+      },
+      "has_stamps": false,
+      "has_handwriting": false,
+      "stamp_count": 0,
+      "stamp_regions": [],
+      "image_path": "D:\\Code\\CRV2\\FG\\01_preprocessing\\01_preprocessing\\stage1_output\\19_राज्‍य_मंत्रालय_के_नवीन_भवन_में_स्‍थानांतरण_के_फलस्‍वरूप_शासकीय_वाहनों_की_ईंधन_सीमा_में_वृद्धि।\\page_0002.png"
+    }
+  ]
+}

@@ -1,0 +1,200 @@
+# CHiPPY - Complete High-Performance Pipeline Requirements
+# Python 3.9+
+# Installation: pip install -r requirements.txt
+
+# ============================================================================
+# CORE DEPENDENCIES
+# ============================================================================
+
+# Image & PDF Processing
+PyMuPDF>=1.24.0                    # PDF reading and page extraction
+opencv-python>=4.8.0               # Computer vision and image processing
+Pillow>=10.0.0                     # Image manipulation
+
+# Numerical Computing & Data Processing
+numpy>=1.24.0                      # Numerical computing
+pandas>=1.3.0                      # Data manipulation and analysis
+scipy>=1.10.0                      # Scientific computing
+
+# ============================================================================
+# STAGE 1: PREPROCESSING (chips-rag)
+# ============================================================================
+
+# OCR Engines
+pytesseract>=0.3.10                # Tesseract OCR wrapper
+easyocr>=1.7.0                     # Easy OCR (EasyOCR)
+rapidocr>=1.3.0                    # RapidOCR
+
+# Image Processing Enhancements
+scikit-image>=0.21.0               # Advanced image processing
+
+# ============================================================================
+# STAGE 2: OPTIMIZATION
+# ============================================================================
+
+# Text Processing & Spell Checking
+textblob>=0.17.0                   # Text processing
+pyspellchecker>=0.7.0              # Spell checking
+
+# ============================================================================
+# STAGE 3: CHUNKING
+# ============================================================================
+
+# Document Processing
+docling>=0.0.1                     # Docling for document analysis
+python-docx>=0.8.11                # Word document support
+pdfplumber>=0.10.0                 # PDF extraction with structure
+
+# ============================================================================
+# STAGE 4: EMBEDDINGS & KNOWLEDGE GRAPHS
+# ============================================================================
+
+# NLP & Language Processing
+spacy>=3.5.0                       # NLP framework
+en_core_web_sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl  # spaCy English model
+nltk>=3.8.1                        # Natural Language Toolkit
+textacy>=0.12.0                    # Higher-level NLP
+
+# Embeddings
+FlagEmbedding>=1.2.0               # BGE embeddings and reranker
+sentence-transformers>=2.2.0       # Sentence embeddings
+
+# Vector Database
+qdrant-client>=2.0.0               # Qdrant vector database client
+
+# Graph Processing
+networkx>=3.0                      # Graph data structures and algorithms
+jsonschema>=4.17.0                 # JSON schema validation
+
+# ML/Deep Learning (for embeddings)
+torch>=2.0.0                       # PyTorch (may be large; install separately if needed)
+transformers>=4.30.0               # Hugging Face transformers
+
+# ============================================================================
+# STAGE 5: WEB UI & RETRIEVAL
+# ============================================================================
+
+# Web Framework
+Flask>=2.3.0                       # Web framework
+flask-cors>=4.0.0                  # CORS support
+
+# Optional: For FastAPI-based implementation
+fastapi>=0.68.0                    # Alternative web framework
+uvicorn>=0.15.0                    # ASGI web server
+pydantic>=1.8.0                    # Data validation
+
+# ============================================================================
+# DATA VALIDATION & CONFIGURATION
+# ============================================================================
+
+pydantic-settings>=2.0.0           # Settings management
+pydantic>=2.0.0                    # Data validation
+typing-extensions>=3.7.4.3         # Extended typing support
+
+# ============================================================================
+# UTILITIES & PROGRESS TRACKING
+# ============================================================================
+
+tqdm>=4.60.0                       # Progress bars
+python-dotenv>=1.0.0               # Environment variable management
+requests>=2.31.0                   # HTTP library
+
+# ============================================================================
+# LOGGING & DEBUGGING
+# ============================================================================
+
+python-json-logger>=2.0.0          # JSON logging
+colorlog>=6.7.0                    # Colored logging
+
+# ============================================================================
+# OPTIONAL: Development & Testing
+# ============================================================================
+
+pytest>=7.0.0                      # Testing framework
+pytest-cov>=4.0.0                  # Code coverage
+black>=22.0.0                      # Code formatting
+flake8>=5.0.0                      # Code linting
+mypy>=0.990                        # Static type checking
+isort>=5.11.0                      # Import sorting
+
+# ============================================================================
+# OPTIONAL: Visualization (for graph display, results analysis)
+# ============================================================================
+
+matplotlib>=3.4.0                  # Plotting
+plotly>=5.0.0                      # Interactive visualization
+networkx-layout>=0.1.0             # Graph layout algorithms
+
+# ============================================================================
+# OPTIONAL: Advanced Features
+# ============================================================================
+
+# For Ollama LLM integration:
+ollama>=0.1.0                      # Ollama Python client (if available)
+
+# For enhanced search:
+rank-bm25>=0.2.0                   # BM25 ranking algorithm
+pymatgen>=2023.0.0                 # For domain-specific analysis
+
+# ============================================================================
+# NOTES
+# ============================================================================
+
+# 1. GPU Support (optional but recommended):
+#    For CUDA-accelerated operations, install:
+#    pip install torch --index-url https://download.pytorch.org/whl/cu118
+#
+# 2. Tesseract OCR:
+#    Windows: Download from https://github.com/UB-Mannheim/tesseract/wiki
+#    macOS: brew install tesseract
+#    Linux: sudo apt-get install tesseract-ocr
+#
+# 3. Large Downloads:
+#    First run will download spaCy models and embedding models (~2-3 GB)
+#    Use --no-cache-dir if disk space is limited
+#
+# 4. Python Version:
+#    Minimum: Python 3.9
+#    Tested: Python 3.9, 3.10, 3.11
+#    Recommended: Python 3.11+
+#
+# 5. Memory Requirements:
+#    Minimum: 4 GB RAM
+#    Recommended: 8 GB+ RAM
+#    With GPU: 2 GB VRAM minimum
+#
+# 6. Installation Size:
+#    Virtual Environment: ~3-5 GB
+#    Dependencies: ~2-3 GB additional
+#    Model Downloads: ~2-3 GB (first run)
+#    Total: ~7-11 GB
+#
+# 7. Installation Command:
+#    pip install -r requirements.txt
+#    python -m spacy download en_core_web_sm
+#
+# 8. Minimal Installation (CPU only, no GPU):
+#    Works as-is. For faster inference, move to GPU machine.
+#
+# 9. Production Deployment:
+#    Review and comment out optional dependencies as needed
+#    Consider using requirements-prod.txt for production
+
+# ============================================================================
+# INSTALLATION TIPS
+# ============================================================================
+
+# Quick install (all dependencies):
+# pip install -r requirements.txt
+
+# Minimal install (only essentials):
+# pip install PyMuPDF opencv-python numpy pandas spacy qdrant-client FlagEmbedding Flask
+
+# With GPU support:
+# pip install torch --index-url https://download.pytorch.org/whl/cu118
+# pip install -r requirements.txt
+
+# Troubleshooting:
+# If installation fails, try installing in stages:
+# pip install --no-cache-dir -r requirements.txt
+# If torch fails: pip install torch --index-url https://download.pytorch.org/whl/cu118

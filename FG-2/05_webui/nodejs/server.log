@@ -561,3 +561,27 @@ Node.js v20.20.2
 [0mGET /health [32m200[0m 6.060 ms - 7289[0m
 [proxy] → POST http://localhost:5003/api/init
 [0mPOST /api/init [32m200[0m 12859.599 ms - 185[0m
+
+═══════════════════════════════════════════════════════════
+  CHiPS-RAG  –  Express UI Server
+═══════════════════════════════════════════════════════════
+  UI      →  http://0.0.0.0:3003
+  Flask   →  http://localhost:5003  (proxied, no auth)
+  Mode    →  development
+═══════════════════════════════════════════════════════════
+
+[0mGET /health [32m200[0m 5.219 ms - 7289[0m
+[proxy] → POST http://localhost:5003/api/init
+[0mPOST /api/init [32m200[0m 7101.438 ms - 185[0m
+
+═══════════════════════════════════════════════════════════
+  CHiPS-RAG  –  Express UI Server
+═══════════════════════════════════════════════════════════
+  UI      →  http://0.0.0.0:3003
+  Flask   →  http://localhost:5003  (proxied, no auth)
+  Mode    →  development
+═══════════════════════════════════════════════════════════
+
+[0mGET /health [32m200[0m 6.217 ms - 7289[0m
+[proxy] → POST http://localhost:5003/api/init
+[0mPOST /api/init [32m200[0m 11188.466 ms - 185[0m

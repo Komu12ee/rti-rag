@@ -68,7 +68,7 @@ class OTPAuthGate {
                 </svg>
               </div>
               <div>
-                <div class="otp-brand-name">CHiPS-RAG</div>
+                <div class="otp-brand-name">RAG</div>
                 <div class="otp-brand-sub">Document Assistant</div>
               </div>
             </div>

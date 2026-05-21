@@ -1328,3 +1328,55 @@
 2026-05-21 01:11:21: [0mGET /select [36m304[0m 2.550 ms - -[0m
 2026-05-21 01:11:28: [auto-launch] Init response for fg2: 200
 2026-05-21 01:11:35: [0mPOST /select/launch [32m200[0m 12357.452 ms - 58[0m
+2026-05-21 12:17:34: [db] Initialized SQLite at ./data/auth.db
+2026-05-21 12:17:34: [email] Email service initialized
+2026-05-21 12:17:34: [server] OTP authentication enabled
+2026-05-21 12:17:34: [auto-launch] Launching pipeline: fg
+2026-05-21 12:17:34: 
+2026-05-21 12:17:34: ═══════════════════════════════════════════════════════════
+2026-05-21 12:17:34:   CHiPS-RAG  –  Selection & Auth Server
+2026-05-21 12:17:34: ═══════════════════════════════════════════════════════════
+2026-05-21 12:17:34:   URL     →  http://0.0.0.0:3000
+2026-05-21 12:17:34:   Mode    →  development
+2026-05-21 12:17:34:   OTP     →  Enabled
+2026-05-21 12:17:34: ═══════════════════════════════════════════════════════════
+2026-05-21 12:17:34: 
+2026-05-21 12:17:36: [0mGET / [36m304[0m 5.433 ms - -[0m
+2026-05-21 12:17:36: [0mGET /otp-auth.css [36m304[0m 2.184 ms - -[0m
+2026-05-21 12:17:36: [0mGET /otp-auth.js [36m304[0m 3.125 ms - -[0m
+2026-05-21 12:17:36: [0mGET /init.js [36m304[0m 3.051 ms - -[0m
+2026-05-21 12:17:38: [auto-launch] Initializing pipeline via http://localhost:3002/api/init
+2026-05-21 12:18:56: [auto-launch] Init response for fg: 200
+2026-05-21 12:18:56: [auto-launch] Launching pipeline: fg2
+2026-05-21 12:18:58: [auto-launch] Initializing pipeline via http://localhost:3003/api/init
+2026-05-21 12:19:05: [auto-launch] Init response for fg2: 200
+2026-05-21 12:20:07: [db] Initialized SQLite at ./data/auth.db
+2026-05-21 12:20:07: [email] Email service initialized
+2026-05-21 12:20:07: [server] OTP authentication enabled
+2026-05-21 12:20:07: [auto-launch] Launching pipeline: fg
+2026-05-21 12:20:07: 
+2026-05-21 12:20:07: ═══════════════════════════════════════════════════════════
+2026-05-21 12:20:07:   CHiPS-RAG  –  Selection & Auth Server
+2026-05-21 12:20:07: ═══════════════════════════════════════════════════════════
+2026-05-21 12:20:07:   URL     →  http://0.0.0.0:3000
+2026-05-21 12:20:07:   Mode    →  development
+2026-05-21 12:20:07:   OTP     →  Enabled
+2026-05-21 12:20:07: ═══════════════════════════════════════════════════════════
+2026-05-21 12:20:07: 
+2026-05-21 12:20:08: [auto-launch] Initializing pipeline via http://localhost:3002/api/init
+2026-05-21 12:20:09: [0mGET / [36m304[0m 1.854 ms - -[0m
+2026-05-21 12:20:09: [0mGET /otp-auth.css [36m304[0m 2.554 ms - -[0m
+2026-05-21 12:20:09: [0mGET /init.js [36m304[0m 0.933 ms - -[0m
+2026-05-21 12:20:09: [0mGET /otp-auth.js [32m200[0m 4.630 ms - 23650[0m
+2026-05-21 12:20:10: [0mGET / [36m304[0m 0.566 ms - -[0m
+2026-05-21 12:20:10: [0mGET /otp-auth.css [36m304[0m 1.328 ms - -[0m
+2026-05-21 12:20:10: [0mGET /otp-auth.js [36m304[0m 1.249 ms - -[0m
+2026-05-21 12:20:10: [0mGET /init.js [36m304[0m 1.341 ms - -[0m
+2026-05-21 12:20:10: [0mGET / [36m304[0m 0.920 ms - -[0m
+2026-05-21 12:20:10: [0mGET /otp-auth.css [36m304[0m 2.700 ms - -[0m
+2026-05-21 12:20:10: [0mGET /otp-auth.js [36m304[0m 3.452 ms - -[0m
+2026-05-21 12:20:10: [0mGET /init.js [36m304[0m 4.734 ms - -[0m
+2026-05-21 12:20:19: [auto-launch] Init response for fg: 200
+2026-05-21 12:20:19: [auto-launch] Launching pipeline: fg2
+2026-05-21 12:20:21: [auto-launch] Initializing pipeline via http://localhost:3003/api/init
+2026-05-21 12:20:32: [auto-launch] Init response for fg2: 200
