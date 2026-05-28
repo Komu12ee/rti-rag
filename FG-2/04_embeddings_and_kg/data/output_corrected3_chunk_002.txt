@@ -1,5 +1,0 @@
-Headings: ['AGENDA #1']
-Source: output_corrected3.md
-Text: [...] 6lst meeting of Empowered Committee for Information Technology Projects'under the Chairmanship of Shri Amitabh Jain, Chief Secretary, Government of Chhattisgarh, WAS convened at Ante chamber of Chief Secretary virtually (Via WebEx) on 7th January 2025 at 4:30 PM. The list of attendees of Meeting is enclosed in Annexure ` ]. The Committee deliberated on the agenda and the following decisions were taken:
-Approval of 6Oth Empowered Committee Meeting minutes.
-1. No suggestion for amendment was received. Therefore, the Minutes of 6Oth Empowered Committee meeting were approved. [...]

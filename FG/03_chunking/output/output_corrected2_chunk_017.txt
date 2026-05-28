@@ -1,5 +1,4 @@
 Headings: ['DECISION TAKEN']
 Source: output_corrected2
 ---
-O8) The Empowered Committee accorded in-principle approval of implementation of Court Case Monitoring System (CCMS)
-- 8.1) The Committee further directed to include the Home Police Department also for implementation. pilot
+1. The Empowered Committee accorded approval of extension of Chhattisgarh State Data Centre (CGSDC) Project for 12 Months (lst 2024 to 31" March 2025) for Exit Management and On-boarding of New System Integrator Apr

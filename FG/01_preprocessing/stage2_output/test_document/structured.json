@@ -1,0 +1,14 @@
+{
+  "source_pdf": "/home/ent/CHiPS/CHiPS/01_preprocessing/input_pdfs/test_document.pdf",
+  "total_pages": 4,
+  "total_elements": 0,
+  "total_tables": 0,
+  "total_text_chars": 0,
+  "pages": [],
+  "critical_fields": {
+    "dates": [],
+    "amounts": [],
+    "reference_numbers": []
+  },
+  "quality_flags": []
+}

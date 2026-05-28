@@ -1,23 +1,0 @@
-2026-05-18 15:37:59: Fetching 30 files:   0%|          | 0/30 [00:00<?, ?it/s]Fetching 30 files: 100%|##########| 30/30 [00:00<00:00, 28200.16it/s]
-2026-05-18 15:39:38: Fetching 30 files:   0%|          | 0/30 [00:00<?, ?it/s]
-2026-05-18 15:39:38: Fetching 30 files: 100%|##########| 30/30 [00:00<00:00, 25105.57it/s]
-2026-05-18 15:40:26: Fetching 30 files:   0%|          | 0/30 [00:00<?, ?it/s]
-2026-05-18 15:40:26: Fetching 30 files: 100%|##########| 30/30 [00:00<00:00, 9977.73it/s]
-2026-05-18 15:40:31: Traceback (most recent call last):
-2026-05-18 15:40:31:   File "D:\Code\CRV2\FG-2\05_webui\app.py", line 471, in <module>
-2026-05-18 15:40:31:     print("\U0001f680 CHiPS-RAG Pipeline (Internal Backend)")
-2026-05-18 15:40:31:     ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-05-18 15:40:31:   File "C:\Users\av071\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
-2026-05-18 15:40:31:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]
-2026-05-18 15:40:31:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-05-18 15:40:31: UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f680' in position 0: character maps to <undefined>
-2026-05-18 15:41:03: Fetching 30 files:   0%|          | 0/30 [00:00<?, ?it/s]
-2026-05-18 15:41:03: Fetching 30 files: 100%|##########| 30/30 [00:00<00:00, 61200.93it/s]
-2026-05-18 15:41:07: Traceback (most recent call last):
-2026-05-18 15:41:07:   File "D:\Code\CRV2\FG-2\05_webui\app.py", line 471, in <module>
-2026-05-18 15:41:07:     print("\U0001f680 CHiPS-RAG Pipeline (Internal Backend)")
-2026-05-18 15:41:07:     ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-05-18 15:41:07:   File "C:\Users\av071\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
-2026-05-18 15:41:07:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]
-2026-05-18 15:41:07:            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-05-18 15:41:07: UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f680' in position 0: character maps to <undefined>

@@ -1,720 +1,0 @@
-[Web UI] Found RAG module at: D:\Code\CRV2\CHiPS\04_embeddings_and_kg\scripts\rag_pipeline.py
-✓ Sarvam AI configured with model: sarvam-105b
-
-======================================================================
-🚀 CHiPS-RAG Pipeline (Internal Backend)
-======================================================================
-
-RAG Pipeline Status: ✅ Available
-Environment: development
-
-ℹ️  This Flask server is INTERNAL ONLY.
-   Authentication is handled by Express.js at :3000
-
-Starting Flask server on http://0.0.0.0:5000 (debug: False)
-Press Ctrl+C to stop the server
-
- * Serving Flask app 'app'
- * Debug mode: off
-WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://10.62.168.199:5000
-Press CTRL+C to quit
-[launcher] exited with code null (signal: SIGTERM)
-[Web UI] Found RAG module at: D:\Code\CRV2\CHiPS\04_embeddings_and_kg\scripts\rag_pipeline.py
-✓ Sarvam AI configured with model: sarvam-105b
-
-======================================================================
-🚀 CHiPS-RAG Pipeline (Internal Backend)
-======================================================================
-
-RAG Pipeline Status: ✅ Available
-Environment: development
-
-ℹ️  This Flask server is INTERNAL ONLY.
-   Authentication is handled by Express.js at :3000
-
-Starting Flask server on http://0.0.0.0:5000 (debug: False)
-Press Ctrl+C to stop the server
-
- * Serving Flask app 'app'
- * Debug mode: off
-WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://10.62.168.199:5000
-Press CTRL+C to quit
-[Web UI] Found RAG module at: D:\Code\CRV2\CHiPS\04_embeddings_and_kg\scripts\rag_pipeline.py
-✓ Sarvam AI configured with model: sarvam-105b
-
-======================================================================
-🚀 CHiPS-RAG Pipeline (Internal Backend)
-======================================================================
-
-RAG Pipeline Status: ✅ Available
-Environment: development
-
-ℹ️  This Flask server is INTERNAL ONLY.
-   Authentication is handled by Express.js at :3000
-
-Starting Flask server on http://0.0.0.0:5000 (debug: False)
-Press Ctrl+C to stop the server
-
- * Serving Flask app 'app'
- * Debug mode: off
-WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://10.62.168.199:5000
-Press CTRL+C to quit
-[Web UI] Found RAG module at: D:\Code\CRV2\CHiPS\04_embeddings_and_kg\scripts\rag_pipeline.py
-✓ Sarvam AI configured with model: sarvam-105b
-
-======================================================================
-🚀 CHiPS-RAG Pipeline (Internal Backend)
-======================================================================
-
-RAG Pipeline Status: ✅ Available
-Environment: development
-
-ℹ️  This Flask server is INTERNAL ONLY.
-   Authentication is handled by Express.js at :3000
-
-Starting Flask server on http://0.0.0.0:5000 (debug: False)
-Press Ctrl+C to stop the server
-
- * Serving Flask app 'app'
- * Debug mode: off
-WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://10.62.168.199:5000
-Press CTRL+C to quit
-[launcher] exited with code null (signal: SIGTERM)
-[launcher] exited with code null (signal: SIGTERM)
-[launcher] exited with code null (signal: SIGTERM)
-[Web UI] Found RAG module at: D:\Code\CRV2\CHiPS\04_embeddings_and_kg\scripts\rag_pipeline.py
-✓ Sarvam AI configured with model: sarvam-105b
-
-======================================================================
-🚀 CHiPS-RAG Pipeline (Internal Backend)
-======================================================================
-
-RAG Pipeline Status: ✅ Available
-Environment: development
-
-ℹ️  This Flask server is INTERNAL ONLY.
-   Authentication is handled by Express.js at :3000
-
-Starting Flask server on http://0.0.0.0:5001 (debug: False)
-Press Ctrl+C to stop the server
-
- * Serving Flask app 'app'
- * Debug mode: off
-WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5001
- * Running on http://10.62.168.199:5001
-Press CTRL+C to quit
-127.0.0.1 - - [20/May/2026 13:39:33] "GET /api/health HTTP/1.1" 200 -
-127.0.0.1 - - [20/May/2026 13:39:45] "GET /api/examples HTTP/1.1" 200 -
-127.0.0.1 - - [20/May/2026 13:39:45] "GET /api/health HTTP/1.1" 200 -
-127.0.0.1 - - [20/May/2026 13:39:46] "POST /api/init HTTP/1.1" 400 -
-127.0.0.1 - - [20/May/2026 13:39:49] "POST /api/init HTTP/1.1" 400 -
-127.0.0.1 - - [20/May/2026 13:39:50] "POST /api/init HTTP/1.1" 400 -
-127.0.0.1 - - [20/May/2026 13:39:50] "POST /api/init HTTP/1.1" 400 -
-127.0.0.1 - - [20/May/2026 13:39:50] "POST /api/init HTTP/1.1" 400 -
-127.0.0.1 - - [20/May/2026 13:39:50] "POST /api/init HTTP/1.1" 400 -
-127.0.0.1 - - [20/May/2026 13:39:50] "POST /api/init HTTP/1.1" 400 -
-[Web UI] Found RAG module at: D:\Code\CRV2\CHiPS\04_embeddings_and_kg\scripts\rag_pipeline.py
-✓ Sarvam AI configured with model: sarvam-105b
-
-======================================================================
-🚀 CHiPS-RAG Pipeline (Internal Backend)
-======================================================================
-
-RAG Pipeline Status: ✅ Available
-Environment: development
-
-ℹ️  This Flask server is INTERNAL ONLY.
-   Authentication is handled by Express.js at :3000
-
-Starting Flask server on http://0.0.0.0:5001 (debug: False)
-Press Ctrl+C to stop the server
-
- * Serving Flask app 'app'
- * Debug mode: off
-WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5001
- * Running on http://10.62.168.199:5001
-Press CTRL+C to quit
-127.0.0.1 - - [20/May/2026 13:41:07] "GET /api/health HTTP/1.1" 200 -
-127.0.0.1 - - [20/May/2026 13:41:08] "GET /api/examples HTTP/1.1" 200 -
-127.0.0.1 - - [20/May/2026 13:41:08] "GET /api/health HTTP/1.1" 200 -
-127.0.0.1 - - [20/May/2026 13:41:10] "POST /api/init HTTP/1.1" 400 -
-127.0.0.1 - - [20/May/2026 13:41:11] "POST /api/init HTTP/1.1" 400 -
-127.0.0.1 - - [20/May/2026 13:41:13] "POST /api/init HTTP/1.1" 400 -
-127.0.0.1 - - [20/May/2026 13:42:21] "POST /api/init HTTP/1.1" 400 -
-[Web UI] Found RAG module at: D:\Code\CRV2\CHiPS\04_embeddings_and_kg\scripts\rag_pipeline.py
-✓ Sarvam AI configured with model: sarvam-105b
-
-======================================================================
-🚀 CHiPS-RAG Pipeline (Internal Backend)
-======================================================================
-
-RAG Pipeline Status: ✅ Available
-Environment: development
-
-ℹ️  This Flask server is INTERNAL ONLY.
-   Authentication is handled by Express.js at :3000
-
-Starting Flask server on http://0.0.0.0:5001 (debug: False)
-Press Ctrl+C to stop the server
-
- * Serving Flask app 'app'
- * Debug mode: off
-WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5001
- * Running on http://10.62.168.199:5001
-Press CTRL+C to quit
-127.0.0.1 - - [20/May/2026 13:45:19] "GET /api/health HTTP/1.1" 200 -
-127.0.0.1 - - [20/May/2026 13:45:20] "GET /api/examples HTTP/1.1" 200 -
-127.0.0.1 - - [20/May/2026 13:45:20] "GET /api/health HTTP/1.1" 200 -
-127.0.0.1 - - [20/May/2026 13:45:21] "POST /api/init HTTP/1.1" 200 -
-127.0.0.1 - - [20/May/2026 13:45:21] "GET /api/db-status HTTP/1.1" 200 -
-
-[Web UI] Initializing RAG pipeline...
-Connecting to local Qdrant at D:\Code\CRV2\CHiPS\04_embeddings_and_kg\db\qdrant_local_chips...
-✓ Connected to local embedded Qdrant
-[Web UI] RAG pipeline initialization successful
-
-⏱️ [FLASK] Total request start
-[Web UI] Processing query: ec mom
-[Web UI] Retrieving context...
-⏱️ [RETRIEVE_CONTEXT] STARTED
-🔍 Retrieving context...
-Loading embedding model (deferred)...
-Fetching 30 files:   0%|          | 0/30 [00:00<?, ?it/s]Fetching 30 files: 100%|██████████| 30/30 [00:00<00:00, 42740.87it/s]
-Loading reranker model (deferred)...
-⚠ Could not import knowledge graph modules: No module named 'knowledge_graph'
-  🔍 Searching with 5 query variations...
-pre tokenize:   0%|          | 0/1 [00:00<?, ?it/s]pre tokenize: 100%|██████████| 1/1 [00:00<00:00, 47.58it/s]
-You're using a XLMRobertaTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
-Inference Embeddings:   0%|          | 0/1 [00:00<?, ?it/s]Inference Embeddings: 100%|██████████| 1/1 [00:00<00:00, 13.12it/s]
-pre tokenize:   0%|          | 0/1 [00:00<?, ?it/s]pre tokenize: 100%|██████████| 1/1 [00:00<00:00, 2864.96it/s]
-Inference Embeddings:   0%|          | 0/1 [00:00<?, ?it/s]Inference Embeddings: 100%|██████████| 1/1 [00:00<00:00, 13.32it/s]
-pre tokenize:   0%|          | 0/1 [00:00<?, ?it/s]pre tokenize: 100%|██████████| 1/1 [00:00<00:00, 3637.73it/s]
-Inference Embeddings:   0%|          | 0/1 [00:00<?, ?it/s]Inference Embeddings: 100%|██████████| 1/1 [00:00<00:00, 11.27it/s]
-pre tokenize:   0%|          | 0/1 [00:00<?, ?it/s]pre tokenize: 100%|██████████| 1/1 [00:00<00:00, 4202.71it/s]
-Inference Embeddings:   0%|          | 0/1 [00:00<?, ?it/s]Inference Embeddings: 100%|██████████| 1/1 [00:00<00:00, 13.92it/s]
-pre tokenize:   0%|          | 0/1 [00:00<?, ?it/s]pre tokenize: 100%|██████████| 1/1 [00:00<00:00, 3449.26it/s]
-Inference Embeddings:   0%|          | 0/1 [00:00<?, ?it/s]Inference Embeddings: 100%|██████████| 1/1 [00:00<00:00, 13.73it/s]
-127.0.0.1 - - [20/May/2026 13:45:41] "POST /api/query HTTP/1.1" 200 -
-[Web UI] Found RAG module at: D:\Code\CRV2\CHiPS\04_embeddings_and_kg\scripts\rag_pipeline.py
-✓ Sarvam AI configured with model: sarvam-105b
-
-======================================================================
-🚀 CHiPS-RAG Pipeline (Internal Backend)
-======================================================================
-
-RAG Pipeline Status: ✅ Available
-Environment: development
-
-ℹ️  This Flask server is INTERNAL ONLY.
-   Authentication is handled by Express.js at :3000
-
-Starting Flask server on http://0.0.0.0:5001 (debug: False)
-Press Ctrl+C to stop the server
-
- * Serving Flask app 'app'
- * Debug mode: off
-WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5001
- * Running on http://192.168.1.134:5001
-Press CTRL+C to quit
-127.0.0.1 - - [20/May/2026 16:37:52] "GET /api/health HTTP/1.1" 200 -
-127.0.0.1 - - [20/May/2026 16:38:02] "GET /api/examples HTTP/1.1" 200 -
-127.0.0.1 - - [20/May/2026 16:38:02] "GET /api/health HTTP/1.1" 200 -
-127.0.0.1 - - [20/May/2026 16:38:05] "POST /api/init HTTP/1.1" 200 -
-127.0.0.1 - - [20/May/2026 16:38:05] "GET /api/db-status HTTP/1.1" 200 -
-
-[Web UI] Initializing RAG pipeline...
-Connecting to local Qdrant at D:\Code\CRV2\CHiPS\04_embeddings_and_kg\db\qdrant_local_chips...
-✓ Connected to local embedded Qdrant
-[Web UI] RAG pipeline initialization successful
-
-⏱️ [FLASK] Total request start
-[Web UI] Processing query: ec
-[Web UI] Retrieving context...
-⏱️ [RETRIEVE_CONTEXT] STARTED
-🔍 Retrieving context...
-Loading embedding model (deferred)...
-Fetching 30 files:   0%|          | 0/30 [00:00<?, ?it/s]Fetching 30 files: 100%|██████████| 30/30 [00:00<00:00, 264903.41it/s]
-Loading reranker model (deferred)...
-⚠ Could not import knowledge graph modules: No module named 'knowledge_graph'
-  🔍 Searching with 5 query variations...
-pre tokenize:   0%|          | 0/1 [00:00<?, ?it/s]pre tokenize: 100%|██████████| 1/1 [00:00<00:00, 188.07it/s]
-You're using a XLMRobertaTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
-Inference Embeddings:   0%|          | 0/1 [00:00<?, ?it/s]Inference Embeddings: 100%|██████████| 1/1 [00:00<00:00, 13.13it/s]
-pre tokenize:   0%|          | 0/1 [00:00<?, ?it/s]pre tokenize: 100%|██████████| 1/1 [00:00<00:00, 1483.66it/s]
-Inference Embeddings:   0%|          | 0/1 [00:00<?, ?it/s]Inference Embeddings: 100%|██████████| 1/1 [00:00<00:00, 14.01it/s]
-pre tokenize:   0%|          | 0/1 [00:00<?, ?it/s]pre tokenize: 100%|██████████| 1/1 [00:00<00:00, 3851.52it/s]
-Inference Embeddings:   0%|          | 0/1 [00:00<?, ?it/s]Inference Embeddings: 100%|██████████| 1/1 [00:00<00:00, 14.19it/s]
-pre tokenize:   0%|          | 0/1 [00:00<?, ?it/s]pre tokenize: 100%|██████████| 1/1 [00:00<00:00, 3705.22it/s]
-Inference Embeddings:   0%|          | 0/1 [00:00<?, ?it/s]Inference Embeddings: 100%|██████████| 1/1 [00:00<00:00, 15.42it/s]
-pre tokenize:   0%|          | 0/1 [00:00<?, ?it/s]pre tokenize: 100%|██████████| 1/1 [00:00<00:00, 4249.55it/s]
-Inference Embeddings:   0%|          | 0/1 [00:00<?, ?it/s]Inference Embeddings: 100%|██████████| 1/1 [00:00<00:00, 15.03it/s]
-127.0.0.1 - - [20/May/2026 16:38:19] "POST /api/query HTTP/1.1" 200 -
-127.0.0.1 - - [20/May/2026 16:38:58] "GET /api/examples HTTP/1.1" 200 -
-127.0.0.1 - - [20/May/2026 16:38:58] "GET /api/health HTTP/1.1" 200 -
-127.0.0.1 - - [20/May/2026 16:38:58] "GET /api/db-status HTTP/1.1" 200 -
-⏱️ [MULTI_QUERY_RETRIEVAL] COMPLETED in 7.49s
-  ⚡ Using hybrid search (α=0.6: 60% dense, 40% sparse)
-⚡ Using hybrid search results directly (reranking disabled)
-⏱️ [RETRIEVE_CONTEXT] COMPLETED in 7.49s
-⏱️ [FLASK] Retrieval completed in 7.49s
-[Web UI] Generating answer...
-
-🤖 Generating answer with Sarvam AI (sarvam-105b)...
-⏱️ [ANSWER_GENERATION] COMPLETED in 3.97s
-⏱️ [FLASK] Answer generation completed in 3.98s
-[Web UI] Query processed successfully
-⏱️ [FLASK] TOTAL PIPELINE TIME: 11.47s
-
-
-⏱️ [FLASK] Total request start
-[Web UI] Processing query: ec mom
-[Web UI] Retrieving context...
-⏱️ [RETRIEVE_CONTEXT] COMPLETED in 51.41s
-🔍 Retrieving context...
-⏱️ [MULTI_QUERY_RETRIEVAL] COMPLETED in 51.41s
-  🔍 Searching with 5 query variations...
-pre tokenize:   0%|          | 0/1 [00:00<?, ?it/s]pre tokenize: 100%|██████████| 1/1 [00:00<00:00, 1160.25it/s]
-Inference Embeddings:   0%|          | 0/1 [00:00<?, ?it/s]Inference Embeddings: 100%|██████████| 1/1 [00:00<00:00,  7.97it/s]Inference Embeddings: 100%|██████████| 1/1 [00:00<00:00,  7.95it/s]
-pre tokenize:   0%|          | 0/1 [00:00<?, ?it/s]pre tokenize: 100%|██████████| 1/1 [00:00<00:00, 2597.09it/s]
-Inference Embeddings:   0%|          | 0/1 [00:00<?, ?it/s]Inference Embeddings: 100%|██████████| 1/1 [00:00<00:00,  1.58it/s]Inference Embeddings: 100%|██████████| 1/1 [00:00<00:00,  1.58it/s]
-pre tokenize:   0%|          | 0/1 [00:00<?, ?it/s]pre tokenize: 100%|██████████| 1/1 [00:00<00:00, 3412.78it/s]
-Inference Embeddings:   0%|          | 0/1 [00:00<?, ?it/s]Inference Embeddings: 100%|██████████| 1/1 [00:00<00:00,  1.57it/s]Inference Embeddings: 100%|██████████| 1/1 [00:00<00:00,  1.57it/s]
-pre tokenize:   0%|          | 0/1 [00:00<?, ?it/s]pre tokenize: 100%|██████████| 1/1 [00:00<00:00, 2410.52it/s]
-Inference Embeddings:   0%|          | 0/1 [00:00<?, ?it/s]Inference Embeddings: 100%|██████████| 1/1 [00:00<00:00,  1.27it/s]Inference Embeddings: 100%|██████████| 1/1 [00:00<00:00,  1.27it/s]
-pre tokenize:   0%|          | 0/1 [00:00<?, ?it/s]pre tokenize: 100%|██████████| 1/1 [00:00<00:00, 1853.43it/s]
-Inference Embeddings:   0%|          | 0/1 [00:00<?, ?it/s]Inference Embeddings: 100%|██████████| 1/1 [00:01<00:00,  1.20s/it]Inference Embeddings: 100%|██████████| 1/1 [00:01<00:00,  1.20s/it]
-127.0.0.1 - - [20/May/2026 16:39:21] "POST /api/query HTTP/1.1" 200 -
-127.0.0.1 - - [20/May/2026 16:39:33] "GET /01_preprocessing/used_files/file2.pdf HTTP/1.1" 200 -
-[Web UI] Found RAG module at: D:\Code\CRV2\CHiPS\04_embeddings_and_kg\scripts\rag_pipeline.py
-✓ Sarvam AI configured with model: sarvam-105b
-
-======================================================================
-🚀 CHiPS-RAG Pipeline (Internal Backend)
-======================================================================
-
-RAG Pipeline Status: ✅ Available
-Environment: development
-
-ℹ️  This Flask server is INTERNAL ONLY.
-   Authentication is handled by Express.js at :3000
-
-Starting Flask server on http://0.0.0.0:5001 (debug: False)
-Press Ctrl+C to stop the server
-
- * Serving Flask app 'app'
- * Debug mode: off
-WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5001
- * Running on http://172.27.100.52:5001
-Press CTRL+C to quit
-127.0.0.1 - - [20/May/2026 17:08:44] "GET /api/health HTTP/1.1" 200 -
-127.0.0.1 - - [20/May/2026 17:08:45] "GET /api/examples HTTP/1.1" 200 -
-127.0.0.1 - - [20/May/2026 17:08:45] "GET /api/health HTTP/1.1" 200 -
-[Web UI] Found RAG module at: D:\Code\CRV2\CHiPS\04_embeddings_and_kg\scripts\rag_pipeline.py
-[Web UI] Found RAG module at: D:\Code\CRV2\CHiPS\04_embeddings_and_kg\scripts\rag_pipeline.py
-✓ Sarvam AI configured with model: sarvam-105b
-
-======================================================================
-🚀 CHiPS-RAG Pipeline (Internal Backend)
-======================================================================
-
-RAG Pipeline Status: ✅ Available
-Environment: development
-
-ℹ️  This Flask server is INTERNAL ONLY.
-   Authentication is handled by Express.js at :3000
-
-Starting Flask server on http://0.0.0.0:5001 (debug: False)
-Press Ctrl+C to stop the server
-
- * Serving Flask app 'app'
- * Debug mode: off
-✓ Sarvam AI configured with model: sarvam-105b
-
-======================================================================
-🚀 CHiPS-RAG Pipeline (Internal Backend)
-======================================================================
-
-RAG Pipeline Status: ✅ Available
-Environment: development
-
-ℹ️  This Flask server is INTERNAL ONLY.
-   Authentication is handled by Express.js at :3000
-
-Starting Flask server on http://0.0.0.0:5001 (debug: False)
-Press Ctrl+C to stop the server
-
- * Serving Flask app 'app'
- * Debug mode: off
-WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5001
- * Running on http://10.66.246.232:5001
-WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5001
- * Running on http://10.66.246.232:5001
-Press CTRL+C to quit
-Press CTRL+C to quit
-127.0.0.1 - - [21/May/2026 00:17:57] "GET /api/health HTTP/1.1" 200 -
-127.0.0.1 - - [21/May/2026 00:17:58] "GET /api/health HTTP/1.1" 200 -
-[launcher] exited with code null (signal: SIGTERM)
-127.0.0.1 - - [21/May/2026 00:18:23] "GET /api/health HTTP/1.1" 200 -
-127.0.0.1 - - [21/May/2026 00:18:23] "GET /api/examples HTTP/1.1" 200 -
-127.0.0.1 - - [21/May/2026 00:18:23] "GET /api/health HTTP/1.1" 200 -
-[launcher] exited with code null (signal: SIGTERM)
-127.0.0.1 - - [21/May/2026 00:18:32] "GET /api/health HTTP/1.1" 200 -
-127.0.0.1 - - [21/May/2026 00:18:32] "GET /api/examples HTTP/1.1" 200 -
-127.0.0.1 - - [21/May/2026 00:18:32] "GET /api/health HTTP/1.1" 200 -
-127.0.0.1 - - [21/May/2026 00:18:33] "POST /api/init HTTP/1.1" 200 -
-127.0.0.1 - - [21/May/2026 00:18:33] "GET /api/db-status HTTP/1.1" 200 -
-[Web UI] Found RAG module at: D:\Code\CRV2\CHiPS\04_embeddings_and_kg\scripts\rag_pipeline.py
-✓ Sarvam AI configured with model: sarvam-105b
-
-======================================================================
-🚀 CHiPS-RAG Pipeline (Internal Backend)
-======================================================================
-
-RAG Pipeline Status: ✅ Available
-Environment: development
-
-ℹ️  This Flask server is INTERNAL ONLY.
-   Authentication is handled by Express.js at :3000
-
-Starting Flask server on http://0.0.0.0:5001 (debug: False)
-Press Ctrl+C to stop the server
-
- * Serving Flask app 'app'
- * Debug mode: off
-WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5001
- * Running on http://10.66.246.232:5001
-Press CTRL+C to quit
-[Web UI] Found RAG module at: D:\Code\CRV2\CHiPS\04_embeddings_and_kg\scripts\rag_pipeline.py
-✓ Sarvam AI configured with model: sarvam-105b
-
-======================================================================
-🚀 CHiPS-RAG Pipeline (Internal Backend)
-======================================================================
-
-RAG Pipeline Status: ✅ Available
-Environment: development
-
-ℹ️  This Flask server is INTERNAL ONLY.
-   Authentication is handled by Express.js at :3000
-
-Starting Flask server on http://0.0.0.0:5001 (debug: False)
-Press Ctrl+C to stop the server
-
- * Serving Flask app 'app'
- * Debug mode: off
-WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5001
- * Running on http://10.66.246.232:5001
-Press CTRL+C to quit
-127.0.0.1 - - [21/May/2026 00:29:04] "GET /api/health HTTP/1.1" 200 -
-127.0.0.1 - - [21/May/2026 00:29:04] "GET /api/examples HTTP/1.1" 200 -
-127.0.0.1 - - [21/May/2026 00:29:04] "GET /api/health HTTP/1.1" 200 -
-127.0.0.1 - - [21/May/2026 00:29:06] "POST /api/init HTTP/1.1" 200 -
-127.0.0.1 - - [21/May/2026 00:29:06] "GET /api/db-status HTTP/1.1" 200 -
-127.0.0.1 - - [21/May/2026 00:31:57] "GET /api/examples HTTP/1.1" 200 -
-127.0.0.1 - - [21/May/2026 00:31:57] "GET /api/health HTTP/1.1" 200 -
-127.0.0.1 - - [21/May/2026 00:31:57] "GET /api/db-status HTTP/1.1" 200 -
-
-[Web UI] Initializing RAG pipeline...
-Connecting to local Qdrant at D:\Code\CRV2\CHiPS\04_embeddings_and_kg\db\qdrant_local_chips...
-✓ Connected to local embedded Qdrant
-[Web UI] RAG pipeline initialization successful
-
-⏱️ [FLASK] Total request start
-[Web UI] Processing query: ec mom
-[Web UI] Retrieving context...
-⏱️ [RETRIEVE_CONTEXT] STARTED
-🔍 Retrieving context...
-Loading embedding model (deferred)...
-Fetching 30 files:   0%|          | 0/30 [00:00<?, ?it/s]Fetching 30 files: 100%|██████████| 30/30 [00:00<00:00, 175005.73it/s]
-Loading reranker model (deferred)...
-⚠ Could not import knowledge graph modules: No module named 'knowledge_graph'
-  🔍 Searching with 5 query variations...
-pre tokenize:   0%|          | 0/1 [00:00<?, ?it/s]pre tokenize: 100%|██████████| 1/1 [00:00<00:00, 135.25it/s]
-You're using a XLMRobertaTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
-Inference Embeddings:   0%|          | 0/1 [00:00<?, ?it/s]Inference Embeddings: 100%|██████████| 1/1 [00:00<00:00, 11.75it/s]
-pre tokenize:   0%|          | 0/1 [00:00<?, ?it/s]pre tokenize: 100%|██████████| 1/1 [00:00<00:00, 3569.62it/s]
-Inference Embeddings:   0%|          | 0/1 [00:00<?, ?it/s]Inference Embeddings: 100%|██████████| 1/1 [00:00<00:00, 10.10it/s]
-pre tokenize:   0%|          | 0/1 [00:00<?, ?it/s]pre tokenize: 100%|██████████| 1/1 [00:00<00:00, 3165.51it/s]
-Inference Embeddings:   0%|          | 0/1 [00:00<?, ?it/s]Inference Embeddings: 100%|██████████| 1/1 [00:00<00:00, 12.56it/s]
-pre tokenize:   0%|          | 0/1 [00:00<?, ?it/s]pre tokenize: 100%|██████████| 1/1 [00:00<00:00, 3358.13it/s]
-Inference Embeddings:   0%|          | 0/1 [00:00<?, ?it/s]Inference Embeddings: 100%|██████████| 1/1 [00:00<00:00, 12.13it/s]
-pre tokenize:   0%|          | 0/1 [00:00<?, ?it/s]pre tokenize: 100%|██████████| 1/1 [00:00<00:00, 3199.32it/s]
-Inference Embeddings:   0%|          | 0/1 [00:00<?, ?it/s]Inference Embeddings: 100%|██████████| 1/1 [00:00<00:00, 12.69it/s]
-127.0.0.1 - - [21/May/2026 00:32:21] "POST /api/query HTTP/1.1" 200 -
-[Web UI] Found RAG module at: D:\Code\CRV2\CHiPS\04_embeddings_and_kg\scripts\rag_pipeline.py
-✓ Sarvam AI configured with model: sarvam-105b
-
-======================================================================
-🚀 CHiPS-RAG Pipeline (Internal Backend)
-======================================================================
-
-RAG Pipeline Status: ✅ Available
-Environment: development
-
-ℹ️  This Flask server is INTERNAL ONLY.
-   Authentication is handled by Express.js at :3000
-
-Starting Flask server on http://0.0.0.0:5001 (debug: False)
-Press Ctrl+C to stop the server
-
- * Serving Flask app 'app'
- * Debug mode: off
-WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5001
- * Running on http://10.66.246.232:5001
-Press CTRL+C to quit
-127.0.0.1 - - [21/May/2026 00:34:13] "GET /api/health HTTP/1.1" 200 -
-127.0.0.1 - - [21/May/2026 00:34:14] "GET /api/health HTTP/1.1" 200 -
-127.0.0.1 - - [21/May/2026 00:34:15] "POST /api/init HTTP/1.1" 200 -
-127.0.0.1 - - [21/May/2026 00:34:15] "GET /api/db-status HTTP/1.1" 200 -
-
-[Web UI] Initializing RAG pipeline...
-Connecting to local Qdrant at D:\Code\CRV2\CHiPS\04_embeddings_and_kg\db\qdrant_local_chips...
-✓ Connected to local embedded Qdrant
-[Web UI] RAG pipeline initialization successful
-
-⏱️ [FLASK] Total request start
-[Web UI] Processing query: ec mom bot
-[Web UI] Retrieving context...
-⏱️ [RETRIEVE_CONTEXT] STARTED
-🔍 Retrieving context...
-Loading embedding model (deferred)...
-Fetching 30 files:   0%|          | 0/30 [00:00<?, ?it/s]Fetching 30 files: 100%|██████████| 30/30 [00:00<00:00, 199412.23it/s]
-Loading reranker model (deferred)...
-⚠ Could not import knowledge graph modules: No module named 'knowledge_graph'
-  🔍 Searching with 5 query variations...
-pre tokenize:   0%|          | 0/1 [00:00<?, ?it/s]pre tokenize: 100%|██████████| 1/1 [00:00<00:00, 529.38it/s]
-You're using a XLMRobertaTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
-Inference Embeddings:   0%|          | 0/1 [00:00<?, ?it/s]Inference Embeddings: 100%|██████████| 1/1 [00:00<00:00, 13.66it/s]
-pre tokenize:   0%|          | 0/1 [00:00<?, ?it/s]pre tokenize: 100%|██████████| 1/1 [00:00<00:00, 3533.53it/s]
-Inference Embeddings:   0%|          | 0/1 [00:00<?, ?it/s]Inference Embeddings: 100%|██████████| 1/1 [00:00<00:00, 12.25it/s]
-pre tokenize:   0%|          | 0/1 [00:00<?, ?it/s]pre tokenize: 100%|██████████| 1/1 [00:00<00:00, 3880.02it/s]
-Inference Embeddings:   0%|          | 0/1 [00:00<?, ?it/s]Inference Embeddings: 100%|██████████| 1/1 [00:00<00:00, 13.65it/s]
-pre tokenize:   0%|          | 0/1 [00:00<?, ?it/s]pre tokenize: 100%|██████████| 1/1 [00:00<00:00, 1108.14it/s]
-Inference Embeddings:   0%|          | 0/1 [00:00<?, ?it/s]Inference Embeddings: 100%|██████████| 1/1 [00:00<00:00, 13.20it/s]
-pre tokenize:   0%|          | 0/1 [00:00<?, ?it/s]pre tokenize: 100%|██████████| 1/1 [00:00<00:00, 3548.48it/s]
-Inference Embeddings:   0%|          | 0/1 [00:00<?, ?it/s]Inference Embeddings: 100%|██████████| 1/1 [00:00<00:00, 11.24it/s]
-127.0.0.1 - - [21/May/2026 00:34:29] "POST /api/query HTTP/1.1" 200 -
-⏱️ [MULTI_QUERY_RETRIEVAL] COMPLETED in 5.88s
-  ⚡ Using hybrid search (α=0.6: 60% dense, 40% sparse)
-⚡ Using hybrid search results directly (reranking disabled)
-⏱️ [RETRIEVE_CONTEXT] COMPLETED in 5.88s
-⏱️ [FLASK] Retrieval completed in 5.88s
-[Web UI] Generating answer...
-
-🤖 Generating answer with Sarvam AI (sarvam-105b)...
-⏱️ [ANSWER_GENERATION] COMPLETED in 3.72s
-⏱️ [FLASK] Answer generation completed in 3.72s
-[Web UI] Query processed successfully
-⏱️ [FLASK] TOTAL PIPELINE TIME: 9.60s
-
-
-⏱️ [FLASK] Total request start
-[Web UI] Processing query: 60th mom
-[Web UI] Retrieving context...
-⏱️ [RETRIEVE_CONTEXT] COMPLETED in 16.54s
-🔍 Retrieving context...
-⏱️ [MULTI_QUERY_RETRIEVAL] COMPLETED in 16.54s
-  🔍 Searching with 5 query variations...
-pre tokenize:   0%|          | 0/1 [00:00<?, ?it/s]pre tokenize: 100%|██████████| 1/1 [00:00<00:00, 1695.35it/s]
-Inference Embeddings:   0%|          | 0/1 [00:00<?, ?it/s]Inference Embeddings: 100%|██████████| 1/1 [00:00<00:00,  7.71it/s]Inference Embeddings: 100%|██████████| 1/1 [00:00<00:00,  7.70it/s]
-pre tokenize:   0%|          | 0/1 [00:00<?, ?it/s]pre tokenize: 100%|██████████| 1/1 [00:00<00:00, 4665.52it/s]
-Inference Embeddings:   0%|          | 0/1 [00:00<?, ?it/s]Inference Embeddings: 100%|██████████| 1/1 [00:00<00:00,  9.27it/s]Inference Embeddings: 100%|██████████| 1/1 [00:00<00:00,  9.25it/s]
-pre tokenize:   0%|          | 0/1 [00:00<?, ?it/s]pre tokenize: 100%|██████████| 1/1 [00:00<00:00, 4670.72it/s]
-Inference Embeddings:   0%|          | 0/1 [00:00<?, ?it/s]Inference Embeddings: 100%|██████████| 1/1 [00:00<00:00, 12.51it/s]
-pre tokenize:   0%|          | 0/1 [00:00<?, ?it/s]pre tokenize: 100%|██████████| 1/1 [00:00<00:00, 4559.03it/s]
-Inference Embeddings:   0%|          | 0/1 [00:00<?, ?it/s]Inference Embeddings: 100%|██████████| 1/1 [00:00<00:00, 13.09it/s]
-pre tokenize:   0%|          | 0/1 [00:00<?, ?it/s]pre tokenize: 100%|██████████| 1/1 [00:00<00:00, 4364.52it/s]
-Inference Embeddings:   0%|          | 0/1 [00:00<?, ?it/s]Inference Embeddings: 100%|██████████| 1/1 [00:00<00:00, 11.86it/s]
-127.0.0.1 - - [21/May/2026 00:34:46] "POST /api/query HTTP/1.1" 200 -
-[Web UI] Found RAG module at: D:\Code\CRV2\CHiPS\04_embeddings_and_kg\scripts\rag_pipeline.py
-✓ Sarvam AI configured with model: sarvam-105b
-
-======================================================================
-🚀 CHiPS-RAG Pipeline (Internal Backend)
-======================================================================
-
-RAG Pipeline Status: ✅ Available
-Environment: development
-
-ℹ️  This Flask server is INTERNAL ONLY.
-   Authentication is handled by Express.js at :3000
-
-Starting Flask server on http://0.0.0.0:5001 (debug: False)
-Press Ctrl+C to stop the server
-
- * Serving Flask app 'app'
- * Debug mode: off
-WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5001
- * Running on http://10.66.246.232:5001
-Press CTRL+C to quit
-127.0.0.1 - - [21/May/2026 00:47:27] "GET /api/health HTTP/1.1" 200 -
-[Web UI] Found RAG module at: D:\Code\CRV2\CHiPS\04_embeddings_and_kg\scripts\rag_pipeline.py
-✓ Sarvam AI configured with model: sarvam-105b
-
-======================================================================
-🚀 CHiPS-RAG Pipeline (Internal Backend)
-======================================================================
-
-RAG Pipeline Status: ✅ Available
-Environment: development
-
-ℹ️  This Flask server is INTERNAL ONLY.
-   Authentication is handled by Express.js at :3000
-
-Starting Flask server on http://0.0.0.0:5001 (debug: False)
-Press Ctrl+C to stop the server
-
- * Serving Flask app 'app'
- * Debug mode: off
-WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5001
- * Running on http://10.66.246.232:5001
-Press CTRL+C to quit
-127.0.0.1 - - [21/May/2026 01:07:44] "GET /api/health HTTP/1.1" 200 -
-[Web UI] Found RAG module at: D:\Code\CRV2\CHiPS\04_embeddings_and_kg\scripts\rag_pipeline.py
-✓ Sarvam AI configured with model: sarvam-105b
-
-======================================================================
-🚀 CHiPS-RAG Pipeline (Internal Backend)
-======================================================================
-
-RAG Pipeline Status: ✅ Available
-Environment: development
-
-ℹ️  This Flask server is INTERNAL ONLY.
-   Authentication is handled by Express.js at :3000
-
-Starting Flask server on http://0.0.0.0:5001 (debug: False)
-Press Ctrl+C to stop the server
-
- * Serving Flask app 'app'
- * Debug mode: off
-WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5001
- * Running on http://10.66.246.232:5001
-Press CTRL+C to quit
-127.0.0.1 - - [21/May/2026 01:11:35] "GET /api/health HTTP/1.1" 200 -
-127.0.0.1 - - [21/May/2026 01:11:50] "GET /api/health HTTP/1.1" 200 -
-127.0.0.1 - - [21/May/2026 01:11:52] "POST /api/init HTTP/1.1" 200 -
-127.0.0.1 - - [21/May/2026 01:11:52] "GET /api/db-status HTTP/1.1" 200 -
-
-[Web UI] Initializing RAG pipeline...
-Connecting to local Qdrant at D:\Code\CRV2\CHiPS\04_embeddings_and_kg\db\qdrant_local_chips...
-✓ Connected to local embedded Qdrant
-[Web UI] RAG pipeline initialization successful
-
-⏱️ [FLASK] Total request start
-[Web UI] Processing query: ec mom
-[Web UI] Retrieving context...
-⏱️ [RETRIEVE_CONTEXT] STARTED
-🔍 Retrieving context...
-Loading embedding model (deferred)...
-Fetching 30 files:   0%|          | 0/30 [00:00<?, ?it/s]Fetching 30 files: 100%|██████████| 30/30 [00:00<00:00, 83496.43it/s]
-Loading reranker model (deferred)...
-⚠ Could not import knowledge graph modules: No module named 'knowledge_graph'
-  🔍 Searching with 5 query variations...
-pre tokenize:   0%|          | 0/1 [00:00<?, ?it/s]pre tokenize: 100%|██████████| 1/1 [00:00<00:00, 47.52it/s]
-You're using a XLMRobertaTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
-Inference Embeddings:   0%|          | 0/1 [00:00<?, ?it/s]Inference Embeddings: 100%|██████████| 1/1 [00:00<00:00, 11.60it/s]
-pre tokenize:   0%|          | 0/1 [00:00<?, ?it/s]pre tokenize: 100%|██████████| 1/1 [00:00<00:00, 1951.75it/s]
-Inference Embeddings:   0%|          | 0/1 [00:00<?, ?it/s]Inference Embeddings: 100%|██████████| 1/1 [00:00<00:00, 10.88it/s]
-pre tokenize:   0%|          | 0/1 [00:00<?, ?it/s]pre tokenize: 100%|██████████| 1/1 [00:00<00:00, 3146.51it/s]
-Inference Embeddings:   0%|          | 0/1 [00:00<?, ?it/s]Inference Embeddings: 100%|██████████| 1/1 [00:00<00:00, 11.40it/s]
-pre tokenize:   0%|          | 0/1 [00:00<?, ?it/s]pre tokenize: 100%|██████████| 1/1 [00:00<00:00, 2916.76it/s]
-Inference Embeddings:   0%|          | 0/1 [00:00<?, ?it/s]Inference Embeddings: 100%|██████████| 1/1 [00:00<00:00, 11.90it/s]
-pre tokenize:   0%|          | 0/1 [00:00<?, ?it/s]pre tokenize: 100%|██████████| 1/1 [00:00<00:00, 3934.62it/s]
-Inference Embeddings:   0%|          | 0/1 [00:00<?, ?it/s]Inference Embeddings: 100%|██████████| 1/1 [00:00<00:00, 10.95it/s]
-127.0.0.1 - - [21/May/2026 01:12:07] "POST /api/query HTTP/1.1" 200 -
-[Web UI] Found RAG module at: D:\Code\CRV2\CHiPS\04_embeddings_and_kg\scripts\rag_pipeline.py
-✓ Sarvam AI configured with model: sarvam-105b
-
-======================================================================
-🚀 CHiPS-RAG Pipeline (Internal Backend)
-======================================================================
-
-RAG Pipeline Status: ✅ Available
-Environment: development
-
-ℹ️  This Flask server is INTERNAL ONLY.
-   Authentication is handled by Express.js at :3000
-
-Starting Flask server on http://0.0.0.0:5001 (debug: False)
-Press Ctrl+C to stop the server
-
- * Serving Flask app 'app'
- * Debug mode: off
-WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5001
- * Running on http://10.62.168.199:5001
-Press CTRL+C to quit
-127.0.0.1 - - [21/May/2026 12:25:37] "GET /api/health HTTP/1.1" 200 -
-127.0.0.1 - - [21/May/2026 12:26:06] "GET /api/health HTTP/1.1" 200 -
-127.0.0.1 - - [21/May/2026 12:26:08] "POST /api/init HTTP/1.1" 200 -
-127.0.0.1 - - [21/May/2026 12:26:08] "GET /api/db-status HTTP/1.1" 200 -
-
-[Web UI] Initializing RAG pipeline...
-Connecting to local Qdrant at D:\Code\CRV2\CHiPS\04_embeddings_and_kg\db\qdrant_local_chips...
-✓ Connected to local embedded Qdrant
-[Web UI] RAG pipeline initialization successful
-
-⏱️ [FLASK] Total request start
-[Web UI] Processing query: chips mom
-[Web UI] Retrieving context...
-⏱️ [RETRIEVE_CONTEXT] STARTED
-🔍 Retrieving context...
-Loading embedding model (deferred)...
-Fetching 30 files:   0%|          | 0/30 [00:00<?, ?it/s]Fetching 30 files: 100%|██████████| 30/30 [00:00<00:00, 29174.38it/s]
-Loading reranker model (deferred)...
-⚠ Could not import knowledge graph modules: No module named 'knowledge_graph'
-  🔍 Searching with 5 query variations...
-pre tokenize:   0%|          | 0/1 [00:00<?, ?it/s]pre tokenize: 100%|██████████| 1/1 [00:00<00:00, 60.21it/s]
-You're using a XLMRobertaTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
-Inference Embeddings:   0%|          | 0/1 [00:00<?, ?it/s]Inference Embeddings: 100%|██████████| 1/1 [00:00<00:00, 12.83it/s]
-pre tokenize:   0%|          | 0/1 [00:00<?, ?it/s]pre tokenize: 100%|██████████| 1/1 [00:00<00:00, 3307.81it/s]
-Inference Embeddings:   0%|          | 0/1 [00:00<?, ?it/s]Inference Embeddings: 100%|██████████| 1/1 [00:00<00:00, 12.43it/s]
-pre tokenize:   0%|          | 0/1 [00:00<?, ?it/s]pre tokenize: 100%|██████████| 1/1 [00:00<00:00, 5152.71it/s]
-Inference Embeddings:   0%|          | 0/1 [00:00<?, ?it/s]Inference Embeddings: 100%|██████████| 1/1 [00:00<00:00, 12.06it/s]
-pre tokenize:   0%|          | 0/1 [00:00<?, ?it/s]pre tokenize: 100%|██████████| 1/1 [00:00<00:00, 2116.20it/s]
-Inference Embeddings:   0%|          | 0/1 [00:00<?, ?it/s]Inference Embeddings: 100%|██████████| 1/1 [00:00<00:00,  9.40it/s]Inference Embeddings: 100%|██████████| 1/1 [00:00<00:00,  9.38it/s]
-pre tokenize:   0%|          | 0/1 [00:00<?, ?it/s]pre tokenize: 100%|██████████| 1/1 [00:00<00:00, 2730.67it/s]
-Inference Embeddings:   0%|          | 0/1 [00:00<?, ?it/s]Inference Embeddings: 100%|██████████| 1/1 [00:00<00:00, 14.67it/s]
-127.0.0.1 - - [21/May/2026 12:26:42] "POST /api/query HTTP/1.1" 200 -
-127.0.0.1 - - [21/May/2026 12:34:30] "GET /api/health HTTP/1.1" 200 -
-127.0.0.1 - - [21/May/2026 12:34:30] "GET /api/db-status HTTP/1.1" 200 -

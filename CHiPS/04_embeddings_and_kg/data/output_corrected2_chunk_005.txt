@@ -1,5 +1,0 @@
-Headings: ['DECISION TAKEN']
-Source: output_corrected2.md
-Text: [...] Approval of implementation of Atal Monitoring Portal (CM Dashboard).
-- The Empowered Committee accorded its in-principle approval of Implementation of Atal Monitoring Portal (CM Dashboard)
-Fpproval of adoption of NIC e-Office system & Digital Secretariat $ HRMS module. [...]

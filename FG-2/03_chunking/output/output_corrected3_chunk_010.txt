@@ -1,4 +1,0 @@
-Headings: ['AGENDA # 05']
-Source: output_corrected3
----
-Approval for the implementation of CG State Portal Project for a period of next 3 years.

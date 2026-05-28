@@ -78,15 +78,8 @@ class Config:
         if env_base := os.getenv('CHIPPY_BASE_DIR'):
             return Path(env_base)
         
-        # Check for common CHiPPY marker files
-        current = Path.cwd()
-        for _ in range(5):  # Look up to 5 levels
-            if (current / 'README.md').exists() and (current / '01_preprocessing').exists():
-                return current
-            current = current.parent
-        
-        # Default to current directory
-        return Path.cwd()
+        # Default to the directory containing this config_manager.py file
+        return Path(__file__).resolve().parent
     
     def get_stage_dir(self) -> Path:
         """Get the stage directory."""

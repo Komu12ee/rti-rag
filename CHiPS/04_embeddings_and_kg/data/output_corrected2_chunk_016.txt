@@ -1,5 +1,0 @@
-Headings: ['AGENDA # 08']
-Source: output_corrected2.md
-Text: [...] 1. राज्य सशक्त समिति द्वारा सामान्य प्रशासन विभाग मंत्रालय में हार्डवेयर क्रय किये जाने हेतु सैद्वांतिक अनुमोदन प्रदान किया गया
-Approval for implementation of Court Case Monitoring System (CCMSJ for 0 period of One year.
-O8) The Empowered Committee accorded in-principle approval of implementation of Court Case Monitoring System (CCMS) - 8.1) The Committee further directed to include the Home Police Department also for implementation. pilot [...]

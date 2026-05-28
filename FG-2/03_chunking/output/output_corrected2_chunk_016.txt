@@ -1,4 +1,0 @@
-Headings: ['AGENDA # 08']
-Source: output_corrected2
----
-Approval for implementation of Court Case Monitoring System (CCMSJ for 0 period of One year.

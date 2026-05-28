@@ -1,5 +1,0 @@
-Headings: ['DECISION TAKEN']
-Source: output_corrected2
----
-- The Empowered Committee accorded its in-principle approval of implementation of ` Integrated Financial Management Information System IFMIS Next Gen (IFMIS 2.0).
-1. 4.1) Empowered Committee was informed that Finance Department will undertake the Bid Process Management and Implementation 0f the Project.

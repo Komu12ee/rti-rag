@@ -1,4 +1,0 @@
-Headings: ['AGENDA # 4']
-Source: output_corrected2
----
-Approval for Integrated Financial Management Information System IFMIS Next Gen (IFMIS 2.0).

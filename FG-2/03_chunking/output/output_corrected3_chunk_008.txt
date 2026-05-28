@@ -1,4 +1,0 @@
-Headings: ['AGENDA # 4']
-Source: output_corrected3
----
-Approval for Procurement of Aadhaar Enrolment Kits for the Implementation of the Aadhaar In House Model

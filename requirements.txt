@@ -41,10 +41,13 @@ pyspellchecker>=0.7.0              # Spell checking
 # ============================================================================
 
 # Document Processing
-docling>=0.0.1                     # Docling for document analysis
+# docling>=0.0.1                     # Docling for document analysis
 python-docx>=0.8.11                # Word document support
 pdfplumber>=0.10.0                 # PDF extraction with structure
 
+docling==2.33.0
+docling-core==2.31.0
+deepsearch-glm[toolkit]
 # ============================================================================
 # STAGE 4: EMBEDDINGS & KNOWLEDGE GRAPHS
 # ============================================================================
@@ -60,7 +63,7 @@ FlagEmbedding>=1.2.0               # BGE embeddings and reranker
 sentence-transformers>=2.2.0       # Sentence embeddings
 
 # Vector Database
-qdrant-client>=2.0.0               # Qdrant vector database client
+qdrant-client>=1.8.0               # Qdrant vector database client
 
 # Graph Processing
 networkx>=3.0                      # Graph data structures and algorithms
@@ -123,7 +126,7 @@ isort>=5.11.0                      # Import sorting
 
 matplotlib>=3.4.0                  # Plotting
 plotly>=5.0.0                      # Interactive visualization
-networkx-layout>=0.1.0             # Graph layout algorithms
+# networkx-layout>=0.1.0             # Graph layout algorithms
 
 # ============================================================================
 # OPTIONAL: Advanced Features

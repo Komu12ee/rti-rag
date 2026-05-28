@@ -180,9 +180,32 @@ def _load_rag_module():
         _rag_import_error = str(e)
         return None
 
-# Initialize Flask app
-app = Flask(__name__)
+# Initialize Flask app to serve frontend static assets directly
+app = Flask(
+    __name__,
+    static_folder=os.path.join(os.path.dirname(__file__), 'nodejs', 'public'),
+    static_url_path=''
+)
 app.config['JSON_SORT_KEYS'] = False
+
+@app.route('/')
+def serve_index():
+    """Serve index.html from static folder"""
+    return send_file(os.path.join(app.static_folder, 'index.html'))
+
+@app.route('/auth/login', methods=['POST'])
+def auth_login():
+    """Dummy login route for front-end compatibility"""
+    return jsonify({
+        'success': True,
+        'token': 'dummy-token',
+        'user': {'username': 'admin'}
+    }), 200
+
+@app.route('/auth/logout', methods=['POST'])
+def auth_logout():
+    """Dummy logout route for front-end compatibility"""
+    return jsonify({'success': True}), 200
 
 # Store settings
 pipeline_initialized = False

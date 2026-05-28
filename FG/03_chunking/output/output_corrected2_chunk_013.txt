@@ -1,4 +1,5 @@
 Headings: ['DECISION TAKEN']
 Source: output_corrected2
 ---
-    1. राज्य सशक्त समिति द्वारा छत्तीसगढ उच्च न्यायालय एवं जिला न्यायपालिका के विभिन्न न्यायालयों में उपयोग हेतु एजेडा नोट में प्रस्तावित कम्प्यूटर सामग्री क्रय करने हेतु सैद्वांतिक अनुमोदन प्रदान किया गया|
+O8) The Empowered Committee accorded in-principle approval of implementation of Court Case Monitoring System (CCMS)
+- 8.1) The Committee further directed to include the Home Police Department also for implementation. pilot

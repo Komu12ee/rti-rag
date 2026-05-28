@@ -1,4 +1,4 @@
-Headings: ['AGENDA # 10']
+Headings: ['AGENDA # 12']
 Source: output_corrected2
 ---
-Approval of extension of Chhattisgarh State Data Centre (CGSDC) Project for 12 st Months (lst Apr 2024 to 31 March 202S) for Exit Management and On-boarding of New system integrator
+राज्य मं सूचना प्रोद्योगिकी परियोजना के क्रियान्वयन हेतु गठित सशक्त समिति की वर्तमान परिस्थितियों में आवश्यकता क सम्बन्ध में
