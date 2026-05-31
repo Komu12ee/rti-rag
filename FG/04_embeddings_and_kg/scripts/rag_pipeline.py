@@ -81,11 +81,19 @@ MAX_LENGTH = CFG["max_length"]
 # GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions"
 
 # ──────────────────────────────────────────────────────────────
-# SARVAM AI API Configuration (ACTIVE)
+# OLLAMA Local API Configuration (ACTIVE)
 # ──────────────────────────────────────────────────────────────
-SARVAM_API_KEY = os.getenv("SARVAM_API_KEY", "sk_hhusezzy_cnfsLw6EbCOox523LJGXm15G")
-SARVAM_MODEL = os.getenv("SARVAM_MODEL", "sarvam-105b")  # Sarvam AI's 105B model
-SARVAM_API_URL = "https://api.sarvam.ai/v1/chat/completions"
+OLLAMA_HOST = os.getenv("OLLAMA_HOST", "localhost")
+OLLAMA_PORT = int(os.getenv("OLLAMA_PORT", "11434"))
+OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "qwen2.5:3b")
+OLLAMA_API_URL = f"http://{OLLAMA_HOST}:{OLLAMA_PORT}/api/generate"
+
+# ──────────────────────────────────────────────────────────────
+# SARVAM AI API Configuration (COMMENTED OUT)
+# ──────────────────────────────────────────────────────────────
+# SARVAM_API_KEY = os.getenv("SARVAM_API_KEY", "sk_hhusezzy_cnfsLw6EbCOox523LJGXm15G")
+# SARVAM_MODEL = os.getenv("SARVAM_MODEL", "sarvam-105b")  # Sarvam AI's 105B model
+# SARVAM_API_URL = "https://api.sarvam.ai/v1/chat/completions"
 
 # ── Retrieval Configuration ────────────────────────────────────
 HYBRID_ALPHA = 0.6           # 0.0 = pure sparse, 1.0 = pure dense (0.6 = 60% dense, 40% sparse)
@@ -254,12 +262,8 @@ def _cleanup_qdrant():
 
 atexit.register(_cleanup_qdrant)
 
-# ── Validate Sarvam AI Configuration ─────────────────────────
-if not SARVAM_API_KEY:
-    print("⚠ WARNING: SARVAM_API_KEY not set. Set it via environment variable.")
-    print("  Add to your terminal: $env:SARVAM_API_KEY='your-api-key-here'")
-else:
-    print(f"✓ Sarvam AI configured with model: {SARVAM_MODEL}")
+# ── Validate LLM Configuration ───────────────────────────────
+print(f"✓ Ollama local configured with model: {OLLAMA_MODEL} at {OLLAMA_HOST}:{OLLAMA_PORT}")
 
 # # ── Validate Groq Configuration (COMMENTED OUT) ──────────────
 # if not GROQ_API_KEY:
@@ -706,7 +710,7 @@ def retrieve_context(query, num_context=5, use_kg=True):
 
 # ── Helper: Generate answer with Llama 3.3 70B via Groq API ─────
 def generate_answer(query, context_results):
-    """Generate answer using Sarvam AI API with retrieved context.
+    """Generate answer using local Ollama LLM with retrieved context.
     
     Enhanced with knowledge graph information when available:
     - Mentions key entities found in results
@@ -718,9 +722,6 @@ def generate_answer(query, context_results):
     
     if not context_results:
         return "No context found to generate an answer."
-    
-    if not SARVAM_API_KEY:
-        return "Error: SARVAM_API_KEY not configured. Please set the environment variable SARVAM_API_KEY."
     
     # Extract query words for highlighting
     query_words = [w for w in query.lower().split() if len(w) > 3]
@@ -747,7 +748,6 @@ def generate_answer(query, context_results):
             all_entities.update(r.get("entities", []))
         
         # Format context with source PDF and FULL CHUNK TEXT (not excerpt)
-        # Send complete chunk to ensure LLM has all available context
         context_parts.append(
             f"[Source {i}: {actual_pdf}]{entities_info}\n{text}"
         )
@@ -772,7 +772,11 @@ IMPORTANT INSTRUCTIONS:
 5. Be precise and cite specific dates, decisions, or approvals when available
 6. Format your response clearly with source references"""
     
-    user_message = f"""Context from documents:
+    prompt = f"""<system>
+{system_content}
+</system>
+
+Context from documents:
 {context_text}
 
 Question: {query}
@@ -780,52 +784,36 @@ Question: {query}
 Answer (make sure to cite sources):"""
     
     try:
-        print(f"\n🤖 Generating answer with Sarvam AI ({SARVAM_MODEL})...")
+        print(f"\n🤖 Generating answer with local Ollama ({OLLAMA_MODEL})...")
         response = requests.post(
-            SARVAM_API_URL,
-            headers={
-                "Authorization": f"Bearer {SARVAM_API_KEY}",
-                "Content-Type": "application/json"
-            },
+            OLLAMA_API_URL,
             json={
-                "model": SARVAM_MODEL,
-                "messages": [
-                    {"role": "system", "content": system_content},
-                    {"role": "user", "content": user_message}
-                ],
-                "temperature": 0.7,
-                "max_tokens": 2048,
+                "model": OLLAMA_MODEL,
+                "prompt": prompt,
+                "stream": False,
+                "temperature": 0.3,
             },
-            timeout=300  # 5 minute timeout
+            timeout=180  # 3 minute timeout
         )
         
         if response.status_code != 200:
-            error_msg = response.text
-            try:
-                error_data = response.json()
-                error_msg = error_data.get("error", {}).get("message", error_msg)
-            except:
-                pass
-            return f"Error from Sarvam AI API: {response.status_code} - {error_msg}"
+            return f"Error from local Ollama service: {response.status_code} - {response.text}"
         
         result = response.json()
-        answer = result.get("choices", [{}])[0].get("message", {}).get("content", "No response generated")
+        answer = result.get("response", "No response generated")
         
         # Append source information to the answer
         answer += f"\n\n**Sources used:**\n" + "\n".join([f"• {pdf}" for pdf in source_references])
         
         _mark_time("ANSWER_GENERATION")
         return answer
-    
+        
     except requests.exceptions.ConnectionError:
         _mark_time("ANSWER_GENERATION")
-        return f"Error: Cannot connect to Sarvam AI API. Check your internet connection and SARVAM_API_KEY."
-    except requests.exceptions.Timeout:
-        _mark_time("ANSWER_GENERATION")
-        return "Error: Sarvam AI API request timed out. Please try again."
+        return f"Error: Could not connect to local Ollama service at {OLLAMA_HOST}:{OLLAMA_PORT}. Make sure Ollama is running and has the '{OLLAMA_MODEL}' model downloaded."
     except Exception as e:
         _mark_time("ANSWER_GENERATION")
-        return f"Error generating answer: {e}"
+        return f"Error generating answer via Ollama: {e}"
     
     # ── COMMENTED OUT GROQ CODE (for future use) ──────────────────
     # try:

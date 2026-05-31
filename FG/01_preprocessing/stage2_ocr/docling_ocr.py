@@ -194,22 +194,61 @@ def _extract_item_confidence(item) -> float | None:
 
 
 def _get_page_ocr_confidence(conv_res, page_num: int) -> float | None:
-    """Read page OCR confidence from ConversionResult.confidence."""
+    """Read page OCR confidence from ConversionResult.confidence.
+
+    If ConversionResult lacks confidence property (due to docling version difference),
+    calculates average confidence of OCR text cells as a robust fallback.
+    """
+    # 1. Try reading the native confidence report
     conf_report = getattr(conv_res, "confidence", None)
-    if conf_report is None:
+    if conf_report is not None:
+        pages = getattr(conf_report, "pages", None)
+        if pages and 1 in pages:
+            score = getattr(pages[1], "ocr_score", None)
+            if score is not None and not (isinstance(score, float) and math.isnan(score)):
+                return float(score)
+
+    # 2. Fallback: Calculate average confidence score from ConversionResult.pages[0]
+    pages_list = getattr(conv_res, "pages", None)
+    if not pages_list:
         return None
 
-    pages = getattr(conf_report, "pages", None)
-    if not pages:
-        return None
+    try:
+        # Since we process page-by-page, pages_list typically contains 1 page (index 0)
+        page = pages_list[0]
+        cells = getattr(page, "cells", [])
 
-    if 1 in pages:
-        score = getattr(pages[1], "ocr_score", None)
-        if score is None:
-            return None
-        if isinstance(score, float) and math.isnan(score):
-            return None
-        return float(score)
+        ocr_confidences = []
+        all_confidences = []
+
+        for cell in cells:
+            conf = getattr(cell, "confidence", None)
+            from_ocr = getattr(cell, "from_ocr", False)
+            if conf is not None:
+                all_confidences.append(float(conf))
+                if from_ocr:
+                    ocr_confidences.append(float(conf))
+
+        if ocr_confidences:
+            return sum(ocr_confidences) / len(ocr_confidences)
+        if all_confidences:
+            return sum(all_confidences) / len(all_confidences)
+
+        # Fallback to layout predictions if cells are not available
+        predictions = getattr(page, "predictions", None)
+        if predictions:
+            layout = getattr(predictions, "layout", None)
+            if layout:
+                clusters = getattr(layout, "clusters", [])
+                cluster_confidences = [
+                    float(getattr(c, "confidence"))
+                    for c in clusters
+                    if getattr(c, "confidence", None) is not None
+                ]
+                if cluster_confidences:
+                    return sum(cluster_confidences) / len(cluster_confidences)
+    except Exception as exc:
+        logger.warning(f"Error calculating manual OCR confidence fallback: {exc}")
 
     return None
 

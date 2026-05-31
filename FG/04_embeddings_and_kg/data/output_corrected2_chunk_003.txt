@@ -1,5 +1,0 @@
-Headings: ['DECISION TAKEN']
-Source: output_corrected2.md
-Text: [...] Approval of Empowered Committee Meeting minutes 59th
-- 1 ) No suggestion for amendment was receivedi Therefore, the Minutes of Empowered Committee meeting were approved. 59th
-Approval of implementation of Atal Monitoring Portal (CM Dashboard). [...]

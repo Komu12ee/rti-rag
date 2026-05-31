@@ -1,8 +1,8 @@
 {
   "document": "structured.md",
-  "total_chunks": 4,
-  "total_tokens": 1744,
-  "avg_tokens_per_chunk": 436,
+  "total_chunks": 3,
+  "total_tokens": 906,
+  "avg_tokens_per_chunk": 302,
   "model": "BAAI/bge-m3",
   "max_tokens_per_chunk": 1024,
   "chunks": [
@@ -17,10 +17,6 @@
     {
       "index": 3,
       "filename": "structured_chunk_003.txt"
-    },
-    {
-      "index": 4,
-      "filename": "structured_chunk_004.txt"
     }
   ]
 }

@@ -1,0 +1,397 @@
+{
+  "version": "1.0",
+  "created_at": "2026-05-31T18:48:44.688678",
+  "last_updated": "2026-05-31T18:56:14.123736",
+  "indexed_chunks": {
+    "1_2025\\structured_chunk_001.txt": {
+      "id": 0,
+      "indexed_at": "2026-05-31T18:56:14.037148"
+    },
+    "1_2025\\structured_chunk_002.txt": {
+      "id": 1,
+      "indexed_at": "2026-05-31T18:56:14.041704"
+    },
+    "1_2025\\structured_chunk_003.txt": {
+      "id": 2,
+      "indexed_at": "2026-05-31T18:56:14.042545"
+    },
+    "dak 3402 E&IT letter ps&ic 19-6-24\\structured_chunk_001.txt": {
+      "id": 3,
+      "indexed_at": "2026-05-31T18:56:14.042545"
+    },
+    "dak 3402 E&IT letter ps&ic 19-6-24\\structured_chunk_002.txt": {
+      "id": 4,
+      "indexed_at": "2026-05-31T18:56:14.042545"
+    },
+    "dak 3402 E&IT letter ps&ic 19-6-24\\structured_chunk_003.txt": {
+      "id": 5,
+      "indexed_at": "2026-05-31T18:56:14.042545"
+    },
+    "dak 3402 E&IT letter ps&ic 19-6-24\\structured_chunk_004.txt": {
+      "id": 6,
+      "indexed_at": "2026-05-31T18:56:14.042545"
+    },
+    "dak 3402 E&IT letter ps&ic 19-6-24\\structured_chunk_005.txt": {
+      "id": 7,
+      "indexed_at": "2026-05-31T18:56:14.042545"
+    },
+    "letter 390 date 200-6-24 recv. copy ps&ic letter\\structured_chunk_001.txt": {
+      "id": 8,
+      "indexed_at": "2026-05-31T18:56:14.042545"
+    },
+    "letter 390 date 200-6-24 recv. copy ps&ic letter\\structured_chunk_002.txt": {
+      "id": 9,
+      "indexed_at": "2026-05-31T18:56:14.042545"
+    },
+    "letter 390 date 200-6-24 recv. copy ps&ic letter\\structured_chunk_003.txt": {
+      "id": 10,
+      "indexed_at": "2026-05-31T18:56:14.042545"
+    },
+    "letter 390 date 200-6-24 recv. copy ps&ic letter\\structured_chunk_004.txt": {
+      "id": 11,
+      "indexed_at": "2026-05-31T18:56:14.050657"
+    },
+    "output_corrected1_chunk_001.txt": {
+      "id": 12,
+      "indexed_at": "2026-05-31T18:56:14.050657"
+    },
+    "output_corrected1_chunk_002.txt": {
+      "id": 13,
+      "indexed_at": "2026-05-31T18:56:14.050657"
+    },
+    "output_corrected1_chunk_003.txt": {
+      "id": 14,
+      "indexed_at": "2026-05-31T18:56:14.052671"
+    },
+    "output_corrected1_chunk_004.txt": {
+      "id": 15,
+      "indexed_at": "2026-05-31T18:56:14.052671"
+    },
+    "output_corrected1_optimized_chunk_001.txt": {
+      "id": 16,
+      "indexed_at": "2026-05-31T18:56:14.053772"
+    },
+    "output_corrected1_optimized_chunk_002.txt": {
+      "id": 17,
+      "indexed_at": "2026-05-31T18:56:14.053772"
+    },
+    "output_corrected1_optimized_chunk_003.txt": {
+      "id": 18,
+      "indexed_at": "2026-05-31T18:56:14.053772"
+    },
+    "output_corrected1_spell_chunk_001.txt": {
+      "id": 19,
+      "indexed_at": "2026-05-31T18:56:14.055822"
+    },
+    "output_corrected1_spell_chunk_002.txt": {
+      "id": 20,
+      "indexed_at": "2026-05-31T18:56:14.055822"
+    },
+    "output_corrected1_spell_chunk_003.txt": {
+      "id": 21,
+      "indexed_at": "2026-05-31T18:56:14.058411"
+    },
+    "output_corrected1_spell_chunk_004.txt": {
+      "id": 22,
+      "indexed_at": "2026-05-31T18:56:14.058411"
+    },
+    "output_corrected2_chunk_001.txt": {
+      "id": 23,
+      "indexed_at": "2026-05-31T18:56:14.058411"
+    },
+    "output_corrected2_chunk_002.txt": {
+      "id": 24,
+      "indexed_at": "2026-05-31T18:56:14.058411"
+    },
+    "output_corrected2_chunk_003.txt": {
+      "id": 25,
+      "indexed_at": "2026-05-31T18:56:14.058411"
+    },
+    "output_corrected2_chunk_004.txt": {
+      "id": 26,
+      "indexed_at": "2026-05-31T18:56:14.062000"
+    },
+    "output_corrected2_chunk_005.txt": {
+      "id": 27,
+      "indexed_at": "2026-05-31T18:56:14.062000"
+    },
+    "output_corrected2_chunk_006.txt": {
+      "id": 28,
+      "indexed_at": "2026-05-31T18:56:14.064646"
+    },
+    "output_corrected2_chunk_007.txt": {
+      "id": 29,
+      "indexed_at": "2026-05-31T18:56:14.065163"
+    },
+    "output_corrected2_chunk_008.txt": {
+      "id": 30,
+      "indexed_at": "2026-05-31T18:56:14.066168"
+    },
+    "output_corrected2_chunk_009.txt": {
+      "id": 31,
+      "indexed_at": "2026-05-31T18:56:14.067096"
+    },
+    "output_corrected2_chunk_010.txt": {
+      "id": 32,
+      "indexed_at": "2026-05-31T18:56:14.067096"
+    },
+    "output_corrected2_chunk_011.txt": {
+      "id": 33,
+      "indexed_at": "2026-05-31T18:56:14.067096"
+    },
+    "output_corrected2_chunk_012.txt": {
+      "id": 34,
+      "indexed_at": "2026-05-31T18:56:14.067096"
+    },
+    "output_corrected2_chunk_013.txt": {
+      "id": 35,
+      "indexed_at": "2026-05-31T18:56:14.067096"
+    },
+    "output_corrected2_chunk_014.txt": {
+      "id": 36,
+      "indexed_at": "2026-05-31T18:56:14.067096"
+    },
+    "output_corrected2_chunk_015.txt": {
+      "id": 37,
+      "indexed_at": "2026-05-31T18:56:14.067096"
+    },
+    "output_corrected2_chunk_016.txt": {
+      "id": 38,
+      "indexed_at": "2026-05-31T18:56:14.067096"
+    },
+    "output_corrected2_chunk_017.txt": {
+      "id": 39,
+      "indexed_at": "2026-05-31T18:56:14.067096"
+    },
+    "output_corrected2_chunk_018.txt": {
+      "id": 40,
+      "indexed_at": "2026-05-31T18:56:14.067096"
+    },
+    "output_corrected2_chunk_019.txt": {
+      "id": 41,
+      "indexed_at": "2026-05-31T18:56:14.067096"
+    },
+    "output_corrected2_chunk_020.txt": {
+      "id": 42,
+      "indexed_at": "2026-05-31T18:56:14.074235"
+    },
+    "output_corrected2_chunk_021.txt": {
+      "id": 43,
+      "indexed_at": "2026-05-31T18:56:14.074235"
+    },
+    "output_corrected2_chunk_022.txt": {
+      "id": 44,
+      "indexed_at": "2026-05-31T18:56:14.074235"
+    },
+    "output_corrected2_chunk_023.txt": {
+      "id": 45,
+      "indexed_at": "2026-05-31T18:56:14.074235"
+    },
+    "output_corrected2_chunk_024.txt": {
+      "id": 46,
+      "indexed_at": "2026-05-31T18:56:14.074235"
+    },
+    "output_corrected2_chunk_025.txt": {
+      "id": 47,
+      "indexed_at": "2026-05-31T18:56:14.074235"
+    },
+    "output_corrected2_chunk_026.txt": {
+      "id": 48,
+      "indexed_at": "2026-05-31T18:56:14.074235"
+    },
+    "output_corrected3_chunk_001.txt": {
+      "id": 49,
+      "indexed_at": "2026-05-31T18:56:14.074235"
+    },
+    "output_corrected3_chunk_002.txt": {
+      "id": 50,
+      "indexed_at": "2026-05-31T18:56:14.074235"
+    },
+    "output_corrected3_chunk_003.txt": {
+      "id": 51,
+      "indexed_at": "2026-05-31T18:56:14.074235"
+    },
+    "output_corrected3_chunk_004.txt": {
+      "id": 52,
+      "indexed_at": "2026-05-31T18:56:14.083098"
+    },
+    "output_corrected3_chunk_005.txt": {
+      "id": 53,
+      "indexed_at": "2026-05-31T18:56:14.083098"
+    },
+    "output_corrected3_chunk_006.txt": {
+      "id": 54,
+      "indexed_at": "2026-05-31T18:56:14.083098"
+    },
+    "output_corrected3_chunk_007.txt": {
+      "id": 55,
+      "indexed_at": "2026-05-31T18:56:14.083098"
+    },
+    "output_corrected3_chunk_008.txt": {
+      "id": 56,
+      "indexed_at": "2026-05-31T18:56:14.083098"
+    },
+    "output_corrected3_chunk_009.txt": {
+      "id": 57,
+      "indexed_at": "2026-05-31T18:56:14.087354"
+    },
+    "output_corrected3_chunk_010.txt": {
+      "id": 58,
+      "indexed_at": "2026-05-31T18:56:14.087354"
+    },
+    "output_corrected3_chunk_011.txt": {
+      "id": 59,
+      "indexed_at": "2026-05-31T18:56:14.087354"
+    },
+    "output_corrected3_chunk_012.txt": {
+      "id": 60,
+      "indexed_at": "2026-05-31T18:56:14.089361"
+    },
+    "output_corrected3_chunk_013.txt": {
+      "id": 61,
+      "indexed_at": "2026-05-31T18:56:14.089361"
+    },
+    "output_corrected3_chunk_014.txt": {
+      "id": 62,
+      "indexed_at": "2026-05-31T18:56:14.091276"
+    },
+    "output_corrected3_chunk_015.txt": {
+      "id": 63,
+      "indexed_at": "2026-05-31T18:56:14.091276"
+    },
+    "output_corrected3_chunk_016.txt": {
+      "id": 64,
+      "indexed_at": "2026-05-31T18:56:14.092282"
+    },
+    "output_corrected3_chunk_017.txt": {
+      "id": 65,
+      "indexed_at": "2026-05-31T18:56:14.092282"
+    },
+    "output_corrected3_chunk_018.txt": {
+      "id": 66,
+      "indexed_at": "2026-05-31T18:56:14.092282"
+    },
+    "output_corrected3_chunk_019.txt": {
+      "id": 67,
+      "indexed_at": "2026-05-31T18:56:14.092282"
+    },
+    "output_corrected3_chunk_020.txt": {
+      "id": 68,
+      "indexed_at": "2026-05-31T18:56:14.092282"
+    },
+    "output_corrected3_chunk_021.txt": {
+      "id": 69,
+      "indexed_at": "2026-05-31T18:56:14.092282"
+    },
+    "output_corrected3_chunk_022.txt": {
+      "id": 70,
+      "indexed_at": "2026-05-31T18:56:14.098932"
+    },
+    "output_corrected4_chunk_001.txt": {
+      "id": 71,
+      "indexed_at": "2026-05-31T18:56:14.098932"
+    },
+    "output_corrected4_chunk_002.txt": {
+      "id": 72,
+      "indexed_at": "2026-05-31T18:56:14.098932"
+    },
+    "output_corrected4_chunk_003.txt": {
+      "id": 73,
+      "indexed_at": "2026-05-31T18:56:14.098932"
+    },
+    "output_corrected4_chunk_004.txt": {
+      "id": 74,
+      "indexed_at": "2026-05-31T18:56:14.098932"
+    },
+    "output_corrected4_chunk_005.txt": {
+      "id": 75,
+      "indexed_at": "2026-05-31T18:56:14.098932"
+    },
+    "output_corrected5_chunk_001.txt": {
+      "id": 76,
+      "indexed_at": "2026-05-31T18:56:14.105679"
+    },
+    "output_corrected5_chunk_002.txt": {
+      "id": 77,
+      "indexed_at": "2026-05-31T18:56:14.105679"
+    },
+    "output_corrected5_chunk_003.txt": {
+      "id": 78,
+      "indexed_at": "2026-05-31T18:56:14.107434"
+    },
+    "output_corrected6_chunk_001.txt": {
+      "id": 79,
+      "indexed_at": "2026-05-31T18:56:14.107756"
+    },
+    "output_corrected6_chunk_002.txt": {
+      "id": 80,
+      "indexed_at": "2026-05-31T18:56:14.107756"
+    },
+    "output_corrected6_chunk_003.txt": {
+      "id": 81,
+      "indexed_at": "2026-05-31T18:56:14.110145"
+    },
+    "output_corrected6_chunk_004.txt": {
+      "id": 82,
+      "indexed_at": "2026-05-31T18:56:14.110145"
+    },
+    "output_corrected6_chunk_005.txt": {
+      "id": 83,
+      "indexed_at": "2026-05-31T18:56:14.111886"
+    },
+    "output_corrected6_chunk_006.txt": {
+      "id": 84,
+      "indexed_at": "2026-05-31T18:56:14.111886"
+    },
+    "output_corrected6_chunk_007.txt": {
+      "id": 85,
+      "indexed_at": "2026-05-31T18:56:14.111886"
+    },
+    "output_corrected6_chunk_008.txt": {
+      "id": 86,
+      "indexed_at": "2026-05-31T18:56:14.111886"
+    },
+    "output_corrected6_chunk_009.txt": {
+      "id": 87,
+      "indexed_at": "2026-05-31T18:56:14.115699"
+    },
+    "output_corrected6_chunk_010.txt": {
+      "id": 88,
+      "indexed_at": "2026-05-31T18:56:14.115699"
+    },
+    "output_corrected6_chunk_011.txt": {
+      "id": 89,
+      "indexed_at": "2026-05-31T18:56:14.115699"
+    },
+    "output_corrected7_chunk_001.txt": {
+      "id": 90,
+      "indexed_at": "2026-05-31T18:56:14.117705"
+    },
+    "output_corrected7_chunk_002.txt": {
+      "id": 91,
+      "indexed_at": "2026-05-31T18:56:14.117705"
+    },
+    "PS&IC Agenda DS v1.0 for 19.06.24\\structured_chunk_001.txt": {
+      "id": 92,
+      "indexed_at": "2026-05-31T18:56:14.117705"
+    },
+    "PS&IC Agenda DS v1.0 for 19.06.24\\structured_chunk_002.txt": {
+      "id": 93,
+      "indexed_at": "2026-05-31T18:56:14.117705"
+    },
+    "PS&IC Agenda DS v1.0 for 19.06.24\\structured_chunk_003.txt": {
+      "id": 94,
+      "indexed_at": "2026-05-31T18:56:14.117705"
+    },
+    "PS&IC Agenda DS v1.0 for 19.06.24\\structured_chunk_004.txt": {
+      "id": 95,
+      "indexed_at": "2026-05-31T18:56:14.117705"
+    },
+    "rti-circular\\structured_chunk_001.txt": {
+      "id": 96,
+      "indexed_at": "2026-05-31T18:56:14.123736"
+    }
+  },
+  "total_indexed": 97,
+  "collection": "db3"
+}

@@ -1,5 +1,0 @@
-Headings: ['DECISION TAKEN']
-Source: output_corrected2.md
-Text: [...] Approval of extension to existing Agency for Operation & Maintenance of Wi-Fi Infrastructure setup at Mantralaya and HoD Building for continuity of services.
-- The Empowered Committee accorded approval of extension to existing Agency for Operation & Maintenance of Wi-Fi Infrastructure setup at Mantralaya and HoD st Building till 31 March 2025.
-राज्य मं सूचना प्रोद्योगिकी परियोजना के क्रियान्वयन हेतु गठित सशक्त समिति की वर्तमान परिस्थितियों में आवश्यकता क सम्बन्ध में [...]

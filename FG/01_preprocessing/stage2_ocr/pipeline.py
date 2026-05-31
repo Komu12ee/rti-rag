@@ -253,8 +253,21 @@ class OCRPipeline:
             (p.page_num + 1): p.confidence
             for p in result.pages
         }
-        low_pages = _low_confidence_pages(page_confidences, PAGE_CONFIDENCE_THRESHOLD)
-        source_map = _source_map_from_confidences(page_confidences, low_pages)
+
+        # Sarvam fallback OCR for low-confidence pages (per-page)
+        page_image_paths = getattr(result, "_page_image_paths", {})
+        sarvam_outputs = _run_sarvam_fallback(
+            output_dir=output_dir,
+            page_image_paths=page_image_paths,
+            page_confidences=page_confidences,
+            threshold=SARVAM_OCR_THRESHOLD,
+        )
+
+        # Build accurate source map based on whether Sarvam succeeded
+        source_map = {
+            page_no: ("sarvam" if page_no in sarvam_outputs else "docling")
+            for page_no in sorted(page_confidences.keys())
+        }
 
         document_name = Path(result.source_pdf).name
         confidence_path = output_dir / f"{document_name}_confidence.json"
@@ -272,15 +285,6 @@ class OCRPipeline:
         with open(confidence_path, "w", encoding="utf-8") as f:
             json.dump(confidence_payload, f, indent=2)
         logger.info(f"  Saved: {confidence_path}")
-
-        # Sarvam fallback OCR for low-confidence pages (per-page)
-        page_image_paths = getattr(result, "_page_image_paths", {})
-        sarvam_outputs = _run_sarvam_fallback(
-            output_dir=output_dir,
-            page_image_paths=page_image_paths,
-            page_confidences=page_confidences,
-            threshold=SARVAM_OCR_THRESHOLD,
-        )
 
         if "md" in OUTPUT_FORMATS:
             md_path = output_dir / "structured.md"

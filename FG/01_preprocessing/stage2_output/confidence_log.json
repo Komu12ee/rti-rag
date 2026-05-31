@@ -88,5 +88,105 @@
     "document_name": "1_2025",
     "page_number": 2,
     "ocr_score": null
+  },
+  {
+    "document_name": "1_2025",
+    "page_number": 1,
+    "ocr_score": null
+  },
+  {
+    "document_name": "1_2025",
+    "page_number": 2,
+    "ocr_score": null
+  },
+  {
+    "document_name": "rti-circular",
+    "page_number": 1,
+    "ocr_score": null
+  },
+  {
+    "document_name": "rti-circular",
+    "page_number": 1,
+    "ocr_score": null
+  },
+  {
+    "document_name": "PS&IC Agenda DS v1.0 for 19.06.24",
+    "page_number": 1,
+    "ocr_score": null
+  },
+  {
+    "document_name": "PS&IC Agenda DS v1.0 for 19.06.24",
+    "page_number": 2,
+    "ocr_score": null
+  },
+  {
+    "document_name": "PS&IC Agenda DS v1.0 for 19.06.24",
+    "page_number": 3,
+    "ocr_score": null
+  },
+  {
+    "document_name": "PS&IC Agenda DS v1.0 for 19.06.24",
+    "page_number": 4,
+    "ocr_score": null
+  },
+  {
+    "document_name": "PS&IC Agenda DS v1.0 for 19.06.24",
+    "page_number": 5,
+    "ocr_score": null
+  },
+  {
+    "document_name": "PS&IC Agenda DS v1.0 for 19.06.24",
+    "page_number": 1,
+    "ocr_score": 0.6848749626191979
+  },
+  {
+    "document_name": "PS&IC Agenda DS v1.0 for 19.06.24",
+    "page_number": 2,
+    "ocr_score": 0.7588816089267987
+  },
+  {
+    "document_name": "PS&IC Agenda DS v1.0 for 19.06.24",
+    "page_number": 3,
+    "ocr_score": 0.7077235046857111
+  },
+  {
+    "document_name": "PS&IC Agenda DS v1.0 for 19.06.24",
+    "page_number": 4,
+    "ocr_score": 0.6806755231336852
+  },
+  {
+    "document_name": "PS&IC Agenda DS v1.0 for 19.06.24",
+    "page_number": 5,
+    "ocr_score": 0.625509693538592
+  },
+  {
+    "document_name": "letter 390 date 200-6-24 recv. copy ps&ic letter",
+    "page_number": 1,
+    "ocr_score": 0.5424044473174011
+  },
+  {
+    "document_name": "letter 390 date 200-6-24 recv. copy ps&ic letter",
+    "page_number": 2,
+    "ocr_score": 0.6843423330828048
+  },
+  {
+    "document_name": "letter 390 date 200-6-24 recv. copy ps&ic letter",
+    "page_number": 3,
+    "ocr_score": 0.6566828452592272
+  },
+  {
+    "document_name": "letter 390 date 200-6-24 recv. copy ps&ic letter",
+    "page_number": 4,
+    "ocr_score": 0.6260844808001562
+  },
+  {
+    "document_name": "letter 390 date 200-6-24 recv. copy ps&ic letter",
+    "page_number": 5,
+    "ocr_score": 0.6794148070646108
+  },
+  {
+    "document_name": "letter 390 date 200-6-24 recv. copy ps&ic letter",
+    "page_number": 6,
+    "ocr_score": 0.613980484474006
   }
 ]

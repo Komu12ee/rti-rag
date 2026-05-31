@@ -272,14 +272,16 @@ def main():
     args = parser.parse_args()
     
     # Paths
-    base_stage2 = Path('01_preprocessing/stage2_output')
+    script_dir = Path(__file__).resolve().parent
+    fg_dir = script_dir.parent
+    base_stage2 = fg_dir / '01_preprocessing' / 'stage2_output'
     
     if args.input:
         input_dir = Path(args.input)
     else:
         input_dir = base_stage2
     
-    output_dir = Path(args.output) if args.output else Path('03_chunking/output')
+    output_dir = Path(args.output) if args.output else script_dir / 'output'
     
     logger.info("=" * 80)
     logger.info("Stage 2 → Stage 3: Document Chunking")

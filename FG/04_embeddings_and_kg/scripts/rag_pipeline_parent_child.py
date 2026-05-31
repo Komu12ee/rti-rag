@@ -12,6 +12,7 @@ Retrieval flow:
 from __future__ import annotations
 
 import os
+import sys
 import atexit
 from pathlib import Path
 from typing import Any
@@ -19,6 +20,11 @@ from typing import Any
 import requests
 from FlagEmbedding import BGEM3FlagModel, FlagReranker
 from qdrant_client import QdrantClient
+
+for stream_name in ("stdout", "stderr"):
+    stream = getattr(sys, stream_name, None)
+    if hasattr(stream, "reconfigure"):
+        stream.reconfigure(encoding="utf-8", errors="replace")
 
 
 def _paths() -> dict[str, Any]:
@@ -29,8 +35,8 @@ def _paths() -> dict[str, Any]:
     
     return {
         "root": root,
-        "chunk_dir": Path(os.getenv("CHIPPY_CHUNK_DIR", str(root.parent / "chunking" / "output_child_first"))),
-        "parent_dir": Path(os.getenv("CHIPPY_PARENT_DIR", str(root.parent / "chunking" / "output_parent"))),
+        "chunk_dir": Path(os.getenv("CHIPPY_CHUNK_DIR", str(root / "03_chunking" / "output"))),
+        "parent_dir": Path(os.getenv("CHIPPY_PARENT_DIR", str(root / "03_chunking" / "output"))),
         "files_mapping": Path(os.getenv("CHIPPY_FILES_MAPPING", str(root.parent / "files.txt"))),
         "collection": os.getenv("CHIPPY_QDRANT_COLLECTION", "db3"),
         
@@ -292,6 +298,20 @@ def get_parent_chunks_from_children(child_results: list) -> list[dict[str, str]]
                     "sample_child": parent_info_map[parent_id]["child_id"],
                 }
             )
+
+    # Fallback: if a point does not map to a successfully loaded parent chunk, treat the child chunk itself as the retrieved unit.
+    # This enables backward-compatibility with flat chunking collections (like the indexed db3 collection).
+    used_parent_ids = {r["parent_id"] for r in parent_results}
+    for point in child_results:
+        pid = point.payload.get("parent_id", "")
+        if not pid or pid not in used_parent_ids:
+            fallback_id = pid if pid else f"fallback_{point.id}"
+            parent_results.append({
+                "parent_id": fallback_id,
+                "text": point.payload.get("text", ""),
+                "source": point.payload.get("source", ""),
+                "sample_child": point.payload.get("child_id", point.payload.get("file", ""))
+            })
 
     return parent_results
 
