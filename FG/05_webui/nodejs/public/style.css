@@ -742,6 +742,41 @@ body[data-theme="light"] .theme-toggle {
   padding-left: 10px;
 }
 
+.source-meta {
+  color: var(--text-dim);
+  font-size: 11px;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.source-label {
+  color: var(--text);
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.source-label span {
+  color: var(--text-dim);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.source-passage {
+  color: var(--text-muted);
+  line-height: 1.6;
+  font-size: 12px;
+  border-left: 2px solid var(--border);
+  padding-left: 10px;
+  white-space: pre-wrap;
+}
+
+.source-passage summary {
+  color: var(--text);
+  cursor: pointer;
+  margin-bottom: 6px;
+}
+
 /* ── Toast ─────────────────────────────────────────────────────────── */
 #toast-container {
   position: fixed;

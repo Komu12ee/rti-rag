@@ -465,6 +465,20 @@ function closePdfPanel() {
 }
 
 // ── Source drawer (right panel) ───────────────────────────────────────────
+function legalChunkLabel(chunkType) {
+  const labels = {
+    INFORMATION_REQUESTED: 'Information Requested',
+    COMMISSION_OBSERVATIONS: 'Commission Observation',
+    FINAL_ORDER: 'Final Order',
+    PIO_LEARNING_SIGNAL: 'PIO Learning',
+    PRECEDENT_SUMMARY: 'Precedent Summary',
+    GROUNDS_FOR_APPEAL: 'Grounds for Appeal',
+    HEARING_SUBMISSIONS: 'Hearing Submissions',
+    CASE_METADATA: 'Case Metadata',
+  };
+  return labels[chunkType] || 'Relevant Passage';
+}
+
 function openDrawer(results) {
   ui.drawerBody.innerHTML = '';
 
@@ -473,6 +487,15 @@ function openDrawer(results) {
     card.className = 'source-card';
     const score = typeof r.score === 'number' ? r.score.toFixed(3) : '—';
     const fname = r.actual_pdf || r.source || 'unknown';
+    const chunkType = r.chunk_type || '';
+    const legalLabel = legalChunkLabel(chunkType);
+    const passage = r.text || r.excerpt || '';
+    const metaParts = [
+      r.case_number ? `Case: ${escapeHtml(r.case_number)}` : '',
+      r.public_authority ? `Authority: ${escapeHtml(r.public_authority)}` : '',
+      r.hearing_date ? `Hearing: ${escapeHtml(r.hearing_date)}` : '',
+      r.outcome ? `Outcome: ${escapeHtml(r.outcome)}` : '',
+    ].filter(Boolean);
 
     card.innerHTML = `
       <div class="source-card-header">
@@ -480,7 +503,12 @@ function openDrawer(results) {
         <span class="source-filename">${escapeHtml(fname)}</span>
         <span class="source-score">${score}</span>
       </div>
-      <div class="source-excerpt">${escapeHtml(r.excerpt || r.text?.slice(0, 300) || '')}</div>
+      ${metaParts.length ? `<div class="source-meta">${metaParts.join(' | ')}</div>` : ''}
+      <div class="source-label">${escapeHtml(legalLabel)}${chunkType ? ` <span>${escapeHtml(chunkType)}</span>` : ''}</div>
+      <details class="source-passage" ${passage.length < 700 ? 'open' : ''}>
+        <summary>${passage.length > 700 ? 'Expand passage' : 'Passage'}</summary>
+        <div>${escapeHtml(passage)}</div>
+      </details>
     `;
 
     // View PDF button — fetches with auth token, shows in half-screen panel

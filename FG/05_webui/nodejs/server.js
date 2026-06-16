@@ -6,7 +6,7 @@ const morgan = require('morgan');
 const path = require('path');
 
 const PORT = process.env.PORT || 3002;
-const FLASK_PORT = process.env.FLASK_PORT || 5002;
+const FLASK_PORT = process.env.FLASK_PORT || 5000;
 const FLASK_URL = `http://localhost:${FLASK_PORT}`;
 const IS_PROD = process.env.NODE_ENV === 'production';
 
