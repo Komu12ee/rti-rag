@@ -1,0 +1,39 @@
+{
+  "pages": [
+    {
+      "page_number": 1,
+      "ocr_score": 0.5730807005352966,
+      "source": "docling"
+    },
+    {
+      "page_number": 2,
+      "ocr_score": 0.504458377171594,
+      "source": "docling"
+    },
+    {
+      "page_number": 3,
+      "ocr_score": 0.6062610506569543,
+      "source": "docling"
+    },
+    {
+      "page_number": 4,
+      "ocr_score": 0.6439408517084015,
+      "source": "docling"
+    },
+    {
+      "page_number": 5,
+      "ocr_score": 0.5555544605564204,
+      "source": "docling"
+    },
+    {
+      "page_number": 6,
+      "ocr_score": 0.5399746114284458,
+      "source": "docling"
+    },
+    {
+      "page_number": 7,
+      "ocr_score": 0.5911743336898501,
+      "source": "docling"
+    }
+  ]
+}

@@ -3,6 +3,7 @@ import json
 import atexit
 import time
 import sys
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 import requests
 from qdrant_client import QdrantClient
@@ -47,9 +48,21 @@ def _get_config():
     """Load configuration with environment variable overrides."""
     root = Path(__file__).resolve().parents[2]  # CHiPPY directory
     qdrant_mode = os.getenv("QDRANT_MODE", "local").lower()
+    primary_collection = os.getenv("CHIPPY_QDRANT_COLLECTION", "db3")
+    configured_collections = os.getenv("CHIPPY_QDRANT_COLLECTIONS")
+    collections = (
+        [
+            name.strip()
+            for name in configured_collections.split(",")
+            if name.strip()
+        ]
+        if configured_collections
+        else [primary_collection, "cgsic_important_decisions_v1"]
+    )
     return {
         "chunk_dir": Path(os.getenv("CHIPPY_CHUNK_DIR", str(root.parent / "chunking" / "output_child_first"))),
-        "collection": os.getenv("CHIPPY_QDRANT_COLLECTION", "db3"),
+        "collection": primary_collection,
+        "collections": collections,
         "qdrant_mode": qdrant_mode,
         "qdrant_local_path": Path(
             os.getenv(
@@ -70,6 +83,7 @@ def _get_config():
 CFG = _get_config()
 CHUNK_DIR = CFG["chunk_dir"]
 COLLECTION_NAME = CFG["collection"]
+COLLECTION_NAMES = list(dict.fromkeys(CFG["collections"] or [COLLECTION_NAME]))
 ENCODE_BATCH_SIZE = CFG["encode_batch_size"]
 MAX_LENGTH = CFG["max_length"]
 
@@ -121,6 +135,15 @@ def get_actual_filename(chunk_source):
     if file_num:
         return f"file{file_num}.pdf"
     return chunk_source + ".pdf"  # Fallback
+
+
+def get_payload_actual_filename(payload):
+    """Prefer an indexed PDF filename, falling back to legacy source mapping."""
+    payload = payload or {}
+    actual_pdf = payload.get("actual_pdf") or payload.get("decision_pdf")
+    if actual_pdf:
+        return Path(str(actual_pdf)).name
+    return get_actual_filename(payload.get("source", ""))
 
 # ── Helper: Extract highlighted excerpt from chunk text ─────────
 def extract_highlighted_excerpt(chunk_text, query_words, max_length=300):
@@ -280,8 +303,14 @@ def sparse_search(query_sparse, all_points, limit=5):
         sparse_payload = point.payload.get("sparse_embedding", {})
         score = sum(sparse_payload.get(token, 0) * query_sparse.get(token, 0) 
                    for token in query_sparse if token in sparse_payload)
-        scores.append((point.id, score))
+        scores.append((point_identity(point), score))
     return sorted(scores, key=lambda x: x[1], reverse=True)[:limit]
+
+
+def point_identity(point):
+    """Return a collision-safe identity across multiple Qdrant collections."""
+    payload = point.payload or {}
+    return (payload.get("_retrieval_collection", COLLECTION_NAME), point.id)
 
 # ── Helper: Expand query into multiple perspectives ────────────
 def expand_query(original_query):
@@ -359,19 +388,49 @@ def perform_single_retrieval(query):
             # Sparse weights might be returned as dict directly
             query_sparse = lex_weights
         
-        # Dense search
-        dense_results = qdrant.query_points(
-            collection_name=COLLECTION_NAME,
-            query=query_dense,
-            limit=20
-        )
-        
-        if dense_results is None or not dense_results.points:
+        def search_collection(collection_name):
+            result = qdrant.query_points(
+                collection_name=collection_name,
+                query=query_dense,
+                limit=20,
+            )
+            points = list(result.points) if result and result.points else []
+            for point in points:
+                point.payload = dict(point.payload or {})
+                point.payload["_retrieval_collection"] = collection_name
+            return points
+
+        collection_points = []
+        workers = max(1, min(len(COLLECTION_NAMES), 4))
+        with ThreadPoolExecutor(max_workers=workers) as executor:
+            futures = {
+                executor.submit(search_collection, collection): collection
+                for collection in COLLECTION_NAMES
+            }
+            for future in as_completed(futures):
+                collection = futures[future]
+                try:
+                    points = future.result()
+                    collection_points.extend(points)
+                    print(f"  Searched {collection}: {len(points)} result(s)")
+                except Exception as exc:
+                    print(f"  Collection {collection} unavailable: {exc}")
+
+        if not collection_points:
             return None
+
+        class MultiCollectionQueryResult:
+            def __init__(self, points):
+                self.points = points
+
+        dense_results = MultiCollectionQueryResult(collection_points)
         
         return {
             "dense_results": dense_results,
-            "dense_scores": [(p.id, p.score) for p in dense_results.points],
+            "dense_scores": [
+                (point_identity(point), point.score)
+                for point in dense_results.points
+            ],
             "query_sparse": query_sparse
         }
     
@@ -418,7 +477,7 @@ def multi_query_retrieval(query):
         
         # Aggregate results
         for point in dense_results.points:
-            all_dense_results[point.id] = point
+            all_dense_results[point_identity(point)] = point
         
         # Aggregate scores (later results still count, earlier have more weight)
         for point_id, score in dense_scores:
@@ -536,6 +595,19 @@ def hybrid_search(dense_scores, sparse_scores, alpha=0.5, k=60):
     return sorted(rrf_scores.items(), key=lambda x: x[1], reverse=True)
 
 # ── Helper: Retrieve context with optional KG enhancement ──────
+def apply_legal_priority(hybrid_scores, points):
+    """Boost CIC legal reasoning chunks without hiding semantic relevance."""
+    point_map = {point_identity(point): point for point in points}
+    boosted = []
+    for point_id, score in hybrid_scores:
+        point = point_map.get(point_id)
+        payload = point.payload if point else {}
+        priority = float(payload.get("retrieval_priority", 0) or 0)
+        boosted_score = float(score) + (priority / 100.0) * 0.02
+        boosted.append((point_id, boosted_score))
+    return sorted(boosted, key=lambda x: x[1], reverse=True)
+
+
 def retrieve_context(query, num_context=5, use_kg=True):
     """Retrieve context documents with optional knowledge graph enhancement.
     
@@ -572,9 +644,18 @@ def retrieve_context(query, num_context=5, use_kg=True):
             hybrid_scores = [(pid, score) for rank, (pid, score) in enumerate(dense_scores)]
             print(f"  ⚡ Using dense-only search (sparse embeddings unavailable)")
         
+        hybrid_scores = apply_legal_priority(hybrid_scores, dense_results.points)
+
         # Collect candidate points for reranking (from top 20 hybrid results)
         candidate_points = [
-            next((p for p in dense_results.points if p.id == point_id), None)
+            next(
+                (
+                    point
+                    for point in dense_results.points
+                    if point_identity(point) == point_id
+                ),
+                None,
+            )
             for point_id, _ in hybrid_scores[:20]
         ]
         candidate_points = [p for p in candidate_points if p is not None]
@@ -590,7 +671,14 @@ def retrieve_context(query, num_context=5, use_kg=True):
                     'chunk_id': point.payload.get('file', '').replace('.txt', ''),
                     'text': point.payload.get('text', ''),
                     'source': point.payload.get('source', ''),
-                    'score': next((s for pid, s in hybrid_scores if pid == point.id), 0.0),
+                    'score': next(
+                        (
+                            score
+                            for identity, score in hybrid_scores
+                            if identity == point_identity(point)
+                        ),
+                        0.0,
+                    ),
                     'file': point.payload.get('file', '')
                 })
             
@@ -671,7 +759,14 @@ def retrieve_context(query, num_context=5, use_kg=True):
         results = []
         for rank, (point_id, score) in enumerate(hybrid_scores[:num_context], 1):
             # Find the point with this ID
-            point = next((p for p in dense_results.points if p.id == point_id), None)
+            point = next(
+                (
+                    candidate
+                    for candidate in dense_results.points
+                    if point_identity(candidate) == point_id
+                ),
+                None,
+            )
             if point:
                 result = {
                     "point": point,
@@ -682,7 +777,7 @@ def retrieve_context(query, num_context=5, use_kg=True):
                 # Add KG information if available
                 if enhanced_points:
                     for enhanced in enhanced_points:
-                        if enhanced["point"].id == point_id:
+                        if point_identity(enhanced["point"]) == point_id:
                             result["kg_score"] = enhanced.get("kg_score", 0.0)
                             result["entities"] = enhanced.get("entities", [])
                             result["related_entities"] = enhanced.get("related_entities", {})
@@ -732,9 +827,9 @@ def generate_answer(query, context_results):
     all_entities = set()  # Collect all entities from results
     
     for i, r in enumerate(context_results, 1):
-        source = r['point'].payload.get('source', '')
-        actual_pdf = get_actual_filename(source)
-        text = r['point'].payload['text']
+        payload = r['point'].payload
+        actual_pdf = get_payload_actual_filename(payload)
+        text = payload['text']
         
         # Track source PDFs
         if actual_pdf not in source_references:
@@ -885,8 +980,8 @@ def rag_query(query):
     # Display retrieved context with KG information
     print(f"\n📚 Retrieved {len(context_results)} context documents:\n")
     for result in context_results:
-        source = result['point'].payload.get('source', '')
-        actual_filename = get_actual_filename(source)
+        payload = result['point'].payload
+        actual_filename = get_payload_actual_filename(payload)
         embedding_score = result.get('score', result.get('embedding_score', 0))
         
         # Show scores

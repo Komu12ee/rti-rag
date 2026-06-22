@@ -188,5 +188,2415 @@
     "document_name": "letter 390 date 200-6-24 recv. copy ps&ic letter",
     "page_number": 6,
     "ocr_score": 0.613980484474006
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_102333",
+    "page_number": 1,
+    "ocr_score": 0.7881164549758043
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_102333",
+    "page_number": 2,
+    "ocr_score": 0.758725202954877
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_102598",
+    "page_number": 1,
+    "ocr_score": 0.7431811703390195
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_102598",
+    "page_number": 2,
+    "ocr_score": 0.7841602493452188
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_108786",
+    "page_number": 1,
+    "ocr_score": 0.6960063585032022
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_108786",
+    "page_number": 2,
+    "ocr_score": 0.7288893550315158
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_108786",
+    "page_number": 3,
+    "ocr_score": 0.785903698856968
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_110485",
+    "page_number": 1,
+    "ocr_score": 0.7602934534299811
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_110485",
+    "page_number": 2,
+    "ocr_score": 0.7326540893424238
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_110485",
+    "page_number": 3,
+    "ocr_score": 0.7906603115951402
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_111106",
+    "page_number": 1,
+    "ocr_score": 0.7283079371542223
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_111106",
+    "page_number": 2,
+    "ocr_score": 0.7322779984789138
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_118899",
+    "page_number": 1,
+    "ocr_score": 0.7366015730187198
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_118899",
+    "page_number": 2,
+    "ocr_score": 0.7960166180713106
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_118899",
+    "page_number": 3,
+    "ocr_score": 0.7398837381466217
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_119210",
+    "page_number": 1,
+    "ocr_score": 0.767767613187296
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_119210",
+    "page_number": 2,
+    "ocr_score": 0.768269900941409
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_119210",
+    "page_number": 3,
+    "ocr_score": 0.7961684478803907
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_120198",
+    "page_number": 1,
+    "ocr_score": 0.7444881214930056
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_120198",
+    "page_number": 2,
+    "ocr_score": 0.7720675195725513
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_120198",
+    "page_number": 3,
+    "ocr_score": 0.6170567993924153
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_121369",
+    "page_number": 1,
+    "ocr_score": 0.7833039689253011
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_121369",
+    "page_number": 2,
+    "ocr_score": 0.7591253129726224
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_121369",
+    "page_number": 3,
+    "ocr_score": 0.7399018556320177
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_121369",
+    "page_number": 4,
+    "ocr_score": 0.7106929895572596
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_121369",
+    "page_number": 5,
+    "ocr_score": 0.7456053174892598
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_121719",
+    "page_number": 1,
+    "ocr_score": 0.7914874762031242
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_121719",
+    "page_number": 2,
+    "ocr_score": 0.7179855346867151
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_121719",
+    "page_number": 3,
+    "ocr_score": 0.7995692341257108
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_122052",
+    "page_number": 1,
+    "ocr_score": 0.8158708970092138
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_122052",
+    "page_number": 2,
+    "ocr_score": 0.8047834917149838
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_125929",
+    "page_number": 1,
+    "ocr_score": 0.7675061550311123
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_125929",
+    "page_number": 2,
+    "ocr_score": 0.7606229866829776
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_125929",
+    "page_number": 3,
+    "ocr_score": 0.7435187227577733
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_126404",
+    "page_number": 1,
+    "ocr_score": 0.7430312543557877
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_126404",
+    "page_number": 2,
+    "ocr_score": 0.7462857626859872
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_126404",
+    "page_number": 3,
+    "ocr_score": 0.7469404204501993
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_126404",
+    "page_number": 4,
+    "ocr_score": 0.7603893461782864
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_126404",
+    "page_number": 5,
+    "ocr_score": 0.7662957243647605
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_126417",
+    "page_number": 1,
+    "ocr_score": 0.811163873664948
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_126417",
+    "page_number": 2,
+    "ocr_score": 0.755053131595264
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_126417",
+    "page_number": 3,
+    "ocr_score": 0.7552094437881679
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_126417",
+    "page_number": 4,
+    "ocr_score": 0.6888924306462514
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_126417",
+    "page_number": 5,
+    "ocr_score": 0.7169702041146415
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_126417",
+    "page_number": 6,
+    "ocr_score": 0.7388691688569504
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_126417",
+    "page_number": 7,
+    "ocr_score": 0.7924473975480681
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_126858",
+    "page_number": 1,
+    "ocr_score": 0.8021240162835581
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_126858",
+    "page_number": 2,
+    "ocr_score": 0.786617645809547
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_126858",
+    "page_number": 3,
+    "ocr_score": 0.7874204007696038
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_127144",
+    "page_number": 1,
+    "ocr_score": 0.7522134050346406
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_127144",
+    "page_number": 2,
+    "ocr_score": 0.7356529024368506
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_127144",
+    "page_number": 3,
+    "ocr_score": 0.6707136505194046
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_128488",
+    "page_number": 1,
+    "ocr_score": 0.7474824651829866
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_128488",
+    "page_number": 2,
+    "ocr_score": 0.773504420549731
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_128683",
+    "page_number": 1,
+    "ocr_score": 0.7760140233400304
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_128683",
+    "page_number": 2,
+    "ocr_score": 0.7816355454770177
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_128683",
+    "page_number": 3,
+    "ocr_score": 0.7156289042484629
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_131215",
+    "page_number": 1,
+    "ocr_score": 0.7256407089783928
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_131215",
+    "page_number": 2,
+    "ocr_score": 0.7800332339434788
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_131215",
+    "page_number": 3,
+    "ocr_score": 0.80809314275803
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_131215",
+    "page_number": 4,
+    "ocr_score": 0.7790964550568485
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_131215",
+    "page_number": 5,
+    "ocr_score": 0.6889419465204554
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_131215",
+    "page_number": 6,
+    "ocr_score": 0.7703546172395398
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_131215",
+    "page_number": 7,
+    "ocr_score": 0.6770346996283357
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_131275",
+    "page_number": 1,
+    "ocr_score": 0.7580999308961789
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_131275",
+    "page_number": 2,
+    "ocr_score": 0.7302088735303724
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_131489",
+    "page_number": 1,
+    "ocr_score": 0.7366015730187198
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_131489",
+    "page_number": 2,
+    "ocr_score": 0.7960166180713106
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_131489",
+    "page_number": 3,
+    "ocr_score": 0.7398837381466217
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_131570",
+    "page_number": 1,
+    "ocr_score": 0.8063804706520031
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_131570",
+    "page_number": 2,
+    "ocr_score": 0.7521975613849767
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_131570",
+    "page_number": 3,
+    "ocr_score": 0.7245797783829205
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_132965",
+    "page_number": 1,
+    "ocr_score": 0.7391363772535204
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_132965",
+    "page_number": 2,
+    "ocr_score": 0.7659963360281905
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_135056",
+    "page_number": 1,
+    "ocr_score": 0.7966010470461306
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_135056",
+    "page_number": 2,
+    "ocr_score": 0.7681680976971444
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_135057",
+    "page_number": 1,
+    "ocr_score": 0.8220356567301113
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_135057",
+    "page_number": 2,
+    "ocr_score": 0.7756625232039236
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_135057",
+    "page_number": 3,
+    "ocr_score": 0.7922313872270925
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_135058",
+    "page_number": 1,
+    "ocr_score": 0.8002031476649509
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_135058",
+    "page_number": 2,
+    "ocr_score": 0.7512979776806158
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_135058",
+    "page_number": 3,
+    "ocr_score": 0.6097426385742675
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_135059",
+    "page_number": 1,
+    "ocr_score": 0.7538275015137774
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_135059",
+    "page_number": 2,
+    "ocr_score": 0.7216324630702565
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_135059",
+    "page_number": 3,
+    "ocr_score": 0.7375640582858026
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_135059",
+    "page_number": 4,
+    "ocr_score": 0.7337098320228675
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_136374",
+    "page_number": 1,
+    "ocr_score": 0.7390173630447844
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_136374",
+    "page_number": 2,
+    "ocr_score": 0.7627037119598866
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_136374",
+    "page_number": 3,
+    "ocr_score": 0.7660976614491318
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_140342",
+    "page_number": 1,
+    "ocr_score": 0.7266291231931812
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_140342",
+    "page_number": 2,
+    "ocr_score": 0.83169748847032
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_140342",
+    "page_number": 3,
+    "ocr_score": 0.7616717026925947
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_140342",
+    "page_number": 4,
+    "ocr_score": 0.6839664349838263
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_140496",
+    "page_number": 1,
+    "ocr_score": 0.7176548070680383
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_140496",
+    "page_number": 2,
+    "ocr_score": 0.7285390860821
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_140501",
+    "page_number": 1,
+    "ocr_score": 0.7596470494558355
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_140501",
+    "page_number": 2,
+    "ocr_score": 0.764514272231618
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_141972",
+    "page_number": 1,
+    "ocr_score": 0.7686798603036549
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_141972",
+    "page_number": 2,
+    "ocr_score": 0.793205045508616
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_141972",
+    "page_number": 3,
+    "ocr_score": 0.7148667520011701
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_145206",
+    "page_number": 1,
+    "ocr_score": 0.7640634457635755
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_145206",
+    "page_number": 2,
+    "ocr_score": 0.8076004571844663
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_145206",
+    "page_number": 3,
+    "ocr_score": 0.7394636153062782
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_147782",
+    "page_number": 1,
+    "ocr_score": 0.8072230003865275
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_147782",
+    "page_number": 2,
+    "ocr_score": 0.8045942471260028
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_147782",
+    "page_number": 3,
+    "ocr_score": 0.8023794622823057
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_147782",
+    "page_number": 4,
+    "ocr_score": 0.711850394815182
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_150541",
+    "page_number": 1,
+    "ocr_score": 0.763207244179197
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_150541",
+    "page_number": 2,
+    "ocr_score": 0.7911890198890901
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_150541",
+    "page_number": 3,
+    "ocr_score": 0.7830765118339975
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_150541",
+    "page_number": 4,
+    "ocr_score": 0.6855602677579874
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_153340",
+    "page_number": 1,
+    "ocr_score": 0.7685197702876005
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_153340",
+    "page_number": 2,
+    "ocr_score": 0.7722818969343557
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_153340",
+    "page_number": 3,
+    "ocr_score": 0.6333625387912531
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_154226",
+    "page_number": 1,
+    "ocr_score": 0.7591055262626483
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_154226",
+    "page_number": 2,
+    "ocr_score": 0.8000079666594688
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_154226",
+    "page_number": 3,
+    "ocr_score": 0.7629802933616042
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_155626",
+    "page_number": 1,
+    "ocr_score": 0.7591055262626483
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_155626",
+    "page_number": 2,
+    "ocr_score": 0.8000079666594688
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_155626",
+    "page_number": 3,
+    "ocr_score": 0.7629802933616042
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_155739",
+    "page_number": 1,
+    "ocr_score": 0.7984763942205167
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_155739",
+    "page_number": 2,
+    "ocr_score": 0.8019168298563277
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_155739",
+    "page_number": 3,
+    "ocr_score": 0.7754380527049649
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_156055",
+    "page_number": 1,
+    "ocr_score": 0.7911194858561966
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_156055",
+    "page_number": 2,
+    "ocr_score": 0.8093297806612981
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_156055",
+    "page_number": 3,
+    "ocr_score": 0.6883730090891516
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_157661",
+    "page_number": 1,
+    "ocr_score": 0.7742872143069963
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_157661",
+    "page_number": 2,
+    "ocr_score": 0.7574388833118753
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_157661",
+    "page_number": 3,
+    "ocr_score": 0.7588087676333087
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_157661",
+    "page_number": 4,
+    "ocr_score": 0.7280843394064614
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_158003",
+    "page_number": 1,
+    "ocr_score": 0.6941186096809003
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_158003",
+    "page_number": 2,
+    "ocr_score": 0.6632933639584778
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_184687",
+    "page_number": 1,
+    "ocr_score": 0.7785579933067212
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_184687",
+    "page_number": 2,
+    "ocr_score": 0.7949698661603487
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_184687",
+    "page_number": 3,
+    "ocr_score": 0.7079314091886807
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_184687",
+    "page_number": 4,
+    "ocr_score": 0.7802975232984652
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_184687",
+    "page_number": 5,
+    "ocr_score": 0.7753393121640095
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_184687",
+    "page_number": 6,
+    "ocr_score": 0.796530616696802
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_184687",
+    "page_number": 7,
+    "ocr_score": 0.7775170934892992
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_194602",
+    "page_number": 1,
+    "ocr_score": 0.7491904906670249
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_194602",
+    "page_number": 2,
+    "ocr_score": 0.8014578765138448
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_194602",
+    "page_number": 3,
+    "ocr_score": 0.7225325959139492
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_601043",
+    "page_number": 1,
+    "ocr_score": 0.7861999445960579
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_601043",
+    "page_number": 2,
+    "ocr_score": 0.7280912088638556
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_601043",
+    "page_number": 3,
+    "ocr_score": 0.7590069450485633
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_601266",
+    "page_number": 1,
+    "ocr_score": 0.7787702096430963
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_601266",
+    "page_number": 2,
+    "ocr_score": 0.7578756469229997
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_601993",
+    "page_number": 1,
+    "ocr_score": 0.7354937970877179
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_601993",
+    "page_number": 2,
+    "ocr_score": 0.7195536920969815
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_601993",
+    "page_number": 3,
+    "ocr_score": 0.7760475893819468
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_601993",
+    "page_number": 4,
+    "ocr_score": 0.7511754340853944
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_602077",
+    "page_number": 1,
+    "ocr_score": 0.7760140233400304
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_602077",
+    "page_number": 2,
+    "ocr_score": 0.7816355454770177
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2017_602077",
+    "page_number": 3,
+    "ocr_score": 0.7156289042484629
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2020_696673",
+    "page_number": 1,
+    "ocr_score": 0.7936232014167216
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2020_696673",
+    "page_number": 2,
+    "ocr_score": 0.6514375914028342
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2020_696673",
+    "page_number": 3,
+    "ocr_score": 0.6022823469690317
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2020_696673",
+    "page_number": 4,
+    "ocr_score": 0.6864162952553968
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2020_696673",
+    "page_number": 5,
+    "ocr_score": 0.8113093178342158
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2020_696673",
+    "page_number": 6,
+    "ocr_score": 0.8116359264397109
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2020_696673",
+    "page_number": 7,
+    "ocr_score": 0.6775030173353284
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2020_696673",
+    "page_number": 8,
+    "ocr_score": 0.7734446283575656
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_105048",
+    "page_number": 1,
+    "ocr_score": 0.8157728554590219
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_105048",
+    "page_number": 2,
+    "ocr_score": 0.6288787778400761
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_105048",
+    "page_number": 3,
+    "ocr_score": 0.5123291880253543
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_105048",
+    "page_number": 4,
+    "ocr_score": 0.4305859728667636
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_105048",
+    "page_number": 5,
+    "ocr_score": 0.6403469596766646
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_105048",
+    "page_number": 6,
+    "ocr_score": 0.7690275696647708
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_105048",
+    "page_number": 7,
+    "ocr_score": 0.7919622332174501
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_105048",
+    "page_number": 8,
+    "ocr_score": 0.7550829664238584
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_114483",
+    "page_number": 1,
+    "ocr_score": 0.7552666380623203
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_114483",
+    "page_number": 2,
+    "ocr_score": 0.6526680402969481
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_114483",
+    "page_number": 3,
+    "ocr_score": 0.7215109119363009
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_114483",
+    "page_number": 4,
+    "ocr_score": 0.6153921786845071
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_114483",
+    "page_number": 5,
+    "ocr_score": 0.6198884107193232
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_114483",
+    "page_number": 6,
+    "ocr_score": 0.7071565611589262
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_114483",
+    "page_number": 7,
+    "ocr_score": 0.7052997797591215
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_114483",
+    "page_number": 8,
+    "ocr_score": 0.7494652843573133
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_114631",
+    "page_number": 1,
+    "ocr_score": 0.7948584026104896
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_114631",
+    "page_number": 2,
+    "ocr_score": 0.665046285023386
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_114631",
+    "page_number": 3,
+    "ocr_score": 0.6669706193267564
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_114631",
+    "page_number": 4,
+    "ocr_score": 0.6432918371918014
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_114631",
+    "page_number": 5,
+    "ocr_score": 0.6510987228378159
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_114631",
+    "page_number": 6,
+    "ocr_score": 0.6957976476292058
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_114631",
+    "page_number": 7,
+    "ocr_score": 0.7541206255976916
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_115171",
+    "page_number": 1,
+    "ocr_score": 0.7860884267624414
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_115171",
+    "page_number": 2,
+    "ocr_score": 0.6407281798652229
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_115171",
+    "page_number": 3,
+    "ocr_score": 0.48209398911561313
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_115171",
+    "page_number": 4,
+    "ocr_score": 0.5064391387670396
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_115171",
+    "page_number": 5,
+    "ocr_score": 0.7009433580846965
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_115171",
+    "page_number": 6,
+    "ocr_score": 0.7367808283512302
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_115171",
+    "page_number": 7,
+    "ocr_score": 0.6675676202855934
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_115171",
+    "page_number": 8,
+    "ocr_score": 0.7253774366549287
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_117101",
+    "page_number": 1,
+    "ocr_score": 0.7810854958087764
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_117101",
+    "page_number": 2,
+    "ocr_score": 0.6413696867321752
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_117101",
+    "page_number": 3,
+    "ocr_score": 0.533923253528903
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_117101",
+    "page_number": 4,
+    "ocr_score": 0.4533209587281227
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_117101",
+    "page_number": 5,
+    "ocr_score": 0.7494565167334254
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_117101",
+    "page_number": 6,
+    "ocr_score": 0.7028249143616138
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_122882",
+    "page_number": 1,
+    "ocr_score": 0.778920645301974
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_122882",
+    "page_number": 2,
+    "ocr_score": 0.6305282519524096
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_122882",
+    "page_number": 3,
+    "ocr_score": 0.6531890057352412
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_122882",
+    "page_number": 4,
+    "ocr_score": 0.7838528549081424
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_122882",
+    "page_number": 5,
+    "ocr_score": 0.7666776550941851
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_122882",
+    "page_number": 6,
+    "ocr_score": 0.6710272422977069
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_124203",
+    "page_number": 1,
+    "ocr_score": 0.7696999337977775
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_124203",
+    "page_number": 2,
+    "ocr_score": 0.6350662635453069
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_124203",
+    "page_number": 3,
+    "ocr_score": 0.6350508625379878
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_124203",
+    "page_number": 4,
+    "ocr_score": 0.6529853029645076
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_124203",
+    "page_number": 5,
+    "ocr_score": 0.7110626537394221
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_124203",
+    "page_number": 6,
+    "ocr_score": 0.6866089208674061
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_124509",
+    "page_number": 1,
+    "ocr_score": 0.7639473823837628
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_124509",
+    "page_number": 2,
+    "ocr_score": 0.49105948170879377
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_124509",
+    "page_number": 3,
+    "ocr_score": 0.46176705613924923
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_124509",
+    "page_number": 4,
+    "ocr_score": 0.5439132080211587
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_124509",
+    "page_number": 5,
+    "ocr_score": 0.6813426665991793
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_124509",
+    "page_number": 6,
+    "ocr_score": 0.6746628380653559
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_124509",
+    "page_number": 7,
+    "ocr_score": 0.7096453547821062
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_126862",
+    "page_number": 1,
+    "ocr_score": 0.7719334755492624
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_126862",
+    "page_number": 2,
+    "ocr_score": 0.6639339750988451
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_126862",
+    "page_number": 3,
+    "ocr_score": 0.5252926661916446
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_126862",
+    "page_number": 4,
+    "ocr_score": 0.653285977984441
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_126862",
+    "page_number": 5,
+    "ocr_score": 0.7177981683399062
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_126862",
+    "page_number": 6,
+    "ocr_score": 0.7806818444773971
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_126862",
+    "page_number": 7,
+    "ocr_score": 0.6977064093578434
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_133200",
+    "page_number": 1,
+    "ocr_score": 0.7664671284841911
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_133200",
+    "page_number": 2,
+    "ocr_score": 0.4771864891816447
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_133200",
+    "page_number": 3,
+    "ocr_score": 0.5823810384290323
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_133200",
+    "page_number": 4,
+    "ocr_score": 0.6131846617518811
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_133200",
+    "page_number": 5,
+    "ocr_score": 0.6315201884508898
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_133200",
+    "page_number": 6,
+    "ocr_score": 0.6807947313055741
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_139169",
+    "page_number": 1,
+    "ocr_score": 0.7541314444467232
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_139169",
+    "page_number": 2,
+    "ocr_score": 0.583207836012619
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_139169",
+    "page_number": 3,
+    "ocr_score": 0.3660409956555739
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_139169",
+    "page_number": 4,
+    "ocr_score": 0.3266520596602111
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_139169",
+    "page_number": 5,
+    "ocr_score": 0.7781367049453577
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_139169",
+    "page_number": 6,
+    "ocr_score": 0.6219706180003709
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_139169",
+    "page_number": 7,
+    "ocr_score": 0.6175833071885783
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_139169",
+    "page_number": 8,
+    "ocr_score": 0.7622650678078132
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_139169",
+    "page_number": 9,
+    "ocr_score": 0.6139308116387672
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_139169",
+    "page_number": 10,
+    "ocr_score": 0.6962307363232421
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_142836",
+    "page_number": 1,
+    "ocr_score": 0.7591013743916497
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_142836",
+    "page_number": 2,
+    "ocr_score": 0.5586530002278649
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_142836",
+    "page_number": 3,
+    "ocr_score": 0.6043308334778168
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_142836",
+    "page_number": 4,
+    "ocr_score": 0.7321482772876958
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_142836",
+    "page_number": 5,
+    "ocr_score": 0.5257106368836565
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_142836",
+    "page_number": 6,
+    "ocr_score": 0.6426452132440356
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_142836",
+    "page_number": 7,
+    "ocr_score": 0.6483661047323663
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_142836",
+    "page_number": 8,
+    "ocr_score": 0.7170800683405879
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_148594",
+    "page_number": 1,
+    "ocr_score": 0.7185298820342723
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_148594",
+    "page_number": 2,
+    "ocr_score": 0.636517958783529
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_148594",
+    "page_number": 3,
+    "ocr_score": 0.5848143557231664
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_148594",
+    "page_number": 4,
+    "ocr_score": 0.7894318011945192
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_148594",
+    "page_number": 5,
+    "ocr_score": 0.6949796662389462
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_148594",
+    "page_number": 6,
+    "ocr_score": 0.6365896912147396
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_148594",
+    "page_number": 7,
+    "ocr_score": 0.7390344361792526
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_155260",
+    "page_number": 1,
+    "ocr_score": 0.750976940602432
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_155260",
+    "page_number": 2,
+    "ocr_score": 0.6063019175812052
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_155260",
+    "page_number": 3,
+    "ocr_score": 0.49452823803805196
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_155260",
+    "page_number": 4,
+    "ocr_score": 0.5196691743819373
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_155260",
+    "page_number": 5,
+    "ocr_score": 0.6000917526796473
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_155260",
+    "page_number": 6,
+    "ocr_score": 0.6265723402977131
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_155260",
+    "page_number": 7,
+    "ocr_score": 0.7240099560898546
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_155260",
+    "page_number": 8,
+    "ocr_score": 0.7762347311704914
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_155509",
+    "page_number": 1,
+    "ocr_score": 0.7315251782014859
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_155509",
+    "page_number": 2,
+    "ocr_score": 0.6681796666038637
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_155509",
+    "page_number": 3,
+    "ocr_score": 0.6048523451352087
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_155509",
+    "page_number": 4,
+    "ocr_score": 0.7229961660177777
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_155509",
+    "page_number": 5,
+    "ocr_score": 0.46948050772740746
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_155509",
+    "page_number": 6,
+    "ocr_score": 0.6850440154695906
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_155509",
+    "page_number": 7,
+    "ocr_score": 0.6880723397100407
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_155509",
+    "page_number": 8,
+    "ocr_score": 0.7100306707824809
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_601025",
+    "page_number": 1,
+    "ocr_score": 0.8102144692339038
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_601025",
+    "page_number": 2,
+    "ocr_score": 0.5624827209815588
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_601025",
+    "page_number": 3,
+    "ocr_score": 0.5106154936354848
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_601025",
+    "page_number": 4,
+    "ocr_score": 0.5076146731177853
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_601025",
+    "page_number": 5,
+    "ocr_score": 0.6780308975087243
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_601025",
+    "page_number": 6,
+    "ocr_score": 0.714073341261215
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_601025",
+    "page_number": 7,
+    "ocr_score": 0.7152787491029958
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_601177",
+    "page_number": 1,
+    "ocr_score": 0.7825603247902285
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_601177",
+    "page_number": 2,
+    "ocr_score": 0.658173368605865
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_601177",
+    "page_number": 3,
+    "ocr_score": 0.6565825511057085
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_601177",
+    "page_number": 4,
+    "ocr_score": 0.6833684747409614
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_601177",
+    "page_number": 5,
+    "ocr_score": 0.7659387735151082
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_601177",
+    "page_number": 6,
+    "ocr_score": 0.7986570350197107
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_601177",
+    "page_number": 7,
+    "ocr_score": 0.6710510789443981
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_601177",
+    "page_number": 8,
+    "ocr_score": 0.7077748153643622
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_601846",
+    "page_number": 1,
+    "ocr_score": 0.7749298862215923
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_601846",
+    "page_number": 2,
+    "ocr_score": 0.5874477386512318
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_601846",
+    "page_number": 3,
+    "ocr_score": 0.627037020894477
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_601846",
+    "page_number": 4,
+    "ocr_score": 0.6937129590842745
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_601846",
+    "page_number": 5,
+    "ocr_score": 0.5209775571322685
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_601846",
+    "page_number": 6,
+    "ocr_score": 0.4550919469684881
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_601846",
+    "page_number": 7,
+    "ocr_score": 0.7398579357134076
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_601846",
+    "page_number": 8,
+    "ocr_score": 0.6734914457874823
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_601846",
+    "page_number": 9,
+    "ocr_score": 0.744625653789648
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_602824",
+    "page_number": 1,
+    "ocr_score": 0.7671078603814638
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_602824",
+    "page_number": 2,
+    "ocr_score": 0.6639734100551654
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_602824",
+    "page_number": 3,
+    "ocr_score": 0.6519875888672313
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_602824",
+    "page_number": 4,
+    "ocr_score": 0.5058196921357646
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_602824",
+    "page_number": 5,
+    "ocr_score": 0.5879316802540944
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_602824",
+    "page_number": 6,
+    "ocr_score": 0.5798185773907584
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_602824",
+    "page_number": 7,
+    "ocr_score": 0.73136173953333
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_602824",
+    "page_number": 8,
+    "ocr_score": 0.7633001147373321
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_603782",
+    "page_number": 1,
+    "ocr_score": 0.7579280306184863
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_603782",
+    "page_number": 2,
+    "ocr_score": 0.5670283286555899
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_603782",
+    "page_number": 3,
+    "ocr_score": 0.6100850754377252
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_603782",
+    "page_number": 4,
+    "ocr_score": 0.7757069109550849
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_603782",
+    "page_number": 5,
+    "ocr_score": 0.42024296628348895
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_603782",
+    "page_number": 6,
+    "ocr_score": 0.5624457178543547
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_603782",
+    "page_number": 7,
+    "ocr_score": 0.7813645858757876
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_603782",
+    "page_number": 8,
+    "ocr_score": 0.769138612834896
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_605716",
+    "page_number": 1,
+    "ocr_score": 0.7862868069565445
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_605716",
+    "page_number": 2,
+    "ocr_score": 0.6713785431945966
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_605716",
+    "page_number": 3,
+    "ocr_score": 0.4697951659863117
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_605716",
+    "page_number": 4,
+    "ocr_score": 0.5479265104679744
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_605716",
+    "page_number": 5,
+    "ocr_score": 0.4700638474416989
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_605716",
+    "page_number": 6,
+    "ocr_score": 0.5043424626785967
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_605716",
+    "page_number": 7,
+    "ocr_score": 0.5519519700719383
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_605716",
+    "page_number": 8,
+    "ocr_score": 0.5686669274052166
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_605716",
+    "page_number": 9,
+    "ocr_score": 0.4808657065820133
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_605716",
+    "page_number": 10,
+    "ocr_score": 0.5087956624002141
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_605716",
+    "page_number": 11,
+    "ocr_score": 0.4543407218655325
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_605716",
+    "page_number": 12,
+    "ocr_score": 0.5452059714217378
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_605716",
+    "page_number": 13,
+    "ocr_score": 0.4429604512502293
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_605716",
+    "page_number": 14,
+    "ocr_score": 0.40909723930153097
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_605716",
+    "page_number": 15,
+    "ocr_score": 0.6816084935005776
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_605716",
+    "page_number": 16,
+    "ocr_score": 0.43561937073299684
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_605716",
+    "page_number": 17,
+    "ocr_score": 0.7372596124011427
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_605716",
+    "page_number": 18,
+    "ocr_score": 0.7017749837857006
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_605716",
+    "page_number": 19,
+    "ocr_score": 0.657851001278185
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_605716",
+    "page_number": 20,
+    "ocr_score": 0.7261889458099916
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_607496",
+    "page_number": 1,
+    "ocr_score": 0.8069096197297865
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_607496",
+    "page_number": 2,
+    "ocr_score": 0.6702914023225578
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_607496",
+    "page_number": 3,
+    "ocr_score": 0.2951367050722476
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_607496",
+    "page_number": 4,
+    "ocr_score": 0.3118431986167172
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_607496",
+    "page_number": 5,
+    "ocr_score": 0.33314078190963925
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_607496",
+    "page_number": 6,
+    "ocr_score": 0.34233752359209413
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_607496",
+    "page_number": 7,
+    "ocr_score": 0.7498639640604198
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_607496",
+    "page_number": 8,
+    "ocr_score": 0.7132351753478157
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_607496",
+    "page_number": 9,
+    "ocr_score": 0.7333851764127685
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_607496",
+    "page_number": 10,
+    "ocr_score": 0.7089864771049854
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_607496",
+    "page_number": 11,
+    "ocr_score": 0.76643695639789
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_607496",
+    "page_number": 12,
+    "ocr_score": 0.7072615961085469
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_607496",
+    "page_number": 13,
+    "ocr_score": 0.7928373862974506
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_607496",
+    "page_number": 14,
+    "ocr_score": 0.7245120884241742
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_607496",
+    "page_number": 15,
+    "ocr_score": 0.726101733467817
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_607496",
+    "page_number": 16,
+    "ocr_score": 0.6856309586015704
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_607496",
+    "page_number": 17,
+    "ocr_score": 0.6864533381648156
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_620046",
+    "page_number": 1,
+    "ocr_score": 0.7506071701318436
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_620046",
+    "page_number": 2,
+    "ocr_score": 0.7480335507609995
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_620046",
+    "page_number": 3,
+    "ocr_score": 0.6996968313025795
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_620046",
+    "page_number": 4,
+    "ocr_score": 0.6845586129326043
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_620046",
+    "page_number": 5,
+    "ocr_score": 0.5870396646353877
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_620046",
+    "page_number": 6,
+    "ocr_score": 0.6153940919549694
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_620046",
+    "page_number": 7,
+    "ocr_score": 0.6234934804028986
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_620046",
+    "page_number": 8,
+    "ocr_score": 0.6756588444809292
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_620046",
+    "page_number": 9,
+    "ocr_score": 0.6680659501496314
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_620046",
+    "page_number": 10,
+    "ocr_score": 0.7004653777293401
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_621212",
+    "page_number": 1,
+    "ocr_score": 0.7930274557602448
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_621212",
+    "page_number": 2,
+    "ocr_score": 0.6470880625632575
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_621212",
+    "page_number": 3,
+    "ocr_score": 0.5455043821100632
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_621212",
+    "page_number": 4,
+    "ocr_score": 0.5707276931082048
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_621212",
+    "page_number": 5,
+    "ocr_score": 0.5876667369675732
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_621212",
+    "page_number": 6,
+    "ocr_score": 0.5614829983078344
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_621212",
+    "page_number": 7,
+    "ocr_score": 0.6046540304899072
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_621212",
+    "page_number": 8,
+    "ocr_score": 0.578220293013871
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_621212",
+    "page_number": 9,
+    "ocr_score": 0.6329183851352825
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_621212",
+    "page_number": 10,
+    "ocr_score": 0.5967821793259681
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_621212",
+    "page_number": 11,
+    "ocr_score": 0.5515962036123343
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_621212",
+    "page_number": 12,
+    "ocr_score": 0.3693018154821504
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_621212",
+    "page_number": 13,
+    "ocr_score": 0.3652104201264453
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_621212",
+    "page_number": 14,
+    "ocr_score": 0.48237560559938636
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_621212",
+    "page_number": 15,
+    "ocr_score": 0.5448521423320666
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_621212",
+    "page_number": 16,
+    "ocr_score": 0.7546536898632654
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_621212",
+    "page_number": 17,
+    "ocr_score": 0.6986970853904518
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_621212",
+    "page_number": 18,
+    "ocr_score": 0.7256479215031862
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_623514",
+    "page_number": 1,
+    "ocr_score": 0.813620723237914
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_623514",
+    "page_number": 2,
+    "ocr_score": 0.5880564871111831
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_623514",
+    "page_number": 3,
+    "ocr_score": 0.5947488056832924
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_623514",
+    "page_number": 4,
+    "ocr_score": 0.6445425257376154
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_623514",
+    "page_number": 5,
+    "ocr_score": 0.6980009757230357
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_623514",
+    "page_number": 6,
+    "ocr_score": 0.6769442205030106
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_623514",
+    "page_number": 7,
+    "ocr_score": 0.6783986806302565
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_623514",
+    "page_number": 8,
+    "ocr_score": 0.689084156935215
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_623514",
+    "page_number": 9,
+    "ocr_score": 0.6795350239625056
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_623514",
+    "page_number": 10,
+    "ocr_score": 0.7003324926946172
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_623514",
+    "page_number": 11,
+    "ocr_score": 0.6910040410300478
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_623514",
+    "page_number": 12,
+    "ocr_score": 0.36979234706234054
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_623514",
+    "page_number": 13,
+    "ocr_score": 0.4222032438576228
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_623514",
+    "page_number": 14,
+    "ocr_score": 0.5773651413715185
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_623514",
+    "page_number": 15,
+    "ocr_score": 0.7597555260514988
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_624678",
+    "page_number": 1,
+    "ocr_score": 0.8048330246515903
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_624678",
+    "page_number": 2,
+    "ocr_score": 0.7246747643892014
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_624678",
+    "page_number": 3,
+    "ocr_score": 0.6722146009141251
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_624678",
+    "page_number": 4,
+    "ocr_score": 0.627439156284226
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_624678",
+    "page_number": 5,
+    "ocr_score": 0.7774520662077482
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_624678",
+    "page_number": 6,
+    "ocr_score": 0.7562377439802599
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_625289",
+    "page_number": 1,
+    "ocr_score": 0.7810070790279703
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_625289",
+    "page_number": 2,
+    "ocr_score": 0.6853864133632585
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_625289",
+    "page_number": 3,
+    "ocr_score": 0.5700058727242336
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_625289",
+    "page_number": 4,
+    "ocr_score": 0.5795862060059346
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_625289",
+    "page_number": 5,
+    "ocr_score": 0.6279257850989246
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_625289",
+    "page_number": 6,
+    "ocr_score": 0.5418984413648295
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_625289",
+    "page_number": 7,
+    "ocr_score": 0.6237125525237661
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_625289",
+    "page_number": 8,
+    "ocr_score": 0.6038210759544533
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_625289",
+    "page_number": 9,
+    "ocr_score": 0.6354181097868915
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_625289",
+    "page_number": 10,
+    "ocr_score": 0.7115707434882727
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_625289",
+    "page_number": 11,
+    "ocr_score": 0.6414437978273889
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_625289",
+    "page_number": 12,
+    "ocr_score": 0.6134985423559429
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_625289",
+    "page_number": 13,
+    "ocr_score": 0.7522803563530123
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_625289",
+    "page_number": 14,
+    "ocr_score": 0.70894810211584
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_625289",
+    "page_number": 15,
+    "ocr_score": 0.7088334281201191
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_637383",
+    "page_number": 1,
+    "ocr_score": 0.7639541227383895
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_637383",
+    "page_number": 2,
+    "ocr_score": 0.6626108811337816
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_637383",
+    "page_number": 3,
+    "ocr_score": 0.6241830151635913
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_637383",
+    "page_number": 4,
+    "ocr_score": 0.7748554151000656
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_637383",
+    "page_number": 5,
+    "ocr_score": 0.6491261493581851
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_637383",
+    "page_number": 6,
+    "ocr_score": 0.6106151488292987
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_637383",
+    "page_number": 7,
+    "ocr_score": 0.6884842099545483
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_641742",
+    "page_number": 1,
+    "ocr_score": 0.7682622462997538
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_641742",
+    "page_number": 2,
+    "ocr_score": 0.3255788440674798
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_641742",
+    "page_number": 3,
+    "ocr_score": 0.6104247413404359
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_641742",
+    "page_number": 4,
+    "ocr_score": 0.527860600848055
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_641742",
+    "page_number": 5,
+    "ocr_score": 0.6598945520971061
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_641742",
+    "page_number": 6,
+    "ocr_score": 0.6814179151956623
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_641742",
+    "page_number": 7,
+    "ocr_score": 0.7753403257944731
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_641742",
+    "page_number": 8,
+    "ocr_score": 0.7490450888569669
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_641742",
+    "page_number": 9,
+    "ocr_score": 0.7517766862999267
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_643822",
+    "page_number": 1,
+    "ocr_score": 0.7951275551913748
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_643822",
+    "page_number": 2,
+    "ocr_score": 0.7632243175800831
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_643822",
+    "page_number": 3,
+    "ocr_score": 0.5647344374146915
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_643822",
+    "page_number": 4,
+    "ocr_score": 0.588318514436553
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_643822",
+    "page_number": 5,
+    "ocr_score": 0.7887144952684938
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_643822",
+    "page_number": 6,
+    "ocr_score": 0.6516860303219079
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_643822",
+    "page_number": 7,
+    "ocr_score": 0.7050718579047899
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_643822",
+    "page_number": 8,
+    "ocr_score": 0.7076577678184177
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_647057",
+    "page_number": 1,
+    "ocr_score": 0.7801567635726301
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_647057",
+    "page_number": 2,
+    "ocr_score": 0.4262437901641073
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_647057",
+    "page_number": 3,
+    "ocr_score": 0.633731793164009
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_647057",
+    "page_number": 4,
+    "ocr_score": 0.7199907879532159
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_647057",
+    "page_number": 5,
+    "ocr_score": 0.7402712974708735
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_647823",
+    "page_number": 1,
+    "ocr_score": 0.7890916948293105
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_647823",
+    "page_number": 2,
+    "ocr_score": 0.563947198161808
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_647823",
+    "page_number": 3,
+    "ocr_score": 0.47108367001303836
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_647823",
+    "page_number": 4,
+    "ocr_score": 0.5168896413541083
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_647823",
+    "page_number": 5,
+    "ocr_score": 0.7854565575526118
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_647823",
+    "page_number": 6,
+    "ocr_score": 0.6656654573731053
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_647823",
+    "page_number": 7,
+    "ocr_score": 0.6577346497095519
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_647823",
+    "page_number": 8,
+    "ocr_score": 0.606371447664572
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_647823",
+    "page_number": 9,
+    "ocr_score": 0.7318577550856376
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_649703",
+    "page_number": 1,
+    "ocr_score": 0.7712815162245068
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_649703",
+    "page_number": 2,
+    "ocr_score": 0.5890840502341533
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_649703",
+    "page_number": 3,
+    "ocr_score": 0.6978719387412209
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_649703",
+    "page_number": 4,
+    "ocr_score": 0.6845123174241116
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_649703",
+    "page_number": 5,
+    "ocr_score": 0.6728695663345534
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_649703",
+    "page_number": 6,
+    "ocr_score": 0.7026227271468641
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_649703",
+    "page_number": 7,
+    "ocr_score": 0.7688738256994256
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_652955",
+    "page_number": 1,
+    "ocr_score": 0.7406819388814736
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_652955",
+    "page_number": 2,
+    "ocr_score": 0.676687209465049
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_652955",
+    "page_number": 3,
+    "ocr_score": 0.7078086389936336
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_652955",
+    "page_number": 4,
+    "ocr_score": 0.5984904299047291
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_652955",
+    "page_number": 5,
+    "ocr_score": 0.713625308111308
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_652955",
+    "page_number": 6,
+    "ocr_score": 0.649486116238594
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_652955",
+    "page_number": 7,
+    "ocr_score": 0.710477638376416
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_656120",
+    "page_number": 1,
+    "ocr_score": 0.7639051068611792
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_656120",
+    "page_number": 2,
+    "ocr_score": 0.6501495793798387
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_656120",
+    "page_number": 3,
+    "ocr_score": 0.3502979695542325
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_656120",
+    "page_number": 4,
+    "ocr_score": 0.6652230374107286
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_656120",
+    "page_number": 5,
+    "ocr_score": 0.6079255277823404
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_656120",
+    "page_number": 6,
+    "ocr_score": 0.665013509818184
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_656120",
+    "page_number": 7,
+    "ocr_score": 0.6641319059631783
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_656120",
+    "page_number": 8,
+    "ocr_score": 0.6062235460937142
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_656120",
+    "page_number": 9,
+    "ocr_score": 0.668218368825357
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_656120",
+    "page_number": 10,
+    "ocr_score": 0.7118604895142358
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_656120",
+    "page_number": 11,
+    "ocr_score": 0.7252013105761026
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_657148",
+    "page_number": 1,
+    "ocr_score": 0.7961357427285816
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_657148",
+    "page_number": 2,
+    "ocr_score": 0.5699716923243018
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_657148",
+    "page_number": 3,
+    "ocr_score": 0.6301294546442752
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_657148",
+    "page_number": 4,
+    "ocr_score": 0.7136711218190672
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_657148",
+    "page_number": 5,
+    "ocr_score": 0.6550417934501537
+  },
+  {
+    "document_name": "CIC_AAOIN_A_2021_657148",
+    "page_number": 6,
+    "ocr_score": 0.7556594201479275
   }
 ]

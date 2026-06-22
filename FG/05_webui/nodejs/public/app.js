@@ -108,6 +108,9 @@ const ui = {
   pdfTitle: $('pdf-title'),
   pdfClose: $('pdf-close'),
   pdfLoading: $('pdf-loading'),
+  documentLoadingLabel: $('document-loading-label'),
+  documentError: $('document-error'),
+  structureContent: $('structure-content'),
 
   toastContainer: $('toast-container'),
 };
@@ -162,6 +165,8 @@ const api = {
   examples: () => api._request('GET', '/api/examples'),
   settings: (body) => api._request(body ? 'POST' : 'GET', '/api/settings', body),
   query: (q, n) => api._request('POST', '/api/query', { query: q, num_results: n }),
+  documentStructure: (actualPdf) =>
+    api._request('POST', '/api/document-structure', { actual_pdf: actualPdf }),
 };
 
 // ── Screen switching ──────────────────────────────────────────────────────
@@ -422,13 +427,18 @@ async function openPdfPanel(fname) {
   // Show panel immediately with loading state
   ui.pdfTitle.textContent = fname;
   ui.pdfIframe.src = '';
+  ui.structureContent.textContent = '';
+  ui.structureContent.classList.add('hidden');
+  ui.documentError.textContent = '';
+  ui.documentError.classList.add('hidden');
+  ui.documentLoadingLabel.textContent = 'Loading PDF';
   ui.pdfLoading.classList.remove('hidden');
   ui.pdfIframe.classList.add('hidden');
   ui.pdfPanel.classList.remove('hidden');
   ui.pdfOverlay.classList.remove('hidden');
 
   try {
-    const pdfPath = `/01_preprocessing/used_files/${encodeURIComponent(fname)}`;
+    const pdfPath = `/api/document-pdf/${encodeURIComponent(fname)}`;
     const blob = await api.fetchPdf(pdfPath);
 
     // Revoke previous blob URL to free memory
@@ -447,9 +457,40 @@ async function openPdfPanel(fname) {
   } catch (err) {
     if (err.message !== 'UNAUTHENTICATED') {
       ui.pdfLoading.classList.add('hidden');
-      ui.pdfPanel.innerHTML +=
-        `<div class="pdf-error">Could not load PDF: ${escapeHtml(err.message)}</div>`;
+      ui.documentError.textContent = `Could not load PDF: ${err.message}`;
+      ui.documentError.classList.remove('hidden');
       toast('Could not load PDF', 'error');
+    }
+  }
+}
+
+async function openStructurePanel(fname) {
+  ui.pdfTitle.textContent = `${fname} / structured.md`;
+  ui.pdfIframe.src = '';
+  ui.pdfIframe.classList.add('hidden');
+  ui.structureContent.textContent = '';
+  ui.structureContent.classList.add('hidden');
+  ui.documentError.textContent = '';
+  ui.documentError.classList.add('hidden');
+  ui.documentLoadingLabel.textContent = 'Loading structured.md';
+  ui.pdfLoading.classList.remove('hidden');
+  ui.pdfPanel.classList.remove('hidden');
+  ui.pdfOverlay.classList.remove('hidden');
+
+  try {
+    const { ok, data } = await api.documentStructure(fname);
+    ui.pdfLoading.classList.add('hidden');
+    if (!ok || !data.success) {
+      throw new Error(data.error || 'structured.md request failed');
+    }
+    ui.structureContent.textContent = data.structured_md || '';
+    ui.structureContent.classList.remove('hidden');
+  } catch (err) {
+    if (err.message !== 'UNAUTHENTICATED') {
+      ui.pdfLoading.classList.add('hidden');
+      ui.documentError.textContent = `Could not load structured.md: ${err.message}`;
+      ui.documentError.classList.remove('hidden');
+      toast('Could not load structured.md', 'error');
     }
   }
 }
@@ -458,6 +499,10 @@ function closePdfPanel() {
   ui.pdfPanel.classList.add('hidden');
   ui.pdfOverlay.classList.add('hidden');
   ui.pdfIframe.src = '';
+  ui.structureContent.textContent = '';
+  ui.structureContent.classList.add('hidden');
+  ui.documentError.textContent = '';
+  ui.documentError.classList.add('hidden');
   if (state.pdfBlobUrl) {
     URL.revokeObjectURL(state.pdfBlobUrl);
     state.pdfBlobUrl = null;
@@ -511,12 +556,26 @@ function openDrawer(results) {
       </details>
     `;
 
-    // View PDF button — fetches with auth token, shows in half-screen panel
+    const actionRow = document.createElement('div');
+    actionRow.className = 'source-actions';
+
     const pdfBtn = document.createElement('button');
     pdfBtn.className = 'pdf-open-btn';
-    pdfBtn.innerHTML = '⬡ View PDF';
+    pdfBtn.textContent = 'View PDF';
     pdfBtn.addEventListener('click', () => openPdfPanel(fname));
-    card.appendChild(pdfBtn);
+    actionRow.appendChild(pdfBtn);
+
+    const structureBtn = document.createElement('button');
+    structureBtn.className = 'structure-open-btn';
+    structureBtn.textContent = 'View structure';
+    structureBtn.disabled = r.structured_md_available === false;
+    structureBtn.title = structureBtn.disabled
+      ? 'structured.md is not available for this document'
+      : 'Open full extracted Markdown';
+    structureBtn.addEventListener('click', () => openStructurePanel(fname));
+    actionRow.appendChild(structureBtn);
+
+    card.appendChild(actionRow);
 
     ui.drawerBody.appendChild(card);
   });

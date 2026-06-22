@@ -15,7 +15,7 @@ from pathlib import Path
 from PIL import Image
 
 from .config import DEFAULT_OUTPUT_DIR, IMAGE_FORMAT, DPI
-from .pdf_to_image import pdf_to_images, get_page_count
+from .pdf_to_image import pdf_to_images, pdf_page_to_image, get_page_count
 from .deskew import deskew
 from .denoise import denoise
 from .stamp_detector import detect_stamps, mask_stamps, StampDetectionResult
@@ -43,6 +43,7 @@ class DocumentResult:
 
     pdf_path: str
     total_pages: int
+    sha256: str = ""
     pages: list[PageResult] = field(default_factory=list)
 
 
@@ -74,7 +75,7 @@ class ImagePrepPipeline:
         self.mask_stamps_in_output = mask_stamps_in_output
         self.save_debug_images = save_debug_images
 
-    def process(self, pdf_path: str | Path) -> DocumentResult:
+    def process(self, pdf_path: str | Path, pdf_sha256: str = "") -> DocumentResult:
         """Run the full Stage 1 pipeline on a PDF.
 
         Parameters
@@ -106,6 +107,7 @@ class ImagePrepPipeline:
         result = DocumentResult(
             pdf_path=str(pdf_path),
             total_pages=total_pages,
+            sha256=pdf_sha256,
         )
 
         for page_num, raw_image in enumerate(page_images):
@@ -122,6 +124,28 @@ class ImagePrepPipeline:
         logger.info(f"Done: {pdf_path.name} — {total_pages} pages processed.")
 
         return result
+
+    def process_single_page(
+        self,
+        pdf_path: str | Path,
+        page_num: int,
+        doc_output_dir: str | Path | None = None,
+    ) -> PageResult:
+        """Render and preprocess exactly one PDF page.
+
+        Smart extraction uses this method only after direct text extraction has
+        failed the confidence threshold. This avoids rasterizing pages that
+        already have clean selectable text.
+        """
+        pdf_path = Path(pdf_path)
+        output_dir = Path(doc_output_dir) if doc_output_dir else self.output_dir / pdf_path.stem
+        output_dir.mkdir(parents=True, exist_ok=True)
+
+        if self.save_debug_images:
+            (output_dir / "debug").mkdir(exist_ok=True)
+
+        raw_image = pdf_page_to_image(pdf_path, page_num)
+        return self._process_page(raw_image, page_num, output_dir)
 
     def _process_page(
         self,
@@ -214,6 +238,7 @@ class ImagePrepPipeline:
         data = {
             "pdf_path": result.pdf_path,
             "total_pages": result.total_pages,
+            "sha256": result.sha256,
             "pages": [asdict(p) for p in result.pages],
         }
         with open(path, "w", encoding="utf-8") as f:

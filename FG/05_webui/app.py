@@ -6,6 +6,7 @@ Simple Flask-based interface for document question-answering
 import os
 import sys
 import importlib.util
+import json
 import time
 from flask import Flask, request, jsonify, send_file
 from datetime import datetime
@@ -59,8 +60,10 @@ def _build_initialize_pipeline(rag_module):
         client = getattr(rag_module, 'client', None)
         ensure_qdrant_client = getattr(rag_module, 'ensure_qdrant_client', None)
         collection_name = getattr(rag_module, 'COLLECTION_NAME', None)
+        collection_names = getattr(rag_module, 'COLLECTION_NAMES', None)
         if collection_name is None and hasattr(rag_module, 'CFG'):
             collection_name = rag_module.CFG.get('collection')
+        collection_names = collection_names or ([collection_name] if collection_name else [])
 
         try:
             if client is None and callable(ensure_qdrant_client):
@@ -77,10 +80,18 @@ def _build_initialize_pipeline(rag_module):
             return status
 
         try:
-            if collection_name and client.collection_exists(collection_name):
+            available = [
+                name for name in collection_names
+                if client.collection_exists(name)
+            ]
+            if available:
                 status['collection_exists'] = True
             else:
-                status['error'] = f"Collection '{collection_name}' does not exist" if collection_name else 'Collection name unavailable'
+                status['error'] = (
+                    f"None of the configured collections exist: {collection_names}"
+                    if collection_names
+                    else 'Collection name unavailable'
+                )
                 return status
         except Exception as e:
             status['error'] = f'Collection check failed: {e}'
@@ -100,6 +111,8 @@ def _build_get_db_status(rag_module):
             'db_connected': False,
             'collection_exists': False,
             'collection_name': None,
+            'collection_names': [],
+            'collections': {},
             'points_count': 0,
             'error': None,
         }
@@ -107,9 +120,12 @@ def _build_get_db_status(rag_module):
         client = getattr(rag_module, 'client', None)
         ensure_qdrant_client = getattr(rag_module, 'ensure_qdrant_client', None)
         collection_name = getattr(rag_module, 'COLLECTION_NAME', None)
+        collection_names = getattr(rag_module, 'COLLECTION_NAMES', None)
         if collection_name is None and hasattr(rag_module, 'CFG'):
             collection_name = rag_module.CFG.get('collection')
+        collection_names = collection_names or ([collection_name] if collection_name else [])
         status['collection_name'] = collection_name
+        status['collection_names'] = collection_names
 
         try:
             if client is None and callable(ensure_qdrant_client):
@@ -126,12 +142,29 @@ def _build_get_db_status(rag_module):
             return status
 
         try:
-            if collection_name and client.collection_exists(collection_name):
+            for name in collection_names:
+                if not client.collection_exists(name):
+                    status['collections'][name] = {
+                        'exists': False,
+                        'points_count': 0,
+                    }
+                    continue
+                collection_info = client.get_collection(name)
+                points_count = collection_info.points_count or 0
+                status['collections'][name] = {
+                    'exists': True,
+                    'points_count': points_count,
+                }
+                status['points_count'] += points_count
+
+            if any(item['exists'] for item in status['collections'].values()):
                 status['collection_exists'] = True
-                collection_info = client.get_collection(collection_name)
-                status['points_count'] = collection_info.points_count
             else:
-                status['error'] = f"Collection '{collection_name}' not found" if collection_name else 'Collection name unavailable'
+                status['error'] = (
+                    f"None of the configured collections exist: {collection_names}"
+                    if collection_names
+                    else 'Collection name unavailable'
+                )
         except Exception as e:
             status['error'] = f'Collection check failed: {e}'
 
@@ -212,6 +245,29 @@ pipeline_initialized = False
 qdrant_retry_attempted = False
 kg_enabled = True
 num_results = 3
+
+
+def safe_pdf_stem(actual_pdf: str) -> str:
+    """Return a filename-only PDF stem suitable for artifact lookup."""
+    filename = Path(actual_pdf).name
+    return Path(filename).stem
+
+
+def get_document_artifact_paths(actual_pdf: str):
+    """Return the precomputed ingestion artifacts associated with a PDF."""
+    pdf_stem = safe_pdf_stem(actual_pdf)
+    stage2_dir = PROJECT_ROOT / "01_preprocessing" / "stage2_output" / pdf_stem
+    return {
+        "doc_id": pdf_stem,
+        "stage2_dir": stage2_dir,
+        "structured_md": stage2_dir / "structured.md",
+        "structured_json": stage2_dir / "structured.json",
+        "page_debug_dir": stage2_dir / "page_debug",
+        "pdf_candidates": [
+            PROJECT_ROOT / "01_preprocessing" / "cic_pdfs_past_cases" / f"{pdf_stem}.pdf",
+            PROJECT_ROOT / "01_preprocessing" / "used_files" / f"{pdf_stem}.pdf",
+        ],
+    }
 
 
 def _is_qdrant_connection_failure(error_text):
@@ -370,7 +426,7 @@ def query():
             'query': ''
         }), 503
     
-    data = request.get_json()
+    data = request.get_json() or {}
     query_text = data.get('query', '').strip()
     num_context = data.get('num_results', num_results)
     
@@ -413,11 +469,17 @@ def query():
         
         for result in context_results:
             point = result.get('point', {})
-            source = point.payload.get('source', '') if hasattr(point, 'payload') else ''
-            text = point.payload.get('text', '') if hasattr(point, 'payload') else ''
+            payload = point.payload if hasattr(point, 'payload') else {}
+            source = payload.get('source', '')
+            text = payload.get('text', '')
             
             # Get actual PDF name
-            actual_pdf = _rag_module.get_actual_filename(source) if '_rag_module' in globals() else source
+            payload_filename = getattr(_rag_module, 'get_payload_actual_filename', None)
+            if callable(payload_filename):
+                actual_pdf = payload_filename(payload)
+            else:
+                actual_pdf = _rag_module.get_actual_filename(source) if '_rag_module' in globals() else source
+            paths = get_document_artifact_paths(actual_pdf)
             
             # Extract highlighted excerpt
             from_rag = getattr(_rag_module, 'extract_highlighted_excerpt', None)
@@ -430,10 +492,27 @@ def query():
                 'rank': result.get('rank', 0),
                 'source': source,
                 'actual_pdf': actual_pdf,  # New: Show actual PDF name
+                'retrieval_collection': payload.get('_retrieval_collection', ''),
+                'document_id': paths['doc_id'],
                 'score': result.get('score', 0),
                 'text': text,
                 'excerpt': excerpt,  # New: Show highlighted excerpt
-                'parent_id': result.get('parent_id', '')
+                'parent_id': result.get('parent_id', ''),
+                'structured_md_available': paths['structured_md'].exists(),
+                'structured_json_available': paths['structured_json'].exists(),
+                'structured_md_path': str(paths['structured_md']) if paths['structured_md'].exists() else '',
+                'structured_json_path': str(paths['structured_json']) if paths['structured_json'].exists() else '',
+                'page_start': payload.get('page_start', payload.get('printed_page_start')),
+                'page_end': payload.get('page_end', payload.get('printed_page_end')),
+                'chunk_type': payload.get('chunk_type', ''),
+                'case_number': payload.get('case_number', payload.get('appeal_number', '')),
+                'public_authority': payload.get('public_authority', ''),
+                'outcome': payload.get('outcome', ''),
+                'hearing_date': payload.get('hearing_date', ''),
+                'retrieval_priority': payload.get('retrieval_priority', 0),
+                'precedent_summary': text if payload.get('chunk_type') == 'PRECEDENT_SUMMARY' else '',
+                'commission_observations': text if payload.get('chunk_type') in ('COMMISSION_OBSERVATIONS', 'COMMISSION_FINDINGS') else '',
+                'pio_learning_signal': text if payload.get('chunk_type') == 'PIO_LEARNING_SIGNAL' else '',
             }
             
             formatted_results.append(result_item)
@@ -462,6 +541,54 @@ def query():
             'query': query_text,
             'results': []
         }), 500
+
+
+@app.route('/api/document-structure', methods=['POST'])
+def document_structure():
+    """Return precomputed full-document extraction artifacts for a PDF."""
+    data = request.get_json() or {}
+    actual_pdf = data.get('actual_pdf', '').strip()
+
+    if not actual_pdf:
+        return jsonify({
+            'success': False,
+            'error': 'actual_pdf is required',
+        }), 400
+
+    paths = get_document_artifact_paths(actual_pdf)
+    structured_md_path = paths['structured_md']
+    structured_json_path = paths['structured_json']
+
+    if not structured_md_path.exists():
+        return jsonify({
+            'success': False,
+            'error': 'structured.md not found',
+            'actual_pdf': Path(actual_pdf).name,
+            'document_id': paths['doc_id'],
+            'expected_path': str(structured_md_path),
+        }), 404
+
+    response = {
+        'success': True,
+        'actual_pdf': Path(actual_pdf).name,
+        'document_id': paths['doc_id'],
+        'structured_md_path': str(structured_md_path),
+        'structured_md': structured_md_path.read_text(encoding='utf-8', errors='replace'),
+        'structured_json_available': structured_json_path.exists(),
+        'structured_json_path': str(structured_json_path) if structured_json_path.exists() else '',
+        'structured_json': None,
+    }
+
+    if structured_json_path.exists():
+        try:
+            response['structured_json'] = json.loads(
+                structured_json_path.read_text(encoding='utf-8', errors='replace')
+            )
+        except json.JSONDecodeError as e:
+            response['structured_json_error'] = f'Invalid structured.json: {e}'
+
+    return jsonify(response), 200
+
 
 @app.route('/api/settings', methods=['GET', 'POST'])
 def settings():
@@ -506,24 +633,33 @@ def examples():
         'examples': examples_list
     }), 200
 
+@app.route('/api/document-pdf/<filename>', methods=['GET'])
 @app.route('/01_preprocessing/used_files/<filename>', methods=['GET'])
+@app.route('/01_preprocessing/cic_pdfs_past_cases/<filename>', methods=['GET'])
 def serve_pdf(filename):
-    """Serve PDF files from used_files directory"""
-    import os
-    
-    # Security: Only allow PDF files and alphanumeric filenames
-    if not filename.endswith('.pdf'):
+    """Serve a PDF from one of the approved local corpus directories."""
+    if not filename.lower().endswith('.pdf'):
         return jsonify({'error': 'Only PDF files are allowed'}), 403
-    
-    # Prevent directory traversal attacks
-    if '..' in filename or '/' in filename:
+
+    # Flask decodes the URL before this check, so reject path components after
+    # decoding and only resolve a plain filename inside approved corpus roots.
+    if Path(filename).name != filename or '..' in filename:
         return jsonify({'error': 'Invalid filename'}), 403
-    
-    pdf_path = PROJECT_ROOT / '01_preprocessing' / 'used_files' / filename
-    
-    if not pdf_path.exists():
-        return jsonify({'error': f'PDF not found: {filename}'}), 404
-    
+
+    pdf_roots = (
+        PROJECT_ROOT / '01_preprocessing' / 'cic_pdfs_past_cases',
+        PROJECT_ROOT / '01_preprocessing' / 'used_files',
+    )
+    pdf_path = next(
+        (root / filename for root in pdf_roots if (root / filename).is_file()),
+        None,
+    )
+    if pdf_path is None:
+        return jsonify({
+            'error': f'PDF not found: {filename}',
+            'searched_folders': [root.name for root in pdf_roots],
+        }), 404
+
     try:
         return send_file(str(pdf_path), mimetype='application/pdf')
     except Exception as e:

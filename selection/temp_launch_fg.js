@@ -3,7 +3,7 @@ const { launchPipeline } = require('./server/utils/pipelines');
 async function run() {
     const pipelines = ['fg', 'fg2'];
     const healthMap = {
-        'fg': ['http://localhost:5002/api/health', 'http://localhost:3002/health'],
+        'fg': ['http://localhost:5000/api/health', 'http://localhost:3002/health'],
         'fg2': ['http://localhost:5003/api/health', 'http://localhost:3003/health']
     };
 

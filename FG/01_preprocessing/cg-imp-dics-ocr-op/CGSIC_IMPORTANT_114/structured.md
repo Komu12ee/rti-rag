@@ -1,0 +1,59 @@
+<!-- Page 1 -->
+
+## द्वितीय अपील प्रकरण क्रमांक ए/ 2336 / 2014
+
+जनसूचना अधिकारी, बिलासपुर विश्वविद्यालय, जिला बिलासपुर (छ0ग0) आदेश दिनांक 07 / 04 / 2015
+
+अपीलार्थी श्री रमेश शर्मा ग्राम व पोस्ट महली, तहसील पंडरिया, जिला कबीरधाम (छ0ग0) विरूद्ध
+
+यह द्वितीय अपील अपीलार्थी श्री रमेश   शर्मा द्वारा सूचना क अधिकार अधिनियम , 2005 (जिसे आगे अधिनियम कहा जायेगा) की धारा 19 के अंतर्गत जनसूचना अधिकारी, डॉ0 श्री अरूण कुमार सिंह॰ कार्यालय बिलासपुर विश्वविद्यालय जिला बिलासपुर (छ0ग0) जिला बिलासपुर (छ0ग0) के विरूद्ध प्रस्तुत की गई है| संक्षेप में प्रकरण यह है कि अपीलार्थी ने अधिनियम के अंतर्गत जनसूचना अधिकारी
+
+बिलासपुर विश्वविद्यालय को आवेदन प्रस्तुत कर निम्न सूचना / जानकारी मांगी थी :-
+
+"गायत्री शर्मा, पिता श्री रमेश शर्मा डॉ. ज्वाला प्रसाद मिश्रा शासकीय मुंगेली जो वर्ष 2012  13 में बी॰ महाविद्यालय मुंगेली जो वर्ष 2012  13 में बी॰एस0सी0 प्रथम वर्ष (गणित) अंतिम अवसर की पूरक परीक्षा में सम्मिलित हुई॰थी कि निम्न जानकारी प्रदान करें
+
+1. गणित विषय की द्वितीय एवं तृतीय उत्तरपुस्तिका की सत्यापित छायाप्रति की कापी |
+2. गणित विषय की द्वितीय एवं तृतीय उत्तरपुस्तिका के पुनः मूल्यांकन हेतु किए गये आवेदन में की गई कार्यवाही की जानकारी
+
+यह आवेदन डाक द्वारा दिनांक 4 12.13 को भेजा गया उत्तरवादी जनसूचना अधिकारी ने पत्र दिनांक 10.12.13 द्वारा अपीलार्थी को सूचित किया कि विश्वविद्यालय समन्वय समिति के निर्णय अनुसार केवल पुनर्मुल्याकन के उपरांत उत्तरपुस्तिका की छायाप्रति देने का प्रावधान है| यह कारण दर्शाकर उत्तरपुस्तिकाओं की प्रति नहीं दी गई जिस पर अपीलार्थी द्वारा प्रथम अपील डाक से 30. 1.2014 द्वारा प्रथम अपीलीय अधिकारी, कुलपति, बिलासपुर विश्वविद्यालय बिलासपुर को प्रस्तुत की गई॰थी जिसका निराकरण नहीं हुआ तद्उपरांत द्वितीय अपील प्रस्तुत की गई जिसमें जानकारी दिलाने का अनुरोध किया गया हे|
+
+प्रकरण में उत्तरवादी जनसूचना अधिकारी का जवाब प्राप्त है जिसमें उन्होंने स चित   किया हे कि॰  विश्वविद्यालय क समन्वय समिति के निर्णय अनुसार   केवल पुनर्मुल्यांकन के उपरांत ही उत्तरपुस्तिका की छायाप्रति देने का प्रावधान है और यह भी लिखा है कि पूरक परीक्षा में अंतिम अवसर के रूप में कु0 गायत्री शर्मा परीक्षा में सम्मिलित हुई थी और पूरक परीक्षाा के परीक्षार्थियों को पुनर्मुल्यांकन की पात्रता नहीं है इसलिए पुनर्मुल्यांकन का आवेदन निरस्त किया गया था यह जानकारी अंकसूची के पृष्ठ भाग पर भी अंकित है चूंकि पुनर्मुल्यांकन नियमानुसार नहीं हो सका इसलिए उत्तरपुस्तिकाओं छायाप्रति भी प्रदान नहीं की जा सकती थी यह अपीलार्थी को पत्र दिनांक 11.1.14
+
+
+
+<!-- Page 2 -->
+
+द्वारा सचित किया गया था इस पत्र की प्रतिलिपि जवाब के साथ संलग्न है| जवाब में आगे लिखा है कि विश्वविद्यलयीन अध्यादेश के अनुसार परीक्षा परिणाम घोषित होने की तिथि के छः माह पश्चात उत्तरपुस्तिकाओं को नष्ट करने का प्रावधान हैं संबंधित परीक्षार्थी के पूरक परीक्षा का परिणाम 7.8.13 को घोषित किया गया है अब उक्त अवधि में उत्तरपुस्तिकाओं नष्ट कर दिये जाने के कारण छायाप्रति देना संभव नहीं है|
+
+उभयपक्षों को सुना गया | अपीलार्थी का कहना था कि जब उत्तरपुस्तिकाएं उपलब्ध थी तब दी जा सकती थी
+
+यह देखा जाना होगा कि क्या उत्तरपुस्तिकाओं की प्रतिलिपियां विश्वविद्यालय समन्वय समिति के भी अधिनियम के प्रावधानों के अंतर्गत दी जा सकती है अथवा नहीं इस प्रश्न की विवेचना आयोग द्वारा प्रकरण क्रमांक ए / 800 2014 में पारित आदेश दिनांक 29 / 01 / 2015 में की गई है, जिसके अंश निम्नानुसार है होते हुए सुसंगत
+
+"अब प्रश्न यह है कि क्या समन्वय समिति का निर्णय सहित वि0वि0 का प्रावधान जो उत्तरपुस्तिकाओं की प्रतिलिपि देने से संबंधित है) सूचना का अधिकार अधिनियम 2005 के प्रावधानों के अंतर्गत सूचना एवं जानकारी प्रदान किये जाने से रोक सकता है अर्थात् यदि विश्वविद्यालय के नियम अध्यादेश या किसी समिति के निर्णय एवं सूचना का अधिकार अधिनियम के प्रावधानों निर्णय में यदि टकराव है तो सूचना का अधिकार अधिनियम के अंतर्गत सूचना जानकारी दी जायेगी अथवा नहीं इस संबंध में माननीय सर्वोच्च न्यायालय ने CIVIL APPEAL NO 6454 OF 2011 [Arising out of SLP [CJ No. 7526/2009] Central Board of Secondary Education & Anr Appellants Vs. Aditya Bandopadhyay & Ors में निम्नानुसार प्रतिपादित किया है
+
+"18. In these cases, the High Court has rightly denied the prayer for reevaluation of answer-books sought by the candidates in view of the bar contained in the rules and regulations of the examining bodies. It is also not a relief available under the RTI Act. Therefore the question whether reevaluation should be permitted Or not, does not arise for our  consideration. What arises for consideration is the question whether the examinee is entitled to inspect his evaluated answer books or take certified copies thereof. This right is claimed by the students, not with reference to the rules or bye-laws of examining bodies, but under the RTI Act which enables them and entitles them to have access to the answer books as 'information' and inspect them and take certified copies thereof. Section 22 of RTI Act provides that the provisions of the said Act will have effect, notwithstanding anything inconsistent therewith contained in any other law for the time being in force. Therefore the provisions of the RTI Act will prevail over the provisions of the byelaws/rules of the examining bodies in regard to examinations. As a result, unless the examining body is able to demonstrate that the answerbooks fall under the exempted category of information described in clause (e) of section 8(1 ) of RTI Act, the examining body will be bound to provide access to an
+
+
+
+<!-- Page 3 -->
+
+examinee to inspect and take copies of his evaluated answerbooks, even if such inspection or taking copies is barred under the rules/bye laws of the examining body governing the examinations. Therefore, the decision of this Court in Maharashtra State Board (supra) and the subsequent decisions following the same, will not affect or interfere with the right of the examinee seeking inspection of answerbooks or taking certified copies thereof.
+
+28. When an examining body engages the services of an examiner to evaluate the answer-books, the examining body expects the examiner not to disclose the information regarding evaluation to anyone other than the examining body. Similarly the examiner also expects that his name and particulars would not be disclosed to the candidates whose answer-books are evaluated by him. In the event of such information being made known, a disgruntled examinee who is not satisfied with the evaluation of the answer books, may act to the prejudice of the examiner by attempting to endanger his physical safety. Further any apprehension on the part of the examiner that there may be danger to his physical safety, if his identity becomes known to the examinees, may come in the way of effective discharge of his duties. The above applies not only to the examiner but also to the scrutiniser, coordinator, and head-examiner who deal with the answer book. The answer book usually contains not only the signature and code number of the examiner but also the signatures and code number of the scrutiniser coordinator/ head examiner. The information a$ to the names Or particulars of the examiners/co-ordinators scrutinisers/head examiners are therefore exempted from disclosure under section 8(l)(g) of RTI Act, on the ground that if such information is disclosed, it may endanger their physical safety. Therefore, if the examinees are to be given access to evaluated answerbooks either by permitting inspection or by granting certified copies, such access will have to be given only to that part of the answer-book which does not contain any information or signature of the examiners/ coordinators/ Scrutinisers/head examiners, exempted from disclosure under section 8(l)(g) of RTI Act. Those portions of the answer-books which contain information regarding the examiners/coordinators scrutinisers/head examiners or which may disclose their identity with reference to signature or initials, shall have to be removed, covered, or otherwise severed from the non exempted partof the answer books, under section l0 of RTI Act.
+
+29. The right to access information does not extend beyond the period during which the examining body is expected to retain the answer-books..
+
+माननीय सर्वोच्च न्यायालय के उपरोक्त निर्णय से स्पष्ट है कि परीक्षा लेने वाली संस्था के नियम आदि के अंतर्गत यदि उत्तरपुस्तिकाओं की प्रतिलिपि मांगी जाती है और यदि नियम आदि के अनुसार उत्तरपुस्तिकाओं की प्रतिलिपि नहीं दीजा सकती तो प्रतिलिपि नहीं दी जायेगी, परन्तु यदि उत्तरपुस्तिकाओं की सत्यापित प्रतिलिपि सूचना
+
+
+
+<!-- Page 4 -->
+
+अधिकार अधिनियम के अंतर्गत सूचना जानकारी के रूप में मांगी जाती है॰ तो उसे दिया जाना आवश्यक है| भले ही विश्वविद्यालय के प्रावधान विश्वविद्यालय के अन्यथा हों| ऐसे मामले में सूचना का अधिकार अधिनियम, 2005, विश्वविद्यालयों के नियम, अध्यादेश आदि पर वरीयता रखता है| वैसे भी किसी भी परीक्षा में इस प्रकार की पारदर्शिता आवश्यक है| इस मामले में भी अपीलार्थी जो स्वयं परीक्षार्थी हैं नेजो स्वयं अपनी उत्तरपुस्तिकाओं की प्रतिलिपि सूचना का अधिकार अधिनियम के अंतर्गत मांगी है इसलिए उसे देने से विश्वविद्यालय के प्रावधानों का सहारा लेकर मना नहीं किया जा सकता माननीय सर्वोच्च न्यायालय के उपरोक्त निर्णय अनुसार इस मामले में अपीलार्थी आवेदन में उल्लिखित उत्तरपुस्तिकाओं की प्रतिलिपि अधिनियम के अंतर्गत प्रतिलिपि प्राप्त करने का अधिकारी है जैसा ऊपर माननीय सर्वोच्च न्यायालय के निर्णय में उल्लेख किया गया है उत्तरपुस्तिकाओं की प्रतिलिपि देते समय उत्तरपुस्तिका जांचने वाले परीक्षकों के नाम आदि विवरण को छुपाकर या हटाकर ही उत्तरपुस्तिकाओं की प्रतिलिपि जानी चाहिए इस न्याय दृष्टांत में यह भी उल्लेख है कि हर परीक्षा लेने वाली संस्था एक समय सीमा निर्धारित करती है जिसके लिए उत्तरपुस्तिकाओं को सुरक्षित रखा जाता हैं उसके बाद विनष्ट किया जाता है| अतः अधिनियम के है| अतः अधिनियम के अंतर्गत उत्तरपुस्तिकाओं की प्रतिलिपि तभी दी जा सकती है जब उत्तरपुस्तिका रिकार्ड में उपलब्ध हों |
+
+परंतु प्रकरण के अवलोकन से ज्ञात होता है कि अपीलार्थी ने प्रथम अपील डाक दिनांक 30.1 14 को भेजी थी और उत्तरवादी के जवाब के अनुसार दिनांक 31.1. 14 को कार्यालय में प्राप्त हो गई॰थी| अधिनियम की धारा 19 के अनुसार यदि प्रथम अपील का निराकरण निर्धारित 30 दिवस की अवधि में नहीं होता तो, उसके बाद 90 दिवस में तीय अपील आयोग के समक्ष प्रस्तुत की जा सकती है परंतु इस प्रकरण में द्वितीय अपील में अपीलार्थी ने दिनांक 14 6.2014 अंकित की है और उसी तारीख (पोस्ट आफिस सील के अनुसार) को डाक से इसे भेजा है| अर्थात् दिनांक 31.1.14 को प्रथम अपील प्राप्त हुई थी उसके बाद प्रथम अपील के निराकरण के 30 दिन और उसके बाद द्वितीय अपील प्रस्तुत करने के 90 दिन की गणना करने पर पाया जाता है कि यह द्वितीय अपील समयावधि के बाद दिनांक 14 6.14 को प्रस्तुत की गई है अर्थात् विलंब से प्रस्तुत की गई हे अपीलार्थी ने विलंब का कारण भी नहीं बताया है और न ही उसे क्षमा करने का किया है उपरोक्त विवेचना के प्रकाश में यह पाया जाता है कि अपीलार्थी जिस उत्तरपुस्तिका की प्रतिलिपि चाह रहा है वह द्वितीय अपील के पूर्व में ही नियमानुसार नष्ट जा है अतः उनकी प्रतिलिपियां दिलाया जाना संभव नहीं है और वैसे भी यह द्वितीय अपील समयबाधित है इसलिए इसे अस्वीकार किया जाता है| अनुरोध चुकी
+
+आदेश तद्नुरूप |
+
+सही (जवाहर श्रीवास्तव ) राज्य सूचना आयुक्त
+

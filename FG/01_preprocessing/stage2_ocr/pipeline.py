@@ -77,6 +77,14 @@ class OCRPipeline:
             self._converter = create_converter()
         return self._converter
 
+    def process_single_image(self, image_path: str | Path, page_num: int) -> PageOCRResult:
+        """Run OCR on one prepared page image.
+
+        The smart extractor calls this only for pages that require OCR. Keeping
+        this wrapper here avoids duplicating Docling setup or OCR internals.
+        """
+        return process_image(self._get_converter(), Path(image_path), page_num)
+
     def process(self, stage1_dir: str | Path) -> DocumentOCRResult:
         """Run OCR on all page images from a Stage 1 output directory.
 
@@ -103,6 +111,7 @@ class OCRPipeline:
             meta = json.load(f)
 
         pdf_path = meta["pdf_path"]
+        pdf_sha256 = meta.get("sha256", "")
         total_pages = meta["total_pages"]
         doc_name = stage1_dir.name
 
@@ -194,6 +203,7 @@ class OCRPipeline:
         result._critical_fields = all_critical_fields
         result._quality_flags = all_quality_flags
         result._page_image_paths = page_image_paths
+        result._pdf_sha256 = pdf_sha256
 
         # Save outputs
         self._save_outputs(result, doc_output_dir)
@@ -315,7 +325,9 @@ class OCRPipeline:
                 except OSError:
                     logger.warning("  Could not remove %s", json_path)
 
-        # Consolidated confidence log (append-only)
+        # Consolidated confidence log.
+        # The old code appended every run. We now replace entries for the same
+        # PDF hash/stem + page number so forced reprocessing updates in place.
         log_path = self.output_dir / "confidence_log.json"
         log_entries = []
         if log_path.exists():
@@ -328,17 +340,29 @@ class OCRPipeline:
                 log_entries = []
 
         doc_stem = Path(document_name).stem
+        pdf_sha256 = getattr(result, "_pdf_sha256", "")
+        current_keys = {
+            (pdf_sha256 or doc_stem, page_no)
+            for page_no in sorted(page_confidences.keys())
+        }
+        log_entries = [
+            entry for entry in log_entries
+            if ((entry.get("sha256") or entry.get("document_name")), entry.get("page_number")) not in current_keys
+        ]
         for page_no in sorted(page_confidences.keys()):
             log_entries.append(
                 {
                     "document_name": doc_stem,
+                    "sha256": pdf_sha256,
                     "page_number": page_no,
                     "ocr_score": page_confidences.get(page_no),
                 }
             )
 
-        with open(log_path, "w", encoding="utf-8") as f:
+        tmp_log_path = log_path.with_suffix(log_path.suffix + ".tmp")
+        with open(tmp_log_path, "w", encoding="utf-8") as f:
             json.dump(log_entries, f, indent=2)
+        os.replace(tmp_log_path, log_path)
         logger.info(f"  Updated: {log_path}")
 
 

@@ -1,7 +1,44 @@
+# Python
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
 .venv/
-node_modules/
+venv/
+
+# Environment files
 .env
+.env.*
+
+# Node
+node_modules/
+
+# Build artifacts
 dist/
 build/
+
+# Stage outputs
+FG/01_preprocessing/stage1_output/
+FG/01_preprocessing/stage2_output/
+
+# Chunking outputs
+FG/03_chunking/legal_output/
+
+# Downloaded PDFs (if reproducible)
+FG/01_preprocessing/cic_pdfs_past_cases/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+FG/03_chunking/cgsic_output/
+
+# Local embedded Qdrant databases
+FG/04_embeddings_and_kg/db/*
+!FG/04_embeddings_and_kg/db/.gitkeep
+FG/04_embeddings_and_kg/db/qdrant_local/

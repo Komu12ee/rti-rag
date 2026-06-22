@@ -1,0 +1,84 @@
+{
+  "pages": [
+    {
+      "page_number": 1,
+      "ocr_score": 0.619434896916923,
+      "source": "docling"
+    },
+    {
+      "page_number": 2,
+      "ocr_score": 0.5606204721115876,
+      "source": "docling"
+    },
+    {
+      "page_number": 3,
+      "ocr_score": 0.5177646019349088,
+      "source": "docling"
+    },
+    {
+      "page_number": 4,
+      "ocr_score": 0.6072495320667319,
+      "source": "docling"
+    },
+    {
+      "page_number": 5,
+      "ocr_score": 0.5870266172103452,
+      "source": "docling"
+    },
+    {
+      "page_number": 6,
+      "ocr_score": 0.5683192565330137,
+      "source": "docling"
+    },
+    {
+      "page_number": 7,
+      "ocr_score": 0.5252320571448512,
+      "source": "docling"
+    },
+    {
+      "page_number": 8,
+      "ocr_score": 0.5897375115007445,
+      "source": "docling"
+    },
+    {
+      "page_number": 9,
+      "ocr_score": 0.5583050381123337,
+      "source": "docling"
+    },
+    {
+      "page_number": 10,
+      "ocr_score": 0.5863185286529169,
+      "source": "docling"
+    },
+    {
+      "page_number": 11,
+      "ocr_score": 0.5130041861617805,
+      "source": "docling"
+    },
+    {
+      "page_number": 12,
+      "ocr_score": 0.563167783195579,
+      "source": "docling"
+    },
+    {
+      "page_number": 13,
+      "ocr_score": 0.5572144918216299,
+      "source": "docling"
+    },
+    {
+      "page_number": 14,
+      "ocr_score": 0.6000211165781157,
+      "source": "docling"
+    },
+    {
+      "page_number": 15,
+      "ocr_score": 0.6350983266803627,
+      "source": "docling"
+    },
+    {
+      "page_number": 16,
+      "ocr_score": 0.5965902984024857,
+      "source": "docling"
+    }
+  ]
+}

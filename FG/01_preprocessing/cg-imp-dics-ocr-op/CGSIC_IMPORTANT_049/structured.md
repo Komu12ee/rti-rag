@@ -1,0 +1,38 @@
+<!-- Page 1 -->
+
+## अपील प्रकरण क्रमांक ए/ 1624 / 2014
+
+जनसूचना अधिकारी, श्री गोंड कार्यालय छ.ग. लोक सेवा आयोग रायपुर जिला रायपुर (छ.ग. ) आदेश दिनांक 26.06.2014 जे.एस.
+
+अपीलार्थी श्रीमती सरिता तिवारी, उपायुक्त (विकास) कमिश्नर कार्यालय रायपुर जिला रायपुर (छ.ग. ) विरूद्ध
+
+1. अपीलार्थी द्वारा सूचना का अधिकार अधिनियम, 2005 ( अधिनियम ) की धारा 19 (3) तहत् जनसूचना अधिकारी छछ.ग) को प्रस्तुत आवेदन पत्र दिनांक 02.01.2014 जानकारी देने से इन्कार करने के कारण अपीलीय अधिकारी श्री टी॰सी॰ यदु, कार्यालय सेवा नि. जिला न्यायाधीश) विधि सलाहकार छ.ग. लोक सेवा आयोग रायपुर जिला रायपुर (छ.ग.) के समक्ष प्रथम अपील दिनांक 25.01.2014 को प्रस्तुत किया गया अपीलीय अधिकारी द्वारा दिनांक 24 2 2014 के निर्णय से क्षुब्ध होकर द्वितीय अपील प्रस्तुत किया गया है
+2. 2 अपीलार्थी श्रीमती सरिता तिवारी द्वारा अपने पति श्री संजीव तिवारी संयुक्त संचालक, जनसम्पर्क सहित उपस्थित होकर प्रत्यावेदन दिनांक 26.6.2014 प्रस्तुत करते हुए बताया गया कि पदोन्नति की कार्रवाई से संबंधित अभिलेख की मांग आवेदन दिनांक 02.1.2014 माध्यम से किया गया था, जिसे प्रतिअपीलार्थी द्वारा पत्र दिनांक 10.1.2014 के द्वारा इंकार किया गया प्रथम अपीलीय अधिकारी के समक्ष केन्द्रीय सूचना आयोग के द्वारा निर्णित 3 प्रकरणों के उद्धरण भी प्रस्तुत किये गये परन्तु प्रथम अपीलीय अधिकारी द्वारा विचार न किया जाकर अपील अस्वीकार किया गया | गृह विभाग द्वारा विभागीय पदोन्नति समिति के प्रदायित अभिलेख की प्रति प्रस्तुत करते हुए भी तर्क दिया गया कि यह सूचना का अधिकार अधिनियम की किसी प्रावधान के तहत छूट की श्रेणी में नहीं है| अतएव अपील स्वीकार किया जाकर वांछित सूचना प्रदाय कराया जाए|
+3. प्रतिअपीलार्थी श्री गोंड जनसूचना अधिकारी अनुपस्थित उनकी ओर सेश्री देव सहायक ग्रेड 2 द्वारा उपस्थित होकर बताया गया कि प्रथम अपीलीय अधिकारी जवाब दिनांक 20 मई 2014 प्रस्तुत किया गया है, जिसके संबंध में उन्हें कुछ नहीं कहना है| जे.एस. बरेठ,
+4. 4 अपील का अवलोकन एवं अध्ययन किया गया तथा उभय पक्ष को सुना गया| अपीलार्थी द्वारा मुख्य तर्क यह दिया गया कि प्रथम अपील के साथ केन्द्रीय सूचना आयोग द्वारा प्रकरण क्र॰ सी.आई.सी. / डब्ल्यू॰बी. / ए / 2009 000420, 582 एवं 602 बबन सिंह वि0 यू॰पी॰एस.सी॰ में पारित निर्णय दिनांक 14.5.2010 का उद्धरण देने के बावजूद प्रथम अपीलीय अधिकारी द्वारा इस निर्णय पर विचार नहीं किया गया, न ही आदेश में उल्लेख किया गया, एवं जनसूचना अधिकारी द्वारा प्रस्तुत तर्क को मान्य किया जाकर अपील खारिज कर दी गई|इसके साथ ही केन्द्रीय सूचना आयोग के दो प्रकरणों में दिए गए
+
+
+
+<!-- Page 2 -->
+
+- निर्णय तथा गृह विभाग द्वारा प्रदायित सूचना का आधार लेते हुए तर्क दिया गया कि अपील स्वीकार किया जाए
+5. बबन सिंह वि. संघ लोक सेवा आयोग (यू॰पी॰एस.सी.) में पारित निर्णय का निम्न अंश अवलोकनीय है The Honble apex court has gone further in also developing with this right the right to make a representation as below. 40. We further hold that when the entry is communicated to him the servant should have a right to make a representation against the entry to the concerned authority, and the concerned authority must decide the representation in a fair manner and within a reasonable period. ' From the above, it will be clear that the implications of Dev Dutt's case go beyond the question of simply conveying the grading in the ACRs notwithstanding their being favourable or adverse. On the similar principle the objective of a DPC decision cannot be to recommend promotions in a clandestine manner or behind a veil. We agree that if such disclosure is made at a time when the DPC is under process or even when its recommendations have not been finally accepted, such disclosure could conceivably affect the competitive position of third parties. On the other hand, the relative assessment being the key to the decision of the DPC in an activity in which the comparative merits of different candidates for promotion are made with full gravity and reflection, it will surely will be the right of every candidate to know as to how he stands assessed at the time ofhis consideration, with the understanding that this will enable him to represent on the basis of fact and not conjecture. In light of the above, we must come to the conclusion that the relative assessment attached with the DPC cannot be held as exempt. This has become inevitable in consequence of the decision of the Supreme Court of India in Dev Dutt VS. U.0.I. No. 3114 of 2007) in light of which the earlier ruling of this comission cited by CPIO cannot hold. Copies of the original relative assessment in the present case will, therefore, be provided to appellant Shri Babban Singh within fifteen working days of the date of receipt of this Decision Notice. public (SLP
+6. केन्द्रीय सूचना आयोग द्वारा प्रकरण क्र॰ सी.आई.सी / 80 /ए / 2009 000560, डॉ0 मधुमिता मण्डल वि॰ कंट्रोलर एण्ड आडिटर जनरल आफ इण्डिया में पारित निर्णय दिनांक 25 अगस्त 2009 का निम्न अंश भी अवलोकनीय हैः "11. In the light of the above, the following direction is given: - (a ) DPC proceedings shall be treated a$ 1 non-cofidential and open documents and allowed to be accessed by
+
+
+
+<!-- Page 3 -->
+
+- anybody who seeks it, except for that part of the proceeding which may cotain ACRs or ACRs grades. (b) Even in respect of the ACRs and ACRs grades forming part of the DPC proceeding, that part of the ACRs or grades which pertain to an employee who might have been considered by the DPC as of the proceeding, shall be supplied to that particular employee. In other words ACRs and ACRs grades shall be accessible to the employee to whom these pertain but not to others. 12 In the light of what has been stated above, since the requester of the information in the present appeal is the one who does not figure as one of those considered in the DPC proceedings, she shall be provided all information relating to those proceedings except the ACRs grades of third-parties, i.e. the other employees candidates and their aggregate grades ' part
+7. प्रकरण में प्रथम अपीलीय अधिकारी द्वारा छ.ग. शासन सामान्य प्रशासन विभाग के पत्र क्र॰ एफ.2  7 / 2006 / 1 /6 रायपुर दिनांक 29 मार्च 2006 का उल्लेख करते हुए पदोन्नति समिति की बैठक का कार्रवाई विवरण एवं गोपनीय मूल्यांकन पत्रक की जानकारी प्रदाय न करने के प्रतिअपीलार्थी के विनिश्चय दिनांक 10.1 2014 को यथावत रखा जाकर अपील अस्वीकार किया गया छ.ग. राज्य सूचना आयोग द्वारा प्रकरण क्र॰ 456 2014 एवं 457 2014 डी.आर.पटेल वि. छ.ग.लो.से.आयोग में पारित निर्णय दिनांक 3.6.2014 का निम्न अंश अवलोकनीय हैः 4... प्रतिअपीलार्थी एवं प्रथम अपीलीय अधिकारी द्वारा सामान्य प्रशासन विभाग के निर्देश दिनांक 29 मार्च 2006 का हवाला देते हुए सूचना प्रदाय करने से इंकार किया गया है| इस निर्देश पर अधिनियम की धारा 22 का अध्यारोही प्रभाव पड़ने के कारण मान्य नहीं किया जा सकता | पदोन्नति समिति की कार्रवाई विवरण लोक अभिलेख है तथा पारदर्शिता को सुनिश्चित करने के लिए व्यापक लोक हित में प्रदाय किया जाना आवश्यक है केन्द्रीय सूचना आयोग द्वारा नरेन्द्र क अस्थाना   विरूद्ध यू॰पी0एस0सी0, प्रकरण क्र0 सी.आई.सी. / एम.ए. /ए / 2006 / 00789 में पारित निर्णय दिनांक 28. 1 1.2006 के द्वारा पदोन्नति समिति की कार्रवाई विवरण की प्रति देने का निर्देश दिया गया | अतएव प्रथम अपीलीय अधिकारी एवं प्रतिअपीलार्थी द्वारा दिया गया निर्णय स्थिर रखे जाने योग्य न होने से अपास्त किया जाता हे प्रतिअपीलार्थी को आदेशित किया जाता है कि वांछित सूचना आदेश प्राप्ति के 15 दिवस में प्रदाय करें | निःशुल्क
+8. केन्द्रीय सूचना आयोग एवं छ.ग. सूचना आयोग के उपरोक्तानुसार उद्धरित निर्णयों के प्रकाश में अपील स्वीकार किया जाता है प्रतिअपीलार्थी श्री जे. एस. गोंड एवं प्रथम अपीलीय अधिकारी श्री टी.सी॰ यदु को आदेशित किया जाता है कि आदेश प्राप्ति के 15 दिवस के भीतर वांछित उपलब्ध अभिलेख निःशुल्क प्रदाय करें | साथ ही अधिनियम की
+
+
+
+<!-- Page 4 -->
+
+- धारा 19(8)(क) के अंतर्गत छ.ग. शासन सामान्य प्रशासन विभाग द्वारा जारी पत्र क्र॰ एफ  2 7 2006 /1 /6, रायपुर दिनांक 29 माच 2006 को पुनर्विचार कर वापस / निरस्त किये जाने की अनुशंसा किया जाता है
+- 9 आदेश की प्रति मुख्य सचिव छ.ग. शासन मंत्रालय रायपुर एवं सचिव सामान्य प्रशासन विभाग मंत्रालय, रायपुर को भी कार्रवाई के लिए प्रेषित किया जाए
+
+सहा (सरजियस मिन्ज) मुख्य सूचना आयुक्त
+

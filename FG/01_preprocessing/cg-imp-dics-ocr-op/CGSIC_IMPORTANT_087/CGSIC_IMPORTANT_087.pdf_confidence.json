@@ -1,0 +1,29 @@
+{
+  "pages": [
+    {
+      "page_number": 1,
+      "ocr_score": 0.64510967155099,
+      "source": "docling"
+    },
+    {
+      "page_number": 2,
+      "ocr_score": 0.5334466573586933,
+      "source": "docling"
+    },
+    {
+      "page_number": 3,
+      "ocr_score": 0.5982010593143204,
+      "source": "docling"
+    },
+    {
+      "page_number": 4,
+      "ocr_score": 0.6305323473644697,
+      "source": "docling"
+    },
+    {
+      "page_number": 5,
+      "ocr_score": 0.5261718843608242,
+      "source": "docling"
+    }
+  ]
+}
