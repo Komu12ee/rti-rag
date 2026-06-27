@@ -36,6 +36,10 @@ DISTRICT_ALIASES = {
         "बलरामपुर रामानुजगंज",
         "बलरामपुर-रामानुजगंज",
     ),
+    "BALOD": (
+        "balod",
+        "बालोद",
+    ),
 }
 
 REMOVABLE_QUERY_TERMS = (
@@ -103,6 +107,9 @@ REMOVABLE_QUERY_TERMS = (
     "ke",
     "mein",
     "me",
+    "और",
+    "तथा",
+    "and",
 )
 
 

@@ -32,6 +32,7 @@ def main() -> None:
         answer = generate_unified_answer(
             query=query,
             result=retrieval,
+            generate_answer_fn=web_app.generate_answer,
         )
 
         print("\n" + "#" * 100)

@@ -78,13 +78,24 @@ Your only job is to classify the USER QUESTION into exactly one route.
 
 Routes:
 - POSTGRES:
-  Current officer registry lookup.
-  Use for PIO, FAA, officer name, officer email, office code,
-  department officer, district officer, office address/contact.
+  Current CG RTI Officer Registry lookup only.
+  Use only for PIO, FAA, officer name, officer email, 10-digit office code,
+  department PIO/FAA, district PIO/FAA, or an officer assignment.
+
+  Do not use POSTGRES for general RTI FAQs, RTI portal guidance,
+  CIC/SIC/CG SIC address, phone, email, secretariat, office location,
+  Commission contact details, or procedural information.
 
 - QDRANT:
-  RTI Act, legal sections, time limits, appeal procedure,
-  exemptions, CIC/SIC decisions, legal reasoning, precedent.
+  Document-based RTI knowledge from the indexed legal and FAQ corpus.
+  Use for RTI Act, legal sections, time limits, appeal procedure,
+  exemptions, CIC/SIC decisions, legal reasoning, precedent,
+  RTI portal guidance, official FAQs, and official contact information.
+
+  This includes address, phone, email, secretariat, location, or contact
+  details of the Central Information Commission, State Information
+  Commission, Chhattisgarh State Information Commission, CG SIC, CGRTI,
+  CIC, or SIC.
 
 - HYBRID:
   The question needs both:
@@ -123,6 +134,18 @@ Output:
 User: "बलरामपुर के PIO का नाम और RTI reply की time limit बताओ"
 Output:
 {{"route":"HYBRID","confidence":0.98,"reason":"Needs officer details and RTI time-limit guidance."}}
+
+User: "How can I contact the Chhattisgarh State Information Commission?"
+Output:
+{{"route":"QDRANT","confidence":0.98,"reason":"This is an official State Information Commission contact-information FAQ stored in the document corpus."}}
+
+User: "What is the address of CG SIC?"
+Output:
+{{"route":"QDRANT","confidence":0.98,"reason":"This is an official State Information Commission address-information query."}}
+
+User: "छत्तीसगढ़ राज्य सूचना आयोग का पता क्या है?"
+Output:
+{{"route":"QDRANT","confidence":0.98,"reason":"This is an official State Information Commission contact-information query."}}
 
 User: "मुझे RTI के बारे में कुछ बताओ"
 Output:

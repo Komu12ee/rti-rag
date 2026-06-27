@@ -3,6 +3,20 @@ from services.query_scope import extract_current_user_question
 
 TEST_CASES = [
     {
+    "name": "Actual browser scoped payload",
+    "input": """
+Current user question: पकराड़ी स्कूल का PIO कौन है?
+
+Recent conversation context:
+User: tell me name and email of FAA officer in balod district
+Assistant: कोई रिकॉर्ड नहीं मिला।
+
+Assistant role and answer scope:
+Provide RTI assistance only.
+""",
+    "expected": "पकराड़ी स्कूल का PIO कौन है?",
+},  
+    {
         "name": "Direct question",
         "input": "पकराड़ी स्कूल का PIO कौन है?",
         "expected": "पकराड़ी स्कूल का PIO कौन है?",
@@ -70,4 +84,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-    

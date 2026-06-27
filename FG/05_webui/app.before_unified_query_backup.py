@@ -2,10 +2,7 @@
 RAG Pipeline Web UI
 Simple Flask-based interface for document question-answering
 """
-from dotenv import load_dotenv
-from services.hybrid_retriever import retrieve_from_all_sources
-from services.query_scope import extract_current_user_question
-from services.unified_answer_service import generate_unified_answer
+
 import os
 import sys
 import importlib.util
@@ -27,11 +24,6 @@ SCRIPT_DIR = Path(__file__).parent
 PROJECT_ROOT = SCRIPT_DIR.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 sys.path.insert(0, str(PROJECT_ROOT / '04_embeddings_and_kg' / 'scripts'))
-load_dotenv(SCRIPT_DIR / ".env")
-
-from services.hybrid_retriever import retrieve_from_all_sources
-from services.query_scope import extract_current_user_question
-from services.unified_answer_service import generate_unified_answer
 
 # Dynamically find RAG pipeline module - works for both local and Docker
 def _find_rag_module():
@@ -422,233 +414,135 @@ def db_status():
             'collection_exists': False
         }), 500
 
-def _retrieve_context_for_unified(
-    query_text: str,
-    num_context: int,
-):
-    """
-    Load Qdrant RAG only when the resolved route actually needs legal retrieval.
-
-    PostgreSQL-only and clarification queries do not require the heavy RAG module.
-    """
-    if _load_rag_module() is None or retrieve_context is None:
-        raise RuntimeError(
-            _rag_import_error
-            or "RAG pipeline not available for legal retrieval."
-        )
-
-    return retrieve_context(
-        query_text,
-        num_context=num_context,
-    )
-
-
-def _format_unified_evidence_for_frontend(
-    evidence_items: list[dict],
-) -> list[dict]:
-    """
-    Keep the old frontend result structure while supporting:
-    - PostgreSQL officer registry evidence
-    - Qdrant legal evidence
-    """
-    formatted_results = []
-
-    for index, item in enumerate(evidence_items, start=1):
-        metadata = item.get("metadata") or {}
-
-        source_type = str(
-            item.get("source_type") or "Unknown source"
-        )
-        mode = str(item.get("mode") or "")
-        text = str(item.get("content") or "")
-
-        raw_source = str(metadata.get("source") or "")
-        source = raw_source or source_type
-
-        actual_pdf = ""
-        document_id = str(
-            metadata.get("office_code")
-            or metadata.get("email")
-            or f"{mode.lower() or 'result'}-{index}"
-        )
-
-        structured_md_available = False
-        structured_json_available = False
-        structured_md_path = ""
-        structured_json_path = ""
-
-        # Only legal Qdrant results may have a linked PDF/document artifact.
-        if mode == "LEGAL" and raw_source:
-            try:
-                candidate_pdf = get_actual_filename(raw_source)
-                paths = get_document_artifact_paths(candidate_pdf)
-
-                pdf_exists = any(
-                    candidate.is_file()
-                    for candidate in paths["pdf_candidates"]
-                )
-
-                if pdf_exists:
-                    actual_pdf = candidate_pdf
-                    document_id = paths["doc_id"]
-                    structured_md_available = paths["structured_md"].exists()
-                    structured_json_available = paths["structured_json"].exists()
-                    structured_md_path = (
-                        str(paths["structured_md"])
-                        if structured_md_available
-                        else ""
-                    )
-                    structured_json_path = (
-                        str(paths["structured_json"])
-                        if structured_json_available
-                        else ""
-                    )
-
-            except Exception as error:
-                print(
-                    "[Web UI] Could not prepare legal artifact metadata: "
-                    f"{error}"
-                )
-
-        excerpt = text[:250]
-        if len(text) > 250:
-            excerpt += "..."
-
-        retrieval_collection = (
-            "postgresql_officer_registry"
-            if source_type == "CG RTI Officer Registry"
-            else "legal_qdrant"
-        )
-
-        formatted_results.append(
-            {
-                "rank": metadata.get("rank", index),
-                "source": source,
-                "actual_pdf": actual_pdf,
-                "retrieval_collection": retrieval_collection,
-                "document_id": document_id,
-                "score": metadata.get("score", 0),
-                "text": text,
-                "excerpt": excerpt,
-                "parent_id": metadata.get("parent_id", ""),
-                "structured_md_available": structured_md_available,
-                "structured_json_available": structured_json_available,
-                "structured_md_path": structured_md_path,
-                "structured_json_path": structured_json_path,
-                "page_start": metadata.get("page_start"),
-                "page_end": metadata.get("page_end"),
-                "chunk_type": metadata.get("chunk_type", ""),
-                "source_type": source_type,
-                "mode": mode,
-            }
-        )
-
-    return formatted_results
-
-
 @app.route('/api/query', methods=['POST'])
 def query():
-    """
-    Unified query endpoint.
-
-    Route resolution:
-    - POSTGRES: CG RTI Officer Registry
-    - QDRANT: legal knowledge base
-    - HYBRID: both independently
-    - UNCLEAR: clarification response
-    """
+    """Process a query"""
     query_start_time = time.time()
-
+    
+    if _load_rag_module() is None or retrieve_context is None or generate_answer is None:
+        return jsonify({
+            'success': False,
+            'error': _rag_import_error or 'RAG pipeline not available. Check imports and configuration.',
+            'query': ''
+        }), 503
+    
     data = request.get_json() or {}
-
-    raw_query_text = str(data.get("query", ""))
-    query_text = extract_current_user_question(raw_query_text)
-
-    try:
-        requested_limit = int(data.get("num_results", num_results))
-    except (TypeError, ValueError):
-        requested_limit = num_results
-
-    requested_limit = max(1, min(10, requested_limit))
-
+    query_text = data.get('query', '').strip()
+    num_context = data.get('num_results', num_results)
+    
     if not query_text:
-        return jsonify(
-            {
-                "success": False,
-                "error": "Query cannot be empty",
-                "query": "",
-                "results": [],
-            }
-        ), 400
-
+        return jsonify({
+            'success': False,
+            'error': 'Query cannot be empty',
+            'query': ''
+        }), 400
+    
     try:
-        print("\n⏱️ [FLASK] Unified request start")
-        print(f"[Web UI] Raw query: {raw_query_text}")
-        print(f"[Web UI] Current user question: {query_text}")
-
-        retrieval = retrieve_from_all_sources(
-            query=query_text,
-            retrieve_context_fn=_retrieve_context_for_unified,
-            limit=requested_limit,
-        )
-
-        answer_result = generate_unified_answer(
-            query=query_text,
-            result=retrieval,
-            generate_answer_fn=generate_answer,
-        )
-
-        formatted_results = _format_unified_evidence_for_frontend(
-            retrieval.combined_evidence
-        )
-
+        print(f"\n⏱️ [FLASK] Total request start")
+        print(f"[Web UI] Processing query: {query_text}")
+        
+        # Step 1: Retrieve context (parent chunks)
+        print(f"[Web UI] Retrieving context...")
+        retrieval_start = time.time()
+        context_results = retrieve_context(query_text, num_context=num_context)
+        retrieval_time = time.time() - retrieval_start
+        print(f"⏱️ [FLASK] Retrieval completed in {retrieval_time:.2f}s")
+        
+        if context_results is None or len(context_results) == 0:
+            return jsonify({
+                'success': False,
+                'error': 'No context documents found for this query',
+                'query': query_text,
+                'results': []
+            }), 200
+        
+        # Step 2: Generate answer
+        print(f"[Web UI] Generating answer...")
+        answer_start = time.time()
+        answer = generate_answer(query_text, context_results)
+        answer_time = time.time() - answer_start
+        print(f"⏱️ [FLASK] Answer generation completed in {answer_time:.2f}s")
+        
+        # Format results for frontend with actual PDF names and highlighted excerpts
+        formatted_results = []
+        query_words = [w for w in query_text.lower().split() if len(w) > 3]
+        
+        for result in context_results:
+            point = result.get('point', {})
+            payload = point.payload if hasattr(point, 'payload') else {}
+            source = payload.get('source', '')
+            text = payload.get('text', '')
+            
+            # Get actual PDF name
+            payload_filename = getattr(_rag_module, 'get_payload_actual_filename', None)
+            if callable(payload_filename):
+                actual_pdf = payload_filename(payload)
+            else:
+                actual_pdf = _rag_module.get_actual_filename(source) if '_rag_module' in globals() else source
+            paths = get_document_artifact_paths(actual_pdf)
+            
+            # Extract highlighted excerpt
+            from_rag = getattr(_rag_module, 'extract_highlighted_excerpt', None)
+            if from_rag:
+                excerpt = from_rag(text, query_words, max_length=250)
+            else:
+                excerpt = text[:250] + "..." if len(text) > 250 else text
+            
+            result_item = {
+                'rank': result.get('rank', 0),
+                'source': source,
+                'actual_pdf': actual_pdf,  # New: Show actual PDF name
+                'retrieval_collection': payload.get('_retrieval_collection', ''),
+                'document_id': paths['doc_id'],
+                'score': result.get('score', 0),
+                'text': text,
+                'excerpt': excerpt,  # New: Show highlighted excerpt
+                'parent_id': result.get('parent_id', ''),
+                'structured_md_available': paths['structured_md'].exists(),
+                'structured_json_available': paths['structured_json'].exists(),
+                'structured_md_path': str(paths['structured_md']) if paths['structured_md'].exists() else '',
+                'structured_json_path': str(paths['structured_json']) if paths['structured_json'].exists() else '',
+                'page_start': payload.get('page_start', payload.get('printed_page_start')),
+                'page_end': payload.get('page_end', payload.get('printed_page_end')),
+                'chunk_type': payload.get('chunk_type', ''),
+                'case_number': payload.get('case_number', payload.get('appeal_number', '')),
+                'public_authority': payload.get('public_authority', ''),
+                'outcome': payload.get('outcome', ''),
+                'hearing_date': payload.get('hearing_date', ''),
+                'retrieval_priority': payload.get('retrieval_priority', 0),
+                'precedent_summary': text if payload.get('chunk_type') == 'PRECEDENT_SUMMARY' else '',
+                'commission_observations': text if payload.get('chunk_type') in ('COMMISSION_OBSERVATIONS', 'COMMISSION_FINDINGS') else '',
+                'pio_learning_signal': text if payload.get('chunk_type') == 'PIO_LEARNING_SIGNAL' else '',
+            }
+            
+            formatted_results.append(result_item)
+        
         total_time = time.time() - query_start_time
-
-        print(
-            "[Web UI] Final route: "
-            f"{retrieval.resolution.final.route.value}"
-        )
-        print(
-            "⏱️ [FLASK] Unified pipeline completed in "
-            f"{total_time:.2f}s\n"
-        )
-
-        response = {
-            "success": True,
-            "query": query_text,
-            "answer": answer_result.answer,
-            "results": formatted_results,
-            "result_count": len(formatted_results),
-            "execution_time": f"{total_time:.2f}s",
-
-            # Additive fields: old frontend can ignore these safely.
-            "route": retrieval.resolution.final.route.value,
-            "router_a_route": retrieval.resolution.router_a.route.value,
-            "used_llm_fallback": retrieval.resolution.used_llm_fallback,
-            "used_llm_answer": answer_result.used_llm,
-            "needs_clarification": answer_result.needs_clarification,
-        }
-
-        if retrieval.errors:
-            response["warnings"] = retrieval.errors
-
-        return jsonify(response), 200
-
-    except Exception as error:
-        print(f"[Web UI] Unified query error: {error}")
-
+        print(f"[Web UI] Query processed successfully")
+        print(f"⏱️ [FLASK] TOTAL PIPELINE TIME: {total_time:.2f}s\n")
+        
+        return jsonify({
+            'success': True,
+            'query': query_text,
+            'answer': answer,
+            'results': formatted_results,
+            'result_count': len(formatted_results),
+            'execution_time': f"{total_time:.2f}s"
+        }), 200
+    
+    except Exception as e:
+        print(f"[Web UI] Error processing query: {e}")
         import traceback
         traceback.print_exc()
+        
+        return jsonify({
+            'success': False,
+            'error': f'Error processing query: {str(e)}',
+            'query': query_text,
+            'results': []
+        }), 500
 
-        return jsonify(
-            {
-                "success": False,
-                "error": f"Error processing query: {str(error)}",
-                "query": query_text,
-                "results": [],
-            }
-        ), 500
-    
+
 @app.route('/api/document-structure', methods=['POST'])
 def document_structure():
     """Return precomputed full-document extraction artifacts for a PDF."""

@@ -8,6 +8,12 @@ CURRENT_QUESTION_MARKER = re.compile(
     r"(?im)^\s*(?:current\s+user\s+question|current\s+question)\s*:\s*"
 )
 
+SCOPED_QUERY_BOUNDARY = re.compile(
+    r"(?im)^\s*(?:"
+    r"recent\s+conversation\s+context|"
+    r"assistant\s+role\s+and\s+answer\s+scope"
+    r")\s*:\s*"
+)
 
 def normalize_query_text(value: str) -> str:
     value = unicodedata.normalize("NFKC", value or "")
@@ -17,17 +23,12 @@ def normalize_query_text(value: str) -> str:
 
 def extract_current_user_question(request_query: str) -> str:
     """
-    Return the latest user question from a frontend scoped-query payload.
+    Extract only the latest question from the frontend scoped payload.
 
-    If the frontend sends a direct normal question, return it unchanged.
-
-    Scoped payload example:
-        Previous conversation:
-        User: What is Section 8?
-        Assistant: ...
-
-        Current user question:
-        पकराड़ी स्कूल का PIO कौन है?
+    Frontend format:
+        Current user question: ...
+        Recent conversation context: ...
+        Assistant role and answer scope: ...
     """
     normalized = normalize_query_text(request_query)
 
@@ -36,14 +37,21 @@ def extract_current_user_question(request_query: str) -> str:
 
     markers = list(CURRENT_QUESTION_MARKER.finditer(normalized))
 
-    # Normal direct question: do not alter it.
+    # Normal direct question.
     if not markers:
         return normalized
 
-    # Use the final marker to avoid routing based on old chat context.
-    current_question = normalized[markers[-1].end():].strip()
+    # Take text after the last current-question marker.
+    remaining = normalized[markers[-1].end():]
 
-    # Remove simple enclosing markdown fences if the frontend used them.
+    # Stop before frontend-added history/scope sections.
+    boundary = SCOPED_QUERY_BOUNDARY.search(remaining)
+
+    if boundary:
+        current_question = remaining[:boundary.start()].strip()
+    else:
+        current_question = remaining.strip()
+
     current_question = re.sub(
         r"^```(?:text|markdown)?\s*|\s*```$",
         "",
