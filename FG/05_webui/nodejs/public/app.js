@@ -22,6 +22,8 @@ const DEFAULT_PROMPTS = [
   'How do I find PIO contact details?'
 ];
 
+const CG_GOV_LOGO = '/assets/cg_gov_logo.png';
+
 const $ = id => document.getElementById(id);
 
 const ui = {
@@ -240,7 +242,15 @@ function createMessageElement(message) {
 
   const who = document.createElement('div');
   who.className = 'who';
-  who.textContent = message.role === 'user' ? 'YOU' : 'AI';
+  if (message.role === 'user') {
+    who.textContent = 'YOU';
+  } else {
+    const logo = document.createElement('img');
+    logo.src = CG_GOV_LOGO;
+    logo.alt = 'Chhattisgarh government logo';
+    logo.loading = 'lazy';
+    who.appendChild(logo);
+  }
 
   const bubble = document.createElement('div');
   bubble.className = 'bubble';

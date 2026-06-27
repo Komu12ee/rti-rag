@@ -233,11 +233,36 @@ def generate_unified_answer(
     sources = _build_sources(result)
 
     if route == Route.UNCLEAR:
+        
+        # Route-B fallback may have retrieved RTI-related Qdrant chunks.
+        # Generate an answer only when usable context exists.
+        if result.qdrant_evidence:
+            try:
+                answer, used_llm = _generate_legal_answer(
+                    query=query,
+                    result=result,
+                    generate_answer_fn=generate_answer_fn,
+                )
+
+                if used_llm:
+                    return UnifiedAnswer(
+                        answer=answer,
+                        used_llm=True,
+                        needs_clarification=False,
+                        sources=sources,
+                    )
+
+            except Exception as error:
+                result.errors.append(
+                    "UNCLEAR Qdrant fallback generation failed: "
+                    f"{type(error).__name__}: {error}"
+                )
+
         return UnifiedAnswer(
             answer=_clarification_answer(query),
             used_llm=False,
             needs_clarification=True,
-            sources=sources,
+            sources=[],
         )
 
     if route == Route.POSTGRES:
