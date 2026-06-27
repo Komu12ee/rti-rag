@@ -4,165 +4,134 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CHiPS-RAG • Document Assistant</title>
+  <title>RTI Assistant - CG Portal</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;600&family=JetBrains+Mono:wght@400;500&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Noto+Sans+Devanagari:wght@400;500&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="/style.css" />
 </head>
 
 <body>
-
-  <!-- ══ LOGIN SCREEN ════════════════════════════════════════════ -->
-  <div id="login-screen">
-    <div id="login-card">
-      <div class="login-brand">
-        <span class="login-brand-mark">◈</span>
+  <div id="app-shell">
+    <aside id="history-sidebar" aria-label="Chat history">
+      <div class="side-brand">
         <div>
-          <div class="login-brand-name">CHiPS-RAG</div>
-          <div class="login-brand-sub">Document Assistant</div>
+          <div class="brand-title">RTI Assistant</div>
+          <div class="brand-subtitle">CG RTI Portal</div>
         </div>
       </div>
 
-      <form id="login-form" autocomplete="off" novalidate>
-        <div class="login-field">
-          <label for="login-username">Username</label>
-          <input id="login-username" type="text" placeholder="Enter username" autocomplete="username"
-            spellcheck="false" />
-        </div>
-        <div class="login-field">
-          <label for="login-password">Password</label>
-          <input id="login-password" type="password" placeholder="Enter password" autocomplete="current-password" />
-        </div>
+      <button id="new-chat" class="new-chat" type="button">
+        <span aria-hidden="true">+</span>
+        New chat
+      </button>
 
-        <div id="login-error" class="login-error hidden"></div>
-
-        <button id="login-submit" type="submit">
-          <span id="login-btn-text">Sign In</span>
-          <span id="login-btn-spinner" class="hidden">
-            <span class="thinking-dot"></span>
-            <span class="thinking-dot"></span>
-            <span class="thinking-dot"></span>
-          </span>
-        </button>
-      </form>
-
-      <div class="login-footer">
-        Government of Chhattisgarh &nbsp;·&nbsp; Restricted Access
-      </div>
-    </div>
-  </div>
-
-  <!-- ══ APP SHELL (hidden until logged in) ══════════════════════ -->
-  <div id="app-shell" class="hidden">
-
-    <!-- ── Sidebar ─────────────────────────────────────────────── -->
-    <aside id="sidebar">
-      <div class="brand">
-        <span class="brand-mark">◈</span>
-        <div>
-          <div class="brand-name">CHiPS-RAG</div>
-          <div class="brand-sub">Document Assistant</div>
-        </div>
-      </div>
-
-      <!-- User info + logout -->
-      <div class="user-bar">
-        <span class="user-icon">⬡</span>
-        <span id="user-display" class="user-name">—</span>
-        <button id="btn-logout" title="Sign out">↩</button>
-      </div>
-
-      <!-- Status panel -->
       <section class="sidebar-section">
-        <div class="section-label">SYSTEM STATUS</div>
-        <div class="status-grid">
+        <div class="section-label">Bot status</div>
+        <details class="bot-status" id="bot-status-panel">
+          <summary class="bot-status-summary">
+            <span class="status-dot" id="bot-status-dot" data-state="loading"></span>
+            <span class="bot-status-text" id="bot-status-text">Checking bot status</span>
+            <span class="bot-status-caret" aria-hidden="true">v</span>
+          </summary>
+          <div class="status-grid">
           <div class="status-row" id="st-pipeline">
             <span class="status-dot" data-state="idle"></span>
-            <span class="status-label">Pipeline</span>
-            <span class="status-val" id="st-pipeline-val">—</span>
+            <span class="status-label">Assistant</span>
+            <span class="status-val" id="st-pipeline-val">-</span>
           </div>
           <div class="status-row" id="st-db">
             <span class="status-dot" data-state="idle"></span>
-            <span class="status-label">Qdrant DB</span>
-            <span class="status-val" id="st-db-val">—</span>
+            <span class="status-label">Knowledge base</span>
+            <span class="status-val" id="st-db-val">-</span>
           </div>
           <div class="status-row" id="st-docs">
             <span class="status-dot" data-state="idle"></span>
             <span class="status-label">Documents</span>
-            <span class="status-val" id="st-docs-val">—</span>
+            <span class="status-val" id="st-docs-val">-</span>
           </div>
-        </div>
-        <button class="btn-init" id="btn-init">Refresh Bot</button>
+          </div>
+          <button class="btn-init" id="btn-init" type="button">Refresh bot</button>
+        </details>
       </section>
 
-      <!-- Last Prompts -->
-      <section class="sidebar-section flex-grow">
-        <div class="section-label">LAST PROMPTS</div>
-        <ul class="example-list" id="example-list">
-          <li class="prompts-empty">No prompts yet this session.</li>
-        </ul>
+      <section class="sidebar-section history-section">
+        <div class="section-label">History</div>
+        <div id="history-list" class="history-list"></div>
       </section>
 
       <footer class="sidebar-footer">
-        <span id="footer-time">—</span>
+        <span id="footer-time">-</span>
       </footer>
     </aside>
 
-    <!-- ── Main area ───────────────────────────────────────────── -->
     <main id="main">
-
-      <!-- Chat pane -->
-      <div id="chat-pane">
-        <div id="chat-empty" class="chat-empty">
-          <div class="empty-icon">⬡</div>
-          <p>Initialise the pipeline, then ask a question about your documents.</p>
+      <header id="topbar">
+        <div class="brand-line">
+          <span class="brand-mark">RTI Assistant</span>
+          <span class="brand-rule"></span>
+          <span class="brand-meta">Chhattisgarh citizen helpdesk</span>
         </div>
-        <div id="chat-messages"></div>
-      </div>
+        <div class="top-actions">
+          <span class="head-meta"><span class="head-dot"></span> Public guidance</span>
+          <button id="clear-chat" class="reset" type="button">Clear</button>
+        </div>
+      </header>
 
-      <!-- Query bar -->
-      <div id="query-bar">
+      <section id="chat-pane" aria-live="polite">
+        <div id="chat-inner">
+          <div class="welcome" id="welcome">
+            <h1>How can I help with RTI?</h1>
+            <p>Ask about the CG RTI portal, filing steps, fees, appeals, application status, PIO contacts, RTI Act basics, or portal documents.</p>
+            <div class="chips" id="prompt-chips">
+              <button class="chip" type="button">How do I register on the CG RTI portal?</button>
+              <button class="chip" type="button">How do I file an RTI application?</button>
+              <button class="chip" type="button">How do I pay RTI fees?</button>
+              <button class="chip" type="button">How do I file a first appeal?</button>
+              <button class="chip" type="button">How can I check application status?</button>
+              <button class="chip" type="button">How do I find PIO contact details?</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="query-bar">
         <div id="query-wrap">
-          <textarea id="query-input" rows="1" placeholder="Ask a question about the documents…"
+          <textarea id="query-input" rows="1" placeholder="Ask about RTI portal steps, fees, appeals, status, PIO details, or RTI Act sections..."
             spellcheck="false"></textarea>
-          <button id="btn-send" disabled title="Send query">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <line x1="22" y1="2" x2="11" y2="13"></line>
-              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+          <button id="btn-send" disabled type="button" title="Send">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M6 12 3.27 3.13A59.77 59.77 0 0 1 21.49 12 59.77 59.77 0 0 1 3.27 20.88L6 12Z"></path>
+              <path d="M6 12h7.5"></path>
             </svg>
           </button>
         </div>
         <div id="query-meta">
-          <span id="query-status">Pipeline not initialised</span>
+          <span id="query-status">Checking assistant status</span>
           <span id="query-timing"></span>
         </div>
-      </div>
-
+      </section>
     </main>
+  </div>
 
-  </div><!-- /#app-shell -->
-
-  <!-- ── Source drawer (slides in from right) ──────────────────── -->
   <div id="drawer-overlay" class="hidden"></div>
-  <aside id="source-drawer" class="hidden">
+  <aside id="source-drawer" class="hidden" aria-label="Source chunks">
     <div class="drawer-header">
-      <span class="section-label">SOURCE CHUNKS</span>
-      <button id="drawer-close" aria-label="Close">✕</button>
+      <span class="section-label">Sources</span>
+      <button id="drawer-close" type="button" aria-label="Close">x</button>
     </div>
     <div id="drawer-body"></div>
   </aside>
 
-  <!-- ── PDF panel (half screen, slides in from left) ─────────── -->
   <div id="pdf-overlay" class="hidden"></div>
-  <aside id="pdf-panel" class="hidden">
+  <aside id="pdf-panel" class="hidden" aria-label="Document preview">
     <div class="pdf-panel-header">
       <div class="pdf-panel-title-row">
-        <span class="section-label">DOCUMENT</span>
-        <button id="pdf-close" aria-label="Close PDF">✕</button>
+        <span class="section-label">Document</span>
+        <button id="pdf-close" type="button" aria-label="Close PDF">x</button>
       </div>
       <div id="pdf-title" class="pdf-filename"></div>
     </div>
@@ -179,12 +148,7 @@
     </div>
   </aside>
 
-  <!-- ── Toast ─────────────────────────────────────────────────── -->
   <div id="toast-container" aria-live="polite"></div>
-
-  <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle light mode">
-    Light mode
-  </button>
 
   <script type="module" src="/app.js"></script>
 </body>

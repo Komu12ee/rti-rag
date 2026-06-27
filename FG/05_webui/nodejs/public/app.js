@@ -1,107 +1,55 @@
-/**
- * CHiPS-RAG  –  Frontend application
- *
- * Handles login → token storage → RAG UI.
- * All /api/* requests include Authorization: Bearer <token>.
- * On any 401 response the app redirects back to the login screen.
- * PDFs are fetched as blobs using the auth token and shown in a half-screen panel.
- */
-
 'use strict';
 
-const THEME_KEY = 'chips_rag_theme';
+const STORAGE_KEY = 'cg_rti_assistant_conversations_v1';
+const ACTIVE_KEY = 'cg_rti_assistant_active_conversation_v1';
+const MAX_CONTEXT_MESSAGES = 8;
+const MAX_HISTORY_ITEMS = 24;
 
-function applyTheme(theme) {
-  document.body.dataset.theme = theme;
-  const toggle = document.getElementById('theme-toggle');
-  if (toggle) {
-    toggle.textContent = theme === 'light' ? 'Dark mode' : 'Light mode';
-    toggle.setAttribute('aria-label', theme === 'light' ? 'Switch to dark mode' : 'Switch to light mode');
-  }
-}
+const ASSISTANT_SCOPE = [
+  'You are the Chhattisgarh CG RTI portal assistant for citizens.',
+  'Answer questions about how to use the CG RTI portal: registration, filing RTI, fee payment, first appeal, status tracking, and PIO or department contact details.',
+  'Answer basic RTI Act questions: what RTI is, time limits, fees, first appeal process, and the basics of Sections 6, 7, 8, and 19.',
+  'Answer questions about portal documents: manuals, FAQs, circulars, process charts, public notices, and PIO or department directories.',
+  'If the question is outside this scope, briefly redirect the user to CG RTI portal help or RTI Act basics.'
+].join(' ');
 
-function initTheme() {
-  const savedTheme = localStorage.getItem(THEME_KEY);
-  const theme = savedTheme === 'light' ? 'light' : 'dark';
-  applyTheme(theme);
+const DEFAULT_PROMPTS = [
+  'How do I register on the CG RTI portal?',
+  'How do I file an RTI application?',
+  'How do I pay RTI fees?',
+  'How do I file a first appeal?',
+  'How can I check application status?',
+  'How do I find PIO contact details?'
+];
 
-  const toggle = document.getElementById('theme-toggle');
-  if (toggle) {
-    toggle.addEventListener('click', () => {
-      const nextTheme = document.body.dataset.theme === 'light' ? 'dark' : 'light';
-      localStorage.setItem(THEME_KEY, nextTheme);
-      applyTheme(nextTheme);
-    });
-  }
-}
-
-// ── Token storage (sessionStorage: cleared on tab/browser close) ──────────
-const TOKEN_KEY = 'chips_rag_token';
-const USER_KEY = 'chips_rag_user';
-
-const session = {
-  save(token, user) {
-    sessionStorage.setItem(TOKEN_KEY, token);
-    sessionStorage.setItem(USER_KEY, JSON.stringify(user));
-  },
-  token() { return sessionStorage.getItem(TOKEN_KEY); },
-  user() { try { return JSON.parse(sessionStorage.getItem(USER_KEY)); } catch { return null; } },
-  clear() { sessionStorage.removeItem(TOKEN_KEY); sessionStorage.removeItem(USER_KEY); },
-  exists() { return !!sessionStorage.getItem(TOKEN_KEY); },
-};
-
-// ── State ─────────────────────────────────────────────────────────────────
-const state = {
-  initialized: false,
-  loading: false,
-  lastResults: [],
-  pdfBlobUrl: null,   // current blob URL so we can revoke it on close
-};
-
-// ── DOM refs ──────────────────────────────────────────────────────────────
 const $ = id => document.getElementById(id);
 
 const ui = {
-  // login
-  loginScreen: $('login-screen'),
-  loginForm: $('login-form'),
-  loginUsername: $('login-username'),
-  loginPassword: $('login-password'),
-  loginError: $('login-error'),
-  loginSubmit: $('login-submit'),
-  loginBtnText: $('login-btn-text'),
-  loginBtnSpinner: $('login-btn-spinner'),
-
-  // app shell
-  appShell: $('app-shell'),
-  userDisplay: $('user-display'),
-  btnLogout: $('btn-logout'),
-
-  // rag ui
+  newChat: $('new-chat'),
+  clearChat: $('clear-chat'),
+  historyList: $('history-list'),
   btnInit: $('btn-init'),
   btnSend: $('btn-send'),
   queryInput: $('query-input'),
   queryStatus: $('query-status'),
   queryTiming: $('query-timing'),
-  chatEmpty: $('chat-empty'),
-  chatMessages: $('chat-messages'),
-  exampleList: $('example-list'),
+  chatPane: $('chat-pane'),
+  chatInner: $('chat-inner'),
   footerTime: $('footer-time'),
-
+  promptChips: $('prompt-chips'),
+  botStatusPanel: $('bot-status-panel'),
+  botStatusDot: $('bot-status-dot'),
+  botStatusText: $('bot-status-text'),
   stPipelineDot: document.querySelector('#st-pipeline .status-dot'),
   stPipelineVal: $('st-pipeline-val'),
   stDbDot: document.querySelector('#st-db .status-dot'),
   stDbVal: $('st-db-val'),
   stDocsDot: document.querySelector('#st-docs .status-dot'),
   stDocsVal: $('st-docs-val'),
-
-  // source chunk drawer (right)
   drawerOverlay: $('drawer-overlay'),
   sourceDrawer: $('source-drawer'),
   drawerBody: $('drawer-body'),
   drawerClose: $('drawer-close'),
-
-  // pdf panel (left half)
   pdfPanel: $('pdf-panel'),
   pdfOverlay: $('pdf-overlay'),
   pdfIframe: $('pdf-iframe'),
@@ -111,167 +59,311 @@ const ui = {
   documentLoadingLabel: $('document-loading-label'),
   documentError: $('document-error'),
   structureContent: $('structure-content'),
-
-  toastContainer: $('toast-container'),
+  toastContainer: $('toast-container')
 };
 
-// ── API client ────────────────────────────────────────────────────────────
-const api = {
-  async _request(method, path, body, requiresAuth = true) {
-    const headers = { 'Content-Type': 'application/json' };
-    if (requiresAuth) {
-      const token = session.token();
-      if (token) headers['Authorization'] = `Bearer ${token}`;
-    }
+const state = {
+  initialized: false,
+  loading: false,
+  pdfBlobUrl: null,
+  conversations: [],
+  activeId: null
+};
 
-    const opts = { method, headers };
+const api = {
+  async request(method, path, body) {
+    const opts = { method, headers: { 'Content-Type': 'application/json' } };
     if (body !== undefined) opts.body = JSON.stringify(body);
 
     const res = await fetch(path, opts);
-    const json = await res.json().catch(() => ({}));
-
-    if (res.status === 401) {
-      session.clear();
-      showLogin(json.expired
-        ? 'Your session has expired. Please sign in again.'
-        : 'Authentication required.');
-      throw new Error('UNAUTHENTICATED');
-    }
-
-    return { ok: res.ok, status: res.status, data: json };
+    const data = await res.json().catch(() => ({}));
+    return { ok: res.ok, status: res.status, data };
   },
-
-  // Fetch a PDF as a blob (uses auth token, stays in same page)
+  health: () => api.request('GET', '/api/health'),
+  init: () => api.request('POST', '/api/init'),
+  dbStatus: () => api.request('GET', '/api/db-status'),
+  query: (query, numResults) => api.request('POST', '/api/query', { query, num_results: numResults }),
+  documentStructure: actualPdf => api.request('POST', '/api/document-structure', { actual_pdf: actualPdf }),
   async fetchPdf(path) {
-    const res = await fetch(path, {
-      headers: { 'Authorization': `Bearer ${session.token()}` },
-    });
-    if (res.status === 401) {
-      session.clear();
-      showLogin('Your session has expired. Please sign in again.');
-      throw new Error('UNAUTHENTICATED');
-    }
+    const res = await fetch(path);
     if (!res.ok) throw new Error(`PDF fetch failed: ${res.status}`);
     return res.blob();
-  },
-
-  login: (username, password) =>
-    api._request('POST', '/auth/login', { username, password }, false),
-  logout: () =>
-    api._request('POST', '/auth/logout', undefined, false),
-  health: () => api._request('GET', '/api/health'),
-  init: () => api._request('POST', '/api/init'),
-  dbStatus: () => api._request('GET', '/api/db-status'),
-  examples: () => api._request('GET', '/api/examples'),
-  settings: (body) => api._request(body ? 'POST' : 'GET', '/api/settings', body),
-  query: (q, n) => api._request('POST', '/api/query', { query: q, num_results: n }),
-  documentStructure: (actualPdf) =>
-    api._request('POST', '/api/document-structure', { actual_pdf: actualPdf }),
+  }
 };
 
-// ── Screen switching ──────────────────────────────────────────────────────
-function showLogin(errorMsg) {
-  ui.appShell.classList.add('hidden');
-  ui.loginScreen.classList.remove('hidden');
-  ui.loginUsername.value = '';
-  ui.loginPassword.value = '';
-  if (errorMsg) showLoginError(errorMsg);
-  else hideLoginError();
-  ui.loginUsername.focus();
+function nowIso() {
+  return new Date().toISOString();
 }
 
-function showApp() {
-  ui.loginScreen.classList.add('hidden');
-  ui.appShell.classList.remove('hidden');
-  const user = session.user();
-  if (user) ui.userDisplay.textContent = user.username;
+function newId() {
+  return `chat-${Date.now()}-${Math.random().toString(16).slice(2)}`;
 }
 
-function showLoginError(msg) {
-  ui.loginError.textContent = msg;
-  ui.loginError.classList.remove('hidden');
+function escapeHtml(value) {
+  return String(value ?? '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
 }
-function hideLoginError() {
-  ui.loginError.classList.add('hidden');
+
+function truncate(value, max = 700) {
+  const text = String(value ?? '').trim();
+  return text.length > max ? `${text.slice(0, max)}...` : text;
 }
 
-// ── Login form ────────────────────────────────────────────────────────────
-async function handleLogin(e) {
-  e.preventDefault();
-  hideLoginError();
+function loadConversations() {
+  try {
+    const parsed = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
+    state.conversations = Array.isArray(parsed) ? parsed : [];
+  } catch (_) {
+    state.conversations = [];
+  }
 
-  const username = ui.loginUsername.value.trim();
-  const password = ui.loginPassword.value;
+  state.activeId = localStorage.getItem(ACTIVE_KEY);
+  if (!state.conversations.some(c => c.id === state.activeId)) {
+    const first = state.conversations[0] || createConversation(false);
+    state.activeId = first.id;
+  }
+  saveConversations();
+}
 
-  if (!username || !password) {
-    showLoginError('Please enter both username and password.');
+function saveConversations() {
+  state.conversations.sort((a, b) => new Date(b.updatedAt) - new Date(a.updatedAt));
+  state.conversations = state.conversations.slice(0, MAX_HISTORY_ITEMS);
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(state.conversations));
+  localStorage.setItem(ACTIVE_KEY, state.activeId || '');
+}
+
+function createConversation(makeActive = true) {
+  const conversation = {
+    id: newId(),
+    title: 'New chat',
+    createdAt: nowIso(),
+    updatedAt: nowIso(),
+    messages: []
+  };
+  state.conversations.unshift(conversation);
+  if (makeActive) state.activeId = conversation.id;
+  return conversation;
+}
+
+function activeConversation() {
+  let conversation = state.conversations.find(c => c.id === state.activeId);
+  if (!conversation) conversation = createConversation(true);
+  return conversation;
+}
+
+function titleFrom(text) {
+  const clean = String(text || '').replace(/\s+/g, ' ').trim();
+  return clean.length > 46 ? `${clean.slice(0, 46)}...` : clean || 'New chat';
+}
+
+function touchConversation(conversation) {
+  conversation.updatedAt = nowIso();
+  if (!conversation.title || conversation.title === 'New chat') {
+    const firstUser = conversation.messages.find(m => m.role === 'user');
+    if (firstUser) conversation.title = titleFrom(firstUser.display || firstUser.content);
+  }
+  saveConversations();
+}
+
+function renderHistory() {
+  ui.historyList.innerHTML = '';
+
+  if (!state.conversations.length) {
+    const empty = document.createElement('div');
+    empty.className = 'history-empty';
+    empty.textContent = 'No history yet.';
+    ui.historyList.appendChild(empty);
     return;
   }
 
-  ui.loginSubmit.disabled = true;
-  ui.loginBtnText.classList.add('hidden');
-  ui.loginBtnSpinner.classList.remove('hidden');
+  state.conversations.forEach(conversation => {
+    const item = document.createElement('button');
+    item.type = 'button';
+    item.className = `history-item${conversation.id === state.activeId ? ' active' : ''}`;
+    item.innerHTML = `
+      <span class="history-title">${escapeHtml(conversation.title || 'New chat')}</span>
+      <span class="history-date">${formatHistoryDate(conversation.updatedAt)}</span>
+    `;
+    item.addEventListener('click', () => {
+      state.activeId = conversation.id;
+      saveConversations();
+      renderAll();
+    });
+    ui.historyList.appendChild(item);
+  });
+}
 
-  try {
-    const { ok, data } = await api.login(username, password);
-    if (ok && data.success) {
-      session.save(data.token, data.user);
-      showApp();
-      bootRagUI();
-    } else {
-      showLoginError(data.error || 'Invalid credentials.');
+function formatHistoryDate(value) {
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return '';
+  return date.toLocaleString([], { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' });
+}
+
+function renderWelcome() {
+  const wrap = document.createElement('div');
+  wrap.className = 'welcome';
+  wrap.id = 'welcome';
+  wrap.innerHTML = `
+    <h1>How can I help with RTI?</h1>
+    <p>Ask about the CG RTI portal, filing steps, fees, appeals, application status, PIO contacts, RTI Act basics, or portal documents.</p>
+    <div class="chips">
+      ${DEFAULT_PROMPTS.map(prompt => `<button class="chip" type="button">${escapeHtml(prompt)}</button>`).join('')}
+    </div>
+  `;
+  wrap.querySelectorAll('.chip').forEach(chip => {
+    chip.addEventListener('click', () => usePrompt(chip.textContent));
+  });
+  return wrap;
+}
+
+function renderMessages() {
+  const conversation = activeConversation();
+  ui.chatInner.innerHTML = '';
+
+  if (!conversation.messages.length) {
+    ui.chatInner.appendChild(renderWelcome());
+    return;
+  }
+
+  conversation.messages.forEach(message => {
+    ui.chatInner.appendChild(createMessageElement(message));
+  });
+  scrollChatToBottom();
+}
+
+function createMessageElement(message) {
+  const wrapper = document.createElement('article');
+  wrapper.className = `msg ${message.role === 'user' ? 'user' : 'bot'}${message.pending ? ' pending' : ''}`;
+
+  const who = document.createElement('div');
+  who.className = 'who';
+  who.textContent = message.role === 'user' ? 'YOU' : 'AI';
+
+  const bubble = document.createElement('div');
+  bubble.className = 'bubble';
+
+  if (message.pending) {
+    bubble.innerHTML = '<div class="dots"><span></span><span></span><span></span></div>';
+  } else {
+    const text = document.createElement('div');
+    text.className = 'text';
+    text.innerHTML = formatMessageText(message.display || message.content || '');
+    bubble.appendChild(text);
+
+    if (message.role === 'assistant' && message.timing) {
+      const meta = document.createElement('div');
+      meta.className = 'message-meta';
+      meta.textContent = `Answered in ${message.timing}`;
+      bubble.appendChild(meta);
     }
-  } catch (err) {
-    if (err.message !== 'UNAUTHENTICATED') {
-      showLoginError('Cannot reach server. Please try again.');
+
+    if (message.role === 'assistant' && message.results?.length) {
+      const btn = document.createElement('button');
+      btn.className = 'sources-btn';
+      btn.type = 'button';
+      btn.innerHTML = `<span class="source-count">${message.results.length}</span> View sources`;
+      btn.addEventListener('click', () => openDrawer(message.results));
+      bubble.appendChild(btn);
     }
   }
 
-  ui.loginSubmit.disabled = false;
-  ui.loginBtnText.classList.remove('hidden');
-  ui.loginBtnSpinner.classList.add('hidden');
+  if (message.role === 'user') {
+    wrapper.appendChild(bubble);
+    wrapper.appendChild(who);
+  } else {
+    wrapper.appendChild(who);
+    wrapper.appendChild(bubble);
+  }
+
+  return wrapper;
 }
 
-// ── Logout ────────────────────────────────────────────────────────────────
-async function handleLogout() {
-  await api.logout().catch(() => { });
-  session.clear();
-  closePdfPanel();
-  closeDrawer();
-  showLogin();
-  toast('Signed out.', 'info', 2000);
+function formatMessageText(text) {
+  const escaped = escapeHtml(text);
+  return escaped
+    .split(/\n{2,}/)
+    .filter(Boolean)
+    .map(part => `<p>${part.replace(/\n/g, '<br>')}</p>`)
+    .join('');
 }
 
-// ── Toast ─────────────────────────────────────────────────────────────────
-function toast(message, type = 'info', duration = 3500) {
-  const el = document.createElement('div');
-  el.className = `toast ${type}`;
-  el.textContent = message;
-  ui.toastContainer.appendChild(el);
-  setTimeout(() => el.remove(), duration);
+function renderAll() {
+  renderHistory();
+  renderMessages();
 }
 
-// ── Status helpers ────────────────────────────────────────────────────────
-function setStatusRow(dot, val, stateVal, text) {
-  dot.dataset.state = stateVal;
+function scrollChatToBottom() {
+  requestAnimationFrame(() => {
+    ui.chatPane.scrollTop = ui.chatPane.scrollHeight;
+  });
+}
+
+function usePrompt(prompt) {
+  ui.queryInput.value = prompt;
+  autoResize();
+  ui.queryInput.focus();
+}
+
+function autoResize() {
+  ui.queryInput.style.height = 'auto';
+  ui.queryInput.style.height = `${Math.min(ui.queryInput.scrollHeight, 160)}px`;
+}
+
+function setStatusRow(dot, val, stateValue, text) {
+  dot.dataset.state = stateValue;
   val.textContent = text;
 }
+
+function setBotStatus(stateValue, text) {
+  ui.botStatusPanel.dataset.state = stateValue;
+  ui.botStatusDot.dataset.state = stateValue;
+  ui.botStatusText.textContent = text;
+}
+
 function setAllStatus(ps, pt, ds, dt, qs, qt) {
   setStatusRow(ui.stPipelineDot, ui.stPipelineVal, ps, pt);
   setStatusRow(ui.stDbDot, ui.stDbVal, ds, dt);
   setStatusRow(ui.stDocsDot, ui.stDocsVal, qs, qt);
-}
-function updateFooterTime() {
-  const now = new Date();
-  ui.footerTime.textContent =
-    `Updated ${now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}`;
+
+  const states = [ps, ds, qs];
+  if (states.includes('loading')) {
+    setBotStatus('loading', 'Checking bot status');
+  } else if (states.includes('error')) {
+    setBotStatus('error', 'Bot needs attention');
+  } else if (states.every(state => state === 'ok')) {
+    setBotStatus('ok', 'All systems operational');
+  } else {
+    setBotStatus('loading', 'Bot status pending');
+  }
 }
 
-// ── Init pipeline ─────────────────────────────────────────────────────────
+function updateFooterTime() {
+  const now = new Date();
+  ui.footerTime.textContent = now.toLocaleTimeString([], {
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit'
+  });
+}
+
+function enableQueryBar(message = 'Ready') {
+  ui.btnSend.disabled = false;
+  ui.queryStatus.textContent = message;
+}
+
+function disableQueryBar(message = 'Loading...') {
+  ui.btnSend.disabled = true;
+  ui.queryStatus.textContent = message;
+}
+
 async function initPipeline() {
   ui.btnInit.disabled = true;
-  ui.btnInit.textContent = 'Refreshing…';
-  setAllStatus('loading', 'checking…', 'loading', 'checking…', 'loading', 'checking…');
+  ui.btnInit.textContent = 'Refreshing...';
+  disableQueryBar('Refreshing bot...');
+  setAllStatus('loading', 'checking', 'loading', 'checking', 'loading', 'checking');
 
   try {
     const { ok, data } = await api.init();
@@ -281,150 +373,236 @@ async function initPipeline() {
       await refreshDbStatus();
       enableQueryBar();
     } else {
-      setAllStatus('error', 'failed', 'error', '—', 'error', '—');
-      toast(data.error || 'Initialisation failed', 'error', 5000);
-      ui.btnInit.textContent = 'Retry Refresh';
-      ui.btnInit.disabled = false;
+      setAllStatus('error', 'failed', 'error', '-', 'error', '-');
+      disableQueryBar('Refresh bot before asking');
+      toast(data.error || 'Refresh failed', 'error', 5000);
     }
   } catch (err) {
-    if (err.message !== 'UNAUTHENTICATED') {
-      setAllStatus('error', 'unreachable', 'error', '—', 'error', '—');
-      toast('Cannot reach backend', 'error');
-      ui.btnInit.textContent = 'Retry Refresh';
-      ui.btnInit.disabled = false;
-    }
+    setAllStatus('error', 'offline', 'error', '-', 'error', '-');
+    disableQueryBar('Backend unavailable');
+    toast('Cannot reach backend', 'error');
+  } finally {
+    ui.btnInit.disabled = false;
+    ui.btnInit.textContent = 'Refresh bot';
+    updateFooterTime();
   }
-  updateFooterTime();
 }
 
 async function refreshDbStatus() {
   try {
     const { ok, data } = await api.dbStatus();
-    if (ok) {
-      const pipeOk = data.db_connected && data.collection_exists;
-      const count = data.points_count ?? 0;
-      setAllStatus(
-        pipeOk ? 'ok' : 'error', pipeOk ? 'ready' : 'error',
-        data.db_connected ? 'ok' : 'error', data.db_connected ? 'connected' : 'disconnected',
-        data.db_connected ? 'ok' : 'idle', data.db_connected ? `${count.toLocaleString()} pts` : '—',
-      );
-      ui.btnInit.textContent = pipeOk ? 'Refresh Bot' : 'Retry Refresh';
-      ui.btnInit.disabled = false;
-    }
-  } catch (_) { }
+    if (!ok) throw new Error(data.error || 'DB status failed');
+
+    const dbReady = data.db_connected && data.collection_exists;
+    const count = data.points_count ?? 0;
+    setAllStatus(
+      dbReady || state.initialized ? 'ok' : 'idle',
+      dbReady || state.initialized ? 'ready' : '-',
+      data.db_connected ? 'ok' : 'error',
+      data.db_connected ? 'ready' : 'offline',
+      data.db_connected ? 'ok' : 'idle',
+      data.db_connected ? `${count.toLocaleString()} pts` : '-'
+    );
+
+    if (dbReady || state.initialized) enableQueryBar();
+    else disableQueryBar('Refresh bot before asking');
+  } catch (_) {
+    setAllStatus('error', 'offline', 'error', '-', 'error', '-');
+    disableQueryBar('Backend unavailable');
+  }
   updateFooterTime();
 }
 
-// ── Query bar ─────────────────────────────────────────────────────────────
-function enableQueryBar() {
-  ui.btnSend.disabled = false;
-  ui.queryStatus.textContent = 'Ready';
-}
-function disableQueryBar(msg = 'Loading…') {
-  ui.btnSend.disabled = true;
-  ui.queryStatus.textContent = msg;
-}
-function autoResize() {
-  ui.queryInput.style.height = 'auto';
-  ui.queryInput.style.height = `${ui.queryInput.scrollHeight}px`;
-}
-
-// ── Chat ──────────────────────────────────────────────────────────────────
-function hideChatEmpty() { ui.chatEmpty.style.display = 'none'; }
-
-function escapeHtml(str) {
-  return str
-    .replace(/&/g, '&amp;').replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
-}
-
-function appendMessage(role, text, meta = {}) {
-  hideChatEmpty();
-  const msg = document.createElement('div');
-  msg.className = `msg${role === 'thinking' ? ' msg-thinking' : ''}`;
-
-  const roleEl = document.createElement('div');
-  roleEl.className = 'msg-role';
-  const label = role === 'user' ? 'YOU' : role === 'assistant' ? 'ASSISTANT' : 'THINKING';
-  roleEl.innerHTML =
-    `<span class="msg-role-accent">◈</span> ${label}` +
-    (meta.timing ? `<span class="timing-chip">${meta.timing}</span>` : '');
-  msg.appendChild(roleEl);
-
-  const body = document.createElement('div');
-  body.className = `msg-body ${role}-body`;
-
-  if (role === 'thinking') {
-    body.innerHTML =
-      '<div class="thinking-dot"></div>' +
-      '<div class="thinking-dot"></div>' +
-      '<div class="thinking-dot"></div>';
-  } else {
-    body.innerHTML = escapeHtml(text)
-      .split('\n\n').filter(Boolean)
-      .map(p => `<p style="margin-bottom:.6em">${p.replace(/\n/g, '<br>')}</p>`)
-      .join('');
-
-    if (role === 'assistant' && meta.results?.length) {
-      const btn = document.createElement('button');
-      btn.className = 'sources-btn';
-      btn.innerHTML = `<span class="source-count">${meta.results.length}</span> View sources`;
-      btn.addEventListener('click', () => openDrawer(meta.results));
-      body.appendChild(btn);
+async function bootStatus() {
+  try {
+    const { ok, data } = await api.health();
+    if (ok && data.rag_pipeline === 'available') {
+      state.initialized = Boolean(data.pipeline_initialized);
+      await refreshDbStatus();
+      if (state.initialized) enableQueryBar();
+    } else {
+      setAllStatus('error', 'unavailable', 'idle', '-', 'idle', '-');
+      disableQueryBar('Assistant unavailable');
     }
+  } catch (_) {
+    setAllStatus('error', 'offline', 'error', '-', 'error', '-');
+    disableQueryBar('Backend unavailable');
   }
-
-  msg.appendChild(body);
-  ui.chatMessages.appendChild(msg);
-  msg.scrollIntoView({ behavior: 'smooth', block: 'end' });
-  return msg;
 }
 
-// ── Send query ────────────────────────────────────────────────────────────
+function buildScopedQuery(userText) {
+  const conversation = activeConversation();
+  const recent = conversation.messages
+    .filter(m => !m.pending)
+    .slice(-MAX_CONTEXT_MESSAGES)
+    .map(m => `${m.role === 'user' ? 'User' : 'Assistant'}: ${truncate(m.display || m.content, 700)}`)
+    .join('\n');
+
+  return [
+    `Current user question: ${userText}`,
+    recent ? `Recent conversation context:\n${recent}` : '',
+    `Assistant role and answer scope:\n${ASSISTANT_SCOPE}`
+  ].filter(Boolean).join('\n\n');
+}
+
 async function sendQuery() {
   const text = ui.queryInput.value.trim();
   if (!text || state.loading) return;
 
-  state.loading = true;
-  disableQueryBar('Retrieving…');
-  appendMessage('user', text);
-  addToLastPrompts(text);
+  const conversation = activeConversation();
+  const userMessage = {
+    id: newId(),
+    role: 'user',
+    content: text,
+    display: text,
+    createdAt: nowIso()
+  };
+  conversation.messages.push(userMessage);
+  touchConversation(conversation);
+
   ui.queryInput.value = '';
   autoResize();
+  ui.queryTiming.textContent = '';
 
-  const thinkingEl = appendMessage('thinking', '');
+  const pendingMessage = {
+    id: newId(),
+    role: 'assistant',
+    content: '',
+    pending: true,
+    createdAt: nowIso()
+  };
+  conversation.messages.push(pendingMessage);
+  state.loading = true;
+  disableQueryBar('Retrieving...');
+  renderAll();
 
   try {
-    const { ok, data } = await api.query(text, 3);
-    thinkingEl.remove();
+    const scopedQuery = buildScopedQuery(text);
+    const { ok, data } = await api.query(scopedQuery, 5);
+    const index = conversation.messages.findIndex(m => m.id === pendingMessage.id);
 
     if (ok && data.success) {
-      state.lastResults = data.results || [];
-      appendMessage('assistant', data.answer, {
-        timing: data.execution_time,
-        results: state.lastResults,
-      });
-      ui.queryTiming.textContent = data.execution_time;
+      conversation.messages[index] = {
+        id: pendingMessage.id,
+        role: 'assistant',
+        content: data.answer || '',
+        display: data.answer || '',
+        results: data.results || [],
+        timing: data.execution_time || '',
+        createdAt: nowIso()
+      };
+      ui.queryTiming.textContent = data.execution_time || '';
     } else {
-      appendMessage('assistant', `⚠ ${data.error || 'Unknown error'}`);
+      conversation.messages[index] = {
+        id: pendingMessage.id,
+        role: 'assistant',
+        content: data.error || 'Query failed',
+        display: `Unable to answer: ${data.error || 'Query failed'}`,
+        createdAt: nowIso()
+      };
       toast(data.error || 'Query failed', 'error');
     }
   } catch (err) {
-    if (err.message !== 'UNAUTHENTICATED') {
-      thinkingEl.remove();
-      appendMessage('assistant', '⚠ Network error — is the backend running?');
-      toast('Network error', 'error');
-    }
+    const index = conversation.messages.findIndex(m => m.id === pendingMessage.id);
+    conversation.messages[index] = {
+      id: pendingMessage.id,
+      role: 'assistant',
+      content: 'Network error - is the backend running?',
+      display: 'Network error - is the backend running?',
+      createdAt: nowIso()
+    };
+    toast('Network error', 'error');
+  } finally {
+    state.loading = false;
+    enableQueryBar();
+    touchConversation(conversation);
+    renderAll();
+    updateFooterTime();
   }
-
-  state.loading = false;
-  enableQueryBar();
-  updateFooterTime();
 }
 
-// ── PDF panel ─────────────────────────────────────────────────────────────
+function legalChunkLabel(chunkType) {
+  const labels = {
+    INFORMATION_REQUESTED: 'Information Requested',
+    COMMISSION_OBSERVATIONS: 'Commission Observation',
+    COMMISSION_FINDINGS: 'Commission Finding',
+    FINAL_ORDER: 'Final Order',
+    PIO_LEARNING_SIGNAL: 'PIO Learning',
+    PRECEDENT_SUMMARY: 'Precedent Summary',
+    GROUNDS_FOR_APPEAL: 'Grounds for Appeal',
+    HEARING_SUBMISSIONS: 'Hearing Submissions',
+    CASE_METADATA: 'Case Metadata'
+  };
+  return labels[chunkType] || 'Relevant Passage';
+}
+
+function openDrawer(results) {
+  ui.drawerBody.innerHTML = '';
+
+  results.forEach(result => {
+    const card = document.createElement('div');
+    card.className = 'source-card';
+
+    const score = typeof result.score === 'number' ? result.score.toFixed(3) : '-';
+    const fname = result.actual_pdf || result.source || 'unknown';
+    const chunkType = result.chunk_type || '';
+    const passage = result.text || result.excerpt || '';
+    const metaParts = [
+      result.case_number ? `Case: ${escapeHtml(result.case_number)}` : '',
+      result.public_authority ? `Authority: ${escapeHtml(result.public_authority)}` : '',
+      result.hearing_date ? `Hearing: ${escapeHtml(result.hearing_date)}` : '',
+      result.outcome ? `Outcome: ${escapeHtml(result.outcome)}` : ''
+    ].filter(Boolean);
+
+    card.innerHTML = `
+      <div class="source-card-header">
+        <span class="source-rank">#${escapeHtml(result.rank || '')}</span>
+        <span class="source-filename">${escapeHtml(fname)}</span>
+        <span class="source-score">${score}</span>
+      </div>
+      ${metaParts.length ? `<div class="source-meta">${metaParts.join(' | ')}</div>` : ''}
+      <div class="source-label">${escapeHtml(legalChunkLabel(chunkType))}${chunkType ? ` <span>${escapeHtml(chunkType)}</span>` : ''}</div>
+      <details class="source-passage" ${passage.length < 700 ? 'open' : ''}>
+        <summary>${passage.length > 700 ? 'Expand passage' : 'Passage'}</summary>
+        <div>${escapeHtml(passage)}</div>
+      </details>
+    `;
+
+    const actionRow = document.createElement('div');
+    actionRow.className = 'source-actions';
+
+    const pdfBtn = document.createElement('button');
+    pdfBtn.className = 'pdf-open-btn';
+    pdfBtn.type = 'button';
+    pdfBtn.textContent = 'View PDF';
+    pdfBtn.addEventListener('click', () => openPdfPanel(fname));
+    actionRow.appendChild(pdfBtn);
+
+    const structureBtn = document.createElement('button');
+    structureBtn.className = 'structure-open-btn';
+    structureBtn.type = 'button';
+    structureBtn.textContent = 'View structure';
+    structureBtn.disabled = result.structured_md_available === false;
+    structureBtn.title = structureBtn.disabled
+      ? 'structured.md is not available for this document'
+      : 'Open extracted Markdown';
+    structureBtn.addEventListener('click', () => openStructurePanel(fname));
+    actionRow.appendChild(structureBtn);
+
+    card.appendChild(actionRow);
+    ui.drawerBody.appendChild(card);
+  });
+
+  ui.drawerOverlay.classList.remove('hidden');
+  ui.sourceDrawer.classList.remove('hidden');
+}
+
+function closeDrawer() {
+  ui.drawerOverlay.classList.add('hidden');
+  ui.sourceDrawer.classList.add('hidden');
+}
+
 async function openPdfPanel(fname) {
-  // Show panel immediately with loading state
   ui.pdfTitle.textContent = fname;
   ui.pdfIframe.src = '';
   ui.structureContent.textContent = '';
@@ -438,29 +616,19 @@ async function openPdfPanel(fname) {
   ui.pdfOverlay.classList.remove('hidden');
 
   try {
-    const pdfPath = `/api/document-pdf/${encodeURIComponent(fname)}`;
-    const blob = await api.fetchPdf(pdfPath);
-
-    // Revoke previous blob URL to free memory
-    if (state.pdfBlobUrl) {
-      URL.revokeObjectURL(state.pdfBlobUrl);
-    }
-
+    const blob = await api.fetchPdf(`/api/document-pdf/${encodeURIComponent(fname)}`);
+    if (state.pdfBlobUrl) URL.revokeObjectURL(state.pdfBlobUrl);
     state.pdfBlobUrl = URL.createObjectURL(blob);
     ui.pdfIframe.src = state.pdfBlobUrl;
-
-    // Show iframe once loaded
     ui.pdfIframe.onload = () => {
       ui.pdfLoading.classList.add('hidden');
       ui.pdfIframe.classList.remove('hidden');
     };
   } catch (err) {
-    if (err.message !== 'UNAUTHENTICATED') {
-      ui.pdfLoading.classList.add('hidden');
-      ui.documentError.textContent = `Could not load PDF: ${err.message}`;
-      ui.documentError.classList.remove('hidden');
-      toast('Could not load PDF', 'error');
-    }
+    ui.pdfLoading.classList.add('hidden');
+    ui.documentError.textContent = `Could not load PDF: ${err.message}`;
+    ui.documentError.classList.remove('hidden');
+    toast('Could not load PDF', 'error');
   }
 }
 
@@ -472,7 +640,7 @@ async function openStructurePanel(fname) {
   ui.structureContent.classList.add('hidden');
   ui.documentError.textContent = '';
   ui.documentError.classList.add('hidden');
-  ui.documentLoadingLabel.textContent = 'Loading structured.md';
+  ui.documentLoadingLabel.textContent = 'Loading structure';
   ui.pdfLoading.classList.remove('hidden');
   ui.pdfPanel.classList.remove('hidden');
   ui.pdfOverlay.classList.remove('hidden');
@@ -480,18 +648,14 @@ async function openStructurePanel(fname) {
   try {
     const { ok, data } = await api.documentStructure(fname);
     ui.pdfLoading.classList.add('hidden');
-    if (!ok || !data.success) {
-      throw new Error(data.error || 'structured.md request failed');
-    }
+    if (!ok || !data.success) throw new Error(data.error || 'structured.md request failed');
     ui.structureContent.textContent = data.structured_md || '';
     ui.structureContent.classList.remove('hidden');
   } catch (err) {
-    if (err.message !== 'UNAUTHENTICATED') {
-      ui.pdfLoading.classList.add('hidden');
-      ui.documentError.textContent = `Could not load structured.md: ${err.message}`;
-      ui.documentError.classList.remove('hidden');
-      toast('Could not load structured.md', 'error');
-    }
+    ui.pdfLoading.classList.add('hidden');
+    ui.documentError.textContent = `Could not load structure: ${err.message}`;
+    ui.documentError.classList.remove('hidden');
+    toast('Could not load structure', 'error');
   }
 }
 
@@ -509,166 +673,65 @@ function closePdfPanel() {
   }
 }
 
-// ── Source drawer (right panel) ───────────────────────────────────────────
-function legalChunkLabel(chunkType) {
-  const labels = {
-    INFORMATION_REQUESTED: 'Information Requested',
-    COMMISSION_OBSERVATIONS: 'Commission Observation',
-    FINAL_ORDER: 'Final Order',
-    PIO_LEARNING_SIGNAL: 'PIO Learning',
-    PRECEDENT_SUMMARY: 'Precedent Summary',
-    GROUNDS_FOR_APPEAL: 'Grounds for Appeal',
-    HEARING_SUBMISSIONS: 'Hearing Submissions',
-    CASE_METADATA: 'Case Metadata',
-  };
-  return labels[chunkType] || 'Relevant Passage';
+function toast(message, type = 'info', duration = 3500) {
+  const el = document.createElement('div');
+  el.className = `toast ${type}`;
+  el.textContent = message;
+  ui.toastContainer.appendChild(el);
+  setTimeout(() => el.remove(), duration);
 }
 
-function openDrawer(results) {
-  ui.drawerBody.innerHTML = '';
-
-  results.forEach(r => {
-    const card = document.createElement('div');
-    card.className = 'source-card';
-    const score = typeof r.score === 'number' ? r.score.toFixed(3) : '—';
-    const fname = r.actual_pdf || r.source || 'unknown';
-    const chunkType = r.chunk_type || '';
-    const legalLabel = legalChunkLabel(chunkType);
-    const passage = r.text || r.excerpt || '';
-    const metaParts = [
-      r.case_number ? `Case: ${escapeHtml(r.case_number)}` : '',
-      r.public_authority ? `Authority: ${escapeHtml(r.public_authority)}` : '',
-      r.hearing_date ? `Hearing: ${escapeHtml(r.hearing_date)}` : '',
-      r.outcome ? `Outcome: ${escapeHtml(r.outcome)}` : '',
-    ].filter(Boolean);
-
-    card.innerHTML = `
-      <div class="source-card-header">
-        <span class="source-rank">#${r.rank}</span>
-        <span class="source-filename">${escapeHtml(fname)}</span>
-        <span class="source-score">${score}</span>
-      </div>
-      ${metaParts.length ? `<div class="source-meta">${metaParts.join(' | ')}</div>` : ''}
-      <div class="source-label">${escapeHtml(legalLabel)}${chunkType ? ` <span>${escapeHtml(chunkType)}</span>` : ''}</div>
-      <details class="source-passage" ${passage.length < 700 ? 'open' : ''}>
-        <summary>${passage.length > 700 ? 'Expand passage' : 'Passage'}</summary>
-        <div>${escapeHtml(passage)}</div>
-      </details>
-    `;
-
-    const actionRow = document.createElement('div');
-    actionRow.className = 'source-actions';
-
-    const pdfBtn = document.createElement('button');
-    pdfBtn.className = 'pdf-open-btn';
-    pdfBtn.textContent = 'View PDF';
-    pdfBtn.addEventListener('click', () => openPdfPanel(fname));
-    actionRow.appendChild(pdfBtn);
-
-    const structureBtn = document.createElement('button');
-    structureBtn.className = 'structure-open-btn';
-    structureBtn.textContent = 'View structure';
-    structureBtn.disabled = r.structured_md_available === false;
-    structureBtn.title = structureBtn.disabled
-      ? 'structured.md is not available for this document'
-      : 'Open full extracted Markdown';
-    structureBtn.addEventListener('click', () => openStructurePanel(fname));
-    actionRow.appendChild(structureBtn);
-
-    card.appendChild(actionRow);
-
-    ui.drawerBody.appendChild(card);
-  });
-
-  ui.drawerOverlay.classList.remove('hidden');
-  ui.sourceDrawer.classList.remove('hidden');
+function startNewChat() {
+  createConversation(true);
+  saveConversations();
+  ui.queryInput.value = '';
+  ui.queryTiming.textContent = '';
+  autoResize();
+  renderAll();
+  ui.queryInput.focus();
 }
 
-function closeDrawer() {
-  ui.drawerOverlay.classList.add('hidden');
-  ui.sourceDrawer.classList.add('hidden');
+function clearActiveChat() {
+  const conversation = activeConversation();
+  conversation.messages = [];
+  conversation.title = 'New chat';
+  touchConversation(conversation);
+  ui.queryTiming.textContent = '';
+  renderAll();
 }
 
-// ── Last Prompts (session history) ────────────────────────────────────────
-const sessionPrompts = [];
-
-function addToLastPrompts(text) {
-  // Avoid duplicate consecutive entries
-  if (sessionPrompts[sessionPrompts.length - 1] === text) return;
-  sessionPrompts.push(text);
-
-  ui.exampleList.innerHTML = '';
-  // Show newest first, up to 20
-  [...sessionPrompts].reverse().slice(0, 20).forEach(prompt => {
-    const li = document.createElement('li');
-    li.textContent = prompt;
-    li.title = prompt;
-    li.addEventListener('click', () => {
-      ui.queryInput.value = prompt;
-      autoResize();
-      ui.queryInput.focus();
-    });
-    ui.exampleList.appendChild(li);
-  });
-}
-
-
-// ── RAG UI boot ───────────────────────────────────────────────────────────
-async function bootRagUI() {
-  setInterval(() => {
-    const now = new Date();
-    ui.footerTime.textContent =
-      now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
-  }, 1000);
-
-  try {
-    const { ok, data } = await api.health();
-    if (ok && data.pipeline_initialized) {
-      state.initialized = true;
-      await refreshDbStatus();
-      enableQueryBar();
-    } else {
-      setAllStatus('idle', '—', 'idle', '—', 'idle', '—');
-    }
-  } catch (_) {
-    setAllStatus('error', 'unreachable', 'error', '—', 'error', '—');
-  }
-
+function setupEvents() {
+  ui.newChat.addEventListener('click', startNewChat);
+  ui.clearChat.addEventListener('click', clearActiveChat);
   ui.btnInit.addEventListener('click', initPipeline);
   ui.btnSend.addEventListener('click', sendQuery);
-
-  ui.queryInput.addEventListener('keydown', e => {
-    if (e.key === 'Enter' && !e.shiftKey) {
-      e.preventDefault();
+  ui.queryInput.addEventListener('input', autoResize);
+  ui.queryInput.addEventListener('keydown', event => {
+    if (event.key === 'Enter' && !event.shiftKey) {
+      event.preventDefault();
       if (!ui.btnSend.disabled) sendQuery();
     }
   });
-  ui.queryInput.addEventListener('input', autoResize);
 
-  // Drawer close
   ui.drawerClose.addEventListener('click', closeDrawer);
   ui.drawerOverlay.addEventListener('click', closeDrawer);
-
-  // PDF panel close
   ui.pdfClose.addEventListener('click', closePdfPanel);
   ui.pdfOverlay.addEventListener('click', closePdfPanel);
-
-  document.addEventListener('keydown', e => {
-    if (e.key === 'Escape') { closeDrawer(); closePdfPanel(); }
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape') {
+      closeDrawer();
+      closePdfPanel();
+    }
   });
 }
 
-// ── Entry point ───────────────────────────────────────────────────────────
 function boot() {
-  ui.btnLogout.addEventListener('click', handleLogout);
-  // Skip login UI for FG deployment (no auth). Boot the app immediately.
-  // Keep logout handler available if someone wants to clear state.
-  try { ui.loginForm.removeEventListener && ui.loginForm.removeEventListener('submit', handleLogin); } catch (_) { }
-  try { ui.loginPassword.removeEventListener && ui.loginPassword.removeEventListener('keydown', handleLogin); } catch (_) { }
-
-  showApp();
-  bootRagUI();
+  loadConversations();
+  setupEvents();
+  renderAll();
+  initPipeline();
+  updateFooterTime();
+  setInterval(updateFooterTime, 1000);
 }
 
-initTheme();
 boot();
