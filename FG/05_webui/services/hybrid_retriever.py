@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import os
 from dataclasses import dataclass, field
 from typing import Any, Callable, Optional
 
@@ -15,54 +16,7 @@ from services.postgres_retriever import (
 )
 from services.retrieval_plan import Route, RouterDecision
 from services.route_resolver import RouteResolution, resolve_route
-UNCLEAR_QDRANT_DOMAIN_TERMS = (
-    "rti",
-    "right to information",
-    "आरटीआई",
-    "सूचना का अधिकार",
-    "information commission",
-    "state information commission",
-    "chhattisgarh state information commission",
-    "cic",
-    "sic",
-    "cg sic",
-    "cgsic",
-    "cgrti",
-    "first appeal",
-    "second appeal",
-    "public information officer",
-    "pio",
-    "faa",
-    "अपील",
-    "सूचना आयोग",
-    "जन सूचना अधिकारी",
-    "लोक सूचना अधिकारी",
-)
 
-
-def _should_try_unclear_qdrant_fallback(query: str) -> bool:
-    normalized = (query or "").casefold().strip()
-
-    return bool(normalized) and any(
-        term in normalized
-        for term in UNCLEAR_QDRANT_DOMAIN_TERMS
-    )
-
-
-def _make_unclear_qdrant_fallback_decision(
-    query: str,
-) -> RouterDecision:
-    return RouterDecision(
-        route=Route.QDRANT,
-        confidence=0.50,
-        reason=(
-            "UNCLEAR route fallback: query appears RTI-related, "
-            "so Qdrant document retrieval will be attempted."
-        ),
-        matched_signals=(
-            "unclear_qdrant_fallback",
-        ),
-    )
 
 @dataclass
 class UnifiedRetrievalResult:
@@ -73,8 +27,14 @@ class UnifiedRetrievalResult:
     postgres_evidence: list[dict[str, Any]] = field(default_factory=list)
     qdrant_evidence: list[dict[str, Any]] = field(default_factory=list)
 
-    errors: list[str] = field(default_factory=list)
+    # Only relevant when the visible route remains UNCLEAR.
     qdrant_fallback_used: bool = False
+    qdrant_relevance_accepted: bool | None = None
+    qdrant_top_dense_score: float | None = None
+    qdrant_relevance_threshold: float | None = None
+
+    errors: list[str] = field(default_factory=list)
+
     @property
     def combined_evidence(self) -> list[dict[str, Any]]:
         return [
@@ -87,6 +47,79 @@ class UnifiedRetrievalResult:
         return bool(self.combined_evidence)
 
 
+def _env_flag(name: str, default: bool = True) -> bool:
+    value = os.getenv(name, str(default)).strip().casefold()
+    return value in {"1", "true", "yes", "on"}
+
+
+def _unclear_qdrant_threshold() -> float:
+    try:
+        score = float(
+            os.getenv(
+                "UNCLEAR_QDRANT_MIN_DENSE_SCORE",
+                "0.60",
+            )
+        )
+    except ValueError:
+        score = 0.60
+
+    return max(0.0, min(score, 1.0))
+
+
+def _raw_qdrant_score(item: dict[str, Any]) -> float | None:
+    """
+    Use point.score: the original Qdrant dense similarity score.
+
+    Do not use item["score"] here because it is your later
+    hybrid/RRF ranking score, not raw similarity.
+    """
+    point = item.get("point")
+    raw_score = getattr(point, "score", None)
+
+    try:
+        return float(raw_score)
+    except (TypeError, ValueError):
+        return None
+
+
+def _top_raw_qdrant_score(
+    context_results: list[dict[str, Any]] | None,
+) -> float | None:
+    scores = []
+
+    for item in context_results or []:
+        score = _raw_qdrant_score(item)
+
+        if score is not None:
+            scores.append(score)
+
+    return max(scores) if scores else None
+
+
+def _make_unclear_qdrant_decision(
+    original_decision: RouterDecision,
+) -> RouterDecision:
+    """
+    Internal retrieval-only decision.
+
+    The browser still sees UNCLEAR as the final route.
+    This QDRANT decision exists only so the existing legal retriever
+    can perform one fallback search.
+    """
+    return RouterDecision(
+        route=Route.QDRANT,
+        confidence=original_decision.confidence,
+        reason=(
+            "UNCLEAR fallback: Qdrant was searched before "
+            "returning a Suchna Aayog not-found answer."
+        ),
+        matched_signals=(
+            *original_decision.matched_signals,
+            "unclear_qdrant_fallback",
+        ),
+    )
+
+
 def retrieve_from_all_sources(
     query: str,
     retrieve_context_fn: Callable[..., list[dict[str, Any]]] | None,
@@ -94,19 +127,19 @@ def retrieve_from_all_sources(
     router_timeout_seconds: int = 30,
 ) -> UnifiedRetrievalResult:
     """
-    Resolve the route and retrieve from the required source(s).
-
     POSTGRES:
         Officer registry only.
 
     QDRANT:
-        Legal knowledge only.
+        Legal / FAQ / portal corpus.
 
     HYBRID:
-        PostgreSQL and Qdrant independently.
+        PostgreSQL + Qdrant.
 
     UNCLEAR:
-        No retrieval. The caller should ask for clarification later.
+        Always try Qdrant once.
+        Generate an answer only if raw Qdrant similarity passes
+        UNCLEAR_QDRANT_MIN_DENSE_SCORE.
     """
     resolution = resolve_route(
         query=query,
@@ -119,7 +152,7 @@ def retrieve_from_all_sources(
         resolution=resolution,
     )
 
-    # PostgreSQL retrieval.
+    # PostgreSQL retrieval
     if final_route in {Route.POSTGRES, Route.HYBRID}:
         try:
             postgres_result = retrieve_officer_registry(
@@ -135,59 +168,86 @@ def retrieve_from_all_sources(
 
         except Exception as error:
             result.errors.append(
-                f"PostgreSQL retrieval failed: {type(error).__name__}: {error}"
+                "PostgreSQL retrieval failed: "
+                f"{type(error).__name__}: {error}"
             )
 
-        # Qdrant retrieval.
-    #
-    # Normal QDRANT/HYBRID routes always retrieve from db3.
-    # UNCLEAR RTI-related queries get one Route-B fallback retrieval attempt.
-    unclear_qdrant_fallback = (
+    unclear_fallback_enabled = (
         final_route == Route.UNCLEAR
-        and _should_try_unclear_qdrant_fallback(query)
+        and _env_flag("UNCLEAR_QDRANT_FALLBACK", True)
     )
 
     should_retrieve_qdrant = (
         final_route in {Route.QDRANT, Route.HYBRID}
-        or unclear_qdrant_fallback
+        or unclear_fallback_enabled
     )
 
     if should_retrieve_qdrant:
         if retrieve_context_fn is None:
             result.errors.append(
-                "Qdrant retrieval was required, but retrieve_context_fn was not provided."
+                "Qdrant retrieval was required, but "
+                "retrieve_context_fn was not provided."
             )
-        else:
-            try:
-                qdrant_decision = resolution.final
+            return result
 
-                if unclear_qdrant_fallback:
-                    result.qdrant_fallback_used = True
+        qdrant_decision = resolution.final
 
-                    qdrant_decision = (
-                        _make_unclear_qdrant_fallback_decision(query)
-                    )
+        if unclear_fallback_enabled:
+            result.qdrant_fallback_used = True
+            qdrant_decision = _make_unclear_qdrant_decision(
+                resolution.final
+            )
 
-                    print(
-                        "[Route-B Fallback] Final route is UNCLEAR, "
-                        "but query appears RTI-related. Searching Qdrant."
-                    )
+        try:
+            qdrant_result = retrieve_legal_references(
+                query=query,
+                decision=qdrant_decision,
+                retrieve_context_fn=retrieve_context_fn,
+                limit=limit,
+            )
 
-                qdrant_result = retrieve_legal_references(
-                    query=query,
-                    decision=qdrant_decision,
-                    retrieve_context_fn=retrieve_context_fn,
-                    limit=limit,
+            result.qdrant_result = qdrant_result
+
+            # Normal QDRANT/HYBRID routes use their evidence directly.
+            if not unclear_fallback_enabled:
+                result.qdrant_evidence = legal_results_to_evidence(
+                    qdrant_result
                 )
+                return result
 
-                result.qdrant_result = qdrant_result
+            # UNCLEAR fallback must pass a relevance gate.
+            top_score = _top_raw_qdrant_score(
+                qdrant_result.context_results
+            )
 
+            threshold = _unclear_qdrant_threshold()
+
+            result.qdrant_top_dense_score = top_score
+            result.qdrant_relevance_threshold = threshold
+
+            accepted = (
+                top_score is not None
+                and top_score >= threshold
+            )
+
+            result.qdrant_relevance_accepted = accepted
+
+            print(
+                "[UNCLEAR → QDRANT] "
+                f"top_dense_score={top_score} "
+                f"threshold={threshold} "
+                f"accepted={accepted}"
+            )
+
+            if accepted:
                 result.qdrant_evidence = legal_results_to_evidence(
                     qdrant_result
                 )
 
-            except Exception as error:
-                result.errors.append(
-                    f"Qdrant retrieval failed: {type(error).__name__}: {error}"
-                )
-    return result        
+        except Exception as error:
+            result.errors.append(
+                "Qdrant retrieval failed: "
+                f"{type(error).__name__}: {error}"
+            )
+
+    return result

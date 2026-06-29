@@ -1,17 +1,15 @@
 from __future__ import annotations
 
 import json
-import os
 import re
-import urllib.error
-import urllib.request
 from typing import Any
 
 from services.retrieval_plan import Route, RouterDecision
+from services.llm_provider import (
+    LLMProviderError,
+    generate_text,
+)
 
-
-DEFAULT_MODEL = "qwen2.5:3b"
-DEFAULT_OLLAMA_HOST = "http://localhost:11434"
 
 ALLOWED_ROUTES = {
     Route.POSTGRES.value,
@@ -21,13 +19,6 @@ ALLOWED_ROUTES = {
 }
 
 
-def _get_ollama_url() -> str:
-    host = os.getenv("OLLAMA_HOST", DEFAULT_OLLAMA_HOST).strip()
-
-    if not host.startswith(("http://", "https://")):
-        host = f"http://{host}"
-
-    return f"{host.rstrip('/')}/api/generate"
 
 
 def _extract_json(text: str) -> dict[str, Any]:
@@ -234,40 +225,20 @@ def classify_with_llm(
     It only classifies the route. It does not retrieve, answer,
     generate SQL, or modify any data.
     """
-    model = os.getenv("OLLAMA_MODEL", DEFAULT_MODEL).strip() or DEFAULT_MODEL
-
-    payload = {
-        "model": model,
-        "prompt": _build_prompt(query),
-        "stream": False,
-        "format": "json",
-        "options": {
-            "temperature": 0,
-            "num_predict": 120,
-        },
-    }
-
-    request = urllib.request.Request(
-        _get_ollama_url(),
-        data=json.dumps(payload).encode("utf-8"),
-        headers={"Content-Type": "application/json"},
-        method="POST",
-    )
-
     try:
-        with urllib.request.urlopen(
-            request,
-            timeout=timeout_seconds,
-        ) as response:
-            response_data = json.loads(
-                response.read().decode("utf-8")
-            )
+        raw_response = generate_text(
+            prompt=_build_prompt(query),
+            temperature=0.0,
+            max_tokens=120,
+            timeout_seconds=timeout_seconds,
+            json_mode=True,
+        )
 
-    except urllib.error.URLError as error:
+    except LLMProviderError as error:
         return RouterDecision(
             route=Route.UNCLEAR,
             confidence=0.0,
-            reason=f"Router B unavailable: {error.reason}",
+            reason=f"Router B unavailable: {error}",
             matched_signals=("llm_fallback_error",),
         )
 
@@ -279,8 +250,7 @@ def classify_with_llm(
             matched_signals=("llm_fallback_error",),
         )
 
-    parsed = _extract_json(response_data.get("response", ""))
-
+    parsed = _extract_json(raw_response)
     route_value = str(parsed.get("route", "")).upper().strip()
 
     if route_value not in ALLOWED_ROUTES:

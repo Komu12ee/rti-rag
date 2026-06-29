@@ -24,6 +24,17 @@ def _safe_text(value: Any, fallback: str = "Not listed") -> str:
     text = str(value or "").strip()
     return text if text else fallback
 
+def _safe_join(value: Any, fallback: str = "Not listed") -> str:
+    if isinstance(value, list):
+        joined = ", ".join(
+            str(item).strip()
+            for item in value
+            if str(item).strip()
+        )
+        return joined or fallback
+
+    return _safe_text(value, fallback)
+
 
 def _build_sources(
     result: UnifiedRetrievalResult,
@@ -66,13 +77,72 @@ def _clarification_answer(query: str) -> str:
         "appeal, time limit, exemption, or procedure."
     )
 
+def _suchna_aayog_not_found_answer(query: str) -> str:
+    if _contains_hindi(query):
+        return (
+            "मुझे उपलब्ध सूचना आयोग वेबसाइट की सामग्री में "
+            "इस प्रश्न की संबंधित जानकारी नहीं मिली।"
+        )
+
+    return (
+        "I could not find this information in the available "
+        "Suchna Aayog website material."
+    )
+def _ambiguous_officer_answer(
+    evidence: list[dict[str, Any]],
+    query: str,
+) -> str:
+    query_name = (
+        evidence[0]
+        .get("metadata", {})
+        .get("_name_query", "")
+    )
+
+    if _contains_hindi(query):
+        lines = [
+            f'"{query_name}" नाम से एक से अधिक अधिकारी मिलते हैं।',
+            "",
+            "सही अधिकारी चुनने के लिए जिला, विभाग, कार्यालय, office code या email दें.",
+            "",
+            "मिले हुए संभावित अधिकारी:",
+        ]
+    else:
+        lines = [
+            f'I found multiple officer records close to "{query_name}".',
+            "",
+            "Provide the district, department, office name, office code, or email.",
+            "",
+            "Possible matches:",
+        ]
+
+    for index, item in enumerate(evidence[:5], start=1):
+        row = item.get("metadata") or {}
+
+        lines.extend(
+            [
+                f"{index}. {_safe_text(row.get('officer_name'))}",
+                f"   Role: {_safe_text(row.get('rti_role'))}",
+                f"   Email: {_safe_text(row.get('email'))}",
+                f"   Districts: {_safe_join(row.get('district_names'))}",
+            ]
+        )
+
+    return "\n".join(lines)
+
 
 def _registry_only_answer(
     result: UnifiedRetrievalResult,
     query: str,
 ) -> str:
     evidence = result.postgres_evidence
+    if evidence:
+        first_metadata = evidence[0].get("metadata") or {}
 
+        if first_metadata.get("_lookup_ambiguous"):
+            return _ambiguous_officer_answer(
+                evidence=evidence,
+                query=query,
+            )
     if not evidence:
         if _contains_hindi(query):
             return (
@@ -88,6 +158,28 @@ def _registry_only_answer(
 
     mode = evidence[0].get("mode", "ASSIGNMENTS")
 
+    if mode == "PROFILE":
+        lines = ["CG RTI Officer Registry result:", ""]
+
+        for index, item in enumerate(evidence, start=1):
+            row = item.get("metadata") or {}
+
+            lines.extend(
+                [
+                    f"{index}. Officer: {_safe_text(row.get('officer_name'))}",
+                    f"   Role: {_safe_text(row.get('rti_role'))}",
+                    f"   Email: {_safe_text(row.get('email'))}",
+                    f"   Designation: {_safe_text(row.get('designation'))}",
+                    f"   Districts: {_safe_join(row.get('district_names'))}",
+                    f"   Departments: {_safe_join(row.get('department_names'))}",
+                    f"   Active portal assignments: "
+                    f"{row.get('assigned_office_count', 0)}",
+                    f"   Sample registered offices: "
+                    f"{_safe_join(row.get('sample_office_names'))}",
+                ]
+            )
+
+        return "\n".join(lines)
     if mode == "DIRECTORY":
         lines = ["CG RTI Officer Registry results:", ""]
 
@@ -259,9 +351,9 @@ def generate_unified_answer(
                 )
 
         return UnifiedAnswer(
-            answer=_clarification_answer(query),
+            answer=_suchna_aayog_not_found_answer(query),
             used_llm=False,
-            needs_clarification=True,
+            needs_clarification=False,
             sources=[],
         )
 

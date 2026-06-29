@@ -28,6 +28,9 @@ PROJECT_ROOT = SCRIPT_DIR.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 sys.path.insert(0, str(PROJECT_ROOT / '04_embeddings_and_kg' / 'scripts'))
 load_dotenv(SCRIPT_DIR / ".env")
+from services.hybrid_retriever import retrieve_from_all_sources
+from services.query_scope import extract_current_user_question
+from services.unified_answer_service import generate_unified_answer
 
 from services.hybrid_retriever import retrieve_from_all_sources
 from services.query_scope import extract_current_user_question
@@ -627,6 +630,10 @@ def query():
             "used_llm_fallback": retrieval.resolution.used_llm_fallback,
             "used_llm_answer": answer_result.used_llm,
             "needs_clarification": answer_result.needs_clarification,
+            "unclear_qdrant_fallback_used": retrieval.qdrant_fallback_used,
+            "qdrant_relevance_accepted": retrieval.qdrant_relevance_accepted,
+            "qdrant_top_dense_score": retrieval.qdrant_top_dense_score,
+            "qdrant_relevance_threshold": retrieval.qdrant_relevance_threshold,
         }
 
         if retrieval.errors:
