@@ -1,0 +1,16 @@
+# FAQ Chunk 155
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 26
+Section: Q75 (English). What is the purpose of the RTI Application Details step?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 48
+
+---
+
+## Q75 (English). What is the purpose of the RTI Application Details step?
+
+Answer. It records the RTI details, the offline application date and the information received entry before the user proceeds to First Appeal Office Details.

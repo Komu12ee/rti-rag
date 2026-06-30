@@ -1,0 +1,18 @@
+# FAQ Chunk 47
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 9
+Section: Q22 (English). What information is prefilled in applicant details during the second appeal process?
+Question: प्रश्न 22. (हिंदी)| द्वितीय अपील प्रक्रिया में Applicant Details में कौन-सी जानकारी पहले से आती है?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 89
+
+---
+
+## Q22 (English). What information is prefilled in applicant details during the second appeal process?
+
+प्रश्न 22. (हिंदी)| द्वितीय अपील प्रक्रिया में Applicant Details में कौन-सी जानकारी पहले से आती है?
+
+उत्तर मैनुअल के अनुसार पंजीकरण के समय दर्ज गए उपयोगकर्ता विवरण Applicant Details अनुभाग में स्वतः आ जाते हैंl Source: RTI User Manual, Manual p. 6 किए

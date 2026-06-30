@@ -1,0 +1,18 @@
+# FAQ Chunk 80
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 20
+Section: Question: What changes in the workflow if Complaint is selected?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 113
+
+---
+
+## Question: What changes in the workflow if Complaint is selected?
+
+Answer The manual expressly lists two conditions for Complaint: payment is not mandatory and Supporting Documents are optional. Other stages such as entering application information and proceeding through the workflow are still shown in the manual. Follow the live form's mandatory field indicators for the selected route.
+
+Similar English questions: "Please explain: What changes in the workflow if Complaint is selected"; "How is this handled on the RTI portal?"

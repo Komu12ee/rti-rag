@@ -1,0 +1,16 @@
+# FAQ Chunk 83
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 9
+Section: Q45. What is the Certificate of Transfer of Charge?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 66
+
+---
+
+## Q45. What is the Certificate of Transfer of Charge?
+
+Answer: It is the portal generated certificate shown after the upload stage. The certificate records that the listed charge has been handed over and taken over, along with the office name, charge type, charge given date and both officers' details signatures.

@@ -1,0 +1,27 @@
+# FAQ Chunk 65
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 10-11
+Section: प्रश्नः द्वितीय अपील विवरण अनुभाग में कौन॰कौन से विवरण दर्ज जाते हैं? किए
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 147
+
+---
+
+## प्रश्नः द्वितीय अपील विवरण अनुभाग में कौन॰कौन से विवरण दर्ज जाते हैं? किए
+
+उत्तरः द्वितीय अपील संबंध में Appeal या Complaint चुनें उपलब्ध कारण प्रकार चुनें, अपील का कारण शब्दों में दर्ज करें और बीपीएल कार्डधारक स्थिति के Yes या No चुनें | लिए
+
+Sourceः RTI User Manual, Printed page 6.
+
+
+
+
+प्रश्नः द्वितीय अपील के संबंध और कारण से संबंधित कौन सी जानकारी आवश्यक है? लिए
+
+उत्तरः द्वितीय अपील संबंध में Appeal या Complaint चुनें उपलब्ध कारण प्रकार चुनें अपील का कारण शब्दों में दर्ज करें और बीपीएल कार्डधारक स्थिति के Yes या No चुनें | लिए
+
+Source: RTI User Manual, Printed page 6.

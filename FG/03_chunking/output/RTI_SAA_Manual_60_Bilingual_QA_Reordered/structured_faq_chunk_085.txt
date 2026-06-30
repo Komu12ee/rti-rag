@@ -1,0 +1,24 @@
+# FAQ Chunk 85
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 21-22
+Section: Question: Is BPL status the same as simply not paying an RTI fee?
+Question: प्रश्न 39. - हिंदी प्रश्नोत्तर
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 164
+
+---
+
+## Question: Is BPL status the same as simply not paying an RTI fee?
+
+प्रश्न 39. - हिंदी प्रश्नोत्तर
+
+प्रश्नः क्या BPL स्थिति का अर्थ केवल RTI शुल्क न देना है?
+
+उत्तरः मैनुअल दोनों बातों को अलग दिखाता हैI निर्देश पेज कहता है कि संदर्भित नियमों के अनुसार गरीबी रेखा से नीचे के नागरिक से RTI शुल्क आवश्यक नहीं है, लेकिन उपयुक्त सरकारी प्राधिकारी का प्रमाणपत्र संलग्न करना होता है| अलग से BPL स्क्रीन में Yes के बाद BPL दस्तावेज विवरण भी भरना आवश्यक है| चुनने
+
+समान हिंदी प्रश्नः "कृपया समझाएंःक्या BPL स्थिति का अर्थ केवल RTI शुल्क न देना है "आरटीआई पोर्टल पर यह प्रक्रिया कैसे होती है?"
+
+Manual reference संदर्भः Manual pp. 6-7 मैनुअल

@@ -1,0 +1,19 @@
+# FAQ Chunk 66
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 12
+Section: Untitled section
+Question: Q063. Do I need to select a specific bank?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 65
+
+---
+
+## Untitled section
+
+Q063. Do I need to select a specific bank?
+
+Yes. The e-Challan instructions specifically say to select the bank name, highlighted in the screenshot as Bank
+Gateway, before selecting Submit to finalize payment.

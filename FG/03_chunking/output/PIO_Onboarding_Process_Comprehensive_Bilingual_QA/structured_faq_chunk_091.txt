@@ -1,0 +1,16 @@
+# FAQ Chunk 91
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 7
+Section: Q47 (English ). What is the approval order after PIO submits the onboarding application ?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 75
+
+---
+
+## Q47 (English ). What is the approval order after PIO submits the onboarding application ?
+
+Answer. First, the Nodal  Approval Authority approves or rejects the pending PIO application. Then the First Appellate Officer approves or rejects the application that has been approved by the Nodal Approval Authority

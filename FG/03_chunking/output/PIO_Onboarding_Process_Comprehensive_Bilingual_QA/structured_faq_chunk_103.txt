@@ -1,0 +1,16 @@
+# FAQ Chunk 103
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 8-9
+Section: Q53 (English ). What is the difference between PIO order file and signed application file?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 72
+
+---
+
+## Q53 (English ). What is the difference between PIO order file and signed application file?
+
+Answer. The PIO order file is the PIO appointment order. The signed application file is the printed application signed by the PIO, Nodal Approval Authority and First Appellate Officer, then scanned and uploaded as PDF.

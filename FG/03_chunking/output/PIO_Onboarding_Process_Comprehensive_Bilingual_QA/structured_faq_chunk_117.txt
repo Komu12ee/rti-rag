@@ -1,0 +1,16 @@
+# FAQ Chunk 117
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 10
+Section: Q60 (English ). What should a chatbot answer when asked for the PIO onboarding steps?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 67
+
+---
+
+## Q60 (English ). What should a chatbot answer when asked for the PIO onboarding steps?
+
+Answer. It should return the seven step sequence: PIO details, approval details, FAO details, review, upload order file, print application, upload signed file, and submit for onboarding

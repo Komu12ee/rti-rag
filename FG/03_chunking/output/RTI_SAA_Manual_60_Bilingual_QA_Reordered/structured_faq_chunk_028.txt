@@ -1,0 +1,18 @@
+# FAQ Chunk 28
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 8
+Section: Question: Can I use a different email for login after registration?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 101
+
+---
+
+## Question: Can I use a different email for login after registration?
+
+Answer: The manual instructs the user to use the registered email address as the Login ID during password verification. It does not describe a separate username or a way to substitute a different email. Use the same valid, active email that was supplied during registration.
+
+Similar English questions: "Please explain: Can I use a different email for login after registration' "How is this handled on the RTI portal?"

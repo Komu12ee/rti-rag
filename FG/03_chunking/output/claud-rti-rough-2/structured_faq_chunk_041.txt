@@ -1,0 +1,19 @@
+# FAQ Chunk 41
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 7
+Section: 4 Format:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 37
+
+---
+
+## 4 Format:
+
+- Written application to Appellate Officer
+- Should reference original RTI application number
+- State specific grounds for appeal
+- Enclose copy of PIO's decision

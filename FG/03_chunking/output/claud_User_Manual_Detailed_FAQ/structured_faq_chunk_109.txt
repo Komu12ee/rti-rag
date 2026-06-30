@@ -1,0 +1,20 @@
+# FAQ Chunk 109
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 18
+Section: Untitled section
+Question: Q106. How long does the government have to respond to a Second Appeal?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 67
+
+---
+
+## Untitled section
+
+Q106. How long does the government have to respond to a Second Appeal?
+
+Response time is not specified.
+The manual does not state any statutory or administrative response time, hearing timetable, or service-level
+target for a Second Appeal.

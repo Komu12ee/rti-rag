@@ -1,0 +1,24 @@
+# FAQ Chunk 84
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 14-15
+Section: Untitled section
+Question: Q081. What error messages might appear during registration?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 137
+
+---
+
+## Untitled section
+
+Q081. What error messages might appear during registration?
+
+Error-message catalogue is not specified.
+The manual shows a successful registration confirmation but does not catalog validation or error messages. It
+identifies requirements such as valid active email, mandatory starred fields, and the password rule; exact
+wording of any portal error messages is not available in the manual.
+
+<!-- extraction_method: direct_text | confidence: 0.75 -->
+Data & Validation

@@ -1,0 +1,18 @@
+# FAQ Chunk 48
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 8
+Section: Question: What should 1 do if my application text is longer than the portal limit?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 72
+
+---
+
+## Question: What should 1 do if my application text is longer than the portal limit?
+
+Answer: The manual states that text entered in the prescribed application column is limited to 500 characters. If the application is longer than 500 characters add the remaining material as a supporting document.
+
+Source: RTI User Manual, Printed page 6.

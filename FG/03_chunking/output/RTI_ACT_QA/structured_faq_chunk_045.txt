@@ -1,0 +1,20 @@
+# FAQ Chunk 45
+Document: RTI_ACT_QA
+Source: structured.md
+Pages: 18
+Section: विशेष प्रावधानः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 61
+
+---
+
+## विशेष प्रावधानः
+
+- जीवन स्वतंत्रता के मामलों को तेजी से प्रसंस्करण मिलता है
+- दोनों स्तर प्राकृतिक न्याय का पालन करते हैं
+- विस्तृत लिखित आदेश कारणों के साथ अनिवार्य
+
+Source reference: RTI Rule Book, pp. 76-96 ( Appeals Rules 2006 and amendments)

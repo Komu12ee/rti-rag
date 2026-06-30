@@ -1,0 +1,19 @@
+# FAQ Chunk 35
+Document: claud-rti-rough
+Source: structured.md
+Pages: 16
+Section: (2) Tenure ( Amended 2019):
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 63
+
+---
+
+## (2) Tenure ( Amended 2019):
+
+- Previously: Five years from date of entering office
+- Now: Such term as may be prescribed by Central Government
+- This provides flexibility for the government to determine terms
+- (3) Salary and Conditions: As per rules prescribed by Central Government

@@ -1,0 +1,20 @@
+# FAQ Chunk 43
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 9
+Section: Q20 (English). Who can use the web portal according to the manual?
+Question: प्रश्न 20. (हिंदी)| मैनुअल के अनुसार वेब पोर्टल का उपयोग कौन कर सकता है?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 96
+
+---
+
+## Q20 (English). Who can use the web portal according to the manual?
+
+प्रश्न 20. (हिंदी)| मैनुअल के अनुसार वेब पोर्टल का उपयोग कौन कर सकता है?
+
+उत्तर मैनुअल में दिखाए निर्देशों के अनुसार भारतीय नागरिक वेब पोर्टल से ऑनलाइन आरटीआई आवेदन कर सकते हैं और ऑनलाइन भुगतान कर सकते हैं इसमें यह भी बताया गया है कि प्रथम अपील ऑनलाइन दायर की जा सकती है|
+
+Sourceः RTI User Manual, Manual p 5

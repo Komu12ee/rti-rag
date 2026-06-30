@@ -1,0 +1,16 @@
+# FAQ Chunk 92
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 10
+Section: Q50. What is the name change workflow?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 51
+
+---
+
+## Q50. What is the name change workflow?
+
+Answer: The name change workflow is for assigning the existing portal email ID to another person while retaining that same email account. It is used instead of the different email charge transfer path.

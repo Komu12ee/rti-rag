@@ -1,0 +1,16 @@
+# FAQ Chunk 26
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 3
+Section: Q13. What appears after opening Give Charge "?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 49
+
+---
+
+## Q13. What appears after opening Give Charge "?
+
+Answer: The portal displays a list of charges available for transfer. The user is expected to select the relevant charge or charges and then fill in the required details for the receiving officer.

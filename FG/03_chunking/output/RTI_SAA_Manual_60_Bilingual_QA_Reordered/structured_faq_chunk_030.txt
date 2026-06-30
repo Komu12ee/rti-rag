@@ -1,0 +1,18 @@
+# FAQ Chunk 30
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 8
+Section: Question: What should I verify on the Preview page before clicking Submit?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 123
+
+---
+
+## Question: What should I verify on the Preview page before clicking Submit?
+
+Answer: The manual says to check the entered details on Preview before submission. In practice, review the information displayed from the registration form, including contact information and address fields, and use Edit if any value needs correction. The manual does not list a separate validation checklist beyond reviewing the entered information.
+
+Similar English questions: "Please explain: What should I verify on the Preview page before clicking Submit"; "How is this handled on the RTI portal?"

@@ -1,0 +1,20 @@
+# FAQ Chunk 113
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 18
+Section: Untitled section
+Question: Q110. How do I track my application status?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 94
+
+---
+
+## Untitled section
+
+Q110. How do I track my application status?
+
+The Applicant Dashboard shows count tiles for Total, Pending, First Hearing, Next Hearing, and Ordered. The
+manual does not provide step-by-step instructions for opening an individual application, filtering results, or
+interpreting each status beyond the labels shown.

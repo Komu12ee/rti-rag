@@ -1,0 +1,20 @@
+# FAQ Chunk 57
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 10
+Section: Q27 (English). What registration number should 1 use when making a first appeal?
+Question: प्रश्न 27. (हिंदी) प्रथम अपील करते समय कौन-सा पंजीकरण नंबर उपयोग करना चाहिए?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 75
+
+---
+
+## Q27 (English). What registration number should 1 use when making a first appeal?
+
+प्रश्न 27. (हिंदी) प्रथम अपील करते समय कौन-सा पंजीकरण नंबर उपयोग करना चाहिए?
+
+उत्तर| निर्देशों के अनुसार प्रथम अपील करते समय मूल आवेदन का पंजीकरण नंबर संदर्भ के लिए उपयोग किया जाना चाहिए|
+
+Source: RTI User Manual, Manual p. 6

@@ -1,0 +1,16 @@
+# FAQ Chunk 24
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 3
+Section: Q12. When should I select the "different email ID" option ?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 55
+
+---
+
+## Q12. When should I select the "different email ID" option ?
+
+Answer: Select this option when the charge must be handed to another person who has a different email ID from the present officer. This is the normal role transfer for a distinct portal user. path

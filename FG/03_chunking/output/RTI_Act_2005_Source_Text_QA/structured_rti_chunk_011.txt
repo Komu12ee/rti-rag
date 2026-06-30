@@ -1,0 +1,30 @@
+# RTI Legal Chunk 11
+Document: RTI_Act_2005_Source_Text_QA
+Input source: structured.md
+Input pages: 6
+Chapter: Chapter I - Preliminary
+Question: Q. What is the source text for the definition of “record”?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 110
+Original source book: Unknown
+Source type: general
+Legal reference: Unknown
+Book pages: 3-6
+Source PDF pages: Unknown
+Citation: Unknown
+
+---
+
+## Chapter I - Preliminary
+
+Q. What is the source text for the definition of “record”?
+
+Answer - source text
+(i) “record” includes -
+(a) any document, manuscript and file;
+(b) any microfilm, microfiche and facsimile copy of a document;
+(c) any reproduction of image or images embodied in such microfilm (whether enlarged or not); and
+(d) any other material produced by a computer or any other device;
+—

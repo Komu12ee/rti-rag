@@ -1,0 +1,18 @@
+# FAQ Chunk 91
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 15
+Section: (6) Examples of Reviewable Orders:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 48
+
+---
+
+## (6) Examples of Reviewable Orders:
+
+- Commission denies information alleging exemption without proper reasoning
+- Commission passes order affecting rights without hearing
+- Commission exceeds jurisdiction by examining non RTI matters

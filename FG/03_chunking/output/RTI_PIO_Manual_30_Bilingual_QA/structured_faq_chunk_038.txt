@@ -1,0 +1,16 @@
+# FAQ Chunk 38
+Document: RTI_PIO_Manual_30_Bilingual_QA
+Source: structured.md
+Pages: 7
+Section: Question (English): What happens if I select Complaint in the Second Appeal Relation?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 95
+
+---
+
+## Question (English): What happens if I select Complaint in the Second Appeal Relation?
+
+Answer (English): The manual gives two explicit conditions for Complaint applications payment is not mandatory, and supporting documents are optional. This means the document upload and payment parts should be understood in light of the Complaint selection. The manual does not state that every other field can be skipped; the user should still complete the information requested by the application workflow.

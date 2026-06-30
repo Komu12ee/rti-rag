@@ -1,0 +1,16 @@
+# FAQ Chunk 107
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 9
+Section: Q55 (English ). At what point is the application printed?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 42
+
+---
+
+## Q55 (English ). At what point is the application printed?
+
+Answer. Printing is step 6 of the onboarding process, after order file upload and before uploading the signed file.

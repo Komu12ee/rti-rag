@@ -1,0 +1,16 @@
+# FAQ Chunk 62
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 5
+Section: Q32 (English). Is preview available before submission ?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 35
+
+---
+
+## Q32 (English). Is preview available before submission ?
+
+Answer. Yes. After all information is filled, the application preview can be seen before submission.

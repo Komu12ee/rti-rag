@@ -1,0 +1,16 @@
+# FAQ Chunk 50
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 6
+Section: Q25. What is the purpose of the Proceed button ?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 46
+
+---
+
+## Q25. What is the purpose of the Proceed button ?
+
+Answer: The Proceed button opens the selected pending transfer request so the receiving officer can review the details and choose the relevant charge options for approval.

@@ -1,0 +1,20 @@
+# FAQ Chunk 80
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 9
+Section: Q43. What is the maximum file size shown for the upload?
+Question: प्रश्न 43. अपलोड के अधिकतम फाइल आकार कितना दिखाया गया है? लिए
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 58
+
+---
+
+## Q43. What is the maximum file size shown for the upload?
+
+प्रश्न 43. अपलोड के अधिकतम फाइल आकार कितना दिखाया गया है? लिए
+
+Source reference : Manual pp . 7 8
+
+उत्तरः की अपलोड स्क्रीन पर अधिकतम फाइल आकार 20 MB बताया गया हैl मैनुअल

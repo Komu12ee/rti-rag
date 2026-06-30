@@ -1,0 +1,16 @@
+# FAQ Chunk 23
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 2
+Section: Q12 (English). What is the login ID for the PIO?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 33
+
+---
+
+## Q12 (English). What is the login ID for the PIO?
+
+Answer The login ID is the e-mail ID entered during PIO registration.

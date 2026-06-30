@@ -1,0 +1,22 @@
+# FAQ Chunk 42
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 7-8
+Section: (5) Decision Timeline [Section 19(3) ]:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 43
+
+---
+
+## (5) Decision Timeline [Section 19(3) ]:
+
+- Appellate Officer must decide within 3O 45 days of receipt
+- Must pass written order with reasons
+
+
+
+
+- Communicate decision to applicant

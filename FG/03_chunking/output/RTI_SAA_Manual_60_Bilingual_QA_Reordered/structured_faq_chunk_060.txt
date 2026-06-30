@@ -1,0 +1,18 @@
+# FAQ Chunk 60
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 16
+Section: Question: How is the registration number used after an application is submitted?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 103
+
+---
+
+## Question: How is the registration number used after an application is submitted?
+
+Answerः The manual says that a unique registration number is issued when an application is submitted and may be used for future reference. It also states that the registration number of the original application must be used for reference in the appeal process. Keep this number available before starting related appeal steps
+
+Similar English questions: "Please explain: How is the registration number used after an application is submitted"; "How is this handled on the RTI portal?"

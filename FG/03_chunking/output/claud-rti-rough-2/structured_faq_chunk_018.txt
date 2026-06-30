@@ -1,0 +1,18 @@
+# FAQ Chunk 18
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 3-4
+Section: (3) जांच की शक्तियांः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 43
+
+---
+
+## (3) जांच की शक्तियांः
+
+- RTI अधिनियम से संबंधित किसी भी मामले की जांच करें
+- व्यक्तियों को बुलाएं, रिकॉर्ड मांगें , जानकारी के लिए कॉल करें
+- नागरिक अदालत की शक्तियां हों

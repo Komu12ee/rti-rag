@@ -1,0 +1,17 @@
+# FAQ Chunk 38
+Document: claud-rti-rough
+Source: structured.md
+Pages: 16
+Section: (1) नियुक्ति के लिए योग्यताः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 41
+
+---
+
+## (1) नियुक्ति के लिए योग्यताः
+
+- मुख्य सूचना आयुक्त को भारत सरकार के सचिव के पद या समकक्ष पद पर रहे व्यक्ति होना चाहिए
+- सूचना आयुक्तों को डोमेन विशेषज्ञता वाले व्यक्ति होने चाहिए

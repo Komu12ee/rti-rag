@@ -1,0 +1,20 @@
+# FAQ Chunk 87
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 14
+Section: Q42 (English). What information is entered in the RTI Application Details step?
+Question: प्रश्न 42. (हिंदी) RTI Application Details चरण में कौन-सी जानकारी दर्ज की जाती है?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 88
+
+---
+
+## Q42 (English). What information is entered in the RTI Application Details step?
+
+प्रश्न 42. (हिंदी) RTI Application Details चरण में कौन-सी जानकारी दर्ज की जाती है?
+
+उत्तर में दिखाए गए फॉर्म के अनुसार आरटीआई विवरण, ऑफलाइन आवेदन की तिथि और सूचना प्राप्त होने से संबंधित स्थिति विवरण दर्ज जाते हैं| मैनुअल किए
+
+Source: RTI User Manual, Manual p. 8.

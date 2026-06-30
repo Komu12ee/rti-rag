@@ -1,0 +1,17 @@
+# FAQ Chunk 20
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 4
+Section: (5) सार्वजनिक हित अधिकार क्षेत्रः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 33
+
+---
+
+## (5) सार्वजनिक हित अधिकार क्षेत्रः
+
+- सार्वजनिक हित में मामलों का अपने आप ज्ञान ले सकते हैं
+- मीडिया रिपोर्ट या सार्वजनिक ज्ञान के आधार पर जांच शुरू कर सकते हैं

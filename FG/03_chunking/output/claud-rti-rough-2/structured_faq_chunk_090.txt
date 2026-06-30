@@ -1,0 +1,18 @@
+# FAQ Chunk 90
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 14-15
+Section: (5) High Court Observations on RTI:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 133
+
+---
+
+## (5) High Court Observations on RTI:
+
+- RTI Act Provisions from Section 2 & 3ः Hon'ble High Court ( Bombay at Goa) decision in WP 4l9 2007 ( Dr Celsa Pinto vs. Goa State Information Commission )
+- RTI Act Sections 2, 3ः Hon'ble Supreme Court observations in C.A. No. 6454 of 2011 (Central Board of Secondary Education vs. Aditya Bandopadhyay) See RTI Rule Book pages 157 161
+- Key principle: Personal information disclosure permissible when public interest in disclosure outweighs privacy concerns

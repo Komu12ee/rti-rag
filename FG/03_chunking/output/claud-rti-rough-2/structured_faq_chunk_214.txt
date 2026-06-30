@@ -1,0 +1,20 @@
+# FAQ Chunk 214
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 35
+Section: (7) नियम बनाने की बाध्यताः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 44
+
+---
+
+## (7) नियम बनाने की बाध्यताः
+
+- अधिनियम प्रावधानों का विरोध नहीं कर सकते
+- उचित होना चाहिए
+- नई छूटें नहीं बना सकते
+- निर्धारित सीमा से अधिक शुल्क नहीं बढ़ा सकते
+- न्यायिक समीक्षा के अधीन

@@ -1,0 +1,16 @@
+# FAQ Chunk 126
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 13
+Section: Q69. Does the manual define Transfer ID?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 60
+
+---
+
+## Q69. Does the manual define Transfer ID?
+
+Answer: A Transfer ID column is visible in the request list screenshots, indicating that it is an identifier for a transfer record. The manual does not separately define its format, generation rule or use beyond list display.

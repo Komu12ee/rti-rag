@@ -1,0 +1,20 @@
+# FAQ Chunk 39
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 8
+Section: Q18 (English). Where can [ find the second appeal option after logging in?
+Question: प्रश्न 18. (हिंदी)| लॉगनइन के बाद द्वितीय अपील का विकल्प कहाँ मिलेगा?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 98
+
+---
+
+## Q18 (English). Where can [ find the second appeal option after logging in?
+
+प्रश्न 18. (हिंदी)| लॉगनइन के बाद द्वितीय अपील का विकल्प कहाँ मिलेगा?
+
+उत्तर| मैनुअल में यह विकल्प उपयोगकर्ता डैशबोर्ड पर PIO और FAO के समक्ष ऑफलाइन आवेदनों वाले भाग में दिखाया गया हैl द्वितीय अपील के लिए दिए गए बटन को चुनें|
+
+Sourceः RTI User Manual, Manual p. 5.

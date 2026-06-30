@@ -1,0 +1,16 @@
+# FAQ Chunk 115
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 12
+Section: Q63. Does the manual state the allowed format and maximum size specifically for the name change order file ?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 64
+
+---
+
+## Q63. Does the manual state the allowed format and maximum size specifically for the name change order file ?
+
+Answer: The manual specifically shows the 20 MB PDFIJPEG/JPG rule on the relieving file upload screen. It does not separately state a different file rule for the name change order upload.

@@ -1,0 +1,18 @@
+# FAQ Chunk 92
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 24
+Section: Question: What details are entered in the First Appeal Application stage?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 114
+
+---
+
+## Question: What details are entered in the First Appeal Application stage?
+
+Answerः Select a suitable First Appeal Reason Type from the dropdown list. Enter the First Appeal details, provide the date of the offline First Appeal application, and select the application status from the available dropdown. When the required information has been entered, click Save & Next to proceed to the documents stage.
+
+Similar English questions: "Please explain: What details are entered in the First Appeal Application stage' "How is this handled on the RTI portal?"

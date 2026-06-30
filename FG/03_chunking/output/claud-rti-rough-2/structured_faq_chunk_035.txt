@@ -1,0 +1,17 @@
+# FAQ Chunk 35
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 6
+Section: (5) निर्णय की अवधिः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 32
+
+---
+
+## (5) निर्णय की अवधिः
+
+- आयोग को अपील की प्राप्ति के 90 दिनों के भीतर आदेश पास करना चाहिए
+- उचित कारणों से विस्तारित किया जा सकता है

@@ -1,0 +1,26 @@
+# FAQ Chunk 60
+Document: RTI_ACT_QA
+Source: structured.md
+Pages: 23
+Section: SECTION 27: AMENDMENTS
+Question: Q27. Can the RTI Act be amended and what amendments have been made so far?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 156
+
+---
+
+## SECTION 27: AMENDMENTS
+
+Q27. Can the RTI Act be amended and what amendments have been made so far?
+
+Answer: Section 27 confirms that Parliament can amend any provision of the RTI Act through its normal legislative process. Amendments made so farः
+
+- RTI (Amendment) Act, 2019 ( Gazette dated 29 October 2019 )
+- Changed tenure of CICISIC from fixed 5 years to "such term as may be prescribed"
+- Made tenure flexible rather than statutory
+- Some procedural amendments
+- Fees revised through rules ( multiple amendments 2005-2013)
+
+The 2019 Amendment represented the most significant change since original enactment.

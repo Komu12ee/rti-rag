@@ -1,0 +1,16 @@
+# FAQ Chunk 58
+Document: cg_sic_contact_bilingual_all_questions_qna
+Source: structured.md
+Pages: 7
+Section: हिंदी प्रश्नोत्तर
+Question: प्रश्न 52. सचिवालय के कौन सा पिन कोड सूचीबद्ध है? उत्तरः सूचीबद्ध पिन कोड 492002 है| लिए
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 30
+
+---
+
+## हिंदी प्रश्नोत्तर
+
+प्रश्न 52. सचिवालय के कौन सा पिन कोड सूचीबद्ध है? उत्तरः सूचीबद्ध पिन कोड 492002 है| लिए

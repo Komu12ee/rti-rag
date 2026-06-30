@@ -1,0 +1,17 @@
+# FAQ Chunk 62
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 10
+Section: (2) आधारः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 23
+
+---
+
+## (2) आधारः
+
+- प्रथम अपील के निर्णय से असंतुष्ट
+- प्रक्रिया और पदार्थ दोनों को चुनौती दे सकते हैं

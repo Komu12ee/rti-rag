@@ -1,0 +1,16 @@
+# FAQ Chunk 21
+Document: RTI_PIO_Manual_30_Bilingual_QA
+Source: structured.md
+Pages: 4
+Section: Question (English): How do 1 start a Second Appeal application on the portal?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 86
+
+---
+
+## Question (English): How do 1 start a Second Appeal application on the portal?
+
+Answer (English): Log in with the registered login credentials. On the user dashboard, locate the section for offline applications before the PIO and First Appellate Officer. Select the button labelled Apply Second Appeal for offline applications. The portal then opens the application registration workflow, beginning with RTI instructions.

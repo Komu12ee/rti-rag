@@ -1,0 +1,25 @@
+# FAQ Chunk 28
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 6-7
+Section: Untitled section
+Question: Q025. What is a BPL card and why is it asked in the form?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 172
+
+---
+
+## Untitled section
+
+Q025. What is a BPL card and why is it asked in the form?
+
+The manual does not define BPL eligibility.
+The manual uses BPL to mean the applicant is below the poverty line and asks the applicant to select Yes or No.
+It is requested because the manual links BPL status to the stated RTI fee exemption and requires supporting
+Source-bounded guide based only on rtiUserManual.pdf | Page 6
+
+<!-- extraction_method: direct_text | confidence: 0.75 -->
+certificate information when Yes is selected. The manual does not define BPL eligibility or explain how the card
+is issued.

@@ -1,0 +1,19 @@
+# FAQ Chunk 210
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 35
+Section: (3) नियमों के प्रकारः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 55
+
+---
+
+## (3) नियमों के प्रकारः
+
+- शुल्क और प्रभार नियमः आवेदन शुल्क , प्रति प्रभार
+- प्रक्रियात्मक नियमः अपील प्रक्रियाएं, नोटिस आवश्यकताएं
+- प्रशासनिक नियमः अधिकारी पदनाम, रिकॉर्ड रखरखाव
+- परिचालन नियमः कार्यान्वयन दिशानिर्देश

@@ -1,0 +1,18 @@
+# FAQ Chunk 48
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 13
+Section: Question: What fields should 1 complete in the Second Appeal Details section?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 130
+
+---
+
+## Question: What fields should 1 complete in the Second Appeal Details section?
+
+Answer: Complete the Second Appeal Relation field by choosing Appeal or Complaint. Select the Second Appeal Reason Type from the available choices, enter the Second Appeal Reason in words, and select Yes or No for the BPLcard holder question. These fields establish the nature of the application and determine whether BPLdocument information must be entered in the next part of the form.
+
+Similar English questions: "Please explain: What fields should 1 complete in the Second Appeal Details section "How is this handled on the RTI portal?"

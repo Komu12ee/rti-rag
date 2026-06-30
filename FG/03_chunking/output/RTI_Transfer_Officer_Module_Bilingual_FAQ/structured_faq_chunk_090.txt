@@ -1,0 +1,16 @@
+# FAQ Chunk 90
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 10
+Section: Q49. Does the manual explain the purpose of the Skip button visible in the upload screen ?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 50
+
+---
+
+## Q49. Does the manual explain the purpose of the Skip button visible in the upload screen ?
+
+Answer: No. A Skip button is visible in the screenshot but the written instructions do not explain when it should be used or what effect it has.

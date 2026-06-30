@@ -1,0 +1,20 @@
+# FAQ Chunk 71
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 12
+Section: Q34 (English). Is payment mandatory for a complaint application?
+Question: प्रश्न 34. (हिंदी) [ क्या Complaint आवेदन के भुगतान अनिवार्य है? लिए
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 72
+
+---
+
+## Q34 (English). Is payment mandatory for a complaint application?
+
+प्रश्न 34. (हिंदी) [ क्या Complaint आवेदन के भुगतान अनिवार्य है? लिए
+
+उत्तर| नहीं[ में स्पष्ट कहा गया है कि Second Appeal Relation में Complaint पर भुगतान अनिवार्य नहीं हैl मैनुअल चुनने
+
+Source: RTI User Manual, Manual p. 7

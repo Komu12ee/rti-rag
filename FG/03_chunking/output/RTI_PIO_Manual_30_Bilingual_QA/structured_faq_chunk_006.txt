@@ -1,0 +1,20 @@
+# FAQ Chunk 6
+Document: RTI_PIO_Manual_30_Bilingual_QA
+Source: structured.md
+Pages: 2-3
+Section: प्रश्न (हिंदी): आरटीआई पोर्टल पर उपयोगकर्ता पंजीयन कैसे शुरू करें?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 134
+
+---
+
+## प्रश्न (हिंदी): आरटीआई पोर्टल पर उपयोगकर्ता पंजीयन कैसे शुरू करें?
+
+उत्तर (हिंदी): आरटीआई पोर्टल के मुख्य पृष्ठ पर जाकर User Registration विकल्प चुनें | पोर्टल पंजीयन से संबंधित सामान्य जानकारी दिखाएगा| निर्देशों को पढ़़ें, यह पुष्टि करने वाले चेकबॉक्स पर टिक करें कि आपने निर्देश ध्यान से पढ लिए हैं, और Next पर क्लिक करें| इसके बाद पंजीयन फॉर्म खुलता है, जिसमें मांगी गई उपयोगकर्ता जानकारी भरी जा सकती है|
+
+Source referenceः Manual p. 2
+
+Question (English): What information is requested in the user registration form?

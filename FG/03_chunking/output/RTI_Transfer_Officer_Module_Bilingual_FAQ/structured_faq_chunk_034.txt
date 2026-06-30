@@ -1,0 +1,16 @@
+# FAQ Chunk 34
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 4
+Section: Q17. What should I do after entering the officer details?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 43
+
+---
+
+## Q17. What should I do after entering the officer details?
+
+Answer: After selecting the charge and entering the receiving officer details, click the Submit button to create the role allocation request.

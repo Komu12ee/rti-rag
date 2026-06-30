@@ -1,0 +1,20 @@
+# FAQ Chunk 97
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 16
+Section: Untitled section
+Question: Q094. What happens after successful payment?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 94
+
+---
+
+## Untitled section
+
+Q094. What happens after successful payment?
+
+The manual shows an e-Challan transaction-success screen containing reference numbers, transaction date and
+time, amount, bank name, status, and a Print Receipt option. It does not describe a further portal
+acknowledgment, application-status change, or email notice after that payment screen.

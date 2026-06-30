@@ -1,0 +1,55 @@
+# RTI Legal Chunk 82
+Document: RTI_Act_2005_Source_Text_QA
+Input source: structured.md
+Input pages: 40-42
+Chapter: Chapter VI - Miscellaneous
+Question: Q. What is the source text of the Second Schedule?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 370
+Original source book: Unknown
+Source type: general
+Legal reference: Unknown
+Book pages: 47-48
+Source PDF pages: Unknown
+Citation: Unknown
+
+---
+
+## Chapter VI - Miscellaneous
+
+Q. What is the source text of the Second Schedule?
+
+Answer - source text
+THE SECOND SCHEDULE (See section 24)
+I n t e l l i g e n c e a n d s e c u r i t y
+organisation established by the Central
+Government
+1. Intelligence Bureau.
+2. Research and Analysis Wing of the Cabinet Secretariat.
+3. Directorate of Revenue Intelligence.
+4. Central Economic Intelligence Bureau.
+5. Directorate of Enforcement.
+6. Narcotics Control Bureau.
+7. Aviation Research Centre.
+8. Special Frontier Force.
+9. Border Security Force.
+10. Central Reserve Police Force.
+11. Indo-Tibetan Border Police.
+12. Central Industrial Security Force.
+13. National Security Guards.
+14. Assam Rifles.
+15. Special Service Bureau.
+16. Special Branch (CID), Andaman and Nicobar.
+Compiled from the uploaded RTI rule book - Part 1 statutory text only
+
+- 17. The Crime BranchC.I.D. , CB, Dadra and Nagar Haveli.
+- 18. Special Branch, Lakshadweep Police. T. K. Viswanathan Secretory, Govt. of India
+
+SOURCE-TEXT Q&A | THE RIGHT TO INFORMATION ACT, 2005
+Use Note
+This compilation is a source-text reorganization, not a legal opinion. It preserves the structure of the supplied Part 1
+text as questions and answers, including all numbered sections, the definition clauses in Section 2 and both schedules.
+For rules, directions, notifications and court decisions appearing in later parts of the book, refer to the relevant source-
+Compiled from the uploaded RTI rule book - Part 1 statutory text only

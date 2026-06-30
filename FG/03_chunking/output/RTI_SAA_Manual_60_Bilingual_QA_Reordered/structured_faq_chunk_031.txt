@@ -1,0 +1,24 @@
+# FAQ Chunk 31
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 8-9
+Section: Question: What should I verify on the Preview page before clicking Submit?
+Question: प्रश्न 14. - हिंदी प्रश्नोत्तर
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 157
+
+---
+
+## Question: What should I verify on the Preview page before clicking Submit?
+
+प्रश्न 14. - हिंदी प्रश्नोत्तर
+
+प्रश्नः Submit दबाने से पहले Preview पेज पर क्या जांचना चाहिए?
+
+उत्तरः Preview पर दर्ज विवरण जांचने के कहता है| व्यवहार में पंजीयन फॉर्म से दिखाई गई जानकारी, जैसे संपर्क जानकारी और पता, जांचें और किसी विवरण में सुधार तो Edit का उपयोग करें| मैनुअल समीक्षा के अलावा अलग सत्यापन सूची नहीं देता| मैनुअल लिए चाहिए
+
+समान हिंदी प्रश्नः "कृपया समझाएं : Submit दबाने से पहले Preview पेज पर क्या जांचना "आरटीआई पोर्टल पर यह प्रक्रिया कैसे होती है?" चाहिए
+
+Manual reference मैनुअल संदर्भः Manual p॰ 3

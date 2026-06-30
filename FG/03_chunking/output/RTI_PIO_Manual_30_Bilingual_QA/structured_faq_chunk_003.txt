@@ -1,0 +1,16 @@
+# FAQ Chunk 3
+Document: RTI_PIO_Manual_30_Bilingual_QA
+Source: structured.md
+Pages: 2
+Section: Question (English): Why do [ need to register before using the portal?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 78
+
+---
+
+## Question (English): Why do [ need to register before using the portal?
+
+Answer (English): The registration instructions state that a user must be registered to apply through the portal. A valid and active email ID is mandatory because the portal sends a verification link to that address. The registered email later becomes the login ID used to activate the account and access the portal.

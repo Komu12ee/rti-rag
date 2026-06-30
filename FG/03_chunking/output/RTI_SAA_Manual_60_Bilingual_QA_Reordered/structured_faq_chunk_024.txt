@@ -1,0 +1,18 @@
+# FAQ Chunk 24
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 7
+Section: Question: Which registration fields are shown as mandatory in the example screen?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 134
+
+---
+
+## Question: Which registration fields are shown as mandatory in the example screen?
+
+Answer: The manual states that every field marked with an asterisk is mandatory. The illustrated form visibly marks fields such as Applicant Type, Name in English, Email ID, Mobile No. , Caste Type, Gender, Address in English, Pincode, and District. The live portal may display the definitive required fields, so follow its asterisk markings
+
+Similar English questionsः "Please explain: Which registration fields are shown as mandatory in the example screen "How is this handled on the RTI portal?"

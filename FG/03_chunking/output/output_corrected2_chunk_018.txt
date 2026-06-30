@@ -1,4 +1,0 @@
-Headings: ['AGENDA # 11']
-Source: output_corrected2
----
-Approval of extension to existing Agency for Operation & Maintenance of Wi-Fi Infrastructure setup at Mantralaya and HoD Building for continuity of services.

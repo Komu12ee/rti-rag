@@ -1,0 +1,20 @@
+# FAQ Chunk 104
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 9
+Section: Q53 (English ). What is the difference between PIO order file and signed application file?
+Question: प्रश्न 53. (हिन्दी ). PIO ऑर्डर फाइल और हस्त्ताक्षरित आवेदन फाइल में क्या अंतर है?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 124
+
+---
+
+## Q53 (English ). What is the difference between PIO order file and signed application file?
+
+प्रश्न 53. (हिन्दी ). PIO ऑर्डर फाइल और हस्त्ताक्षरित आवेदन फाइल में क्या अंतर है?
+
+उत्तर. पी॰आई॰ओ. ऑर्डर फाइल पी.आई॰ओ॰ नियुक्ति आदेश है| हस्त्ताक्षरित आवेदन फाइल वह प्रिंट आवेदन है जिस पर पी॰आई॰ओ. , नोडल स्वीकृति प्राधिकारीं और प्रथम अपीलीय अधिकारी के हस्ताक्षर लेकर स्कैन कर पीडीएफ के रूप में अपलोड किया जाता है|
+
+Source: Pages 3 and 4

@@ -1,0 +1,16 @@
+# FAQ Chunk 46
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 5
+Section: Q23. What should the receiving officer do first?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 42
+
+---
+
+## Q23. What should the receiving officer do first?
+
+Answer: The receiving officer should in to the dashboard, open the Transfer tab, and click "Take Charge" "कार्यभार लेना. Il log

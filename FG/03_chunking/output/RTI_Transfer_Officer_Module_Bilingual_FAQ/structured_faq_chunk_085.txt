@@ -1,0 +1,16 @@
+# FAQ Chunk 85
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 9
+Section: Q46. Does the manual say who must upload the file: the handing over officer or the takingover officer?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 60
+
+---
+
+## Q46. Does the manual say who must upload the file: the handing over officer or the takingover officer?
+
+Il Answer: No. The manual uses the generic term user for the upload instruction. It does not explicitly this step to one of the two officers. assign

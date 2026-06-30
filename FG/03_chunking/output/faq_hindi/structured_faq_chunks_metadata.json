@@ -1,0 +1,173 @@
+{
+  "document": "structured.md",
+  "document_name": "faq_hindi",
+  "source_path": "C:\\Users\\hp\\current_status\\CHiPS-RTI-Project\\citizen\\rti_sarvam copy\\data\\rti-rag\\FG\\01_preprocessing\\stage2_output\\faq_hindi\\structured.md",
+  "chunking_method": "bilingual_faq_rule_based",
+  "supported_languages": [
+    "Hindi",
+    "English"
+  ],
+  "rules": {
+    "question_start": "Hindi: प्रश्न N; English: Question N",
+    "answer_marker": "Hindi: उत्तरः/उत्तर:; English: Answer:",
+    "boundary": "next FAQ question, next major H1/H2 heading, or document end",
+    "answer_preserved": true,
+    "page_tracking": "exact source page markers: <!-- Page N -->"
+  },
+  "max_content_tokens": 512,
+  "tokenizer_model": "BAAI/bge-m3",
+  "token_count_mode": "tokenizer",
+  "source_faq_blocks": 9,
+  "source_section_notes": 0,
+  "faq_blocks_without_answer_marker": [],
+  "total_chunks": 9,
+  "chunks": [
+    {
+      "index": 1,
+      "filename": "structured_faq_chunk_001.txt",
+      "section": "जनसूचना अधिकारी सहायक जनसूचना अधिकारी के समक्ष आवेदन",
+      "question": "प्रश्न 1. क्या जानकारी मांगी जा सकती है?",
+      "pages": [
+        1
+      ],
+      "page_range": "1",
+      "source_block_ordinal": 1,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 140
+    },
+    {
+      "index": 2,
+      "filename": "structured_faq_chunk_002.txt",
+      "section": "जनसूचना अधिकारी सहायक जनसूचना अधिकारी के समक्ष आवेदन",
+      "question": "प्रश्न 2. आवेदन कैसे करें?",
+      "pages": [
+        1
+      ],
+      "page_range": "1",
+      "source_block_ordinal": 2,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 225
+    },
+    {
+      "index": 3,
+      "filename": "structured_faq_chunk_003.txt",
+      "section": "जनसूचना अधिकारी सहायक जनसूचना अधिकारी के समक्ष आवेदन",
+      "question": "प्रश्न 3. सूचना प्राप्त करने की समय सीमा क्या है?",
+      "pages": [
+        1
+      ],
+      "page_range": "1",
+      "source_block_ordinal": 3,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 186
+    },
+    {
+      "index": 4,
+      "filename": "structured_faq_chunk_004.txt",
+      "section": "जनसूचना अधिकारी सहायक जनसूचना अधिकारी के समक्ष आवेदन",
+      "question": "प्रश्न 4. कितनी अतिरिक्त फीस की मांग की जा सकती है और किस उद्देश्य से?",
+      "pages": [
+        1,
+        2,
+        3
+      ],
+      "page_range": "1-3",
+      "source_block_ordinal": 4,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 415
+    },
+    {
+      "index": 5,
+      "filename": "structured_faq_chunk_005.txt",
+      "section": "प्रथम अपील : प्रथम अपीलीय अधिकारी के समक्ष आवेदन",
+      "question": "प्रश्न 1. प्रथम अपील के लिए आवेदन कब करें?",
+      "pages": [
+        3
+      ],
+      "page_range": "3",
+      "source_block_ordinal": 5,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 291
+    },
+    {
+      "index": 6,
+      "filename": "structured_faq_chunk_006.txt",
+      "section": "प्रथम अपील : प्रथम अपीलीय अधिकारी के समक्ष आवेदन",
+      "question": "प्रश्न 2. प्रथम अपील के लिए आवेदन शुल्क कितना है?",
+      "pages": [
+        3
+      ],
+      "page_range": "3",
+      "source_block_ordinal": 6,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 148
+    },
+    {
+      "index": 7,
+      "filename": "structured_faq_chunk_007.txt",
+      "section": "प्रथम अपील : प्रथम अपीलीय अधिकारी के समक्ष आवेदन",
+      "question": "प्रश्न 3. अपील के निस्तारण की समय-्सीमा क्या है?",
+      "pages": [
+        3,
+        4
+      ],
+      "page_range": "3-4",
+      "source_block_ordinal": 7,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 70
+    },
+    {
+      "index": 8,
+      "filename": "structured_faq_chunk_008.txt",
+      "section": "द्वितीय अपील -राज्य सूचना आयोग के समक्ष आवेदन",
+      "question": "प्रश्न 1. दवितीय अपील के लिए आवेदन कब करें?",
+      "pages": [
+        4
+      ],
+      "page_range": "4",
+      "source_block_ordinal": 8,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 208
+    },
+    {
+      "index": 9,
+      "filename": "structured_faq_chunk_009.txt",
+      "section": "[प्र.अ..अधि. हेतु आवेदन पत्र का नमूना]",
+      "question": "प्रश्न 2. द्वितीय अपील के लिए आवेदन शुल्क कितना है?",
+      "pages": [
+        4
+      ],
+      "page_range": "4",
+      "source_block_ordinal": 9,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 151
+    }
+  ]
+}

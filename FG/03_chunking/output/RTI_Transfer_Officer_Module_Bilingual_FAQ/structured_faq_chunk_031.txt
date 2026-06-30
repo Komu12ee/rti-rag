@@ -1,0 +1,20 @@
+# FAQ Chunk 31
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 4
+Section: Q15. Can I select more than one role or charge for handover?
+Question: प्रश्न 15. क्या कार्यभार देने के लिए एक से अधिक या कार्यभार चुना जा सकता है? भूमिका
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 108
+
+---
+
+## Q15. Can I select more than one role or charge for handover?
+
+प्रश्न 15. क्या कार्यभार देने के लिए एक से अधिक या कार्यभार चुना जा सकता है? भूमिका
+
+उत्तरः स्क्रीन में कार्यभारों की सूची और चयन का विकल्प दिखाया गया हैl इससे संकेत मिलता है कि लागू कार्यभार प्रविष्टियाँ चुनी जा सकती हैं; हालांकि मैनुअल में यह नहीं बताया गया है कि एक में अधिकतम कितनी भूमिकाएँ स्थानांतरित की जा सकती हैं| अनुरोध
+
+Source reference : Manual p. 4

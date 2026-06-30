@@ -1,0 +1,28 @@
+# FAQ Chunk 6
+Document: faq_hindi_english_translation
+Source: structured.md
+Pages: 3
+Section: Untitled section
+Question: Question 1. When should an application for a first appeal be made?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 279
+
+---
+
+## Untitled section
+
+Question 1. When should an application for a first appeal be made?
+
+Answer: If any person does not receive a decision within the time specified in sub-section (1) of Section 7 or clause (a) of sub-
+section (3) of Section 7, or is aggrieved by the decision of the Public Information Officer, he or she may, within thirty days from the
+expiry of such period or within thirty days from receipt of such decision, submit an appeal to the senior appellate authority of the
+Public Information Officer, together with a memorandum of appeal and a fee of Rs. 50/- (if the appeal order is required by post, Rs.
+75/-), in cash or with a non-judicial stamp.
+The memorandum of appeal shall clearly state the name and address of the appellant, the name and designation of the Public
+Information Officer, and the order regarding non-provision of information, incomplete or misleading information, payment of fees,
+or failure to provide information within the prescribed period.
+However, such authority may admit the appeal after the expiry of the thirty-day period if it is satisfied that the appellant was
+prevented by sufficient cause from filing the appeal in time.
+[Specimen application form for the Public Information Officer]

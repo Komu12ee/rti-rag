@@ -1,0 +1,24 @@
+# FAQ Chunk 9
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 3
+Section: Question: What information is requested in the user registration form?
+Question: प्रश्न 03. हिंदी प्रश्नोत्तर
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 212
+
+---
+
+## Question: What information is requested in the user registration form?
+
+प्रश्न 03. हिंदी प्रश्नोत्तर
+
+प्रश्नः उपयोगकर्ता पंजीयन फॉर्म में कौन॰कौन सी जानकारी मांगी जाती है?
+
+उत्तरः दिखाए गए फॉर्म में आवेदक का प्रकार, अंग्रेज़ी और हिंदी में नाम, ई-्मेल आईडी, मोबाइल नंबर, पिता का नाम, माता का नाम, जाति प्रकार, आयु, लिंग, अंग्रेज़ी और हिंदी में पता, पिनकोड, देश, राज्य, जिला और निवास प्रकार जैसी जानकारी मांगी जाती है| जिन फील्ड पर स्टार ( *) लगा है वे अनिवार्य हैं| यह जानकारी ध्यान से भरनी चाहिए क्योंकि बाद में द्वितीय अपील प्रक्रिया के Applicant Details भाग में यही विवरण स्वतः प्रदर्शित हो सकते हैं|
+
+समान हिंदी प्रश्नः "कृपया समझाएंः उपयोगकर्ता पंजीयन फॉर्म में कौन कौन सी जानकारी मांगी जाती है II "आरटीआई पोर्टल पर यह प्रक्रिया कैसे होती है ? "
+
+Manual reference मैनुअल संदर्भः Manual p॰ 3

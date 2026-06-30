@@ -1,0 +1,19 @@
+# FAQ Chunk 148
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 24
+Section: (6) Implementation Authority:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 38
+
+---
+
+## (6) Implementation Authority:
+
+- Government Appointing Authority implements
+- Can impose recommended penalties
+- Can modify penalties ( but not increase)
+- Must report compliance to commission

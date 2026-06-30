@@ -1,0 +1,18 @@
+# FAQ Chunk 88
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 15
+Section: प्रश्नः प्रथम अपील आवेदन चरण में कौन॰कौन से विवरण आवश्यक हैं?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 65
+
+---
+
+## प्रश्नः प्रथम अपील आवेदन चरण में कौन॰कौन से विवरण आवश्यक हैं?
+
+उत्तरः प्रथम अपील आवेदन विवरण दर्ज करें , First Appeal Reason Type ड्रॉपडाउन से उपयुक्त कारण चुनें और प्रथम अपील की ऑफलाइन आवेदन तिथि दर्ज करें|
+
+Source: RTI Manual, Printed page 10 User

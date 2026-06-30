@@ -1,0 +1,21 @@
+# FAQ Chunk 40
+Document: RTI_ACT_QA
+Source: structured.md
+Pages: 17
+Section: Second Appeal [Section 19(10) ]:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 81
+
+---
+
+## Second Appeal [Section 19(10) ]:
+
+- To State Information Commission ( for state matters )
+- To Central Information Commission (for central matters )
+- Must be filed within 90 days of first appeal decision
+- Commission must decide within 90 days (extendable )
+- Commission can pass binding orders and recommend penalties
+- Can recommend compensation for loss or hardship

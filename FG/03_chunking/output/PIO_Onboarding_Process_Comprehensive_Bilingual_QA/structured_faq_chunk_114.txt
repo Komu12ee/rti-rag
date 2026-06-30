@@ -1,0 +1,20 @@
+# FAQ Chunk 114
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 9
+Section: Q58 (English ). Does the document describe a separate registration form for the Nodal Authority?
+Question: प्रश्न 58. (हिन्दी ). क्या दस्त्तावेज नोडल प्राधिकारीं के लिए अलग पंजीयन फॉर्म बताता है?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 108
+
+---
+
+## Q58 (English ). Does the document describe a separate registration form for the Nodal Authority?
+
+प्रश्न 58. (हिन्दी ). क्या दस्त्तावेज नोडल प्राधिकारीं के लिए अलग पंजीयन फॉर्म बताता है?
+
+उत्तर नहों इसमें कहा गया है कि नोडल स्वीकृति प्राधिकारी को अलग से RZI पोर्टल में पंजीयन को आवश्यकता नहों है; PIO ऑनबोर्डिंग में दर्ज ई मेल आईडी पर लिंक आएगा |
+
+Source: Page 5

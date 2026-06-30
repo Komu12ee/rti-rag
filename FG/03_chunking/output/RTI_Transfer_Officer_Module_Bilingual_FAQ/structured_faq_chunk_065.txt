@@ -1,0 +1,22 @@
+# FAQ Chunk 65
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 7
+Section: Q33. Can the receiving officer approve a role that is not shown in the list?
+Question: प्रश्न 33. क्या कार्यभार लेने वाला अधिकारी में न दिखाई देने वाली को कर सकता है? सूची भूमिका स्वीकृत
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 130
+
+---
+
+## Q33. Can the receiving officer approve a role that is not shown in the list?
+
+प्रश्न 33. क्या कार्यभार लेने वाला अधिकारी में न दिखाई देने वाली को कर सकता है? सूची भूमिका स्वीकृत
+
+Answer: The manual only describes approval of the charges listed in the takeover screen. It does not describe adding or approving a role that is absent from the displayed request.
+
+उत्तरः मैनुअल केवल कार्यभार लेने की स्क्रीन में दिखाई गई भूमिकाओं की स्वीकृति बताता है| इसमें ऐसी भूमिका जोड़ने या स्वीकृत करने प्रक्रिया नहीं है जो अनुरोध में प्रदर्शित नहीं हो रही है|
+
+Source reference : Manual pp . 5-6

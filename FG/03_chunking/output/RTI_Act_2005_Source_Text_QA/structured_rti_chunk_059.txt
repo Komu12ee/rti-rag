@@ -1,0 +1,63 @@
+# RTI Legal Chunk 59
+Document: RTI_Act_2005_Source_Text_QA
+Input source: structured.md
+Input pages: 29-31
+Chapter: Chapter V - Powers and functions, appeal and penalties
+Question: Q. What is the source text of Section 19?
+Part: 2/5
+Kind: faq
+Has answer: yes
+Content tokens: 508
+Original source book: Unknown
+Source type: general
+Legal reference: Section 19
+Book pages: 35-37
+Source PDF pages: Unknown
+Citation: Unknown
+
+---
+
+## Chapter V - Powers and functions, appeal and penalties
+
+Legal reference: Section 19
+
+Q. What is the source text of Section 19?
+
+**Answer continued:**
+
+SOURCE-TEXT Q&A | THE RIGHT TO INFORMATION ACT, 2005
+admit the appeal after the expiry of
+the period of ninety days if it is
+satisfied that the appellant was
+prevented by sufficient cause from filing the appeal in time.
+(4) If the decision of the Central Public
+Information Officer or State Public Information Officer, as the case may be, against which an appeal is
+preferred relates to information of a third party, the Central Information
+Commission or State Information Commission, as the case may be,
+shall give a reasonable opportunity of being heard to that third party.
+(5) In any appeal proceedings, the onus to
+prove that a denial of a request was
+justified shall be on the Central Public
+Information Officer or State Public Information Officer, as the case may be, who denied the request.
+(6) An appeal under sub-section (1) or sub-section (2) shall be disposed of
+within thirty days of the receipt of the
+appeal or within such extended period not exceeding a total of forty-five days from the date of filing thereof, as the case
+may be, for reasons to be recorded in writing.
+(7) The decision of the Central
+Information Commission or State Information Commission, as the case may be shall be binding.
+(8) In its decision, the Central
+Information Commission or State Information Commission, as the case by be, has the power to -
+(a) require the public authority to take
+any such steps as may be necessary to
+secure compliance with the provisions of this Act, including -
+(i) by providing access to information, if so requested, in a particular form;
+(ii) by appointing a Central Public
+Information Officer or State Public Information Officer, as the case may be;
+(iii) by publishing certain information or categories of information;
+(iv) by making necessary changes to its
+practices in relation to the maintenance, management and destruction of records;
+(v) by enhancing the provision of
+training on the right to information for its officials;
+(vi) by providing it with an annual report in compliance with clause (b) of subsection (1) of section 4;
+(b) require the public authority to
+compensate the complainant for any

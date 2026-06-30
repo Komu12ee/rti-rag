@@ -1,0 +1,17 @@
+# FAQ Chunk 187
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 31
+Section: (1) Documents Provided by Applicants
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 29
+
+---
+
+## (1) Documents Provided by Applicants
+
+- If applicant submits documents with RTI request
+- Commission can require return after proceedings

@@ -1,0 +1,20 @@
+# FAQ Chunk 45
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 9
+Section: Q21 (English). Can ] file a first appeal online through this portal?
+Question: प्रश्न 21. (हिंदी)| क्या इस पोर्टल से प्रथम अपील ऑनलाइन दायर की जा सकती है?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 78
+
+---
+
+## Q21 (English). Can ] file a first appeal online through this portal?
+
+प्रश्न 21. (हिंदी)| क्या इस पोर्टल से प्रथम अपील ऑनलाइन दायर की जा सकती है?
+
+उत्तर| मैनुअल में दिखाए गए आरटीआई निर्देशों में कहा गया है कि प्रथम अपील भी ऑनलाइन दायर की जा सकती हैI
+
+Source: RTI User Manual, Manual p. 5.

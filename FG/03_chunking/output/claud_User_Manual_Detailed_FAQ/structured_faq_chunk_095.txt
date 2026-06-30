@@ -1,0 +1,20 @@
+# FAQ Chunk 95
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 16
+Section: Untitled section
+Question: Q092. What should I do if I have entered wrong information in the previous step?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 92
+
+---
+
+## Untitled section
+
+Q092. What should I do if I have entered wrong information in the previous step?
+
+Use Back when the step provides it to return to the preceding form and correct earlier entries. For user
+registration specifically, use Preview, then Edit before Submit. The manual shows these correction paths but
+does not describe corrections after a fully submitted and paid application.

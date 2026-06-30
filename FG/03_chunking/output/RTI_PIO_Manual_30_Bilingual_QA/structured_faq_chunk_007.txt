@@ -1,0 +1,16 @@
+# FAQ Chunk 7
+Document: RTI_PIO_Manual_30_Bilingual_QA
+Source: structured.md
+Pages: 3
+Section: RTI Portal User Manual 30 Bilingual Q&A
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 121
+
+---
+
+## RTI Portal User Manual 30 Bilingual Q&A
+
+Answer (English): The displayed form includes applicant type, name in English, name in Hindi, email ID, mobile number, fathers name, mothers name, caste type, age gender, address in English, address in Hindi, pincode, country state district, and residence type. The form indicates that fields marked with an asterisk are mandatory. Users should complete the form carefully because these registration details are later fetched into the applicant details area of the Second Appeal workflow.

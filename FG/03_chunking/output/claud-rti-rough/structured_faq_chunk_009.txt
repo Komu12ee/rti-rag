@@ -1,0 +1,23 @@
+# FAQ Chunk 9
+Document: claud-rti-rough
+Source: structured.md
+Pages: 4
+Section: SECTION 5: DESIGNATION OF PUBLIC INFORMATION OFFICERS
+Question: Q5. What are the requirements for designating Public Information Officers ( PIOs) and their responsibilities?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 336
+
+---
+
+## SECTION 5: DESIGNATION OF PUBLIC INFORMATION OFFICERS
+
+Q5. What are the requirements for designating Public Information Officers ( PIOs) and their responsibilities?
+
+Answer: Section 5 establishes a two tier system of PIOs to facilitate RTI implementation:
+
+- (1) Central State PIO Designation [Section 5(1 ) ]: Every public authority must, within 100 days of the Acts enactment, designate as many Central Public Information Officers (CPIOs) or State Public Information Officers ( SPIOs) in all administrative units or offices as necessary to provide information to persons requesting under the Act.
+- (2) Assistant PIO Requirement [Section 5(2) ]: Every public authority must designate an officer at sub-divisional or sub-district level within 100 days as Central Assistant Public Information Officer ( CAPIO) or State Assistant Public Information Officer (SAPIO). These officers receive applications for information or appeals for forwarding to the CPIOISPIO or designated senior officer or Information Commission. When an application is given to Assistant PIO, five days are added to the 3O-day response period.
+- (3) PIO Responsibilities [Section 5(3) ]: Every CPIOISPIO shall deal with requests from persons seeking information and render reasonable assistance to them.
+- (4) Seeking Assistance [Section 5(4 ) & (5)]: CPIOISPIO may seek assistance from any other officer as necessary. officer providing assistance is treated as CPIOISPIO for RTI compliance purposes. Any

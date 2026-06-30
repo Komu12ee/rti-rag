@@ -1,0 +1,18 @@
+# FAQ Chunk 122
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 20
+Section: (2) Destruction of Records:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 42
+
+---
+
+## (2) Destruction of Records:
+
+- If any person destroys or damages information intentionally
+- Punishment: Imprisonment up to 3 months OR fine up to =250
+- OR both

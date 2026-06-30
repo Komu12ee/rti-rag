@@ -1,0 +1,16 @@
+# FAQ Chunk 46
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 9
+Section: Q22 (English). What information is prefilled in applicant details during the second appeal process?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 49
+
+---
+
+## Q22 (English). What information is prefilled in applicant details during the second appeal process?
+
+Answer. The manual states that the user details entered at the time of registration are fetched into the Applicant Details section.

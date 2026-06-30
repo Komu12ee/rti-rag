@@ -1,0 +1,21 @@
+# FAQ Chunk 152
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 24
+Section: (0) Effectiveness:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 55
+
+---
+
+## (0) Effectiveness:
+
+- Penalties create accountability
+- Discourage intentional non compliance
+- Protect citizen rights to information
+- Strengthen RTI implementation
+
+The penalty framework makes Information Commissions effective enforcement bodies with teeth to ensure RTI compliance across public authorities

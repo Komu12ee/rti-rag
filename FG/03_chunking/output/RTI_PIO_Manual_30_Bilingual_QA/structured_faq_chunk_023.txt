@@ -1,0 +1,16 @@
+# FAQ Chunk 23
+Document: RTI_PIO_Manual_30_Bilingual_QA
+Source: structured.md
+Pages: 5
+Section: RTI Portal User Manual 30 Bilingual Q&A
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 20
+
+---
+
+## RTI Portal User Manual 30 Bilingual Q&A
+
+Source reference: Manual p. 5

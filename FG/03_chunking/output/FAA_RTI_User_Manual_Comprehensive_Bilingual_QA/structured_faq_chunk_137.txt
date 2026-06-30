@@ -1,0 +1,20 @@
+# FAQ Chunk 137
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 20-21
+Section: Q67 (English). Can 1 print a payment receipt after a successful transaction?
+Question: प्रश्न 67. (हिंदी)| क्या सफल भुगतान के बाद रसीद प्रिंट की जा सकती है?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 82
+
+---
+
+## Q67 (English). Can 1 print a payment receipt after a successful transaction?
+
+प्रश्न 67. (हिंदी)| क्या सफल भुगतान के बाद रसीद प्रिंट की जा सकती है?
+
+उत्तर| की सफलता स्क्रीन के उदाहरण में लेननदेन विवरण दिखने के बाद Print Receipt विकल्प दिखाई देता हैl मैनुअल
+
+Source: RTI User Manual, Manual p. 13.

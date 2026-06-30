@@ -1,0 +1,22 @@
+# FAQ Chunk 46
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 9
+Section: Untitled section
+Question: Q043. How is a First Appeal different from a Second Appeal?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 126
+
+---
+
+## Untitled section
+
+Q043. How is a First Appeal different from a Second Appeal?
+
+Legal distinction is not specified in the manual.
+Operationally, the manual treats First Appeal as a separate earlier stage whose office and application details
+must be recorded before completing the Second Appeal workflow. A Second Appeal application includes PIO
+information, RTI details, first-appeal office details, and first-appeal application details. The manual does not
+provide the legal definitions or statutory distinction.

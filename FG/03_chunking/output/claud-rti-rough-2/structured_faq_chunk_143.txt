@@ -1,0 +1,19 @@
+# FAQ Chunk 143
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 23
+Section: (1) Penalty Recommendations by Commission:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 51
+
+---
+
+## (1) Penalty Recommendations by Commission:
+
+- Fine up to =25,000 for obstruction
+- Fine up to =10,000 for destruction withholding
+- Can recommend both fine and imprisonment
+- Can recommend disciplinary action by government

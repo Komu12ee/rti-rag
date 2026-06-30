@@ -1,0 +1,20 @@
+# FAQ Chunk 57
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 11
+Section: Untitled section
+Question: Q054. Why is payment not mandatory for Complaint applications?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 76
+
+---
+
+## Untitled section
+
+Q054. Why is payment not mandatory for Complaint applications?
+
+The rationale is not specified in the manual.
+The manual states the rule but gives no explanation or legal rationale. It only identifies non-mandatory payment
+as a condition of choosing Complaint.

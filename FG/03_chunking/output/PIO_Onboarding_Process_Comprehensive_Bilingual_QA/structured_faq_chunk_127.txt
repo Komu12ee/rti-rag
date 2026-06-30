@@ -1,0 +1,16 @@
+# FAQ Chunk 127
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 11
+Section: Q66 (English ). How should this document be chunked for RAG?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 77
+
+---
+
+## Q66 (English ). How should this document be chunked for RAG?
+
+Answer. Use one Q&A as one chunk. Store source file=pioOnboardingProcess pdf , source \_type=official process manual, topic=PIO onboarding source page role=PIO | Nodal FAO, and language tags.

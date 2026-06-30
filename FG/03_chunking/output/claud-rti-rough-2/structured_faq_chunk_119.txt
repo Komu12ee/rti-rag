@@ -1,0 +1,22 @@
+# FAQ Chunk 119
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 19
+Section: (8) सीमा के भीतर पारदर्शिताः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 125
+
+---
+
+## (8) सीमा के भीतर पारदर्शिताः
+
+- अधिनियम अभी भी इन एजेंसियों को suo motu सूचना प्रकाशित करने की आवश्यकता देता है (धारा 4)
+- संगठनत्मक विवरण प्रकाशित करना चाहिए
+- कार्यों को नियंत्रित करने वाले नियम प्रकाशित करना चाहिए
+
+छूट राष्ट्रीय सुरक्षा आवश्यकताओं को स्वीकार करती है जबकि अभी भी कुछ पारदर्शिता बनाए रखती है और पूर्ण गोपनीयता को रोकती हैl ये एजेंसियां भ्रष्टाचार या दिनचर्या सूचना को कवर करने के छूट का उपयोग नहीं कर सकती हैंD लिए
+
+Source reference: RTI Rule Book, Section 22 (cross reference ) , Government of India RTI Rules

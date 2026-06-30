@@ -1,0 +1,16 @@
+# FAQ Chunk 3
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 2
+Section: A. Registration and Account Activation
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 24
+
+---
+
+## A. Registration and Account Activation
+
+A. उपयोगकर्ता पंजीयन और खाता सक्रियण Manual pp. 24

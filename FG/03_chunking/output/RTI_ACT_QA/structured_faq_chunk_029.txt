@@ -1,0 +1,23 @@
+# FAQ Chunk 29
+Document: RTI_ACT_QA
+Source: structured.md
+Pages: 14
+Section: SECTION l5: STATE INFORMATION COMMISSION
+Question: Q15. What is the State Information Commission and its composition under Section 151
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 117
+
+---
+
+## SECTION l5: STATE INFORMATION COMMISSION
+
+Q15. What is the State Information Commission and its composition under Section 151
+
+Answer Section 15 establishes that every State Government shall constitute a State Information Commission with a composition similar to the Central Commission. It shall consist ofः
+
+- State Chief Information Commissioner
+- Such number of State Information Commissioners, not exceeding ten, as may be determined by the State Government
+
+The State Commission has the same powers and functions as the Central Commission but limits its jurisdiction to state public authorities and state level matters

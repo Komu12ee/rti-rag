@@ -1,0 +1,27 @@
+# FAQ Chunk 36
+Document: RTI_ACT_QA
+Source: structured.md
+Pages: 16
+Section: SECTION 1B: PROCEDURE FOR INQUIRIES
+Question: Q18. What is the procedure followed by Information Commissions for conducting inquiries under Section 18?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 137
+
+---
+
+## SECTION 1B: PROCEDURE FOR INQUIRIES
+
+Q18. What is the procedure followed by Information Commissions for conducting inquiries under Section 18?
+
+Answer Section 18 establishes that Information Commissions shall follow principles of natural justice while conducting inquiries. The procedure includes:
+
+- Issuance of notice to concerned public authority
+- Opportunity to file written reply
+- Hearing process (oral or written)
+- Examination of persons and documents
+- Passing written orders with detailed reasons
+- Decision within 90 days of receipt of appeal
+
+The Commission has powers of a civil court while conducting inquiries

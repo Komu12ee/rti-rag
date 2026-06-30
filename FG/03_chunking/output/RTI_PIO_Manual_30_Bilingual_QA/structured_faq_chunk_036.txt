@@ -1,0 +1,16 @@
+# FAQ Chunk 36
+Document: RTI_PIO_Manual_30_Bilingual_QA
+Source: structured.md
+Pages: 6
+Section: Question (English): What does the manual say about the text length for an application?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 107
+
+---
+
+## Question (English): What does the manual say about the text length for an application?
+
+Answer (English): The RTI instruction list states that, at present, the text of an application that can be uploaded in the prescribed column is limited to 500 characters. The same instruction screen indicates that more detailed text, if needed, may be attached as a supporting document. Users should therefore keep the entered text concise and place additional material in an appropriate supporting file where necessary.

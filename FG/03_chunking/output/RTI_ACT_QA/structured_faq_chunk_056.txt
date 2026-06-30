@@ -1,0 +1,37 @@
+# FAQ Chunk 56
+Document: RTI_ACT_QA
+Source: structured.md
+Pages: 21-22
+Section: SECTION 25: ANNUAL REPORTS
+Question: Q25. What are the reporting obligations of Information Commissions under Section 251
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 147
+
+---
+
+## SECTION 25: ANNUAL REPORTS
+
+Q25. What are the reporting obligations of Information Commissions under Section 251
+
+Answer: Section 25 mandates that:
+
+- Commission must prepare annual reports on RTI Act implementation
+- Central Commission submits to Parliament
+- State Commissions submit to State Legislatures
+- Reports must include recommendations on:
+- Amendment of RTI Act
+
+
+
+
+- Revision of fees and charges
+- Procedural improvements
+- Training needs for officers
+- Resource requirements
+- Statutory improvements
+- Reports must include statistical data on appeals, disposal times, and trends
+- Reports are made public and published on websites
+- Government should implement commission recommendations
+- Commission tracks implementation in subsequent reports

@@ -1,0 +1,18 @@
+# FAQ Chunk 10
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 3
+Section: Question: How can 1 check my registration details before final submission?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 112
+
+---
+
+## Question: How can 1 check my registration details before final submission?
+
+Answerः After entering the form details, click Preview. The portal displays the applicant information for review. Check the information carefully. If the entries are correct, click Submit. If there is any change or correction click Edit, modify the information, review it again, and then submit the registration.
+
+Similar English questions: "Please explain: How can 1 check my registration details before final submission "How is this handled on the RTI portal?"

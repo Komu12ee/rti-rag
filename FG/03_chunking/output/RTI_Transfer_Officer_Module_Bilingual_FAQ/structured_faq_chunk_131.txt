@@ -1,0 +1,18 @@
+# FAQ Chunk 131
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 14
+Section: Q71. What should be checked after the receiving officer approves?
+Question: प्रश्न 71. कार्यभार लेने वाले अधिकारी द्वारा स्वीकृति देने के बाद क्या जांचना चाहिए?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 43
+
+---
+
+## Q71. What should be checked after the receiving officer approves?
+
+प्रश्न 71. कार्यभार लेने वाले अधिकारी द्वारा स्वीकृति देने के बाद क्या जांचना चाहिए?
+
+Source reference : Manual pp . 3-1 2

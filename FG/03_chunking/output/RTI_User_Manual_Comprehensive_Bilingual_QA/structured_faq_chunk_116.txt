@@ -1,0 +1,23 @@
+# FAQ Chunk 116
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 18-19
+Section: Question: How do I choose a bank and finalise the online payment?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 119
+
+---
+
+## Question: How do I choose a bank and finalise the online payment?
+
+Answer: On the e-Challan page, select the bank name in the bank gateway field and click Submit to finalise payment. Source: RTI User Manual, Printed page 12.
+
+
+
+
+प्रश्नः ई-चालान पेज पर भुगतान पूरा करने के क्या करना चाहिए? लिए
+
+उत्तरः ई-चालान पेज पर बैंक गेटवे फ़ील्ड में बैंक का नाम चुनें और भुगतान को अंतिम रूप देने के Submit पर क्लिक करें| Source: RTI User Manual, Printed page 12. लिए

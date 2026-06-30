@@ -1,0 +1,24 @@
+# FAQ Chunk 33
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 9-10
+Section: Question: What does successful password creation confirm?
+Question: प्रश्न 15. - हिंदी प्रश्नोत्तर
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 150
+
+---
+
+## Question: What does successful password creation confirm?
+
+प्रश्न 15. - हिंदी प्रश्नोत्तर
+
+प्रश्नः सफल पासवर्ड निर्माण की पुष्टि क्या दर्शाती है?
+
+उत्तरः जब उपयोगकर्ता पंजीकृत ई-्मेल भरता है, बताए गए नियमों के अनुसार पासवर्ड बनाता है और Create दबाता है, तो सफल उपयोगकर्ता क्रेडेंशियल निर्माण का पुष्टि संदेश दिखाता हैl यह ई-मेल सत्यापन के बाद पासवर्ड निर्माण चरण पूरा होने की पुष्टि हैl मैनुअल
+
+समान हिंदी प्रश्नः "कृपया समझाएं सफल पासवर्ड निर्माण की पुष्टि क्या दर्शाती है II . "आरटीआई पोर्टल पर यह प्रक्रिया कैसे होती है ?"
+
+Manual reference मैनुअल संदर्भः Manual p. 4

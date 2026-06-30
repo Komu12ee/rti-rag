@@ -1,0 +1,24 @@
+# FAQ Chunk 77
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 13-14
+Section: Untitled section
+Question: Q074. How long does email verification take?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 123
+
+---
+
+## Untitled section
+
+Q074. How long does email verification take?
+
+Timing is not specified in the manual.
+The manual says the verification link is sent to the registered email address, but it does not state a delivery
+timeframe, resend interval, or expiration period for the link.
+Source-bounded guide based only on rtiUserManual.pdf | Page 13
+
+<!-- extraction_method: direct_text | confidence: 0.75 -->
+Error Scenarios

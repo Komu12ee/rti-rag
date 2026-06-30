@@ -1,0 +1,16 @@
+# FAQ Chunk 42
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 9
+Section: Q20 (English). Who can use the web portal according to the manual?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 62
+
+---
+
+## Q20 (English). Who can use the web portal according to the manual?
+
+Answer. The instructions shown in the manual state that the web portal can be used by Indian citizens to file an RTI application online and make online payment; it also states that a first appeal can be filed online.

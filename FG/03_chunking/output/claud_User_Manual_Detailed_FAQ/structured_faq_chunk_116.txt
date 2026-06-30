@@ -1,0 +1,26 @@
+# FAQ Chunk 116
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 19-20
+Section: Untitled section
+Question: Q113. How do I view previously submitted applications?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 171
+
+---
+
+## Untitled section
+
+Q113. How do I view previously submitted applications?
+
+Submitted-application history steps are not specified.
+The dashboard presents application-count tiles and a list labelled incomplete application second appeal. The
+manual does not document a separate history screen or exact procedure for opening previously submitted
+applications. Use the dashboard controls available in the live portal.
+
+<!-- extraction_method: direct_text | confidence: 0.75 -->
+INTEGRATION TEST QUESTIONS
+Answers marked "Not specified" intentionally avoid assumptions beyond the source manual.
+Multiple Accounts, Records, and Lifecycle

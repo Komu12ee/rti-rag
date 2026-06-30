@@ -1,0 +1,20 @@
+# FAQ Chunk 28
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 3
+Section: Q14 (English ). What is the first in PIO onboarding? step
+Question: प्रश्न 14. (हिन्दी). PIO ऑनबोर्डिंग का पहला चरण क्या है?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 71
+
+---
+
+## Q14 (English ). What is the first in PIO onboarding? step
+
+प्रश्न 14. (हिन्दी). PIO ऑनबोर्डिंग का पहला चरण क्या है?
+
+उत्तर. पहला चरण पी॰आई॰ओ.विवरण है॰ जिसमें पी॰आई॰ओ. एवं कार्यालय विवरण भरे जाते हैं|
+
+Source: Page 3

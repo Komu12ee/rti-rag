@@ -1,0 +1,20 @@
+# FAQ Chunk 43
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 5
+Section: Q21. Does the manual explain how to correct a wrong recipient entry before or after submission ?
+Question: प्रश्न 21. गलत अधिकारी का विवरण भर जाने पर मैनुअल में सुधार की प्रक्रिया बताई गई है क्या?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 107
+
+---
+
+## Q21. Does the manual explain how to correct a wrong recipient entry before or after submission ?
+
+प्रश्न 21. गलत अधिकारी का विवरण भर जाने पर मैनुअल में सुधार की प्रक्रिया बताई गई है क्या?
+
+उत्तरः नहीं| में गलत कार्यभार स्थानांतरण अनुरोध को एडिट, रद्द, अस्वीकार या सुधारने की प्रक्रिया नहीं दी गई हैl Submit करने से पहले चुने गए कार्यभार और अधिकारी के विवरण को सावधानी से जांचें | मैनुअल
+
+Source reference : Manual p 4

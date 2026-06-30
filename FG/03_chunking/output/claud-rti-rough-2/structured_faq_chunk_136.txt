@@ -1,0 +1,19 @@
+# FAQ Chunk 136
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 22
+Section: (5) प्रेषक अधिकारी पर दंडः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 70
+
+---
+
+## (5) प्रेषक अधिकारी पर दंडः
+
+- यदि अधिकारी PIO को RTI अधिनियम का उल्लंघन करने के लिए निर्देश देता है
+- आयोग दंड की सिफारिश कर सकता है
+- निर्दिष्ट अवधि के लिए वेतन में कमी का आदेश दे सकता है
+- गंभीर मामलों में बर्खास्तगी की सिफारिश कर सकता है

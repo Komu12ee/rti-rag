@@ -1,0 +1,16 @@
+# FAQ Chunk 60
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 5
+Section: Q31 (English ). What e-mail domain is required for the First Appellate Officer ?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 58
+
+---
+
+## Q31 (English ). What e-mail domain is required for the First Appellate Officer ?
+
+Answer. For the First Appellate Officer , the e-mail ID should be in the cg GOV in, GOVin, or NICIIN domain.

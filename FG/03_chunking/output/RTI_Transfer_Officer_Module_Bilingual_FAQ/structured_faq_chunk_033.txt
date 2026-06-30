@@ -1,0 +1,20 @@
+# FAQ Chunk 33
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 4
+Section: Q16. Which types of charges may be listed for handover ?
+Question: प्रश्न 16. कार्यभार देने की सूची में कौन॰कौन से कार्यभार दिखाई दे सकते हैं?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 87
+
+---
+
+## Q16. Which types of charges may be listed for handover ?
+
+प्रश्न 16. कार्यभार देने की सूची में कौन॰कौन से कार्यभार दिखाई दे सकते हैं?
+
+उत्तरः उदाहरणों में पीआईओ, एफएओ और नोडल अधिकारी कार्यभार प्रकार के रूप में दिखते हैं| वास्तविक पोर्टल में वर्तमान उपयोगकर्ता को दिए गए कार्यभारों पर निर्भर करती है| सूची
+
+Source reference : Manual p

@@ -1,0 +1,20 @@
+# FAQ Chunk 158
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 25
+Section: (5) आयोग दंड के प्रक्रियाः लिए
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 42
+
+---
+
+## (5) आयोग दंड के प्रक्रियाः लिए
+
+- अधिकारी को कारण बताओ नोटिस
+- समझाने का अवसर
+- विस्तृत कारणों के साथ निर्णय
+- यदि अनुरोध किया गया तो सुनवाई
+- सरकार को सिफारिश

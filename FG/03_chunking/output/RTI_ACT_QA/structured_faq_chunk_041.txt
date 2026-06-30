@@ -1,0 +1,18 @@
+# FAQ Chunk 41
+Document: RTI_ACT_QA
+Source: structured.md
+Pages: 17
+Section: Special Provisions:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 33
+
+---
+
+## Special Provisions:
+
+- Lifelliberty cases get expedited processing
+- Both levels follow natural justice
+- Detailed written orders with reasons mandatory

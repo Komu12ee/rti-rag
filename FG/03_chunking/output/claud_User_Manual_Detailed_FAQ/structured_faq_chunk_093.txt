@@ -1,0 +1,21 @@
+# FAQ Chunk 93
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 16
+Section: Untitled section
+Question: Q090. What is the purpose of each step in the registration process?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 125
+
+---
+
+## Untitled section
+
+Q090. What is the purpose of each step in the registration process?
+
+For the Second Appeal Application Registration workflow: Step 1 confirms instruction acceptance; Step 2 records
+appeal/complaint relation, reason, and BPL choice; Step 3 records PIO and office; Step 4 records original RTI
+information; Step 5 records First Appeal office; Step 6 records First Appeal application, date, and status; Step 7
+collects documents; and Step 8 handles payment where applicable.

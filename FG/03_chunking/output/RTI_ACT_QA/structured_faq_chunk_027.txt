@@ -1,0 +1,20 @@
+# FAQ Chunk 27
+Document: RTI_ACT_QA
+Source: structured.md
+Pages: 13
+Section: SECTION l3: CHIEF INFORMATION COMMISSIONER
+Question: प्रश्न 13. धारा 13 के तहत मुख्य सूचना आयुक्त की योग्यता और कार्यकाल क्या हैं?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 146
+
+---
+
+## SECTION l3: CHIEF INFORMATION COMMISSIONER
+
+प्रश्न 13. धारा 13 के तहत मुख्य सूचना आयुक्त की योग्यता और कार्यकाल क्या हैं?
+
+उत्तरः धारा 13 निर्दिष्ट करती है कि मुख्य सूचना आयुक्त एक व्यक्ति होना चाहिए जो भारत सरकार के सचिव के पद या समकक्ष पद पर रहा होे| मूल अधिनियम पद में प्रवेश की तारीख से पांच साल का कार्यकाल प्रदान करता था| हालांकि , RTI ( संशोधन) अधिनियम , 2019, ने धारा 13 में संशोधन किया है ताकि कार्यकाल ऐसा हो जो केंद्र सरकार द्वारा निर्धारितकिया जा सकता है, जिससे कार्यकाल निश्चित के बजाय लचीला बन गया है|
+
+Source reference: RTI Rule Book, Section 13 (cross reference to 2019 Amendment)

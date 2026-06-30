@@ -1,0 +1,18 @@
+# FAQ Chunk 175
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 28
+Section: (0) Compliance with Recommendations:
+Question: प्रश्न 25. सूचना आयोग की रिपोर्टिंग बाध्यताएं क्या हैं?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 43
+
+---
+
+## (0) Compliance with Recommendations:
+
+प्रश्न 25. सूचना आयोग की रिपोर्टिंग बाध्यताएं क्या हैं?
+
+उत्तरः धारा 25 सूचना आयोगों के लिए व्यापक वार्षिक रिपोर्टिंग आवश्यकताओं की स्थापना करती हैः

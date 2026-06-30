@@ -1,0 +1,16 @@
+# FAQ Chunk 80
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 13
+Section: Q39 (English). What should  do if 1 cannot find the PIO or office in the dropdown?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 52
+
+---
+
+## Q39 (English). What should  do if 1 cannot find the PIO or office in the dropdown?
+
+Answer. Use the blue highlighted link shown in the manual to enter the officer and office details manually when the required details are not listed.

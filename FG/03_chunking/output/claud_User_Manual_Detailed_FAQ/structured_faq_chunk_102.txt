@@ -1,0 +1,19 @@
+# FAQ Chunk 102
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 17
+Section: Untitled section
+Question: Q099. What supporting documents are needed to verify BPL status?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 74
+
+---
+
+## Untitled section
+
+Q099. What supporting documents are needed to verify BPL status?
+
+Attach a copy of the certificate issued by the appropriate government. The form additionally asks for the BPL
+Document Number, Document Issue Date, and Issuing Authority when BPL status is Yes.

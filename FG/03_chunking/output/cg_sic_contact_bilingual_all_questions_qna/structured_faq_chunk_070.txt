@@ -1,0 +1,18 @@
+# FAQ Chunk 70
+Document: cg_sic_contact_bilingual_all_questions_qna
+Source: structured.md
+Pages: 8
+Section: 10. Phone Number
+Question: Question 62. Give me the commission phone number.
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 27
+
+---
+
+## 10. Phone Number
+
+Question 62. Give me the commission phone number.
+
+Answerः The listed phone number is 0771 -2512107.

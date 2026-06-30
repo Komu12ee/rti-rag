@@ -1,0 +1,16 @@
+# FAQ Chunk 119
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 12
+Section: Q65. What sequence should be followed for a standard different-email transfer?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 99
+
+---
+
+## Q65. What sequence should be followed for a standard different-email transfer?
+
+Answer: Follow this sequence: Give Charge -> select different email ID -> select the relevant charge(s) > enter receiving officer details -> Submit -> receiving officer opens Take Charge -> Proceed -> selects and submits approval > check transfer status -> Generate Relieving Letter -> Print Relieving Letter -> Browse and Upload the file -> review the transfer certificate.

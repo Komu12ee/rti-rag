@@ -1,0 +1,19 @@
+# FAQ Chunk 119
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 20
+Section: Untitled section
+Question: Q116. Is there a limit on the number of applications per user?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 69
+
+---
+
+## Untitled section
+
+Q116. Is there a limit on the number of applications per user?
+
+Application limit is not specified.
+No per-user application limit is stated in the manual. The displayed count tiles do not establish a maximum.

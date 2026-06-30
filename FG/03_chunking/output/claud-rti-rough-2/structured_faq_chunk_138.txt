@@ -1,0 +1,19 @@
+# FAQ Chunk 138
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 22
+Section: आयोग की सिफारिश [धारा 24 ]:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 69
+
+---
+
+## आयोग की सिफारिश [धारा 24 ]:
+
+- सूचना आयोग दंड की सिफारिश कर सकता है
+- आवेदनकर्ता को मुआवजे की सिफारिश कर सकता है
+- अनुशासनात्मक कार्रवाई की सिफारिश कर सकता है
+- आपराधिक अभियोजन की सिफारिश कर सकता है

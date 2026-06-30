@@ -1,0 +1,18 @@
+# FAQ Chunk 60
+Document: cg_sic_contact_bilingual_all_questions_qna
+Source: structured.md
+Pages: 7
+Section: 9. State and Country
+Question: Question 53. Which state is the commission office in?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 30
+
+---
+
+## 9. State and Country
+
+Question 53. Which state is the commission office in?
+
+Answerः The office is listed in Chhattisgarh, India.

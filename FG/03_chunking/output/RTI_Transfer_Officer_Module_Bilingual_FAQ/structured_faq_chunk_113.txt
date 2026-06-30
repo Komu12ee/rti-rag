@@ -1,0 +1,16 @@
+# FAQ Chunk 113
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 12
+Section: Q62. Can the name change workflow update the mobile number and designation too?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 57
+
+---
+
+## Q62. Can the name change workflow update the mobile number and designation too?
+
+Answer: The request form asks the user to enter a new name, mobile number and designation. The manual therefore includes these as the details to be submitted in the name change request.

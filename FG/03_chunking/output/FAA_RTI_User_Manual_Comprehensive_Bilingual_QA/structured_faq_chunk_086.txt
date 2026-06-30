@@ -1,0 +1,16 @@
+# FAQ Chunk 86
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 14
+Section: Q42 (English). What information is entered in the RTI Application Details step?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 50
+
+---
+
+## Q42 (English). What information is entered in the RTI Application Details step?
+
+Answer. Enter the RTI details, the date of the offline application, and the information received status details as required by the form shown in the manual.

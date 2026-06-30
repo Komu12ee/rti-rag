@@ -1,0 +1,24 @@
+# FAQ Chunk 25
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 7
+Section: Question: Which registration fields are shown as mandatory in the example screen?
+Question: प्रश्न 11. हिंदी प्रश्नोत्तर
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 177
+
+---
+
+## Question: Which registration fields are shown as mandatory in the example screen?
+
+प्रश्न 11. हिंदी प्रश्नोत्तर
+
+प्रश्नः उदाहरण स्क्रीन में कौन-से पंजीयन फील्ड अनिवार्य दिखाए गए हैं?
+
+उत्तरः : मैनुअल कहता है कि स्टार ( *) लगा हर फील्ड अनिवार्य हैl उदाहरण फॉर्म में Applicant Type, Name in English, Email ID, Mobile No. , Caste Type, Gender, Address in English, Pincode और District जैसे फील्ड पर स्टार दिखाई देता है| अंतिम अनिवार्य फील्ड के लाइव पोर्टल के स्टार का पालन करें| लिए चिह्न
+
+समान हिंदी प्रश्नः "कृपया समझाएंः उदाहरण स्क्रीन में कौन से पंजीयन फील्ड अनिवार्य दिखाए गए हैं "; "आरटीआई पोर्टल पर यह प्रक्रिया कैसे होती है?"
+
+Manual reference संदर्भः Manual p. 3 मैनुअल

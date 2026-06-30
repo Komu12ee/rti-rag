@@ -1,0 +1,16 @@
+# FAQ Chunk 101
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 8
+Section: Q52 (English ). What should be checked before final onboarding submission ?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 66
+
+---
+
+## Q52 (English ). What should be checked before final onboarding submission ?
+
+Answer. Check all entered information in the preview, ensure the PIO order file is uploaded, the application, obtain signatures, scan the signed application file, upload it, and then submit for onboarding print

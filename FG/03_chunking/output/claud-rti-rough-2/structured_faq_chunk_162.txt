@@ -1,0 +1,18 @@
+# FAQ Chunk 162
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 26
+Section: (9) सार्वजनिक हित दंडः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 46
+
+---
+
+## (9) सार्वजनिक हित दंडः
+
+- आयोग सार्वजनिक हित के लिए suo motu कार्रवाई कर सकता है
+- शिकायतों के आधार पर जांच शुरू कर सकता है
+- औपचारिक अपील के बिना दंड की सिफारिश कर सकता है

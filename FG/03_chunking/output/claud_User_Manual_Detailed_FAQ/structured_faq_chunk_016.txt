@@ -1,0 +1,22 @@
+# FAQ Chunk 16
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 4-5
+Section: Untitled section
+Question: Q013. Do I need to accept instructions before proceeding?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 113
+
+---
+
+## Untitled section
+
+Q013. Do I need to accept instructions before proceeding?
+
+Yes. The manual directs the user to tick the box confirming that the instructions have been read carefully and
+then select Next. This acceptance step appears before the second-appeal detail stage.
+
+
+<!-- extraction_method: direct_text | confidence: 0.75 -->

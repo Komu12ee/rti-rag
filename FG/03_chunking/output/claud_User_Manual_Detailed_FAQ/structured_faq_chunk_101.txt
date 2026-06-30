@@ -1,0 +1,20 @@
+# FAQ Chunk 101
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 17
+Section: Untitled section
+Question: Q098. Is RTI fee waived for BPL card holders?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 95
+
+---
+
+## Untitled section
+
+Q098. Is RTI fee waived for BPL card holders?
+
+According to the manual, yes: it states that an RTI fee is not required for a citizen below the poverty line, subject
+to the certificate requirement. The manual does not explain how the fee-waiver rule interacts with every
+possible appeal or complaint screen beyond that statement.

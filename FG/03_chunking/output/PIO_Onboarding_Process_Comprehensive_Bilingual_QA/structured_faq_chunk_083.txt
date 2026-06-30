@@ -1,0 +1,16 @@
+# FAQ Chunk 83
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 7
+Section: Q43 (English). What must the FAO upload before approving the application ?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 36
+
+---
+
+## Q43 (English). What must the FAO upload before approving the application ?
+
+Answer. Before approving the application, the FAO must upload his her appointment order.

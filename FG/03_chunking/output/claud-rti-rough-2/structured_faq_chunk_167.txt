@@ -1,0 +1,23 @@
+# FAQ Chunk 167
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 27
+Section: (3) Statistical Dataः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 55
+
+---
+
+## (3) Statistical Dataः
+
+- Number of appeals received
+- Number of appeals disposed
+- Average disposal time
+- Success rate of appeals
+- Types of information sought
+- Exemptions most frequently applied
+- Penalties recommended
+- Trends and patterns

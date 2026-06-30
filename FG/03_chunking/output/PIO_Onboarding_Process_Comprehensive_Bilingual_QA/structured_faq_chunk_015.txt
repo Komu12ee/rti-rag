@@ -1,0 +1,16 @@
+# FAQ Chunk 15
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 2
+Section: Q8 (English ). What should the PIO do if the office already exists?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 37
+
+---
+
+## Q8 (English ). What should the PIO do if the office already exists?
+
+Answer. If the office already exists in the portal, select that existing office.

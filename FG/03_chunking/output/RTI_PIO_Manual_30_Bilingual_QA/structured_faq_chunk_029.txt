@@ -1,0 +1,18 @@
+# FAQ Chunk 29
+Document: RTI_PIO_Manual_30_Bilingual_QA
+Source: structured.md
+Pages: 5
+Section: प्रश्न (हिंदी): द्वितीय अपील आवेदन प्रक्रिया में कितने मुख्य चरण दिखाए गए हैं?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 120
+
+---
+
+## प्रश्न (हिंदी): द्वितीय अपील आवेदन प्रक्रिया में कितने मुख्य चरण दिखाए गए हैं?
+
+उत्तर (हिंदी): दृश्य कार्यप्रवाह में आठ मुख्य चरण दिखाए गए हैंः (1 ) RTI Instruction, (2 ) Second Appeal Application Details, (3) PIO and Office Details, (4) RTI Details, (5) First Appeal Office Details, (6) First Appeal Application, (7) Documents Details और (8) Payment Details | आवश्यकता के अनुसार उपयोगकर्ता Next, Back और Save & Next बटन से इन चरणों में आगे बढ़ता हैl
+
+Source reference: Manual pp. 5-12

@@ -1,0 +1,16 @@
+# FAQ Chunk 98
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 15
+Section: Q48 (English). What fields appear when [ manually enter First Appeal Officer and office information?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 59
+
+---
+
+## Q48 (English). What fields appear when [ manually enter First Appeal Officer and office information?
+
+Answer. The screen shown in the manual includes Public Information Officer name, designation, mobile number, office name, office address, district, base department, and sub department name.

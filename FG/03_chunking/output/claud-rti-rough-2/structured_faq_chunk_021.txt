@@ -1,0 +1,17 @@
+# FAQ Chunk 21
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 4
+Section: (6) प्रवर्तनः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 41
+
+---
+
+## (6) प्रवर्तनः
+
+- SIC द्वारा पास किए गए आदेश सार्वजनिक प्राधिकरणों पर बाध्यकारी हैं
+- जानबूझकर उल्लंघन के लिए आपराधिक अभियोजन की सिफारिश कर सकते हैं

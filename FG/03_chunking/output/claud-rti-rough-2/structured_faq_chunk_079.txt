@@ -1,0 +1,18 @@
+# FAQ Chunk 79
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 13
+Section: (1) अधिकार क्षेत्र हस्तांतरणः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 43
+
+---
+
+## (1) अधिकार क्षेत्र हस्तांतरणः
+
+- जहां कोई मामला केंद्रीय और राज्य दोनों सार्वजनिक प्राधिकरणों को शामिल करता है
+- जहां मुद्दे के कई राज्यों में निहितार्थ हैं
+- जहां केंद्रीय प्राधिकरण मुख्य रूप से शामिल है

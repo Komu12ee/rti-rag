@@ -1,0 +1,18 @@
+# FAQ Chunk 83
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 13
+Section: (5) व्यावहारिक प्रयोज्यताः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 53
+
+---
+
+## (5) व्यावहारिक प्रयोज्यताः
+
+- व्यावहार में दुर्लभ
+- छत्तीसगढ़ के मामलों में आमतौर पर उपयोग नहीं किया जाता (RTI नियम पुस्तक देखें )
+- आमतौर पर मुख्य रूप से शामिल संगठन के आधार पर तय किया जाता है

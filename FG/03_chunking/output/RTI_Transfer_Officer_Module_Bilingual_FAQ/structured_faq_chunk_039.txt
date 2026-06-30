@@ -1,0 +1,20 @@
+# FAQ Chunk 39
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 4-5
+Section: Q19. Does successful submission mean the receiving officer has already accepted the charge?
+Question: प्रश्न 19. क्या सफल सबमिट होने का अर्थ है कि कार्यभार लेने वाले अधिकारी ने इसे स्वीकार कर लिया है?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 98
+
+---
+
+## Q19. Does successful submission mean the receiving officer has already accepted the charge?
+
+प्रश्न 19. क्या सफल सबमिट होने का अर्थ है कि कार्यभार लेने वाले अधिकारी ने इसे स्वीकार कर लिया है?
+
+उत्तरः नहीं| सफल सबमिट होने से भूमिका आवंटन या कार्यभार देने का बनता हैl कार्यभार लेने वाले अधिकारी को अलग से " कार्यभार लेना " खोलकर अनुरोध देखना और स्वीकृति सबमिट करनी होती हैI अनुरोध
+
+Source reference : Manual p. 4

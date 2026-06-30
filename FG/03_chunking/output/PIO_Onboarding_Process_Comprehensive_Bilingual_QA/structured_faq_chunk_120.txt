@@ -1,0 +1,20 @@
+# FAQ Chunk 120
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 10
+Section: Q61 (English). What should a chatbot answer when asked about mandatory files?
+Question: प्रश्न 61. (हिन्दी). जब अनिवार्य फाइलों के बारे में पूछा जाए तो चैटबॉट क्या उत्तर दे?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 87
+
+---
+
+## Q61 (English). What should a chatbot answer when asked about mandatory files?
+
+प्रश्न 61. (हिन्दी). जब अनिवार्य फाइलों के बारे में पूछा जाए तो चैटबॉट क्या उत्तर दे?
+
+उत्तर. चैटबॉट को बताना चाहिए कि ऑनबोर्डिंग पूरा करने के लिए पी॰आई॰ओ. ऑर्डर फाइल और आवेदन हस्ताक्षरित फाइल अपलोड करना अनिवार्य है
+
+Source: Page 4

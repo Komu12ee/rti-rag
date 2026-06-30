@@ -1,0 +1,23 @@
+# FAQ Chunk 106
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 17-18
+Section: Untitled section
+Question: Q103. What is a Second Appeal vs. First Appeal in RTI?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 156
+
+---
+
+## Untitled section
+
+Q103. What is a Second Appeal vs. First Appeal in RTI?
+
+Formal legal comparison is not specified.
+The manual depicts First Appeal as an earlier application stage whose office, reason type, details, offline date,
+and status must be supplied. It then uses those data within a Second Appeal workflow. It does not provide the
+legal definitions, deadlines, or statutory separation of the two remedies.
+
+<!-- extraction_method: direct_text | confidence: 0.75 -->

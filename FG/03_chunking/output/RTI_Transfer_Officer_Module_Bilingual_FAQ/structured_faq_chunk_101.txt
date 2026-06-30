@@ -1,0 +1,22 @@
+# FAQ Chunk 101
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 11
+Section: Q55. What must be done after submitting the new name, mobile number and designation ?
+Question: प्रश्न 55. नया नाम, मोबाइल नंबर और पदनाम सबमिट करने के बाद क्या करना चाहिए?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 128
+
+---
+
+## Q55. What must be done after submitting the new name, mobile number and designation ?
+
+प्रश्न 55. नया नाम, मोबाइल नंबर और पदनाम सबमिट करने के बाद क्या करना चाहिए?
+
+Answer: Open the Transfer Request Status area, choose " Upload File for Name Change' "Upload Order File for Name Change ' and upload the name change order file.
+
+उत्तरः स्थानांतरण अनुरोध की स्थिति वाला क्षेत्र खोलें , "Upload File for Name Change " या " Upload Order File for Name Change" विकल्प चुनें और नाम परिवर्तन आदेश की फाइल अपलोड करें|
+
+Source reference : Manual pp . 9-12

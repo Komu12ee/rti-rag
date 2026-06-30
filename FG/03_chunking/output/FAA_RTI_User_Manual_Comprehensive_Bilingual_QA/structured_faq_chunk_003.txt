@@ -1,0 +1,27 @@
+# FAQ Chunk 3
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 2-3
+Section: Coverage
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 99
+
+---
+
+## Coverage
+
+- User Registration
+- Password Verification
+- Second Appeal Application
+- Second Appeal Details and BPL Complaint Conditions
+- PIO and Office Details
+- RTI Application Details
+- First Appeal Office Details
+- First Appeal Application
+- Document Details
+- Payment Details
+
+Format: Every English question is followed immediately its English answer. The corresponding Hindi question is followed immediately by its Hindi answer. Each cites the relevant page(s) in the supplied manual. by pair

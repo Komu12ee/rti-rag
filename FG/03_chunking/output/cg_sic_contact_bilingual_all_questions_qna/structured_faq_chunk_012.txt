@@ -1,0 +1,28 @@
+# FAQ Chunk 12
+Document: cg_sic_contact_bilingual_all_questions_qna
+Source: structured.md
+Pages: 2-3
+Section: हिंदी प्रश्नोत्तर
+Question: प्रश्न 8. सीजी एसआईसी का संपर्क विवरण क्या है?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 94
+
+---
+
+## हिंदी प्रश्नोत्तर
+
+प्रश्न 8. सीजी एसआईसी का संपर्क विवरण क्या है?
+
+उत्तरः सचिवालय, छत्तीसगढ़ राज्य सूचना आयोग
+
+पताः सेक्टर 19, नॉर्थ ब्लॉक, नवा रायपुर अटल नगर, जिला रायपुर 492002, छत्तीसगढ़ भारत
+
+फोनः 0771-2512107
+
+फैक्सः 0771-2512102
+
+ई-्मेलः sic[dotlcglat]nic[dotJin
+
+वेबसाइटः https  /  rtionline cg gov.in /

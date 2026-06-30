@@ -1,0 +1,24 @@
+# FAQ Chunk 12
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 3
+Section: Question: What should I do on the User Registration General Information screen ?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 110
+
+---
+
+## Question: What should I do on the User Registration General Information screen ?
+
+Answer: Yes. The manual instructs the user to tick the acknowledgement box after reading the instructions and then click Next.
+
+Source: RTI User Manual, Printed page 2
+
+प्रश्नः क्या आगे बढने से पहले पंजीकरण निर्देश स्वीकार करना आवश्यक है?
+
+उत्तरः हाँ| मैनुअल के अनुसार निर्देश पढ़ने के बाद स्वीकृति वाले बॉक्स पर टिक करें और फिर Next पर क्लिक करें|
+
+Sourceः RTI User Manual, Printed page 2.

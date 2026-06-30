@@ -1,0 +1,21 @@
+# FAQ Chunk 14
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 4
+Section: Untitled section
+Question: Q011. What is the difference between PIO and FAO?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 115
+
+---
+
+## Untitled section
+
+Q011. What is the difference between PIO and FAO?
+
+The manual expands PIO as Public Information Officer and FAO as First Appealing Officer. The workflow treats
+them as separate offices and officers: one stage captures PIO and Office Details, while a later stage captures First
+Appeal Office Details. The manual does not provide a broader legal comparison of their powers or
+responsibilities.

@@ -1,0 +1,20 @@
+# FAQ Chunk 133
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 19-20
+Section: Q65 (English). How do [ finalize the online payment?
+Question: प्रश्न 65. (हिंदी)| ऑनलाइन भुगतान को अंतिम रूप कैसे दूँ?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 68
+
+---
+
+## Q65 (English). How do [ finalize the online payment?
+
+प्रश्न 65. (हिंदी)| ऑनलाइन भुगतान को अंतिम रूप कैसे दूँ?
+
+उत्तर| ई-चालान पृष्ठ पर बैंक नाम के बाद भुगतान अंतिम करने के Submit पर क्लिक करें| चुनने लिए
+
+Sourceः RTI User Manual, Manual p. 12.

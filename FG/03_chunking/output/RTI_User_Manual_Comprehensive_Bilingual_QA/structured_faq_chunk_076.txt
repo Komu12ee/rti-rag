@@ -1,0 +1,18 @@
+# FAQ Chunk 76
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 12
+Section: Question: What should 1 do if 1 cannot find the PIO or office in the dropdown list?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 96
+
+---
+
+## Question: What should 1 do if 1 cannot find the PIO or office in the dropdown list?
+
+Answer: Yes. The manual directs users to use the blue highlighted link when the required office and officer details are not available in the listed options. The alternate form shown asks for officer name, designation, mobile number, office name, office address district, base department and sub department name.
+
+Sourceः RTI User Manual, Printed pages 7-8.

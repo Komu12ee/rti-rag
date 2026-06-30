@@ -1,0 +1,18 @@
+# FAQ Chunk 145
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 23
+Section: Q71 (English). What is the order of the second appeal application steps shown in the manual?
+Question: प्रश्न 71. (हिंदी)| मैनुअल में द्वितीय अपील आवेदन के चरणों का क्रम क्या दिखाया गया है?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 111
+
+---
+
+## Q71 (English). What is the order of the second appeal application steps shown in the manual?
+
+प्रश्न 71. (हिंदी)| मैनुअल में द्वितीय अपील आवेदन के चरणों का क्रम क्या दिखाया गया है?
+
+उत्तरI प्रगति प्रदर्शन में RTI Instruction, Second Appeal Application Details, PIO and Office Details, RTI Details, First Appeal Office Details, First Appeal Application, Documents Details और Payment Details दिखाए गए हैं| Source: RTI User Manual, Manual p. 5-12.

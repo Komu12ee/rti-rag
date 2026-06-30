@@ -1,0 +1,16 @@
+# FAQ Chunk 28
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 4
+Section: Q14. What details must be entered for the receiving officer ?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 70
+
+---
+
+## Q14. What details must be entered for the receiving officer ?
+
+Answer: The manual instructs the user to enter the details of the officer to whom the charge is being handed over. The interface examples show identification and designation related details, but the manual does not provide a complete field by field data dictionary.

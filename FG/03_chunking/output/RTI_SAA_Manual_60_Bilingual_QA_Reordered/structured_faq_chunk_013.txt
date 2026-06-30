@@ -1,0 +1,24 @@
+# FAQ Chunk 13
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 4
+Section: Question: What happens after I submit the registration form?
+Question: प्रश्न 05. हिंदी प्रश्नोत्तर
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 172
+
+---
+
+## Question: What happens after I submit the registration form?
+
+प्रश्न 05. हिंदी प्रश्नोत्तर
+
+प्रश्नः पंजीयन फॉर्म जमा करने के बाद क्या होता है?
+
+उत्तरः सफलतापूर्वक जमा करने के बाद पोर्टल पंजीयन पूरा होने की पुष्टि दिखाता है और उपयोगकर्ता को ई-मेल के माध्यम से खाता सत्यापित करने के कहता है| अगला चरण पंजीकृत ई-्मेल पर भेजे गए सत्यापन लिंक को खोलना है| केवल पंजीयन पूरा होना पर्याप्त नहीं हैः खाता सक्रिय करने के लिए ई-मेल सत्यापन और पासवर्ड बनाना भी आवश्यक है| लिए
+
+समान हिंदी प्रश्नः "कृपया समझाएंः पंजीयन फॉर्म जमा करने के बाद क्या होता है II "आरटीआई पोर्टल पर यह प्रक्रिया कैसे होती है?"
+
+Manual reference संदर्भः Manual pp. 3 4 मैनुअल

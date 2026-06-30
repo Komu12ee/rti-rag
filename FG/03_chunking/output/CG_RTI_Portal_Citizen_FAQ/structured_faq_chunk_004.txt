@@ -1,0 +1,41 @@
+# FAQ Chunk 4
+Document: CG_RTI_Portal_Citizen_FAQ
+Source: structured.md
+Pages: 1-3
+Section: Untitled section
+Question: (section note)
+Part: 4/5
+Kind: section_note
+Has answer: no
+Content tokens: 507
+
+---
+
+## Untitled section
+
+<!-- extraction_method: direct_text | confidence: 0.75 -->
+CG RTI PORTAL - CITIZEN FAQ
+
+Q5. How can I check application status?
+Keep the registration number generated after submission. It is the key reference for future tracking and
+related portal actions.
+ Log in to the live portal with your registered credentials.
+ Use the application-status or tracking option shown in the live portal, if available.
+ Enter or select the registration number and other details requested by the portal.
+ Review the current status and save any reference information displayed.
+Manual limitation: The supplied manuals do not document a complete citizen-facing Track Application Status screen or
+every field used on that screen. Do not rely on an invented menu path; follow the current portal interface.
+Source basis: RTI User Manual - registration-number and workflow references; live status tracking screen not fully documented in the
+supplied citizen manual.
+
+
+Q6. How do I find PIO contact details?
+Use the PIO and Office Details stage or provide enough office information to search a current officer directory.
+ Select the relevant State, District, Base Department, Office Level, Office Name, and Officer Name in the portal
+dropdowns.
+ After selecting the correct PIO and office, click Next to continue.
+ If the officer or office is not shown in the list, use the blue highlighted link to enter details manually.
+ The manual-entry screen shows fields such as PIO name, designation, mobile number, office name, office
+address,district, base department, and sub-department name.
+For the assistant registry search: Provide a department, district, office or school name, office code, or officer email for
+more precise current PIO/FAA results.

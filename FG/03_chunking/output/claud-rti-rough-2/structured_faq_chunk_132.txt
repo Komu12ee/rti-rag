@@ -1,0 +1,18 @@
+# FAQ Chunk 132
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 21
+Section: (1) PIO के काम में बाधाः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 63
+
+---
+
+## (1) PIO के काम में बाधाः
+
+- यदि कोई व्यक्ति अपने कर्तव्यों के निर्वहन में PIO में जानबूझकर बाधा डालता है
+- OR कारावास और जुर्माना दोनों
+- दंडः 3 महीने तक कारावास OR 3250 तक जुर्माना (2005 से लागू

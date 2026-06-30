@@ -1,0 +1,16 @@
+# FAQ Chunk 8
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 1
+Section: Q4 (English ). Which menu is used for PIO registration ?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 35
+
+---
+
+## Q4 (English ). Which menu is used for PIO registration ?
+
+Answer. Use the Public Information Officer (PIO) registration menu on the RTI portal.

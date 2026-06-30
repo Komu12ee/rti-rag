@@ -1,0 +1,20 @@
+# FAQ Chunk 29
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 6
+Section: Q13 (English). What are the password requirements in the manual?
+Question: प्रश्न 13. (हिंदी) [ में पासवर्ड की क्या आवश्यकताएँ हैं? मैनुअल
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 75
+
+---
+
+## Q13 (English). What are the password requirements in the manual?
+
+प्रश्न 13. (हिंदी) [ में पासवर्ड की क्या आवश्यकताएँ हैं? मैनुअल
+
+उत्तर| पासवर्ड में कम से कम 8 अक्षर होने चाहिए और उसमें कम से कम एक छोटा अक्षर, एक बड़ा अक्षर और एक विशेष वर्ण होना चाहिए
+
+Source: RTI User Manual, Manual p. 4.

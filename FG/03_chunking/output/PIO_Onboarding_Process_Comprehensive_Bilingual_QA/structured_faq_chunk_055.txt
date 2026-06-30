@@ -1,0 +1,20 @@
+# FAQ Chunk 55
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 5
+Section: RTI Portal PIO Onboarding Process Bilingual Q&A Knowledge Base
+Question: प्रश्न 28. (हिन्दी). क्या PIO का कार्यालय नोडल अधिकारीं के कार्यालय के रूप में चुना जा सकता है?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 92
+
+---
+
+## RTI Portal PIO Onboarding Process Bilingual Q&A Knowledge Base
+
+प्रश्न 28. (हिन्दी). क्या PIO का कार्यालय नोडल अधिकारीं के कार्यालय के रूप में चुना जा सकता है?
+
+उत्तर.हाँ नोडल अधिकारी के कार्यालय विवरण के आप पी॰आई॰ओ. के कार्यालय का चयन कर सकते हैं या कार्यालयों में से चुन सकते हैं या नया कार्यालय बना सकते हैं| मौजूदा लिए
+
+Source: Page 4

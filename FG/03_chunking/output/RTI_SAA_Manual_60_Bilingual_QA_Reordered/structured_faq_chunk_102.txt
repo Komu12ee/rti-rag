@@ -1,0 +1,24 @@
+# FAQ Chunk 102
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 26
+Section: Question: Which RTI details link the original offline application to the appeal workflow?
+Question: प्रश्न 47. - हिंदी प्रश्नोत्तर
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 160
+
+---
+
+## Question: Which RTI details link the original offline application to the appeal workflow?
+
+प्रश्न 47. - हिंदी प्रश्नोत्तर
+
+प्रश्नः कौन॰से RTI विवरण मूल ऑफलाइन आवेदन को अपील कार्यप्रवाह से जोड़ते हैं?
+
+उत्तरः RTI Application Details में मैनुअल RTI विवरण ऑफलाइन आवेदन की तिथि और सूचना प्राप्त होने की स्थिति मांगता है|
+
+ये फील्ड मूल RTI आवेदन का रिकॉर्ड बनाते हैं, जिसके बाद उपयोगकर्ता First Appeal Office Details चरण में जाता हैl समान हिंदी प्रश्नः "कृपया समझाएंःकौन से RTI विवरण मूल ऑफलाइन आवेदन को अपील कार्यप्रवाह से जोड़ते हैं FI "आरटीआई पोर्टल पर यह प्रक्रिया कैसे होती है ? "
+
+Manual reference मैनुअल संदर्भः Manual p. 8

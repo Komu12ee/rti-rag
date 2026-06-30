@@ -1,0 +1,16 @@
+# FAQ Chunk 53
+Document: cg_sic_contact_bilingual_all_questions_qna
+Source: structured.md
+Pages: 6
+Section: 8. Postal Code
+Question: Question 47. What is the PIN code of the Chhattisgarh State Information Commission? Answer: The listed PIN code is 492002.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 33
+
+---
+
+## 8. Postal Code
+
+Question 47. What is the PIN code of the Chhattisgarh State Information Commission? Answer: The listed PIN code is 492002.

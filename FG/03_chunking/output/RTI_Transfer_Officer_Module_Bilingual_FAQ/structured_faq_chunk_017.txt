@@ -1,0 +1,16 @@
+# FAQ Chunk 17
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 2
+Section: Q08. Does this manual explain how to file a new RTI application ?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 62
+
+---
+
+## Q08. Does this manual explain how to file a new RTI application ?
+
+Answer: No. The manual is focused on officer role transfer and name change workflow. It does not provide instructions for citizens to file RTI applications or for officers to process the merits of an RTI request.

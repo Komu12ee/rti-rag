@@ -1,0 +1,20 @@
+# FAQ Chunk 68
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 6
+Section: Q35 (English ). How should the signed application file be prepared?
+Question: प्रश्न 35. (हिन्दी). हस्त्ताक्षरित आवेदन फाइल कैसे तैयार करें?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 72
+
+---
+
+## Q35 (English ). How should the signed application file be prepared?
+
+प्रश्न 35. (हिन्दी). हस्त्ताक्षरित आवेदन फाइल कैसे तैयार करें?
+
+उत्तर. आवेदन पर हस्त्ताक्षर को गई फाइल अपलोड करने के लिए पहले आवेदन का प्रिंटआउट लें और आवश्यक प्राधिकारी के हस्ताक्षर लें और पोर्टल पर अपलोड करें |
+
+Source: Page 4

@@ -1,0 +1,36 @@
+# FAQ Chunk 219
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 36-37
+Section: COMPREHENSIVEINDEX AND QUICK REFERENCE
+Question: (section note)
+Part: 2/2
+Kind: section_note
+Has answer: no
+Content tokens: 484
+
+---
+
+## COMPREHENSIVEINDEX AND QUICK REFERENCE
+
+|   Section | Topic                | Key Points                              | Pages     |
+|-----------|----------------------|-----------------------------------------|-----------|
+|        10 | Partial Disclosure   | Severability principle                  | 17-18     |
+|        11 | Third Party          | Notice, representation, protection      | 19        |
+|        12 | CIC                  | Establishment, composition              | 12-13     |
+|        13 | CIC Terms            | Qualifications, tenure (amended 2019 )  | Cross ref |
+|        14 | CIC Powers           | Inquiry, summon, order powers           | Cross ref |
+|        15 | SIC                  | State commission, similar to CIC        | Multiple  |
+|        16 | SIC Commissioners    | Qualifications, tenure (amended 2019 )  | Cross ref |
+|        17 | SIC Powers           | Appeal authority inquiry penalty        | 60-174    |
+|        18 | Inquiry Procedure    | Hearing process, evidence, timing       | 76-96     |
+|        19 | Appeals              | Two-tier system, procedure, timelines   | 76-96     |
+|        20 | Transfer             | Between commissions for jurisdiction    | Cross ref |
+|        21 | High Court           | Judicial review authority               | 157-161   |
+|        22 | Intelligence         | Limited exemption for security agencies | Crossrref |
+|        23 | Penalties            | Criminal penalties for violations       | 166-170   |
+|        24 | Commission Penalties | Commission authority compensation       | 166-170   |
+|        25 | Reports              | Annual reports, recommendations         | 146-155   |
+|        26 | Document Disposal    | Return retention of documents           | Cross-ref |
+|        27 | Amendments           | Parliamentary amendment authority       | Cross ref |
+|        28 | Rules                | Government rule making power            | 61-174    |

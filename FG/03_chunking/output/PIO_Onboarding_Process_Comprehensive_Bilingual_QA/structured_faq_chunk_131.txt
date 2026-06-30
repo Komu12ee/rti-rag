@@ -1,0 +1,16 @@
+# FAQ Chunk 131
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 11
+Section: Q68 (English ). What should the chatbot do for procedural questions?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 53
+
+---
+
+## Q68 (English ). What should the chatbot do for procedural questions?
+
+Answer. For procedural questions, retrieve the matching Q&A chunk and answer directly from it. Do not invent additional steps not present in the PDF.

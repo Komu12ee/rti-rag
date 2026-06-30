@@ -1,0 +1,28 @@
+# RTI Legal Chunk 50
+Document: RTI_Act_2005_Source_Text_QA
+Input source: structured.md
+Input pages: 24-26
+Chapter: Chapter IV - The State Information Commission
+Question: Q. What is the source text of Section 16?
+Part: 3/5
+Kind: faq
+Has answer: yes
+Content tokens: 39
+Original source book: Unknown
+Source type: general
+Legal reference: Section 16
+Book pages: 28-31
+Source PDF pages: Unknown
+Citation: Unknown
+
+---
+
+## Chapter IV - The State Information Commission
+
+Legal reference: Section 16
+
+Q. What is the source text of Section 16?
+
+**Answer continued:**
+
+Commissioners shall be varied to d

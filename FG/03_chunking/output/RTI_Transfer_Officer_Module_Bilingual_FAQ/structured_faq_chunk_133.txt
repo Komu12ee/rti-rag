@@ -1,0 +1,22 @@
+# FAQ Chunk 133
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 14
+Section: Q72. What should be checked before uploading the relieving file ?
+Question: प्रश्न 72. रिलिविंग फाइल अपलोड करने से पहले क्या जांचना चाहिए?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 96
+
+---
+
+## Q72. What should be checked before uploading the relieving file ?
+
+प्रश्न 72. रिलिविंग फाइल अपलोड करने से पहले क्या जांचना चाहिए?
+
+उत्तरः पुष्टि करें कि सही रिलिविंग दस्तावेज चुना गया है, उसका आकार स्क्रीन पर बताई गई 20 MB सीमा में है और उसका फॉर्मेट
+
+PDF, JPEG या JPG हैl फिर Browse के बाद Upload का उपयोग करें|
+
+Source reference : Manual pp . 3-12

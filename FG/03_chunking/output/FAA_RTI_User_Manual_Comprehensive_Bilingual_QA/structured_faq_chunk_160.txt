@@ -1,0 +1,16 @@
+# FAQ Chunk 160
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 29
+Section: Q78 (English). What should 1 do after selecting a bank on the e-challan page?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 34
+
+---
+
+## Q78 (English). What should 1 do after selecting a bank on the e-challan page?
+
+Answer. Click Submit to finalize the payment.

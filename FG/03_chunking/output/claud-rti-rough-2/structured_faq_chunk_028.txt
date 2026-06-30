@@ -1,0 +1,20 @@
+# FAQ Chunk 28
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 5
+Section: (6) Order Format:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 76
+
+---
+
+## (6) Order Format:
+
+- Written order with reasons
+- Should reference applicable law sections
+- Explain findings on material questions of fact
+
+(7) In Chhattisgarh: Multiple notifications regarding appeal hearing procedures, timelines for disposal, and SIC procedural guidelines ( See RTI Rule Book pages 76 96 on Appeal Rules and procedural circulars)

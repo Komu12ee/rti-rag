@@ -1,0 +1,24 @@
+# FAQ Chunk 81
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 20-21
+Section: Question: What changes in the workflow if Complaint is selected?
+Question: प्रश्न 37. हिंदी प्रश्नोत्तर
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 162
+
+---
+
+## Question: What changes in the workflow if Complaint is selected?
+
+प्रश्न 37. हिंदी प्रश्नोत्तर
+
+प्रश्नः Complaint पर कार्यप्रवाह में क्या बदलाव होता है? चुनने
+
+उत्तरः मैनुअल Complaint के दो शर्तें स्पष्ट रूप से बताता हैः भुगतान अनिवार्य नहीं है और Supporting Documents वैकल्पिक हैं| आवेदन जानकारी भरने और अन्य चरणों से वाली प्रक्रिया फिर भी मैनुअल में दिखाई गई हैl चुने गए विकल्प के लिए लाइव फॉर्म के अनिवार्य फील्ड संकेतों का पालन करें| लिए गुजरने
+
+समान हिंदी प्रश्नः "कृपया समझाएं: Complaint पर कार्यप्रवाह में क्या बदलाव होता है I "आरटीआई पोर्टल पर यह प्रक्रिया कैसे होती है?" चुनने
+
+Manual reference संदर्भः Manual p. 7 मैनुअल

@@ -1,0 +1,20 @@
+# FAQ Chunk 128
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 11
+Section: Q66 (English ). How should this document be chunked for RAG?
+Question: प्रश्न 66. (हिन्दी). RAG के इस दस्त्तावेज को कैसे chunk करना चाहिए? लिए
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 102
+
+---
+
+## Q66 (English ). How should this document be chunked for RAG?
+
+प्रश्न 66. (हिन्दी). RAG के इस दस्त्तावेज को कैसे chunk करना चाहिए? लिए
+
+उत्तर.एक Q&A को एक chunk रखें metadata में source file=pioOnboardingProcess pdf, source type=official process manual, topic=PIO onboarding source page, role=PIO  Nodal FAO और भाषा टैग रखें|
+
+Source: Implementation guidance

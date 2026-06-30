@@ -1,0 +1,16 @@
+# FAQ Chunk 30
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 4
+Section: Q15. Can I select more than one role or charge for handover?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 69
+
+---
+
+## Q15. Can I select more than one role or charge for handover?
+
+Answer: The screen displays a list of charges and allows selection before submission. This indicates that the user can select applicable charge entries; however, the manual does not state any maximum number of roles that can be transferred in one request.

@@ -1,0 +1,26 @@
+# FAQ Chunk 48
+Document: RTI_ACT_QA
+Source: structured.md
+Pages: 18-19
+Section: SECTION 21: JURISDICTION OF HIGH COURT
+Question: Q21. What is the jurisdiction of High Courts over RTI matters under Section 21?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 163
+
+---
+
+## SECTION 21: JURISDICTION OF HIGH COURT
+
+Q21. What is the jurisdiction of High Courts over RTI matters under Section 21?
+
+Answer Section 21 preserves the inherent jurisdiction of High Courts over Information Commission decisions. High Courts can:
+
+- Issue writs of habeas corpus, mandamus, prohibition, certiorari, and quo warranto
+- Review decisions of Central State Information Commissions
+- Examine for violation of constitutional provisions
+- Check for procedural irregularities
+- Intervene where jurisdiction is exceeded
+
+High Courts act as the final recourse when RTI appeal process is exhausted. Decisions can be challenged on grounds of unconstitutionality or manifest unreasonableness.

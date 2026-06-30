@@ -1,0 +1,26 @@
+# FAQ Chunk 3
+Document: faq_hindi_english_translation
+Source: structured.md
+Pages: 1
+Section: Untitled section
+Question: Question 2. How should an application be made?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 209
+
+---
+
+## Untitled section
+
+Question 2. How should an application be made?
+
+Answer: Request for obtaining information - Any person who wishes to obtain any information under this Act shall make a request,
+in writing or through electronic means, in English or Hindi or in the official language of the area in which the application is being
+made, together with such fee as may be prescribed -
+(a) to the Central Public Information Officer or the State Public Information Officer, as the case may be, of the concerned public authority;
+(b) to the Central Assistant Public Information Officer or the State Assistant Public Information Officer, as the case may be, specifying the
+particulars of the information sought: Provided that, where such a request cannot be made in writing, the Central Public Information
+Officer or the State Public Information Officer, as the case may be, shall give all reasonable assistance orally to the person making the
+request, so that it may be reduced to writing.
+[Specimen application form for the Public Information Officer]

@@ -1,0 +1,19 @@
+# FAQ Chunk 126
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 20
+Section: (6) Types of Penalties:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 51
+
+---
+
+## (6) Types of Penalties:
+
+- Monetary: Fine as specified
+- Incarceration: Imprisonment periods
+- Disciplinary: Suspension, demotion, dismissal
+- Compensation: Damages for loss caused

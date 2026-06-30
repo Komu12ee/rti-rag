@@ -1,0 +1,24 @@
+# FAQ Chunk 38
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 10-11
+Section: Question: What should 1 do on the RTI Instruction screen?
+Question: प्रश्न 17. - हिंदी प्रश्नोत्तर
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 162
+
+---
+
+## Question: What should 1 do on the RTI Instruction screen?
+
+प्रश्न 17. - हिंदी प्रश्नोत्तर
+
+प्रश्नः RTI Instruction स्क्रीन पर क्या करना चाहिए?
+
+उत्तरः आगे बढ़ने से पहले सूचीबद्ध आरटीआई आवेदन निर्देश पढ़़ें| प्रक्रिया में उपयोगकर्ता को यह पुष्टि करने वाले चेकबॉक्स पर टिक करना होता है कि निर्देश पढ लिए गए हैं और आवश्यक जानकारी तथा दस्तावेज़ उपलब्ध हैं| इसके बाद Next पर क्लिक करें| यह पुष्टि आवेदन प्रक्रिया का हिस्सा है, इसलिए अपील से संबंधित विवरण भरने से पहले इसे पूरा करना चाहिए|
+
+समान हिंदी प्रश्नः "कृपया समझाएं : RTI Instruction स्क्रीन पर क्या करना चाहिए "आरटीआई पोर्टल पर यह प्रक्रिया कैसे होती है?" Manual reference संदर्भः Manual pp. 5-6 मैनुअल
+
+Manual pp. 5-6

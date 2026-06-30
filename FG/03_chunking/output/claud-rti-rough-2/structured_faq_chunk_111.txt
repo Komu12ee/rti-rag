@@ -1,0 +1,20 @@
+# FAQ Chunk 111
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 18
+Section: (8) Transparency Within Limits:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 78
+
+---
+
+## (8) Transparency Within Limits:
+
+- Act still requires these agencies to publish suo motu information ( Section 4)
+- Must publish organizational details
+- Must publish rules governing operations
+
+The exemption recognizes national security needs while still maintaining some transparency and preventing complete secrecy. These agencies cannot use exemption to cover corruption or routine information.

@@ -1,0 +1,20 @@
+# FAQ Chunk 1
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 1
+Section: Comprehensive English Hindi User Questions and Answers
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 122
+
+---
+
+## Comprehensive English Hindi User Questions and Answers
+
+Purpose: This document provides a comprehensive bilingual Q&A set based on every userfacing process described in the supplied RTI User Manual.
+
+Format: question is followed immediately by its answer. Similar English and Hindi user wordings are included separately sO can be used for chatbot training testing or retrieval. Every they
+
+Scope note: Answers are limited to the manual and its screenshots. The manual may not reflect later portal changes; confirm live portal fields, file requirements and payment options before filing.

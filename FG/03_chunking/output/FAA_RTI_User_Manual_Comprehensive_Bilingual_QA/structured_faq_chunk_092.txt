@@ -1,0 +1,16 @@
+# FAQ Chunk 92
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 14
+Section: Q45 (English). What comes after RTI Application Details?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 35
+
+---
+
+## Q45 (English). What comes after RTI Application Details?
+
+Answer. After entering the RTI details, click Next to proceed to First Appeal Office Details.

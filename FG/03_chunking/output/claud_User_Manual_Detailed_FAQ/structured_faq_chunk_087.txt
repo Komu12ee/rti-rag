@@ -1,0 +1,22 @@
+# FAQ Chunk 87
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 15
+Section: Untitled section
+Question: Q084. What character limit applies to different fields?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 123
+
+---
+
+## Untitled section
+
+Q084. What character limit applies to different fields?
+
+Most field-specific character limits are not specified.
+The manual specifies three quantitative controls: application text in the prescribed column is limited to 500
+characters; a password must be at least 8 characters; and uploaded files may be up to 20 MB. It does not state
+maximum character counts for names, addresses, reason fields, officer fields, BPL document number, or other
+text boxes.

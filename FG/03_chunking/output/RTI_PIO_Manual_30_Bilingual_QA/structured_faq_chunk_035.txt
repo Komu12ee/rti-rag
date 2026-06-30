@@ -1,0 +1,18 @@
+# FAQ Chunk 35
+Document: RTI_PIO_Manual_30_Bilingual_QA
+Source: structured.md
+Pages: 6
+Section: प्रश्न (हिंदी): द्वितीय अपील विवरण भाग में कौन॰्कौन से फील्ड भरने चाहिए?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 122
+
+---
+
+## प्रश्न (हिंदी): द्वितीय अपील विवरण भाग में कौन॰्कौन से फील्ड भरने चाहिए?
+
+उत्तर (हिंदी)ः Second Appeal Relation में Appeal या Complaint चुनें| उपलब्ध विकल्पों में से Second Appeal Reason Type चुनें Second Appeal Reason को शब्दों में लिखें और BPL कार्डधारक होने के प्रश्न के Yes या No चुनें | ये फील्ड आवेदन की निर्धारित करते हैं और यह भी तय करते हैं कि आगे फॉर्म में BPL दस्तावेज़ संबंधी जानकारी भरनी होगी या नहीं| लिए प्रकृति
+
+Source reference: Manual p. 6

@@ -1,0 +1,16 @@
+# FAQ Chunk 79
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 9
+Section: Q43. What is the maximum file size shown for the upload?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 33
+
+---
+
+## Q43. What is the maximum file size shown for the upload?
+
+Answer: The upload screen note in the manual states a maximum file size of 20 MB.

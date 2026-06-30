@@ -1,0 +1,16 @@
+# FAQ Chunk 52
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 9
+Section: PRACTICAL APPEAL PROCEDURE
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 82
+
+---
+
+## PRACTICAL APPEAL PROCEDURE
+
+Step 1: File First Appeal within 30 days Step 2: Attend hearing if called Step 3ः If dissatisfied, file SIC Appeal within 90 days Step 4: Attend SIC hearing Step 5ः Receive final order (binding on all) Step 6: If still dissatisfied, approach High Court for judicial review

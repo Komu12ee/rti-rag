@@ -1,0 +1,31 @@
+# FAQ Chunk 35
+Document: RTI_ACT_QA
+Source: structured.md
+Pages: 15-16
+Section: SECTION 17: POWERS OF STATE INFORMATION COMMISSION
+Question: प्रश्न 17. धारा 17 के तहत राज्य सूचना आयोग के पास कौन सी शक्तियां हैं?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 138
+
+---
+
+## SECTION 17: POWERS OF STATE INFORMATION COMMISSION
+
+प्रश्न 17. धारा 17 के तहत राज्य सूचना आयोग के पास कौन सी शक्तियां हैं?
+
+उत्तरः धारा 17 राज्य सूचना आयोगों को केंद्रीय आयोग के समान शक्तियां देती है लेकिन राज्य के मामलों तक सीमित है, जिसमें शामिल हैंः
+
+- राज्य PIOs के निर्णयों पर अपीलीय अधिकार क्षेत्र
+
+
+
+
+- जांच करने की शक्ति
+- आदेश जारी करने की शक्ति
+- दंड की सिफारिश करने की शक्ति
+- suo motu जांच करने की शक्ति
+- RTI कार्यान्वयन के बारे में शिकायतें सुनने की शक्ति
+
+Source reference: RTI Rule Book, pp. 6O 174 (SIC procedures and powers)

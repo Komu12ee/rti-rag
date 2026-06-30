@@ -1,0 +1,21 @@
+# FAQ Chunk 7
+Document: faq_hindi_english_translation
+Source: structured.md
+Pages: 3
+Section: Untitled section
+Question: Question 2. What is the application fee for a first appeal?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 130
+
+---
+
+## Untitled section
+
+Question 2. What is the application fee for a first appeal?
+
+Answer: On submitting a first appeal under Section 19(1), the applicant must deposit Rs. 50/- (fifty rupees) as an application fee
+through a treasury challan, cash, non-judicial stamp, e-stamp, money order, demand draft, banker’s cheque, or postal order.
+If a copy of the first appeal order is required by registered post, the applicant shall have to pay an additional Rs. 25/- (twenty-five
+rupees) as postal charges.

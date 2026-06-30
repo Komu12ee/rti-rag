@@ -1,0 +1,16 @@
+# FAQ Chunk 132
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 14
+Section: Q72. What should be checked before uploading the relieving file ?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 64
+
+---
+
+## Q72. What should be checked before uploading the relieving file ?
+
+Answer: Confirm that the correct relieving document has been selected, it is within the displayed 20 MB limit, and it is in PDF, JPEG or JPG format. Then use Browse followed by Upload.

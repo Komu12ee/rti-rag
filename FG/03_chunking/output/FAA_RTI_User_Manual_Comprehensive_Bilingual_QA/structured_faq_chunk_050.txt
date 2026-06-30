@@ -1,0 +1,16 @@
+# FAQ Chunk 50
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 9
+Section: Q24 (English). What should 1 do if my application text is more than 500 characters?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 56
+
+---
+
+## Q24 (English). What should 1 do if my application text is more than 500 characters?
+
+Answer. The instruction screen states that if the application contains more than 5O0 characters, it can be uploaded as an attachment using the Supporting Document option.

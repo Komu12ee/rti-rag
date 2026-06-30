@@ -1,0 +1,18 @@
+# FAQ Chunk 24
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 4-5
+Section: Question: Will 1 receive an email after submitting registration?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 47
+
+---
+
+## Question: Will 1 receive an email after submitting registration?
+
+Answer: The manual shows a successful registration confirmation and instructs the user to verify the account through email.
+
+Source: RTI User Manual, Printed pages 34.

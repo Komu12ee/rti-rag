@@ -1,0 +1,16 @@
+# FAQ Chunk 36
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 4
+Section: Q18. What confirmation message is shown after successful submission ?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 54
+
+---
+
+## Q18. What confirmation message is shown after successful submission ?
+
+Answer: The manual states that a confirmation window appears with the messageः " Role Allocation has been done successfully ' This indicates that the handover request has been created in the portal.

@@ -1,0 +1,18 @@
+# FAQ Chunk 164
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 26
+Section: SECTION 25: REPORTSTO GOVERNMENT
+Question: Q25. What are the reporting obligations of Information Commissions?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 42
+
+---
+
+## SECTION 25: REPORTSTO GOVERNMENT
+
+Q25. What are the reporting obligations of Information Commissions?
+
+Answer: Section 25 establishes comprehensive annual reporting requirements for Information Commissions:

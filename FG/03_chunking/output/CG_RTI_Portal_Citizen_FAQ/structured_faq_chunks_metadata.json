@@ -1,0 +1,116 @@
+{
+  "document": "structured.md",
+  "document_name": "CG_RTI_Portal_Citizen_FAQ",
+  "source_path": "..\\01_preprocessing\\stage2_output\\CG_RTI_Portal_Citizen_FAQ\\structured.md",
+  "chunking_method": "bilingual_faq_rule_based",
+  "supported_languages": [
+    "Hindi",
+    "English"
+  ],
+  "rules": {
+    "question_start": "Hindi: प्रश्न N; English: Question N",
+    "answer_marker": "Hindi: उत्तरः/उत्तर:; English: Answer:",
+    "boundary": "next FAQ question, next major H1/H2 heading, or document end",
+    "answer_preserved": true,
+    "page_tracking": "exact source page markers: <!-- Page N -->"
+  },
+  "max_content_tokens": 512,
+  "tokenizer_model": "BAAI/bge-m3",
+  "token_count_mode": "tokenizer",
+  "source_faq_blocks": 0,
+  "source_section_notes": 1,
+  "faq_blocks_without_answer_marker": [],
+  "total_chunks": 5,
+  "chunks": [
+    {
+      "index": 1,
+      "filename": "structured_faq_chunk_001.txt",
+      "section": "Untitled section",
+      "question": "",
+      "pages": [
+        1,
+        2,
+        3
+      ],
+      "page_range": "1-3",
+      "source_block_ordinal": 1,
+      "part": 1,
+      "parts_in_block": 5,
+      "kind": "section_note",
+      "has_answer": false,
+      "content_tokens": 219
+    },
+    {
+      "index": 2,
+      "filename": "structured_faq_chunk_002.txt",
+      "section": "Untitled section",
+      "question": "",
+      "pages": [
+        1,
+        2,
+        3
+      ],
+      "page_range": "1-3",
+      "source_block_ordinal": 1,
+      "part": 2,
+      "parts_in_block": 5,
+      "kind": "section_note",
+      "has_answer": false,
+      "content_tokens": 507
+    },
+    {
+      "index": 3,
+      "filename": "structured_faq_chunk_003.txt",
+      "section": "Untitled section",
+      "question": "",
+      "pages": [
+        1,
+        2,
+        3
+      ],
+      "page_range": "1-3",
+      "source_block_ordinal": 1,
+      "part": 3,
+      "parts_in_block": 5,
+      "kind": "section_note",
+      "has_answer": false,
+      "content_tokens": 312
+    },
+    {
+      "index": 4,
+      "filename": "structured_faq_chunk_004.txt",
+      "section": "Untitled section",
+      "question": "",
+      "pages": [
+        1,
+        2,
+        3
+      ],
+      "page_range": "1-3",
+      "source_block_ordinal": 1,
+      "part": 4,
+      "parts_in_block": 5,
+      "kind": "section_note",
+      "has_answer": false,
+      "content_tokens": 507
+    },
+    {
+      "index": 5,
+      "filename": "structured_faq_chunk_005.txt",
+      "section": "Untitled section",
+      "question": "",
+      "pages": [
+        1,
+        2,
+        3
+      ],
+      "page_range": "1-3",
+      "source_block_ordinal": 1,
+      "part": 5,
+      "parts_in_block": 5,
+      "kind": "section_note",
+      "has_answer": false,
+      "content_tokens": 189
+    }
+  ]
+}

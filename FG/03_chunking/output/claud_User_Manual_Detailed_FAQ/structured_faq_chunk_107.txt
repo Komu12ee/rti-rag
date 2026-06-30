@@ -1,0 +1,21 @@
+# FAQ Chunk 107
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 18
+Section: Untitled section
+Question: Q104. What is the purpose of filing an appeal after the first response?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 84
+
+---
+
+## Untitled section
+
+Q104. What is the purpose of filing an appeal after the first response?
+
+Legal purpose is not specified.
+The manual does not explain the legal purpose. Operationally, it shows a Second Appeal application path that
+requires first-appeal information, indicating that the portal records the prior appeal before the Second Appeal
+process is completed.

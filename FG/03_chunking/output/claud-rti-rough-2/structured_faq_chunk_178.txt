@@ -1,0 +1,23 @@
+# FAQ Chunk 178
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 29
+Section: (3) सांख्यिकीय डेटाः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 65
+
+---
+
+## (3) सांख्यिकीय डेटाः
+
+- प्राप्त अपीलों की संख्या
+- निपटाई गई अपीलों की संख्या
+- औसत निपटान समय
+- अपीलों की सफलता दर
+- मांगी गई सूचना के प्रकार
+- अक्सर लागू की जाने वाली छूटें
+- रुझान और पैटर्न
+- अनुशंसित दंड

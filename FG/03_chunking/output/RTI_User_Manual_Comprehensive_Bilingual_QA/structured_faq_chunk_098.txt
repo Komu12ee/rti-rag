@@ -1,0 +1,24 @@
+# FAQ Chunk 98
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 16
+Section: Question: What kinds of supporting documents can be selected on the displayed document page?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 168
+
+---
+
+## Question: What kinds of supporting documents can be selected on the displayed document page?
+
+Answer: The example upload screen shows areas for an RTI supporting document, an offline PIO answer document, a first appeal supporting document, an offline FAO answer document and an optional supporting document for the second appeal application.
+
+Source: RTI User Manual, Printed page 11.
+
+प्रश्नः आरटीआई यूज़र मैनुअल में कौन॰कौन से दस्तावेज अपलोड क्षेत्र दिखाए गए हैं?
+
+उत्तरः उदाहरण अपलोड स्क्रीन में आरटीआई सहायक दस्तावेज, ऑफलाइन पीआईओ उत्तर दस्तावेज, प्रथम अपील सहायक दस्तावेज, ऑफलाइन एफएओ उत्तर दस्तावेज और द्वितीय अपील आवेदन के वैकल्पिक सहायक दस्तावेज के क्षेत्र दिखाए गए हैं| लिए
+
+Source: RTI User Manual, Printed page 11.

@@ -1,0 +1,18 @@
+# FAQ Chunk 52
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 14
+Section: Question: What is the purpose of the ' Apply Second Appeal for offline applications option?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 113
+
+---
+
+## Question: What is the purpose of the ' Apply Second Appeal for offline applications option?
+
+Answer: The dashboard screenshot identifies this option as the route for applying for a Second Appeal online in relation to an offline application before the Public Information Officer and the First Appellate Officer. Selecting it opens the application registration workflow described in the manual.
+
+Similar English questions: "Please explain: What is the purpose of the 'Apply Second Appeal for offline applications option' "How is this handled on the RTI portal?"

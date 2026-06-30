@@ -1,0 +1,16 @@
+# FAQ Chunk 5
+Document: RTI_Portal_flowchart_FAQ_Bilingual
+Source: structured.md
+Pages: 6-8
+Section: D. Nodal Officer and First Appellate Officer approvals
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 26
+
+---
+
+## D. Nodal Officer and First Appellate Officer approvals
+
+E. Completion checks and source limitations

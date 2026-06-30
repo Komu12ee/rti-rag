@@ -1,0 +1,16 @@
+# FAQ Chunk 50
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 4
+Section: Q26 (English ). How can office details be selected for PIO onboarding?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 41
+
+---
+
+## Q26 (English ). How can office details be selected for PIO onboarding?
+
+Answer. Office details may be selected from existing approved offices, or a new office may be created.

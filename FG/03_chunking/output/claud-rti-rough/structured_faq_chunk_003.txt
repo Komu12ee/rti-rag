@@ -1,0 +1,20 @@
+# FAQ Chunk 3
+Document: claud-rti-rough
+Source: structured.md
+Pages: 1
+Section: Ql. What is the official name and geographical scope of the Right to Information Act?
+Question: प्रश्न 1. सूचना का अधिकार अधिनियम का आधिकारिक नाम और भौगोलिक विस्तार क्या है?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 162
+
+---
+
+## Ql. What is the official name and geographical scope of the Right to Information Act?
+
+प्रश्न 1. सूचना का अधिकार अधिनियम का आधिकारिक नाम और भौगोलिक विस्तार क्या है?
+
+उत्तरः सूचना का अधिकार अधिनियम , 2005 ( अधिनियम संख्या 22 of 2005) इस विधान का आधिकारिक लघु शीर्षक है| इसे 15 जून 2005 को अधिनियमित किया गया था, और यह जम्मू और कश्मीर राज्य को छोड़कर भारत के संपूर्ण हिस्से में लागू होता है| यह अधिनियम नागरिकों को सार्वजनिक प्राधिकरणों द्वारा धारित सूचना तक पहुंचने का संवैधानिक अधिकार प्रदान करके सरकारी कार्यप्रणाली में पारदर्शिता और जवाबदेही को बढ़ावा देने के लिए एक व्यावहारिक व्यवस्था स्थापित करता है|
+
+Source reference: RTI Rule Book, pp. 1-2, Article 1(1) & 1(2)

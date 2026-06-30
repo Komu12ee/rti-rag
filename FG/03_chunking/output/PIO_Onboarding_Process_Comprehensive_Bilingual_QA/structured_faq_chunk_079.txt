@@ -1,0 +1,16 @@
+# FAQ Chunk 79
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 7
+Section: Q41 (English). How does the First Appellate Officer access to the RTI portal? get
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 83
+
+---
+
+## Q41 (English). How does the First Appellate Officer access to the RTI portal? get
+
+Answer. A link is sent to the e-mail ID entered for the First Appellate Officer. The e-mail should be in the gov in or nic in domain. By clicking the link, the FAO creates a password for the RTI portal and logs in.

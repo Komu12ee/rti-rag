@@ -1,0 +1,19 @@
+# FAQ Chunk 49
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 8
+Section: (6) Commission Powers [Section 19(7)-(9) ]:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 48
+
+---
+
+## (6) Commission Powers [Section 19(7)-(9) ]:
+
+- All powers of First Appellate Authority
+- Plus recommendation of penalties
+- Can suo motu investigate
+- Can recommend disciplinary action against officials

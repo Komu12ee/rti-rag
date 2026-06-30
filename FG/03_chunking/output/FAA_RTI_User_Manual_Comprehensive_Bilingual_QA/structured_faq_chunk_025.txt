@@ -1,0 +1,20 @@
+# FAQ Chunk 25
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 6
+Section: Q1 1 (English). How do L activate my account after registration?
+Question: प्रश्न 11. (हिंदी)| पंजीकरण के बाद अपना खाता कैसे सक्रिय करूँ?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 85
+
+---
+
+## Q1 1 (English). How do L activate my account after registration?
+
+प्रश्न 11. (हिंदी)| पंजीकरण के बाद अपना खाता कैसे सक्रिय करूँ?
+
+उत्तर| अपने ई-्मेल पर प्राप्त सत्यापन लिंक खोलें| मैनुअल के अनुसार इससे खाता सक्रिय होता है और पासवर्ड बनाने का विकल्प मिलता हैl पंजीकृत
+
+Source: RTI User Manual, Manual p. 4.

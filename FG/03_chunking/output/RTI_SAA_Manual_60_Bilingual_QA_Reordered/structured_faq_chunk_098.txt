@@ -1,0 +1,24 @@
+# FAQ Chunk 98
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 25
+Section: Question: What selection order is shown for PIO details?
+Question: प्रश्न 45. हिंदी प्रश्नोत्तर
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 157
+
+---
+
+## Question: What selection order is shown for PIO details?
+
+प्रश्न 45. हिंदी प्रश्नोत्तर
+
+प्रश्नः PIO विवरण के लिए कौन-सा चयन क्रम दिखाया गया है?
+
+उत्तरः PIO and Office Details स्क्रीन में State, District, Base Department, Office Level, Office Name और Officer Name के ड्रॉपडाउन दिखते हैं| उपलब्ध सूचियों से संबंधित मान चुनें और Next पर क्लिक करें| मैनुअल इसे मूल RTI आवेदन विवरण भरने से पहले का चरण बताता हैI
+
+समान हिंदी प्रश्नः "कृपया समझाएं: PIO विवरण के कौन सा चयन क्रम दिखाया गया है TI . "आरटीआई पोर्टल पर यह प्रक्रिया कैसे होती है ? " लिए
+
+Manual reference संदर्भः Manual p. 7 मैनुअल

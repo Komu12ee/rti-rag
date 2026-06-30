@@ -1,0 +1,21 @@
+# FAQ Chunk 74
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 13
+Section: Untitled section
+Question: Q071. What does the green checkmark indicate in the progress bar?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 96
+
+---
+
+## Untitled section
+
+Q071. What does the green checkmark indicate in the progress bar?
+
+Visual interpretation; no formal legend is supplied.
+Across the screenshots, earlier stages turn green after they have been completed, while the current form stage is
+shown in red. This is a visual interpretation of the screenshots; the manual does not provide a formal progress-
+bar legend.

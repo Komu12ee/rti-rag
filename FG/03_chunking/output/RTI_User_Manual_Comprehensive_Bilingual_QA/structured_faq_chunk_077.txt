@@ -1,0 +1,31 @@
+# FAQ Chunk 77
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 12-13
+Section: Question: Can T enter officer details manually if the office is not listed?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 324
+
+---
+
+## Question: Can T enter officer details manually if the office is not listed?
+
+Answer: Tes. The manual directs users to use the blue highlighted link when the required office and officer details are not available in the listed options. The alternate form shown asks for officer name, designation, mobile number , office name, office address district, base department and sub department name.
+
+Source: RTI User Manual, Printed pages 7-8.
+
+
+
+
+प्रश्नः यदि ड्रॉपडाउन सूची में पीआईओ या कार्यालय न मिले तो क्या करना चाहिए?
+
+उत्तरः हाँl मैनुअल में बताया गया है कि आवश्यक कार्यालय और अधिकारी विवरण में उपलब्ध न होने पर नीले रंग से हाइलाइट गए लिंक का उपयोग करें| दिखाई गए वैकल्पिक फॉर्म में अधिकारी का नाम, पदनाम, मोबाइल नंबर, कार्यालय का नाम, कार्यालय का पता, जिला, बेस विभाग और उप-विभाग का नाम मांगा जाता हैl सूची किए
+
+Source: RTI User Manual, Printed pages 7-8.
+
+प्रश्नः यदि कार्यालय सूचीबद्ध नहीं है तो क्या अधिकारी का विवरण मैन्युअल रूप से दर्ज कर सकता / सकती हूँ? उत्तरः हा| में बताया गया है कि आवश्यक कार्यालय और अधिकारी विवरण में उपलब्ध न होने पर नीले रंग से हाइलाइट गए लिंक का उपयोग करें| दिखाई गए वैकल्पिक फॉर्म में अधिकारी का नान, पदनाम, मोबाइल नंबर, कार्यालय का नाम, कार्यालय का पता, जिला, बेस विभाग और उप-विभाग का नाम मांगा जाता हैl मैनुअल सूची किए
+
+Sourceः RTI User Manual, Printed pages 7-8.

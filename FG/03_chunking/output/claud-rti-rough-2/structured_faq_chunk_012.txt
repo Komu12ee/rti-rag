@@ -1,0 +1,17 @@
+# FAQ Chunk 12
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 3
+Section: 5) Pro Bono Jurisdiction:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 37
+
+---
+
+## 5) Pro Bono Jurisdiction:
+
+- Can take suo motu cognizance of matters in public interest
+- Initiate investigations based on media reports or public knowledge

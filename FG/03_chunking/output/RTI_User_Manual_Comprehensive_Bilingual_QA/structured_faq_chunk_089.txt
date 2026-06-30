@@ -1,0 +1,18 @@
+# FAQ Chunk 89
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 15
+Section: प्रश्नः प्रथम अपील आवेदन फॉर्म कैसे पूरा करें?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 59
+
+---
+
+## प्रश्नः प्रथम अपील आवेदन फॉर्म कैसे पूरा करें?
+
+उत्तरः प्रथम अपील आवेदन विवरण दर्ज करें , First Appeal Reason Type ड्रॉपडाउन से उपयुक्त कारण चुनें और प्रथम अपील की ऑफलाइन आवेदन तिथि दर्ज करें|
+
+Source: RTI User Manual, Printed page 10.

@@ -1,0 +1,17 @@
+# FAQ Chunk 26
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 5
+Section: (4) Confidentiality Considerations:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 34
+
+---
+
+## (4) Confidentiality Considerations:
+
+- If information is exempt under Section 8, it may be examined in camera private hearing)
+- Third parties confidential information protected

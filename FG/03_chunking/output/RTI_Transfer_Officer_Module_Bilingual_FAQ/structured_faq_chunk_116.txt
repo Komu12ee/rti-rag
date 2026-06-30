@@ -1,0 +1,18 @@
+# FAQ Chunk 116
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 12
+Section: Q63. Does the manual state the allowed format and maximum size specifically for the name change order file ?
+Question: प्रश्न 63. क्या मैनुअल नाम परिवर्तन आदेश फाइल के अलग फॉर्मेट और अधिकतम आकार बताता है? उत्तरः में 20 MB और PDFIJPEGIJPG की सीमा विशेष रूप से रिलिविंग फाइल अपलोड स्क्रीन पर दिखाई गई हैI नाम परिवर्तन आदेश फाइल के अलग फाइल नियम स्पष्ट रूप से नहीं बताया गया हैl लिए मैनुअल लिए
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 105
+
+---
+
+## Q63. Does the manual state the allowed format and maximum size specifically for the name change order file ?
+
+प्रश्न 63. क्या मैनुअल नाम परिवर्तन आदेश फाइल के अलग फॉर्मेट और अधिकतम आकार बताता है? उत्तरः में 20 MB और PDFIJPEGIJPG की सीमा विशेष रूप से रिलिविंग फाइल अपलोड स्क्रीन पर दिखाई गई हैI नाम परिवर्तन आदेश फाइल के अलग फाइल नियम स्पष्ट रूप से नहीं बताया गया हैl लिए मैनुअल लिए
+
+Source reference : Manual pp . 9-12

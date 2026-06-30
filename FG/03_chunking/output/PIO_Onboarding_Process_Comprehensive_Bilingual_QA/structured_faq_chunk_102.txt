@@ -1,0 +1,20 @@
+# FAQ Chunk 102
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 8
+Section: Q52 (English ). What should be checked before final onboarding submission ?
+Question: प्रश्न 52. (हिन्दी ). अंतिम ऑनबोर्डिंग सबमिशन से पहले क्या जांचना चाहिए?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 106
+
+---
+
+## Q52 (English ). What should be checked before final onboarding submission ?
+
+प्रश्न 52. (हिन्दी ). अंतिम ऑनबोर्डिंग सबमिशन से पहले क्या जांचना चाहिए?
+
+उत्तर. प्री॰व्यू में सभी जानकारीं जांचें, पी॰आई॰ओ. ऑर्डर फाइल अपलोड करें, आवेदन प्रिंट करें, आवश्यक हस्ताक्षर लें, हस्त्ताक्षरित आवेदन फाइल स्कैन कर अपलोड करें और फिर ऑनबोर्डिंग हेतु सबमिट करें|
+
+Source: Pages 3 and 4

@@ -1,0 +1,36 @@
+# RTI Legal Chunk 12
+Document: RTI_Act_2005_Source_Text_QA
+Input source: structured.md
+Input pages: 6
+Chapter: Chapter I - Preliminary
+Question: Q. What is the source text for the definition of “right to information”?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 155
+Original source book: Unknown
+Source type: general
+Legal reference: Unknown
+Book pages: 3-6
+Source PDF pages: Unknown
+Citation: Unknown
+
+---
+
+## Chapter I - Preliminary
+
+Q. What is the source text for the definition of “right to information”?
+
+Answer - source text
+(j) “right to information” means the right
+to information accessible under this
+Act which is held by or under the
+control of any public authority and includes the right to -
+(i) inspection of work, documents, records;
+(ii) taking notes, extracts or certified copies of documents or records;
+(iii) taking certified samples of material;
+(iv) obtaining information in the form of diskettes, floppies, tapes, video
+cassettes or in any other electronic
+mode or through printouts where such
+information is stored in a computer or in any other device;
+—

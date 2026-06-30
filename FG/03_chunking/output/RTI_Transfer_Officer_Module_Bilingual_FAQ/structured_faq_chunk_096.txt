@@ -1,0 +1,16 @@
+# FAQ Chunk 96
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 10
+Section: Q52. How do I start a name change request?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 51
+
+---
+
+## Q52. How do I start a name change request?
+
+Answer: Open " Give Charge and select the option that asks whether charge is being given to another person on the existing email ID. The manual highlights this second option in the screenshot.

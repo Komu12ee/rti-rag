@@ -1,0 +1,19 @@
+# FAQ Chunk 146
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 23
+Section: (4) Repeated Violations:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 46
+
+---
+
+## (4) Repeated Violations:
+
+- If officer repeatedly violates RTI Act
+- Commission can recommend dismissal
+- Can recommend higher fines for repeat offenses
+- Aggravated penalties for deliberate violations

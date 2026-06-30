@@ -1,0 +1,18 @@
+# FAQ Chunk 30
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 6
+Section: (8) Records Management:
+Question: प्रश्न 18. सूचना आयोग द्वारा जांच करते समय अनुसरण की जाने वाली प्रक्रिया क्या है?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 43
+
+---
+
+## (8) Records Management:
+
+प्रश्न 18. सूचना आयोग द्वारा जांच करते समय अनुसरण की जाने वाली प्रक्रिया क्या है?
+
+उत्तरः धारा 18 केंद्रीय और राज्य सूचना आयोगों द्वारा संचालित जांच के लिए प्रक्रिया स्थापित करती हैः

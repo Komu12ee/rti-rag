@@ -1,0 +1,16 @@
+# FAQ Chunk 1
+Document: RTI_Portal_flowchart_FAQ_Bilingual
+Source: structured.md
+Pages: 1
+Section: RTI PORTAL ONBOARDING FLOWCHART
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 24
+
+---
+
+## RTI PORTAL ONBOARDING FLOWCHART
+
+Comprehensive Bilingual FAQ: English and Hindi

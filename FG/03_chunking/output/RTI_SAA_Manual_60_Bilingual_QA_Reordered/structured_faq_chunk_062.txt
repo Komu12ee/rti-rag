@@ -1,0 +1,18 @@
+# FAQ Chunk 62
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 16
+Section: Question: Why does the instruction page ask for a mobile number?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 105
+
+---
+
+## Question: Why does the instruction page ask for a mobile number?
+
+Answer: The instruction list says that the applicant or appellant should submit a mobile number to receive SMS alerts. The manual does not define every alert type, but it identifies the mobile number as the route for these notifications. Use a number that can receive messages.
+
+Similar English questions: "Please explain: Why does the instruction page ask for a mobile number"; "How is this handled on the RTI portal?"

@@ -1,0 +1,22 @@
+# FAQ Chunk 9
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 3
+Section: Q3 (English). What should 1 do after the User Registration information screen appears?
+Question: प्रश्न 3. (हिंदी) User Registration की जानकारी वाली स्क्रीन आने के बाद क्या करना चाहिए?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 77
+
+---
+
+## Q3 (English). What should 1 do after the User Registration information screen appears?
+
+प्रश्न 3. (हिंदी) User Registration की जानकारी वाली स्क्रीन आने के बाद क्या करना चाहिए?
+
+उत्तर सामान्य
+
+जानकारी पढ़ें , निर्देश पढ लेने की घोषणा | पुष्टि वाले बॉक्स पर टिक करें और फिर Next पर क्लिक करें|
+
+Source: RTI User Manual, Manual p. 2

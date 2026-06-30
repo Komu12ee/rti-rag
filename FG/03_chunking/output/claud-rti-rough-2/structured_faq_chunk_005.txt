@@ -1,0 +1,18 @@
+# FAQ Chunk 5
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 1-2
+Section: (3) Tenure (Amended 2019):
+Question: प्रश्न 16. राज्य सूचना आयुक्तों की योग्यता और कार्यकाल क्या हैं?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 52
+
+---
+
+## (3) Tenure (Amended 2019):
+
+प्रश्न 16. राज्य सूचना आयुक्तों की योग्यता और कार्यकाल क्या हैं?
+
+उत्तरः धारा 16 राज्य सूचना आयुक्तों की नियुक्ति और शर्तों को नियंत्रित करती है, केंद्रीय आयोग के समान लेकिन राज्य स्तर परः

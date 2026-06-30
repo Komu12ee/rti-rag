@@ -1,0 +1,18 @@
+# FAQ Chunk 15
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 3
+Section: Annual Reports:
+Question: प्रश्न 17. राज्य सूचना आयोग की शक्तियां और कार्य क्या हैं?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 51
+
+---
+
+## Annual Reports:
+
+प्रश्न 17. राज्य सूचना आयोग की शक्तियां और कार्य क्या हैं?
+
+उत्तरः धारा 17 राज्य सूचना आयोग को राज्य स्तर पर RTI अनुपालन लागू करने के अर्द्ध-्न्यायिक शक्तियां देती हैः लिए

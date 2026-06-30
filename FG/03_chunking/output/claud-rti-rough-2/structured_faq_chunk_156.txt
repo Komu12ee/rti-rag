@@ -1,0 +1,18 @@
+# FAQ Chunk 156
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 25
+Section: (3) संचयी दंडः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 49
+
+---
+
+## (3) संचयी दंडः
+
+- आपराधिक और अनुशासनात्मक दंड दोनों लगा सकता है
+- जानबूझकर उल्लंघन के दंड संचयी हैं लिए,
+- मुआवजे के अतिरिक्त आदेश दे सकता है

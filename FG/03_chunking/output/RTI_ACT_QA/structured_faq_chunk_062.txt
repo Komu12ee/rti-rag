@@ -1,0 +1,26 @@
+# FAQ Chunk 62
+Document: RTI_ACT_QA
+Source: structured.md
+Pages: 24
+Section: SECTION 28: RULE MAKING POWER
+Question: Q28. What matters are covered by rule making power under Section 28?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 148
+
+---
+
+## SECTION 28: RULE MAKING POWER
+
+Q28. What matters are covered by rule making power under Section 28?
+
+Answer: Section 28 establishes comprehensive rule making authority for Central and State Governments. Matters covered include:
+
+- Section 4: Cost of dissemination materials, costs for suo motu disclosure print
+- Section 5ः PIOISPIO designation, appointment procedures
+- Section 6: Application fees (prescribed amount)
+- Section 7: Response procedures, fees for and electronic formats copies
+- Section 13 & 16: Salaries and conditions of CICISIC members
+- Section 19: Appeal procedures and timelines
+- Other matters: As prescribed for implementing the Act

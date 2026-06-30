@@ -1,0 +1,16 @@
+# FAQ Chunk 75
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 6
+Section: Q39 (English ). How does the Nodal/ Approval Authority access to the RTI portal? get
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 70
+
+---
+
+## Q39 (English ). How does the Nodal/ Approval Authority access to the RTI portal? get
+
+Answer. Alink is sent to the registered e-mail ID of the Nodal Approval Authority. By clicking the link, the authority creates a password for the RTI portal and then logs in.

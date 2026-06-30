@@ -1,0 +1,24 @@
+# FAQ Chunk 57
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 15
+Section: Question: Can an applicant file an RTI application and make payment online according to the instruction screen?
+Question: प्रश्न 26. हिंदी प्रश्नोत्तर
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 185
+
+---
+
+## Question: Can an applicant file an RTI application and make payment online according to the instruction screen?
+
+प्रश्न 26. हिंदी प्रश्नोत्तर
+
+प्रश्नः निर्देश स्क्रीन के अनुसार क्या आवेदक ऑनलाइन RTI आवेदन और भुगतान कर सकता है?
+
+उत्तरः हां| मैनुअल में दिखाया गया RTI Application Instruction कहता है कि भारतीय नागरिक वेब पोर्टल के माध्यम से ऑनलाइन RTI आवेदन और उसके ऑनलाइन भुगतान कर सकते हैं| इसमें यह भी कहा गया है कि प्रथम अपील ऑनलाइन दर्ज की जा सकती हैl इसके बाद मैनुअल ऑफलाइन RTI प्रक्रिया से जुड़ा द्वितीय अपील कार्यप्रवाह दिखाता है| लिए
+
+समान हिंदी प्रश्नः "कृपया समझाएं निर्देश स्क्रीन के अनुसार क्या आवेदक ऑनलाइन RTI आवेदन और भुगतान कर सकता है FI , "आरटीआई पोर्टल पर यह प्रक्रिया कैसे होती है ?"
+
+Manual reference मैनुअल संदर्भः Manual p. 5

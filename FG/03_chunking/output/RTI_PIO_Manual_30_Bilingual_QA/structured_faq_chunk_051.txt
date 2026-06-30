@@ -1,0 +1,16 @@
+# FAQ Chunk 51
+Document: RTI_PIO_Manual_30_Bilingual_QA
+Source: structured.md
+Pages: 8
+Section: Question (English): How do 1 provide First Appeal Office Details?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 89
+
+---
+
+## Question (English): How do 1 provide First Appeal Office Details?
+
+Answer (English): Select the relevant State, District, Base Department, Office Level, Office Name, and Officer Name from the dropdown fields in the First Appeal Office Details stage. Then click Next. If the required office or officer is absent from the listed choices, the manual shows a blue link for entering or finding officer and office details manually.

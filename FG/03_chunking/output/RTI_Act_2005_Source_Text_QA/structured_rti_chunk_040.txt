@@ -1,0 +1,72 @@
+# RTI Legal Chunk 40
+Document: RTI_Act_2005_Source_Text_QA
+Input source: structured.md
+Input pages: 19-21
+Chapter: Chapter III - The Central Information Commission
+Question: Q. What is the source text of Section 13?
+Part: 2/5
+Kind: faq
+Has answer: yes
+Content tokens: 508
+Original source book: Unknown
+Source type: general
+Legal reference: Section 13
+Book pages: 22-25
+Source PDF pages: Unknown
+Citation: Unknown
+
+---
+
+## Chapter III - The Central Information Commission
+
+Legal reference: Section 13
+
+Q. What is the source text of Section 13?
+
+**Answer continued:**
+
+SOURCE-TEXT Q&A | THE RIGHT TO INFORMATION ACT, 2005
+upon his office make and subscribe
+before the President or some other
+person appointed by him in that behalf, an oath or affirmation
+according to the form set out for the purpose in the First Schedule.
+(4) The Chief Information
+Commissioner or an Information Commissioner may, at any time, by
+writing under his hand addressed to the President, resign from his office:
+Provided that the Chief Information
+Commissioner or an Information
+Commissioner may be removed in the manner specified under section 14.
+(5)* The salaries and allowances payable
+to and other terms and conditions of service of -
+(a) the Chief Information Commissioner
+shall be the same as that of the Chief Election Commissioner;
+(b) an Information Commissioner shall
+be the same as that of an Election Commissioner:
+Provided that if the Chief Information
+Commissioner or an Information Commissioner, at the time of his appointment is, in receipt of a pension, other than a
+disability or wound pension, in respect of any
+previous service under the
+Government of India or under the Government of a State, his salary in
+respect of the service as the Chief
+Information Commissioner or an
+Information Commissioner shall be
+reduced by the amount of that pension
+including any portion of pension
+which was commuted and pension
+equivalent of other forms of
+retirement benefits excluding
+pension equivalent of retirement gratuity:
+Provided further that if the Chief
+Information Commissioner or an Information Commissioner if, at the * Amendment of section 13
+(C) for sub-section (5), following sub-section shall be subst “(5) The salaries and allowances payable to and othe
+Commissioner and the Information Commissioners shall be s
+Provided that the salaries, allowances and other conditi
+Information shall not be varied to their disadvantage after the
+Provided further that the Chief Information Commissi the commencement of the Right to Information (Amendmen
+of this Act and the rules made there under as if the Right to Inf
+time of his appointment is, in receipt
+of retirement benefits in respect of
+any previous service rendered in a
+Corporation established by or under
+any Central Act or State Act or a
+Compiled from the

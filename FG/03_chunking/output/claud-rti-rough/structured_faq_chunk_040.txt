@@ -1,0 +1,27 @@
+# FAQ Chunk 40
+Document: claud-rti-rough
+Source: structured.md
+Pages: 16-17
+Section: (4) हटाया जानाः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 142
+
+---
+
+## (4) हटाया जानाः
+
+- राष्ट्रपति द्वारा दुर्आचरण या अक्षमता के आधार पर हटाया जा सकता है
+- सूचना आयुक्तों को हटाना मुख्य आयुक्त की सिफारिश से आवश्यक है
+- केवल सुप्रीम कोर्ट द्वारा जांच के बाद ( मुख्य आयुक्त के मामले में)
+- (5) स्वतंत्रताः कार्यकाल के दौरान कोई अन्य पद धारण नहीं कर सकते
+- (6) अधिकार क्षेत्रः भारत भर में समान = CIC को सभी केंद्रीय सार्वजनिक प्राधिकरणों पर अधिकार है
+
+
+
+
+2019 संशोधन ने कार्यकाल को लचीला बनाया (निश्चित 5 साल से) ताकि सरकारी आवश्यकताओं के अनुकूल ढाल सकें
+
+Source reference: RTI Rule Book, cross reference to Section 13 (amended) , official Government notification

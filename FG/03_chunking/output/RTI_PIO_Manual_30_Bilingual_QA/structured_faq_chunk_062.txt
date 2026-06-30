@@ -1,0 +1,18 @@
+# FAQ Chunk 62
+Document: RTI_PIO_Manual_30_Bilingual_QA
+Source: structured.md
+Pages: 10
+Section: प्रश्न (हिंदी)ः पोर्टल के माध्यम से भुगतान कैसे करें?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 118
+
+---
+
+## प्रश्न (हिंदी)ः पोर्टल के माध्यम से भुगतान कैसे करें?
+
+उत्तर (हिंदी): Payment Details चरण में लागू भुगतान विकल्प के चेकबॉक्स पर टिक करें और Fee Online पर क्लिक करें| फॉर्म ऑनलाइन e-Challan पृष्ठ पर भेजा जाएगा| उस पृष्ठ पर बैंक का नाम या बैंक गेटवे चुनें और भुगतान पूरा करने के Submit पर क्लिक करें| मैनुअल बताता है यदि Second Appeal Relation में Complaint चुना गया है, तो भुगतान अनिवार्य नहीं हैl Pay लिए
+
+Source reference: Manual pp. 7, 12

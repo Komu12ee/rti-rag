@@ -1,0 +1,26 @@
+# FAQ Chunk 193
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 31-32
+Section: (3) Amendments So Far:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 91
+
+---
+
+## (3) Amendments So Far:
+
+- RTI (Amendment) Act, 2019 ( Gazette dated 29 October 2019 )
+- Made terms of CIC and SIC flexible
+
+
+
+
+- Some procedural amendments
+- Fee revisions through rules ( not statutory amendments)
+- (4) Current Status: As per 2019 Amendment
+- Tenure changed from fixed 5 years to prescribed by government
+- Other administrative amendments

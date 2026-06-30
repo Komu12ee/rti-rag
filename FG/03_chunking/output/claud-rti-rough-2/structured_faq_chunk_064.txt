@@ -1,0 +1,22 @@
+# FAQ Chunk 64
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 10-11
+Section: (4) आवेदन प्रारूपः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 33
+
+---
+
+## (4) आवेदन प्रारूपः
+
+- निर्धारित रूप (नियम पुस्तक के पृष्ठ 183 185 में विस्तृत )
+
+
+
+
+- मामले का व्यापक बयान
+- सभी आदेशों की प्रतियां संलग्न करें

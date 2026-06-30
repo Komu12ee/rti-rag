@@ -1,0 +1,16 @@
+# FAQ Chunk 58
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 5
+Section: Q30 (English ). How can office details be filled for the First Appellate Officer ?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 55
+
+---
+
+## Q30 (English ). How can office details be filled for the First Appellate Officer ?
+
+Answer. For First Appellate Officer office details, the PIO office may be selected, an existing office may be selected, or a new office may be created.

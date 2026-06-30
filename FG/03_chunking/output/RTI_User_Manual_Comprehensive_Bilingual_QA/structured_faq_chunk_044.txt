@@ -1,0 +1,18 @@
+# FAQ Chunk 44
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 7-8
+Section: प्रश्नः द्वितीय अपील फॉर्म के आरटीआई निर्देश चरण क्या करना में मुझे चाहिए?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 58
+
+---
+
+## प्रश्नः द्वितीय अपील फॉर्म के आरटीआई निर्देश चरण क्या करना में मुझे चाहिए?
+
+उत्तरः हाँ| प्रदर्शित निर्देश पढ़़ें, स्वीकृति बॉक्स पर टिक करें और आगे बढ़ने के लिए Next पर क्लिक करें|
+
+Sourceः RTI User Manual, Printed page 5.

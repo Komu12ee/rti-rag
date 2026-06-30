@@ -1,0 +1,28 @@
+# RTI Legal Chunk 30
+Document: RTI_Act_2005_Source_Text_QA
+Input source: structured.md
+Input pages: 13-15
+Chapter: Chapter II - Right to information and obligations of public authorities
+Question: Q. What is the source text of Section 8?
+Part: 3/5
+Kind: faq
+Has answer: yes
+Content tokens: 42
+Original source book: Unknown
+Source type: general
+Legal reference: Section 8
+Book pages: 15-17
+Source PDF pages: Unknown
+Citation: Unknown
+
+---
+
+## Chapter II - Right to information and obligations of public authorities
+
+Legal reference: Section 8
+
+Q. What is the source text of Section 8?
+
+**Answer continued:**
+
+public authority may allow access to

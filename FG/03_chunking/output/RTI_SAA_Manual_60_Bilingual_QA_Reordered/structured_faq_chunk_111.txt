@@ -1,0 +1,24 @@
+# FAQ Chunk 111
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 28-29
+Section: Question: Which documents and file formats are shown on the upload screen?
+Question: प्रश्न 52. - हिंदी प्रश्नोत्तर
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 204
+
+---
+
+## Question: Which documents and file formats are shown on the upload screen?
+
+प्रश्न 52. - हिंदी प्रश्नोत्तर
+
+प्रश्नः अपलोड स्क्रीन पर कौन-से दस्तावेज़ और फाइल फॉर्मेट दिखाए गए हैं?
+
+उत्तरः अपलोड स्क्रीन में RTI supporting document, ऑफलाइन PIO उत्तर दस्तावेज़, First Appeal supporting document, ऑफलाइन First Appellate Officer उत्तर दस्तावेज़ और द्वितीय अपील के लिए वैकल्पिक सहायक दस्तावेज़ के स्लॉट दिखाए गए हैं| स्क्रीन में PDF, JPEG और JPG फाइलें स्वीकार्य बताई गई हैं तथा अधिकतम फाइल आकार 20 MB दर्शाया गया हैl Complaint आवेदन के सहायक दस्तावेज़ों को वैकल्पिक बताता हैl लिए मैनुअल
+
+समान हिंदी प्रश्नः "कृपया समझाएं: अपलोड स्क्रीन पर कौन से दस्तावेज़ और फाइल फॉर्मेट दिखाए गए हैं II "आरटीआई पोर्टल पर यह प्रक्रिया कैसे होती है ?"
+
+Manual reference मैनुअल संदर्भः Manual pp. 7, 11

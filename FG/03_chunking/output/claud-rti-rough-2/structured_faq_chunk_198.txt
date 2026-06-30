@@ -1,0 +1,30 @@
+# FAQ Chunk 198
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 32-33
+Section: (1) Rule Making Authority:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 116
+
+---
+
+## (1) Rule Making Authority:
+
+- Central Government for central matters
+- State Government for state matters
+- Prescribed through notification in Official Gazette
+- (2) Matters Covered by Rules [Section 28 (2) ]:
+
+
+
+
+- Section 4: Cost of dissemination materials
+- Section 5ः PIO appointment and designation
+- Section 6: Application fees
+- Section 7: Response timelines, fees for copies
+- Section 13 & 16: Salaries and conditions of CICISIC members
+- Section 19: Appeal procedure and timelines
+- other matter necessary to implement Act Any

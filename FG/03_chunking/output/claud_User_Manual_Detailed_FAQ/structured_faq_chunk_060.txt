@@ -1,0 +1,22 @@
+# FAQ Chunk 60
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 11
+Section: Untitled section
+Question: Q057. How many times can I edit my application before submission?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 96
+
+---
+
+## Untitled section
+
+Q057. How many times can I edit my application before submission?
+
+No numeric limit is specified.
+The manual gives no edit-count limit. It documents that Edit can be used before registration submission and
+Back can be used to correct prior form details in the workflow, but it does not state how many times those
+options may be used.
+Complaint-Specific Questions

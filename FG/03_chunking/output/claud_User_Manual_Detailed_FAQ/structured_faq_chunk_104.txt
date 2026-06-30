@@ -1,0 +1,22 @@
+# FAQ Chunk 104
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 17
+Section: Untitled section
+Question: Q101. What is the Right to Information (RTI) Act?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 136
+
+---
+
+## Untitled section
+
+Q101. What is the Right to Information (RTI) Act?
+
+Formal legal definition is not provided in the manual.
+The manual identifies RTI as Right to Information and presents a Government of Chhattisgarh portal for RTI-
+related filings. A portal screenshot describes RTI as a fundamental right under Article 19(1), but the manual does
+not provide the Act's text, scope, exemptions, or authoritative legal interpretation. This guide therefore cannot
+substitute for the Act or official legal advice.

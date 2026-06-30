@@ -1,0 +1,16 @@
+# FAQ Chunk 115
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 18
+Section: Question: What should 1 do on the e-Challan page to complete payment?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 58
+
+---
+
+## Question: What should 1 do on the e-Challan page to complete payment?
+
+Answer: On the e-Challan page, select the bank name in the bank gateway field and click Submit to finalise payment. Sourceः RTI User Manual, Printed page 12

@@ -1,0 +1,16 @@
+# FAQ Chunk 9
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 2
+Section: Q04. Which officer roles are mentioned in the manual?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 56
+
+---
+
+## Q04. Which officer roles are mentioned in the manual?
+
+Answer: The manual mentions PIO, FAO and Nodal Officer roles. The transfer interface shows that these roles may appear as selectable charges, depending on the user account and office setup.

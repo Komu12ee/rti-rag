@@ -1,0 +1,26 @@
+# FAQ Chunk 7
+Document: cg_sic_contact_bilingual_all_questions_qna
+Source: structured.md
+Pages: 1-2
+Section: 1. Complete Contact Details
+Question: Question 3. Give me the Secretariat contact information.
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 97
+
+---
+
+## 1. Complete Contact Details
+
+Question 3. Give me the Secretariat contact information.
+
+Answer: Secretariat, Chhattisgarh State Information Commission
+
+Address: Sector  19, North Block, Nava Raipur Atal Nagar, District Raipur 492002, Chhattisgarh, India Phone: 0771-2512107
+
+Fax: 0771-2512102
+
+Email: sic[dot]cglat]nic[dot]in
+
+Website: httpsः Irtionline cg gov.in/

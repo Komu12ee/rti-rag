@@ -1,0 +1,21 @@
+# FAQ Chunk 72
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 13
+Section: Untitled section
+Question: Q069. What is a "Visitor Number" shown on the page?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 117
+
+---
+
+## Untitled section
+
+Q069. What is a "Visitor Number" shown on the page?
+
+Visitor Number meaning is not specified.
+The manual screenshots display a Visitor Number near the bottom of some pages, but the manual does not
+define its purpose or tell users to use it as an application identifier. Do not confuse it with the unique registration
+number that the instructions say is issued after application submission.

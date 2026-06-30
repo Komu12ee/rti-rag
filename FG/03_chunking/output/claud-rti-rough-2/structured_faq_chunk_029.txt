@@ -1,0 +1,23 @@
+# FAQ Chunk 29
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 5-6
+Section: (8) Records Management:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 56
+
+---
+
+## (8) Records Management:
+
+- Commission maintains records of inquiries
+- Annual reports compiled
+- Statisticson appeals maintained
+
+
+
+
+The procedure ensures fairness, natural justice, and adherence to constitutional principles while investigating RTI matters.

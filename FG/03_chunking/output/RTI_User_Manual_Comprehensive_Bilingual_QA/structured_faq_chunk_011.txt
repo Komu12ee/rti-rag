@@ -1,0 +1,18 @@
+# FAQ Chunk 11
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 3
+Section: Question: Do I need to accept the registration instructions before continuing?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 53
+
+---
+
+## Question: Do I need to accept the registration instructions before continuing?
+
+Answer: Tes. The manual instructs the user to tick the acknowledgement box after reading the instructions and then click Next.
+
+Source: RTI User Manual, Printed page 2

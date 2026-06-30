@@ -1,0 +1,18 @@
+# FAQ Chunk 99
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 16
+Section: (5) RTI पर उच्च न्यायालय की टिप्पणियांः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 141
+
+---
+
+## (5) RTI पर उच्च न्यायालय की टिप्पणियांः
+
+- RTI अधिनियम प्रावधान धारा 2 और 3 सेः माननीय उच्च न्यायालय ( गोवा में बॉम्बे) का निर्णय W.P. 419/2007 में (Dr Celsa Pinto vs. Goa State Information Commission )
+- RTI अधिनियम धारा 2, 3ः माननीय सर्वोच्च न्यायालय की C.A. No. 6454 of 2011 में टिप्पणियां (Central Board of Secondary Education vs. Aditya Bandopadhyay ) RTI नियम पुस्तक पृष्ठ 157 161 देखें
+- मुख्य सिद्धांतः व्यक्तिगत सूचना का प्रकटीकरण तब स्वीकार्य है जब प्रकटीकरण में सार्वजनिक हित गोपनीयता संबंधी चिंताओं से अधिक हो

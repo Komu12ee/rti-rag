@@ -1,0 +1,20 @@
+# FAQ Chunk 91
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 14
+Section: Q44 (English). What should 1 select for information received in RTI Application Details?
+Question: प्रश्न 44. (हिंदी) RTI Application Details में Information Received के क्या चुनना चाहिए? लिए
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 99
+
+---
+
+## Q44 (English). What should 1 select for information received in RTI Application Details?
+
+प्रश्न 44. (हिंदी) RTI Application Details में Information Received के क्या चुनना चाहिए? लिए
+
+उत्तर| फॉर्म में दिखाए गए information received फ़ील्ड | ड्रॉपडाउन का उपयोग करके संबंधित सूचना प्राप्ति स्थिति दर्ज करें| मैनुअल इसे दर्ज किए जाने वाले विवरणों में शामिल करता हैl
+
+Source: RTI User Manual, Manual p. 8

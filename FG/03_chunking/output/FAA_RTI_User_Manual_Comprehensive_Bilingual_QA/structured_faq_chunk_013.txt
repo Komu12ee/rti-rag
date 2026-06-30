@@ -1,0 +1,20 @@
+# FAQ Chunk 13
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 4
+Section: Q5 (English). What details are shown in the user registration form?
+Question: प्रश्न 5. (हिंदी) User Registration फॉर्म में कौन॰कौन से विवरण दिखाए गए हैं?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 122
+
+---
+
+## Q5 (English). What details are shown in the user registration form?
+
+प्रश्न 5. (हिंदी) User Registration फॉर्म में कौन॰कौन से विवरण दिखाए गए हैं?
+
+उत्तर| में गए फॉर्म में आवेदक प्रकार, अंग्रेजी और हिंदी में नाम , ई-मेल आईडी, पिता और माता का नाम, मोबाइल नंबर, जाति प्रकार , आयु, लिंग , अंग्रेजी और हिंदी में पता, पिन कोड, देश, राज्य, जिला और निवास प्रकार शामिल हैं| मैनुअल दिखाए
+
+Sourceः RTI User Manual, Manual p. 3.

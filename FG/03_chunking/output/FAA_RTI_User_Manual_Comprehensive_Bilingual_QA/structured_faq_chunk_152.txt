@@ -1,0 +1,16 @@
+# FAQ Chunk 152
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 25
+Section: Q74 (English). Can officer and office information be entered manually?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 45
+
+---
+
+## Q74 (English). Can officer and office information be entered manually?
+
+Answer. Yes. When the required officer and office are not listed, the manual shows a blue link for entering those details manually.

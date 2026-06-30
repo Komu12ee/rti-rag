@@ -1,0 +1,19 @@
+# FAQ Chunk 161
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 26
+Section: (8) दंड की अपीलः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 52
+
+---
+
+## (8) दंड की अपीलः
+
+- अधिकारी आयोग के दंड आदेश की अपील कर सकता है
+- उच्च न्यायालय के समक्ष चुनौती दे सकता है
+- लेकिन अपील अवधि के दौरान आयोग आदेश बाध्यकारी है
+- उच्च न्यायालय दंड की उचितता की समीक्षा करता है

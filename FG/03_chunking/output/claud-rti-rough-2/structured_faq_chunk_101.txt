@@ -1,0 +1,19 @@
+# FAQ Chunk 101
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 16
+Section: (7) विशिष्ट प्रक्रियाः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 47
+
+---
+
+## (7) विशिष्ट प्रक्रियाः
+
+- उच्च न्यायालय में याचिका दायर की जाती है
+- प्रतिवादी ( आयोग PIO) प्रतिवादन ्हलफनामा दाखिल करता है
+- दोनों पक्षों की सुनवाई
+- उच्च न्यायालय का निर्णय आदेश सहित

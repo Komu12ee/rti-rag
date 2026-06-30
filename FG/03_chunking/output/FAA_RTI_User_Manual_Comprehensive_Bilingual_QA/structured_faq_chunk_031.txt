@@ -1,0 +1,20 @@
+# FAQ Chunk 31
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 6
+Section: Q14 (English). How do 1 create the password after verifying my email?
+Question: प्रश्न 14. (हिंदी)| ई-मेल सत्यापित करने के बाद पासवर्ड कैसे बनाऊँ?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 94
+
+---
+
+## Q14 (English). How do 1 create the password after verifying my email?
+
+प्रश्न 14. (हिंदी)| ई-मेल सत्यापित करने के बाद पासवर्ड कैसे बनाऊँ?
+
+उत्तर| ई-मेल सत्यापन लिंक खोलें ई-्मेल को लॉग ्इन आईडी के रूप में दर्ज करें, निर्धारित शर्तों वाला पासवर्ड बनाएं और Create पर क्लिक करें| पंजीकृत
+
+Sourceः RTI User Manual, Manual p. 4.

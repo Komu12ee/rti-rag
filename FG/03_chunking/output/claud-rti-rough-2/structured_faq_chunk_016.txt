@@ -1,0 +1,17 @@
+# FAQ Chunk 16
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 3
+Section: (1) अपीलीय अधिकार क्षेत्रः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 48
+
+---
+
+## (1) अपीलीय अधिकार क्षेत्रः
+
+- वरिष्ठ अधिकारियों ( प्रथम अपीलीय प्राधिकारियों ) के निर्णयों से द्ूसरी अपील सुनें
+- PIOs के निर्णयों से अपील सुनें जहां अलग प्रथम अपील प्राधिकारी नहीं है

@@ -1,0 +1,18 @@
+# FAQ Chunk 36
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 3
+Section: Q18 (English ). What is uploaded in step 5 of onboarding?
+Question: प्रश्न 18. (हिन्दी). ऑनबोर्डिंग के पाँचवें चरण में क्या अपलोड होता है?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 66
+
+---
+
+## Q18 (English ). What is uploaded in step 5 of onboarding?
+
+प्रश्न 18. (हिन्दी). ऑनबोर्डिंग के पाँचवें चरण में क्या अपलोड होता है?
+
+उत्तर. पाँचवां चरण आदेश फाइल अपलोड है जिसमें पी॰आई॰ओ॰ नियुक्ति आदेश अपलोड किया जाता है| Source: Page 3

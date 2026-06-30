@@ -1,0 +1,32 @@
+# RTI Legal Chunk 67
+Document: RTI_Act_2005_Source_Text_QA
+Input source: structured.md
+Input pages: 33
+Chapter: Chapter VI - Miscellaneous
+Question: Q. What is the source text of Section 23?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 71
+Original source book: Unknown
+Source type: general
+Legal reference: Section 23
+Book pages: 39
+Source PDF pages: Unknown
+Citation: Unknown
+
+---
+
+## Chapter VI - Miscellaneous
+
+Legal reference: Section 23
+
+Q. What is the source text of Section 23?
+
+Answer - source text
+23. No court shall entertain any suit,
+application or other proceeding in
+respect of any order made under this
+Act and no such order shall be called
+in question otherwise than by way of an appeal under this Act.
+—

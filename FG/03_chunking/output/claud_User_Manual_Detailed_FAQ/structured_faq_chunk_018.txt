@@ -1,0 +1,21 @@
+# FAQ Chunk 18
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 5
+Section: Untitled section
+Question: Q015. Is payment mandatory for all applications?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 128
+
+---
+
+## Untitled section
+
+Q015. Is payment mandatory for all applications?
+
+No. The manual expressly says payment is not mandatory when Complaint is selected under Second Appeal
+Relation. It also states that no RTI fee is required from a person below the poverty line under the cited RTI Rules,
+2012, provided the applicant attaches the required government certificate. For other cases, the manual shows a
+payment step but does not publish a complete payment-exemption matrix.

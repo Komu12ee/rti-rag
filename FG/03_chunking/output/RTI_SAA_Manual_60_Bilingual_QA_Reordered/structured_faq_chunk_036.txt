@@ -1,0 +1,24 @@
+# FAQ Chunk 36
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 10
+Section: Question: How do 1 start a Second Appeal application on the portal?
+Question: प्रश्न 16. - हिंदी प्रश्नोत्तर
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 157
+
+---
+
+## Question: How do 1 start a Second Appeal application on the portal?
+
+प्रश्न 16. - हिंदी प्रश्नोत्तर
+
+प्रश्नः पोर्टल पर द्वितीय अपील आवेदन कैसे शुरू करें?
+
+उत्तरः लॉगिन क्रेडेंशियल से लॉगिन करें| उपयोगकर्ता डैशबोर्ड में PIO और First Appellate Officer के समक्ष ऑफलाइन आवेदन से संबंधित भाग खोजें| Apply Second Appeal for offline applications बटन इसके बाद पोर्टल आवेदन पंजीयन प्रक्रिया खोलता है, जिसका पहला चरण RTI Instructions होता है| पंजीकृत चुनें |
+
+समान हिंदी प्रश्नः "कृपया समझाएंः पोर्टल पर द्वितीय अपील आवेदन कैसे शुरू करें II 'आरटीआई पोर्टल पर यह प्रक्रिया कैसे होती है?"
+
+Manual reference संदर्भः Manual p 5 मैनुअल

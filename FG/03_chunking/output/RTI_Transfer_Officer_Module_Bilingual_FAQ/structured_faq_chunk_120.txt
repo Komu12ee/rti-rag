@@ -1,0 +1,20 @@
+# FAQ Chunk 120
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 12-13
+Section: Q65. What sequence should be followed for a standard different-email transfer?
+Question: प्रश्न 65. अलग ईमेल आईडी वाले सामान्य स्थानांतरण में कौन-सा क्रम अपनाना चाहिए?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 141
+
+---
+
+## Q65. What sequence should be followed for a standard different-email transfer?
+
+प्रश्न 65. अलग ईमेल आईडी वाले सामान्य स्थानांतरण में कौन-सा क्रम अपनाना चाहिए?
+
+उत्तरः यह क्रम अपनाएँः कार्यभार देना -> " अलग ईमेल आईडी " चुनें -> संबंधित कार्यभार चुनें -> कार्यभार लेने वाले अधिकारी का विवरण भरें -> Submit -> कार्यभार लेने वाला अधिकारी " कार्यभार लेना" खोले -> Proceed -> विकल्प चुनकर स्वीकृति सबमिट स्थानांतरण स्थिति देखें -> Generate Relieving Letter -> Print Relieving Letter -> Browse और Upload -> स्थानांतरण प्रमाणपत्र देखें|
+
+Source reference : Manual pp . 3-12

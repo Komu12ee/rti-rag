@@ -1,0 +1,17 @@
+# FAQ Chunk 196
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 32
+Section: (4) वर्तमान स्थितिः 2019 संशोधन के अनुसार
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 27
+
+---
+
+## (4) वर्तमान स्थितिः 2019 संशोधन के अनुसार
+
+- कार्यकाल निश्चित 5 साल से सरकार द्वारा निर्धारित में परिवर्तित
+- अन्य प्रशासनिक संशोधन

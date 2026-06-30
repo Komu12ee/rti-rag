@@ -1,0 +1,20 @@
+# FAQ Chunk 117
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 17
+Section: Q57 (English). How do 1 know that a document was uploaded successfully?
+Question: प्रश्न 57. (हिंदी)| मुझे कैसे पता चलेगा कि दस्तावेज सफलतापूर्वक अपलोड हो गया है?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 87
+
+---
+
+## Q57 (English). How do 1 know that a document was uploaded successfully?
+
+प्रश्न 57. (हिंदी)| मुझे कैसे पता चलेगा कि दस्तावेज सफलतापूर्वक अपलोड हो गया है?
+
+उत्तर| मैनुअल के अनुसार सफल अपलोड का प्रदर्शन दिखाई देता है और Upload बटन हरे रंग में 'Uploaded ' लेबल के साथ बदल जाता हैl
+
+Sourceः RTI User Manual, Manual p. 11.

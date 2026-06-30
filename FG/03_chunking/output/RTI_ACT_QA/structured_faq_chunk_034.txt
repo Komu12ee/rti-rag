@@ -1,0 +1,25 @@
+# FAQ Chunk 34
+Document: RTI_ACT_QA
+Source: structured.md
+Pages: 15
+Section: SECTION 17: POWERS OF STATE INFORMATION COMMISSION
+Question: Q17. What powers does the State Information Commission have under Section 17?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 106
+
+---
+
+## SECTION 17: POWERS OF STATE INFORMATION COMMISSION
+
+Q17. What powers does the State Information Commission have under Section 17?
+
+Answer Section 17 grants State Information Commissions powers similar to Central Commission but limited to state matters, including:
+
+- Appellate jurisdiction over decisions of state PIOs
+- Power to conduct inquiries
+- Power to issue orders
+- Power to recommend penalties
+- Power to conduct suo motu investigations
+- Power to hear complaints about RTI implementation

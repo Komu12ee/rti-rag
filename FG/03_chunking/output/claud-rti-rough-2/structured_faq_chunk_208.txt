@@ -1,0 +1,18 @@
+# FAQ Chunk 208
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 34
+Section: (1) नियम बनाने वाला प्राधिकरणः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 35
+
+---
+
+## (1) नियम बनाने वाला प्राधिकरणः
+
+- केंद्रीय मामलों के लिए केंद्र सरकार
+- राज्य के मामलों के लिए राज्य सरकार
+- राजपत्रिकीय अधिसूचना के माध्यम से निर्धारित

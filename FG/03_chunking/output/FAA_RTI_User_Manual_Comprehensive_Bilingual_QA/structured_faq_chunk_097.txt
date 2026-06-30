@@ -1,0 +1,20 @@
+# FAQ Chunk 97
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 15
+Section: Q47 (English). What should 1 do if the First Appeal Officer or office is not listed?
+Question: प्रश्न 47. (हिंदी)| यदि First Appeal Officer या कार्यालय सूची में नहीं है तो क्या करूँ?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 95
+
+---
+
+## Q47 (English). What should 1 do if the First Appeal Officer or office is not listed?
+
+प्रश्न 47. (हिंदी)| यदि First Appeal Officer या कार्यालय सूची में नहीं है तो क्या करूँ?
+
+उत्तर| मैनुअल में दिखाए गए नीले रंग के लिंक का उपयोग करें| में विवरण न होने पर इसी लिंक से अधिकारी और कार्यालय विवरण दर्ज किया जा सकता है| सूची
+
+Source: RTI User Manual, Manual p. 9

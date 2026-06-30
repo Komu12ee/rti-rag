@@ -1,0 +1,16 @@
+# FAQ Chunk 136
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 20
+Section: Q67 (English). Can 1 print a payment receipt after a successful transaction?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 42
+
+---
+
+## Q67 (English). Can 1 print a payment receipt after a successful transaction?
+
+Answer. The success screen illustration in the manual shows a Print Receipt option after transaction details are displayed.

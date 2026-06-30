@@ -1,0 +1,18 @@
+# FAQ Chunk 93
+Document: cg_sic_contact_bilingual_all_questions_qna
+Source: structured.md
+Pages: 10
+Section: English Q&A
+Question: Question 83. What is the RTI portal website?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 36
+
+---
+
+## English Q&A
+
+Question 83. What is the RTI portal website?
+
+Answerः The listed website is httpsः/Irtionline cg gov.in  .

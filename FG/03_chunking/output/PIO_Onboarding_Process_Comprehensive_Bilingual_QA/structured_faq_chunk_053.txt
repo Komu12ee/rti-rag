@@ -1,0 +1,24 @@
+# FAQ Chunk 53
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 4-5
+Section: Q27 (English). What details are mandatory for the NodallApproval Authority?
+Question: प्रश्न 27. (हिन्दी ). नोडल/स्चीकृति अधिकारीं के कौन से विवरण अनिवार्य हैं? लिए
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 108
+
+---
+
+## Q27 (English). What details are mandatory for the NodallApproval Authority?
+
+प्रश्न 27. (हिन्दी ). नोडल/स्चीकृति अधिकारीं के कौन से विवरण अनिवार्य हैं? लिए
+
+उत्तर. नोडल अधिकारीं के मूल विवरण जैसे नाम, ईनेल पदनाम और कार्यालय विवरण अनिवार्य हैं|
+
+Source: Page 4
+
+Q28 (English ). Can the PIO office be selected as the office of the Nodal Officer?
+
+Generated from supplied pioOnboardingProcess pdf

@@ -1,0 +1,16 @@
+# FAQ Chunk 66
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 7
+Section: Q34. Does the manual explain how to reject or return a transfer request?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 49
+
+---
+
+## Q34. Does the manual explain how to reject or return a transfer request?
+
+Answer: No. The manual explains the approval flow but does not document a Reject, Return, or Send Back action for the receiving officer.

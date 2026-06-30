@@ -1,0 +1,18 @@
+# FAQ Chunk 135
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 21-22
+Section: (4) जानबूझकर रोकनाः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 46
+
+---
+
+## (4) जानबूझकर रोकनाः
+
+- यदि PIO exempt नहीं है ऐसी सूचना को जानबूझकर रोकता है
+- दंडः 3 महीने तक कारावास OR =250 तक जुर्माना
+- OR दोनों

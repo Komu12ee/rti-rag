@@ -1,0 +1,28 @@
+# FAQ Chunk 24
+Document: claud-rti-rough
+Source: structured.md
+Pages: 11-12
+Section: SECTION 1O: PARTIAL DISCLOSURE
+Question: Q10. What is the principle of partial disclosure when information contains both exempt and non exempt parts?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 371
+
+---
+
+## SECTION 1O: PARTIAL DISCLOSURE
+
+Q10. What is the principle of partial disclosure when information contains both exempt and non exempt parts?
+
+Answer Section 10 establishes the principle of severability - partial information must be provided when a record contains both exempt and non exempt information:
+
+- (1) Severability Principle [Section 1O(1) ]: Where a request for access to information is rejected on the ground that it relates to exempt information, access may nevertheless be provided to that part of the record which does not contain any information exempt from disclosure under the Act and which can reasonably be severed from any part containing exempt information.
+- (2) Partial Access Notice Requirements [Section 10(2) ]: Where access to a part of the record is granted under sub section (l), the PIO shall give notice to the applicant informing:
+- (a) That only part of the record requested, after severance of the record containing exempt information, is being provided
+- (b) The reasons for the decision, including any findings on material questions of fact, referring to the material on which those findings were based
+- (c) The name and designation of the person giving the decision
+- (d) The details of the fees calculated and the amount the applicant is required to deposit
+- (e) The applicants rights with respect to review of the decision regarding nondisclosure of the information part, the amount of fee charged or the form of access provided, including the particulars of the appellate authority, time limit, process and any other form of access.
+
+This provision ensures that even when some information must be withheld, the applicant still receives all disclosable parts.

@@ -1,0 +1,16 @@
+# FAQ Chunk 2
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 1
+Section: Q1 (English). What is this PDF about?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 55
+
+---
+
+## Q1 (English). What is this PDF about?
+
+Answer. The PDF is about Public Information Officer (PIO) registration and onboarding and the registration activation process for the Nodal Approval Authority and the First Appellate Officer (FAO).

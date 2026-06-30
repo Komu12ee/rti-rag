@@ -1,0 +1,16 @@
+# FAQ Chunk 73
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 8
+Section: Q39. How do [ print the Relieving Letter?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 53
+
+---
+
+## Q39. How do [ print the Relieving Letter?
+
+Answer: Use the " Print Relieving Letter" option shown in the preview/ upload screen. The manual explicitly instructs users to click this to the letter . option print

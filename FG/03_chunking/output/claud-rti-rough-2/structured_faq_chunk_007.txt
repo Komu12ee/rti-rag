@@ -1,0 +1,18 @@
+# FAQ Chunk 7
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 2
+Section: SECTION 17: POWERS OF STATE INFORMATION COMMISSION
+Question: Q7. What are the powers and functions of the State Information Commission?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 57
+
+---
+
+## SECTION 17: POWERS OF STATE INFORMATION COMMISSION
+
+Q7. What are the powers and functions of the State Information Commission?
+
+Answer Section 17 grants the State Information Commission quasirjudicial powers to enforce RTI compliance at state level:

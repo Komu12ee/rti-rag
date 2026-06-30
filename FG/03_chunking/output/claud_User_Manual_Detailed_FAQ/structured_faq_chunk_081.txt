@@ -1,0 +1,21 @@
+# FAQ Chunk 81
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 14
+Section: Untitled section
+Question: Q078. What if I cannot find my state in the dropdown?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 115
+
+---
+
+## Untitled section
+
+Q078. What if I cannot find my state in the dropdown?
+
+A missing-state remedy is not specified in the manual.
+The manual provides no alternative procedure for a missing state. The screenshots show Chhattisgarh as the
+example state, and the guide is for the Government of Chhattisgarh RTI portal. Use the live portal's available
+jurisdiction options and ContactUs if the required state is absent.

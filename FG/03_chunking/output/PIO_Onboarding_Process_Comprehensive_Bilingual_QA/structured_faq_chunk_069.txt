@@ -1,0 +1,16 @@
+# FAQ Chunk 69
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 6
+Section: Q36 (English ). Why is the preview step important?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 42
+
+---
+
+## Q36 (English ). Why is the preview step important?
+
+Answer. The preview step lets the user check the application before submission and return for editing if any change is needed.

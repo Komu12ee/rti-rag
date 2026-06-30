@@ -1,0 +1,22 @@
+# FAQ Chunk 22
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 6
+Section: Untitled section
+Question: Q019. What should I select under "Second Appeal Relation"?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 119
+
+---
+
+## Untitled section
+
+Q019. What should I select under "Second Appeal Relation"?
+
+The manual does not define when each relation should be chosen.
+Select either Appeal or Complaint. The manual does not supply a decision rule for choosing between them. It
+does state the operational consequences of selecting Complaint: payment is not mandatory and supporting
+documents are optional. Choose the relation that matches the nature of your case under the live portal and
+applicable RTI guidance.

@@ -1,0 +1,18 @@
+# FAQ Chunk 61
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 10
+Section: प्रश्नः मैनुअल के अनुसार प्रथम अपीलीय प्राधिकारी के समक्ष अपील कैसे करें?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 98
+
+---
+
+## प्रश्नः मैनुअल के अनुसार प्रथम अपीलीय प्राधिकारी के समक्ष अपील कैसे करें?
+
+उत्तरः निर्देश स्क्रीन में कहा गया है कि प्रथम अपीलीय प्राधिकारी के समक्ष अपील करने के लिए आवेदक को Submit First Appeal पर क्लिक करना चाहिए और खुलने वाले पेज को भरना इसमें यह भी कहा गया है कि मूल आवेदन की पंजीकरण संख्या संदर्भ के उपयोग होती हैl चाहिए लिए
+
+Source: RTI User Manual, Printed page 6.

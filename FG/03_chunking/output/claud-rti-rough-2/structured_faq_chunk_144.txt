@@ -1,0 +1,19 @@
+# FAQ Chunk 144
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 23
+Section: (2) Compensation Authority:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 38
+
+---
+
+## (2) Compensation Authority:
+
+- Commission can direct compensation to applicant
+- For loss or hardship caused by violation
+- Amount determined by commission
+- Payable from government budget

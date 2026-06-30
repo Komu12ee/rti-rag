@@ -1,0 +1,16 @@
+# FAQ Chunk 60
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 11
+Section: Q29 (English). What details must [ enter in the Second Appeal Details section?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 64
+
+---
+
+## Q29 (English). What details must [ enter in the Second Appeal Details section?
+
+Answer. Select the second appeal relation as Appeal or Complaint, select a reason type from the available choices, enter the reason for appeal in words, and choose Yes or No for BPL card-holder status.

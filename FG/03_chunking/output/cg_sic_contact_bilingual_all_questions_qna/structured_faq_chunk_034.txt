@@ -1,0 +1,18 @@
+# FAQ Chunk 34
+Document: cg_sic_contact_bilingual_all_questions_qna
+Source: structured.md
+Pages: 5
+Section: English Q&A
+Question: Question 30. Is the SIC office in North Block?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 26
+
+---
+
+## English Q&A
+
+Question 30. Is the SIC office in North Block?
+
+Answerः The address lists North Block.

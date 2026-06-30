@@ -1,0 +1,16 @@
+# FAQ Chunk 159
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 28-29
+Section: Q77 (English). What should the upload button show after a successful document upload?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 101
+
+---
+
+## Q77 (English). What should the upload button show after a successful document upload?
+
+Answer. The manual says the button turns green and shows 'Uploaded after a successful upload. प्रश्न 77 (हिंदी)| दस्तावेज सफलतापूर्वक अपलोड होने के बाद Upload बटन पर क्या दिखना चाहिए? उत्तर के अनुसार सफल अपलोड के बाद बटन हरा हो जाता है और उस पर 'Uploaded ' दिखता हैl Source: RTI User Manual, Manual p. 11. मैनुअल

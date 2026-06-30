@@ -1,0 +1,16 @@
+# FAQ Chunk 84
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 13
+Section: Q41 (English). What should 1 do after selecting PIO and office details?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 34
+
+---
+
+## Q41 (English). What should 1 do after selecting PIO and office details?
+
+Answer. Click Next to process further, as stated in the manual.

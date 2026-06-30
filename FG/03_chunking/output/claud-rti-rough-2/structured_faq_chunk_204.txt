@@ -1,0 +1,19 @@
+# FAQ Chunk 204
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 34
+Section: (8) In Chhattisgarh:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 55
+
+---
+
+## (8) In Chhattisgarh:
+
+- Rules issued by state government
+- Published in Chhattisgarh Gazette
+- Departmental orders circulars also issued
+- RTI Rule Book compiles all rules (see pages 61 -174 for complete rules)

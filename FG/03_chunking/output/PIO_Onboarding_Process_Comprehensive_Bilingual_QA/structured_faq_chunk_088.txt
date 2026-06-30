@@ -1,0 +1,20 @@
+# FAQ Chunk 88
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 7
+Section: Q45 (English ). Does the First Appellate Officer need separate RTI portal registration ?
+Question: प्रश्न 45. (हिन्दी). क्या प्रथम अपीलीय अधिकारीं को अलग से RTI पोर्टल में पंजीयन करना होगा?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 105
+
+---
+
+## Q45 (English ). Does the First Appellate Officer need separate RTI portal registration ?
+
+प्रश्न 45. (हिन्दी). क्या प्रथम अपीलीय अधिकारीं को अलग से RTI पोर्टल में पंजीयन करना होगा?
+
+उत्तर. नहों प्रथम अपीलीय अधिकारी को अलग से RTI पोर्टल में पंजीयन को आवश्यकता नहों है| जन सूचना अधिकारी ऑनबोर्डिंग के समय जो डिटेल्स दर्ज करेगा , उसी ई॰्मेल आईडी में लिंक आएगा
+
+Source: Page 5

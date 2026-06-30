@@ -1,0 +1,22 @@
+# FAQ Chunk 55
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 11
+Section: Untitled section
+Question: Q052. If I am a BPL card holder, can I apply for a complaint instead of an appeal?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 145
+
+---
+
+## Untitled section
+
+Q052. If I am a BPL card holder, can I apply for a complaint instead of an appeal?
+
+No explicit BPL-versus-Complaint restriction is stated.
+The manual does not state that BPL applicants are prohibited from choosing Complaint. It treats Second Appeal
+Relation and BPL status as separate selections. If you select Complaint, the manual says payment is not
+mandatory and supporting documents are optional; if you select Yes for BPL, the BPL document details still
+become mandatory for further processing.

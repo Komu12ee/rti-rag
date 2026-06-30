@@ -1,0 +1,20 @@
+# FAQ Chunk 49
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 9
+Section: Untitled section
+Question: Q046. What is the "Save & Next" button used for?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 77
+
+---
+
+## Untitled section
+
+Q046. What is the "Save & Next" button used for?
+
+Save & Next records the completed First Appeal Application details and advances the workflow to the next stage,
+Document Details. Use Back instead when you need to correct information entered in the prior form.
+Document Upload

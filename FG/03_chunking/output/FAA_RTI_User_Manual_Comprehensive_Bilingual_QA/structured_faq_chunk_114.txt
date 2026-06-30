@@ -1,0 +1,16 @@
+# FAQ Chunk 114
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 17
+Section: Q56 (English). What should 1 click to select a document file?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 36
+
+---
+
+## Q56 (English). What should 1 click to select a document file?
+
+Answer. Click the Browse button in the relevant upload field, as shown in the manual.

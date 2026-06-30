@@ -1,0 +1,24 @@
+# FAQ Chunk 147
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 23-24
+Section: (5) Process for Commission Penaltyः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 40
+
+---
+
+## (5) Process for Commission Penaltyः
+
+- Show cause notice to officer
+
+
+
+
+- Opportunity to explain
+- Hearing if requested
+- Decision with detailed reasons
+- Recommendation to government

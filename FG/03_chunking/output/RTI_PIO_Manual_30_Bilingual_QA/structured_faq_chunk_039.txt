@@ -1,0 +1,19 @@
+# FAQ Chunk 39
+Document: RTI_PIO_Manual_30_Bilingual_QA
+Source: structured.md
+Pages: 7
+Section: प्रश्न (हिंदी): यदि Second Appeal Relation में Complaint चुनें तो क्या होता है?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 119
+
+---
+
+## प्रश्न (हिंदी): यदि Second Appeal Relation में Complaint चुनें तो क्या होता है?
+
+उत्तर (हिंदी): Complaint आवेदन के दो स्पष्ट शर्तें बताता हैः भुगतान अनिवार्य नहीं है और सहायक दस्तावेज़ वैकल्पिक हैं| इसका अर्थ है कि दस्तावेज़ अपलोड और भुगतान चरणों को Complaint चयन के संदर्भ में समझना चाहिए| मैनुअल यह नहीं कहता कि अन्य सभी फील्ड छोड़े जा सकते हैं; उपयोगकर्ता को आवेदन प्रक्रिया में मांगी गई जानकारी फिर भी भरनी चाहिए| मैनुअल लिए
+
+
+Source reference: Manual p. 7

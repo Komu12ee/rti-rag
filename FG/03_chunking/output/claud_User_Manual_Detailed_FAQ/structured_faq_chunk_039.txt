@@ -1,0 +1,21 @@
+# FAQ Chunk 39
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 8
+Section: Untitled section
+Question: Q036. What is the Office Level field?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 93
+
+---
+
+## Untitled section
+
+Q036. What is the Office Level field?
+
+The field definition and value list are not specified.
+Office Level is a dropdown field used while selecting the PIO office. The manual shows the field but does not
+define the available levels or how to distinguish them. Select the option that corresponds to the office structure
+shown by the portal.

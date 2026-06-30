@@ -1,0 +1,20 @@
+# FAQ Chunk 4
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 1
+Section: Q01. What is this document about?
+Question: प्रश्न 01. यह दस्तावेज किस विषय में है?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 113
+
+---
+
+## Q01. What is this document about?
+
+प्रश्न 01. यह दस्तावेज किस विषय में है?
+
+उत्तरः यह आरटीआई पोर्टल के स्थानांतरण अधिकारी मॉड्यूल का यूजर मैनुअल है| इसमें बताया गया है कि पीआईओ, एफएओ और नोडल उपयोगकर्ता किस प्रकार कार्यभार दे या लेे सकते हैं, संबंधित रिलिविंग लेटर और प्रमाणपत्र तैयार कर सकते हैं, सहायक फाइल अपलोड कर सकते हैं तथा उसी ईमेल आईडी पर नाम परिवर्तन कर सकते हैं|
+
+Source reference : Manual pp . 1-3

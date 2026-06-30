@@ -1,0 +1,20 @@
+# FAQ Chunk 13
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 4
+Section: Untitled section
+Question: Q010. How do I start a Second Appeal application?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 102
+
+---
+
+## Untitled section
+
+Q010. How do I start a Second Appeal application?
+
+Log in with the verified account credentials. On the Applicant Dashboard, select Apply Second Appeal for offline
+applications. The Application Registration workflow opens at the RTI Instruction step. Read the instructions, tick
+the acceptance box, and select Next to begin completing the eight stages.

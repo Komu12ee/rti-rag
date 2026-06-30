@@ -1,0 +1,41 @@
+# RTI Legal Chunk 44
+Document: RTI_Act_2005_Source_Text_QA
+Input source: structured.md
+Input pages: 21-23
+Chapter: Chapter III - The Central Information Commission
+Question: Q. What is the source text of Section 14?
+Part: 1/2
+Kind: faq
+Has answer: yes
+Content tokens: 197
+Original source book: Unknown
+Source type: general
+Legal reference: Section 14
+Book pages: 25-27
+Source PDF pages: Unknown
+Citation: Unknown
+
+---
+
+## Chapter III - The Central Information Commission
+
+Legal reference: Section 14
+
+Q. What is the source text of Section 14?
+
+Answer - source text
+14. (1) Subject to the provisions of subsection (3), the Chief Information
+Commissioner or any Information
+Commissioner shall be removed from
+his office only by order of the
+President on the ground of proved
+misbehaviour or incapacity after the Supreme Court, on a reference made to it by the President, has, on inquiry,
+reported that the Chief Information
+Commissioner or any Information Commissioner, as the case may be, ought on such ground be removed.
+(2) The President may suspend from
+office, and if deem necessary prohibit
+also from attending the office during inquiry, the Chief Information
+Commissioner or Information
+Commissioner in respect of whom a
+reference has been made to the Supreme Court under sub-section (1)
+Compiled from the uploaded RTI rule book - Part 1 statutory text only

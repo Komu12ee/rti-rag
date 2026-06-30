@@ -1,0 +1,24 @@
+# FAQ Chunk 10
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 1-2
+Section: Q5 (English). What basic PIO information is required for registration ?
+Question: प्रश्न 5. (हिन्दो ). PIO पंजीयन में कौन कौन सो मूल जानकारीं चाहिए?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 112
+
+---
+
+## Q5 (English). What basic PIO information is required for registration ?
+
+प्रश्न 5. (हिन्दो ). PIO पंजीयन में कौन कौन सो मूल जानकारीं चाहिए?
+
+Answer. The PIO name, e mail ID, mobile number , gender, designation, and office details are required.
+
+उत्तर. पी॰आई॰ओ. का नाम, ई मेल आईडी, मोबाइल नं॰, लिंग, पदनाम और कार्यालय विवरण आवश्यक हैं|
+
+Source: Page 2
+
+Generated from supplied pioOnboardingProcess pdf

@@ -1,0 +1,22 @@
+# FAQ Chunk 68
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 7
+Section: Q35. Where can [ check the transfer request after approval?
+Question: प्रश्न 35. स्वीकृति के बाद स्थानांतरण अनुरोध कहाँ देखा जा सकता है?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 131
+
+---
+
+## Q35. Where can [ check the transfer request after approval?
+
+प्रश्न 35. स्वीकृति के बाद स्थानांतरण अनुरोध कहाँ देखा जा सकता है?
+
+Answer: After the receiving officer approves the charge, the transfer list is available under the transferrequest status area. The manual says the given charges are displayed there along with transfer details.
+
+उत्तरः कार्यभार लेने वाले अधिकारी द्वारा स्वीकृति दिए जाने के बाद स्थानांतरण स्थानांतरण अनुरोध की स्थिति वाले क्षेत्र में दिखाई देती है| मैनुअल के अनुसार वहाँ दिए गए कार्यभार स्थानांतरण विवरण के साथ प्रदर्शित होते हैं| सूची,
+
+Source reference : Manual pp . 7 8

@@ -1,0 +1,20 @@
+# FAQ Chunk 2
+Document: faq_hindi_english_translation
+Source: structured.md
+Pages: 1
+Section: Untitled section
+Question: Question 1. What information may be sought?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 100
+
+---
+
+## Untitled section
+
+Question 1. What information may be sought?
+
+Answer: “Information” means any material in any form, including records, documents, memoranda, e-mails, opinions, advice, press
+releases, circulars, orders, logbooks, contracts, reports, papers, samples, models, data-related material, and information relating to
+any private body to which a public authority may have access under any other law in force at the time.

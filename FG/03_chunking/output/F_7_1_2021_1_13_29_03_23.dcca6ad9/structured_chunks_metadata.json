@@ -1,0 +1,14 @@
+{
+  "document": "structured.md",
+  "total_chunks": 1,
+  "total_tokens": 397,
+  "avg_tokens_per_chunk": 397,
+  "model": "BAAI/bge-m3",
+  "max_tokens_per_chunk": 1024,
+  "chunks": [
+    {
+      "index": 1,
+      "filename": "structured_chunk_001.txt"
+    }
+  ]
+}

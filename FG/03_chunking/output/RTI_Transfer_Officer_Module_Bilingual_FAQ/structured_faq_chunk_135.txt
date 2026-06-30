@@ -1,0 +1,20 @@
+# FAQ Chunk 135
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 14
+Section: Q74. Does the manual explain technical troubleshooting for missing requests, failed upload or incorrect status?
+Question: प्रश्न 74. क्या मैनुअल गायब अनुरोध, असफल अपलोड या गलत स्थिति के तकनीकी समस्या-समाधान बताता है? उत्तरः नहीं| इसमें केवल सामान्य कार्यप्रवाह दिखाया गया है गायब असफल अपलोड, अप्रत्याशित स्थिति या पोर्टल त्रुटि के मैनुअल कोई समस्या समाधान क्रम या सहायता संपर्क विवरण नहीं देता| लिए अनुरोध, लिए
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 150
+
+---
+
+## Q74. Does the manual explain technical troubleshooting for missing requests, failed upload or incorrect status?
+
+प्रश्न 74. क्या मैनुअल गायब अनुरोध, असफल अपलोड या गलत स्थिति के तकनीकी समस्या-समाधान बताता है? उत्तरः नहीं| इसमें केवल सामान्य कार्यप्रवाह दिखाया गया है गायब असफल अपलोड, अप्रत्याशित स्थिति या पोर्टल त्रुटि के मैनुअल कोई समस्या समाधान क्रम या सहायता संपर्क विवरण नहीं देता| लिए अनुरोध, लिए
+
+Answer: No. It shows the normal workflow only. For missing requests, failed upload, unexpected status or portal errors, the manual does not provide a troubleshooting decision tree or support contact details.
+
+Source reference : Manual pp . 3-12

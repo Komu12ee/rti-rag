@@ -1,0 +1,22 @@
+# FAQ Chunk 10
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 2-3
+Section: (3) Inquiry Powers:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 42
+
+---
+
+## (3) Inquiry Powers:
+
+- Conduct inquiries into any matter relating to RTI Act
+
+
+
+
+- Summon persons, demand records, call for information
+- Have powers of civil court

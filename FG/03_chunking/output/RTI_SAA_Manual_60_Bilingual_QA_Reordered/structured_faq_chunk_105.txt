@@ -1,0 +1,18 @@
+# FAQ Chunk 105
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 27
+Section: Question: Which fields are filled in the First Appeal Application screen?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 101
+
+---
+
+## Question: Which fields are filled in the First Appeal Application screen?
+
+Answer: The First Appeal Application screen asks the user to select First Appeal Reason Type, enter First Appeal details, enter the offline First Appeal application date and choose Application Status. The manual then instructs the user to click Save & Next.
+
+Similar English questions: "Please explain: Which fields are filled in the First Appeal Application screen "How is this handled on the RTI portal?"

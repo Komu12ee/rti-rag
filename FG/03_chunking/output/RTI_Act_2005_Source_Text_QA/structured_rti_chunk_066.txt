@@ -1,0 +1,33 @@
+# RTI Legal Chunk 66
+Document: RTI_Act_2005_Source_Text_QA
+Input source: structured.md
+Input pages: 33
+Chapter: Chapter VI - Miscellaneous
+Question: Q. What is the source text of Section 22?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 87
+Original source book: Unknown
+Source type: general
+Legal reference: Section 22
+Book pages: 39
+Source PDF pages: Unknown
+Citation: Unknown
+
+---
+
+## Chapter VI - Miscellaneous
+
+Legal reference: Section 22
+
+Q. What is the source text of Section 22?
+
+Answer - source text
+22. The provisions of this Act shall have
+effect notwithstanding anything
+inconsistent therewith contained in the Official Secrets Act, 1923, and
+any other law for the time being in
+force or in any instrument having
+effect by virtue of any law other than this Act.
+—

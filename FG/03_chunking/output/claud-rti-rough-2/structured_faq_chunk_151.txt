@@ -1,0 +1,18 @@
+# FAQ Chunk 151
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 24
+Section: (9) Public Interest Penalties:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 36
+
+---
+
+## (9) Public Interest Penalties:
+
+- Commission can take suo motu action for public interest
+- Can initiate investigation based on complaints
+- Can recommend penalties without formal appeal

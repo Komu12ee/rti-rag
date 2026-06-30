@@ -1,0 +1,24 @@
+# FAQ Chunk 23
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 6-7
+Section: Question: What should I do on the User Registration General Information screen before filling the form?
+Question: प्रश्न 10. - हिंदी प्रश्नोत्तर
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 184
+
+---
+
+## Question: What should I do on the User Registration General Information screen before filling the form?
+
+प्रश्न 10. - हिंदी प्रश्नोत्तर
+
+प्रश्नः डेटा-एंट्री फॉर्म भरने से पहले User Registration General Information स्क्रीन पर क्या करना चाहिए?
+
+उत्तरः गए पंजीयन निर्देश पढ़़ें , यह पुष्टि करने वाले चेकबॉक्स पर टिक करें कि आपने निर्देश ध्यान लिए हैं, और फिर Next पर क्लिक करें| डेटा एंट्री फॉर्म से पहले इस स्वीकृति चरण को दिखाता है| इसलिए जानकारी स्क्रीन से फॉर्म तक जाने के लिए यह आवश्यक चरण हैI से पढ दिए मैनुअल
+
+समान हिंदी प्रश्नः "कृपया समझाएं:डेटा एंट्री फॉर्म भरने से पहले User Registration General Information स्क्रीन पर क्या करना चाहिए TT "आरटीआई पोर्टल पर यह प्रक्रिया कैसे होती है ?"
+
+Manual reference मैनुअल संदर्भः Manual p॰ 2

@@ -1,0 +1,18 @@
+# FAQ Chunk 95
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 16
+Section: प्रश्नः द्वितीय अपील आवेदन के लिए दस्तावेज कैसे अपलोड करें?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 76
+
+---
+
+## प्रश्नः द्वितीय अपील आवेदन के लिए दस्तावेज कैसे अपलोड करें?
+
+उत्तरः Document Details पेज पर Browse पर क्लिक करें, फ़ाइल चुनें और Upload पर क्लिक करें मैनुअल के अनुसार सफल अपलोड का प्रदर्शन होता है और Upload बटन हरे रंग में Uploaded लेबल के साथ बदल जाता हैl
+
+Source: RTI User Manual, Printed page 11.

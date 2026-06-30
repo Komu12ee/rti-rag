@@ -1,0 +1,22 @@
+# FAQ Chunk 91
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 15
+Section: Questionः What do 1 do after choosing the First Appeal application status?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 131
+
+---
+
+## Questionः What do 1 do after choosing the First Appeal application status?
+
+Answer: Use the Back button to edit details entered in the previous form. Select the application status from the dropdown, then click Save & Next.
+
+Sourceः RTI User Manual, Printed page 10.
+
+प्रश्नः क्या आगे बढने से पहले मैं पहले दर्ज गए प्रथम अपील विवरण संपादित कर सकता/ सकती हूँ? उत्तरः पिछले फॉर्म में दर्ज विवरण संपादित करने के Back बटन का उपयोग करें| ड्रॉपडाउन से आवेदन स्थिति चुनें और फिर Save & Next पर क्लिक करें| किए लिए
+
+Source: RTI User Manual, Printed page 10

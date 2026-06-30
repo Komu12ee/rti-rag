@@ -1,0 +1,18 @@
+# FAQ Chunk 48
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 8
+Section: 5) SIC Decision Timeline [Section 19(6)]:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 41
+
+---
+
+## 5) SIC Decision Timeline [Section 19(6)]:
+
+- SIC must decide within 90 days of receipt
+- Can extend for additional 90 days
+- Pass written order with detailed reasons

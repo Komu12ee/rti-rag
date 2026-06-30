@@ -1,0 +1,21 @@
+# FAQ Chunk 78
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 14
+Section: Untitled section
+Question: Q075. What if I do not have a valid email address?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 102
+
+---
+
+## Untitled section
+
+Q075. What if I do not have a valid email address?
+
+The manual states that a valid and active email ID is mandatory for user registration. Because account
+verification and password creation depend on a link sent to that email, an inactive or inaccessible address will
+prevent completion of the documented activation process. The manual does not describe alternative verification
+methods.

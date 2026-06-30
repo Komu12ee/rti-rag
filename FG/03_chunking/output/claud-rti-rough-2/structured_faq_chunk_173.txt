@@ -1,0 +1,21 @@
+# FAQ Chunk 173
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 28
+Section: Impact of Reports:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 43
+
+---
+
+## Impact of Reports:
+
+- Drives policy improvements
+- Identifies systemic issues
+- Leads to better training
+- Results in fee revisions
+- Improves RTI awareness
+- Strengthens implementation

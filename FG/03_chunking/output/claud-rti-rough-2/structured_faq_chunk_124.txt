@@ -1,0 +1,18 @@
+# FAQ Chunk 124
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 20
+Section: (4) Willful Withholding
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 41
+
+---
+
+## (4) Willful Withholding
+
+- If PIO willfully withholds information not exempt
+- Punishment: Imprisonment up to 3 months OR fine up to 2250
+- OR both

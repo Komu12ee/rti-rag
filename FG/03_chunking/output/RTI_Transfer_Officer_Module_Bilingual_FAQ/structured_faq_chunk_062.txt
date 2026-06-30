@@ -1,0 +1,20 @@
+# FAQ Chunk 62
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 7
+Section: Q31. What is the difference between Proceed and View Details?
+Question: प्रश्न 31. Proceed और View Details में क्या अंतर है?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 82
+
+---
+
+## Q31. What is the difference between Proceed and View Details?
+
+प्रश्न 31. Proceed और View Details में क्या अंतर है?
+
+उत्तरः Proceed का उपयोग उस लंबित के लिए होता है जिस पर कार्रवाई या स्वीकृति देनी होI View Details का उपयोग सामान्यतः स्वीकृत स्थानांतरण रिकॉर्ड का विवरण देखने के किया जाता हैl अनुरोध लिए मौजूदा,
+
+Source reference : Manual pp . 5-6

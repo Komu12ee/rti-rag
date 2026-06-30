@@ -1,0 +1,24 @@
+# FAQ Chunk 75
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 19
+Section: Question: What should I do if the required PIO or office is not available in the dropdown list?
+Question: प्रश्न 34. - हिंदी प्रश्नोत्तर
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 202
+
+---
+
+## Question: What should I do if the required PIO or office is not available in the dropdown list?
+
+प्रश्न 34. - हिंदी प्रश्नोत्तर
+
+प्रश्नः यदि आवश्यक PIO या कार्यालय ड्रॉपडाउन में उपलब्ध न हो तो क्या करें? सूची
+
+उत्तरः PIO and Office Details स्क्रीन पर दिखाए गए नीले रंग के लिंक का उपयोग करें | मैनुअल के अनुसार यदि सूची में कार्यालय और अधिकारी का विवरण उपलब्ध नहीं हो॰ तो इस लिंक से विवरण दर्ज किया जा सकता है| मैनुअल एंट्री स्क्रीन में PIO का नाम पदनाम, मोबाइल नंबर, कार्यालय का नाम, कार्यालय का पता, जिला, मूल विभाग और उप-विभाग का नाम जैसी जानकारी मांगी जाती है|
+
+समान हिंदी प्रश्नः "कृपया समझाएंःयदि आवश्यक PIO या कार्यालय ड्रॉपडाउन सूची में उपलब्ध न हो तो क्या करें "आरटीआई पोर्टल पर यह प्रक्रिया कैसे होती है?"
+
+Manual reference संदर्भः Manual pp. 7-8 मैनुअल

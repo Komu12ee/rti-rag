@@ -1,0 +1,24 @@
+# FAQ Chunk 123
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 32
+Section: Question: Does the manual provide the legal reason for the payment options displayed?
+Question: प्रश्न 59. हिंदी प्रश्नोत्तर
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 177
+
+---
+
+## Question: Does the manual provide the legal reason for the payment options displayed?
+
+प्रश्न 59. हिंदी प्रश्नोत्तर
+
+प्रश्नः क्या मैनुअल दिखाई गई भुगतान विकल्पों का कानूनी कारण बताता है?
+
+उत्तरः नहीं| मैनुअल इंटरफेस में भुगतान विकल्प दिखाता है और एक चुनकर e Challan पर जाने का निर्देश देता है| यह विकल्पों में से चयन के कानूनी मानदंड नहीं बताता| चैटबॉट को शुल्क वर्गीकरण गढ़ना नहीं चाहिएः उपयोगकर्ता को वर्तमान आधिकारिक मार्गदर्शन या संबंधित प्राधिकारी की ओर निर्देशित करना चाहिए|
+
+समान हिंदी प्रश्नः "कृपया समझाएंःक्या दिखाई गई भुगतान विकल्पों का कानूनी कारण बताता है II "आरटीआई पोर्टल पर यह प्रक्रिया कैसे होती है ? " मैनुअल
+
+Manual reference संदर्भः Manual p. 12 मैनुअल

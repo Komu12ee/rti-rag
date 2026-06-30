@@ -1,0 +1,26 @@
+# FAQ Chunk 9
+Document: faq_hindi_english_translation
+Source: structured.md
+Pages: 4
+Section: Untitled section
+Question: Question 1. When should an application for a second appeal be made?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 205
+
+---
+
+## Untitled section
+
+Question 1. When should an application for a second appeal be made?
+
+Answer: Against the decision of the First Appellate Authority under sub-section (1), a second appeal may be submitted to the
+Central Information Commission or the State Information Commission within ninety days from the date on which the decision
+should have been made or was actually received. However, the Central Information Commission or the State Information
+Commission, as the case may be, may admit the appeal after the expiry of the ninety-day period if it is satisfied that the appellant
+was prevented by sufficient cause from filing the appeal in time.
+If the decision of the Central Public Information Officer or the State Public Information Officer, against which the appeal has been
+made, relates to information concerning a person, then the Central Information Commission or the State Information Commission,
+as the case may be, shall give that person a reasonable opportunity of being heard.
+[Specimen application form for the Appellate Authority]

@@ -1,0 +1,32 @@
+# RTI Legal Chunk 65
+Document: RTI_Act_2005_Source_Text_QA
+Input source: structured.md
+Input pages: 33
+Chapter: Chapter VI - Miscellaneous
+Question: Q. What is the source text of Section 21?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 69
+Original source book: Unknown
+Source type: general
+Legal reference: Section 21
+Book pages: 39
+Source PDF pages: Unknown
+Citation: Unknown
+
+---
+
+## Chapter VI - Miscellaneous
+
+Legal reference: Section 21
+
+Q. What is the source text of Section 21?
+
+Answer - source text
+21. No suit, prosecution or other legal
+proceeding shall lie against any
+person for anything which is in good
+faith done or intended to be done
+under this Act or any rule made thereunder.
+—

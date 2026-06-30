@@ -1,0 +1,18 @@
+# FAQ Chunk 89
+Document: cg_sic_contact_bilingual_all_questions_qna
+Source: structured.md
+Pages: 9-10
+Section: हिंदी प्रश्नोत्तर
+Question: प्रश्न 79. सचिवालय को ई-मेल कैसे भेजें?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 39
+
+---
+
+## हिंदी प्रश्नोत्तर
+
+प्रश्न 79. सचिवालय को ई-मेल कैसे भेजें?
+
+उत्तरः ई-्मेल इस प्रकार प्रदर्शित हैः sic[dotlcglat]nic[dotlin |

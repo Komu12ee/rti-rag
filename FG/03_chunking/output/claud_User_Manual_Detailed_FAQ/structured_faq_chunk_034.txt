@@ -1,0 +1,21 @@
+# FAQ Chunk 34
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 7
+Section: Untitled section
+Question: Q031. What happens if I select "Yes" for BPL card holder status?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 105
+
+---
+
+## Untitled section
+
+Q031. What happens if I select "Yes" for BPL card holder status?
+
+The portal displays or requires the BPL document fields: BPL Document Number, BPL Document Issue Date, and
+BPL Issuing Authority. The manual says these details are mandatory for further processing, and the instruction
+screen separately requires attachment of the appropriate government certificate.
+Officer & Office Details

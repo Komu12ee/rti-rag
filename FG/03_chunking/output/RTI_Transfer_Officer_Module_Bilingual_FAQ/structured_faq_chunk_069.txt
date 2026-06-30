@@ -1,0 +1,16 @@
+# FAQ Chunk 69
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 7
+Section: Q36. When can a Relieving Letter be generated?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 54
+
+---
+
+## Q36. When can a Relieving Letter be generated?
+
+Answer: The manual places Relieving Letter generation after the receiving officer has approved the transfer. In the transfer status list, click " Generate Relieving Letter" for the applicable entry.

@@ -1,0 +1,21 @@
+# FAQ Chunk 117
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 20
+Section: Untitled section
+Question: Q114. Can a single user file multiple Second Appeal applications?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 104
+
+---
+
+## Untitled section
+
+Q114. Can a single user file multiple Second Appeal applications?
+
+Multiple-application policy is not explicitly specified.
+The dashboard displays a Second Appeal Application Count and uses application-status counts, which is
+consistent with the portal tracking multiple matters. However, the manual does not expressly state that a single
+account may file multiple applications or identify any numerical limit.

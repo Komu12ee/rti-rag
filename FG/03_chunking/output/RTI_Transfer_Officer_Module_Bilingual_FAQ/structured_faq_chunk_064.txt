@@ -1,0 +1,20 @@
+# FAQ Chunk 64
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 7
+Section: Q32. What does the Approved status indicate ?
+Question: प्रश्न 32. Approved स्थिति क्या दर्शाती है?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 85
+
+---
+
+## Q32. What does the Approved status indicate ?
+
+प्रश्न 32. Approved स्थिति क्या दर्शाती है?
+
+उत्तरः मैनुअल की प्रक्रिया में Approved का अर्थ है कि कार्यभार लेने वाले अधिकारी ने कार्यभार लेने की प्रक्रिया के माध्यम से उसे स्वीकार कर लिया हैl इसके बाद ही रिलिविंग लेटर की प्रक्रिया दिखाई जाती है|
+
+Source reference : Manual pp . 5-6

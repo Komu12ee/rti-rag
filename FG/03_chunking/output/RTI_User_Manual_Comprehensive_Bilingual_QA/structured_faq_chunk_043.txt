@@ -1,0 +1,24 @@
+# FAQ Chunk 43
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 7
+Section: Question: What should 1 do on the RTI Instruction step of the second appeal form?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 108
+
+---
+
+## Question: What should 1 do on the RTI Instruction step of the second appeal form?
+
+Source: RTI User Manual, Printed page 5.
+
+Answerः Tes. Read the displayed instructions tick the acknowledgement box, and click Next to proceed.
+
+प्रश्नः क्या द्वितीय अपील दायर करने से पहले निर्देश पढ़ना आवश्यक है?
+
+उत्तरः हाँl प्रदर्शित निर्देश पढ़़ें , स्वीकृति बॉक्स पर टिक करें और आगे बढ़ने के Next पर क्लिक करें| लिए
+
+Source: RTI User Manual, Printed page 5

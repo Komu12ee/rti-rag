@@ -1,0 +1,24 @@
+# FAQ Chunk 4
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 3
+Section: Untitled section
+Question: Q001. How do I register as a new user on the RTI portal?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 163
+
+---
+
+## Untitled section
+
+Q001. How do I register as a new user on the RTI portal?
+
+Open the RTI portal home page and select User Registration from the login area. Read the User Registration
+General Information screen, tick the declaration confirming that you have read the instructions, and select Next.
+Complete the registration form, choose Preview, review the information, and select Submit. The portal then
+shows a successful-registration confirmation and asks you to verify the account through the registered email
+address.
+ Use an email address that you actively control because the verification link is sent there.
+ Use Preview before Submit; this is the documented checkpoint for correcting registration data.

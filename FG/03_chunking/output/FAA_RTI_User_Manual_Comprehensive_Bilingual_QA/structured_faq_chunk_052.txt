@@ -1,0 +1,16 @@
+# FAQ Chunk 52
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 10
+Section: Q25 (English). Is an RTI fee required for a person below the poverty line?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 76
+
+---
+
+## Q25 (English). Is an RTI fee required for a person below the poverty line?
+
+Answer. The instruction screen states that no RTI fee is required from a citizen below the poverty line under the RTI Rules, 201 2. It also states that the applicant must attach a copy of the certificate issued by the appropriate government along with the application.

@@ -1,0 +1,20 @@
+# FAQ Chunk 67
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 7
+Section: Q34. Does the manual explain how to reject or return a transfer request?
+Question: प्रश्न 34. क्या मैनुअल स्थानांतरण अनुरोध को अस्वीकार या वापस भेजने की प्रक्रिया बताता है?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 88
+
+---
+
+## Q34. Does the manual explain how to reject or return a transfer request?
+
+प्रश्न 34. क्या मैनुअल स्थानांतरण अनुरोध को अस्वीकार या वापस भेजने की प्रक्रिया बताता है?
+
+उत्तरः नहीं| स्वीकृति की प्रक्रिया बताता है, लेकिन कार्यभार लेने वाले अधिकारी के Reject, Return या Send Back जैसी कार्रवाई का वर्णन नहीं करता| मैनुअल लिए
+
+Source reference : Manual pp . 5-6

@@ -1,0 +1,16 @@
+# FAQ Chunk 90
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 14
+Section: Q44 (English). What should 1 select for information received in RTI Application Details?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 58
+
+---
+
+## Q44 (English). What should 1 select for information received in RTI Application Details?
+
+Answer. Use the information received field dropdown shown in the form to record the relevant informationreceived status. The manual identifies this as one of the details to be entered.

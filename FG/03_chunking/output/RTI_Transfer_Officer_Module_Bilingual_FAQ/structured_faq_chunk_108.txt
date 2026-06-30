@@ -1,0 +1,22 @@
+# FAQ Chunk 108
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 11
+Section: Q59. How does the FAO approve a PIO name change request?
+Question: प्रश्न 59. पीआईओ के नाम परिवर्तन को कैसे स्वीकृत करता है? एफएओ अनुरोध
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 132
+
+---
+
+## Q59. How does the FAO approve a PIO name change request?
+
+प्रश्न 59. पीआईओ के नाम परिवर्तन को कैसे स्वीकृत करता है? एफएओ अनुरोध
+
+Answer: The FAO logs in, clicks the option for approval of PIO name change requests, opens the namechange list, and clicks Approve for the relevant request.
+
+उत्तरः अपने लॉगिन से पीआईओ द्वारा गए नाम परिवर्तन अनुरोध की स्वीकृति वाले विकल्प पर क्लिक करता है, नाम परिवर्तन खोलता है और संबंधित अनुरोध के Approve पर क्लिक करता हैI एफएओ किए सूची लिए
+
+Source reference : Manual pp . 9-12

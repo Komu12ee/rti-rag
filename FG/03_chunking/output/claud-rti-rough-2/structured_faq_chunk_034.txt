@@ -1,0 +1,17 @@
+# FAQ Chunk 34
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 6
+Section: (4) गोपनीयता पर विचारः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 42
+
+---
+
+## (4) गोपनीयता पर विचारः
+
+- यदि सूचना धारा 8 के तहत exempt है, तो कक्ष में परीक्षा की जा सकती है (निजी सुनवाई )
+- तीसरे पक्षों की गोपनीय सूचना संरक्षित है

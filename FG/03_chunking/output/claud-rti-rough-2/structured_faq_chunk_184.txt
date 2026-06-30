@@ -1,0 +1,21 @@
+# FAQ Chunk 184
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 30
+Section: (9) रिपोर्ट का प्रभावः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 55
+
+---
+
+## (9) रिपोर्ट का प्रभावः
+
+- नीति सुधार चलाता है
+- प्रणालीगत मुद्दों की पहचान करता है
+- बेहतर प्रशिक्षण की ओर लेे जाता है
+- शुल्क संशोधन में परिणत होता है
+- कार्यान्वयन को मजबूत करता है
+- RTI जागरूकता में सुधार करता है

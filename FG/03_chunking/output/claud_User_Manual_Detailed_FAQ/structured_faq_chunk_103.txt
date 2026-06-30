@@ -1,0 +1,21 @@
+# FAQ Chunk 103
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 17
+Section: Untitled section
+Question: Q100. How is BPL status verified?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 85
+
+---
+
+## Untitled section
+
+Q100. How is BPL status verified?
+
+Verification process is not specified.
+The manual requires the BPL certificate copy and form details, but it does not describe the verification agency,
+verification method, timing, acceptance standards, or what happens if the certificate is rejected.
+Regulatory/Policy Questions

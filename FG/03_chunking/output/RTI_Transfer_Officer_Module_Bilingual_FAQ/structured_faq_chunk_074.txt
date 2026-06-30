@@ -1,0 +1,20 @@
+# FAQ Chunk 74
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 8
+Section: Q39. How do [ print the Relieving Letter?
+Question: प्रश्न 39. रिलिविंग लेटर कैसे प्रिंट करें?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 83
+
+---
+
+## Q39. How do [ print the Relieving Letter?
+
+प्रश्न 39. रिलिविंग लेटर कैसे प्रिंट करें?
+
+उत्तरः या अपलोड स्क्रीन गए Il 'Print Relieving Letter" विकल्प का उपयोग करें| मैनुअल उपयोगकर्ता को पत्र प्रिंट करने के इसी विकल्प पर क्लिक करने का निर्देश देता हैl में दिए प्रीव्यू लिए
+
+Source reference : Manual pp . 7 8

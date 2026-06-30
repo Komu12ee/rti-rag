@@ -1,0 +1,24 @@
+# FAQ Chunk 98
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 16-17
+Section: Untitled section
+Question: Q095. Will I receive a confirmation email after application submission?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 136
+
+---
+
+## Untitled section
+
+Q095. Will I receive a confirmation email after application submission?
+
+Application-submission email confirmation is not specified.
+The manual confirms an email verification link for account registration. It also says applicants should provide a
+mobile number to receive SMS alerts. It does not explicitly promise an email confirmation after Second Appeal
+application submission or payment.
+
+<!-- extraction_method: direct_text | confidence: 0.75 -->
+BPL & Financial Aid

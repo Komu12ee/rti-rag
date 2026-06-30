@@ -1,4 +1,0 @@
-Headings: ['AGENDA # 1']
-Source: output_corrected2
----
-Approval of Empowered Committee Meeting minutes 59th

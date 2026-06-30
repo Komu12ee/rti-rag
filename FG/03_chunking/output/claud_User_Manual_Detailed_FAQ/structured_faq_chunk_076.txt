@@ -1,0 +1,21 @@
+# FAQ Chunk 76
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 13
+Section: Untitled section
+Question: Q073. What is "Payment Verification" in the header?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 98
+
+---
+
+## Untitled section
+
+Q073. What is "Payment Verification" in the header?
+
+Function is not specified in the manual.
+Payment Verification appears as a header label in the portal screenshots. The manual does not explain whether
+it is a menu item, a status service, or a separate verification workflow, so no further function can be confirmed
+from this document.

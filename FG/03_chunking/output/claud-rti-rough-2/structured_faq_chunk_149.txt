@@ -1,0 +1,20 @@
+# FAQ Chunk 149
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 24
+Section: In Chhattisgarh Context:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 65
+
+---
+
+## In Chhattisgarh Context:
+
+- SIC has recommended penalties in rare cases
+- Most result in corrective orders instead
+- High profile violations refer to government
+- Employee discipline committees process recommendations
+- See RTI Rule Book pages 166-170 for Chhattisgarh notification on proper implementation

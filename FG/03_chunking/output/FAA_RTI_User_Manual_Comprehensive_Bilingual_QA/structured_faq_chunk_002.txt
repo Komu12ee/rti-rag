@@ -1,0 +1,16 @@
+# FAQ Chunk 2
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 1-2
+Section: Comprehensive Bilingual Question and Answer Guide
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 21
+
+---
+
+## Comprehensive Bilingual Question and Answer Guide
+
+English and Hindi Each answer appears immediately below its question

@@ -1,0 +1,20 @@
+# FAQ Chunk 76
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 6
+Section: Q39 (English ). How does the Nodal/ Approval Authority access to the RTI portal? get
+Question: प्रश्न 39. (हिन्दी). नोडल/स्चवीकृति प्राधिकारीं RTI पोर्टल पर एक्सेस कैसे प्राप्त करता है?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 107
+
+---
+
+## Q39 (English ). How does the Nodal/ Approval Authority access to the RTI portal? get
+
+प्रश्न 39. (हिन्दी). नोडल/स्चवीकृति प्राधिकारीं RTI पोर्टल पर एक्सेस कैसे प्राप्त करता है?
+
+उत्तर. नोडल स्चीकृति प्राधिकारी के दर्ज ई॰मेल आईडी पर एक लिंक आएगा | ई॰मेल में लिंक को क्लिक करके RTI पोर्टल हेतु पासवर्ड बनायें अब RTI पोर्टल पर लॉग इन करें|
+
+Sourceः Page 5

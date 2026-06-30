@@ -1,0 +1,19 @@
+# FAQ Chunk 59
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 11
+Section: Untitled section
+Question: Q056. What happens if I click "Edit" on the preview page?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 71
+
+---
+
+## Untitled section
+
+Q056. What happens if I click "Edit" on the preview page?
+
+The manual says Edit is used to make changes to the details entered before submission. It is a return-to-form
+correction option, not a final submission action.

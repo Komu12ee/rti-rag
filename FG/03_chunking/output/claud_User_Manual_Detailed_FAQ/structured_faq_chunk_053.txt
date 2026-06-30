@@ -1,0 +1,20 @@
+# FAQ Chunk 53
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 10
+Section: Untitled section
+Question: Q050. What does "Uploaded" status mean?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 75
+
+---
+
+## Untitled section
+
+Q050. What does "Uploaded" status mean?
+
+After a successful upload, the manual says the portal displays a success indication and the Upload button
+changes to a green button labelled Uploaded. This confirms that the selected file was accepted by that upload
+field.

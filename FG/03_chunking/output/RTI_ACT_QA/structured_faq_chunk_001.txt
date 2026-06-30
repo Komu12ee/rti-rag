@@ -1,0 +1,16 @@
+# FAQ Chunk 1
+Document: RTI_ACT_QA
+Source: structured.md
+Pages: 1
+Section: RIGHTTO INFORMATION ACT, 2OO5: ALL PROVISIONS & DETAILED DEFINITIONS
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 39
+
+---
+
+## RIGHTTO INFORMATION ACT, 2OO5: ALL PROVISIONS & DETAILED DEFINITIONS
+
+Complete Question Answer Format with Page References from RTI Rule Book

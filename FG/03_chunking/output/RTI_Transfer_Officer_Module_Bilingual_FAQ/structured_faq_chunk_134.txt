@@ -1,0 +1,20 @@
+# FAQ Chunk 134
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 14
+Section: Q73. Does the manual explain password reset, user activation or first time login ?
+Question: प्रश्न 73. क्या मैनुअल पासवर्ड रीसेट, उपयोगकर्ता सक्रियकरण या पहली बार लॉगिन की प्रक्रिया बताता है? उत्तरः नहीं| यह मानकर चलता है कि उपयोगकर्ता पहले से आरटीआई पोर्टल एक्सेस कर सकता हैl इसमें पासवर्ड रीसेट, खाता सक्रियकरण या पहली बार लॉगिन की प्रक्रिया नहीं दी गई हैl मैनुअल
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 140
+
+---
+
+## Q73. Does the manual explain password reset, user activation or first time login ?
+
+प्रश्न 73. क्या मैनुअल पासवर्ड रीसेट, उपयोगकर्ता सक्रियकरण या पहली बार लॉगिन की प्रक्रिया बताता है? उत्तरः नहीं| यह मानकर चलता है कि उपयोगकर्ता पहले से आरटीआई पोर्टल एक्सेस कर सकता हैl इसमें पासवर्ड रीसेट, खाता सक्रियकरण या पहली बार लॉगिन की प्रक्रिया नहीं दी गई हैl मैनुअल
+
+Answer: No. The manual assumes that the user can already access the RTI Portal. It does not provide password reset, account activation or first time login instructions
+
+Source reference : Manual pp . 3-1 2

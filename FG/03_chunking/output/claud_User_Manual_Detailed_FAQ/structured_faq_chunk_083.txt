@@ -1,0 +1,21 @@
+# FAQ Chunk 83
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 14
+Section: Untitled section
+Question: Q080. What if my document upload fails?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 109
+
+---
+
+## Untitled section
+
+Q080. What if my document upload fails?
+
+Failure handling is not specified.
+The manual documents the successful path only: Browse, select a file, select Upload, and confirm the green
+Uploaded status. Check the documented conditions first: use .pdf, .jpeg, or .jpg and stay within the displayed 20
+MB limit. No error codes, retry steps, or recovery rules are described.

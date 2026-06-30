@@ -1,0 +1,18 @@
+# FAQ Chunk 7
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 2
+Section: Question: How do 1 create login credentials on the RTI portal?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 55
+
+---
+
+## Question: How do 1 create login credentials on the RTI portal?
+
+Answer: Click User Registration on the portal home page. The manual states that this option is used to create login credentials.
+
+Source: RTI User Manual, Printed page 2

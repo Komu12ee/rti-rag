@@ -1,0 +1,16 @@
+# FAQ Chunk 49
+Document: RTI_PIO_Manual_30_Bilingual_QA
+Source: structured.md
+Pages: 8
+Section: Question (English): What RTI application details are required before entering First Appeal details?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 87
+
+---
+
+## Question (English): What RTI application details are required before entering First Appeal details?
+
+Answer (English): At the RTI Application Details stage, enter the RTI details, the date of the offline RTI application, and the information received status. The screen indicates that fields marked with an asterisk are mandatory. Once these details are complete, click Next to proceed to First Appeal Office Details.

@@ -1,0 +1,24 @@
+# FAQ Chunk 25
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 5
+Section: प्रश्नः सफल यूज़र रजिस्ट्रेशन के बाद क्या होता है?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 137
+
+---
+
+## प्रश्नः सफल यूज़र रजिस्ट्रेशन के बाद क्या होता है?
+
+उत्तरः मैनुअल में सफल पंजीकरण का पुष्टिकरण दिखाया गया है और उपयोगकर्ता को ई॰्मेल के माध्यम से खाता सत्यापित करने का निर्देश दिया गया हैl
+
+Source: RTI User Manual, Printed pages 3 4.
+
+प्रश्नः क्या रजिस्ट्रेशन सबमिट करने के बाद ई॰मेल प्राप्त होगा?
+
+उत्तरः मैनुअल में सफल पंजीकरण का पुष्टिकरण दिखाया गया है और उपयोगकर्ता को ई-्मेल के माध्यम से खाता सत्यापित करने का निर्देश दिया गया हैl
+
+Source: RTI User Manual, Printed pages 34.

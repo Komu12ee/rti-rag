@@ -1,0 +1,21 @@
+# FAQ Chunk 112
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 18
+Section: Untitled section
+Question: Q109. Can I download the application after submission?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 91
+
+---
+
+## Untitled section
+
+Q109. Can I download the application after submission?
+
+Application download is not specified.
+The manual does not describe downloading or printing a submitted Second Appeal application. It does show a
+Print Receipt option for a successful e-Challan transaction, which is a payment receipt rather than a documented
+application-download feature.

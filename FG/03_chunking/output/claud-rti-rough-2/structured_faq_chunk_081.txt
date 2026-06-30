@@ -1,0 +1,19 @@
+# FAQ Chunk 81
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 13
+Section: (3) प्रक्रियाः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 36
+
+---
+
+## (3) प्रक्रियाः
+
+- कारणों की व्याख्या करने वाला लिखित आदेश
+- संबंधित पक्षों को सूचना
+- कोई अतिरिक्त शुल्क नहीं लगाया जाता
+- पूर्ण रिकॉर्ड के साथ फाइल आगे भेजी जाएं

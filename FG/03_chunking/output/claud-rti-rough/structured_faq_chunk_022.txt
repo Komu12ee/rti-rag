@@ -1,0 +1,18 @@
+# FAQ Chunk 22
+Document: claud-rti-rough
+Source: structured.md
+Pages: 11
+Section: SECTION 9: INFORMATIONEXEMPTED FROM DISCLOSURE
+Question: Q9. What is the copyright exemption under the RTI Act?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 168
+
+---
+
+## SECTION 9: INFORMATIONEXEMPTED FROM DISCLOSURE
+
+Q9. What is the copyright exemption under the RTI Act?
+
+Answer: Section 9 provides an exemption for copyright infringement. It states that without prejudice to the provisions of Section 8,a Central Public Information Officer or a State Public Information Officer may reject a request for information where providing such access would involve an infringement of copyright subsisting in a person other than the State. This means that if disclosing information would violate copyright protections held by a private individual or entity not the government), the PIO can refuse to provide that information. However, this exemption applies only to third party copyrights; government copyrights are subject to Section 8(2) public interest override provisions.

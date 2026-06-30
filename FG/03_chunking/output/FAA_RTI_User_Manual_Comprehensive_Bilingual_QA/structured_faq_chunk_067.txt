@@ -1,0 +1,20 @@
+# FAQ Chunk 67
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 11
+Section: Q32 (English). Do 1 need to indicate whether L am a BPL card holder?
+Question: प्रश्न 32. (हिंदी)| क्या मुझे बताना होगा कि मैं BPL कार्डधारक हूँ या नहीं?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 83
+
+---
+
+## Q32 (English). Do 1 need to indicate whether L am a BPL card holder?
+
+प्रश्न 32. (हिंदी)| क्या मुझे बताना होगा कि मैं BPL कार्डधारक हूँ या नहीं?
+
+उत्तर हाँl Second Appeal Details के निर्देशों में BPL कार्डधारक स्थिति के Tes या No चुनना आवश्यक बताया गया हैI लिए
+
+Source: RTI User Manual, Manual p. 6

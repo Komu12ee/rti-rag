@@ -1,0 +1,19 @@
+# FAQ Chunk 35
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 7
+Section: Untitled section
+Question: Q032. How do I find the Public Information Officer details?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 77
+
+---
+
+## Untitled section
+
+Q032. How do I find the Public Information Officer details?
+
+At the PIO and Office Details stage, use the dropdowns in the shown order: State, District, Base Department,
+Office Level, Office Name, and Officer Name. Select the available matching values and then select Next.

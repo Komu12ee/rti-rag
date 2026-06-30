@@ -1,0 +1,16 @@
+# FAQ Chunk 77
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 6
+Section: Q40 (English ). What must the Nodal/Approval Authority do from the dashboard?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 51
+
+---
+
+## Q40 (English ). What must the Nodal/Approval Authority do from the dashboard?
+
+Answer. From the Nodal Approval Authority dashboard, the pending application submitted by the PIO must be approved or rejected.

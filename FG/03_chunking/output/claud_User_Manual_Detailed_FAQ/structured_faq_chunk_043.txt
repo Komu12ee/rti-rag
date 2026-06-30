@@ -1,0 +1,21 @@
+# FAQ Chunk 43
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 8
+Section: Untitled section
+Question: Q040. What does "Information Received" mean?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 97
+
+---
+
+## Untitled section
+
+Q040. What does "Information Received" mean?
+
+The option meanings are not specified in the manual.
+It is a required dropdown in the RTI Application Details section. The manual does not define the available values
+or provide a decision rule for selecting them; choose the option in the live portal that accurately represents the
+information outcome in your case.

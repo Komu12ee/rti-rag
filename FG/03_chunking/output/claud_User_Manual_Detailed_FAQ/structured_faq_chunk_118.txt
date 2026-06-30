@@ -1,0 +1,21 @@
+# FAQ Chunk 118
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 20
+Section: Untitled section
+Question: Q115. Can I have multiple accounts with different email addresses?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 90
+
+---
+
+## Untitled section
+
+Q115. Can I have multiple accounts with different email addresses?
+
+Multiple-account policy is not specified.
+The manual requires a valid active email ID for registration and uses the email address as the login ID. It does
+not state whether the same person may create multiple accounts using different email addresses, or whether
+duplicate accounts are restricted.

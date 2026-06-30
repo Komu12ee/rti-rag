@@ -1,0 +1,22 @@
+# FAQ Chunk 28
+Document: claud-rti-rough
+Source: structured.md
+Pages: 14
+Section: SECTION ll: THIRD PARTY INFORMATION
+Question: प्रश्न 11. जब सूचना तीसरे पक्ष से संबंधित हो या उसके द्वारा प्रदान की गई हो तोे क्या प्रक्रिया है?
+Part: 2/2
+Kind: faq
+Has answer: yes
+Content tokens: 85
+
+---
+
+## SECTION ll: THIRD PARTY INFORMATION
+
+प्रश्न 11. जब सूचना तीसरे पक्ष से संबंधित हो या उसके द्वारा प्रदान की गई हो तोे क्या प्रक्रिया है?
+
+**उत्तर जारी है:**
+
+यह तीसरे पक्ष के वैध हितों की रक्षा करता है जिनकी गोपनीय सूचना सार्वजनिक प्राधिकरणों द्वारा रखी जाती है|
+
+Source reference: RTI Rule Book, p. 19 , Section 11

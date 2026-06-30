@@ -1,0 +1,22 @@
+# FAQ Chunk 8
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 3
+Section: Untitled section
+Question: Q005. How do I reset my password?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 131
+
+---
+
+## Untitled section
+
+Q005. How do I reset my password?
+
+Not fully specified in the manual.
+The screenshots show both a Forgot Password? option and a Get Verification Link to Your Email-id option on the
+login screen, and the dashboard menu includes Reset Password. However, the manual explains only initial
+password creation after email verification; it does not provide the exact reset-password steps, timing, or error
+handling. Use the displayed reset or verification-link option and follow the live portal prompts.

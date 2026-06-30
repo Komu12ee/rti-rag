@@ -1,0 +1,18 @@
+# FAQ Chunk 51
+Document: claud-rti-rough
+Source: structured.md
+Pages: 19
+Section: (4) अधिकार क्षेत्रः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 55
+
+---
+
+## (4) अधिकार क्षेत्रः
+
+- राज्य सार्वजनिक प्राधिकरणों से संबंधित अपीलों और शिकायतों को संभालता है
+- राज्य PIOs के निर्णयों के खिलाफ अपीलें सुनता है दूसरी
+- राज्य प्राधिकरणों में RTI अधिनियम के कार्यान्वयन के बारे में शिकायतों की जांच करता है

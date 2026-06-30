@@ -1,0 +1,18 @@
+# FAQ Chunk 73
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 12
+Section: Question: What should 1 select in the PIO and Office Details step?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 72
+
+---
+
+## Question: What should 1 select in the PIO and Office Details step?
+
+Answer: Enter or select the officer and office details the displayed fields and dropdown options, then click Next. The screen shown includes State, District, Base Department, Office Level, Office Name, and Officer Name using
+
+Source: RTI User Manual, Printed page 7.

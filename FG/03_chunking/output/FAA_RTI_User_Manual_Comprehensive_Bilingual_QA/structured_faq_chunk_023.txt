@@ -1,0 +1,20 @@
+# FAQ Chunk 23
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 5-6
+Section: Q10 (English). Why do 1 need to verify my account by email?
+Question: प्रश्न 10. (हिंदी)| मुझे ई-मेल द्वारा खाता सत्यापित क्यों करना है?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 90
+
+---
+
+## Q10 (English). Why do 1 need to verify my account by email?
+
+प्रश्न 10. (हिंदी)| मुझे ई-मेल द्वारा खाता सत्यापित क्यों करना है?
+
+उत्तर के अनुसार उपयोगकर्ता द्वारा दिए गए ई॰्मेल पर सत्यापन लिंक भेजा जाता है| इसी लिंक से खाता सक्रिय किया जाता है और पासवर्ड बनाया जाता हैl मैनुअल
+
+Sourceः RTI User Manual, Manual p. 2, 4.

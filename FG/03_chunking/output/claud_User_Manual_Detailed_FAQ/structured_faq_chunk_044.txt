@@ -1,0 +1,22 @@
+# FAQ Chunk 44
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 8-9
+Section: Untitled section
+Question: Q041. What date format should I use for offline application?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 125
+
+---
+
+## Untitled section
+
+Q041. What date format should I use for offline application?
+
+The RTI and First Appeal offline-date screenshots use a format such as 17-08-2022. Use dd-mm-yyyy unless the
+live portal displays a different required format.
+
+<!-- extraction_method: direct_text | confidence: 0.75 -->
+First Appeal Information

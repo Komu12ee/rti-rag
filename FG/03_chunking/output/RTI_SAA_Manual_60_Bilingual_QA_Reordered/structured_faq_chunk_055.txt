@@ -1,0 +1,24 @@
+# FAQ Chunk 55
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 14-15
+Section: Question: What are the eight stages shown in the Second Appeal application progress bar?
+Question: प्रश्न 25. हिंदी प्रश्नोत्तर
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 172
+
+---
+
+## Question: What are the eight stages shown in the Second Appeal application progress bar?
+
+प्रश्न 25. हिंदी प्रश्नोत्तर
+
+प्रश्नः द्वितीय अपील आवेदन प्रगति पट्टी में कौन-से आठ चरण दिखाए गए हैं?
+
+उत्तरः मैनुअल में क्रम इस प्रकार दिखाया गया हैः RTI Instruction, Second Appeal Application Details, PIO and Office Details, RTI Details, First Appeal Office Details, First Appeal Application, Documents Details और Payment Details | यह प्रगति पट्टी उपयोगकर्ता को वर्तमान चरण और शेष चरण पहचानने में मदद करती है|
+
+समान हिंदी प्रश्नः "कृपया समझाएंःद्वितीय अपील आवेदन प्रगति पट्टी में कौन से आठ चरण दिखाए गए हैं II "आरटीआई पोर्टल पर यह प्रक्रिया कैसे होती है?"
+
+Manual reference संदर्भः Manual pp. 5-12 मैनुअल

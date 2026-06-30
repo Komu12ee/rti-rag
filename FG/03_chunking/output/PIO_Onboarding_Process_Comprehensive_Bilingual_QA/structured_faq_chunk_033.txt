@@ -1,0 +1,16 @@
+# FAQ Chunk 33
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 3
+Section: Q17 (English). What is the fourth step in PIO onboarding?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 32
+
+---
+
+## Q17 (English). What is the fourth step in PIO onboarding?
+
+Answer. Step 4 is review: preview of the application.

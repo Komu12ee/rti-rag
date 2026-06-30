@@ -1,0 +1,189 @@
+{
+  "document": "structured.md",
+  "document_name": "faq_hindi_english_translation",
+  "source_path": "C:\\Users\\hp\\current_status\\CHiPS-RTI-Project\\citizen\\rti_sarvam copy\\data\\rti-rag\\FG\\01_preprocessing\\stage2_output\\faq_hindi_english_translation\\structured.md",
+  "chunking_method": "bilingual_faq_rule_based",
+  "supported_languages": [
+    "Hindi",
+    "English"
+  ],
+  "rules": {
+    "question_start": "Hindi: प्रश्न N; English: Question N",
+    "answer_marker": "Hindi: उत्तरः/उत्तर:; English: Answer:",
+    "boundary": "next FAQ question, next major H1/H2 heading, or document end",
+    "answer_preserved": true,
+    "page_tracking": "exact source page markers: <!-- Page N -->"
+  },
+  "max_content_tokens": 512,
+  "tokenizer_model": "BAAI/bge-m3",
+  "token_count_mode": "tokenizer",
+  "source_faq_blocks": 9,
+  "source_section_notes": 1,
+  "faq_blocks_without_answer_marker": [],
+  "total_chunks": 10,
+  "chunks": [
+    {
+      "index": 1,
+      "filename": "structured_faq_chunk_001.txt",
+      "section": "Untitled section",
+      "question": "",
+      "pages": [
+        1
+      ],
+      "page_range": "1",
+      "source_block_ordinal": 1,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": false,
+      "content_tokens": 75
+    },
+    {
+      "index": 2,
+      "filename": "structured_faq_chunk_002.txt",
+      "section": "Untitled section",
+      "question": "Question 1. What information may be sought?",
+      "pages": [
+        1
+      ],
+      "page_range": "1",
+      "source_block_ordinal": 2,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 100
+    },
+    {
+      "index": 3,
+      "filename": "structured_faq_chunk_003.txt",
+      "section": "Untitled section",
+      "question": "Question 2. How should an application be made?",
+      "pages": [
+        1
+      ],
+      "page_range": "1",
+      "source_block_ordinal": 3,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 209
+    },
+    {
+      "index": 4,
+      "filename": "structured_faq_chunk_004.txt",
+      "section": "Untitled section",
+      "question": "Question 3. What is the time limit for receiving information?",
+      "pages": [
+        1
+      ],
+      "page_range": "1",
+      "source_block_ordinal": 4,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 175
+    },
+    {
+      "index": 5,
+      "filename": "structured_faq_chunk_005.txt",
+      "section": "Untitled section",
+      "question": "Question 4. How much additional fee may be demanded, and for what purpose?",
+      "pages": [
+        1,
+        2,
+        3
+      ],
+      "page_range": "1-3",
+      "source_block_ordinal": 5,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 444
+    },
+    {
+      "index": 6,
+      "filename": "structured_faq_chunk_006.txt",
+      "section": "Untitled section",
+      "question": "Question 1. When should an application for a first appeal be made?",
+      "pages": [
+        3
+      ],
+      "page_range": "3",
+      "source_block_ordinal": 6,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 279
+    },
+    {
+      "index": 7,
+      "filename": "structured_faq_chunk_007.txt",
+      "section": "Untitled section",
+      "question": "Question 2. What is the application fee for a first appeal?",
+      "pages": [
+        3
+      ],
+      "page_range": "3",
+      "source_block_ordinal": 7,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 130
+    },
+    {
+      "index": 8,
+      "filename": "structured_faq_chunk_008.txt",
+      "section": "Untitled section",
+      "question": "Question 3. What is the time limit for disposal of an appeal?",
+      "pages": [
+        3,
+        4
+      ],
+      "page_range": "3-4",
+      "source_block_ordinal": 8,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 105
+    },
+    {
+      "index": 9,
+      "filename": "structured_faq_chunk_009.txt",
+      "section": "Untitled section",
+      "question": "Question 1. When should an application for a second appeal be made?",
+      "pages": [
+        4
+      ],
+      "page_range": "4",
+      "source_block_ordinal": 9,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 205
+    },
+    {
+      "index": 10,
+      "filename": "structured_faq_chunk_010.txt",
+      "section": "Untitled section",
+      "question": "Question 2. What is the application fee for a second appeal?",
+      "pages": [
+        4
+      ],
+      "page_range": "4",
+      "source_block_ordinal": 10,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 135
+    }
+  ]
+}

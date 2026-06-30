@@ -1,0 +1,18 @@
+# FAQ Chunk 131
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 21
+Section: (10) Practical Impact:
+Question: प्रश्न 23. RTI अधिनियम के गैर-अनुपालन के लिए कौन से दंड लगाए जा सकते हैं?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 45
+
+---
+
+## (10) Practical Impact:
+
+प्रश्न 23. RTI अधिनियम के गैर-अनुपालन के लिए कौन से दंड लगाए जा सकते हैं?
+
+उत्तरः धारा 23 RTI अधिनियम के उल्लंघन के लिए दंड स्थापित करती हैः

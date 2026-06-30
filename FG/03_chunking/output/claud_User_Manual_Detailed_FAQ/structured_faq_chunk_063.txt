@@ -1,0 +1,20 @@
+# FAQ Chunk 63
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 12
+Section: Untitled section
+Question: Q060. If I file a Complaint, do I still need to pay the fee?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 86
+
+---
+
+## Untitled section
+
+Q060. If I file a Complaint, do I still need to pay the fee?
+
+Payment is not mandatory for Complaint applications according to the manual. The manual does not explain
+whether the portal might still display an optional payment path, so follow the live screen while preserving the
+manual's stated rule.

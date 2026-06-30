@@ -1,0 +1,21 @@
+# FAQ Chunk 11
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 4
+Section: Untitled section
+Question: Q008. What happens after I submit the registration form?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 89
+
+---
+
+## Untitled section
+
+Q008. What happens after I submit the registration form?
+
+After Submit, the portal displays a successful-registration confirmation and directs you to check your email to
+verify the account. Registration alone does not complete access: you must follow the email verification link and
+create the password before logging in.
+Second Appeal Application Basics

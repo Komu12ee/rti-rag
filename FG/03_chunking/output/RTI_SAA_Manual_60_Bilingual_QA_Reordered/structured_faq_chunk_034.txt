@@ -1,0 +1,16 @@
+# FAQ Chunk 34
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 10
+Section: B. Starting and Understanding the Second Appeal Workflow
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 27
+
+---
+
+## B. Starting and Understanding the Second Appeal Workflow
+
+B. द्वितीय अपील कार्यप्रवाह शुरू करना और समझना

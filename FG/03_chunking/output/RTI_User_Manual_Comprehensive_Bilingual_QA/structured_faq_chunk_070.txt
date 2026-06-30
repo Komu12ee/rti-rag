@@ -1,0 +1,24 @@
+# FAQ Chunk 70
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 11-12
+Section: Question: What happens if 1 select Tes for BPL card holder status?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 194
+
+---
+
+## Question: What happens if 1 select Tes for BPL card holder status?
+
+Answer: The manual says that BPL document details must be entered if Yes is selected. The displayed form includes the BPL document number, BPL document issue date, and BPL issuing authority. The manual states that these BPL details are mandatory to process the application further.
+
+Source: RTI User Manual, Printed page 7
+
+प्रश्नः बीपीएल कार्डधारक को द्वितीय अपील फॉर्म में क्या दर्ज करना होता है?
+
+उत्तरः मैनुअल के अनुसार यदि Yes चुना जाता है तो बीपीएल दस्तावेज का विवरण दर्ज करना आवश्यक है| प्रदर्शित फॉर्म में बीपीएल दस्तावेज संख्या, बीपीएल दस्तावेज जारी तिथि और बीपीएल जारी करने वाला प्राधिकारी शामिल हैंl मैनुअल बताता है कि आवेदन को आगे संसाधित करने के ये बीपीएल विवरण अनिवार्य हैं लिए
+
+Source: RTI User Manual, Printed page 7.

@@ -1,0 +1,18 @@
+# FAQ Chunk 18
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 4
+Section: Previewing and submitting registration
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 58
+
+---
+
+## Previewing and submitting registration
+
+Question: What should 1 do after entering my registration details?
+
+Answer: After entering the details, click Preview. Review the displayed information and click Submit when it is correct. Source: RTI User Manual, Printed page 3

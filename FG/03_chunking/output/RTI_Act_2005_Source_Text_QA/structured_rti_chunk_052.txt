@@ -1,0 +1,58 @@
+# RTI Legal Chunk 52
+Document: RTI_Act_2005_Source_Text_QA
+Input source: structured.md
+Input pages: 24-26
+Chapter: Chapter IV - The State Information Commission
+Question: Q. What is the source text of Section 16?
+Part: 5/5
+Kind: faq
+Has answer: yes
+Content tokens: 266
+Original source book: Unknown
+Source type: general
+Legal reference: Section 16
+Book pages: 28-31
+Source PDF pages: Unknown
+Citation: Unknown
+
+---
+
+## Chapter IV - The State Information Commission
+
+Legal reference: Section 16
+
+Q. What is the source text of Section 16?
+
+**Answer continued:**
+
+SOURCE-TEXT Q&A | THE RIGHT TO INFORMATION ACT, 2005
+receipt of retirement benefits in
+respect of any previous service
+rendered in a Corporation established
+by or under any Central Act or State
+Act or a Government company
+owned or controlled by the Central
+Government o r t h e State Government, his salary in respect of
+the service as the State Chief
+Information Commissioner or the
+State Information Commissioner
+shall be reduced by the amount of
+pension equivalent to the retirement benefits:
+Provided also that the salaries,
+allowances and other conditions of
+service of the State Chief Information
+Commissioner and the State
+Information Commissioners shall not
+be varied to their disadvantage after their appointment.
+(6) The State Government shall provide
+the State Chief Information
+Commissioner and the State
+Information Commissioners with
+such officers and employees as may
+be necessary for the efficient
+performance of their functions under this Act, and the salaries and
+allowances payable to and the terms
+and conditions of service of the
+officers and other employees
+appointed for the purpose of this Act shall be such as may be prescribed.
+—

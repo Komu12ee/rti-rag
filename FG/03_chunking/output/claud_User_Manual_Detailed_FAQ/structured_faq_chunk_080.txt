@@ -1,0 +1,20 @@
+# FAQ Chunk 80
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 14
+Section: Untitled section
+Question: Q077. What if the dropdown list for officer details is empty?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 108
+
+---
+
+## Untitled section
+
+Q077. What if the dropdown list for officer details is empty?
+
+When the needed office or officer is not listed, the manual directs the user to use the blue manual-entry link. If a
+dropdown is technically empty or fails to load, the manual provides no troubleshooting steps; the manual-entry
+option is the only documented alternative for unavailable details.

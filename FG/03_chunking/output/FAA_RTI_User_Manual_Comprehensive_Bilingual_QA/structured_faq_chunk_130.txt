@@ -1,0 +1,16 @@
+# FAQ Chunk 130
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 19
+Section: Q64 (English). What do 1 need to select on the online challan page?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 47
+
+---
+
+## Q64 (English). What do 1 need to select on the online challan page?
+
+Answer. Select the bank name on the e-challan page, as shown in the manual, and then proceed to submit the payment.

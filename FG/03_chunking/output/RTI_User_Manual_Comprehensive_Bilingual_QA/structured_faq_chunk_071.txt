@@ -1,0 +1,18 @@
+# FAQ Chunk 71
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 12
+Section: प्रश्नः यदि मैं बीपीएल कार्डधारक स्थिति के Yes चुनूँ तो क्या करना होगा? लिए
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 108
+
+---
+
+## प्रश्नः यदि मैं बीपीएल कार्डधारक स्थिति के Yes चुनूँ तो क्या करना होगा? लिए
+
+उत्तरः मैनुअल के अनुसार यदि Tes चुना जाता है तो बीपीएल दस्तावेज का विवरण दर्ज करना आवश्यक है| प्रदर्शित फॉर्म में बीपीएल दस्तावेज संख्या, बीपीएल दस्तावेज जारी तिथि और जारी करने वाला प्राधिकारी शामिल हैंl बताता है कि आवेदन को आगे संसाधित करने के लिए ये बीपीएल विवरण अनिवार्य हैंl बीपीएल मैनुअल
+
+Sourceः RTI User Manual, Printed page 7.

@@ -1,0 +1,18 @@
+# FAQ Chunk 18
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 5
+Section: Question: Which credential should 1 use as my login ID?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 94
+
+---
+
+## Question: Which credential should 1 use as my login ID?
+
+Answerः Use the email ID that was entered during user registration. The manual explicitly states that the email should be entered as the login ID during password verification. This is why the email supplied at registration must be valid and active.
+
+Similar English questions: "Please explain: Which credential should I use as my login ID "How is this handled on the RTI portal?"

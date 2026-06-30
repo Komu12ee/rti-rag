@@ -1,0 +1,16 @@
+# FAQ Chunk 26
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 6
+Section: Q12 (English). What should L use as my login ID?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 40
+
+---
+
+## Q12 (English). What should L use as my login ID?
+
+Answer. Use the email address entered during registration as the login ID, as instructed in the passwordverification section.

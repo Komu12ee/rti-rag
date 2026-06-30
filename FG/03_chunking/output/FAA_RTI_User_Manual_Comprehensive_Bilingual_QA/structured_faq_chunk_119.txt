@@ -1,0 +1,20 @@
+# FAQ Chunk 119
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 17
+Section: Q58 (English). What should 1 do after uploading all required documents?
+Question: प्रश्न 58. (हिंदी)| सभी आवश्यक दस्तावेज अपलोड करने के बाद क्या करना चाहिए?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 69
+
+---
+
+## Q58 (English). What should 1 do after uploading all required documents?
+
+प्रश्न 58. (हिंदी)| सभी आवश्यक दस्तावेज अपलोड करने के बाद क्या करना चाहिए?
+
+उत्तर| Next पर क्लिक करें| मैनुअल के अनुसार इससे आवेदन भुगतान चरण की ओर जाता हैI
+
+Source: RTI User Manual, Manual p. 11.

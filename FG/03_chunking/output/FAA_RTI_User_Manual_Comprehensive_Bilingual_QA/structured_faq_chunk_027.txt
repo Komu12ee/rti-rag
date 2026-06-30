@@ -1,0 +1,20 @@
+# FAQ Chunk 27
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 6
+Section: Q12 (English). What should L use as my login ID?
+Question: प्रश्न 12. (हिंदी)| लॉगनइन आईडी के रूप में क्या उपयोग करना चाहिए?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 79
+
+---
+
+## Q12 (English). What should L use as my login ID?
+
+प्रश्न 12. (हिंदी)| लॉगनइन आईडी के रूप में क्या उपयोग करना चाहिए?
+
+उत्तर| पासवर्ड सत्यापन अनुभाग के अनुसार पंजीकरण के समय दर्ज किया गया ई-्मेल पता लॉग इन आईडी के रूप में उपयोग करें|
+
+Source: RTI User Manual, Manual p. 4.

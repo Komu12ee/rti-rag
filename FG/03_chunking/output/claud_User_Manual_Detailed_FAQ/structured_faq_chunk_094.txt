@@ -1,0 +1,21 @@
+# FAQ Chunk 94
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 16
+Section: Untitled section
+Question: Q091. Why do I need to enter both PIO and First Appeal Officer details?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 105
+
+---
+
+## Untitled section
+
+Q091. Why do I need to enter both PIO and First Appeal Officer details?
+
+The policy rationale is not specified.
+The manual requires separate PIO and First Appeal Office stages because the Second Appeal workflow captures
+both the original RTI officer/office and the First Appeal officer/office. The manual does not state the policy or
+legal rationale beyond this form structure.

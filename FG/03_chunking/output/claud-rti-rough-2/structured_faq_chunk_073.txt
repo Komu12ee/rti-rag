@@ -1,0 +1,18 @@
+# FAQ Chunk 73
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 12
+Section: (2) Transfer Authority
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 28
+
+---
+
+## (2) Transfer Authority
+
+- State Information Commission can transfer to Central Commission
+- Central Commission can transfer to State Commission
+- Transfer made in public interest consideration

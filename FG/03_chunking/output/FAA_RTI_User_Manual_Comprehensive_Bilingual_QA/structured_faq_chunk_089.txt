@@ -1,0 +1,20 @@
+# FAQ Chunk 89
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 14
+Section: Q43 (English). Do  need to enter the date of my offline RTI application?
+Question: प्रश्न 43. (हिंदी)| क्या मुझे अपने ऑफलाइन आरटीआई आवेदन की तिथि दर्ज करनी होती है?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 81
+
+---
+
+## Q43 (English). Do  need to enter the date of my offline RTI application?
+
+प्रश्न 43. (हिंदी)| क्या मुझे अपने ऑफलाइन आरटीआई आवेदन की तिथि दर्ज करनी होती है?
+
+उत्तरI हाँ| मैनुअल में RTI Application Details में ऑफलाइन आवेदन की तिथि दर्ज करने का निर्देश दिया गया हैl
+
+Source: RTI User Manual, Manual p. 8

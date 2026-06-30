@@ -1,0 +1,24 @@
+# FAQ Chunk 125
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 32
+Section: Question: Which questions cannot be answered reliably from this manual alone?
+Question: प्रश्न 60. - हिंदी प्रश्नोत्तर
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 186
+
+---
+
+## Question: Which questions cannot be answered reliably from this manual alone?
+
+प्रश्न 60. - हिंदी प्रश्नोत्तर
+
+प्रश्नः कौन-से प्रश्नों का विश्वसनीय उत्तर केवल इस मैनुअल से नहीं दिया जा सकता?
+
+उत्तरः यह मैनुअल पोर्टल नेविगेशन के बनाया गया हैI यह वैधानिक अपील समय सीमा, कानूनी पात्रता, शिकायत की कानूनी मेरिट, सटीक शुल्क श्रेणी चयन या किसी व्यक्तिगत मामले के परिणाम जैसे प्रश्नों का पूर्ण उत्तर नहीं देता| ऐसे प्रश्नों के वर्तमान आधिकारिक नियम, लाइव पोर्टल या सक्षम प्राधिकारी का उपयोग करें| लिए लिए
+
+समान हिंदी प्रश्नः "कृपया समझाएंःकौन से प्रश्नों का विश्वसनीय उत्तर केवल इस मैनुअल से नहीं दिया जा सकता TF = "आरटीआई पोर्टल पर यह प्रक्रिया कैसे होती है?"
+
+Manual reference संदर्भः Manual pp. 1-13 मैनुअल

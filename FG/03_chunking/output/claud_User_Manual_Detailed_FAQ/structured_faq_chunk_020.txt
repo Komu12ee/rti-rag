@@ -1,0 +1,20 @@
+# FAQ Chunk 20
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 5
+Section: Untitled section
+Question: Q017. What are the payment options available?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 104
+
+---
+
+## Untitled section
+
+Q017. What are the payment options available?
+
+The documented method is Pay Fee Online, which redirects the user to an e-Challan page. On that page, the
+manual instructs the user to select a bank name (bank gateway) and submit the challan. The manual does not list
+supported banks or confirm card, UPI, wallet, cash, or other methods.

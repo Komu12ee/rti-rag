@@ -1,0 +1,18 @@
+# FAQ Chunk 26
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 5
+Section: Question: How do [ activate my RTI portal account after registration?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 57
+
+---
+
+## Question: How do [ activate my RTI portal account after registration?
+
+Answer: Click the link received at the registered email address. The manual says that this activates the account and allows the user to create a password.
+
+Source: RTI User Manual, Printed page 4.

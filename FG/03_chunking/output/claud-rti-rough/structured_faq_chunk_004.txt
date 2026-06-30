@@ -1,0 +1,18 @@
+# FAQ Chunk 4
+Document: claud-rti-rough
+Source: structured.md
+Pages: 1-2
+Section: SECTION 2: DEFINITIONS
+Question: Q2. What are the key definitions essential for understanding the RTI Act, particularly "Public Authority"?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 234
+
+---
+
+## SECTION 2: DEFINITIONS
+
+Q2. What are the key definitions essential for understanding the RTI Act, particularly "Public Authority"?
+
+Answer: Section 2 provides comprehensive definitions of 19 terms. "Public Authority" (Section 2(h) ) means any authority or body or institution of self governance established or constituted by or under: (a) the Constitution of India; (b) any law made by Parliament; (c) any law made by State Legislature; (d) notification issued or order made by appropriate Government. It includes bodies owned, controlled, or substantially financed by direct or indirect funds from Central State Government, and non Government organizations substantially financed by appropriate Government. This definition is critical as it determines which entities must comply with RTI obligations Other essential definitions include "Information" (any material in electronic or physical form), "Right to Information" (right to inspect, obtain certified copies, samples, and electronic formats), and "Third Party" (any person other than the information seeker, including public authorities). key

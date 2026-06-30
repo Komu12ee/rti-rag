@@ -1,0 +1,18 @@
+# FAQ Chunk 44
+Document: claud-rti-rough
+Source: structured.md
+Pages: 18
+Section: Ql5. What is the State Information Commission and how is it constituted?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 73
+
+---
+
+## Ql5. What is the State Information Commission and how is it constituted?
+
+Answer: Section 15 establishes State Information Commissions ( SICs) at the state level parallel to the Central Information Commission, with similar structure and powers but limited to state matters:
+
+- (1) Establishment: Every state shall constitute a State Information Commission

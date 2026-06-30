@@ -1,0 +1,16 @@
+# FAQ Chunk 5
+Document: RTI_PIO_Manual_30_Bilingual_QA
+Source: structured.md
+Pages: 2
+Section: Question (English): How do 1 begin user registration on the RTI portal?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 84
+
+---
+
+## Question (English): How do 1 begin user registration on the RTI portal?
+
+Answer (English): Open the RTI portal landing page and select the User Registration option. The portal shows general information for registration. Read those instructions, tick the declaration confirming that you have read them carefully, and click Next. This takes you to the registration form where the requested user information can be entered.

@@ -1,0 +1,24 @@
+# FAQ Chunk 47
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 12-13
+Section: Question: What is meant by selecting Appeal or Complaint in Second Appeal Details?
+Question: प्रश्न 21. हिंदी प्रश्नोत्तर
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 185
+
+---
+
+## Question: What is meant by selecting Appeal or Complaint in Second Appeal Details?
+
+प्रश्न 21. हिंदी प्रश्नोत्तर
+
+प्रश्नः द्वितीय अपील विवरण में Appeal या Complaint का क्या अर्थ है? चुनने
+
+उत्तरः Second Appeal Details भाग में उपयोगकर्ता को Second Appeal Relation के रूप में Appeal या Complaint में से एक चुनना होता है| चुना गया विकल्प कार्यप्रवाह को प्रभावित करता है| विशेष रूप से Complaint के मैनुअल बताता है कि भुगतान अनिवार्य नहीं है और सहायक दस्तावेज़ वैकल्पिक हैं| उपयोगकर्ता को कारण प्रकार भी चुनना होता है और कारण शब्दों में लिखना होता है| लिए
+
+समान हिंदी प्रश्नः "कृपया समझाएंद्वितीय अपील विवरण में Appeal या Complaint का क्या अर्थ है II "आरटीआई पोर्टल पर यह प्रक्रिया कैसे होती है ? " चुनने
+
+Manual reference मैनुअल संदर्भः Manual pp. 6-7

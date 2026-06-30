@@ -1,0 +1,18 @@
+# FAQ Chunk 118
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 30
+Section: Question: What should I do if the file has not changed to 'Uploaded ?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 126
+
+---
+
+## Question: What should I do if the file has not changed to 'Uploaded ?
+
+Answerः The manual treats the green Uploaded state as the indication of successful upload. If the button has not changed, do not assume the file is attached. Recheck the selected file and upload action. The manual does not provide a technical troubleshooting procedure, so consult the current portal's help or support route if the issue continues.
+
+Similar English questionsः "Please explain: What should I do if the file has not changed to 'Uploaded" "How is this handled on the RTI portal?"

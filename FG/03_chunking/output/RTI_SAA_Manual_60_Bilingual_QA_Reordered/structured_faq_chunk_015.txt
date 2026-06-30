@@ -1,0 +1,24 @@
+# FAQ Chunk 15
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 4-5
+Section: Question: How do 1 activate my RTI portal account after registration?
+Question: प्रश्न 06. - हिंदी प्रश्नोत्तर
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 172
+
+---
+
+## Question: How do 1 activate my RTI portal account after registration?
+
+प्रश्न 06. - हिंदी प्रश्नोत्तर
+
+प्रश्नः पंजीयन के बाद आरटीआई पोर्टल खाता कैसे सक्रिय करें?
+
+उत्तरः ई-मेल पते पर प्राप्त खाता सत्यापन लिंक खोलें| उसी ई॰्मेल पते को लॉगिन आईडी के रूप में उपयोग करें| पोर्टल के नियमों के अनुसार पासवर्ड बनाएं जहां आवश्यक हो वहां उसे पुष्ट करें, और Create पर क्लिक करें | सफल होने पर एक पुष्टि विंडो दिखाई देती है कि उपयोगकर्ता के क्रेडेंशियल बन गए हैं| पंजीकृत
+
+समान हिंदी प्रश्नः "कृपया समझाएंः पंजीयन के बाद आरटीआई पोर्टल खाता कैसे सक्रिय करें TI "आरटीआई पोर्टल पर यह प्रक्रिया कैसे होती है?"
+
+Manual reference संदर्भः Manual p. 4 मैनुअल

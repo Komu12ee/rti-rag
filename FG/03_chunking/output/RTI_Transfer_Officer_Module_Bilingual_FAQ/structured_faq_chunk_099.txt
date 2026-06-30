@@ -1,0 +1,20 @@
+# FAQ Chunk 99
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 10
+Section: Q53. What details are required for a name change request?
+Question: प्रश्न 53. नाम परिवर्तन अनुरोध के लिए कौन-से विवरण आवश्यक हैं?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 80
+
+---
+
+## Q53. What details are required for a name change request?
+
+प्रश्न 53. नाम परिवर्तन अनुरोध के लिए कौन-से विवरण आवश्यक हैं?
+
+उत्तरः नया नाम मोबाइल नंबर और पदनाम भरें, फिर Submit बटन पर क्लिक करें| फॉर्म में ईमेल आईडी भी दिखाई जाती है क्योंकि यह प्रक्रिया उसी ईमेल खाते पर आधारित है| मौजूदा
+
+Source reference : Manual pp . 9-12

@@ -1,0 +1,20 @@
+# FAQ Chunk 49
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 5-6
+Section: Q24. Where can the receiving officer see pending handover requests?
+Question: प्रश्न 24. कार्यभार लेने वाला अधिकारी लंबित कहाँ देख सकता है? अनुरोध
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 96
+
+---
+
+## Q24. Where can the receiving officer see pending handover requests?
+
+प्रश्न 24. कार्यभार लेने वाला अधिकारी लंबित कहाँ देख सकता है? अनुरोध
+
+उत्तरः लंबित " कार्यभार लेना " स्क्रीन में लिए जाने वाले कार्यभारों की सूची के रूप में दिखाई देते हैं| सूची में कार्यभार देने वाले अधिकारी , कार्यभार लेने वाले अधिकारी , कार्यभार प्रकार, स्थिति और कार्रवाई की जानकारी होती हैI अनुरोध
+
+Source reference : Manual pp . 5-6

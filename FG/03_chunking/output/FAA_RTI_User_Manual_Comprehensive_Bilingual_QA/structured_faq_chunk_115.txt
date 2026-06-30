@@ -1,0 +1,20 @@
+# FAQ Chunk 115
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 17
+Section: Q56 (English). What should 1 click to select a document file?
+Question: प्रश्न 56. (हिंदी)| दस्तावेज फ़ाइल के क्या क्लिक करना चाहिए? चुनने लिए
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 72
+
+---
+
+## Q56 (English). What should 1 click to select a document file?
+
+प्रश्न 56. (हिंदी)| दस्तावेज फ़ाइल के क्या क्लिक करना चाहिए? चुनने लिए
+
+उत्तर| मैनुअल में अनुसार संबंधित अपलोड फ़ील्ड में Browse बटन पर क्लिक करें | दिखाए
+
+Source: RTI User Manual, Manual p. 11.

@@ -1,0 +1,16 @@
+# FAQ Chunk 100
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 15
+Section: Q49 (English). What should 1 click after completing First Appeal Office Details?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 27
+
+---
+
+## Q49 (English). What should 1 click after completing First Appeal Office Details?
+
+Answer. Click Next to process further.

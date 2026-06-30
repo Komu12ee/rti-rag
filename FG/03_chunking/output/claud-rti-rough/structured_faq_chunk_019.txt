@@ -1,0 +1,20 @@
+# FAQ Chunk 19
+Document: claud-rti-rough
+Source: structured.md
+Pages: 10-11
+Section: SECTION 8: EXEMPTIONS FROM DISCLOSURE
+Question: प्रश्न 8. सूचना प्रदान न करने के लिए व्यापक छूटें क्या हैं जिनके तहत सार्वजनिक प्राधिकरण सूचना देने के लिए बाध्य नहीं हैं?
+Part: 3/5
+Kind: faq
+Has answer: yes
+Content tokens: 54
+
+---
+
+## SECTION 8: EXEMPTIONS FROM DISCLOSURE
+
+प्रश्न 8. सूचना प्रदान न करने के लिए व्यापक छूटें क्या हैं जिनके तहत सार्वजनिक प्राधिकरण सूचना देने के लिए बाध्य नहीं हैं?
+
+**उत्तर जारी है:**
+
+81) (झ) ]:

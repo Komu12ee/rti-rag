@@ -1,0 +1,19 @@
+# FAQ Chunk 212
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 35
+Section: (5) नियम संशोधन प्रक्रियाः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 49
+
+---
+
+## (5) नियम संशोधन प्रक्रियाः
+
+- सरकार द्वारा अधिसूचना जारी की जाती है
+- राजपत्रिकीय में प्रकाशित
+- आमतौर पर तुरंत या निर्दिष्ट तारीख से प्रभावी
+- अधिसूचना के लिए सरकार को कोई लागत नहीं

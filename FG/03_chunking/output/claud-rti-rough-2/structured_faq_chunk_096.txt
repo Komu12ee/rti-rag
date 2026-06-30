@@ -1,0 +1,24 @@
+# FAQ Chunk 96
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 15-16
+Section: (2) न्यायिक समीक्षा के आधारः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 52
+
+---
+
+## (2) न्यायिक समीक्षा के आधारः
+
+- संवैधानिक प्रावधानों का उल्लंघन
+
+
+
+
+- आयोग की जांच में प्रक्रियात्मक अनियमितता
+- निर्णय की स्पष्ट अयुक्तिसंगतता
+- आयोग द्वारा अधिकार क्षेत्र संबंधी त्रुटि
+- न्याय से इनकार प्राकृतिक

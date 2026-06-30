@@ -1,0 +1,16 @@
+# FAQ Chunk 44
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 4
+Section: Q23 (English ). Who can be appointed as NodallApproval Authority?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 55
+
+---
+
+## Q23 (English ). Who can be appointed as NodallApproval Authority?
+
+Answer. The PIO himself herself, the First Appellate Officer, or any other officer can be appointed as the Nodal  Approval Authority.

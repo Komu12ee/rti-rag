@@ -1,0 +1,18 @@
+# FAQ Chunk 15
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 3
+Section: Question: Which details may [ need to enter during user registration ?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 108
+
+---
+
+## Question: Which details may [ need to enter during user registration ?
+
+Answer: The form shown in the manual includes applicant type, name in English, name in Hindi, email ID , father 's name, mother's name, mobile number, caste type, age gender, address in English, address in Hindi, PIN code, country, state, district, and residence type. Fields marked with an asterisk are mandatory in the displayed form
+
+Source: RTI User Manual, Printed page 3

@@ -1,0 +1,22 @@
+# FAQ Chunk 50
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 9
+Section: Untitled section
+Question: Q047. What documents do I need to upload?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 138
+
+---
+
+## Untitled section
+
+Q047. What documents do I need to upload?
+
+The Document Details screen contains upload slots for RTI supporting documents, PIO-related material, First
+Appeal supporting documents, FAO-related material, and an optional supporting document for the Second
+Appeal. The manual also requires a copy of the appropriate government certificate for BPL fee treatment. For
+Complaint applications, supporting documents are optional. The prose does not give a complete document-by-
+document evidentiary list.

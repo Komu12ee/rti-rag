@@ -1,0 +1,18 @@
+# FAQ Chunk 147
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 23-24
+Section: Q72 (English). Can ] use a supporting document when my written application is too long?
+Question: प्रश्न 72. (हिंदी)| यदि मेरा लिखित आवेदन बहुत लंबा है तो क्या मैं supporting document उपयोग कर सकता | सकती हूँ? उत्तर| हाँ| यदि आवेदन पाठ 500 अक्षरों से अधिक है, तो निर्देश स्क्रीन के अनुसार उसे Supporting Document के माध्यम से संलग्नक के रूप में अपलोड किया जा सकता हैl
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 99
+
+---
+
+## Q72 (English). Can ] use a supporting document when my written application is too long?
+
+प्रश्न 72. (हिंदी)| यदि मेरा लिखित आवेदन बहुत लंबा है तो क्या मैं supporting document उपयोग कर सकता | सकती हूँ? उत्तर| हाँ| यदि आवेदन पाठ 500 अक्षरों से अधिक है, तो निर्देश स्क्रीन के अनुसार उसे Supporting Document के माध्यम से संलग्नक के रूप में अपलोड किया जा सकता हैl
+
+Source: RTI User Manual, Manual p. 6.

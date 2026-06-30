@@ -1,0 +1,16 @@
+# FAQ Chunk 57
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 9
+Section: प्रश्नः क्या आवेदन सबमिट करने के बाद पंजीकरण संख्या मिलेगी?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 89
+
+---
+
+## प्रश्नः क्या आवेदन सबमिट करने के बाद पंजीकरण संख्या मिलेगी?
+
+उत्तरः मैनुअल के अनुसार आवेदन जमा होने के बाद एक विशिष्ट पंजीकरण संख्या जारी की जाती है, जिसका भविष्य के संदर्भ में उपयोग किया जा सकता है| इसमें यह भी कहा गया है कि आवेदक या अपीलकर्ता को एसएमएस अलर्ट पाने के लिए मोबाइल नंबर देना चाहिए| Source: RTI User Manual, Printed page 6.

@@ -1,0 +1,26 @@
+# FAQ Chunk 84
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 13-14
+Section: (6) अपीलकर्ताओं के अधिकारः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 96
+
+---
+
+## (6) अपीलकर्ताओं के अधिकारः
+
+- हस्तांतरण पर आपत्ति दर्ज कर सकते हैं
+
+
+
+
+- आयोग से अधिकार क्षेत्र रखने का अनुरोध कर सकते हैं
+- हस्तांतरण के अंतिम रूप से पहले अनुरोध सुना जाता है
+
+यह प्रावधान बहु-्अधिकार क्षेत्र संबंधी मामलों के लिए उचित मंच चयन को सक्षम करता है जबकि सक्षम प्राधिकरण पर स्पष्टता बनाए रखता है|
+
+Source reference: RTI Rule Book, Section 20 (cross reference  , Government of India RTI Rules, 2009

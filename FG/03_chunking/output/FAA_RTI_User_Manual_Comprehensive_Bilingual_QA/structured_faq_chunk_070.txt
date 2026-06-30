@@ -1,0 +1,16 @@
+# FAQ Chunk 70
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 12
+Section: Q34 (English). Is payment mandatory for a complaint application?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 41
+
+---
+
+## Q34 (English). Is payment mandatory for a complaint application?
+
+Answer. No. The manual explicitly states that payment is not mandatory when Complaint is selected under Second Appeal Relation.

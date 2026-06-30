@@ -1,0 +1,21 @@
+# FAQ Chunk 130
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 21
+Section: (10) Practical Impact:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 61
+
+---
+
+## (10) Practical Impact:
+
+- Penalty provision creates accountability
+- Encourages compliance
+- Non compliance consequences
+- Protects applicants rights
+
+The penalty provisions serve as deterrent against willful violations while recognizing genuine mistakes through the commissions discretionary approach.

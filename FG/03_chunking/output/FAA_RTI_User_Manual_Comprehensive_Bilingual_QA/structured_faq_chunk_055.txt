@@ -1,0 +1,20 @@
+# FAQ Chunk 55
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 10
+Section: Q26 (English). Will 1 receive a registration number after submitting an application?
+Question: प्रश्न 26. (हिंदी) [ क्या आवेदन Submit करने के बाद मुझे पंजीकरण नंबर मिलेगा?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 88
+
+---
+
+## Q26 (English). Will 1 receive a registration number after submitting an application?
+
+प्रश्न 26. (हिंदी) [ क्या आवेदन Submit करने के बाद मुझे पंजीकरण नंबर मिलेगा?
+
+उत्तर| हाँ| निर्देशों में कहा गया है कि आवेदन Submit होने पर एक विशिष्ट पंजीकरण नंबर जारी होता है, जिसका उपयोग भविष्य के संदर्भ के किया जा सकता हैl लिए
+
+Source: RTI User Manual, Manual p. 6.

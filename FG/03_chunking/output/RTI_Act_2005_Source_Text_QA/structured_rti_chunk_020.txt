@@ -1,0 +1,28 @@
+# RTI Legal Chunk 20
+Document: RTI_Act_2005_Source_Text_QA
+Input source: structured.md
+Input pages: 8-10
+Chapter: Chapter II - Right to information and obligations of public authorities
+Question: Q. What is the source text of Section 4?
+Part: 3/5
+Kind: faq
+Has answer: yes
+Content tokens: 43
+Original source book: Unknown
+Source type: general
+Legal reference: Section 4
+Book pages: 7-10
+Source PDF pages: Unknown
+Citation: Unknown
+
+---
+
+## Chapter II - Right to information and obligations of public authorities
+
+Legal reference: Section 4
+
+Q. What is the source text of Section 4?
+
+**Answer continued:**
+
+i v e m e t h

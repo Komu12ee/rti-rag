@@ -1,0 +1,16 @@
+# FAQ Chunk 128
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 13
+Section: Q70. What should be checked before submitting any transfer or name change request?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 68
+
+---
+
+## Q70. What should be checked before submitting any transfer or name change request?
+
+Answer: Check the selected charge, receiving officer identity, email path choice (different email versus existing email), designation and mobile details. This is a practical control because the manual does not document a correction or rollback process after submission.

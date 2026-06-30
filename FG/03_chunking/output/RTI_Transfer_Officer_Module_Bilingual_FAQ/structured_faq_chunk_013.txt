@@ -1,0 +1,16 @@
+# FAQ Chunk 13
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 2
+Section: Q06. What is meant by "handing over charge"?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 63
+
+---
+
+## Q06. What is meant by "handing over charge"?
+
+Answer: Handing over charge means the current officer initiates the transfer of one or more assigned RTI Portal roles to another officer. The current officer selects the relevant charge and enters the receiving officer details before submitting the request.

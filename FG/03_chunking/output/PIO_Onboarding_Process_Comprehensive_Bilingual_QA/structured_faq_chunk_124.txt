@@ -1,0 +1,20 @@
+# FAQ Chunk 124
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 10
+Section: Q62 (English ). What should a chatbot answer when asked whether the PIO can appoint another officer as Nodal Authority?
+Question: प्रश्न 64. (हिन्दी). जब पूछा जाए कि ई॰मेल के माध्यम से क्या होता है॰तो चैटबॉट क्या उत्तर दे?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 118
+
+---
+
+## Q62 (English ). What should a chatbot answer when asked whether the PIO can appoint another officer as Nodal Authority?
+
+प्रश्न 64. (हिन्दी). जब पूछा जाए कि ई॰मेल के माध्यम से क्या होता है॰तो चैटबॉट क्या उत्तर दे?
+
+उत्तर. चैटबॉट को बताना चाहिए कि PIO पंजीयन और PIO ऑनबोर्डिंग विवरण जमा होने के बाद संबंधित दर्ज ई॰मेल आईडी पर पासवर्ड बनाने और पोर्टल लॉगिन के लिए लिंक भेजे जाते हैं|
+
+Source: Pages 2 and 5

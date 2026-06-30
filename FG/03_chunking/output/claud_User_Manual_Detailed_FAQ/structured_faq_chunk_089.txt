@@ -1,0 +1,21 @@
+# FAQ Chunk 89
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 15
+Section: Untitled section
+Question: Q086. What if I enter an inactive email address?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 99
+
+---
+
+## Untitled section
+
+Q086. What if I enter an inactive email address?
+
+Post-submission email-change process is not specified.
+The manual requires a valid and active email address. The activation link is sent to that address, so an inactive
+address cannot complete the documented verification and password-creation path. The manual does not state
+whether the portal allows the address to be changed after registration submission.

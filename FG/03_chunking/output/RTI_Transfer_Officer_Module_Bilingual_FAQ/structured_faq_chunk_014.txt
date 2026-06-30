@@ -1,0 +1,20 @@
+# FAQ Chunk 14
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 2
+Section: Q06. What is meant by "handing over charge"?
+Question: प्रश्न 06. " कार्यभार देना " का क्या अर्थ है?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 92
+
+---
+
+## Q06. What is meant by "handing over charge"?
+
+प्रश्न 06. " कार्यभार देना " का क्या अर्थ है?
+
+उत्तरः कार्यभार देना का अर्थ है कि वर्तमान अधिकारी अपने पास उपलब्ध आरटीआई पोर्टल की एक या अधिक भूमिकाओं का स्थानांतरण किसी अन्य अधिकारी को शुरू करता हैl वर्तमान अधिकारी संबंधित कार्यभार चुनता है, नए अधिकारी का विवरण भरता है और अनुरोध सबमिट करता है|
+
+Source reference : Manual pp . 1-3

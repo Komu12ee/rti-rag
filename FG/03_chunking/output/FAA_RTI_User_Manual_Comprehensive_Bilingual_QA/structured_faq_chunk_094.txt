@@ -1,0 +1,16 @@
+# FAQ Chunk 94
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 15
+Section: Q46 (English). How do 1 enter First Appeal Officer and office details?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 46
+
+---
+
+## Q46 (English). How do 1 enter First Appeal Officer and office details?
+
+Answer. Select the officer and office details from the fields dropdowns in the First Appeal Office Details step, then click Next.

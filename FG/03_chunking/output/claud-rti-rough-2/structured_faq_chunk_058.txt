@@ -1,0 +1,19 @@
+# FAQ Chunk 58
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 10
+Section: (4) प्रारूपः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 38
+
+---
+
+## (4) प्रारूपः
+
+- अपीलीय अधिकारी को लिखित आवेदन
+- मूल RTI आवेदन संख्या का संदर्भ देना चाहिए
+- अपील के विशिष्ट आधार बताएं
+- PIO के निर्णय की प्रति संलग्न करें

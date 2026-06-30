@@ -1,0 +1,18 @@
+# FAQ Chunk 56
+Document: RTI_PIO_Manual_30_Bilingual_QA
+Source: structured.md
+Pages: 9
+Section: प्रश्न (हिंदी): क्या पहले भरे गए First Appeal फॉर्म के विवरण में सुधार किया जा सकता है?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 114
+
+---
+
+## प्रश्न (हिंदी): क्या पहले भरे गए First Appeal फॉर्म के विवरण में सुधार किया जा सकता है?
+
+उत्तर (हिंदी)ः हाँ| मैनुअल के अनुसार उपयोगकर्ता Back बटन पर क्लिक करके पिछले फॉर्म में दर्ज विवरण को संपादित कर सकता है| Back का उपयोग करके पहले चरण पर लौटें, जानकारी और फिर कार्यप्रवाह में आगे बढ़ें| यह तब उपयोगी है जब अंतिम रूप से आगे बढने से पहले First Appeal जानकारी में कोई त्रुटि दिखाई दे| सुधारें
+
+Source reference: Manual p. 10

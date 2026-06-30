@@ -1,0 +1,16 @@
+# FAQ Chunk 111
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 12
+Section: Q61. How can [ confirm that the name has changed?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 48
+
+---
+
+## Q61. How can [ confirm that the name has changed?
+
+Answer: After approval, in to the portal and check the name displayed in the account dashboard area. The manual shows the changed name appearing after login. log

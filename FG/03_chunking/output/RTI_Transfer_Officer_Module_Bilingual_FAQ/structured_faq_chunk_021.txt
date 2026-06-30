@@ -1,0 +1,22 @@
+# FAQ Chunk 21
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 3
+Section: Q10. What is the overall workflow described in the manual?
+Question: प्रश्न 10. में बताई गई समग्र प्रक्रिया क्या है? मैनुअल
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 173
+
+---
+
+## Q10. What is the overall workflow described in the manual?
+
+प्रश्न 10. में बताई गई समग्र प्रक्रिया क्या है? मैनुअल
+
+Answer: The main workflow isः initiate charge handover, have the receiving officer approve and take charge, review the approved transfer, generate and print the relieving letter, upload the required file, and obtain the transfer certificate. A separate is provided for name change on the same email ID. path
+
+उत्तरः मुख्य प्रक्रिया यह हैः कार्यभार देने का अनुरोध शुरू करना , कार्यभार लेने वाले अधिकारी द्वारा स्वीकृति देना, स्वीकृत स्थानांतरण समीक्षा करना, रिलिविंग लेटर बनाना और प्रिंट करना , आवश्यक फाइल अपलोड करना तथा स्थानांतरण प्रमाणपत्र प्राप्त करना| उसी ईमेल आईडी पर नाम परिवर्तन के अलग प्रक्रिया दी गई हैl लिए
+
+Source reference : Manual pp . 1-3

@@ -1,0 +1,67 @@
+# RTI Legal Chunk 70
+Document: RTI_Act_2005_Source_Text_QA
+Input source: structured.md
+Input pages: 34-36
+Chapter: Chapter VI - Miscellaneous
+Question: Q. What is the source text of Section 25?
+Part: 2/5
+Kind: faq
+Has answer: yes
+Content tokens: 508
+Original source book: Unknown
+Source type: general
+Legal reference: Section 25
+Book pages: 40-42
+Source PDF pages: Unknown
+Citation: Unknown
+
+---
+
+## Chapter VI - Miscellaneous
+
+Legal reference: Section 25
+
+Q. What is the source text of Section 25?
+
+**Answer continued:**
+
+SOURCE-TEXT Q&A | THE RIGHT TO INFORMATION ACT, 2005
+relation to the public authorities within their jurisdiction, collect and
+provide such information to the
+Central Information Commission or State Information Commission, as the case may be, as is required to prepare
+the report under this section and
+comply with the requirements
+concerning the furnishing of that
+information and keeping of records for the purposes of this section.
+(3) Each report shall state in respect of the year to which the report relates, -
+(a) the number of requests made to each public authority;
+(b) the number of decisions where
+applicants were not entitled to access
+to the documents pursuant to the requests, the provisions of this Act
+under which these decisions were
+made and the number of times such provisions were invoked;
+(c) the number of appeals referred to the
+Central Information Commission or State Information Commission, as the case may be, for review, the nature of
+the appeals and the outcome of the appeals;
+(d) particulars of any disciplinary action
+taken against any officer in respect of the administration of this Act;
+(e) the amount of charges collected by each public authority under this Act;
+(f) any facts which indicate an effort by
+the public authorities to administer
+and implement the spirit and intention of this Act;
+(g) recommendations for reform,
+including recommendations in
+respect of the particular public authorities, for the development, improvement, modernisation, reform
+or amendment to this Act or other
+legislation or common law or any
+other m a t t e r r e l e v a n t f o r
+operationalising the right to access information.
+(4) The Central Government or the State Government, as the case may be, may,
+as soon as practicable after the end of each year, cause a copy of the report
+of the Central Information
+Commission or the State Information Commission, as the case may be, referred to in subsection (1) to be laid before each
+House of Parliament or, as the case may be, before each House of the State Legislature, where there are two Houses, and
+where there is
+one House of the State Legislature before that House.
+(5) If it appears to the Central
+Information Commission or State Information Commission, as

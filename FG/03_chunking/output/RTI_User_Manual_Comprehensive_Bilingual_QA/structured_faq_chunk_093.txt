@@ -1,0 +1,18 @@
+# FAQ Chunk 93
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 15-16
+Section: Question: How do 1 upload documents for a second appeal application?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 67
+
+---
+
+## Question: How do 1 upload documents for a second appeal application?
+
+Answer: On the Document Details page, click Browse, select the file, and click Upload. The manual says a successful upload is shown and the Upload button changes to green with the label Uploaded.
+
+Source: RTI User Manual, Printed page 11.

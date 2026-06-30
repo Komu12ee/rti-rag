@@ -1,0 +1,52 @@
+# RTI Legal Chunk 39
+Document: RTI_Act_2005_Source_Text_QA
+Input source: structured.md
+Input pages: 19-21
+Chapter: Chapter III - The Central Information Commission
+Question: Q. What is the source text of Section 13?
+Part: 1/5
+Kind: faq
+Has answer: yes
+Content tokens: 281
+Original source book: Unknown
+Source type: general
+Legal reference: Section 13
+Book pages: 22-25
+Source PDF pages: Unknown
+Citation: Unknown
+
+---
+
+## Chapter III - The Central Information Commission
+
+Legal reference: Section 13
+
+Q. What is the source text of Section 13?
+
+Answer - source text
+13.* (1) The Chief Information Commissioner
+shall hold office for a term of five
+years from the date on which he
+enters upon his office and shall not be eligible for reappointment:
+Provided that no Chief Information
+Commissioner shall hold office as
+such after he has attained the age of sixty-five years.
+(2)* Every Information Commissioner
+shall hold office for a term of five
+years from the date on which he
+enters upon his office or till he attains the age of sixty-five years, whichever is earlier, and shall not be eligible for
+reappointment as such Information Commissioner:
+Provided that every Information Commissioner shall, on vacating his
+office under this subsection be
+eligible for appointment as the Chief
+Information Commissioner in the manner specified in sub-section (3) of section 12:
+Provided further that where the
+Information Commissioner is
+appointed as the Chief Information Commissioner, his term of office
+shall not be more than five years in
+aggregate as the Information
+Commissioner and the Chief Information Commissioner.
+(3) The Chief Information
+Commissioner or an Information
+Commissioner shall before he enters
+Compiled from the uploaded RTI rule book - Part 1 statutory text only

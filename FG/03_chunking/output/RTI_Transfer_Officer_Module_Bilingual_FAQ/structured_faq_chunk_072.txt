@@ -1,0 +1,22 @@
+# FAQ Chunk 72
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 8
+Section: Q38. What information is shown in the Relieving Letter preview?
+Question: प्रश्न 38. रिलिविंग लेटर के प्रीव्यू में कौन-सी जानकारी दिखाई देती है?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 138
+
+---
+
+## Q38. What information is shown in the Relieving Letter preview?
+
+प्रश्न 38. रिलिविंग लेटर के प्रीव्यू में कौन-सी जानकारी दिखाई देती है?
+
+Answer: The manual says the preview displays the details of the officer who has taken over charge and the charge list. It also shows the digital signatures of both the handing over and taking over officers.
+
+उत्तरः के अनुसार में कार्यभार लेने वाले अधिकारी का विवरण और कार्यभारों की सूची दिखाई देती हैl इसमें कार्यभार देने और लेने वाले दोनों अधिकारियों के डिजिटल हस्ताक्षर भी दिखते हैं| मैनुअल प्रीव्यू
+
+Source reference : Manual pp . 7 8

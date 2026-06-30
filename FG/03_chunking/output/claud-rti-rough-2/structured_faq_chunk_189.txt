@@ -1,0 +1,18 @@
+# FAQ Chunk 189
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 31
+Section: (3) Confidential Documents:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 31
+
+---
+
+## (3) Confidential Documents:
+
+- If third party confidential documents examined
+- Returned to concerned party after decision
+- Not publicly disclosed

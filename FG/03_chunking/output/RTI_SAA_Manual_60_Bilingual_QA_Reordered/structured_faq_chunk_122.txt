@@ -1,0 +1,18 @@
+# FAQ Chunk 122
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 32
+Section: Question: Does the manual provide the legal reason for the payment options displayed?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 120
+
+---
+
+## Question: Does the manual provide the legal reason for the payment options displayed?
+
+Answerः No. The manual shows payment options in the interface and instructs the user to select one and proceed to e-Challan. It does not explain the legal criteria for choosing between the displayed options. A chatbot should not invent a fee classification; it should direct the user to current official guidance or the concerned authority
+
+Similar English questions: "Please explain: Does the manual provide the legal reason for the payment options displayed" "How is this handled on the RTI portal?"

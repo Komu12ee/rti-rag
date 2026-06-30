@@ -1,0 +1,20 @@
+# FAQ Chunk 72
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 6
+Section: Q37 (English ). Why is a valid e-mail important in onboarding?
+Question: प्रश्न 37. (हिन्दी). ऑनबोर्डिंग में वैध ई-मेल क्यों महत्वपूर्ण है?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 75
+
+---
+
+## Q37 (English ). Why is a valid e-mail important in onboarding?
+
+प्रश्न 37. (हिन्दी). ऑनबोर्डिंग में वैध ई-मेल क्यों महत्वपूर्ण है?
+
+उत्तर. ई मेल लिंक और लॉगिन पासवर्ड सक्रियकरण के लिए उपयोग होता है इसलिए दी गई ईमेल आईडी वैध और सक्रिय होनी चाहिए
+
+Source: Page 4

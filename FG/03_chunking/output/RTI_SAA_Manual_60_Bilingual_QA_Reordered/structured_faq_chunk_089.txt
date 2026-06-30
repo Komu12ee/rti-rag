@@ -1,0 +1,16 @@
+# FAQ Chunk 89
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 23
+Section: RTI USER MANUAL COMPREHENSIVE BILINGUAL Q&A
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 34
+
+---
+
+## RTI USER MANUAL COMPREHENSIVE BILINGUAL Q&A
+
+D. PIO, RTI आवेदन और प्रथम अपील Manual pp. 7 10

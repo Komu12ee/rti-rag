@@ -1,0 +1,20 @@
+# FAQ Chunk 132
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 11
+Section: Q68 (English ). What should the chatbot do for procedural questions?
+Question: प्रश्न 68. (हिन्दी ). प्रक्रियात्मक प्रश्नों पर चैटबॉट क्या करे?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 81
+
+---
+
+## Q68 (English ). What should the chatbot do for procedural questions?
+
+प्रश्न 68. (हिन्दी ). प्रक्रियात्मक प्रश्नों पर चैटबॉट क्या करे?
+
+उत्तर. प्रक्रियात्मक प्रश्नों के matching Q&A chunk retrieve करें और उसी से सीधे उत्तर दें| PDF में न दिए गए अतिरिक्त steps न बनाएं| लिए
+
+Source: Implementation guidance

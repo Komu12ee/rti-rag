@@ -1,0 +1,18 @@
+# FAQ Chunk 59
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 10
+Section: Question: How does the manual say to make an appeal to the First Appellate Authority?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 83
+
+---
+
+## Question: How does the manual say to make an appeal to the First Appellate Authority?
+
+Answer: The instruction screen says that to make an appeal to the First Appellate Authority, the applicant should click Submit First Appeal and complete the page that appears. It also says the registration number of the original application is used for reference.
+
+Sourceः RTI User Manual, Printed page 6.

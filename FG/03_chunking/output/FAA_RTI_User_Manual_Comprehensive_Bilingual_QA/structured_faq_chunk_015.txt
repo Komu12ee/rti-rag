@@ -1,0 +1,20 @@
+# FAQ Chunk 15
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 4
+Section: Q6 (English). Which fields are mandatory in the registration form?
+Question: प्रश्न 6. (हिंदी)| पंजीकरण फॉर्म में कौन से फ़ील्ड अनिवार्य हैं?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 87
+
+---
+
+## Q6 (English). Which fields are mandatory in the registration form?
+
+प्रश्न 6. (हिंदी)| पंजीकरण फॉर्म में कौन से फ़ील्ड अनिवार्य हैं?
+
+उत्तर| के अनुसार जिन फ़ील्ड पर तारा ( *) लगा है वे अनिवार्य हैं| Preview या Submit करने से पहले ऐसे फ़ील्ड भरें| मैनुअल
+
+Source: RTI User Manual, Manual p. 3.

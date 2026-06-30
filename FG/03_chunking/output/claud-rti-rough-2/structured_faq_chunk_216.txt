@@ -1,0 +1,19 @@
+# FAQ Chunk 216
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 36
+Section: (9) नियमों में संशोधनः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 51
+
+---
+
+## (9) नियमों में संशोधनः
+
+- सरकार द्वारा संशोधित किया जा सकता है
+- अधिसूचना प्रकाशित
+- निर्दिष्ट तारीख से प्रभावी
+- उदाहरणः 2005 2013 में कई शुल्क संशोधन (RTI नियम पुस्तक पृष्ठ 997 114 देखें)

@@ -1,0 +1,20 @@
+# FAQ Chunk 33
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 6-8
+Section: Q15 (English). How will 1 know that my password was created successfully?
+Question: प्रश्न 15. (हिंदी)| मुझे कैसे पता चलेगा कि पासवर्ड सफलतापूर्वक बन गया है?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 69
+
+---
+
+## Q15 (English). How will 1 know that my password was created successfully?
+
+प्रश्न 15. (हिंदी)| मुझे कैसे पता चलेगा कि पासवर्ड सफलतापूर्वक बन गया है?
+
+उत्तर| मैनुअल के अनुसार पासवर्ड सफलतापूर्वक बनने पर एक पुष्टि विंडो दिखाई देती हैl
+
+Source: RTI User Manual, Manual p. 4

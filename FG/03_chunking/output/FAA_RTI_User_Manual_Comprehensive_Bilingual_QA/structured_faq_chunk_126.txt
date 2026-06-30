@@ -1,0 +1,16 @@
+# FAQ Chunk 126
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 19
+Section: Q62 (English). What should 1 do on the Payment Details screen?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 38
+
+---
+
+## Q62 (English). What should 1 do on the Payment Details screen?
+
+Answer. Select the applicable payment option by ticking the relevant box, then click Fee Online. Pay

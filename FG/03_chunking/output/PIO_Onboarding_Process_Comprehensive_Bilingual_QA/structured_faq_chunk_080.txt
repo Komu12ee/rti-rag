@@ -1,0 +1,20 @@
+# FAQ Chunk 80
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 7
+Section: Q41 (English). How does the First Appellate Officer access to the RTI portal? get
+Question: प्रश्न 41. (हिन्दी). प्रथम अपीलीय अधिकारीं RTI पोर्टल पर एक्सेस कैसे प्राप्त करता है?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 103
+
+---
+
+## Q41 (English). How does the First Appellate Officer access to the RTI portal? get
+
+प्रश्न 41. (हिन्दी). प्रथम अपीलीय अधिकारीं RTI पोर्टल पर एक्सेस कैसे प्राप्त करता है?
+
+उत्तर. प्रथम अपीलीय अधिकारीं के दर्ज ई॰मेल आईडी gov in या nicin डोमेन) पर एक लिंक आएगा| ई ्मेल में लिंक को क्लिक करके RTI पोर्टल पासवर्ड बनायें अब RTI पोर्टल पर लॉग इन करें| हेतु
+
+Source: Page 5

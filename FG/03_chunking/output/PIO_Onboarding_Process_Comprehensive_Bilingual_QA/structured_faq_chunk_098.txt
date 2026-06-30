@@ -1,0 +1,20 @@
+# FAQ Chunk 98
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 8
+Section: Q50 (English ). Can the Nodal Officer use the same office as the PIO?
+Question: प्रश्न 50. (हिन्दी). क्या नोडल अधिकारीं PIO वाला ही कार्यालय उपयोग कर सकता ?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 91
+
+---
+
+## Q50 (English ). Can the Nodal Officer use the same office as the PIO?
+
+प्रश्न 50. (हिन्दी). क्या नोडल अधिकारीं PIO वाला ही कार्यालय उपयोग कर सकता ?
+
+उत्तर. हाँ| नोडल अधिकारी के कार्यालय विवरण के लिए पी॰आई॰ओ.के कार्यालय का चयन किया जा सकता है॰ कार्यालय चुना जा सकता है या नया कार्यालय बनाया जा सकता है| मौजूदा
+
+Source: Page 4

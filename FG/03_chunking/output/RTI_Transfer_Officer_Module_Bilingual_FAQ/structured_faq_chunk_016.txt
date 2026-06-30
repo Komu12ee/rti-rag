@@ -1,0 +1,20 @@
+# FAQ Chunk 16
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 2
+Section: 44 Q07. What is meant by " taking over charge "?
+Question: प्रश्न 07. " कार्यभार लेना" का क्या अर्थ है?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 88
+
+---
+
+## 44 Q07. What is meant by " taking over charge "?
+
+प्रश्न 07. " कार्यभार लेना" का क्या अर्थ है?
+
+उत्तरः कार्यभार लेना का अर्थ है कि कार्यभार प्राप्त करने वाला अधिकारी स्थानांतरण अनुरोध देखता है, दिए गए कार्यभार या कार्यभारों का चयन करता है और स्वीकृति सबमिट करता हैl इसके बाद पोर्टल में स्वीकृति की स्थिति अपडेट हो जाती है|
+
+Source reference : Manual pp . 1-3

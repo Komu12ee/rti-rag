@@ -1,0 +1,18 @@
+# FAQ Chunk 101
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 17
+Section: Question: Can [ upload PDF or image files according to the manual screenshot?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 65
+
+---
+
+## Question: Can [ upload PDF or image files according to the manual screenshot?
+
+Answer: The example screen states a maximum file size of 20 MB and shows PDF. JPEG, and JPG as allowed formats. Check the live portal for any current change before uploading
+
+Source: RTI User Manual, Printed page 11.

@@ -1,0 +1,19 @@
+# FAQ Chunk 56
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 11
+Section: Untitled section
+Question: Q053. What are the two conditions that apply when Complaint is selected?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 62
+
+---
+
+## Untitled section
+
+Q053. What are the two conditions that apply when Complaint is selected?
+
+The manual lists exactly two conditions: payment is not mandatory for a Complaint application, and supporting
+documents are optional.

@@ -1,0 +1,17 @@
+# FAQ Chunk 51
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 9
+Section: (2) Jurisdiction Limitations:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 37
+
+---
+
+## (2) Jurisdiction Limitations:
+
+- Can only hear within scope of RTI Act
+- Cannot hear matters involving personal grievances unrelated to RTI

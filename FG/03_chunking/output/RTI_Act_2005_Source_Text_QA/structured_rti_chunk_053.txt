@@ -1,0 +1,37 @@
+# RTI Legal Chunk 53
+Document: RTI_Act_2005_Source_Text_QA
+Input source: structured.md
+Input pages: 26-28
+Chapter: Chapter IV - The State Information Commission
+Question: Q. What is the source text of Section 17?
+Part: 1/2
+Kind: faq
+Has answer: yes
+Content tokens: 163
+Original source book: Unknown
+Source type: general
+Legal reference: Section 17
+Book pages: 31-33
+Source PDF pages: Unknown
+Citation: Unknown
+
+---
+
+## Chapter IV - The State Information Commission
+
+Legal reference: Section 17
+
+Q. What is the source text of Section 17?
+
+Answer - source text
+17. (1) Subject to the provision of subsection (3), the State Chief
+Information Commissioner or a State
+Information Commissioner shall be
+removed from his office only by order
+of the Governor on the ground of
+proved misbehaviour or incapacity after the Supreme Court, on a reference made to it by the Governor, has on inquiry,
+reported that the State
+Chief Information Commissioner or a State Information Commissioner, as
+the case may be, ought on such ground be removed.
+(2) The Governor may suspend from office, and if deem necessary prohibit
+Compiled from the uploaded RTI rule book - Part 1 statutory text only

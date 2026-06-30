@@ -1,0 +1,16 @@
+# FAQ Chunk 30
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 6
+Section: Q14 (English). How do 1 create the password after verifying my email?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 51
+
+---
+
+## Q14 (English). How do 1 create the password after verifying my email?
+
+Answer. Open the email verification link, enter the registered email as the login ID, create a password that meets the stated requirements, and click Create.

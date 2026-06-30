@@ -1,0 +1,19 @@
+# FAQ Chunk 85
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 15
+Section: Untitled section
+Question: Q082. What does "All the field marked star (*) are mandatory" mean?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 85
+
+---
+
+## Untitled section
+
+Q082. What does "All the field marked star (*) are mandatory" mean?
+
+It means every form field bearing an asterisk must be completed before the portal will accept that stage. The
+manual repeats this message on form screens and uses asterisks beside required labels.

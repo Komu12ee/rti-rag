@@ -1,0 +1,20 @@
+# FAQ Chunk 27
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 3-4
+Section: Q13. What appears after opening Give Charge "?
+Question: प्रश्न 13. " कार्यभार देना" खोलने पर क्या दिखाई देता है?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 83
+
+---
+
+## Q13. What appears after opening Give Charge "?
+
+प्रश्न 13. " कार्यभार देना" खोलने पर क्या दिखाई देता है?
+
+उत्तरः पोर्टल में स्थानांतरण के उपलब्ध कार्यभारों की सूची दिखाई देती है| उपयोगकर्ता को संबंधित कार्यभार या कार्यभारों का चयन करना होता है और फिर कार्यभार लेने वाले अधिकारी का आवश्यक विवरण भरना होता हैl लिए
+
+Source reference : Manual p. 4

@@ -1,0 +1,20 @@
+# FAQ Chunk 182
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 30
+Section: छत्तीसगढ़ मेंः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 77
+
+---
+
+## छत्तीसगढ़ मेंः
+
+- SIC राज्य सरकार को वार्षिक रिपोर्ट जमा करता है
+- रिपोर्ट SIC वेबसाइट पर उपलब्ध
+- विस्तृत आंकडे रखे जाते हैं
+- नीति सिफारिशें की जाती हैं
+- RTI नियम पुस्तक में SIC रिपोर्ट और सिफारिशों के संदर्भ हैं ( पृष्ठ 146-155 में SIC सिफारिशों पर सरकारी कार्रवाई शामिल है)

@@ -1,0 +1,18 @@
+# FAQ Chunk 88
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 14
+Section: (3) Limitations:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 46
+
+---
+
+## (3) Limitations:
+
+- Cannot substitute its opinion for commission's opinion on factual findings
+- Cannot interfere with merit unless manifestly perverse
+- Forum of last resort only after exhausting RTI appeals

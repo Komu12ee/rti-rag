@@ -1,0 +1,20 @@
+# FAQ Chunk 5
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 3
+Section: Q1 (English). How do 1 create login credentials on the RTI portal?
+Question: प्रश्न 1. (हिंदी)| आरटीआई पोर्टल पर लॉगनइन क्रेडेंशियल कैसे बनाऊँ?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 107
+
+---
+
+## Q1 (English). How do 1 create login credentials on the RTI portal?
+
+प्रश्न 1. (हिंदी)| आरटीआई पोर्टल पर लॉगनइन क्रेडेंशियल कैसे बनाऊँ?
+
+उत्तर| पोर्टल पर 'User Registration पर क्लिक करें| पंजीकरण निर्देश पढ़ें , घोषणा वाले बॉक्स पर टिक करें, Next आवश्यक फॉर्म भरें, विवरण का Preview करें और पंजीकरण Submit करें| चुनें,
+
+Source: RTI User Manual, Manual p. 2-3.

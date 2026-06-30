@@ -1,0 +1,18 @@
+# FAQ Chunk 65
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 11
+Section: 5) SIC निर्णय की समय सीमा [ धारा 19(6) ]:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 47
+
+---
+
+## 5) SIC निर्णय की समय सीमा [ धारा 19(6) ]:
+
+- SIC को प्राप्ति के 90 दिनों के भीतर निर्णय लेना चाहिए
+- अतिरिक्त 90 दिनों के लिए विस्तार कर सकता है
+- विस्तृत कारणों के साथ लिखित आदेश पास करें

@@ -1,0 +1,20 @@
+# FAQ Chunk 127
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 13
+Section: Q69. Does the manual define Transfer ID?
+Question: प्रश्न 69. क्या मैनुअल Transfer ID की परिभाषा देता है?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 94
+
+---
+
+## Q69. Does the manual define Transfer ID?
+
+प्रश्न 69. क्या मैनुअल Transfer ID की परिभाषा देता है?
+
+उत्तरः अनुरोध सूची की स्क्रीनशॉट में Transfer ID कॉलम दिखाई देता है, जिससे यह स्थानांतरण रिकॉर्ड की पहचान संख्या प्रतीत होती है| मैनुअल इसके फॉर्मेट , बनने के नियम या सूची प्रदर्शन के अतिरिक्त उपयोग की अलग परिभाषा नहीं देता|
+
+Source reference : Manual pp . 3-1 2

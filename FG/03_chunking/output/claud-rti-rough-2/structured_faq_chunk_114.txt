@@ -1,0 +1,18 @@
+# FAQ Chunk 114
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 18
+Section: (2) छूट का दायराः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 32
+
+---
+
+## (2) छूट का दायराः
+
+- इन एजेंसियों द्वारा धारित सूचना
+- राष्ट्रीय सुरक्षा से संबंधित गतिविधियां और रिकॉर्ड
+- खुफिया संचालन और स्रोत

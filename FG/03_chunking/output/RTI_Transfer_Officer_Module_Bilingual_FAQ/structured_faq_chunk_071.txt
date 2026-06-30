@@ -1,0 +1,22 @@
+# FAQ Chunk 71
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 8
+Section: Q37 . What does Generate Relieving Letter do?
+Question: प्रश्न 37. " Generate Relieving Letter " क्या करता है?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 129
+
+---
+
+## Q37 . What does Generate Relieving Letter do?
+
+प्रश्न 37. " Generate Relieving Letter " क्या करता है?
+
+Answer: It creates a preview of the relieving letter for the approved transfer. The preview includes information about the officer taking charge and the list of chargels) being transferred.
+
+उत्तरः यह स्वीकृत स्थानांतरण के रिलिविंग लेटर का प्रीव्यू तैयार करता हैl प्रीव्यू में कार्यभार लेने वाले अधिकारी की जानकारी और स्थानांतरित जा रहे कार्यभारों की सूची शामिल होती है| लिए किए
+
+Source reference : Manual pp . 7 8

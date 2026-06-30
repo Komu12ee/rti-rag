@@ -1,0 +1,18 @@
+# FAQ Chunk 118
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 19
+Section: Question: What appears after a successful payment transaction?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 75
+
+---
+
+## Question: What appears after a successful payment transaction?
+
+Answer: The manual shows a transaction success screen after payment. The example displays treasury and bank reference information, the amount, transaction date and time, bank name, and status. A Print Receipt option is also visible in the shown screen.
+
+Source: RTI User Manual, Printed pages 12 13

@@ -1,0 +1,18 @@
+# FAQ Chunk 100
+Document: cg_sic_contact_bilingual_all_questions_qna
+Source: structured.md
+Pages: 11
+Section: English Q&A
+Question: Question 90. What communication channels are available for the Secretariat?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 74
+
+---
+
+## English Q&A
+
+Question 90. What communication channels are available for the Secretariat?
+
+Answer: The Contact Us page lists these channels: Phone 0771 -2512107; Fax 0771-2512102; Email sic[dot]cglat]nic[dot]in; Website httpsः Irtionline cg gov in .

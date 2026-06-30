@@ -1,0 +1,21 @@
+# FAQ Chunk 48
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 9
+Section: Untitled section
+Question: Q045. What should the application status show?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 88
+
+---
+
+## Untitled section
+
+Q045. What should the application status show?
+
+Complete status choices and meanings are not specified.
+Select the status that accurately describes the First Appeal application from the dropdown. The screenshot shows
+Pending as an example, but the manual does not list every permissible status or define when each should be
+used.

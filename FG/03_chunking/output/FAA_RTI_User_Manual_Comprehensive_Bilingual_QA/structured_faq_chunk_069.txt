@@ -1,0 +1,18 @@
+# FAQ Chunk 69
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 11-12
+Section: Q33 (English). What happens if 1 choose Complaint instead of Appeal?
+Question: प्रश्न 33. (हिंदी)| यदि मैं Appeal के बजाय Complaint चुनूँ तो क्या होगा?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 77
+
+---
+
+## Q33 (English). What happens if 1 choose Complaint instead of Appeal?
+
+प्रश्न 33. (हिंदी)| यदि मैं Appeal के बजाय Complaint चुनूँ तो क्या होगा?
+
+उत्तर| के अनुसार Complaint आवेदन में भुगतान अनिवार्य नहीं है और supporting documents वैकल्पिक होते हैं| Source: RTI User Manual, Manual p. 7. मैनुअल

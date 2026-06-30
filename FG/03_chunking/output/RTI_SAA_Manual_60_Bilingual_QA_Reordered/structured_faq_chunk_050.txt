@@ -1,0 +1,18 @@
+# FAQ Chunk 50
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 13
+Section: Question: What does the manual say about the text length for an application?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 134
+
+---
+
+## Question: What does the manual say about the text length for an application?
+
+Answerः The RTI instruction list states that, at present, the text of an application that can be uploaded in the prescribed column is limited to 500 characters. The same instruction screen indicates that more detailed text if needed, may be attached as a supporting document. Users should therefore keep the entered text concise and place additional material in an appropriate supporting file where necessary.
+
+Similar English questions: "Please explain: What does the manual say about the text length for an application "How is this handled on the RTI portal?"

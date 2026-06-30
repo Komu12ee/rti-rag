@@ -1,0 +1,20 @@
+# FAQ Chunk 118
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 12
+Section: Q64. Does the manual explain how to reject, edit, or withdraw a name change request?
+Question: प्रश्न 64. क्या मैनुअल नाम परिवर्तन को अस्वीकार, एडिट या वापस लेने की प्रक्रिया बताता है? अनुरोध
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 115
+
+---
+
+## Q64. Does the manual explain how to reject, edit, or withdraw a name change request?
+
+प्रश्न 64. क्या मैनुअल नाम परिवर्तन को अस्वीकार, एडिट या वापस लेने की प्रक्रिया बताता है? अनुरोध
+
+उत्तरः नहीं| में सबमिशन, दस्तावेज अपलोड, एक स्थिति में स्वतः स्वीकृति और स्थिति में एफएओ स्वीकृति बताई गई हैl इसमें अस्वीकार, एडिट, वापस लेने या पुनः सबमिट करने की प्रक्रिया नहीं दी गई हैI मैनुअल दूसरी
+
+Source reference : Manual pp . 9-1 2

@@ -1,0 +1,20 @@
+# FAQ Chunk 75
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 13
+Section: Untitled section
+Question: Q072. What does the red circle indicate in the progress bar?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 89
+
+---
+
+## Untitled section
+
+Q072. What does the red circle indicate in the progress bar?
+
+Visual interpretation; no formal legend is supplied.
+In the screenshots, the red numbered circle marks the stage currently being filled, while prior stages are green.
+The manual uses this visual convention but does not formally define it in text.

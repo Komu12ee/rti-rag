@@ -1,0 +1,18 @@
+# FAQ Chunk 55
+Document: cg_sic_contact_bilingual_all_questions_qna
+Source: structured.md
+Pages: 7
+Section: 8. Postal Code
+Question: Question 49. What PIN code is listed for the Secretariat?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 28
+
+---
+
+## 8. Postal Code
+
+Question 49. What PIN code is listed for the Secretariat?
+
+Answer: The listed PIN code is 492002.

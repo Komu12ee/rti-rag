@@ -1,0 +1,18 @@
+# FAQ Chunk 71
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 12
+Section: SECTION 2O: TRANSFER OF CERTAIN CASESTO CENTRAL COMMISSION
+Question: Q20. Under what circumstances can cases be transferred from State Commission to Central Information Commission?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 56
+
+---
+
+## SECTION 2O: TRANSFER OF CERTAIN CASESTO CENTRAL COMMISSION
+
+Q20. Under what circumstances can cases be transferred from State Commission to Central Information Commission?
+
+Answer Section 20 provides for transfer of cases between state and central commissions in specific circumstances:

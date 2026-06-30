@@ -1,0 +1,26 @@
+# FAQ Chunk 21
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 5-6
+Section: Untitled section
+Question: Q018. How do I pay the RTI application fee?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 167
+
+---
+
+## Untitled section
+
+Q018. How do I pay the RTI application fee?
+
+At the Payment Details step, tick the applicable fee option and select Pay Fee Online. The portal directs you to the
+e-Challan form. Choose the bank name in the Bank Gateway field and select Submit to finalize the payment. A
+transaction-success screen is shown after successful payment.
+
+
+<!-- extraction_method: direct_text | confidence: 0.75 -->
+INTERMEDIATE QUESTIONS - Common Scenarios
+Answers marked "Not specified" intentionally avoid assumptions beyond the source manual.
+Second Appeal Details

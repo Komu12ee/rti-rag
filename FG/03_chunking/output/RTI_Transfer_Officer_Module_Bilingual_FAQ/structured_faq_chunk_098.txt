@@ -1,0 +1,16 @@
+# FAQ Chunk 98
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 10
+Section: Q53. What details are required for a name change request?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 56
+
+---
+
+## Q53. What details are required for a name change request?
+
+Answer: Enter the new name, mobile number and designation, then click the submit button. The existing email ID is shown as part of the form because the workflow is based on the same email account.

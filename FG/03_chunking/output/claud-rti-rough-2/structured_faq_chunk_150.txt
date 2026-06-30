@@ -1,0 +1,19 @@
+# FAQ Chunk 150
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 24
+Section: (8) Appeal of Penalties:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 38
+
+---
+
+## (8) Appeal of Penalties:
+
+- Officer can appeal commissions penalty order
+- Can challenge before High Court
+- But commission order binding during appeal period
+- High Court reviews penalty reasonableness

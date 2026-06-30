@@ -1,0 +1,31 @@
+# RTI Legal Chunk 3
+Document: RTI_Act_2005_Source_Text_QA
+Input source: structured.md
+Input pages: 4
+Chapter: Chapter I - Preliminary
+Question: Q. What is the source text for the definition of “appropriate Government”?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 100
+Original source book: Unknown
+Source type: general
+Legal reference: Unknown
+Book pages: 3-6
+Source PDF pages: Unknown
+Citation: Unknown
+
+---
+
+## Chapter I - Preliminary
+
+Q. What is the source text for the definition of “appropriate Government”?
+
+Answer - source text
+(a) “appropriate Government” means in
+relation to a public authority which is established, constituted, owned,
+controlled or substantially financed
+by funds provided directly or indirectly -
+(i) by the Central Government or the Union territory administration, the Central Government;
+(ii) by the State Government, the State Government;
+—

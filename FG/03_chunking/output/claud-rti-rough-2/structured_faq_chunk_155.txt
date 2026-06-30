@@ -1,0 +1,19 @@
+# FAQ Chunk 155
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 25
+Section: (2) मुआवजा प्राधिकरणः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 44
+
+---
+
+## (2) मुआवजा प्राधिकरणः
+
+- आयोग आवेदनकर्ता को मुआवजे का निर्देश दे सकता है
+- उल्लंघन से हुई हानि या कठिनाई के लिए
+- आयोग द्वारा निर्धारित राशि
+- सरकारी बजट से देय

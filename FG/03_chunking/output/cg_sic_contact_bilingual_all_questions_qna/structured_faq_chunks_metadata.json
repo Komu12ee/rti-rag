@@ -1,0 +1,2104 @@
+{
+  "document": "structured.md",
+  "document_name": "cg_sic_contact_bilingual_all_questions_qna",
+  "source_path": "..\\01_preprocessing\\stage2_output\\cg_sic_contact_bilingual_all_questions_qna\\structured.md",
+  "chunking_method": "bilingual_faq_rule_based",
+  "supported_languages": [
+    "Hindi",
+    "English"
+  ],
+  "rules": {
+    "question_start": "Hindi: प्रश्न N; English: Question N",
+    "answer_marker": "Hindi: उत्तरः/उत्तर:; English: Answer:",
+    "boundary": "next FAQ question, next major H1/H2 heading, or document end",
+    "answer_preserved": true,
+    "page_tracking": "exact source page markers: <!-- Page N -->"
+  },
+  "max_content_tokens": 512,
+  "tokenizer_model": "BAAI/bge-m3",
+  "token_count_mode": "tokenizer",
+  "source_faq_blocks": 106,
+  "source_section_notes": 10,
+  "faq_blocks_without_answer_marker": [
+    {
+      "ordinal": 16,
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 12. आयोग कार्यालय का नाम क्या है? उत्तरः सूचीबद्ध कार्यालय छत्तीसगढ़ राज्य सूचना आयोग का सचिवालय हैl",
+      "pages": [
+        3
+      ]
+    },
+    {
+      "ordinal": 30,
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 26. आयोग किस सेक्टर में स्थित है? उत्तरः कार्यालय सेक्टर 19 में सूचीबद्ध हैl",
+      "pages": [
+        4
+      ]
+    },
+    {
+      "ordinal": 36,
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 32. आयोग कार्यालय किस ब्लॉक में है? उत्तरः पते में नॉर्थ ब्लॉक सूचीबद्ध है|",
+      "pages": [
+        5
+      ]
+    },
+    {
+      "ordinal": 37,
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 33. क्या एसआईसी कार्यालय नॉर्थ ब्लॉक में है? उत्तरः पते में नॉर्थ ब्लॉक सूचीबद्ध है|",
+      "pages": [
+        5
+      ]
+    },
+    {
+      "ordinal": 43,
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 38. क्या आयोग नवा रायपुर में स्थित है? उत्तरः कार्यालय नवा रायपुर अटल नगर में सूचीबद्ध हैl",
+      "pages": [
+        5,
+        6
+      ]
+    },
+    {
+      "ordinal": 44,
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 39. रायपुर में एसआईसी कार्यालय कहाँ है? उत्तरः कार्यालय नवा रायपुर अटल नगर में सूचीबद्ध है|",
+      "pages": [
+        6
+      ]
+    },
+    {
+      "ordinal": 45,
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 40. आयोग के कौन सा क्षेत्र सूचीबद्ध है? उत्तरः कार्यालय नवा रायपुर अटल नगर में सूचीबद्ध है| लिए",
+      "pages": [
+        6
+      ]
+    },
+    {
+      "ordinal": 46,
+      "section": "English Q&A",
+      "question": "Question 41. Which district is the commission office in? Answerः The office is listed in Raipur district.",
+      "pages": [
+        6
+      ]
+    },
+    {
+      "ordinal": 50,
+      "section": "English Q&A",
+      "question": "प्रश्न 45. क्या एसआईसी कार्यालय रायपुर जिले में है? उत्तरः कार्यालय रायपुर जिले में सूचीबद्ध है|",
+      "pages": [
+        6
+      ]
+    },
+    {
+      "ordinal": 51,
+      "section": "English Q&A",
+      "question": "प्रश्न 46. पते में कौन सा जिला सूचीबद्ध है? उत्तरः कार्यालय रायपुर जिले में सूचीबद्ध है|",
+      "pages": [
+        6
+      ]
+    },
+    {
+      "ordinal": 53,
+      "section": "8. Postal Code",
+      "question": "Question 47. What is the PIN code of the Chhattisgarh State Information Commission? Answer: The listed PIN code is 492002.",
+      "pages": [
+        6
+      ]
+    },
+    {
+      "ordinal": 56,
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 50. छत्तीसगढ़ राज्य सूचना आयोग का पिन कोड क्या है? उत्तरः सूचीबद्ध पिन कोड 492002 हैI",
+      "pages": [
+        7
+      ]
+    },
+    {
+      "ordinal": 57,
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 51. एसआईसी कार्यालय का डाक कोड क्या है? उत्तरः सूचीबद्ध पिन कोड 492002 है|",
+      "pages": [
+        7
+      ]
+    },
+    {
+      "ordinal": 58,
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 52. सचिवालय के कौन सा पिन कोड सूचीबद्ध है? उत्तरः सूचीबद्ध पिन कोड 492002 है| लिए",
+      "pages": [
+        7
+      ]
+    },
+    {
+      "ordinal": 63,
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 56. आयोग कार्यालय किस राज्य में है? उत्तरः कार्यालय छत्तीसगढ़, भारत में सूचीबद्ध है|",
+      "pages": [
+        7
+      ]
+    },
+    {
+      "ordinal": 65,
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 58. एसआईसी कार्यालय के लिए कौन सा राज्य और देश सूचीबद्ध है? उत्तरः कार्यालय छत्तीसगढ़, भारत में सूचीबद्ध हैI",
+      "pages": [
+        7,
+        8
+      ]
+    },
+    {
+      "ordinal": 71,
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 63. छत्तीसगढ़ राज्य सूचना आयोग का फोन नंबर क्या है? उत्तरः सूचीबद्ध फोन नंबर 0771 -2512107 हैl",
+      "pages": [
+        8
+      ]
+    },
+    {
+      "ordinal": 73,
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 65. सचिवालय को कॉल करने के कौन सा टेलीफोन नंबर है? उत्तरः सूचीबद्ध फोन नंबर 0771 -2512107 है| लिए",
+      "pages": [
+        8
+      ]
+    },
+    {
+      "ordinal": 76,
+      "section": "11. Fax Number",
+      "question": "Question 67. What is the fax number of the Chhattisgarh State Information Commission? Answer: The listed fax number is 0771-2512102.",
+      "pages": [
+        8
+      ]
+    },
+    {
+      "ordinal": 79,
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 70. छत्तीसगढ़ राज्य सूचना आयोग का फैक्स नंबर क्या है? उत्तरः सूचीबद्ध फैक्स नंबर 0771 -2512102 है|",
+      "pages": [
+        9
+      ]
+    },
+    {
+      "ordinal": 83,
+      "section": "12. Email Address",
+      "question": "Question 73. What is the email address of the Chhattisgarh State Information Commission? Answerः The email is displayed as: sic[dot]cglat]nic[dot]in.",
+      "pages": [
+        9
+      ]
+    },
+    {
+      "ordinal": 87,
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 77. छत्तीसगढ़ राज्य सूचना आयोग का ई-्मेल क्या है? उत्तरः ई-मेल इस प्रकार प्रदर्शित हैः sic[dotlcglat]nic[dotlin |",
+      "pages": [
+        9
+      ]
+    },
+    {
+      "ordinal": 88,
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 78. एसआईसी का ई-मेल क्या है? उत्तरः ई-्मेल इस प्रकार प्रदर्शित हैः sic[dotlcglat]nic[dotjin |",
+      "pages": [
+        9
+      ]
+    },
+    {
+      "ordinal": 91,
+      "section": "English Q&A",
+      "question": "Question 81. What is the official website of the Chhattisgarh State Information Commission? Answer: The listed website is https//rtionline cg gov.in .",
+      "pages": [
+        10
+      ]
+    },
+    {
+      "ordinal": 95,
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 85. छत्तीसगढ़ राज्य सूचना आयोग की आधिकारिक वेबसाइट क्या है? उत्तरः सूचीबद्ध वेबसाइट https: rtionline cg gov.in / हैI",
+      "pages": [
+        10
+      ]
+    },
+    {
+      "ordinal": 97,
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 87. आरटीआई पोर्टल की वेबसाइट क्या है? उत्तरः सूचीबद्ध वेबसाइट https  rtionline cg gov in / हैl",
+      "pages": [
+        10
+      ]
+    }
+  ],
+  "total_chunks": 116,
+  "chunks": [
+    {
+      "index": 1,
+      "filename": "structured_faq_chunk_001.txt",
+      "section": "Untitled section",
+      "question": "",
+      "pages": [
+        1
+      ],
+      "page_range": "1",
+      "source_block_ordinal": 1,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": false,
+      "content_tokens": 14
+    },
+    {
+      "index": 2,
+      "filename": "structured_faq_chunk_002.txt",
+      "section": "Contact Us English and Hindi Question & Answer Set",
+      "question": "",
+      "pages": [
+        1
+      ],
+      "page_range": "1",
+      "source_block_ordinal": 2,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": false,
+      "content_tokens": 34
+    },
+    {
+      "index": 3,
+      "filename": "structured_faq_chunk_003.txt",
+      "section": "Reference contact details",
+      "question": "",
+      "pages": [
+        1
+      ],
+      "page_range": "1",
+      "source_block_ordinal": 3,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": false,
+      "content_tokens": 126
+    },
+    {
+      "index": 4,
+      "filename": "structured_faq_chunk_004.txt",
+      "section": "1. Complete Contact Details",
+      "question": "",
+      "pages": [
+        1
+      ],
+      "page_range": "1",
+      "source_block_ordinal": 4,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": false,
+      "content_tokens": 9
+    },
+    {
+      "index": 5,
+      "filename": "structured_faq_chunk_005.txt",
+      "section": "1. Complete Contact Details",
+      "question": "Question 1. What are the contact details of the Chhattisgarh State Information Commission?",
+      "pages": [
+        1
+      ],
+      "page_range": "1",
+      "source_block_ordinal": 5,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 105
+    },
+    {
+      "index": 6,
+      "filename": "structured_faq_chunk_006.txt",
+      "section": "1. Complete Contact Details",
+      "question": "Question 2. How can I contact the Chhattisgarh State Information Commission?",
+      "pages": [
+        1
+      ],
+      "page_range": "1",
+      "source_block_ordinal": 6,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 101
+    },
+    {
+      "index": 7,
+      "filename": "structured_faq_chunk_007.txt",
+      "section": "1. Complete Contact Details",
+      "question": "Question 3. Give me the Secretariat contact information.",
+      "pages": [
+        1,
+        2
+      ],
+      "page_range": "1-2",
+      "source_block_ordinal": 7,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 97
+    },
+    {
+      "index": 8,
+      "filename": "structured_faq_chunk_008.txt",
+      "section": "1. Complete Contact Details",
+      "question": "Question 4. What is the contact information for CG SIC?",
+      "pages": [
+        2
+      ],
+      "page_range": "2",
+      "source_block_ordinal": 8,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 102
+    },
+    {
+      "index": 9,
+      "filename": "structured_faq_chunk_009.txt",
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 5. छत्तीसगढ़ राज्य सूचना आयोग के संपर्क विवरण क्या हैं?",
+      "pages": [
+        2
+      ],
+      "page_range": "2",
+      "source_block_ordinal": 9,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 92
+    },
+    {
+      "index": 10,
+      "filename": "structured_faq_chunk_010.txt",
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 6. छत्तीसगढ़ राज्य सूचना आयोग से कैसे संपर्क करें?",
+      "pages": [
+        2
+      ],
+      "page_range": "2",
+      "source_block_ordinal": 10,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 91
+    },
+    {
+      "index": 11,
+      "filename": "structured_faq_chunk_011.txt",
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 7. सचिवालय की संपर्क जानकारी बताइए|",
+      "pages": [
+        2
+      ],
+      "page_range": "2",
+      "source_block_ordinal": 11,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 90
+    },
+    {
+      "index": 12,
+      "filename": "structured_faq_chunk_012.txt",
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 8. सीजी एसआईसी का संपर्क विवरण क्या है?",
+      "pages": [
+        2,
+        3
+      ],
+      "page_range": "2-3",
+      "source_block_ordinal": 12,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 94
+    },
+    {
+      "index": 13,
+      "filename": "structured_faq_chunk_013.txt",
+      "section": "English Q&A",
+      "question": "Question 9. What is the name of the commission office?",
+      "pages": [
+        3
+      ],
+      "page_range": "3",
+      "source_block_ordinal": 13,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 35
+    },
+    {
+      "index": 14,
+      "filename": "structured_faq_chunk_014.txt",
+      "section": "English Q&A",
+      "question": "Question 10. Which office is listed on the Contact Us page?",
+      "pages": [
+        3
+      ],
+      "page_range": "3",
+      "source_block_ordinal": 14,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 36
+    },
+    {
+      "index": 15,
+      "filename": "structured_faq_chunk_015.txt",
+      "section": "English Q&A",
+      "question": "Question 11. What is the official name of CG SIC?",
+      "pages": [
+        3
+      ],
+      "page_range": "3",
+      "source_block_ordinal": 15,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 37
+    },
+    {
+      "index": 16,
+      "filename": "structured_faq_chunk_016.txt",
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 12. आयोग कार्यालय का नाम क्या है? उत्तरः सूचीबद्ध कार्यालय छत्तीसगढ़ राज्य सूचना आयोग का सचिवालय हैl",
+      "pages": [
+        3
+      ],
+      "page_range": "3",
+      "source_block_ordinal": 16,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": false,
+      "content_tokens": 26
+    },
+    {
+      "index": 17,
+      "filename": "structured_faq_chunk_017.txt",
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 13. संपर्क पृष्ठ पर कौन सा कार्यालय सूचीबद्ध है?",
+      "pages": [
+        3
+      ],
+      "page_range": "3",
+      "source_block_ordinal": 17,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 29
+    },
+    {
+      "index": 18,
+      "filename": "structured_faq_chunk_018.txt",
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 14. सीजी एसआईसी का आधिकारिक नाम क्या है?",
+      "pages": [
+        3
+      ],
+      "page_range": "3",
+      "source_block_ordinal": 18,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 30
+    },
+    {
+      "index": 19,
+      "filename": "structured_faq_chunk_019.txt",
+      "section": "English Q&A",
+      "question": "Question 15. What is the full address of the Chhattisgarh State Information Commission?",
+      "pages": [
+        3
+      ],
+      "page_range": "3",
+      "source_block_ordinal": 19,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 58
+    },
+    {
+      "index": 20,
+      "filename": "structured_faq_chunk_020.txt",
+      "section": "English Q&A",
+      "question": "Question 16. Where is the Chhattisgarh State Information Commission located?",
+      "pages": [
+        3
+      ],
+      "page_range": "3",
+      "source_block_ordinal": 20,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 55
+    },
+    {
+      "index": 21,
+      "filename": "structured_faq_chunk_021.txt",
+      "section": "English Q&A",
+      "question": "Question 17. Give the postal address of the Secretariat.",
+      "pages": [
+        3,
+        4
+      ],
+      "page_range": "3-4",
+      "source_block_ordinal": 21,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 52
+    },
+    {
+      "index": 22,
+      "filename": "structured_faq_chunk_022.txt",
+      "section": "Chhattisgarh State Information Commission Contact Us",
+      "question": "Question 18. What is the SIC office address?",
+      "pages": [
+        4
+      ],
+      "page_range": "4",
+      "source_block_ordinal": 22,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 55
+    },
+    {
+      "index": 23,
+      "filename": "structured_faq_chunk_023.txt",
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 19. छत्तीसगढ़ राज्य सूचना आयोग का पूरा पता क्या है?",
+      "pages": [
+        4
+      ],
+      "page_range": "4",
+      "source_block_ordinal": 23,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 47
+    },
+    {
+      "index": 24,
+      "filename": "structured_faq_chunk_024.txt",
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 20. छत्तीसगढ़ राज्य सूचना आयोग कहाँ स्थित है?",
+      "pages": [
+        4
+      ],
+      "page_range": "4",
+      "source_block_ordinal": 24,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 44
+    },
+    {
+      "index": 25,
+      "filename": "structured_faq_chunk_025.txt",
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 21. सचिवालय का डाक पता बताइए|",
+      "pages": [
+        4
+      ],
+      "page_range": "4",
+      "source_block_ordinal": 25,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 44
+    },
+    {
+      "index": 26,
+      "filename": "structured_faq_chunk_026.txt",
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 22. एसआईसी कार्यालय का पता क्या है?",
+      "pages": [
+        4
+      ],
+      "page_range": "4",
+      "source_block_ordinal": 26,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 44
+    },
+    {
+      "index": 27,
+      "filename": "structured_faq_chunk_027.txt",
+      "section": "English Q&A",
+      "question": "Question 23. Which sector is the commission located in?",
+      "pages": [
+        4
+      ],
+      "page_range": "4",
+      "source_block_ordinal": 27,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 25
+    },
+    {
+      "index": 28,
+      "filename": "structured_faq_chunk_028.txt",
+      "section": "English Q&A",
+      "question": "Question 24. What is the sector number of the SIC office?",
+      "pages": [
+        4
+      ],
+      "page_range": "4",
+      "source_block_ordinal": 28,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 28
+    },
+    {
+      "index": 29,
+      "filename": "structured_faq_chunk_029.txt",
+      "section": "English Q&A",
+      "question": "Question 25. Is the commission in Sector 19?",
+      "pages": [
+        4
+      ],
+      "page_range": "4",
+      "source_block_ordinal": 29,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 24
+    },
+    {
+      "index": 30,
+      "filename": "structured_faq_chunk_030.txt",
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 26. आयोग किस सेक्टर में स्थित है? उत्तरः कार्यालय सेक्टर 19 में सूचीबद्ध हैl",
+      "pages": [
+        4
+      ],
+      "page_range": "4",
+      "source_block_ordinal": 30,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": false,
+      "content_tokens": 25
+    },
+    {
+      "index": 31,
+      "filename": "structured_faq_chunk_031.txt",
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 27. एसआईसी कार्यालय का सेक्टर नंबर क्या है?",
+      "pages": [
+        4
+      ],
+      "page_range": "4",
+      "source_block_ordinal": 31,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 28
+    },
+    {
+      "index": 32,
+      "filename": "structured_faq_chunk_032.txt",
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 28. क्या आयोग सेक्टर 19 में है?",
+      "pages": [
+        4,
+        5
+      ],
+      "page_range": "4-5",
+      "source_block_ordinal": 32,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 25
+    },
+    {
+      "index": 33,
+      "filename": "structured_faq_chunk_033.txt",
+      "section": "English Q&A",
+      "question": "Question 29. Which block is the commission office in?",
+      "pages": [
+        5
+      ],
+      "page_range": "5",
+      "source_block_ordinal": 33,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 24
+    },
+    {
+      "index": 34,
+      "filename": "structured_faq_chunk_034.txt",
+      "section": "English Q&A",
+      "question": "Question 30. Is the SIC office in North Block?",
+      "pages": [
+        5
+      ],
+      "page_range": "5",
+      "source_block_ordinal": 34,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 26
+    },
+    {
+      "index": 35,
+      "filename": "structured_faq_chunk_035.txt",
+      "section": "English Q&A",
+      "question": "Question 31. What block is mentioned in the address?",
+      "pages": [
+        5
+      ],
+      "page_range": "5",
+      "source_block_ordinal": 35,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 24
+    },
+    {
+      "index": 36,
+      "filename": "structured_faq_chunk_036.txt",
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 32. आयोग कार्यालय किस ब्लॉक में है? उत्तरः पते में नॉर्थ ब्लॉक सूचीबद्ध है|",
+      "pages": [
+        5
+      ],
+      "page_range": "5",
+      "source_block_ordinal": 36,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": false,
+      "content_tokens": 25
+    },
+    {
+      "index": 37,
+      "filename": "structured_faq_chunk_037.txt",
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 33. क्या एसआईसी कार्यालय नॉर्थ ब्लॉक में है? उत्तरः पते में नॉर्थ ब्लॉक सूचीबद्ध है|",
+      "pages": [
+        5
+      ],
+      "page_range": "5",
+      "source_block_ordinal": 37,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": false,
+      "content_tokens": 29
+    },
+    {
+      "index": 38,
+      "filename": "structured_faq_chunk_038.txt",
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 34. पते में कौन सा ब्लॉक लिखा है?",
+      "pages": [
+        5
+      ],
+      "page_range": "5",
+      "source_block_ordinal": 38,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 27
+    },
+    {
+      "index": 39,
+      "filename": "structured_faq_chunk_039.txt",
+      "section": "6. / Locality City",
+      "question": "",
+      "pages": [
+        5
+      ],
+      "page_range": "5",
+      "source_block_ordinal": 39,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": false,
+      "content_tokens": 10
+    },
+    {
+      "index": 40,
+      "filename": "structured_faq_chunk_040.txt",
+      "section": "6. / Locality City",
+      "question": "Question 35. Is the commission located in Nava Raipur?",
+      "pages": [
+        5
+      ],
+      "page_range": "5",
+      "source_block_ordinal": 40,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 34
+    },
+    {
+      "index": 41,
+      "filename": "structured_faq_chunk_041.txt",
+      "section": "6. / Locality City",
+      "question": "Question 36. Where in Raipur is the SIC office?",
+      "pages": [
+        5
+      ],
+      "page_range": "5",
+      "source_block_ordinal": 41,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 33
+    },
+    {
+      "index": 42,
+      "filename": "structured_faq_chunk_042.txt",
+      "section": "6. / Locality City",
+      "question": "Question 37. What locality is listed for the commission?",
+      "pages": [
+        5
+      ],
+      "page_range": "5",
+      "source_block_ordinal": 42,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 33
+    },
+    {
+      "index": 43,
+      "filename": "structured_faq_chunk_043.txt",
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 38. क्या आयोग नवा रायपुर में स्थित है? उत्तरः कार्यालय नवा रायपुर अटल नगर में सूचीबद्ध हैl",
+      "pages": [
+        5,
+        6
+      ],
+      "page_range": "5-6",
+      "source_block_ordinal": 43,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": false,
+      "content_tokens": 29
+    },
+    {
+      "index": 44,
+      "filename": "structured_faq_chunk_044.txt",
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 39. रायपुर में एसआईसी कार्यालय कहाँ है? उत्तरः कार्यालय नवा रायपुर अटल नगर में सूचीबद्ध है|",
+      "pages": [
+        6
+      ],
+      "page_range": "6",
+      "source_block_ordinal": 44,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": false,
+      "content_tokens": 30
+    },
+    {
+      "index": 45,
+      "filename": "structured_faq_chunk_045.txt",
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 40. आयोग के कौन सा क्षेत्र सूचीबद्ध है? उत्तरः कार्यालय नवा रायपुर अटल नगर में सूचीबद्ध है| लिए",
+      "pages": [
+        6
+      ],
+      "page_range": "6",
+      "source_block_ordinal": 45,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": false,
+      "content_tokens": 30
+    },
+    {
+      "index": 46,
+      "filename": "structured_faq_chunk_046.txt",
+      "section": "English Q&A",
+      "question": "Question 41. Which district is the commission office in? Answerः The office is listed in Raipur district.",
+      "pages": [
+        6
+      ],
+      "page_range": "6",
+      "source_block_ordinal": 46,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": false,
+      "content_tokens": 27
+    },
+    {
+      "index": 47,
+      "filename": "structured_faq_chunk_047.txt",
+      "section": "English Q&A",
+      "question": "Question 42. Is the SIC office in Raipur district?",
+      "pages": [
+        6
+      ],
+      "page_range": "6",
+      "source_block_ordinal": 47,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 29
+    },
+    {
+      "index": 48,
+      "filename": "structured_faq_chunk_048.txt",
+      "section": "English Q&A",
+      "question": "Question 43. What district is listed in the address?",
+      "pages": [
+        6
+      ],
+      "page_range": "6",
+      "source_block_ordinal": 48,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 30
+    },
+    {
+      "index": 49,
+      "filename": "structured_faq_chunk_049.txt",
+      "section": "English Q&A",
+      "question": "प्रश्न 44. आयोग कार्यालय किस जिले में है?",
+      "pages": [
+        6
+      ],
+      "page_range": "6",
+      "source_block_ordinal": 49,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 26
+    },
+    {
+      "index": 50,
+      "filename": "structured_faq_chunk_050.txt",
+      "section": "English Q&A",
+      "question": "प्रश्न 45. क्या एसआईसी कार्यालय रायपुर जिले में है? उत्तरः कार्यालय रायपुर जिले में सूचीबद्ध है|",
+      "pages": [
+        6
+      ],
+      "page_range": "6",
+      "source_block_ordinal": 50,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": false,
+      "content_tokens": 30
+    },
+    {
+      "index": 51,
+      "filename": "structured_faq_chunk_051.txt",
+      "section": "English Q&A",
+      "question": "प्रश्न 46. पते में कौन सा जिला सूचीबद्ध है? उत्तरः कार्यालय रायपुर जिले में सूचीबद्ध है|",
+      "pages": [
+        6
+      ],
+      "page_range": "6",
+      "source_block_ordinal": 51,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": false,
+      "content_tokens": 29
+    },
+    {
+      "index": 52,
+      "filename": "structured_faq_chunk_052.txt",
+      "section": "8. Postal Code",
+      "question": "",
+      "pages": [
+        6
+      ],
+      "page_range": "6",
+      "source_block_ordinal": 52,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": false,
+      "content_tokens": 9
+    },
+    {
+      "index": 53,
+      "filename": "structured_faq_chunk_053.txt",
+      "section": "8. Postal Code",
+      "question": "Question 47. What is the PIN code of the Chhattisgarh State Information Commission? Answer: The listed PIN code is 492002.",
+      "pages": [
+        6
+      ],
+      "page_range": "6",
+      "source_block_ordinal": 53,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": false,
+      "content_tokens": 33
+    },
+    {
+      "index": 54,
+      "filename": "structured_faq_chunk_054.txt",
+      "section": "8. Postal Code",
+      "question": "Question 48. What is the postal code of the SIC office?",
+      "pages": [
+        6,
+        7
+      ],
+      "page_range": "6-7",
+      "source_block_ordinal": 54,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 29
+    },
+    {
+      "index": 55,
+      "filename": "structured_faq_chunk_055.txt",
+      "section": "8. Postal Code",
+      "question": "Question 49. What PIN code is listed for the Secretariat?",
+      "pages": [
+        7
+      ],
+      "page_range": "7",
+      "source_block_ordinal": 55,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 28
+    },
+    {
+      "index": 56,
+      "filename": "structured_faq_chunk_056.txt",
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 50. छत्तीसगढ़ राज्य सूचना आयोग का पिन कोड क्या है? उत्तरः सूचीबद्ध पिन कोड 492002 हैI",
+      "pages": [
+        7
+      ],
+      "page_range": "7",
+      "source_block_ordinal": 56,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": false,
+      "content_tokens": 29
+    },
+    {
+      "index": 57,
+      "filename": "structured_faq_chunk_057.txt",
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 51. एसआईसी कार्यालय का डाक कोड क्या है? उत्तरः सूचीबद्ध पिन कोड 492002 है|",
+      "pages": [
+        7
+      ],
+      "page_range": "7",
+      "source_block_ordinal": 57,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": false,
+      "content_tokens": 29
+    },
+    {
+      "index": 58,
+      "filename": "structured_faq_chunk_058.txt",
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 52. सचिवालय के कौन सा पिन कोड सूचीबद्ध है? उत्तरः सूचीबद्ध पिन कोड 492002 है| लिए",
+      "pages": [
+        7
+      ],
+      "page_range": "7",
+      "source_block_ordinal": 58,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": false,
+      "content_tokens": 30
+    },
+    {
+      "index": 59,
+      "filename": "structured_faq_chunk_059.txt",
+      "section": "9. State and Country",
+      "question": "",
+      "pages": [
+        7
+      ],
+      "page_range": "7",
+      "source_block_ordinal": 59,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": false,
+      "content_tokens": 9
+    },
+    {
+      "index": 60,
+      "filename": "structured_faq_chunk_060.txt",
+      "section": "9. State and Country",
+      "question": "Question 53. Which state is the commission office in?",
+      "pages": [
+        7
+      ],
+      "page_range": "7",
+      "source_block_ordinal": 60,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 30
+    },
+    {
+      "index": 61,
+      "filename": "structured_faq_chunk_061.txt",
+      "section": "9. State and Country",
+      "question": "Question 54. Is the office in India?",
+      "pages": [
+        7
+      ],
+      "page_range": "7",
+      "source_block_ordinal": 61,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 28
+    },
+    {
+      "index": 62,
+      "filename": "structured_faq_chunk_062.txt",
+      "section": "9. State and Country",
+      "question": "Question 55. What state and country are listed for the SIC office?",
+      "pages": [
+        7
+      ],
+      "page_range": "7",
+      "source_block_ordinal": 62,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 34
+    },
+    {
+      "index": 63,
+      "filename": "structured_faq_chunk_063.txt",
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 56. आयोग कार्यालय किस राज्य में है? उत्तरः कार्यालय छत्तीसगढ़, भारत में सूचीबद्ध है|",
+      "pages": [
+        7
+      ],
+      "page_range": "7",
+      "source_block_ordinal": 63,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": false,
+      "content_tokens": 25
+    },
+    {
+      "index": 64,
+      "filename": "structured_faq_chunk_064.txt",
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 57. क्या कार्यालय भारत में है?",
+      "pages": [
+        7
+      ],
+      "page_range": "7",
+      "source_block_ordinal": 64,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 24
+    },
+    {
+      "index": 65,
+      "filename": "structured_faq_chunk_065.txt",
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 58. एसआईसी कार्यालय के लिए कौन सा राज्य और देश सूचीबद्ध है? उत्तरः कार्यालय छत्तीसगढ़, भारत में सूचीबद्ध हैI",
+      "pages": [
+        7,
+        8
+      ],
+      "page_range": "7-8",
+      "source_block_ordinal": 65,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": false,
+      "content_tokens": 33
+    },
+    {
+      "index": 66,
+      "filename": "structured_faq_chunk_066.txt",
+      "section": "10. Phone Number",
+      "question": "",
+      "pages": [
+        8
+      ],
+      "page_range": "8",
+      "source_block_ordinal": 66,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": false,
+      "content_tokens": 8
+    },
+    {
+      "index": 67,
+      "filename": "structured_faq_chunk_067.txt",
+      "section": "10. Phone Number",
+      "question": "Question 59. What is the phone number of the Chhattisgarh State Information Commission?",
+      "pages": [
+        8
+      ],
+      "page_range": "8",
+      "source_block_ordinal": 67,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 34
+    },
+    {
+      "index": 68,
+      "filename": "structured_faq_chunk_068.txt",
+      "section": "10. Phone Number",
+      "question": "Question 60. What is the SIC contact number?",
+      "pages": [
+        8
+      ],
+      "page_range": "8",
+      "source_block_ordinal": 68,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 27
+    },
+    {
+      "index": 69,
+      "filename": "structured_faq_chunk_069.txt",
+      "section": "10. Phone Number",
+      "question": "Question 61. What telephone number can I use to call the Secretariat?",
+      "pages": [
+        8
+      ],
+      "page_range": "8",
+      "source_block_ordinal": 69,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 31
+    },
+    {
+      "index": 70,
+      "filename": "structured_faq_chunk_070.txt",
+      "section": "10. Phone Number",
+      "question": "Question 62. Give me the commission phone number.",
+      "pages": [
+        8
+      ],
+      "page_range": "8",
+      "source_block_ordinal": 70,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 27
+    },
+    {
+      "index": 71,
+      "filename": "structured_faq_chunk_071.txt",
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 63. छत्तीसगढ़ राज्य सूचना आयोग का फोन नंबर क्या है? उत्तरः सूचीबद्ध फोन नंबर 0771 -2512107 हैl",
+      "pages": [
+        8
+      ],
+      "page_range": "8",
+      "source_block_ordinal": 71,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": false,
+      "content_tokens": 31
+    },
+    {
+      "index": 72,
+      "filename": "structured_faq_chunk_072.txt",
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 64. एसआईसी का संपर्क नंबर क्या है?",
+      "pages": [
+        8
+      ],
+      "page_range": "8",
+      "source_block_ordinal": 72,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 30
+    },
+    {
+      "index": 73,
+      "filename": "structured_faq_chunk_073.txt",
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 65. सचिवालय को कॉल करने के कौन सा टेलीफोन नंबर है? उत्तरः सूचीबद्ध फोन नंबर 0771 -2512107 है| लिए",
+      "pages": [
+        8
+      ],
+      "page_range": "8",
+      "source_block_ordinal": 73,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": false,
+      "content_tokens": 35
+    },
+    {
+      "index": 74,
+      "filename": "structured_faq_chunk_074.txt",
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 66. आयोग का फोन नंबर बताइए|",
+      "pages": [
+        8
+      ],
+      "page_range": "8",
+      "source_block_ordinal": 74,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 28
+    },
+    {
+      "index": 75,
+      "filename": "structured_faq_chunk_075.txt",
+      "section": "11. Fax Number",
+      "question": "",
+      "pages": [
+        8
+      ],
+      "page_range": "8",
+      "source_block_ordinal": 75,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": false,
+      "content_tokens": 8
+    },
+    {
+      "index": 76,
+      "filename": "structured_faq_chunk_076.txt",
+      "section": "11. Fax Number",
+      "question": "Question 67. What is the fax number of the Chhattisgarh State Information Commission? Answer: The listed fax number is 0771-2512102.",
+      "pages": [
+        8
+      ],
+      "page_range": "8",
+      "source_block_ordinal": 76,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": false,
+      "content_tokens": 34
+    },
+    {
+      "index": 77,
+      "filename": "structured_faq_chunk_077.txt",
+      "section": "11. Fax Number",
+      "question": "Question 68. What is the SIC fax number?",
+      "pages": [
+        8,
+        9
+      ],
+      "page_range": "8-9",
+      "source_block_ordinal": 77,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 36
+    },
+    {
+      "index": 78,
+      "filename": "structured_faq_chunk_078.txt",
+      "section": "11. Fax Number",
+      "question": "Question 69. Give the Secretariat fax number.",
+      "pages": [
+        9
+      ],
+      "page_range": "9",
+      "source_block_ordinal": 78,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 26
+    },
+    {
+      "index": 79,
+      "filename": "structured_faq_chunk_079.txt",
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 70. छत्तीसगढ़ राज्य सूचना आयोग का फैक्स नंबर क्या है? उत्तरः सूचीबद्ध फैक्स नंबर 0771 -2512102 है|",
+      "pages": [
+        9
+      ],
+      "page_range": "9",
+      "source_block_ordinal": 79,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": false,
+      "content_tokens": 33
+    },
+    {
+      "index": 80,
+      "filename": "structured_faq_chunk_080.txt",
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 71. एसआईसी का फैक्स नंबर क्या है?",
+      "pages": [
+        9
+      ],
+      "page_range": "9",
+      "source_block_ordinal": 80,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 32
+    },
+    {
+      "index": 81,
+      "filename": "structured_faq_chunk_081.txt",
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 72. सचिवालय का फैक्स नंबर बताइए [",
+      "pages": [
+        9
+      ],
+      "page_range": "9",
+      "source_block_ordinal": 81,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 30
+    },
+    {
+      "index": 82,
+      "filename": "structured_faq_chunk_082.txt",
+      "section": "12. Email Address",
+      "question": "",
+      "pages": [
+        9
+      ],
+      "page_range": "9",
+      "source_block_ordinal": 82,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": false,
+      "content_tokens": 8
+    },
+    {
+      "index": 83,
+      "filename": "structured_faq_chunk_083.txt",
+      "section": "12. Email Address",
+      "question": "Question 73. What is the email address of the Chhattisgarh State Information Commission? Answerः The email is displayed as: sic[dot]cglat]nic[dot]in.",
+      "pages": [
+        9
+      ],
+      "page_range": "9",
+      "source_block_ordinal": 83,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": false,
+      "content_tokens": 45
+    },
+    {
+      "index": 84,
+      "filename": "structured_faq_chunk_084.txt",
+      "section": "12. Email Address",
+      "question": "Question 74. What is the SIC email?",
+      "pages": [
+        9
+      ],
+      "page_range": "9",
+      "source_block_ordinal": 84,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 37
+    },
+    {
+      "index": 85,
+      "filename": "structured_faq_chunk_085.txt",
+      "section": "12. Email Address",
+      "question": "Question 75. How can I email the Secretariat?",
+      "pages": [
+        9
+      ],
+      "page_range": "9",
+      "source_block_ordinal": 85,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 37
+    },
+    {
+      "index": 86,
+      "filename": "structured_faq_chunk_086.txt",
+      "section": "12. Email Address",
+      "question": "Question 76. Give the commission email address.",
+      "pages": [
+        9
+      ],
+      "page_range": "9",
+      "source_block_ordinal": 86,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 36
+    },
+    {
+      "index": 87,
+      "filename": "structured_faq_chunk_087.txt",
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 77. छत्तीसगढ़ राज्य सूचना आयोग का ई-्मेल क्या है? उत्तरः ई-मेल इस प्रकार प्रदर्शित हैः sic[dotlcglat]nic[dotlin |",
+      "pages": [
+        9
+      ],
+      "page_range": "9",
+      "source_block_ordinal": 87,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": false,
+      "content_tokens": 42
+    },
+    {
+      "index": 88,
+      "filename": "structured_faq_chunk_088.txt",
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 78. एसआईसी का ई-मेल क्या है? उत्तरः ई-्मेल इस प्रकार प्रदर्शित हैः sic[dotlcglat]nic[dotjin |",
+      "pages": [
+        9
+      ],
+      "page_range": "9",
+      "source_block_ordinal": 88,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": false,
+      "content_tokens": 41
+    },
+    {
+      "index": 89,
+      "filename": "structured_faq_chunk_089.txt",
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 79. सचिवालय को ई-मेल कैसे भेजें?",
+      "pages": [
+        9,
+        10
+      ],
+      "page_range": "9-10",
+      "source_block_ordinal": 89,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 39
+    },
+    {
+      "index": 90,
+      "filename": "structured_faq_chunk_090.txt",
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 80. आयोग का ई-मेल पता बताइए|",
+      "pages": [
+        10
+      ],
+      "page_range": "10",
+      "source_block_ordinal": 90,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 40
+    },
+    {
+      "index": 91,
+      "filename": "structured_faq_chunk_091.txt",
+      "section": "English Q&A",
+      "question": "Question 81. What is the official website of the Chhattisgarh State Information Commission? Answer: The listed website is https//rtionline cg gov.in .",
+      "pages": [
+        10
+      ],
+      "page_range": "10",
+      "source_block_ordinal": 91,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": false,
+      "content_tokens": 41
+    },
+    {
+      "index": 92,
+      "filename": "structured_faq_chunk_092.txt",
+      "section": "English Q&A",
+      "question": "Question 82. What is the SIC website?",
+      "pages": [
+        10
+      ],
+      "page_range": "10",
+      "source_block_ordinal": 92,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 32
+    },
+    {
+      "index": 93,
+      "filename": "structured_faq_chunk_093.txt",
+      "section": "English Q&A",
+      "question": "Question 83. What is the RTI portal website?",
+      "pages": [
+        10
+      ],
+      "page_range": "10",
+      "source_block_ordinal": 93,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 36
+    },
+    {
+      "index": 94,
+      "filename": "structured_faq_chunk_094.txt",
+      "section": "English Q&A",
+      "question": "Question 84. Give the official portal link.",
+      "pages": [
+        10
+      ],
+      "page_range": "10",
+      "source_block_ordinal": 94,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 35
+    },
+    {
+      "index": 95,
+      "filename": "structured_faq_chunk_095.txt",
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 85. छत्तीसगढ़ राज्य सूचना आयोग की आधिकारिक वेबसाइट क्या है? उत्तरः सूचीबद्ध वेबसाइट https: rtionline cg gov.in / हैI",
+      "pages": [
+        10
+      ],
+      "page_range": "10",
+      "source_block_ordinal": 95,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": false,
+      "content_tokens": 36
+    },
+    {
+      "index": 96,
+      "filename": "structured_faq_chunk_096.txt",
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 86. एसआईसी की वेबसाइट क्या है?",
+      "pages": [
+        10
+      ],
+      "page_range": "10",
+      "source_block_ordinal": 96,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 33
+    },
+    {
+      "index": 97,
+      "filename": "structured_faq_chunk_097.txt",
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 87. आरटीआई पोर्टल की वेबसाइट क्या है? उत्तरः सूचीबद्ध वेबसाइट https  rtionline cg gov in / हैl",
+      "pages": [
+        10
+      ],
+      "page_range": "10",
+      "source_block_ordinal": 97,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": false,
+      "content_tokens": 33
+    },
+    {
+      "index": 98,
+      "filename": "structured_faq_chunk_098.txt",
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 88. आधिकारिक पोर्टल लिंक बताइए|",
+      "pages": [
+        10
+      ],
+      "page_range": "10",
+      "source_block_ordinal": 98,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 31
+    },
+    {
+      "index": 99,
+      "filename": "structured_faq_chunk_099.txt",
+      "section": "English Q&A",
+      "question": "Question 89. How can I contact the commission by phone, fax, email, or website?",
+      "pages": [
+        10,
+        11
+      ],
+      "page_range": "10-11",
+      "source_block_ordinal": 99,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 78
+    },
+    {
+      "index": 100,
+      "filename": "structured_faq_chunk_100.txt",
+      "section": "English Q&A",
+      "question": "Question 90. What communication channels are available for the Secretariat?",
+      "pages": [
+        11
+      ],
+      "page_range": "11",
+      "source_block_ordinal": 100,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 74
+    },
+    {
+      "index": 101,
+      "filename": "structured_faq_chunk_101.txt",
+      "section": "English Q&A",
+      "question": "Question 91. Can I contact the SIC by email or fax?",
+      "pages": [
+        11
+      ],
+      "page_range": "11",
+      "source_block_ordinal": 101,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 73
+    },
+    {
+      "index": 102,
+      "filename": "structured_faq_chunk_102.txt",
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 92. फोन, फैक्स, ई-्मेल या वेबसाइट के माध्यम से आयोग से कैसे संपर्क करें?",
+      "pages": [
+        11
+      ],
+      "page_range": "11",
+      "source_block_ordinal": 102,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 85
+    },
+    {
+      "index": 103,
+      "filename": "structured_faq_chunk_103.txt",
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 93. सचिवालय के कौन॰कौन से संपर्क माध्यम उपलब्ध हैं? लिए",
+      "pages": [
+        11
+      ],
+      "page_range": "11",
+      "source_block_ordinal": 103,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 79
+    },
+    {
+      "index": 104,
+      "filename": "structured_faq_chunk_104.txt",
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 94. क्या एसआईसी से ई-मेल या फैक्स द्वारा संपर्क किया जा सकता है?",
+      "pages": [
+        11
+      ],
+      "page_range": "11",
+      "source_block_ordinal": 104,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 83
+    },
+    {
+      "index": 105,
+      "filename": "structured_faq_chunk_105.txt",
+      "section": "English Q&A",
+      "question": "Question 95. Where should 1 go to visit the commission office?",
+      "pages": [
+        11
+      ],
+      "page_range": "11",
+      "source_block_ordinal": 105,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 53
+    },
+    {
+      "index": 106,
+      "filename": "structured_faq_chunk_106.txt",
+      "section": "English Q&A",
+      "question": "Question 96. What is the physical location of the Secretariat?",
+      "pages": [
+        11
+      ],
+      "page_range": "11",
+      "source_block_ordinal": 106,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 53
+    },
+    {
+      "index": 107,
+      "filename": "structured_faq_chunk_107.txt",
+      "section": "English Q&A",
+      "question": "Question 97. Where is the SIC Secretariat in Nava Raipur?",
+      "pages": [
+        11
+      ],
+      "page_range": "11",
+      "source_block_ordinal": 107,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 56
+    },
+    {
+      "index": 108,
+      "filename": "structured_faq_chunk_108.txt",
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 98. आयोग कार्यालय जाने के लिए कहाँ जाना चाहिए?",
+      "pages": [
+        11,
+        12
+      ],
+      "page_range": "11-12",
+      "source_block_ordinal": 108,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 49
+    },
+    {
+      "index": 109,
+      "filename": "structured_faq_chunk_109.txt",
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 99. सचिवालय का भौतिक स्थान क्या है?",
+      "pages": [
+        12
+      ],
+      "page_range": "12",
+      "source_block_ordinal": 109,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 47
+    },
+    {
+      "index": 110,
+      "filename": "structured_faq_chunk_110.txt",
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 100. नवा रायपुर में एसआईसी सचिवालय कहाँ है?",
+      "pages": [
+        12
+      ],
+      "page_range": "12",
+      "source_block_ordinal": 110,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 51
+    },
+    {
+      "index": 111,
+      "filename": "structured_faq_chunk_111.txt",
+      "section": "English Q&A",
+      "question": "Question 101. What information is available on the Contact Us page?",
+      "pages": [
+        12
+      ],
+      "page_range": "12",
+      "source_block_ordinal": 111,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 44
+    },
+    {
+      "index": 112,
+      "filename": "structured_faq_chunk_112.txt",
+      "section": "English Q&A",
+      "question": "Question 102. What does the commission contact page provide?",
+      "pages": [
+        12
+      ],
+      "page_range": "12",
+      "source_block_ordinal": 112,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 43
+    },
+    {
+      "index": 113,
+      "filename": "structured_faq_chunk_113.txt",
+      "section": "English Q&A",
+      "question": "Question 103. What contact details are listed for the Secretariat?",
+      "pages": [
+        12
+      ],
+      "page_range": "12",
+      "source_block_ordinal": 113,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 45
+    },
+    {
+      "index": 114,
+      "filename": "structured_faq_chunk_114.txt",
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 104. संपर्क पृष्ठ पर कौन सी जानकारी उपलब्ध है?",
+      "pages": [
+        12
+      ],
+      "page_range": "12",
+      "source_block_ordinal": 114,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 46
+    },
+    {
+      "index": 115,
+      "filename": "structured_faq_chunk_115.txt",
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 105. आयोग का संपर्क पृष्ठ क्या जानकारी देता है?",
+      "pages": [
+        12
+      ],
+      "page_range": "12",
+      "source_block_ordinal": 115,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 45
+    },
+    {
+      "index": 116,
+      "filename": "structured_faq_chunk_116.txt",
+      "section": "हिंदी प्रश्नोत्तर",
+      "question": "प्रश्न 106. सचिवालय के कौन से संपर्क विवरण सूचीबद्ध हैं? लिए",
+      "pages": [
+        12
+      ],
+      "page_range": "12",
+      "source_block_ordinal": 116,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 53
+    }
+  ]
+}

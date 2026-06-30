@@ -1,0 +1,20 @@
+# FAQ Chunk 21
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 4-5
+Section: Q9 (English). What happens after 1 submit user registration?
+Question: प्रश्न 9. (हिंदी) User Registration Submit करने के बाद क्या होता है?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 80
+
+---
+
+## Q9 (English). What happens after 1 submit user registration?
+
+प्रश्न 9. (हिंदी) User Registration Submit करने के बाद क्या होता है?
+
+उत्तर| मैनुअल में पंजीकरण सफल होने की पुष्टि दिखाई गई है और उपयोगकर्ता से खाते के सत्यापन के लिए ई॰मेल देखने को कहा गया हैl
+
+Source: RTI User Manual, Manual p. 3

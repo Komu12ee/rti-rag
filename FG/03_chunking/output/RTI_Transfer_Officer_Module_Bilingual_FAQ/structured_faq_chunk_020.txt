@@ -1,0 +1,20 @@
+# FAQ Chunk 20
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 3
+Section: Q09. What does "live status mean in the dashboard context?
+Question: प्रश्न 09. डैशबोर्ड के संदर्भ में " लाइव स्टेटस " का क्या अर्थ है?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 94
+
+---
+
+## Q09. What does "live status mean in the dashboard context?
+
+प्रश्न 09. डैशबोर्ड के संदर्भ में " लाइव स्टेटस " का क्या अर्थ है?
+
+उत्तरः मैनुअल के अनुसार डैशबोर्ड आरटीआई आवेदनों की लाइव स्थिति दिखाता हैl इसमें यह नहीं बताया गया है कि डेटा कितनी अवधि में रिफ्रेश होता है या इसके लिए कोई तकनीकी समय-सीमा क्या हैI
+
+Source reference : Manual pp . 1-3

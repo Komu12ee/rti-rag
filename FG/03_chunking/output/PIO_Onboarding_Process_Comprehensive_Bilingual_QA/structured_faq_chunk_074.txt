@@ -1,0 +1,20 @@
+# FAQ Chunk 74
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 6
+Section: Q38 (English ). What happens after the PIO submits the onboarding application ?
+Question: प्रश्न 38. (हिन्दी ). PIO द्वारा ऑनबोर्डिंग आवेदन सबमिट करने के बाद क्या होता है?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 93
+
+---
+
+## Q38 (English ). What happens after the PIO submits the onboarding application ?
+
+प्रश्न 38. (हिन्दी ). PIO द्वारा ऑनबोर्डिंग आवेदन सबमिट करने के बाद क्या होता है?
+
+उत्तर. जन सूचना अधिकारी के ऑनबोर्डिंग आवेदन सबमिट करने के पश्चात नोडल स्वीकृति प्राधिकारी और प्रथम अपीलीय अधिकारी के दर्ज ई मेल आईडी पर लिंक भेजे जाते हैं| हेतु
+
+Source: Page 5

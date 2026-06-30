@@ -1,0 +1,19 @@
+# FAQ Chunk 3
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 1-3
+Section: Untitled section
+Question: (section note)
+Part: 3/3
+Kind: section_note
+Has answer: no
+Content tokens: 62
+
+---
+
+## Untitled section
+
+<!-- extraction_method: direct_text | confidence: 0.75 -->
+BASIC QUESTIONS - Frequently Asked
+Answers marked "Not specified" intentionally avoid assumptions beyond the source manual.
+Registration & Authentication

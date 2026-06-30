@@ -1,0 +1,18 @@
+# FAQ Chunk 142
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 15
+Section: Source coverage
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 157
+
+---
+
+## Source coverage
+
+The FAQ covers the module scope described in the supplied 12 page manual: dashboard, handover, takeover, transfer status workflow, relieving letter, file upload, certificate, name change and FAO approval It intentionally does not create instructions for actions that the manual does not document.
+
+यह FAQ दिए गए 12- पृष्ठ मैनुअल में वर्णित दायरे को कवर करता हैः डैशबोर्ड, कार्यभार देना, कार्यभार लेना , स्थानांतरण स्थिति प्रक्रिया, रिलिविंग लेटर, फाइल अपलोड, प्रमाणपत्र, नाम परिवर्तन और एफएओ स्वीकृति| जिन कार्यों का मैनुअल में उल्लेख नहीं है, उनके इस FAQ में नई प्रक्रिया नहीं बनाई गई हैl मॉड्यूल लिए

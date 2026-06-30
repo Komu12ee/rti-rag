@@ -1,0 +1,24 @@
+# FAQ Chunk 106
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 27-28
+Section: Question: Which fields are filled in the First Appeal Application screen?
+Question: प्रश्न 50. हिंदी प्रश्नोत्तर
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 146
+
+---
+
+## Question: Which fields are filled in the First Appeal Application screen?
+
+प्रश्न 50. हिंदी प्रश्नोत्तर
+
+प्रश्नः First Appeal Application स्क्रीन में कौन-से फील्ड भरे जाते हैं?
+
+उत्तरः First Appeal Application स्क्रीन में First Appeal Reason Type चुनना, First Appeal विवरण भरना, ऑफलाइन First Appeal आवेदन तिथि दर्ज करना और Application Status चुनना होता हैl इसके बाद Save & Next पर क्लिक करने का निर्देश देता है मैनुअल
+
+समान हिंदी प्रश्नः "कृपया समझाएं: First Appeal Application स्क्रीन में कौन से फील्ड भरे जाते हैं FI "आरटीआई पोर्टल पर यह प्रक्रिया कैसे होती है?"
+
+Manual reference संदर्भः Manual p. 10 मैनुअल

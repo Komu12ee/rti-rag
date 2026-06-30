@@ -1,0 +1,16 @@
+# FAQ Chunk 32
+Document: RTI_PIO_Manual_30_Bilingual_QA
+Source: structured.md
+Pages: 6
+Section: Question (English): What is meant by selecting Appeal or Complaint in Second Appeal Details?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 101
+
+---
+
+## Question (English): What is meant by selecting Appeal or Complaint in Second Appeal Details?
+
+Answer (English): In the Second Appeal Details section, the user must choose the Second Appeal Relation as either Appeal or Complaint. The selected relation affects the workflow. In particular, the manual lists special conditions for Complaint: payment is not mandatory and supporting documents are optional. The user must also select a reason type and describe the reason in words.

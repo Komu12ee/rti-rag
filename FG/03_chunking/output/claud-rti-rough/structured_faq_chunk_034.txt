@@ -1,0 +1,21 @@
+# FAQ Chunk 34
+Document: claud-rti-rough
+Source: structured.md
+Pages: 15-16
+Section: (1) Qualifications for Appointment:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 42
+
+---
+
+## (1) Qualifications for Appointment:
+
+- Chief Information Commissioner must be a person who has held office of Secretary to Government of India or equivalent
+
+
+
+
+- Information Commissioners must be persons with domain expertise

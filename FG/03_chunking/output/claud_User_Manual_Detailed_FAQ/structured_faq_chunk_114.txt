@@ -1,0 +1,24 @@
+# FAQ Chunk 114
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 18-19
+Section: Untitled section
+Question: Q111. What does "Notices" section show?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 131
+
+---
+
+## Untitled section
+
+Q111. What does "Notices" section show?
+
+Function is not specified.
+Source-bounded guide based only on rtiUserManual.pdf | Page 18
+
+<!-- extraction_method: direct_text | confidence: 0.75 -->
+Notices appears as a dashboard menu item, but the manual does not describe its contents, publication schedule,
+filters, or actions. It may be relevant to application communications, but that function is not confirmed by the
+guide.

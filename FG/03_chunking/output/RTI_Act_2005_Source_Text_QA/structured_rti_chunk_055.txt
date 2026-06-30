@@ -1,0 +1,65 @@
+# RTI Legal Chunk 55
+Document: RTI_Act_2005_Source_Text_QA
+Input source: structured.md
+Input pages: 28-29
+Chapter: Chapter V - Powers and functions, appeal and penalties
+Question: Q. What is the source text of Section 18?
+Part: 1/3
+Kind: faq
+Has answer: yes
+Content tokens: 508
+Original source book: Unknown
+Source type: general
+Legal reference: Section 18
+Book pages: 33-35
+Source PDF pages: Unknown
+Citation: Unknown
+
+---
+
+## Chapter V - Powers and functions, appeal and penalties
+
+Legal reference: Section 18
+
+Q. What is the source text of Section 18?
+
+Answer - source text
+18. (1) Subject to the provisions of this Act, it
+shall be the duty of the Central
+Information Commission or State Information Commission, as the case may be, to receive and inquire into a complaint
+from any person, -
+(a) who has been unable to submit a
+request to a Central Public
+Information Officer or State Public Information Officer, as the case may be, either by reason that no such
+officer has been appointed under this Act, or because the Central Assistant
+Public Information Officer or State Assistant Public Information Officer, as the case may be, has refused to
+accept his or her application for
+information or appeal under this Act
+for forwarding the same to the Central
+Public Information Officer or State
+Public Information Officer or senior officer specified in subsection (1) of section 19 or the Central Information
+Commission or the State Information Commission, as the case may be;
+(b) who has been refused access to any information requested under this Act;
+(c) who has not been given a response to
+a request for information or access to
+information within the time limit specified under this Act;
+(d) who has been required to pay an
+amount of fee which he or she considers unreasonable;
+(e) who believes that he or she has been given incomplete, misleading or false information under this Act; and
+(f) in respect of any other matter relating
+to requesting or obtaining access to records under this Act.
+(2) Where the Central Information
+Commission or State Information Commission, as the case may be, is
+satisfied that there are reasonable grounds to inquire into the matter, it
+may initiate an inquiry in respect thereof.
+(3) The Central Information
+Commission or State Information Commission, as the case may be, shall, while inquiring into any matter under this
+section, have the same
+powers as are vested in a civil court
+while trying a suit under the Code of Civil Procedure, 1908, in respect of the following matters, namely:-
+(a) summoning and enforcing the
+attendance of persons and compel
+them to give oral or written evidence
+on oath and to produce the documents or things;
+(b) requiring the discovery and inspection of documents;
+Compiled from the uploaded RTI rule book -

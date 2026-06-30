@@ -1,0 +1,18 @@
+# FAQ Chunk 54
+Document: RTI_PIO_Manual_30_Bilingual_QA
+Source: structured.md
+Pages: 9
+Section: प्रश्न (हिंदी): First Appeal Application चरण में कौन-से विवरण भरे जाते हैं?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 101
+
+---
+
+## प्रश्न (हिंदी): First Appeal Application चरण में कौन-से विवरण भरे जाते हैं?
+
+उत्तर (हिंदी): ड्रॉपडाउन सूची से उपयुक्त First Appeal Reason Type चुनें| First Appeal का विवरण भरें, ऑफलाइन First Appeal आवेदन तिथि दर्ज करें और उपलब्ध ड्रॉपडाउन से आवेदन की स्थिति चुनें | आवश्यक जानकारी भरने के बाद दस्तावेज़ चरण में जाने के Save & Next पर क्लिक करें| लिए
+
+Source reference: Manual p. 10

@@ -1,0 +1,18 @@
+# FAQ Chunk 12
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 4
+Section: Question: What happens after I submit the registration form?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 108
+
+---
+
+## Question: What happens after I submit the registration form?
+
+Answer: After successful submission, the portal displays a confirmation that registration has been completed and prompts the user to verify the account through email. The next step is to open the verification link sent to the registered email address. Registration alone does not complete account activation; email verification and password creation are still required.
+
+Similar English questions: "Please explain: What happens after [ submit the registration form "How is this handled on the RTI portal?"

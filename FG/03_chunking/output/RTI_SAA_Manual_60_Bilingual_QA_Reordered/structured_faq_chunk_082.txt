@@ -1,0 +1,18 @@
+# FAQ Chunk 82
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 21
+Section: Question: Which BPL details are requested after selecting Yes?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 108
+
+---
+
+## Question: Which BPL details are requested after selecting Yes?
+
+Answerः The BPL screen shown in the manual requests BPL Document No., BPL Document Issue Date, and BPL Issuing Authority. The manual states that entering BPL details is mandatory to process the application further when the user identifies as a BPL card holder.
+
+Similar English questions: "Please explain: Which BPL details are requested after selecting Yes "How is this handled on the RTI portal?"

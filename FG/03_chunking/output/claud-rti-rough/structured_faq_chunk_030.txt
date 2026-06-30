@@ -1,0 +1,29 @@
+# FAQ Chunk 30
+Document: claud-rti-rough
+Source: structured.md
+Pages: 14-15
+Section: Key Features:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 150
+
+---
+
+## Key Features:
+
+- They are appointed by the President on the recommendation of a committee comprising the Prime Minister, Leader of Opposition in Lok Sabha, and a Union
+
+
+
+
+Minister nominated by PM
+
+- The Chief Information Commissioner is the head who coordinates the functioning
+- Members hold office for such term as may be prescribed by the Central Government (amended by 2019 Amendment)
+- They have powers of a civil court while inquiring
+- Their decisionson appeals are binding on public authorities
+- can recommend penalties for non compliance They
+
+The CIC is responsible for hearing second appeals against decisions of PIOs and inquiring into complaints about RTI Act implementation.

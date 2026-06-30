@@ -1,0 +1,16 @@
+# FAQ Chunk 75
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 8
+Section: Q40. Why are digital signatures shown in the transfer document?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 58
+
+---
+
+## Q40. Why are digital signatures shown in the transfer document?
+
+Answer: The manual shows digital signatures for both officers in the Relieving Letter and transfer certificate. They visually record the roles of the officer handing over the charge and the officer taking it over

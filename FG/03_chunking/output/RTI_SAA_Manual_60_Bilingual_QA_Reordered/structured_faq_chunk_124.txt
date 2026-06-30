@@ -1,0 +1,18 @@
+# FAQ Chunk 124
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 32
+Section: Question: Which questions cannot be answered reliably from this manual alone?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 116
+
+---
+
+## Question: Which questions cannot be answered reliably from this manual alone?
+
+Answer: The manual is designed for portal navigation. It does not fully answer case specific legal questions such as statutory appeal deadlines, legal eligibility, the merits of a complaint, exact fee category selection, or the outcome of an individual case. For these, use current official rules, the live portal, or the competent authority.
+
+Similar English questions: "Please explain: Which questions cannot be answered reliably from this manual alone "How is this handled on the RTI portal?"

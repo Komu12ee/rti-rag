@@ -1,0 +1,16 @@
+# FAQ Chunk 112
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 17
+Section: Q55 (English). How do [ upload documents for the application?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 53
+
+---
+
+## Q55 (English). How do [ upload documents for the application?
+
+Answer. In Document Details, click Browse, select the file you want to upload, and then click Upload. Repeat for the relevant document fields shown in the form.

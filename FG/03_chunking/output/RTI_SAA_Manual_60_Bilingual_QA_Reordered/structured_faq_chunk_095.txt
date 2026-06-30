@@ -1,0 +1,18 @@
+# FAQ Chunk 95
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 24
+Section: Question: Can [ correct details that [ entered in an earlier First Appeal form?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 121
+
+---
+
+## Question: Can [ correct details that [ entered in an earlier First Appeal form?
+
+Answerः Yes. The manual says that the user can edit details entered in the previous form by clicking the Back button. Use Back to return to the earlier stage, correct the information, and continue again through the workflow. This is useful when a review of the First Appeal information shows an error before final submission.
+
+Similar English questions: "Please explain: Can I correct details that [ entered in an earlier First Appeal form "How is this handled on the RTI portal?"

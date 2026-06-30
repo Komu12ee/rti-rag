@@ -1,0 +1,20 @@
+# FAQ Chunk 129
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 19
+Section: Q63 (English). What happens after 1 click Fee Online? Pay
+Question: प्रश्न 63. (हिंदी)| Pay Fee Online पर क्लिक करने के बाद क्या होता है?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 72
+
+---
+
+## Q63 (English). What happens after 1 click Fee Online? Pay
+
+प्रश्न 63. (हिंदी)| Pay Fee Online पर क्लिक करने के बाद क्या होता है?
+
+उत्तर के अनुसार फॉर्म भुगतान के ऑनलाइन चालान बनाने की प्रक्रिया की ओर भेजा जाता हैI मैनुअल लिए
+
+Source: RTI User Manual, Manual p. 12.

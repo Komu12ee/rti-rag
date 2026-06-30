@@ -1,0 +1,18 @@
+# FAQ Chunk 37
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 10
+Section: Question: What should 1 do on the RTI Instruction screen?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 116
+
+---
+
+## Question: What should 1 do on the RTI Instruction screen?
+
+Answer: Read the listed RTI application instructions before proceeding. The workflow requires the user to tick the acknowledgement box confirming that the instructions have been read and that the required information and documents are available. Then click Next. This acknowledgement is part of the application flow, so it should be completed before entering appeal-related details
+
+Similar English questionsः "Please explain: What should I do on the RTI Instruction screen "How is this handled on the RTI portal?"

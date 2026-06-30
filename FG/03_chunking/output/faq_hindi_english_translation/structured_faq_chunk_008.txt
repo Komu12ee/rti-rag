@@ -1,0 +1,24 @@
+# FAQ Chunk 8
+Document: faq_hindi_english_translation
+Source: structured.md
+Pages: 3-4
+Section: Untitled section
+Question: Question 3. What is the time limit for disposal of an appeal?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 105
+
+---
+
+## Untitled section
+
+Question 3. What is the time limit for disposal of an appeal?
+
+Answer: The appellate authority of the public authority shall give its decision within thirty days of receipt of the appeal, or, in
+exceptional cases, within forty-five days of receipt of the appeal.
+English Translation - RTI FAQ
+
+<!-- extraction_method: direct_text | confidence: 1.00 -->
+Page 4
+Second Appeal: Application Before the State Information Commission

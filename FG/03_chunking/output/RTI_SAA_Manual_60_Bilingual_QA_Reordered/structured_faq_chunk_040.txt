@@ -1,0 +1,24 @@
+# FAQ Chunk 40
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 11
+Section: Question: Who can use the portal according to the RTI instruction screen?
+Question: प्रश्न 18. - हिंदी प्रश्नोत्तर
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 180
+
+---
+
+## Question: Who can use the portal according to the RTI instruction screen?
+
+प्रश्न 18. - हिंदी प्रश्नोत्तर
+
+प्रश्नः RTI Instruction स्क्रीन के अनुसार पोर्टल का उपयोग कौन कर सकता है?
+
+उत्तरः निर्देश स्क्रीन के अनुसार भारतीय नागरिक इस वेब पोर्टल का उपयोग ऑनलाइन आरटीआई आवेदन दर्ज करने और आरटीआई आवेदन के ऑनलाइन भुगतान करने के कर सकते हैं| यह भी बताया गया है कि प्रथम अपील ऑनलाइन दर्ज की जा सकती हैl मैनुअल का संबंधित भाग विशेष रूप से PIO और First Appellate Officer के समक्ष ऑफलाइन आवेदन से जुड़े द्वितीय अपील कार्यप्रवाह का प्रदर्शन करता है| लिए लिए इसमें
+
+समान हिंदी प्रश्नः "कृपया समझाएं: RTI Instruction स्क्रीन के अनुसार पोर्टल का उपयोग कौन कर सकता है II 'आरटीआई पोर्टल पर यह प्रक्रिया कैसे होती है ?"
+
+Manual reference संदर्भः Manual p. 5 मैनुअल

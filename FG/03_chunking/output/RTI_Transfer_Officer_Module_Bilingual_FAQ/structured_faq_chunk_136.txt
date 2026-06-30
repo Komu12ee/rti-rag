@@ -1,0 +1,16 @@
+# FAQ Chunk 136
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 14
+Section: Q75. Can this manual be used to decide legal responsibility under the RTI Act?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 76
+
+---
+
+## Q75. Can this manual be used to decide legal responsibility under the RTI Act?
+
+Answer: No. This is a portal-operation manual, not a legal interpretation of the RTI Act. It explains system actions for officer role transfer and name change, but it does not determine statutory accountability deadlines or legal validity of an RTI response.

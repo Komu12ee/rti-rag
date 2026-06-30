@@ -1,0 +1,19 @@
+# FAQ Chunk 24
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 5
+Section: (2) Hearing Process:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 36
+
+---
+
+## (2) Hearing Process:
+
+- Public authority may appear and be heard
+- Third parties may present their side
+- Applicants may present their case
+- Can be oral or written hearing

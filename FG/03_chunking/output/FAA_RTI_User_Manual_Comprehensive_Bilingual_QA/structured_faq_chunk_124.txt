@@ -1,0 +1,16 @@
+# FAQ Chunk 124
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 19
+Section: Q61 (English). How do [ make payment for the application?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 54
+
+---
+
+## Q61 (English). How do [ make payment for the application?
+
+Answer. In Payment Details, select the applicable payment option by ticking its box and click Fee Online. The portal then directs you to generate an online challan for payment. Pay

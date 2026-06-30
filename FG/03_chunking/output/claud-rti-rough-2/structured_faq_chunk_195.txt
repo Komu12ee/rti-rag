@@ -1,0 +1,19 @@
+# FAQ Chunk 195
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 32
+Section: (3) अब तक के संशोधनः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 59
+
+---
+
+## (3) अब तक के संशोधनः
+
+- RTI ( संशोधन) अधिनियम, 2019 (29 अक्तूबर 2019 को राजपत्रित)
+- CIC और SIC के कार्यकाल को लचीला बनाया
+- कुछ प्रक्रियात्मक संशोधन
+- नियमों के माध्यम से शुल्क संशोधन ( वैधानिक संशोधन नहीं )

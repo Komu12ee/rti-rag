@@ -1,0 +1,16 @@
+# FAQ Chunk 148
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 24
+Section: Second Appeal Details
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 9
+
+---
+
+## Second Appeal Details
+
+Second Appeal Details

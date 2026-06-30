@@ -1,0 +1,16 @@
+# FAQ Chunk 115
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 9
+Section: Q59 (English). Does the document describe a separate registration form for the FAO?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 50
+
+---
+
+## Q59 (English). Does the document describe a separate registration form for the FAO?
+
+Answer No. The FAO does not need separate registration. The link is sent to the e-mail ID entered during PIO onboarding.

@@ -1,0 +1,16 @@
+# FAQ Chunk 3
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 1
+Section: Q01. What is this document about?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 80
+
+---
+
+## Q01. What is this document about?
+
+Answer: This document is a user manual for the RTI Portal Transfer Officer Module. It explains how PIO, FAO and Nodal users can hand over or take over official charge, generate the related relieving letter and certificate, upload supporting files, and process a name change when the existing email ID remains the same.

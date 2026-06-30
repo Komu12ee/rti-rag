@@ -1,0 +1,18 @@
+# FAQ Chunk 75
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 12
+Section: (4) Effect of Transferः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 27
+
+---
+
+## (4) Effect of Transferः
+
+- State Commission loses jurisdiction
+- Central Commission takes over
+- Previous proceedings remain part of file

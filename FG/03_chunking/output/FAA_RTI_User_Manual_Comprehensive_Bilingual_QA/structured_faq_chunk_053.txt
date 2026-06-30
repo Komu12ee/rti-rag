@@ -1,0 +1,20 @@
+# FAQ Chunk 53
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 10
+Section: Q25 (English). Is an RTI fee required for a person below the poverty line?
+Question: प्रश्न 25. (हिंदी)| क्या गरीबी रेखा से नीचे के व्यक्ति के लिए आरटीआई शुल्क आवश्यक है?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 104
+
+---
+
+## Q25 (English). Is an RTI fee required for a person below the poverty line?
+
+प्रश्न 25. (हिंदी)| क्या गरीबी रेखा से नीचे के व्यक्ति के लिए आरटीआई शुल्क आवश्यक है?
+
+उत्तर निर्देश स्क्रीन में कहा गया है कि आरटीआई नियम, 2012 के अनुसार गरीबी रेखा से नीचे के नागरिक से आरटीआई शुल्क नहीं लिया जाता| साथ ही आवेदन के साथ उपयुक्त सरकार द्वारा जारी प्रमाणपत्र की प्रति संलग्न करनी होती हैI
+
+Sourceः RTI User Manual, Manual p. 6.

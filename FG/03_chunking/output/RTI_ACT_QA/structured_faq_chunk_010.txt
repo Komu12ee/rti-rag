@@ -1,0 +1,24 @@
+# FAQ Chunk 10
+Document: RTI_ACT_QA
+Source: structured.md
+Pages: 4
+Section: SECTION 5: DESIGNATION OF PUBLIC INFORMATION OFFICERS
+Question: Q5. What are the requirements for designating Public Information Officers under Section 51
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 311
+
+---
+
+## SECTION 5: DESIGNATION OF PUBLIC INFORMATION OFFICERS
+
+Q5. What are the requirements for designating Public Information Officers under Section 51
+
+Answer Section 5(1 ) mandates that every public authority shall, within 1O0 days of the enactment of this Act, designate as many Central Public Information Officers ( CPIOs) or State Public Information Officers ( SPIOs) in all administrative units or offices as are necessary to provide information to persons making requests for information under the Act.
+
+Section 5(2) further requires that every public authority shall, within 100 days of enactment, designate at the sub divisional or sub-district level a Central Assistant Public Information Officer ( CAPIO) or State Assistant Public Information Officer (SAPIO) who shall receive all applications for information or appeals for forwarding to the CPIOISPIO. Provided that the time limit for responding shall be extended by five days if an application is received by an Assistant PIO.
+
+Section 5(3) states that every CPIOISPIO shall deal with all requests from persons seeking information and shall render them reasonable assistance to reduce their requests into writing if required.
+
+Section 5(4 ) & (5) provide that if necessary, the CPIO SPIO may seek assistance from any other officer in relation to any request for information or an appeal. Any officer sO providing assistance shall be deemed to be acting as CPIOISPIO for the purposes of this Act.

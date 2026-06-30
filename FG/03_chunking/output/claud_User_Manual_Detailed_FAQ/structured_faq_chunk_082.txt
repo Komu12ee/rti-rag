@@ -1,0 +1,21 @@
+# FAQ Chunk 82
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 14
+Section: Untitled section
+Question: Q079. What if the office details link does not work?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 109
+
+---
+
+## Untitled section
+
+Q079. What if the office details link does not work?
+
+Link-failure troubleshooting is not specified.
+The manual identifies the blue link as the way to enter unlisted office and officer details, but it provides no
+repair, alternate URL, or support workflow if that link itself fails. The available ContactUs menu is shown, but no
+support contact details are published in this manual.

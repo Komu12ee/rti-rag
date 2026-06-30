@@ -1,0 +1,16 @@
+# FAQ Chunk 73
+Document: cg_sic_contact_bilingual_all_questions_qna
+Source: structured.md
+Pages: 8
+Section: हिंदी प्रश्नोत्तर
+Question: प्रश्न 65. सचिवालय को कॉल करने के कौन सा टेलीफोन नंबर है? उत्तरः सूचीबद्ध फोन नंबर 0771 -2512107 है| लिए
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 35
+
+---
+
+## हिंदी प्रश्नोत्तर
+
+प्रश्न 65. सचिवालय को कॉल करने के कौन सा टेलीफोन नंबर है? उत्तरः सूचीबद्ध फोन नंबर 0771 -2512107 है| लिए

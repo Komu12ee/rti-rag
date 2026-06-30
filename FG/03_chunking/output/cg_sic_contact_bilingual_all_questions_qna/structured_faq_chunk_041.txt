@@ -1,0 +1,18 @@
+# FAQ Chunk 41
+Document: cg_sic_contact_bilingual_all_questions_qna
+Source: structured.md
+Pages: 5
+Section: 6. / Locality City
+Question: Question 36. Where in Raipur is the SIC office?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 33
+
+---
+
+## 6. / Locality City
+
+Question 36. Where in Raipur is the SIC office?
+
+Answer: The office is listed at Nava Raipur Atal Nagar.

@@ -1,0 +1,20 @@
+# FAQ Chunk 163
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 29-30
+Section: Q79 (English). Does the manual show a receipt option after payment?
+Question: प्रश्न 79. (हिंदी) [ क्या मैनुअल भुगतान के बाद रसीद विकल्प दिखाता है?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 73
+
+---
+
+## Q79 (English). Does the manual show a receipt option after payment?
+
+प्रश्न 79. (हिंदी) [ क्या मैनुअल भुगतान के बाद रसीद विकल्प दिखाता है?
+
+उत्तर| हा सफल लेननदेन की उदाहरण स्क्रीन में Print Receipt विकल्प शामिल हैI
+
+Sourceः RTI User Manual, Manual p. 13.

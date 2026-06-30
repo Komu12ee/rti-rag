@@ -1,0 +1,22 @@
+# FAQ Chunk 78
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 8-9
+Section: Q42. Which file formats are allowed for the upload shown in the manual?
+Question: प्रश्न 42. मैनुअल में दिखाए गए अपलोड के लिए कौन-से फाइल फॉर्मेट स्वीकार्य हैं?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 108
+
+---
+
+## Q42. Which file formats are allowed for the upload shown in the manual?
+
+प्रश्न 42. मैनुअल में दिखाए गए अपलोड के लिए कौन-से फाइल फॉर्मेट स्वीकार्य हैं?
+
+Answer: The screenshot in the manual states that only PDF, JPEG and JPG formats are allowed for this upload.
+
+उत्तरः मैनुअल की स्क्रीनशॉट सूचना के अनुसार इस अपलोड के केवल PDF, JPEG और JPG फॉर्मेट स्वीकार्य हैंl लिए
+
+Source reference : Manual pp . 7 8

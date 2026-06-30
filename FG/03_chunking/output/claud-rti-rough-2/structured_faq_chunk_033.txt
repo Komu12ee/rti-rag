@@ -1,0 +1,19 @@
+# FAQ Chunk 33
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 6
+Section: (3) साक्ष्यः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 49
+
+---
+
+## (3) साक्ष्यः
+
+- आयोग किसी भी व्यक्ति की शपथ के तहत परीक्षा कर सकता है
+- दस्तावेजों का उत्पादन मांग सकता है
+- यदि आवश्यक हो तो विशेषज्ञ की राय मांग सकता है
+- आयोग सख्त साक्ष्य नियमों से बंधा नहीं है

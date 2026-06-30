@@ -1,0 +1,51 @@
+# RTI Legal Chunk 48
+Document: RTI_Act_2005_Source_Text_QA
+Input source: structured.md
+Input pages: 24-26
+Chapter: Chapter IV - The State Information Commission
+Question: Q. What is the source text of Section 16?
+Part: 1/5
+Kind: faq
+Has answer: yes
+Content tokens: 277
+Original source book: Unknown
+Source type: general
+Legal reference: Section 16
+Book pages: 28-31
+Source PDF pages: Unknown
+Citation: Unknown
+
+---
+
+## Chapter IV - The State Information Commission
+
+Legal reference: Section 16
+
+Q. What is the source text of Section 16?
+
+Answer - source text
+16.* (1) The State Chief Information
+Commissioner shall hold office for a
+term of five years from the date on
+which he enters upon his office and
+shall not be eligible for reappointment:
+Provided that no State Chief
+Information Commissioner shall hold
+office as such after he has attained the age of sixty-five years.
+(2)* Every State Information
+Commissioner shall hold office for a
+term of five years from the date on
+which he enters upon his office or till he attains the age of sixty-five years, whichever is earlier, and shall not be
+eligible for reappointment as such State Information Commissioner:
+Provided that every State Information Commissioner shall, on vacating his office under this sub-section, be
+eligible for appointment as the State
+Chief Information Commissioner in the manner specified in sub-section
+(3) of section 15:
+Provided further that where the State
+Information Commissioner is
+appointed as the State Chief Information Commissioner, his term
+of office shall not be more than five
+years in aggregate as the State
+Information Commissioner and the
+State Chief Information Commissioner.
+Compiled from the uploaded RTI rule book - Part 1 statutory text only

@@ -1,0 +1,20 @@
+# FAQ Chunk 150
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 24-25
+Section: Q73 (English). What should 1 select if 1 am not a BPL card holder?
+Question: प्रश्न 73. (हिंदी)| यदि मैं BPL कार्डधारक नहीं हूँ तो क्या चुनना चाहिए?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 76
+
+---
+
+## Q73 (English). What should 1 select if 1 am not a BPL card holder?
+
+प्रश्न 73. (हिंदी)| यदि मैं BPL कार्डधारक नहीं हूँ तो क्या चुनना चाहिए?
+
+उत्तर| अपनी स्थिति के अनुसार BPL कार्डधारक फ़ील्ड में No चुनें |
+
+Source: RTI User Manual, Manual p. 6-7 .

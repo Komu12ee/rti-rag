@@ -1,0 +1,16 @@
+# FAQ Chunk 138
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 15
+Section: Q76. What is the practical distinction between role allocation and name change?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 70
+
+---
+
+## Q76. What is the practical distinction between role allocation and name change?
+
+Answer: Role allocation transfers charge to another portal user with a different email ID. Name change associates a new person $ name, mobile number and designation with the same existing email ID, with the approval specified in the manual. path

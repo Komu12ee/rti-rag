@@ -1,0 +1,20 @@
+# FAQ Chunk 17
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 4
+Section: Q7 (English). What should [ do after entering my registration details?
+Question: प्रश्न 7. (हिंदी)| पंजीकरण विवरण भरने के बाद क्या करना चाहिए?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 72
+
+---
+
+## Q7 (English). What should [ do after entering my registration details?
+
+प्रश्न 7. (हिंदी)| पंजीकरण विवरण भरने के बाद क्या करना चाहिए?
+
+उत्तर Preview पर क्लिक करें| पोर्टल Submit करने से पहले आपके भरे हुए विवरण समीक्षा के लिए दिखाएगा|
+
+Source: RTI User Manual, Manual p. 3.

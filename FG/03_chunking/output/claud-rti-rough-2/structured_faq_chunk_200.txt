@@ -1,0 +1,19 @@
+# FAQ Chunk 200
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 33
+Section: 4) Chhattisgarh Rules:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 66
+
+---
+
+## 4) Chhattisgarh Rules:
+
+- RTI ( Application Submission ) Rules, 2009
+- RTI (Fees and Charges) Regulations, 2005 (amended multiple times)
+- RTI (Appeals) Rules, 2006 (with amendments)
+- Various departmental guidelines

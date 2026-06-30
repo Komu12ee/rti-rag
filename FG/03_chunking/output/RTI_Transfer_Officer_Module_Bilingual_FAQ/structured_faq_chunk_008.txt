@@ -1,0 +1,20 @@
+# FAQ Chunk 8
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 2
+Section: Q03. What does the PIO dashboard show?
+Question: प्रश्न 03. पीआईओ डैशबोर्ड क्या दिखाता है?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 91
+
+---
+
+## Q03. What does the PIO dashboard show?
+
+प्रश्न 03. पीआईओ डैशबोर्ड क्या दिखाता है?
+
+उत्तरः पीआईओ एफएओ | नोडल डैशबोर्ड आरटीआई आवेदनों की लाइव स्थिति दिखाता है| मैनुअल इसे उस प्रारंभिक स्क्रीन के रूप में दिखाता है, जहाँ से स्थानांतरण संबंधी कार्य जा सकते हैं| किए
+
+Source reference : Manual pp . 1-3

@@ -1,0 +1,34 @@
+# FAQ Chunk 22
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 4
+Section: Question: Can 1 correct my registration details before submitting?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 202
+
+---
+
+## Question: Can 1 correct my registration details before submitting?
+
+Answer: Tes. The manual says to click Edit if changes are required in the details entered.
+
+Source: RTI User Manual, Printed page 3
+
+Question: What should 1 do if 1 find an error in the registration preview?
+
+Answer: Yes. The manual says to click Edit if changes are required in the details entered.
+
+Source: RTI User Manual, Printed page 3
+
+प्रश्नः क्या सबमिट करने से पहले मैं अपने रजिस्ट्रेशन विवरण सुधार सकता| सकती हूँ?
+
+उत्तरः हाँ| मैनुअल के अनुसार दर्ज गए विवरण में परिवर्तन करना हो तो Edit पर क्लिक करें| किए
+
+Sourceः RTI User Manual, Printed page 3.
+
+प्रश्नः यदि रजिस्ट्रेशन प्रीव्यू में गलती मिले तो क्या करना चाहिए?
+
+उत्तरः हाँl मैनुअल के अनुसार दर्ज गए विवरण में परिवर्तन करना हो तो Edit पर क्लिक करें| Sourceः RTI User Manual, Printed page 3 किए

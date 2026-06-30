@@ -1,0 +1,20 @@
+# FAQ Chunk 29
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 4
+Section: Q14. What details must be entered for the receiving officer ?
+Question: प्रश्न 14. कार्यभार लेने वाले अधिकारी के कौन-से विवरण भरने होते हैं?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 94
+
+---
+
+## Q14. What details must be entered for the receiving officer ?
+
+प्रश्न 14. कार्यभार लेने वाले अधिकारी के कौन-से विवरण भरने होते हैं?
+
+उत्तरः के अनुसार उस अधिकारी का विवरण भरना होता है जिसे कार्यभार दिया जा रहा हैl उदाहरण स्क्रीन में पहचान और पदनाम से जुड़े विवरण दिखते हैं, लेकिन मैनुअल में हर फील्ड की पूर्ण सूची नहीं दी गई है| मैनुअल
+
+Source reference : Manual p. 4

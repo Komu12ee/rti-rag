@@ -1,0 +1,16 @@
+# FAQ Chunk 118
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 17
+Section: Q58 (English). What should 1 do after uploading all required documents?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 35
+
+---
+
+## Q58 (English). What should 1 do after uploading all required documents?
+
+Answer. Click Next. The manual says this directs the application to the payment step.

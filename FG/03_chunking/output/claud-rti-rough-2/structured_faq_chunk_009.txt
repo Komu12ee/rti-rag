@@ -1,0 +1,17 @@
+# FAQ Chunk 9
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 2
+Section: (2) Complaint Authority:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 31
+
+---
+
+## (2) Complaint Authority:
+
+- Inquire into complaints regarding RTI Act implementation by state authorities
+- Investigate alleged violations of provisions

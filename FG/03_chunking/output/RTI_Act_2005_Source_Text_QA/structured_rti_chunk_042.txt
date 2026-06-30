@@ -1,0 +1,28 @@
+# RTI Legal Chunk 42
+Document: RTI_Act_2005_Source_Text_QA
+Input source: structured.md
+Input pages: 19-21
+Chapter: Chapter III - The Central Information Commission
+Question: Q. What is the source text of Section 13?
+Part: 4/5
+Kind: faq
+Has answer: yes
+Content tokens: 37
+Original source book: Unknown
+Source type: general
+Legal reference: Section 13
+Book pages: 22-25
+Source PDF pages: Unknown
+Citation: Unknown
+
+---
+
+## Chapter III - The Central Information Commission
+
+Legal reference: Section 13
+
+Q. What is the source text of Section 13?
+
+**Answer continued:**
+
+Part 1 statutory text only

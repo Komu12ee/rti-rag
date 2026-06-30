@@ -1,0 +1,19 @@
+# FAQ Chunk 31
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 7
+Section: Untitled section
+Question: Q028. What is the BPL Document Issue Date format?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 82
+
+---
+
+## Untitled section
+
+Q028. What is the BPL Document Issue Date format?
+
+The BPL form shows the placeholder dd-mm-yyyy. Enter the issue date in day-month-year order, using two digits
+for day, two digits for month, and four digits for year.

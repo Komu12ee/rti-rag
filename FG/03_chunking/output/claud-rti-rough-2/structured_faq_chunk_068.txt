@@ -1,0 +1,17 @@
+# FAQ Chunk 68
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 11
+Section: (2) अधिकार क्षेत्र की सीमाएंः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 35
+
+---
+
+## (2) अधिकार क्षेत्र की सीमाएंः
+
+- केवल RTI अधिनियम के दायरे में सुन सकते हैं
+- RTI से असंबंधित व्यक्तिगत शिकायतों वाले मामले नहीं सुन सकते

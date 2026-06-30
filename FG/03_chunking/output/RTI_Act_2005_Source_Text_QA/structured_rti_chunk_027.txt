@@ -1,0 +1,61 @@
+# RTI Legal Chunk 27
+Document: RTI_Act_2005_Source_Text_QA
+Input source: structured.md
+Input pages: 12-13
+Chapter: Chapter II - Right to information and obligations of public authorities
+Question: Q. What is the source text of Section 7?
+Part: 3/3
+Kind: faq
+Has answer: yes
+Content tokens: 450
+Original source book: Unknown
+Source type: general
+Legal reference: Section 7
+Book pages: 13-15
+Source PDF pages: Unknown
+Citation: Unknown
+
+---
+
+## Chapter II - Right to information and obligations of public authorities
+
+Legal reference: Section 7
+
+Q. What is the source text of Section 7?
+
+**Answer continued:**
+
+SOURCE-TEXT Q&A | THE RIGHT TO INFORMATION ACT, 2005
+Information Officer or State Public Information Officer, as the case may be, shall provide assistance to enable access to
+the information, including
+providing such assistance as may be appropriate for the inspection.
+(5) Where access to information is to be
+provided in the printed or in any electronic format, the applicant shall, subject to the provisions of subsection (6), pay
+such fee as may be prescribed:
+Provided that the fee prescribed under sub-section (1) of section 6 and subsections (1) and (5) of section 7 shall
+be reasonable and no such fee shall be
+charged from the persons who are of
+below poverty line as may be
+determined by the appropriate Government.
+(6) Notwithstanding anything contained in sub-section (5), the person making
+request for the information shall be
+provided the information free of
+charge where a public authority fails
+to comply with the time limits specified in sub-section (1).
+(7) Before taking any decision under subsection (1), the Central Public
+Information Officer or State Public Information Officer, as the case may be, shall take into consideration the
+representation made by a third party under section 11.
+(8) Where a request has been rejected under sub-section (1), the Central
+Public Information Officer or State Public Information Officer, as the case may be, shall communicate to the person
+making the request, -
+(i) the reasons for such rejection;
+(ii) the period within which an appeal
+against such rejection may be preferred; and
+(iii) the particulars of the appellate authority.
+(9) An information shall ordinarily be
+provided in the form in which it is
+s o u g h t u n l e s s i t w o u l d
+disproportionately divert the
+resources of the public authority or
+would be detrimental to the safety or preservation of the record in question.
+—

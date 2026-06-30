@@ -1,0 +1,18 @@
+# FAQ Chunk 26
+Document: RTI_ACT_QA
+Source: structured.md
+Pages: 13
+Section: SECTION l3: CHIEF INFORMATION COMMISSIONER
+Question: Q13. What are the qualifications and tenure of the Chief Information Commissioner under Section 131
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 127
+
+---
+
+## SECTION l3: CHIEF INFORMATION COMMISSIONER
+
+Q13. What are the qualifications and tenure of the Chief Information Commissioner under Section 131
+
+Answerः Section 13 specifies that the Chief Information Commissioner should be a person who has held office of Secretary to Government of India or equivalent. The original Act provided for a tenure of five years from the date of entering office. However, the RTI (Amendment) Act, 2019, amended Section 13 to provide that the term shall be such as be prescribed by the Central Government, making the tenure flexible rather than fixed. may

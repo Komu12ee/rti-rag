@@ -1,0 +1,28 @@
+# FAQ Chunk 52
+Document: claud-rti-rough
+Source: structured.md
+Pages: 19-20
+Section: (5) कार्यकाल ( संशोधित 2019):
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 196
+
+---
+
+## (5) कार्यकाल ( संशोधित 2019):
+
+- राज्य सरकार द्वारा निर्धारित किए जा सकने वाला ( पहले 5 साल)
+
+
+
+
+- (6) शक्तियांः केंद्रीय आयोग के समान लेकिन राज्य संस्थाओं तक सीमित
+- (7) छत्तीसगढ़ मेंः छत्तीसगढ़ राज्य सूचना आयोग का मुख्यालय नया रायपुर (उत्तरी ब्लॉक , सेक्टर 19) में है और राज्य भर में कार्यालय हैं
+
+उदाहरणः छत्तीसगढ़ SIC को RTI नियम पुस्तक में विभिन्न तारीखों के अधिसूचनाओं और प्रक्रियात्मक दिशानिर्देशों के साथ व्यापक रूप से संदर्भित किया गया है|
+
+Source reference: RTI Rule Book, pp. 15, Section 15,and Chhattisgarh SIC references throughout
+
+IDue to length constraints, Tll continue with remaining sections in a follow up. The document continues with Sections 16-28 covering Appeals, Penalties Rule making etc. Following the same format: English Question Detailed Answer Hindi Question Hindi Answer Source Reference ]

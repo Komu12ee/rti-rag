@@ -1,0 +1,16 @@
+# FAQ Chunk 65
+Document: RTI_PIO_Manual_30_Bilingual_QA
+Source: structured.md
+Pages: 10
+Section: Document scope and practical note
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 71
+
+---
+
+## Document scope and practical note
+
+This Q&A set is grounded in the uploaded User Manual and its screenshots. It does not add legal interpretations beyond the manual. For live portal behaviour, legal eligibility, statutory time limits, fees, or case specific decisions, use the current official portal guidance or the concerned authority.

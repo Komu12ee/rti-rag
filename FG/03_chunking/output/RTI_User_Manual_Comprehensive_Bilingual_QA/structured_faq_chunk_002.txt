@@ -1,0 +1,21 @@
+# FAQ Chunk 2
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 1-2
+Section: Coverage map
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 63
+
+---
+
+## Coverage map
+
+- User registration and email based account verification
+- Password setup and password requirements
+- Starting a second appeal and reading RTI instructions
+- Second appeal, complaint, and BPL card holder details
+- PIO, office, RTI application, and first appeal details
+- Document upload and payment workflow

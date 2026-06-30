@@ -1,0 +1,21 @@
+# FAQ Chunk 86
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 15
+Section: Untitled section
+Question: Q083. Which fields are optional and which are mandatory?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 147
+
+---
+
+## Untitled section
+
+Q083. Which fields are optional and which are mandatory?
+
+The general rule is simple: starred fields are mandatory; fields without a star are not marked as mandatory in
+the screenshots. On the registration screen, starred items include Applicant Type, Name in English, E-mail ID,
+Mobile No, Caste Type, Gender, Address in English, Pincode, and District. The manual does not publish a single
+consolidated mandatory-field list for every stage, so check the asterisk markers on each live screen.

@@ -1,0 +1,19 @@
+# FAQ Chunk 24
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 6
+Section: Untitled section
+Question: Q021. Do I need to provide a reason for my appeal?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 75
+
+---
+
+## Untitled section
+
+Q021. Do I need to provide a reason for my appeal?
+
+Yes. The Second Appeal Details stage includes a Second Appeal Reason Type dropdown and a Second Appeal
+Reason text field. The manual directs users to select a reason type and enter the reason in words.

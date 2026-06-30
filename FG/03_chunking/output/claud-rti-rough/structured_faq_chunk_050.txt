@@ -1,0 +1,17 @@
+# FAQ Chunk 50
+Document: claud-rti-rough
+Source: structured.md
+Pages: 19
+Section: (3) नियुक्तिः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 30
+
+---
+
+## (3) नियुक्तिः
+
+- राज्य सरकार द्वारा नियुक्त ( राज्य मुख्य सचिव और अन्य निर्धारित अधिकारियों से परामर्श में)
+- केंद्रीय आयोग के समान पात्रता आवश्यकताएं

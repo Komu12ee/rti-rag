@@ -1,0 +1,24 @@
+# FAQ Chunk 91
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 23-24
+Section: Question: What RTI application details are required before entering First Appeal details?
+Question: प्रश्न 41. हिंदी प्रश्नोत्तर
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 161
+
+---
+
+## Question: What RTI application details are required before entering First Appeal details?
+
+प्रश्न 41. हिंदी प्रश्नोत्तर
+
+प्रश्नः प्रथम अपील विवरण भरने से पहले कौन॰से आरटीआई आवेदन विवरण आवश्यक हैं?
+
+उत्तरः RTI Application Details चरण में आरटीआई का विवरण ऑफलाइन आरटीआई आवेदन की तिथि और सूचना प्राप्त होने की स्थिति भरें| स्क्रीन में स्टार ( *) वाले फील्ड अनिवार्य बताए गए हैं| यह जानकारी पूरी होने के बाद First Appeal Office Details चरण में जाने के Next पर क्लिक करें| लिए
+
+समान हिंदी प्रश्नः "कृपया समझाएंःप्रथम अपील विवरण भरने से पहले कौन से आरटीआई आवेदन विवरण आवश्यक हैं "आरटीआई पोर्टल पर यह प्रक्रिया कैसे होती है ?"
+
+Manual reference मैनुअल संदर्भः Manual p. 8

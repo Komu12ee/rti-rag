@@ -1,0 +1,20 @@
+# FAQ Chunk 96
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 8
+Section: Q49 (English ). If the PIO entered wrong information before submission, what should be done ?
+Question: प्रश्न 49. (हिन्दी). यदि PIO ने सबमिशन पहले गलत जानकारी भर दी तो क्या करना चाहिए?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 83
+
+---
+
+## Q49 (English ). If the PIO entered wrong information before submission, what should be done ?
+
+प्रश्न 49. (हिन्दी). यदि PIO ने सबमिशन पहले गलत जानकारी भर दी तो क्या करना चाहिए?
+
+उत्तर. आवेदन में जानकारीं देखें यदि बदलाव को आवश्यकता हो तो वापस जाकर आवेदन को एडिट करें और फिर आवेदन जमा करें | प्री॰व्यू
+
+Source: Page 4

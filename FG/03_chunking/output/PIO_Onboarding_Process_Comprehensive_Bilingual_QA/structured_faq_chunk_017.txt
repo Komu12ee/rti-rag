@@ -1,0 +1,16 @@
+# FAQ Chunk 17
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 2
+Section: Q9 (English). What should the PIO do if the office does not exist?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 34
+
+---
+
+## Q9 (English). What should the PIO do if the office does not exist?
+
+Answer. If the office does not already exist, create a new office.

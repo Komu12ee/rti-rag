@@ -1,0 +1,22 @@
+# FAQ Chunk 206
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 34
+Section: (l0) Effectiveness:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 69
+
+---
+
+## (l0) Effectiveness:
+
+- Rules operationalize Act provisions
+- Enable practical implementation
+- Set clear procedures
+- Establish uniform standards
+- Ensure consistency across authorities
+
+The rule making power allows governments to adapt RTI implementation to ground realities while ensuring compliance with Act's core principles.

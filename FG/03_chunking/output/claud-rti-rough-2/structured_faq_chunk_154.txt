@@ -1,0 +1,19 @@
+# FAQ Chunk 154
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 25
+Section: (1) आयोग द्वारा दंड की सिफारिशः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 66
+
+---
+
+## (1) आयोग द्वारा दंड की सिफारिशः
+
+- बाधा के लिए 325,000 तक जुर्माना
+- जुर्माना और कारावास दोनों की सिफारिश कर सकते हैं
+- विनाश रोकने के 310,000 तक जुर्माना लिए
+- सरकार द्वारा अनुशासनात्मक कार्रवाई की सिफारिश कर सकते हैं

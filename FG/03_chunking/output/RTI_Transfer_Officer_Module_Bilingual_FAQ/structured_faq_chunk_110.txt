@@ -1,0 +1,20 @@
+# FAQ Chunk 110
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 11-12
+Section: Q60. What confirmation is shown after the FAO approves the request?
+Question: प्रश्न 60. द्वारा अनुरोध स्वीकृत करने के बाद कौन-सा पुष्टि संदेश दिखाई देता है? एफएओ
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 66
+
+---
+
+## Q60. What confirmation is shown after the FAO approves the request?
+
+प्रश्न 60. द्वारा अनुरोध स्वीकृत करने के बाद कौन-सा पुष्टि संदेश दिखाई देता है? एफएओ
+
+Source reference : Manual pp . 9-12
+
+उत्तरः के उदाहरण में Application approved successfully" संदेश दिखाई देता हैl मैनुअल

@@ -1,0 +1,18 @@
+# FAQ Chunk 46
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 12
+Section: Question: What is meant by selecting Appeal or Complaint in Second Appeal Details?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 133
+
+---
+
+## Question: What is meant by selecting Appeal or Complaint in Second Appeal Details?
+
+Answer: In the Second Appeal Details section, the user must choose the Second Appeal Relation as either Appeal or Complaint. The selected relation affects the workflow. In particular, the manual lists special conditions for Complaint: payment is not mandatory and supporting documents are optional. The user must also select a reason type and describe the reason in words.
+
+Similar English questions: "Please explain: What is meant by selecting Appeal or Complaint in Second Appeal Details "How is this handled on the RTI portal?"

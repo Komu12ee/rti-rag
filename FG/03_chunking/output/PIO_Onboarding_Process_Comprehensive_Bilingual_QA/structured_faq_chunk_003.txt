@@ -1,0 +1,20 @@
+# FAQ Chunk 3
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 1
+Section: Q1 (English). What is this PDF about?
+Question: प्रश्न 1. (हिन्दी). यह PDF किस विषय में है?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 77
+
+---
+
+## Q1 (English). What is this PDF about?
+
+प्रश्न 1. (हिन्दी). यह PDF किस विषय में है?
+
+उत्तर. यह PDF जन सूचना अधिकारी (PIOJ पंजीयन एवं ऑनबोर्डिंग, तथा नोडल स्वीकृति प्राधिकारीं और प्रथम अपीलीय अधिकारी एफ॰ए॰ओ. ) के पंजीयन सक्रियकरण से संबंधित है|
+
+Source: Page

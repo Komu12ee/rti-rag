@@ -1,0 +1,18 @@
+# FAQ Chunk 113
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 9
+Section: Q58 (English ). Does the document describe a separate registration form for the Nodal Authority?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 63
+
+---
+
+## Q58 (English ). Does the document describe a separate registration form for the Nodal Authority?
+
+sent to the e-mail ID entered during PIO onboarding
+
+Answer. No. It states that separate RTI portal registration is not required for the Nodal Approval Authority; the link is

@@ -1,0 +1,16 @@
+# FAQ Chunk 62
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 11
+Section: Q30 (English). What should 1 select for Second Appeal Relation?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 39
+
+---
+
+## Q30 (English). What should 1 select for Second Appeal Relation?
+
+Answer. The manual instructs the user to select either Appeal or Complaint under Second Appeal Relation.

@@ -1,0 +1,16 @@
+# FAQ Chunk 104
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 11
+Section: Q57. What happens when the current office charge includes both Nodal and FAO roles?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 55
+
+---
+
+## Q57. What happens when the current office charge includes both Nodal and FAO roles?
+
+Answer: The manual states that the name change is automatically approved and the name is changed when the current office charge includes both Nodal and First Appeal FAO charge.

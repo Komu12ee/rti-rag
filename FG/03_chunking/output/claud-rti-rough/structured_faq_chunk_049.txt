@@ -1,0 +1,17 @@
+# FAQ Chunk 49
+Document: claud-rti-rough
+Source: structured.md
+Pages: 19
+Section: (2) संरचनाः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 16
+
+---
+
+## (2) संरचनाः
+
+- एक राज्य मुख्य सूचना आयुक्त
+- दस तक राज्य सूचना आयुक्त

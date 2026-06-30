@@ -1,0 +1,16 @@
+# FAQ Chunk 1
+Document: claud-rti-rough
+Source: structured.md
+Pages: 1
+Section: All Sections with English & Hindi Definitions
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 36
+
+---
+
+## All Sections with English & Hindi Definitions
+
+Source: RTI Act, 2005 (Act No. 22 of 2005) with Chhattisgarh State Implementation Guidelines

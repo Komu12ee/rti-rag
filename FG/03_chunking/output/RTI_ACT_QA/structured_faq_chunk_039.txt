@@ -1,0 +1,19 @@
+# FAQ Chunk 39
+Document: RTI_ACT_QA
+Source: structured.md
+Pages: 17
+Section: First Appeal [Section 19(1)-(5)]:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 75
+
+---
+
+## First Appeal [Section 19(1)-(5)]:
+
+- To senior officer designated by state OR directly to State Information Commission if no senior officer designated
+- Must be filed within 30 days of PIO decision or deemed refusal
+- Senior officer must decide within 3O 45 days
+- Senior officer can direct disclosure, reduce fees, change access form

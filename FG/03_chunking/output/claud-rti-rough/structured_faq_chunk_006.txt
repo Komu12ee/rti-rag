@@ -1,0 +1,18 @@
+# FAQ Chunk 6
+Document: claud-rti-rough
+Source: structured.md
+Pages: 2
+Section: SECTION 3: RIGHTTO INFORMATION
+Question: Q3. What is the fundamental right granted to citizens under the RTI Act?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 184
+
+---
+
+## SECTION 3: RIGHTTO INFORMATION
+
+Q3. What is the fundamental right granted to citizens under the RTI Act?
+
+Answer Section 3 grants all citizens the fundamental right to information subject to the provisions of the RTI Act. This is the foundational provision establishing that "All citizens shall have the right to information " This right is not absolute and is subject to specific exemptions outlined in Sections 8 and 9. The right extends to information held by or under control of any public authority. It is a citizen's constitutional right designed to promote democracy by ensuring informed participation of citizens in governance, enabling them to understand governmental actions, policies, and decisions affecting them. The Act recognizes that an informed citizenry is vital for democracy to function properly and for containing corruption.

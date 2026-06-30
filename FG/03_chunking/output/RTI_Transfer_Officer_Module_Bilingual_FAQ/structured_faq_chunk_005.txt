@@ -1,0 +1,16 @@
+# FAQ Chunk 5
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 1
+Section: Q02. Who is the intended user of this manual?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 59
+
+---
+
+## Q02. Who is the intended user of this manual?
+
+Answer: The manual is intended for RTI Portal users working as Public Information Officer (PIOJ First Appellate Officer (FAOJ, Nodal Officer, and officers involved in handing over or taking over these roles.

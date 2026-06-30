@@ -1,0 +1,18 @@
+# FAQ Chunk 188
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 31
+Section: (2) Records Used as Evidenceः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 36
+
+---
+
+## (2) Records Used as Evidenceः
+
+- Commission may retain records if needed for reference
+- Must return original documents to authority
+- Certified copies retained by commission

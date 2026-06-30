@@ -1,0 +1,20 @@
+# FAQ Chunk 58
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 6
+Section: Q29. How can the receiving officer review an approved transfer?
+Question: प्रश्न 29. कार्यभार लेने वाला अधिकारी स्वीकृत स्थानांतरण की समीक्षा कैसे कर सकता है?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 83
+
+---
+
+## Q29. How can the receiving officer review an approved transfer?
+
+प्रश्न 29. कार्यभार लेने वाला अधिकारी स्वीकृत स्थानांतरण की समीक्षा कैसे कर सकता है?
+
+उत्तरः स्वीकृति के बाद जाने वाले कार्यभारों की सूची खोलें और संबंधित स्थानांतरण के View Details पर क्लिक करें| मैनुअल में सूची में स्थिति Approved दिखाई गई हैl लिए लिए
+
+Source reference : Manual pp . 5-6

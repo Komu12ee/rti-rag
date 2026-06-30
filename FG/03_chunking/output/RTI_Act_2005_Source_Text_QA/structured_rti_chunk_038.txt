@@ -1,0 +1,42 @@
+# RTI Legal Chunk 38
+Document: RTI_Act_2005_Source_Text_QA
+Input source: structured.md
+Input pages: 18-19
+Chapter: Chapter III - The Central Information Commission
+Question: Q. What is the source text of Section 12?
+Part: 2/2
+Kind: faq
+Has answer: yes
+Content tokens: 166
+Original source book: Unknown
+Source type: general
+Legal reference: Section 12
+Book pages: 21-22
+Source PDF pages: Unknown
+Citation: Unknown
+
+---
+
+## Chapter III - The Central Information Commission
+
+Legal reference: Section 12
+
+Q. What is the source text of Section 12?
+
+**Answer continued:**
+
+SOURCE-TEXT Q&A | THE RIGHT TO INFORMATION ACT, 2005
+mass media or administration and governance.
+(6) The Chief Information
+Commissioner or an Information
+Commissioner shall not be a Member
+of Parliament or Member of the
+Legislature of any State or Union territory, as the case may be, or hold
+any other office of profit or connected
+with any political party or carrying on
+any business or pursuing any profession.
+(7) The headquarters of the Central
+Information Commission shall be at
+Delhi and the Central Information Commission may, with the previous approval of the Central Government,
+establish offices at other places in India.
+—

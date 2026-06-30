@@ -1,0 +1,18 @@
+# FAQ Chunk 86
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 9
+Section: Q46. Does the manual say who must upload the file: the handing over officer or the takingover officer?
+Question: प्रश्न 46. क्या बताता है कि फाइल कौन अपलोड करेगाः कार्यभार देने वाला या कार्यभार लेने वाला अधिकारी? उत्तरः नहीं| मैनुअल अपलोड निर्देश में सामान्य शब्द " यूजर" का उपयोग करता हैl इसमें यह स्पष्ट नहीं है कि यह चरण दोनों में से किस अधिकारी द्वारा किया जाएगा| मैनुअल
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 101
+
+---
+
+## Q46. Does the manual say who must upload the file: the handing over officer or the takingover officer?
+
+प्रश्न 46. क्या बताता है कि फाइल कौन अपलोड करेगाः कार्यभार देने वाला या कार्यभार लेने वाला अधिकारी? उत्तरः नहीं| मैनुअल अपलोड निर्देश में सामान्य शब्द " यूजर" का उपयोग करता हैl इसमें यह स्पष्ट नहीं है कि यह चरण दोनों में से किस अधिकारी द्वारा किया जाएगा| मैनुअल
+
+Source reference : Manual pp . 7 8

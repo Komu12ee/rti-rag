@@ -1,0 +1,20 @@
+# FAQ Chunk 47
+Document: claud-rti-rough
+Source: structured.md
+Pages: 19
+Section: (5) Tenure Amended 2019):
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 113
+
+---
+
+## (5) Tenure Amended 2019):
+
+- As may be prescribed by State Government (previously 5 years)
+- (6) Powers: Same as Central Commission but limited to state entities
+- (7) In Chhattisgarh: The Chhattisgarh State Information Commission is headquartered at Naya Raipur ( North Block, Sector lo ) with offices across the state
+
+Example: The Chhattisgarh SIC is referenced extensively in the RTI Rule Book with notifications and procedural guidelines from various dates.

@@ -1,0 +1,17 @@
+# FAQ Chunk 61
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 10
+Section: (1) प्राधिकरणः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 21
+
+---
+
+## (1) प्राधिकरणः
+
+- राज्य सूचना आयोग (SIC)
+- केंद्रीय सूचना आयोग ( यदि केंद्रीय निकाय)

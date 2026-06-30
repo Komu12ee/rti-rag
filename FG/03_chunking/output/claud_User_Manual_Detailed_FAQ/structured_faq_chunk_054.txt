@@ -1,0 +1,26 @@
+# FAQ Chunk 54
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 10-11
+Section: Untitled section
+Question: Q051. Can I upload documents later?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 177
+
+---
+
+## Untitled section
+
+Q051. Can I upload documents later?
+
+Later-upload capability is not specified in the manual.
+The manual instructs users to upload documents at the Document Details step and then select Next to proceed to
+payment. It does not document a post-submission or post-payment upload procedure. Complete the relevant
+uploads before moving to payment unless the live portal explicitly provides a later-upload function.
+
+<!-- extraction_method: direct_text | confidence: 0.75 -->
+ADVANCED AND EDGE-CASE QUESTIONS
+Answers marked "Not specified" intentionally avoid assumptions beyond the source manual.
+Complex Scenarios

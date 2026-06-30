@@ -1,0 +1,28 @@
+# RTI Legal Chunk 71
+Document: RTI_Act_2005_Source_Text_QA
+Input source: structured.md
+Input pages: 34-36
+Chapter: Chapter VI - Miscellaneous
+Question: Q. What is the source text of Section 25?
+Part: 3/5
+Kind: faq
+Has answer: yes
+Content tokens: 38
+Original source book: Unknown
+Source type: general
+Legal reference: Section 25
+Book pages: 40-42
+Source PDF pages: Unknown
+Citation: Unknown
+
+---
+
+## Chapter VI - Miscellaneous
+
+Legal reference: Section 25
+
+Q. What is the source text of Section 25?
+
+**Answer continued:**
+
+the case may be, that the

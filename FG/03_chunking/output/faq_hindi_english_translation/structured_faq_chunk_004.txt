@@ -1,0 +1,23 @@
+# FAQ Chunk 4
+Document: faq_hindi_english_translation
+Source: structured.md
+Pages: 1
+Section: Untitled section
+Question: Question 3. What is the time limit for receiving information?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 175
+
+---
+
+## Untitled section
+
+Question 3. What is the time limit for receiving information?
+
+Answer: Subject to the proviso to sub-section (2) of Section 5 or the proviso to sub-section (3) of Section 6, upon receipt of a
+request under Section 6, the Central Public Information Officer or the State Public Information Officer, as the case may be, shall, as
+expeditiously as possible and in any case within thirty days of receipt of the request, on payment of such fee as may be prescribed,
+either provide the information or reject the request for any of the reasons specified in Sections 8 and 9: Provided that, where the
+information sought concerns the life or liberty of a person, it shall be made available within forty-eight hours of receipt of the
+request.

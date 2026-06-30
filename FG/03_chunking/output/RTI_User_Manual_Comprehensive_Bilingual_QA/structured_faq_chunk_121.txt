@@ -1,0 +1,16 @@
+# FAQ Chunk 121
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 19
+Section: Implementation note for a chatbot
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 67
+
+---
+
+## Implementation note for a chatbot
+
+Use each question answer as a standalone retrieval item. Keep the question, answer, section title, and source page together in the chunk metadata. For factual portal workflow questions, return the answer directly rather than generating unsupported legal or procedural advice. pair

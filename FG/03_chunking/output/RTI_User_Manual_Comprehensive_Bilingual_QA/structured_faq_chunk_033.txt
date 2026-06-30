@@ -1,0 +1,24 @@
+# FAQ Chunk 33
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 6
+Section: Question: How long should the portal password be and what characters are required ?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 186
+
+---
+
+## Question: How long should the portal password be and what characters are required ?
+
+Answer: The password must contain at least 8 characters, including at least one lowercase letter , one uppercase letter , and one special character.
+
+Source: RTI User Manual, Printed page 4.
+
+प्रश्नः आरटीआई यूज़र मैनुअल में पासवर्ड के क्या नियम बताए गए हैं?
+
+उत्तरः पासवर्ड में कम से कम 8 अक्षर होने चाहिए, जिनमें कम से कम एक छोटा अक्षर, एक बड़ा अक्षर और एक विशेष वर्ण होना Source: RTI Manual, Printed page 4. चाहिए| User
+
+प्रश्नः पोर्टल पासवर्ड की लंबाई कितनी होनी चाहिए और कौन॰कौन से अक्षर आवश्यक हैं? उत्तरः पासवर्ड में कम से कम 8 अक्षर होने चाहिए, जिनमें कम से कम एक छोटा अक्षर, एक बड़ा अक्षर और एक विशेष वर्ण होना चाहिए| Source: RTI Manual, Printed page 4. User

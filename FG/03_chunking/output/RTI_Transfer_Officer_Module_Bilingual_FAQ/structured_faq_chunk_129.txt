@@ -1,0 +1,20 @@
+# FAQ Chunk 129
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 13-14
+Section: Q70. What should be checked before submitting any transfer or name change request?
+Question: प्रश्न 70. किसी भी स्थानांतरण या नाम परिवर्तन अनुरोध को सबमिट करने से पहले क्या जांचना चाहिए?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 115
+
+---
+
+## Q70. What should be checked before submitting any transfer or name change request?
+
+प्रश्न 70. किसी भी स्थानांतरण या नाम परिवर्तन अनुरोध को सबमिट करने से पहले क्या जांचना चाहिए?
+
+उत्तरः चुना गया कार्यभार, कार्यभार लेने वाले अधिकारी की पहचान, ईमेल विकल्प ( अलग ईमेल या ईमेल), पदनाम और मोबाइल विवरण जांचें| यह व्यावहारिक नियंत्रण है क्योंकि मैनुअल में सबमिशन के बाद सुधार या रोलबैक प्रक्रिया नहीं दी गई हैI मौजूदा
+
+Source reference : Manual pp . 3-12

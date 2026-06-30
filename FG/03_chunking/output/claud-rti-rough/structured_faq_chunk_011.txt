@@ -1,0 +1,32 @@
+# FAQ Chunk 11
+Document: claud-rti-rough
+Source: structured.md
+Pages: 5
+Section: SECTION 6: PROCEDURE FOR REQUESTING INFORMATION
+Question: Q6. What is the procedure and format for an RTI application? filing
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 338
+
+---
+
+## SECTION 6: PROCEDURE FOR REQUESTING INFORMATION
+
+Q6. What is the procedure and format for an RTI application? filing
+
+Answer Section 6 establishes the procedure for requesting information:
+
+- (1) Applicant Eligibility: Any person (citizen or otherwise) desiring to obtain information under the Act make a request. may
+- (2) Application Format [Section 6(1 ) ]: Request must be:
+- In writing or through electronic means
+- In English, Hindi, or the official language of the area where application is made
+- Accompanied by prescribed fee ( typically 310 per application)
+- Addressed to the CPIOISPIO of concerned public authority OR to CAPIOISAPIO
+- (3) Required Information: The applicant must specify the particulars of the information sought. The provision states that where such request cannot be made in writing the PIO shall provide reasonable assistance to the person to reduce it into writing
+- (4) Applicant Confidentiality [Section 6(2)]: An applicant is not required toः
+- Give any reason for requesting information
+- Provide personal details except those necessary for contacting them
+- (5) Transfer ofApplications [Section 6(3) ]: When an application is made to a public authority and the information:
+- Is held by another public authority OR
+- Subject matter is more closely connected to another authorityis functions Then the receiving authority must transfer the application to the appropriate authority as soon as practicable, but in no case later than 5 days from receipt. The applicant must be informed immediately of the transfer.

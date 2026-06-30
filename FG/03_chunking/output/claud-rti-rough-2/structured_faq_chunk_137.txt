@@ -1,0 +1,19 @@
+# FAQ Chunk 137
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 22
+Section: (6) दंड के प्रकारः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 60
+
+---
+
+## (6) दंड के प्रकारः
+
+- मौद्रिकः निर्दिष्ट जुर्माना
+- कारावासः कारावास की अवधि
+- अनुशासनात्मकः निलंबन, पदावनति, बर्खास्तगी
+- मुआवजाः नुकसान के लिए हर्जाना

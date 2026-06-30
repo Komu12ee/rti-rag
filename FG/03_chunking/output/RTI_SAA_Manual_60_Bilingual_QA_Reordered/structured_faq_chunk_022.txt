@@ -1,0 +1,18 @@
+# FAQ Chunk 22
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 6
+Section: Question: What should I do on the User Registration General Information screen before filling the form?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 115
+
+---
+
+## Question: What should I do on the User Registration General Information screen before filling the form?
+
+Answerः Read the listed registration instructions, tick the declaration confirming that you have read them carefully and then click Next. The manual presents this acknowledgement before the data-entry form. It is therefore the required gateway from the information screen to the registration form.
+
+Similar English questions: "Please explain: What should I do on the User Registration General Information screen before filling the form "How is this handled on the RTI portal?"

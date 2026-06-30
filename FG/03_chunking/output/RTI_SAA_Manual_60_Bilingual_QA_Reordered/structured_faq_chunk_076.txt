@@ -1,0 +1,18 @@
+# FAQ Chunk 76
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 19
+Section: Question: What is the role of the Second Appeal Reason Type dropdown?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 115
+
+---
+
+## Question: What is the role of the Second Appeal Reason Type dropdown?
+
+Answer: In Second Appeal Details, the user must choose a reason type from the available options and then enter the reason for appeal in words. The dropdown standardizes the category, while the text field lets the applicant explain the specific reason. The manual does not supply standard legal wording for the explanation.
+
+Similar English questions: "Please explain: What is the role of the Second Appeal Reason Type dropdown "How is this handled on the RTI portal?"

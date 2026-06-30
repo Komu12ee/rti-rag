@@ -1,0 +1,22 @@
+# FAQ Chunk 87
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 9
+Section: Q47. Can the upload be completed before the receiving officer approves the transfer?
+Question: प्रश्न 47. क्या कार्यभार लेने वाले अधिकारी की स्वीकृति से पहले फाइल अपलोड की जा सकती है?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 144
+
+---
+
+## Q47. Can the upload be completed before the receiving officer approves the transfer?
+
+प्रश्न 47. क्या कार्यभार लेने वाले अधिकारी की स्वीकृति से पहले फाइल अपलोड की जा सकती है?
+
+Answer: The documented sequence is approval first, then transfer status display, relieving letter generation, printing and upload. The manual does not show an upload path before approval.
+
+उत्तरः मैनुअल की बताई गई क्रमवार प्रक्रिया में पहले स्वीकृति, फिर स्थानांतरण स्थिति, रिलिविंग लेटर बनाना, प्रिंट करना और अपलोड करना आता है स्वीकृति से पहले अपलोड की कोई प्रक्रिया मैनुअल में नहीं दिखाई गई हैl
+
+Source reference : Manual pp . 7 8

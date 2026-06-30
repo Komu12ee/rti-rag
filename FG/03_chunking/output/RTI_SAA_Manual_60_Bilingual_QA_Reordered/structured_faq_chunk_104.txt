@@ -1,0 +1,24 @@
+# FAQ Chunk 104
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 26-27
+Section: Question: How should 1 record the information received status?
+Question: प्रश्न 48. हिंदी प्रश्नोत्तर
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 145
+
+---
+
+## Question: How should 1 record the information received status?
+
+प्रश्न 48. हिंदी प्रश्नोत्तर
+
+प्रश्नः सूचना प्राप्त होने की स्थिति कैसे दर्ज करनी चाहिए?
+
+उत्तरः RTI Application Details पेज में Information received ड्रॉपडाउन है| ऑफलाइन RTI आवेदन के सूचना प्राप्त होने वास्तविक स्थिति को दर्शाने वाला विकल्प चुनें| मैनुअल दिखाता है कि यह फॉर्म का भाग है, लेकिन हर संभावित विकल्प का अर्थ या कानूनी प्रभाव नहीं समझाता| लिए
+
+समान हिंदी प्रश्नः "कृपया समझाएंःसूचना प्राप्त होने की स्थिति कैसे दर्ज करनी चाहिए "आरटीआई पोर्टल पर यह प्रक्रिया कैसे होती है?"
+
+Manual reference मैनुअल संदर्भः Manual p. 8

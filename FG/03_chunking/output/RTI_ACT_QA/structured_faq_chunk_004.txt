@@ -1,0 +1,24 @@
+# FAQ Chunk 4
+Document: RTI_ACT_QA
+Source: structured.md
+Pages: 1-2
+Section: SECTION 2: DEFINITIONS
+Question: Q2. What are the key definitions provided in Section 2 of the RTI Act, particularly "Appropriate Government"?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 305
+
+---
+
+## SECTION 2: DEFINITIONS
+
+Q2. What are the key definitions provided in Section 2 of the RTI Act, particularly "Appropriate Government"?
+
+Answerः Section 2 provides comprehensive definitions of 19 key terms essential for implementing the RTI Act. "Appropriate Government" meansः
+
+- In relation to a public authority which is established or constituted by, or under the Constitution, an Act of Parliament or a Proclamation issued under Article 356 of the Constitution, the Central Government
+- In relation to a public authority established or constituted by, or under, a law made by State Legislature or a Proclamation issued under Article 356 by the Governor of a State, the State Government
+- In relation to a public authority (other than the Central Government or a State Government ) which is not established or constituted as mentioned above, the Central Government or the State Government, whichever is appropriate
+
+Other critical definitions include: "Central Information Commission" (apex body for appeals), " Central Public Information Officer" (CPIO), "Information" ( records and material in any form), "Public Authority" (any body established by Constitution, Parliament, State Legislature, or Government), "Right to Information" (right to inspect, take certified copies, obtain samples, and electronic formats), "State Information Commission" (state level appellate authority), and "Third Party" (any person other than the seeker).

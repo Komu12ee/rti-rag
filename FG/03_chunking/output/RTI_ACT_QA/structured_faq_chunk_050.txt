@@ -1,0 +1,27 @@
+# FAQ Chunk 50
+Document: RTI_ACT_QA
+Source: structured.md
+Pages: 19-20
+Section: SECTION 22: EXEMPTION TO INTELLIGENCE AGENCIES
+Question: Q22. Are intelligence agencies exempted from RTI Act under Section 22?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 162
+
+---
+
+## SECTION 22: EXEMPTION TO INTELLIGENCE AGENCIES
+
+Q22. Are intelligence agencies exempted from RTI Act under Section 22?
+
+Answer Section 22 provides limited exemptions to specified intelligence agencies including Intelligence Bureau (IB), Central Bureau of Investigation ( CBI), and other agencies specified by Central Government. However this is NOTa complete exemption:
+
+- These agencies must still comply with RTI Act to some extent
+- Requests are still processed with exemptions applied under Section 8
+- Appeals still available
+- Routine administrative information cannot be withheld
+- Corruption cannot be covered by this exemption
+- Subject to Section 8(2) public interest override
+
+The exemption recognizes national security needs while maintaining some transparency requirements

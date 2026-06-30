@@ -1,0 +1,18 @@
+# FAQ Chunk 97
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 16
+Section: (3) सीमाएंः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 58
+
+---
+
+## (3) सीमाएंः
+
+- तथ्यात्मक निष्कर्षों पर आयोग के विचार के अपना विचार प्रतिस्थापित नहीं कर सकता लिए
+- जब तक स्पष्ट रूप से विपरीत न हो तब तक गुणावली में हस्तक्षेप नहीं कर सकता
+- RTI अपीलों को समाप्त करने के बाद ही अंतिम समाधान का मंच

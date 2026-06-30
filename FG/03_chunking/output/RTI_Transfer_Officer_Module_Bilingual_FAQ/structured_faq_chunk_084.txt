@@ -1,0 +1,20 @@
+# FAQ Chunk 84
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 9
+Section: Q45. What is the Certificate of Transfer of Charge?
+Question: प्रश्न 45. कार्यभार स्थानांतरण प्रमाणपत्र क्या है?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 93
+
+---
+
+## Q45. What is the Certificate of Transfer of Charge?
+
+प्रश्न 45. कार्यभार स्थानांतरण प्रमाणपत्र क्या है?
+
+उत्तरः यह पोर्टल द्वारा अपलोड चरण के बाद दिखाया जाने वाला प्रमाणपत्र है| इसमें दर्ज होता है कि सूचीबद्ध कार्यभार दिया गया और लिया गया है, साथ ही कार्यालय का नाम, कार्यभार प्रकार, कार्यभार देने की तिथि और दोनों अधिकारियों का विवरण | हस्ताक्षर होते हैं|
+
+Source reference : Manual pp . 7 8

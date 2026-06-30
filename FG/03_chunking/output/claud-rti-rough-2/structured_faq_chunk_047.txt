@@ -1,0 +1,18 @@
+# FAQ Chunk 47
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 8
+Section: (4) Application Format:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 36
+
+---
+
+## (4) Application Format:
+
+- Prescribed form (detailed in Rule Book pages 183-185)
+- Comprehensive statement of case
+- Enclose of all orders copies

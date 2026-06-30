@@ -1,0 +1,16 @@
+# FAQ Chunk 38
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 8
+Section: Q18 (English). Where can [ find the second appeal option after logging in?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 55
+
+---
+
+## Q18 (English). Where can [ find the second appeal option after logging in?
+
+Answer. The manual shows it on the user dashboard, under the area for offline applications before the PIO and FAO. Select the button for applying for a second appeal.

@@ -1,0 +1,24 @@
+# FAQ Chunk 79
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 20
+Section: Question: Does the manual decide whether 1 should choose Appeal or Complaint?
+Question: प्रश्न 36. हिंदी प्रश्नोत्तर
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 176
+
+---
+
+## Question: Does the manual decide whether 1 should choose Appeal or Complaint?
+
+प्रश्न 36. हिंदी प्रश्नोत्तर
+
+प्रश्नः क्या मैनुअल तय करता है कि मुझे Appeal या Complaint में क्या चुनना चाहिए?
+
+उत्तरः नहीं | मैनुअल बताता है कि Second Appeal Relation में Appeal या Complaint चुनना है, लेकिन यह तय करने के कानूनी मानदंड नहीं देता कि कौन-सा विकल्प यह केवल Complaint के पोर्टल परिणाम बताता हैः भुगतान अनिवार्य नहीं है और सहायक दस्तावेज वैकल्पिक हैं| लागू है| लिए
+
+समान हिंदी प्रश्नः "्कृपया समझाएंःक्या मैनुअल तय करता है कि मुझे Appeal या Complaint में क्या चुनना चाहिए II . "आरटीआई पोर्टल पर यह प्रक्रिया कैसे होती है ? "
+
+Manual reference मैनुअल संदर्भः Manual pp. 6-7

@@ -1,0 +1,28 @@
+# FAQ Chunk 26
+Document: claud-rti-rough
+Source: structured.md
+Pages: 13-14
+Section: SECTION ll: THIRD PARTY INFORMATION
+Question: Q11. What is the procedure when information relates to or has been supplied by a third party?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 507
+
+---
+
+## SECTION ll: THIRD PARTY INFORMATION
+
+Q11. What is the procedure when information relates to or has been supplied by a third party?
+
+Answerः Section 1l protects the interests of third parties when their information is being considered for disclosure:
+
+- (1) Third Party Notice Requirement [Section 11 (1 ) ]: Where a CPIO SPIO intends to disclose any information or record, or part thereof on a request made under the Act, which relates to or has been supplied by a third party and has been treated as confidential by that third party the CPIOISPIO shall, within five days from the receipt of the request, give written notice to such third party of the request and the fact that the authority intends to disclose the information or record or part thereof, and invite the third party to make a submission in writing or orally regarding whether the information should be disclosed. Such submission of the third party shall be kept in view while taking a decision about disclosure of information.
+
+Exception: Except in the case of trade or commercial secrets protected by law, disclosure may be allowed if the public interest in disclosure outweighs in importance any possible harm or injury to the interests of such third party
+
+- (2) Third Party Representation Opportunity [Section 11 (2) ]: Where a notice is served to a third party under sub section (l), the third party shall, within ten days from the date of receipt of such notice, be given the opportunity to make representation against the proposed disclosure.
+- (3) Disclosure Decision [Section 11 (3) ]: Notwithstanding anything contained in Section 7, the CPIOISPIO shall, within forty days after receipt of the request under Section 6, if the third party has been given an opportunity to make representation under sub section (2) , make a decision as to whether or not to disclose the information or record or part thereof and give in writing the notice of his decision to the third party.
+- (4) Appeal Rights for Third Party [Section 11 ( 4 ) ]: A notice given under sub section (3) shall include a statement that the third party to whom the notice is given is entitled to prefer an appeal under Section 19 against the decision.
+
+This protects the legitimate interests of third parties whose confidential information is held by public authorities

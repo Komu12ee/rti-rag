@@ -1,0 +1,21 @@
+# FAQ Chunk 19
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 5
+Section: Untitled section
+Question: Q016. How much does the Second Appeal application cost?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 118
+
+---
+
+## Untitled section
+
+Q016. How much does the Second Appeal application cost?
+
+The fee-selection rule is not specified in the manual.
+The payment screen shown in the manual contains two selectable fee options: Rs. 100 and Rs. 125. The manual
+does not explain which option applies to which type of filing, nor does it state that one fixed price applies to
+every Second Appeal. Select only the option the live portal identifies as applicable to your filing.

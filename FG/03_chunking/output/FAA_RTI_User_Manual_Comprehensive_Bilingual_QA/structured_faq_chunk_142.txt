@@ -1,0 +1,16 @@
+# FAQ Chunk 142
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 22
+Section: Q70 (English). What should 1 do if  have received the account verification email?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 48
+
+---
+
+## Q70 (English). What should 1 do if  have received the account verification email?
+
+Answer. Open the link in the registered email, use the email as the login ID, create a compliant password, and click Create.

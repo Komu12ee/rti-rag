@@ -1,0 +1,21 @@
+# FAQ Chunk 47
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 9
+Section: Untitled section
+Question: Q044. What details are needed for the First Appeal Office?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 113
+
+---
+
+## Untitled section
+
+Q044. What details are needed for the First Appeal Office?
+
+The First Appeal Office Details screen uses State, District, Base Department, Office Level, Office Name, and Officer
+Name dropdowns. If the office or officer is not listed, use the blue link to enter manual details. The manual-entry
+screen shows officer name, designation, mobile, office name, office address, district, base department, and sub-
+department name.

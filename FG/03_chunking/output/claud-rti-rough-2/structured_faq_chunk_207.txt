@@ -1,0 +1,18 @@
+# FAQ Chunk 207
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 34
+Section: (l0) Effectiveness:
+Question: प्रश्न 28. RTI अधिनियम के तहत नियम बनाने की शक्ति क्या है?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 35
+
+---
+
+## (l0) Effectiveness:
+
+प्रश्न 28. RTI अधिनियम के तहत नियम बनाने की शक्ति क्या है?
+
+उत्तरः धारा 28 व्यापक नियम बनाने का प्राधिकार स्थापित करती हैः

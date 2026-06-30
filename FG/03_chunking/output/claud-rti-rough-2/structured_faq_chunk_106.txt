@@ -1,0 +1,18 @@
+# FAQ Chunk 106
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 17
+Section: (3) Limited NOT Complete Exemption:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 45
+
+---
+
+## (3) Limited NOT Complete Exemption:
+
+- These agencies must still comply with RTI Act to some extent
+- Not completely exempt from all RTI provisions
+- Information can be requested but exemption may be applied

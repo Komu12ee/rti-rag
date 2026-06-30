@@ -1,0 +1,16 @@
+# FAQ Chunk 119
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 10
+Section: Q61 (English). What should a chatbot answer when asked about mandatory files?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 44
+
+---
+
+## Q61 (English). What should a chatbot answer when asked about mandatory files?
+
+Answer. It should say that the PIO order file and signed application file are mandatory for completing onboarding.

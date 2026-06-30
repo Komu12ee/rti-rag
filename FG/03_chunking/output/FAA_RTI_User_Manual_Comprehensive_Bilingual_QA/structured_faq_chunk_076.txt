@@ -1,0 +1,16 @@
+# FAQ Chunk 76
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 12
+Section: Q37 (English). Can 1 continue without entering BPL document details after choosing Yes?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 48
+
+---
+
+## Q37 (English). Can 1 continue without entering BPL document details after choosing Yes?
+
+Answer. No. The manual states that entering BPL details for a BPL card holder is mandatory to process the application further.

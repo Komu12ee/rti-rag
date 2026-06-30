@@ -1,0 +1,19 @@
+# FAQ Chunk 10
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 4
+Section: Untitled section
+Question: Q007. Where do I find the "User Registration" button?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 75
+
+---
+
+## Untitled section
+
+Q007. Where do I find the "User Registration" button?
+
+The button is on the RTI portal home page in the login panel, below the login fields. The manual screenshot
+highlights it as User Registration in the lower part of the sign-in area.

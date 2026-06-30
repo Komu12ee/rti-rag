@@ -1,0 +1,16 @@
+# FAQ Chunk 19
+Document: RTI_PIO_Manual_30_Bilingual_QA
+Source: structured.md
+Pages: 4
+Section: Question (English): What should I do if the portal confirms registration but my account is not usable? yet
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 122
+
+---
+
+## Question (English): What should I do if the portal confirms registration but my account is not usable? yet
+
+Answer (English): Follow the email verification step. The registration confirmation asks the user to check email and verify the account. Open the link received at the registered email, create the password using the stated rules, and wait for the successful-credentials confirmation. If the verification email is unavailable, the manual does not provide a troubleshooting procedure; use the portal's available support or contact options rather than assuming the account is active.

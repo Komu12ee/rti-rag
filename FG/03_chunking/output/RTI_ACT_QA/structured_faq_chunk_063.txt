@@ -1,0 +1,19 @@
+# FAQ Chunk 63
+Document: RTI_ACT_QA
+Source: structured.md
+Pages: 24
+Section: Chhattisgarh Rules:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 70
+
+---
+
+## Chhattisgarh Rules:
+
+- RTI ( Application Submission) Rules, 2009
+- RTI ( Fees and Charges) Regulations, 2005 (amended 2006, 2012, 2013)
+- RTI (Appeals) Rules, 2006 (with amendments 2006, 2011 )
+- Various departmental guidelines and circulars

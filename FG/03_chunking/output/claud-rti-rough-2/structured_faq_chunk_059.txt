@@ -1,0 +1,18 @@
+# FAQ Chunk 59
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 10
+Section: (5) निर्णय की समय सीमा [धारा 19(3)]:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 47
+
+---
+
+## (5) निर्णय की समय सीमा [धारा 19(3)]:
+
+- अपीलीय अधिकारी को प्राप्ति के 30 45 दिनों के भीतर निर्णय लेना चाहिए
+- कारणों के साथ लिखित आदेश पास करना चाहिए
+- आवेदनकर्ता को निर्णय से अवगत कराएं

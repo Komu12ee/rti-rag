@@ -1,0 +1,16 @@
+# FAQ Chunk 48
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 4
+Section: Q25 (English ). Is the PIO e-mail required to be valid and active?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 36
+
+---
+
+## Q25 (English ). Is the PIO e-mail required to be valid and active?
+
+Answer. Yes. The e-mail ID provided must be valid and active

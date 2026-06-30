@@ -1,0 +1,24 @@
+# FAQ Chunk 45
+Document: claud-rti-rough
+Source: structured.md
+Pages: 18-19
+Section: (2) Composition:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 61
+
+---
+
+## (2) Composition:
+
+- One State Chief Information Commissioner
+- Up to ten State Information Commissioners
+- (3) Appointment:
+
+
+
+
+- Appointed by the State Government (in consultation with State Chief Secretary and other prescribed officials as per rules)
+- Similar eligibility requirements as Central Commission

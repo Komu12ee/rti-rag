@@ -1,0 +1,23 @@
+# FAQ Chunk 215
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 35-36
+Section: (8) छत्तीसगढ़ मेंः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 55
+
+---
+
+## (8) छत्तीसगढ़ मेंः
+
+- राज्य सरकार द्वारा जारी नियम
+- छत्तीसगढ़ राजपत्रिकीय में प्रकाशित
+
+
+
+
+- विभागीय आदेश परिपत्र भी जारी किए जाते हैं
+- RTI नियम पुस्तक सभी नियमों को संकलित करती है ( संपूर्ण नियमों के लिए पृष्ठ 61 174 देखें )

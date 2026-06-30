@@ -1,0 +1,21 @@
+# FAQ Chunk 64
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 12
+Section: Untitled section
+Question: Q061. What reason types can I select for a Complaint?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 94
+
+---
+
+## Untitled section
+
+Q061. What reason types can I select for a Complaint?
+
+Complaint reason-type options are not specified.
+Choose from the reason-type dropdown shown by the portal. The manual says to select a reason type but does
+not list reason types, and it does not identify a separate Complaint-only set of reason codes.
+Payment Edge Cases

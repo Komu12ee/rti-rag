@@ -1,0 +1,21 @@
+# FAQ Chunk 32
+Document: RTI_ACT_QA
+Source: structured.md
+Pages: 15
+Section: under Section 161
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 116
+
+---
+
+## under Section 161
+
+Answer: Section 16 specifies that the State Chief Information Commissioner shall be a person who eitherः
+
+- Has held office equivalent to Secretary to State Government, OR
+- Has held office of Judge of High Court
+
+State Information Commissioners shall be persons with domain expertise in law, management, or social and political affairs. Appointment is made by the State Government in consultation with prescribed officials. Like the CIC, the 2019 Amendment made the tenure flexible to be prescribed by State Government instead of fixed five years.

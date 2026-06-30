@@ -1,0 +1,20 @@
+# FAQ Chunk 114
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 12
+Section: Q62. Can the name change workflow update the mobile number and designation too?
+Question: प्रश्न 62. क्या नाम परिवर्तन की प्रक्रिया में मोबाइल नंबर और पदनाम भी अपडेट जा सकते हैं? किए
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 93
+
+---
+
+## Q62. Can the name change workflow update the mobile number and designation too?
+
+प्रश्न 62. क्या नाम परिवर्तन की प्रक्रिया में मोबाइल नंबर और पदनाम भी अपडेट जा सकते हैं? किए
+
+उत्तरः फॉर्म में नया नाम, मोबाइल नंबर और पदनाम भरने का निर्देश हैl इसलिए मैनुअल इन्हें नाम परिवर्तन में जमा किए जाने वाले विवरणों के रूप में शामिल करता हैl अनुरोध अनुरोध
+
+Source reference : Manual pp . 9-1 2

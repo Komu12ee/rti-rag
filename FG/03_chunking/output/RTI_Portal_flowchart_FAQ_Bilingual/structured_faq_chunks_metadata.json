@@ -1,0 +1,113 @@
+{
+  "document": "structured.md",
+  "document_name": "RTI_Portal_flowchart_FAQ_Bilingual",
+  "source_path": "..\\01_preprocessing\\stage2_output\\mannuals\\RTI_Portal_flowchart_FAQ_Bilingual\\structured.md",
+  "chunking_method": "bilingual_faq_rule_based",
+  "supported_languages": [
+    "Hindi",
+    "English"
+  ],
+  "rules": {
+    "question_start": "Hindi: प्रश्न N; English: Question N",
+    "answer_marker": "Hindi: उत्तरः/उत्तर:; English: Answer:",
+    "boundary": "next FAQ question, next major H1/H2 heading, or document end",
+    "answer_preserved": true,
+    "page_tracking": "exact source page markers: <!-- Page N -->"
+  },
+  "max_content_tokens": 512,
+  "tokenizer_model": "BAAI/bge-m3",
+  "token_count_mode": "tokenizer",
+  "source_faq_blocks": 0,
+  "source_section_notes": 5,
+  "faq_blocks_without_answer_marker": [],
+  "total_chunks": 5,
+  "chunks": [
+    {
+      "index": 1,
+      "filename": "structured_faq_chunk_001.txt",
+      "section": "RTI PORTAL ONBOARDING FLOWCHART",
+      "question": "",
+      "pages": [
+        1
+      ],
+      "page_range": "1",
+      "source_block_ordinal": 1,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": false,
+      "content_tokens": 24
+    },
+    {
+      "index": 2,
+      "filename": "structured_faq_chunk_002.txt",
+      "section": "Scope and reading note",
+      "question": "",
+      "pages": [
+        1
+      ],
+      "page_range": "1",
+      "source_block_ordinal": 2,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": false,
+      "content_tokens": 121
+    },
+    {
+      "index": 3,
+      "filename": "structured_faq_chunk_003.txt",
+      "section": "Question groups",
+      "question": "",
+      "pages": [
+        1,
+        2
+      ],
+      "page_range": "1-2",
+      "source_block_ordinal": 3,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": false,
+      "content_tokens": 60
+    },
+    {
+      "index": 4,
+      "filename": "structured_faq_chunk_004.txt",
+      "section": "B. PIO registration and account activation",
+      "question": "",
+      "pages": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "page_range": "2-6",
+      "source_block_ordinal": 4,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": false,
+      "content_tokens": 21
+    },
+    {
+      "index": 5,
+      "filename": "structured_faq_chunk_005.txt",
+      "section": "D. Nodal Officer and First Appellate Officer approvals",
+      "question": "",
+      "pages": [
+        6,
+        7,
+        8
+      ],
+      "page_range": "6-8",
+      "source_block_ordinal": 5,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": false,
+      "content_tokens": 26
+    }
+  ]
+}

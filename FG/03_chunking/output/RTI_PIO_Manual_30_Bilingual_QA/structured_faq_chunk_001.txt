@@ -1,0 +1,18 @@
+# FAQ Chunk 1
+Document: RTI_PIO_Manual_30_Bilingual_QA
+Source: structured.md
+Pages: 1-2
+Section: English and Hindi
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 50
+
+---
+
+## English and Hindi
+
+Prepared from the uploaded RTI (Right to Information) User Manual.
+
+Scope: procedural portal guidance only. It is not a substitute for legal advice, statutory rules, or live instructions. portal

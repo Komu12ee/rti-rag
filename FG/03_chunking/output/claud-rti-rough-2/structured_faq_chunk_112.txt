@@ -1,0 +1,18 @@
+# FAQ Chunk 112
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 18
+Section: (8) Transparency Within Limits:
+Question: प्रश्न 22. क्या खुफिया और सुरक्षा एजेंसियां RTI अधिनियम के अनुपालन से exempt हैं?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 52
+
+---
+
+## (8) Transparency Within Limits:
+
+प्रश्न 22. क्या खुफिया और सुरक्षा एजेंसियां RTI अधिनियम के अनुपालन से exempt हैं?
+
+उत्तरः धारा 22 खुफिया और सुरक्षा एजेंसियों के लिए सीमित छूट प्रदान करती हैः

@@ -1,0 +1,16 @@
+# FAQ Chunk 40
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 8
+Section: Q19 (English). What should 1 do when the RTI application instructions are displayed?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 52
+
+---
+
+## Q19 (English). What should 1 do when the RTI application instructions are displayed?
+
+Answer. Read the instructions before proceeding tick the confirmation box, and click Next. The manual treats this as the first stage of the application flow.

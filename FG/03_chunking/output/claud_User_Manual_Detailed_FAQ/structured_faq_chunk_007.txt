@@ -1,0 +1,19 @@
+# FAQ Chunk 7
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 3
+Section: Untitled section
+Question: Q004. What is the login ID for the RTI portal?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 62
+
+---
+
+## Untitled section
+
+Q004. What is the login ID for the RTI portal?
+
+The login ID is the registered email address. The manual explicitly instructs the user to enter the email as the
+Log-in Id during password creation.

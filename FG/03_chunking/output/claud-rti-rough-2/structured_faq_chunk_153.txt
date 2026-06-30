@@ -1,0 +1,18 @@
+# FAQ Chunk 153
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 24-25
+Section: (0) Effectiveness:
+Question: प्रश्न 24. सूचना आयोग कौन से दंड की सिफारिश कर सकता है और उनको कैसे लागू किया जाता है?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 56
+
+---
+
+## (0) Effectiveness:
+
+प्रश्न 24. सूचना आयोग कौन से दंड की सिफारिश कर सकता है और उनको कैसे लागू किया जाता है?
+
+उत्तरः धारा 24 धारा 23 के दंडों को विस्तारित करती है और आयोग-विशिष्ट प्रवर्तन जोड़ती हैः

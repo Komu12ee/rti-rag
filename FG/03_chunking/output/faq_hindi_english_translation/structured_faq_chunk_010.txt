@@ -1,0 +1,23 @@
+# FAQ Chunk 10
+Document: faq_hindi_english_translation
+Source: structured.md
+Pages: 4
+Section: Untitled section
+Question: Question 2. What is the application fee for a second appeal?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 135
+
+---
+
+## Untitled section
+
+Question 2. What is the application fee for a second appeal?
+
+Answer: On submitting a second appeal under Section 19(1), the applicant may deposit Rs. 100/- (one hundred rupees) as an
+application fee through a treasury challan, cash, non-judicial stamp, e-stamp, money order, demand draft, banker’s cheque, or postal
+order.
+If a copy of the second appeal order is required by registered post, the applicant shall have to pay an additional Rs. 25/- (twenty-five
+rupees) as postal charges.
+English Translation - RTI FAQ

@@ -1,0 +1,19 @@
+# FAQ Chunk 190
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 31
+Section: 4) Practical Implementation:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 40
+
+---
+
+## 4) Practical Implementation:
+
+- Rarely invoked provision
+- Most documents retained for commission records
+- Originals usually returned to submitting authority
+- Copies maintained for appeal record

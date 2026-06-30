@@ -1,0 +1,22 @@
+# FAQ Chunk 54
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 6
+Section: Q27 . How does the receiving officer approve the charge?
+Question: प्रश्न 27. कार्यभार लेने वाला अधिकारी कार्यभार को स्वीकृत कैसे करता है?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 128
+
+---
+
+## Q27 . How does the receiving officer approve the charge?
+
+प्रश्न 27. कार्यभार लेने वाला अधिकारी कार्यभार को स्वीकृत कैसे करता है?
+
+Answer: The receiving officer selects the applicable charge or options in the takeover details screen and clicks Submit. The manual says the approval status is updated after the form is submitted. option
+
+उत्तरः कार्यभार लेने वाला अधिकारी कार्यभार विवरण स्क्रीन में लागू विकल्प या विकल्पों का चयन करता है और Submit पर क्लिक करता है| मैनुअल के अनुसार फॉर्म सबमिट होने के बाद स्वीकृति की स्थिति अपडेट हो जाती हैI
+
+Source reference : Manual pp . 5-6

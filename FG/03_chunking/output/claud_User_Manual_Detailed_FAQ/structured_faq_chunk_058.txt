@@ -1,0 +1,21 @@
+# FAQ Chunk 58
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 11
+Section: Untitled section
+Question: Q055. Can I edit details after clicking Preview but before Submit?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 121
+
+---
+
+## Untitled section
+
+Q055. Can I edit details after clicking Preview but before Submit?
+
+For user registration, yes: the manual instructs users to choose Preview, review the entered details, and select
+Edit to change them before Submit. In the multi-step Second Appeal workflow, the manual also permits
+corrections to prior information through Back. It does not show a final Second Appeal preview page comparable
+to the registration preview.

@@ -1,0 +1,20 @@
+# FAQ Chunk 61
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 11
+Section: Q29 (English). What details must [ enter in the Second Appeal Details section?
+Question: प्रश्न 29. (हिंदी) [ Second Appeal Details अनुभाग में कौन॰कौन से विवरण दर्ज करने होते हैं?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 105
+
+---
+
+## Q29 (English). What details must [ enter in the Second Appeal Details section?
+
+प्रश्न 29. (हिंदी) [ Second Appeal Details अनुभाग में कौन॰कौन से विवरण दर्ज करने होते हैं?
+
+उत्तर द्वितीय अपील संबंध में Appeal या Complaint चुनें , उपलब्ध विकल्पों में से कारण प्रकार चुनें , अपील का कारण शब्दों में लिखें और BPL कार्डधारक स्थिति के Yes या No चुनें | लिए
+
+Source: RTI User Manual, Manual p. 6.

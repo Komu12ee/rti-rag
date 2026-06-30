@@ -1,0 +1,24 @@
+# FAQ Chunk 7
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 2-3
+Section: Question: How do I begin user registration on the RTI portal?
+Question: प्रश्न 02. - हिंदी प्रश्नोत्तर
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 173
+
+---
+
+## Question: How do I begin user registration on the RTI portal?
+
+प्रश्न 02. - हिंदी प्रश्नोत्तर
+
+प्रश्नः आरटीआई पोर्टल पर उपयोगकर्ता पंजीयन कैसे शुरू करें?
+
+उत्तरः आरटीआई पोर्टल के मुख्य पृष्ठ पर जाकर User Registration विकल्प चुनें | पोर्टल पंजीयन से संबंधित सामान्य जानकारी दिखाएगा| निर्देशों को पढ़़ें यह पुष्टि करने वाले चेकबॉक्स पर टिक करें कि आपने निर्देश ध्यान से पढ लिए हैं और Next पर क्लिक करें| इसके बाद पंजीयन फॉर्म खुलता है, जिसमें मांगी गई उपयोगकर्ता जानकारी भरी जा सकती है|
+
+समान हिंदी प्रश्नः "कृपया समझाएं: आरटीआई पोर्टल पर उपयोगकर्ता पंजीयन कैसे शुरू करें II "आरटीआई पोर्टल पर यह प्रक्रिया कैसे होती है?"
+
+Manual reference मैनुअल संदर्भः Manual p॰ 2

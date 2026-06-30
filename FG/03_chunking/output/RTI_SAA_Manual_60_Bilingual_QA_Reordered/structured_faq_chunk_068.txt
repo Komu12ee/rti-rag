@@ -1,0 +1,18 @@
+# FAQ Chunk 68
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 17
+Section: Question: What should a BPL card holder enter in the application?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 111
+
+---
+
+## Question: What should a BPL card holder enter in the application?
+
+Answer: Select Yes for the BPL card-holder question. Then enter the BPL document number, BPL document issue date, and BPL issuing authority. The manual says that entering BPL details is mandatory to process the application further when the user identifies as a BPL card holder.
+
+Similar English questionsः "Please explain: What should a BPL card holder enter in the application "How is this handled on the RTI portal?"

@@ -1,0 +1,16 @@
+# FAQ Chunk 11
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 2
+Section: Q05. What is the purpose of the Transfer menu?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 53
+
+---
+
+## Q05. What is the purpose of the Transfer menu?
+
+Answer: The Transfer menu is used to manage role handover, role takeover, transfer request status, relieving letter generation, supporting file upload, and name change related approval steps.

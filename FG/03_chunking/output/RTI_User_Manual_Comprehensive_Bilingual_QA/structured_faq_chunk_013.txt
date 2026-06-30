@@ -1,0 +1,18 @@
+# FAQ Chunk 13
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 3
+Section: प्रश्नः यूज़र रजिस्ट्रेशन जनरल इंफॉर्मेशन स्क्रीन पर मुझे क्या करना चाहिए?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 59
+
+---
+
+## प्रश्नः यूज़र रजिस्ट्रेशन जनरल इंफॉर्मेशन स्क्रीन पर मुझे क्या करना चाहिए?
+
+Sourceः RTI User Manual, Printed page 2
+
+उत्तरः हा| के अनुसार निर्देश पढ़ने के बाद स्वीकृति वाले बॉक्स पर टिक करें और फिर Next पर क्लिक करें| मैनुअल

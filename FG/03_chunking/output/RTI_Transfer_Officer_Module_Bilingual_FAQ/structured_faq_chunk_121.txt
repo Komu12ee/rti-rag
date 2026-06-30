@@ -1,0 +1,16 @@
+# FAQ Chunk 121
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 13
+Section: Q66. Which transfer statuses are visible in the manual screenshots?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 82
+
+---
+
+## Q66. Which transfer statuses are visible in the manual screenshots?
+
+Answer: The screenshots visibly show labels such as Approval Pending Approved, Pending Relieving Letter and Relieving File Uploaded. The manual does not provide a complete official status glossary , so these should be read as displayed workflow states rather than an exhaustive list.

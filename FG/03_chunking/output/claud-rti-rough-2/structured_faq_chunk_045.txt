@@ -1,0 +1,17 @@
+# FAQ Chunk 45
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 8
+Section: (2) Grounds:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 26
+
+---
+
+## (2) Grounds:
+
+- Dissatisfied with First Appeal decision
+- Can challenge both process and substantive decision

@@ -1,0 +1,43 @@
+# FAQ Chunk 28
+Document: RTI_ACT_QA
+Source: structured.md
+Pages: 13-14
+Section: SECTION l4: POWERS OF INFORMATION COMMISSIONERS
+Question: Q14. What are the powers of Information Commissioners as per Section 14?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 314
+
+---
+
+## SECTION l4: POWERS OF INFORMATION COMMISSIONERS
+
+Q14. What are the powers of Information Commissioners as per Section 14?
+
+Answer: Section 14 grants Information Commissioners extensive quasi-judicial powers including:
+
+- Power to summon and examine any public official
+- Power to demand production of any record or document from any public authority
+- Power to call for information and explanations from public authorities
+- Power to conduct inquiries with the authority of a civil court
+- Power to pass orders directing public authorities to disclose information
+- Power to recommend penalties for non compliance
+- Power to award compensation for loss or hardship
+- Jurisdiction over appeals and complaints relating to RTI Act implementation
+
+
+
+
+उत्तरः धारा 14 सूचना आयुक्तों को व्यापक अर्द्ध न्यायिक शक्तियां देती है जिसमें शामिल हैंः
+
+- किसी भी सार्वजनिक अधिकारी को और परीक्षा करने की शक्ति बुलाने
+- किसी भी सार्वजनिक प्राधिकरण सेकिसी भी रिकॉर्ड या दस्तावेज का उत्पादन मांगने की शक्ति
+- सार्वजनिक प्राधिकरणों से सूचना और व्याख्या के लिए कॉल करने की शक्ति
+- नागरिक अदालत के अधिकार के साथ जांच करने की शक्ति
+- सार्वजनिक प्राधिकरणों को सूचना प्रकटीकृत करने के लिए निर्देश देने वाले आदेश पास करने की शक्ति
+- हानि या कठिनाई के मुआवजे से सम्मानित करने की शक्ति लिए
+- गैर-अनुपालन के लिए दंड की सिफारिश करने की शक्ति
+- RTI अधिनियम के कार्यान्वयन से संबंधित अपील और शिकायतों पर अधिकार क्षेत्र
+
+Source reference: RTI Rule Book, Section 14 (cross reference)

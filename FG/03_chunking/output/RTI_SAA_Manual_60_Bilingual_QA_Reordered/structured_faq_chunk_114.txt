@@ -1,0 +1,18 @@
+# FAQ Chunk 114
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 29
+Section: Question: What information is shown after a successful online payment?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 121
+
+---
+
+## Question: What information is shown after a successful online payment?
+
+Answer: The successful e-Challan transaction screen shown in the manual contains a treasury reference number, bank reference number, amount, date of account, date and time of transaction, bank name, and status. The screen also includes an option to complete the transaction and an option to the receipt. Preserve the receipt or transaction details for your records. print
+
+Similar English questions: "Please explain: What information is shown after a successful online payment" "How is this handled on the RTI portal?"

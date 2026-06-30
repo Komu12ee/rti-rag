@@ -1,0 +1,37 @@
+# RTI Legal Chunk 21
+Document: RTI_Act_2005_Source_Text_QA
+Input source: structured.md
+Input pages: 8-10
+Chapter: Chapter II - Right to information and obligations of public authorities
+Question: Q. What is the source text of Section 4?
+Part: 4/5
+Kind: faq
+Has answer: yes
+Content tokens: 149
+Original source book: Unknown
+Source type: general
+Legal reference: Section 4
+Book pages: 7-10
+Source PDF pages: Unknown
+Citation: Unknown
+
+---
+
+## Chapter II - Right to information and obligations of public authorities
+
+Legal reference: Section 4
+
+Q. What is the source text of Section 4?
+
+**Answer continued:**
+
+o d o f
+communication in that local area and
+the information should be easily accessible, to the extent possible in
+electronic format with the Central
+Public Information Officer or State
+Public Information Officer, as the case may be, available free or at such
+cost of the medium or the print cost price as may be prescribed.
+Explanation. - For the purposes of sub-sections (3) and (4), “disseminated” means
+making known or communicated the
+Compiled from the uploaded RTI rule book - Part 1 statutory text only

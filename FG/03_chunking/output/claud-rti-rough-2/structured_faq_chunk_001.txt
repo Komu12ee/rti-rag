@@ -1,0 +1,16 @@
+# FAQ Chunk 1
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 1
+Section: PART 2: SECTIONS 16-28
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 25
+
+---
+
+## PART 2: SECTIONS 16-28
+
+Source: RTI Act, 2005 with Chhattisgarh State Implementation Guidelines

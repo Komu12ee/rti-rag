@@ -1,0 +1,49 @@
+# FAQ Chunk 2
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 1-3
+Section: Untitled section
+Question: (section note)
+Part: 2/3
+Kind: section_note
+Has answer: no
+Content tokens: 466
+
+---
+
+## Untitled section
+
+<!-- extraction_method: direct_text | confidence: 0.75 -->
+How to Use This Guide
+This document groups the requested questions by topic and gives a source-bounded answer for each. For process
+questions, follow the numbered workflow in the manual. For a question marked "Not specified," use the live
+portal, its ContactUs option, or the responsible authority rather than assuming a rule.
+Source Map
+Manual pages Primary topic
+2-4 User registration, required fields, preview/edit, email
+activation, password rule.
+5-6 Starting a Second Appeal, RTI instructions, eight-step
+workflow, character and BPL guidance.
+6-7 Second Appeal relation, reason, Complaint conditions, BPL
+detail requirements.
+7-10 PIO/office, RTI details, First Appeal office and application
+information.
+11 Document uploads, formats, maximum file size, Uploaded
+status.
+12-13 Payment selection, e-Challan, bank gateway, success receipt
+information.
+End-to-End Workflow at a Glance
+Stage What the user does Key checkpoint
+Account Register, preview, submit, verify email, Email address becomes Login ID.
+create password.
+1. Instruction Read and accept RTI instructions. Tick the confirmation box before Next.
+2. Appeal Choose Appeal or Complaint; enter Complaint makes payment non-
+reason; declare BPL status. mandatory and documents optional.
+3-6. History Record PIO, RTI, First Appeal Office, and Use blue manual-entry link if
+First Appeal application details. office/officer is not listed.
+7. Documents Browse and Upload supporting files. Use .pdf/.jpeg/.jpg; 20 MB maximum
+shown.
+8. Payment Select fee where applicable; choose e- Retain transaction references and print
+Challan bank gateway; submit. receipt.
+Important: the manual's screenshots are a guide to the documented workflow. Field labels, options, and live behavior should be
+checked on the actual portal before submission.

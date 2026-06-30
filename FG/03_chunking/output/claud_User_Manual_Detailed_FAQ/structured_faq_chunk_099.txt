@@ -1,0 +1,20 @@
+# FAQ Chunk 99
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 17
+Section: Untitled section
+Question: Q096. What percentage of people qualify as BPL card holders?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 86
+
+---
+
+## Untitled section
+
+Q096. What percentage of people qualify as BPL card holders?
+
+BPL qualification statistics are not specified.
+The manual gives no percentage, threshold, income rule, or population statistic for BPL qualification. It only
+treats BPL as a Yes/No application status and refers to a government-issued certificate.

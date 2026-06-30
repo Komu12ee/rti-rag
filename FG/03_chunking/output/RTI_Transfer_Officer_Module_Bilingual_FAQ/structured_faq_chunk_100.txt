@@ -1,0 +1,22 @@
+# FAQ Chunk 100
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 10-11
+Section: Q54. Does name change replace the existing email ID?
+Question: प्रश्न 54. क्या नाम परिवर्तन से ईमेल आईडी बदल जाती है? मौजूदा
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 112
+
+---
+
+## Q54. Does name change replace the existing email ID?
+
+प्रश्न 54. क्या नाम परिवर्तन से ईमेल आईडी बदल जाती है? मौजूदा
+
+Answer: No. The manual describes this as a change of person on the existing email ID. It does not describe creating or replacing the email ID itself.
+
+उत्तरः नहीं| मैनुअल इसे ईमेल आईडी पर व्यक्ति परिवर्तन के रूप में बताता हैI इसमें ईमेल आईडी बनाने या बदलने की प्रक्रिया नहीं बताई गई है| मौजूदा
+
+Source reference : Manual pp . 9-12

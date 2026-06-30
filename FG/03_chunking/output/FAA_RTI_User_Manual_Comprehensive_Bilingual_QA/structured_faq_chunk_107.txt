@@ -1,0 +1,20 @@
+# FAQ Chunk 107
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 16
+Section: Q52 (English). Do 1 need to enter the offline application date for a first appeal?
+Question: प्रश्न 52. (हिंदी) [ क्या प्रथम अपील के ऑफलाइन आवेदन तिथि दर्ज करनी होती है? लिए
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 78
+
+---
+
+## Q52 (English). Do 1 need to enter the offline application date for a first appeal?
+
+प्रश्न 52. (हिंदी) [ क्या प्रथम अपील के ऑफलाइन आवेदन तिथि दर्ज करनी होती है? लिए
+
+उत्तर हा| में प्रथम अपील का विवरण और ऑफलाइन आवेदन तिथि दर्ज करने का निर्देश दिया गया है| मैनुअल
+
+Source: RTI User Manual, Manual p. 10.

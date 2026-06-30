@@ -1,0 +1,19 @@
+# FAQ Chunk 62
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 12
+Section: Untitled section
+Question: Q059. Are supporting documents optional for Complaint applications?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 58
+
+---
+
+## Untitled section
+
+Q059. Are supporting documents optional for Complaint applications?
+
+Yes. The manual explicitly states that supporting documents are optional when Complaint is selected under
+Second Appeal Relation.

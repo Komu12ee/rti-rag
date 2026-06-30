@@ -1,0 +1,20 @@
+# FAQ Chunk 70
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 7-8
+Section: Q36. When can a Relieving Letter be generated?
+Question: प्रश्न 36. रिलिविंग लेटर कब बनाया जा सकता है?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 94
+
+---
+
+## Q36. When can a Relieving Letter be generated?
+
+प्रश्न 36. रिलिविंग लेटर कब बनाया जा सकता है?
+
+उत्तरः के अनुसार कार्यभार लेने वाले अधिकारी द्वारा स्थानांतरण करने के बाद रिलिविंग लेटर बनाया जा सकता है| स्थानांतरण स्थिति सूची में संबंधित प्रविष्टि के "Generate Relieving Letter" पर क्लिक करें| मैनुअल स्वीकृत लिए
+
+Source reference : Manual pp . 7 8

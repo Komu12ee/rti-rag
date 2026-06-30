@@ -1,0 +1,20 @@
+# FAQ Chunk 47
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 5
+Section: Q23. What should the receiving officer do first?
+Question: प्रश्न 23. कार्यभार लेने वाले अधिकारी को सबसे पहले क्या करना चाहिए?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 73
+
+---
+
+## Q23. What should the receiving officer do first?
+
+प्रश्न 23. कार्यभार लेने वाले अधिकारी को सबसे पहले क्या करना चाहिए?
+
+उत्तरः कार्यभार लेने वाले अधिकारी को अपने डैशबोर्ड में लॉग इन करना चाहिए, स्थानांतरण टैब खोलना चाहिए और " कार्यभार लेना" विकल्प पर क्लिक करना चाहिए|
+
+Source reference : Manual pp . 5-6

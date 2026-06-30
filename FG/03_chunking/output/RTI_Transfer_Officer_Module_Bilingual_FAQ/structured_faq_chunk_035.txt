@@ -1,0 +1,20 @@
+# FAQ Chunk 35
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 4
+Section: Q17. What should I do after entering the officer details?
+Question: प्रश्न 17. अधिकारी का विवरण भरने के बाद क्या करना चाहिए?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 68
+
+---
+
+## Q17. What should I do after entering the officer details?
+
+प्रश्न 17. अधिकारी का विवरण भरने के बाद क्या करना चाहिए?
+
+उत्तरः कार्यभार और कार्यभार लेने वाले अधिकारी का विवरण भरने के बाद भूमिका आवंटन अनुरोध बनाने के Submit बटन पर क्लिक करें| चुनने लिए
+
+Source reference : Manual p. 4

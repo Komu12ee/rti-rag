@@ -1,0 +1,16 @@
+# FAQ Chunk 64
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 11
+Section: Q31 (English). How do [ enter the reason for a second appeal?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 42
+
+---
+
+## Q31 (English). How do [ enter the reason for a second appeal?
+
+Answer. Choose the appropriate reason type from the listed options and enter the reason for the appeal in words in the relevant field.

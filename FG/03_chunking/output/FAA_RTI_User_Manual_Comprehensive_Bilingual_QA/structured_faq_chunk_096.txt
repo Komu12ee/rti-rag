@@ -1,0 +1,16 @@
+# FAQ Chunk 96
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 15
+Section: Q47 (English). What should 1 do if the First Appeal Officer or office is not listed?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 51
+
+---
+
+## Q47 (English). What should 1 do if the First Appeal Officer or office is not listed?
+
+Answer. Use the blue highlighted link shown in the manual to enter the officer and office details when are not available in the listed options. they

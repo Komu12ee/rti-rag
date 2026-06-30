@@ -1,0 +1,16 @@
+# FAQ Chunk 4
+Document: RTI_Portal_flowchart_FAQ_Bilingual
+Source: structured.md
+Pages: 2-6
+Section: B. PIO registration and account activation
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 21
+
+---
+
+## B. PIO registration and account activation
+
+C. PIO onboarding and document submission

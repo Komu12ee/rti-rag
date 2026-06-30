@@ -1,0 +1,18 @@
+# FAQ Chunk 85
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 14
+Section: SECTION 2l: JURISDICTIONOF HIGH COURT
+Question: Q21. What is the jurisdiction of High Courts over RTI Act decisions?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 57
+
+---
+
+## SECTION 2l: JURISDICTIONOF HIGH COURT
+
+Q21. What is the jurisdiction of High Courts over RTI Act decisions?
+
+Answer: Section 21 preserves the inherent jurisdiction of High Courts over RTI Commission decisions:

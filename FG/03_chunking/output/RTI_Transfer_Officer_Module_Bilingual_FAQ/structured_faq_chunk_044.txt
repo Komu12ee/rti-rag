@@ -1,0 +1,18 @@
+# FAQ Chunk 44
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 5
+Section: Q22. Does the manual specify how long the approval process takes?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 95
+
+---
+
+## Q22. Does the manual specify how long the approval process takes?
+
+Answer: No. The manual describes the approval sequence but does not specify a time limit, deadline, or service level timeline for approval by the receiving officer.
+
+उत्तरः नहीं| मैनुअल स्वीकृति की प्रक्रिया बताता है, लेकिन कार्यभार लेने वाले अधिकारी द्वारा स्वीकृति देने की कोई समय सीमा, अंतिम तिथि या सेवा-स्तर समय नहीं बताता|

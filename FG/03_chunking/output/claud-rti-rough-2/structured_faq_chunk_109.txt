@@ -1,0 +1,19 @@
+# FAQ Chunk 109
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 17-18
+Section: (6) Limitations of Exemption:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 39
+
+---
+
+## (6) Limitations of Exemption:
+
+- Cannot exempt routine administrative information
+- Cannot exempt corruption allegations
+- Cannot exempt budget information
+- Cannot exempt organizational details

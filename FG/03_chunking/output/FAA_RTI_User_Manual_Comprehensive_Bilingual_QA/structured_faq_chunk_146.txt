@@ -1,0 +1,16 @@
+# FAQ Chunk 146
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 23
+Section: Q72 (English). Can ] use a supporting document when my written application is too long?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 53
+
+---
+
+## Q72 (English). Can ] use a supporting document when my written application is too long?
+
+Answer. Yes. If the application text exceeds 500 characters, the instruction screen says it can be uploaded as an attachment through Supporting Document.

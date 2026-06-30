@@ -1,0 +1,37 @@
+# FAQ Chunk 41
+Document: claud-rti-rough
+Source: structured.md
+Pages: 17
+Section: SECTION l4: POWERS OF INFORMATION COMMISSIONERS
+Question: Q14. What are the powers and functions of Information Commissioners?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 286
+
+---
+
+## SECTION l4: POWERS OF INFORMATION COMMISSIONERS
+
+Q14. What are the powers and functions of Information Commissioners?
+
+Answer Section 14 grants Information Commissioners substantial powers to effectively implement the RTI Actः
+
+- (1) Inquiry Powers: Commissioners can inquire into complaints and conduct investigations with the authority of a civil court
+- (2) Summon Power: Can summon and examine any public official or authority
+- (3) Demand Records: Can demand production of any record or document held by a public authority
+- (4) Call for Information: Can call for information and explanations from public authorities
+- (5) Conduct Hearings Can hold hearings and take evidence (oral or written)
+- (6) Issue Orders: Can pass binding orders directing:
+- Disclosure of information
+- Compensation for loss or hardship caused
+- Improvement of RTI practices
+- Punishment of responsible officials (in certain cases)
+- Recommend Penalties Can recommend penalties on public authorities or officials forः
+- Non compliance with RTI Act
+- Destruction of records
+- Non maintenance of records
+- Willful withholding of information
+- (8) Jurisdiction: Limited to appellate matters and complaints relating to RTI Act implementation
+
+These powers make the Information Commission a quasi-judicial body with significant authority to ensure RTI compliance.

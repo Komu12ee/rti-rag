@@ -1,0 +1,24 @@
+# FAQ Chunk 117
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 30
+Section: Question: What sequence should I follow for each document upload?
+Question: प्रश्न 55. हिंदी प्रश्नोत्तर
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 147
+
+---
+
+## Question: What sequence should I follow for each document upload?
+
+प्रश्न 55. हिंदी प्रश्नोत्तर
+
+प्रश्नः हर दस्तावेज अपलोड के कौन-सा क्रम अपनाना चाहिए? लिए
+
+उत्तरः दस्तावेज पंक्ति में Browse पर क्लिक करें , फाइल चुनें और Upload दबाएं| पुष्टि करें कि पोर्टल सफल अपलोड दिखा रहा है और बटन हरे रंग में Uploaded हो गया है| आवश्यक हर फाइल के यही प्रक्रिया दोहराएं फिर भुगतान के लिए आगे बढ़ने हेतु Next दबाएं| लिए
+
+समान हिंदी प्रश्नः "कृपया समझाएंःहर दस्तावेज अपलोड के कौन सा क्रम अपनाना चाहिए "आरटीआई पोर्टल पर यह प्रक्रिया कैसे होती है ? " लिए
+
+Manual reference संदर्भः Manual p. 11 मैनुअल

@@ -1,0 +1,22 @@
+# FAQ Chunk 93
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 15
+Section: (8) Effect of High Court Orderः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 76
+
+---
+
+## (8) Effect of High Court Orderः
+
+- Can quash commission's decision
+- Can remand for fresh consideration
+- Can direct specific disclosure
+- Can award compensation
+- Can dismiss petition upholding commission
+
+The High Court jurisdiction acts as constitutional safeguard ensuring RTI commissions do not violate rule of law or exceed their authority.

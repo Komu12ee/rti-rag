@@ -1,0 +1,34 @@
+# RTI Legal Chunk 69
+Document: RTI_Act_2005_Source_Text_QA
+Input source: structured.md
+Input pages: 34-36
+Chapter: Chapter VI - Miscellaneous
+Question: Q. What is the source text of Section 25?
+Part: 1/5
+Kind: faq
+Has answer: yes
+Content tokens: 112
+Original source book: Unknown
+Source type: general
+Legal reference: Section 25
+Book pages: 40-42
+Source PDF pages: Unknown
+Citation: Unknown
+
+---
+
+## Chapter VI - Miscellaneous
+
+Legal reference: Section 25
+
+Q. What is the source text of Section 25?
+
+Answer - source text
+25. (1) The Central Information
+Commission or State Information Commission, as the case may be, shall, as soon as practicable after the end of each year,
+prepare a report on
+the implementation of the provisions
+of this Act during that year and
+forward a copy thereof to the appropriate Government.
+(2) Each Ministry or Department shall, in
+Compiled from the uploaded RTI rule book - Part 1 statutory text only

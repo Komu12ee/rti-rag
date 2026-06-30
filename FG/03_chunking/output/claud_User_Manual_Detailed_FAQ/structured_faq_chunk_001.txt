@@ -1,0 +1,27 @@
+# FAQ Chunk 1
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 1-3
+Section: Untitled section
+Question: (section note)
+Part: 1/3
+Kind: section_note
+Has answer: no
+Content tokens: 181
+
+---
+
+## Untitled section
+
+<!-- extraction_method: direct_text | confidence: 0.75 -->
+RTI Portal User Manual
+Detailed FAQ and Workflow Reference
+Prepared from the provided "RTI (Right to Information) User Manual"
+Government of Chhattisgarh RTI portal process guide
+Scope and evidence rule
+Every answer in this document is limited to what the supplied user manual states or visibly shows.
+Questions that the manual does not answer are clearly marked "Not specified in the manual." Those
+markings are intentional: this guide does not invent legal rules, service times, live portal behavior, or policy
+details.
+Reference convention: "Manual p. x" refers to the printed page number shown in the supplied manual.
+Source-bounded guide based only on rtiUserManual.pdf | Page 1

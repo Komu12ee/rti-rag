@@ -1,0 +1,32 @@
+# FAQ Chunk 53
+Document: claud-rti-rough
+Source: structured.md
+Pages: 20-21
+Section: SECTIONS 16 28: ADDITIONAL PROVISIONS
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 170
+
+---
+
+## SECTIONS 16 28: ADDITIONAL PROVISIONS
+
+Due to document length, the following sections will be presented in a continuation:
+
+- Section l6: Chairperson and Commissioners ( State level)
+- Section 17: Power to Investigate
+- Section 18: Procedure for Inquiries
+- Section 19: Appeal to Information Commission
+- Section 20ः Transfer of Cases
+- Section 21: High Court Jurisdiction
+- Section 22: Exemption to Intelligence Agencies
+- Section 23ः Penalties
+- Section 24: Penalties (continued)
+- Section 25: Reports to Government
+- Section 26: Return Destruction of Documents
+- Section 27: Amendments
+- Section 28: Rule making Power
+
+IEach section follows the same comprehensive Q&A format with English and Hindi versions]

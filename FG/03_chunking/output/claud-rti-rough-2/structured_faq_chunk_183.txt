@@ -1,0 +1,20 @@
+# FAQ Chunk 183
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 30
+Section: (8) संसदीय कार्रवाईः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 58
+
+---
+
+## (8) संसदीय कार्रवाईः
+
+- संसद विधान मंडल रिपोर्ट की समीक्षा करता है
+- स्पष्टीकरण मांग सकता है
+- सिफारिशें तालिका में दे सकता है
+- सरकार सिफारिशों के आधार पर नियम संशोधित कर सकती है
+- बजट आवंटन रिपोर्ट से प्रभावित

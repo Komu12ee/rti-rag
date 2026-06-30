@@ -1,0 +1,20 @@
+# FAQ Chunk 126
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 11
+Section: Q65 (English ). What is the most complete short summary of the process ?
+Question: प्रश्न 65. (हिन्दी). पूरीं प्रक्रिया का सबसे संक्षिप्त सार क्या है?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 126
+
+---
+
+## Q65 (English ). What is the most complete short summary of the process ?
+
+प्रश्न 65. (हिन्दी). पूरीं प्रक्रिया का सबसे संक्षिप्त सार क्या है?
+
+उत्तर. RTI पोर्टल खोलें, PIO पंजीयन करें, ई मेल लिंक से पासवर्ड बनाएं लॉगिन करें, सात चरणों में PIO ऑनबोर्डिंग पूरी करें PIO आदेश और हस्त्ताक्षरित आवेदन अपलोड करें, ऑनबोर्डिंग हेतु सबमिट करें, फिर नोडल स्चीकृति प्राधिकारी और FAO ईलिंक आधारित लॉगिन से स्वीकृति प्रक्रिया पूरी करते हैं|
+
+Source: Pages 2-5

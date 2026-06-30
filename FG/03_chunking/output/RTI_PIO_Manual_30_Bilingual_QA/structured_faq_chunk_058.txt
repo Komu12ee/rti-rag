@@ -1,0 +1,18 @@
+# FAQ Chunk 58
+Document: RTI_PIO_Manual_30_Bilingual_QA
+Source: structured.md
+Pages: 9
+Section: प्रश्न (हिंदी): द्वितीय अपील आवेदन के दस्तावेज़ कैसे अपलोड करें? लिए
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 105
+
+---
+
+## प्रश्न (हिंदी): द्वितीय अपील आवेदन के दस्तावेज़ कैसे अपलोड करें? लिए
+
+उत्तर (हिंदी): Document Details चरण में आवश्यक दस्तावेज़ वाले स्लॉट के पास Browse पर क्लिक करें , अपने डिवाइस से फाइल चुनें और Upload पर क्लिक करें| अपलोड सफल होने पर पोर्टल अपलोड स्थिति दिखाता है और बटन हरे रंग में Uploaded हो जाता हैl आवश्यक दस्तावेज़ अपलोड करने के बाद भुगतान चरण में जाने के Next पर क्लिक करें| लिए
+
+Source reference: Manual p. 11

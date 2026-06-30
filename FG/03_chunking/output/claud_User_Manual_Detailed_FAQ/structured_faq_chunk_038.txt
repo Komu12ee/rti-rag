@@ -1,0 +1,21 @@
+# FAQ Chunk 38
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 8
+Section: Untitled section
+Question: Q035. What information do I need about the office?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 110
+
+---
+
+## Untitled section
+
+Q035. What information do I need about the office?
+
+For dropdown selection, you need enough information to identify the State, District, Base Department, Office
+Level, Office Name, and Officer Name. For manual entry, the screen additionally asks for designation, mobile
+number, office address, and sub-department information. The manual does not provide a separate office-data
+checklist beyond these visible fields.

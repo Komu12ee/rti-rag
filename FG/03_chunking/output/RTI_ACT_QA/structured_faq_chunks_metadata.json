@@ -1,0 +1,1154 @@
+{
+  "document": "structured.md",
+  "document_name": "RTI_ACT_QA",
+  "source_path": "..\\01_preprocessing\\stage2_output\\RTI_ACT_QA\\structured.md",
+  "chunking_method": "bilingual_faq_rule_based",
+  "supported_languages": [
+    "Hindi",
+    "English"
+  ],
+  "rules": {
+    "question_start": "Hindi: प्रश्न N; English: Question N",
+    "answer_marker": "Hindi: उत्तरः/उत्तर:; English: Answer:",
+    "boundary": "next FAQ question, next major H1/H2 heading, or document end",
+    "answer_preserved": true,
+    "page_tracking": "exact source page markers: <!-- Page N -->"
+  },
+  "max_content_tokens": 512,
+  "tokenizer_model": "BAAI/bge-m3",
+  "token_count_mode": "tokenizer",
+  "source_faq_blocks": 52,
+  "source_section_notes": 17,
+  "faq_blocks_without_answer_marker": [],
+  "total_chunks": 69,
+  "chunks": [
+    {
+      "index": 1,
+      "filename": "structured_faq_chunk_001.txt",
+      "section": "RIGHTTO INFORMATION ACT, 2OO5: ALL PROVISIONS & DETAILED DEFINITIONS",
+      "question": "",
+      "pages": [
+        1
+      ],
+      "page_range": "1",
+      "source_block_ordinal": 1,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": false,
+      "content_tokens": 39
+    },
+    {
+      "index": 2,
+      "filename": "structured_faq_chunk_002.txt",
+      "section": "Ql. What is Section 1 (Short Title and Extent) of the Right to Information Act?",
+      "question": "",
+      "pages": [
+        1
+      ],
+      "page_range": "1",
+      "source_block_ordinal": 2,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 161
+    },
+    {
+      "index": 3,
+      "filename": "structured_faq_chunk_003.txt",
+      "section": "Ql. What is Section 1 (Short Title and Extent) of the Right to Information Act?",
+      "question": "प्रश्न 1. सूचना का अधिकार अधिनियम की धारा 1 ( लघु शीर्षक और विस्तार) क्या है?",
+      "pages": [
+        1
+      ],
+      "page_range": "1",
+      "source_block_ordinal": 3,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 210
+    },
+    {
+      "index": 4,
+      "filename": "structured_faq_chunk_004.txt",
+      "section": "SECTION 2: DEFINITIONS",
+      "question": "Q2. What are the key definitions provided in Section 2 of the RTI Act, particularly \"Appropriate Government\"?",
+      "pages": [
+        1,
+        2
+      ],
+      "page_range": "1-2",
+      "source_block_ordinal": 4,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 305
+    },
+    {
+      "index": 5,
+      "filename": "structured_faq_chunk_005.txt",
+      "section": "SECTION 2: DEFINITIONS",
+      "question": "प्रश्न 2. RTI अधिनियम की धारा 2 में प्रदान की गई मुख्य परिभाषाएं क्या हैं, विशेषकर \"उपयुक्त सरकार\"?",
+      "pages": [
+        2
+      ],
+      "page_range": "2",
+      "source_block_ordinal": 5,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 345
+    },
+    {
+      "index": 6,
+      "filename": "structured_faq_chunk_006.txt",
+      "section": "SECTION 3: RIGHT TO INFORMATION",
+      "question": "Q3. What is the fundamental right granted under Section 3 of the RTI Act?",
+      "pages": [
+        2
+      ],
+      "page_range": "2",
+      "source_block_ordinal": 6,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 173
+    },
+    {
+      "index": 7,
+      "filename": "structured_faq_chunk_007.txt",
+      "section": "SECTION 3: RIGHT TO INFORMATION",
+      "question": "प्रश्न 3. RTI अधिनियम की धारा 3 के तहत प्रदान किया गया मौलिक अधिकार क्या है?",
+      "pages": [
+        2,
+        3
+      ],
+      "page_range": "2-3",
+      "source_block_ordinal": 7,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 216
+    },
+    {
+      "index": 8,
+      "filename": "structured_faq_chunk_008.txt",
+      "section": "SECTION 4: OBLIGATIONS OF PUBLIC AUTHORITIES",
+      "question": "Q4. What are the mandatory obligations of public authorities under Section 4 regarding information management?",
+      "pages": [
+        3
+      ],
+      "page_range": "3",
+      "source_block_ordinal": 8,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 374
+    },
+    {
+      "index": 9,
+      "filename": "structured_faq_chunk_009.txt",
+      "section": "SECTION 4: OBLIGATIONS OF PUBLIC AUTHORITIES",
+      "question": "प्रश्न 4. धारा 4 के तहत सूचना प्रबंधन के संबंध में सार्वजनिक प्राधिकरणों की अनिवार्य बाध्यताएं क्या हैं?",
+      "pages": [
+        3,
+        4
+      ],
+      "page_range": "3-4",
+      "source_block_ordinal": 9,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 432
+    },
+    {
+      "index": 10,
+      "filename": "structured_faq_chunk_010.txt",
+      "section": "SECTION 5: DESIGNATION OF PUBLIC INFORMATION OFFICERS",
+      "question": "Q5. What are the requirements for designating Public Information Officers under Section 51",
+      "pages": [
+        4
+      ],
+      "page_range": "4",
+      "source_block_ordinal": 10,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 311
+    },
+    {
+      "index": 11,
+      "filename": "structured_faq_chunk_011.txt",
+      "section": "SECTION 5: DESIGNATION OF PUBLIC INFORMATION OFFICERS",
+      "question": "प्रश्न 5. धारा 5 के तहत सार्वजनिक सूचना अधिकारियों की नियुक्ति के लिए क्या आवश्यकताएं हैं?",
+      "pages": [
+        4,
+        5
+      ],
+      "page_range": "4-5",
+      "source_block_ordinal": 11,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 332
+    },
+    {
+      "index": 12,
+      "filename": "structured_faq_chunk_012.txt",
+      "section": "SECTION 6: PROCEDURE FOR REQUESTING INFORMATION",
+      "question": "Q6. What is the procedure for requesting information under Section 61",
+      "pages": [
+        5
+      ],
+      "page_range": "5",
+      "source_block_ordinal": 12,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 278
+    },
+    {
+      "index": 13,
+      "filename": "structured_faq_chunk_013.txt",
+      "section": "SECTION 6: PROCEDURE FOR REQUESTING INFORMATION",
+      "question": "प्रश्न 6. धारा 6 के तहत सूचना के लिए अनुरोध की प्रक्रिया क्या है?",
+      "pages": [
+        5,
+        6
+      ],
+      "page_range": "5-6",
+      "source_block_ordinal": 13,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 315
+    },
+    {
+      "index": 14,
+      "filename": "structured_faq_chunk_014.txt",
+      "section": "SECTION 7: TIME LIMIT FOR FURNISHING INFORMATION",
+      "question": "Q7. What is the prescribed time limit for providing information under Section 71",
+      "pages": [
+        6,
+        7
+      ],
+      "page_range": "6-7",
+      "source_block_ordinal": 14,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 357
+    },
+    {
+      "index": 15,
+      "filename": "structured_faq_chunk_015.txt",
+      "section": "SECTION 7: TIME LIMIT FOR FURNISHING INFORMATION",
+      "question": "प्रश्न 7. धारा 7 के तहत सूचना प्रदान करने के लिए निर्धारित समय सीमा क्या है?",
+      "pages": [
+        7
+      ],
+      "page_range": "7",
+      "source_block_ordinal": 15,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 386
+    },
+    {
+      "index": 16,
+      "filename": "structured_faq_chunk_016.txt",
+      "section": "SECTION 8: EXEMPTIONS FROM DISCLOSURE",
+      "question": "Q8. What are the ten categories of exemptions provided under Section 8?",
+      "pages": [
+        7,
+        8
+      ],
+      "page_range": "7-8",
+      "source_block_ordinal": 16,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 700
+    },
+    {
+      "index": 17,
+      "filename": "structured_faq_chunk_017.txt",
+      "section": "SECTION 8: EXEMPTIONS FROM DISCLOSURE",
+      "question": "प्रश्न 8. धारा 8 के तहत प्रदान की गई छूटों की दस श्रेणियां क्या हैं?",
+      "pages": [
+        8,
+        9
+      ],
+      "page_range": "8-9",
+      "source_block_ordinal": 17,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 762
+    },
+    {
+      "index": 18,
+      "filename": "structured_faq_chunk_018.txt",
+      "section": "SECTION 9: INFORMATION EXEMPTED FROM DISCLOSURE",
+      "question": "Q9. What exemption is provided under Section 9 regarding copyright?",
+      "pages": [
+        9,
+        10
+      ],
+      "page_range": "9-10",
+      "source_block_ordinal": 18,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 184
+    },
+    {
+      "index": 19,
+      "filename": "structured_faq_chunk_019.txt",
+      "section": "SECTION 9: INFORMATION EXEMPTED FROM DISCLOSURE",
+      "question": "प्रश्न 9. कॉपीराइट के संबंध में धारा 9 के तहत क्या छूट प्रदान की गई है?",
+      "pages": [
+        10
+      ],
+      "page_range": "10",
+      "source_block_ordinal": 19,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 223
+    },
+    {
+      "index": 20,
+      "filename": "structured_faq_chunk_020.txt",
+      "section": "SECTION 1O: PARTIAL DISCLOSURE",
+      "question": "Q10. What is the principle of partial disclosure under Section 10?",
+      "pages": [
+        10
+      ],
+      "page_range": "10",
+      "source_block_ordinal": 20,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 322
+    },
+    {
+      "index": 21,
+      "filename": "structured_faq_chunk_021.txt",
+      "section": "SECTION 1O: PARTIAL DISCLOSURE",
+      "question": "प्रश्न 10. धारा10 के तहत आंशिक प्रकटीकरण का सिद्धांत क्या है?",
+      "pages": [
+        10,
+        11
+      ],
+      "page_range": "10-11",
+      "source_block_ordinal": 21,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 351
+    },
+    {
+      "index": 22,
+      "filename": "structured_faq_chunk_022.txt",
+      "section": "SECTION ll: THIRD PARTY INFORMATION",
+      "question": "",
+      "pages": [
+        11
+      ],
+      "page_range": "11",
+      "source_block_ordinal": 22,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 397
+    },
+    {
+      "index": 23,
+      "filename": "structured_faq_chunk_023.txt",
+      "section": "SECTION ll: THIRD PARTY INFORMATION",
+      "question": "प्रश्न 11. धारा 11 के तहत जब सूचना तीसरे पक्ष से संबंधित हो तो क्या आवश्यकताएं हैं?",
+      "pages": [
+        11,
+        12
+      ],
+      "page_range": "11-12",
+      "source_block_ordinal": 23,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 467
+    },
+    {
+      "index": 24,
+      "filename": "structured_faq_chunk_024.txt",
+      "section": "SECTION 12 CENTRAL INFORMATION COMMISSION",
+      "question": "Q12. What is the Central Information Commission and its composition as per Section 12?",
+      "pages": [
+        12
+      ],
+      "page_range": "12",
+      "source_block_ordinal": 24,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 120
+    },
+    {
+      "index": 25,
+      "filename": "structured_faq_chunk_025.txt",
+      "section": "SECTION 12 CENTRAL INFORMATION COMMISSION",
+      "question": "प्रश्न 12. धारा 12 के अनुसार केंद्रीय सूचना आयोग क्या है और इसकी संरचना क्या है?",
+      "pages": [
+        12,
+        13
+      ],
+      "page_range": "12-13",
+      "source_block_ordinal": 25,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 141
+    },
+    {
+      "index": 26,
+      "filename": "structured_faq_chunk_026.txt",
+      "section": "SECTION l3: CHIEF INFORMATION COMMISSIONER",
+      "question": "Q13. What are the qualifications and tenure of the Chief Information Commissioner under Section 131",
+      "pages": [
+        13
+      ],
+      "page_range": "13",
+      "source_block_ordinal": 26,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 127
+    },
+    {
+      "index": 27,
+      "filename": "structured_faq_chunk_027.txt",
+      "section": "SECTION l3: CHIEF INFORMATION COMMISSIONER",
+      "question": "प्रश्न 13. धारा 13 के तहत मुख्य सूचना आयुक्त की योग्यता और कार्यकाल क्या हैं?",
+      "pages": [
+        13
+      ],
+      "page_range": "13",
+      "source_block_ordinal": 27,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 146
+    },
+    {
+      "index": 28,
+      "filename": "structured_faq_chunk_028.txt",
+      "section": "SECTION l4: POWERS OF INFORMATION COMMISSIONERS",
+      "question": "Q14. What are the powers of Information Commissioners as per Section 14?",
+      "pages": [
+        13,
+        14
+      ],
+      "page_range": "13-14",
+      "source_block_ordinal": 28,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 314
+    },
+    {
+      "index": 29,
+      "filename": "structured_faq_chunk_029.txt",
+      "section": "SECTION l5: STATE INFORMATION COMMISSION",
+      "question": "Q15. What is the State Information Commission and its composition under Section 151",
+      "pages": [
+        14
+      ],
+      "page_range": "14",
+      "source_block_ordinal": 29,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 117
+    },
+    {
+      "index": 30,
+      "filename": "structured_faq_chunk_030.txt",
+      "section": "SECTION l5: STATE INFORMATION COMMISSION",
+      "question": "प्रश्न 15. धारा 15 के अनुसार राज्य सूचना आयोग क्या है और इसकी संरचना क्या है?",
+      "pages": [
+        14
+      ],
+      "page_range": "14",
+      "source_block_ordinal": 30,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 138
+    },
+    {
+      "index": 31,
+      "filename": "structured_faq_chunk_031.txt",
+      "section": "SECTION l6: STATE CHIEF INFORMATION COMMISSIONER",
+      "question": "",
+      "pages": [
+        14,
+        15
+      ],
+      "page_range": "14-15",
+      "source_block_ordinal": 31,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": false,
+      "content_tokens": 31
+    },
+    {
+      "index": 32,
+      "filename": "structured_faq_chunk_032.txt",
+      "section": "under Section 161",
+      "question": "",
+      "pages": [
+        15
+      ],
+      "page_range": "15",
+      "source_block_ordinal": 32,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 116
+    },
+    {
+      "index": 33,
+      "filename": "structured_faq_chunk_033.txt",
+      "section": "under Section 161",
+      "question": "प्रश्न 16. धारा16 के तहत राज्य आयुक्तों की योग्यता और नियुक्ति प्रक्रिया क्या है?",
+      "pages": [
+        15
+      ],
+      "page_range": "15",
+      "source_block_ordinal": 33,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 159
+    },
+    {
+      "index": 34,
+      "filename": "structured_faq_chunk_034.txt",
+      "section": "SECTION 17: POWERS OF STATE INFORMATION COMMISSION",
+      "question": "Q17. What powers does the State Information Commission have under Section 17?",
+      "pages": [
+        15
+      ],
+      "page_range": "15",
+      "source_block_ordinal": 34,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 106
+    },
+    {
+      "index": 35,
+      "filename": "structured_faq_chunk_035.txt",
+      "section": "SECTION 17: POWERS OF STATE INFORMATION COMMISSION",
+      "question": "प्रश्न 17. धारा 17 के तहत राज्य सूचना आयोग के पास कौन सी शक्तियां हैं?",
+      "pages": [
+        15,
+        16
+      ],
+      "page_range": "15-16",
+      "source_block_ordinal": 35,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 138
+    },
+    {
+      "index": 36,
+      "filename": "structured_faq_chunk_036.txt",
+      "section": "SECTION 1B: PROCEDURE FOR INQUIRIES",
+      "question": "Q18. What is the procedure followed by Information Commissions for conducting inquiries under Section 18?",
+      "pages": [
+        16
+      ],
+      "page_range": "16",
+      "source_block_ordinal": 36,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 137
+    },
+    {
+      "index": 37,
+      "filename": "structured_faq_chunk_037.txt",
+      "section": "SECTION 1B: PROCEDURE FOR INQUIRIES",
+      "question": "प्रश्न 18. धारा 18 के तहत सूचना आयोग द्वारा जांच करने के लिए अनुसरण की जाने वाली प्रक्रिया क्या है?",
+      "pages": [
+        16,
+        17
+      ],
+      "page_range": "16-17",
+      "source_block_ordinal": 37,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 156
+    },
+    {
+      "index": 38,
+      "filename": "structured_faq_chunk_038.txt",
+      "section": "SECTION 1B: PROCEDURE FOR INQUIRIES",
+      "question": "Q19. What is the comprehensive appeal procedure under Section 191",
+      "pages": [
+        17
+      ],
+      "page_range": "17",
+      "source_block_ordinal": 38,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 40
+    },
+    {
+      "index": 39,
+      "filename": "structured_faq_chunk_039.txt",
+      "section": "First Appeal [Section 19(1)-(5)]:",
+      "question": "",
+      "pages": [
+        17
+      ],
+      "page_range": "17",
+      "source_block_ordinal": 39,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": false,
+      "content_tokens": 75
+    },
+    {
+      "index": 40,
+      "filename": "structured_faq_chunk_040.txt",
+      "section": "Second Appeal [Section 19(10) ]:",
+      "question": "",
+      "pages": [
+        17
+      ],
+      "page_range": "17",
+      "source_block_ordinal": 40,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": false,
+      "content_tokens": 81
+    },
+    {
+      "index": 41,
+      "filename": "structured_faq_chunk_041.txt",
+      "section": "Special Provisions:",
+      "question": "",
+      "pages": [
+        17
+      ],
+      "page_range": "17",
+      "source_block_ordinal": 41,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": false,
+      "content_tokens": 33
+    },
+    {
+      "index": 42,
+      "filename": "structured_faq_chunk_042.txt",
+      "section": "Special Provisions:",
+      "question": "प्रश्न 19. धारा 19 सूचना आयोग को अपील की व्यापक प्रक्रिया क्या है? के तहत",
+      "pages": [
+        17
+      ],
+      "page_range": "17",
+      "source_block_ordinal": 42,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 36
+    },
+    {
+      "index": 43,
+      "filename": "structured_faq_chunk_043.txt",
+      "section": "प्रथम अपील [धारा 19(1)-(5)]:",
+      "question": "",
+      "pages": [
+        17
+      ],
+      "page_range": "17",
+      "source_block_ordinal": 43,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": false,
+      "content_tokens": 90
+    },
+    {
+      "index": 44,
+      "filename": "structured_faq_chunk_044.txt",
+      "section": "अपील [धारा 19(10)]: टूसरी -",
+      "question": "",
+      "pages": [
+        17,
+        18
+      ],
+      "page_range": "17-18",
+      "source_block_ordinal": 44,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": false,
+      "content_tokens": 106
+    },
+    {
+      "index": 45,
+      "filename": "structured_faq_chunk_045.txt",
+      "section": "विशेष प्रावधानः",
+      "question": "",
+      "pages": [
+        18
+      ],
+      "page_range": "18",
+      "source_block_ordinal": 45,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": false,
+      "content_tokens": 61
+    },
+    {
+      "index": 46,
+      "filename": "structured_faq_chunk_046.txt",
+      "section": "SECTION 20: TRANSFER OF CASES",
+      "question": "Q20. Can cases be transferred between Information Commissions under Section 201",
+      "pages": [
+        18
+      ],
+      "page_range": "18",
+      "source_block_ordinal": 46,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 95
+    },
+    {
+      "index": 47,
+      "filename": "structured_faq_chunk_047.txt",
+      "section": "SECTION 20: TRANSFER OF CASES",
+      "question": "प्रश्न 20. क्या धारा 20 के तहत सूचना आयोगों के बीच मामलों को हस्तांतरित किया जा सकता है?",
+      "pages": [
+        18
+      ],
+      "page_range": "18",
+      "source_block_ordinal": 47,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 143
+    },
+    {
+      "index": 48,
+      "filename": "structured_faq_chunk_048.txt",
+      "section": "SECTION 21: JURISDICTION OF HIGH COURT",
+      "question": "Q21. What is the jurisdiction of High Courts over RTI matters under Section 21?",
+      "pages": [
+        18,
+        19
+      ],
+      "page_range": "18-19",
+      "source_block_ordinal": 48,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 163
+    },
+    {
+      "index": 49,
+      "filename": "structured_faq_chunk_049.txt",
+      "section": "SECTION 21: JURISDICTION OF HIGH COURT",
+      "question": "प्रश्न 21. धारा 21 के तहत RTI मामलों पर उच्च न्यायालयों का अधिकार क्षेत्र क्या है?",
+      "pages": [
+        19
+      ],
+      "page_range": "19",
+      "source_block_ordinal": 49,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 206
+    },
+    {
+      "index": 50,
+      "filename": "structured_faq_chunk_050.txt",
+      "section": "SECTION 22: EXEMPTION TO INTELLIGENCE AGENCIES",
+      "question": "Q22. Are intelligence agencies exempted from RTI Act under Section 22?",
+      "pages": [
+        19,
+        20
+      ],
+      "page_range": "19-20",
+      "source_block_ordinal": 50,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 162
+    },
+    {
+      "index": 51,
+      "filename": "structured_faq_chunk_051.txt",
+      "section": "SECTION 22: EXEMPTION TO INTELLIGENCE AGENCIES",
+      "question": "प्रश्न 22. क्या धारा 22 के तहत खुफिया एजेंसियां RTI अधिनियम से exempt हैं?",
+      "pages": [
+        20
+      ],
+      "page_range": "20",
+      "source_block_ordinal": 51,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 211
+    },
+    {
+      "index": 52,
+      "filename": "structured_faq_chunk_052.txt",
+      "section": "SECTION 23: PENALTIES",
+      "question": "Q23. What penaltiesare prescribed under Section 23 for violations?",
+      "pages": [
+        20
+      ],
+      "page_range": "20",
+      "source_block_ordinal": 52,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 156
+    },
+    {
+      "index": 53,
+      "filename": "structured_faq_chunk_053.txt",
+      "section": "SECTION 23: PENALTIES",
+      "question": "प्रश्न 23. धारा 23 के तहत उल्लंघन के लिए कौन से दंड निर्धारित हैं?",
+      "pages": [
+        20,
+        21
+      ],
+      "page_range": "20-21",
+      "source_block_ordinal": 53,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 178
+    },
+    {
+      "index": 54,
+      "filename": "structured_faq_chunk_054.txt",
+      "section": "SECTION 23: PENALTIES",
+      "question": "Q24. What penalties can Information Commissions recommend under Section 24?",
+      "pages": [
+        21
+      ],
+      "page_range": "21",
+      "source_block_ordinal": 54,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 136
+    },
+    {
+      "index": 55,
+      "filename": "structured_faq_chunk_055.txt",
+      "section": "SECTION 23: PENALTIES",
+      "question": "प्रश्न 24. धारा 24 के तहत सूचना आयोग कौन से दंड की सिफारिश कर सकता है?",
+      "pages": [
+        21
+      ],
+      "page_range": "21",
+      "source_block_ordinal": 55,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 184
+    },
+    {
+      "index": 56,
+      "filename": "structured_faq_chunk_056.txt",
+      "section": "SECTION 25: ANNUAL REPORTS",
+      "question": "Q25. What are the reporting obligations of Information Commissions under Section 251",
+      "pages": [
+        21,
+        22
+      ],
+      "page_range": "21-22",
+      "source_block_ordinal": 56,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 147
+    },
+    {
+      "index": 57,
+      "filename": "structured_faq_chunk_057.txt",
+      "section": "SECTION 25: ANNUAL REPORTS",
+      "question": "प्रश्न 25. धारा 25 के तहत सूचना आयोगों की रिपोर्टिंग बाध्यताएं क्या हैं?",
+      "pages": [
+        22
+      ],
+      "page_range": "22",
+      "source_block_ordinal": 57,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 198
+    },
+    {
+      "index": 58,
+      "filename": "structured_faq_chunk_058.txt",
+      "section": "SECTION 26: RETURN OFDOCUMENTS",
+      "question": "Q26. What provisions exist for return or disposal of documents submitted under Section 26?",
+      "pages": [
+        22,
+        23
+      ],
+      "page_range": "22-23",
+      "source_block_ordinal": 58,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 127
+    },
+    {
+      "index": 59,
+      "filename": "structured_faq_chunk_059.txt",
+      "section": "SECTION 26: RETURN OFDOCUMENTS",
+      "question": "प्रश्न 26. धारा 26 के तहत प्रस्तुत दस्तावेजों की वापसी या निपटान के लिए क्या प्रावधान हैं?",
+      "pages": [
+        23
+      ],
+      "page_range": "23",
+      "source_block_ordinal": 59,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 187
+    },
+    {
+      "index": 60,
+      "filename": "structured_faq_chunk_060.txt",
+      "section": "SECTION 27: AMENDMENTS",
+      "question": "Q27. Can the RTI Act be amended and what amendments have been made so far?",
+      "pages": [
+        23
+      ],
+      "page_range": "23",
+      "source_block_ordinal": 60,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 156
+    },
+    {
+      "index": 61,
+      "filename": "structured_faq_chunk_061.txt",
+      "section": "SECTION 27: AMENDMENTS",
+      "question": "प्रश्न 27. क्या RTI अधिनियम में संशोधन किया जा सकता है और अब तक कौन से संशोधन किए गए हैं?",
+      "pages": [
+        23,
+        24
+      ],
+      "page_range": "23-24",
+      "source_block_ordinal": 61,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 190
+    },
+    {
+      "index": 62,
+      "filename": "structured_faq_chunk_062.txt",
+      "section": "SECTION 28: RULE MAKING POWER",
+      "question": "Q28. What matters are covered by rule making power under Section 28?",
+      "pages": [
+        24
+      ],
+      "page_range": "24",
+      "source_block_ordinal": 62,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 148
+    },
+    {
+      "index": 63,
+      "filename": "structured_faq_chunk_063.txt",
+      "section": "Chhattisgarh Rules:",
+      "question": "",
+      "pages": [
+        24
+      ],
+      "page_range": "24",
+      "source_block_ordinal": 63,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": false,
+      "content_tokens": 70
+    },
+    {
+      "index": 64,
+      "filename": "structured_faq_chunk_064.txt",
+      "section": "Fee Structure (As per latest rules):",
+      "question": "",
+      "pages": [
+        24
+      ],
+      "page_range": "24",
+      "source_block_ordinal": 64,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": false,
+      "content_tokens": 71
+    },
+    {
+      "index": 65,
+      "filename": "structured_faq_chunk_065.txt",
+      "section": "Fee Structure (As per latest rules):",
+      "question": "प्रश्न 28. धारा 28 के तहत नियम बनाने की शक्ति में कौन से मामले शामिल हैं?",
+      "pages": [
+        24,
+        25
+      ],
+      "page_range": "24-25",
+      "source_block_ordinal": 65,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 157
+    },
+    {
+      "index": 66,
+      "filename": "structured_faq_chunk_066.txt",
+      "section": "छत्तीसगढ़ नियमः",
+      "question": "",
+      "pages": [
+        25
+      ],
+      "page_range": "25",
+      "source_block_ordinal": 66,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": false,
+      "content_tokens": 61
+    },
+    {
+      "index": 67,
+      "filename": "structured_faq_chunk_067.txt",
+      "section": "शुल्क संरचना ( नवीनतम नियमों के अनुसार):",
+      "question": "",
+      "pages": [
+        25
+      ],
+      "page_range": "25",
+      "source_block_ordinal": 67,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": false,
+      "content_tokens": 129
+    },
+    {
+      "index": 68,
+      "filename": "structured_faq_chunk_068.txt",
+      "section": "COMPLETEDOCUMENT SUMMARY",
+      "question": "",
+      "pages": [
+        25
+      ],
+      "page_range": "25",
+      "source_block_ordinal": 68,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": false,
+      "content_tokens": 88
+    },
+    {
+      "index": 69,
+      "filename": "structured_faq_chunk_069.txt",
+      "section": "End of Comprehensive RTI Act Q&A Document",
+      "question": "",
+      "pages": [
+        25
+      ],
+      "page_range": "25",
+      "source_block_ordinal": 69,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": false,
+      "content_tokens": 68
+    }
+  ]
+}

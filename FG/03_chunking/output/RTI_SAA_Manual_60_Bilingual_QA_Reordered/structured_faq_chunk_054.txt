@@ -1,0 +1,18 @@
+# FAQ Chunk 54
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 14
+Section: Question: What are the eight stages shown in the Second Appeal application progress bar?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 123
+
+---
+
+## Question: What are the eight stages shown in the Second Appeal application progress bar?
+
+Answerः The manual shows the following sequence: RTI Instruction, Second Appeal Application Details, PIO and Office Details, RTI Details, First Appeal Office Details, First Appeal Application, Documents Details, and Payment Details. This progress bar helps the user identify the current stage and the remaining stages.
+
+Similar English questions: "Please explain: What are the eight stages shown in the Second Appeal application progress bar "How is this handled on the RTI portal?"

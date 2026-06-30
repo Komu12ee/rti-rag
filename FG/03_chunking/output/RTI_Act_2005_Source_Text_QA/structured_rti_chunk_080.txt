@@ -1,0 +1,34 @@
+# RTI Legal Chunk 80
+Document: RTI_Act_2005_Source_Text_QA
+Input source: structured.md
+Input pages: 38-40
+Chapter: Chapter VI - Miscellaneous
+Question: Q. What is the source text of Section 31?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 86
+Original source book: Unknown
+Source type: general
+Legal reference: Section 31
+Book pages: 46
+Source PDF pages: Unknown
+Citation: Unknown
+
+---
+
+## Chapter VI - Miscellaneous
+
+Legal reference: Section 31
+
+Q. What is the source text of Section 31?
+
+Answer - source text
+31. The Freedom of Information Act, 2002 is hereby repealed.
+—
+Compiled from the uploaded RTI rule book - Part 1 statutory text only
+
+
+
+SOURCE-TEXT Q&A | THE RIGHT TO INFORMATION ACT, 2005
+Schedules

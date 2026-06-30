@@ -1,0 +1,16 @@
+# FAQ Chunk 41
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 4
+Section: RTI Portal PIO Onboarding Process Bilingual Q&A Knowledge Base
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 33
+
+---
+
+## RTI Portal PIO Onboarding Process Bilingual Q&A Knowledge Base
+
+Answer. After completing the steps, submit the application for onboarding

@@ -1,0 +1,16 @@
+# FAQ Chunk 44
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 9
+Section: Q21 (English). Can ] file a first appeal online through this portal?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 41
+
+---
+
+## Q21 (English). Can ] file a first appeal online through this portal?
+
+Answer. The RTI instruction screen shown in the manual states that a first appeal can also be filed online.

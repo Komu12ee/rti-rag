@@ -1,0 +1,24 @@
+# FAQ Chunk 29
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 8
+Section: Question: Can I use a different email for login after registration?
+Question: प्रश्न 13. - हिंदी प्रश्नोत्तर
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 164
+
+---
+
+## Question: Can I use a different email for login after registration?
+
+प्रश्न 13. - हिंदी प्रश्नोत्तर
+
+प्रश्नः क्या पंजीयन के बाद लॉगिन के अलग ई॰मेल उपयोग कर सकते हैं? लिए
+
+उत्तरः मैनुअल पासवर्ड सत्यापन के समय पंजीकृत ई-मेल को Login ID के रूप में उपयोग करने का निर्देश देता हैI इसमें अलग यूजरनेम या ई-मेल बदलने का तरीका नहीं बताया गया हैl पंजीयन में दी गई वही वैध और सक्रिय ई-मेल उपयोग करें| समान हिंदी प्रश्नः "कृपया समझाएंःक्या पंजीयन के बाद लॉगिन के लिए अलग ई मेल उपयोग कर सकते हैं "आरटीआई पोर्टल पर दूसरी
+
+यह प्रक्रिया कैसे होती है ?"
+
+Manual reference संदर्भः Manual pp. 2 4 मैनुअल

@@ -1,0 +1,16 @@
+# FAQ Chunk 108
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 16
+Section: Q53 (English). Can 1 edit details entered in the previous firstappeal form?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 40
+
+---
+
+## Q53 (English). Can 1 edit details entered in the previous firstappeal form?
+
+Answer. Yes. The manual says the user can edit earlier details by clicking the Back button.

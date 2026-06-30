@@ -1,0 +1,23 @@
+# FAQ Chunk 52
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 9-10
+Section: Untitled section
+Question: Q049. What is the maximum file size for uploads?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 138
+
+---
+
+## Untitled section
+
+Q049. What is the maximum file size for uploads?
+
+Whether the limit is per file or aggregate is not specified.
+Source-bounded guide based only on rtiUserManual.pdf | Page 9
+
+<!-- extraction_method: direct_text | confidence: 0.75 -->
+The upload screen note states a maximum file size of 20 MB. The manual does not say whether this is a per-file
+limit or a combined total for all uploads, so treat 20 MB as the safe maximum for each individual upload field.

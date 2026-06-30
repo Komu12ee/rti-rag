@@ -1,0 +1,24 @@
+# FAQ Chunk 71
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 18
+Section: Question: Does a BPL applicant need to attach proof?
+Question: प्रश्न 32. हिंदी प्रश्नोत्तर
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 159
+
+---
+
+## Question: Does a BPL applicant need to attach proof?
+
+प्रश्न 32. हिंदी प्रश्नोत्तर
+
+प्रश्नः क्या BPL आवेदक को प्रमाण संलग्न करना आवश्यक है?
+
+उत्तरः हा| RTI Instruction में बताया गया है कि गरीबी रेखा से नीचे के नागरिक को RTI Rules, 2012 के अनुसार शुल्क नहीं देना होता, लेकिन आवेदन के साथ सक्षम सरकारी प्राधिकारी द्वारा जारी प्रमाणपत्र की प्रति संलग्न करनी होती है| BPL विवरण स्क्रीन में भी Tes पर BPL दस्तावेज़ की जानकारी भरना आवश्यक है| सूची चुनने
+
+समान हिंदी प्रश्नः "कृपया समझाएंःक्या BPL आवेदक को प्रमाण संलग्न करना आवश्यक है II "आरटीआई पोर्टल पर यह प्रक्रिया कैसे होती है?"
+
+Manual reference संदर्भः Manual pp. 6-7 मैनुअल

@@ -1,0 +1,20 @@
+# FAQ Chunk 90
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 15
+Section: Untitled section
+Question: Q087. How is the password different from a PIN?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 83
+
+---
+
+## Untitled section
+
+Q087. How is the password different from a PIN?
+
+The manual does not use a PIN concept.
+The manual discusses only a password. It specifies a minimum length and character composition for that
+password, but it does not define a PIN, request a PIN, or explain any password-versus-PIN distinction.

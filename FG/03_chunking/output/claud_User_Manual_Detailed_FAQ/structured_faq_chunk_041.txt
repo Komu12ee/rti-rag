@@ -1,0 +1,20 @@
+# FAQ Chunk 41
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 8
+Section: Untitled section
+Question: Q038. What details should I enter in the RTI Application section?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 84
+
+---
+
+## Untitled section
+
+Q038. What details should I enter in the RTI Application section?
+
+Enter the RTI Details narrative, the RTI Apply Date Offline, and select the Information received value. The
+screenshot marks these fields as mandatory. After completing them, select Next to proceed to First Appeal Office
+Details.

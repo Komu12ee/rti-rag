@@ -1,0 +1,20 @@
+# FAQ Chunk 79
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 14
+Section: Untitled section
+Question: Q076. What if I forget to check the "I have read all instructions" box?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 87
+
+---
+
+## Untitled section
+
+Q076. What if I forget to check the "I have read all instructions" box?
+
+The manual directs users to tick the declaration box before selecting Next, both for registration general
+information and for RTI application instructions. It does not show the exact validation message, but the
+documented process requires acceptance before proceeding.

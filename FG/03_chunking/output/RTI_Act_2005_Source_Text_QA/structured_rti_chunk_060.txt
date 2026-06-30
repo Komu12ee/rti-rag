@@ -1,0 +1,28 @@
+# RTI Legal Chunk 60
+Document: RTI_Act_2005_Source_Text_QA
+Input source: structured.md
+Input pages: 29-31
+Chapter: Chapter V - Powers and functions, appeal and penalties
+Question: Q. What is the source text of Section 19?
+Part: 3/5
+Kind: faq
+Has answer: yes
+Content tokens: 44
+Original source book: Unknown
+Source type: general
+Legal reference: Section 19
+Book pages: 35-37
+Source PDF pages: Unknown
+Citation: Unknown
+
+---
+
+## Chapter V - Powers and functions, appeal and penalties
+
+Legal reference: Section 19
+
+Q. What is the source text of Section 19?
+
+**Answer continued:**
+
+loss or other detriment suffered;

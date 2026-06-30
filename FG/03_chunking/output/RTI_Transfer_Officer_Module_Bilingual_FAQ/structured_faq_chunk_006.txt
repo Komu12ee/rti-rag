@@ -1,0 +1,18 @@
+# FAQ Chunk 6
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 1-2
+Section: Q02. Who is the intended user of this manual?
+Question: प्रश्न 02. यह मैनुअल किन उपयोगकर्ताओं के लिए है?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 73
+
+---
+
+## Q02. Who is the intended user of this manual?
+
+प्रश्न 02. यह मैनुअल किन उपयोगकर्ताओं के लिए है?
+
+उत्तरः यह आरटीआई पोर्टल पर जन सूचना अधिकारी (PIOJ, प्रथम अपीलीय अधिकारी (FAOJ नोडल अधिकारी तथा इन भूमिकाओं का कार्यभार देने या लेने वाले अधिकारियों के लिए हैI मैनुअल

@@ -1,0 +1,27 @@
+# RTI Legal Chunk 13
+Document: RTI_Act_2005_Source_Text_QA
+Input source: structured.md
+Input pages: 6
+Chapter: Chapter I - Preliminary
+Question: Q. What is the source text for the definition of “State Information Commission”?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 55
+Original source book: Unknown
+Source type: general
+Legal reference: Unknown
+Book pages: 3-6
+Source PDF pages: Unknown
+Citation: Unknown
+
+---
+
+## Chapter I - Preliminary
+
+Q. What is the source text for the definition of “State Information Commission”?
+
+Answer - source text
+(k) “State Information Commission”
+means the State Information Commission constituted under subsection (1) of section 15;
+—

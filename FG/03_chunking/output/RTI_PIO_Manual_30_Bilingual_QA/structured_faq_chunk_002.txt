@@ -1,0 +1,25 @@
+# FAQ Chunk 2
+Document: RTI_PIO_Manual_30_Bilingual_QA
+Source: structured.md
+Pages: 2
+Section: How to use this guide
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 200
+
+---
+
+## How to use this guide
+
+Each item contains an English question and answer, followed by the corresponding Hindi question and answer. Manual references identify the pages of the uploaded manual that support the answer. Answers stay within the procedural information shown in the manual.
+
+| A. Registration and account activation                   | 01-010   |
+|----------------------------------------------------------|----------|
+| B. Starting and understanding the Second Appeal workflow | 011-017  |
+| C BPL, PIO, and office information                       | 018-022  |
+| D. RTI and First Appeal information                      | 023-026  |
+| E. Documents payment, and completion                     | 027-030  |
+
+Important limitation: The manual explains the portal workflow. It does not fully determine case specific eligibility statutory time limits, legal merits, or the correct fee category for every situation.

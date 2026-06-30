@@ -1,0 +1,20 @@
+# FAQ Chunk 123
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 18-19
+Section: Q60 (English). Are all supporting documents compulsory for a complaint?
+Question: प्रश्न 60. (हिंदी) [ क्या Complaint के सभी supporting documents अनिवार्य हैं? लिए
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 100
+
+---
+
+## Q60 (English). Are all supporting documents compulsory for a complaint?
+
+प्रश्न 60. (हिंदी) [ क्या Complaint के सभी supporting documents अनिवार्य हैं? लिए
+
+उत्तरI Second Appeal Relation में Complaint पर supporting documents को वैकल्पिक बताता हैl अपने चुने हुए आवेदन प्रकार के अनुसार दिखाए गए दस्तावेज फ़ील्ड और आवश्यकताओं का पालन करें| चुनने मैनुअल
+
+Sourceः RTI User Manual, Manual p. 7, 11.

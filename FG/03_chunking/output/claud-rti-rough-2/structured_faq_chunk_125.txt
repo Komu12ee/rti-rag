@@ -1,0 +1,19 @@
+# FAQ Chunk 125
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 20
+Section: (5) Penalty on Commissioning Officer
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 46
+
+---
+
+## (5) Penalty on Commissioning Officer
+
+- If officer directs PIO to violate RTI Act
+- Commission can recommend penalty
+- Can order salary reduction for period specified
+- Can recommend dismissal in serious cases

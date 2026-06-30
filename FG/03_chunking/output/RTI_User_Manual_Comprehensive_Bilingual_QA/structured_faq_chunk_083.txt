@@ -1,0 +1,18 @@
+# FAQ Chunk 83
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 14
+Section: प्रश्नः First Appeal Office Details चरण में मुझे क्या करना चाहिए?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 58
+
+---
+
+## प्रश्नः First Appeal Office Details चरण में मुझे क्या करना चाहिए?
+
+उत्तरः उपलब्ध फ़ील्ड और ड्रॉपडाउन से अधिकारी और कार्यालय विवरण दर्ज या चुनें और आगे बढ़ने के Next पर क्लिक करें| लिए
+
+Source: RTI User Manual, Printed page 9.

@@ -1,0 +1,20 @@
+# FAQ Chunk 94
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 24
+Section: प्रश्नः First Appeal Application चरण में कौन-से विवरण भरे जाते हैं?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 138
+
+---
+
+## प्रश्नः First Appeal Application चरण में कौन-से विवरण भरे जाते हैं?
+
+उत्तरः ड्रॉपडाउन सूची से उपयुक्त First Appeal Reason Type चुनें| First Appeal का विवरण भरें ऑफलाइन First Appeal आवेदन की तिथि दर्ज करें और उपलब्ध ड्रॉपडाउन से आवेदन की स्थिति चुनें | आवश्यक जानकारी भरने के बाद दस्तावेज़ चरण में जाने के Save & Next पर क्लिक करें| लिए
+
+समान हिंदी प्रश्नः "कृपया समझाएं: First Appeal Application चरण में कौन से विवरण भरे जाते हैं II "आरटीआई पोर्टल पर यह प्रक्रिया कैसे होती है ? "
+
+Manual reference संदर्भः Manual p. 10 मैनुअल

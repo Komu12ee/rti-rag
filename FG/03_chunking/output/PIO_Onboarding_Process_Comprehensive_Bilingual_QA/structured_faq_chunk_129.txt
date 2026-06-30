@@ -1,0 +1,16 @@
+# FAQ Chunk 129
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 11
+Section: Q67 (English ). What should be embedded?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 52
+
+---
+
+## Q67 (English ). What should be embedded?
+
+Answer. Embed only the question and answer text. Keep document headers, file names, page numbers, and citation labels as metadata rather than embedding noise.

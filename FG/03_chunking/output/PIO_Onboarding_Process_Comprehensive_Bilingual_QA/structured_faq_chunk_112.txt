@@ -1,0 +1,20 @@
+# FAQ Chunk 112
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 9
+Section: Q57 (English ). What happens if the FAO has not uploaded the appointment order ?
+Question: प्रश्न 57. (हिन्दी). यदि FAO ने नियुक्ति आदेश अपलोड नहीं किया तो क्या होगा?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 82
+
+---
+
+## Q57 (English ). What happens if the FAO has not uploaded the appointment order ?
+
+प्रश्न 57. (हिन्दी). यदि FAO ने नियुक्ति आदेश अपलोड नहीं किया तो क्या होगा?
+
+उत्तर. PDF के अनुसार आवेदन करने से पहले एफ॰ए॰ओ॰ को अपना नियुक्ति आदेश अपलोड करना होगा; इसलिए इसके बिना स्वीकृति पूरीं नहों होनी चाहिए| स्वीकृत
+
+Source: Page 5

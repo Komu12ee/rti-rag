@@ -1,0 +1,20 @@
+# FAQ Chunk 139
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 15
+Section: Q76. What is the practical distinction between role allocation and name change?
+Question: प्रश्न 76. आवंटन और नाम परिवर्तन में व्यावहारिक अंतर क्या है? भूमिका
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 105
+
+---
+
+## Q76. What is the practical distinction between role allocation and name change?
+
+प्रश्न 76. आवंटन और नाम परिवर्तन में व्यावहारिक अंतर क्या है? भूमिका
+
+उत्तरः भूमिका आवंटन अलग ईमेल आईडी वाले पोर्टल उपयोगकर्ता को कार्यभार स्थानांतरित करता है नाम परिवर्तन उसी ईमेल आईडी पर नए व्यक्ति का नाम, मोबाइल नंबर और पदनाम जोड़ता है तथा मैनुअल में बताई स्वीकृति प्रक्रिया अपनाता हैI दूसरे मौजूदा
+
+Source reference : Manual pp . 3-1 2

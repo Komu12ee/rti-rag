@@ -1,0 +1,18 @@
+# FAQ Chunk 3
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 1
+Section: (1) Qualifications:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 80
+
+---
+
+## (1) Qualifications:
+
+- State Chief Information Commissionerः Must be a person who has held position equivalent to Secretary to State Government or of a Judge of High Court
+- State Information Commissioners: Must be persons with expertise in management, or social and political affairs law,
+- (2) Appointment Authority State Government makes appointments in consultation with State Chief Secretary and others prescribed

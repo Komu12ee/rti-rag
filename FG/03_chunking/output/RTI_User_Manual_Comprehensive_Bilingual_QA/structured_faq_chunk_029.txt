@@ -1,0 +1,18 @@
+# FAQ Chunk 29
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 5
+Section: प्रश्नः रजिस्ट्रेशन के बाद प्राप्त सत्यापन ई-मेल के साथ क्या करना चाहिए?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 71
+
+---
+
+## प्रश्नः रजिस्ट्रेशन के बाद प्राप्त सत्यापन ई-मेल के साथ क्या करना चाहिए?
+
+उत्तरः ई-्मेल पते पर प्राप्त लिंक पर क्लिक करें | मैनुअल के अनुसार इससे खाता सक्रिय होता है और पासवर्ड बनाने की मिलती हैl पंजीकृत सुविधा
+
+Source: RTI User Manual, Printed page 4.

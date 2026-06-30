@@ -1,0 +1,18 @@
+# FAQ Chunk 74
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 12
+Section: प्रश्नः द्वितीय अपील प्रक्रिया में पीआईओ और कार्यालय विवरण कैसे भरें?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 82
+
+---
+
+## प्रश्नः द्वितीय अपील प्रक्रिया में पीआईओ और कार्यालय विवरण कैसे भरें?
+
+उत्तरः प्रदर्शित फ़ील्ड और ड्रॉपडाउन विकल्पों से अधिकारी और कार्यालय विवरण दर्ज या चुनें , फिर Next पर क्लिक करें| दिखाई गई स्क्रीन में State, District, Base Department, Office Level, Office Name और Officer Name शामिल हैंl
+
+Source: RTI Manual, Printed page 7. User

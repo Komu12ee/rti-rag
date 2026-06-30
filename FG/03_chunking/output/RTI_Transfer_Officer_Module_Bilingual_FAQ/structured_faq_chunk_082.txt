@@ -1,0 +1,20 @@
+# FAQ Chunk 82
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 9
+Section: Q44. What happens after the file is uploaded?
+Question: प्रश्न 44. फाइल अपलोड होने के बाद क्या होता है?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 73
+
+---
+
+## Q44. What happens after the file is uploaded?
+
+प्रश्न 44. फाइल अपलोड होने के बाद क्या होता है?
+
+उत्तरः में अपलोड के बाद कार्यभार स्थानांतरण प्रमाणपत्र दिखाया गया हैl इसमें कार्यभार लेने वाले और कार्यभार देने वाले दोनों अधिकारियों का विवरण शामिल होता है| मैनुअल
+
+Source reference : Manual pp . 7 8

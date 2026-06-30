@@ -1,0 +1,19 @@
+# FAQ Chunk 39
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 7
+Section: (2) Grounds of Appeal:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 50
+
+---
+
+## (2) Grounds of Appeal:
+
+- Dissatisfied with PIO decision
+- Deemed refusal (no response within 30 days)
+- Charges for information deemed excessive
+- Access form provided deemed unsuitable

@@ -1,0 +1,18 @@
+# FAQ Chunk 39
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 7
+Section: Question: Where can [ apply for a second appeal after logging in?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 71
+
+---
+
+## Question: Where can [ apply for a second appeal after logging in?
+
+Answer: Log in with your credentials. On the user dashboard, use the option for applying for a second appeal for offline applications under PIO and FAO, then click the indicated second appeal button.
+
+Source: RTI User Manual, Printed page 5.

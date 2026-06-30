@@ -1,0 +1,16 @@
+# FAQ Chunk 81
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 9
+Section: Q44. What happens after the file is uploaded?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 46
+
+---
+
+## Q44. What happens after the file is uploaded?
+
+Answer: The manual shows a transfer of charge certificate after upload. It contains details of both the officer taking over the charge and the officer handing it over.

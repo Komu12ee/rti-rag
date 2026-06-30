@@ -1,0 +1,16 @@
+# FAQ Chunk 52
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 4
+Section: Q27 (English). What details are mandatory for the NodallApproval Authority?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 46
+
+---
+
+## Q27 (English). What details are mandatory for the NodallApproval Authority?
+
+Answer. Basic details of the Nodal Officer such as name, e-mail, designation and office details are mandatory

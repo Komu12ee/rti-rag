@@ -1,0 +1,18 @@
+# FAQ Chunk 54
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 9
+Section: प्रश्नः बीपीएल आवेदक के शुल्क के संबंध में मैनुअल क्या अपेक्षा करता है? लिए
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 94
+
+---
+
+## प्रश्नः बीपीएल आवेदक के शुल्क के संबंध में मैनुअल क्या अपेक्षा करता है? लिए
+
+उत्तरः निर्देश स्क्रीन में कहा गया है कि उद्धृत आरटीआई नियम, 2012 के तहत गरीबी रेखा से नीचे के व्यक्ति से आरटीआई शुल्क नहीं लिया जाता| इसमें यह भी कहा गया है कि आवेदक को उपयुक्त सरकारी प्राधिकारी द्वारा जारी प्रमाणपत्र की प्रति संलग्न करनी होगी|
+
+Source: RTI User Manual, Printed page 6.

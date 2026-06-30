@@ -1,0 +1,18 @@
+# FAQ Chunk 2
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 1
+Section: SECTION 1G: CHAIRPERSONAND COMMISSIONERS ( STATE LEVEL )
+Question: Q16. What are the qualifications and tenure of State Information Commissioners?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 63
+
+---
+
+## SECTION 1G: CHAIRPERSONAND COMMISSIONERS ( STATE LEVEL )
+
+Q16. What are the qualifications and tenure of State Information Commissioners?
+
+Answer: Section 16 governs the appointment and conditions of State Information Commissioners, similar to the Central Commission but at state level:

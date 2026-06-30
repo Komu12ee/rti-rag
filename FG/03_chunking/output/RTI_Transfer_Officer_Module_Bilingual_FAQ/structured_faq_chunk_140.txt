@@ -1,0 +1,16 @@
+# FAQ Chunk 140
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 15
+Section: Q77. What is the safest completion evidence in the workflow?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 76
+
+---
+
+## Q77. What is the safest completion evidence in the workflow?
+
+Answer: For a standard transfer, the portal should show Approved status, the relieving letter should be generated, and the transfer certificate should display both officers handover takeover details after upload. For a name change, the new name should appear after approval and login.

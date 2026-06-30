@@ -1,0 +1,20 @@
+# FAQ Chunk 35
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 8
+Section: Q16 (English). How do L start a second appeal application on the portal?
+Question: प्रश्न 16. (हिंदी)| पोर्टल पर द्वितीय अपील आवेदन कैसे शुरू करूँ?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 92
+
+---
+
+## Q16 (English). How do L start a second appeal application on the portal?
+
+प्रश्न 16. (हिंदी)| पोर्टल पर द्वितीय अपील आवेदन कैसे शुरू करूँ?
+
+उत्तर| अपने क्रेडेंशियल से लॉग इन करें| उपयोगकर्ता डैशबोर्ड पर PIO और प्रथम अपील अधिकारी के समक्ष ऑफलाइन आवेदन के लिए दिखाए गए द्वितीय अपील विकल्प का उपयोग करें|
+
+Source: RTI User Manual, Manual p. 5.

@@ -1,0 +1,18 @@
+# FAQ Chunk 28
+Document: cg_sic_contact_bilingual_all_questions_qna
+Source: structured.md
+Pages: 4
+Section: English Q&A
+Question: Question 24. What is the sector number of the SIC office?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 28
+
+---
+
+## English Q&A
+
+Question 24. What is the sector number of the SIC office?
+
+Answer: The office is listed in Sector-19.

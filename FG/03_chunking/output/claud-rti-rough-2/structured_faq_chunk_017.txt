@@ -1,0 +1,17 @@
+# FAQ Chunk 17
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 3
+Section: (2) शिकायत प्राधिकरणः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 31
+
+---
+
+## (2) शिकायत प्राधिकरणः
+
+- राज्य प्राधिकरणों द्वारा RTI अधिनियम के कार्यान्वयन के बारे में शिकायतों की जांच करें
+- आरोपित उल्लंघनों की जांच करें

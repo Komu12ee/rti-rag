@@ -1,0 +1,22 @@
+# FAQ Chunk 25
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 6
+Section: Untitled section
+Question: Q022. How many characters can I write in the reason field?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 134
+
+---
+
+## Untitled section
+
+Q022. How many characters can I write in the reason field?
+
+Field-specific limits beyond the stated 500-character rule are not listed.
+The instruction screen states that the application text entered in the prescribed column is confined to 500
+characters. It does not separately publish a different limit for every narrative field, including the Second Appeal
+Reason field. Treat 500 characters as the manual's stated limit for the prescribed application text and use an
+attachment for a longer explanation.

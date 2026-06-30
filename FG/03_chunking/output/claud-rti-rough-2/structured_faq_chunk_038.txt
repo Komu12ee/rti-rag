@@ -1,0 +1,16 @@
+# FAQ Chunk 38
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 7
+Section: FIRSTAPPEAL [Section 19(1)]
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 40
+
+---
+
+## FIRSTAPPEAL [Section 19(1)]
+
+- (1 ) Appellable Authority: Senior officer designated by state government OR directly to SIC (where no senior officer designated)

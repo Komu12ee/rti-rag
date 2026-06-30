@@ -1,0 +1,20 @@
+# FAQ Chunk 77
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 13
+Section: (6) Appellants Rights:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 56
+
+---
+
+## (6) Appellants Rights:
+
+- Can file objection to transfer
+- Can request commission to retain jurisdiction
+- Request heard before transfer finalized
+
+This provision enables proper forum selection for multi jurisdictional matters while maintaining clarity on competent authority.

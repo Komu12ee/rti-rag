@@ -1,0 +1,16 @@
+# FAQ Chunk 63
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 7
+Section: Q32. What does the Approved status indicate ?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 60
+
+---
+
+## Q32. What does the Approved status indicate ?
+
+Answer: In the manual workflow, Approved indicates that the receiving officer has accepted the charge through the takeover process. It is the prerequisite stage before the relieving letter workflow is shown.

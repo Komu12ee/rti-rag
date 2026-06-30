@@ -1,0 +1,16 @@
+# FAQ Chunk 71
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 6
+Section: Q37 (English ). Why is a valid e-mail important in onboarding?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 50
+
+---
+
+## Q37 (English ). Why is a valid e-mail important in onboarding?
+
+Answer. The e-mail is used for links and login password activation; therefore, the e-mail ID provided must be valid and active.

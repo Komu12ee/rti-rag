@@ -1,0 +1,18 @@
+# FAQ Chunk 112
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 18
+Section: Question: Does the manual display more than one payment amount?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 81
+
+---
+
+## Question: Does the manual display more than one payment amount?
+
+Answer: The payment screenshot displays two selectable fee choices, one marked 100 and another marked Rs. 125. The explanatory text in the manual does not define which option applies to a particular case, so the user should verify the correct live portal choice. Rs
+
+Source: RTI User Manual, Printed page 12

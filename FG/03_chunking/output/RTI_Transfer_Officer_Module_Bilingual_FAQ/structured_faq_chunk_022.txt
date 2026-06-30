@@ -1,0 +1,16 @@
+# FAQ Chunk 22
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 3
+Section: Q11. How do I start the charge handover process?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 46
+
+---
+
+## Q11. How do I start the charge handover process?
+
+Answer: Open the Transfer menu and click the " Give Charge' "कार्यभार देना" option. The manual highlights this option in the left side menu.

@@ -1,0 +1,20 @@
+# FAQ Chunk 95
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 10
+Section: Q51. When should I use name change instead of a normal transfer?
+Question: प्रश्न 51. सामान्य स्थानांतरण की बजाय नाम परिवर्तन कब करना चाहिए?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 85
+
+---
+
+## Q51. When should I use name change instead of a normal transfer?
+
+प्रश्न 51. सामान्य स्थानांतरण की बजाय नाम परिवर्तन कब करना चाहिए?
+
+उत्तरः जब दूसरा व्यक्ति वर्तमान ईमेल आईडी के साथ कार्य करेगा , तब नाम परिवर्तन का उपयोग करें| जब कार्यभार लेने वाले व्यक्ति अलग ईमेल आईडी हो, तब सामान्य स्थानांतरण प्रक्रिया का उपयोग करें|
+
+Source reference : Manual pp . 99-12

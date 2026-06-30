@@ -1,0 +1,23 @@
+# FAQ Chunk 24
+Document: RTI_ACT_QA
+Source: structured.md
+Pages: 12
+Section: SECTION 12 CENTRAL INFORMATION COMMISSION
+Question: Q12. What is the Central Information Commission and its composition as per Section 12?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 120
+
+---
+
+## SECTION 12 CENTRAL INFORMATION COMMISSION
+
+Q12. What is the Central Information Commission and its composition as per Section 12?
+
+Answer: Section 12 establishes the Central Information Commission (CIC). The Commission shall be constituted by the Central Government and shall consist ofः
+
+- 4 Chief Information Commissioner
+- Such number of Information Commissioners, not exceeding ten, as may be determined by the Central Government
+
+The Commission is constituted to hear appeals against decisions of Central PIOs and to inquire into complaints regarding implementation of the RTI Act at the central level.

@@ -1,0 +1,22 @@
+# FAQ Chunk 53
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 9
+Section: CHHATTISGARH SPECIFIC DETAILS
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 158
+
+---
+
+## CHHATTISGARH SPECIFIC DETAILS
+
+- (1) First Appeal Authority: As per Chhattisgarh rules, designated senior officers in various departments
+- (2) SIC Address: North Block, Sector 19, Naya Raipur, 492002
+- (3) Online Filing: https  rtionline cg govin allows online appeal submission
+- (4) Procedural Guidelines Multiple circulars issued by Chhattisgarh SIC regarding appeal disposal timelines, hearing schedules, and proper implementation ( See RTI Rule Book pages 76-96)
+- (5) Fees: No fee for filing appeal; SIC operates through government grants
+
+The appeal system ensures two levels of review with fair hearing procedures and expert assessment of RTI compliance.

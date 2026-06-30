@@ -1,0 +1,20 @@
+# FAQ Chunk 105
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 17
+Section: Untitled section
+Question: Q102. Who can file an RTI application?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 84
+
+---
+
+## Untitled section
+
+Q102. Who can file an RTI application?
+
+The instruction screen states that the web portal can be used by Indian citizens to file RTI applications online
+and to make online payment. It does not provide a complete eligibility analysis, exception list, or representation
+rules for every filing type.

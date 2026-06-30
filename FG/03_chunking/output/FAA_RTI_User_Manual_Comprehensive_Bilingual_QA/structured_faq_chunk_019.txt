@@ -1,0 +1,20 @@
+# FAQ Chunk 19
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 4
+Section: Q8 (English). Can \_ correct my registration details before submitting?
+Question: प्रश्न 8. (हिंदी) क्या Submit करने से पहले पंजीकरण विवरण में सुधार कर सकता / सकती हूँ?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 84
+
+---
+
+## Q8 (English). Can \_ correct my registration details before submitting?
+
+प्रश्न 8. (हिंदी) क्या Submit करने से पहले पंजीकरण विवरण में सुधार कर सकता / सकती हूँ?
+
+उत्तर हाँl Preview स्क्रीन पर किसी विवरण में बदलाव करना हो तो Edit का उपयोग करें| सुधार के बाद विवरण फिर से जांचें और Submit करें
+
+Source: RTI User Manual, Manual p. 3.

@@ -1,0 +1,18 @@
+# FAQ Chunk 100
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 16
+Section: (6) समीक्ष्य आदेशों के उदाहरणः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 58
+
+---
+
+## (6) समीक्ष्य आदेशों के उदाहरणः
+
+- आयोग बिना उचित कारण दिए छूट का आरोप लगाते हुए सूचना से इनकार करता है
+- आयोग अधिकार क्षेत्र से अधिक जाकर non RTI मामलों की जांच करता है
+- आयोग सुनवाई के बिना अधिकारों को प्रभावित करने वाला आदेश पास करता है

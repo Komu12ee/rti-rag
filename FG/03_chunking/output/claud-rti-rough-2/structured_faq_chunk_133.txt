@@ -1,0 +1,18 @@
+# FAQ Chunk 133
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 21
+Section: (2) रिकॉर्ड का विनाशः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 42
+
+---
+
+## (2) रिकॉर्ड का विनाशः
+
+- यदि कोई व्यक्ति जानबूझकर सूचना को नष्ट या क्षतिग्रस्त करता है
+- दंडः 3 महीने तक कारावास OR 3250 तक जुर्माना
+- OR दोनों

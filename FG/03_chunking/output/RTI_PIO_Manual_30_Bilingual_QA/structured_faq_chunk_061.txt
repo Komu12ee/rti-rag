@@ -1,0 +1,16 @@
+# FAQ Chunk 61
+Document: RTI_PIO_Manual_30_Bilingual_QA
+Source: structured.md
+Pages: 10
+Section: Question (English): How do I make payment through the portal?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 99
+
+---
+
+## Question (English): How do I make payment through the portal?
+
+Answer (English): At the Payment Details stage select the applicable payment option by ticking its checkbox and click Fee Online. The form is redirected to an online e-Challan page. Select the bank name or bank gateway shown on that page, then click Submit to finalize the payment. The manual notes that payment is not mandatory when the Second Appeal Relation is Complaint. Pay

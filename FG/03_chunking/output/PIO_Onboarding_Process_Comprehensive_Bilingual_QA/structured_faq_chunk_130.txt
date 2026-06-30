@@ -1,0 +1,20 @@
+# FAQ Chunk 130
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 11
+Section: Q67 (English ). What should be embedded?
+Question: प्रश्न 67. (हिन्दो). किस पाठ को embed करना चाहिए?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 79
+
+---
+
+## Q67 (English ). What should be embedded?
+
+प्रश्न 67. (हिन्दो). किस पाठ को embed करना चाहिए?
+
+उत्तर. केवल प्रश्न और उत्तर text को embed करें document header, file name, page number और citation label को metadata में रखें , embedding text में noise के रूप में नहों|
+
+Source: Implementation guidance

@@ -1,0 +1,24 @@
+# FAQ Chunk 49
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 13
+Section: Question: What fields should 1 complete in the Second Appeal Details section?
+Question: प्रश्न 22. - हिंदी प्रश्नोत्तर
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 177
+
+---
+
+## Question: What fields should 1 complete in the Second Appeal Details section?
+
+प्रश्न 22. - हिंदी प्रश्नोत्तर
+
+प्रश्नः द्वितीय अपील विवरण भाग में कौन॰कौन से फील्ड भरने चाहिए?
+
+उत्तरः Second Appeal Relation में Appeal या Complaint चुनें| उपलब्ध विकल्पों में से Second Appeal Reason Type चुनें Second Appeal Reason को शब्दों में लिखें और BPL कार्डधारक होने के प्रश्न के Yes या No चुनें| ये फील्ड आवेदन की निर्धारित करते हैं और यह भी तय करते हैं कि आगे फॉर्म में BPL दस्तावेज़ संबंधी जानकारी भरनी होगी या नहीं| प्रकृति लिए
+
+समान हिंदी प्रश्नः "कृपया समझाएंःद्वितीय अपील विवरण भाग में कौन कौन से फील्ड भरने चाहिए "आरटीआई पोर्टल पर यह प्रक्रिया कैसे होती है?"
+
+Manual reference संदर्भः Manual p. 6 मैनुअल

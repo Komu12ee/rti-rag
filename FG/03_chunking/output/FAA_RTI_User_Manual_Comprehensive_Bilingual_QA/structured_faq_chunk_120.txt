@@ -1,0 +1,16 @@
+# FAQ Chunk 120
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 17
+Section: Q59 (English). What file size and file types are shown on the upload screen?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 50
+
+---
+
+## Q59 (English). What file size and file types are shown on the upload screen?
+
+Answer. The upload screen shown in the manual states a maximum file size of 20 MB and indicates that PDF JPEG, and JPG files are allowed.

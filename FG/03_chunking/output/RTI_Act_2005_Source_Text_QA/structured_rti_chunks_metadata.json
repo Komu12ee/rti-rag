@@ -1,0 +1,2938 @@
+{
+  "document": "structured.md",
+  "document_name": "RTI_Act_2005_Source_Text_QA",
+  "source_path": "..\\01_preprocessing\\stage2_output\\RTI_Act_2005_Source_Text_QA\\structured.md",
+  "chunking_method": "rti_legal_qa_rule_based",
+  "key_guarantees": {
+    "supports_Q_dot_and_Q_colon": true,
+    "supports_hindi_and_english_questions": true,
+    "chapter_detection": "Markdown headings and plain Chapter headings",
+    "legal_reference_inference": "chapter + question only; answer body excluded",
+    "section_notes_indexed": false,
+    "embedding_payload_excludes_headers": true
+  },
+  "citation_contract": {
+    "source_book": "Original PDF/book shown by the Web UI",
+    "legal_reference": "Section, subsection, or rule",
+    "book_pages": "Printed pages inside the source book",
+    "pdf_pages": "PDF viewer page numbers",
+    "citation_label": "Single UI citation label"
+  },
+  "max_content_tokens": 512,
+  "tokenizer_model": "BAAI/bge-m3",
+  "token_count_mode": "tokenizer",
+  "source_legal_qa_blocks": 47,
+  "source_section_notes": 0,
+  "total_chunks": 82,
+  "chunks": [
+    {
+      "index": 1,
+      "filename": "structured_rti_chunk_001.txt",
+      "chapter": "Untitled section",
+      "question": "Q. What does the preamble of the Act state?",
+      "input_pages": [
+        3,
+        4
+      ],
+      "input_page_range": "3-4",
+      "source_block_ordinal": 1,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 309,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "",
+        "book_pages": [
+          1,
+          2
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          3,
+          4
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "1-2",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 2,
+      "filename": "structured_rti_chunk_002.txt",
+      "chapter": "Chapter I - Preliminary",
+      "question": "Q. What is the source text of Section 1?",
+      "input_pages": [
+        4
+      ],
+      "input_page_range": "4",
+      "source_block_ordinal": 2,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 136,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 1",
+        "book_pages": [
+          3
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          4
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "3",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 3,
+      "filename": "structured_rti_chunk_003.txt",
+      "chapter": "Chapter I - Preliminary",
+      "question": "Q. What is the source text for the definition of “appropriate Government”?",
+      "input_pages": [
+        4
+      ],
+      "input_page_range": "4",
+      "source_block_ordinal": 3,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 100,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "",
+        "book_pages": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          4
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "3-6",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 4,
+      "filename": "structured_rti_chunk_004.txt",
+      "chapter": "Chapter I - Preliminary",
+      "question": "Q. What is the source text for the definition of “Central Information Commission”?",
+      "input_pages": [
+        4
+      ],
+      "input_page_range": "4",
+      "source_block_ordinal": 4,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 55,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "",
+        "book_pages": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          4
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "3-6",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 5,
+      "filename": "structured_rti_chunk_005.txt",
+      "chapter": "Chapter I - Preliminary",
+      "question": "Q. What is the source text for the definition of “Central Public Information Officer”?",
+      "input_pages": [
+        4
+      ],
+      "input_page_range": "4",
+      "source_block_ordinal": 5,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 77,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "",
+        "book_pages": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          4
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "3-6",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 6,
+      "filename": "structured_rti_chunk_006.txt",
+      "chapter": "Chapter I - Preliminary",
+      "question": "Q. What is the source text for the definition of “Chief Information Commissioner and Information",
+      "input_pages": [
+        4,
+        5
+      ],
+      "input_page_range": "4-5",
+      "source_block_ordinal": 6,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 113,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "",
+        "book_pages": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          4,
+          5
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "3-6",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 7,
+      "filename": "structured_rti_chunk_007.txt",
+      "chapter": "Chapter I - Preliminary",
+      "question": "Q. What is the source text for the definition of “competent authority”?",
+      "input_pages": [
+        5
+      ],
+      "input_page_range": "5",
+      "source_block_ordinal": 7,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 173,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "",
+        "book_pages": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          5
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "3-6",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 8,
+      "filename": "structured_rti_chunk_008.txt",
+      "chapter": "Chapter I - Preliminary",
+      "question": "Q. What is the source text for the definition of “information”?",
+      "input_pages": [
+        5
+      ],
+      "input_page_range": "5",
+      "source_block_ordinal": 8,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 119,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "",
+        "book_pages": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          5
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "3-6",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 9,
+      "filename": "structured_rti_chunk_009.txt",
+      "chapter": "Chapter I - Preliminary",
+      "question": "Q. What is the source text for the definition of “prescribed”?",
+      "input_pages": [
+        5
+      ],
+      "input_page_range": "5",
+      "source_block_ordinal": 9,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 63,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "",
+        "book_pages": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          5
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "3-6",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 10,
+      "filename": "structured_rti_chunk_010.txt",
+      "chapter": "Chapter I - Preliminary",
+      "question": "Q. What is the source text for the definition of “public authority”?",
+      "input_pages": [
+        5,
+        6
+      ],
+      "input_page_range": "5-6",
+      "source_block_ordinal": 10,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 185,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "",
+        "book_pages": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          5,
+          6
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "3-6",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 11,
+      "filename": "structured_rti_chunk_011.txt",
+      "chapter": "Chapter I - Preliminary",
+      "question": "Q. What is the source text for the definition of “record”?",
+      "input_pages": [
+        6
+      ],
+      "input_page_range": "6",
+      "source_block_ordinal": 11,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 110,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "",
+        "book_pages": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          6
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "3-6",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 12,
+      "filename": "structured_rti_chunk_012.txt",
+      "chapter": "Chapter I - Preliminary",
+      "question": "Q. What is the source text for the definition of “right to information”?",
+      "input_pages": [
+        6
+      ],
+      "input_page_range": "6",
+      "source_block_ordinal": 12,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 155,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "",
+        "book_pages": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          6
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "3-6",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 13,
+      "filename": "structured_rti_chunk_013.txt",
+      "chapter": "Chapter I - Preliminary",
+      "question": "Q. What is the source text for the definition of “State Information Commission”?",
+      "input_pages": [
+        6
+      ],
+      "input_page_range": "6",
+      "source_block_ordinal": 13,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 55,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "",
+        "book_pages": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          6
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "3-6",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 14,
+      "filename": "structured_rti_chunk_014.txt",
+      "chapter": "Chapter I - Preliminary",
+      "question": "Q. What is the source text for the definition of “State Chief Information Commissioner and State",
+      "input_pages": [
+        6,
+        7
+      ],
+      "input_page_range": "6-7",
+      "source_block_ordinal": 14,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 122,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "",
+        "book_pages": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          6,
+          7
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "3-6",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 15,
+      "filename": "structured_rti_chunk_015.txt",
+      "chapter": "Chapter I - Preliminary",
+      "question": "Q. What is the source text for the definition of “State Public Information Officer”?",
+      "input_pages": [
+        7
+      ],
+      "input_page_range": "7",
+      "source_block_ordinal": 15,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 77,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "",
+        "book_pages": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          7
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "3-6",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 16,
+      "filename": "structured_rti_chunk_016.txt",
+      "chapter": "Chapter I - Preliminary",
+      "question": "Q. What is the source text for the definition of “third party”?",
+      "input_pages": [
+        7,
+        8
+      ],
+      "input_page_range": "7-8",
+      "source_block_ordinal": 16,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 155,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "",
+        "book_pages": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          7,
+          8
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "3-6",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 17,
+      "filename": "structured_rti_chunk_017.txt",
+      "chapter": "Chapter II - Right to information and obligations of public authorities",
+      "question": "Q. What is the source text of Section 3?",
+      "input_pages": [
+        8
+      ],
+      "input_page_range": "8",
+      "source_block_ordinal": 17,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 54,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 3",
+        "book_pages": [
+          7
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          8
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "7",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 18,
+      "filename": "structured_rti_chunk_018.txt",
+      "chapter": "Chapter II - Right to information and obligations of public authorities",
+      "question": "Q. What is the source text of Section 4?",
+      "input_pages": [
+        8,
+        9,
+        10
+      ],
+      "input_page_range": "8-10",
+      "source_block_ordinal": 18,
+      "part": 1,
+      "parts_in_block": 5,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 420,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 4",
+        "book_pages": [
+          7,
+          8,
+          9,
+          10
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          8,
+          9,
+          10
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "7-10",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 19,
+      "filename": "structured_rti_chunk_019.txt",
+      "chapter": "Chapter II - Right to information and obligations of public authorities",
+      "question": "Q. What is the source text of Section 4?",
+      "input_pages": [
+        8,
+        9,
+        10
+      ],
+      "input_page_range": "8-10",
+      "source_block_ordinal": 18,
+      "part": 2,
+      "parts_in_block": 5,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 508,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 4",
+        "book_pages": [
+          7,
+          8,
+          9,
+          10
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          8,
+          9,
+          10
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "7-10",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 20,
+      "filename": "structured_rti_chunk_020.txt",
+      "chapter": "Chapter II - Right to information and obligations of public authorities",
+      "question": "Q. What is the source text of Section 4?",
+      "input_pages": [
+        8,
+        9,
+        10
+      ],
+      "input_page_range": "8-10",
+      "source_block_ordinal": 18,
+      "part": 3,
+      "parts_in_block": 5,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 43,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 4",
+        "book_pages": [
+          7,
+          8,
+          9,
+          10
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          8,
+          9,
+          10
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "7-10",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 21,
+      "filename": "structured_rti_chunk_021.txt",
+      "chapter": "Chapter II - Right to information and obligations of public authorities",
+      "question": "Q. What is the source text of Section 4?",
+      "input_pages": [
+        8,
+        9,
+        10
+      ],
+      "input_page_range": "8-10",
+      "source_block_ordinal": 18,
+      "part": 4,
+      "parts_in_block": 5,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 149,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 4",
+        "book_pages": [
+          7,
+          8,
+          9,
+          10
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          8,
+          9,
+          10
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "7-10",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 22,
+      "filename": "structured_rti_chunk_022.txt",
+      "chapter": "Chapter II - Right to information and obligations of public authorities",
+      "question": "Q. What is the source text of Section 4?",
+      "input_pages": [
+        8,
+        9,
+        10
+      ],
+      "input_page_range": "8-10",
+      "source_block_ordinal": 18,
+      "part": 5,
+      "parts_in_block": 5,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 98,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 4",
+        "book_pages": [
+          7,
+          8,
+          9,
+          10
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          8,
+          9,
+          10
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "7-10",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 23,
+      "filename": "structured_rti_chunk_023.txt",
+      "chapter": "Chapter II - Right to information and obligations of public authorities",
+      "question": "Q. What is the source text of Section 5?",
+      "input_pages": [
+        10,
+        11
+      ],
+      "input_page_range": "10-11",
+      "source_block_ordinal": 19,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 512,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 5",
+        "book_pages": [
+          10,
+          11
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          10,
+          11
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "10-11",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 24,
+      "filename": "structured_rti_chunk_024.txt",
+      "chapter": "Chapter II - Right to information and obligations of public authorities",
+      "question": "Q. What is the source text of Section 6?",
+      "input_pages": [
+        11,
+        12
+      ],
+      "input_page_range": "11-12",
+      "source_block_ordinal": 20,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 416,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 6",
+        "book_pages": [
+          11,
+          12,
+          13
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          11,
+          12
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "11-13",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 25,
+      "filename": "structured_rti_chunk_025.txt",
+      "chapter": "Chapter II - Right to information and obligations of public authorities",
+      "question": "Q. What is the source text of Section 7?",
+      "input_pages": [
+        12,
+        13
+      ],
+      "input_page_range": "12-13",
+      "source_block_ordinal": 21,
+      "part": 1,
+      "parts_in_block": 3,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 508,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 7",
+        "book_pages": [
+          13,
+          14,
+          15
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          12,
+          13
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "13-15",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 26,
+      "filename": "structured_rti_chunk_026.txt",
+      "chapter": "Chapter II - Right to information and obligations of public authorities",
+      "question": "Q. What is the source text of Section 7?",
+      "input_pages": [
+        12,
+        13
+      ],
+      "input_page_range": "12-13",
+      "source_block_ordinal": 21,
+      "part": 2,
+      "parts_in_block": 3,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 51,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 7",
+        "book_pages": [
+          13,
+          14,
+          15
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          12,
+          13
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "13-15",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 27,
+      "filename": "structured_rti_chunk_027.txt",
+      "chapter": "Chapter II - Right to information and obligations of public authorities",
+      "question": "Q. What is the source text of Section 7?",
+      "input_pages": [
+        12,
+        13
+      ],
+      "input_page_range": "12-13",
+      "source_block_ordinal": 21,
+      "part": 3,
+      "parts_in_block": 3,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 450,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 7",
+        "book_pages": [
+          13,
+          14,
+          15
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          12,
+          13
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "13-15",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 28,
+      "filename": "structured_rti_chunk_028.txt",
+      "chapter": "Chapter II - Right to information and obligations of public authorities",
+      "question": "Q. What is the source text of Section 8?",
+      "input_pages": [
+        13,
+        14,
+        15
+      ],
+      "input_page_range": "13-15",
+      "source_block_ordinal": 22,
+      "part": 1,
+      "parts_in_block": 5,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 140,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 8",
+        "book_pages": [
+          15,
+          16,
+          17
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          13,
+          14,
+          15
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "15-17",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 29,
+      "filename": "structured_rti_chunk_029.txt",
+      "chapter": "Chapter II - Right to information and obligations of public authorities",
+      "question": "Q. What is the source text of Section 8?",
+      "input_pages": [
+        13,
+        14,
+        15
+      ],
+      "input_page_range": "13-15",
+      "source_block_ordinal": 22,
+      "part": 2,
+      "parts_in_block": 5,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 508,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 8",
+        "book_pages": [
+          15,
+          16,
+          17
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          13,
+          14,
+          15
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "15-17",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 30,
+      "filename": "structured_rti_chunk_030.txt",
+      "chapter": "Chapter II - Right to information and obligations of public authorities",
+      "question": "Q. What is the source text of Section 8?",
+      "input_pages": [
+        13,
+        14,
+        15
+      ],
+      "input_page_range": "13-15",
+      "source_block_ordinal": 22,
+      "part": 3,
+      "parts_in_block": 5,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 42,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 8",
+        "book_pages": [
+          15,
+          16,
+          17
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          13,
+          14,
+          15
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "15-17",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 31,
+      "filename": "structured_rti_chunk_031.txt",
+      "chapter": "Chapter II - Right to information and obligations of public authorities",
+      "question": "Q. What is the source text of Section 8?",
+      "input_pages": [
+        13,
+        14,
+        15
+      ],
+      "input_page_range": "13-15",
+      "source_block_ordinal": 22,
+      "part": 4,
+      "parts_in_block": 5,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 60,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 8",
+        "book_pages": [
+          15,
+          16,
+          17
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          13,
+          14,
+          15
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "15-17",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 32,
+      "filename": "structured_rti_chunk_032.txt",
+      "chapter": "Chapter II - Right to information and obligations of public authorities",
+      "question": "Q. What is the source text of Section 8?",
+      "input_pages": [
+        13,
+        14,
+        15
+      ],
+      "input_page_range": "13-15",
+      "source_block_ordinal": 22,
+      "part": 5,
+      "parts_in_block": 5,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 199,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 8",
+        "book_pages": [
+          15,
+          16,
+          17
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          13,
+          14,
+          15
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "15-17",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 33,
+      "filename": "structured_rti_chunk_033.txt",
+      "chapter": "Chapter II - Right to information and obligations of public authorities",
+      "question": "Q. What is the source text of Section 9?",
+      "input_pages": [
+        15
+      ],
+      "input_page_range": "15",
+      "source_block_ordinal": 23,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 98,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 9",
+        "book_pages": [
+          17
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          15
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "17",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 34,
+      "filename": "structured_rti_chunk_034.txt",
+      "chapter": "Chapter II - Right to information and obligations of public authorities",
+      "question": "Q. What is the source text of Section 10?",
+      "input_pages": [
+        15,
+        16
+      ],
+      "input_page_range": "15-16",
+      "source_block_ordinal": 24,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 402,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 10",
+        "book_pages": [
+          17,
+          18,
+          19
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          15,
+          16
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "17-19",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 35,
+      "filename": "structured_rti_chunk_035.txt",
+      "chapter": "Chapter II - Right to information and obligations of public authorities",
+      "question": "Q. What is the source text of Section 11?",
+      "input_pages": [
+        16,
+        17,
+        18
+      ],
+      "input_page_range": "16-18",
+      "source_block_ordinal": 25,
+      "part": 1,
+      "parts_in_block": 2,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 474,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 11",
+        "book_pages": [
+          19,
+          20,
+          21
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          16,
+          17,
+          18
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "19-21",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 36,
+      "filename": "structured_rti_chunk_036.txt",
+      "chapter": "Chapter II - Right to information and obligations of public authorities",
+      "question": "Q. What is the source text of Section 11?",
+      "input_pages": [
+        16,
+        17,
+        18
+      ],
+      "input_page_range": "16-18",
+      "source_block_ordinal": 25,
+      "part": 2,
+      "parts_in_block": 2,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 93,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 11",
+        "book_pages": [
+          19,
+          20,
+          21
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          16,
+          17,
+          18
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "19-21",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 37,
+      "filename": "structured_rti_chunk_037.txt",
+      "chapter": "Chapter III - The Central Information Commission",
+      "question": "Q. What is the source text of Section 12?",
+      "input_pages": [
+        18,
+        19
+      ],
+      "input_page_range": "18-19",
+      "source_block_ordinal": 26,
+      "part": 1,
+      "parts_in_block": 2,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 417,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 12",
+        "book_pages": [
+          21,
+          22
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          18,
+          19
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "21-22",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 38,
+      "filename": "structured_rti_chunk_038.txt",
+      "chapter": "Chapter III - The Central Information Commission",
+      "question": "Q. What is the source text of Section 12?",
+      "input_pages": [
+        18,
+        19
+      ],
+      "input_page_range": "18-19",
+      "source_block_ordinal": 26,
+      "part": 2,
+      "parts_in_block": 2,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 166,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 12",
+        "book_pages": [
+          21,
+          22
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          18,
+          19
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "21-22",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 39,
+      "filename": "structured_rti_chunk_039.txt",
+      "chapter": "Chapter III - The Central Information Commission",
+      "question": "Q. What is the source text of Section 13?",
+      "input_pages": [
+        19,
+        20,
+        21
+      ],
+      "input_page_range": "19-21",
+      "source_block_ordinal": 27,
+      "part": 1,
+      "parts_in_block": 5,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 281,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 13",
+        "book_pages": [
+          22,
+          23,
+          24,
+          25
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          19,
+          20,
+          21
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "22-25",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 40,
+      "filename": "structured_rti_chunk_040.txt",
+      "chapter": "Chapter III - The Central Information Commission",
+      "question": "Q. What is the source text of Section 13?",
+      "input_pages": [
+        19,
+        20,
+        21
+      ],
+      "input_page_range": "19-21",
+      "source_block_ordinal": 27,
+      "part": 2,
+      "parts_in_block": 5,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 508,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 13",
+        "book_pages": [
+          22,
+          23,
+          24,
+          25
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          19,
+          20,
+          21
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "22-25",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 41,
+      "filename": "structured_rti_chunk_041.txt",
+      "chapter": "Chapter III - The Central Information Commission",
+      "question": "Q. What is the source text of Section 13?",
+      "input_pages": [
+        19,
+        20,
+        21
+      ],
+      "input_page_range": "19-21",
+      "source_block_ordinal": 27,
+      "part": 3,
+      "parts_in_block": 5,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 38,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 13",
+        "book_pages": [
+          22,
+          23,
+          24,
+          25
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          19,
+          20,
+          21
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "22-25",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 42,
+      "filename": "structured_rti_chunk_042.txt",
+      "chapter": "Chapter III - The Central Information Commission",
+      "question": "Q. What is the source text of Section 13?",
+      "input_pages": [
+        19,
+        20,
+        21
+      ],
+      "input_page_range": "19-21",
+      "source_block_ordinal": 27,
+      "part": 4,
+      "parts_in_block": 5,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 37,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 13",
+        "book_pages": [
+          22,
+          23,
+          24,
+          25
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          19,
+          20,
+          21
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "22-25",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 43,
+      "filename": "structured_rti_chunk_043.txt",
+      "chapter": "Chapter III - The Central Information Commission",
+      "question": "Q. What is the source text of Section 13?",
+      "input_pages": [
+        19,
+        20,
+        21
+      ],
+      "input_page_range": "19-21",
+      "source_block_ordinal": 27,
+      "part": 5,
+      "parts_in_block": 5,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 241,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 13",
+        "book_pages": [
+          22,
+          23,
+          24,
+          25
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          19,
+          20,
+          21
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "22-25",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 44,
+      "filename": "structured_rti_chunk_044.txt",
+      "chapter": "Chapter III - The Central Information Commission",
+      "question": "Q. What is the source text of Section 14?",
+      "input_pages": [
+        21,
+        22,
+        23
+      ],
+      "input_page_range": "21-23",
+      "source_block_ordinal": 28,
+      "part": 1,
+      "parts_in_block": 2,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 197,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 14",
+        "book_pages": [
+          25,
+          26,
+          27
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          21,
+          22,
+          23
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "25-27",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 45,
+      "filename": "structured_rti_chunk_045.txt",
+      "chapter": "Chapter III - The Central Information Commission",
+      "question": "Q. What is the source text of Section 14?",
+      "input_pages": [
+        21,
+        22,
+        23
+      ],
+      "input_page_range": "21-23",
+      "source_block_ordinal": 28,
+      "part": 2,
+      "parts_in_block": 2,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 400,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 14",
+        "book_pages": [
+          25,
+          26,
+          27
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          21,
+          22,
+          23
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "25-27",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 46,
+      "filename": "structured_rti_chunk_046.txt",
+      "chapter": "Chapter IV - The State Information Commission",
+      "question": "Q. What is the source text of Section 15?",
+      "input_pages": [
+        23,
+        24
+      ],
+      "input_page_range": "23-24",
+      "source_block_ordinal": 29,
+      "part": 1,
+      "parts_in_block": 2,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 414,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 15",
+        "book_pages": [
+          27,
+          28
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          23,
+          24
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "27-28",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 47,
+      "filename": "structured_rti_chunk_047.txt",
+      "chapter": "Chapter IV - The State Information Commission",
+      "question": "Q. What is the source text of Section 15?",
+      "input_pages": [
+        23,
+        24
+      ],
+      "input_page_range": "23-24",
+      "source_block_ordinal": 29,
+      "part": 2,
+      "parts_in_block": 2,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 209,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 15",
+        "book_pages": [
+          27,
+          28
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          23,
+          24
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "27-28",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 48,
+      "filename": "structured_rti_chunk_048.txt",
+      "chapter": "Chapter IV - The State Information Commission",
+      "question": "Q. What is the source text of Section 16?",
+      "input_pages": [
+        24,
+        25,
+        26
+      ],
+      "input_page_range": "24-26",
+      "source_block_ordinal": 30,
+      "part": 1,
+      "parts_in_block": 5,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 277,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 16",
+        "book_pages": [
+          28,
+          29,
+          30,
+          31
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          24,
+          25,
+          26
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "28-31",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 49,
+      "filename": "structured_rti_chunk_049.txt",
+      "chapter": "Chapter IV - The State Information Commission",
+      "question": "Q. What is the source text of Section 16?",
+      "input_pages": [
+        24,
+        25,
+        26
+      ],
+      "input_page_range": "24-26",
+      "source_block_ordinal": 30,
+      "part": 2,
+      "parts_in_block": 5,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 507,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 16",
+        "book_pages": [
+          28,
+          29,
+          30,
+          31
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          24,
+          25,
+          26
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "28-31",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 50,
+      "filename": "structured_rti_chunk_050.txt",
+      "chapter": "Chapter IV - The State Information Commission",
+      "question": "Q. What is the source text of Section 16?",
+      "input_pages": [
+        24,
+        25,
+        26
+      ],
+      "input_page_range": "24-26",
+      "source_block_ordinal": 30,
+      "part": 3,
+      "parts_in_block": 5,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 39,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 16",
+        "book_pages": [
+          28,
+          29,
+          30,
+          31
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          24,
+          25,
+          26
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "28-31",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 51,
+      "filename": "structured_rti_chunk_051.txt",
+      "chapter": "Chapter IV - The State Information Commission",
+      "question": "Q. What is the source text of Section 16?",
+      "input_pages": [
+        24,
+        25,
+        26
+      ],
+      "input_page_range": "24-26",
+      "source_block_ordinal": 30,
+      "part": 4,
+      "parts_in_block": 5,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 114,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 16",
+        "book_pages": [
+          28,
+          29,
+          30,
+          31
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          24,
+          25,
+          26
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "28-31",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 52,
+      "filename": "structured_rti_chunk_052.txt",
+      "chapter": "Chapter IV - The State Information Commission",
+      "question": "Q. What is the source text of Section 16?",
+      "input_pages": [
+        24,
+        25,
+        26
+      ],
+      "input_page_range": "24-26",
+      "source_block_ordinal": 30,
+      "part": 5,
+      "parts_in_block": 5,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 266,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 16",
+        "book_pages": [
+          28,
+          29,
+          30,
+          31
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          24,
+          25,
+          26
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "28-31",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 53,
+      "filename": "structured_rti_chunk_053.txt",
+      "chapter": "Chapter IV - The State Information Commission",
+      "question": "Q. What is the source text of Section 17?",
+      "input_pages": [
+        26,
+        27,
+        28
+      ],
+      "input_page_range": "26-28",
+      "source_block_ordinal": 31,
+      "part": 1,
+      "parts_in_block": 2,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 163,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 17",
+        "book_pages": [
+          31,
+          32,
+          33
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          26,
+          27,
+          28
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "31-33",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 54,
+      "filename": "structured_rti_chunk_054.txt",
+      "chapter": "Chapter IV - The State Information Commission",
+      "question": "Q. What is the source text of Section 17?",
+      "input_pages": [
+        26,
+        27,
+        28
+      ],
+      "input_page_range": "26-28",
+      "source_block_ordinal": 31,
+      "part": 2,
+      "parts_in_block": 2,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 452,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 17",
+        "book_pages": [
+          31,
+          32,
+          33
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          26,
+          27,
+          28
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "31-33",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 55,
+      "filename": "structured_rti_chunk_055.txt",
+      "chapter": "Chapter V - Powers and functions, appeal and penalties",
+      "question": "Q. What is the source text of Section 18?",
+      "input_pages": [
+        28,
+        29
+      ],
+      "input_page_range": "28-29",
+      "source_block_ordinal": 32,
+      "part": 1,
+      "parts_in_block": 3,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 508,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 18",
+        "book_pages": [
+          33,
+          34,
+          35
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          28,
+          29
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "33-35",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 56,
+      "filename": "structured_rti_chunk_056.txt",
+      "chapter": "Chapter V - Powers and functions, appeal and penalties",
+      "question": "Q. What is the source text of Section 18?",
+      "input_pages": [
+        28,
+        29
+      ],
+      "input_page_range": "28-29",
+      "source_block_ordinal": 32,
+      "part": 2,
+      "parts_in_block": 3,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 43,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 18",
+        "book_pages": [
+          33,
+          34,
+          35
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          28,
+          29
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "33-35",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 57,
+      "filename": "structured_rti_chunk_057.txt",
+      "chapter": "Chapter V - Powers and functions, appeal and penalties",
+      "question": "Q. What is the source text of Section 18?",
+      "input_pages": [
+        28,
+        29
+      ],
+      "input_page_range": "28-29",
+      "source_block_ordinal": 32,
+      "part": 3,
+      "parts_in_block": 3,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 219,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 18",
+        "book_pages": [
+          33,
+          34,
+          35
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          28,
+          29
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "33-35",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 58,
+      "filename": "structured_rti_chunk_058.txt",
+      "chapter": "Chapter V - Powers and functions, appeal and penalties",
+      "question": "Q. What is the source text of Section 19?",
+      "input_pages": [
+        29,
+        30,
+        31
+      ],
+      "input_page_range": "29-31",
+      "source_block_ordinal": 33,
+      "part": 1,
+      "parts_in_block": 5,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 348,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 19",
+        "book_pages": [
+          35,
+          36,
+          37
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          29,
+          30,
+          31
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "35-37",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 59,
+      "filename": "structured_rti_chunk_059.txt",
+      "chapter": "Chapter V - Powers and functions, appeal and penalties",
+      "question": "Q. What is the source text of Section 19?",
+      "input_pages": [
+        29,
+        30,
+        31
+      ],
+      "input_page_range": "29-31",
+      "source_block_ordinal": 33,
+      "part": 2,
+      "parts_in_block": 5,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 508,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 19",
+        "book_pages": [
+          35,
+          36,
+          37
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          29,
+          30,
+          31
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "35-37",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 60,
+      "filename": "structured_rti_chunk_060.txt",
+      "chapter": "Chapter V - Powers and functions, appeal and penalties",
+      "question": "Q. What is the source text of Section 19?",
+      "input_pages": [
+        29,
+        30,
+        31
+      ],
+      "input_page_range": "29-31",
+      "source_block_ordinal": 33,
+      "part": 3,
+      "parts_in_block": 5,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 44,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 19",
+        "book_pages": [
+          35,
+          36,
+          37
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          29,
+          30,
+          31
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "35-37",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 61,
+      "filename": "structured_rti_chunk_061.txt",
+      "chapter": "Chapter V - Powers and functions, appeal and penalties",
+      "question": "Q. What is the source text of Section 19?",
+      "input_pages": [
+        29,
+        30,
+        31
+      ],
+      "input_page_range": "29-31",
+      "source_block_ordinal": 33,
+      "part": 4,
+      "parts_in_block": 5,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 138,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 19",
+        "book_pages": [
+          35,
+          36,
+          37
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          29,
+          30,
+          31
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "35-37",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 62,
+      "filename": "structured_rti_chunk_062.txt",
+      "chapter": "Chapter V - Powers and functions, appeal and penalties",
+      "question": "Q. What is the source text of Section 19?",
+      "input_pages": [
+        29,
+        30,
+        31
+      ],
+      "input_page_range": "29-31",
+      "source_block_ordinal": 33,
+      "part": 5,
+      "parts_in_block": 5,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 70,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 19",
+        "book_pages": [
+          35,
+          36,
+          37
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          29,
+          30,
+          31
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "35-37",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 63,
+      "filename": "structured_rti_chunk_063.txt",
+      "chapter": "Chapter V - Powers and functions, appeal and penalties",
+      "question": "Q. What is the source text of Section 20?",
+      "input_pages": [
+        31,
+        32,
+        33
+      ],
+      "input_page_range": "31-33",
+      "source_block_ordinal": 34,
+      "part": 1,
+      "parts_in_block": 2,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 491,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 20",
+        "book_pages": [
+          37,
+          38,
+          39
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          31,
+          32,
+          33
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "37-39",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 64,
+      "filename": "structured_rti_chunk_064.txt",
+      "chapter": "Chapter V - Powers and functions, appeal and penalties",
+      "question": "Q. What is the source text of Section 20?",
+      "input_pages": [
+        31,
+        32,
+        33
+      ],
+      "input_page_range": "31-33",
+      "source_block_ordinal": 34,
+      "part": 2,
+      "parts_in_block": 2,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 59,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 20",
+        "book_pages": [
+          37,
+          38,
+          39
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          31,
+          32,
+          33
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "37-39",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 65,
+      "filename": "structured_rti_chunk_065.txt",
+      "chapter": "Chapter VI - Miscellaneous",
+      "question": "Q. What is the source text of Section 21?",
+      "input_pages": [
+        33
+      ],
+      "input_page_range": "33",
+      "source_block_ordinal": 35,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 69,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 21",
+        "book_pages": [
+          39
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          33
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "39",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 66,
+      "filename": "structured_rti_chunk_066.txt",
+      "chapter": "Chapter VI - Miscellaneous",
+      "question": "Q. What is the source text of Section 22?",
+      "input_pages": [
+        33
+      ],
+      "input_page_range": "33",
+      "source_block_ordinal": 36,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 87,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 22",
+        "book_pages": [
+          39
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          33
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "39",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 67,
+      "filename": "structured_rti_chunk_067.txt",
+      "chapter": "Chapter VI - Miscellaneous",
+      "question": "Q. What is the source text of Section 23?",
+      "input_pages": [
+        33
+      ],
+      "input_page_range": "33",
+      "source_block_ordinal": 37,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 71,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 23",
+        "book_pages": [
+          39
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          33
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "39",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 68,
+      "filename": "structured_rti_chunk_068.txt",
+      "chapter": "Chapter VI - Miscellaneous",
+      "question": "Q. What is the source text of Section 24?",
+      "input_pages": [
+        33,
+        34
+      ],
+      "input_page_range": "33-34",
+      "source_block_ordinal": 38,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 496,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 24",
+        "book_pages": [
+          39,
+          40
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          33,
+          34
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "39-40",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 69,
+      "filename": "structured_rti_chunk_069.txt",
+      "chapter": "Chapter VI - Miscellaneous",
+      "question": "Q. What is the source text of Section 25?",
+      "input_pages": [
+        34,
+        35,
+        36
+      ],
+      "input_page_range": "34-36",
+      "source_block_ordinal": 39,
+      "part": 1,
+      "parts_in_block": 5,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 112,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 25",
+        "book_pages": [
+          40,
+          41,
+          42
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          34,
+          35,
+          36
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "40-42",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 70,
+      "filename": "structured_rti_chunk_070.txt",
+      "chapter": "Chapter VI - Miscellaneous",
+      "question": "Q. What is the source text of Section 25?",
+      "input_pages": [
+        34,
+        35,
+        36
+      ],
+      "input_page_range": "34-36",
+      "source_block_ordinal": 39,
+      "part": 2,
+      "parts_in_block": 5,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 508,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 25",
+        "book_pages": [
+          40,
+          41,
+          42
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          34,
+          35,
+          36
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "40-42",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 71,
+      "filename": "structured_rti_chunk_071.txt",
+      "chapter": "Chapter VI - Miscellaneous",
+      "question": "Q. What is the source text of Section 25?",
+      "input_pages": [
+        34,
+        35,
+        36
+      ],
+      "input_page_range": "34-36",
+      "source_block_ordinal": 39,
+      "part": 3,
+      "parts_in_block": 5,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 38,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 25",
+        "book_pages": [
+          40,
+          41,
+          42
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          34,
+          35,
+          36
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "40-42",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 72,
+      "filename": "structured_rti_chunk_072.txt",
+      "chapter": "Chapter VI - Miscellaneous",
+      "question": "Q. What is the source text of Section 25?",
+      "input_pages": [
+        34,
+        35,
+        36
+      ],
+      "input_page_range": "34-36",
+      "source_block_ordinal": 39,
+      "part": 4,
+      "parts_in_block": 5,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 91,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 25",
+        "book_pages": [
+          40,
+          41,
+          42
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          34,
+          35,
+          36
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "40-42",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 73,
+      "filename": "structured_rti_chunk_073.txt",
+      "chapter": "Chapter VI - Miscellaneous",
+      "question": "Q. What is the source text of Section 25?",
+      "input_pages": [
+        34,
+        35,
+        36
+      ],
+      "input_page_range": "34-36",
+      "source_block_ordinal": 39,
+      "part": 5,
+      "parts_in_block": 5,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 71,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 25",
+        "book_pages": [
+          40,
+          41,
+          42
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          34,
+          35,
+          36
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "40-42",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 74,
+      "filename": "structured_rti_chunk_074.txt",
+      "chapter": "Chapter VI - Miscellaneous",
+      "question": "Q. What is the source text of Section 26?",
+      "input_pages": [
+        36,
+        37
+      ],
+      "input_page_range": "36-37",
+      "source_block_ordinal": 40,
+      "part": 1,
+      "parts_in_block": 2,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 468,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 26",
+        "book_pages": [
+          42,
+          43,
+          44
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          36,
+          37
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "42-44",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 75,
+      "filename": "structured_rti_chunk_075.txt",
+      "chapter": "Chapter VI - Miscellaneous",
+      "question": "Q. What is the source text of Section 26?",
+      "input_pages": [
+        36,
+        37
+      ],
+      "input_page_range": "36-37",
+      "source_block_ordinal": 40,
+      "part": 2,
+      "parts_in_block": 2,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 207,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 26",
+        "book_pages": [
+          42,
+          43,
+          44
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          36,
+          37
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "42-44",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 76,
+      "filename": "structured_rti_chunk_076.txt",
+      "chapter": "Chapter VI - Miscellaneous",
+      "question": "Q. What is the source text of Section 27?",
+      "input_pages": [
+        37
+      ],
+      "input_page_range": "37",
+      "source_block_ordinal": 41,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 268,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 27",
+        "book_pages": [
+          44,
+          45
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          37
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "44-45",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 77,
+      "filename": "structured_rti_chunk_077.txt",
+      "chapter": "Chapter VI - Miscellaneous",
+      "question": "Q. What is the source text of Section 28?",
+      "input_pages": [
+        37,
+        38
+      ],
+      "input_page_range": "37-38",
+      "source_block_ordinal": 42,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 220,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 28",
+        "book_pages": [
+          45,
+          46
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          37,
+          38
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "45-46",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 78,
+      "filename": "structured_rti_chunk_078.txt",
+      "chapter": "Chapter VI - Miscellaneous",
+      "question": "Q. What is the source text of Section 29?",
+      "input_pages": [
+        38
+      ],
+      "input_page_range": "38",
+      "source_block_ordinal": 43,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 229,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 29",
+        "book_pages": [
+          46
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          38
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "46",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 79,
+      "filename": "structured_rti_chunk_079.txt",
+      "chapter": "Chapter VI - Miscellaneous",
+      "question": "Q. What is the source text of Section 30?",
+      "input_pages": [
+        38
+      ],
+      "input_page_range": "38",
+      "source_block_ordinal": 44,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 172,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 30",
+        "book_pages": [
+          46
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          38
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "46",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 80,
+      "filename": "structured_rti_chunk_080.txt",
+      "chapter": "Chapter VI - Miscellaneous",
+      "question": "Q. What is the source text of Section 31?",
+      "input_pages": [
+        38,
+        39,
+        40
+      ],
+      "input_page_range": "38-40",
+      "source_block_ordinal": 45,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 86,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "Section 31",
+        "book_pages": [
+          46
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          38,
+          39,
+          40
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "46",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 81,
+      "filename": "structured_rti_chunk_081.txt",
+      "chapter": "Chapter VI - Miscellaneous",
+      "question": "Q. What is the source text of the First Schedule?",
+      "input_pages": [
+        40
+      ],
+      "input_page_range": "40",
+      "source_block_ordinal": 46,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 208,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "",
+        "book_pages": [
+          47
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          40
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "47",
+      "pdf_page_range": "Unknown"
+    },
+    {
+      "index": 82,
+      "filename": "structured_rti_chunk_082.txt",
+      "chapter": "Chapter VI - Miscellaneous",
+      "question": "Q. What is the source text of the Second Schedule?",
+      "input_pages": [
+        40,
+        41,
+        42
+      ],
+      "input_page_range": "40-42",
+      "source_block_ordinal": 47,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "faq",
+      "has_answer": true,
+      "content_tokens": 370,
+      "source_reference": {
+        "source_book": "",
+        "source_type": "general",
+        "legal_reference": "",
+        "book_pages": [
+          47,
+          48
+        ],
+        "pdf_pages": [],
+        "input_pages": [
+          40,
+          41,
+          42
+        ],
+        "citation_label": ""
+      },
+      "book_page_range": "47-48",
+      "pdf_page_range": "Unknown"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+# FAQ Chunk 58
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 15
+Section: Question: What should 1 do if my RTI application text exceeds 500 characters?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 117
+
+---
+
+## Question: What should 1 do if my RTI application text exceeds 500 characters?
+
+Answerः The instruction screen states that the text entered in the prescribed application column is limited to 500 characters. If more space is needed, write a concise statement in the form and upload the additional explanation as a Supporting document The document-upload stage is shown later in the workflow.
+
+Similar English questionsः "Please explainः What should I do if my RTI application text exceeds 500 characters "How is this handled on the RTI portal?"

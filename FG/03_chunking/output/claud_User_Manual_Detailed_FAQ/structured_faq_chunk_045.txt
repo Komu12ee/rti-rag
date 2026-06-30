@@ -1,0 +1,20 @@
+# FAQ Chunk 45
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 9
+Section: Untitled section
+Question: Q042. What is the First Appeal Reason Type?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 83
+
+---
+
+## Untitled section
+
+Q042. What is the First Appeal Reason Type?
+
+The dropdown choices are not listed.
+It is a required dropdown in the First Appeal Application stage. The manual directs users to select the suitable
+reason from the provided list, but it does not enumerate the reason-type values or explain each one.

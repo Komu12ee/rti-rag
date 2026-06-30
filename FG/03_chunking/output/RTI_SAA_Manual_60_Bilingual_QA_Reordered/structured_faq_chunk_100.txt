@@ -1,0 +1,24 @@
+# FAQ Chunk 100
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 25-26
+Section: Question: What manual-entry fields are shown if PIO and office details are missing from the list?
+Question: प्रश्न 46. - हिंदी प्रश्नोत्तर
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 192
+
+---
+
+## Question: What manual-entry fields are shown if PIO and office details are missing from the list?
+
+प्रश्न 46. - हिंदी प्रश्नोत्तर
+
+प्रश्नः यदि सूची में PIO और कार्यालय विवरण न मिले तो कौन॰से मैन्युअल फील्ड दिखते हैं?
+
+समान हिंदी प्रश्नः "कृपया समझाएंःयदि सूची में PIO और कार्यालय विवरण न मिले तो कौन से मैन्युअल फील्ड दिखते हैं " "आरटीआई पोर्टल पर यह प्रक्रिया कैसे होती है?"
+
+उत्तरः एंट्री स्क्रीन में Public Information Officer Name, Designation, Mobile Number, Office Name, Office Address, District, Base Department और Sub Department Name दिखते हैंl स्टार ( *) वाले फील्ड अनिवार्य हैंl ड्रॉपडाउन सूची में आवश्यक कार्यालय या अधिकारी न होने पर नीले लिंक से यह स्क्रीन खुलती हैl मैनुअल
+
+Manual reference संदर्भः Manual pp. 7-8 मैनुअल

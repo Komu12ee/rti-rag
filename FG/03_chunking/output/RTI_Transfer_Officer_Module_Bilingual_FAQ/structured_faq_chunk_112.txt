@@ -1,0 +1,20 @@
+# FAQ Chunk 112
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 12
+Section: Q61. How can [ confirm that the name has changed?
+Question: प्रश्न 61. नाम परिवर्तन होने की पुष्टि कैसे करें?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 79
+
+---
+
+## Q61. How can [ confirm that the name has changed?
+
+प्रश्न 61. नाम परिवर्तन होने की पुष्टि कैसे करें?
+
+उत्तरः स्वीकृति के बाद पोर्टल में लॉग इन करें और खाता | डैशबोर्ड क्षेत्र में दिखाई देने वाला नाम देखें| मैनुअल में लॉग इन के बाद बदला हुआ नाम दिखाया गया हैI
+
+Source reference : Manual pp . 9-1 2

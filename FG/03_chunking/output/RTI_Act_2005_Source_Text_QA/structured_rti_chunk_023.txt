@@ -1,0 +1,71 @@
+# RTI Legal Chunk 23
+Document: RTI_Act_2005_Source_Text_QA
+Input source: structured.md
+Input pages: 10-11
+Chapter: Chapter II - Right to information and obligations of public authorities
+Question: Q. What is the source text of Section 5?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 512
+Original source book: Unknown
+Source type: general
+Legal reference: Section 5
+Book pages: 10-11
+Source PDF pages: Unknown
+Citation: Unknown
+
+---
+
+## Chapter II - Right to information and obligations of public authorities
+
+Legal reference: Section 5
+
+Q. What is the source text of Section 5?
+
+Answer - source text
+5. (1) Every public authority shall, within
+one hundred days of the enactment of this Act, designate as many officers as
+the Central Public Information
+Officers or State Public Information Officers, as the case may be, in all
+administrative units or offices under
+it as may be necessary to provide
+information to persons requesting for the information under this Act.
+(2) Without prejudice to the provisions of sub-section (1), every public authority shall designate an officer,
+within one hundred days of the enactment of this Act, at each subdivisional level or other sub-district
+level as a Central Assistant Public
+Information Officer or a State Assistant Public Information Officer, as the case may be, to receive the
+applications for information or
+appeals under this Act for forwarding
+the same forthwith to the Central
+Public Information Officer or the
+State Public Information Officer or senior officer specified under subsection (1) of section 19 or the Central
+Information Commission or the State Information Commission, as the case may be:
+Provided that where an application
+for information or appeal is given to a
+Central Assistant Public Information
+Officer or a State Assistant Public Information Officer, as the case may be, a period of five days shall be
+added in computing the period for
+response specified under subsection
+(1) of section 7.
+(3) Every Central Public Information
+Officer or State Public Information Officer, as the case may be, shall deal
+with requests from persons seeking
+information and render reasonable
+assistance to the persons seeking such information.
+(4) The Central Public Information
+Officer or State Public Information Officer, as the case may be, may seek
+the assistance of any other officer as
+he or she considers it necessary for
+the proper discharge of his or her duties.
+(5) Any officer, whose assistance has been sought under sub-section (4),
+shall render all assistance to the
+Compiled from the uploaded RTI rule book - Part 1 statutory text only
+
+SOURCE-TEXT Q&A | THE RIGHT TO INFORMATION ACT, 2005
+Central Public Information Officer or State Public Information Officer, as the case may be, seeking his or her
+assistance and for the purposes of any
+contravention of the provisions of this Act, such other officer shall be treated
+as a Central Public Information
+Officer or State Public Information Officer, as the case may be.
+—

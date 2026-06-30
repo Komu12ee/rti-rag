@@ -1,0 +1,16 @@
+# FAQ Chunk 21
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 4
+Section: प्रश्नः यूज़र रजिस्ट्रेशन फॉर्म कैसे सबमिट करें?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 56
+
+---
+
+## प्रश्नः यूज़र रजिस्ट्रेशन फॉर्म कैसे सबमिट करें?
+
+उत्तरः विवरण भरने के बाद Preview पर क्लिक करें| दिखाई गई जानकारी की जाँच करें और सही होने पर Submit पर क्लिक करें| Source: RTI User Manual, Printed page 3

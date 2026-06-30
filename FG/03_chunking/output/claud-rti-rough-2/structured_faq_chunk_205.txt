@@ -1,0 +1,19 @@
+# FAQ Chunk 205
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 34
+Section: 9 Amendment of Rules:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 52
+
+---
+
+## 9 Amendment of Rules:
+
+- Can be amended by government
+- Notification published
+- Takes effect from date specified
+- Examples: Multiple fee amendments 200S 2013 (see RTI Rule Book pages 97-114 )

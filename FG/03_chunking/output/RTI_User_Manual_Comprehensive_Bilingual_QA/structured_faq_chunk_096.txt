@@ -1,0 +1,18 @@
+# FAQ Chunk 96
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 16
+Section: प्रश्नः Document Details पेज पर फ़ाइल अपलोड करने के चरण क्या हैं?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 80
+
+---
+
+## प्रश्नः Document Details पेज पर फ़ाइल अपलोड करने के चरण क्या हैं?
+
+उत्तरः Document Details पेज पर Browse पर क्लिक करें , फ़ाइल चुनें और Upload पर क्लिक करें| मैनुअल के अनुसार सफल अपलोड का प्रदर्शन होता है और Upload बटन हरे रंग में Uploaded लेबल के साथ बदल जाता है|
+
+Source: RTI User Manual, Printed page 11.

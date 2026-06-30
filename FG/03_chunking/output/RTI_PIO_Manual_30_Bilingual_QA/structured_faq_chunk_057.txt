@@ -1,0 +1,16 @@
+# FAQ Chunk 57
+Document: RTI_PIO_Manual_30_Bilingual_QA
+Source: structured.md
+Pages: 9
+Section: Question (English): How do I upload documents for the Second Appeal application?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 85
+
+---
+
+## Question (English): How do I upload documents for the Second Appeal application?
+
+Answer (English): At the Document Details stage, click Browse next to the required document slot, select the file from the device, and click Upload. When the upload is successful, the portal shows the upload status and the button changes to green Uploaded. After completing the required uploads, click Next to proceed to payment.

@@ -1,0 +1,18 @@
+# FAQ Chunk 92
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 15
+Section: प्रश्नः प्रथम अपील आवेदन स्थिति के बाद क्या करना है? चुनने
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 64
+
+---
+
+## प्रश्नः प्रथम अपील आवेदन स्थिति के बाद क्या करना है? चुनने
+
+उत्तरः पिछले फॉर्म में दर्ज विवरण संपादित करने के Back बटन का उपयोग करें| ड्रॉपडाउन से आवेदन स्थिति चुनें और फिर Save & Next पर क्लिक करें| लिए
+
+Sourceः RTI User Manual, Printed page 10.

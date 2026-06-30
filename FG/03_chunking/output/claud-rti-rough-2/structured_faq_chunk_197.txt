@@ -1,0 +1,18 @@
+# FAQ Chunk 197
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 32
+Section: (4) वर्तमान स्थितिः 2019 संशोधन के अनुसार
+Question: Q28. What is the rule making power under the RTI Act?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 33
+
+---
+
+## (4) वर्तमान स्थितिः 2019 संशोधन के अनुसार
+
+Q28. What is the rule making power under the RTI Act?
+
+Answer Section 28 establishes comprehensive rule making authority

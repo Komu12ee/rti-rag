@@ -1,0 +1,19 @@
+# FAQ Chunk 129
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 21
+Section: Enforcement in Chhattisgarh:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 43
+
+---
+
+## Enforcement in Chhattisgarh:
+
+- Penalties rarely imposed
+- Most violations result in corrective orders
+- Serious violations referred to government
+- Discipline committees process recommendations

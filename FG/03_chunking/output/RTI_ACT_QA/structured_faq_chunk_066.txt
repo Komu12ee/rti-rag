@@ -1,0 +1,19 @@
+# FAQ Chunk 66
+Document: RTI_ACT_QA
+Source: structured.md
+Pages: 25
+Section: छत्तीसगढ़ नियमः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 61
+
+---
+
+## छत्तीसगढ़ नियमः
+
+- RTI ( आवेदन प्रस्तुति) नियम, 2009
+- RTI ( शुल्क और प्रभार ) विनियम, 2005 ( संशोधित 2006, 2012, 2013)
+- RTI ( अपील) नियम, 2006 ( संशोधन 2006, 2011 के साथ)
+- विभिन्न विभागीय दिशानिर्देश और परिपत्र

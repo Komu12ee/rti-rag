@@ -1,0 +1,18 @@
+# FAQ Chunk 1
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 1
+Section: Scope
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 96
+
+---
+
+## Scope
+
+This guide is based only on the supplied RTI User Manual. It covers the user registration password verification, second appeal, PIOloffice, first appeal , documentupload, and payment steps shown in that manual. It provides representative user questions in English and Hindi; no external legal or procedural claims have been added.
+
+This guide contains 158 individual question answer pairs: one English pair and one Hindi pair for each source grounded topic.

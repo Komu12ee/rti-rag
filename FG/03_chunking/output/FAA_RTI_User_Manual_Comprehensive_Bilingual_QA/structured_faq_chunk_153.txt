@@ -1,0 +1,20 @@
+# FAQ Chunk 153
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 25-26
+Section: Q74 (English). Can officer and office information be entered manually?
+Question: प्रश्न 74. (हिंदी) [ क्या अधिकारी और कार्यालय की जानकारी मैन्युअली दर्ज की जा सकती है?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 90
+
+---
+
+## Q74 (English). Can officer and office information be entered manually?
+
+प्रश्न 74. (हिंदी) [ क्या अधिकारी और कार्यालय की जानकारी मैन्युअली दर्ज की जा सकती है?
+
+उत्तरI हाँl आवश्यक अधिकारी और कार्यालय सूची में न होने पर मैनुअल में मैन्युअल प्रविष्टि के नीला लिंक दिखाया गया है| लिए
+
+Source: RTI User Manual, Manual p. 7-8.

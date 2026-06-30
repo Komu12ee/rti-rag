@@ -1,0 +1,20 @@
+# FAQ Chunk 109
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 16
+Section: Q53 (English). Can 1 edit details entered in the previous firstappeal form?
+Question: प्रश्न 53. (हिंदी) क्या मैं प्रथम अपील के पिछले फॉर्म में दर्ज विवरण को संपादित कर सकता / सकती हूँ?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 84
+
+---
+
+## Q53 (English). Can 1 edit details entered in the previous firstappeal form?
+
+प्रश्न 53. (हिंदी) क्या मैं प्रथम अपील के पिछले फॉर्म में दर्ज विवरण को संपादित कर सकता / सकती हूँ?
+
+उत्तर हाँ| मैनुअल के अनुसार Back बटन पर क्लिक करके पहले दर्ज गए विवरण संपादित जा सकते हैं| किए किए
+
+Sourceः RTI User Manual, Manual p. 10.

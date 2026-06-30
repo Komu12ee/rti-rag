@@ -1,0 +1,16 @@
+# FAQ Chunk 7
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 2
+Section: Q03. What does the PIO dashboard show?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 52
+
+---
+
+## Q03. What does the PIO dashboard show?
+
+Answer: The PIOJFAO / Nodal dashboard displays the live status of RTI applications. The manual presents it as the starting screen from which transfer related functions can be accessed.

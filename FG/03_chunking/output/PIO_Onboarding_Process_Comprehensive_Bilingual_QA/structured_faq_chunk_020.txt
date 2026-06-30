@@ -1,0 +1,20 @@
+# FAQ Chunk 20
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 2
+Section: Q10 (English ). What happens after the PIO submits the required registration information ?
+Question: प्रश्न 10. (हिन्दो). आवश्यक जानकारीं जमा करने के बाद क्या होता है?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 69
+
+---
+
+## Q10 (English ). What happens after the PIO submits the required registration information ?
+
+प्रश्न 10. (हिन्दो). आवश्यक जानकारीं जमा करने के बाद क्या होता है?
+
+उत्तर. आवश्यक जानकारीं को एंट्री कर डेटा सबमिट करने पर दर्ज ई॰मेल आईडी में एक लिंक आएगा |
+
+Source: Page 2

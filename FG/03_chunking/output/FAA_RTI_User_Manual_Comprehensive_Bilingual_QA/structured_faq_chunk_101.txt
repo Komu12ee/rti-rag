@@ -1,0 +1,20 @@
+# FAQ Chunk 101
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 15-16
+Section: Q49 (English). What should 1 click after completing First Appeal Office Details?
+Question: प्रश्न 49. (हिंदी) [ First Appeal Office Details पूरा करने के बाद क्या क्लिक करना चाहिए?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 64
+
+---
+
+## Q49 (English). What should 1 click after completing First Appeal Office Details?
+
+प्रश्न 49. (हिंदी) [ First Appeal Office Details पूरा करने के बाद क्या क्लिक करना चाहिए?
+
+उत्तर| आगे की प्रक्रिया के Next पर क्लिक करें| लिए
+
+Source: RTI User Manual, Manual p. 9

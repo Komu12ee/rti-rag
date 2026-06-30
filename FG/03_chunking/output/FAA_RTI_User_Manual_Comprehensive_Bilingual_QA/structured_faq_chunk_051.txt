@@ -1,0 +1,20 @@
+# FAQ Chunk 51
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 9-10
+Section: Q24 (English). What should 1 do if my application text is more than 500 characters?
+Question: प्रश्न 24. (हिंदी)| यदि मेरा आवेदन पाठ 500 अक्षरों से अधिक है तो क्या करूँ?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 88
+
+---
+
+## Q24 (English). What should 1 do if my application text is more than 500 characters?
+
+प्रश्न 24. (हिंदी)| यदि मेरा आवेदन पाठ 500 अक्षरों से अधिक है तो क्या करूँ?
+
+उत्तर| निर्देशों के अनुसार यदि आवेदन में 500 से अधिक अक्षर हैं, तो उसे Supporting Document विकल्प के माध्यम से संलग्नक के रूप में अपलोड किया जा सकता हैl
+
+Sourceः RTI User Manual, Manual p. 6.

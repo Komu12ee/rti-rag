@@ -1,0 +1,18 @@
+# FAQ Chunk 130
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 14
+Section: Q71. What should be checked after the receiving officer approves?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 118
+
+---
+
+## Q71. What should be checked after the receiving officer approves?
+
+Answer: Verify that the transfer list shows the relevant entry and an Approved status. Then open View Details to confirm the charge type, office, date and receiving officer information before generating the relieving letter.
+
+उत्तरः सत्यापित करें कि स्थानांतरण सूची में संबंधित प्रविष्टि और Approved स्थिति दिखाई दे रही हैl इसके बाद रिलिविंग लेटर बनाने से पहले View Details खोलकर कार्यभार प्रकार, कार्यालय तिथि और कार्यभार लेने वाले अधिकारी की जानकारी जांचें

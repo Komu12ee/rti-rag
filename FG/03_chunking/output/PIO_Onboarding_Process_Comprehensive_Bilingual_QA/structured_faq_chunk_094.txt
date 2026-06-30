@@ -1,0 +1,20 @@
+# FAQ Chunk 94
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 8
+Section: Q48 (English ). If the PIO cannot find an office during onboarding what should be done ?
+Question: प्रश्न 48. (हिन्दी). यदि ऑनबोर्डिंग के समय PIO को कार्यालय नहीं मिलता तो क्या करना चाहिए?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 81
+
+---
+
+## Q48 (English ). If the PIO cannot find an office during onboarding what should be done ?
+
+प्रश्न 48. (हिन्दी). यदि ऑनबोर्डिंग के समय PIO को कार्यालय नहीं मिलता तो क्या करना चाहिए?
+
+उत्तर. PDF के अनुसार कार्यालय विवरण स्वीकृत कार्यालयों से चुना जा सकता है या नया कार्यालय बनाया जा सकता है मौजूदा
+
+Source: Pages 2 and 4

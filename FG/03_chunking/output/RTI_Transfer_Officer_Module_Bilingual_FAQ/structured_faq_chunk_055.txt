@@ -1,0 +1,16 @@
+# FAQ Chunk 55
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 6
+Section: Q28. When is the approval status updated?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 46
+
+---
+
+## Q28. When is the approval status updated?
+
+Answer: The manual states that the approval status is updated when the takeover form is submitted. It does not provide a separate technical delay or refresh duration.

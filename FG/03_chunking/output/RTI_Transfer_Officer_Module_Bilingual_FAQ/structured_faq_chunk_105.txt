@@ -1,0 +1,20 @@
+# FAQ Chunk 105
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 11
+Section: Q57. What happens when the current office charge includes both Nodal and FAO roles?
+Question: प्रश्न 57. यदि वर्तमान कार्यालय कार्यभार में नोडल और दोनों भूमिकाएँ हों तो क्या होता है? एफएओ
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 97
+
+---
+
+## Q57. What happens when the current office charge includes both Nodal and FAO roles?
+
+प्रश्न 57. यदि वर्तमान कार्यालय कार्यभार में नोडल और दोनों भूमिकाएँ हों तो क्या होता है? एफएओ
+
+उत्तरः मैनुअल के अनुसार यदि वर्तमान कार्यालय कार्यभार में नोडल और प्रथम अपील एफएओ दोनों कार्यभार हों, तो नाम परिवर्तन स्वतः स्वीकृत हो जाता है और नाम बदल जाता है|
+
+Source reference : Manual pp . 9-12

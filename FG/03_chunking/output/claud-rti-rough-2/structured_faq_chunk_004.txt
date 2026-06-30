@@ -1,0 +1,24 @@
+# FAQ Chunk 4
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 1
+Section: (3) Tenure (Amended 2019):
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 169
+
+---
+
+## (3) Tenure (Amended 2019):
+
+- Previously: 5 years from date of entering office
+- Now: Such term as may be prescribed by State Government
+- This provides flexibility to state governments
+- (4) Remuneration and Conditions: As prescribed by State Government rules
+- (5) Disqualifications Cannot hold any other office during tenure and must meet constitutional eligibility
+- (6) Removal Can be removed by State Government on grounds of misbehavior or incompetence after inquiry
+- (7) In Chhattisgarh: Multiple notification refs showing various Chief Commissioners and Commissioners appointed over time ( See RTI Rule Book references to SIC notifications)
+
+The 2019 Amendment made tenure flexible to allow state adaptation of commission terms.

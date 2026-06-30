@@ -1,0 +1,21 @@
+# FAQ Chunk 6
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 3
+Section: Untitled section
+Question: Q003. How do I verify my email account?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 102
+
+---
+
+## Untitled section
+
+Q003. How do I verify my email account?
+
+After successful registration, open the verification link sent to the email address used during registration. The
+link activates the account and opens the password-creation process. Enter the same email address as the login
+ID, create and confirm a compliant password, then select Create. A confirmation window indicates that user
+credentials were created successfully.

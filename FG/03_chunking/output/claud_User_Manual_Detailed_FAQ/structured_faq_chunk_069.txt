@@ -1,0 +1,20 @@
+# FAQ Chunk 69
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 12
+Section: Untitled section
+Question: Q066. Can I cancel a payment after submission?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 74
+
+---
+
+## Untitled section
+
+Q066. Can I cancel a payment after submission?
+
+Cancellation is not specified in the manual.
+The manual does not describe payment cancellation, reversal, refund, or modification after the e-Challan has
+been submitted. Do not assume that a cancellation control exists.

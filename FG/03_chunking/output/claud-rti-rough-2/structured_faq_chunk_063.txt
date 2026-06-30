@@ -1,0 +1,17 @@
+# FAQ Chunk 63
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 10
+Section: (3) समय सीमाः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 35
+
+---
+
+## (3) समय सीमाः
+
+- प्रथम अपील के निर्णय के 90 दिनों के भीतर दाखिल करें
+- यदि पर्याप्त कारण दिखाई दे तो पूर्वव्यापी अपीलें स्वीकार की जा सकती हैं

@@ -1,0 +1,39 @@
+# RTI Legal Chunk 32
+Document: RTI_Act_2005_Source_Text_QA
+Input source: structured.md
+Input pages: 13-15
+Chapter: Chapter II - Right to information and obligations of public authorities
+Question: Q. What is the source text of Section 8?
+Part: 5/5
+Kind: faq
+Has answer: yes
+Content tokens: 199
+Original source book: Unknown
+Source type: general
+Legal reference: Section 8
+Book pages: 15-17
+Source PDF pages: Unknown
+Citation: Unknown
+
+---
+
+## Chapter II - Right to information and obligations of public authorities
+
+Legal reference: Section 8
+
+Q. What is the source text of Section 8?
+
+**Answer continued:**
+
+SOURCE-TEXT Q&A | THE RIGHT TO INFORMATION ACT, 2005
+disclosure outweighs the harm to the protected interests.
+(3) Subject to the provisions of clauses
+(a), (c) and (i) of sub-section (1), any
+information relating to any occurrence, event or matter which has taken place, occurred or happened
+twenty years before the date on which any request is made under secton 6
+shall be provided to any person making a request under that section:
+Provided that where any question
+arises as to the date from which the
+said period of twenty years has to be computed, the decision of the Central Government shall be final, subject to
+the usual appeals provided for in this Act.
+—

@@ -1,0 +1,23 @@
+# FAQ Chunk 128
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 20-21
+Section: (8) Procedure:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 36
+
+---
+
+## (8) Procedure:
+
+- Commission investigates violation
+- Gives opportunity to officer to explain
+
+
+
+
+- Passes order with reasons
+- Recommended to appointing authority for execution

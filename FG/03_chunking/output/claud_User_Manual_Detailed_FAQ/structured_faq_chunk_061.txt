@@ -1,0 +1,23 @@
+# FAQ Chunk 61
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 11-12
+Section: Untitled section
+Question: Q058. What is the difference between Appeal and Complaint under Second Appeal Relation?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 152
+
+---
+
+## Untitled section
+
+Q058. What is the difference between Appeal and Complaint under Second Appeal Relation?
+
+Legal and procedural distinctions beyond those two conditions are not specified.
+Within the portal workflow, the difference expressly stated by the manual is that Complaint makes payment
+non-mandatory and makes supporting documents optional. The manual does not explain the legal test, suitable
+case types, or the authority's treatment of the two relations.
+
+<!-- extraction_method: direct_text | confidence: 0.75 -->

@@ -1,0 +1,21 @@
+# FAQ Chunk 120
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 20
+Section: Untitled section
+Question: Q117. Can I modify an application after it has been submitted and paid for?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 98
+
+---
+
+## Untitled section
+
+Q117. Can I modify an application after it has been submitted and paid for?
+
+Post-submission modification is not specified.
+The manual documents correction before submission: Edit on the registration preview and Back in earlier
+workflow steps. It does not describe modifications after a Second Appeal has been submitted and paid for. Do
+not assume post-payment editing is available.

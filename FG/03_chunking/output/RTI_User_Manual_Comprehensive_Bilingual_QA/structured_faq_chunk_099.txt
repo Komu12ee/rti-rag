@@ -1,0 +1,18 @@
+# FAQ Chunk 99
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 16
+Section: प्रश्नः दिखाए गए दस्तावेज पेज पर किस प्रकार के सहायक दस्तावेज चुने जा सकते हैं?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 82
+
+---
+
+## प्रश्नः दिखाए गए दस्तावेज पेज पर किस प्रकार के सहायक दस्तावेज चुने जा सकते हैं?
+
+उत्तरः उदाहरण अपलोड स्क्रीन में आरटीआई सहायक दस्तावेज, ऑफलाइन पीआईओ उत्तर दस्तावेज, प्रथम अपील सहायक दस्तावेज, ऑफलाइन एफएओ उत्तर दस्तावेज और द्वितीय अपील आवेदन के वैकल्पिक सहायक दस्तावेज के क्षेत्र दिखाए गए हैं| लिए
+
+Source: RTI User Manual, Printed page 11.

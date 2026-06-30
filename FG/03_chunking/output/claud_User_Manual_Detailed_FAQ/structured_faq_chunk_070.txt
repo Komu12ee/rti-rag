@@ -1,0 +1,24 @@
+# FAQ Chunk 70
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 12-13
+Section: Untitled section
+Question: Q067. What if the payment shows 100 Rs. and 125 Rs. options?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 151
+
+---
+
+## Untitled section
+
+Q067. What if the payment shows 100 Rs. and 125 Rs. options?
+
+The reason for the two fee amounts is not specified.
+Source-bounded guide based only on rtiUserManual.pdf | Page 12
+
+<!-- extraction_method: direct_text | confidence: 0.75 -->
+The manual screenshot shows two tick-box options, one for Rs. 100 and one for Rs. 125. It does not explain the
+classification behind those values. Select the option that the live portal identifies for your case, and do not infer
+the fee rule from the screenshot alone.

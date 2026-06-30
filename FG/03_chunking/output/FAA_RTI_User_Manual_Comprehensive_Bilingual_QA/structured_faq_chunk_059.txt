@@ -1,0 +1,20 @@
+# FAQ Chunk 59
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 10-11
+Section: Q28 (English). Why should 1 provide my mobile number in the application?
+Question: प्रश्न 28. (हिंदी)| आवेदन में मोबाइल नंबर क्यों देना चाहिए?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 77
+
+---
+
+## Q28 (English). Why should 1 provide my mobile number in the application?
+
+प्रश्न 28. (हिंदी)| आवेदन में मोबाइल नंबर क्यों देना चाहिए?
+
+उत्तर| मैनुअल की निर्देश स्क्रीन के अनुसार आवेदक | अपीलकर्ता को एसएमएस अलर्ट प्राप्त करने के लिए मोबाइल नंबर देना चाहिए|
+
+Sourceः RTI User Manual, Manual p. 66.

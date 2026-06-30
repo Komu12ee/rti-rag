@@ -1,0 +1,20 @@
+# FAQ Chunk 53
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 6
+Section: Q26. What information is shown after clicking Proceed?
+Question: प्रश्न 26. Proceed पर क्लिक करने के बाद कौन-सी जानकारी दिखाई देती है?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 79
+
+---
+
+## Q26. What information is shown after clicking Proceed?
+
+प्रश्न 26. Proceed पर क्लिक करने के बाद कौन-सी जानकारी दिखाई देती है?
+
+उत्तरः पोर्टल में कार्यभार लेने वाले अधिकारी का विवरण और स्वीकार जाने वाले कार्यभार की जानकारी दिखाई देती है| उपयोगकर्ता दिए गए विकल्प चुनता है और फॉर्म सबमिट करता है| किए
+
+Source reference : Manual pp . 5-6

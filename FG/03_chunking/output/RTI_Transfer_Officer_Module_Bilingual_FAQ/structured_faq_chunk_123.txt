@@ -1,0 +1,16 @@
+# FAQ Chunk 123
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 13
+Section: Q67 . Does this module automatically transfer every pending RTI application to the new officer?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 84
+
+---
+
+## Q67 . Does this module automatically transfer every pending RTI application to the new officer?
+
+Answer: The manual explains transfer of portal charge or role. It does not explicitly state whether all pending RTI applications, appeals, deadlines or task records are automatically reassigned. Do not assume that such reassignment occurs without checking the live portal or departmental process.

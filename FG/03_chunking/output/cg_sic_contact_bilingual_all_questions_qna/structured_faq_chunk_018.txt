@@ -1,0 +1,18 @@
+# FAQ Chunk 18
+Document: cg_sic_contact_bilingual_all_questions_qna
+Source: structured.md
+Pages: 3
+Section: हिंदी प्रश्नोत्तर
+Question: प्रश्न 14. सीजी एसआईसी का आधिकारिक नाम क्या है?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 30
+
+---
+
+## हिंदी प्रश्नोत्तर
+
+प्रश्न 14. सीजी एसआईसी का आधिकारिक नाम क्या है?
+
+उत्तरः सूचीबद्ध कार्यालय छत्तीसगढ़ राज्य सूचना आयोग का सचिवालय है|

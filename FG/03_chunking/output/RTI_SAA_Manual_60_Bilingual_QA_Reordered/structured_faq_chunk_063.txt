@@ -1,0 +1,22 @@
+# FAQ Chunk 63
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 16-17
+Section: Question: Why does the instruction page ask for a mobile number?
+Question: प्रश्न 29. हिंदी प्रश्नोत्तर
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 142
+
+---
+
+## Question: Why does the instruction page ask for a mobile number?
+
+प्रश्न 29. हिंदी प्रश्नोत्तर
+
+प्रश्नः निर्देश पेज मोबाइल नंबर क्यों मांगता है?
+
+उत्तरः निर्देश सूची कहती है कि आवेदक या अपीलकर्ता को SMS अलर्ट पाने के मोबाइल नंबर देना चाहिए| मैनुअल हर प्रकार के अलर्ट की सूची नहीं देता, लेकिन मोबाइल नंबर को इन सूचनाओं के माध्यम के रूप में पहचानता हैl ऐसा नंबर दें जिस पर संदेश प्राप्त हो सकें| लिए
+
+समान हिंदी प्रश्नः "कृपया समझाएं निर्देश पेज मोबाइल नंबर क्यों मांगता है FI "आरटीआई पोर्टल पर यह प्रक्रिया कैसे होती है ?" Manual reference संदर्भः Manual p. 6 मैनुअल

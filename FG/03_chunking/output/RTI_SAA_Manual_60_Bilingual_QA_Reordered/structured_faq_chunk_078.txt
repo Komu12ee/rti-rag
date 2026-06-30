@@ -1,0 +1,18 @@
+# FAQ Chunk 78
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 20
+Section: Question: Does the manual decide whether 1 should choose Appeal or Complaint?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 114
+
+---
+
+## Question: Does the manual decide whether 1 should choose Appeal or Complaint?
+
+Answer: No. The manual shows that Appeal or Complaint must be selected as the Second Appeal Relation, but it does not provide legal tests for deciding which one applies. It only describes the portal consequences shown for Complaint: payment is not mandatory and supporting documents are optional.
+
+Similar English questions: "Please explain: Does the manual decide whether I should choose Appeal or Complaint"; "How is this handled on the RTI portal?"

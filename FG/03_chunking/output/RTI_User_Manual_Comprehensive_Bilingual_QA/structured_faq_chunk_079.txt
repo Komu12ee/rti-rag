@@ -1,0 +1,30 @@
+# FAQ Chunk 79
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 13
+Section: Question: Which RTI details are required before entering first appeal office details?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 210
+
+---
+
+## Question: Which RTI details are required before entering first appeal office details?
+
+Answer: Enter the RTI details the date of the offline application and the information received status or details shown in the form. Then click Next to move to First Appeal Office Details.
+
+Source: RTI User Manual, Printed page 8.
+
+प्रश्नः आरटीआई आवेदन विवरण अनुभाग में क्या दर्ज करना होता है?
+
+उत्तरः आरटीआई विवरण, ऑफलाइन आवेदन की तिथि और फॉर्म में दिखाया गया सूचना प्राप्ति संबंधी विवरण या स्थिति दर्ज करें| फिर First Appeal Office Details पर जाने के लिए Next पर क्लिक करें|
+
+Source: RTI User Manual, Printed page 8.
+
+प्रश्नः प्रथम अपील कार्यालय विवरण भरने से पहले कौन से आरटीआई विवरण आवश्यक हैं?
+
+उत्तरः आरटीआई विवरण, ऑफलाइन आवेदन की तिथि और फॉर्म में दिखाया गया सूचना प्राप्ति संबंधी विवरण या स्थिति दर्ज करें| फिर First Appeal Office Details पर जाने के लिए Next पर क्लिक करें|
+
+Source: RTI Manual, Printed page 8. User

@@ -1,0 +1,18 @@
+# FAQ Chunk 117
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 19
+Section: प्रश्नः बैंक कैसे चुनें और ऑनलाइन भुगतान कैसे अंतिम रूप दें?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 62
+
+---
+
+## प्रश्नः बैंक कैसे चुनें और ऑनलाइन भुगतान कैसे अंतिम रूप दें?
+
+उत्तरः ई-चालान पेज पर बैंक गेटवे फ़ील्ड में बैंक का नाम चुनें और भुगतान को अंतिम रूप देने के लिए Submit पर क्लिक करें |
+
+Source: RTI User Manual, Printed page 12

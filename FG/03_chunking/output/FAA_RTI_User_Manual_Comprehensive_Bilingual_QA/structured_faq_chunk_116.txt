@@ -1,0 +1,16 @@
+# FAQ Chunk 116
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 17
+Section: Q57 (English). How do 1 know that a document was uploaded successfully?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 47
+
+---
+
+## Q57 (English). How do 1 know that a document was uploaded successfully?
+
+Answer. The manual states that a successful upload is displayed and the Upload button changes to with the label 'Uploaded'. green

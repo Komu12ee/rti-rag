@@ -1,0 +1,20 @@
+# FAQ Chunk 84
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 14
+Section: First appeal office not listed
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 69
+
+---
+
+## First appeal office not listed
+
+Question: What if the First Appeal Office or officer is not shown in the available choices?
+
+Answer: The manual says that when the office and officer details are not available in the listed choices, use the blue highlighted link to enter the details.
+
+Source: RTI User Manual, Printed page 9.

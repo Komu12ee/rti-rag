@@ -1,0 +1,21 @@
+# FAQ Chunk 36
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 7-8
+Section: Untitled section
+Question: Q033. What if the officer's name is not in the dropdown list?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 118
+
+---
+
+## Untitled section
+
+Q033. What if the officer's name is not in the dropdown list?
+
+Use the blue link provided below the PIO and Office Details dropdowns. The manual says that if the office and
+officer details are not listed, the user can enter them through that highlighted link.
+
+<!-- extraction_method: direct_text | confidence: 0.75 -->

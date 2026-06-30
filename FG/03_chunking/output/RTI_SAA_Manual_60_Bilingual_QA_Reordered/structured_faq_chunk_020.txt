@@ -1,0 +1,18 @@
+# FAQ Chunk 20
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 6
+Section: Question: What should I do if the portal confirms registration but my account is not yet usable?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 155
+
+---
+
+## Question: What should I do if the portal confirms registration but my account is not yet usable?
+
+Answer: Follow the email verification step. The registration confirmation asks the user to check email and verify the account. Open the link received at the registered email, create the password using the stated rules, and wait for the successful credentials confirmation. If the verification email is unavailable, the manual does not provide a troubleshooting procedure; use the portal's available support or contact options rather than assuming the account is active.
+
+Similar English questions: "Please explain: What should I do if the portal confirms registration but my account is not yet usable "How is this handled on the RTI portal?"

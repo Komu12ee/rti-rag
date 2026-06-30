@@ -1,0 +1,26 @@
+# FAQ Chunk 218
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 36-37
+Section: COMPREHENSIVEINDEX AND QUICK REFERENCE
+Question: (section note)
+Part: 1/2
+Kind: section_note
+Has answer: no
+Content tokens: 243
+
+---
+
+## COMPREHENSIVEINDEX AND QUICK REFERENCE
+
+| Section   | Topic                 | Key Points                                | Pages   |
+|-----------|-----------------------|-------------------------------------------|---------|
+|           | Title & Extent        | Short title, geographical scope           | 1-2     |
+| 2         | Definitions           | 19 key terms, critical for interpretation | 2-6     |
+| 3         | Basic Right           | Citizen right to information              |         |
+| +         | Authority Obligations | Records publications, suo motu            | 7-9     |
+| 5         | PIO Designation       | Central and Assistant PIOs                | 10      |
+| 6         | Application           | How to file, format, transfer             | 11-12   |
+|           | Response Time         | 3O-day rule, deemed refusal               | 13-14   |
+| 8         | Exemptions            | 10 categories, public interest override   | 15-17   |
+|           | Copyright             | Third party copyrights only               | 17      |

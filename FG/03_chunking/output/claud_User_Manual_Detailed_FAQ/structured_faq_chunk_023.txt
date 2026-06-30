@@ -1,0 +1,21 @@
+# FAQ Chunk 23
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 6
+Section: Untitled section
+Question: Q020. What is the difference between Appeal and Complaint?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 109
+
+---
+
+## Untitled section
+
+Q020. What is the difference between Appeal and Complaint?
+
+Legal distinction is not specified in the manual.
+The manual distinguishes them only operationally within the Second Appeal Relation field. Complaint has two
+stated conditions: payment is not mandatory, and supporting documents are optional. It does not give the legal
+definitions, eligibility criteria, or jurisdictional differences between Appeal and Complaint.

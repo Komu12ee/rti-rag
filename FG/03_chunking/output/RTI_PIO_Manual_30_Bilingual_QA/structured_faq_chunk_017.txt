@@ -1,0 +1,16 @@
+# FAQ Chunk 17
+Document: RTI_PIO_Manual_30_Bilingual_QA
+Source: structured.md
+Pages: 4
+Section: Question (English): Which credential should 1 use as my login ID?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 68
+
+---
+
+## Question (English): Which credential should 1 use as my login ID?
+
+Answer (English): Use the email ID that was entered during user registration. The manual explicitly states that the email should be entered as the login ID during password verification. This is the email supplied at registration must be valid and active. why

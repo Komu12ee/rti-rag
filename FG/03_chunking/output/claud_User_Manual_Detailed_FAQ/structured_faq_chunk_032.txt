@@ -1,0 +1,21 @@
+# FAQ Chunk 32
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 7
+Section: Untitled section
+Question: Q029. Who is the BPL Issuing Authority?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 102
+
+---
+
+## Untitled section
+
+Q029. Who is the BPL Issuing Authority?
+
+The manual does not provide an authority list.
+The form asks for the BPL Issuing Authority, meaning the government authority shown on the supporting BPL
+document. The manual does not list acceptable agencies or authorities, so use the issuing authority stated on the
+certificate and retain the certificate copy for upload.

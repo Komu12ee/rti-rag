@@ -1,0 +1,18 @@
+# FAQ Chunk 38
+Document: RTI_ACT_QA
+Source: structured.md
+Pages: 17
+Section: SECTION 1B: PROCEDURE FOR INQUIRIES
+Question: Q19. What is the comprehensive appeal procedure under Section 191
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 40
+
+---
+
+## SECTION 1B: PROCEDURE FOR INQUIRIES
+
+Q19. What is the comprehensive appeal procedure under Section 191
+
+Answer: Section 19 establishes a two tier appeal system:

@@ -1,0 +1,37 @@
+# RTI Legal Chunk 10
+Document: RTI_Act_2005_Source_Text_QA
+Input source: structured.md
+Input pages: 5-6
+Chapter: Chapter I - Preliminary
+Question: Q. What is the source text for the definition of “public authority”?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 185
+Original source book: Unknown
+Source type: general
+Legal reference: Unknown
+Book pages: 3-6
+Source PDF pages: Unknown
+Citation: Unknown
+
+---
+
+## Chapter I - Preliminary
+
+Q. What is the source text for the definition of “public authority”?
+
+Answer - source text
+(h) “public authority” means any
+authority or body or institution of self- government established or constituted -
+(a) by or under the Constitution;
+Compiled from the uploaded RTI rule book - Part 1 statutory text only
+
+SOURCE-TEXT Q&A | THE RIGHT TO INFORMATION ACT, 2005
+(b) by any other law made by Parliament;
+(c) by any other law made by State Legislature;
+(d) by notification issued or order made by the appropriate Government, and includes any -
+(i) body owned, controlled or substantially financed;
+(ii) non-Government organization substantially financed, directly or
+indirectly by funds provided by the appropriate Government;
+—

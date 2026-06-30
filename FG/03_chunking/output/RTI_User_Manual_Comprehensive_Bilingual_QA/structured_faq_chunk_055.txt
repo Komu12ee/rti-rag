@@ -1,0 +1,18 @@
+# FAQ Chunk 55
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 9
+Section: Question: Will 1 receive a registration number after submitting an application?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 70
+
+---
+
+## Question: Will 1 receive a registration number after submitting an application?
+
+Answer: The manual states that a unique registration number is issued after submission and can be used for future reference. It also says the applicant or appellant should provide a mobile number to receive SMS alerts.
+
+Source: RTI User Manual, Printed page 6.

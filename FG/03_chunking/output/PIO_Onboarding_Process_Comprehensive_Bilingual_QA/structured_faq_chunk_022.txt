@@ -1,0 +1,20 @@
+# FAQ Chunk 22
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 2
+Section: Q11 (English ). How does the PIO create the password after registration ?
+Question: प्रश्न 11. (हिन्दी ). पंजीयन के बाद PIO पासवर्ड कैसे बनाएगा?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 64
+
+---
+
+## Q11 (English ). How does the PIO create the password after registration ?
+
+प्रश्न 11. (हिन्दी ). पंजीयन के बाद PIO पासवर्ड कैसे बनाएगा?
+
+उत्तर. दर्ज ई॰मेल आईडी में प्राप्त लिंक को क्लिक करने पर पासवर्ड बनाने का मेनू आएगा|
+
+Source: Page 2

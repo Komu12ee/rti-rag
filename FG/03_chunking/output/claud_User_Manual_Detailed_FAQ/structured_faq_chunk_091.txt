@@ -1,0 +1,24 @@
+# FAQ Chunk 91
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 15-16
+Section: Untitled section
+Question: Q088. What happens if I use a weak password?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 139
+
+---
+
+## Untitled section
+
+Q088. What happens if I use a weak password?
+
+Exact validation behavior is not specified.
+A password that does not have at least 8 characters, one lowercase letter, one uppercase letter, and one special
+character does not meet the documented requirement. The manual does not show the rejection message or
+describe whether there are additional strength checks.
+
+<!-- extraction_method: direct_text | confidence: 0.75 -->
+Workflow Questions

@@ -1,0 +1,20 @@
+# FAQ Chunk 141
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 15
+Section: Q77. What is the safest completion evidence in the workflow?
+Question: प्रश्न 77. इस प्रक्रिया में पूर्णता का सबसे सुरक्षित प्रमाण क्या है?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 99
+
+---
+
+## Q77. What is the safest completion evidence in the workflow?
+
+प्रश्न 77. इस प्रक्रिया में पूर्णता का सबसे सुरक्षित प्रमाण क्या है?
+
+उत्तरः सामान्य स्थानांतरण के पोर्टल में Approved स्थिति, बना हुआ रिलिविंग लेटर और अपलोड के बाद दोनों अधिकारियों का विवरण दिखाने वाला स्थानांतरण प्रमाणपत्र होना चाहिए| नाम परिवर्तन के स्वीकृति के बाद लॉगिन करने पर नया नाम दिखाई देना चाहिए| लिए लिए
+
+Source reference : Manual pp . 3-1 2

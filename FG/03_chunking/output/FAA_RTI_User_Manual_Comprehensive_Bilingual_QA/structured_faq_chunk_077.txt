@@ -1,0 +1,16 @@
+# FAQ Chunk 77
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 12-13
+Section: Q37 (English). Can 1 continue without entering BPL document details after choosing Yes?
+Question: प्रश्न 37. (हिंदी) [ क्या BPL के Yes के बाद BPL दस्तावेज विवरण डाले बिना आगे बढ सकता / सकती हूँ? उत्तर| नहीं[ के अनुसार BPL कार्डधारक के BPL विवरण दर्ज करना आगे आवेदन प्रक्रिया चलाने हेतु अनिवार्य है| Source: RTI User Manual, Manual p. 7. चुनने लिए मैनुअल लिए
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 94
+
+---
+
+## Q37 (English). Can 1 continue without entering BPL document details after choosing Yes?
+
+प्रश्न 37. (हिंदी) [ क्या BPL के Yes के बाद BPL दस्तावेज विवरण डाले बिना आगे बढ सकता / सकती हूँ? उत्तर| नहीं[ के अनुसार BPL कार्डधारक के BPL विवरण दर्ज करना आगे आवेदन प्रक्रिया चलाने हेतु अनिवार्य है| Source: RTI User Manual, Manual p. 7. चुनने लिए मैनुअल लिए

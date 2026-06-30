@@ -1,0 +1,20 @@
+# FAQ Chunk 161
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 29
+Section: Q78 (English). What should 1 do after selecting a bank on the e-challan page?
+Question: प्रश्न 78. (हिंदी)| ई-चालान पृष्ठ पर बैंक के बाद क्या करना चुनने चाहिए?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 70
+
+---
+
+## Q78 (English). What should 1 do after selecting a bank on the e-challan page?
+
+प्रश्न 78. (हिंदी)| ई-चालान पृष्ठ पर बैंक के बाद क्या करना चुनने चाहिए?
+
+उत्तर| भुगतान अंतिम करने के Submit पर क्लिक करें| लिए
+
+Source: RTI User Manual, Manual p. 12.

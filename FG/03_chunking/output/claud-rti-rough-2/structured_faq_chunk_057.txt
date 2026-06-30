@@ -1,0 +1,18 @@
+# FAQ Chunk 57
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 10
+Section: (3) समय सीमाः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 53
+
+---
+
+## (3) समय सीमाः
+
+- PIO के निर्णय या समझे जाने वाले अस्वीकार के 30 दिनों के भीतर दाखिल करना चाहिए
+- यदि अंतिम दिन छुट्टी है, तो अगला कार्यदिवस गिना जाता है
+- उचित कारण के लिए विस्तार दिया जा सकता है

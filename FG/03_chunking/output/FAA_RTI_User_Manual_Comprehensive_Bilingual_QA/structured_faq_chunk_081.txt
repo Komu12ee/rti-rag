@@ -1,0 +1,20 @@
+# FAQ Chunk 81
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 13
+Section: Q39 (English). What should  do if 1 cannot find the PIO or office in the dropdown?
+Question: प्रश्न 39. (हिंदी)| यदि ड्रॉपडाउन में PIO या कार्यालय का विवरण नहीं मिले तो क्या करूँ?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 110
+
+---
+
+## Q39 (English). What should  do if 1 cannot find the PIO or office in the dropdown?
+
+प्रश्न 39. (हिंदी)| यदि ड्रॉपडाउन में PIO या कार्यालय का विवरण नहीं मिले तो क्या करूँ?
+
+उत्तर| मैनुअल में गए नीले रंग के लिंक का उपयोग करें| जब आवश्यक अधिकारी या कार्यालय का विवरण सूची में न हो, तो उसी लिंक से विवरण मैन्युअली दर्ज किया जा सकता है| दिखाए
+
+Source: RTI User Manual, Manual p. 7-8.

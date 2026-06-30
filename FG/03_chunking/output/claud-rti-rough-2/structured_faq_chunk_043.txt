@@ -1,0 +1,19 @@
+# FAQ Chunk 43
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 8
+Section: (6) Appellate Powers [Section 19(4)]:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 42
+
+---
+
+## (6) Appellate Powers [Section 19(4)]:
+
+- Can direct PIO to provide information
+- Can reduce waive fees
+- Can change access form
+- Can direct PIO to improve practices

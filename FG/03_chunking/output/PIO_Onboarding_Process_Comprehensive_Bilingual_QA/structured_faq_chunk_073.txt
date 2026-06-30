@@ -1,0 +1,16 @@
+# FAQ Chunk 73
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 6
+Section: Q38 (English ). What happens after the PIO submits the onboarding application ?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 65
+
+---
+
+## Q38 (English ). What happens after the PIO submits the onboarding application ?
+
+Answer. After the PIO submits the onboarding application, further action is taken by the Nodal Approval Authority and the First Appellate Officer through links sent to their registered e mail IDs.

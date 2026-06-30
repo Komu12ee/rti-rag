@@ -1,0 +1,31 @@
+# RTI Legal Chunk 8
+Document: RTI_Act_2005_Source_Text_QA
+Input source: structured.md
+Input pages: 5
+Chapter: Chapter I - Preliminary
+Question: Q. What is the source text for the definition of “information”?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 119
+Original source book: Unknown
+Source type: general
+Legal reference: Unknown
+Book pages: 3-6
+Source PDF pages: Unknown
+Citation: Unknown
+
+---
+
+## Chapter I - Preliminary
+
+Q. What is the source text for the definition of “information”?
+
+Answer - source text
+(f) “information” means any material in any form, including records, documents, memos, e-mails, opinions, advices,
+press releases, circulars, orders, logbooks, contracts, reports, papers, samples, models,
+data material held in any electronic
+form and information relating to any
+private body which can be accessed
+by a public authority under any other law for the time being in force;
+—

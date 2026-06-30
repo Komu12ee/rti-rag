@@ -1,0 +1,16 @@
+# FAQ Chunk 2
+Document: claud-rti-rough
+Source: structured.md
+Pages: 1
+Section: Ql. What is the official name and geographical scope of the Right to Information Act?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 111
+
+---
+
+## Ql. What is the official name and geographical scope of the Right to Information Act?
+
+Answer The Right to Information Act, 2005 ( Act No. 22 of 20O5) is the official short title of this legislation. It was enacted on l5th June, 2005, and extends to the whole of India except the State of Jammu and Kashmir The Act establishes a practical regime providing citizens with a constitutional right to access information held by public authorities to promote transparency and accountability in government functioning

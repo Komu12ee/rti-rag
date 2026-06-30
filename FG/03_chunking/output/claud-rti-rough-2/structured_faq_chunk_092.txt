@@ -1,0 +1,19 @@
+# FAQ Chunk 92
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 15
+Section: (7) Typical Procedure:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 41
+
+---
+
+## (7) Typical Procedure:
+
+- Petition filed in High Court
+- Respondent ( Commission PIO) files counter affidavit
+- Hearing on both sides
+- High Court judgment with orders

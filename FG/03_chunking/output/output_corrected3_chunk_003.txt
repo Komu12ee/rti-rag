@@ -1,4 +1,0 @@
-Headings: ['DECISION TAKEN']
-Source: output_corrected3
----
-    1. No suggestion for amendment was received. Therefore, the Minutes of 6Oth Empowered Committee meeting were approved.

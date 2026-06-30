@@ -1,0 +1,18 @@
+# FAQ Chunk 41
+Document: RTI_PIO_Manual_30_Bilingual_QA
+Source: structured.md
+Pages: 7
+Section: प्रश्न (हिंदी): BPL कार्डधारक को आवेदन में क्या भरना चाहिए?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 109
+
+---
+
+## प्रश्न (हिंदी): BPL कार्डधारक को आवेदन में क्या भरना चाहिए?
+
+उत्तर (हिंदी): BPL कार्डधारक होने के प्रश्न के Yes चुनें| इसके बाद BPL दस्तावेज़ संख्या, BPL दस्तावेज़ जारी होने की तिथि और BPL जारी करने वाले प्राधिकारी का विवरण भरें| मैनुअल के अनुसार यदि उपयोगकर्ता स्वयं को BPL कार्डधारक बताता है, तो आवेदन को आगे के BPL विवरण भरना अनिवार्य हैI लिए बढ़ाने लिए
+
+Source reference: Manual p.

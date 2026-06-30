@@ -1,0 +1,16 @@
+# FAQ Chunk 28
+Document: RTI_PIO_Manual_30_Bilingual_QA
+Source: structured.md
+Pages: 5
+Section: Question (English): How many main stages are shown in the Second Appeal application process?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 101
+
+---
+
+## Question (English): How many main stages are shown in the Second Appeal application process?
+
+Answer (English): The visual workflow shows eight main stagesः (1 ) RTI Instruction, (2) Second Appeal Application Details, (3) PIO and Office Details, (4) RTI Details, (5) First Appeal Office Details, (6) First Appeal Application, (7) Documents Details, and (8) Payment Details. The user progresses through them using Next Back, and Save & Next where applicable.

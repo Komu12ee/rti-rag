@@ -1,0 +1,19 @@
+# FAQ Chunk 192
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 31
+Section: (2) Amendment Procedure: Follows constitutional amendment process
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 41
+
+---
+
+## (2) Amendment Procedure: Follows constitutional amendment process
+
+- Private member bills or government bills
+- Parliamentary debate
+- Voting by both houses
+- Presidential assent

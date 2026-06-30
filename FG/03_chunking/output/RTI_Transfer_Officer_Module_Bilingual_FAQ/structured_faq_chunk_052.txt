@@ -1,0 +1,16 @@
+# FAQ Chunk 52
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 6
+Section: Q26. What information is shown after clicking Proceed?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 52
+
+---
+
+## Q26. What information is shown after clicking Proceed?
+
+Answer: The portal shows the details of the officer taking over charge and the charge information that is available for acceptance. The user selects the indicated options and submits the form.

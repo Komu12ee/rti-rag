@@ -1,0 +1,24 @@
+# FAQ Chunk 8
+Document: RTI_ACT_QA
+Source: structured.md
+Pages: 3
+Section: SECTION 4: OBLIGATIONS OF PUBLIC AUTHORITIES
+Question: Q4. What are the mandatory obligations of public authorities under Section 4 regarding information management?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 374
+
+---
+
+## SECTION 4: OBLIGATIONS OF PUBLIC AUTHORITIES
+
+Q4. What are the mandatory obligations of public authorities under Section 4 regarding information management?
+
+Answerः Section 4(1 ) (a) mandates that every public authority shall maintain all its records in such a way that are easily accessible. Records shall be properly maintained, catalogued, and indexed in a form that facilitates access under this Act. All records that are appropriate for computerization shall, within a reasonable time, be computerized and connected through a network through the whole of the country sO that access to information is facilitated. they
+
+Section 4(1) (b) requires every public authority to publish the following information within 120 days of enactment: (i) Organization structure, functions, duties; (ii) Powers and duties of officers; (iii) Decision making procedures and supervision chain; (iv) Norms for discharge of functions (v) Rules, regulations, instructions, manuals ( vi) Categories of documents held; ( vii) Public consultation arrangements; ( viii) Boards committees; (ix) Directory of officers; (x) Monthly remuneration of all officers; (xi) Budget allocation; (xii) Subsidy programmes; ( xiii) Recipients of licenses permits (xiv) Electronic information details (XV ) Citizen access facilities; (xvi) PIO particulars; (xvii) Other prescribed information.
+
+Section 4(2) mandates constant endeavor to provide information proactively through various means including internet to minimize use of the Act.
+
+Section 4(3) & ( 4 ) require information be disseminated in widely accessible form considering cost effectiveness and local language

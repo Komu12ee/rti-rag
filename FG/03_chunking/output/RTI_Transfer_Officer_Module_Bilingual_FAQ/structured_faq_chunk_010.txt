@@ -1,0 +1,20 @@
+# FAQ Chunk 10
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 2
+Section: Q04. Which officer roles are mentioned in the manual?
+Question: प्रश्न 04. मैनुअल में किन अधिकारी भूमिकाओं का उल्लेख है?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 96
+
+---
+
+## Q04. Which officer roles are mentioned in the manual?
+
+प्रश्न 04. मैनुअल में किन अधिकारी भूमिकाओं का उल्लेख है?
+
+उत्तरः मैनुअल में पीआईओ, और नोडल अधिकारी की भूमिकाओं का उल्लेख है| स्थानांतरण स्क्रीन में ये भूमिकाएँ चयन योग्य कार्यभार के रूप में दिखाई दे सकती हैं, जो उपयोगकर्ता खाते और कार्यालय सेटअप पर निर्भर करता है| एफएओ
+
+Source reference : Manual pp . 1-3

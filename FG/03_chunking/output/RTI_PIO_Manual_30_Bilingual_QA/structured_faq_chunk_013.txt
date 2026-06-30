@@ -1,0 +1,16 @@
+# FAQ Chunk 13
+Document: RTI_PIO_Manual_30_Bilingual_QA
+Source: structured.md
+Pages: 3
+Section: Question (English): How do 1 activate my RTI portal account after registration?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 80
+
+---
+
+## Question (English): How do 1 activate my RTI portal account after registration?
+
+Answer (English): Open the account verification link received on the registered email address. Use the same email address as the login ID. Create the password according to the portal rules, confirm it where required, and click Create. A confirmation window indicates that the user credentials have been created successfully.

@@ -1,0 +1,18 @@
+# FAQ Chunk 60
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 10
+Section: Question: Which registration number is used when referring to an original RTI application?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 81
+
+---
+
+## Question: Which registration number is used when referring to an original RTI application?
+
+Answer: The instruction screen says that to make an appeal to the First Appellate Authority, the applicant should click Submit First Appeal and complete the page that appears. It also says the registration number of the original application is used for reference.
+
+Sourceः RTI User Manual, Printed page 6.

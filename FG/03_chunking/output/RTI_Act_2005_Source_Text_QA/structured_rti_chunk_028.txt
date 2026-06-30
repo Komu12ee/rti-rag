@@ -1,0 +1,34 @@
+# RTI Legal Chunk 28
+Document: RTI_Act_2005_Source_Text_QA
+Input source: structured.md
+Input pages: 13-15
+Chapter: Chapter II - Right to information and obligations of public authorities
+Question: Q. What is the source text of Section 8?
+Part: 1/5
+Kind: faq
+Has answer: yes
+Content tokens: 140
+Original source book: Unknown
+Source type: general
+Legal reference: Section 8
+Book pages: 15-17
+Source PDF pages: Unknown
+Citation: Unknown
+
+---
+
+## Chapter II - Right to information and obligations of public authorities
+
+Legal reference: Section 8
+
+Q. What is the source text of Section 8?
+
+Answer - source text
+8. (1) Notwithstanding anything contained in this Act, there shall be no obligation to give any citizen,
+(a) information, disclosure of which
+would prejudicially affect the sovereignty and integrity of India, the security, strategic, scientific or economic interests of
+the State,
+relation with foreign State or lead to incitement of an offence;
+(b) information which has been
+expressly forbidden to be published
+Compiled from the uploaded RTI rule book - Part 1 statutory text only

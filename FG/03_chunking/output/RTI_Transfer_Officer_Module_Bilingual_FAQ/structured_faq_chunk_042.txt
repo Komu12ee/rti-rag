@@ -1,0 +1,16 @@
+# FAQ Chunk 42
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 5
+Section: Q21. Does the manual explain how to correct a wrong recipient entry before or after submission ?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 67
+
+---
+
+## Q21. Does the manual explain how to correct a wrong recipient entry before or after submission ?
+
+Answer: No. The manual does not describe edit, cancellation, rejection, or correction steps for an incorrectly submitted handover request. Verify the selected charge and recipient details carefully before clicking Submit.

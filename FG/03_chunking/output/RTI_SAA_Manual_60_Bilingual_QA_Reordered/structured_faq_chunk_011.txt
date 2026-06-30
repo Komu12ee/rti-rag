@@ -1,0 +1,24 @@
+# FAQ Chunk 11
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 3-4
+Section: Question: How can 1 check my registration details before final submission?
+Question: प्रश्न 04. - हिंदी प्रश्नोत्तर
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 166
+
+---
+
+## Question: How can 1 check my registration details before final submission?
+
+प्रश्न 04. - हिंदी प्रश्नोत्तर
+
+प्रश्नः अंतिम जमा करने से पहले पंजीयन विवरण कैसे जांचें?
+
+उत्तरः फॉर्म में विवरण भरने के बाद Preview पर क्लिक करें| पोर्टल भरी गई आवेदक जानकारी समीक्षा के दिखाएगा| जानकारी को ध्यान से जांचें| यदि सभी विवरण सही हों तो Submit पर क्लिक करें| किसी बदलाव या सुधार की आवश्यकता हो तो Edit पर क्लिक करें जानकारी संशोधित करें दोबारा जांचें और फिर पंजीयन जमा करें| लिए
+
+समान हिंदी प्रश्नः "कृपया समझाएं: अंतिम जमा करने से पहले पंजीयन विवरण कैसे जांचें " "आरटीआई पोर्टल पर यह प्रक्रिया कैसे होती है ?"
+
+Manual reference मैनुअल संदर्भः Manual p. 3

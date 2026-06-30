@@ -1,0 +1,30 @@
+# RTI Legal Chunk 36
+Document: RTI_Act_2005_Source_Text_QA
+Input source: structured.md
+Input pages: 16-18
+Chapter: Chapter II - Right to information and obligations of public authorities
+Question: Q. What is the source text of Section 11?
+Part: 2/2
+Kind: faq
+Has answer: yes
+Content tokens: 93
+Original source book: Unknown
+Source type: general
+Legal reference: Section 11
+Book pages: 19-21
+Source PDF pages: Unknown
+Citation: Unknown
+
+---
+
+## Chapter II - Right to information and obligations of public authorities
+
+Legal reference: Section 11
+
+Q. What is the source text of Section 11?
+
+**Answer continued:**
+
+(4) A notice given under sub section (3) shall include a statement that the third party to whom the notice is given is entitled to prefer an appeal under section 19 against the decision.
+
+SOURCE-TEXT Q&A | THE RIGHT TO INFORMATION ACT, 2005

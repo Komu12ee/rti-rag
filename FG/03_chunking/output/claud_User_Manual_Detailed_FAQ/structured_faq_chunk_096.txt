@@ -1,0 +1,22 @@
+# FAQ Chunk 96
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 16
+Section: Untitled section
+Question: Q093. Can I save a draft application and complete it later?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 118
+
+---
+
+## Untitled section
+
+Q093. Can I save a draft application and complete it later?
+
+Draft behavior is not fully specified.
+The dashboard screenshot includes a List of incomplete application second appeal, which suggests that
+incomplete work may be visible to the user. However, the manual does not describe a Save Draft button,
+automatic saving, expiry period, or a documented resume procedure. Do not rely on draft retention without
+confirming on the live portal.

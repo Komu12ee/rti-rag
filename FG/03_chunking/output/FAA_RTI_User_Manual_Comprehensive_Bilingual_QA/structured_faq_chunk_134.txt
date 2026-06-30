@@ -1,0 +1,16 @@
+# FAQ Chunk 134
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 20
+Section: Q66 (English). What will 1 see after a successful payment transaction?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 51
+
+---
+
+## Q66 (English). What will 1 see after a successful payment transaction?
+
+Answer. The manual states that a success screen is generated after the payment transaction is successful. The illustrated screen also shows transaction details and a Print Receipt option.

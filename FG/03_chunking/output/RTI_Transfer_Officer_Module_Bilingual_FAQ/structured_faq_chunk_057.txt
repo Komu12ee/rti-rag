@@ -1,0 +1,16 @@
+# FAQ Chunk 57
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 6
+Section: Q29. How can the receiving officer review an approved transfer?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 51
+
+---
+
+## Q29. How can the receiving officer review an approved transfer?
+
+Answer: After approval, open the list of charges to be taken over and click View Details for the relevant transfer. The manual shows the status as Approved in the list.

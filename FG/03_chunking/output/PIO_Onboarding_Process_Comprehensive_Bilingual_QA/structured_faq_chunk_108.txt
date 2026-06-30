@@ -1,0 +1,20 @@
+# FAQ Chunk 108
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 9
+Section: Q55 (English ). At what point is the application printed?
+Question: प्रश्न 55. (हिन्दी). आवेदन कब प्रिंट किया जाता है?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 63
+
+---
+
+## Q55 (English ). At what point is the application printed?
+
+प्रश्न 55. (हिन्दी). आवेदन कब प्रिंट किया जाता है?
+
+उत्तर. आवेदन प्रिंट करना ऑनबोर्डिंग प्रक्रिया का छठा चरण है॰ आदेश फाइल अपलोड के बाद और हस्ताक्षरित फाइल अपलोड से पहले|
+
+Source: Page 3

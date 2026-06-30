@@ -1,0 +1,67 @@
+# RTI Legal Chunk 49
+Document: RTI_Act_2005_Source_Text_QA
+Input source: structured.md
+Input pages: 24-26
+Chapter: Chapter IV - The State Information Commission
+Question: Q. What is the source text of Section 16?
+Part: 2/5
+Kind: faq
+Has answer: yes
+Content tokens: 507
+Original source book: Unknown
+Source type: general
+Legal reference: Section 16
+Book pages: 28-31
+Source PDF pages: Unknown
+Citation: Unknown
+
+---
+
+## Chapter IV - The State Information Commission
+
+Legal reference: Section 16
+
+Q. What is the source text of Section 16?
+
+**Answer continued:**
+
+SOURCE-TEXT Q&A | THE RIGHT TO INFORMATION ACT, 2005
+(3) The State Chief Information
+Commissioner or a State Information Commissioner, shall before he enters
+upon his office make and subscribe
+before the Governor or some other
+person appointed by him in that behalf, an oath or affirmation
+according to the form set out for the purpose in the First Schedule.
+(4) The State Chief Information
+Commissioner or a State Information Commissioner may, at any time, by
+writing under his hand addressed to the Governor, resign from his office: * Amendment of section 16
+(b) in sub-section (2) for the words “for a term of fi words “ for such term as may be prescribed by the Central Gov
+LFkku ij ^^,slh vof/k ds fy, .k djsxk vkSj,sls lwpuk
+Provided that the State Chief
+Information Commissioner or a State
+Information Commissioner may be
+removed in the manner specified under section 17.
+(5)* The salaries and allowances payable
+to and other terms and conditions of service of -
+(a) the State Chief Information
+Commissioner shall be the same as that of an Election Commissioner:
+(b) the State Information Commissioner
+shall be the same as that of the Chief Secretary to the State Government:
+Provided that if the State Chief
+Information Commissioner or a State Information Commissioner, at the time of his appointment is, in receipt of a
+pension, other than a disability or wound pension, in respect of any
+previous service under the
+Government of India or under the Government of a State, his salary in
+respect of the service as the State
+Chief Information Commissioner or a
+State Information Commissioner
+shall be reduced by the amount of that
+pension including any portion of
+pension which was commuted and
+pension equivalent of other forms of
+retirement benefits excluding
+pension equivalent of retirement gratuity: * Amendment of section 16
+(c) for sub-section (5), the following sub-section shal “(5) The Salaries and allowances payable to and other te
+Commissioner and the State Information Commissioners sha
+Provided that the salaries, allowances and other conditi
+and the State Information

@@ -1,0 +1,20 @@
+# FAQ Chunk 92
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 7-8
+Section: Q47 (English ). What is the approval order after PIO submits the onboarding application ?
+Question: प्रश्न 47. (हिन्दी). PIO आवेदन सबमिट होने के बाद स्वीकृति का क्रम क्या है?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 108
+
+---
+
+## Q47 (English ). What is the approval order after PIO submits the onboarding application ?
+
+प्रश्न 47. (हिन्दी). PIO आवेदन सबमिट होने के बाद स्वीकृति का क्रम क्या है?
+
+उत्तर. पहले नोडल स्वीकृति प्राधिकारीं पी॰आई॰ओ. द्वारा किये गये लंबित आवेदन को स्वीकृत या अस्वीकृत करता है| उसके
+
+बाद प्रथम अपीलीय अधिकारीं नोडल स्वींकृत अधिकारीं द्वारा स्वीकृत आवेदन को स्वीकृत या अस्वीकृत करता है| Source: Page 5

@@ -1,0 +1,53 @@
+# RTI Legal Chunk 43
+Document: RTI_Act_2005_Source_Text_QA
+Input source: structured.md
+Input pages: 19-21
+Chapter: Chapter III - The Central Information Commission
+Question: Q. What is the source text of Section 13?
+Part: 5/5
+Kind: faq
+Has answer: yes
+Content tokens: 241
+Original source book: Unknown
+Source type: general
+Legal reference: Section 13
+Book pages: 22-25
+Source PDF pages: Unknown
+Citation: Unknown
+
+---
+
+## Chapter III - The Central Information Commission
+
+Legal reference: Section 13
+
+Q. What is the source text of Section 13?
+
+**Answer continued:**
+
+SOURCE-TEXT Q&A | THE RIGHT TO INFORMATION ACT, 2005
+Government company owned or
+c o n t r o l l e d b y t h e Central
+Government o r t h e State Government, his salary in respect of
+the service as the Chief Information
+Commissioner or an Information
+Commissioner shall be reduced by
+the amount of pension equivalent to the retirement benefits:
+Provided also that the salaries,
+allowances and other conditions of
+service of the Chief Information
+Commissioner and the Information
+Commissioners shall not be varied to
+their disadvantage after their appointment.
+(6) The Central Government shall
+provide the Chief Information
+Commissioner and the Information
+Commissioners with such officers
+and employees as may be necessary
+for the efficient performance of their functions under this Act, and the
+salaries and allowances payable to
+and the terms and conditions of
+service of the officers and other
+employees appointed for the purpose
+of this Act shall be such as may be prescribed.
+—

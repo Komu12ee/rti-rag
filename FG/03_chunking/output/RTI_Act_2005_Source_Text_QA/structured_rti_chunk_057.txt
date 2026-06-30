@@ -1,0 +1,41 @@
+# RTI Legal Chunk 57
+Document: RTI_Act_2005_Source_Text_QA
+Input source: structured.md
+Input pages: 28-29
+Chapter: Chapter V - Powers and functions, appeal and penalties
+Question: Q. What is the source text of Section 18?
+Part: 3/3
+Kind: faq
+Has answer: yes
+Content tokens: 219
+Original source book: Unknown
+Source type: general
+Legal reference: Section 18
+Book pages: 33-35
+Source PDF pages: Unknown
+Citation: Unknown
+
+---
+
+## Chapter V - Powers and functions, appeal and penalties
+
+Legal reference: Section 18
+
+Q. What is the source text of Section 18?
+
+**Answer continued:**
+
+SOURCE-TEXT Q&A | THE RIGHT TO INFORMATION ACT, 2005
+(c) receiving evidence on affidavit;
+(d) requisitioning any public record or
+copies thereof from any court or office;
+(e) issuing summons for examination of witnesses or documents; and
+(f) any other matter which may be prescribed.
+(4) Notwithstanding a n y t h i n g
+inconsistent contained in any other
+Act of Parliament or State Legislature, as the case may be, the
+Central Information Commission or the State Information Commission, as the case may be, may, during the
+inquiry of any complaint under this Act, examine any record to which this
+Act applies which is under the control of the public authority, and no such
+record may be withheld from it on any grounds.
+—

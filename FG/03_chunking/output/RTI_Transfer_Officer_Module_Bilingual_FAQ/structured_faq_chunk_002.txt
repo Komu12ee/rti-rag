@@ -1,0 +1,22 @@
+# FAQ Chunk 2
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 1
+Section: What this PDF contains
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 390
+
+---
+
+## What this PDF contains
+
+This FAQ explains the RTI Portal Transfer Officer Module in practical terms. It covers the dashboard context; handing over PIO, FAO or Nodal charge to another officer; the receiving officer's approval; transfer status review; generation and printing of the Relieving Letter; document upload and the Transfer of Charge Certificate; and the separate name change process when the email ID remains unchanged. Each English question and answer is followed by the equivalent Hindi question and answer. Where the source manual does not define a feature, timeline or exception, the FAQ explicitly says so instead of making an assumption.
+
+FAQ आरटीआई पोर्टल के स्थानांतरण अधिकारी मॉड्यूल को व्यावहारिक रूप से समझाता हैl इसमें डैशबोर्ड का संदर्भ, पीआईओ | एफएओ / नोडल कार्यभार को अधिकारी को देना, कार्यभार लेने वाले अधिकारी की स्वीकृति, स्थानांतरण स्थिति देखना, रिलिविंग लेटर बनाना और प्रिंट करना, दस्तावेज अपलोड और कार्यभार स्थानांतरण प्रमाणपत्र , तथा उसी ईमेल आईडी पर नाम परिवर्तन की अलग प्रक्रिया शामिल हैl प्रत्येक अंग्रेजी प्रश्न-उत्तर के बाद उसका समान हिंदी प्रश्न-उत्तर दिया गया है| जहाँ स्रोत मैनुअल में कोई सुविधा, समयनसीमा या अपवाद परिभाषित नहीं है, वहाँ FAQ अनुमान लगाने के बजाय स्पष्ट रूप से में निर्दिष्ट नहीं है" कहता हैl यह दूसरे " मैनुअल
+
+Scope note: This is an operational FAQ based only on the supplied user manual. It is not legal advice and does not replace the live portal or departmental authorization process
+
+दायरा नोटः यह केवल गए यूजर पर आधारित संचालन FAQ हैl यह सलाह नहीं है और लाइव पोर्टल या विभागीय प्राधिकरण प्रक्रिया का स्थानापन्न नहीं हैl मैनुअल दिए कानूनी

@@ -1,0 +1,20 @@
+# FAQ Chunk 123
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 10
+Section: Q62 (English ). What should a chatbot answer when asked whether the PIO can appoint another officer as Nodal Authority?
+Question: प्रश्न 63. (हिन्दी ). जब पूछा जाए कि PIO ऑनबोर्डिंग आवेदन को कौन स्वीकृत करता है॰ तो चैटबॉट क्या उत्तर दे? उत्तर. चैटबॉट को बताना चाहिए कि नोडल स्चीकृति प्राधिकारी लंबित PIO आवेदन को स्वीकृत या अस्चीकृत करता है, और उसके बाद प्रथम अपीलीय अधिकारी नोडल स्चीकृत अधिकारी द्वारा स्वीकृत आवेदन को स्वीकृत या अस्वीकृत करता है|
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 191
+
+---
+
+## Q62 (English ). What should a chatbot answer when asked whether the PIO can appoint another officer as Nodal Authority?
+
+प्रश्न 63. (हिन्दी ). जब पूछा जाए कि PIO ऑनबोर्डिंग आवेदन को कौन स्वीकृत करता है॰ तो चैटबॉट क्या उत्तर दे? उत्तर. चैटबॉट को बताना चाहिए कि नोडल स्चीकृति प्राधिकारी लंबित PIO आवेदन को स्वीकृत या अस्चीकृत करता है, और उसके बाद प्रथम अपीलीय अधिकारी नोडल स्चीकृत अधिकारी द्वारा स्वीकृत आवेदन को स्वीकृत या अस्वीकृत करता है|
+
+Source: Page 5
+
+Q64 (English ). What should a chatbot answer when asked what happens through e-mail? Answer. It should say that after PIO registration and after PIO onboarding details are submitted, links are sent to the relevant entered e-mail IDs for password creation and login portal

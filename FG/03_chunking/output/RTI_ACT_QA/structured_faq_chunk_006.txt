@@ -1,0 +1,18 @@
+# FAQ Chunk 6
+Document: RTI_ACT_QA
+Source: structured.md
+Pages: 2
+Section: SECTION 3: RIGHT TO INFORMATION
+Question: Q3. What is the fundamental right granted under Section 3 of the RTI Act?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 173
+
+---
+
+## SECTION 3: RIGHT TO INFORMATION
+
+Q3. What is the fundamental right granted under Section 3 of the RTI Act?
+
+Answerः Section 3 grants the fundamental right stating: "All citizens shall have the right to information " This is a universal right available to all citizens of India without any discrimination, qualification, or precondition. The right is subject to the provisions of the Act, meaning it is not absolute but is qualified by the exemptions provided in Sections 8 and 9. This section establishes the core principle that information held by or under the control of any public authority shall be accessible to citizens The right encompasses access to information held by public authorities at central, state, and local levels. It is a positive right designed to promote transparency, accountability and democratic governance.

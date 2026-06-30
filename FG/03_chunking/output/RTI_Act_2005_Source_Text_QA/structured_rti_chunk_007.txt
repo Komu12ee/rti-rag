@@ -1,0 +1,37 @@
+# RTI Legal Chunk 7
+Document: RTI_Act_2005_Source_Text_QA
+Input source: structured.md
+Input pages: 5
+Chapter: Chapter I - Preliminary
+Question: Q. What is the source text for the definition of “competent authority”?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 173
+Original source book: Unknown
+Source type: general
+Legal reference: Unknown
+Book pages: 3-6
+Source PDF pages: Unknown
+Citation: Unknown
+
+---
+
+## Chapter I - Preliminary
+
+Q. What is the source text for the definition of “competent authority”?
+
+Answer - source text
+(e) “competent authority” means -
+(i) the Speaker in the case of the House
+of the People or the Legislative
+Assembly of a State or a Union
+territory having such Assembly and
+the Chairman in the case of the
+Council of States or Legislative Council of a State;
+(ii) the Chief Justice of India in the case of the Supreme Court;
+(iii) the Chief Justice of the High Court in the case of a High Court;
+(iv) the President or the Governor, as the case may be, in the case of other
+authorities established or constituted by or under the Constitution;
+(v) the administrator appointed under article 239 of the Constitution;
+—

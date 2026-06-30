@@ -1,0 +1,20 @@
+# FAQ Chunk 135
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 20
+Section: Q66 (English). What will 1 see after a successful payment transaction?
+Question: प्रश्न 66. (हिंदी) [ भुगतान लेननदेन सफल होने के बाद क्या दिखाई देगा?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 89
+
+---
+
+## Q66 (English). What will 1 see after a successful payment transaction?
+
+प्रश्न 66. (हिंदी) [ भुगतान लेननदेन सफल होने के बाद क्या दिखाई देगा?
+
+उत्तर के अनुसार भुगतान लेन-देन सफल होने पर सफलता स्क्रीन दिखाई जाती है| उदाहरण स्क्रीन में लेनन्देन विवरण और Print Receipt विकल्प भी दिखाया गया हैl मैनुअल
+
+Sourceः RTI User Manual, Manual p. 112 13.

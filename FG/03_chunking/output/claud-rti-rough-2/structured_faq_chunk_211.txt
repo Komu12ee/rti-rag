@@ -1,0 +1,19 @@
+# FAQ Chunk 211
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 35
+Section: (4) छत्तीसगढ़ नियमः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 58
+
+---
+
+## (4) छत्तीसगढ़ नियमः
+
+- RTI ( आवेदन प्रस्तुति) नियम, 2009
+- RTI ( अपील) नियम, 2006 ( संशोधन के साथ)
+- RTI ( शुल्क और प्रभार ) विनियम , 2005 ( कई बार संशोधित )
+- विभिन्न विभागीय दिशानिर्देश

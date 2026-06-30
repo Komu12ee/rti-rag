@@ -1,0 +1,20 @@
+# FAQ Chunk 7
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 1
+Section: Q3 (English ). How does a PIO start registration?
+Question: प्रश्न 3. (हिन्दी). PIO पंजीयन कैसे शुरू करें?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 78
+
+---
+
+## Q3 (English ). How does a PIO start registration?
+
+प्रश्न 3. (हिन्दी). PIO पंजीयन कैसे शुरू करें?
+
+उत्तर. सबसे पहले https /rtionline cg gov in वेबसाइट खोलें | उसके बाद जन सूचना अधिकारी (PIOJ पंजीयन मेनू से पी.आई॰ओ. का रजिस्ट्रेशन करें
+
+Source: Page 2

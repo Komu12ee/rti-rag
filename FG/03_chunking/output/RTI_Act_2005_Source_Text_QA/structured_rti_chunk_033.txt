@@ -1,0 +1,32 @@
+# RTI Legal Chunk 33
+Document: RTI_Act_2005_Source_Text_QA
+Input source: structured.md
+Input pages: 15
+Chapter: Chapter II - Right to information and obligations of public authorities
+Question: Q. What is the source text of Section 9?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 98
+Original source book: Unknown
+Source type: general
+Legal reference: Section 9
+Book pages: 17
+Source PDF pages: Unknown
+Citation: Unknown
+
+---
+
+## Chapter II - Right to information and obligations of public authorities
+
+Legal reference: Section 9
+
+Q. What is the source text of Section 9?
+
+Answer - source text
+9. Without prejudice to the provisions of section 8, a Central Public
+Information Officer or a State Public Information Officer, as the case may be, may reject a request for
+information where such a request for
+providing access would involve an
+infringement of copyright subsisting in a person other than the State.
+—

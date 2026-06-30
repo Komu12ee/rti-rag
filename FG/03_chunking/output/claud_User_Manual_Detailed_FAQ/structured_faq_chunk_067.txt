@@ -1,0 +1,21 @@
+# FAQ Chunk 67
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 12
+Section: Untitled section
+Question: Q064. What happens if my online payment fails?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 99
+
+---
+
+## Untitled section
+
+Q064. What happens if my online payment fails?
+
+Failure handling is not specified in the manual.
+The manual shows only the success path and does not describe a failure screen, retry process, reconciliation
+procedure, or support escalation. Preserve any transaction reference visible on the payment page and consult
+the live portal or its ContactUs channel for a failed-payment case.

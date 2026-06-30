@@ -1,0 +1,20 @@
+# FAQ Chunk 52
+Document: RTI_PIO_Manual_30_Bilingual_QA
+Source: structured.md
+Pages: 8-9
+Section: प्रश्न (हिंदी): First Appeal Office Details कैसे भरें?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 126
+
+---
+
+## प्रश्न (हिंदी): First Appeal Office Details कैसे भरें?
+
+उत्तर (हिंदी): First Appeal Office Details चरण में संबंधित State, District, Base Department, Office Level, Office Name और Officer Name का ड्रॉपडाउन से चुनें | फिर Next पर क्लिक करें| यदि आवश्यक कार्यालय या अधिकारी सूची में नहीं है, तो अधिकारी और कार्यालय का विवरण मैन्युअल रूप से दर्ज या खोजने के नीले रंग का लिंक दिखाता हैl मैनुअल लिए
+
+Source reference: Manual p. 9
+
+Question (English): What details are entered in the First Appeal Application stage?

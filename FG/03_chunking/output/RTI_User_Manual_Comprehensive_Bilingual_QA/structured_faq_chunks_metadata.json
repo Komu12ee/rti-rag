@@ -1,0 +1,1980 @@
+{
+  "document": "structured.md",
+  "document_name": "RTI_User_Manual_Comprehensive_Bilingual_QA",
+  "source_path": "..\\01_preprocessing\\stage2_output\\mannuals\\RTI_User_Manual_Comprehensive_Bilingual_QA\\structured.md",
+  "chunking_method": "bilingual_faq_rule_based",
+  "supported_languages": [
+    "Hindi",
+    "English"
+  ],
+  "rules": {
+    "question_start": "Hindi: प्रश्न N; English: Question N",
+    "answer_marker": "Hindi: उत्तरः/उत्तर:; English: Answer:",
+    "boundary": "next FAQ question, next major H1/H2 heading, or document end",
+    "answer_preserved": true,
+    "page_tracking": "exact source page markers: <!-- Page N -->"
+  },
+  "max_content_tokens": 512,
+  "tokenizer_model": "BAAI/bge-m3",
+  "token_count_mode": "tokenizer",
+  "source_faq_blocks": 0,
+  "source_section_notes": 121,
+  "faq_blocks_without_answer_marker": [],
+  "total_chunks": 121,
+  "chunks": [
+    {
+      "index": 1,
+      "filename": "structured_faq_chunk_001.txt",
+      "section": "Comprehensive English Hindi User Questions and Answers",
+      "question": "",
+      "pages": [
+        1
+      ],
+      "page_range": "1",
+      "source_block_ordinal": 1,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": false,
+      "content_tokens": 122
+    },
+    {
+      "index": 2,
+      "filename": "structured_faq_chunk_002.txt",
+      "section": "Coverage map",
+      "question": "",
+      "pages": [
+        1,
+        2
+      ],
+      "page_range": "1-2",
+      "source_block_ordinal": 2,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": false,
+      "content_tokens": 63
+    },
+    {
+      "index": 3,
+      "filename": "structured_faq_chunk_003.txt",
+      "section": "Question: What topics are covered in the RTI User Manual?",
+      "question": "",
+      "pages": [
+        2
+      ],
+      "page_range": "2",
+      "source_block_ordinal": 3,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 85
+    },
+    {
+      "index": 4,
+      "filename": "structured_faq_chunk_004.txt",
+      "section": "Question: What can a user learn from the RTI portal user manual?",
+      "question": "",
+      "pages": [
+        2
+      ],
+      "page_range": "2",
+      "source_block_ordinal": 4,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 85
+    },
+    {
+      "index": 5,
+      "filename": "structured_faq_chunk_005.txt",
+      "section": "प्रश्नः आरटीआई यूज़र मैनुअल में कौन॰कौन से विषय शामिल हैं?",
+      "question": "",
+      "pages": [
+        2
+      ],
+      "page_range": "2",
+      "source_block_ordinal": 5,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 104
+    },
+    {
+      "index": 6,
+      "filename": "structured_faq_chunk_006.txt",
+      "section": "प्रश्नः आरटीआई पोर्टल यूज़र मैनुअल से उपयोगकर्ता क्या सीख सकता है?",
+      "question": "",
+      "pages": [
+        2
+      ],
+      "page_range": "2",
+      "source_block_ordinal": 6,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 105
+    },
+    {
+      "index": 7,
+      "filename": "structured_faq_chunk_007.txt",
+      "section": "Question: How do 1 create login credentials on the RTI portal?",
+      "question": "",
+      "pages": [
+        2
+      ],
+      "page_range": "2",
+      "source_block_ordinal": 7,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 55
+    },
+    {
+      "index": 8,
+      "filename": "structured_faq_chunk_008.txt",
+      "section": "Question: Where should T start to register as a user on the portal?",
+      "question": "",
+      "pages": [
+        2
+      ],
+      "page_range": "2",
+      "source_block_ordinal": 8,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 54
+    },
+    {
+      "index": 9,
+      "filename": "structured_faq_chunk_009.txt",
+      "section": "प्रश्नः आरटीआई पोर्टल पर लॉगिन क्रेडेंशियल कैसे बनाऊँ?",
+      "question": "",
+      "pages": [
+        2
+      ],
+      "page_range": "2",
+      "source_block_ordinal": 9,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 64
+    },
+    {
+      "index": 10,
+      "filename": "structured_faq_chunk_010.txt",
+      "section": "प्रश्नः पोर्टल पर उपयोगकर्ता पंजीकरण शुरू करने के कहाँ जाना चाहिए? लिए",
+      "question": "",
+      "pages": [
+        2,
+        3
+      ],
+      "page_range": "2-3",
+      "source_block_ordinal": 10,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 63
+    },
+    {
+      "index": 11,
+      "filename": "structured_faq_chunk_011.txt",
+      "section": "Question: Do I need to accept the registration instructions before continuing?",
+      "question": "",
+      "pages": [
+        3
+      ],
+      "page_range": "3",
+      "source_block_ordinal": 11,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 53
+    },
+    {
+      "index": 12,
+      "filename": "structured_faq_chunk_012.txt",
+      "section": "Question: What should I do on the User Registration General Information screen ?",
+      "question": "",
+      "pages": [
+        3
+      ],
+      "page_range": "3",
+      "source_block_ordinal": 12,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 110
+    },
+    {
+      "index": 13,
+      "filename": "structured_faq_chunk_013.txt",
+      "section": "प्रश्नः यूज़र रजिस्ट्रेशन जनरल इंफॉर्मेशन स्क्रीन पर मुझे क्या करना चाहिए?",
+      "question": "",
+      "pages": [
+        3
+      ],
+      "page_range": "3",
+      "source_block_ordinal": 13,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 59
+    },
+    {
+      "index": 14,
+      "filename": "structured_faq_chunk_014.txt",
+      "section": "Question: What information is shown in the user registration form?",
+      "question": "",
+      "pages": [
+        3
+      ],
+      "page_range": "3",
+      "source_block_ordinal": 14,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 107
+    },
+    {
+      "index": 15,
+      "filename": "structured_faq_chunk_015.txt",
+      "section": "Question: Which details may [ need to enter during user registration ?",
+      "question": "",
+      "pages": [
+        3
+      ],
+      "page_range": "3",
+      "source_block_ordinal": 15,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 108
+    },
+    {
+      "index": 16,
+      "filename": "structured_faq_chunk_016.txt",
+      "section": "प्रश्नः यूज़र रजिस्ट्रेशन फॉर्म में कौन॰कौन सी जानकारी दिखाई जाती है?",
+      "question": "",
+      "pages": [
+        3
+      ],
+      "page_range": "3",
+      "source_block_ordinal": 16,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 130
+    },
+    {
+      "index": 17,
+      "filename": "structured_faq_chunk_017.txt",
+      "section": "प्रश्नः उपयोगकर्ता पंजीकरण के दौरान मुझे कौन॰कौन से विवरण भरने पड़ सकते हैं?",
+      "question": "",
+      "pages": [
+        3,
+        4
+      ],
+      "page_range": "3-4",
+      "source_block_ordinal": 17,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 129
+    },
+    {
+      "index": 18,
+      "filename": "structured_faq_chunk_018.txt",
+      "section": "Previewing and submitting registration",
+      "question": "",
+      "pages": [
+        4
+      ],
+      "page_range": "4",
+      "source_block_ordinal": 18,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 58
+    },
+    {
+      "index": 19,
+      "filename": "structured_faq_chunk_019.txt",
+      "section": "Question: How do I submit my user registration form?",
+      "question": "",
+      "pages": [
+        4
+      ],
+      "page_range": "4",
+      "source_block_ordinal": 19,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 49
+    },
+    {
+      "index": 20,
+      "filename": "structured_faq_chunk_020.txt",
+      "section": "प्रश्नः रजिस्ट्रेशन विवरण भरने के बाद मुझे क्या करना चाहिए?",
+      "question": "",
+      "pages": [
+        4
+      ],
+      "page_range": "4",
+      "source_block_ordinal": 20,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 57
+    },
+    {
+      "index": 21,
+      "filename": "structured_faq_chunk_021.txt",
+      "section": "प्रश्नः यूज़र रजिस्ट्रेशन फॉर्म कैसे सबमिट करें?",
+      "question": "",
+      "pages": [
+        4
+      ],
+      "page_range": "4",
+      "source_block_ordinal": 21,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 56
+    },
+    {
+      "index": 22,
+      "filename": "structured_faq_chunk_022.txt",
+      "section": "Question: Can 1 correct my registration details before submitting?",
+      "question": "",
+      "pages": [
+        4
+      ],
+      "page_range": "4",
+      "source_block_ordinal": 22,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 202
+    },
+    {
+      "index": 23,
+      "filename": "structured_faq_chunk_023.txt",
+      "section": "Registration confirmation and email verification",
+      "question": "",
+      "pages": [
+        4
+      ],
+      "page_range": "4",
+      "source_block_ordinal": 23,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 51
+    },
+    {
+      "index": 24,
+      "filename": "structured_faq_chunk_024.txt",
+      "section": "Question: Will 1 receive an email after submitting registration?",
+      "question": "",
+      "pages": [
+        4,
+        5
+      ],
+      "page_range": "4-5",
+      "source_block_ordinal": 24,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 47
+    },
+    {
+      "index": 25,
+      "filename": "structured_faq_chunk_025.txt",
+      "section": "प्रश्नः सफल यूज़र रजिस्ट्रेशन के बाद क्या होता है?",
+      "question": "",
+      "pages": [
+        5
+      ],
+      "page_range": "5",
+      "source_block_ordinal": 25,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 137
+    },
+    {
+      "index": 26,
+      "filename": "structured_faq_chunk_026.txt",
+      "section": "Question: How do [ activate my RTI portal account after registration?",
+      "question": "",
+      "pages": [
+        5
+      ],
+      "page_range": "5",
+      "source_block_ordinal": 26,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 57
+    },
+    {
+      "index": 27,
+      "filename": "structured_faq_chunk_027.txt",
+      "section": "Question: What should I do with the verification email received after registration?",
+      "question": "",
+      "pages": [
+        5
+      ],
+      "page_range": "5",
+      "source_block_ordinal": 27,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 57
+    },
+    {
+      "index": 28,
+      "filename": "structured_faq_chunk_028.txt",
+      "section": "प्रश्नः रजिस्ट्रेशन के बाद आरटीआई पोर्टल खाता कैसे सक्रिय करें?",
+      "question": "",
+      "pages": [
+        5
+      ],
+      "page_range": "5",
+      "source_block_ordinal": 28,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 65
+    },
+    {
+      "index": 29,
+      "filename": "structured_faq_chunk_029.txt",
+      "section": "प्रश्नः रजिस्ट्रेशन के बाद प्राप्त सत्यापन ई-मेल के साथ क्या करना चाहिए?",
+      "question": "",
+      "pages": [
+        5
+      ],
+      "page_range": "5",
+      "source_block_ordinal": 29,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 71
+    },
+    {
+      "index": 30,
+      "filename": "structured_faq_chunk_030.txt",
+      "section": "Question: What should 1 use as my login ID while creating the password?",
+      "question": "",
+      "pages": [
+        5
+      ],
+      "page_range": "5",
+      "source_block_ordinal": 30,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 44
+    },
+    {
+      "index": 31,
+      "filename": "structured_faq_chunk_031.txt",
+      "section": "Question: Is my email ID used as the portal login ID?",
+      "question": "",
+      "pages": [
+        5,
+        6
+      ],
+      "page_range": "5-6",
+      "source_block_ordinal": 31,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 162
+    },
+    {
+      "index": 32,
+      "filename": "structured_faq_chunk_032.txt",
+      "section": "Question: What password rules are stated in the RTI User Manual?",
+      "question": "",
+      "pages": [
+        6
+      ],
+      "page_range": "6",
+      "source_block_ordinal": 32,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 58
+    },
+    {
+      "index": 33,
+      "filename": "structured_faq_chunk_033.txt",
+      "section": "Question: How long should the portal password be and what characters are required ?",
+      "question": "",
+      "pages": [
+        6
+      ],
+      "page_range": "6",
+      "source_block_ordinal": 33,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 186
+    },
+    {
+      "index": 34,
+      "filename": "structured_faq_chunk_034.txt",
+      "section": "Completing password creation",
+      "question": "",
+      "pages": [
+        6
+      ],
+      "page_range": "6",
+      "source_block_ordinal": 34,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 58
+    },
+    {
+      "index": 35,
+      "filename": "structured_faq_chunk_035.txt",
+      "section": "Question: How will T know that my portal password was created successfully?",
+      "question": "",
+      "pages": [
+        6
+      ],
+      "page_range": "6",
+      "source_block_ordinal": 35,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 55
+    },
+    {
+      "index": 36,
+      "filename": "structured_faq_chunk_036.txt",
+      "section": "प्रश्नः पासवर्ड विवरण भरने के बाद किस बटन पर क्लिक करना है?",
+      "question": "",
+      "pages": [
+        6,
+        7
+      ],
+      "page_range": "6-7",
+      "source_block_ordinal": 36,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 60
+    },
+    {
+      "index": 37,
+      "filename": "structured_faq_chunk_037.txt",
+      "section": "प्रश्नः मुझे कैसे पता चलेगा कि पोर्टल पासवर्ड सफलतापूर्वक बन गया है?",
+      "question": "",
+      "pages": [
+        7
+      ],
+      "page_range": "7",
+      "source_block_ordinal": 37,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 60
+    },
+    {
+      "index": 38,
+      "filename": "structured_faq_chunk_038.txt",
+      "section": "Question: How do 1 begin a second appeal application on the portal?",
+      "question": "",
+      "pages": [
+        7
+      ],
+      "page_range": "7",
+      "source_block_ordinal": 38,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 70
+    },
+    {
+      "index": 39,
+      "filename": "structured_faq_chunk_039.txt",
+      "section": "Question: Where can [ apply for a second appeal after logging in?",
+      "question": "",
+      "pages": [
+        7
+      ],
+      "page_range": "7",
+      "source_block_ordinal": 39,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 71
+    },
+    {
+      "index": 40,
+      "filename": "structured_faq_chunk_040.txt",
+      "section": "प्रश्नः पोर्टल पर द्वितीय अपील आवेदन कैसे शुरू करें?",
+      "question": "",
+      "pages": [
+        7
+      ],
+      "page_range": "7",
+      "source_block_ordinal": 40,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 76
+    },
+    {
+      "index": 41,
+      "filename": "structured_faq_chunk_041.txt",
+      "section": "प्रश्नः लॉगिन के बाद द्वितीय अपील के कहाँ आवेदन कर सकते हैं? लिए",
+      "question": "",
+      "pages": [
+        7
+      ],
+      "page_range": "7",
+      "source_block_ordinal": 41,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 81
+    },
+    {
+      "index": 42,
+      "filename": "structured_faq_chunk_042.txt",
+      "section": "Question: Do I need to read instructions before filing a second appeal?",
+      "question": "",
+      "pages": [
+        7
+      ],
+      "page_range": "7",
+      "source_block_ordinal": 42,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 50
+    },
+    {
+      "index": 43,
+      "filename": "structured_faq_chunk_043.txt",
+      "section": "Question: What should 1 do on the RTI Instruction step of the second appeal form?",
+      "question": "",
+      "pages": [
+        7
+      ],
+      "page_range": "7",
+      "source_block_ordinal": 43,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 108
+    },
+    {
+      "index": 44,
+      "filename": "structured_faq_chunk_044.txt",
+      "section": "प्रश्नः द्वितीय अपील फॉर्म के आरटीआई निर्देश चरण क्या करना में मुझे चाहिए?",
+      "question": "",
+      "pages": [
+        7,
+        8
+      ],
+      "page_range": "7-8",
+      "source_block_ordinal": 44,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 58
+    },
+    {
+      "index": 45,
+      "filename": "structured_faq_chunk_045.txt",
+      "section": "Question: What online services does the manual say the RTI web portal provides?",
+      "question": "",
+      "pages": [
+        8
+      ],
+      "page_range": "8",
+      "source_block_ordinal": 45,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 71
+    },
+    {
+      "index": 46,
+      "filename": "structured_faq_chunk_046.txt",
+      "section": "Question: Can Indian citizens use the portal for RTI applications and first appeals?",
+      "question": "",
+      "pages": [
+        8
+      ],
+      "page_range": "8",
+      "source_block_ordinal": 46,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 241
+    },
+    {
+      "index": 47,
+      "filename": "structured_faq_chunk_047.txt",
+      "section": "Question: What is the text limit for an application entered in the prescribed field?",
+      "question": "",
+      "pages": [
+        8
+      ],
+      "page_range": "8",
+      "source_block_ordinal": 47,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 74
+    },
+    {
+      "index": 48,
+      "filename": "structured_faq_chunk_048.txt",
+      "section": "Question: What should 1 do if my application text is longer than the portal limit?",
+      "question": "",
+      "pages": [
+        8
+      ],
+      "page_range": "8",
+      "source_block_ordinal": 48,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 72
+    },
+    {
+      "index": 49,
+      "filename": "structured_faq_chunk_049.txt",
+      "section": "प्रश्नः निर्धारित कॉलम में आवेदन पाठ की सीमा क्या है?",
+      "question": "",
+      "pages": [
+        8
+      ],
+      "page_range": "8",
+      "source_block_ordinal": 49,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 69
+    },
+    {
+      "index": 50,
+      "filename": "structured_faq_chunk_050.txt",
+      "section": "प्रश्नः यदि मेरे आवेदन का पाठ पोर्टल सीमा से अधिक हो तो क्या करना चाहिए?",
+      "question": "",
+      "pages": [
+        8,
+        9
+      ],
+      "page_range": "8-9",
+      "source_block_ordinal": 50,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 73
+    },
+    {
+      "index": 51,
+      "filename": "structured_faq_chunk_051.txt",
+      "section": "Question: Does the manual mention an RTI fee for a person below the poverty line ?",
+      "question": "",
+      "pages": [
+        9
+      ],
+      "page_range": "9",
+      "source_block_ordinal": 51,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 82
+    },
+    {
+      "index": 52,
+      "filename": "structured_faq_chunk_052.txt",
+      "section": "Question: What does the manual require from a BPL applicant regarding the fee?",
+      "question": "",
+      "pages": [
+        9
+      ],
+      "page_range": "9",
+      "source_block_ordinal": 52,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 81
+    },
+    {
+      "index": 53,
+      "filename": "structured_faq_chunk_053.txt",
+      "section": "प्रश्नः क्या मैनुअल गरीबी रेखा से नीचे के व्यक्ति के आरटीआई शुल्क का उल्लेख करता है? लिए",
+      "question": "",
+      "pages": [
+        9
+      ],
+      "page_range": "9",
+      "source_block_ordinal": 53,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 97
+    },
+    {
+      "index": 54,
+      "filename": "structured_faq_chunk_054.txt",
+      "section": "प्रश्नः बीपीएल आवेदक के शुल्क के संबंध में मैनुअल क्या अपेक्षा करता है? लिए",
+      "question": "",
+      "pages": [
+        9
+      ],
+      "page_range": "9",
+      "source_block_ordinal": 54,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 94
+    },
+    {
+      "index": 55,
+      "filename": "structured_faq_chunk_055.txt",
+      "section": "Question: Will 1 receive a registration number after submitting an application?",
+      "question": "",
+      "pages": [
+        9
+      ],
+      "page_range": "9",
+      "source_block_ordinal": 55,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 70
+    },
+    {
+      "index": 56,
+      "filename": "structured_faq_chunk_056.txt",
+      "section": "Question: Why does the portal ask for my mobile number during the application process?",
+      "question": "",
+      "pages": [
+        9
+      ],
+      "page_range": "9",
+      "source_block_ordinal": 56,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 72
+    },
+    {
+      "index": 57,
+      "filename": "structured_faq_chunk_057.txt",
+      "section": "प्रश्नः क्या आवेदन सबमिट करने के बाद पंजीकरण संख्या मिलेगी?",
+      "question": "",
+      "pages": [
+        9
+      ],
+      "page_range": "9",
+      "source_block_ordinal": 57,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 89
+    },
+    {
+      "index": 58,
+      "filename": "structured_faq_chunk_058.txt",
+      "section": "प्रश्नः आवेदन प्रक्रिया के दौरान पोर्टल मेरा मोबाइल नंबर क्यों मांगता है?",
+      "question": "",
+      "pages": [
+        9,
+        10
+      ],
+      "page_range": "9-10",
+      "source_block_ordinal": 58,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 89
+    },
+    {
+      "index": 59,
+      "filename": "structured_faq_chunk_059.txt",
+      "section": "Question: How does the manual say to make an appeal to the First Appellate Authority?",
+      "question": "",
+      "pages": [
+        10
+      ],
+      "page_range": "10",
+      "source_block_ordinal": 59,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 83
+    },
+    {
+      "index": 60,
+      "filename": "structured_faq_chunk_060.txt",
+      "section": "Question: Which registration number is used when referring to an original RTI application?",
+      "question": "",
+      "pages": [
+        10
+      ],
+      "page_range": "10",
+      "source_block_ordinal": 60,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 81
+    },
+    {
+      "index": 61,
+      "filename": "structured_faq_chunk_061.txt",
+      "section": "प्रश्नः मैनुअल के अनुसार प्रथम अपीलीय प्राधिकारी के समक्ष अपील कैसे करें?",
+      "question": "",
+      "pages": [
+        10
+      ],
+      "page_range": "10",
+      "source_block_ordinal": 61,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 98
+    },
+    {
+      "index": 62,
+      "filename": "structured_faq_chunk_062.txt",
+      "section": "प्रश्नः मूल आरटीआई आवेदन के संदर्भ के लिए कौन सी पंजीकरण संख्या उपयोग होती है?",
+      "question": "",
+      "pages": [
+        10
+      ],
+      "page_range": "10",
+      "source_block_ordinal": 62,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 99
+    },
+    {
+      "index": 63,
+      "filename": "structured_faq_chunk_063.txt",
+      "section": "Question: What details are entered in the Second Appeal Details section ?",
+      "question": "",
+      "pages": [
+        10
+      ],
+      "page_range": "10",
+      "source_block_ordinal": 63,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 68
+    },
+    {
+      "index": 64,
+      "filename": "structured_faq_chunk_064.txt",
+      "section": "Question: What relation and reason information is required for a second appeal?",
+      "question": "",
+      "pages": [
+        10
+      ],
+      "page_range": "10",
+      "source_block_ordinal": 64,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 66
+    },
+    {
+      "index": 65,
+      "filename": "structured_faq_chunk_065.txt",
+      "section": "प्रश्नः द्वितीय अपील विवरण अनुभाग में कौन॰कौन से विवरण दर्ज जाते हैं? किए",
+      "question": "",
+      "pages": [
+        10,
+        11
+      ],
+      "page_range": "10-11",
+      "source_block_ordinal": 65,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 147
+    },
+    {
+      "index": 66,
+      "filename": "structured_faq_chunk_066.txt",
+      "section": "Question: Is payment mandatory when Complaint is selected under Second Appeal Relation?",
+      "question": "",
+      "pages": [
+        11
+      ],
+      "page_range": "11",
+      "source_block_ordinal": 66,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 54
+    },
+    {
+      "index": 67,
+      "filename": "structured_faq_chunk_067.txt",
+      "section": "Question: Are supporting documents compulsory for a Complaint application ?",
+      "question": "",
+      "pages": [
+        11
+      ],
+      "page_range": "11",
+      "source_block_ordinal": 67,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 107
+    },
+    {
+      "index": 68,
+      "filename": "structured_faq_chunk_068.txt",
+      "section": "प्रश्नः क्या Complaint आवेदन के सहायक दस्तावेज अनिवार्य हैं? लिए",
+      "question": "",
+      "pages": [
+        11
+      ],
+      "page_range": "11",
+      "source_block_ordinal": 68,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 50
+    },
+    {
+      "index": 69,
+      "filename": "structured_faq_chunk_069.txt",
+      "section": "Question: What must a BPL card holder enter in the second appeal form?",
+      "question": "",
+      "pages": [
+        11
+      ],
+      "page_range": "11",
+      "source_block_ordinal": 69,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 89
+    },
+    {
+      "index": 70,
+      "filename": "structured_faq_chunk_070.txt",
+      "section": "Question: What happens if 1 select Tes for BPL card holder status?",
+      "question": "",
+      "pages": [
+        11,
+        12
+      ],
+      "page_range": "11-12",
+      "source_block_ordinal": 70,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 194
+    },
+    {
+      "index": 71,
+      "filename": "structured_faq_chunk_071.txt",
+      "section": "प्रश्नः यदि मैं बीपीएल कार्डधारक स्थिति के Yes चुनूँ तो क्या करना होगा? लिए",
+      "question": "",
+      "pages": [
+        12
+      ],
+      "page_range": "12",
+      "source_block_ordinal": 71,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 108
+    },
+    {
+      "index": 72,
+      "filename": "structured_faq_chunk_072.txt",
+      "section": "Question: How do T enter PIO and office details in the second appeal workflow?",
+      "question": "",
+      "pages": [
+        12
+      ],
+      "page_range": "12",
+      "source_block_ordinal": 72,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 76
+    },
+    {
+      "index": 73,
+      "filename": "structured_faq_chunk_073.txt",
+      "section": "Question: What should 1 select in the PIO and Office Details step?",
+      "question": "",
+      "pages": [
+        12
+      ],
+      "page_range": "12",
+      "source_block_ordinal": 73,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 72
+    },
+    {
+      "index": 74,
+      "filename": "structured_faq_chunk_074.txt",
+      "section": "प्रश्नः द्वितीय अपील प्रक्रिया में पीआईओ और कार्यालय विवरण कैसे भरें?",
+      "question": "",
+      "pages": [
+        12
+      ],
+      "page_range": "12",
+      "source_block_ordinal": 74,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 82
+    },
+    {
+      "index": 75,
+      "filename": "structured_faq_chunk_075.txt",
+      "section": "प्रश्नः पीआईओ और कार्यालय विवरण चरण में मुझे क्या चुनना चाहिए?",
+      "question": "",
+      "pages": [
+        12
+      ],
+      "page_range": "12",
+      "source_block_ordinal": 75,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 77
+    },
+    {
+      "index": 76,
+      "filename": "structured_faq_chunk_076.txt",
+      "section": "Question: What should 1 do if 1 cannot find the PIO or office in the dropdown list?",
+      "question": "",
+      "pages": [
+        12
+      ],
+      "page_range": "12",
+      "source_block_ordinal": 76,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 96
+    },
+    {
+      "index": 77,
+      "filename": "structured_faq_chunk_077.txt",
+      "section": "Question: Can T enter officer details manually if the office is not listed?",
+      "question": "",
+      "pages": [
+        12,
+        13
+      ],
+      "page_range": "12-13",
+      "source_block_ordinal": 77,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 324
+    },
+    {
+      "index": 78,
+      "filename": "structured_faq_chunk_078.txt",
+      "section": "Question: What do 1 enter in the RTI Application Details section?",
+      "question": "",
+      "pages": [
+        13
+      ],
+      "page_range": "13",
+      "source_block_ordinal": 78,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 65
+    },
+    {
+      "index": 79,
+      "filename": "structured_faq_chunk_079.txt",
+      "section": "Question: Which RTI details are required before entering first appeal office details?",
+      "question": "",
+      "pages": [
+        13
+      ],
+      "page_range": "13",
+      "source_block_ordinal": 79,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 210
+    },
+    {
+      "index": 80,
+      "filename": "structured_faq_chunk_080.txt",
+      "section": "Questionः How do 1 provide First Appeal Office Details?",
+      "question": "",
+      "pages": [
+        13,
+        14
+      ],
+      "page_range": "13-14",
+      "source_block_ordinal": 80,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 49
+    },
+    {
+      "index": 81,
+      "filename": "structured_faq_chunk_081.txt",
+      "section": "Question: What should I do in the First Appeal Office Details step?",
+      "question": "",
+      "pages": [
+        14
+      ],
+      "page_range": "14",
+      "source_block_ordinal": 81,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 53
+    },
+    {
+      "index": 82,
+      "filename": "structured_faq_chunk_082.txt",
+      "section": "प्रश्नः प्रथम अपील कार्यालय विवरण कैसे प्रदान करें?",
+      "question": "",
+      "pages": [
+        14
+      ],
+      "page_range": "14",
+      "source_block_ordinal": 82,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 54
+    },
+    {
+      "index": 83,
+      "filename": "structured_faq_chunk_083.txt",
+      "section": "प्रश्नः First Appeal Office Details चरण में मुझे क्या करना चाहिए?",
+      "question": "",
+      "pages": [
+        14
+      ],
+      "page_range": "14",
+      "source_block_ordinal": 83,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 58
+    },
+    {
+      "index": 84,
+      "filename": "structured_faq_chunk_084.txt",
+      "section": "First appeal office not listed",
+      "question": "",
+      "pages": [
+        14
+      ],
+      "page_range": "14",
+      "source_block_ordinal": 84,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 69
+    },
+    {
+      "index": 85,
+      "filename": "structured_faq_chunk_085.txt",
+      "section": "Question: Can ] use an alternate link for missing first appeal officer details?",
+      "question": "",
+      "pages": [
+        14
+      ],
+      "page_range": "14",
+      "source_block_ordinal": 85,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 202
+    },
+    {
+      "index": 86,
+      "filename": "structured_faq_chunk_086.txt",
+      "section": "Question: What details are required in the First Appeal Application step?",
+      "question": "",
+      "pages": [
+        14,
+        15
+      ],
+      "page_range": "14-15",
+      "source_block_ordinal": 86,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 59
+    },
+    {
+      "index": 87,
+      "filename": "structured_faq_chunk_087.txt",
+      "section": "Question: How do 1 complete the First Appeal Application form?",
+      "question": "",
+      "pages": [
+        15
+      ],
+      "page_range": "15",
+      "source_block_ordinal": 87,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 59
+    },
+    {
+      "index": 88,
+      "filename": "structured_faq_chunk_088.txt",
+      "section": "प्रश्नः प्रथम अपील आवेदन चरण में कौन॰कौन से विवरण आवश्यक हैं?",
+      "question": "",
+      "pages": [
+        15
+      ],
+      "page_range": "15",
+      "source_block_ordinal": 88,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 65
+    },
+    {
+      "index": 89,
+      "filename": "structured_faq_chunk_089.txt",
+      "section": "प्रश्नः प्रथम अपील आवेदन फॉर्म कैसे पूरा करें?",
+      "question": "",
+      "pages": [
+        15
+      ],
+      "page_range": "15",
+      "source_block_ordinal": 89,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 59
+    },
+    {
+      "index": 90,
+      "filename": "structured_faq_chunk_090.txt",
+      "section": "Question: Can [ edit earlier first appeal details before proceeding?",
+      "question": "",
+      "pages": [
+        15
+      ],
+      "page_range": "15",
+      "source_block_ordinal": 90,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 56
+    },
+    {
+      "index": 91,
+      "filename": "structured_faq_chunk_091.txt",
+      "section": "Questionः What do 1 do after choosing the First Appeal application status?",
+      "question": "",
+      "pages": [
+        15
+      ],
+      "page_range": "15",
+      "source_block_ordinal": 91,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 131
+    },
+    {
+      "index": 92,
+      "filename": "structured_faq_chunk_092.txt",
+      "section": "प्रश्नः प्रथम अपील आवेदन स्थिति के बाद क्या करना है? चुनने",
+      "question": "",
+      "pages": [
+        15
+      ],
+      "page_range": "15",
+      "source_block_ordinal": 92,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 64
+    },
+    {
+      "index": 93,
+      "filename": "structured_faq_chunk_093.txt",
+      "section": "Question: How do 1 upload documents for a second appeal application?",
+      "question": "",
+      "pages": [
+        15,
+        16
+      ],
+      "page_range": "15-16",
+      "source_block_ordinal": 93,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 67
+    },
+    {
+      "index": 94,
+      "filename": "structured_faq_chunk_094.txt",
+      "section": "Question: What are the steps to upload a file on the Document Details page?",
+      "question": "",
+      "pages": [
+        16
+      ],
+      "page_range": "16",
+      "source_block_ordinal": 94,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 70
+    },
+    {
+      "index": 95,
+      "filename": "structured_faq_chunk_095.txt",
+      "section": "प्रश्नः द्वितीय अपील आवेदन के लिए दस्तावेज कैसे अपलोड करें?",
+      "question": "",
+      "pages": [
+        16
+      ],
+      "page_range": "16",
+      "source_block_ordinal": 95,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 76
+    },
+    {
+      "index": 96,
+      "filename": "structured_faq_chunk_096.txt",
+      "section": "प्रश्नः Document Details पेज पर फ़ाइल अपलोड करने के चरण क्या हैं?",
+      "question": "",
+      "pages": [
+        16
+      ],
+      "page_range": "16",
+      "source_block_ordinal": 96,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 80
+    },
+    {
+      "index": 97,
+      "filename": "structured_faq_chunk_097.txt",
+      "section": "Question: Which document upload areas are shown in the RTI User Manual?",
+      "question": "",
+      "pages": [
+        16
+      ],
+      "page_range": "16",
+      "source_block_ordinal": 97,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 77
+    },
+    {
+      "index": 98,
+      "filename": "structured_faq_chunk_098.txt",
+      "section": "Question: What kinds of supporting documents can be selected on the displayed document page?",
+      "question": "",
+      "pages": [
+        16
+      ],
+      "page_range": "16",
+      "source_block_ordinal": 98,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 168
+    },
+    {
+      "index": 99,
+      "filename": "structured_faq_chunk_099.txt",
+      "section": "प्रश्नः दिखाए गए दस्तावेज पेज पर किस प्रकार के सहायक दस्तावेज चुने जा सकते हैं?",
+      "question": "",
+      "pages": [
+        16
+      ],
+      "page_range": "16",
+      "source_block_ordinal": 99,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 82
+    },
+    {
+      "index": 100,
+      "filename": "structured_faq_chunk_100.txt",
+      "section": "Question: What file formats and size limit are shown on the document upload screen ?",
+      "question": "",
+      "pages": [
+        16,
+        17
+      ],
+      "page_range": "16-17",
+      "source_block_ordinal": 100,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 68
+    },
+    {
+      "index": 101,
+      "filename": "structured_faq_chunk_101.txt",
+      "section": "Question: Can [ upload PDF or image files according to the manual screenshot?",
+      "question": "",
+      "pages": [
+        17
+      ],
+      "page_range": "17",
+      "source_block_ordinal": 101,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 65
+    },
+    {
+      "index": 102,
+      "filename": "structured_faq_chunk_102.txt",
+      "section": "प्रश्नः दस्तावेज अपलोड स्क्रीन पर कौन से फ़ाइल प्रारूप और आकार सीमा दिखाई गई है?",
+      "question": "",
+      "pages": [
+        17
+      ],
+      "page_range": "17",
+      "source_block_ordinal": 102,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 166
+    },
+    {
+      "index": 103,
+      "filename": "structured_faq_chunk_103.txt",
+      "section": "Question: What should 1 do after finishing document uploads?",
+      "question": "",
+      "pages": [
+        17
+      ],
+      "page_range": "17",
+      "source_block_ordinal": 103,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 48
+    },
+    {
+      "index": 104,
+      "filename": "structured_faq_chunk_104.txt",
+      "section": "Question: How do [ move from Document Details to payment?",
+      "question": "",
+      "pages": [
+        17
+      ],
+      "page_range": "17",
+      "source_block_ordinal": 104,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 48
+    },
+    {
+      "index": 105,
+      "filename": "structured_faq_chunk_105.txt",
+      "section": "प्रश्नः दस्तावेज अपलोड पूरा करने के बाद क्या करना चाहिए?",
+      "question": "",
+      "pages": [
+        17
+      ],
+      "page_range": "17",
+      "source_block_ordinal": 105,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 50
+    },
+    {
+      "index": 106,
+      "filename": "structured_faq_chunk_106.txt",
+      "section": "प्रश्नः Document Details से भुगतान चरण पर कैसे जाएँ?",
+      "question": "",
+      "pages": [
+        17
+      ],
+      "page_range": "17",
+      "source_block_ordinal": 106,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 50
+    },
+    {
+      "index": 107,
+      "filename": "structured_faq_chunk_107.txt",
+      "section": "Question: How do 1 start payment for the second appeal application?",
+      "question": "",
+      "pages": [
+        17
+      ],
+      "page_range": "17",
+      "source_block_ordinal": 107,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 60
+    },
+    {
+      "index": 108,
+      "filename": "structured_faq_chunk_108.txt",
+      "section": "Question: What should 1 do on the Payment Details screen ?",
+      "question": "",
+      "pages": [
+        17,
+        18
+      ],
+      "page_range": "17-18",
+      "source_block_ordinal": 108,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 60
+    },
+    {
+      "index": 109,
+      "filename": "structured_faq_chunk_109.txt",
+      "section": "प्रश्नः द्वितीय अपील आवेदन के भुगतान कैसे शुरू करें? लिए",
+      "question": "",
+      "pages": [
+        18
+      ],
+      "page_range": "18",
+      "source_block_ordinal": 109,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 63
+    },
+    {
+      "index": 110,
+      "filename": "structured_faq_chunk_110.txt",
+      "section": "प्रश्नः Payment Details स्क्रीन पर क्या करना चाहिए?",
+      "question": "",
+      "pages": [
+        18
+      ],
+      "page_range": "18",
+      "source_block_ordinal": 110,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 61
+    },
+    {
+      "index": 111,
+      "filename": "structured_faq_chunk_111.txt",
+      "section": "Question: What fee choices are visible in the payment screenshot?",
+      "question": "",
+      "pages": [
+        18
+      ],
+      "page_range": "18",
+      "source_block_ordinal": 111,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 83
+    },
+    {
+      "index": 112,
+      "filename": "structured_faq_chunk_112.txt",
+      "section": "Question: Does the manual display more than one payment amount?",
+      "question": "",
+      "pages": [
+        18
+      ],
+      "page_range": "18",
+      "source_block_ordinal": 112,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 81
+    },
+    {
+      "index": 113,
+      "filename": "structured_faq_chunk_113.txt",
+      "section": "प्रश्नः भुगतान स्क्रीनशॉट में कौन॰कौन से शुल्क विकल्प दिखाई देते हैं?",
+      "question": "",
+      "pages": [
+        18
+      ],
+      "page_range": "18",
+      "source_block_ordinal": 113,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 97
+    },
+    {
+      "index": 114,
+      "filename": "structured_faq_chunk_114.txt",
+      "section": "प्रश्नः क्या मैनुअल से अधिक भुगतान राशि दिखाई गई है? में एक",
+      "question": "",
+      "pages": [
+        18
+      ],
+      "page_range": "18",
+      "source_block_ordinal": 114,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 93
+    },
+    {
+      "index": 115,
+      "filename": "structured_faq_chunk_115.txt",
+      "section": "Question: What should 1 do on the e-Challan page to complete payment?",
+      "question": "",
+      "pages": [
+        18
+      ],
+      "page_range": "18",
+      "source_block_ordinal": 115,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 58
+    },
+    {
+      "index": 116,
+      "filename": "structured_faq_chunk_116.txt",
+      "section": "Question: How do I choose a bank and finalise the online payment?",
+      "question": "",
+      "pages": [
+        18,
+        19
+      ],
+      "page_range": "18-19",
+      "source_block_ordinal": 116,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 119
+    },
+    {
+      "index": 117,
+      "filename": "structured_faq_chunk_117.txt",
+      "section": "प्रश्नः बैंक कैसे चुनें और ऑनलाइन भुगतान कैसे अंतिम रूप दें?",
+      "question": "",
+      "pages": [
+        19
+      ],
+      "page_range": "19",
+      "source_block_ordinal": 117,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 62
+    },
+    {
+      "index": 118,
+      "filename": "structured_faq_chunk_118.txt",
+      "section": "Question: What appears after a successful payment transaction?",
+      "question": "",
+      "pages": [
+        19
+      ],
+      "page_range": "19",
+      "source_block_ordinal": 118,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 75
+    },
+    {
+      "index": 119,
+      "filename": "structured_faq_chunk_119.txt",
+      "section": "Question: Does the manual show a receipt option after payment?",
+      "question": "",
+      "pages": [
+        19
+      ],
+      "page_range": "19",
+      "source_block_ordinal": 119,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 164
+    },
+    {
+      "index": 120,
+      "filename": "structured_faq_chunk_120.txt",
+      "section": "प्रश्नः क्या मैनुअल भुगतान के बाद रसीद का विकल्प दिखाता है?",
+      "question": "",
+      "pages": [
+        19
+      ],
+      "page_range": "19",
+      "source_block_ordinal": 120,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": true,
+      "content_tokens": 90
+    },
+    {
+      "index": 121,
+      "filename": "structured_faq_chunk_121.txt",
+      "section": "Implementation note for a chatbot",
+      "question": "",
+      "pages": [
+        19
+      ],
+      "page_range": "19",
+      "source_block_ordinal": 121,
+      "part": 1,
+      "parts_in_block": 1,
+      "kind": "section_note",
+      "has_answer": false,
+      "content_tokens": 67
+    }
+  ]
+}

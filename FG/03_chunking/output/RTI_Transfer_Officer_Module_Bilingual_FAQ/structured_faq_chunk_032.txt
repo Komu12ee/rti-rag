@@ -1,0 +1,16 @@
+# FAQ Chunk 32
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 4
+Section: Q16. Which types of charges may be listed for handover ?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 54
+
+---
+
+## Q16. Which types of charges may be listed for handover ?
+
+Answer: The examples show PIO, FAO and Nodal Officer as charge types. What is actually available depends on the roles assigned to the current user in the portal.

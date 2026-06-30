@@ -1,0 +1,16 @@
+# FAQ Chunk 11
+Document: RTI_PIO_Manual_30_Bilingual_QA
+Source: structured.md
+Pages: 3
+Section: Question (English): What happens after 1 submit the registration form?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 84
+
+---
+
+## Question (English): What happens after 1 submit the registration form?
+
+Answer (English): After successful submission, the portal displays a confirmation that registration has been completed and prompts the user to verify the account through email. The next step is to open the verification link sent to the registered email address. Registration alone does not complete account activation; email verification and password creation are still required.

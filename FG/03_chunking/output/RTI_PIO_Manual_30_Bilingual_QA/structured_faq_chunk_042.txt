@@ -1,0 +1,16 @@
+# FAQ Chunk 42
+Document: RTI_PIO_Manual_30_Bilingual_QA
+Source: structured.md
+Pages: 7
+Section: Question (English): Does a BPL applicant need to attach proof?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 94
+
+---
+
+## Question (English): Does a BPL applicant need to attach proof?
+
+Answer (English): Yes. The RTI instruction list states that a citizen below the poverty line is not required to pay a fee under the RTI Rules, 2012, but the applicant must attach a copy of the certificate issued by the appropriate government authority along with the application. The BPL details screen separately requires BPL document information when Yes is selected.

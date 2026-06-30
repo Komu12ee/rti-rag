@@ -1,0 +1,19 @@
+# FAQ Chunk 42
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 8
+Section: Untitled section
+Question: Q039. What is the "RTI Apply Date Offline" field?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 90
+
+---
+
+## Untitled section
+
+Q039. What is the "RTI Apply Date Offline" field?
+
+This is the date field for the original RTI application that was applied offline. The manual calls it RTI Apply Date
+Offline and places it with the RTI Details section, indicating that it records the date of the earlier offline RTI filing.

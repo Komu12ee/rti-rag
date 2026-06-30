@@ -1,0 +1,18 @@
+# FAQ Chunk 86
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 14
+Section: (1) Judicial Review Authority:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 57
+
+---
+
+## (1) Judicial Review Authority:
+
+- High Courts have power to issue writs of habeas corpus, mandamus prohibition, certiorari, and quo warranto
+- Can review orders of Central State Information Commissions
+- Can review PIO decisions directly in certain circumstances

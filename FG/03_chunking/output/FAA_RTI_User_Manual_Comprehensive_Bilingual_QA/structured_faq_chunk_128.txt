@@ -1,0 +1,16 @@
+# FAQ Chunk 128
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 19
+Section: Q63 (English). What happens after 1 click Fee Online? Pay
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 36
+
+---
+
+## Q63 (English). What happens after 1 click Fee Online? Pay
+
+Answer. The manual states that the form is directed to generate an online challan for payment.

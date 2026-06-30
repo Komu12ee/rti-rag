@@ -1,0 +1,16 @@
+# FAQ Chunk 68
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 11
+Section: प्रश्नः क्या Complaint आवेदन के सहायक दस्तावेज अनिवार्य हैं? लिए
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 50
+
+---
+
+## प्रश्नः क्या Complaint आवेदन के सहायक दस्तावेज अनिवार्य हैं? लिए
+
+उत्तरः मैनुअल के अनुसार Complaint आवेदन के भुगतान अनिवार्य नहीं है और सहायक दस्तावेज वैकल्पिक हैं| Source: RTI User Manual, Printed page 7 लिए

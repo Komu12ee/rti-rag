@@ -1,0 +1,28 @@
+# RTI Legal Chunk 9
+Document: RTI_Act_2005_Source_Text_QA
+Input source: structured.md
+Input pages: 5
+Chapter: Chapter I - Preliminary
+Question: Q. What is the source text for the definition of “prescribed”?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 63
+Original source book: Unknown
+Source type: general
+Legal reference: Unknown
+Book pages: 3-6
+Source PDF pages: Unknown
+Citation: Unknown
+
+---
+
+## Chapter I - Preliminary
+
+Q. What is the source text for the definition of “prescribed”?
+
+Answer - source text
+(g) “prescribed” means prescribed by
+rules made under this Act by the
+appropriate Government or the competent authority, as the case may be;
+—

@@ -1,0 +1,20 @@
+# FAQ Chunk 77
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 8
+Section: Q41. How do [ upload the required file after generating the Relieving Letter ?
+Question: प्रश्न 41. रिलिविंग लेटर बनाने के बाद आवश्यक फाइल कैसे अपलोड करें?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 90
+
+---
+
+## Q41. How do [ upload the required file after generating the Relieving Letter ?
+
+प्रश्न 41. रिलिविंग लेटर बनाने के बाद आवश्यक फाइल कैसे अपलोड करें?
+
+उत्तरः Browse पर क्लिक करें , फाइल चुनें और फिर Upload पर क्लिक करें| मैनुअल रिलिविंग लेटर प्रिंट करने के निर्देश के बाद यही तीन चरण बताता हैl
+
+Source reference : Manual pp . 7 8

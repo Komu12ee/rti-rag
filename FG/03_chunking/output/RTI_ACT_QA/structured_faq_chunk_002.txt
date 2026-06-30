@@ -1,0 +1,16 @@
+# FAQ Chunk 2
+Document: RTI_ACT_QA
+Source: structured.md
+Pages: 1
+Section: Ql. What is Section 1 (Short Title and Extent) of the Right to Information Act?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 161
+
+---
+
+## Ql. What is Section 1 (Short Title and Extent) of the Right to Information Act?
+
+Answer: Section 1 establishes the official designation and geographic coverage of the legislation. The Act is officially titled "The Right to Information Act, 2OOS" and was enacted on lSth June, 2005. The Act extends to the whole of India except the State of Jammu and Kashmir This section provides the legal foundation for the entire Act and establishes its applicability across all states and union territories of India (except J&K) . The Act operates under the constitutional framework of India and covers all public authorities established or constituted under the Constitution, Parliament, State Legislatures, or through government notification orders.

@@ -1,0 +1,16 @@
+# FAQ Chunk 40
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 5
+Section: Q20. Can ] use this flow when the new person will use the same email ID?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 52
+
+---
+
+## Q20. Can ] use this flow when the new person will use the same email ID?
+
+Answer: No. For a different person on the same existing email ID, the manual provides the separate name change process rather than the different email handover path.

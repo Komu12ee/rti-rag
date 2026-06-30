@@ -1,0 +1,20 @@
+# FAQ Chunk 18
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 2-3
+Section: Q08. Does this manual explain how to file a new RTI application ?
+Question: प्रश्न 08. क्या यह मैनुअल नया आरटीआई आवेदन दाखिल करने की प्रक्रिया बताता है?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 104
+
+---
+
+## Q08. Does this manual explain how to file a new RTI application ?
+
+प्रश्न 08. क्या यह मैनुअल नया आरटीआई आवेदन दाखिल करने की प्रक्रिया बताता है?
+
+उत्तरः नहीं| यह मैनुअल अधिकारी-= स्थानांतरण और नाम परिवर्तन की प्रक्रिया पर केंद्रित हैl इसमें नागरिकों द्वारा आरटीआई आवेदन दाखिल करने या अधिकारियों द्वारा किसी आरटीआई आवेदन के गुण दोष पर कार्रवाई करने की प्रक्रिया नहीं दी गई हैI भूमिका
+
+Source reference : Manual pp . 1-3

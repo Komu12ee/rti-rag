@@ -1,0 +1,36 @@
+# RTI Legal Chunk 61
+Document: RTI_Act_2005_Source_Text_QA
+Input source: structured.md
+Input pages: 29-31
+Chapter: Chapter V - Powers and functions, appeal and penalties
+Question: Q. What is the source text of Section 19?
+Part: 4/5
+Kind: faq
+Has answer: yes
+Content tokens: 138
+Original source book: Unknown
+Source type: general
+Legal reference: Section 19
+Book pages: 35-37
+Source PDF pages: Unknown
+Citation: Unknown
+
+---
+
+## Chapter V - Powers and functions, appeal and penalties
+
+Legal reference: Section 19
+
+Q. What is the source text of Section 19?
+
+**Answer continued:**
+
+(c) impose any of the penalties provided under this Act;
+(d) reject the application.
+(9) The Central Information
+Commission or State Information Commission, as the case may be, shall give notice of its decision, including any right of
+appeal, to the complainant and the public authority.
+(10) The Central Information
+Commission or State Information Commission, as the case may be,
+shall decide the appeal in accordance
+Compiled from the uploaded RTI rule book - Part 1 statutory text only

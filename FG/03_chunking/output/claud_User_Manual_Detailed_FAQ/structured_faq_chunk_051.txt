@@ -1,0 +1,19 @@
+# FAQ Chunk 51
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 9
+Section: Untitled section
+Question: Q048. What file formats are accepted for upload?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 76
+
+---
+
+## Untitled section
+
+Q048. What file formats are accepted for upload?
+
+The note beneath the upload fields says only .pdf, .jpeg, and .jpg files are allowed. Use one of those formats and
+ensure the file is readable before selecting Upload.

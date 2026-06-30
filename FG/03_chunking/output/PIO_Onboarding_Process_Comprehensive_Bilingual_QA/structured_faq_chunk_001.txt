@@ -1,0 +1,18 @@
+# FAQ Chunk 1
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 1
+Section: PIO Onboarding Process Comprehensive Bilingual Q&A
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 146
+
+---
+
+## PIO Onboarding Process Comprehensive Bilingual Q&A
+
+Coverage note: This document first preserves the procedural wording and facts from the supplied Hindi PIO onboarding PDF, then expands them into practical user questions from basic to advanced. Each answer is placed immediately below the corresponding question in English and Hindi.
+
+Source document: pioOnboardingProcess pdf. Main topics: PIO registration, PIO onboarding workflow, mandatory details, nodallapproval authority First Appellate Officer, preview, order file upload, application, signed file upload, onboarding submission, and post submission approval steps. print

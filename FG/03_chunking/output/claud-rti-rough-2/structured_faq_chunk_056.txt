@@ -1,0 +1,19 @@
+# FAQ Chunk 56
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 9-10
+Section: (2) अपील के आधारः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 52
+
+---
+
+## (2) अपील के आधारः
+
+- PIO निर्णय से असंतुष्ट
+- समझा जाने वाला अस्वीकार (30 दिनों के भीतर कोई प्रतिक्रिया नहीं)
+- सूचना के लगाए गए शुल्क अत्यधिक समझे जाएं लिए
+- प्रदान किए गए पहुंच के रूप को अनुपयुक्त समझा जाए

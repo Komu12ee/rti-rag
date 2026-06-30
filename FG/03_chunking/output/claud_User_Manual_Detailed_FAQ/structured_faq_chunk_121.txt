@@ -1,0 +1,21 @@
+# FAQ Chunk 121
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 20
+Section: Untitled section
+Question: Q118. Is there an audit trail for all applications?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 97
+
+---
+
+## Untitled section
+
+Q118. Is there an audit trail for all applications?
+
+Full audit-trail functionality is not specified.
+The manual says a unique registration number is issued upon application submission for future reference. The
+payment-success screen also shows treasury and bank reference numbers. It does not describe a full audit trail,
+event history, timestamps for every edit, or access logs.

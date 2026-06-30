@@ -1,0 +1,18 @@
+# FAQ Chunk 134
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 21
+Section: (3) झूठी सूचनाः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 43
+
+---
+
+## (3) झूठी सूचनाः
+
+- यदि PIO| कर्मचारी झूठी सूचना देता है
+- OR कारावास और जुर्माना दोनों
+- दंडः 2 साल तक कारावास OR 3500 तक जुर्माना

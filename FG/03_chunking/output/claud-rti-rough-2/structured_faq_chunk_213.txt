@@ -1,0 +1,21 @@
+# FAQ Chunk 213
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 35
+Section: (6) शुल्क विनियमः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 79
+
+---
+
+## (6) शुल्क विनियमः
+
+- में कई संशोधन शुल्कों
+- आधार शुल्कः प्रति आवेदन 310
+- प्रतियों के शुल्कः 32 प्रति पृष्ठ ( भिन्न)
+- विशेष प्रारूपः डिस्केट, CDs आदि|
+- BPL छूटः गरीबों के कोई शुल्क नहीं लिए
+- अधिसूचनाः 24 मई 2010 को राजपत्रित (RTI नियम पुस्तक पृष्ठ 111 113 में देखें )

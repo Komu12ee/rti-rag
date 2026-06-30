@@ -1,0 +1,16 @@
+# FAQ Chunk 102
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 16
+Section: Q50 (English). What details are required for a First Appeal Application?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 60
+
+---
+
+## Q50 (English). What details are required for a First Appeal Application?
+
+Answer. Enter the First Appeal details, choose a suitable First Appeal Reason Type from the dropdown, enter the first appeal's offline application date, select the application status, and then use Save & Next

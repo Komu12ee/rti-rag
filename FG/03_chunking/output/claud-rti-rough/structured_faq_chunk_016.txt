@@ -1,0 +1,45 @@
+# FAQ Chunk 16
+Document: claud-rti-rough
+Source: structured.md
+Pages: 8-10
+Section: SECTION 8: EXEMPTIONS FROM DISCLOSURE
+Question: Q8. What are the comprehensive exemptions under which public authorities are not obligated to provide information?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 827
+
+---
+
+## SECTION 8: EXEMPTIONS FROM DISCLOSURE
+
+Q8. What are the comprehensive exemptions under which public authorities are not obligated to provide information?
+
+Answerः Section 8 outlines ten categories of exempt information that public authorities are not obligated to disclose. These are:
+
+- (1) Sovereignty and Security [Section 8(1) (a) ]: Information whose disclosure would prejudicially affectः
+- Sovereignty and integrity of India
+- Security of the State
+
+
+
+
+- Strategic scientific, or economic interests of the State
+- Relations with foreign States
+- Incitement of an offense This is an absolute exemption with no public interest override.
+- (2) Court Orders [Section 8(1 ) (b)]: Information expressly forbidden to be published by any court of law or tribunal, or whose disclosure may constitute contempt of court. This is absolute.
+- (3) Legislative Privilege [Section 8(1 ) (c) ]: Information whose disclosure would cause a breach of privilege of Parliament or State Legislature. This is absolute.
+- (4) Commercial Confidentiality [Section 8(1 ) (d) ]: Information including commercial confidence, trade secrets, or intellectual property whose disclosure would harm the competitive position of a third party unless the competent authority is satisfied that larger public interest warrants disclosure. This allows public interest override.
+- (5) Fiduciary Information [Section 8(1 ) (e)]: Information available to a person in fiduciary relationship, unless competent authority is satisfied that larger public interest warrants disclosure. This allows public interest override.
+- (6) Foreign Government Information [Section 8(1 ) (f) ]: Information received in confidence from a foreign Government. This is absolute.
+- (7) Lifeand Safety [Section 8(1) (g) ]: Information whose disclosure would endanger the life 01 physical safety of any person, or identify the source of information or assistance given in confidence for law enforcement or security purposes. This is absolute.
+- (8) Investigation Exemption [Section 8(1 ) (h) ]: Information which would impede the process of investigation or apprehension or prosecution of offenders. This is absolute.
+- () Cabinet Papers [Section 8(1 ) (i) ]: Cabinet papers including records of deliberations of the Council of Ministers, Secretaries and other officers. Provided that decisions of Council of Ministers, the reasons thereof, and material on basis of which decisions were taken shall be made public after the decision has been taken and the matter is complete or over Those matters which come under exemptions in this section shall not be disclosed. This is partially exempt.
+- (10) Personal Privacy [Section 8(1 ) (j) ]: Information relating to personal information whose disclosure has no relationship to any public activity or interest, or which would cause unwarranted invasion of privacy of the individual unless the PIOSPIO or appellate authority is satisfied that larger public interest justifies disclosure. This allows public interest override. Provided that information which cannot be denied to Parliament or State Legislature shall not be denied to any person.
+
+Public Interest Override [Section 8(2) ]: Notwithstanding the Official Secrets Act, 1923 or any exemption, a public authority may allow access to information if public interest in disclosure outweighs the harm to the protected interests
+
+
+
+
+Twenty Year Rule [Section 8(3) ]: Any information relating to any occurrence, event or matter which happened twenty years before the request is made shall be provided unless it falls under Section 8(l)(a), (c), or (i). Where any question arises as to the date from which the said period is to be computed, the decision of the Central Government shall be final.

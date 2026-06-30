@@ -1,0 +1,19 @@
+# FAQ Chunk 157
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 25
+Section: (4 ) बार-बार उल्लंघनः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 68
+
+---
+
+## (4 ) बार-बार उल्लंघनः
+
+- यदि अधिकारी बार-बार RTI अधिनियम का उल्लंघन करता है
+- आयोग बर्खास्तगी की सिफारिश कर सकता है
+- दोहराए गए अपराधों के लिए उच्च जुर्माना की सिफारिश कर सकता है
+- जानबूझकर उल्लंघन के लिए बढे हुए दंड

@@ -1,0 +1,18 @@
+# FAQ Chunk 106
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 17
+Section: प्रश्नः Document Details से भुगतान चरण पर कैसे जाएँ?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 50
+
+---
+
+## प्रश्नः Document Details से भुगतान चरण पर कैसे जाएँ?
+
+उत्तरः अपलोड पूरा होने के बाद Next पर क्लिक करें| मैनुअल के अनुसार इससे आवेदन भुगतान चरण पर जाता है|
+
+Source: RTI User Manual, Printed page 11.

@@ -1,0 +1,19 @@
+# FAQ Chunk 159
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 25-26
+Section: (6) कार्यान्वयन प्राधिकरणः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 49
+
+---
+
+## (6) कार्यान्वयन प्राधिकरणः
+
+- सरकार नियुक्ति प्राधिकरण कार्यान्वयन करता है
+- अनुशंसित दंड लगा सकता है
+- दंड को संशोधित कर सकता है ( लेकिन बढ़ा नहीं सकता)
+- आयोग को अनुपालन की रिपोर्ट करना चाहिए

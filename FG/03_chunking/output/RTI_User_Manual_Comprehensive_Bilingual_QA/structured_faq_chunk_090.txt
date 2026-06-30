@@ -1,0 +1,18 @@
+# FAQ Chunk 90
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 15
+Section: Question: Can [ edit earlier first appeal details before proceeding?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 56
+
+---
+
+## Question: Can [ edit earlier first appeal details before proceeding?
+
+Answer: Use the Back button to edit details entered in the previous form. Select the application status from the dropdown, then click Save & Next.
+
+Source: RTI User Manual, Printed page 10.

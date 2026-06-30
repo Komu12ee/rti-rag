@@ -1,0 +1,21 @@
+# FAQ Chunk 27
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 6
+Section: Untitled section
+Question: Q024. Can I use attachments if my text is too long?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 99
+
+---
+
+## Untitled section
+
+Q024. Can I use attachments if my text is too long?
+
+Yes. The manual expressly permits material exceeding the 500-character application-text limit to be uploaded as
+a supporting document. The document-upload screen separately shows a second-appeal supporting-document
+slot marked Optional.
+BPL Card Holder Process

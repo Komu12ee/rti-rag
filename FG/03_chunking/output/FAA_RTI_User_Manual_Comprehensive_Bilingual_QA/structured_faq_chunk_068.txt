@@ -1,0 +1,16 @@
+# FAQ Chunk 68
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 11
+Section: Q33 (English). What happens if 1 choose Complaint instead of Appeal?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 42
+
+---
+
+## Q33 (English). What happens if 1 choose Complaint instead of Appeal?
+
+Answer. The manual states that for a Complaint application payment is not mandatory and supporting documents are optional.

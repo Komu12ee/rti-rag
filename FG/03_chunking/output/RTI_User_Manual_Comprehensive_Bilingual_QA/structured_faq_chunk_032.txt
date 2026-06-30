@@ -1,0 +1,18 @@
+# FAQ Chunk 32
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 6
+Section: Question: What password rules are stated in the RTI User Manual?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 58
+
+---
+
+## Question: What password rules are stated in the RTI User Manual?
+
+Answer: The password must contain at least 8 characters, including at least one lowercase letter , one uppercase letter, and one special character.
+
+Source: RTI User Manual, Printed page 4.

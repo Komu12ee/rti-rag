@@ -1,0 +1,18 @@
+# FAQ Chunk 46
+Document: claud-rti-rough
+Source: structured.md
+Pages: 19
+Section: (4) Jurisdiction:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 47
+
+---
+
+## (4) Jurisdiction:
+
+- Handles appeals and complaints relating to State public authorities
+- Hears second appeals against decisions of State PIOs
+- Inquires into complaints about RTI Act implementation in state authorities

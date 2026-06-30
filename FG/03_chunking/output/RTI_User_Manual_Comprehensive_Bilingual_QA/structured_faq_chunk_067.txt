@@ -1,0 +1,24 @@
+# FAQ Chunk 67
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 11
+Section: Question: Are supporting documents compulsory for a Complaint application ?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 107
+
+---
+
+## Question: Are supporting documents compulsory for a Complaint application ?
+
+Answer: According to the manual, payment is not mandatory for a Complaint application and supporting documents are optional.
+
+Source: RTI User Manual, Printed page 7.
+
+प्रश्नः यदि द्वितीय अपील संबंध में Complaint चुना जाए तो क्या भुगतान अनिवार्य है?
+
+Source: RTI User Manual, Printed page 7
+
+उत्तरः के अनुसार Complaint आवेदन के भुगतान अनिवार्य नहीं है और सहायक दस्तावेज वैकल्पिक हैं| मैनुअल लिए

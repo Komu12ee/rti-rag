@@ -1,0 +1,20 @@
+# FAQ Chunk 106
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 9
+Section: Q54 (English ). Who signs the application before uploading the signed PDF file ?
+Question: प्रश्न 54. (हिन्दी). हस्त्ताक्षरित PDF अपलोड करने से पहले आवेदन पर कौन हस्त्ताक्षर करता है?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 89
+
+---
+
+## Q54 (English ). Who signs the application before uploading the signed PDF file ?
+
+प्रश्न 54. (हिन्दी). हस्त्ताक्षरित PDF अपलोड करने से पहले आवेदन पर कौन हस्त्ताक्षर करता है?
+
+उत्तर. आवेदन में पी॰आई॰ओ., नोडल स्चीकृति प्राधिकारी तथा प्रथम अपीलीय अधिकारी का हस्ताक्षर लेकर स्कैन करके पीडीएफ फाइल अपलोड करनी है|
+
+Sourceः Page 3

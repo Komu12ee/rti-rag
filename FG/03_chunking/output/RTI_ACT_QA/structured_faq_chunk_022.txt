@@ -1,0 +1,24 @@
+# FAQ Chunk 22
+Document: RTI_ACT_QA
+Source: structured.md
+Pages: 11
+Section: SECTION ll: THIRD PARTY INFORMATION
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 397
+
+---
+
+## SECTION ll: THIRD PARTY INFORMATION
+
+QlL. What are the requirements when information relates to third parties under Section 11?
+
+Answer: Section 11 (1 ) mandates that where a CPIOISPIO intends to disclose information or a record, or part thereof, which relates to or has been supplied by a third party and has been treated as confidential by that third party the CPIO SPIO shall, within five days from the receipt of the request, give written notice to such third party of the request and fact that the authority intends to disclose the information or record or part thereof, and invite the third party to make a submission in writing or orally regarding whether the information should be disclosed. Such submission shall be kept in view while taking a decision about disclosure of information. However, except in the case of trade or commercial secrets protected by law, disclosure may be allowed if the competent authority is satisfied that the public interest in disclosure outweighs in importance any possible harm or injury to the interests of such third party.
+
+Section 11 (2) provides that where notice is served to a third party, the third party shall, within ten days from the date of receipt of such notice, be given the opportunity to make representation against the proposed disclosure.
+
+Section 11 (3) mandates that notwithstanding Section 7, if the third party has been given an opportunity to make representation under sub section (2) , the CPIOISPIO shall, within forty days after receipt of the request under Section 6, make a decision as to whether or not to disclose the information or record or part thereof and give in writing the notice of decision to the third party.
+
+Section 11 ( 4 ) requires that notice given shall include a statement that the third party is entitled to prefer an appeal under Section 19 against the decision.

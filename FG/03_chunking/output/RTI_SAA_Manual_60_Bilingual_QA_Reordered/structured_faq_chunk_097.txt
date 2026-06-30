@@ -1,0 +1,18 @@
+# FAQ Chunk 97
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 25
+Section: Question: What selection order is shown for PIO details?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 104
+
+---
+
+## Question: What selection order is shown for PIO details?
+
+Answerः The PIO and Office Details screen shows dropdowns for State, District, Base Department, Office Level, Office Name, and Officer Name. Select the relevant values from the available lists and click Next. The manual presents this as the stage before entering the original RTI application details.
+
+Similar English questions: "Please explain: What selection order is shown for PIO details "How is this handled on the RTI portal?"

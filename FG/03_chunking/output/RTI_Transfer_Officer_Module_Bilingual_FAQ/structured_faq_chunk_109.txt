@@ -1,0 +1,16 @@
+# FAQ Chunk 109
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 11
+Section: Q60. What confirmation is shown after the FAO approves the request?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 35
+
+---
+
+## Q60. What confirmation is shown after the FAO approves the request?
+
+Il Answer: The example shown in the manual displays the message Application approved successfully "

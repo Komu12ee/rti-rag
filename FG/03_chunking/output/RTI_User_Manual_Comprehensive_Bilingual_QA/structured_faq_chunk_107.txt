@@ -1,0 +1,18 @@
+# FAQ Chunk 107
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 17
+Section: Question: How do 1 start payment for the second appeal application?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 60
+
+---
+
+## Question: How do 1 start payment for the second appeal application?
+
+Answer: Select the relevant payment option by ticking its box and click Pay Fee Online. The form then directs the user to generate an online challan for payment.
+
+Source: RTI User Manual, Printed page 12

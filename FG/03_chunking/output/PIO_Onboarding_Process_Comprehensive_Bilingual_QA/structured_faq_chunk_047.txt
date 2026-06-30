@@ -1,0 +1,18 @@
+# FAQ Chunk 47
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 4
+Section: Q24 (English ). Which PIO fields are mandatory for onboarding?
+Question: प्रश्न 24. (हिन्दी). PIO ऑनबोर्डिंग के कौन से PIO विवरण अनिवार्य हैं? लिए
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 72
+
+---
+
+## Q24 (English ). Which PIO fields are mandatory for onboarding?
+
+प्रश्न 24. (हिन्दी). PIO ऑनबोर्डिंग के कौन से PIO विवरण अनिवार्य हैं? लिए
+
+उत्तर. पी॰आई॰ओ ऑनबोर्ड करने के नाम, ईनेल पदनाम और कार्यालय विवरण अनिवार्य हैं| Source: Page 4 लिए

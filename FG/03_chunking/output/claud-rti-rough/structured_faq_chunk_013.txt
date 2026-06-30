@@ -1,0 +1,43 @@
+# FAQ Chunk 13
+Document: claud-rti-rough
+Source: structured.md
+Pages: 6-7
+Section: SECTION 7: TIME LIMIT FOR FURNISHING INFORMATION
+Question: Q7. What are the response time limits and procedures for providing information under RTI?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 721
+
+---
+
+## SECTION 7: TIME LIMIT FOR FURNISHING INFORMATION
+
+Q7. What are the response time limits and procedures for providing information under RTI?
+
+Answer Section 7 establishes critical timelines and procedures for PIO response:
+
+- (1) Standard Response Period [Section 7(1 ) ]: Subject to provisos in Section 5(2) and 6(3), upon receipt of a request under Section 6, the PIO shall, as expeditiously as possible, and in any case within 30 of receipt of the request, either: days
+- Provide the information upon payment of prescribed fee, OR
+- Reject the request for any of the reasons specified in Sections 8 and 9
+
+Exception -Life or Liberty: Where information sought concerns the life or physical liberty of a person, the same shall be provided within 48 hours of the receipt of the request.
+
+- (2) Deemed Refusal [Section 7(2) ]: If the PIO fails to give decision on the request within the specified period ( 3O days), the PIO shall be deemed to have refused the request. This creates automatic grounds for appeal without waiting for formal rejection.
+- (3) Additional Fees for Information [Section 7(3) ]: Where a decision is taken to provide information on payment of any further fee representing cost of providing information, the PIO shall send an intimation to the applicant giving:
+- Details of further fees as determined by PIO with calculations
+- Request to deposit the fees
+
+
+
+
+- Information about review rights regarding fee amount and access form The period between despatch of intimation and fee payment is excluded from the 3O-day calculation.
+- (4) Assistance for Disabled Persons [Section 7( 4 ) ]: Where access to record or part thereof is required to be provided and the person is sensorily disabled, the PIO shall provide assistance to enable access, including assistance for inspection as may be appropriate.
+- (5) Format Specific Fees [Section 7(5) ]: Where access is to be provided in printed or any electronic format, applicant shall pay prescribed fee, provided that the fee shall be reasonable and no fee shall be charged from persons below poverty line.
+- (6) Free Information When Deadline Missed [Section 7(6) ]: Notwithstanding anything in sub section (5), if a public authority fails to comply with the time limits specified in subsection (l), the person making request shall be provided the information free of charge
+- (7) Consideration of Third Party Representation [Section 7(7 ) ]: Before taking decision under sub section (1), the PIO shall take into consideration the representation made by a third party under Section 1l.
+- (8) Rejection Notice Requirements [Section 7(8) ]: Where a request has been rejected, the PIO shall communicate to the person:
+- i) The reasons for such rejection
+- (ii) The period within which an appeal may be preferred
+- (iii) The particulars of the appellate authority
+- (9) Form of Information [Section 7(9)]: Information shall ordinarily be provided in the form in which it is sought unless it would disproportionately divert the resources of the public authority or would be detrimental to the safety or preservation of the record.

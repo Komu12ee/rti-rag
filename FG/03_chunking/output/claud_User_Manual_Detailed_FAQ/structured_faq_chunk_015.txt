@@ -1,0 +1,24 @@
+# FAQ Chunk 15
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 4
+Section: Untitled section
+Question: Q012. What are the RTI instructions I need to read before applying?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 202
+
+---
+
+## Untitled section
+
+Q012. What are the RTI instructions I need to read before applying?
+
+The instruction screen says the portal can be used by Indian citizens for RTI-related online filing and payment; it
+distinguishes mandatory fields from optional fields; it limits the prescribed application text to 500 characters; it
+permits longer material as a supporting document; it notes the BPL fee rule and certificate requirement; it says a
+unique registration number is issued on submission; and it asks applicants to provide a mobile number for SMS
+alerts. It also refers to the original application registration number for reference and to the first-appeal process.
+ Read the full instructions on the live screen because they may carry portal-specific updates.
+ The manual does not reproduce a separate legal rulebook; it shows procedural instructions for the portal.

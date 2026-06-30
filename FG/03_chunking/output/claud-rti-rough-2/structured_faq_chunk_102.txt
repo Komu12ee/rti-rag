@@ -1,0 +1,28 @@
+# FAQ Chunk 102
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 16-17
+Section: (8) उच्च न्यायालय के आदेश का प्रभावः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 136
+
+---
+
+## (8) उच्च न्यायालय के आदेश का प्रभावः
+
+- आयोग के निर्णय को रद्द कर सकता है
+- नए सिरे से विचार के लिए वापस भेज सकता है
+- विशिष्ट प्रकटीकरण निर्देश दे सकता है
+
+
+
+
+- मुआवजा दे सकता है
+- याचिका को खारिज कर आयोग के निर्णय को बरकरार रख सकता है
+
+उच्च न्यायालय के अधिकार क्षेत्र एक संवैधानिक सुरक्षा के रूप में कार्य करते हैं जो सुनिश्चित करता है कि RTI आयोग कानून के शासन का उल्लंघन न करें या अपने अधिकार से अधिक न जाएं|
+
+Source reference: RTI Rule Book, pp. 157 161 ( High Court observations), Section 21, Code of Civil Procedure, 1908 (reference for writ jurisdiction)

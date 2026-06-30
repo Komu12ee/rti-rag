@@ -1,0 +1,52 @@
+# FAQ Chunk 122
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 20-21
+Section: Untitled section
+Question: Q119. How long are applications stored in the system?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 516
+
+---
+
+## Untitled section
+
+Q119. How long are applications stored in the system?
+
+Retention policy is not specified.
+The manual does not state data-retention duration, archival rules, deletion policy, or how long incomplete
+applications remain available.
+
+<!-- extraction_method: direct_text | confidence: 0.75 -->
+Appendix A - Manual-Confirmed Limits and File Rules
+Item Manual-confirmed rule Manual reference
+Password Minimum 8 characters; at least 1 p. 4
+lowercase letter, 1 uppercase letter,
+and 1 special character.
+Narrative text Text in the prescribed application p. 6
+column is limited to 500 characters;
+longer material can be attached.
+BPL evidence Certificate copy issued by the p. 6
+appropriate government is required
+for the stated BPL fee rule.
+BPL fields When BPL is Yes: document number, p. 7
+issue date (dd-mm-yyyy), and issuing
+authority are required.
+Upload formats Only .pdf, .jpeg, and .jpg are allowed. p. 11
+Upload size Maximum file size shown is 20 MB. p. 11
+Complaint Payment not mandatory; supporting p. 7
+documents optional.
+Success evidence e-Challan success screen shows p. 13
+references and offers Print Receipt.
+Appendix B - Questions the Manual Does Not Resolve
+The following topics appeared in the requested question set but are not documented by the supplied manual:
+exact legal definitions of Appeal and Complaint; response deadlines; legal rights after filing; BPL eligibility
+percentages; fee-option classification for Rs. 100 versus Rs. 125; full payment-failure or cancellation handling;
+email-verification timing; available reason/status values; draft retention; multiple-account and application
+limits; post-payment editing; audit trails; data retention; and a helpline number. These matters require
+confirmation from an authoritative, current source outside this manual.
+Use the portal's live ContactUs page or the responsible authority for items marked "Not specified in the
+manual."
+Source-bounded guide based only on rtiUserManual.pdf | Page 21

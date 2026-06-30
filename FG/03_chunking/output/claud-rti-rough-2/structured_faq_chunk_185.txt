@@ -1,0 +1,23 @@
+# FAQ Chunk 185
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 30-31
+Section: (10) सिफारिशों का अनुपालनः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 119
+
+---
+
+## (10) सिफारिशों का अनुपालनः
+
+- सरकार को कार्यान्वित करने के लिए प्रोत्साहित किया जाता है
+- आयोग अगली रिपोर्ट में अनुवर्तन करता है
+- सार्वजनिक रूप से कार्यान्वयन को ट्रैक करता है
+- जवाबदेही बनाता है
+
+रिपोर्टिंग तंत्र RTI कार्यान्वयन में पारदर्शिता सुनिश्चित करता है और साक्ष्य आधारित सिफारिशों के माध्यम से निरंतर सुधार चलाता है
+
+Source reference: RTI Rule Book, pp. 146 155 (SIC Annual Reports and Government Action on Recommendations ) , Section 25

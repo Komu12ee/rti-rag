@@ -1,0 +1,32 @@
+# RTI Legal Chunk 51
+Document: RTI_Act_2005_Source_Text_QA
+Input source: structured.md
+Input pages: 24-26
+Chapter: Chapter IV - The State Information Commission
+Question: Q. What is the source text of Section 16?
+Part: 4/5
+Kind: faq
+Has answer: yes
+Content tokens: 114
+Original source book: Unknown
+Source type: general
+Legal reference: Section 16
+Book pages: 28-31
+Source PDF pages: Unknown
+Citation: Unknown
+
+---
+
+## Chapter IV - The State Information Commission
+
+Legal reference: Section 16
+
+Q. What is the source text of Section 16?
+
+**Answer continued:**
+
+Provided that the State Chief Information Commissi before the commencement of the Right to Information (Am
+provisions of this Act and the rules made thereunder as if the into force.”
+Provided further that where the State
+Chief Information Commissioner or a State Information Commissioner if, at the time of his appointment is, in
+Compiled from the uploaded RTI rule book - Part 1 statutory text only

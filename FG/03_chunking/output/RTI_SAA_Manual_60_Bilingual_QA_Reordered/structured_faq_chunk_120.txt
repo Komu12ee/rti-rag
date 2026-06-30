@@ -1,0 +1,18 @@
+# FAQ Chunk 120
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 31
+Section: Question: What records should I retain after successful payment?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 103
+
+---
+
+## Question: What records should I retain after successful payment?
+
+Answer: The success screen in the manual shows the treasury reference number, bank reference number, amount, transaction date and time, bank name, and status. It also includes Print Receipt. Keep the printed receipt or a secure copy of these reference details for future reference.
+
+Similar English questions: "Please explain: What records should I retain after successful payment"; "How is this handled on the RTI portal?"

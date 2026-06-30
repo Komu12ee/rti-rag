@@ -1,0 +1,18 @@
+# FAQ Chunk 39
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 11
+Section: Question: Who can use the portal according to the RTI instruction screen?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 129
+
+---
+
+## Question: Who can use the portal according to the RTI instruction screen?
+
+Answer: The instruction screen states that the web portal can be used by Indian citizens to file an RTI application online and to make online payment for an RTI application. It also says that a First Appeal can be filed online. The manual section under discussion specifically demonstrates the Second Appeal workflow for offline applications before the PIO and First Appellate Officer.
+
+Similar English questions: "Please explain: Who can use the portal according to the RTI instruction screen"; "How is this handled on the RTI portal?"

@@ -1,0 +1,46 @@
+# FAQ Chunk 3
+Document: CG_RTI_Portal_Citizen_FAQ
+Source: structured.md
+Pages: 1-3
+Section: Untitled section
+Question: (section note)
+Part: 3/5
+Kind: section_note
+Has answer: no
+Content tokens: 312
+
+---
+
+## Untitled section
+
+Q3. How do I pay RTI fees?
+Use the Payment Details stage shown by the portal for the relevant application workflow.
+ At Payment Details, select the applicable payment option by ticking the relevant box.
+ Click Pay Fee Online.
+ The portal directs you to generate an online challan for payment.
+ Complete the payment through the bank or payment option shown on the redirected page.
+ After a successful transaction, keep the receipt or reference details safely.
+Keep for future reference: The manual shows a success screen containing treasury reference number, bank reference
+number, amount, date and time, bank name, status, and a Print Receipt option.
+BPL note: The manual states that a BPL applicant is not required to pay the fee when the required BPL certificate is
+attached. It does not define every fee category or amount for every case.
+Source basis: RTI User Manual - Payment Details (Manual pp. 12-13) and BPL instruction references (Manual pp. 6-7).
+
+
+Q4. How do I file a First Appeal?
+The supplied manual documents First Appeal details within the portal workflow. Follow the fields displayed by
+the live portal.
+ Enter the original RTI application details, including the offline RTI application date and the information-received
+status, where the workflow asks for them.
+Source-based guide prepared from the supplied CG RTI portal manuals
+ Select First Appeal office details: State, District, Base Department, Office Level, Office Name, and Officer
+Name.
+ Select the appropriate First Appeal Reason Type from the dropdown.
+ Enter the First Appeal details and the offline First Appeal date shown by the form.
+ Choose the application status and click Save & Next.
+ Use Back if you need to correct earlier information.
+ Upload documents and complete payment if the workflow requires them.
+Manual limitation: The supplied manual documents the fields and workflow, but it does not prove every live-portal
+starting menu path for a standalone First Appeal.
+Source basis: RTI User Manual - RTI Application Details, First Appeal Office Details, First Appeal Application, document, and payment
+steps (Manual pp. 8-12).

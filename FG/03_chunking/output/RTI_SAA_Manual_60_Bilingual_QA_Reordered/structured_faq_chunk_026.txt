@@ -1,0 +1,18 @@
+# FAQ Chunk 26
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 7
+Section: Question: Why does the registration form ask for names and addresses in both English and Hindi?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 126
+
+---
+
+## Question: Why does the registration form ask for names and addresses in both English and Hindi?
+
+Answer The manual's illustrated registration screen contains separate fields for name and address in English and Hindi. It does not explain the administrative reason for the two-language fields, but it indicates that the portal is designed to capture these values in both languages. Enter the requested versions carefully where the field is provided.
+
+Similar English questions: "Please explain: Why does the registration form ask for names and addresses in both English and Hindi' "How is this handled on the RTI portal?"

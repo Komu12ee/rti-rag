@@ -1,0 +1,16 @@
+# FAQ Chunk 6
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 1
+Section: Q3 (English ). How does a PIO start registration?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 43
+
+---
+
+## Q3 (English ). How does a PIO start registration?
+
+Answer. Open https  rtionline cg gov in and register the PIO from the Public Information Officer PIO) registration menu.

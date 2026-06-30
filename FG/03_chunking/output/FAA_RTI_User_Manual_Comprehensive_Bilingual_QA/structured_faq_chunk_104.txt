@@ -1,0 +1,16 @@
+# FAQ Chunk 104
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 16
+Section: Q51 (English). How do 1 choose the reason for my first appeal?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 43
+
+---
+
+## Q51 (English). How do 1 choose the reason for my first appeal?
+
+Answer. Select the suitable option from the dropdown under First Appeal Reason Type, then enter the related First Appeal details.

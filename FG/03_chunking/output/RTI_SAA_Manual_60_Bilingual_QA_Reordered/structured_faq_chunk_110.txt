@@ -1,0 +1,18 @@
+# FAQ Chunk 110
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 28
+Section: Question: Which documents and file formats are shown on the upload screen?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 137
+
+---
+
+## Question: Which documents and file formats are shown on the upload screen?
+
+Answerः The upload screen shows slots for RTI supporting documents the offline PIO answer document, First Appeal supporting documents, the offline First Appellate Officer answer document, and an optional supporting document for the Second Appeal. The screen notes that PDF, JPEG, and JPG files are allowed, with a maximum file size of 20 MB. For Complaint applications, the manual says supporting documents are optional.
+
+Similar English questionsः "Please explain: Which documents and file formats are shown on the upload screen "How is this handled on the RTI portal?"

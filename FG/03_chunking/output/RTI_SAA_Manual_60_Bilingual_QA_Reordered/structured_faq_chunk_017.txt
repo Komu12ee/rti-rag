@@ -1,0 +1,24 @@
+# FAQ Chunk 17
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 5
+Section: Question: What password rules does the manual specify?
+Question: प्रश्न 07. हिंदी प्रश्नोत्तर
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 161
+
+---
+
+## Question: What password rules does the manual specify?
+
+प्रश्न 07. हिंदी प्रश्नोत्तर
+
+प्रश्नः मैनुअल में पासवर्ड के कौन॰से नियम बताए गए हैं?
+
+उत्तरः पासवर्ड कम से कम 8 अक्षरों का होना चाहिए| उसमें कम से कम एक छोटा अंग्रेज़ी अक्षर, एक बड़ा अंग्रेज़ी अक्षर और एक विशेष होना आवश्यक है| के अनुसार पंजीकृत ई-मेल को लॉगिन आईडी के रूप में भरकर इन नियमों के अनुसार पासवर्ड बनाना है और फिर Create पर क्लिक करना हैl मैनुअल चिन्ह
+
+समान हिंदी प्रश्नः "कृपया समझाएंः मैनुअल में पासवर्ड के कौन से नियम बताए गए हैं II "आरटीआई पोर्टल पर यह प्रक्रिया कैसे होती है ?"
+
+Manual reference संदर्भः Manual p. 4 मैनुअल

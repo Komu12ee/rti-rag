@@ -1,0 +1,16 @@
+# FAQ Chunk 105
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 9
+Section: Q54 (English ). Who signs the application before uploading the signed PDF file ?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 58
+
+---
+
+## Q54 (English ). Who signs the application before uploading the signed PDF file ?
+
+Answer. The application must be signed by the PIO , the Nodal Approval Authority, and the First Appellate Officer before scanning and uploading the PDF file.

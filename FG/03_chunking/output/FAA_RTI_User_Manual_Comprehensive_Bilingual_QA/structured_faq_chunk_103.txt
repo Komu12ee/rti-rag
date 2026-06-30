@@ -1,0 +1,20 @@
+# FAQ Chunk 103
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 16
+Section: Q50 (English). What details are required for a First Appeal Application?
+Question: प्रश्न 50. (हिंदी) First Appeal Application के कौन॰कौन से विवरण आवश्यक हैं? लिए
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 99
+
+---
+
+## Q50 (English). What details are required for a First Appeal Application?
+
+प्रश्न 50. (हिंदी) First Appeal Application के कौन॰कौन से विवरण आवश्यक हैं? लिए
+
+उत्तर First Appeal का विवरण दर्ज करें ड्रॉपडाउन से उपयुक्त First Appeal Reason Type चुनें , प्रथम अपील की ऑफलाइन आवेदन तिथि दर्ज करें , application status चुनें और फिर Save & Next का उपयोग करें|
+
+Source: RTI User Manual, Manual p. 10.

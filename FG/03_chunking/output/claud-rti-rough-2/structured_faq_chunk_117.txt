@@ -1,0 +1,19 @@
+# FAQ Chunk 117
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 19
+Section: (6) छूट की सीमाएंः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 46
+
+---
+
+## (6) छूट की सीमाएंः
+
+- दिनचर्या प्रशासनिक सूचना को exempt नहीं कर सकते
+- भ्रष्टाचार आरोपों को exempt नहीं कर सकते
+- बजट सूचना को exempt नहीं कर सकते
+- संगठनात्मक विवरणों को exempt नहीं कर सकते

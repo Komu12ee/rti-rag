@@ -1,0 +1,18 @@
+# FAQ Chunk 123
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 20
+Section: (3) False Information:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 44
+
+---
+
+## (3) False Information:
+
+- If PIOlemployee gives false information
+- Punishment: Imprisonment up to 2 years OR fine up to =500
+- OR both imprisonment and fine

@@ -1,0 +1,16 @@
+# FAQ Chunk 157
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 27
+Section: First Appeal Application
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 9
+
+---
+
+## First Appeal Application
+
+First Appeal Application

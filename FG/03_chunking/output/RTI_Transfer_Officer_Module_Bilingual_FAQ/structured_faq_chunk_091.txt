@@ -1,0 +1,20 @@
+# FAQ Chunk 91
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 10
+Section: Q49. Does the manual explain the purpose of the Skip button visible in the upload screen ?
+Question: प्रश्न 49. अपलोड स्क्रीन में दिखने वाले Skip बटन का उद्देश्य क्या है?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 88
+
+---
+
+## Q49. Does the manual explain the purpose of the Skip button visible in the upload screen ?
+
+प्रश्न 49. अपलोड स्क्रीन में दिखने वाले Skip बटन का उद्देश्य क्या है?
+
+उत्तरः में इसका उद्देश्य नहीं बताया गया है| स्क्रीनशॉट में Skip बटन दिखता है, लेकिन लिखित निर्देश यह नहीं बताते कि इसे कब उपयोग करना चाहिए या इसका क्या प्रभाव होगा| मैनुअल
+
+Source reference : Manual pp . 7 8

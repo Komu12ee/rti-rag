@@ -1,0 +1,16 @@
+# FAQ Chunk 38
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 3
+Section: Q20 (English). What is done in step 7 of onboarding?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 57
+
+---
+
+## Q20 (English). What is done in step 7 of onboarding?
+
+Answer . Step 7 is upload signed file: take signatures of the PIO, Nodal Approval Authority and FAO on the application, scan it, and upload the PDF file.

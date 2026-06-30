@@ -1,0 +1,18 @@
+# FAQ Chunk 82
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 13
+Section: (4) हस्तांतरण का प्रभावः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 32
+
+---
+
+## (4) हस्तांतरण का प्रभावः
+
+- राज्य आयोग अधिकार क्षेत्र खो देता है
+- केंद्रीय आयोग संभालता है
+- पिछली कार्यवाही फाइल का हिस्सा बनी रहती है

@@ -1,0 +1,16 @@
+# FAQ Chunk 15
+Document: RTI_PIO_Manual_30_Bilingual_QA
+Source: structured.md
+Pages: 4
+Section: Question (English): What password rules does the manual specify?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 82
+
+---
+
+## Question (English): What password rules does the manual specify?
+
+Answer (English): The password must be at least 8 characters long. It must include at least one lowercase letter, at least one uppercase letter, and at least one special character. The manual instructs the user to enter the registered email as the login ID and create the password according to these requirements before selecting Create.

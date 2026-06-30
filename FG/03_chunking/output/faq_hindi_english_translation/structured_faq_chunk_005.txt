@@ -1,0 +1,40 @@
+# FAQ Chunk 5
+Document: faq_hindi_english_translation
+Source: structured.md
+Pages: 1-3
+Section: Untitled section
+Question: Question 4. How much additional fee may be demanded, and for what purpose?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 444
+
+---
+
+## Untitled section
+
+Question 4. How much additional fee may be demanded, and for what purpose?
+
+Answer: On submitting an application under Section 6(1), the applicant must pay Rs. 10/- (ten rupees) as an application fee through
+a treasury challan, cash, non-judicial stamp, e-stamp, money order, demand draft, banker’s cheque, or postal order.
+English Translation - RTI FAQ
+
+<!-- extraction_method: direct_text | confidence: 0.75 -->
+Page 2
+Under the Act, the information sought by persons below the poverty line shall be provided free of charge, as follows:-
+(One) If the information sought by the applicant relates to his or her life, that information shall be provided in the form in which it
+has been requested.
+(Two) If the information sought is not related to the applicant himself or herself, but the information can be provided free of charge
+where it consists of 50 photocopy pages (A-4 size) or where the cost of preparing it is Rs. 100/- (one hundred rupees only),
+then any information shall ordinarily be provided in the same form in which it has been requested, unless doing so would
+disproportionately divert the resources of the public authority or would be detrimental to the safety or preservation of the
+record concerned.
+(Three) If the information sought exceeds 50 photocopy pages or costs more than Rs. 100/- (one hundred rupees only), then, after
+recording reasons under Section 7(9), the applicant shall be requested to inspect the records and files at the office.
+There is no charge for inspection during the first hour. However, after the first hour, a fee of Rs. 5/- (five rupees) is charged for each
+hour (or part of an hour).
+English Translation - RTI FAQ
+
+<!-- extraction_method: direct_text | confidence: 1.00 -->
+Page 3
+First Appeal: Application Before the First Appellate Authority

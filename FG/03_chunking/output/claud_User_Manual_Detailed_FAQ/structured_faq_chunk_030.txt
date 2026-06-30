@@ -1,0 +1,21 @@
+# FAQ Chunk 30
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 7
+Section: Untitled section
+Question: Q027. What is the BPL Document Number?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 88
+
+---
+
+## Untitled section
+
+Q027. What is the BPL Document Number?
+
+No specific number format is stated.
+It is the form field for the identifying number of the BPL document or certificate. The manual does not prescribe
+a separate number format; enter the document number exactly as it appears on the government-issued BPL
+certificate or card.

@@ -1,0 +1,20 @@
+# FAQ Chunk 139
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 21
+Section: Q68 (English). What should 1 do before clicking Next on the registration instruction page?
+Question: प्रश्न 68. (हिंदी)| पंजीकरण निर्देश पृष्ठ पर Next दबाने से पहले क्या करना चाहिए?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 76
+
+---
+
+## Q68 (English). What should 1 do before clicking Next on the registration instruction page?
+
+प्रश्न 68. (हिंदी)| पंजीकरण निर्देश पृष्ठ पर Next दबाने से पहले क्या करना चाहिए?
+
+उत्तर निर्देश पढ़ने के बाद घोषणा| पुष्टि वाले बॉक्स पर टिक करें और फिर Next पर क्लिक करें|
+
+Source: RTI User Manual, Manual p. 2

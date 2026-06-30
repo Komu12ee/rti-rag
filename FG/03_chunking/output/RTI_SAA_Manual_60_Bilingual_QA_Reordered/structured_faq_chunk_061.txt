@@ -1,0 +1,24 @@
+# FAQ Chunk 61
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 16
+Section: Question: How is the registration number used after an application is submitted?
+Question: प्रश्न 28. हिंदी प्रश्नोत्तर
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 161
+
+---
+
+## Question: How is the registration number used after an application is submitted?
+
+प्रश्न 28. हिंदी प्रश्नोत्तर
+
+प्रश्नः आवेदन जमा होने के बाद पंजीयन संख्या का उपयोग कैसे होता है?
+
+उत्तरः कहता है कि आवेदन जमा होने पर एक विशिष्ट पंजीयन संख्या जारी होती है, जिसका उपयोग भविष्य के संदर्भ के किया जा सकता है| इसमें यह भी कहा गया है कि अपील प्रक्रिया आवेदन की पंजीयन संख्या संदर्भ के लिए उपयोग करनी होती है| संबंधित अपील चरण शुरू करने से पहले यह संख्या उपलब्ध रखें| मैनुअल में मूल लिए
+
+समान हिंदी प्रश्नः "कृपया समझाएं: आवेदन जमा होने के बाद पंजीयन संख्या का उपयोग कैसे होता है " "आरटीआई पोर्टल पर यह प्रक्रिया कैसे होती है ?"
+
+Manual reference संदर्भः Manual p. 6 मैनुअल

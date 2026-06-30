@@ -1,0 +1,18 @@
+# FAQ Chunk 103
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 26
+Section: Question: How should 1 record the information received status?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 101
+
+---
+
+## Question: How should 1 record the information received status?
+
+Answerः The RTI Application Details page contains an Information received dropdown. Choose the option that accurately represents the status of information received for the offline RTI application. The manual shows that this field is part of the form but does not explain the meaning or legal effect of every possible option.
+
+Similar English questions: "Please explain: How should I record the information received status "How is this handled on the RTI portal?"

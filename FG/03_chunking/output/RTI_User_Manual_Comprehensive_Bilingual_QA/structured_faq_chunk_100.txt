@@ -1,0 +1,18 @@
+# FAQ Chunk 100
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 16-17
+Section: Question: What file formats and size limit are shown on the document upload screen ?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 68
+
+---
+
+## Question: What file formats and size limit are shown on the document upload screen ?
+
+Answer: The example screen states a maximum file size of 20 MB and shows PDF, JPEG, and JPG as allowed formats. Check the live portal for any current change before uploading.
+
+Source: RTI User Manual, Printed page 11.

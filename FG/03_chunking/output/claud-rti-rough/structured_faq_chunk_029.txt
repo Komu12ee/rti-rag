@@ -1,0 +1,21 @@
+# FAQ Chunk 29
+Document: claud-rti-rough
+Source: structured.md
+Pages: 14
+Section: SECTION 12: CENTRAL INFORMATION COMMISSION
+Question: Q12. What is the Central Information Commission and how is it constituted?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 90
+
+---
+
+## SECTION 12: CENTRAL INFORMATION COMMISSION
+
+Q12. What is the Central Information Commission and how is it constituted?
+
+Answer Section 12 establishes the Central Information Commission (CIC), the apex body handling RTI appeals at the national level. The Commission is constituted by the Central Government and comprises: for
+
+- One Chief Information Commissioner (CIC)
+- Up to ten Information Commissioners (ICs)

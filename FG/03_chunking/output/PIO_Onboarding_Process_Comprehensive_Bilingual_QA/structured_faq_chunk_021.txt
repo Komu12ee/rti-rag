@@ -1,0 +1,16 @@
+# FAQ Chunk 21
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 2
+Section: Q11 (English ). How does the PIO create the password after registration ?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 49
+
+---
+
+## Q11 (English ). How does the PIO create the password after registration ?
+
+Answer. The PIO clicks the link received on the registered e-mail ID. After clicking the link, the password creation menu opens.

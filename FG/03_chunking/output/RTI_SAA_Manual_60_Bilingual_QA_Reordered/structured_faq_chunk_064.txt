@@ -1,0 +1,16 @@
+# FAQ Chunk 64
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 17
+Section: C. Second Appeal Details, Complaint, and BPL
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 30
+
+---
+
+## C. Second Appeal Details, Complaint, and BPL
+
+C. द्वितीय अपील विवरण, Complaint और BPL Manual pp. 6-7

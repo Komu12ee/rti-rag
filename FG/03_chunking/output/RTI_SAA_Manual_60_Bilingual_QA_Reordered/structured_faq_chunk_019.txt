@@ -1,0 +1,24 @@
+# FAQ Chunk 19
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 5-6
+Section: Question: Which credential should 1 use as my login ID?
+Question: प्रश्न 08. हिंदी प्रश्नोत्तर
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 169
+
+---
+
+## Question: Which credential should 1 use as my login ID?
+
+प्रश्न 08. हिंदी प्रश्नोत्तर
+
+प्रश्नः लॉगिन आईडी के रूप में कौन-सा विवरण उपयोग करना चाहिए?
+
+उत्तरः उपयोगकर्ता पंजीयन के समय दर्ज की गई ई-मेल आईडी को लॉगिन आईडी के रूप में उपयोग करें| मैनुअल स्पष्ट रूप से कहता है कि पासवर्ड सत्यापन के दौरान ई-मेल को Login ID के रूप में भरना हैl इसी कारण पंजीयन के समय दी गई ई-मेल आईडी का वैध और सक्रिय होना आवश्यक हैl|
+
+समान हिंदी प्रश्नः "कृपया समझाएं लॉगिन आईडी के रूप में कौन सा विवरण उपयोग करना चाहिए T[ "आरटीआई पोर्टल पर यह प्रक्रिया कैसे होती है ? "
+
+Manual reference संदर्भः Manual pp. 2 4 मैनुअल

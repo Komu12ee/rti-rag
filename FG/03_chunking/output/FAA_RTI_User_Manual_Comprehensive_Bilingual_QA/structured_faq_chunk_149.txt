@@ -1,0 +1,16 @@
+# FAQ Chunk 149
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 24
+Section: Q73 (English). What should 1 select if 1 am not a BPL card holder?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 38
+
+---
+
+## Q73 (English). What should 1 select if 1 am not a BPL card holder?
+
+Answer. Select No in the BPL card holder field, as applicable to your status.

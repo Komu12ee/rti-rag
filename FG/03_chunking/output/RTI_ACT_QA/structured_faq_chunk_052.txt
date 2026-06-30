@@ -1,0 +1,26 @@
+# FAQ Chunk 52
+Document: RTI_ACT_QA
+Source: structured.md
+Pages: 20
+Section: SECTION 23: PENALTIES
+Question: Q23. What penaltiesare prescribed under Section 23 for violations?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 156
+
+---
+
+## SECTION 23: PENALTIES
+
+Q23. What penaltiesare prescribed under Section 23 for violations?
+
+Answer Section 23 provides for penalties for various violations:
+
+- Obstruction of PIO: Imprisonment up to 3 months OR fine up to =250
+- Destruction of records: Imprisonment up to 3 months OR fine up to =250
+- False information by PIO: Imprisonment up to 2 years OR fine up to =500
+- Willful withholding Imprisonment up to 3 months OR fine up to =250
+- Commissioning violation: Officer directing PIO to violate receives penalties
+
+Penalties can be imposed as imprisonment, fines, or both.

@@ -1,0 +1,32 @@
+# RTI Legal Chunk 6
+Document: RTI_Act_2005_Source_Text_QA
+Input source: structured.md
+Input pages: 4-5
+Chapter: Chapter I - Preliminary
+Question: Q. What is the source text for the definition of “Chief Information Commissioner and Information
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 113
+Original source book: Unknown
+Source type: general
+Legal reference: Unknown
+Book pages: 3-6
+Source PDF pages: Unknown
+Citation: Unknown
+
+---
+
+## Chapter I - Preliminary
+
+Q. What is the source text for the definition of “Chief Information Commissioner and Information
+
+Commissioner”?
+Answer - source text
+(d) “Chief Information Commissioner” and “Information Commissioner”
+Compiled from the uploaded RTI rule book - Part 1 statutory text only
+
+SOURCE-TEXT Q&A | THE RIGHT TO INFORMATION ACT, 2005
+mean the Chief Information
+Commissioner and Information Commissioner appointed under subsection (3) of section 12;
+—

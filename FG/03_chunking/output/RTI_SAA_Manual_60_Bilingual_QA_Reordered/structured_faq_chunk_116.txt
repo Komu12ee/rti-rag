@@ -1,0 +1,18 @@
+# FAQ Chunk 116
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 30
+Section: Question: What sequence should I follow for each document upload?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 105
+
+---
+
+## Question: What sequence should I follow for each document upload?
+
+Answerः For a document row, click Browse, choose the file, and click Upload. Verify that the portal indicates successful upload and that the button changes to Uploaded in green. Repeat this for each relevant file before clicking Next to continue to payment.
+
+Similar English questions: "Please explain: What sequence should I follow for each document upload"; "How is this handled on the RTI portal?"

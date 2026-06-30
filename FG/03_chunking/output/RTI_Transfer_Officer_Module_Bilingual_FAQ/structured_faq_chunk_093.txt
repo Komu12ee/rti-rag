@@ -1,0 +1,20 @@
+# FAQ Chunk 93
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 10
+Section: Q50. What is the name change workflow?
+Question: प्रश्न 50. नाम परिवर्तन की प्रक्रिया क्या है?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 78
+
+---
+
+## Q50. What is the name change workflow?
+
+प्रश्न 50. नाम परिवर्तन की प्रक्रिया क्या है?
+
+उत्तरः नाम परिवर्तन की प्रक्रिया उस स्थिति के लिए है जब पोर्टल ईमेल आईडी उसी खाते पर किसी व्यक्ति को देनी हो| यह अलग ईमेल आईडी वाले स्थानांतरण की बजाय उपयोग की जाती है| मौजूदा दूसरे
+
+Source reference : Manual pp . 9-1 2

@@ -1,0 +1,19 @@
+# FAQ Chunk 127
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 20
+Section: (7) Commission Recommendation [Section 24 ]:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 41
+
+---
+
+## (7) Commission Recommendation [Section 24 ]:
+
+- Information Commission can recommend penalties
+- Can recommend compensation to applicant
+- Can recommend disciplinary action
+- Can recommend criminal prosecution

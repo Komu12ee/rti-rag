@@ -1,0 +1,16 @@
+# FAQ Chunk 47
+Document: RTI_PIO_Manual_30_Bilingual_QA
+Source: structured.md
+Pages: 8
+Section: Question (English): What should 1 do if the required PIO or office is not available in the dropdown list?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 110
+
+---
+
+## Question (English): What should 1 do if the required PIO or office is not available in the dropdown list?
+
+Answer (English): Use the blue highlighted link shown on the PIO and Office Details screen. The manual explains that if the office and officer details cannot be found in the listed options, details can be entered through this link. The manualentry screen asks for information such as the PIO name, designation, mobile number, office name, office address, district, department and sub department name. base

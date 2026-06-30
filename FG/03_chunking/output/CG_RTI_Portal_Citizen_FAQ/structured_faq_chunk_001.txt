@@ -1,0 +1,33 @@
+# FAQ Chunk 1
+Document: CG_RTI_Portal_Citizen_FAQ
+Source: structured.md
+Pages: 1-3
+Section: Untitled section
+Question: (section note)
+Part: 1/5
+Kind: section_note
+Has answer: no
+Content tokens: 219
+
+---
+
+## Untitled section
+
+<!-- extraction_method: direct_text | confidence: 0.75 -->
+CG RTI PORTAL - CITIZEN FAQ
+CG RTI Portal - Citizen FAQ
+Registration, filing workflow, payment, appeals, status, and PIO details
+Question-and-answer guide based on the supplied portal manuals
+Scope note: This guide explains the procedures shown in the supplied manuals. It does not replace the current
+live portal, statutory rules, or official assistance for case-specific issues.
+Topics covered
+ Register and activate an account
+ File an RTI application
+ Pay RTI fees
+ File a First Appeal
+ Check application status
+ Find PIO contact details
+Important distinction
+The PIO onboarding and Transfer Officer manuals are for government officers. They should not be used as a
+citizen filing guide unless the question is specifically about officer onboarding or transfer of charge.
+Source-based guide prepared from the supplied CG RTI portal manuals

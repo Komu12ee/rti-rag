@@ -1,0 +1,24 @@
+# FAQ Chunk 119
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 19
+Section: Question: Does the manual show a receipt option after payment?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 164
+
+---
+
+## Question: Does the manual show a receipt option after payment?
+
+Answer: The manual shows a transaction success screen after payment. The example displays treasury and bank reference information, the amount, transaction date and time, bank name, and status. A Print Receipt is also visible in the shown screen option
+
+Source: RTI User Manual, Printed pages 12 13.
+
+प्रश्नः सफल भुगतान लेनदेन के बाद क्या दिखाई देता है?
+
+उत्तरः मैनुअल में भुगतान के बाद लेनदेन सफलता स्क्रीन दिखाई गई है| उदाहरण में ट्रेजरी और बैंक संदर्भ जानकारी , राशि, लेनदेन तिथि और समय, बैंक नाम तथा स्थिति दिखाई गई हैl प्रदर्शित स्क्रीन में Print Receipt विकल्प भी दिखता हैl
+
+Source: RTI User Manual, Printed pages 12 13.

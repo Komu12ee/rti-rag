@@ -1,0 +1,16 @@
+# FAQ Chunk 59
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 6
+Section: Q30. What can be seen in View Details?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 50
+
+---
+
+## Q30. What can be seen in View Details?
+
+Answer: View Details displays the transfer record, including the current status, the charge type, office information and the date on which the charge was given, as shown in the manual example.

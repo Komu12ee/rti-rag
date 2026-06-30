@@ -1,0 +1,27 @@
+# FAQ Chunk 23
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 4-5
+Section: SECTION lB: PROCEDURE FOR INQUIRIES AND HEARINGS
+Question: Q18. What is the procedure followed by Information Commissions when conducting inquiries?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 95
+
+---
+
+## SECTION lB: PROCEDURE FOR INQUIRIES AND HEARINGS
+
+Q18. What is the procedure followed by Information Commissions when conducting inquiries?
+
+Answer: Section 18 establishes the procedure for inquiries conducted by both Central and State Information Commissions:
+
+- (1) Notice of Inquiry:
+
+
+
+
+- Commission issues notice to concerned public authority
+- Informs about nature of inquiry
+- Gives opportunity to file written reply

@@ -1,0 +1,18 @@
+# FAQ Chunk 45
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 5
+Section: Q22. Does the manual specify how long the approval process takes?
+Question: प्रश्न 22. क्या मैनुअल में स्वीकृति प्रक्रिया की समय-सीमा बताई गई है?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 44
+
+---
+
+## Q22. Does the manual specify how long the approval process takes?
+
+प्रश्न 22. क्या मैनुअल में स्वीकृति प्रक्रिया की समय-सीमा बताई गई है?
+
+Source reference : Manual p. 4

@@ -1,0 +1,20 @@
+# FAQ Chunk 191
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 31
+Section: 4) Practical Implementation:
+Question: Q27. Can the RTI Act be amended, and what is the procedure?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 50
+
+---
+
+## 4) Practical Implementation:
+
+Q27. Can the RTI Act be amended, and what is the procedure?
+
+Answer: Section 27 provides for amendments to the Actः
+
+- (1) Amendment Authority Parliament can amend any provision

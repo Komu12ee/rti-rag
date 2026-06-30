@@ -1,0 +1,69 @@
+# RTI Legal Chunk 63
+Document: RTI_Act_2005_Source_Text_QA
+Input source: structured.md
+Input pages: 31-33
+Chapter: Chapter V - Powers and functions, appeal and penalties
+Question: Q. What is the source text of Section 20?
+Part: 1/2
+Kind: faq
+Has answer: yes
+Content tokens: 491
+Original source book: Unknown
+Source type: general
+Legal reference: Section 20
+Book pages: 37-39
+Source PDF pages: Unknown
+Citation: Unknown
+
+---
+
+## Chapter V - Powers and functions, appeal and penalties
+
+Legal reference: Section 20
+
+Q. What is the source text of Section 20?
+
+Answer - source text
+20. (1) Where the Central Information
+Commission or the State Information Commission, as the case may be, at
+the time of deciding any complaint or
+appeal is of the opinion that the
+Central Public Information Officer or the State Public Information Officer, as the case may be, has, without any
+reasonable cause, refused to receive
+an application for information or has
+not furnished information within the time specified under sub-section (1) of section 7 or malafidely denied the
+request for information or knowingly given incorrect, incomplete or
+misleading information or destroyed
+information which was the subject of
+the request or obstructed in any manner in furnishing the information,
+it shall impose a penalty of two
+hundred and fifty rupees each day till
+application is received or information is furnished, so however, the total
+amount of such penalty shall not exceed twenty-five thousand rupees:
+Provided that the Central Public
+Information Officer or the State Public Information Officer, as the case may be, shall be given a
+reasonable opportunity of being
+heard before any penalty is imposed on him:
+Provided further that the burden of
+proving that he acted reasonably and
+diligently shall be on the Central
+Public Information Officer or the State Public Information Officer, as the case may be.
+(2) Where the Central Information
+Commission or the State Information Commission, as the case may be, at
+the time of deciding any complaint or
+appeal is of the opinion that the
+Central Public Information Officer or the State Public Information Officer, as the case may be, has, without any
+reasonable cause and persistently,
+failed to receive an application for
+information or has not furnished
+information within the time specified under sub-section (1) of section 7 or
+malafidely denied the request for
+information or knowingly given incorrect, incomplete or misleading
+information or destroyed information
+which was the subject of the request
+or obstructed in any manner in furnishing the information, it shall
+Compiled from the uploaded RTI rule book - Part 1 statutory text only
+
+recommend for disciplinary action against the Central Public
+
+Information Officer or the State Public Information Officer, as the case may be, under the service rules applicable to him.

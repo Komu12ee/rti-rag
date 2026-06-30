@@ -1,0 +1,16 @@
+# FAQ Chunk 66
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 17
+Section: Question: What happens if I select Complaint in the Second Appeal Relation?
+Question: प्रश्न 30. - हिंदी प्रश्नोत्तर
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 24
+
+---
+
+## Question: What happens if I select Complaint in the Second Appeal Relation?
+
+प्रश्न 30. - हिंदी प्रश्नोत्तर

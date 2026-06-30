@@ -1,0 +1,19 @@
+# FAQ Chunk 104
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 17
+Section: (1) Agencies Coveredः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 44
+
+---
+
+## (1) Agencies Coveredः
+
+- Intelligence Bureau (IB)
+- Central Bureau of Investigation ( CBI)
+- Central Economic Intelligence Bureau (CEIB)
+- Other agencies specified by Central Government from time to time

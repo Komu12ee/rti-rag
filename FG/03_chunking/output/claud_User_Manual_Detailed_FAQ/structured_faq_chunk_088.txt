@@ -1,0 +1,21 @@
+# FAQ Chunk 88
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 15
+Section: Untitled section
+Question: Q085. Can I enter special characters in the reason field?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 100
+
+---
+
+## Untitled section
+
+Q085. Can I enter special characters in the reason field?
+
+Character-set rules are not specified.
+The manual does not state an allowed-character policy for appeal reasons. It confirms a 500-character
+application-text limit and recommends an attachment for longer content, but it does not say whether any
+particular special characters are accepted or blocked.

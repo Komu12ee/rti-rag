@@ -1,0 +1,16 @@
+# FAQ Chunk 117
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 12
+Section: Q64. Does the manual explain how to reject, edit, or withdraw a name change request?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 68
+
+---
+
+## Q64. Does the manual explain how to reject, edit, or withdraw a name change request?
+
+Answer: No. The manual explains submission, document upload, automatic approval in one case, and FAO approval in another case. It does not provide reject, edit, withdraw or resubmission instructions.

@@ -1,0 +1,24 @@
+# FAQ Chunk 109
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 28
+Section: Question: How do - upload documents for the Second Appeal application?
+Question: प्रश्न 51. हिंदी प्रश्नोत्तर
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 155
+
+---
+
+## Question: How do - upload documents for the Second Appeal application?
+
+प्रश्न 51. हिंदी प्रश्नोत्तर
+
+प्रश्नः द्वितीय अपील आवेदन के दस्तावेज़ कैसे अपलोड करें? लिए
+
+उत्तरः Document Details चरण में आवश्यक दस्तावेज़ वाले स्लॉट के पास Browse पर क्लिक करें अपने डिवाइस से फाइल चुनें और Upload पर क्लिक करें| अपलोड सफल होने पर पोर्टल अपलोड स्थिति दिखाता है और बटन हरे रंग में Uploaded हो जाता हैI आवश्यक दस्तावेज़ अपलोड करने के बाद भुगतान चरण में जाने के Next पर क्लिक करें| लिए
+
+समान हिंदी प्रश्नः "कृपया समझाएंद्वितीय अपील आवेदन के दस्तावेज़ कैसे अपलोड करें "आरटीआई पोर्टल पर यह प्रक्रिया कैसे होती है ?" लिए
+
+Manual reference संदर्भः Manual p. 11 मैनुअल

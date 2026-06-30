@@ -1,0 +1,22 @@
+# FAQ Chunk 1
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 1
+Section: Purpose / उद्दश्य
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 187
+
+---
+
+## Purpose / उद्दश्य
+
+This guide provides basic, operational, advanced, and retrieval test questions for the uploaded RTI portal user manual. Every answer is limited to the information shown in that manual.
+
+यह मार्गदर्शिका अपलोड गए RTI पोर्टल उपयोगकर्ता मैनुअल के बुनियादी, प्रक्रियात्मक, उन्नत और रिट्रीवल टेस्ट प्रश्न देती हैl प्रत्येक उत्तर केवल उसी मैनुअल में दी गई जानकारी तक सीमित हैl लिए किए
+
+Source boundaryः This material explains portal procedure. It does not provide legal advice, statutory timelines, legal eligibility decisions, or fee classifications that are not expressly stated in the manual.
+
+स्रोत सीमाः यह सामग्री पोर्टल प्रक्रिया समझाती है| यह मैनुअल में स्पष्ट रूप से न बताई गई कानूनी सलाह, वैधानिक समय सीमा, कानूनी पात्रता निर्णय या शुल्क वर्गीकरण प्रदान नहीं करती|

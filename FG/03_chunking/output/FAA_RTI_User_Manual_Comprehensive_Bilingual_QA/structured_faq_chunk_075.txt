@@ -1,0 +1,20 @@
+# FAQ Chunk 75
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 12
+Section: Q36 (English). What BPL details must be entered if 1 select Yes?
+Question: प्रश्न 36. (हिंदी)| यदि मैं BPL के Yes चुनूँ तो कौन-से विवरण दर्ज करने होंगे? लिए
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 102
+
+---
+
+## Q36 (English). What BPL details must be entered if 1 select Yes?
+
+प्रश्न 36. (हिंदी)| यदि मैं BPL के Yes चुनूँ तो कौन-से विवरण दर्ज करने होंगे? लिए
+
+उत्तर| मैनुअल में BPL दस्तावेज नंबर, दस्तावेज जारी होने की तिथि और जारी करने वाले प्राधिकारी के विवरण दर्ज करने दिखाए गए हैं| आगे आवेदन प्रक्रिया के लिए ये BPL विवरण अनिवार्य बताए गए हैं|
+
+Source: RTI User Manual, Manual p. 7

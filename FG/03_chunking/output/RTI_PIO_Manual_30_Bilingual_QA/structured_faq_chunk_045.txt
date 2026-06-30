@@ -1,0 +1,16 @@
+# FAQ Chunk 45
+Document: RTI_PIO_Manual_30_Bilingual_QA
+Source: structured.md
+Pages: 7-8
+Section: प्रश्न (हिंदी)ः पोर्टल से PIO और कार्यालय का विवरण कैसे चुनें ?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 108
+
+---
+
+## प्रश्न (हिंदी)ः पोर्टल से PIO और कार्यालय का विवरण कैसे चुनें ?
+
+उत्तर (हिंदी): PIO and Office Details चरण में संबंधित State, District, Base Department, Office Level, Office Name और Officer Name को ड्रॉपडाउन फील्ड से चुनें | सही जानकारी के बाद आगे बढ़ने के Next पर क्लिक करें| सही कार्यालय और अधिकारी चुनना महत्वपूर्ण है, क्योंकि यह भाग ऑफलाइन आरटीआई मामले से जुड़े जनसूचना अधिकारी और कार्यालय की पहचान करता है| चुनने लिए

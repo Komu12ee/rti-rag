@@ -1,0 +1,24 @@
+# FAQ Chunk 203
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 33-34
+Section: Rule Making Constraints
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 41
+
+---
+
+## Rule Making Constraints
+
+- Cannot contradict Act provisions
+- Must be reasonable
+- Cannot create new exemptions
+
+
+
+
+- Cannot increase fee beyond prescribed
+- Subject to judicial review

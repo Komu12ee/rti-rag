@@ -1,0 +1,23 @@
+# FAQ Chunk 166
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 27
+Section: (2) Contents of Report [Section 25( 3) ]: Must include recommendations on:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 69
+
+---
+
+## (2) Contents of Report [Section 25( 3) ]: Must include recommendations on:
+
+- Amendment of RTI Act provisions
+- Revision of fees and charges
+- Procedural improvements
+- Training needs for PIOs
+- Suo motu disclosure effectiveness
+- Awareness programs
+- Resource requirements
+- Statutory improvements needed

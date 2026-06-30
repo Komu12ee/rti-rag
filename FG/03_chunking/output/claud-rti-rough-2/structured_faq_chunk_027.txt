@@ -1,0 +1,17 @@
+# FAQ Chunk 27
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 5
+Section: (5) Time Period for Decision:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 30
+
+---
+
+## (5) Time Period for Decision:
+
+- Commission must pass order within 90 days of receipt of appeal
+- Can be extended for reasonable reasons

@@ -1,0 +1,22 @@
+# FAQ Chunk 176
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 28-29
+Section: (1 ) वार्षिक रिपोर्ट आवश्यकताः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 40
+
+---
+
+## (1 ) वार्षिक रिपोर्ट आवश्यकताः
+
+- CIC को RTI अधिनियम के कार्यान्वयन पर वार्षिक रिपोर्ट तैयार करनी चाहिए
+- SIC को राज्य स्तर पर यही करना चाहिए
+
+
+
+
+- संबंधित सरकार को जमा किया जाता है

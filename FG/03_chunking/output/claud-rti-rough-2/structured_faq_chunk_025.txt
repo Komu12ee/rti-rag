@@ -1,0 +1,19 @@
+# FAQ Chunk 25
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 5
+Section: (3) Evidenceः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 37
+
+---
+
+## (3) Evidenceः
+
+- Commission can examine any person on oath
+- Demand production of documents
+- Call for expert opinion if needed
+- Commission is not bound by strict evidence rules

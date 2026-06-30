@@ -1,0 +1,20 @@
+# FAQ Chunk 25
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 3
+Section: Q12. When should I select the "different email ID" option ?
+Question: प्रश्न 12. " अलग ईमेल आईडी " विकल्प कब चुनना चाहिए?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 81
+
+---
+
+## Q12. When should I select the "different email ID" option ?
+
+प्रश्न 12. " अलग ईमेल आईडी " विकल्प कब चुनना चाहिए?
+
+उत्तरः जब कार्यभार वर्तमान अधिकारी से अलग ईमेल आईडी वाले किसी अन्य व्यक्ति को देना हो, तब यह विकल्प चुनें | यह अलग पोर्टल उपयोगकर्ता को स्थानांतरित करने की सामान्य प्रक्रिया हैl भूमिका
+
+Source reference : Manual p . 4

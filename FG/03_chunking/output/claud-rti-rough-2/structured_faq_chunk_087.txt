@@ -1,0 +1,20 @@
+# FAQ Chunk 87
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 14
+Section: (2) Grounds for Judicial Review:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 49
+
+---
+
+## (2) Grounds for Judicial Review:
+
+- Violation of constitutional provisions
+- Procedural irregularity in commission inquiry
+- Manifest unreasonableness of decision
+- Jurisdictional error by commission
+- Denial of natural justice

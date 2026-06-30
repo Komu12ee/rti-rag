@@ -1,0 +1,18 @@
+# FAQ Chunk 63
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 11
+Section: Q30 (English). What should 1 select for Second Appeal Relation?
+Question: प्रश्न 30. (हिंदी) [ Second Appeal Relation में क्या चुनना चाहिए?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 71
+
+---
+
+## Q30 (English). What should 1 select for Second Appeal Relation?
+
+प्रश्न 30. (हिंदी) [ Second Appeal Relation में क्या चुनना चाहिए?
+
+उत्तर मैनुअल के अनुसार Second Appeal Relation में Appeal या Complaint में से एक विकल्प चुनना होता है| Source: RTI User Manual, Manual p. 6.

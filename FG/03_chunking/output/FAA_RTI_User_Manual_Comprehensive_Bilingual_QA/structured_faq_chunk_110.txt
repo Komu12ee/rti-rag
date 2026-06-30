@@ -1,0 +1,16 @@
+# FAQ Chunk 110
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 16
+Section: Q54 (English). What should 1 do after choosing the application status?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 39
+
+---
+
+## Q54 (English). What should 1 do after choosing the application status?
+
+Answer. Select the application status from the dropdown and click Save & Next, as instructed in the manual.

@@ -1,0 +1,71 @@
+# RTI Legal Chunk 68
+Document: RTI_Act_2005_Source_Text_QA
+Input source: structured.md
+Input pages: 33-34
+Chapter: Chapter VI - Miscellaneous
+Question: Q. What is the source text of Section 24?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 496
+Original source book: Unknown
+Source type: general
+Legal reference: Section 24
+Book pages: 39-40
+Source PDF pages: Unknown
+Citation: Unknown
+
+---
+
+## Chapter VI - Miscellaneous
+
+Legal reference: Section 24
+
+Q. What is the source text of Section 24?
+
+Answer - source text
+24. (1) Nothing contained in this Act shall
+apply to the intelligence and security
+organisations specified in the Second Schedule, being organisations
+established by the Central
+Government or any information
+furnished by such organisations to that Government:
+Provided that the information
+pertaining to the allegations of
+corruption and human rights
+Compiled from the uploaded RTI rule book - Part 1 statutory text only
+
+SOURCE-TEXT Q&A | THE RIGHT TO INFORMATION ACT, 2005
+violations shall not be excluded under this sub-section:
+Provided further that in the case of
+information sought for is in respect of
+allegations of violation of human rights, the information shall only be
+provided after the approval of the Central Information Commission,
+and notwithstanding anything contained in section 7, such
+information shall be provided within forty-five days from the date of the receipt of request.
+(2) The Central Government may, by notification in the Official Gazette,
+amend the Schedule by including
+therein any other intelligence or
+security organisation established by
+that Government or omitting
+therefrom any organisation already
+specified therein and on the publication of such notification, such
+organisation shall be deemed to be included in or, as the case may be, omitted from the Schedule.
+(3) Every notification issued under subsection (2) shall be laid before each House of Parliament.
+(4) Nothing contained in this Act shall
+apply to such intelligence and
+security organisation being
+organisations established by the State Government, as that Government may, from time to time, by notification in the
+Official Gazette, specify:
+Provided that the information
+pertaining to the allegations of
+corruption and human rights
+violations shall not be excluded under this sub-section:
+Provided further that in the case of
+information sought for is in respect of
+allegations of violation of human rights, the information shall only be
+provided after the approval of the State Information Commission and,
+notwithstanding anything contained in section 7, such information shall be
+provided within forty-five days from the date of the receipt of request.
+(5) Every notification issued under subsection (4) shall be laid before the State Legislature.
+—

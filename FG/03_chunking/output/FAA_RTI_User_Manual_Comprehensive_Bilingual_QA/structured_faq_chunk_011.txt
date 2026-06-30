@@ -1,0 +1,20 @@
+# FAQ Chunk 11
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 3-4
+Section: Q4 (English). Is an active email address required for user registration?
+Question: प्रश्न 4. (हिंदी) क्या उपयोगकर्ता पंजीकरण के सक्रिय ई-मेल आवश्यक है? लिए
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 91
+
+---
+
+## Q4 (English). Is an active email address required for user registration?
+
+प्रश्न 4. (हिंदी) क्या उपयोगकर्ता पंजीकरण के सक्रिय ई-मेल आवश्यक है? लिए
+
+उत्तर| हाl मैनुअल के अनुसार उपयोगकर्ता पंजीकरण के लिए वैध और सक्रिय ई॰मेल आईडी अनिवार्य है, क्योंकि उसी ई॰मेल पर सत्यापन लिंक भेजा जाता है|
+
+Sourceः RTI User Manual, Manual p. 2.

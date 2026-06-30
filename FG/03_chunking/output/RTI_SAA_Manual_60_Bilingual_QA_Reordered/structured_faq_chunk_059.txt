@@ -1,0 +1,24 @@
+# FAQ Chunk 59
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 15-16
+Section: Question: What should 1 do if my RTI application text exceeds 500 characters?
+Question: प्रश्न 27. हिंदी प्रश्नोत्तर
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 160
+
+---
+
+## Question: What should 1 do if my RTI application text exceeds 500 characters?
+
+प्रश्न 27. हिंदी प्रश्नोत्तर
+
+प्रश्नः यदि मेरा RTI आवेदन टेक्स्ट 500 अक्षरों से अधिक हो तो क्या करें?
+
+उत्तरः निर्देश स्क्रीन बताती है कि निर्धारित आवेदन कॉलम में टेक्स्ट की सीमा 500 अक्षर है| अधिक स्थान चाहिए तो फॉर्म में संक्षिप्त विवरण लिखें और अतिरिक्त स्पष्टीकरण को Supporting document के रूप में अपलोड करें| दस्तावेज अपलोड चरण बाद में कार्यप्रवाह में दिखाया गया हैl
+
+समान हिंदी प्रश्नः "कृपया समझाएंःयदि मेरा RTI आवेदन टेक्स्ट 500 से अधिक हो तो क्या करें " "आरटीआई पोर्टल पर यह प्रक्रिया कैसे होती है?" अक्षरों
+
+Manual reference संदर्भः Manual pp. 6, 11 मैनुअल

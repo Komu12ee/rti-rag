@@ -1,0 +1,20 @@
+# FAQ Chunk 83
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 13
+Section: Q40 (English). Which fields are shown when entering an officer and office manually?
+Question: प्रश्न 40. (हिंदी)| अधिकारी और कार्यालय का विवरण मैन्युअली दर्ज करते समय कौन-से फ़ील्ड दिखते हैं?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 109
+
+---
+
+## Q40 (English). Which fields are shown when entering an officer and office manually?
+
+प्रश्न 40. (हिंदी)| अधिकारी और कार्यालय का विवरण मैन्युअली दर्ज करते समय कौन-से फ़ील्ड दिखते हैं?
+
+उत्तर| मैनुअल की स्क्रीन में जन सूचना अधिकारी का नाम, पदनाम, मोबाइल नंबर, कार्यालय नाम, कार्यालय पता, जिला, आधार विभाग और उप-विभाग नाम के फ़ील्ड दिखाए गए हैं|
+
+Source: RTI User Manual, Manual p. 8

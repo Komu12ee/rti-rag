@@ -1,0 +1,19 @@
+# FAQ Chunk 32
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 6
+Section: (2) सुनवाई प्रक्रियाः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 46
+
+---
+
+## (2) सुनवाई प्रक्रियाः
+
+- सार्वजनिक प्राधिकरण उपस्थित हो सकता है और सुना जा सकता है
+- तीसरे पक्ष अपना पक्ष प्रस्तुत कर सकते हैं
+- मौखिक या लिखित सुनवाई हो सकती है
+- आवेदनकर्ता अपना मामला प्रस्तुत कर सकते हैं

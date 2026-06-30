@@ -1,0 +1,22 @@
+# FAQ Chunk 36
+Document: claud-rti-rough
+Source: structured.md
+Pages: 16
+Section: (4) Removal:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 113
+
+---
+
+## (4) Removal:
+
+- Can be removed by the President on grounds of misbehavior or incompetence
+- Only after inquiry by Supreme Court (in case of Chief Commissioner)
+- Removal of Information Commissioners requires recommendation from Chief Commissioner
+- (5) Independence: Cannot hold any other office during tenure
+- (6) Jurisdiction: Uniform across India CIC has authority over all central public authorities
+
+The 2019 Amendment made the tenure flexible (from fixed 5 years) to allow adaptation to governmental needs.

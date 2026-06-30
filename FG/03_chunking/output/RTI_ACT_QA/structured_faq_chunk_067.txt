@@ -1,0 +1,23 @@
+# FAQ Chunk 67
+Document: RTI_ACT_QA
+Source: structured.md
+Pages: 25
+Section: शुल्क संरचना ( नवीनतम नियमों के अनुसार):
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 129
+
+---
+
+## शुल्क संरचना ( नवीनतम नियमों के अनुसार):
+
+- आवेदन शुल्कः प्रति आवेदन 310
+- प्रतियों के शुल्कः प्रति पृष्ठ 32 ( काला और सफेद)
+- इलेक्ट्रॉनिक प्रारूपः माध्यम डिस्क की लागत
+- BPL छूटः आर्थिक रूप से गरीब लोगों के लिए कोई शुल्क नहीं
+
+नियम आधिकारिक राजपत्रिकीय में प्रकाशित होते हैं और सरकार की अधिसूचना द्वारा संशोधित किए जा सकते हैं|
+
+Source reference: RTI Rule Book, pp. 6l 174 ( Complete Rules, RTI Application Submission Rules 2009 , Fees and Charges Regulations, Appeals Rules 2006)

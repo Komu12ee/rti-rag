@@ -1,0 +1,16 @@
+# FAQ Chunk 48
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 5
+Section: Q24. Where can the receiving officer see pending handover requests?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 64
+
+---
+
+## Q24. Where can the receiving officer see pending handover requests?
+
+Answer: Pending requests are shown in the "Take Charge' screen as a list of charges to be taken over. The list displays information about the handing over officer, receiving officer, charge type, status and action.

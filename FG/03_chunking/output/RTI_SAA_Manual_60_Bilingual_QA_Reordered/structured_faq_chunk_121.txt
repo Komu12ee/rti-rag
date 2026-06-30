@@ -1,0 +1,22 @@
+# FAQ Chunk 121
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 31-32
+Section: Question: What records should I retain after successful payment?
+Question: प्रश्न 58. हिंदी प्रश्नोत्तर
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 154
+
+---
+
+## Question: What records should I retain after successful payment?
+
+प्रश्न 58. हिंदी प्रश्नोत्तर
+
+प्रश्नः सफल भुगतान के बाद कौन॰से रिकॉर्ड सुरक्षित रखने चाहिए?
+
+उत्तरः की सफलता स्क्रीन नें ट्रेजरी रेफरेंस नंबर, बैंक रेफरेंस नंबर, राशि, लेननदेन की तिथि और समय, बैंक नाम तथा स्थिति दिखाई देती हैl इसमें Print Receipt विकल्प भी है| भविष्य के संदर्भ के रसीद या इन रेफरेंस विवरणों की सुरक्षित प्रति रखें| समान हिंदी प्रश्नः "कृपया समझाएंःसफल भुगतान के बाद कौन से रिकॉर्ड सुरक्षित रखने चाहिए " "आरटीआई पोर्टल पर यह प्रक्रिया कैसे होती है ?" मैनुअल लिए
+
+Manual reference मैनुअल संदर्भः Manual p. 13

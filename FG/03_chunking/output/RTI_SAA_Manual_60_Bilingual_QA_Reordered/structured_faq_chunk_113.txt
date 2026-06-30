@@ -1,0 +1,20 @@
+# FAQ Chunk 113
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 29
+Section: Question: How do I make payment through the portal?
+Question: प्रश्न 53. - हिंदी प्रश्नोत्तर
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 166
+
+---
+
+## Question: How do I make payment through the portal?
+
+प्रश्न 53. - हिंदी प्रश्नोत्तर
+
+प्रश्नः पोर्टल के माध्यम से भुगतान कैसे करें?
+
+उत्तरः Payment Details चरण में लागू भुगतान विकल्प के चेकबॉक्स पर टिक करें और Fee Online पर क्लिक करें| फॉर्म ऑनलाइन e Challan पृष्ठ पर भेजा जाएगा| उस पृष्ठ पर बैंक का नाम या बैंक गेटवे चुनें और भुगतान पूरा करने के Submit पर क्लिक करें| बताता है कि यदि Second Appeal Relation में Complaint चुना गया है, तो भुगतान अनिवार्य नहीं हैl समान हिंदी प्रश्नः "कृपया समझाएंः पोर्टल के माध्यम से भुगतान कैसे करें II "आरटीआई पोर्टल पर यह प्रक्रिया कैसे होती है ?" Manual reference संदर्भः Manual pp. 7, 12 Pay लिए मैनुअल मैनुअल

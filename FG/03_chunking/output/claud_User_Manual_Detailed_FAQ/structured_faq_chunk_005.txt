@@ -1,0 +1,20 @@
+# FAQ Chunk 5
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 3
+Section: Untitled section
+Question: Q002. What is the password requirement for the RTI portal?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 89
+
+---
+
+## Untitled section
+
+Q002. What is the password requirement for the RTI portal?
+
+The manual requires a password with at least 8 characters. It must include at least one lowercase letter, one
+uppercase letter, and one special character. The manual does not specify any separate requirement for numbers,
+a maximum length, or a password-expiry rule.

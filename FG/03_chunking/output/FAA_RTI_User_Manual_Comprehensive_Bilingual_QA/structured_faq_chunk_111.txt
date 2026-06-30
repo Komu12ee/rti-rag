@@ -1,0 +1,20 @@
+# FAQ Chunk 111
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 16-17
+Section: Q54 (English). What should 1 do after choosing the application status?
+Question: प्रश्न 54. (हिंदी)| Application Status के बाद क्या करना चाहिए? चुनने
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 71
+
+---
+
+## Q54 (English). What should 1 do after choosing the application status?
+
+प्रश्न 54. (हिंदी)| Application Status के बाद क्या करना चाहिए? चुनने
+
+उत्तर| ड्रॉपडाउन से application status चुनें और के अनुसार Save & Next पर क्लिक करें| मैनुअल
+
+Source: RTI User Manual, Manual p. 10.

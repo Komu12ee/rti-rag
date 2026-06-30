@@ -1,0 +1,18 @@
+# FAQ Chunk 109
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 18
+Section: प्रश्नः द्वितीय अपील आवेदन के भुगतान कैसे शुरू करें? लिए
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 63
+
+---
+
+## प्रश्नः द्वितीय अपील आवेदन के भुगतान कैसे शुरू करें? लिए
+
+उत्तरः संबंधित भुगतान विकल्प के बॉक्स पर टिक करें और Pay Fee Online पर क्लिक करें| इसके बाद फॉर्म भुगतान के ऑनलाइन चालान बनाने की प्रक्रिया में ले जाता हैl लिए
+
+Source: RTI User Manual, Printed page 12.

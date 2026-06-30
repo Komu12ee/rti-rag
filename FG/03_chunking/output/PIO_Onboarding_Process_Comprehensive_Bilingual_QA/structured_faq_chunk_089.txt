@@ -1,0 +1,16 @@
+# FAQ Chunk 89
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 7
+Section: Q46 (English ). Who enters the details of the Nodal/Approval Authority and FAO?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 41
+
+---
+
+## Q46 (English ). Who enters the details of the Nodal/Approval Authority and FAO?
+
+Answer. The Public Information Officer enters their details during PIO onboarding

@@ -1,0 +1,16 @@
+# FAQ Chunk 44
+Document: RTI_PIO_Manual_30_Bilingual_QA
+Source: structured.md
+Pages: 7
+Section: Question (English): How do I select PIO and office details from the portal?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 98
+
+---
+
+## Question (English): How do I select PIO and office details from the portal?
+
+Answer (English): In the PIO and Office Details stage, select the relevant State, District, Base Department, Office Level, Office Name, and Officer Name from the dropdown fields. After selecting the appropriate information, click Next to continue. Selecting the right office and officer is important because this part identifies the Public Information Officer and office connected with the offline RTI matter.

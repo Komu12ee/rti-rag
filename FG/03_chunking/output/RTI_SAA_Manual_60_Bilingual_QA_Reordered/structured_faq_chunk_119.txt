@@ -1,0 +1,24 @@
+# FAQ Chunk 119
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 30-31
+Section: Question: What should I do if the file has not changed to 'Uploaded ?
+Question: प्रश्न 56. - हिंदी प्रश्नोत्तर
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 169
+
+---
+
+## Question: What should I do if the file has not changed to 'Uploaded ?
+
+प्रश्न 56. - हिंदी प्रश्नोत्तर
+
+प्रश्नः यदि फाइल 'Uploaded ' में नहीं बदली है तो क्या करें?
+
+उत्तरः मैनुअल हरे Uploaded स्थिति को सफल अपलोड का संकेत मानता है| यदि बटन नहीं बदला है तो फाइल को संलग्न मानकर आगे न बढ़ें| चुनी गई फाइल और Upload क्रिया फिर से जांचें| मैनुअल तकनीकी समस्या समाधान प्रक्रिया नहीं देता; समस्या बनी रहे तो वर्तमान पोर्टल की सहायता या सपोर्ट मार्ग देखें|
+
+समान हिंदी प्रश्नः "कृपया समझाएंःयदि फाइल   Uploaded ' में नहीं बदली है तो क्या करें TI "आरटीआई पोर्टल पर यह प्रक्रिया कैसे होती है?"
+
+Manual reference संदर्भः Manual p. 11 मैनुअल

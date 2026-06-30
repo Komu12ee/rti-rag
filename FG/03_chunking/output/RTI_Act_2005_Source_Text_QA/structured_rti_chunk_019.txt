@@ -1,0 +1,62 @@
+# RTI Legal Chunk 19
+Document: RTI_Act_2005_Source_Text_QA
+Input source: structured.md
+Input pages: 8-10
+Chapter: Chapter II - Right to information and obligations of public authorities
+Question: Q. What is the source text of Section 4?
+Part: 2/5
+Kind: faq
+Has answer: yes
+Content tokens: 508
+Original source book: Unknown
+Source type: general
+Legal reference: Section 4
+Book pages: 7-10
+Source PDF pages: Unknown
+Citation: Unknown
+
+---
+
+## Chapter II - Right to information and obligations of public authorities
+
+Legal reference: Section 4
+
+Q. What is the source text of Section 4?
+
+**Answer continued:**
+
+SOURCE-TEXT Q&A | THE RIGHT TO INFORMATION ACT, 2005
+(x) the monthly remuneration received by each of its officers and employees,
+including t h e s y s t e m o f
+compensation as provided in its regulations;
+(xi) the budget allocated to each of its agency, indicating the particulars of all plans, proposed expenditures and reports on
+disbursements made;
+(xii) the manner of execution of subsidy programmes, including the amounts
+allocated and the details of beneficiaries of such programmes;
+(xiii) particulars of recipients of c o n c e s s i o n s, p e r m i t s o r authorisations granted by it;
+(xiv) details in respect of the information, available to or held by it, reduced in an electronic form;
+(xv) the particulars of facilities available to citizens for obtaining information,
+including the working hours of a library or reading room, if maintained for public use;
+(xvi) the names, designations and other
+particulars of the Public Information Officers;
+(xvii) such other information as may be
+prescribed and thereafter update these publications every year;
+(c) publish all relevant facts while
+formulating important policies or
+announcing the decisions which affect public;
+(d) provide reasons for its administrative or quasi-judicial decisions to affected persons.
+(2) It shall be a constant endeavour of
+every public authority to take steps in
+accordance with the requirements of clause (b) of sub-section (1) to
+provide as much information suo
+motu to the public at regular intervals
+t h r o u g h v a r i o u s m e a n s o f communications, including internet,
+so that the public have minimum
+resort to the use of this Act to obtain information.
+(3) For the purposes of sub-section (1),
+every information shall be
+disseminated widely and in such form
+and manner which is easily accessible to the public.
+(4) All materials shall be disseminated
+taking into consideration the cost effectiveness, local language and the
+m o s t e ff e c t

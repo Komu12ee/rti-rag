@@ -1,0 +1,18 @@
+# FAQ Chunk 86
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 22
+Section: Question: What information is automatically carried into the Applicant Details area?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 125
+
+---
+
+## Question: What information is automatically carried into the Applicant Details area?
+
+Answer: The manual says that user details entered during registration are fetched into the Applicant Details section. The screenshot illustrates fields such as applicant type applicant name, email ID, mobile number, age gender, addresses, pincode, residence type, district, state, country and caste type. Review the displayed data before proceeding.
+
+Similar English questions: "Please explain: What information is automatically carried into the Applicant Details area"; "How is this handled on the RTI portal?"

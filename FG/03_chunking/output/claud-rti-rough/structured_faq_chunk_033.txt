@@ -1,0 +1,18 @@
+# FAQ Chunk 33
+Document: claud-rti-rough
+Source: structured.md
+Pages: 15
+Section: SECTION 13: CHAIRPERSONAND INFORMATION COMMISSIONERS
+Question: Q13. What are the qualifications, tenure, and grounds for removal of Information Commissioners?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 59
+
+---
+
+## SECTION 13: CHAIRPERSONAND INFORMATION COMMISSIONERS
+
+Q13. What are the qualifications, tenure, and grounds for removal of Information Commissioners?
+
+Answerः Section 13 (as amended by RTI Amendment Act, 2019 ) specifiesः

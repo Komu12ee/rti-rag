@@ -1,0 +1,18 @@
+# FAQ Chunk 142
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 23
+Section: SECTION 24: PENALTIES (CONTINUED INFORMATION COMMISSION AUTHORITY)
+Question: Q24. What penalties can Information Commissions recommend and how are they implemented?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 54
+
+---
+
+## SECTION 24: PENALTIES (CONTINUED INFORMATION COMMISSION AUTHORITY)
+
+Q24. What penalties can Information Commissions recommend and how are they implemented?
+
+Answer Section 24 extends Section 23 penalties and adds commission specific enforcement:

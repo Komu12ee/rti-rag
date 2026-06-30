@@ -1,0 +1,30 @@
+# RTI Legal Chunk 15
+Document: RTI_Act_2005_Source_Text_QA
+Input source: structured.md
+Input pages: 7
+Chapter: Chapter I - Preliminary
+Question: Q. What is the source text for the definition of “State Public Information Officer”?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 77
+Original source book: Unknown
+Source type: general
+Legal reference: Unknown
+Book pages: 3-6
+Source PDF pages: Unknown
+Citation: Unknown
+
+---
+
+## Chapter I - Preliminary
+
+Q. What is the source text for the definition of “State Public Information Officer”?
+
+Answer - source text
+(m) “State Public Information Officer”
+means the State Public Information Officer designated under sub-section
+(1) and includes a State Assistant
+Public Information Officer designated as such under sub-section
+(2) of section 5;
+—

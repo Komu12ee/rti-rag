@@ -1,0 +1,18 @@
+# FAQ Chunk 114
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 18
+Section: प्रश्नः क्या मैनुअल से अधिक भुगतान राशि दिखाई गई है? में एक
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 93
+
+---
+
+## प्रश्नः क्या मैनुअल से अधिक भुगतान राशि दिखाई गई है? में एक
+
+उत्तरः भुगतान स्क्रीनशॉट में दो चयन योग्य शुल्क विकल्प दिखाई देते हैं एक पर 100 रुपये और पर 125 रुपये अंकित हैl मैनुअल का व्याख्यात्मक पाठ यह नहीं बताता कि किस मामले में कौन सा विकल्प लागू है, इसलिए उपयोगकर्ता को लाइव पोर्टल पर सही विकल्प पुष्टि करनी चाहिए| दूसरे
+
+Sourceः RTI User Manual, Printed page 12.

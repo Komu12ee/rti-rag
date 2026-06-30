@@ -1,0 +1,18 @@
+# FAQ Chunk 60
+Document: RTI_PIO_Manual_30_Bilingual_QA
+Source: structured.md
+Pages: 9-10
+Section: प्रश्न (हिंदी): अपलोड स्क्रीन पर कौन-से दस्तावेज़ और फाइल फॉर्मेट दिखाए गए हैं?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 141
+
+---
+
+## प्रश्न (हिंदी): अपलोड स्क्रीन पर कौन-से दस्तावेज़ और फाइल फॉर्मेट दिखाए गए हैं?
+
+उत्तर (हिंदी): अपलोड स्क्रीन में RTI supporting document, ऑफलाइन PIO उत्तर दस्तावेज़, First Appeal supporting document ऑफलाइन First Appellate Officer उत्तर दस्तावेज़ और द्वितीय अपील के वैकल्पिक सहायक दस्तावेज़ के स्लॉट दिखाए गए हैं| स्क्रीन में PDF, JPEG और JPG फाइलें स्वीकार्य बताई गई हैं तथा अधिकतम फाइल आकार 20 MB दर्शाया गया हैl Complaint आवेदन के मैनुअल सहायक दस्तावेज़ों को वैकल्पिक बताता है| लिए लिए
+
+Source reference: Manual pp. 7, 11

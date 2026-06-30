@@ -1,0 +1,19 @@
+# FAQ Chunk 66
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 11
+Section: (6) आयोग की शक्तियां [धारा 19(7)-(9)]:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 58
+
+---
+
+## (6) आयोग की शक्तियां [धारा 19(7)-(9)]:
+
+- प्रथम अपीलीय प्राधिकरण की सभी शक्तियां
+- साथ ही दंड की सिफारिश
+- अपने आप जांच कर सकते हैं
+- अधिकारियों के खिलाफ अनुशासनात्मक कार्रवाई की सिफारिश कर सकते हैं

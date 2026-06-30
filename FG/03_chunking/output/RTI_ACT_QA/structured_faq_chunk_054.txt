@@ -1,0 +1,28 @@
+# FAQ Chunk 54
+Document: RTI_ACT_QA
+Source: structured.md
+Pages: 21
+Section: SECTION 23: PENALTIES
+Question: Q24. What penalties can Information Commissions recommend under Section 24?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 136
+
+---
+
+## SECTION 23: PENALTIES
+
+Q24. What penalties can Information Commissions recommend under Section 24?
+
+Answerः Section 24 grants Information Commissions authority to recommend:
+
+- Fine up to र25,000 for obstruction
+- Fine up to =l0,000 for destruction willful withholding
+- Compensation for loss or hardship caused
+- Disciplinary action including suspension or dismissal
+- Criminal prosecution for serious violations
+- Both criminal and disciplinary penalties can be cumulative
+- Repeated violations can result in higher penalties
+
+Commissions pass reasoned orders that are binding on government unless challenged in High Court.

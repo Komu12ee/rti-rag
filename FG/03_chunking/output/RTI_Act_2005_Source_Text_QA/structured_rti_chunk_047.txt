@@ -1,0 +1,44 @@
+# RTI Legal Chunk 47
+Document: RTI_Act_2005_Source_Text_QA
+Input source: structured.md
+Input pages: 23-24
+Chapter: Chapter IV - The State Information Commission
+Question: Q. What is the source text of Section 15?
+Part: 2/2
+Kind: faq
+Has answer: yes
+Content tokens: 209
+Original source book: Unknown
+Source type: general
+Legal reference: Section 15
+Book pages: 27-28
+Source PDF pages: Unknown
+Citation: Unknown
+
+---
+
+## Chapter IV - The State Information Commission
+
+Legal reference: Section 15
+
+Q. What is the source text of Section 15?
+
+**Answer continued:**
+
+SOURCE-TEXT Q&A | THE RIGHT TO INFORMATION ACT, 2005
+with wide knowledge and experience in law, science and technology, social service, management, journalism,
+mass media or administration and governance.
+(6) The State Chief Information
+Commissioner or a State Information
+Commissioner shall not be a Member
+of Parliament or Member of the
+Legislature of any State or Union territory, as the case may be, or hold
+any other office of profit or connected
+with any political party or carrying on
+any business or pursuing any profession.
+(7) The headquarters of the State
+Information Commission shall be at
+such place in the State as the State Government may, by notification in the Official Gazette, specify and the State
+Information Commission may,
+with the previous approval of the State Government, establish offices at other places in the State.
+—

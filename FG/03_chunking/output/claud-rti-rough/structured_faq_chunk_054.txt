@@ -1,0 +1,35 @@
+# FAQ Chunk 54
+Document: claud-rti-rough
+Source: structured.md
+Pages: 21
+Section: REFERENCE GUIDE ALL SECTIONS MAPPED TO RTI RULE BOOK PAGES
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 362
+
+---
+
+## REFERENCE GUIDE ALL SECTIONS MAPPED TO RTI RULE BOOK PAGES
+
+| Section   | Topic                          | Book Pages   | Status    |
+|-----------|--------------------------------|--------------|-----------|
+|           | Short Title & Extent           | 1-2          | Covered   |
+| 2         | Definitions                    | 2-6          | Covered   |
+| 3         | Right to Information           |              | Covered   |
+|           | Public Authority Obligations   | 7-9          | Covered   |
+| 5         | PIO Designation                | 10           | Covered   |
+| 6         | Application Procedure          | 11-12        | Covered   |
+|           | Response Time                  | 13-14        | Covered   |
+| 8         | Exemptions                     | 15-17        | Covered   |
+|           | Copyright Exemption            | 17           | Covered   |
+| 10        | Partial Disclosure             | 17-18        | Covered   |
+| 11        | Third Party Information        | 19           | Covered   |
+| 12        | Central Information Commission | Cross ref    | Covered   |
+| 13        | CIC Commissioners              | Cross ref    | Covered   |
+| 14        | CIC Powers                     | Cross ref    | Covered   |
+| 15        | State Information Commission   | Multiple     | Covered   |
+| 16-28     | Other Provisions               | 76-174       | To Follow |
+
+Document Status Part 1 Complete ( Sections 1  15) Next: Part 2 with Sections 16-28 and comprehensive index

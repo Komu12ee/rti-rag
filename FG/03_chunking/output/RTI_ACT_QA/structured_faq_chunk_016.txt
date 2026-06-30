@@ -1,0 +1,37 @@
+# FAQ Chunk 16
+Document: RTI_ACT_QA
+Source: structured.md
+Pages: 7-8
+Section: SECTION 8: EXEMPTIONS FROM DISCLOSURE
+Question: Q8. What are the ten categories of exemptions provided under Section 8?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 700
+
+---
+
+## SECTION 8: EXEMPTIONS FROM DISCLOSURE
+
+Q8. What are the ten categories of exemptions provided under Section 8?
+
+Answer: Section 8(1 ) provides ten categories of information that a public authority is not obligated to disclose:
+
+- (a) Sovereignty and Security: Information whose disclosure would prejudicially affect the sovereignty and integrity of India, the security of the State, strategic, scientific or economic interests of the State, or relations with foreign States, or lead to incitement of an offense.
+- (b) Court Orders: Information expressly forbidden to be published by any court of law or tribunal, or whose disclosure may constitute contempt of court.
+
+
+
+
+- (c) Legislative Privilege: Information whose disclosure would cause a breach of privilege of Parliament or State Legislature.
+- (d) Commercial Confidence: Information including commercial confidence, trade secrets, or intellectual property, the disclosure of which would harm the competitive position of a third party However, this exemption may be overridden if competent authority is satisfied that larger public interest warrants disclosure.
+- (e) Fiduciary Information: Information available to a person in his fiduciary relationship However, this exemption may be overridden if competent authority is satisfied that larger public interest warrants disclosure.
+- (f) Foreign Government Information: Information received in confidence from a foreign Government.
+- (g) Lifeand Safety: Information whose disclosure would endanger the life or physical safety of any person, or identify the source of information or assistance given in confidence for law enforcement or security purposes.
+- (h) Investigation: Information which would impede the process of investigation or apprehension or prosecution of offenders.
+- (i) Cabinet Papers: Cabinet papers including records of deliberations of the Council of Ministers, Secretaries and other officers. Provided that the decisions of the Council of Ministers and the reasons thereof, and the material on the basis of which decisions were taken, shall be made public after the decision has been taken and the matter is complete or over Those matters which come under the exemptions specified in sub-section (1) shall not be disclosed.
+- (j) Personal Privacy: Information relating to personal information the disclosure of which has no relationship to any public activity or interest of the individual, or which would cause unwarranted invasion of privacy of the individual. Exception: the PIO or Appellate Authority may satisfy that larger public interest justifies disclosure. Provided that information which cannot be denied to Parliament or State Legislature shall not be denied to any person.
+
+Section 8(2) -Public Interest Override: Notwithstanding the Official Secrets Act, 1923 or any exemption, a public authority may allow access to information if the public interest in disclosure outweighs in importance any possible harm or injury to the protected interests
+
+- Section 8(3) Twenty Tear Rule: Any information relating to any occurrence, event or matter which has taken place, occurred or happened twenty years before the date on which the request is made, shall be provided unless it falls under Section 8(1)(a), (c),or (i).

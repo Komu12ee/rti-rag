@@ -1,0 +1,19 @@
+# FAQ Chunk 199
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 33
+Section: (3) Types of Rules
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 55
+
+---
+
+## (3) Types of Rules
+
+- Fees and Charges Rules: Application fees, copy charges
+- Procedural Rules: Appeal procedures, notice requirements
+- Administrative Rules: Officer designation, record maintenance
+- Operational Rules: Implementation guidelines

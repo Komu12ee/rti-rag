@@ -1,0 +1,20 @@
+# FAQ Chunk 16
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 2
+Section: Q8 (English ). What should the PIO do if the office already exists?
+Question: प्रश्न 8. (हिन्दी). यदि कार्यालय पहले से मौजूद है तो PIO क्या करे?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 60
+
+---
+
+## Q8 (English ). What should the PIO do if the office already exists?
+
+प्रश्न 8. (हिन्दी). यदि कार्यालय पहले से मौजूद है तो PIO क्या करे?
+
+उत्तर. पी.आई.ओ.का कार्यालय पहले से हो तो उसको चुनें मौजूद
+
+Source: Page 2

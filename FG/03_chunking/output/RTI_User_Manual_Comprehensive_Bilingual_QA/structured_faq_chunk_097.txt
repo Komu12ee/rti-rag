@@ -1,0 +1,18 @@
+# FAQ Chunk 97
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 16
+Section: Question: Which document upload areas are shown in the RTI User Manual?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 77
+
+---
+
+## Question: Which document upload areas are shown in the RTI User Manual?
+
+Answer: The example upload screen shows areas for an RTI supporting document, an offline PIO answer document, a first appeal supporting document, an offline FAO answer document, and an optional supporting document for the second appeal application.
+
+Sourceः RTI User Manual, Printed page 11.

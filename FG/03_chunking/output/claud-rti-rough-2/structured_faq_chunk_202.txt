@@ -1,0 +1,21 @@
+# FAQ Chunk 202
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 33
+Section: (6) Fee Regulations:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 80
+
+---
+
+## (6) Fee Regulations:
+
+- Multiple amendments to fees
+- Base fee: =10 per application
+- Copy charges =2 per page ( varies)
+- Special formats: Diskettes, CDs, etc.
+- BPL exemption: No fees for poor
+- Notification: Gazette dated 24 2010 (as seen in RTI Rule Book pages 111 113) May

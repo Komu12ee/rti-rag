@@ -1,0 +1,17 @@
+# FAQ Chunk 116
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 19
+Section: (5) सार्वजनिक हित अधिरूहणः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 45
+
+---
+
+## (5) सार्वजनिक हित अधिरूहणः
+
+- ये एजेंसियां भी धारा 8(2) सार्वजनिक हित अधिरूहण के अधीन हैं
+- यदि सार्वजनिक हित पर्याप्त बड़ा है, ते सूचना का प्रकटीकरण किया जा सकता है

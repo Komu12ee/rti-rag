@@ -1,0 +1,16 @@
+# FAQ Chunk 107
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 28
+Section: E. Documents, Payment, and Completion
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 28
+
+---
+
+## E. Documents, Payment, and Completion
+
+E. दस्तावेज़ , भुगतान और पूर्णता Manual pp. 11-13

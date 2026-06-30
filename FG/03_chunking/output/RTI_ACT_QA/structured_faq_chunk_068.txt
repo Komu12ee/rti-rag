@@ -1,0 +1,16 @@
+# FAQ Chunk 68
+Document: RTI_ACT_QA
+Source: structured.md
+Pages: 25
+Section: COMPLETEDOCUMENT SUMMARY
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 88
+
+---
+
+## COMPLETEDOCUMENT SUMMARY
+
+Total Provisions Covered: 28 Sections Total Questions: 28 Total English Hindi Pairs: 28 Source References All cited from RTI Rule Book pages 1 174 Comprehensive Coverageः All major and minor provisions of RTI Act, 2005 Format: Direct question answer with detailed definitions Government References: Chhattisgarh State specific + National RTI provisions

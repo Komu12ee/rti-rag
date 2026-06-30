@@ -1,0 +1,20 @@
+# FAQ Chunk 122
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 13
+Section: Q66. Which transfer statuses are visible in the manual screenshots?
+Question: प्रश्न 66. की स्क्रीनशॉट में कौन॰कौन सी स्थानांतरण स्थितियाँ दिखाई देती हैं? मैनुअल
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 126
+
+---
+
+## Q66. Which transfer statuses are visible in the manual screenshots?
+
+प्रश्न 66. की स्क्रीनशॉट में कौन॰कौन सी स्थानांतरण स्थितियाँ दिखाई देती हैं? मैनुअल
+
+उत्तरः स्क्रीनशॉट में Approval Pending, Approved, Pending Relieving Letter और Relieving File Uploaded जैसे लेबल दिखाई देते हैंl मैनुअल में पूर्ण आधिकारिक स्थिति शब्दावली नहीं दी गई है, इसलिए इन्हें प्रदर्शित कार्यप्रवाह स्थितियों के रूप में समझें, पूर्ण सूची के रूप में नहीं|
+
+Source reference : Manual pp . 3-12

@@ -1,0 +1,18 @@
+# FAQ Chunk 80
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 13
+Section: (2) हस्तांतरण प्राधिकरणः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 44
+
+---
+
+## (2) हस्तांतरण प्राधिकरणः
+
+- राज्य सूचना आयोग केंद्रीय आयोग को हस्तांतरित कर सकता है
+- केंद्रीय आयोग राज्य आयोग को हस्तांतरित कर सकता है
+- हस्तांतरण सार्वजनिक हित पर विचार कर किया जाता है

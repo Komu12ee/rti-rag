@@ -1,0 +1,16 @@
+# FAQ Chunk 20
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 4
+Section: Q9 (English). What happens after 1 submit user registration?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 39
+
+---
+
+## Q9 (English). What happens after 1 submit user registration?
+
+Answer. The manual shows a confirmation that registration was completed and asks the user to check email to verify the account.

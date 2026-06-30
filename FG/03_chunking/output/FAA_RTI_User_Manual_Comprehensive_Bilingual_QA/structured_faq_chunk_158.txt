@@ -1,0 +1,16 @@
+# FAQ Chunk 158
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 27-28
+Section: Q76 (English). Can 1 go back and revise a previous first appeal entry?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 108
+
+---
+
+## Q76 (English). Can 1 go back and revise a previous first appeal entry?
+
+Answer. Yes. The manual says the Back button can be used to edit details entered in the previous form. प्रश्न 76 (हिंदी)| क्या मैं वापस जाकर पिछली प्रथम अपील प्रविष्टि में संशोधन कर सकता / सकती हूँ? उत्तर| हाँ| मैनुअल के अनुसार पिछले फॉर्म में दर्ज विवरण बदलने के Back बटन का उपयोग किया जा सकता हैl Source: RTI User Manual, Manual p. 10. लिए

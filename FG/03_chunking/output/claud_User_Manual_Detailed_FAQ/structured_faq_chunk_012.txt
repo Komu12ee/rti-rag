@@ -1,0 +1,23 @@
+# FAQ Chunk 12
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 4
+Section: Untitled section
+Question: Q009. What is a Second Appeal application?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 142
+
+---
+
+## Untitled section
+
+Q009. What is a Second Appeal application?
+
+Operational description; formal legal definition is not provided.
+In this manual, a Second Appeal application is the portal workflow used after an offline application process
+involving the Public Information Officer (PIO) and First Appeal Officer (FAO). It collects the applicant's registered
+details, the second-appeal relation and reason, officer and office details, RTI details, first-appeal details,
+supporting documents, and payment details. The manual is a process guide and does not give a formal legal
+definition of a Second Appeal.

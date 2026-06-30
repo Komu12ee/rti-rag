@@ -1,0 +1,37 @@
+# RTI Legal Chunk 79
+Document: RTI_Act_2005_Source_Text_QA
+Input source: structured.md
+Input pages: 38
+Chapter: Chapter VI - Miscellaneous
+Question: Q. What is the source text of Section 30?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 172
+Original source book: Unknown
+Source type: general
+Legal reference: Section 30
+Book pages: 46
+Source PDF pages: Unknown
+Citation: Unknown
+
+---
+
+## Chapter VI - Miscellaneous
+
+Legal reference: Section 30
+
+Q. What is the source text of Section 30?
+
+Answer - source text
+30. (1) If any difficulty arises in giving effect to the provisions of this Act, the Central Government may, by order
+published in the Official Gazette,
+m a k e s u c h p r o v i s i o n s n o t
+inconsistent with the provisions of
+this Act as appear to it to be necessary
+or expedient for removal of the difficulty:
+Provided that no such order shall be
+made after the expiry of a period of
+two years from the date of the commencement of this Act.
+(2) Every order made under this section shall, as soon as may be after it is made, be laid before each House of Parliament.
+—

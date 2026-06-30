@@ -1,0 +1,20 @@
+# FAQ Chunk 34
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 6
+Section: Completing password creation
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 58
+
+---
+
+## Completing password creation
+
+Question: What do 1 click after entering the password details?
+
+Answer: After entering the required information, click Create. The manual states that a confirmation window appears when the password is created successfully.
+
+Source: RTI User Manual, Printed page 4.

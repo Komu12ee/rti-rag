@@ -1,0 +1,18 @@
+# FAQ Chunk 80
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 13-14
+Section: Questionः How do 1 provide First Appeal Office Details?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 49
+
+---
+
+## Questionः How do 1 provide First Appeal Office Details?
+
+Answer: Enter or select the officer and office details using the available fields and dropdowns and click Next to continue.
+
+Source: RTI Manual, Printed page 9 User

@@ -1,0 +1,20 @@
+# FAQ Chunk 125
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 19
+Section: Q61 (English). How do [ make payment for the application?
+Question: प्रश्न 61. (हिंदी)| आवेदन के भुगतान कैसे करूँ? लिए
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 81
+
+---
+
+## Q61 (English). How do [ make payment for the application?
+
+प्रश्न 61. (हिंदी)| आवेदन के भुगतान कैसे करूँ? लिए
+
+उत्तरI Payment Details में लागू भुगतान विकल्प के बॉक्स पर टिक करें और Fee Online पर क्लिक करें| इसके बाद पोर्टल ऑनलाइन चालान बनाने के आगे लेे जाता हैl Pay लिए
+
+Source: RTI User Manual, Manual p. 12.

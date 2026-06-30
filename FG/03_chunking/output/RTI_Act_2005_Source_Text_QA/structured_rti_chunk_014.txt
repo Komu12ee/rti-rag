@@ -1,0 +1,33 @@
+# RTI Legal Chunk 14
+Document: RTI_Act_2005_Source_Text_QA
+Input source: structured.md
+Input pages: 6-7
+Chapter: Chapter I - Preliminary
+Question: Q. What is the source text for the definition of “State Chief Information Commissioner and State
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 122
+Original source book: Unknown
+Source type: general
+Legal reference: Unknown
+Book pages: 3-6
+Source PDF pages: Unknown
+Citation: Unknown
+
+---
+
+## Chapter I - Preliminary
+
+Q. What is the source text for the definition of “State Chief Information Commissioner and State
+
+Information Commissioner”?
+Answer - source text
+(l) “ State Chief Information Commissioner” and “State Information Commissioner” mean
+Compiled from the uploaded RTI rule book - Part 1 statutory text only
+
+SOURCE-TEXT Q&A | THE RIGHT TO INFORMATION ACT, 2005
+the State Chief Information
+Commissioner and the State
+Information Commission e r appointed under sub-section (3) of section 15;
+—

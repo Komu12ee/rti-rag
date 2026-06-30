@@ -1,0 +1,23 @@
+# FAQ Chunk 163
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 26
+Section: (10) प्रभावशीलताः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 114
+
+---
+
+## (10) प्रभावशीलताः
+
+- दंड जवाबदेही बनाते हैं
+- जानबूझकर गैर-अनुपालन को हतोत्साहित करते हैं
+- नागरिकों के सूचना अधिकारों की रक्षा करते हैं
+- RTI कार्यान्वयन को मजबूत करते हैं
+
+दंड ढांचा सूचना आयोगों को कुशल प्रवर्तन निकायों के रूप से दांतों के साथ RTI अनुपालन सुनिश्चित करता है|
+
+Source reference: RTI Rule Book, pp. 166-170 ( Penalties and Proper Implementation Notification, 14 November 2013) , Section 24

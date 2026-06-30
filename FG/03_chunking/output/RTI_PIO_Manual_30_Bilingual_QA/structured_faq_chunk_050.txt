@@ -1,0 +1,18 @@
+# FAQ Chunk 50
+Document: RTI_PIO_Manual_30_Bilingual_QA
+Source: structured.md
+Pages: 8
+Section: प्रश्न (हिंदी): प्रथम अपील विवरण भरने से पहले कौन-से आरटीआई आवेदन विवरण आवश्यक हैं?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 100
+
+---
+
+## प्रश्न (हिंदी): प्रथम अपील विवरण भरने से पहले कौन-से आरटीआई आवेदन विवरण आवश्यक हैं?
+
+उत्तर (हिंदी): RTI Application Details चरण में आरटीआई का विवरण, ऑफलाइन आरटीआई आवेदन की तिथि और सूचना प्राप्त होने की स्थिति भरें| स्क्रीन में स्टार ( *) वाले फील्ड अनिवार्य बताए गए हैं| यह जानकारी पूरी होने के बाद First Appeal Office Details चरण में जाने के Next पर क्लिक करें| लिए
+
+Source reference: Manual p. 8

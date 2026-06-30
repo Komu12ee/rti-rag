@@ -1,0 +1,16 @@
+# FAQ Chunk 4
+Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 1
+Section: Q2 (English). Which portal is used for PIO registration ?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 40
+
+---
+
+## Q2 (English). Which portal is used for PIO registration ?
+
+Answer. The PDF instructs the user to first open the website https: rtionline cg gov in.

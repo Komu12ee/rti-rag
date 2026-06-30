@@ -1,0 +1,22 @@
+# FAQ Chunk 76
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 8
+Section: Q40. Why are digital signatures shown in the transfer document?
+Question: प्रश्न 40. स्थानांतरण दस्तावेज में डिजिटल हस्ताक्षर क्यों दिखते हैं?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 122
+
+---
+
+## Q40. Why are digital signatures shown in the transfer document?
+
+प्रश्न 40. स्थानांतरण दस्तावेज में डिजिटल हस्ताक्षर क्यों दिखते हैं?
+
+उत्तरः में रिलिविंग लेटर और स्थानांतरण प्रमाणपत्र में दोनों अधिकारियों के डिजिटल हस्ताक्षर दिखाए गए हैं| ये कार्यभार देने वाले और कार्यभार लेने वाले अधिकारी की को दर्शाते हैं| मैनुअल भूमिका
+
+Source reference : Manual pp . 7 8
+
+Answer: Click Browse, select the file, and then click Upload. The manual describes these three steps directly after the relieving letter instruction. print

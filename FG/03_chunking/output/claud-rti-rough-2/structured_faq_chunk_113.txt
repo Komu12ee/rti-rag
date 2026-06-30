@@ -1,0 +1,19 @@
+# FAQ Chunk 113
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 18
+Section: (1) कवर की गई एजेंसियांः
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 62
+
+---
+
+## (1) कवर की गई एजेंसियांः
+
+- गुप्तचर ब्यूरो (IB)
+- केंद्रीय जांच ब्यूरो (CBI)
+- केंद्रीय आर्थिक खुफिया ब्यूरो (CEIB)
+- अन्य एजेंसियां जो समय-्समय पर केंद्र सरकार द्वारा निर्दिष्ट की जाती हैं

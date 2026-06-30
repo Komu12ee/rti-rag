@@ -1,0 +1,18 @@
+# FAQ Chunk 124
+Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Source: structured.md
+Pages: 13
+Section: Q67 . Does this module automatically transfer every pending RTI application to the new officer?
+Question: प्रश्न 67. क्या यह मॉड्यूल सभी लंबित आरटीआई आवेदनों को स्वतः नए अधिकारी को स्थानांतरित कर देता है? उत्तरः पोर्टल कार्यभार या के स्थानांतरण की प्रक्रिया बताता हैl यह स्पष्ट रूप से नहीं बताता कि सभी लंबित आरटीआई आवेदन, अपील, समय-सीमाएँ या कार्य रिकॉर्ड स्वतः नए अधिकारी को पुनः आवंटित होते हैं या नहीं| लाइव पोर्टल या विभागीय प्रक्रिया की पुष्टि बिना ऐसा मानकर न चलें | मैनुअल भूमिका किए
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 139
+
+---
+
+## Q67 . Does this module automatically transfer every pending RTI application to the new officer?
+
+प्रश्न 67. क्या यह मॉड्यूल सभी लंबित आरटीआई आवेदनों को स्वतः नए अधिकारी को स्थानांतरित कर देता है? उत्तरः पोर्टल कार्यभार या के स्थानांतरण की प्रक्रिया बताता हैl यह स्पष्ट रूप से नहीं बताता कि सभी लंबित आरटीआई आवेदन, अपील, समय-सीमाएँ या कार्य रिकॉर्ड स्वतः नए अधिकारी को पुनः आवंटित होते हैं या नहीं| लाइव पोर्टल या विभागीय प्रक्रिया की पुष्टि बिना ऐसा मानकर न चलें | मैनुअल भूमिका किए
+
+Source reference : Manual pp . 3-12

@@ -1,0 +1,18 @@
+# FAQ Chunk 99
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 25
+Section: Question: What manual-entry fields are shown if PIO and office details are missing from the list?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 136
+
+---
+
+## Question: What manual-entry fields are shown if PIO and office details are missing from the list?
+
+Answer: The manual-entry screen shows Public Information Officer Name, Designation, Mobile Number, Office Name, Office Address, District, Base Department, and Sub Department Name. The fields marked with an asterisk are mandatory. This screen is reached through the blue link when the dropdown list does not contain the required office or officer.
+
+Similar English questions: "Please explain: What manual-entry fields are shown if PIO and office details are missing from the list"; "How is this handled on the RTI portal?"

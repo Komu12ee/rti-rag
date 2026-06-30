@@ -1,0 +1,21 @@
+# FAQ Chunk 73
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 13
+Section: Untitled section
+Question: Q070. What do the numbered steps in the Application Registration process mean?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 119
+
+---
+
+## Untitled section
+
+Q070. What do the numbered steps in the Application Registration process mean?
+
+They identify the ordered stages of the Second Appeal workflow: 1 RTI Instruction; 2 Second Appeal Application
+Details; 3 PIO and Office Details; 4 RTI Details; 5 First Appeal Office Details; 6 First Appeal Application; 7
+Documents Details; and 8 Payment Details. Use the numbered bar to confirm where you are before moving
+forward.

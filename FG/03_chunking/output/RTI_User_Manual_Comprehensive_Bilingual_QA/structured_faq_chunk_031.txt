@@ -1,0 +1,33 @@
+# FAQ Chunk 31
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 5-6
+Section: Question: Is my email ID used as the portal login ID?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 162
+
+---
+
+## Question: Is my email ID used as the portal login ID?
+
+Answer: The manual instructs users to enter their email address as the login ID
+
+Source: RTI Manual, Printed page 4. User
+
+
+
+
+प्रश्नः पासवर्ड बनाते समय लॉगिन आईडी के रूप में क्या उपयोग करना चाहिए?
+
+उत्तरः मैनुअल उपयोगकर्ता को ई॰मेल पते को लॉगिन आईडी के रूप में दर्ज करने का निर्देश देता है|
+
+Source: RTI User Manual, Printed page 4
+
+प्रश्नः क्या पोर्टल लॉगिन आईडी के रूप में ई-्मेल आईडी उपयोग होती है?
+
+उत्तरः उपयोगकर्ता को ई-्मेल पते को लॉगिन आईडी के रूप में दर्ज करने का निर्देश देता हैI मैनुअल
+
+Source: RTI User Manual, Printed page 4.

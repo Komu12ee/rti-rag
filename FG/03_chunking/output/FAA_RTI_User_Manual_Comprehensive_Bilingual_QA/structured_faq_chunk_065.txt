@@ -1,0 +1,22 @@
+# FAQ Chunk 65
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 11
+Section: Q31 (English). How do [ enter the reason for a second appeal?
+Question: प्रश्न 31. (हिंदी)| द्वितीय अपील का कारण कैसे दर्ज करूँ?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 72
+
+---
+
+## Q31 (English). How do [ enter the reason for a second appeal?
+
+प्रश्न 31. (हिंदी)| द्वितीय अपील का कारण कैसे दर्ज करूँ?
+
+उत्तर|
+
+सूचीबद्ध विकल्पों में से उपयुक्त कारण प्रकार चुनें और संबंधित फ़ील्ड में अपील का कारण शब्दों में लिखें|
+
+Source: RTI User Manual, Manual p. 6

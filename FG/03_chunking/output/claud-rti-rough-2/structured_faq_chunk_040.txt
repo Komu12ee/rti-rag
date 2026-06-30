@@ -1,0 +1,18 @@
+# FAQ Chunk 40
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 7
+Section: (3) Timeline:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 44
+
+---
+
+## (3) Timeline:
+
+- Must be filed within 30 days of PIO decision or deemed refusal
+- If last day is holiday, next working day counts
+- Extension may be granted for reasonable cause

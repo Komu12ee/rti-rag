@@ -1,0 +1,25 @@
+# FAQ Chunk 46
+Document: RTI_ACT_QA
+Source: structured.md
+Pages: 18
+Section: SECTION 20: TRANSFER OF CASES
+Question: Q20. Can cases be transferred between Information Commissions under Section 201
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 95
+
+---
+
+## SECTION 20: TRANSFER OF CASES
+
+Q20. Can cases be transferred between Information Commissions under Section 201
+
+Answer: Section 20 provides for transfer of cases between Central and State Information Commissions whereः
+
+- Matter involves both central and state authorities
+- Issue has multi state implications
+- Central authority is primarily involved
+- Public interest requires transfer
+
+Both commissions have authority to transfer cases and maintain coordination. However, this is rarely used in practice.

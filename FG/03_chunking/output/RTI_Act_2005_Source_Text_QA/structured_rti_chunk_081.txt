@@ -1,0 +1,39 @@
+# RTI Legal Chunk 81
+Document: RTI_Act_2005_Source_Text_QA
+Input source: structured.md
+Input pages: 40
+Chapter: Chapter VI - Miscellaneous
+Question: Q. What is the source text of the First Schedule?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 208
+Original source book: Unknown
+Source type: general
+Legal reference: Unknown
+Book pages: 47
+Source PDF pages: Unknown
+Citation: Unknown
+
+---
+
+## Chapter VI - Miscellaneous
+
+Q. What is the source text of the First Schedule?
+
+Answer - source text
+THE FIRST SCHEDULE [See section 13(3) and 16(3)]
+Form of oath or affirmation to be made b?? the Chief Information Commissioner/the Information Commissioner/the State
+Chief Information Commissioner/the State
+Information Commissioner "I,.....................................................,
+having been appointed Chief Information Commission e r / Information Commissioner/State Chief Information
+Commission e r / State Information
+Commissioner
+swear in the name of God
+solemnly affirm
+that I will bear true faith and allegiance to the Constitution of India as by law established, that
+I will uphold the sovereignty and integrity of India, that I will duly and faithfully and to the best of my ability, knowledge
+and judgment
+perform the duties of my office without fear or favour, affection or ill-will and that I will uphold the Constitution and the
+laws.".
+—

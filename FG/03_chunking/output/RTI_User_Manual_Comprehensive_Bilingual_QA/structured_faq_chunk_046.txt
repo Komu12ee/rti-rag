@@ -1,0 +1,24 @@
+# FAQ Chunk 46
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 8
+Section: Question: Can Indian citizens use the portal for RTI applications and first appeals?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 241
+
+---
+
+## Question: Can Indian citizens use the portal for RTI applications and first appeals?
+
+Answer: The RTI Instruction screen states that Indian citizens can use the web portal to file RTI applications online and make payment online. It also states that a first appeal can be filed online.
+
+Source: RTI User Manual, Printed pages 5-6.
+
+प्रश्नः मैनुअल के अनुसार आरटीआई वेब पोर्टल कौन॰कौन सी ऑनलाइन सेवाएँ देता है? उत्तरः आरटीआई निर्देश स्क्रीन में बताया गया है कि भारतीय नागरिक वेब पोर्टल से आरटीआई आवेदन ऑनलाइन दायर कर सकते हैं और ऑनलाइन भुगतान कर सकते हैं| इसमें यह भी बताया गया है कि प्रथम अपील ऑनलाइन दायर की जा सकती हैI
+
+Source: RTI User Manual, Printed pages 5-6.
+
+प्रश्नः क्या भारतीय नागरिक पोर्टल का उपयोग आरटीआई आवेदन और प्रथम अपील के कर सकते हैं? उत्तरः आरटीआई निर्देश स्क्रीन में बताया गया है कि भारतीय नागरिक वेब पोर्टल से आरटीआई आवेदन ऑनलाइन दायर कर सकते हैं और ऑनलाइन भुगतान कर सकते हैं| इसमें यह भी बताया गया है कि प्रथम अपील ऑनलाइन दायर की जा सकती हैI Source: RTI User Manual, Printed pages 5-6. लिए

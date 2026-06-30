@@ -1,0 +1,23 @@
+# FAQ Chunk 110
+Document: claud_User_Manual_Detailed_FAQ
+Source: structured.md
+Pages: 18
+Section: Untitled section
+Question: Q107. What happens if the applicant is not satisfied with the reply?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 122
+
+---
+
+## Untitled section
+
+Q107. What happens if the applicant is not satisfied with the reply?
+
+Decision criteria are not specified.
+The manual does not give a narrative decision rule. It provides the Second Appeal workflow in which the
+applicant selects Appeal or Complaint, chooses a reason type, supplies the reason, and records the earlier RTI
+and First Appeal information. Use the live portal and applicable RTI guidance to decide the legally appropriate
+option.
+Accessibility & Support

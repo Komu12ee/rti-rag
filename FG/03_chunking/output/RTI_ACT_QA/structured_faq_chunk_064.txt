@@ -1,0 +1,21 @@
+# FAQ Chunk 64
+Document: RTI_ACT_QA
+Source: structured.md
+Pages: 24
+Section: Fee Structure (As per latest rules):
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 71
+
+---
+
+## Fee Structure (As per latest rules):
+
+- Application fee: 3l0 per application
+- Copy charges: =2 per page (black & white)
+- Electronic format: Cost of medium disc
+- BPL exemption: No fees for economically poor
+
+Rules are published in Official Gazette and can be amended by government notification.

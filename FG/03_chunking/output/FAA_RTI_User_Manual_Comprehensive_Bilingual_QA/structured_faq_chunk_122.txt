@@ -1,0 +1,16 @@
+# FAQ Chunk 122
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 18
+Section: Q60 (English). Are all supporting documents compulsory for a complaint?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 56
+
+---
+
+## Q60 (English). Are all supporting documents compulsory for a complaint?
+
+Answer. For a Complaint selected under Second Appeal Relation, the manual states that supporting documents are optional. Follow the document fields and requirements displayed for your selected application type

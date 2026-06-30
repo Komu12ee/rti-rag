@@ -1,0 +1,21 @@
+# FAQ Chunk 126
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 32
+Section: RAG Safety Note RAG सुरक्षा नोट
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 163
+
+---
+
+## RAG Safety Note RAG सुरक्षा नोट
+
+- Answer in the user's language and cite the relevant manual page or section.
+- उपयोगकर्ता की भाषा में उत्तर दें और संबंधित मैनुअल पृष्ठ या सेक्शन का उल्लेख करें|
+- Do not invent legal deadlines, eligibility fee choices, or case outcomes not stated in the manual.
+- मैनुअल में न बताई गई समय सीमा, पात्रता, शुल्क चयन या मामले के परिणाम न बनाएं| कानूनी
+- When the manual does not contain an answer, state that limitation and direct the user to current official guidance or the concerned authority.
+- जब मैनुअल में उत्तर उपलब्ध न हो, तो यह सीमा स्पष्ट करें और उपयोगकर्ता को वर्तमान आधिकारिक मार्गदर्शन या संबंधित प्राधिकारी की ओर निर्देशित करें|

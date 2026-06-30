@@ -1,0 +1,18 @@
+# FAQ Chunk 69
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 11
+Section: Question: What must a BPL card holder enter in the second appeal form?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 89
+
+---
+
+## Question: What must a BPL card holder enter in the second appeal form?
+
+Answer: The manual says that BPL document details must be entered if Tes is selected. The displayed form includes the BPL document number, BPL document issue date, and BPL issuing authority. The manual states that these BPL details are mandatory to process the application further.
+
+Source: RTI User Manual, Printed page 7.

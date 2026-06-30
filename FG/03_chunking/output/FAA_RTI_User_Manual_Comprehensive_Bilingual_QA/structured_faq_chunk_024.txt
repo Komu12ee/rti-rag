@@ -1,0 +1,16 @@
+# FAQ Chunk 24
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 6
+Section: Q1 1 (English). How do L activate my account after registration?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 47
+
+---
+
+## Q1 1 (English). How do L activate my account after registration?
+
+Answer. Open the verification link received at your registered email address. The manual says this activates the account and allows you to create a password.

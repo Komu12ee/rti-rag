@@ -1,0 +1,18 @@
+# FAQ Chunk 28
+Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 5
+Section: प्रश्नः रजिस्ट्रेशन के बाद आरटीआई पोर्टल खाता कैसे सक्रिय करें?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: yes
+Content tokens: 65
+
+---
+
+## प्रश्नः रजिस्ट्रेशन के बाद आरटीआई पोर्टल खाता कैसे सक्रिय करें?
+
+उत्तरः पंजीकृत ई-मेल पते पर प्राप्त लिंक पर क्लिक करें| के अनुसार इससे खाता सक्रिय होता है और पासवर्ड बनाने की सुविधा मिलती हैl मैनुअल
+
+Source: RTI User Manual, Printed page 4.

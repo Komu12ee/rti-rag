@@ -1,0 +1,20 @@
+# FAQ Chunk 7
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 3
+Section: Q2 (English). Where is the User Registration option on the portal?
+Question: प्रश्न 2. (हिंदी)| पोर्टल पर User Registration विकल्प कहाँ है?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 85
+
+---
+
+## Q2 (English). Where is the User Registration option on the portal?
+
+प्रश्न 2. (हिंदी)| पोर्टल पर User Registration विकल्प कहाँ है?
+
+उत्तर| मैनुअल में पोर्टल के लॉग इन पृष्ठ पर 'User Registration ' विकल्प दिखाया गया हैl लॉग इन क्रेडेंशियल बनाने के इसी विकल्प से शुरुआत करें| लिए
+
+Source: RTI User Manual, Manual p. 2

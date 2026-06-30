@@ -1,0 +1,30 @@
+# FAQ Chunk 8
+Document: claud-rti-rough
+Source: structured.md
+Pages: 2-4
+Section: SECTION 4: OBLIGATIONS OF PUBLIC AUTHORITIES
+Question: Q4. What are the mandatory obligations of public authorities regarding information management and publication?
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 860
+
+---
+
+## SECTION 4: OBLIGATIONS OF PUBLIC AUTHORITIES
+
+Q4. What are the mandatory obligations of public authorities regarding information management and publication?
+
+Answer: Section 4 imposes comprehensive obligations on every public authority with three components: key
+
+- (1) Record Management [Section 4 (1) (a) ]: Public authorities must maintain all records in a properly catalogued and indexed manner in a form that facilitates access under the RTI Act. All records that are appropriate for computerization must be computerized within reasonable time and connected through a network across the country to facilitate access.
+- (2) Mandatory Publications within 120 days [Section 4 (1 ) (b) ]: Public authorities must publish 17 specific categories of information including (i) organization particulars, functions, duties; (ii) powers and duties of officers; (iii) decision making procedures; (iv) functional norms (v) rules and manuals; (vi) document categories; ( vii) public consultation arrangements; ( viii) boards and committees details; (ix) officer directory; (x) monthly remuneration of officers; (xi) budget allocation; (xii) subsidy programme execution; ( xiii) recipients of licenses permits (xiv) electronic information details; (xv ) citizen access facilities; (xvi) PIO particulars; (xvii) other prescribed information.
+- (3) Proactive Disclosure [Section 4 (2) ]: It shall be a constant endeavor of every public authority to provide as much information as possible proactively at regular intervals through various means including internet, so that public has minimum need to use the Act.
+- (4) Dissemination Standards [Section 4(3) & ( 4 ) ]: Information must be disseminated widely in forms easily accessible to public, considering costreffectiveness, local language, and effective communication methods.
+- प्रश्न 4. सूचना प्रबंधन और प्रकाशन के संबंध में सार्वजनिक प्राधिकरणों के अनिवार्य दायित्व क्या हैं? उत्तरः धारा 4 प्रत्येक सार्वजनिक प्राधिकरण पर तीन प्रमुख घटकों के साथ व्यापक दायित्व लागू करती हैः
+- (1) रिकॉर्ड प्रबंधन [धारा 4(1) (क) ]: सार्वजनिक प्राधिकरणों को सभी रिकॉर्डों को उचित रूप से सूचीबद्ध और अनुक्रमित तरीके से RTI अधिनियम के तहत पहुंच को सुविधाजनक बनाने वाले रूप में रखना चाहिए| सभी रिकॉर्ड जो कंप्यूटरीकरण के उपयुक्त हैं उन्हें उचित समय के भीतर और पहुंच को सुविधाजनक बनाने के लिए पूरे देश में एक नेटवर्क के माध्यम से जुड़े हुए होने चाहिए| लिए
+- (2) 120 दिनों के भीतर अनिवार्य प्रकाशन [धारा 4(1) ( ख) ]ः सार्वजनिक प्राधिकरणों को 17 विशिष्ट श्रेणियों की सूचना प्रकाशित करनी चाहिए जिसमें शामिल हैंः (i) संगठन का विवरण, कार्य, कर्तव्यः (ii) अधिकारियों की शक्तियां और कर्तव्यः (iii) निर्णय लेने की प्रक्रियाएं; (iv) कार्यात्मक मानदंड; (v) नियम और (vi) दस्तावेज श्रेणियां; (vii) जनता से परामर्श की व्यवस्थाः ( viii) बोर्ड और समितियों का विवरण; (ix) अधिकारी निर्देशिका; (x) अधिकारियों का मासिक पारिश्रमिक; (xi) बजट आवंटन; (xii) सब्सिडी कार्यक्रम का निष्पादनः (xiii) लाइसेंस अनुमति के प्राप्तकर्ताः (xiv) इलेक्ट्रॉनिक सूचना का विवरण; (xv ) नागरिक पहुंच सुविधाएं; (xvi) PIO का विवरण; (xvii) अन्य निर्धारित सूचना| मैनुअल;
+- (3) सक्रिय प्रकटीकरण [धारा 4 2)]: प्रत्येक सार्वजनिक प्राधिकरण का निरंतर प्रयास होगा कि वह यथासंभव सूचना को नियमित अंतराल पर इंटरनेट सहित विभिन्न माध्यमों से सक्रिय रूप से प्रदान करे, ताकि जनता को अधिनियम का उपयोग करने की न्यूनतम आवश्यकता होl
+- (4) प्रसार मानदंड [धारा 4(3) और (4) ]: सूचना को व्यापक रूप से सार्वजनिक के लिए आसानी से सुलभ रूपों में प्रसारित किया जाना चाहिए, लागत प्रभावशीलता , स्थानीय भाषा, और प्रभावी संचार तरीकों पर विचार करते हुए|
+
+Source reference: RTI Rule Book, pp. 7 9, Section 4

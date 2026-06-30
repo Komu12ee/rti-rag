@@ -1,0 +1,24 @@
+# FAQ Chunk 115
+Document: RTI_SAA_Manual_60_Bilingual_QA_Reordered
+Source: structured.md
+Pages: 29-30
+Section: Question: What information is shown after a successful online payment?
+Question: प्रश्न 54. - हिंदी प्रश्नोत्तर
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 184
+
+---
+
+## Question: What information is shown after a successful online payment?
+
+प्रश्न 54. - हिंदी प्रश्नोत्तर
+
+प्रश्नः सफल ऑनलाइन भुगतान के बाद कौन॰सी जानकारी दिखाई जाती है?
+
+उत्तरः मैनुअल में दिखाई गई सफल e-Challan लेननदेन स्क्रीन में ट्रेजरी रेफरेंस नंबर, बैंक रेफरेंस नंबर, राशि, खाते की तिथि, लेन-देन की तिथि और समय , बैंक का नाम और स्टेटस शामिल हैं| स्क्रीन में लेन देन पूरा करने और रसीद प्रिंट करने के विकल्प भी दिखाए गए हैं| अपनी रिकॉर्ड रखने की आवश्यकता के लिए रसीद या लेन-देन विवरण सुरक्षित रखें|
+
+समान हिंदी प्रश्नः "कृपया समझाएंःसफल ऑनलाइन भुगतान के बाद कौन सी जानकारी दिखाई जाती है II "आरटीआई पोर्टल पर यह प्रक्रिया कैसे होती है?"
+
+Manual reference संदर्भः Manual pp. 12 13 मैनुअल

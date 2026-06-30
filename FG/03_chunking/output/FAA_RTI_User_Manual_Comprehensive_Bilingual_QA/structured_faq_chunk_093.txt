@@ -1,0 +1,18 @@
+# FAQ Chunk 93
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 14-15
+Section: Q45 (English). What comes after RTI Application Details?
+Question: प्रश्न 45. (हिंदी) RTI Application Details के बाद कौन-सा चरण आता है?
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 71
+
+---
+
+## Q45 (English). What comes after RTI Application Details?
+
+प्रश्न 45. (हिंदी) RTI Application Details के बाद कौन-सा चरण आता है?
+
+उत्तर| आरटीआई विवरण दर्ज करने के बाद Next पर क्लिक करें; इससे First Appeal Office Details चरण पर जाते हैं| Source: RTI User Manual, Manual p. 8.

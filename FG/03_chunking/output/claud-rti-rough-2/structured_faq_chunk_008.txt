@@ -1,0 +1,17 @@
+# FAQ Chunk 8
+Document: claud-rti-rough-2
+Source: structured.md
+Pages: 2
+Section: (1) Appellate Jurisdiction:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 47
+
+---
+
+## (1) Appellate Jurisdiction:
+
+- Hear second appeals from decisions of senior officers ( First Appellate Authorities)
+- Hear appeals from PIOs decisions where no separate First Appeal authority exists

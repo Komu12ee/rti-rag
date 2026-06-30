@@ -1,0 +1,16 @@
+# FAQ Chunk 2
+Document: RTI_Portal_flowchart_FAQ_Bilingual
+Source: structured.md
+Pages: 1
+Section: Scope and reading note
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 121
+
+---
+
+## Scope and reading note
+
+This FAQ is based only on the three page flowchart. Where the flowchart does not specify a rule, sequence, deadline, password reset process, or portal error solution, the answer clearly says that it is not specified in the source यह FAQ केवल तीन पृष्ठीय फ्लोचार्ट पर आधारित है| जहां फ्लोचार्ट किसी नियम, क्रम, समय सीमा, पासवर्ड रीसेट प्रक्रिया या पोर्टल त्रुटि समाधान की जानकारी नहीं देता है, वहां उत्तर में स्पष्ट रूप से यह बताया गया है कि स्रोत में इसका उल्लेख नहीं है|

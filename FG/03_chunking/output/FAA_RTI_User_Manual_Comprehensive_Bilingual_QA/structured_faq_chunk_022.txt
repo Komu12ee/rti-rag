@@ -1,0 +1,16 @@
+# FAQ Chunk 22
+Document: FAA_RTI_User_Manual_Comprehensive_Bilingual_QA
+Source: structured.md
+Pages: 5
+Section: Q10 (English). Why do 1 need to verify my account by email?
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 52
+
+---
+
+## Q10 (English). Why do 1 need to verify my account by email?
+
+Answer. The manual states that a verification link is sent to the email provided by the user. The link is used to activate the account and create the password.
