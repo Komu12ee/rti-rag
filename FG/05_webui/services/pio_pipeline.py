@@ -23,6 +23,7 @@ PRECEDENT_PROMPT = (
     "Would you like to add relevant CIC and CG SIC decision references?\n"
     "Type Yes or OK to continue."
 )
+ADVISORY_REPORT_HEADING = "## PIO Advisory Report"
 
 RTI_EXTRACTION_SCHEMA: dict[str, Any] = {
     "type": "object",
@@ -592,40 +593,187 @@ Before finalizing your response, verify that:
 </full_rti_act_reference_json>
 """.strip()
 
+def _collect_cited_provisions(
+    legal_analysis: dict[str, Any],
+    valid_provisions: set[str],
+) -> list[str]:
+    """Collect only RTI Act provisions already validated in Call 2."""
+    cited: set[str] = set()
 
+    def add_candidate(value: Any) -> None:
+        text = str(value or "").strip()
+        if not text:
+            return
+
+        normalized = _normalise_provision(text)
+        if normalized in valid_provisions:
+            cited.add(normalized)
+
+        # Supports examples such as 2(f), 6(3), 8(1)(d), 10(1).
+        for candidate in re.findall(r"\d+(?:\([0-9A-Za-z]+\))*", text):
+            normalized_candidate = _normalise_provision(candidate)
+            if normalized_candidate in valid_provisions:
+                cited.add(normalized_candidate)
+
+    for check in legal_analysis.get("case_level_checks", []):
+        if isinstance(check, dict):
+            for provision in check.get("legal_basis", []):
+                add_candidate(provision)
+
+    for point in legal_analysis.get("point_analysis", []):
+        if isinstance(point, dict):
+            for provision in point.get("applicable_provisions", []):
+                add_candidate(provision)
+
+    for element in legal_analysis.get("mandatory_response_elements", []):
+        add_candidate(element)
+
+    if not cited:
+        raise PIOPipelineError(
+            "No validated RTI Act provisions were available for Call 3."
+        )
+
+    return sorted(cited)
+
+
+def _build_cited_act_packet(
+    act_data: dict[str, Any],
+    legal_analysis: dict[str, Any],
+    valid_provisions: set[str],
+) -> dict[str, Any]:
+    """
+    Build a compact legal packet for Call 3.
+
+    This is deterministic Python selection, not LLM retrieval.
+    """
+    cited_ids = _collect_cited_provisions(
+        legal_analysis=legal_analysis,
+        valid_provisions=valid_provisions,
+    )
+
+    cited_set = set(cited_ids)
+    selected_sections: list[dict[str, Any]] = []
+    found_ids: set[str] = set()
+
+    for section in act_data.get("sections", []):
+        if not isinstance(section, dict):
+            continue
+
+        section_id = str(section.get("section_number", "")).strip()
+        raw_subsections = section.get("subsections", [])
+        if not isinstance(raw_subsections, list):
+            raw_subsections = []
+
+        section_is_cited = section_id in cited_set
+
+        if section_is_cited:
+            selected_subsections = [
+                subsection
+                for subsection in raw_subsections
+                if isinstance(subsection, dict)
+            ]
+        else:
+            selected_subsections = [
+                subsection
+                for subsection in raw_subsections
+                if isinstance(subsection, dict)
+                and str(subsection.get("subsection_id", "")).strip() in cited_set
+            ]
+
+        if not section_is_cited and not selected_subsections:
+            continue
+
+        compact_subsections = []
+        for subsection in selected_subsections:
+            subsection_id = str(subsection.get("subsection_id", "")).strip()
+            if subsection_id:
+                found_ids.add(subsection_id)
+
+            compact_subsections.append(
+                {
+                    "subsection_id": subsection_id,
+                    "title_en": subsection.get("title_en"),
+                    "title_hi": subsection.get("title_hi"),
+                    "definition_en": subsection.get("definition_en"),
+                    "definition_hi": subsection.get("definition_hi"),
+                }
+            )
+
+        if section_is_cited:
+            found_ids.add(section_id)
+
+        selected_sections.append(
+            {
+                "section_number": section_id,
+                "title_en": section.get("title_en"),
+                "title_hi": section.get("title_hi"),
+                "summary_en": section.get("summary_en"),
+                "summary_hi": section.get("summary_hi"),
+                "pio_response_note": section.get("pio_response_note"),
+                "source_reference": section.get("source_reference"),
+                "selected_subsections": compact_subsections,
+            }
+        )
+
+    missing = cited_set - found_ids
+    if missing:
+        raise PIOPipelineError(
+            "Could not build Call 3 legal packet for validated provision(s): "
+            + ", ".join(sorted(missing))
+        )
+
+    return {
+        "source": "Right to Information Act, 2005",
+        "selected_provision_ids": cited_ids,
+        "sections": selected_sections,
+    }
 def _build_response_prompt(
     rti_extraction: dict[str, Any],
     legal_analysis: dict[str, Any],
-    full_rti_act_json: str,
+    cited_act_packet: dict[str, Any],
 ) -> str:
     return f"""
 You are an RTI advisory assistant for a Public Information Officer.
 
-Create a readable, rigorous, point-wise PIO advisory report from the validated
-structured inputs. This is decision support only, not a final official order.
+Create a readable, rigorous, point-wise PIO advisory report from validated
+inputs. This is decision support only, not a final official order.
 
-Mandatory rules:
-1. Use only the facts in RTI extraction, the validated legal analysis, and the
-   supplied RTI Act reference JSON.
-2. Do not claim a record exists, is unavailable, or is held by a public authority
-   unless it is explicitly verified. Mark unresolved facts as "PIO verification required".
-3. Do not make a final disclosure or denial decision.
-4. Do not recommend complete withholding where partial disclosure/redaction under
-   Section 10 may be relevant.
-5. Use only exact legal citations contained in the validated legal analysis.
-6. Use the RTI application's language where practical.
+OUTPUT CONTRACT:
+1. Return Markdown prose only.
+2. Begin exactly with: ## PIO Advisory Report
+3. Do not return JSON, JSON arrays, code fences, XML tags, or raw input data.
+4. Do not repeat the extraction JSON or legal-analysis JSON.
+5. Use the RTI application's language where practical.
+
+LEGAL SAFETY RULES:
+1. Use only facts from RTI extraction, validated legal analysis, and the cited
+   RTI Act packet below.
+2. Do not claim that any record exists, is unavailable, or is held by an
+   authority unless that fact is verified.
+3. Mark unresolved matters as "PIO verification required".
+4. Do not make a final disclosure or denial decision.
+5. Use only citations already present in validated legal analysis.
+6. For partial exemption, mention severability/redaction only where validated
+   legal analysis supports it.
 7. Do not add CIC or CG SIC precedents at this stage.
 
-Use this report structure:
-- RTI Application Summary
-- Point-wise Analysis
-  - Requested information
-  - PIO verification required
-  - Relevant Act provisions
-  - Suggested response path
-  - Risk flags
-- Mandatory procedural checks
-- Human verification required
+Use this structure:
+
+## PIO Advisory Report
+
+### RTI Application Summary
+
+### Point-wise Analysis
+For each point include:
+- Requested information
+- PIO verification required
+- Relevant Act provisions
+- Suggested response path
+- Risk flags
+
+### Mandatory Procedural Checks
+
+### Human Verification Required
 
 <rti_extraction>
 {_json_for_prompt(rti_extraction)}
@@ -635,11 +783,10 @@ Use this report structure:
 {_json_for_prompt(legal_analysis)}
 </validated_legal_analysis>
 
-<full_rti_act_reference_json>
-{full_rti_act_json}
-</full_rti_act_reference_json>
+<cited_rti_act_packet>
+{_json_for_prompt(cited_act_packet)}
+</cited_rti_act_packet>
 """.strip()
-
 
 def _generate_json_with_one_retry(
     stage_name: str,
@@ -685,6 +832,134 @@ Correct the issue. Return the complete JSON object only; do not add explanation.
         f"{stage_name} failed validation after one correction retry: {last_error}"
     )
 
+def _validate_advisory_report(report: str) -> str:
+    text = _normalise_advisory_report(report)
+
+    if not text:
+        raise PIOPipelineError(
+            "PIO advisory response generation returned an empty report."
+        )
+
+    if text.startswith(("{", "[")):
+        try:
+            json.loads(text)
+        except json.JSONDecodeError:
+            pass
+        else:
+            raise PIOPipelineError(
+                "PIO advisory response returned JSON instead of a readable report."
+            )
+
+    if not text.startswith(ADVISORY_REPORT_HEADING):
+        raise PIOPipelineError(
+            "PIO advisory response must begin with '## PIO Advisory Report'."
+        )
+
+    if len(text) < 220:
+        raise PIOPipelineError(
+            "PIO advisory response is too short to be a usable report."
+        )
+
+    return text
+
+
+def _normalise_advisory_report(report: str) -> str:
+    text = str(report or "").strip().lstrip(chr(65279)).strip()
+
+    fenced = re.match(
+        r"^```(?:markdown|md|text)?\s*\n(?P<body>.*?)\n```\s*$",
+        text,
+        flags=re.IGNORECASE | re.DOTALL,
+    )
+    if fenced:
+        text = fenced.group("body").strip()
+
+    heading_index = text.find(ADVISORY_REPORT_HEADING)
+    if heading_index > 0:
+        text = text[heading_index:].strip()
+
+    if text.startswith(ADVISORY_REPORT_HEADING):
+        return text
+
+    lines = text.splitlines()
+    first_line = lines[0].strip() if lines else ""
+    rest = "\n".join(lines[1:]).strip()
+    normalized_heading = re.sub(r"^[#\s:.-]+", "", first_line).strip().casefold()
+    normalized_heading = re.sub(r"\s+", " ", normalized_heading)
+
+    if normalized_heading in {
+        "pio advisory report",
+        "public information officer advisory report",
+    }:
+        return (
+            ADVISORY_REPORT_HEADING
+            if not rest
+            else f"{ADVISORY_REPORT_HEADING}\n\n{rest}"
+        )
+
+    if text and not text.startswith(("{", "[")):
+        return f"{ADVISORY_REPORT_HEADING}\n\n{text}"
+
+    return text
+
+
+def _generate_advisory_report_with_one_retry(
+    response_prompt: str,
+) -> str:
+    last_error: Exception | None = None
+    max_tokens = int(os.getenv("PIO_RESPONSE_MAX_TOKENS", "4000"))
+    timeout_seconds = int(os.getenv("PIO_LLM_TIMEOUT_SECONDS", "240"))
+
+    for attempt in range(2):
+        correction = ""
+        attempt_max_tokens = max_tokens if attempt == 0 else min(max_tokens, 2200)
+
+        if attempt == 1:
+            correction = f"""
+
+Your previous output failed report validation:
+{last_error}
+
+Return only a readable Markdown PIO advisory report.
+Do not return JSON.
+Begin exactly with:
+## PIO Advisory Report
+"""
+
+        try:
+            generated = generate_text(
+                prompt=f"{response_prompt}{correction}",
+                temperature=0.1,
+                max_tokens=attempt_max_tokens,
+                timeout_seconds=timeout_seconds,
+                json_mode=False,
+                reasoning_effort="medium",
+            )
+
+            if os.getenv("PIO_DEBUG_REPORT_OUTPUT", "0") == "1":
+                print(
+                    f"\n[PIO][Call 3][Attempt {attempt + 1}] "
+                    f"output length: {len(generated)}"
+                )
+                print("[PIO][Call 3] Raw output preview:")
+                print(repr(generated[:3000]))
+                print()
+
+            return _validate_advisory_report(generated)
+        
+        
+        except PIOPipelineError as error:
+            last_error = error
+
+        except LLMProviderError as error:
+            raise PIOPipelineError(
+                f"Sarvam Call 3 (PIO advisory report) failed: {error}"
+            ) from error
+
+    raise PIOPipelineError(
+        f"Sarvam Call 3 returned an invalid advisory report after one retry: "
+        f"{last_error}"
+    )
 
 def _ensure_precedent_prompt(report: str) -> str:
     normalized = str(report or "").strip()
@@ -730,39 +1005,33 @@ def analyze_pio_application(rti_text: str) -> dict[str, Any]:
     )
 
     legal_analysis = _generate_json_with_one_retry(
-        stage_name="Sarvam Call 2 (legal analysis)",
-        prompt=_build_analysis_prompt(rti_extraction, full_rti_act_json),
-        validate=lambda data: _validate_legal_analysis(data, valid_provisions),
-        max_tokens=int(os.getenv("PIO_ANALYSIS_MAX_TOKENS", "3800")),
-        reasoning_effort="medium",
-        json_schema=LEGAL_ANALYSIS_SCHEMA,
-        json_schema_name="rti_legal_analysis",
+            stage_name="Sarvam Call 2 (legal analysis)",
+            prompt=_build_analysis_prompt(rti_extraction, full_rti_act_json),
+            validate=lambda data: _validate_legal_analysis(data, valid_provisions),
+            max_tokens=int(os.getenv("PIO_ANALYSIS_MAX_TOKENS", "3800")),
+            reasoning_effort="medium",
+            json_schema=LEGAL_ANALYSIS_SCHEMA,
+            json_schema_name="rti_legal_analysis",
+        )
+
+    cited_act_packet = _build_cited_act_packet(
+        act_data=rti_act_data,
+        legal_analysis=legal_analysis,
+        valid_provisions=valid_provisions,
     )
 
     response_prompt = _build_response_prompt(
         rti_extraction=rti_extraction,
         legal_analysis=legal_analysis,
-        full_rti_act_json=full_rti_act_json,
+        cited_act_packet=cited_act_packet,
     )
 
-    try:
-        generated_report = generate_text(
-            prompt=response_prompt,
-            temperature=0.0,
-            max_tokens=int(os.getenv("PIO_RESPONSE_MAX_TOKENS", "4000")),
-            timeout_seconds=int(os.getenv("PIO_LLM_TIMEOUT_SECONDS", "240")),
-            json_mode=True,
-            reasoning_effort="medium",
-            json_schema=LEGAL_ANALYSIS_SCHEMA,
-            json_schema_name="rti_legal_analysis",
-        )
-    except LLMProviderError as error:
-        raise PIOPipelineError(
-            f"Sarvam Call 3 (PIO advisory report) failed: {error}"
-        ) from error
+    generated_report = _generate_advisory_report_with_one_retry(
+        response_prompt=response_prompt,
+    )
 
     final_report = _ensure_precedent_prompt(generated_report)
-
+    
     return {
         "rti_extraction": rti_extraction,
         "legal_analysis": legal_analysis,
@@ -771,6 +1040,9 @@ def analyze_pio_application(rti_text: str) -> dict[str, Any]:
             "extraction_json_valid": True,
             "analysis_json_valid": True,
             "legal_citations_valid": True,
+            "report_text_valid": True,
+            "call_3_used_cited_act_packet": True,
+            "call_3_cited_provisions": cited_act_packet["selected_provision_ids"],
             "valid_provision_count": len(valid_provisions),
             "rti_act_json_path": str(act_path),
         },

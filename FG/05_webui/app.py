@@ -11,6 +11,7 @@ import os
 import sys
 import importlib.util
 import json
+import re
 import time
 from flask import Flask, request, jsonify, send_file
 from datetime import datetime
@@ -549,6 +550,170 @@ def _format_unified_evidence_for_frontend(
 
     return formatted_results
 
+def _as_bool(value: object) -> bool:
+    """Safely read boolean values sent by the frontend."""
+    if isinstance(value, bool):
+        return value
+
+    return str(value or "").strip().casefold() in {
+        "1",
+        "true",
+        "yes",
+        "on",
+    }
+
+
+PIO_REPLY_INTENT_PATTERNS = (
+    re.compile(
+        r"\b(?:give|provide|need|want|show)\b"
+        r".{0,50}\b(?:pio|public information officer)\b"
+        r".{0,50}\b(?:reply|response|answer|advisory)\b",
+        re.IGNORECASE | re.DOTALL,
+     ),
+    re.compile(
+        r"\b(?:pio|public information officer)\b"
+        r".{0,50}\b(?:reply|response|answer|advisory)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    re.compile(
+        r"\b(?:draft|prepare|generate|write|create|make)\b"
+        r".{0,90}\b(?:reply|response|pio|rti|application)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    re.compile(
+        r"\b(?:reply|response|draft|pio advisory|pio analysis)\b"
+        r".{0,90}\b(?:rti|pio|application)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    re.compile(
+        r"\b(?:analyse|analyze|assess|review)\b"
+        r".{0,90}\b(?:rti|application)\b"
+        r".{0,90}\b(?:pio|reply|response|answer)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    re.compile(
+        r"(?:आर\s*\.?\s*टी\s*\.?\s*आई|आरटीआई|rti)"
+        r".{0,90}(?:जवाब|उत्तर|प्रत्युत्तर|मसौदा|ड्राफ्ट|प्रतिक्रिया|विश्लेषण)",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    re.compile(
+        r"(?:जवाब|उत्तर|प्रत्युत्तर|मसौदा|ड्राफ्ट|प्रतिक्रिया|विश्लेषण)"
+        r".{0,90}(?:आर\s*\.?\s*टी\s*\.?\s*आई|आरटीआई|rti|आवेदन|pio|पी\s*\.?\s*आई\s*\.?\s*ओ)",
+        re.IGNORECASE | re.DOTALL,
+    ),
+)
+
+RTI_DOCUMENT_MARKERS = (
+    re.compile(
+        r"(?im)^\s*(?:to|from|subject|application\s*(?:id|no|number))\b"
+    ),
+    re.compile(
+        r"(?im)^\s*(?:सेवा\s+में|विषय|आवेदन\s*(?:क्रमांक|संख्या|आईडी)|प्रेषक)"
+    ),
+    re.compile(
+        r"\b(?:rti\s+application|information\s+(?:sought|requested)|"
+        r"certified\s+cop(?:y|ies)|public\s+authority|"
+        r"application\s*(?:id|no|number)|cpio|spio)\b",
+        re.IGNORECASE,
+    ),
+    re.compile(
+        r"(?:आरटीआई\s*आवेदन|सूचना\s*(?:प्रदान|उपलब्ध)|"
+        r"प्रमाणित\s*प्रतिलिपि|कृपया\s*(?:उपलब्ध|प्रदान)|"
+        r"आवेदन\s*(?:क्रमांक|संख्या|आईडी)|लोक\s*प्राधिकरण)"
+    ),
+)
+
+RTI_BODY_LABEL = re.compile(
+    r"(?is)"
+    r"(?:"
+    r"\b(?:rti(?:\s+(?:application|text))?|application\s+text)\b"
+    r"|आरटीआई(?:\s*(?:आवेदन|पाठ))?"
+    r")"
+    r"\s*[:\-]\s*(?P<body>.+)$"
+)
+
+
+def _is_pio_advisory_request(query_text: str) -> bool:
+    """Return True only for explicit RTI-reply/advisory requests."""
+    text = str(query_text or "").strip()
+
+    if not text:
+        return False
+
+    return any(pattern.search(text) for pattern in PIO_REPLY_INTENT_PATTERNS)
+
+
+def _extract_rti_application_text(query_text: str) -> str:
+    """
+    Remove a user instruction when the RTI body is clearly labelled.
+
+    Example:
+    Prepare a PIO reply.
+
+    RTI Application:
+    <application text>
+    """
+    text = str(query_text or "").strip()
+
+    label_match = RTI_BODY_LABEL.search(text)
+    if label_match:
+        body = label_match.group("body").strip()
+        if body:
+            return body
+
+    lines = text.splitlines()
+
+    if len(lines) >= 2 and _is_pio_advisory_request(lines[0]):
+        remaining = "\n".join(lines[1:]).strip()
+        if remaining:
+            return remaining
+
+    return text
+
+
+def _looks_like_rti_application_text(rti_text: str) -> bool:
+    """
+    Avoid expensive PIO calls for short requests such as:
+    'Prepare a reply for this RTI.'
+    """
+    text = str(rti_text or "").strip()
+
+    if len(text) < 120:
+        return False
+
+    marker_count = sum(
+        1
+        for marker in RTI_DOCUMENT_MARKERS
+        if marker.search(text)
+    )
+
+    if marker_count >= 2:
+        return True
+
+    return marker_count >= 1 and "\n" in text and len(text) >= 180
+
+
+def _pio_application_required_answer(query_text: str) -> str:
+    if re.search(r"[\u0900-\u097F]", query_text or ""):
+        return (
+            "PIO सलाहकार विश्लेषण के लिए पूरा RTI आवेदन आवश्यक है।\n\n"
+            "कृपया उसी संदेश में पूरा आवेदन चिपकाएँ और स्पष्ट रूप से लिखें "
+            "कि PIO उत्तर/सलाहकार रिपोर्ट तैयार करनी है।\n\n"
+            "उदाहरण:\n"
+            "RTI Application:\n"
+            "[पूरा RTI आवेदन]\n\n"
+            "इस RTI के लिए PIO सलाहकार उत्तर तैयार करें।"
+        )
+
+    return (
+        "The PIO advisory workflow requires the complete RTI application text.\n\n"
+        "Paste the full application in the same message and explicitly request "
+        "a PIO reply or advisory report.\n\n"
+        "Example:\n"
+        "RTI Application:\n"
+        "[full RTI application]\n\n"
+        "Prepare a PIO advisory response for this RTI."
+    )
 
 @app.route('/api/query', methods=['POST'])
 def query():
@@ -567,7 +732,7 @@ def query():
 
     raw_query_text = str(data.get("query", ""))
     query_text = extract_current_user_question(raw_query_text)
-
+    pio_mode = _as_bool(data.get("pio_mode", False))
     try:
         requested_limit = int(data.get("num_results", num_results))
     except (TypeError, ValueError):
@@ -584,7 +749,86 @@ def query():
                 "results": [],
             }
         ), 400
+    pio_advisory_requested = (
+        pio_mode and _is_pio_advisory_request(query_text)
+    )
 
+    if pio_advisory_requested:
+        rti_application_text = _extract_rti_application_text(query_text)
+
+        print(
+            "\n[PIO Router] "
+            f"pio_mode=True, advisory_intent=True, "
+            f"input_chars={len(rti_application_text)}"
+        )
+
+        try:
+            print("[PIO Router] Starting three-call PIO advisory workflow")
+            pio_result = analyze_pio_application(
+                rti_text=rti_application_text
+            )
+
+            elapsed = time.time() - query_start_time
+
+            print(
+                "[PIO Router] PIO advisory workflow completed in "
+                f"{elapsed:.2f}s"
+            )
+
+            return jsonify(
+                {
+                    "success": True,
+                    "query": query_text,
+                    "answer": pio_result["pio_advisory_report"],
+                    "results": [],
+                    "result_count": 0,
+                    "execution_time": f"{elapsed:.2f}s",
+                    "route": "PIO_ADVISORY",
+                    "pio_mode": True,
+                    "pio_pipeline_used": True,
+                    "needs_clarification": False,
+                    "validation": pio_result["validation"],
+                    "rti_extraction": pio_result["rti_extraction"],
+                    "legal_analysis": pio_result["legal_analysis"],
+                    "precedent_search_available": True,
+                    "next_action": (
+                        "Ask whether the PIO wants CIC and CG SIC "
+                        "decision references."
+                    ),
+                }
+            ), 200
+
+        except PIOPipelineError as error:
+            print(f"[PIO Router] PIO advisory error: {error}")
+
+            return jsonify(
+                {
+                    "success": False,
+                    "error": str(error),
+                    "query": query_text,
+                    "results": [],
+                    "route": "PIO_ADVISORY",
+                    "pio_mode": True,
+                    "pio_pipeline_used": True,
+                }
+            ), 422
+
+        except Exception as error:
+            print(f"[PIO Router] Unexpected PIO advisory error: {error}")
+            import traceback
+            traceback.print_exc()
+
+            return jsonify(
+                {
+                    "success": False,
+                    "error": "PIO advisory analysis could not be completed.",
+                    "query": query_text,
+                    "results": [],
+                    "route": "PIO_ADVISORY",
+                    "pio_mode": True,
+                    "pio_pipeline_used": True,
+                }
+            ), 500
     try:
         print("\n⏱️ [FLASK] Unified request start")
         print(f"[Web UI] Raw query: {raw_query_text}")

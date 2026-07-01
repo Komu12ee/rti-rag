@@ -15,14 +15,16 @@ const ASSISTANT_SCOPE = [
 ].join(' ');
 
 const PIO_ASSISTANT_SCOPE = [
-  'You are in PIO Mode for the Chhattisgarh CG RTI portal assistant.',
-  'Prioritize direct PIO and FAA lookup questions using office, school, department, district, office code, or officer email details.',
-  'Return officer name, role, email, office, department, district, and office code when those details are available.',
-  'If the request is not specific enough for officer lookup, ask for the missing office, school, department, district, office code, or email.'
+  'PIO Mode is enabled.',
+  'Keep normal citizen guidance, RTI Act questions, PIO/FAA lookup, legal retrieval, and document questions available.',
+  'Use the PIO advisory workflow only when the user explicitly asks to prepare, draft, or analyse a response to a complete RTI application.'
 ].join(' ');
 
-const DEFAULT_QUERY_PLACEHOLDER = 'Ask about RTI portal steps, fees, appeals, status, PIO details, or RTI Act sections...';
-const PIO_QUERY_PLACEHOLDER = 'Ask for PIO/FAA name, email, office, district, department, or office code...';
+const DEFAULT_QUERY_PLACEHOLDER =
+  'Ask about RTI portal steps, fees, appeals, status, PIO details, or RTI Act sections...';
+
+const PIO_QUERY_PLACEHOLDER =
+  'Ask any RTI question, or paste an RTI application and request a PIO advisory response...';
 
 const DEFAULT_PROMPTS = [
   'How do I register on the CG RTI portal?',
@@ -99,7 +101,13 @@ const api = {
   health: () => api.request('GET', '/api/health'),
   init: () => api.request('POST', '/api/init'),
   dbStatus: () => api.request('GET', '/api/db-status'),
-  query: (query, numResults) => api.request('POST', '/api/query', { query, num_results: numResults }),
+query: (query, numResults, pioMode) =>
+  api.request('POST', '/api/query', {
+    query,
+    num_results: numResults,
+    pio_mode: Boolean(pioMode)
+  }),
+  
   documentStructure: actualPdf => api.request('POST', '/api/document-structure', { actual_pdf: actualPdf }),
   async fetchPdf(path) {
     const res = await fetch(path);
@@ -335,7 +343,9 @@ function usePrompt(prompt) {
 function updatePioModeUi() {
   ui.pioModeToggle.checked = state.pioMode;
   ui.pioModeState.textContent = state.pioMode ? 'On' : 'Off';
-  ui.headModeLabel.textContent = state.pioMode ? 'PIO lookup' : 'Public guidance';
+  ui.headModeLabel.textContent = state.pioMode
+    ? 'PIO advisory enabled'
+    : 'Public guidance';
   ui.queryInput.placeholder = state.pioMode ? PIO_QUERY_PLACEHOLDER : DEFAULT_QUERY_PLACEHOLDER;
 }
 
@@ -470,30 +480,27 @@ async function bootStatus() {
 
 function buildScopedQuery(userText) {
   const conversation = activeConversation();
-  const backendQuestion = state.pioMode ? buildPioLookupQuestion(userText) : userText;
+  const backendQuestion = String(userText || '').trim();
+
   const recent = conversation.messages
     .filter(m => !m.pending)
     .slice(-MAX_CONTEXT_MESSAGES)
-    .map(m => `${m.role === 'user' ? 'User' : 'Assistant'}: ${truncate(m.display || m.content, 700)}`)
+    .map(m => {
+      const role = m.role === 'user' ? 'User' : 'Assistant';
+      return `${role}: ${truncate(m.display || m.content, 700)}`;
+    })
     .join('\n');
 
   return [
     `Current user question: ${backendQuestion}`,
     recent ? `Recent conversation context:\n${recent}` : '',
-    `Assistant role and answer scope:\n${state.pioMode ? PIO_ASSISTANT_SCOPE : ASSISTANT_SCOPE}`
+    `Assistant role and answer scope:\n${
+      state.pioMode ? PIO_ASSISTANT_SCOPE : ASSISTANT_SCOPE
+    }`
   ].filter(Boolean).join('\n\n');
 }
 
-function buildPioLookupQuestion(userText) {
-  const text = String(userText || '').trim();
-  if (!text) return text;
 
-  if (/\b(?:pio|faa|public information officer|first appellate officer)\b/i.test(text)) {
-    return text;
-  }
-
-  return `Find PIO or FAA officer details for: ${text}`;
-}
 
 async function sendQuery() {
   const text = ui.queryInput.value.trim();
@@ -528,7 +535,12 @@ async function sendQuery() {
 
   try {
     const scopedQuery = buildScopedQuery(text);
-    const { ok, data } = await api.query(scopedQuery, 5);
+    const { ok, data } = await api.query(
+      scopedQuery,
+      5,
+      state.pioMode
+    );
+
     const index = conversation.messages.findIndex(m => m.id === pendingMessage.id);
 
     if (ok && data.success) {
