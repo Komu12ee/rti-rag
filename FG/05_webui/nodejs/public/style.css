@@ -388,8 +388,93 @@ button {
 .top-actions {
   display: flex;
   align-items: center;
-  gap: 13px;
+  gap: 12px;
   flex-shrink: 0;
+}
+
+.pio-mode-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--ink-soft);
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+}
+
+.pio-mode-label {
+  line-height: 1;
+}
+
+.pio-switch {
+  position: relative;
+  display: inline-flex;
+  width: 50px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.pio-switch input {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.pio-switch-track {
+  position: relative;
+  width: 50px;
+  height: 24px;
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
+  background: #b9babd;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 6px 0 23px;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1;
+  transition: background .16s ease, border-color .16s ease;
+}
+
+.pio-switch-state {
+  position: relative;
+  z-index: 1;
+  min-width: 18px;
+  text-align: center;
+}
+
+.pio-switch-thumb {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(22, 23, 26, .22);
+  transition: transform .16s ease;
+}
+
+.pio-switch input:checked + .pio-switch-track {
+  border-color: var(--ink);
+  background: var(--ink);
+  justify-content: flex-start;
+  padding: 0 23px 0 6px;
+}
+
+.pio-switch input:checked + .pio-switch-track .pio-switch-thumb {
+  transform: translateX(26px);
+}
+
+.pio-switch input:focus-visible + .pio-switch-track {
+  outline: 2px solid rgba(36, 87, 197, .35);
+  outline-offset: 2px;
 }
 
 .head-meta {
@@ -1015,6 +1100,10 @@ button {
     display: none;
   }
 
+  .top-actions {
+    gap: 9px;
+  }
+
   #chat-inner,
   #query-wrap,
   #query-meta {
@@ -1040,5 +1129,15 @@ button {
   #pdf-panel {
     min-width: 0;
     width: 94vw;
+  }
+}
+
+@media (max-width: 520px) {
+  .pio-mode-label {
+    display: none;
+  }
+
+  .reset {
+    padding-inline: 9px;
   }
 }

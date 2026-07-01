@@ -2,6 +2,7 @@
 
 const STORAGE_KEY = 'cg_rti_assistant_conversations_v1';
 const ACTIVE_KEY = 'cg_rti_assistant_active_conversation_v1';
+const PIO_MODE_KEY = 'cg_rti_assistant_pio_mode_v1';
 const MAX_CONTEXT_MESSAGES = 8;
 const MAX_HISTORY_ITEMS = 24;
 
@@ -12,6 +13,16 @@ const ASSISTANT_SCOPE = [
   'Answer questions about portal documents: manuals, FAQs, circulars, process charts, public notices, and PIO or department directories.',
   'If the question is outside this scope, briefly redirect the user to CG RTI portal help or RTI Act basics.'
 ].join(' ');
+
+const PIO_ASSISTANT_SCOPE = [
+  'You are in PIO Mode for the Chhattisgarh CG RTI portal assistant.',
+  'Prioritize direct PIO and FAA lookup questions using office, school, department, district, office code, or officer email details.',
+  'Return officer name, role, email, office, department, district, and office code when those details are available.',
+  'If the request is not specific enough for officer lookup, ask for the missing office, school, department, district, office code, or email.'
+].join(' ');
+
+const DEFAULT_QUERY_PLACEHOLDER = 'Ask about RTI portal steps, fees, appeals, status, PIO details, or RTI Act sections...';
+const PIO_QUERY_PLACEHOLDER = 'Ask for PIO/FAA name, email, office, district, department, or office code...';
 
 const DEFAULT_PROMPTS = [
   'How do I register on the CG RTI portal?',
@@ -32,6 +43,9 @@ const ui = {
   historyList: $('history-list'),
   btnInit: $('btn-init'),
   btnSend: $('btn-send'),
+  pioModeToggle: $('pio-mode-toggle'),
+  pioModeState: $('pio-mode-state'),
+  headModeLabel: $('head-mode-label'),
   queryInput: $('query-input'),
   queryStatus: $('query-status'),
   queryTiming: $('query-timing'),
@@ -67,6 +81,7 @@ const ui = {
 const state = {
   initialized: false,
   loading: false,
+  pioMode: localStorage.getItem(PIO_MODE_KEY) === 'true',
   pdfBlobUrl: null,
   conversations: [],
   activeId: null
@@ -317,6 +332,19 @@ function usePrompt(prompt) {
   ui.queryInput.focus();
 }
 
+function updatePioModeUi() {
+  ui.pioModeToggle.checked = state.pioMode;
+  ui.pioModeState.textContent = state.pioMode ? 'On' : 'Off';
+  ui.headModeLabel.textContent = state.pioMode ? 'PIO lookup' : 'Public guidance';
+  ui.queryInput.placeholder = state.pioMode ? PIO_QUERY_PLACEHOLDER : DEFAULT_QUERY_PLACEHOLDER;
+}
+
+function setPioMode(enabled) {
+  state.pioMode = Boolean(enabled);
+  localStorage.setItem(PIO_MODE_KEY, state.pioMode ? 'true' : 'false');
+  updatePioModeUi();
+}
+
 function autoResize() {
   ui.queryInput.style.height = 'auto';
   ui.queryInput.style.height = `${Math.min(ui.queryInput.scrollHeight, 160)}px`;
@@ -442,6 +470,7 @@ async function bootStatus() {
 
 function buildScopedQuery(userText) {
   const conversation = activeConversation();
+  const backendQuestion = state.pioMode ? buildPioLookupQuestion(userText) : userText;
   const recent = conversation.messages
     .filter(m => !m.pending)
     .slice(-MAX_CONTEXT_MESSAGES)
@@ -449,10 +478,21 @@ function buildScopedQuery(userText) {
     .join('\n');
 
   return [
-    `Current user question: ${userText}`,
+    `Current user question: ${backendQuestion}`,
     recent ? `Recent conversation context:\n${recent}` : '',
-    `Assistant role and answer scope:\n${ASSISTANT_SCOPE}`
+    `Assistant role and answer scope:\n${state.pioMode ? PIO_ASSISTANT_SCOPE : ASSISTANT_SCOPE}`
   ].filter(Boolean).join('\n\n');
+}
+
+function buildPioLookupQuestion(userText) {
+  const text = String(userText || '').trim();
+  if (!text) return text;
+
+  if (/\b(?:pio|faa|public information officer|first appellate officer)\b/i.test(text)) {
+    return text;
+  }
+
+  return `Find PIO or FAA officer details for: ${text}`;
 }
 
 async function sendQuery() {
@@ -715,6 +755,7 @@ function setupEvents() {
   ui.clearChat.addEventListener('click', clearActiveChat);
   ui.btnInit.addEventListener('click', initPipeline);
   ui.btnSend.addEventListener('click', sendQuery);
+  ui.pioModeToggle.addEventListener('change', () => setPioMode(ui.pioModeToggle.checked));
   ui.queryInput.addEventListener('input', autoResize);
   ui.queryInput.addEventListener('keydown', event => {
     if (event.key === 'Enter' && !event.shiftKey) {
@@ -737,6 +778,7 @@ function setupEvents() {
 
 function boot() {
   loadConversations();
+  updatePioModeUi();
   setupEvents();
   renderAll();
   initPipeline();

@@ -77,7 +77,17 @@
           <span class="brand-meta">Chhattisgarh citizen helpdesk</span>
         </div>
         <div class="top-actions">
-          <span class="head-meta"><span class="head-dot"></span> Public guidance</span>
+          <label class="pio-mode-toggle" for="pio-mode-toggle">
+            <span class="pio-mode-label">PIO Mode</span>
+            <span class="pio-switch">
+              <input id="pio-mode-toggle" type="checkbox" aria-label="PIO Mode" autocomplete="off" />
+              <span class="pio-switch-track">
+                <span id="pio-mode-state" class="pio-switch-state">Off</span>
+                <span class="pio-switch-thumb" aria-hidden="true"></span>
+              </span>
+            </span>
+          </label>
+          <span class="head-meta"><span class="head-dot"></span><span id="head-mode-label">Public guidance</span></span>
           <button id="clear-chat" class="reset" type="button">Clear</button>
         </div>
       </header>

@@ -1,8 +1,8 @@
 from __future__ import annotations
-
+from typing import Any
 import os
 from pathlib import Path
-
+import json
 import requests
 from dotenv import load_dotenv
 
@@ -101,8 +101,15 @@ def _generate_with_ollama(
 
 def _generate_with_sarvam(
     prompt: str,
+    temperature: float,
+    max_tokens: int,
     timeout_seconds: int,
+    json_mode: bool,
+    reasoning_effort: str | None,
+    json_schema: dict[str, Any] | None = None,
+    json_schema_name: str | None = None,
 ) -> str:
+    """Send a request to Sarvam Chat Completions with optional JSON mode."""
     api_key = os.getenv("SARVAM_API_KEY", "").strip()
     model = os.getenv("SARVAM_MODEL", "sarvam-105b").strip()
     url = os.getenv(
@@ -115,6 +122,11 @@ def _generate_with_sarvam(
             "SARVAM_API_KEY is missing in .env."
         )
 
+    if reasoning_effort not in {None, "low", "medium", "high"}:
+        raise LLMProviderError(
+            "Invalid reasoning_effort. Use low, medium, high, or None."
+        )
+
     payload = {
         "model": model,
         "messages": [
@@ -123,7 +135,26 @@ def _generate_with_sarvam(
                 "content": prompt,
             }
         ],
+        "temperature": temperature,
+        "max_tokens": max_tokens,
+        "stream": False,
     }
+
+    if reasoning_effort is not None:
+        payload["reasoning_effort"] = reasoning_effort
+
+    if json_schema is not None:
+        payload["response_format"] = {
+            "type": "json_schema",
+            "json_schema": {
+                "name": json_schema_name or "structured_response",
+                "schema": json_schema,
+            },
+        }
+    elif json_mode:
+        payload["response_format"] = {
+            "type": "json_object"
+        }
 
     headers = {
         "api-subscription-key": api_key,
@@ -145,24 +176,42 @@ def _generate_with_sarvam(
     if response.status_code != 200:
         raise LLMProviderError(
             f"Sarvam returned HTTP {response.status_code}: "
-            f"{response.text[:500]}"
+            f"{response.text[:1000]}"
         )
 
     try:
         data = response.json()
-        answer = (
-            data["choices"][0]["message"]["content"]
-        )
+
+        choice = data["choices"][0]
+        message = choice.get("message") or {}
+
+        answer = message.get("content")
+        finish_reason = choice.get("finish_reason")
+        refusal = message.get("refusal")
+        reasoning_content = message.get("reasoning_content")
+
     except (ValueError, KeyError, IndexError, TypeError) as error:
         raise LLMProviderError(
-            "Sarvam returned an unexpected response format."
+            f"Sarvam returned an unexpected response format: {response.text[:1500]}"
         ) from error
 
     answer = str(answer or "").strip()
 
     if not answer:
-        raise LLMProviderError("Sarvam returned an empty response.")
+        debug_info = {
+            "finish_reason": finish_reason,
+            "refusal": refusal,
+            "has_reasoning_content": bool(reasoning_content),
+            "reasoning_length": len(str(reasoning_content or "")),
+            "message_keys": list(message.keys()),
+            "usage": data.get("usage"),
+        }
 
+        raise LLMProviderError(
+            f"Sarvam returned empty content. Diagnostic: "
+            f"{json.dumps(debug_info, ensure_ascii=False)}"
+        )
+    
     return answer
 
 
@@ -172,12 +221,19 @@ def generate_text(
     max_tokens: int = 350,
     timeout_seconds: int = 180,
     json_mode: bool = False,
+    reasoning_effort: str | None = None,
+    json_schema: dict[str, Any] | None = None,
+    json_schema_name: str | None = None,
 ) -> str:
     """
     One provider entry point for answer generation and Router B.
 
-    LLM_MODE=ollama → local Ollama
-    LLM_MODE=sarvam → Sarvam API
+    LLM_MODE=ollama -> local Ollama
+    LLM_MODE=sarvam -> Sarvam API
+
+    json_mode=True:
+    - Ollama uses format="json"
+    - Sarvam uses response_format={"type": "json_object"}
     """
     mode = get_llm_mode()
 
@@ -191,7 +247,13 @@ def generate_text(
 
         return _generate_with_sarvam(
             prompt=prompt,
+            temperature=temperature,
+            max_tokens=max_tokens,
             timeout_seconds=sarvam_timeout,
+            json_mode=json_mode,
+            reasoning_effort=reasoning_effort,
+            json_schema=json_schema,
+            json_schema_name=json_schema_name,
         )
 
     ollama_timeout = int(

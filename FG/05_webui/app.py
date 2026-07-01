@@ -6,6 +6,7 @@ from dotenv import load_dotenv
 from services.hybrid_retriever import retrieve_from_all_sources
 from services.query_scope import extract_current_user_question
 from services.unified_answer_service import generate_unified_answer
+from services.pio_pipeline import PIOPipelineError, analyze_pio_application
 import os
 import sys
 import importlib.util
@@ -630,10 +631,6 @@ def query():
             "used_llm_fallback": retrieval.resolution.used_llm_fallback,
             "used_llm_answer": answer_result.used_llm,
             "needs_clarification": answer_result.needs_clarification,
-            "unclear_qdrant_fallback_used": retrieval.qdrant_fallback_used,
-            "qdrant_relevance_accepted": retrieval.qdrant_relevance_accepted,
-            "qdrant_top_dense_score": retrieval.qdrant_top_dense_score,
-            "qdrant_relevance_threshold": retrieval.qdrant_relevance_threshold,
         }
 
         if retrieval.errors:
@@ -656,6 +653,69 @@ def query():
             }
         ), 500
     
+
+@app.route('/api/pio/analyze', methods=['POST'])
+def pio_analyze():
+    """
+    PIO advisory workflow, kept separate from the normal /api/query chatbot route.
+
+    Request body:
+    {
+      "rti_text": "Full RTI application text"
+    }
+    """
+    request_started_at = time.time()
+    data = request.get_json(silent=True) or {}
+
+    # Accept aliases to make the endpoint easier to connect to an existing form.
+    rti_text = str(
+        data.get('rti_text')
+        or data.get('application_text')
+        or data.get('query')
+        or ''
+    ).strip()
+
+    if not rti_text:
+        return jsonify({
+            'success': False,
+            'error': 'rti_text is required.',
+        }), 400
+
+    try:
+        print("\n[PIO] Advisory analysis started")
+        result = analyze_pio_application(rti_text=rti_text)
+        elapsed = time.time() - request_started_at
+        print(f"[PIO] Advisory analysis completed in {elapsed:.2f}s")
+
+        return jsonify({
+            'success': True,
+            'execution_time': f'{elapsed:.2f}s',
+            'rti_extraction': result['rti_extraction'],
+            'legal_analysis': result['legal_analysis'],
+            'pio_advisory_report': result['pio_advisory_report'],
+            'validation': result['validation'],
+            'precedent_search_available': True,
+            'next_action': (
+                'Ask whether the PIO wants CIC and CG SIC decision references.'
+            ),
+        }), 200
+
+    except PIOPipelineError as error:
+        print(f"[PIO] Analysis validation/provider error: {error}")
+        return jsonify({
+            'success': False,
+            'error': str(error),
+        }), 422
+
+    except Exception as error:
+        print(f"[PIO] Unexpected analysis error: {error}")
+        import traceback
+        traceback.print_exc()
+        return jsonify({
+            'success': False,
+            'error': 'PIO analysis could not be completed.',
+        }), 500
+
 @app.route('/api/document-structure', methods=['POST'])
 def document_structure():
     """Return precomputed full-document extraction artifacts for a PDF."""
