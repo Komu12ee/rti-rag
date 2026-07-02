@@ -11,19 +11,18 @@ from services.llm_provider import LLMProviderError, generate_text
 
 # Expected layout:
 #   FG/
-#     rti_act_2005_sections_definitions.json
+#     rti_act_2005_pio_response_sections_2_4_5_6_7_8_9_10_11_19.json
 #     05_webui/
 #       services/
 #         pio_pipeline.py  <-- this file
 WEBUI_DIR = Path(__file__).resolve().parents[1]
 PROJECT_ROOT = WEBUI_DIR.parent
 
-ACT_FILENAME = "rti_act_2005_sections_definitions.json"
+ACT_FILENAME = "rti_act_2005_pio_response_sections_2_4_5_6_7_8_9_10_11_19.json"
 PRECEDENT_PROMPT = (
     "Would you like to add relevant CIC and CG SIC decision references?\n"
     "Type Yes or OK to continue."
 )
-ADVISORY_REPORT_HEADING = "## PIO Advisory Report"
 
 RTI_EXTRACTION_SCHEMA: dict[str, Any] = {
     "type": "object",
@@ -764,45 +763,65 @@ def _build_response_prompt(
     return f"""
 You are an RTI advisory assistant for a Public Information Officer.
 
-Create a readable, rigorous, point-wise PIO advisory report from validated
-inputs. This is decision support only, not a final official order.
+OUTPUT OBJECTIVE:
 
-OUTPUT CONTRACT:
-1. Return Markdown prose only.
-2. Begin exactly with: ## PIO Advisory Report
-3. Do not return JSON, JSON arrays, code fences, XML tags, or raw input data.
-4. Do not repeat the extraction JSON or legal-analysis JSON.
-5. Use the RTI application's language where practical.
+Generate a concise, human-readable PIO advisory summary from the validated
+RTI extraction, validated legal analysis, and cited RTI Act packet.
 
-LEGAL SAFETY RULES:
-1. Use only facts from RTI extraction, validated legal analysis, and the cited
-   RTI Act packet below.
-2. Do not claim that any record exists, is unavailable, or is held by an
-   authority unless that fact is verified.
-3. Mark unresolved matters as "PIO verification required".
-4. Do not make a final disclosure or denial decision.
-5. Use only citations already present in validated legal analysis.
-6. For partial exemption, mention severability/redaction only where validated
-   legal analysis supports it.
-7. Do not add CIC or CG SIC precedents at this stage.
+The visible response must be useful to a PIO, but it must not expose raw JSON,
+internal schemas, repeated legal reasoning, or long procedural lists.
 
-Use this structure:
+Use the RTI application's language. For Hindi RTI applications, write natural
+professional Hindi.
 
-## PIO Advisory Report
+STRICT LEGAL RULES:
 
-### RTI Application Summary
+1. Use only facts, provisions, risks, and actions already present in:
+   - rti_extraction
+   - validated_legal_analysis
+   - cited_rti_act_packet
 
-### Point-wise Analysis
-For each point include:
-- Requested information
-- PIO verification required
-- Relevant Act provisions
-- Suggested response path
-- Risk flags
+2. Do not introduce a new RTI Act provision.
 
-### Mandatory Procedural Checks
+3. Do not say that a record exists, is unavailable, or is held by an authority
+   unless it is verified in the input.
 
-### Human Verification Required
+4. Mention relevant RTI Act provisions naturally inside the paragraphs.
+   Examples:
+   - "धारा 7(1) के तहत 30 दिनों में उत्तर..."
+   - "यदि सूचना वास्तव में अन्य लोक प्राधिकरण के पास हो, तो धारा 6(3)..."
+   - "यदि सूचना रोकी जाए, तो धारा 7(8)..."
+   Use a provision only when it appears in validated_legal_analysis.
+
+5. Do not mention Section 8, Section 9, transfer, clarification, exemption,
+   redaction, or public-domain availability unless Call 2 indicates that it is
+   relevant.
+
+6. Do not make a final disclosure, rejection, transfer, or penalty decision.
+
+7. Distinguish between:
+   - available/verified facts;
+   - records that must be checked;
+   - suggested next action.
+
+VISIBLE ANSWER STYLE:
+
+Write a concise, natural, human-readable advisory answer in the RTI
+application's language. Prefer 3 to 5 short Hindi paragraphs when the RTI
+application is in Hindi.
+
+Cover these points naturally, without exposing the internal JSON:
+- what the applicant requested;
+- what records, documents, departments, payment details, orders, dates, or
+  facts the PIO must verify;
+- the relevant RTI Act position in simple language, using only validated
+  provisions from Call 2;
+- any broadness, uncertainty, transfer consideration, partial disclosure
+  consideration, timeline, or appeal requirement only if supported by Call 2;
+- one clear practical next action for the PIO.
+
+Do not return JSON, Markdown code fences, raw schemas, duplicate report titles,
+or a draft final official order.
 
 <rti_extraction>
 {_json_for_prompt(rti_extraction)}
@@ -866,7 +885,7 @@ def _validate_advisory_report(report: str) -> str:
 
     if not text:
         raise PIOPipelineError(
-            "PIO advisory response generation returned an empty report."
+            "PIO advisory response generation returned an empty summary."
         )
 
     if text.startswith(("{", "[")):
@@ -876,17 +895,12 @@ def _validate_advisory_report(report: str) -> str:
             pass
         else:
             raise PIOPipelineError(
-                "PIO advisory response returned JSON instead of a readable report."
+                "PIO advisory response returned JSON instead of a readable summary."
             )
 
-    if not text.startswith(ADVISORY_REPORT_HEADING):
+    if len(text) < 140:
         raise PIOPipelineError(
-            "PIO advisory response must begin with '## PIO Advisory Report'."
-        )
-
-    if len(text) < 220:
-        raise PIOPipelineError(
-            "PIO advisory response is too short to be a usable report."
+            "PIO advisory response is too short to be a usable summary."
         )
 
     return text
@@ -903,31 +917,7 @@ def _normalise_advisory_report(report: str) -> str:
     if fenced:
         text = fenced.group("body").strip()
 
-    heading_index = text.find(ADVISORY_REPORT_HEADING)
-    if heading_index > 0:
-        text = text[heading_index:].strip()
-
-    if text.startswith(ADVISORY_REPORT_HEADING):
-        return text
-
-    lines = text.splitlines()
-    first_line = lines[0].strip() if lines else ""
-    rest = "\n".join(lines[1:]).strip()
-    normalized_heading = re.sub(r"^[#\s:.-]+", "", first_line).strip().casefold()
-    normalized_heading = re.sub(r"\s+", " ", normalized_heading)
-
-    if normalized_heading in {
-        "pio advisory report",
-        "public information officer advisory report",
-    }:
-        return (
-            ADVISORY_REPORT_HEADING
-            if not rest
-            else f"{ADVISORY_REPORT_HEADING}\n\n{rest}"
-        )
-
-    if text and not text.startswith(("{", "[")):
-        return f"{ADVISORY_REPORT_HEADING}\n\n{text}"
+    text = text.replace(PRECEDENT_PROMPT, "").strip()
 
     return text
 
@@ -941,28 +931,26 @@ def _generate_advisory_report_with_one_retry(
 
     for attempt in range(2):
         correction = ""
-        attempt_max_tokens = max_tokens if attempt == 0 else min(max_tokens, 2200)
 
         if attempt == 1:
             correction = f"""
 
-Your previous output failed report validation:
+Your previous output failed visible summary validation:
 {last_error}
 
-Return only a readable Markdown PIO advisory report.
-Do not return JSON.
-Begin exactly with:
-## PIO Advisory Report
+Return only a concise, readable PIO advisory answer.
+Do not return JSON, raw schemas, Markdown code fences, or a draft final order.
+Do not worry about a fixed heading or fixed first line.
 """
 
         try:
             generated = generate_text(
                 prompt=f"{response_prompt}{correction}",
                 temperature=0.1,
-                max_tokens=attempt_max_tokens,
+                max_tokens=max_tokens,
                 timeout_seconds=timeout_seconds,
                 json_mode=False,
-                reasoning_effort="medium",
+                reasoning_effort="low",
             )
 
             if os.getenv("PIO_DEBUG_REPORT_OUTPUT", "0") == "1":
@@ -975,8 +963,7 @@ Begin exactly with:
                 print()
 
             return _validate_advisory_report(generated)
-        
-        
+
         except PIOPipelineError as error:
             last_error = error
 
@@ -986,7 +973,7 @@ Begin exactly with:
             ) from error
 
     raise PIOPipelineError(
-        f"Sarvam Call 3 returned an invalid advisory report after one retry: "
+        f"Sarvam Call 3 returned an invalid advisory summary after one retry: "
         f"{last_error}"
     )
 
@@ -1059,7 +1046,7 @@ def analyze_pio_application(rti_text: str) -> dict[str, Any]:
         response_prompt=response_prompt,
     )
 
-    final_report = _ensure_precedent_prompt(generated_report)
+    final_report = generated_report
     
     return {
         "rti_extraction": rti_extraction,

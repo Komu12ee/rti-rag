@@ -286,6 +286,10 @@ function createMessageElement(message) {
     text.innerHTML = formatMessageText(message.display || message.content || '');
     bubble.appendChild(text);
 
+    if (message.role === 'assistant' && message.pioDetails) {
+      bubble.appendChild(createPioAnalysisDetails(message.pioDetails));
+    }
+
     if (message.role === 'assistant' && message.timing) {
       const meta = document.createElement('div');
       meta.className = 'message-meta';
@@ -315,12 +319,90 @@ function createMessageElement(message) {
 }
 
 function formatMessageText(text) {
-  const escaped = escapeHtml(text);
-  return escaped
-    .split(/\n{2,}/)
-    .filter(Boolean)
-    .map(part => `<p>${part.replace(/\n/g, '<br>')}</p>`)
-    .join('');
+  const raw = String(text ?? '').trim();
+  if (!raw) return '';
+
+  const html = [];
+  let paragraph = [];
+
+  const inlineMarkdown = value =>
+    escapeHtml(value).replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+
+  const flushParagraph = () => {
+    if (!paragraph.length) return;
+    html.push(`<p>${paragraph.join('<br>')}</p>`);
+    paragraph = [];
+  };
+
+  raw.split(/\r?\n/).forEach(line => {
+    const trimmed = line.trim();
+    if (!trimmed) {
+      flushParagraph();
+      return;
+    }
+
+    const heading = trimmed.match(/^###\s+(.+)$/);
+    if (heading) {
+      flushParagraph();
+      html.push(`<h3>${inlineMarkdown(heading[1])}</h3>`);
+      return;
+    }
+
+    paragraph.push(inlineMarkdown(trimmed));
+  });
+
+  flushParagraph();
+  return html.join('');
+}
+
+function buildPioDetails(data) {
+  if (!data || !(data.pio_pipeline_used || data.route === 'PIO_ADVISORY')) {
+    return null;
+  }
+
+  return {
+    rtiExtraction: data.rti_extraction || null,
+    legalAnalysis: data.legal_analysis || null,
+    appliedProvisions: data.validation?.call_3_cited_provisions || [],
+    validation: data.validation || null
+  };
+}
+
+function createPioAnalysisDetails(details) {
+  const outer = document.createElement('details');
+  outer.className = 'analysis-details';
+
+  const summary = document.createElement('summary');
+  summary.textContent = 'Analysis details';
+  outer.appendChild(summary);
+
+  const sections = [
+    ['RTI extraction', details.rtiExtraction],
+    ['Legal analysis', details.legalAnalysis],
+    ['Applied RTI Act provisions', details.appliedProvisions],
+    ['Validation result', details.validation]
+  ];
+
+  sections.forEach(([title, value]) => {
+    const section = document.createElement('details');
+    section.className = 'analysis-detail-section';
+
+    const sectionSummary = document.createElement('summary');
+    sectionSummary.textContent = title;
+
+    const pre = document.createElement('pre');
+    pre.textContent = value == null
+      ? '-'
+      : typeof value === 'string'
+        ? value
+        : JSON.stringify(value, null, 2);
+
+    section.appendChild(sectionSummary);
+    section.appendChild(pre);
+    outer.appendChild(section);
+  });
+
+  return outer;
 }
 
 function renderAll() {
@@ -550,6 +632,7 @@ async function sendQuery() {
         content: data.answer || '',
         display: data.answer || '',
         results: data.results || [],
+        pioDetails: buildPioDetails(data),
         timing: data.execution_time || '',
         createdAt: nowIso()
       };
