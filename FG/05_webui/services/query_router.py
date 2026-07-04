@@ -8,18 +8,20 @@ EMAIL_PATTERN = re.compile(
     r"\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b",
     re.IGNORECASE,
 )
-
-
 OFFICE_CODE_PATTERN = re.compile(r"(?<!\d)\d{10}(?!\d)")
 
+# Directory roles. Keep the aliases aligned with officer_query_parser.py.
 POSTGRES_ROLE_TERMS = (
     "pio",
     "faa",
     "public information officer",
     "first appellate officer",
+    "first appellate authority",
+    "public information authority",
     "जन सूचना अधिकारी",
     "लोक सूचना अधिकारी",
     "प्रथम अपीलीय अधिकारी",
+    "प्रथम अपीलीय प्राधिकारी",
 )
 
 POSTGRES_LOOKUP_TERMS = (
@@ -56,12 +58,18 @@ POSTGRES_ENTITY_TERMS = (
     "college",
     "hospital",
     "panchayat",
+    "collector",
+    "tehsil",
+    "police station",
     "कार्यालय",
     "विद्यालय",
     "स्कूल",
     "विभाग",
     "जिला",
     "पंचायत",
+    "कलेक्टर",
+    "तहसील",
+    "थाना",
 )
 
 LEGAL_TERMS = (
@@ -72,22 +80,16 @@ LEGAL_TERMS = (
     "second appeal",
     "exemption",
     "payment",
-"payments",
-"payment option",
-"payment options",
-"online payment",
-"fee",
-"fees",
-"rti fee",
-"application fee",
-"bpl",
-"payment gateway",
-"भुगतान",
-"भुगतान विकल्प",
-"ऑनलाइन भुगतान",
-"फीस",
-"शुल्क",
-"बीपीएल",
+    "payments",
+    "payment option",
+    "payment options",
+    "online payment",
+    "fee",
+    "fees",
+    "rti fee",
+    "application fee",
+    "bpl",
+    "payment gateway",
     "penalty",
     "precedent",
     "cic",
@@ -135,7 +137,6 @@ LEGAL_TERMS = (
     "कानूनी रूप से",
     "आगे क्या करें",
     "क्या कर सकता है",
-    
 )
 
 LEGAL_EXPLANATION_TERMS = (
@@ -146,6 +147,7 @@ LEGAL_EXPLANATION_TERMS = (
     "duty",
     "responsibility",
     "what should",
+    "how to file",
     "कैसे",
     "क्या है",
     "मतलब",
@@ -167,9 +169,16 @@ def contains_any(text: str, terms: tuple[str, ...]) -> list[str]:
 
 def route_query(query: str) -> RouterDecision:
     """
-    Router A:
-    Deterministic, free, and predictable.
-    It never generates SQL and never calls Qdrant or an LLM.
+    Router A: deterministic and free.
+
+    Important directory rule:
+    A query mentioning PIO/FAA is a registry lookup by default. It must not
+    fall into the generic UNCLEAR -> legal-Qdrant path merely because the user
+    wrote a concise query such as "PIO of Balrampur".
+
+    Legal questions remain legal Qdrant when they ask about a section, duty,
+    procedure, time limit, appeal, exemption, etc., without requesting a
+    specific officer / office / district / department.
     """
     normalized = normalize_query(query)
 
@@ -191,11 +200,9 @@ def route_query(query: str) -> RouterDecision:
     role_hits = contains_any(normalized, POSTGRES_ROLE_TERMS)
     lookup_hits = contains_any(normalized, POSTGRES_LOOKUP_TERMS)
     entity_hits = contains_any(normalized, POSTGRES_ENTITY_TERMS)
-
     legal_hits = contains_any(normalized, LEGAL_TERMS)
     explanation_hits = contains_any(normalized, LEGAL_EXPLANATION_TERMS)
 
-    # Strong structured-data identifiers
     if has_email:
         postgres_score += 5
         signals.append("email")
@@ -204,39 +211,70 @@ def route_query(query: str) -> RouterDecision:
         postgres_score += 5
         signals.append("office_code")
 
-    # Officer registry intent
     if role_hits:
         postgres_score += 1
-        signals.extend([f"role:{item}" for item in role_hits])
+        signals.extend(f"role:{item}" for item in role_hits)
 
     if role_hits and lookup_hits:
         postgres_score += 4
-        signals.extend([f"lookup:{item}" for item in lookup_hits])
+        signals.extend(f"lookup:{item}" for item in lookup_hits)
 
     if role_hits and entity_hits:
         postgres_score += 2
-        signals.extend([f"entity:{item}" for item in entity_hits])
+        signals.extend(f"entity:{item}" for item in entity_hits)
 
-    # Legal/procedural intent
     if legal_hits:
         legal_score += min(len(legal_hits) * 2, 6)
-        signals.extend([f"legal:{item}" for item in legal_hits])
+        signals.extend(f"legal:{item}" for item in legal_hits)
 
-    # “What are PIO duties?” is legal, not officer-directory lookup.
     if explanation_hits and not has_email and not has_office_code:
         legal_score += 2
-        signals.extend([f"explanation:{item}" for item in explanation_hits])
+        signals.extend(f"explanation:{item}" for item in explanation_hits)
 
-    # Both fact lookup and legal/procedural request
-    if postgres_score >= 4 and legal_score >= 2:
+    # "What are PIO duties under Section 5?" is legal.
+    # "PIO of Balod", "FAA of Balod district", and Hindi equivalents are
+    # officer-directory lookups even without words such as "find" or "show".
+    legal_only_role_question = bool(
+        role_hits
+        and legal_score >= 2
+        and not lookup_hits
+        and not entity_hits
+        and not has_email
+        and not has_office_code
+    )
+
+    # A directory query with legal and registry signals needs both sources.
+    if (
+        postgres_score >= 3
+        and legal_score >= 2
+        and not legal_only_role_question
+    ):
         return RouterDecision(
             route=Route.HYBRID,
             confidence=0.92,
-            reason="Detected officer-registry lookup and legal/procedural intent.",
+            reason="Detected officer-directory lookup and RTI legal/procedural intent.",
             matched_signals=tuple(signals),
         )
 
-    # Officer registry lookup
+    if legal_only_role_question or (
+        legal_score >= 2 and postgres_score < 3
+    ):
+        return RouterDecision(
+            route=Route.QDRANT,
+            confidence=0.88,
+            reason="Detected an RTI legal, procedural, or precedent query.",
+            matched_signals=tuple(signals),
+        )
+
+    # The critical fix: role alone is enough to enter the officer lookup path.
+    if role_hits:
+        return RouterDecision(
+            route=Route.POSTGRES,
+            confidence=0.88,
+            reason="Detected a PIO/FAA officer-directory lookup.",
+            matched_signals=tuple(signals),
+        )
+
     if postgres_score >= 4:
         return RouterDecision(
             route=Route.POSTGRES,
@@ -245,7 +283,6 @@ def route_query(query: str) -> RouterDecision:
             matched_signals=tuple(signals),
         )
 
-    # Legal RAG
     if legal_score >= 2:
         return RouterDecision(
             route=Route.QDRANT,
@@ -254,7 +291,6 @@ def route_query(query: str) -> RouterDecision:
             matched_signals=tuple(signals),
         )
 
-    # Router B will decide later.
     return RouterDecision(
         route=Route.UNCLEAR,
         confidence=0.35,

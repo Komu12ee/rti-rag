@@ -1,0 +1,34 @@
+/* PIO/FAA source cards: directory records are not PDF documents. */
+.officer-source-fields {
+  display: grid;
+  gap: 7px;
+  margin-top: 10px;
+}
+
+.officer-source-row {
+  display: grid;
+  grid-template-columns: minmax(88px, 0.42fr) minmax(0, 1fr);
+  gap: 10px;
+  align-items: start;
+  color: var(--muted);
+  font-size: 11.5px;
+}
+
+.officer-source-row > span {
+  color: var(--faint);
+  font-family: var(--font-mono);
+  font-size: 10px;
+}
+
+.officer-source-row > strong {
+  color: var(--ink-soft);
+  font-weight: 500;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 520px) {
+  .officer-source-row {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+}

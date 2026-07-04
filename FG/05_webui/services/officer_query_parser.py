@@ -26,7 +26,9 @@ ROLE_ALIASES = {
     "FAA": (
         "faa",
         "first appellate officer",
+        "first appellate authority",
         "प्रथम अपीलीय अधिकारी",
+        "प्रथम अपीलीय प्राधिकारी",
     ),
 }
 DISTRICT_ALIASES = {

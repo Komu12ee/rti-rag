@@ -7,6 +7,7 @@ from services.hybrid_retriever import retrieve_from_all_sources
 from services.query_scope import extract_current_user_question
 from services.unified_answer_service import generate_unified_answer
 from services.pio_pipeline import PIOPipelineError, analyze_pio_application
+from services.pio_qdrant_retriever import retrieve_pio_directory_references
 import os
 import sys
 import importlib.util
@@ -448,13 +449,57 @@ def _retrieve_context_for_unified(
     )
 
 
+def _retrieve_pio_directory_for_unified(
+    query: str,
+    decision,
+    criteria,
+    limit: int,
+):
+    """
+    Reuse rag_pipeline's single BGE-M3 model and single Qdrant client.
+
+    This is important when QDRANT_MODE=local: creating another QdrantClient
+    against the same embedded storage can cause an "already accessed" lock.
+    """
+    rag_module = _load_rag_module()
+    if rag_module is None:
+        raise RuntimeError(
+            _rag_import_error
+            or "RAG module is unavailable for PIO directory fallback."
+        )
+
+    ensure_embedding = getattr(rag_module, "ensure_embedding_model_loaded", None)
+    if callable(ensure_embedding):
+        ensure_embedding()
+    else:
+        # Compatibility with an older rag_pipeline.py before the lightweight
+        # embedding-only initializer was added.
+        rag_module.ensure_models_loaded()
+
+    qdrant_client = rag_module.ensure_qdrant_client()
+    embedding_model = getattr(rag_module, "model", None)
+
+    if embedding_model is None:
+        raise RuntimeError("BGE-M3 embedding model was not initialized.")
+
+    return retrieve_pio_directory_references(
+        query=query,
+        decision=decision,
+        criteria=criteria,
+        client=qdrant_client,
+        embedding_model=embedding_model,
+        limit=limit,
+    )
+
+
 def _format_unified_evidence_for_frontend(
     evidence_items: list[dict],
 ) -> list[dict]:
     """
-    Keep the old frontend result structure while supporting:
-    - PostgreSQL officer registry evidence
-    - Qdrant legal evidence
+    Keep one frontend result shape for:
+    - PostgreSQL officer registry results
+    - PIO directory Qdrant fallback results
+    - legal Qdrant/PDF results
     """
     formatted_results = []
 
@@ -474,6 +519,7 @@ def _format_unified_evidence_for_frontend(
         document_id = str(
             metadata.get("office_code")
             or metadata.get("email")
+            or metadata.get("officer_record_id")
             or f"{mode.lower() or 'result'}-{index}"
         )
 
@@ -519,11 +565,12 @@ def _format_unified_evidence_for_frontend(
         if len(text) > 250:
             excerpt += "..."
 
-        retrieval_collection = (
-            "postgresql_officer_registry"
-            if source_type == "CG RTI Officer Registry"
-            else "legal_qdrant"
-        )
+        if source_type == "CG RTI Officer Registry":
+            retrieval_collection = "postgresql_officer_registry"
+        elif source_type == "CG RTI Officer Directory (Qdrant)":
+            retrieval_collection = "pio_directory_qdrant"
+        else:
+            retrieval_collection = "legal_qdrant"
 
         formatted_results.append(
             {
@@ -545,10 +592,26 @@ def _format_unified_evidence_for_frontend(
                 "chunk_type": metadata.get("chunk_type", ""),
                 "source_type": source_type,
                 "mode": mode,
+
+                # Officer values let app.js render a directory card rather than
+                # offering irrelevant PDF buttons.
+                "officer_name": metadata.get("officer_name", ""),
+                "rti_role": metadata.get("rti_role", ""),
+                "email": metadata.get("email", ""),
+                "designation": metadata.get("designation", ""),
+                "office_name": metadata.get("office_name", ""),
+                "office_code": metadata.get("office_code", ""),
+                "department_name": metadata.get("department_name", ""),
+                "district_name": (
+                    metadata.get("district_name", "")
+                    or metadata.get("district", "")
+                ),
+                "office_address": metadata.get("office_address", ""),
             }
         )
 
     return formatted_results
+
 
 def _as_bool(value: object) -> bool:
     """Safely read boolean values sent by the frontend."""
@@ -837,6 +900,7 @@ def query():
         retrieval = retrieve_from_all_sources(
             query=query_text,
             retrieve_context_fn=_retrieve_context_for_unified,
+            retrieve_pio_directory_fn=_retrieve_pio_directory_for_unified,
             limit=requested_limit,
         )
 

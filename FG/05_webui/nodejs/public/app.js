@@ -681,6 +681,13 @@ function legalChunkLabel(chunkType) {
   return labels[chunkType] || 'Relevant Passage';
 }
 
+function isOfficerDirectoryResult(result) {
+  return [
+    'postgresql_officer_registry',
+    'pio_directory_qdrant'
+  ].includes(result.retrieval_collection);
+}
+
 function openDrawer(results) {
   ui.drawerBody.innerHTML = '';
 
@@ -689,6 +696,45 @@ function openDrawer(results) {
     card.className = 'source-card';
 
     const score = typeof result.score === 'number' ? result.score.toFixed(3) : '-';
+
+    if (isOfficerDirectoryResult(result)) {
+      const sourceLabel = result.retrieval_collection === 'pio_directory_qdrant'
+        ? 'CG RTI Officer Directory'
+        : 'CG RTI Officer Registry';
+
+      const officerRows = [
+        ['Role', result.rti_role],
+        ['Officer', result.officer_name],
+        ['Designation', result.designation],
+        ['Department', result.department_name],
+        ['District', result.district_name],
+        ['Office', result.office_name],
+        ['Office code', result.office_code],
+        ['Email', result.email],
+        ['Address', result.office_address]
+      ].filter(([, value]) => String(value || '').trim());
+
+      card.innerHTML = `
+        <div class="source-card-header">
+          <span class="source-rank">#${escapeHtml(result.rank || '')}</span>
+          <span class="source-filename">${escapeHtml(sourceLabel)}</span>
+          <span class="source-score">${score}</span>
+        </div>
+        <div class="source-label">Officer directory record</div>
+        <div class="officer-source-fields">
+          ${officerRows.map(([label, value]) => `
+            <div class="officer-source-row">
+              <span>${escapeHtml(label)}</span>
+              <strong>${escapeHtml(value)}</strong>
+            </div>
+          `).join('')}
+        </div>
+      `;
+
+      ui.drawerBody.appendChild(card);
+      return;
+    }
+
     const fname = result.actual_pdf || result.source || 'unknown';
     const chunkType = result.chunk_type || '';
     const passage = result.text || result.excerpt || '';

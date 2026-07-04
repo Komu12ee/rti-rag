@@ -926,7 +926,7 @@ def _generate_advisory_report_with_one_retry(
     response_prompt: str,
 ) -> str:
     last_error: Exception | None = None
-    max_tokens = int(os.getenv("PIO_RESPONSE_MAX_TOKENS", "4000"))
+    max_tokens = int(os.getenv("PIO_RESPONSE_MAX_TOKENS", "4090"))
     timeout_seconds = int(os.getenv("PIO_LLM_TIMEOUT_SECONDS", "240"))
 
     for attempt in range(2):
