@@ -1198,3 +1198,55 @@ button {
     padding-inline: 9px;
   }
 }
+
+/* Optional CIC/CGSIC precedent follow-up controls */
+.precedent-actions {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+
+.precedent-action-label {
+  margin-bottom: 8px;
+  color: var(--ink-soft);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.precedent-action-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.precedent-action-btn {
+  border: 1px solid var(--blue);
+  border-radius: var(--radius);
+  background: var(--blue);
+  color: #fff;
+  cursor: pointer;
+  padding: 7px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  transition: opacity .16s ease, background .16s ease, border-color .16s ease;
+}
+
+.precedent-action-btn:hover {
+  opacity: .9;
+}
+
+.precedent-action-btn.secondary {
+  border-color: var(--border-strong);
+  background: var(--surface);
+  color: var(--ink-soft);
+}
+
+.precedent-action-btn:disabled {
+  cursor: not-allowed;
+  opacity: .55;
+}
+
+.precedent-status {
+  color: var(--muted);
+  font-size: 12px;
+}

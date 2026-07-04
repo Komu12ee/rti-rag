@@ -7,6 +7,11 @@ from services.hybrid_retriever import retrieve_from_all_sources
 from services.query_scope import extract_current_user_question
 from services.unified_answer_service import generate_unified_answer
 from services.pio_pipeline import PIOPipelineError, analyze_pio_application
+from services.pio_precedent_service import (
+    PRECEDENT_COLLECTIONS,
+    PIOPrecedentError,
+    retrieve_pio_precedent_references,
+)
 from services.pio_qdrant_retriever import retrieve_pio_directory_references
 import os
 import sys
@@ -17,6 +22,8 @@ import time
 from flask import Flask, request, jsonify, send_file
 from datetime import datetime
 from pathlib import Path
+from threading import Lock
+from uuid import uuid4
 
 for stream_name in ('stdout', 'stderr'):
     stream = getattr(sys, stream_name, None)
@@ -259,6 +266,88 @@ pipeline_initialized = False
 qdrant_retry_attempted = False
 kg_enabled = True
 num_results = 3
+
+# Short-lived, server-side context for the optional CIC/CGSIC precedent follow-up.
+# The browser receives only the advisory_id and never sends trusted legal context back.
+PIO_ADVISORY_TTL_SECONDS = max(60, int(os.getenv("PIO_ADVISORY_TTL_SECONDS", "3600")))
+PIO_ADVISORY_CACHE_MAX_ITEMS = max(10, int(os.getenv("PIO_ADVISORY_CACHE_MAX_ITEMS", "100")))
+pio_advisory_cache: dict[str, dict] = {}
+pio_advisory_cache_lock = Lock()
+
+
+def _purge_expired_pio_advisories() -> None:
+    now = time.time()
+    with pio_advisory_cache_lock:
+        expired_ids = [
+            advisory_id
+            for advisory_id, item in pio_advisory_cache.items()
+            if float(item.get("expires_at", 0) or 0) <= now
+        ]
+        for advisory_id in expired_ids:
+            pio_advisory_cache.pop(advisory_id, None)
+
+        overflow = len(pio_advisory_cache) - PIO_ADVISORY_CACHE_MAX_ITEMS
+        if overflow > 0:
+            oldest_ids = sorted(
+                pio_advisory_cache,
+                key=lambda key: float(pio_advisory_cache[key].get("created_at", 0) or 0),
+            )[:overflow]
+            for advisory_id in oldest_ids:
+                pio_advisory_cache.pop(advisory_id, None)
+
+
+def _store_pio_advisory(pio_result: dict) -> str:
+    _purge_expired_pio_advisories()
+    advisory_id = str(uuid4())
+    now = time.time()
+
+    with pio_advisory_cache_lock:
+        pio_advisory_cache[advisory_id] = {
+            "created_at": now,
+            "expires_at": now + PIO_ADVISORY_TTL_SECONDS,
+            "rti_extraction": pio_result["rti_extraction"],
+            "legal_analysis": pio_result["legal_analysis"],
+            "pio_advisory_report": pio_result["pio_advisory_report"],
+            "validation": pio_result["validation"],
+            "precedent_result": None,
+            "precedent_in_progress": False,
+        }
+
+    return advisory_id
+
+
+def _get_pio_advisory(advisory_id: str) -> dict | None:
+    _purge_expired_pio_advisories()
+    key = str(advisory_id or "").strip()
+    if not key:
+        return None
+
+    with pio_advisory_cache_lock:
+        return pio_advisory_cache.get(key)
+
+
+def _precedent_collection_status() -> tuple[list[str], list[str]]:
+    """Return CIC/CGSIC availability without using unrelated collections."""
+    rag_module = _load_rag_module()
+    if rag_module is None:
+        return [], list(PRECEDENT_COLLECTIONS)
+
+    try:
+        client = rag_module.ensure_qdrant_client()
+        available = [
+            collection
+            for collection in PRECEDENT_COLLECTIONS
+            if client.collection_exists(collection)
+        ]
+        missing = [
+            collection
+            for collection in PRECEDENT_COLLECTIONS
+            if collection not in available
+        ]
+        return available, missing
+    except Exception as error:
+        print(f"[PIO Precedents] Collection availability check failed: {error}")
+        return [], list(PRECEDENT_COLLECTIONS)
 
 
 def safe_pdf_stem(actual_pdf: str) -> str:
@@ -822,6 +911,11 @@ def query():
                 f"{elapsed:.2f}s"
             )
 
+            advisory_id = _store_pio_advisory(pio_result)
+            available_precedent_collections, missing_precedent_collections = (
+                _precedent_collection_status()
+            )
+
             return jsonify(
                 {
                     "success": True,
@@ -837,11 +931,12 @@ def query():
                     "validation": pio_result["validation"],
                     "rti_extraction": pio_result["rti_extraction"],
                     "legal_analysis": pio_result["legal_analysis"],
-                    "precedent_search_available": True,
-                    "next_action": (
-                        "Ask whether the PIO wants CIC and CG SIC "
-                        "decision references."
-                    ),
+                    "advisory_id": advisory_id,
+                    "precedent_search_available": bool(available_precedent_collections),
+                    "precedent_collections_available": available_precedent_collections,
+                    "precedent_collections_missing": missing_precedent_collections,
+                    "precedent_search_completed": False,
+                    "next_action": "precedent_confirmation",
                 }
             ), 200
 
@@ -979,6 +1074,11 @@ def pio_analyze():
         elapsed = time.time() - request_started_at
         print(f"[PIO] Advisory analysis completed in {elapsed:.2f}s")
 
+        advisory_id = _store_pio_advisory(result)
+        available_precedent_collections, missing_precedent_collections = (
+            _precedent_collection_status()
+        )
+
         return jsonify({
             'success': True,
             'execution_time': f'{elapsed:.2f}s',
@@ -986,10 +1086,12 @@ def pio_analyze():
             'legal_analysis': result['legal_analysis'],
             'pio_advisory_report': result['pio_advisory_report'],
             'validation': result['validation'],
-            'precedent_search_available': True,
-            'next_action': (
-                'Ask whether the PIO wants CIC and CG SIC decision references.'
-            ),
+            'advisory_id': advisory_id,
+            'precedent_search_available': bool(available_precedent_collections),
+            'precedent_collections_available': available_precedent_collections,
+            'precedent_collections_missing': missing_precedent_collections,
+            'precedent_search_completed': False,
+            'next_action': 'precedent_confirmation',
         }), 200
 
     except PIOPipelineError as error:
@@ -1007,6 +1109,115 @@ def pio_analyze():
             'success': False,
             'error': 'PIO analysis could not be completed.',
         }), 500
+
+@app.route('/api/pio/precedents', methods=['POST'])
+def pio_precedents():
+    """Add CIC/CGSIC references to a previously generated PIO advisory."""
+    request_started_at = time.time()
+    data = request.get_json(silent=True) or {}
+    advisory_id = str(data.get("advisory_id") or "").strip()
+
+    if not advisory_id:
+        return jsonify({
+            "success": False,
+            "error": "advisory_id is required.",
+        }), 400
+
+    try:
+        requested_limit = int(data.get("num_results", 5))
+    except (TypeError, ValueError):
+        requested_limit = 5
+    requested_limit = max(1, min(5, requested_limit))
+
+    advisory = _get_pio_advisory(advisory_id)
+    if advisory is None:
+        return jsonify({
+            "success": False,
+            "error": "This PIO advisory has expired or is no longer available. Generate the advisory again and retry.",
+            "advisory_id": advisory_id,
+        }), 410
+
+    with pio_advisory_cache_lock:
+        cached_result = advisory.get("precedent_result")
+        if cached_result is not None:
+            cached_response = dict(cached_result)
+            cached_response.update({
+                "success": True,
+                "advisory_id": advisory_id,
+                "cached": True,
+            })
+            return jsonify(cached_response), 200
+
+        if advisory.get("precedent_in_progress"):
+            return jsonify({
+                "success": False,
+                "error": "Precedent references are already being prepared for this advisory.",
+                "advisory_id": advisory_id,
+            }), 409
+
+        advisory["precedent_in_progress"] = True
+
+    try:
+        rag_module = _load_rag_module()
+        if rag_module is None:
+            raise PIOPrecedentError(
+                _rag_import_error or "RAG pipeline is unavailable for precedent retrieval."
+            )
+
+        print("[PIO Precedents] Searching CIC + CGSIC collections only")
+        precedent_result = retrieve_pio_precedent_references(
+            rti_extraction=advisory["rti_extraction"],
+            legal_analysis=advisory["legal_analysis"],
+            rag_module=rag_module,
+            num_results=requested_limit,
+        )
+        elapsed = time.time() - request_started_at
+
+        response = {
+            "success": True,
+            "route": "PIO_PRECEDENTS",
+            "advisory_id": advisory_id,
+            "answer": precedent_result["answer"],
+            "results": precedent_result["results"],
+            "result_count": precedent_result["result_count"],
+            "execution_time": f"{elapsed:.2f}s",
+            "precedent_search_completed": True,
+            "precedent_collections_used": precedent_result["available_collections"],
+            "warnings": precedent_result.get("warnings", []),
+            "cached": False,
+        }
+
+        with pio_advisory_cache_lock:
+            current = pio_advisory_cache.get(advisory_id)
+            if current is not None:
+                current["precedent_result"] = dict(response)
+
+        return jsonify(response), 200
+
+    except PIOPrecedentError as error:
+        print(f"[PIO Precedents] Safe retrieval error: {error}")
+        return jsonify({
+            "success": False,
+            "error": str(error),
+            "advisory_id": advisory_id,
+        }), 422
+
+    except Exception as error:
+        print(f"[PIO Precedents] Unexpected error: {error}")
+        import traceback
+        traceback.print_exc()
+        return jsonify({
+            "success": False,
+            "error": "CIC/CGSIC precedent references could not be prepared.",
+            "advisory_id": advisory_id,
+        }), 500
+
+    finally:
+        with pio_advisory_cache_lock:
+            current = pio_advisory_cache.get(advisory_id)
+            if current is not None:
+                current["precedent_in_progress"] = False
+
 
 @app.route('/api/document-structure', methods=['POST'])
 def document_structure():

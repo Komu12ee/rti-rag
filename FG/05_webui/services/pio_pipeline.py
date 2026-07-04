@@ -19,11 +19,6 @@ WEBUI_DIR = Path(__file__).resolve().parents[1]
 PROJECT_ROOT = WEBUI_DIR.parent
 
 ACT_FILENAME = "rti_act_2005_pio_response_sections_2_4_5_6_7_8_9_10_11_19.json"
-PRECEDENT_PROMPT = (
-    "Would you like to add relevant CIC and CG SIC decision references?\n"
-    "Type Yes or OK to continue."
-)
-
 RTI_EXTRACTION_SCHEMA: dict[str, Any] = {
     "type": "object",
     "additionalProperties": False,
@@ -898,21 +893,10 @@ Cover these points naturally, without exposing the internal JSON:
 Do not return JSON, Markdown code fences, raw schemas, duplicate report titles,
 or a draft final official order.
 
-CLOSING FOLLOW-UP (mandatory, after the advisory paragraphs):
-Once the advisory text above is complete, add one short final line — on its
-own, separated by a blank line from the paragraphs — asking whether the PIO
-wants supporting references added from SIC/CIC or Supreme Court rulings.
-This is a plain offer, not part of the legal analysis itself, and it must
-never claim that such rulings already exist in the input; it only asks
-whether the PIO wants them added.
-- If the RTI application/advisory is in Hindi, phrase it naturally in Hindi,
-  e.g.: "क्या आप चाहेंगे कि इसमें राज्य/केंद्रीय सूचना आयोग (SIC/CIC) या
-  उच्चतम न्यायालय के संबंधित निर्णयों के संदर्भ भी जोड़े जाएं?"
-- If the application/advisory is in English, phrase it naturally in English,
-  e.g.: "Would you like me to add supporting references from SIC/CIC orders
-  or Supreme Court rulings?"
-Ask this only once, as the very last line of the response, and do not answer
-it yourself or pre-empt the PIO's choice.
+FOLLOW-UP CONTROL:
+Do not ask whether to add CIC, SIC, court, precedent, or supporting-decision
+references. The application interface handles that optional follow-up outside
+this advisory. End after the substantive advisory content.
 
 <rti_extraction>
 {_json_for_prompt(rti_extraction)}
@@ -1182,6 +1166,7 @@ def _validate_advisory_report(report: str) -> str:
 
 
 def _normalise_advisory_report(report: str) -> str:
+    """Remove accidental formatting and legacy precedent-offer lines."""
     text = str(report or "").strip().lstrip(chr(65279)).strip()
 
     fenced = re.match(
@@ -1192,10 +1177,17 @@ def _normalise_advisory_report(report: str) -> str:
     if fenced:
         text = fenced.group("body").strip()
 
-    text = text.replace(PRECEDENT_PROMPT, "").strip()
+    # Older prompts asked a visible CIC/SIC follow-up. The frontend now owns
+    # that interaction, so strip only clearly identifiable legacy final lines.
+    legacy_lines = [
+        r"(?im)^\s*Would you like me to add supporting references from SIC/CIC orders.*$",
+        r"(?im)^\s*Would you like to add relevant CIC and CG SIC decision references\?.*$",
+        r"(?im)^\s*क्या आप चाहेंगे कि इसमें राज्य/केंद्रीय सूचना आयोग.*निर्णयों के संदर्भ.*$",
+    ]
+    for pattern in legacy_lines:
+        text = re.sub(pattern, "", text).strip()
 
     return text
-
 
 def _generate_advisory_report_with_one_retry(
     response_prompt: str,
@@ -1251,17 +1243,6 @@ Do not worry about a fixed heading or fixed first line.
         f"Sarvam Call 3 returned an invalid advisory summary after one retry: "
         f"{last_error}"
     )
-
-def _ensure_precedent_prompt(report: str) -> str:
-    normalized = str(report or "").strip()
-    if not normalized:
-        raise PIOPipelineError("PIO advisory response generation returned an empty report.")
-
-    if PRECEDENT_PROMPT.casefold() not in normalized.casefold():
-        normalized = f"{normalized}\n\n{PRECEDENT_PROMPT}"
-
-    return normalized
-
 
 def analyze_pio_application(rti_text: str) -> dict[str, Any]:
     """
@@ -1321,8 +1302,8 @@ def analyze_pio_application(rti_text: str) -> dict[str, Any]:
         response_prompt=response_prompt,
     )
 
-    final_report = generated_report
-    
+    final_report = _normalise_advisory_report(generated_report)
+
     return {
         "rti_extraction": rti_extraction,
         "legal_analysis": legal_analysis,

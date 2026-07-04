@@ -36,6 +36,13 @@ const DEFAULT_PROMPTS = [
 ];
 
 const CG_GOV_LOGO = '/assets/cg_gov_logo.png';
+const PRECEDENT_YES_CONFIRMATIONS = new Set([
+  'yes', 'y', 'ok', 'okay', 'haan', 'ha', 'हाँ', 'हां'
+]);
+const PRECEDENT_NO_CONFIRMATIONS = new Set([
+  'no', 'n', 'nahin', 'nahi', 'नहीं', 'नहि', 'ना'
+]);
+
 
 const $ = id => document.getElementById(id);
 
@@ -107,7 +114,12 @@ query: (query, numResults, pioMode) =>
     num_results: numResults,
     pio_mode: Boolean(pioMode)
   }),
-  
+  pioPrecedents: (advisoryId, numResults = 5) =>
+    api.request('POST', '/api/pio/precedents', {
+      advisory_id: advisoryId,
+      num_results: numResults
+    }),
+
   documentStructure: actualPdf => api.request('POST', '/api/document-structure', { actual_pdf: actualPdf }),
   async fetchPdf(path) {
     const res = await fetch(path);
@@ -290,6 +302,10 @@ function createMessageElement(message) {
       bubble.appendChild(createPioAnalysisDetails(message.pioDetails));
     }
 
+    if (message.role === 'assistant' && message.precedentSearchAvailable) {
+      bubble.appendChild(createPrecedentActionControls(message));
+    }
+
     if (message.role === 'assistant' && message.timing) {
       const meta = document.createElement('div');
       meta.className = 'message-meta';
@@ -403,6 +419,200 @@ function createPioAnalysisDetails(details) {
   });
 
   return outer;
+}
+
+function createPrecedentActionControls(message) {
+  const container = document.createElement('div');
+  container.className = 'precedent-actions';
+
+  const decision = message.precedentDecision || 'pending';
+
+  if (decision === 'completed') {
+    container.innerHTML = '<span class="precedent-status">CIC/CGSIC references added.</span>';
+    return container;
+  }
+
+  if (decision === 'declined') {
+    container.innerHTML = '<span class="precedent-status">CIC/CGSIC references were not added.</span>';
+    return container;
+  }
+
+  if (decision === 'accepted') {
+    container.innerHTML = '<span class="precedent-status">Searching CIC/CGSIC decisions…</span>';
+    return container;
+  }
+
+  const label = document.createElement('div');
+  label.className = 'precedent-action-label';
+  label.textContent = 'Add supporting CIC/CGSIC decision references?';
+  container.appendChild(label);
+
+  const buttonRow = document.createElement('div');
+  buttonRow.className = 'precedent-action-buttons';
+
+  const yesButton = document.createElement('button');
+  yesButton.type = 'button';
+  yesButton.className = 'precedent-action-btn';
+  yesButton.textContent = 'Yes, add references';
+  yesButton.addEventListener('click', () => {
+    handlePrecedentChoice(message.id, 'yes', 'Yes, add CIC/CGSIC references');
+  });
+
+  const noButton = document.createElement('button');
+  noButton.type = 'button';
+  noButton.className = 'precedent-action-btn secondary';
+  noButton.textContent = 'No';
+  noButton.addEventListener('click', () => {
+    handlePrecedentChoice(message.id, 'no', 'No');
+  });
+
+  buttonRow.appendChild(yesButton);
+  buttonRow.appendChild(noButton);
+  container.appendChild(buttonRow);
+  return container;
+}
+
+function normaliseConfirmation(text) {
+  return String(text || '')
+    .trim()
+    .toLocaleLowerCase()
+    .replace(/[.!?]/g, '');
+}
+
+function isPrecedentYes(text) {
+  return PRECEDENT_YES_CONFIRMATIONS.has(normaliseConfirmation(text));
+}
+
+function isPrecedentNo(text) {
+  return PRECEDENT_NO_CONFIRMATIONS.has(normaliseConfirmation(text));
+}
+
+function findConversationMessage(conversation, messageId) {
+  return conversation.messages.find(message => message.id === messageId) || null;
+}
+
+function getPendingPrecedentOffer(conversation) {
+  const latestVisible = [...conversation.messages]
+    .reverse()
+    .find(message => !message.pending);
+
+  if (!latestVisible) return null;
+  if (
+    latestVisible.role !== 'assistant' ||
+    !latestVisible.precedentSearchAvailable ||
+    !latestVisible.advisoryId ||
+    (latestVisible.precedentDecision || 'pending') !== 'pending'
+  ) {
+    return null;
+  }
+
+  return latestVisible;
+}
+
+function appendUserChoice(conversation, text) {
+  const message = {
+    id: newId(),
+    role: 'user',
+    content: text,
+    display: text,
+    createdAt: nowIso()
+  };
+  conversation.messages.push(message);
+  return message;
+}
+
+async function handlePrecedentChoice(advisoryMessageId, choice, displayText) {
+  const conversation = activeConversation();
+  const advisoryMessage = findConversationMessage(conversation, advisoryMessageId);
+  if (!advisoryMessage || state.loading) return;
+
+  if (choice === 'no') {
+    advisoryMessage.precedentDecision = 'declined';
+    appendUserChoice(conversation, displayText || 'No');
+    conversation.messages.push({
+      id: newId(),
+      role: 'assistant',
+      content: 'CIC/CGSIC references were not added.',
+      display: 'CIC/CGSIC references were not added.',
+      createdAt: nowIso()
+    });
+    touchConversation(conversation);
+    renderAll();
+    return;
+  }
+
+  if (!advisoryMessage.advisoryId) {
+    toast('This advisory cannot be linked to a precedent search.', 'error');
+    return;
+  }
+
+  advisoryMessage.precedentDecision = 'accepted';
+  appendUserChoice(conversation, displayText || 'Yes, add CIC/CGSIC references');
+
+  const pendingMessage = {
+    id: newId(),
+    role: 'assistant',
+    content: '',
+    pending: true,
+    createdAt: nowIso()
+  };
+  conversation.messages.push(pendingMessage);
+  state.loading = true;
+  disableQueryBar('Searching CIC/CGSIC decisions...');
+  touchConversation(conversation);
+  renderAll();
+
+  try {
+    const { ok, data } = await api.pioPrecedents(advisoryMessage.advisoryId, 5);
+    const pendingIndex = conversation.messages.findIndex(message => message.id === pendingMessage.id);
+
+    if (ok && data.success) {
+      advisoryMessage.precedentDecision = 'completed';
+      advisoryMessage.precedentSearchCompleted = true;
+      conversation.messages[pendingIndex] = {
+        id: pendingMessage.id,
+        role: 'assistant',
+        content: data.answer || '',
+        display: data.answer || '',
+        results: data.results || [],
+        timing: data.execution_time || '',
+        isPrecedentFollowup: true,
+        sourceAdvisoryId: advisoryMessage.advisoryId,
+        createdAt: nowIso()
+      };
+      if (Array.isArray(data.warnings) && data.warnings.length) {
+        toast(data.warnings.join(' | '), 'info', 5000);
+      }
+      ui.queryTiming.textContent = data.execution_time || '';
+    } else {
+      advisoryMessage.precedentDecision = 'pending';
+      conversation.messages[pendingIndex] = {
+        id: pendingMessage.id,
+        role: 'assistant',
+        content: data.error || 'CIC/CGSIC reference search failed.',
+        display: `Unable to add CIC/CGSIC references: ${data.error || 'Request failed.'}`,
+        createdAt: nowIso()
+      };
+      toast(data.error || 'CIC/CGSIC reference search failed.', 'error', 5000);
+    }
+  } catch (error) {
+    const pendingIndex = conversation.messages.findIndex(message => message.id === pendingMessage.id);
+    advisoryMessage.precedentDecision = 'pending';
+    conversation.messages[pendingIndex] = {
+      id: pendingMessage.id,
+      role: 'assistant',
+      content: 'Network error while retrieving CIC/CGSIC references.',
+      display: 'Network error while retrieving CIC/CGSIC references.',
+      createdAt: nowIso()
+    };
+    toast('Network error while retrieving CIC/CGSIC references.', 'error');
+  } finally {
+    state.loading = false;
+    enableQueryBar();
+    touchConversation(conversation);
+    renderAll();
+    updateFooterTime();
+  }
 }
 
 function renderAll() {
@@ -589,6 +799,28 @@ async function sendQuery() {
   if (!text || state.loading) return;
 
   const conversation = activeConversation();
+  const pendingOffer = getPendingPrecedentOffer(conversation);
+  if (pendingOffer && isPrecedentYes(text)) {
+    ui.queryInput.value = '';
+    autoResize();
+    await handlePrecedentChoice(
+      pendingOffer.id,
+      'yes',
+      text
+    );
+    return;
+  }
+  if (pendingOffer && isPrecedentNo(text)) {
+    ui.queryInput.value = '';
+    autoResize();
+    await handlePrecedentChoice(
+      pendingOffer.id,
+      'no',
+      text
+    );
+    return;
+  }
+
   const userMessage = {
     id: newId(),
     role: 'user',
@@ -633,6 +865,16 @@ async function sendQuery() {
         display: data.answer || '',
         results: data.results || [],
         pioDetails: buildPioDetails(data),
+        advisoryId: data.advisory_id || null,
+        precedentSearchAvailable: Boolean(
+          data.precedent_search_available && data.advisory_id
+        ),
+        precedentDecision: (
+          data.precedent_search_available && data.advisory_id
+            ? 'pending'
+            : null
+        ),
+        precedentSearchCompleted: Boolean(data.precedent_search_completed),
         timing: data.execution_time || '',
         createdAt: nowIso()
       };
