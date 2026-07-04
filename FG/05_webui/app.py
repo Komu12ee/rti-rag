@@ -450,45 +450,29 @@ def _retrieve_context_for_unified(
 
 
 def _retrieve_pio_directory_for_unified(
-    query: str,
-    decision,
-    criteria,
-    limit: int,
+    query_text: str,
+    num_context: int = 5,
+    filters: dict | None = None,
 ):
     """
-    Reuse rag_pipeline's single BGE-M3 model and single Qdrant client.
-
-    This is important when QDRANT_MODE=local: creating another QdrantClient
-    against the same embedded storage can cause an "already accessed" lock.
+    Search only pio_directory_v1 after PostgreSQL returns zero rows.
+    It reuses the existing rag_pipeline BGE-M3 model and Qdrant client.
     """
     rag_module = _load_rag_module()
+
     if rag_module is None:
         raise RuntimeError(
             _rag_import_error
-            or "RAG module is unavailable for PIO directory fallback."
+            or "RAG pipeline is unavailable for PIO directory retrieval."
         )
 
-    ensure_embedding = getattr(rag_module, "ensure_embedding_model_loaded", None)
-    if callable(ensure_embedding):
-        ensure_embedding()
-    else:
-        # Compatibility with an older rag_pipeline.py before the lightweight
-        # embedding-only initializer was added.
-        rag_module.ensure_models_loaded()
+    from services.pio_qdrant_runtime import retrieve_pio_directory_context
 
-    qdrant_client = rag_module.ensure_qdrant_client()
-    embedding_model = getattr(rag_module, "model", None)
-
-    if embedding_model is None:
-        raise RuntimeError("BGE-M3 embedding model was not initialized.")
-
-    return retrieve_pio_directory_references(
-        query=query,
-        decision=decision,
-        criteria=criteria,
-        client=qdrant_client,
-        embedding_model=embedding_model,
-        limit=limit,
+    return retrieve_pio_directory_context(
+        query_text=query_text,
+        num_context=num_context,
+        filters=filters,
+        rag_module=rag_module,
     )
 
 
