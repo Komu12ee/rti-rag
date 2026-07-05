@@ -1,5 +1,5 @@
 from __future__ import annotations
-from typing import Any
+from typing import Any, Iterator
 import os
 from pathlib import Path
 import json
@@ -215,6 +215,129 @@ def _generate_with_sarvam(
     return answer
 
 
+def _sarvam_stream_delta(data: dict[str, Any]) -> str:
+    choices = data.get("choices") or []
+    if not choices:
+        return ""
+
+    choice = choices[0] or {}
+    delta = choice.get("delta") or {}
+    if isinstance(delta, dict):
+        content = delta.get("content")
+        if content:
+            return str(content)
+
+    message = choice.get("message") or {}
+    if isinstance(message, dict):
+        content = message.get("content")
+        if content:
+            return str(content)
+
+    content = choice.get("content")
+    return str(content or "")
+
+
+def _stream_with_sarvam(
+    prompt: str,
+    temperature: float,
+    max_tokens: int,
+    timeout_seconds: int,
+    reasoning_effort: str | None,
+) -> Iterator[str]:
+    """Stream visible text from Sarvam Chat Completions SSE."""
+    api_key = os.getenv("SARVAM_API_KEY", "").strip()
+    model = os.getenv("SARVAM_MODEL", "sarvam-105b").strip()
+    url = os.getenv(
+        "SARVAM_API_URL",
+        "https://api.sarvam.ai/v1/chat/completions",
+    ).strip()
+
+    if not api_key:
+        raise LLMProviderError("SARVAM_API_KEY is missing in .env.")
+
+    if reasoning_effort not in {None, "low", "medium", "high"}:
+        raise LLMProviderError(
+            "Invalid reasoning_effort. Use low, medium, high, or None."
+        )
+
+    payload: dict[str, Any] = {
+        "model": model,
+        "messages": [
+            {
+                "role": "user",
+                "content": prompt,
+            }
+        ],
+        "temperature": temperature,
+        "max_tokens": max_tokens,
+        "stream": True,
+    }
+
+    if reasoning_effort is not None:
+        payload["reasoning_effort"] = reasoning_effort
+
+    headers = {
+        "api-subscription-key": api_key,
+        "Content-Type": "application/json",
+    }
+
+    try:
+        response = requests.post(
+            url,
+            headers=headers,
+            json=payload,
+            timeout=timeout_seconds,
+            stream=True,
+        )
+    except requests.RequestException as error:
+        raise LLMProviderError(
+            f"Sarvam streaming request failed: {error}"
+        ) from error
+
+    with response:
+        if response.status_code != 200:
+            raise LLMProviderError(
+                f"Sarvam returned HTTP {response.status_code}: "
+                f"{response.text[:1000]}"
+            )
+
+        saw_text = False
+        for raw_line in response.iter_lines(decode_unicode=True):
+            if not raw_line:
+                continue
+
+            line = str(raw_line).strip()
+            if not line or line.startswith(":"):
+                continue
+            if not line.startswith("data:"):
+                continue
+
+            payload_text = line[5:].strip()
+            if payload_text == "[DONE]":
+                break
+
+            try:
+                event_data = json.loads(payload_text)
+            except ValueError as error:
+                raise LLMProviderError(
+                    f"Sarvam returned invalid stream JSON: {payload_text[:500]}"
+                ) from error
+
+            if event_data.get("error"):
+                raise LLMProviderError(
+                    "Sarvam stream returned an error: "
+                    f"{json.dumps(event_data['error'], ensure_ascii=False)}"
+                )
+
+            delta = _sarvam_stream_delta(event_data)
+            if delta:
+                saw_text = True
+                yield delta
+
+        if not saw_text:
+            raise LLMProviderError("Sarvam stream returned no visible text.")
+
+
 def generate_text(
     prompt: str,
     temperature: float = 0.0,
@@ -269,4 +392,46 @@ def generate_text(
         max_tokens=max_tokens,
         timeout_seconds=ollama_timeout,
         json_mode=json_mode,
+    )
+
+
+def stream_text(
+    prompt: str,
+    temperature: float = 0.0,
+    max_tokens: int = 350,
+    timeout_seconds: int = 180,
+    reasoning_effort: str | None = None,
+) -> Iterator[str]:
+    """
+    Stream only visible user-facing text.
+
+    Structured JSON calls intentionally remain on generate_text(), because a
+    streamed partial JSON object is not useful to the validators.
+    """
+    mode = get_llm_mode()
+
+    if mode == "sarvam":
+        sarvam_timeout = int(
+            os.getenv(
+                "SARVAM_TIMEOUT_SECONDS",
+                str(timeout_seconds),
+            )
+        )
+
+        yield from _stream_with_sarvam(
+            prompt=prompt,
+            temperature=temperature,
+            max_tokens=max_tokens,
+            timeout_seconds=sarvam_timeout,
+            reasoning_effort=reasoning_effort,
+        )
+        return
+
+    yield generate_text(
+        prompt=prompt,
+        temperature=temperature,
+        max_tokens=max_tokens,
+        timeout_seconds=timeout_seconds,
+        json_mode=False,
+        reasoning_effort=reasoning_effort,
     )

@@ -105,6 +105,57 @@ const api = {
     const data = await res.json().catch(() => ({}));
     return { ok: res.ok, status: res.status, data };
   },
+  async streamRequest(path, body, handlers = {}) {
+    const res = await fetch(path, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(body || {})
+    });
+
+    if (!res.body) {
+      const data = await res.json().catch(() => ({}));
+      throw new Error(data.error || `HTTP ${res.status}`);
+    }
+
+    const decoder = new TextDecoder();
+    const reader = res.body.getReader();
+    let buffer = '';
+
+    function dispatchSseFrame(frame) {
+      const lines = frame.split(/\r?\n/);
+      let event = 'message';
+      const dataLines = [];
+
+      lines.forEach(line => {
+        if (line.startsWith('event:')) event = line.slice(6).trim();
+        if (line.startsWith('data:')) dataLines.push(line.slice(5).trim());
+      });
+
+      if (!dataLines.length) return;
+
+      let data = {};
+      try {
+        data = JSON.parse(dataLines.join('\n'));
+      } catch (_) {
+        data = { text: dataLines.join('\n') };
+      }
+
+      if (typeof handlers[event] === 'function') handlers[event](data);
+    }
+
+    while (true) {
+      const { value, done } = await reader.read();
+      if (done) break;
+
+      buffer += decoder.decode(value, { stream: true });
+      const frames = buffer.split(/\r?\n\r?\n/);
+      buffer = frames.pop() || '';
+      frames.forEach(dispatchSseFrame);
+    }
+
+    buffer += decoder.decode();
+    if (buffer.trim()) dispatchSseFrame(buffer);
+  },
   health: () => api.request('GET', '/api/health'),
   init: () => api.request('POST', '/api/init'),
   dbStatus: () => api.request('GET', '/api/db-status'),
@@ -114,11 +165,22 @@ query: (query, numResults, pioMode) =>
     num_results: numResults,
     pio_mode: Boolean(pioMode)
   }),
+  queryStream: (query, numResults, pioMode, handlers) =>
+    api.streamRequest('/api/query/stream', {
+      query,
+      num_results: numResults,
+      pio_mode: Boolean(pioMode)
+    }, handlers),
   pioPrecedents: (advisoryId, numResults = 5) =>
     api.request('POST', '/api/pio/precedents', {
       advisory_id: advisoryId,
       num_results: numResults
     }),
+  pioPrecedentsStream: (advisoryId, numResults = 5, handlers) =>
+    api.streamRequest('/api/pio/precedents/stream', {
+      advisory_id: advisoryId,
+      num_results: numResults
+    }, handlers),
 
   documentStructure: actualPdf => api.request('POST', '/api/document-structure', { actual_pdf: actualPdf }),
   async fetchPdf(path) {
@@ -271,9 +333,28 @@ function renderMessages() {
   scrollChatToBottom();
 }
 
+function updateStreamingMessage(messageId, text) {
+  const node = ui.chatInner.querySelector(`[data-message-id="${messageId}"]`);
+  if (!node) {
+    renderMessages();
+    return;
+  }
+
+  const bubble = node.querySelector('.bubble');
+  if (!bubble) return;
+
+  bubble.innerHTML = '';
+  const textEl = document.createElement('div');
+  textEl.className = 'text streaming';
+  textEl.innerHTML = formatMessageText(text);
+  bubble.appendChild(textEl);
+  scrollChatToBottom();
+}
+
 function createMessageElement(message) {
   const wrapper = document.createElement('article');
   wrapper.className = `msg ${message.role === 'user' ? 'user' : 'bot'}${message.pending ? ' pending' : ''}`;
+  wrapper.dataset.messageId = message.id;
 
   const who = document.createElement('div');
   who.className = 'who';
@@ -289,31 +370,32 @@ function createMessageElement(message) {
 
   const bubble = document.createElement('div');
   bubble.className = 'bubble';
+  const visibleText = message.display || message.content || '';
 
-  if (message.pending) {
+  if (message.pending && !visibleText) {
     bubble.innerHTML = '<div class="dots"><span></span><span></span><span></span></div>';
   } else {
     const text = document.createElement('div');
     text.className = 'text';
-    text.innerHTML = formatMessageText(message.display || message.content || '');
+    text.innerHTML = formatMessageText(visibleText);
     bubble.appendChild(text);
 
-    if (message.role === 'assistant' && message.pioDetails) {
+    if (!message.pending && message.role === 'assistant' && message.pioDetails) {
       bubble.appendChild(createPioAnalysisDetails(message.pioDetails));
     }
 
-    if (message.role === 'assistant' && message.precedentSearchAvailable) {
+    if (!message.pending && message.role === 'assistant' && message.precedentSearchAvailable) {
       bubble.appendChild(createPrecedentActionControls(message));
     }
 
-    if (message.role === 'assistant' && message.timing) {
+    if (!message.pending && message.role === 'assistant' && message.timing) {
       const meta = document.createElement('div');
       meta.className = 'message-meta';
       meta.textContent = `Answered in ${message.timing}`;
       bubble.appendChild(meta);
     }
 
-    if (message.role === 'assistant' && message.results?.length) {
+    if (!message.pending && message.role === 'assistant' && message.results?.length) {
       const btn = document.createElement('button');
       btn.className = 'sources-btn';
       btn.type = 'button';
@@ -563,49 +645,64 @@ async function handlePrecedentChoice(advisoryMessageId, choice, displayText) {
   renderAll();
 
   try {
-    const { ok, data } = await api.pioPrecedents(advisoryMessage.advisoryId, 5);
-    const pendingIndex = conversation.messages.findIndex(message => message.id === pendingMessage.id);
+    let finalData = null;
+    let streamError = null;
 
-    if (ok && data.success) {
-      advisoryMessage.precedentDecision = 'completed';
-      advisoryMessage.precedentSearchCompleted = true;
-      conversation.messages[pendingIndex] = {
-        id: pendingMessage.id,
-        role: 'assistant',
-        content: data.answer || '',
-        display: data.answer || '',
-        results: data.results || [],
-        timing: data.execution_time || '',
-        isPrecedentFollowup: true,
-        sourceAdvisoryId: advisoryMessage.advisoryId,
-        createdAt: nowIso()
-      };
-      if (Array.isArray(data.warnings) && data.warnings.length) {
-        toast(data.warnings.join(' | '), 'info', 5000);
+    await api.pioPrecedentsStream(advisoryMessage.advisoryId, 5, {
+      status(data) {
+        disableQueryBar(data.message || 'Searching CIC/CGSIC decisions...');
+      },
+      token(data) {
+        const pendingIndex = conversation.messages.findIndex(message => message.id === pendingMessage.id);
+        if (pendingIndex < 0) return;
+        const nextText = (conversation.messages[pendingIndex].content || '') + (data.text || '');
+        conversation.messages[pendingIndex] = {
+          ...conversation.messages[pendingIndex],
+          content: nextText,
+          display: nextText
+        };
+        updateStreamingMessage(pendingMessage.id, nextText);
+      },
+      done(data) {
+        finalData = data;
+      },
+      error(data) {
+        streamError = data.error || 'CIC/CGSIC reference search failed.';
       }
-      ui.queryTiming.textContent = data.execution_time || '';
-    } else {
-      advisoryMessage.precedentDecision = 'pending';
-      conversation.messages[pendingIndex] = {
-        id: pendingMessage.id,
-        role: 'assistant',
-        content: data.error || 'CIC/CGSIC reference search failed.',
-        display: `Unable to add CIC/CGSIC references: ${data.error || 'Request failed.'}`,
-        createdAt: nowIso()
-      };
-      toast(data.error || 'CIC/CGSIC reference search failed.', 'error', 5000);
+    });
+
+    if (streamError) throw new Error(streamError);
+
+    const data = finalData || {};
+    const pendingIndex = conversation.messages.findIndex(message => message.id === pendingMessage.id);
+    advisoryMessage.precedentDecision = 'completed';
+    advisoryMessage.precedentSearchCompleted = true;
+    conversation.messages[pendingIndex] = {
+      id: pendingMessage.id,
+      role: 'assistant',
+      content: data.answer || conversation.messages[pendingIndex]?.content || '',
+      display: data.answer || conversation.messages[pendingIndex]?.display || '',
+      results: data.results || [],
+      timing: data.execution_time || '',
+      isPrecedentFollowup: true,
+      sourceAdvisoryId: advisoryMessage.advisoryId,
+      createdAt: nowIso()
+    };
+    if (Array.isArray(data.warnings) && data.warnings.length) {
+      toast(data.warnings.join(' | '), 'info', 5000);
     }
+    ui.queryTiming.textContent = data.execution_time || '';
   } catch (error) {
     const pendingIndex = conversation.messages.findIndex(message => message.id === pendingMessage.id);
     advisoryMessage.precedentDecision = 'pending';
     conversation.messages[pendingIndex] = {
       id: pendingMessage.id,
       role: 'assistant',
-      content: 'Network error while retrieving CIC/CGSIC references.',
-      display: 'Network error while retrieving CIC/CGSIC references.',
+      content: error.message || 'Network error while retrieving CIC/CGSIC references.',
+      display: `Unable to add CIC/CGSIC references: ${error.message || 'Network error.'}`,
       createdAt: nowIso()
     };
-    toast('Network error while retrieving CIC/CGSIC references.', 'error');
+    toast(error.message || 'Network error while retrieving CIC/CGSIC references.', 'error');
   } finally {
     state.loading = false;
     enableQueryBar();
@@ -849,20 +946,57 @@ async function sendQuery() {
 
   try {
     const scopedQuery = buildScopedQuery(text);
-    const { ok, data } = await api.query(
+    let finalData = null;
+    let streamError = null;
+    let streamedAnswer = '';
+
+    await api.queryStream(
       scopedQuery,
       5,
-      state.pioMode
+      state.pioMode,
+      {
+        status(data) {
+          if (data.message) disableQueryBar(data.message);
+        },
+        token(data) {
+          const chunk = String(data.text || '');
+          if (!chunk) return;
+
+          streamedAnswer += chunk;
+          const index = conversation.messages.findIndex(m => m.id === pendingMessage.id);
+          if (index >= 0) {
+            conversation.messages[index] = {
+              ...conversation.messages[index],
+              content: streamedAnswer,
+              display: streamedAnswer,
+              pending: true
+            };
+            updateStreamingMessage(pendingMessage.id, streamedAnswer);
+          }
+        },
+        done(data) {
+          finalData = data;
+        },
+        error(data) {
+          streamError = data.error || 'Query failed';
+        }
+      }
     );
 
     const index = conversation.messages.findIndex(m => m.id === pendingMessage.id);
+    if (index < 0) return;
 
-    if (ok && data.success) {
+    if (streamError) throw new Error(streamError);
+
+    const data = finalData || {};
+
+    if (data.success) {
+      const answer = data.answer || streamedAnswer || '';
       conversation.messages[index] = {
         id: pendingMessage.id,
         role: 'assistant',
-        content: data.answer || '',
-        display: data.answer || '',
+        content: answer,
+        display: answer,
         results: data.results || [],
         pioDetails: buildPioDetails(data),
         advisoryId: data.advisory_id || null,
@@ -880,25 +1014,31 @@ async function sendQuery() {
       };
       ui.queryTiming.textContent = data.execution_time || '';
     } else {
+      const errorMessage = data.error || 'Query failed';
       conversation.messages[index] = {
         id: pendingMessage.id,
         role: 'assistant',
-        content: data.error || 'Query failed',
-        display: `Unable to answer: ${data.error || 'Query failed'}`,
+        content: errorMessage,
+        display: `Unable to answer: ${errorMessage}`,
         createdAt: nowIso()
       };
-      toast(data.error || 'Query failed', 'error');
+      toast(errorMessage, 'error');
     }
   } catch (err) {
     const index = conversation.messages.findIndex(m => m.id === pendingMessage.id);
-    conversation.messages[index] = {
-      id: pendingMessage.id,
-      role: 'assistant',
-      content: 'Network error - is the backend running?',
-      display: 'Network error - is the backend running?',
-      createdAt: nowIso()
-    };
-    toast('Network error', 'error');
+    const errorMessage = err && err.message
+      ? err.message
+      : 'Network error - is the backend running?';
+    if (index >= 0) {
+      conversation.messages[index] = {
+        id: pendingMessage.id,
+        role: 'assistant',
+        content: errorMessage,
+        display: `Unable to answer: ${errorMessage}`,
+        createdAt: nowIso()
+      };
+    }
+    toast(errorMessage, 'error');
   } finally {
     state.loading = false;
     enableQueryBar();

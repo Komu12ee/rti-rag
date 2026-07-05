@@ -4,9 +4,9 @@ import json
 import os
 import re
 from pathlib import Path
-from typing import Any, Callable
+from typing import Any, Callable, Iterator
 
-from services.llm_provider import LLMProviderError, generate_text
+from services.llm_provider import LLMProviderError, generate_text, stream_text
 
 
 # Expected layout:
@@ -1244,14 +1244,32 @@ Do not worry about a fixed heading or fixed first line.
         f"{last_error}"
     )
 
-def analyze_pio_application(rti_text: str) -> dict[str, Any]:
-    """
-    Run the three-call PIO advisory workflow.
 
-    Call 1: RTI text -> structured extraction JSON
-    Call 2: Extraction JSON + complete RTI Act JSON -> legal analysis JSON
-    Call 3: Extraction JSON + validated analysis + Act JSON -> readable advisory
-    """
+def _stream_advisory_report(response_prompt: str) -> Iterator[str]:
+    """Stream Call 3 visible advisory text and validate the full report."""
+    chunks: list[str] = []
+
+    try:
+        for chunk in stream_text(
+            prompt=response_prompt,
+            temperature=0.1,
+            max_tokens=int(os.getenv("PIO_RESPONSE_MAX_TOKENS", "4090")),
+            timeout_seconds=int(os.getenv("PIO_LLM_TIMEOUT_SECONDS", "240")),
+            reasoning_effort="low",
+        ):
+            chunks.append(chunk)
+            yield chunk
+
+    except LLMProviderError as error:
+        raise PIOPipelineError(
+            f"Sarvam Call 3 (PIO advisory report) failed: {error}"
+        ) from error
+
+    generated = "".join(chunks)
+    _validate_advisory_report(generated)
+
+
+def _prepare_pio_advisory_context(rti_text: str) -> dict[str, Any]:
     rti_text = str(rti_text or "").strip()
     if not rti_text:
         raise PIOPipelineError("RTI application text cannot be empty.")
@@ -1277,14 +1295,14 @@ def analyze_pio_application(rti_text: str) -> dict[str, Any]:
     )
 
     legal_analysis = _generate_json_with_one_retry(
-            stage_name="Sarvam Call 2 (legal analysis)",
-            prompt=_build_analysis_prompt(rti_extraction, full_rti_act_json),
-            validate=lambda data: _validate_legal_analysis(data, valid_provisions),
-            max_tokens=int(os.getenv("PIO_ANALYSIS_MAX_TOKENS", "3800")),
-            reasoning_effort="medium",
-            json_schema=LEGAL_ANALYSIS_SCHEMA,
-            json_schema_name="rti_legal_analysis",
-        )
+        stage_name="Sarvam Call 2 (legal analysis)",
+        prompt=_build_analysis_prompt(rti_extraction, full_rti_act_json),
+        validate=lambda data: _validate_legal_analysis(data, valid_provisions),
+        max_tokens=int(os.getenv("PIO_ANALYSIS_MAX_TOKENS", "3800")),
+        reasoning_effort="medium",
+        json_schema=LEGAL_ANALYSIS_SCHEMA,
+        json_schema_name="rti_legal_analysis",
+    )
 
     cited_act_packet = _build_cited_act_packet(
         act_data=rti_act_data,
@@ -1298,15 +1316,19 @@ def analyze_pio_application(rti_text: str) -> dict[str, Any]:
         cited_act_packet=cited_act_packet,
     )
 
-    generated_report = _generate_advisory_report_with_one_retry(
-        response_prompt=response_prompt,
-    )
-
-    final_report = _normalise_advisory_report(generated_report)
-
     return {
         "rti_extraction": rti_extraction,
         "legal_analysis": legal_analysis,
+        "response_prompt": response_prompt,
+        "selected_provision_ids": cited_act_packet["selected_provision_ids"],
+        "valid_provision_count": len(valid_provisions),
+        "rti_act_json_path": str(act_path),
+    }
+
+def _build_pio_result(context: dict[str, Any], final_report: str) -> dict[str, Any]:
+    return {
+        "rti_extraction": context["rti_extraction"],
+        "legal_analysis": context["legal_analysis"],
         "pio_advisory_report": final_report,
         "validation": {
             "extraction_json_valid": True,
@@ -1314,8 +1336,37 @@ def analyze_pio_application(rti_text: str) -> dict[str, Any]:
             "legal_citations_valid": True,
             "report_text_valid": True,
             "call_3_used_cited_act_packet": True,
-            "call_3_cited_provisions": cited_act_packet["selected_provision_ids"],
-            "valid_provision_count": len(valid_provisions),
-            "rti_act_json_path": str(act_path),
+            "call_3_cited_provisions": context["selected_provision_ids"],
+            "valid_provision_count": context["valid_provision_count"],
+            "rti_act_json_path": context["rti_act_json_path"],
         },
     }
+
+
+def analyze_pio_application(rti_text: str) -> dict[str, Any]:
+    """
+    Run the three-call PIO advisory workflow.
+
+    Call 1: RTI text -> structured extraction JSON
+    Call 2: Extraction JSON + complete RTI Act JSON -> legal analysis JSON
+    Call 3: Extraction JSON + validated analysis + Act JSON -> readable advisory
+    """
+    context = _prepare_pio_advisory_context(rti_text)
+    generated_report = _generate_advisory_report_with_one_retry(
+        response_prompt=context["response_prompt"],
+    )
+    final_report = _normalise_advisory_report(generated_report)
+    return _build_pio_result(context, final_report)
+
+
+def analyze_pio_application_stream(rti_text: str) -> Iterator[tuple[str, Any]]:
+    """Stream Call 3 advisory text while returning the normal final result."""
+    context = _prepare_pio_advisory_context(rti_text)
+    chunks: list[str] = []
+
+    for chunk in _stream_advisory_report(context["response_prompt"]):
+        chunks.append(chunk)
+        yield "token", chunk
+
+    final_report = _normalise_advisory_report("".join(chunks))
+    yield "result", _build_pio_result(context, final_report)

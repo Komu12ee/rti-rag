@@ -5,9 +5,9 @@ from __future__ import annotations
 import json
 import os
 import re
-from typing import Any
+from typing import Any, Iterator
 
-from services.llm_provider import LLMProviderError, generate_text
+from services.llm_provider import LLMProviderError, generate_text, stream_text
 
 
 PRECEDENT_COLLECTIONS = (
@@ -235,7 +235,7 @@ def _reference_context(results: list[dict[str, Any]]) -> str:
     return "\n\n".join(parts)
 
 
-def _generate_precedent_answer(
+def _build_precedent_prompt(
     *,
     rti_extraction: dict[str, Any],
     legal_analysis: dict[str, Any],
@@ -250,7 +250,7 @@ def _generate_precedent_answer(
     )
     issue_summary = _extract_issue_summary(rti_extraction, legal_analysis)
 
-    prompt = f"""
+    return f"""
 You are preparing a concise PIO advisory addendum containing only relevant
 CIC and CGSIC decision references.
 
@@ -287,6 +287,19 @@ REFERENCE MATERIAL:
 FINAL RESPONSE:
 """.strip()
 
+
+def _generate_precedent_answer(
+    *,
+    rti_extraction: dict[str, Any],
+    legal_analysis: dict[str, Any],
+    results: list[dict[str, Any]],
+) -> str:
+    prompt = _build_precedent_prompt(
+        rti_extraction=rti_extraction,
+        legal_analysis=legal_analysis,
+        results=results,
+    )
+
     try:
         answer = generate_text(
             prompt=prompt,
@@ -306,14 +319,46 @@ FINAL RESPONSE:
     return answer
 
 
-def retrieve_pio_precedent_references(
+def _stream_precedent_answer(
+    *,
+    rti_extraction: dict[str, Any],
+    legal_analysis: dict[str, Any],
+    results: list[dict[str, Any]],
+) -> Iterator[str]:
+    prompt = _build_precedent_prompt(
+        rti_extraction=rti_extraction,
+        legal_analysis=legal_analysis,
+        results=results,
+    )
+    chunks: list[str] = []
+
+    try:
+        for chunk in stream_text(
+            prompt=prompt,
+            temperature=0.0,
+            max_tokens=int(os.getenv("PIO_PRECEDENT_MAX_TOKENS", "2200")),
+            timeout_seconds=int(os.getenv("PIO_PRECEDENT_LLM_TIMEOUT_SECONDS", "180")),
+            reasoning_effort="low",
+        ):
+            chunks.append(chunk)
+            yield chunk
+    except LLMProviderError as error:
+        raise PIOPrecedentError(f"Precedent reference generation failed: {error}") from error
+
+    answer = str("".join(chunks) or "").strip()
+    if not answer:
+        raise PIOPrecedentError("Precedent reference generation returned an empty answer.")
+    if answer.startswith(("{", "[")):
+        raise PIOPrecedentError("Precedent reference generation returned structured data instead of a readable answer.")
+
+
+def _retrieve_precedent_context(
     *,
     rti_extraction: dict[str, Any],
     legal_analysis: dict[str, Any],
     rag_module: Any,
     num_results: int = 5,
 ) -> dict[str, Any]:
-    """Retrieve and summarize only CIC + CGSIC precedent collections."""
     if not isinstance(rti_extraction, dict) or not isinstance(legal_analysis, dict):
         raise PIOPrecedentError("Saved PIO advisory context is incomplete.")
 
@@ -348,11 +393,6 @@ def retrieve_pio_precedent_references(
         _to_frontend_result(item, rank=index)
         for index, item in enumerate(balanced, start=1)
     ]
-    answer = _generate_precedent_answer(
-        rti_extraction=rti_extraction,
-        legal_analysis=legal_analysis,
-        results=frontend_results,
-    )
 
     warnings: list[str] = []
     if missing_collections:
@@ -361,10 +401,75 @@ def retrieve_pio_precedent_references(
         )
 
     return {
-        "answer": answer,
         "results": frontend_results,
-        "result_count": len(frontend_results),
         "search_query": search_query,
         "available_collections": available_collections,
         "warnings": warnings,
+    }
+
+
+def retrieve_pio_precedent_references(
+    *,
+    rti_extraction: dict[str, Any],
+    legal_analysis: dict[str, Any],
+    rag_module: Any,
+    num_results: int = 5,
+) -> dict[str, Any]:
+    """Retrieve and summarize only CIC + CGSIC precedent collections."""
+    context = _retrieve_precedent_context(
+        rti_extraction=rti_extraction,
+        legal_analysis=legal_analysis,
+        rag_module=rag_module,
+        num_results=num_results,
+    )
+    frontend_results = context["results"]
+    answer = _generate_precedent_answer(
+        rti_extraction=rti_extraction,
+        legal_analysis=legal_analysis,
+        results=frontend_results,
+    )
+
+    return {
+        "answer": answer,
+        "results": frontend_results,
+        "result_count": len(frontend_results),
+        "search_query": context["search_query"],
+        "available_collections": context["available_collections"],
+        "warnings": context["warnings"],
+    }
+
+
+def retrieve_pio_precedent_references_stream(
+    *,
+    rti_extraction: dict[str, Any],
+    legal_analysis: dict[str, Any],
+    rag_module: Any,
+    num_results: int = 5,
+) -> Iterator[tuple[str, Any]]:
+    """Retrieve CIC + CGSIC references, then stream the final addendum."""
+    context = _retrieve_precedent_context(
+        rti_extraction=rti_extraction,
+        legal_analysis=legal_analysis,
+        rag_module=rag_module,
+        num_results=num_results,
+    )
+    frontend_results = context["results"]
+    chunks: list[str] = []
+
+    for chunk in _stream_precedent_answer(
+        rti_extraction=rti_extraction,
+        legal_analysis=legal_analysis,
+        results=frontend_results,
+    ):
+        chunks.append(chunk)
+        yield "token", chunk
+
+    answer = str("".join(chunks) or "").strip()
+    yield "result", {
+        "answer": answer,
+        "results": frontend_results,
+        "result_count": len(frontend_results),
+        "search_query": context["search_query"],
+        "available_collections": context["available_collections"],
+        "warnings": context["warnings"],
     }

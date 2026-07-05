@@ -6,11 +6,16 @@ from dotenv import load_dotenv
 from services.hybrid_retriever import retrieve_from_all_sources
 from services.query_scope import extract_current_user_question
 from services.unified_answer_service import generate_unified_answer
-from services.pio_pipeline import PIOPipelineError, analyze_pio_application
+from services.pio_pipeline import (
+    PIOPipelineError,
+    analyze_pio_application,
+    analyze_pio_application_stream,
+)
 from services.pio_precedent_service import (
     PRECEDENT_COLLECTIONS,
     PIOPrecedentError,
     retrieve_pio_precedent_references,
+    retrieve_pio_precedent_references_stream,
 )
 from services.pio_qdrant_retriever import retrieve_pio_directory_references
 import os
@@ -19,7 +24,7 @@ import importlib.util
 import json
 import re
 import time
-from flask import Flask, request, jsonify, send_file
+from flask import Flask, Response, request, jsonify, send_file, stream_with_context
 from datetime import datetime
 from pathlib import Path
 from threading import Lock
@@ -348,6 +353,22 @@ def _precedent_collection_status() -> tuple[list[str], list[str]]:
     except Exception as error:
         print(f"[PIO Precedents] Collection availability check failed: {error}")
         return [], list(PRECEDENT_COLLECTIONS)
+
+
+def _sse(event: str, data: dict) -> str:
+    payload = json.dumps(data, ensure_ascii=False)
+    return f"event: {event}\ndata: {payload}\n\n"
+
+
+def _sse_response(generator):
+    return Response(
+        stream_with_context(generator()),
+        mimetype="text/event-stream",
+        headers={
+            "Cache-Control": "no-cache",
+            "X-Accel-Buffering": "no",
+        },
+    )
 
 
 def safe_pdf_stem(actual_pdf: str) -> str:
@@ -851,6 +872,194 @@ def _pio_application_required_answer(query_text: str) -> str:
         "Prepare a PIO advisory response for this RTI."
     )
 
+
+@app.route('/api/query/stream', methods=['POST'])
+def query_stream():
+    """Streaming variant of /api/query using Server-Sent Events."""
+    query_start_time = time.time()
+    data = request.get_json() or {}
+
+    raw_query_text = str(data.get("query", ""))
+    query_text = extract_current_user_question(raw_query_text)
+    pio_mode = _as_bool(data.get("pio_mode", False))
+    try:
+        requested_limit = int(data.get("num_results", num_results))
+    except (TypeError, ValueError):
+        requested_limit = num_results
+    requested_limit = max(1, min(10, requested_limit))
+
+    def generate():
+        answer_chunks: list[str] = []
+
+        try:
+            if not query_text:
+                yield _sse("error", {"error": "Query cannot be empty", "query": ""})
+                return
+
+            if pio_mode and _is_pio_advisory_request(query_text):
+                rti_application_text = _extract_rti_application_text(query_text)
+
+                if not _looks_like_rti_application_text(rti_application_text):
+                    answer = _pio_application_required_answer(query_text)
+                    yield _sse("token", {"text": answer})
+                    yield _sse(
+                        "done",
+                        {
+                            "success": True,
+                            "query": query_text,
+                            "answer": answer,
+                            "results": [],
+                            "result_count": 0,
+                            "execution_time": f"{time.time() - query_start_time:.2f}s",
+                            "route": "PIO_ADVISORY",
+                            "pio_mode": True,
+                            "pio_pipeline_used": True,
+                            "needs_clarification": True,
+                        },
+                    )
+                    return
+
+                yield _sse(
+                    "status",
+                    {"message": "Analysing RTI application and legal provisions..."},
+                )
+
+                pio_result = None
+                for event_type, payload in analyze_pio_application_stream(
+                    rti_text=rti_application_text
+                ):
+                    if event_type == "token":
+                        answer_chunks.append(str(payload))
+                        yield _sse("token", {"text": str(payload)})
+                    elif event_type == "result":
+                        pio_result = payload
+
+                if pio_result is None:
+                    raise PIOPipelineError("PIO advisory stream finished without a result.")
+
+                elapsed = time.time() - query_start_time
+                advisory_id = _store_pio_advisory(pio_result)
+                available_precedent_collections, missing_precedent_collections = (
+                    _precedent_collection_status()
+                )
+
+                yield _sse(
+                    "done",
+                    {
+                        "success": True,
+                        "query": query_text,
+                        "answer": pio_result["pio_advisory_report"],
+                        "results": [],
+                        "result_count": 0,
+                        "execution_time": f"{elapsed:.2f}s",
+                        "route": "PIO_ADVISORY",
+                        "pio_mode": True,
+                        "pio_pipeline_used": True,
+                        "needs_clarification": False,
+                        "validation": pio_result["validation"],
+                        "rti_extraction": pio_result["rti_extraction"],
+                        "legal_analysis": pio_result["legal_analysis"],
+                        "advisory_id": advisory_id,
+                        "precedent_search_available": bool(available_precedent_collections),
+                        "precedent_collections_available": available_precedent_collections,
+                        "precedent_collections_missing": missing_precedent_collections,
+                        "precedent_search_completed": False,
+                        "next_action": "precedent_confirmation",
+                    },
+                )
+                return
+
+            yield _sse("status", {"message": "Retrieving relevant context..."})
+            retrieval = retrieve_from_all_sources(
+                query=query_text,
+                retrieve_context_fn=_retrieve_context_for_unified,
+                retrieve_pio_directory_fn=_retrieve_pio_directory_for_unified,
+                limit=requested_limit,
+            )
+            formatted_results = _format_unified_evidence_for_frontend(
+                retrieval.combined_evidence
+            )
+
+            route_value = retrieval.resolution.final.route.value
+            qdrant_result = retrieval.qdrant_result
+            rag_module = _load_rag_module()
+            generate_answer_stream_fn = (
+                getattr(rag_module, "generate_answer_stream", None)
+                if rag_module is not None
+                else None
+            )
+
+            can_stream_legal = (
+                route_value in {"QDRANT", "UNCLEAR"}
+                and qdrant_result is not None
+                and bool(qdrant_result.context_results)
+                and callable(generate_answer_stream_fn)
+            )
+
+            if can_stream_legal:
+                yield _sse("status", {"message": "Generating answer..."})
+                legal_query = qdrant_result.lookup_query or query_text
+                for chunk in generate_answer_stream_fn(
+                    legal_query,
+                    qdrant_result.context_results,
+                ):
+                    text = str(chunk)
+                    answer_chunks.append(text)
+                    yield _sse("token", {"text": text})
+
+                answer = "".join(answer_chunks).strip()
+                clean_answer_fn = getattr(rag_module, "_clean_generated_answer", None)
+                if callable(clean_answer_fn):
+                    answer = clean_answer_fn(answer)
+                used_llm_answer = True
+                needs_clarification = False
+            else:
+                answer_result = generate_unified_answer(
+                    query=query_text,
+                    result=retrieval,
+                    generate_answer_fn=generate_answer,
+                )
+                answer = answer_result.answer
+                used_llm_answer = answer_result.used_llm
+                needs_clarification = answer_result.needs_clarification
+                yield _sse("token", {"text": answer})
+
+            total_time = time.time() - query_start_time
+            response = {
+                "success": True,
+                "query": query_text,
+                "answer": answer,
+                "results": formatted_results,
+                "result_count": len(formatted_results),
+                "execution_time": f"{total_time:.2f}s",
+                "route": route_value,
+                "router_a_route": retrieval.resolution.router_a.route.value,
+                "used_llm_fallback": retrieval.resolution.used_llm_fallback,
+                "used_llm_answer": used_llm_answer,
+                "needs_clarification": needs_clarification,
+            }
+
+            if retrieval.errors:
+                response["warnings"] = retrieval.errors
+
+            yield _sse("done", response)
+
+        except Exception as error:
+            print(f"[Web UI] Streaming query error: {error}")
+            import traceback
+            traceback.print_exc()
+            yield _sse(
+                "error",
+                {
+                    "success": False,
+                    "error": f"Error processing query: {str(error)}",
+                    "query": query_text,
+                },
+            )
+
+    return _sse_response(generate)
+
+
 @app.route('/api/query', methods=['POST'])
 def query():
     """
@@ -1109,6 +1318,134 @@ def pio_analyze():
             'success': False,
             'error': 'PIO analysis could not be completed.',
         }), 500
+
+@app.route('/api/pio/precedents/stream', methods=['POST'])
+def pio_precedents_stream():
+    """Streaming variant of /api/pio/precedents."""
+    request_started_at = time.time()
+    data = request.get_json(silent=True) or {}
+    advisory_id = str(data.get("advisory_id") or "").strip()
+
+    try:
+        requested_limit = int(data.get("num_results", 5))
+    except (TypeError, ValueError):
+        requested_limit = 5
+    requested_limit = max(1, min(5, requested_limit))
+
+    def generate():
+        if not advisory_id:
+            yield _sse("error", {"success": False, "error": "advisory_id is required."})
+            return
+
+        advisory = _get_pio_advisory(advisory_id)
+        if advisory is None:
+            yield _sse(
+                "error",
+                {
+                    "success": False,
+                    "error": "This PIO advisory has expired or is no longer available. Generate the advisory again and retry.",
+                    "advisory_id": advisory_id,
+                },
+            )
+            return
+
+        with pio_advisory_cache_lock:
+            cached_result = advisory.get("precedent_result")
+            if cached_result is not None:
+                cached_response = dict(cached_result)
+                cached_response.update({
+                    "success": True,
+                    "advisory_id": advisory_id,
+                    "cached": True,
+                })
+                yield _sse("token", {"text": cached_response.get("answer", "")})
+                yield _sse("done", cached_response)
+                return
+
+            if advisory.get("precedent_in_progress"):
+                yield _sse(
+                    "error",
+                    {
+                        "success": False,
+                        "error": "Precedent references are already being prepared for this advisory.",
+                        "advisory_id": advisory_id,
+                    },
+                )
+                return
+
+            advisory["precedent_in_progress"] = True
+
+        try:
+            yield _sse("status", {"message": "Searching CIC/CGSIC decisions..."})
+            rag_module = _load_rag_module()
+            if rag_module is None:
+                raise PIOPrecedentError(
+                    _rag_import_error or "RAG pipeline is unavailable for precedent retrieval."
+                )
+
+            print("[PIO Precedents] Streaming CIC + CGSIC reference addendum")
+            answer_chunks: list[str] = []
+            precedent_result = None
+
+            for event_type, payload in retrieve_pio_precedent_references_stream(
+                rti_extraction=advisory["rti_extraction"],
+                legal_analysis=advisory["legal_analysis"],
+                rag_module=rag_module,
+                num_results=requested_limit,
+            ):
+                if event_type == "token":
+                    text = str(payload)
+                    answer_chunks.append(text)
+                    yield _sse("token", {"text": text})
+                elif event_type == "result":
+                    precedent_result = payload
+
+            if precedent_result is None:
+                raise PIOPrecedentError("Precedent stream finished without a result.")
+
+            elapsed = time.time() - request_started_at
+            response = {
+                "success": True,
+                "route": "PIO_PRECEDENTS",
+                "advisory_id": advisory_id,
+                "answer": precedent_result["answer"],
+                "results": precedent_result["results"],
+                "result_count": precedent_result["result_count"],
+                "execution_time": f"{elapsed:.2f}s",
+                "precedent_search_completed": True,
+                "precedent_collections_used": precedent_result["available_collections"],
+                "warnings": precedent_result.get("warnings", []),
+                "cached": False,
+            }
+
+            with pio_advisory_cache_lock:
+                current = pio_advisory_cache.get(advisory_id)
+                if current is not None:
+                    current["precedent_result"] = dict(response)
+
+            yield _sse("done", response)
+
+        except Exception as error:
+            print(f"[PIO Precedents] Streaming error: {error}")
+            import traceback
+            traceback.print_exc()
+            yield _sse(
+                "error",
+                {
+                    "success": False,
+                    "error": str(error),
+                    "advisory_id": advisory_id,
+                },
+            )
+
+        finally:
+            with pio_advisory_cache_lock:
+                current = pio_advisory_cache.get(advisory_id)
+                if current is not None:
+                    current["precedent_in_progress"] = False
+
+    return _sse_response(generate)
+
 
 @app.route('/api/pio/precedents', methods=['POST'])
 def pio_precedents():
