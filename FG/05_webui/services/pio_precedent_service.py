@@ -352,6 +352,492 @@ def _stream_precedent_answer(
         raise PIOPrecedentError("Precedent reference generation returned structured data instead of a readable answer.")
 
 
+def _is_hindi_context(rti_extraction: dict[str, Any]) -> bool:
+    language = _compact(rti_extraction.get("language"), 40).casefold()
+    return (
+        language in {"hi", "hindi", "हिंदी", "हिन्दी"}
+        or "hindi" in language
+        or "हिंदी" in language
+        or "हिन्दी" in language
+    )
+
+
+def _build_precedent_informed_advisory_prompt(
+    *,
+    rti_extraction: dict[str, Any],
+    legal_analysis: dict[str, Any],
+    original_advisory: str,
+    precedent_result: dict[str, Any],
+) -> str:
+    results = precedent_result.get("results") or []
+    reference_note = _compact(precedent_result.get("answer"), 6000)
+    language_instruction = (
+        "Write the final advisory in natural professional Hindi."
+        if _is_hindi_context(rti_extraction)
+        else "Write the final advisory in professional English."
+    )
+
+    return f"""
+You are drafting a revised, precedent-informed PIO advisory for the same RTI
+application. Produce one integrated, practical, record-based advisory for the
+PIO, written as continuous formal legal-advisory prose in Hindi -- not a
+case-note, research summary, checklist, or reference list.
+
+CRITICAL, NON-NEGOTIABLE RULE -- READ FIRST:
+Any time you state a legal principle, test, or holding that comes from one of
+the RETRIEVED CIC/CGSIC DECISION PASSAGES below -- whether you quote it,
+paraphrase it, or simply rely on its substance -- you must place its citation,
+in the exact format *(संदर्भ: <decision number>)*, immediately after that
+sentence, before moving on to the next point. Do this in real time as you
+write each sentence, not as something to add afterward. A sentence that
+relies on a decision's reasoning and has no citation attached at that exact
+point is a defect in your output, even if the format elsewhere is otherwise
+correct.
+
+Watch for these signals that you are drawing on a decision -- if a sentence
+contains reasoning like this, the citation must follow immediately:
+आयोग ने कहा है / आयोग ने स्पष्ट किया है / आयोग ने प्रतिपादित किया है / निर्णय के
+अनुसार / इस सिद्धांत के आधार पर / उपरोक्त निर्णय में यह माना गया है / संबंधित
+प्रकरण में यह अभिनिर्धारित किया गया है
+
+Correct pattern:
+  ...धारा 8(1)(j) के अंतर्गत सामान्यतः संरक्षित होती है। *(संदर्भ: CIC/AB/A/2016/001101)*
+Incorrect -- do not do this:
+  ...धारा 8(1)(j) के अंतर्गत सामान्यतः संरक्षित होती है। (आगे कहीं और, या अनुच्छेद
+  के अंत में, या बिल्कुल नहीं जोड़ा गया उद्धरण)
+
+AUTHORITY PRIORITY (highest to lowest):
+1. Verified RTI facts and verified record-status limitations.
+2. RTI Act legal analysis.
+3. Retrieved CIC/CGSIC decision passages and verified holdings.
+4. Original advisory wording -- style/background aid only, lowest priority.
+
+MANDATORY SAFEGUARDS:
+- Do not write "based on the previous advisory" or similar wording.
+- Do not state that any record exists unless the supplied context verifies it.
+- Do not state a final disclosure or rejection decision as certain.
+- Keep every conclusion conditional, fact-specific, and record-based.
+- Use only the supplied RTI facts, legal analysis, and decision evidence.
+- Do not invent decision numbers, parties, dates, holdings, sections, facts,
+  procedural requirements, or public-interest findings.
+- Do not merely list decisions or create a separate "References", "Case Law",
+  "CIC/SIC Decisions", or bibliography section at the end.
+- Do not mention prompts, retrieval, databases, embeddings, chat history,
+  cached context, or source ranking.
+- Do not render the advisory as a bulleted checklist. Write it as connected
+  paragraphs in the same flowing conditional-legal-drafting style as a formal
+  PIO order -- one paragraph per legal issue, issues linked with conditional
+  transitions (यदि ... तो ...).
+- When a conclusion is drawn from precedent, phrase it narrowly and with an
+  appropriate hedge (सामान्यतः, प्रथम दृष्टया, इस सीमा तक) rather than as an
+  absolute, unqualified rule -- the precedent supports a specific proposition,
+  not a blanket outcome.
+
+OPENING PARAGRAPH:
+- If the RTI extraction contains identifiable case facts (applicant name,
+  application number, subject-matter or scheme, nature of information
+  sought), open with one concise factual-synthesis paragraph stating them and
+  giving a preliminary classification of the request under Section
+  2(f)/"सूचना".
+- If such facts are not identifiable from the supplied extraction, begin
+  directly with the conditional legal analysis -- do not fabricate case
+  facts to manufacture an opening paragraph.
+
+RECOMMENDED ANALYTICAL SEQUENCE (adapt to the facts; skip any step the facts
+do not raise -- do not force a step that isn't relevant):
+1. Record verification -- क्या अभिलेख विभाग के पास उपलब्ध है, तथा क्या यह पहले से
+   धारा 4(1)(ख) के अंतर्गत स्वप्रेरणा प्रकटीकरण के रूप में उपलब्ध है।
+2. Characterisation -- क्या मांगी गई सूचना तृतीय-पक्ष, व्यक्तिगत, अथवा वाणिज्यिक
+   प्रकृति की है।
+3. Exemption analysis -- कौन-सा धारा 8 अपवाद वास्तव में प्रयोज्य हो सकता है,
+   प्रत्येक अपवाद का तथ्य-विशिष्ट परीक्षण, तथा प्रयोज्य होने पर व्यापक लोकहित की
+   जांच (धारा 8(2))।
+4. Third-party procedure -- यदि तृतीय-पक्ष हित प्रभावित होते हैं, तो धारा 11 की
+   अनिवार्य नोटिस एवं अभ्यावेदन प्रक्रिया, तथा यह कि तृतीय-पक्ष को निषेधाधिकार
+   नहीं बल्कि सुनवाई का अधिकार प्राप्त है।
+5. Severability -- धारा 10 के अंतर्गत अपवादयुक्त अंश पृथक कर शेष सूचना उपलब्ध
+   कराने की संभावना।
+6. Procedure/timeline -- धारा 7(1) की समय-सीमा, अथवा धारा 6(3) के अंतर्गत सक्षम
+   प्राधिकरण को स्थानांतरण, यदि प्रासंगिक हो।
+7. Closing direction -- एक समेकित अनुच्छेद जिसमें अभिलेखों के सत्यापन, तृतीय-पक्ष
+   की प्रकृति, तथा प्रासंगिक धाराओं एवं उपर्युक्त सिद्धांतों के अनुरूप कारणयुक्त
+   आदेश पारित करने का निर्देश दिया जाए -- बिना अलग से उद्धरण-सूची जोड़े।
+
+INLINE CITATION RULE -- mandatory (full specification):
+- Whenever a conclusion, legal principle, or procedural direction is drawn
+  from a CIC/CGSIC decision, place its citation immediately after that exact
+  sentence or paragraph, in italics, using this format exactly:
+  *(संदर्भ: <decision number>)*
+- Cite only a decision number that appears in the supplied decision passages
+  below -- copy it exactly as written there, character for character.
+- Do not attach a citation to a statement unless the supplied passage
+  supports it.
+- Do not combine unrelated decisions in one citation.
+- If a decision supports only a limited proposition, state that proposition
+  narrowly; do not overstate the holding.
+- Do not repeat the same decision citation unless it supports a separate,
+  distinct conclusion elsewhere in the advisory.
+- Do not place all citations together in the final paragraph, and do not
+  collect them at the end of a section -- each one sits right next to the
+  sentence it supports.
+- RTI Act sections may be cited in the normal legal text, but decision
+  citations must remain inline with the corresponding conclusion, never
+  grouped at the end.
+- If you find yourself with zero citations in a draft that discusses
+  RETRIEVED CIC/CGSIC DECISION PASSAGES content, that is a sign you have
+  summarised the passages without attributing them -- go back and attach the
+  citations before finalising.
+
+FORMATTING:
+- Bold the first mention of each RTI Act section reference in a paragraph
+  (e.g., **धारा 8(1)(j)**) and each decision number the first time it appears
+  (e.g., **CIC/AB/A/2016/001101**).
+- No headings inside the body other than the required opening title below.
+- No separate "References" / "Case Law" section.
+
+The advisory must directly address, where applicable:
+- क्या तथ्य एवं अभिलेख सत्यापित करना है
+- क्या सूचना उपलब्ध कराई जा सकती है
+- क्या सूचना रोकी जा सकती है और किस वैधानिक आधार पर
+- क्या सूचना तृतीय-पक्ष / व्यक्तिगत / वाणिज्यिक प्रकृति की है
+- धारा 8, धारा 10, धारा 11, धारा 6(3), धारा 7(1), अथवा अन्य लागू प्रावधान
+- क्या आवेदन पर्याप्त रूप से विशिष्ट है
+- क्या सूचना विभाग के पास उपलब्ध है या किसी अन्य लोक प्राधिकरण के पास है
+- क्या व्यापक लोकहित और आंशिक प्रकटीकरण का परीक्षण आवश्यक है
+
+Where the record status is unverified, clearly state that verification is
+required before taking a decision.
+Where an exemption may apply, require a reasoned, section-specific
+assessment; do not recommend blanket denial.
+Where severability may apply, address disclosure of non-exempt portions
+under Section 10.
+Where third-party information may be involved, address Section 11 only if
+the supplied legal analysis or decision passages support its applicability.
+Integrate applicable CIC/CGSIC principles directly into the relevant legal
+analysis -- never as a standalone summary of "what the cases say" -- and
+remember every such integration needs its inline citation at that point.
+End with a concise, single record-based action direction, without adding a
+separate citation list.
+
+Use conditional language such as:
+- यदि अभिलेख उपलब्ध हैं...
+- यदि तृतीय-पक्ष हित प्रभावित होते हैं...
+- यदि सूचना व्यक्तिगत विवरण रखती है...
+- यदि आवेदन पर्याप्त रूप से विशिष्ट नहीं है...
+- यदि कोई वैधानिक अपवाद लागू नहीं होता...
+- यदि सूचना का पृथक्करण संभव है...
+
+{language_instruction}
+
+Start exactly with:
+## Precedent-informed PIO Advisory
+
+CURRENT RTI EXTRACTION:
+{json.dumps(rti_extraction, ensure_ascii=False, indent=2)}
+
+ORIGINAL PIO LEGAL ANALYSIS:
+{json.dumps(legal_analysis, ensure_ascii=False, indent=2)}
+
+RETRIEVED CIC/CGSIC REFERENCE NOTE:
+{reference_note}
+
+RETRIEVED CIC/CGSIC DECISION PASSAGES:
+{_reference_context(results)}
+
+ORIGINAL ADVISORY WORDING, LOWEST PRIORITY:
+{_compact(original_advisory, 5000)}
+
+FINAL CHECK BEFORE YOU WRITE YOUR ANSWER:
+You are about to write the advisory below. As you write each paragraph that
+uses a principle, test, or holding from the RETRIEVED CIC/CGSIC DECISION
+PASSAGES above, attach *(संदर्भ: <decision number>)* immediately after that
+sentence, using only decision numbers that actually appear in those passages.
+Do not produce a paragraph that relies on a decision's reasoning without its
+citation sitting right next to it.
+
+FINAL REVISED ADVISORY:
+""".strip()
+    
+
+#     return f"""
+# You are drafting a revised, precedent-informed PIO advisory for the same RTI
+# application. Produce one integrated, practical, record-based advisory for the
+# PIO, written as continuous formal legal-advisory prose in Hindi -- not a
+# case-note, research summary, checklist, or reference list.
+
+# AUTHORITY PRIORITY (highest to lowest):
+# 1. Verified RTI facts and verified record-status limitations.
+# 2. RTI Act legal analysis.
+# 3. Retrieved CIC/CGSIC decision passages and verified holdings.
+# 4. Original advisory wording -- style/background aid only, lowest priority.
+
+# MANDATORY SAFEGUARDS:
+# - Do not write "based on the previous advisory" or similar wording.
+# - Do not state that any record exists unless the supplied context verifies it.
+# - Do not state a final disclosure or rejection decision as certain.
+# - Keep every conclusion conditional, fact-specific, and record-based.
+# - Use only the supplied RTI facts, legal analysis, and decision evidence.
+# - Do not invent decision numbers, parties, dates, holdings, sections, facts,
+#   procedural requirements, or public-interest findings.
+# - Do not merely list decisions or create a separate "References", "Case Law",
+#   "CIC/SIC Decisions", or bibliography section at the end.
+# - Do not mention prompts, retrieval, databases, embeddings, chat history,
+#   cached context, or source ranking.
+# - Do not render the advisory as a bulleted checklist. Write it as connected
+#   paragraphs in the same flowing conditional-legal-drafting style as a formal
+#   PIO order -- one paragraph per legal issue, issues linked with conditional
+#   transitions (यदि ... तो ...).
+# - When a conclusion is drawn from precedent, phrase it narrowly and with an
+#   appropriate hedge (सामान्यतः, प्रथम दृष्टया, इस सीमा तक) rather than as an
+#   absolute, unqualified rule -- the precedent supports a specific proposition,
+#   not a blanket outcome.
+
+# OPENING PARAGRAPH:
+# - If the RTI extraction contains identifiable case facts (applicant name,
+#   application number, subject-matter or scheme, nature of information
+#   sought), open with one concise factual-synthesis paragraph stating them and
+#   giving a preliminary classification of the request under Section
+#   2(f)/"सूचना".
+# - If such facts are not identifiable from the supplied extraction, begin
+#   directly with the conditional legal analysis -- do not fabricate case
+#   facts to manufacture an opening paragraph.
+
+# RECOMMENDED ANALYTICAL SEQUENCE (adapt to the facts; skip any step the facts
+# do not raise -- do not force a step that isn't relevant):
+# 1. Record verification -- क्या अभिलेख विभाग के पास उपलब्ध है, तथा क्या यह पहले से
+#    धारा 4(1)(ख) के अंतर्गत स्वप्रेरणा प्रकटीकरण के रूप में उपलब्ध है।
+# 2. Characterisation -- क्या मांगी गई सूचना तृतीय-पक्ष, व्यक्तिगत, अथवा वाणिज्यिक
+#    प्रकृति की है।
+# 3. Exemption analysis -- कौन-सा धारा 8 अपवाद वास्तव में प्रयोज्य हो सकता है,
+#    प्रत्येक अपवाद का तथ्य-विशिष्ट परीक्षण, तथा प्रयोज्य होने पर व्यापक लोकहित की
+#    जांच (धारा 8(2))।
+# 4. Third-party procedure -- यदि तृतीय-पक्ष हित प्रभावित होते हैं, तो धारा 11 की
+#    अनिवार्य नोटिस एवं अभ्यावेदन प्रक्रिया, तथा यह कि तृतीय-पक्ष को निषेधाधिकार
+#    नहीं बल्कि सुनवाई का अधिकार प्राप्त है।
+# 5. Severability -- धारा 10 के अंतर्गत अपवादयुक्त अंश पृथक कर शेष सूचना उपलब्ध
+#    कराने की संभावना।
+# 6. Procedure/timeline -- धारा 7(1) की समय-सीमा, अथवा धारा 6(3) के अंतर्गत सक्षम
+#    प्राधिकरण को स्थानांतरण, यदि प्रासंगिक हो।
+# 7. Closing direction -- एक समेकित अनुच्छेद जिसमें अभिलेखों के सत्यापन, तृतीय-पक्ष
+#    की प्रकृति, तथा प्रासंगिक धाराओं एवं उपर्युक्त सिद्धांतों के अनुरूप कारणयुक्त
+#    आदेश पारित करने का निर्देश दिया जाए -- बिना अलग से उद्धरण-सूची जोड़े।
+
+# INLINE CITATION RULE -- mandatory:
+# - Whenever a conclusion, legal principle, or procedural direction is drawn
+#   from a CIC/CGSIC decision, place its citation immediately after that exact
+#   sentence or paragraph, in italics, using this format exactly:
+#   *(संदर्भ: <decision number>)*
+# - Cite only a decision number that appears in the supplied decision passages.
+# - Do not attach a citation to a statement unless the supplied passage
+#   supports it.
+# - Do not combine unrelated decisions in one citation.
+# - If a decision supports only a limited proposition, state that proposition
+#   narrowly; do not overstate the holding.
+# - Do not repeat the same decision citation unless it supports a separate,
+#   distinct conclusion elsewhere in the advisory.
+# - Do not place all citations together in the final paragraph.
+# - RTI Act sections may be cited in the normal legal text, but decision
+#   citations must remain inline with the corresponding conclusion, never
+#   grouped at the end.
+
+# FORMATTING:
+# - Bold the first mention of each RTI Act section reference in a paragraph
+#   (e.g., **धारा 8(1)(j)**) and each decision number the first time it appears
+#   (e.g., **CIC/AB/A/2016/001101**).
+# - No headings inside the body other than the required opening title below.
+# - No separate "References" / "Case Law" section.
+
+# The advisory must directly address, where applicable:
+# - क्या तथ्य एवं अभिलेख सत्यापित करना है
+# - क्या सूचना उपलब्ध कराई जा सकती है
+# - क्या सूचना रोकी जा सकती है और किस वैधानिक आधार पर
+# - क्या सूचना तृतीय-पक्ष / व्यक्तिगत / वाणिज्यिक प्रकृति की है
+# - धारा 8, धारा 10, धारा 11, धारा 6(3), धारा 7(1), अथवा अन्य लागू प्रावधान
+# - क्या आवेदन पर्याप्त रूप से विशिष्ट है
+# - क्या सूचना विभाग के पास उपलब्ध है या किसी अन्य लोक प्राधिकरण के पास है
+# - क्या व्यापक लोकहित और आंशिक प्रकटीकरण का परीक्षण आवश्यक है
+
+# Where the record status is unverified, clearly state that verification is
+# required before taking a decision.
+# Where an exemption may apply, require a reasoned, section-specific
+# assessment; do not recommend blanket denial.
+# Where severability may apply, address disclosure of non-exempt portions
+# under Section 10.
+# Where third-party information may be involved, address Section 11 only if
+# the supplied legal analysis or decision passages support its applicability.
+# Integrate applicable CIC/CGSIC principles directly into the relevant legal
+# analysis -- never as a standalone summary of "what the cases say".
+# End with a concise, single record-based action direction, without adding a
+# separate citation list.
+
+# Use conditional language such as:
+# - यदि अभिलेख उपलब्ध हैं...
+# - यदि तृतीय-पक्ष हित प्रभावित होते हैं...
+# - यदि सूचना व्यक्तिगत विवरण रखती है...
+# - यदि आवेदन पर्याप्त रूप से विशिष्ट नहीं है...
+# - यदि कोई वैधानिक अपवाद लागू नहीं होता...
+# - यदि सूचना का पृथक्करण संभव है...
+
+# {language_instruction}
+
+# Start exactly with:
+# ## Precedent-informed PIO Advisory
+
+# CURRENT RTI EXTRACTION:
+# {json.dumps(rti_extraction, ensure_ascii=False, indent=2)}
+
+# ORIGINAL PIO LEGAL ANALYSIS:
+# {json.dumps(legal_analysis, ensure_ascii=False, indent=2)}
+
+# RETRIEVED CIC/CGSIC REFERENCE NOTE:
+# {reference_note}
+
+# RETRIEVED CIC/CGSIC DECISION PASSAGES:
+# {_reference_context(results)}
+
+# ORIGINAL ADVISORY WORDING, LOWEST PRIORITY:
+# {_compact(original_advisory, 5000)}
+
+# FINAL REVISED ADVISORY:
+# """.strip()
+
+
+#     return f"""
+# You are drafting a revised, precedent-informed PIO advisory for the same RTI
+# application. Produce one integrated, practical, record-based advisory for the
+# PIO. This is not a case-note, research summary, or reference list.
+
+# Use this authority priority:
+# 1. Verified RTI facts and verified record-status limitations.
+# 2. RTI Act legal analysis.
+# 3. Retrieved CIC/CGSIC decision passages and verified holdings.
+# 4. Original advisory wording only as a low-priority style/background aid.
+
+# Mandatory safeguards:
+# - Do not write “based on the previous advisory” or similar wording.
+# - Do not state that any record exists unless the supplied context verifies it.
+# - Do not state a final disclosure or rejection decision as certain.
+# - Keep every conclusion conditional, fact-specific, and record-based.
+# - Use only the supplied RTI facts, legal analysis, and decision evidence.
+# - Do not invent decision numbers, parties, dates, holdings, sections, facts,
+#   procedural requirements, or public-interest findings.
+# - Do not merely list decisions or create a separate “References”, “Case Law”,
+#   “CIC/SIC Decisions”, or bibliography section at the end.
+# - Do not mention prompts, retrieval, databases, embeddings, chat history,
+#   cached context, or source ranking.
+
+# Inline citation rule — mandatory:
+# - Whenever a conclusion, legal principle, or procedural direction is drawn from
+#   a CIC/CGSIC decision, place its citation immediately after that exact sentence
+#   or paragraph.
+# - Use this format exactly:
+#   (संदर्भ: <decision number>)
+# - Cite only a decision number that appears in the supplied decision passages.
+# - Do not attach a citation to a statement unless the supplied passage supports it.
+# - Do not combine unrelated decisions in one citation.
+# - If a decision supports only a limited proposition, state that proposition
+#   narrowly; do not overstate the holding.
+# - RTI Act sections may be cited in the normal legal text, but decision citations
+#   must remain inline with the corresponding conclusion.
+
+# The advisory must directly address, where applicable:
+# - क्या तथ्य एवं अभिलेख सत्यापित करना है
+# - क्या सूचना उपलब्ध कराई जा सकती है
+# - क्या सूचना रोकी जा सकती है और किस वैधानिक आधार पर
+# - क्या सूचना तृतीय-पक्ष / व्यक्तिगत / वाणिज्यिक प्रकृति की है
+# - धारा 8, धारा 10, धारा 11, धारा 6(3), धारा 7(1), अथवा अन्य लागू प्रावधान
+# - क्या आवेदन पर्याप्त रूप से विशिष्ट है
+# - क्या सूचना विभाग के पास उपलब्ध है या किसी अन्य लोक प्राधिकरण के पास है
+# - क्या व्यापक लोकहित और आंशिक प्रकटीकरण का परीक्षण आवश्यक है
+
+# Drafting requirements:
+# - Write in a formal PIO advisory style.
+# - Integrate applicable CIC/CGSIC principles into the relevant legal analysis.
+# - Do not place all citations together in the final paragraph.
+# - Do not repeat the same decision citation unless it supports a separate,
+#   distinct conclusion.
+# - Where the record status is unverified, clearly state that verification is
+#   required before taking a decision.
+# - Where an exemption may apply, require a reasoned, section-specific assessment;
+#   do not recommend blanket denial.
+# - Where severability may apply, address disclosure of non-exempt portions under
+#   Section 10.
+# - Where third-party information may be involved, address Section 11 only if the
+#   supplied legal analysis or decision passages support its applicability.
+# - End with a concise record-based action direction, without adding a separate
+#   citation list.
+
+# Use conditional language such as:
+# - यदि अभिलेख उपलब्ध हैं...
+# - यदि तृतीय-पक्ष हित प्रभावित होते हैं...
+# - यदि सूचना व्यक्तिगत विवरण रखती है...
+# - यदि आवेदन पर्याप्त रूप से विशिष्ट नहीं है...
+# - यदि कोई वैधानिक अपवाद लागू नहीं होता...
+# - यदि सूचना का पृथक्करण संभव है...
+
+# {language_instruction}
+
+# Start exactly with:
+# ## Precedent-informed PIO Advisory
+
+# CURRENT RTI EXTRACTION:
+# {json.dumps(rti_extraction, ensure_ascii=False, indent=2)}
+
+# ORIGINAL PIO LEGAL ANALYSIS:
+# {json.dumps(legal_analysis, ensure_ascii=False, indent=2)}
+
+# RETRIEVED CIC/CGSIC REFERENCE NOTE:
+# {reference_note}
+
+# RETRIEVED CIC/CGSIC DECISION PASSAGES:
+# {_reference_context(results)}
+
+# ORIGINAL ADVISORY WORDING, LOWEST PRIORITY:
+# {_compact(original_advisory, 5000)}
+
+# FINAL REVISED ADVISORY:
+# """.strip()
+
+def stream_precedent_informed_advisory(
+    *,
+    rti_extraction: dict[str, Any],
+    legal_analysis: dict[str, Any],
+    original_advisory: str,
+    precedent_result: dict[str, Any],
+) -> Iterator[str]:
+    """Stream a revised PIO advisory using cached CIC/CGSIC references."""
+    if not isinstance(precedent_result, dict) or not precedent_result.get("results"):
+        raise PIOPrecedentError("CIC/CGSIC references must be generated before the revised advisory.")
+
+    prompt = _build_precedent_informed_advisory_prompt(
+        rti_extraction=rti_extraction,
+        legal_analysis=legal_analysis,
+        original_advisory=original_advisory,
+        precedent_result=precedent_result,
+    )
+
+    chunks: list[str] = []
+
+    try:
+        for chunk in stream_text(
+            prompt=prompt,
+            temperature=0.0,
+            max_tokens=int(os.getenv("PIO_PRECEDENT_ADVISORY_MAX_TOKENS", "3200")),
+            timeout_seconds=int(os.getenv("PIO_PRECEDENT_ADVISORY_TIMEOUT_SECONDS", "240")),
+            reasoning_effort="low",
+        ):
+            chunks.append(chunk)
+            yield chunk
+    except LLMProviderError as error:
+        raise PIOPrecedentError(f"Precedent-informed advisory generation failed: {error}") from error
+
+    answer = str("".join(chunks) or "").strip()
+    if not answer:
+        raise PIOPrecedentError("Precedent-informed advisory generation returned an empty answer.")
+    if answer.startswith(("{", "[")):
+        raise PIOPrecedentError("Precedent-informed advisory generation returned structured data instead of a readable answer.")
+
+
 def _retrieve_precedent_context(
     *,
     rti_extraction: dict[str, Any],

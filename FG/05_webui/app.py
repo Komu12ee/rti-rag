@@ -16,6 +16,7 @@ from services.pio_precedent_service import (
     PIOPrecedentError,
     retrieve_pio_precedent_references,
     retrieve_pio_precedent_references_stream,
+    stream_precedent_informed_advisory,
 )
 from services.pio_qdrant_retriever import retrieve_pio_directory_references
 import os
@@ -316,6 +317,8 @@ def _store_pio_advisory(pio_result: dict) -> str:
             "validation": pio_result["validation"],
             "precedent_result": None,
             "precedent_in_progress": False,
+            "precedent_advisory_result": None,
+            "precedent_advisory_in_progress": False,
         }
 
     return advisory_id
@@ -1443,6 +1446,127 @@ def pio_precedents_stream():
                 current = pio_advisory_cache.get(advisory_id)
                 if current is not None:
                     current["precedent_in_progress"] = False
+
+    return _sse_response(generate)
+
+
+@app.route('/api/pio/precedent-advisory/stream', methods=['POST'])
+def pio_precedent_advisory_stream():
+    """Generate a revised PIO advisory using cached CIC/CGSIC references."""
+    request_started_at = time.time()
+    data = request.get_json(silent=True) or {}
+    advisory_id = str(data.get("advisory_id") or "").strip()
+
+    def generate():
+        if not advisory_id:
+            yield _sse("error", {"success": False, "error": "advisory_id is required."})
+            return
+
+        advisory = _get_pio_advisory(advisory_id)
+        if advisory is None:
+            yield _sse(
+                "error",
+                {
+                    "success": False,
+                    "error": "This PIO advisory has expired or is no longer available. Generate the advisory again and retry.",
+                    "advisory_id": advisory_id,
+                },
+            )
+            return
+
+        with pio_advisory_cache_lock:
+            cached_result = advisory.get("precedent_advisory_result")
+            if cached_result is not None:
+                cached_response = dict(cached_result)
+                cached_response.update({
+                    "success": True,
+                    "advisory_id": advisory_id,
+                    "cached": True,
+                })
+                yield _sse("token", {"text": cached_response.get("answer", "")})
+                yield _sse("done", cached_response)
+                return
+
+            precedent_result = advisory.get("precedent_result")
+            if precedent_result is None:
+                yield _sse(
+                    "error",
+                    {
+                        "success": False,
+                        "error": "Generate CIC/CGSIC references before creating the precedent-informed advisory.",
+                        "advisory_id": advisory_id,
+                    },
+                )
+                return
+
+            if advisory.get("precedent_advisory_in_progress"):
+                yield _sse(
+                    "error",
+                    {
+                        "success": False,
+                        "error": "A precedent-informed advisory is already being generated for this RTI.",
+                        "advisory_id": advisory_id,
+                    },
+                )
+                return
+
+            advisory["precedent_advisory_in_progress"] = True
+
+        try:
+            yield _sse("status", {"message": "Generating precedent-informed advisory..."})
+            print("[PIO Precedents] Streaming precedent-informed PIO advisory")
+
+            chunks: list[str] = []
+            for chunk in stream_precedent_informed_advisory(
+                rti_extraction=advisory["rti_extraction"],
+                legal_analysis=advisory["legal_analysis"],
+                original_advisory=advisory.get("pio_advisory_report", ""),
+                precedent_result=precedent_result,
+            ):
+                text = str(chunk)
+                chunks.append(text)
+                yield _sse("token", {"text": text})
+
+            answer = "".join(chunks).strip()
+            elapsed = time.time() - request_started_at
+            response = {
+                "success": True,
+                "route": "PIO_PRECEDENT_INFORMED_ADVISORY",
+                "advisory_id": advisory_id,
+                "answer": answer,
+                "results": precedent_result.get("results", []),
+                "result_count": int(precedent_result.get("result_count", 0) or 0),
+                "execution_time": f"{elapsed:.2f}s",
+                "precedent_collections_used": precedent_result.get("precedent_collections_used")
+                or precedent_result.get("available_collections", []),
+                "cached": False,
+            }
+
+            with pio_advisory_cache_lock:
+                current = pio_advisory_cache.get(advisory_id)
+                if current is not None:
+                    current["precedent_advisory_result"] = dict(response)
+
+            yield _sse("done", response)
+
+        except Exception as error:
+            print(f"[PIO Precedents] Precedent-informed advisory error: {error}")
+            import traceback
+            traceback.print_exc()
+            yield _sse(
+                "error",
+                {
+                    "success": False,
+                    "error": str(error),
+                    "advisory_id": advisory_id,
+                },
+            )
+
+        finally:
+            with pio_advisory_cache_lock:
+                current = pio_advisory_cache.get(advisory_id)
+                if current is not None:
+                    current["precedent_advisory_in_progress"] = False
 
     return _sse_response(generate)
 

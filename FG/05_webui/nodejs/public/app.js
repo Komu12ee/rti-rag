@@ -181,6 +181,10 @@ query: (query, numResults, pioMode) =>
       advisory_id: advisoryId,
       num_results: numResults
     }, handlers),
+  pioPrecedentAdvisoryStream: (advisoryId, handlers) =>
+    api.streamRequest('/api/pio/precedent-advisory/stream', {
+      advisory_id: advisoryId
+    }, handlers),
 
   documentStructure: actualPdf => api.request('POST', '/api/document-structure', { actual_pdf: actualPdf }),
   async fetchPdf(path) {
@@ -503,6 +507,62 @@ function createPioAnalysisDetails(details) {
   return outer;
 }
 
+function createPrecedentReferencesDropdown(message) {
+  const results = Array.isArray(message.precedentResults)
+    ? message.precedentResults
+    : [];
+  const details = document.createElement('details');
+  details.className = 'precedent-reference-details';
+
+  const summary = document.createElement('summary');
+  summary.textContent = `CIC/CGSIC decision references (${results.length})`;
+  details.appendChild(summary);
+
+  if (message.precedentReferenceNote) {
+    const note = document.createElement('div');
+    note.className = 'precedent-reference-note';
+    note.innerHTML = formatMessageText(message.precedentReferenceNote);
+    details.appendChild(note);
+  }
+
+  if (results.length) {
+    const list = document.createElement('div');
+    list.className = 'precedent-reference-list';
+
+    results.forEach((result, index) => {
+      const card = document.createElement('div');
+      card.className = 'precedent-reference-card';
+
+      const title = result.case_number ||
+        result.title ||
+        result.document_id ||
+        `Decision ${index + 1}`;
+
+      const meta = [
+        result.retrieval_collection,
+        result.decision_date,
+        typeof result.score === 'number' ? `score ${result.score.toFixed(3)}` : ''
+      ].filter(Boolean).join(' | ');
+
+      card.innerHTML = `
+        <div class="precedent-reference-title">${escapeHtml(title)}</div>
+        ${meta ? `<div class="precedent-reference-meta">${escapeHtml(meta)}</div>` : ''}
+        <p>${escapeHtml(result.excerpt || result.text || 'No excerpt available.')}</p>
+      `;
+      list.appendChild(card);
+    });
+
+    details.appendChild(list);
+  } else {
+    const empty = document.createElement('p');
+    empty.className = 'precedent-reference-empty';
+    empty.textContent = 'No decision references were attached.';
+    details.appendChild(empty);
+  }
+
+  return details;
+}
+
 function createPrecedentActionControls(message) {
   const container = document.createElement('div');
   container.className = 'precedent-actions';
@@ -510,7 +570,31 @@ function createPrecedentActionControls(message) {
   const decision = message.precedentDecision || 'pending';
 
   if (decision === 'completed') {
-    container.innerHTML = '<span class="precedent-status">CIC/CGSIC references added.</span>';
+    container.appendChild(createPrecedentReferencesDropdown(message));
+
+    const buttonRow = document.createElement('div');
+    buttonRow.className = 'precedent-action-buttons';
+
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'precedent-action-btn';
+
+    if (message.precedentAdvisoryStatus === 'generating') {
+      button.textContent = 'Generating precedent-informed advisory...';
+      button.disabled = true;
+    } else if (message.precedentAdvisoryGenerated) {
+      button.textContent = 'Precedent-informed advisory generated';
+      button.disabled = true;
+    } else {
+      button.textContent = 'Generate precedent-informed PIO advisory';
+      button.disabled = state.loading;
+      button.addEventListener('click', () => {
+        handleGeneratePrecedentAdvisory(message.id);
+      });
+    }
+
+    buttonRow.appendChild(button);
+    container.appendChild(buttonRow);
     return container;
   }
 
@@ -629,16 +713,6 @@ async function handlePrecedentChoice(advisoryMessageId, choice, displayText) {
   }
 
   advisoryMessage.precedentDecision = 'accepted';
-  appendUserChoice(conversation, displayText || 'Yes, add CIC/CGSIC references');
-
-  const pendingMessage = {
-    id: newId(),
-    role: 'assistant',
-    content: '',
-    pending: true,
-    createdAt: nowIso()
-  };
-  conversation.messages.push(pendingMessage);
   state.loading = true;
   disableQueryBar('Searching CIC/CGSIC decisions...');
   touchConversation(conversation);
@@ -652,17 +726,6 @@ async function handlePrecedentChoice(advisoryMessageId, choice, displayText) {
       status(data) {
         disableQueryBar(data.message || 'Searching CIC/CGSIC decisions...');
       },
-      token(data) {
-        const pendingIndex = conversation.messages.findIndex(message => message.id === pendingMessage.id);
-        if (pendingIndex < 0) return;
-        const nextText = (conversation.messages[pendingIndex].content || '') + (data.text || '');
-        conversation.messages[pendingIndex] = {
-          ...conversation.messages[pendingIndex],
-          content: nextText,
-          display: nextText
-        };
-        updateStreamingMessage(pendingMessage.id, nextText);
-      },
       done(data) {
         finalData = data;
       },
@@ -674,35 +737,122 @@ async function handlePrecedentChoice(advisoryMessageId, choice, displayText) {
     if (streamError) throw new Error(streamError);
 
     const data = finalData || {};
-    const pendingIndex = conversation.messages.findIndex(message => message.id === pendingMessage.id);
     advisoryMessage.precedentDecision = 'completed';
     advisoryMessage.precedentSearchCompleted = true;
-    conversation.messages[pendingIndex] = {
-      id: pendingMessage.id,
-      role: 'assistant',
-      content: data.answer || conversation.messages[pendingIndex]?.content || '',
-      display: data.answer || conversation.messages[pendingIndex]?.display || '',
-      results: data.results || [],
-      timing: data.execution_time || '',
-      isPrecedentFollowup: true,
-      sourceAdvisoryId: advisoryMessage.advisoryId,
-      createdAt: nowIso()
-    };
+    advisoryMessage.precedentResults = data.results || [];
+    advisoryMessage.precedentReferenceNote = data.answer || '';
+    advisoryMessage.precedentCollectionsUsed = data.precedent_collections_used || [];
+    advisoryMessage.precedentTiming = data.execution_time || '';
     if (Array.isArray(data.warnings) && data.warnings.length) {
       toast(data.warnings.join(' | '), 'info', 5000);
     }
     ui.queryTiming.textContent = data.execution_time || '';
   } catch (error) {
-    const pendingIndex = conversation.messages.findIndex(message => message.id === pendingMessage.id);
     advisoryMessage.precedentDecision = 'pending';
-    conversation.messages[pendingIndex] = {
-      id: pendingMessage.id,
-      role: 'assistant',
-      content: error.message || 'Network error while retrieving CIC/CGSIC references.',
-      display: `Unable to add CIC/CGSIC references: ${error.message || 'Network error.'}`,
-      createdAt: nowIso()
-    };
     toast(error.message || 'Network error while retrieving CIC/CGSIC references.', 'error');
+  } finally {
+    state.loading = false;
+    enableQueryBar();
+    touchConversation(conversation);
+    renderAll();
+    updateFooterTime();
+  }
+}
+
+async function handleGeneratePrecedentAdvisory(advisoryMessageId) {
+  const conversation = activeConversation();
+  const advisoryMessage = findConversationMessage(conversation, advisoryMessageId);
+  if (!advisoryMessage || state.loading) return;
+
+  if (!advisoryMessage.advisoryId || !advisoryMessage.precedentSearchCompleted) {
+    toast('Generate CIC/CGSIC references first.', 'error');
+    return;
+  }
+
+  advisoryMessage.precedentAdvisoryStatus = 'generating';
+
+  const pendingMessage = {
+    id: newId(),
+    role: 'assistant',
+    content: '',
+    pending: true,
+    createdAt: nowIso()
+  };
+
+  conversation.messages.push(pendingMessage);
+  state.loading = true;
+  disableQueryBar('Generating precedent-informed advisory...');
+  touchConversation(conversation);
+  renderAll();
+
+  try {
+    let finalData = null;
+    let streamError = null;
+    let streamedAnswer = '';
+
+    await api.pioPrecedentAdvisoryStream(advisoryMessage.advisoryId, {
+      status(data) {
+        disableQueryBar(data.message || 'Generating precedent-informed advisory...');
+      },
+      token(data) {
+        const chunk = String(data.text || '');
+        if (!chunk) return;
+
+        streamedAnswer += chunk;
+        const index = conversation.messages.findIndex(message => message.id === pendingMessage.id);
+        if (index >= 0) {
+          conversation.messages[index] = {
+            ...conversation.messages[index],
+            content: streamedAnswer,
+            display: streamedAnswer,
+            pending: true
+          };
+          updateStreamingMessage(pendingMessage.id, streamedAnswer);
+        }
+      },
+      done(data) {
+        finalData = data;
+      },
+      error(data) {
+        streamError = data.error || 'Precedent-informed advisory generation failed.';
+      }
+    });
+
+    if (streamError) throw new Error(streamError);
+
+    const data = finalData || {};
+    const index = conversation.messages.findIndex(message => message.id === pendingMessage.id);
+    if (index >= 0) {
+      const answer = data.answer || streamedAnswer || '';
+      conversation.messages[index] = {
+        id: pendingMessage.id,
+        role: 'assistant',
+        content: answer,
+        display: answer,
+        results: data.results || advisoryMessage.precedentResults || [],
+        timing: data.execution_time || '',
+        isPrecedentAdvisory: true,
+        sourceAdvisoryId: advisoryMessage.advisoryId,
+        createdAt: nowIso()
+      };
+    }
+
+    advisoryMessage.precedentAdvisoryStatus = 'generated';
+    advisoryMessage.precedentAdvisoryGenerated = true;
+    ui.queryTiming.textContent = data.execution_time || '';
+  } catch (error) {
+    const index = conversation.messages.findIndex(message => message.id === pendingMessage.id);
+    if (index >= 0) {
+      conversation.messages[index] = {
+        id: pendingMessage.id,
+        role: 'assistant',
+        content: error.message || 'Network error while generating precedent-informed advisory.',
+        display: `Unable to generate precedent-informed advisory: ${error.message || 'Network error.'}`,
+        createdAt: nowIso()
+      };
+    }
+    advisoryMessage.precedentAdvisoryStatus = null;
+    toast(error.message || 'Network error while generating precedent-informed advisory.', 'error');
   } finally {
     state.loading = false;
     enableQueryBar();

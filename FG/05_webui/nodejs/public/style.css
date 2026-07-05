@@ -1250,3 +1250,64 @@ button {
   color: var(--muted);
   font-size: 12px;
 }
+
+.precedent-reference-details {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface-2);
+  color: var(--ink-soft);
+  font-size: 12px;
+}
+
+.precedent-reference-details > summary {
+  cursor: pointer;
+  padding: 9px 11px;
+  font-weight: 700;
+}
+
+.precedent-reference-note {
+  border-top: 1px solid var(--border);
+  padding: 10px 11px 2px;
+}
+
+.precedent-reference-note .text,
+.precedent-reference-note p {
+  color: var(--ink-soft);
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.precedent-reference-list {
+  display: grid;
+  gap: 8px;
+  padding: 10px 11px 11px;
+  border-top: 1px solid var(--border);
+}
+
+.precedent-reference-card {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--surface);
+  padding: 9px;
+}
+
+.precedent-reference-title {
+  color: var(--ink);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.precedent-reference-meta {
+  margin-top: 3px;
+  color: var(--faint);
+  font-family: var(--font-mono);
+  font-size: 10px;
+}
+
+.precedent-reference-card p,
+.precedent-reference-empty {
+  margin: 7px 0 0;
+  color: var(--muted);
+  font-size: 11.5px;
+  line-height: 1.5;
+}
