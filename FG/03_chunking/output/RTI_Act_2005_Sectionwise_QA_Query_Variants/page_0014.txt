@@ -1,0 +1,30 @@
+## Question variants all map to this one provision
+
+- 1. What does Section 3 of the Right to Information Act, 2005 provide?
+- 2. Explain RTI Act Section 3: Right to Information (single provision).
+- 3. What is Act 3 in RTI? I need the rule for fundamental right.
+- 4 सूचना का अधिकार अधिनियम, 2005 की धारा 3 में क्या प्रावधान है?
+- 5. धारा 3 का सरल अर्थ क्या है सूचना का अधिकार (एकल उपबंध)?
+- 6. RTI Act 3 ka rule kya hai? सूचना का अधिकार (एकल उपबंध) के बारे में बताइए|
+- 7. In this situation: Validating that the applicant is an Indian citizen (eligibility check). Does Section 3 apply, and what does it say?
+- 8. "3 RTI law me kya hai? " "3 ka matlab?"
+
+## Answer
+
+English definition: Subject to the provisions of this Act, all citizens shall have the right to information.
+
+हिंदी परिभाषाः इस अधिनियम के उपबंधों के अधीन रहते हुए, सभी नागरिकों को सूचना का अधिकार होगा|
+
+Retrieval anchors: Right to Information (single provision); सूचना का अधिकार एकल उपबंध ; fundamental right; all citizens; core right; universal access
+
+## Typical contexts
+
+- Validating that the applicant is an Indian citizen (eligibility check)
+
+PIO implementation note: Confirm applicant citizenshipleligibility is not in dispute before evaluating exemptions; this section is the entitlement baseline, not itself a ground for refusal.
+
+- Establishing the baseline entitlement before applying any exemption
+
+Source reference: RTI Rule Book, p. 6
+
+RTI Act 2005 Section wise Q&A / Query Variant Guide

@@ -1,0 +1,16 @@
+# FAQ Chunk 56
+Document: 500_cgrti
+Source: structured.md
+Pages: 6
+Section: 2.2 Exemptions & What Cannot Be Requested
+Question: Q59. Can Ibe denied information because it's "sensitive"? A: "sensitive" alone is not valid exemption. Must fall under specific Section 8 categories. No,
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 55
+
+---
+
+## 2.2 Exemptions & What Cannot Be Requested
+
+Q59. Can Ibe denied information because it's "sensitive"? A: "sensitive" alone is not valid exemption. Must fall under specific Section 8 categories. No,

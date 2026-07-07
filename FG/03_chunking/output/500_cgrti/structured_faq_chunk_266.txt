@@ -1,0 +1,16 @@
+# FAQ Chunk 266
+Document: 500_cgrti
+Source: structured.md
+Pages: 21
+Section: 6.2 CG Online RTI Portal
+Question: Q269. Will 1 get email updates on portal? A: Tes, you'll get email when PIO sends response. Also SMS if mobile number registered. get
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 44
+
+---
+
+## 6.2 CG Online RTI Portal
+
+Q269. Will 1 get email updates on portal? A: Tes, you'll get email when PIO sends response. Also SMS if mobile number registered. get

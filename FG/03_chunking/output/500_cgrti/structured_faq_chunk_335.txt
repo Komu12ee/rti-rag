@@ -1,0 +1,16 @@
+# FAQ Chunk 335
+Document: 500_cgrti
+Source: structured.md
+Pages: 26
+Section: 7.4 Revenue Department RTI Questions
+Question: Q339. "Land dispute how resolved?" A: Yes. Request: dispute register, your case status, hearings conducted, resolution timeline.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 43
+
+---
+
+## 7.4 Revenue Department RTI Questions
+
+Q339. "Land dispute how resolved?" A: Yes. Request: dispute register, your case status, hearings conducted, resolution timeline.

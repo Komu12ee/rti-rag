@@ -1,0 +1,28 @@
+## Question variants all map to this one provision
+
+- 1. What does Section 7(5) of the Right to Information Act, 2005 provide?
+- 2. Explain RTI Act Section 7(5): Form of information requested.
+- 3. What is Act 7(5) in RTI? I need the rule for 30 days.
+- 5. धारा 75) का सरल अर्थ क्या है - मांगी गई सूचना का रूप?
+- 4. सूचना का अधिकार अधिनियम, 2005 धारा 7(5) में क्या प्रावधान है?
+- 6. RTI Act 7(5) ka rule kya hai? मांगी गई सूचना का रूप के बारे में बताइए|
+- 7. In this situation: Calculating whether PIO is within statutory response deadline. Does Section 7(5) apply, and what does it say? 8. "7(5) RTI law me kya hai? " "7(5) ka matlab?"
+
+## Answer
+
+English definition: Information shall ordinarily be provided in the form requested, unless it would disproportionately divert resources or harm the safetylpreservation of the record.
+
+हिंदीं परिभाषाः सूचना साधारणतया उसी रूप में दी जाएगी जिसमें मांगी गई है, जब तक कि यह संसाधनों का अनुपातहीन उपयोग न करे या अभिलेख की सुरक्षा संरक्षण को नुकसान न पहुंचाए|
+
+Retrieval anchors: Form of information requested; मांगी गई सूचना का रूप; 30 days; 48 hours; deemed refusal; life and liberty; further fee; sensorily disabled; free of charge; rejection reasons
+
+## Typical contexts
+
+- Calculating whether PIO is within statutory response deadline
+- PIO missed deadline trigger free of charge and deemed refusal logic
+- Query relates to a person's life or liberty apply 48-hour rule
+- Drafting a rejection must include reasons, appeal window, appellate authority
+
+PIO implementation note: Always check the urgency flag (lifelliberty) first to apply the 48-hour rule instead of 30 If the 3O-day (or 48-hour) deadline has lapsed, the response must note that the information is to be supplied free of charge and that a deemed refusal has occurred, which is independently appealable. days.
+
+Source reference: RTI Rule Book, pp. 13-14

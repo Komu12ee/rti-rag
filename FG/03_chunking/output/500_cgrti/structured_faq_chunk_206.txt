@@ -1,0 +1,16 @@
+# FAQ Chunk 206
+Document: 500_cgrti
+Source: structured.md
+Pages: 17
+Section: 5.2 Education & Student Scenarios
+Question: Q210. "Why is school exam result below average?" A: Request: pass percentage, comparison with previous years, district average, reason analysis by education dept.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 42
+
+---
+
+## 5.2 Education & Student Scenarios
+
+Q210. "Why is school exam result below average?" A: Request: pass percentage, comparison with previous years, district average, reason analysis by education dept.

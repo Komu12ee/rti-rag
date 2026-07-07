@@ -1,0 +1,16 @@
+# FAQ Chunk 134
+Document: 500_cgrti
+Source: structured.md
+Pages: 12
+Section: 3.5 Information Commission Powers
+Question: Q138. How long does SIC take to decide? A: 90 days from appeal receipt (extendable by 90 more days for complex cases).
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 40
+
+---
+
+## 3.5 Information Commission Powers
+
+Q138. How long does SIC take to decide? A: 90 days from appeal receipt (extendable by 90 more days for complex cases).

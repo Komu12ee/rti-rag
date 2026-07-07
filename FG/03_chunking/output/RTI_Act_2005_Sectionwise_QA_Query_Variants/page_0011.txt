@@ -1,0 +1,29 @@
+## Question variants all map to this one provision
+
+- 1. What does Section 2(h) of the Right to Information Act, 2005 provide?
+- 2. Explain RTI Act Section 2(h): Public Authority.
+- 3. What is Act 2(h) in RTI? 1 need the rule for definitions.
+- 4. सूचना का अधिकार अधिनियम, 2005 की धारा 2h) में क्या प्रावधान है?
+- 5. धारा 2h) का सरल अर्थ क्या है - लोक प्राधिकरण?
+- 6. RTI Act 2(h) ka rule kya hai? लोक प्राधिकरण के बारे में बताइए|
+- 7. In this situation: query requiring interpretation of a statutory term. Does Section 2(h) apply, and what does it say? Any
+- 8. "2(h) RTI law me kya hai?" "2(h) ka matlab?"
+
+## Answer
+
+English definition: authority, body or institution of self-government established by the Constitution, Parliament law, State law, government notification, or substantially financed by government funds. Any
+
+हिंदीं परिभाषाः संविधान, संसद विधि राज्य विधान, अधिसूचना द्वारा या सरकारी निधि से पर्याप्त वित्तपोषित कोई भी प्राधिकरण निकाय या स्वशासन संस्था|
+
+Retrieval anchors Public Authority; लोक प्राधिकरण; definitions; appropriate government; information; record; third party; CPIO; SPIO; competent authority
+
+## Typical contexts
+
+- Any query requiring interpretation of a statutory term
+- Determining whether a body qualifies as a 'Public Authority (e.g. NGO substantially financed by government)
+- Determining which ' Government' is appropriate for an application
+- Determining if requested material qualifies as 'Information' under the Act
+
+PIO implementation note: Use this section first when validating whether the receiving the RTI query is in fact a 'public authority obligated to respond, and whether the material sought falls within the definition of 'information'. body
+
+Source reference: RTI Rule Book, pp. 2 6

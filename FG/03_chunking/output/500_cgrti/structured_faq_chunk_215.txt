@@ -1,0 +1,16 @@
+# FAQ Chunk 215
+Document: 500_cgrti
+Source: structured.md
+Pages: 18
+Section: 5.3 Health & Safety Scenarios
+Question: Q219. "Patient died due to negligence. Can [ get records?" A: Request: medical file (if youre family) , post mortem report, investigation findings disciplinary action.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 53
+
+---
+
+## 5.3 Health & Safety Scenarios
+
+Q219. "Patient died due to negligence. Can [ get records?" A: Request: medical file (if youre family) , post mortem report, investigation findings disciplinary action.

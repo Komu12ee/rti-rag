@@ -1,0 +1,16 @@
+# FAQ Chunk 191
+Document: 500_cgrti
+Source: structured.md
+Pages: 16
+Section: .1 Corruption & Transparency Scenarios
+Question: Q195. "Local officials house is palace sized. How did he afford it on salary?" A: RTI can help: property records salary slips (public), assets declaration (if available). Indirect investigation tool.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 64
+
+---
+
+## .1 Corruption & Transparency Scenarios
+
+Q195. "Local officials house is palace sized. How did he afford it on salary?" A: RTI can help: property records salary slips (public), assets declaration (if available). Indirect investigation tool.

@@ -1,0 +1,16 @@
+# FAQ Chunk 204
+Document: 500_cgrti
+Source: structured.md
+Pages: 17
+Section: 5.2 Education & Student Scenarios
+Question: Q208. "Textbooks have printing errors. Why printed?" A: Request: tender for textbook printing, approval process, quality checks done, error correction steps.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 49
+
+---
+
+## 5.2 Education & Student Scenarios
+
+Q208. "Textbooks have printing errors. Why printed?" A: Request: tender for textbook printing, approval process, quality checks done, error correction steps.

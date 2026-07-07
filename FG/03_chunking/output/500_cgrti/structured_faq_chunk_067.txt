@@ -1,0 +1,16 @@
+# FAQ Chunk 67
+Document: 500_cgrti
+Source: structured.md
+Pages: 7
+Section: 2.3 Third Party Information
+Question: Q70. What if third party is a competitor bidder? A: Their sealed bid is protected. After award, winning bidder's accepted terms are public (but cost may be protected if commercial).
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 52
+
+---
+
+## 2.3 Third Party Information
+
+Q70. What if third party is a competitor bidder? A: Their sealed bid is protected. After award, winning bidder's accepted terms are public (but cost may be protected if commercial).

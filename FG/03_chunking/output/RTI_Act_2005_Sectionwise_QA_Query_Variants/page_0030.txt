@@ -1,0 +1,29 @@
+## Question variants all map to this one provision
+
+- 1. What does Section 7(3) of the Right to Information Act, 2005 provide?
+- 2. Explain RTI Act Section 7(3): Intimation of further fee.
+- 3. What is Act 7(3) in RTI? I need the rule for 30 days.
+- 5. धारा 73) का सरल अर्थ क्या है - अतिरिक्त शुल्क की सूचनाः
+- 4. सूचना का अधिकार अधिनियम, 2005 धारा 73) में क्या प्रावधान है?
+- 6. RTI Act 7(3) ka rule kya hai? अतिरिक्त शुल्क की सूचना के बारे में बताइए|
+- 7. In this situation: Calculating whether PIO is within statutory response deadline. Does Section 7(3) apply, and what does it say?
+- 8. "7(3) RTI law me kya hai? " "7(3) ka matlab?"
+
+## Answer
+
+English definition: Where further fee is required, the PIO shall communicate the fee, payment details, and the applicant's right to seek review of the fee amount; the time taken between intimation and payment is excluded from the response period.
+
+हिंदी परिभाषाः जहां अतिरिक्त शुल्क आवश्यक है, PIO शुल्क भुगतान विवरण और शुल्क राशि की समीक्षा मांगने के अधिकार की सूचना देगाः सूचना और भुगतान के बीच की अवधि उत्तर अवधि से बाहर है|
+
+Retrieval anchors Intimation of further fee; अतिरिक्त शुल्क को सूचना; 30 days 48 hours; deemed refusal; life and liberty; further fee; sensorily disabled; free of charge; rejection reasons
+
+## Typical contexts
+
+- Calculating whether PIO is within statutory response deadline
+- PIO missed deadline trigger free-of-charge and deemed refusal logic
+- Query relates to a person's life or liberty apply 48-hour rule
+- Drafting a rejection must include reasons appeal window appellate authority
+
+PIO implementation note: Always check the urgency flag (life liberty) first to apply the 48-hour rule instead of 30 days. If the 3O-day (or 48-hour) deadline has lapsed, the response must note that the information is to be supplied free of charge and that a deemed refusal has occurred, which is independently appealable.
+
+Source reference: RTI Rule Book, pp. 13 14

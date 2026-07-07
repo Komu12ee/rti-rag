@@ -1,0 +1,16 @@
+# FAQ Chunk 66
+Document: 500_cgrti
+Source: structured.md
+Pages: 7
+Section: 2.3 Third Party Information
+Question: Q69. Can I get details about another person's contract? A: Government's side yes (contract terms, vendor details). Vendor's proprietary details may be withheld.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 45
+
+---
+
+## 2.3 Third Party Information
+
+Q69. Can I get details about another person's contract? A: Government's side yes (contract terms, vendor details). Vendor's proprietary details may be withheld.

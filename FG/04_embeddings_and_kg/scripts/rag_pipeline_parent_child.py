@@ -59,6 +59,8 @@ def _paths() -> dict[str, Any]:
         "ollama_host": os.getenv("OLLAMA_HOST", os.getenv("CHIPPY_OLLAMA_HOST", "localhost")),
         "ollama_port": int(os.getenv("OLLAMA_PORT", os.getenv("CHIPPY_OLLAMA_PORT", "11434"))),
         "ollama_model": os.getenv("OLLAMA_MODEL", os.getenv("CHIPPY_OLLAMA_MODEL", "qwen2.5:3b")),
+        "embedding_model": os.getenv("EMBEDDING_MODEL", str(root / "models" / "bge-m3")),
+        "reranker_model": os.getenv("RERANKER_MODEL", str(root / "models" / "bge-reranker-v2-m3")),
     }
 
 
@@ -71,10 +73,11 @@ RERANK_THRESHOLD = 0.60
 MAX_LENGTH = 1024
 
 
-print("[RAG] Loading embedding and reranker models...")
-model = BGEM3FlagModel("BAAI/bge-m3", use_fp16=True)
+print(f"[RAG] Loading embedding model: {CFG['embedding_model']}")
+model = BGEM3FlagModel(CFG["embedding_model"], use_fp16=True)
 model.return_sparse = True
-reranker = FlagReranker("BAAI/bge-reranker-v2-m3", use_fp16=True)
+print(f"[RAG] Loading reranker model: {CFG['reranker_model']}")
+reranker = FlagReranker(CFG["reranker_model"], use_fp16=True)
 
 # ── Connect to Qdrant ────────────────────────────────────────
 # Support both local embedded (development) and remote service (Docker)

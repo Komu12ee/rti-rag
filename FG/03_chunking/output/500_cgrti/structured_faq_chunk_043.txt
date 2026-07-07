@@ -1,0 +1,16 @@
+# FAQ Chunk 43
+Document: 500_cgrti
+Source: structured.md
+Pages: 5
+Section: 2.1 What Information Can [ Request
+Question: Q46. Can I ask about budget allocation? A: Yes, budget allocations are public information. Every department must publish budget details (Section 4(1) (b) (xi)).
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 49
+
+---
+
+## 2.1 What Information Can [ Request
+
+Q46. Can I ask about budget allocation? A: Yes, budget allocations are public information. Every department must publish budget details (Section 4(1) (b) (xi)).

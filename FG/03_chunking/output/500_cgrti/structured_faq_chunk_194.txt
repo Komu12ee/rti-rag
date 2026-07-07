@@ -1,0 +1,16 @@
+# FAQ Chunk 194
+Document: 500_cgrti
+Source: structured.md
+Pages: 16
+Section: .1 Corruption & Transparency Scenarios
+Question: Q198. "Substandard material used in construction. Where do [ get proof?" A: RTI requestः tender specifications, quality certificates inspection reports, approved samples documentation
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 53
+
+---
+
+## .1 Corruption & Transparency Scenarios
+
+Q198. "Substandard material used in construction. Where do [ get proof?" A: RTI requestः tender specifications, quality certificates inspection reports, approved samples documentation

@@ -1,0 +1,16 @@
+# FAQ Chunk 351
+Document: 500_cgrti
+Source: structured.md
+Pages: 27
+Section: Complex Exemption Questions
+Question: Q355. "Government contract with confidential terms available?" A: Public terms yes, confidential commercial terms may be protected ( Section 8(1) (d)).
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 40
+
+---
+
+## Complex Exemption Questions
+
+Q355. "Government contract with confidential terms available?" A: Public terms yes, confidential commercial terms may be protected ( Section 8(1) (d)).

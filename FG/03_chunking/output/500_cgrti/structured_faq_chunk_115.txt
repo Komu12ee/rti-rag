@@ -1,0 +1,16 @@
+# FAQ Chunk 115
+Document: 500_cgrti
+Source: structured.md
+Pages: 10
+Section: 3.3 Exemptions Advanced
+Question: Q119. What information about ongoing litigation must be disclosed? A: Governments position papers, affidavits filed in court, factual details must be disclosed. Legal strategy may be protected.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 53
+
+---
+
+## 3.3 Exemptions Advanced
+
+Q119. What information about ongoing litigation must be disclosed? A: Governments position papers, affidavits filed in court, factual details must be disclosed. Legal strategy may be protected.

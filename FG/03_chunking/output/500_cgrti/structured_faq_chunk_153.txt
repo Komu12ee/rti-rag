@@ -1,0 +1,16 @@
+# FAQ Chunk 153
+Document: 500_cgrti
+Source: structured.md
+Pages: 13
+Section: 4.2 Information Existence & Scope Confusion
+Question: Q1577. What if record is damaged and partially illegible? A: PIO must provide available legible portions and inform about damage.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 43
+
+---
+
+## 4.2 Information Existence & Scope Confusion
+
+Q1577. What if record is damaged and partially illegible? A: PIO must provide available legible portions and inform about damage.

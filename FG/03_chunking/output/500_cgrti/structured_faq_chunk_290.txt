@@ -1,0 +1,16 @@
+# FAQ Chunk 290
+Document: 500_cgrti
+Source: structured.md
+Pages: 23
+Section: 6.5 CG Government Websites & Online Systems
+Question: Q293. Where is CG government erprocurement system? A: Separate portal (not RTI portal) for tenders. Usually accessible from cgstate govin or specific department website.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 55
+
+---
+
+## 6.5 CG Government Websites & Online Systems
+
+Q293. Where is CG government erprocurement system? A: Separate portal (not RTI portal) for tenders. Usually accessible from cgstate govin or specific department website.

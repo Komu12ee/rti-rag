@@ -1,0 +1,16 @@
+# FAQ Chunk 122
+Document: 500_cgrti
+Source: structured.md
+Pages: 11
+Section: 3.4 Suo Motu Disclosure
+Question: Q126. What if requested information is already published? A: PIO should provide reference link. Cannot charge copy fee if already publicly available.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 39
+
+---
+
+## 3.4 Suo Motu Disclosure
+
+Q126. What if requested information is already published? A: PIO should provide reference link. Cannot charge copy fee if already publicly available.

@@ -1,0 +1,16 @@
+# FAQ Chunk 390
+Document: 500_cgrti
+Source: structured.md
+Pages: 30
+Section: QUICK ANSWER KEYS FOR CHATBOT
+Question: Q391. What is RTI? Fundamental right to government information per RTI Act 2005 Q392. Who can file RTI? Anyone citizens NGOs businesses, non citizens Q393. RTI cost? > 310 application fee, 22 per page copy Q394. Timeline? > 30 days standard, 48 hours for lifelliberty cases Q395. Can I know reasons? NO, Section 6(2) reasons not required Q396. Appeal process? First appeal to senior officer ( 3O 45 days), then SIC (90 days) Q397. What if no response? Deemed refusal - appeal immediately Q398. CG SIC contact? (0771) 2512107 Www siccg govin Q399. Online filing CG? https Jrtionline cg govin Q4OO. Private company RTI? Only for government contracts, not operations
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 200
+
+---
+
+## QUICK ANSWER KEYS FOR CHATBOT
+
+Q391. What is RTI? Fundamental right to government information per RTI Act 2005 Q392. Who can file RTI? Anyone citizens NGOs businesses, non citizens Q393. RTI cost? > 310 application fee, 22 per page copy Q394. Timeline? > 30 days standard, 48 hours for lifelliberty cases Q395. Can I know reasons? NO, Section 6(2) reasons not required Q396. Appeal process? First appeal to senior officer ( 3O 45 days), then SIC (90 days) Q397. What if no response? Deemed refusal - appeal immediately Q398. CG SIC contact? (0771) 2512107 Www siccg govin Q399. Online filing CG? https Jrtionline cg govin Q4OO. Private company RTI? Only for government contracts, not operations

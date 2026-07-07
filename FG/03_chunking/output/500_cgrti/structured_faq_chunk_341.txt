@@ -1,0 +1,16 @@
+# FAQ Chunk 341
+Document: 500_cgrti
+Source: structured.md
+Pages: 27
+Section: 7.5 Police Department RTI Questions
+Question: Q345. "Constable qualification as per rules?" A: Yes. Request: police personnel recruitment criteria, qualifications, training received.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 40
+
+---
+
+## 7.5 Police Department RTI Questions
+
+Q345. "Constable qualification as per rules?" A: Yes. Request: police personnel recruitment criteria, qualifications, training received.

@@ -1,0 +1,16 @@
+# FAQ Chunk 223
+Document: 500_cgrti
+Source: structured.md
+Pages: 18
+Section: 5.4 Infrastructure & Public Works Scenarios
+Question: Q227. "Hospital building nearly complete but not opened. Why the hold?" Aः Request: construction completion, final inspection, equipment procurement status, staffing against delayed opening
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 53
+
+---
+
+## 5.4 Infrastructure & Public Works Scenarios
+
+Q227. "Hospital building nearly complete but not opened. Why the hold?" Aः Request: construction completion, final inspection, equipment procurement status, staffing against delayed opening

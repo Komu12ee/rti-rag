@@ -1,0 +1,24 @@
+## Question variants all map to this one provision
+
+- 1. What does Section 17(powers) of the Right to Information Act, 2005 provide?
+- 2. Explain RTI Act Section 1 7(powers): Enumerated state powers.
+- 3. What is Act 1 7(powers) in RTI? I need the rule for state appellate jurisdiction.
+- 5. धारा 17(powers) का सरल अर्थ क्या है सूचीबद्ध राज्य शक्तियां?
+- 4. सूचना का अधिकार अधिनियम, 2005 की धारा 17lpowers) में क्या प्रावधान है?
+- 6. RTI Act 1 7lpowers) ka rule kya hai? सूचीबद्ध राज्य शक्तियां के बारे में बताइए|
+- 7. In this situation: Validating SICs authority to act suo motu on a systemic non compliance issue at state level. Does Section 17(powers) apply, and what does it say?
+- 8. "17(powers) RTI law me kya hai?" "17(powers) ka matlab? "
+
+## Answer
+
+English definition: Appellate jurisdiction over decisions of state PIOs; power to conduct inquiries; power to issue orders; power to recommend penalties; power to conduct suo motu investigations; power to hear complaints about RTI implementation.
+
+हिंदी परिभाषाः राज्य PIOs के विनिश्चयों पर अपीलीय अधिकारिता; जांच करने की शक्तिः आदेश जारी करने की शक्तिः दंड की सिफारिश करने की शक्तिः स्वप्रेरणा जांच करने की शक्तिः RTI कार्यान्वयन संबंधी शिकायतें की शक्ति| सुनने
+
+Retrieval anchors: Enumerated state powers; सूचीबद्ध राज्य शक्तियां; state appellate jurisdiction; suo motu investigation; state complaints
+
+## Typical contexts
+
+- Validating SICs authority to act suo motu on a systemic non-compliance issue at state level PIO implementation note: Relevant context when the State Commission itself initiates inquiry rather than waiting for an appeal.
+
+Source reference: RTI Rule Book, pp. 60-1 74 (SIC procedures and powers)

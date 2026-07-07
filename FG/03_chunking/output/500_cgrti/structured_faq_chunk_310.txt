@@ -1,0 +1,16 @@
+# FAQ Chunk 310
+Document: 500_cgrti
+Source: structured.md
+Pages: 24-25
+Section: 7.2 Health Department RTI Questions
+Question: Q313. "What's the bed capacity and occupancy?" A: Yes. Request: number of beds, occupancy rate, bed allocation by ward, waiting list if any
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 50
+
+---
+
+## 7.2 Health Department RTI Questions
+
+Q313. "What's the bed capacity and occupancy?" A: Yes. Request: number of beds, occupancy rate, bed allocation by ward, waiting list if any

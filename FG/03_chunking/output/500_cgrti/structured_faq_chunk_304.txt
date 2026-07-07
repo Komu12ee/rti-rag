@@ -1,0 +1,16 @@
+# FAQ Chunk 304
+Document: 500_cgrti
+Source: structured.md
+Pages: 24
+Section: 7.1 Education Department RTI Questions
+Question: Q307. "Scholarship - why my eligible child not included?" A: Yes. Request: scholarship policy, eligibility criteria, selection list, your childs marks, assessment done.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 53
+
+---
+
+## 7.1 Education Department RTI Questions
+
+Q307. "Scholarship - why my eligible child not included?" A: Yes. Request: scholarship policy, eligibility criteria, selection list, your childs marks, assessment done.

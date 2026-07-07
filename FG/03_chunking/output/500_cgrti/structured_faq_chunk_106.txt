@@ -1,0 +1,16 @@
+# FAQ Chunk 106
+Document: 500_cgrti
+Source: structured.md
+Pages: 10
+Section: 3.2 Procedural Technicalities
+Question: Q110. Can PIO demand applicant's identity? A: No, you only need to provide contact details. Full identity personal verification cannot be demanded.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 42
+
+---
+
+## 3.2 Procedural Technicalities
+
+Q110. Can PIO demand applicant's identity? A: No, you only need to provide contact details. Full identity personal verification cannot be demanded.

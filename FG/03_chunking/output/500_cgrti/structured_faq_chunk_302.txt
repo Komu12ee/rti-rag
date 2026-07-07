@@ -1,0 +1,16 @@
+# FAQ Chunk 302
+Document: 500_cgrti
+Source: structured.md
+Pages: 24
+Section: 7.1 Education Department RTI Questions
+Question: Q305. "School fee structure is it legal?" A: Yes. Request: fee approval from government, circular on permissible fees, last 3 years fee, usage breakdown.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 48
+
+---
+
+## 7.1 Education Department RTI Questions
+
+Q305. "School fee structure is it legal?" A: Yes. Request: fee approval from government, circular on permissible fees, last 3 years fee, usage breakdown.

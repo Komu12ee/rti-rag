@@ -1,0 +1,28 @@
+## Question variants all map to this one provision
+
+- 1. What does Section 5(2) of the Right to Information Act, 2005 provide?
+- 2. Explain RTI Act Section 5(2): Designation of Assistant PIO (CAPIOISAPIO).
+- 3. What is Act 5(2) in RTI? ] need the rule for CPIO.
+- 4. सूचना का अधिकार अधिनियम, 2005 धारा 5(2 ) में क्या प्रावधान है?
+- 5. धारा 5(2) का सरल अर्थ क्या है सहायक PIO (CAPIOJSAPIO) का पदाभिहितकरण?
+- 6. RTI Act 5(2 ) ka rule kya hai? सहायक PIO (CAPIOJSAPIO) का पदाभिहितकरण के बारे में बताइए|
+- 7. In this situation: Validating whether the application was correctly addressed to a designated CPIOISPIO. Does Section 5(2) apply, and what does it say?
+- 8. "5(2) RTI law me kya hai? " "5(2) ka matlab?
+
+## Answer
+
+English definition: At sub divisionallsub district level , a CAPIOISAPIO shall be designated to receive applications appeals and forward to the CPIOISPIO; response time extends by 5 days when received via Assistant PIO.
+
+हिंदीं परिभाषाः उपमंडल उपजिला स्तर पर CAPIOJSAPIO पदाभिहित किया जाएगा जो आवेदन अपील प्राप्त कर CPIOJSPIO को अग्रेषित करेगा; सहायक PIO के माध्यम से प्राप्त आवेदन पर समय-सीमा 5 दिन बढ़ जाती हैl
+
+Retrieval anchors: Designation of Assistant PIO (CAPIOISAPIO); सहायक PIO (CAPIOISAPIOJका पदाभिहितकरण; CPIO; SPIO; CAPIO; SAPIO; assistant public information officer; 100 days designation
+
+## Typical contexts
+
+- Validating whether the application was correctly addressed to a designated CPIOISPIO
+- No CPIOISPIO designated escalation complaint scenario under Section 18
+- Application submitted through an Assistant PIO recalculate response deadline (+5 days)
+
+PIO implementation note: If application was received via CAPIOISAPIO, add 5 days to the standard 3O-day computation in Section 7 before flagging a delay.
+
+Source reference: RTI Rule Book, p. 10

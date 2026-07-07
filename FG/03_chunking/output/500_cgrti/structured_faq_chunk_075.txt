@@ -1,0 +1,16 @@
+# FAQ Chunk 75
+Document: 500_cgrti
+Source: structured.md
+Pages: 7
+Section: 2.4 Format & Access Methods
+Question: Q78. How do 1 get information if Tm illiterate? A: PIO must provide reasonable assistance (Section 7(4 )). Can provide audio, oral, or translated version.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 49
+
+---
+
+## 2.4 Format & Access Methods
+
+Q78. How do 1 get information if Tm illiterate? A: PIO must provide reasonable assistance (Section 7(4 )). Can provide audio, oral, or translated version.

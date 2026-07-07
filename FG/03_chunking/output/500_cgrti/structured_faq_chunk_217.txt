@@ -1,0 +1,16 @@
+# FAQ Chunk 217
+Document: 500_cgrti
+Source: structured.md
+Pages: 18
+Section: 5.4 Infrastructure & Public Works Scenarios
+Question: Q221. "Road has potholes despite repair allocation. Track the money " A: Request: tender for repair, contract awarded, payment made, quality inspection reports, photographs.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 56
+
+---
+
+## 5.4 Infrastructure & Public Works Scenarios
+
+Q221. "Road has potholes despite repair allocation. Track the money " A: Request: tender for repair, contract awarded, payment made, quality inspection reports, photographs.

@@ -1,0 +1,16 @@
+# FAQ Chunk 327
+Document: 500_cgrti
+Source: structured.md
+Pages: 26
+Section: 7.4 Revenue Department RTI Questions
+Question: Q331. "Land record is it correct?" A: Yes. Request: land record copy, mutation details, ownership history measurement report.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 42
+
+---
+
+## 7.4 Revenue Department RTI Questions
+
+Q331. "Land record is it correct?" A: Yes. Request: land record copy, mutation details, ownership history measurement report.

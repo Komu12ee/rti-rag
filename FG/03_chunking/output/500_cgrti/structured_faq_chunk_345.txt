@@ -1,0 +1,16 @@
+# FAQ Chunk 345
+Document: 500_cgrti
+Source: structured.md
+Pages: 27
+Section: 7.5 Police Department RTI Questions
+Question: Q349. "Police custody is it legal?" A: Yes. Request custody order copy duration, reason for custody, medical examination record.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 43
+
+---
+
+## 7.5 Police Department RTI Questions
+
+Q349. "Police custody is it legal?" A: Yes. Request custody order copy duration, reason for custody, medical examination record.

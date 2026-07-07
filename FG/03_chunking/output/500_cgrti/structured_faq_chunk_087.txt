@@ -1,0 +1,16 @@
+# FAQ Chunk 87
+Document: 500_cgrti
+Source: structured.md
+Pages: 8
+Section: 2.4 Format & Access Methods
+Question: Q90. Can I request information about deceased person? A: Tes, public information about deceased officials is available. Personal details may still be protected for family
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 43
+
+---
+
+## 2.4 Format & Access Methods
+
+Q90. Can I request information about deceased person? A: Tes, public information about deceased officials is available. Personal details may still be protected for family

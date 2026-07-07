@@ -1,0 +1,28 @@
+## Question variants all map to this one provision
+
+- 1. What does Section 6(1 ) of the Right to Information Act, 2005 provide?
+- 2. Explain RTI Act Section 6(1 ): Mode and content of request.
+- 3. What is Act 6(1 ) in RTI? I need the rule for application.
+- 5. धारा 681 ) का सरल अर्थ क्या है का रूप और विषय वस्तुः अनुरोध
+- 4. सूचना का अधिकार अधिनियम, 2005 की धारा 681 ) में क्या प्रावधान है?
+- 6. RTI Act 6(1 ) ka rule kya hai? का रूप और विषय वस्तु के बारे में बताइए| अनुरोध
+- 7. In this situation: Validating application format/language compliance. Does Section 6(1 ) apply, and what does it say?
+- 8. "6(1 ) RTI law me kya hai?" "6(1) ka matlab?"
+
+## Answer
+
+English definition: Request in writing or electronic means in English, Hindi, or official language of the area, accompanied by prescribed fee, addressed to CPIOISPIO or CAPIOISAPIO, with sufficient particulars to identify the information sought.
+
+हिंदी परिभाषाः लिखित या इलेक्ट्रॉनिक माध्यम से, अंग्रेजी, हिंदी, या क्षेत्र की राजभाषा में निर्धारित शुल्क सहित, CPIOISPIO या CAPIOJSAPIO को संबोधित, मांगी गई सूचना की पर्याप्त विशिष्टियों के साथ अनुरोध|
+
+Retrieval anchors: Mode and content of request; अनुरोध का रूप और विषय वस्तुः application; request format fee; transfer of application; no reason required; language of application
+
+## Typical contexts
+
+- Validating application format/language compliance
+- Information requested belongs to a different public authority trigger transfer procedure
+- Application demands a 'reason' from applicant non-compliant practice to flag
+
+PIO implementation note: Never reject or delay an application merely because the applicant has not stated a reason. If the subject matter belongs to another public authority, transfer per 6(3) and notify the applicant; do not silently reject.
+
+Source reference: RTI Rule Book, pp. 11-12

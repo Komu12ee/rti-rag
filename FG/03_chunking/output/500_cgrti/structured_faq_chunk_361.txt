@@ -1,0 +1,16 @@
+# FAQ Chunk 361
+Document: 500_cgrti
+Source: structured.md
+Pages: 28
+Section: Advanced Timeline & Procedural Issues
+Question: Q365. "SIC took 120 days can I challenge?" A: Yes, SIC deadline is 90 days (extendable 90 more). Beyond that, file High Court writ.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 49
+
+---
+
+## Advanced Timeline & Procedural Issues
+
+Q365. "SIC took 120 days can I challenge?" A: Yes, SIC deadline is 90 days (extendable 90 more). Beyond that, file High Court writ.

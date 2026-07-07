@@ -1,0 +1,22 @@
+# FAQ Chunk 391
+Document: 500_cgrti
+Source: structured.md
+Pages: 30-31
+Section: TOTAL QUESTIONS: 400+
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 73
+
+---
+
+## TOTAL QUESTIONS: 400+
+
+This database covers:
+
+- Basic questions ( Level 1): Q1-Q90
+- Intermediate (Level 2): Q91-Q200
+- Advanced (Level 3): Q201-Q300
+- Tricky Edge Cases: Q301-Q350
+- Scenario based: Q351-Q400

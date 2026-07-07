@@ -1,0 +1,16 @@
+# FAQ Chunk 71
+Document: 500_cgrti
+Source: structured.md
+Pages: 7
+Section: 2.4 Format & Access Methods
+Question: Q74. What if requested format is not available? A: PIO can provide alternate format but must inform you and charge accordingly.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 37
+
+---
+
+## 2.4 Format & Access Methods
+
+Q74. What if requested format is not available? A: PIO can provide alternate format but must inform you and charge accordingly.

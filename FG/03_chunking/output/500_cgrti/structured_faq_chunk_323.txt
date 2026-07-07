@@ -1,0 +1,16 @@
+# FAQ Chunk 323
+Document: 500_cgrti
+Source: structured.md
+Pages: 25
+Section: 7.3 Public Works Department ( PWD) RTI Questions
+Question: Q327. "Road has potholes - repair plan?" A: Yes. Request: repair allocation, contractor responsible, pending repairs list, complaint response time.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 55
+
+---
+
+## 7.3 Public Works Department ( PWD) RTI Questions
+
+Q327. "Road has potholes - repair plan?" A: Yes. Request: repair allocation, contractor responsible, pending repairs list, complaint response time.

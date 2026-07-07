@@ -1,0 +1,16 @@
+# FAQ Chunk 270
+Document: 500_cgrti
+Source: structured.md
+Pages: 22
+Section: 6.3 CG Departments & PIOs
+Question: Q273. How do T know which department owns cgstate govin website? A: Department of Information Technology (DIT), Chhattisgarh. File RTI to DIT PIO for website specific issues.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 56
+
+---
+
+## 6.3 CG Departments & PIOs
+
+Q273. How do T know which department owns cgstate govin website? A: Department of Information Technology (DIT), Chhattisgarh. File RTI to DIT PIO for website specific issues.

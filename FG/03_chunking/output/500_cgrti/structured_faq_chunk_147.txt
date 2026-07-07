@@ -1,0 +1,16 @@
+# FAQ Chunk 147
+Document: 500_cgrti
+Source: structured.md
+Pages: 13
+Section: 4.2 Information Existence & Scope Confusion
+Question: Q151. Can I demand PIO to "verify" if information exists? A: you describe what you want. PIO searches. If doesnt exist, PIO says SO with reasons. No,
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 55
+
+---
+
+## 4.2 Information Existence & Scope Confusion
+
+Q151. Can I demand PIO to "verify" if information exists? A: you describe what you want. PIO searches. If doesnt exist, PIO says SO with reasons. No,

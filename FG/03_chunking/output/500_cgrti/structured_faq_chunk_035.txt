@@ -1,0 +1,16 @@
+# FAQ Chunk 35
+Document: 500_cgrti
+Source: structured.md
+Pages: 4
+Section: L.5 PIO - Public Information Officer
+Question: Q38. Can [ file RTI with Assistant PIO instead of main PIO? A: Yes, Assistant PIO (at sub- divisional level) can accept applications. Response timeline increases by 5 days if filed with Assistant PIO.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 63
+
+---
+
+## L.5 PIO - Public Information Officer
+
+Q38. Can [ file RTI with Assistant PIO instead of main PIO? A: Yes, Assistant PIO (at sub- divisional level) can accept applications. Response timeline increases by 5 days if filed with Assistant PIO.

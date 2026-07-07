@@ -1,0 +1,16 @@
+# FAQ Chunk 162
+Document: 500_cgrti
+Source: structured.md
+Pages: 14
+Section: 4.3 Department Confusion & Routing
+Question: Q166. Can PMO (state chief minister's office) refuse saying "transferred to ministry"? A: Only if information is actually held elsewhere. Cannot refuse on pretext of transfer without actually transferring
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 53
+
+---
+
+## 4.3 Department Confusion & Routing
+
+Q166. Can PMO (state chief minister's office) refuse saying "transferred to ministry"? A: Only if information is actually held elsewhere. Cannot refuse on pretext of transfer without actually transferring

@@ -1,0 +1,16 @@
+# FAQ Chunk 381
+Document: 500_cgrti
+Source: structured.md
+Pages: 29
+Section: BONUS SECTION: COMMON MISTAKES & HOWTO AVOID
+Question: Q384. "Expected delay claim "we're understaffed" valid exemption?" A: No, understaffing is not valid excuse per Section 7. Appeal.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 57
+
+---
+
+## BONUS SECTION: COMMON MISTAKES & HOWTO AVOID
+
+Q384. "Expected delay claim "we're understaffed" valid exemption?" A: No, understaffing is not valid excuse per Section 7. Appeal.

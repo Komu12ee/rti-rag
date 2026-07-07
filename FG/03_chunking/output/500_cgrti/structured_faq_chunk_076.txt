@@ -1,0 +1,16 @@
+# FAQ Chunk 76
+Document: 500_cgrti
+Source: structured.md
+Pages: 7
+Section: 2.4 Format & Access Methods
+Question: Q79. Can I ask for translated information? A: Yes, if you need Hindi English translation. Reasonable translation assistance must be provided.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 38
+
+---
+
+## 2.4 Format & Access Methods
+
+Q79. Can I ask for translated information? A: Yes, if you need Hindi English translation. Reasonable translation assistance must be provided.

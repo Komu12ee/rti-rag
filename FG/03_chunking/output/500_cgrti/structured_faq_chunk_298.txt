@@ -1,0 +1,16 @@
+# FAQ Chunk 298
+Document: 500_cgrti
+Source: structured.md
+Pages: 24
+Section: 7.1 Education Department RTI Questions
+Question: Q301. "Can [ get list of all government schools in my district?" A: Yes. File RTI to District Education Officer requesting school list with names, addresses, established year
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 47
+
+---
+
+## 7.1 Education Department RTI Questions
+
+Q301. "Can [ get list of all government schools in my district?" A: Yes. File RTI to District Education Officer requesting school list with names, addresses, established year

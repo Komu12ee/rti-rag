@@ -1,0 +1,16 @@
+# FAQ Chunk 171
+Document: 500_cgrti
+Source: structured.md
+Pages: 14
+Section: 4.4 Exemptions - Tricky Applications
+Question: Q175. Can personal information be withheld if person is public figure? Aः Yes public figures less privacy protection but still some. Information must relate to public role activity. get
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 48
+
+---
+
+## 4.4 Exemptions - Tricky Applications
+
+Q175. Can personal information be withheld if person is public figure? Aः Yes public figures less privacy protection but still some. Information must relate to public role activity. get

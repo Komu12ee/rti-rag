@@ -1,0 +1,16 @@
+# FAQ Chunk 340
+Document: 500_cgrti
+Source: structured.md
+Pages: 26-27
+Section: 7.5 Police Department RTI Questions
+Question: Q344. "Police station strength authorized vs actual?" A: Yes. Request: sanctioned posts, deployed staff, vacancies, recruitment status.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 45
+
+---
+
+## 7.5 Police Department RTI Questions
+
+Q344. "Police station strength authorized vs actual?" A: Yes. Request: sanctioned posts, deployed staff, vacancies, recruitment status.

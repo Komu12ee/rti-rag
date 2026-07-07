@@ -1,0 +1,16 @@
+# FAQ Chunk 148
+Document: 500_cgrti
+Source: structured.md
+Pages: 13
+Section: 4.2 Information Existence & Scope Confusion
+Question: Q152. Can I ask PIO to "create analysis" of existing data? A: you cannot ask for analysis. Tou can only request existing reports documents. No,
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 47
+
+---
+
+## 4.2 Information Existence & Scope Confusion
+
+Q152. Can I ask PIO to "create analysis" of existing data? A: you cannot ask for analysis. Tou can only request existing reports documents. No,

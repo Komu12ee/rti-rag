@@ -1,0 +1,28 @@
+## Question variants all map to this one provision
+
+- 1. What does Section 9 of the Right to Information Act, 2005 provide?
+- 2. Explain RTI Act Section 9ः Copyright based rejection.
+- 3. What is Act 9 in RTI? I need the rule for copyright.
+- 5. धारा 9 का सरल अर्थ क्या है कॉपीराइट आधारित अस्वीकृतिः
+- 4. सूचना का अधिकार अधिनियम, 2005 की धारा 9 में क्या प्रावधान है?
+- 6. RTI Act 9 ka rule kya hai? कॉपीराइट आधारित अस्वीकृति के बारे में बताइए|
+- 7. In this situation: Requested material (book, manuscript, design software, etc.) is third party copyrighted content held by the public authority. Does Section 9 apply, and what does it say?
+- 8. "9 RTI law me kya hai? " "9 ka matlab?
+
+## Answer
+
+English definition: Notwithstanding Section 8, a CPIOISPIO may reject a request for information where providing such access would invoive an infringement of copyright subsisting in a person other than the State.
+
+हिंदी परिभाषाः धारा 8 के होते हुए भी, CPIOJSPIO सूचना के को अस्वीकार कर सकता है जहां ऐसी पहुंच प्रदान करने में राज्य से भिन्न किसी व्यक्ति में निहित कॉपीराइट का उल्लंघन होगा| लिए अनुरोध
+
+Retrieval anchors: Copyright based rejection; कॉपीराइट आधारित अस्वीकृति; copyright; infringement; intellectual property; third party copyright
+
+## Typical contexts
+
+- Requested material (book, manuscript, design software etc. ) is third party copyrighted content held by the public authority
+
+PIO implementation note: Verify copyright ownership before invoking this section if the copyright is held by the government itself , Section 9 does not apply and the request must be evaluated under Section 8 instead.
+
+- Distinguishing private party copyright (exempt) from government owned copyright (not exempt subject to 8(2))
+
+Source reference: RTI Rule Book, p. 17

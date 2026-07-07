@@ -1,0 +1,16 @@
+# FAQ Chunk 232
+Document: 500_cgrti
+Source: structured.md
+Pages: 19
+Section: 5.5 Appointments & Recruitment Scenarios
+Question: Q236. "Candidates from same family multiple jobs. Coincidence?" A: Request: recruitment process, all candidates backgrounds, selection criteria, if nepotism policy exists. got
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 55
+
+---
+
+## 5.5 Appointments & Recruitment Scenarios
+
+Q236. "Candidates from same family multiple jobs. Coincidence?" A: Request: recruitment process, all candidates backgrounds, selection criteria, if nepotism policy exists. got

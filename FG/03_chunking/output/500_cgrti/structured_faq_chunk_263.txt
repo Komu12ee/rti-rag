@@ -1,0 +1,16 @@
+# FAQ Chunk 263
+Document: 500_cgrti
+Source: structured.md
+Pages: 21
+Section: 6.2 CG Online RTI Portal
+Question: Q266. What if I forget my portal password? Aः Use "Forgot Password" option on login page Email reset link > Set new password.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 40
+
+---
+
+## 6.2 CG Online RTI Portal
+
+Q266. What if I forget my portal password? Aः Use "Forgot Password" option on login page Email reset link > Set new password.

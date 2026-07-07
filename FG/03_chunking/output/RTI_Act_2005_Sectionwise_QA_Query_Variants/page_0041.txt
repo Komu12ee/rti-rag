@@ -1,0 +1,36 @@
+## Question variants all map to this one provision
+
+- 1. What does Section 8(1 )g) of the Right to Information Act, 2005 provide?
+- 2. Explain RTI Act Section 8(1 )g): Life, Safety, Source Protection.
+- 3. What is Act 8(1)g) in RTI? I need the rule for exemptions.
+- 4. सूचना का अधिकार अधिनियम , 2005 की धारा 8(1 )g) में क्या प्रावधान है?
+- 5. धारा 8(1)g) का सरल अर्थ क्या है - जीवन, सुरक्षा स्रोत संरक्षणः
+- 6. RTI Act 8(1 )(g) ka rule kya hai? जीवन, सुरक्षा स्रोत संरक्षण के बारे में बताइए|
+- 7. In this situation: Information relates to national security, sovereignty, or foreign relations 8(1)(a). Does Section 8(1 )g) apply, and what does it say?
+- Il 8. "8(1)(g) RTI law me kya hai? " "8(1)(g) ka matlab?
+
+## Answer
+
+English definition: Information that would endanger the lifelphysical safety of any person, or identify the source of confidential information assistance given for law enforcement or security purposes
+
+हिंदी परिभाषाः सूचना जिससे किसी व्यक्ति का जीवन शारीरिक सुरक्षा खतरे में पड़, या विधि प्रवर्तन सुरक्षा प्रयोजनों हेतु विश्वास में दी गई सूचना सहायता के स्रोत की पहचान होl
+
+Retrieval anchorsः Life, Safety, Source Protection; जीवन, सुरक्षा, स्रोत संरक्षण; exemptions sovereignty; security; contempt of court; parliamentary privilege; commercial confidence; trade secrets; fiduciary
+
+## Typical contexts
+
+- Information relates to national security, sovereignty, or foreign relations 8(1)(a)
+- Information would breach legislative privilege -8(1)(c)
+- Information is under active court gag order - 8(1)(b)
+- Information is a trade secret / commercial confidence of a third party 8(1)(d)
+- Information from foreign government in confidence 8(1)(f)
+- Information was shared in fiduciary trust 8(1)(e)
+- Disclosure endangers lifelsafety or reveals a confidential informant 8(1)(9)
+- Predecisional Cabinet deliberation 8(1)(i) (but check if decision is now finallcomplete)
+- Active criminal investigation would be impeded 8(1)(h)
+- Purely personal information unconnected to public activity 8(1)(])
+- exemption claimed must additionally check Section 8(2) public interest override and 8(3) 2O-year rule before finalizing refusal Any
+
+PIO implementation note: This is the primary exemption screening section. For ANY refusal under 8(1 )(a) (j), the response MUST also document why Section 8(2) public interest override does not apply, and (except for 8(1 )a)/(c)/(i)) confirm the information is not older than 20 years under 8(3). A bare citation of a clause without this analysis is an incomplete defective PIO response.
+
+Source reference: RTI Rule Book, pp. 15-17

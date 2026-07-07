@@ -1,0 +1,16 @@
+# FAQ Chunk 159
+Document: 500_cgrti
+Source: structured.md
+Pages: 13-14
+Section: 4.3 Department Confusion & Routing
+Question: Q163. What if PIO doesnt know whether they have information? A: PIO must search their records. If still not found, must inform. This is PIO's responsibility not yours.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 51
+
+---
+
+## 4.3 Department Confusion & Routing
+
+Q163. What if PIO doesnt know whether they have information? A: PIO must search their records. If still not found, must inform. This is PIO's responsibility not yours.

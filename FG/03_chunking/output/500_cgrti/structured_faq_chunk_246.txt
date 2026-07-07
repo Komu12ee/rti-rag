@@ -1,0 +1,16 @@
+# FAQ Chunk 246
+Document: 500_cgrti
+Source: structured.md
+Pages: 20
+Section: 5.6 Welfare & Benefit Schemes Scenarios
+Question: Q250. "Maternity benefit delayed -funds available?" A: Request: benefit release process, approval authority fund status, payment timeline, grievance procedure.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 52
+
+---
+
+## 5.6 Welfare & Benefit Schemes Scenarios
+
+Q250. "Maternity benefit delayed -funds available?" A: Request: benefit release process, approval authority fund status, payment timeline, grievance procedure.

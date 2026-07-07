@@ -1,0 +1,16 @@
+# FAQ Chunk 109
+Document: 500_cgrti
+Source: structured.md
+Pages: 10
+Section: 3.3 Exemptions Advanced
+Question: Q113. What is difference between "Cabinet papers" and "government decision"? A: Cabinet papers = deliberations protected) . Government decision = outcome ( must be disclosed with reasons .
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 52
+
+---
+
+## 3.3 Exemptions Advanced
+
+Q113. What is difference between "Cabinet papers" and "government decision"? A: Cabinet papers = deliberations protected) . Government decision = outcome ( must be disclosed with reasons .

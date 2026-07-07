@@ -1,0 +1,16 @@
+# FAQ Chunk 277
+Document: 500_cgrti
+Source: structured.md
+Pages: 22
+Section: 6.3 CG Departments & PIOs
+Question: Q280. Are private companies operating in Chhattisgarh (electricity, telecom) subject to RTI? A: Only for contracts subsidies with government. Operations are not government held, so RTI doesnt apply
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 57
+
+---
+
+## 6.3 CG Departments & PIOs
+
+Q280. Are private companies operating in Chhattisgarh (electricity, telecom) subject to RTI? A: Only for contracts subsidies with government. Operations are not government held, so RTI doesnt apply

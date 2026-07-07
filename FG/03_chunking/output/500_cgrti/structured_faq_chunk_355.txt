@@ -1,0 +1,16 @@
+# FAQ Chunk 355
+Document: 500_cgrti
+Source: structured.md
+Pages: 27-28
+Section: Complex Exemption Questions
+Question: Q359. "School children's personal info - protected?" A: Yes, protected under privacy (Section 8(l) (j)) and child protection laws.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 44
+
+---
+
+## Complex Exemption Questions
+
+Q359. "School children's personal info - protected?" A: Yes, protected under privacy (Section 8(l) (j)) and child protection laws.

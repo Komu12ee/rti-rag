@@ -1,0 +1,16 @@
+# FAQ Chunk 365
+Document: 500_cgrti
+Source: structured.md
+Pages: 28
+Section: Advanced Timeline & Procedural Issues
+Question: Q369. "Original PIO retired -appeal to new PIO?" A: Yes, new PIO is legally responsible. Previous PIO's actions are binding on department.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 50
+
+---
+
+## Advanced Timeline & Procedural Issues
+
+Q369. "Original PIO retired -appeal to new PIO?" A: Yes, new PIO is legally responsible. Previous PIO's actions are binding on department.

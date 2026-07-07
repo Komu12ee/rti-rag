@@ -1,0 +1,16 @@
+# FAQ Chunk 309
+Document: 500_cgrti
+Source: structured.md
+Pages: 24
+Section: 7.2 Health Department RTI Questions
+Question: Q312. "Are doctors qualified as claimed?" A: Yes. Request: doctor credentials, verification done, medical council registration, qualification certificates
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 44
+
+---
+
+## 7.2 Health Department RTI Questions
+
+Q312. "Are doctors qualified as claimed?" A: Yes. Request: doctor credentials, verification done, medical council registration, qualification certificates

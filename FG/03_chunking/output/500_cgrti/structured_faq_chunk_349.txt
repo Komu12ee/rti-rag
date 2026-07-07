@@ -1,0 +1,16 @@
+# FAQ Chunk 349
+Document: 500_cgrti
+Source: structured.md
+Pages: 27
+Section: Complex Exemption Questions
+Question: Q353. "Personal medical records access?" A: Generally no ( Section 8() ()). Unless youre the patient or have valid interest.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 41
+
+---
+
+## Complex Exemption Questions
+
+Q353. "Personal medical records access?" A: Generally no ( Section 8() ()). Unless youre the patient or have valid interest.

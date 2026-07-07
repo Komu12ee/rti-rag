@@ -1,0 +1,16 @@
+# FAQ Chunk 65
+Document: 500_cgrti
+Source: structured.md
+Pages: 7
+Section: 2.3 Third Party Information
+Question: Q68. Is employee information considered "third party"? A: Partially. Public information (salary, designation ) isn't third party. Personal details (address family) are.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 46
+
+---
+
+## 2.3 Third Party Information
+
+Q68. Is employee information considered "third party"? A: Partially. Public information (salary, designation ) isn't third party. Personal details (address family) are.

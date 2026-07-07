@@ -1,0 +1,7 @@
+## Appendix Recommended Model Use
+
+- Store each provision as one authoritative answer record with: section number, subsectionzid, titlezen, title\_hi, definitionzen, definitionzhi, keywords, applieszwhen, and piozresponse\_note.
+- For a query that contains a clear reference such as "6(3)" , use direct lookup first. For vague queries, combine semantic search over question variants with keyword and title matching.
+- Store the eight question forms as aliases of the same answer record, not as separate legal answers. This prevents duplicate Or conflicting responses.
+- For exemptions appeal procedures, time limits, fees, current Commissioner tenure, and state specific rules, verify the current statute rules notifications before producing a final official answer.
+- Use the source definition as the core answer. Then present a short plain-language explanation separately so that legal wording and simplification are not confused.

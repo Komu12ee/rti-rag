@@ -1,0 +1,16 @@
+# FAQ Chunk 264
+Document: 500_cgrti
+Source: structured.md
+Pages: 21
+Section: 6.2 CG Online RTI Portal
+Question: Q267. Can [ upload documents while filing RTIon portal? A: Yes, for supporting documents (like fee proof, BPL certificate, etc. ). Max 2 MB per file.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 52
+
+---
+
+## 6.2 CG Online RTI Portal
+
+Q267. Can [ upload documents while filing RTIon portal? A: Yes, for supporting documents (like fee proof, BPL certificate, etc. ). Max 2 MB per file.

@@ -1,0 +1,16 @@
+# FAQ Chunk 184
+Document: 500_cgrti
+Source: structured.md
+Pages: 15
+Section: 4.5 Appeal & Escalation Tricky Cases
+Question: Q188. Can first appeal officer demand more fees? A: appeal is free. Only original 310 fee (not charged again for appeal) . NO,
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 44
+
+---
+
+## 4.5 Appeal & Escalation Tricky Cases
+
+Q188. Can first appeal officer demand more fees? A: appeal is free. Only original 310 fee (not charged again for appeal) . NO,

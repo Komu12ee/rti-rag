@@ -1,0 +1,16 @@
+# FAQ Chunk 287
+Document: 500_cgrti
+Source: structured.md
+Pages: 23
+Section: 6.4 CG Specific Procedures & Rules
+Question: Q290. Can I file RTI about Lokayukta proceedings? A: Partially - Lokayukta is public authority but investigation details may be protected. Request final reports orders only
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 51
+
+---
+
+## 6.4 CG Specific Procedures & Rules
+
+Q290. Can I file RTI about Lokayukta proceedings? A: Partially - Lokayukta is public authority but investigation details may be protected. Request final reports orders only

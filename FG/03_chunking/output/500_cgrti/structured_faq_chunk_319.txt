@@ -1,0 +1,16 @@
+# FAQ Chunk 319
+Document: 500_cgrti
+Source: structured.md
+Pages: 25
+Section: 7.3 Public Works Department ( PWD) RTI Questions
+Question: Q323. "Street light maintenance - complaint register?" A: Yes. Request: maintenance contractor details, complaint procedure, response time, repair cost, payment.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 52
+
+---
+
+## 7.3 Public Works Department ( PWD) RTI Questions
+
+Q323. "Street light maintenance - complaint register?" A: Yes. Request: maintenance contractor details, complaint procedure, response time, repair cost, payment.

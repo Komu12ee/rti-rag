@@ -1,0 +1,16 @@
+# FAQ Chunk 79
+Document: 500_cgrti
+Source: structured.md
+Pages: 8
+Section: 2.4 Format & Access Methods
+Question: Q82. What is "life and liberty" exception? A: Information concerning someone's lifel physical safety is urgent must be provided within 48 hours (not 30 days).
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 45
+
+---
+
+## 2.4 Format & Access Methods
+
+Q82. What is "life and liberty" exception? A: Information concerning someone's lifel physical safety is urgent must be provided within 48 hours (not 30 days).

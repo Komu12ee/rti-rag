@@ -1,0 +1,16 @@
+# FAQ Chunk 315
+Document: 500_cgrti
+Source: structured.md
+Pages: 25
+Section: 7.2 Health Department RTI Questions
+Question: Q319. "Vaccination what's coverage status?" A: Yes. Request: immunization program data, camps organized, children covered, dropout rate, reasons
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 48
+
+---
+
+## 7.2 Health Department RTI Questions
+
+Q319. "Vaccination what's coverage status?" A: Yes. Request: immunization program data, camps organized, children covered, dropout rate, reasons

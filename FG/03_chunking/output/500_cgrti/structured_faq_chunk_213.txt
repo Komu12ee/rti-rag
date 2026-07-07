@@ -1,0 +1,16 @@
+# FAQ Chunk 213
+Document: 500_cgrti
+Source: structured.md
+Pages: 18
+Section: 5.3 Health & Safety Scenarios
+Question: Q217. "Hospital is insanitary. What's inspection status?" A: Request: sanitation audit reports, compliance status, penalties if any corrective action plan.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 47
+
+---
+
+## 5.3 Health & Safety Scenarios
+
+Q217. "Hospital is insanitary. What's inspection status?" A: Request: sanitation audit reports, compliance status, penalties if any corrective action plan.

@@ -1,0 +1,16 @@
+# FAQ Chunk 149
+Document: 500_cgrti
+Source: structured.md
+Pages: 13
+Section: 4.2 Information Existence & Scope Confusion
+Question: Q153. What if information exists but in unorganized form? A: PIO still must provide organized response within 30 days. Cannot claim "too scattered "
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 49
+
+---
+
+## 4.2 Information Existence & Scope Confusion
+
+Q153. What if information exists but in unorganized form? A: PIO still must provide organized response within 30 days. Cannot claim "too scattered "

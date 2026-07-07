@@ -1,0 +1,27 @@
+## Question variants all map to this one provision
+
+- 1. What does Section 13(as amended 2019) of the Right to Information Act, 2005 provide?
+- 2. Explain RTI Act Section 13(as amended 2019): Post zo19 amendment tenure.
+- 3. What is Act 13(as amended 2019) in RTI? 1 need the rule for qualification.
+- 4. सूचना का अधिकार अधिनियम, 2005 धारा 13(as amended 2019) में क्या प्रावधान है?
+- 5. धारा 13(as amended 2019) का सरल अर्थ क्या है 2019 संशोधन के बाद का कार्यकालः
+- 6. RTI Act 13(as amended 2019) ka rule kya hai? 2019 संशोधन के बाद का कार्यकाल के बारे में बताइए|
+- 7. In this situation: Query about CICs current tenure or removal grounds. Does Section 13(as amended 2019) apply, and what does it say?
+- 8. "13(as amended 2019) RTI law me kya hai? " "13(as amended 2019) ka matlab?"
+
+## Answer
+
+English definition: RTI (Amendment) Act, 2019 amended Section 13 so that the term of office is 'such term as may be prescribed by the Central Government via Rules, removing the fixed five-year statutory tenure.
+
+हिंदी परिभाषाः RTI ( संशोधन) अधिनियम , 2019 ने धारा 13 में संशोधन किया जिससे पदावधि केंद्र सरकार द्वारा नियमों के माध्यम से 'यथा विहित अवधि' हो गई, निश्चित पांच वर्ष की वैधानिक पदावधि हटा दी गई|
+
+Retrieval anchorsः Post 2019 amendment tenure; 2019 संशोधन के बाद का कार्यकाल; qualification; tenure; secretary level; 2019 amendment
+
+## Typical contexts
+
+- Query about CIC's current tenure or removal grounds
+- Determining whether the original Act text or the 201 9 Amendment governs a specific tenure dispute
+
+PIO implementation note: When responding to queries about CIC tenure, cite the 2019 Amendment as the currently governing provision rather than the original 5-year fixed term since the latter has been superseded.
+
+Source reference: RTI Rule Book, Section 13 (cross reference to 2019 Amendment)

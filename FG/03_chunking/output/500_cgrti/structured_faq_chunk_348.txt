@@ -1,0 +1,16 @@
+# FAQ Chunk 348
+Document: 500_cgrti
+Source: structured.md
+Pages: 27
+Section: Complex Exemption Questions
+Question: Q352. "Police investigation details available?" A: No, investigation details confidential (Section 8(l) (h)). Available after investigation closes.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 41
+
+---
+
+## Complex Exemption Questions
+
+Q352. "Police investigation details available?" A: No, investigation details confidential (Section 8(l) (h)). Available after investigation closes.

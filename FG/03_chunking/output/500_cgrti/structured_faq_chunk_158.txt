@@ -1,0 +1,16 @@
+# FAQ Chunk 158
+Document: 500_cgrti
+Source: structured.md
+Pages: 13
+Section: 4.3 Department Confusion & Routing
+Question: Q162. If information is jointly held by 2 departments, where do [ file? A: File to primary coordinating department. They coordinate with other department within their 30day period.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 48
+
+---
+
+## 4.3 Department Confusion & Routing
+
+Q162. If information is jointly held by 2 departments, where do [ file? A: File to primary coordinating department. They coordinate with other department within their 30day period.

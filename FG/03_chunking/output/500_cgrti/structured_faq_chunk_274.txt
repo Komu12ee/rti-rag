@@ -1,0 +1,16 @@
+# FAQ Chunk 274
+Document: 500_cgrti
+Source: structured.md
+Pages: 22
+Section: 6.3 CG Departments & PIOs
+Question: Q277. Can I file RTI for district administration? A: Yes, District Collectors office has PIO. File for district level information there.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 41
+
+---
+
+## 6.3 CG Departments & PIOs
+
+Q277. Can I file RTI for district administration? A: Yes, District Collectors office has PIO. File for district level information there.

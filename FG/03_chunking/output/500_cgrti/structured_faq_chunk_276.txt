@@ -1,0 +1,16 @@
+# FAQ Chunk 276
+Document: 500_cgrti
+Source: structured.md
+Pages: 22
+Section: 6.3 CG Departments & PIOs
+Question: Q279. Which PIO handles land records revenue matters? A: District Revenue Officer Tehsildar office. Each tahsil district has revenue PIO.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 42
+
+---
+
+## 6.3 CG Departments & PIOs
+
+Q279. Which PIO handles land records revenue matters? A: District Revenue Officer Tehsildar office. Each tahsil district has revenue PIO.

@@ -1,0 +1,16 @@
+# FAQ Chunk 60
+Document: 500_cgrti
+Source: structured.md
+Pages: 6
+Section: 2.3 Third Party Information
+Question: Q63. Can I get information about another person's RTI request? A: No, that person's information is confidential ( third party confidentiality).
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 38
+
+---
+
+## 2.3 Third Party Information
+
+Q63. Can I get information about another person's RTI request? A: No, that person's information is confidential ( third party confidentiality).

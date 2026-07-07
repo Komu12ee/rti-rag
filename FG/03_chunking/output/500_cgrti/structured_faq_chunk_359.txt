@@ -1,0 +1,16 @@
+# FAQ Chunk 359
+Document: 500_cgrti
+Source: structured.md
+Pages: 28
+Section: Advanced Timeline & Procedural Issues
+Question: Q363. "Ire filed same RTI - do ] pay again?" A: Yes, each RTI is separate. Each requires =10 fee.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 42
+
+---
+
+## Advanced Timeline & Procedural Issues
+
+Q363. "Ire filed same RTI - do ] pay again?" A: Yes, each RTI is separate. Each requires =10 fee.

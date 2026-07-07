@@ -1,0 +1,16 @@
+# FAQ Chunk 178
+Document: 500_cgrti
+Source: structured.md
+Pages: 15
+Section: 4.5 Appeal & Escalation Tricky Cases
+Question: Q182. Can I directly go to SIC without filing first appeal? A: In some states yes (if no senior officer designated) . In Chhattisgarh, first appeal must go to designated senior officer (if any .
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 63
+
+---
+
+## 4.5 Appeal & Escalation Tricky Cases
+
+Q182. Can I directly go to SIC without filing first appeal? A: In some states yes (if no senior officer designated) . In Chhattisgarh, first appeal must go to designated senior officer (if any .

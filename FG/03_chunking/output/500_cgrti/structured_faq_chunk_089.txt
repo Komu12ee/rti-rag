@@ -1,0 +1,16 @@
+# FAQ Chunk 89
+Document: 500_cgrti
+Source: structured.md
+Pages: 8
+Section: 3.l Legal Framework & Interpretation
+Question: Q91. What is difference between "shall" and "may" in RTI Act? A: "Shall" = mandatory (must do). "May" = discretionary (can choose). Section 4( 2) says "shall be constant endeavor" (mandatory suo motu).
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 74
+
+---
+
+## 3.l Legal Framework & Interpretation
+
+Q91. What is difference between "shall" and "may" in RTI Act? A: "Shall" = mandatory (must do). "May" = discretionary (can choose). Section 4( 2) says "shall be constant endeavor" (mandatory suo motu).

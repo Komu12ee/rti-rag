@@ -1,0 +1,16 @@
+# FAQ Chunk 369
+Document: 500_cgrti
+Source: structured.md
+Pages: 29
+Section: SECTION lO: APPEAL & ESCALATION COMPLEX QUESTIONS
+Question: Q372. "Both PIO and appeal officer same person = impartial?" A: Not truly impartial. Can appeal to SIC citing conflict of interest.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 53
+
+---
+
+## SECTION lO: APPEAL & ESCALATION COMPLEX QUESTIONS
+
+Q372. "Both PIO and appeal officer same person = impartial?" A: Not truly impartial. Can appeal to SIC citing conflict of interest.

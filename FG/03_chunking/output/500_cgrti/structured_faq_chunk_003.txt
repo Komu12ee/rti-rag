@@ -1,0 +1,16 @@
+# FAQ Chunk 3
+Document: 500_cgrti
+Source: structured.md
+Pages: 1
+Section: L.l What is RTI & Basic Rights
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 63
+
+---
+
+## L.l What is RTI & Basic Rights
+
+- Q1. What does RTI stand for? A: RTI stands for "Right to Information." It is a fundamental right granted by the Right to Information Act, 2005, to all citizens of India to access information held by public authorities

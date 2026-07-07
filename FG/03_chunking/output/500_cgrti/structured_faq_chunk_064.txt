@@ -1,0 +1,16 @@
+# FAQ Chunk 64
+Document: 500_cgrti
+Source: structured.md
+Pages: 7
+Section: 2.3 Third Party Information
+Question: Q67. Can third party appeal against disclosure? A: Yes, third party can file appeal to State Information Commission against disclosure decision.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 34
+
+---
+
+## 2.3 Third Party Information
+
+Q67. Can third party appeal against disclosure? A: Yes, third party can file appeal to State Information Commission against disclosure decision.

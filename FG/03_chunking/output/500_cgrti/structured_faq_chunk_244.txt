@@ -1,0 +1,16 @@
+# FAQ Chunk 244
+Document: 500_cgrti
+Source: structured.md
+Pages: 20
+Section: 5.6 Welfare & Benefit Schemes Scenarios
+Question: Q248. "Employment guarantee work - why only 50 days, not 1OO?" A: Request: your employment card, days offered, work available, reason for limited days, complaint register.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 55
+
+---
+
+## 5.6 Welfare & Benefit Schemes Scenarios
+
+Q248. "Employment guarantee work - why only 50 days, not 1OO?" A: Request: your employment card, days offered, work available, reason for limited days, complaint register.

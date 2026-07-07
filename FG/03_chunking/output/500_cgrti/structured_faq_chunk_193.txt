@@ -1,0 +1,16 @@
+# FAQ Chunk 193
+Document: 500_cgrti
+Source: structured.md
+Pages: 16
+Section: .1 Corruption & Transparency Scenarios
+Question: Q197. "Tender awarded to unqualified company. Can I challenge?" A: Request details through RTI. File appeal on grounds of wrongful award. Present evidence to SICIHigh Court.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 59
+
+---
+
+## .1 Corruption & Transparency Scenarios
+
+Q197. "Tender awarded to unqualified company. Can I challenge?" A: Request details through RTI. File appeal on grounds of wrongful award. Present evidence to SICIHigh Court.

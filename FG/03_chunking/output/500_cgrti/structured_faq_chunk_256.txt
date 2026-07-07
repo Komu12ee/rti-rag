@@ -1,0 +1,16 @@
+# FAQ Chunk 256
+Document: 500_cgrti
+Source: structured.md
+Pages: 21
+Section: Chhattisgarh Government & State RTI Details
+Question: Q259. What is success rate of appeals in CG SIC? A: Data shows 3O 40% of appeals result in fulll partial disclosure. Transparency improving yearly.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 54
+
+---
+
+## Chhattisgarh Government & State RTI Details
+
+Q259. What is success rate of appeals in CG SIC? A: Data shows 3O 40% of appeals result in fulll partial disclosure. Transparency improving yearly.

@@ -1,0 +1,36 @@
+## Question variants all map to this one provision
+
+- 1. What does Section 8(1)i) of the Right to Information Act, 2005 provide?
+- 2. Explain RTI Act Section 8(1 )i): Cabinet Papers.
+- 3. What is Act 8(1 )i) in RTI? I need the rule for exemptions.
+- 4. सूचना का अधिकार अधिनियम, 2005 धारा 8(1)(i) में क्या प्रावधान है?
+- 5. धारा 8(1)i) का सरल अर्थ क्या है - मंत्रिमंडल के कागजातः
+- 6. RTI Act 8(1 )(i) ka rule kya hai? मंत्रिमंडल के कागजात के बारे में बताइए
+- 7. In this situation: Information relates to national security, sovereignty, or foreign relations 8(1)(a). Does Section 8(1)(i) apply, and what does it say?
+- 8. "8(1)(i) RTI law me kya hai? " "8(1)(i) ka matlab?
+
+## Answer
+
+English definition: Cabinet papers including records of deliberations of the Council of Ministers Secretaries and other officers however decisions their reasons, and supporting material shall be made public after the decision is taken and the matter is complete over.
+
+हिंदीं परिभाषाः मंत्रिमंडल के कागजपत्र जिसमें मंत्रिपरिषद , सचिवों और अन्य अधिकारियों के विचार विमर्श के अभिलेख सम्मिलित हैं तथापि निर्णय, उनके कारण और सहायक सामग्री निर्णय लिए जाने और विषय पूर्ण होने के बाद सार्वजनिक की जाएगी|
+
+Retrieval anchorsः Cabinet Papers; मंत्रिमंडल के कागजात; exemptions; sovereignty; security; contempt of court; parliamentary privilege; commercial confidence; trade secrets; fiduciary
+
+## Typical contexts
+
+- Information relates to national security, sovereignty, or foreign relations 8(1)(a)
+- Information would breach legislative privilege 8(1)(c)
+- Information is under active court gag order 8(1)(b)
+- Information is a trade secret / commercial confidence of a third party 8(1)(d)
+- Information from foreign government in confidence 8(1)(f)
+- Information was shared in fiduciary trust + 8(1)(e)
+- Disclosure endangers lifelsafety or reveals a confidential informant 8(1)(9)
+- Predecisional Cabinet deliberation 8(1 )(i) (but check if decision is now finallcomplete)
+- Active criminal investigation would be impeded ~ 8(1)(h)
+- Purely personal information unconnected to public activity 8(1)(])
+- Any exemption claimed must additionally check Section 8(2) public interest override and 8(3) 2Oryear rule before finalizing refusal
+
+PIO / implementation note: This is the primary exemption screening section. For ANY refusal under 8(1 )(a) (j), the response MUST also document why Section 8(2) public interest override does not apply, and (except for 8(1 )a)/(c)/(i)) confirm the information is not older than 20 under 8(3). A bare citation of a clause without this analysis is an incomplete defective PIO response. years
+
+Source reference: RTI Rule Book, pp. 15-17

@@ -1,0 +1,16 @@
+# FAQ Chunk 33
+Document: 500_cgrti
+Source: structured.md
+Pages: 4
+Section: L.5 PIO - Public Information Officer
+Question: Q36. What is a Public Information Officer ( PIO)? A: The designated official in each department responsible for receiving and processing RTI applications per Section 5.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 45
+
+---
+
+## L.5 PIO - Public Information Officer
+
+Q36. What is a Public Information Officer ( PIO)? A: The designated official in each department responsible for receiving and processing RTI applications per Section 5.

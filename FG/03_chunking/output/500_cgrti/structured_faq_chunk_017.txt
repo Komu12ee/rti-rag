@@ -1,0 +1,16 @@
+# FAQ Chunk 17
+Document: 500_cgrti
+Source: structured.md
+Pages: 3
+Section: QlL. How do I file an RTI request in Chhattisgarh? A:
+Question: Q20. Can [ request information in Hindi? A: Yes, you can file RTI in English, Hindi, or any official language of the area. PIO must respond in the same language or English.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 64
+
+---
+
+## QlL. How do I file an RTI request in Chhattisgarh? A:
+
+Q20. Can [ request information in Hindi? A: Yes, you can file RTI in English, Hindi, or any official language of the area. PIO must respond in the same language or English.

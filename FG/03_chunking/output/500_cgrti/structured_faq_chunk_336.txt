@@ -1,0 +1,16 @@
+# FAQ Chunk 336
+Document: 500_cgrti
+Source: structured.md
+Pages: 26
+Section: 7.4 Revenue Department RTI Questions
+Question: Q340. "Government land occupied -action takenग़" A: Yes. Request: land encroachment details, notices issued, recovery action, pending cases.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 53
+
+---
+
+## 7.4 Revenue Department RTI Questions
+
+Q340. "Government land occupied -action takenग़" A: Yes. Request: land encroachment details, notices issued, recovery action, pending cases.

@@ -1,2602 +1,3620 @@
 [
   {
-    "document_name": "PS&IC Agenda DS v1.0 for 19.06.24",
+    "document_name": "F_7_1_2021_1_13_03_08_22.88c0725d",
+    "sha256": "29c7496bc40df8cfc46ec870054c545480896f5b41af3b69ceb431c497048cdb",
     "page_number": 1,
-    "ocr_score": 0.7062842419312263
+    "ocr_score": 0.6721314623688942
   },
   {
-    "document_name": "PS&IC Agenda DS v1.0 for 19.06.24",
+    "document_name": "F_7_1_2021_1_13_03_08_22.88c0725d",
+    "sha256": "29c7496bc40df8cfc46ec870054c545480896f5b41af3b69ceb431c497048cdb",
     "page_number": 2,
-    "ocr_score": 0.7459927497500383
+    "ocr_score": 0.6112793739142053
   },
   {
-    "document_name": "PS&IC Agenda DS v1.0 for 19.06.24",
-    "page_number": 3,
-    "ocr_score": 0.7054925352021105
-  },
-  {
-    "document_name": "PS&IC Agenda DS v1.0 for 19.06.24",
-    "page_number": 4,
-    "ocr_score": 0.672609286427663
-  },
-  {
-    "document_name": "PS&IC Agenda DS v1.0 for 19.06.24",
-    "page_number": 5,
-    "ocr_score": 0.6388711208099983
-  },
-  {
-    "document_name": "dak 3402 E&IT letter ps&ic 19-6-24",
+    "document_name": "F_7_1_2021_1_13_07_03_22.a57d0d80",
+    "sha256": "d878d19460269052098010785a32a7bb149a8fe03c0551acf53e697e18a7b5f2",
     "page_number": 1,
-    "ocr_score": 0.6131473160394628
+    "ocr_score": 0.6507729709493245
   },
   {
-    "document_name": "dak 3402 E&IT letter ps&ic 19-6-24",
-    "page_number": 2,
-    "ocr_score": 0.3430262383015162
-  },
-  {
-    "document_name": "dak 3402 E&IT letter ps&ic 19-6-24",
-    "page_number": 3,
-    "ocr_score": 0.2587785343586925
-  },
-  {
-    "document_name": "dak 3402 E&IT letter ps&ic 19-6-24",
-    "page_number": 4,
-    "ocr_score": 0.2936916464215817
-  },
-  {
-    "document_name": "dak 3402 E&IT letter ps&ic 19-6-24",
-    "page_number": 5,
-    "ocr_score": 0.29294097456860707
-  },
-  {
-    "document_name": "letter 390 date 200-6-24 recv. copy ps&ic letter",
+    "document_name": "F_7_1_2021_1_13_08_06_22.01c024e4",
+    "sha256": "13758fa38252a598b2a42d36b7607d6224cbbcac07345ca271c620740afca2d1",
     "page_number": 1,
-    "ocr_score": 0.5511865327534652
+    "ocr_score": 0.6766590054227387
   },
   {
-    "document_name": "letter 390 date 200-6-24 recv. copy ps&ic letter",
+    "document_name": "F_7_1_2021_1_13_08_06_22.01c024e4",
+    "sha256": "13758fa38252a598b2a42d36b7607d6224cbbcac07345ca271c620740afca2d1",
     "page_number": 2,
-    "ocr_score": 0.6127260619040269
+    "ocr_score": 0.6905598837484003
   },
   {
-    "document_name": "letter 390 date 200-6-24 recv. copy ps&ic letter",
+    "document_name": "F_7_1_2021_1_13_13_04_22.77936f36",
+    "sha256": "d3298cc12160e18509789c8608d43dbe7e170a031bab71c370c04dfbef639a1f",
+    "page_number": 1,
+    "ocr_score": 0.6528405876338556
+  },
+  {
+    "document_name": "F_7_1_2021_1_13_17_10_22.103838a1",
+    "sha256": "e701a25d282194de51005ee39d1781ae88a3114173830cfa532f354f352f5138",
+    "page_number": 1,
+    "ocr_score": 0.680331309794078
+  },
+  {
+    "document_name": "F_7_1_2021_1_13_21_11_22.20c83c8f",
+    "sha256": "aed5a5706155fa1feb37fa6cef53d7523e7d9a5935bf98835417df1c85f72431",
+    "page_number": 1,
+    "ocr_score": 0.6767171861978493
+  },
+  {
+    "document_name": "F_7_1_2021_1_13_23_05_23.a605d9d4",
+    "sha256": "d5bf5691458dcec2c5d5ccf6e0411f9f8188b376d3114fbdcf094f5a496b1f6c",
+    "page_number": 1,
+    "ocr_score": 0.5545834090657416
+  },
+  {
+    "document_name": "F_7_1_2021_1_13_29_01_22.4f6227de",
+    "sha256": "c1df2934561c47349ba6f58930332b4c6df36bf2b64550a77262d7911b232c7e",
+    "page_number": 1,
+    "ocr_score": 0.6309598470780589
+  },
+  {
+    "document_name": "F_7_1_2021_1_13_29_01_22.4f6227de",
+    "sha256": "c1df2934561c47349ba6f58930332b4c6df36bf2b64550a77262d7911b232c7e",
+    "page_number": 2,
+    "ocr_score": 0.638878237283463
+  },
+  {
+    "document_name": "F_7_1_2021_1_13_29_03_23.dcca6ad9",
+    "sha256": "4ee285b170e836a2737698cac4651afa4cd7d281db9dc06c39590e92825349a3",
+    "page_number": 1,
+    "ocr_score": 0.6412460560226055
+  },
+  {
+    "document_name": "F_7_1_2021_1_13_29_03_23.dcca6ad9",
+    "sha256": "4ee285b170e836a2737698cac4651afa4cd7d281db9dc06c39590e92825349a3",
+    "page_number": 2,
+    "ocr_score": 0.6420490222857609
+  },
+  {
+    "document_name": "cg_sic_contact_bilingual_all_questions_qna",
+    "sha256": "ccc867609d7d6df002c85cf55ca25d18cbfcf26539fde64142c0b9da26eb6d9d",
+    "page_number": 1,
+    "ocr_score": 0.6386070471230973
+  },
+  {
+    "document_name": "cg_sic_contact_bilingual_all_questions_qna",
+    "sha256": "ccc867609d7d6df002c85cf55ca25d18cbfcf26539fde64142c0b9da26eb6d9d",
+    "page_number": 2,
+    "ocr_score": 0.56236997838111
+  },
+  {
+    "document_name": "cg_sic_contact_bilingual_all_questions_qna",
+    "sha256": "ccc867609d7d6df002c85cf55ca25d18cbfcf26539fde64142c0b9da26eb6d9d",
     "page_number": 3,
-    "ocr_score": 0.6848272444638983
+    "ocr_score": 0.6137041683148496
   },
   {
-    "document_name": "letter 390 date 200-6-24 recv. copy ps&ic letter",
+    "document_name": "cg_sic_contact_bilingual_all_questions_qna",
+    "sha256": "ccc867609d7d6df002c85cf55ca25d18cbfcf26539fde64142c0b9da26eb6d9d",
     "page_number": 4,
-    "ocr_score": 0.5994569344179473
+    "ocr_score": 0.6466756279525636
   },
   {
-    "document_name": "letter 390 date 200-6-24 recv. copy ps&ic letter",
+    "document_name": "cg_sic_contact_bilingual_all_questions_qna",
+    "sha256": "ccc867609d7d6df002c85cf55ca25d18cbfcf26539fde64142c0b9da26eb6d9d",
     "page_number": 5,
-    "ocr_score": 0.6617220149580441
+    "ocr_score": 0.6144550532591534
   },
   {
-    "document_name": "letter 390 date 200-6-24 recv. copy ps&ic letter",
+    "document_name": "cg_sic_contact_bilingual_all_questions_qna",
+    "sha256": "ccc867609d7d6df002c85cf55ca25d18cbfcf26539fde64142c0b9da26eb6d9d",
     "page_number": 6,
-    "ocr_score": 0.6557168383303682
+    "ocr_score": 0.5605689166106826
   },
   {
-    "document_name": "1_2025",
-    "page_number": 1,
-    "ocr_score": null
-  },
-  {
-    "document_name": "1_2025",
-    "page_number": 2,
-    "ocr_score": null
-  },
-  {
-    "document_name": "1_2025",
-    "page_number": 1,
-    "ocr_score": null
-  },
-  {
-    "document_name": "1_2025",
-    "page_number": 2,
-    "ocr_score": null
-  },
-  {
-    "document_name": "rti-circular",
-    "page_number": 1,
-    "ocr_score": null
-  },
-  {
-    "document_name": "rti-circular",
-    "page_number": 1,
-    "ocr_score": null
-  },
-  {
-    "document_name": "PS&IC Agenda DS v1.0 for 19.06.24",
-    "page_number": 1,
-    "ocr_score": null
-  },
-  {
-    "document_name": "PS&IC Agenda DS v1.0 for 19.06.24",
-    "page_number": 2,
-    "ocr_score": null
-  },
-  {
-    "document_name": "PS&IC Agenda DS v1.0 for 19.06.24",
-    "page_number": 3,
-    "ocr_score": null
-  },
-  {
-    "document_name": "PS&IC Agenda DS v1.0 for 19.06.24",
-    "page_number": 4,
-    "ocr_score": null
-  },
-  {
-    "document_name": "PS&IC Agenda DS v1.0 for 19.06.24",
-    "page_number": 5,
-    "ocr_score": null
-  },
-  {
-    "document_name": "PS&IC Agenda DS v1.0 for 19.06.24",
-    "page_number": 1,
-    "ocr_score": 0.6848749626191979
-  },
-  {
-    "document_name": "PS&IC Agenda DS v1.0 for 19.06.24",
-    "page_number": 2,
-    "ocr_score": 0.7588816089267987
-  },
-  {
-    "document_name": "PS&IC Agenda DS v1.0 for 19.06.24",
-    "page_number": 3,
-    "ocr_score": 0.7077235046857111
-  },
-  {
-    "document_name": "PS&IC Agenda DS v1.0 for 19.06.24",
-    "page_number": 4,
-    "ocr_score": 0.6806755231336852
-  },
-  {
-    "document_name": "PS&IC Agenda DS v1.0 for 19.06.24",
-    "page_number": 5,
-    "ocr_score": 0.625509693538592
-  },
-  {
-    "document_name": "letter 390 date 200-6-24 recv. copy ps&ic letter",
-    "page_number": 1,
-    "ocr_score": 0.5424044473174011
-  },
-  {
-    "document_name": "letter 390 date 200-6-24 recv. copy ps&ic letter",
-    "page_number": 2,
-    "ocr_score": 0.6843423330828048
-  },
-  {
-    "document_name": "letter 390 date 200-6-24 recv. copy ps&ic letter",
-    "page_number": 3,
-    "ocr_score": 0.6566828452592272
-  },
-  {
-    "document_name": "letter 390 date 200-6-24 recv. copy ps&ic letter",
-    "page_number": 4,
-    "ocr_score": 0.6260844808001562
-  },
-  {
-    "document_name": "letter 390 date 200-6-24 recv. copy ps&ic letter",
-    "page_number": 5,
-    "ocr_score": 0.6794148070646108
-  },
-  {
-    "document_name": "letter 390 date 200-6-24 recv. copy ps&ic letter",
-    "page_number": 6,
-    "ocr_score": 0.613980484474006
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_102333",
-    "page_number": 1,
-    "ocr_score": 0.7881164549758043
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_102333",
-    "page_number": 2,
-    "ocr_score": 0.758725202954877
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_102598",
-    "page_number": 1,
-    "ocr_score": 0.7431811703390195
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_102598",
-    "page_number": 2,
-    "ocr_score": 0.7841602493452188
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_108786",
-    "page_number": 1,
-    "ocr_score": 0.6960063585032022
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_108786",
-    "page_number": 2,
-    "ocr_score": 0.7288893550315158
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_108786",
-    "page_number": 3,
-    "ocr_score": 0.785903698856968
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_110485",
-    "page_number": 1,
-    "ocr_score": 0.7602934534299811
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_110485",
-    "page_number": 2,
-    "ocr_score": 0.7326540893424238
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_110485",
-    "page_number": 3,
-    "ocr_score": 0.7906603115951402
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_111106",
-    "page_number": 1,
-    "ocr_score": 0.7283079371542223
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_111106",
-    "page_number": 2,
-    "ocr_score": 0.7322779984789138
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_118899",
-    "page_number": 1,
-    "ocr_score": 0.7366015730187198
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_118899",
-    "page_number": 2,
-    "ocr_score": 0.7960166180713106
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_118899",
-    "page_number": 3,
-    "ocr_score": 0.7398837381466217
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_119210",
-    "page_number": 1,
-    "ocr_score": 0.767767613187296
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_119210",
-    "page_number": 2,
-    "ocr_score": 0.768269900941409
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_119210",
-    "page_number": 3,
-    "ocr_score": 0.7961684478803907
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_120198",
-    "page_number": 1,
-    "ocr_score": 0.7444881214930056
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_120198",
-    "page_number": 2,
-    "ocr_score": 0.7720675195725513
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_120198",
-    "page_number": 3,
-    "ocr_score": 0.6170567993924153
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_121369",
-    "page_number": 1,
-    "ocr_score": 0.7833039689253011
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_121369",
-    "page_number": 2,
-    "ocr_score": 0.7591253129726224
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_121369",
-    "page_number": 3,
-    "ocr_score": 0.7399018556320177
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_121369",
-    "page_number": 4,
-    "ocr_score": 0.7106929895572596
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_121369",
-    "page_number": 5,
-    "ocr_score": 0.7456053174892598
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_121719",
-    "page_number": 1,
-    "ocr_score": 0.7914874762031242
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_121719",
-    "page_number": 2,
-    "ocr_score": 0.7179855346867151
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_121719",
-    "page_number": 3,
-    "ocr_score": 0.7995692341257108
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_122052",
-    "page_number": 1,
-    "ocr_score": 0.8158708970092138
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_122052",
-    "page_number": 2,
-    "ocr_score": 0.8047834917149838
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_125929",
-    "page_number": 1,
-    "ocr_score": 0.7675061550311123
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_125929",
-    "page_number": 2,
-    "ocr_score": 0.7606229866829776
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_125929",
-    "page_number": 3,
-    "ocr_score": 0.7435187227577733
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_126404",
-    "page_number": 1,
-    "ocr_score": 0.7430312543557877
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_126404",
-    "page_number": 2,
-    "ocr_score": 0.7462857626859872
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_126404",
-    "page_number": 3,
-    "ocr_score": 0.7469404204501993
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_126404",
-    "page_number": 4,
-    "ocr_score": 0.7603893461782864
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_126404",
-    "page_number": 5,
-    "ocr_score": 0.7662957243647605
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_126417",
-    "page_number": 1,
-    "ocr_score": 0.811163873664948
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_126417",
-    "page_number": 2,
-    "ocr_score": 0.755053131595264
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_126417",
-    "page_number": 3,
-    "ocr_score": 0.7552094437881679
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_126417",
-    "page_number": 4,
-    "ocr_score": 0.6888924306462514
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_126417",
-    "page_number": 5,
-    "ocr_score": 0.7169702041146415
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_126417",
-    "page_number": 6,
-    "ocr_score": 0.7388691688569504
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_126417",
+    "document_name": "cg_sic_contact_bilingual_all_questions_qna",
+    "sha256": "ccc867609d7d6df002c85cf55ca25d18cbfcf26539fde64142c0b9da26eb6d9d",
     "page_number": 7,
-    "ocr_score": 0.7924473975480681
+    "ocr_score": 0.6128461631556763
   },
   {
-    "document_name": "CIC_AAOIN_A_2017_126858",
-    "page_number": 1,
-    "ocr_score": 0.8021240162835581
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_126858",
-    "page_number": 2,
-    "ocr_score": 0.786617645809547
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_126858",
-    "page_number": 3,
-    "ocr_score": 0.7874204007696038
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_127144",
-    "page_number": 1,
-    "ocr_score": 0.7522134050346406
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_127144",
-    "page_number": 2,
-    "ocr_score": 0.7356529024368506
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_127144",
-    "page_number": 3,
-    "ocr_score": 0.6707136505194046
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_128488",
-    "page_number": 1,
-    "ocr_score": 0.7474824651829866
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_128488",
-    "page_number": 2,
-    "ocr_score": 0.773504420549731
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_128683",
-    "page_number": 1,
-    "ocr_score": 0.7760140233400304
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_128683",
-    "page_number": 2,
-    "ocr_score": 0.7816355454770177
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_128683",
-    "page_number": 3,
-    "ocr_score": 0.7156289042484629
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_131215",
-    "page_number": 1,
-    "ocr_score": 0.7256407089783928
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_131215",
-    "page_number": 2,
-    "ocr_score": 0.7800332339434788
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_131215",
-    "page_number": 3,
-    "ocr_score": 0.80809314275803
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_131215",
-    "page_number": 4,
-    "ocr_score": 0.7790964550568485
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_131215",
-    "page_number": 5,
-    "ocr_score": 0.6889419465204554
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_131215",
-    "page_number": 6,
-    "ocr_score": 0.7703546172395398
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_131215",
-    "page_number": 7,
-    "ocr_score": 0.6770346996283357
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_131275",
-    "page_number": 1,
-    "ocr_score": 0.7580999308961789
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_131275",
-    "page_number": 2,
-    "ocr_score": 0.7302088735303724
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_131489",
-    "page_number": 1,
-    "ocr_score": 0.7366015730187198
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_131489",
-    "page_number": 2,
-    "ocr_score": 0.7960166180713106
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_131489",
-    "page_number": 3,
-    "ocr_score": 0.7398837381466217
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_131570",
-    "page_number": 1,
-    "ocr_score": 0.8063804706520031
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_131570",
-    "page_number": 2,
-    "ocr_score": 0.7521975613849767
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_131570",
-    "page_number": 3,
-    "ocr_score": 0.7245797783829205
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_132965",
-    "page_number": 1,
-    "ocr_score": 0.7391363772535204
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_132965",
-    "page_number": 2,
-    "ocr_score": 0.7659963360281905
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_135056",
-    "page_number": 1,
-    "ocr_score": 0.7966010470461306
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_135056",
-    "page_number": 2,
-    "ocr_score": 0.7681680976971444
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_135057",
-    "page_number": 1,
-    "ocr_score": 0.8220356567301113
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_135057",
-    "page_number": 2,
-    "ocr_score": 0.7756625232039236
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_135057",
-    "page_number": 3,
-    "ocr_score": 0.7922313872270925
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_135058",
-    "page_number": 1,
-    "ocr_score": 0.8002031476649509
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_135058",
-    "page_number": 2,
-    "ocr_score": 0.7512979776806158
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_135058",
-    "page_number": 3,
-    "ocr_score": 0.6097426385742675
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_135059",
-    "page_number": 1,
-    "ocr_score": 0.7538275015137774
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_135059",
-    "page_number": 2,
-    "ocr_score": 0.7216324630702565
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_135059",
-    "page_number": 3,
-    "ocr_score": 0.7375640582858026
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_135059",
-    "page_number": 4,
-    "ocr_score": 0.7337098320228675
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_136374",
-    "page_number": 1,
-    "ocr_score": 0.7390173630447844
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_136374",
-    "page_number": 2,
-    "ocr_score": 0.7627037119598866
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_136374",
-    "page_number": 3,
-    "ocr_score": 0.7660976614491318
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_140342",
-    "page_number": 1,
-    "ocr_score": 0.7266291231931812
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_140342",
-    "page_number": 2,
-    "ocr_score": 0.83169748847032
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_140342",
-    "page_number": 3,
-    "ocr_score": 0.7616717026925947
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_140342",
-    "page_number": 4,
-    "ocr_score": 0.6839664349838263
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_140496",
-    "page_number": 1,
-    "ocr_score": 0.7176548070680383
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_140496",
-    "page_number": 2,
-    "ocr_score": 0.7285390860821
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_140501",
-    "page_number": 1,
-    "ocr_score": 0.7596470494558355
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_140501",
-    "page_number": 2,
-    "ocr_score": 0.764514272231618
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_141972",
-    "page_number": 1,
-    "ocr_score": 0.7686798603036549
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_141972",
-    "page_number": 2,
-    "ocr_score": 0.793205045508616
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_141972",
-    "page_number": 3,
-    "ocr_score": 0.7148667520011701
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_145206",
-    "page_number": 1,
-    "ocr_score": 0.7640634457635755
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_145206",
-    "page_number": 2,
-    "ocr_score": 0.8076004571844663
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_145206",
-    "page_number": 3,
-    "ocr_score": 0.7394636153062782
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_147782",
-    "page_number": 1,
-    "ocr_score": 0.8072230003865275
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_147782",
-    "page_number": 2,
-    "ocr_score": 0.8045942471260028
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_147782",
-    "page_number": 3,
-    "ocr_score": 0.8023794622823057
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_147782",
-    "page_number": 4,
-    "ocr_score": 0.711850394815182
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_150541",
-    "page_number": 1,
-    "ocr_score": 0.763207244179197
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_150541",
-    "page_number": 2,
-    "ocr_score": 0.7911890198890901
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_150541",
-    "page_number": 3,
-    "ocr_score": 0.7830765118339975
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_150541",
-    "page_number": 4,
-    "ocr_score": 0.6855602677579874
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_153340",
-    "page_number": 1,
-    "ocr_score": 0.7685197702876005
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_153340",
-    "page_number": 2,
-    "ocr_score": 0.7722818969343557
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_153340",
-    "page_number": 3,
-    "ocr_score": 0.6333625387912531
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_154226",
-    "page_number": 1,
-    "ocr_score": 0.7591055262626483
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_154226",
-    "page_number": 2,
-    "ocr_score": 0.8000079666594688
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_154226",
-    "page_number": 3,
-    "ocr_score": 0.7629802933616042
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_155626",
-    "page_number": 1,
-    "ocr_score": 0.7591055262626483
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_155626",
-    "page_number": 2,
-    "ocr_score": 0.8000079666594688
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_155626",
-    "page_number": 3,
-    "ocr_score": 0.7629802933616042
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_155739",
-    "page_number": 1,
-    "ocr_score": 0.7984763942205167
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_155739",
-    "page_number": 2,
-    "ocr_score": 0.8019168298563277
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_155739",
-    "page_number": 3,
-    "ocr_score": 0.7754380527049649
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_156055",
-    "page_number": 1,
-    "ocr_score": 0.7911194858561966
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_156055",
-    "page_number": 2,
-    "ocr_score": 0.8093297806612981
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_156055",
-    "page_number": 3,
-    "ocr_score": 0.6883730090891516
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_157661",
-    "page_number": 1,
-    "ocr_score": 0.7742872143069963
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_157661",
-    "page_number": 2,
-    "ocr_score": 0.7574388833118753
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_157661",
-    "page_number": 3,
-    "ocr_score": 0.7588087676333087
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_157661",
-    "page_number": 4,
-    "ocr_score": 0.7280843394064614
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_158003",
-    "page_number": 1,
-    "ocr_score": 0.6941186096809003
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_158003",
-    "page_number": 2,
-    "ocr_score": 0.6632933639584778
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_184687",
-    "page_number": 1,
-    "ocr_score": 0.7785579933067212
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_184687",
-    "page_number": 2,
-    "ocr_score": 0.7949698661603487
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_184687",
-    "page_number": 3,
-    "ocr_score": 0.7079314091886807
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_184687",
-    "page_number": 4,
-    "ocr_score": 0.7802975232984652
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_184687",
-    "page_number": 5,
-    "ocr_score": 0.7753393121640095
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_184687",
-    "page_number": 6,
-    "ocr_score": 0.796530616696802
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_184687",
-    "page_number": 7,
-    "ocr_score": 0.7775170934892992
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_194602",
-    "page_number": 1,
-    "ocr_score": 0.7491904906670249
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_194602",
-    "page_number": 2,
-    "ocr_score": 0.8014578765138448
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_194602",
-    "page_number": 3,
-    "ocr_score": 0.7225325959139492
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_601043",
-    "page_number": 1,
-    "ocr_score": 0.7861999445960579
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_601043",
-    "page_number": 2,
-    "ocr_score": 0.7280912088638556
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_601043",
-    "page_number": 3,
-    "ocr_score": 0.7590069450485633
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_601266",
-    "page_number": 1,
-    "ocr_score": 0.7787702096430963
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_601266",
-    "page_number": 2,
-    "ocr_score": 0.7578756469229997
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_601993",
-    "page_number": 1,
-    "ocr_score": 0.7354937970877179
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_601993",
-    "page_number": 2,
-    "ocr_score": 0.7195536920969815
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_601993",
-    "page_number": 3,
-    "ocr_score": 0.7760475893819468
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_601993",
-    "page_number": 4,
-    "ocr_score": 0.7511754340853944
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_602077",
-    "page_number": 1,
-    "ocr_score": 0.7760140233400304
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_602077",
-    "page_number": 2,
-    "ocr_score": 0.7816355454770177
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2017_602077",
-    "page_number": 3,
-    "ocr_score": 0.7156289042484629
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2020_696673",
-    "page_number": 1,
-    "ocr_score": 0.7936232014167216
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2020_696673",
-    "page_number": 2,
-    "ocr_score": 0.6514375914028342
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2020_696673",
-    "page_number": 3,
-    "ocr_score": 0.6022823469690317
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2020_696673",
-    "page_number": 4,
-    "ocr_score": 0.6864162952553968
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2020_696673",
-    "page_number": 5,
-    "ocr_score": 0.8113093178342158
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2020_696673",
-    "page_number": 6,
-    "ocr_score": 0.8116359264397109
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2020_696673",
-    "page_number": 7,
-    "ocr_score": 0.6775030173353284
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2020_696673",
+    "document_name": "cg_sic_contact_bilingual_all_questions_qna",
+    "sha256": "ccc867609d7d6df002c85cf55ca25d18cbfcf26539fde64142c0b9da26eb6d9d",
     "page_number": 8,
-    "ocr_score": 0.7734446283575656
+    "ocr_score": 0.6272007878795927
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_105048",
-    "page_number": 1,
-    "ocr_score": 0.8157728554590219
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_105048",
-    "page_number": 2,
-    "ocr_score": 0.6288787778400761
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_105048",
-    "page_number": 3,
-    "ocr_score": 0.5123291880253543
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_105048",
-    "page_number": 4,
-    "ocr_score": 0.4305859728667636
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_105048",
-    "page_number": 5,
-    "ocr_score": 0.6403469596766646
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_105048",
-    "page_number": 6,
-    "ocr_score": 0.7690275696647708
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_105048",
-    "page_number": 7,
-    "ocr_score": 0.7919622332174501
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_105048",
-    "page_number": 8,
-    "ocr_score": 0.7550829664238584
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_114483",
-    "page_number": 1,
-    "ocr_score": 0.7552666380623203
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_114483",
-    "page_number": 2,
-    "ocr_score": 0.6526680402969481
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_114483",
-    "page_number": 3,
-    "ocr_score": 0.7215109119363009
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_114483",
-    "page_number": 4,
-    "ocr_score": 0.6153921786845071
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_114483",
-    "page_number": 5,
-    "ocr_score": 0.6198884107193232
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_114483",
-    "page_number": 6,
-    "ocr_score": 0.7071565611589262
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_114483",
-    "page_number": 7,
-    "ocr_score": 0.7052997797591215
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_114483",
-    "page_number": 8,
-    "ocr_score": 0.7494652843573133
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_114631",
-    "page_number": 1,
-    "ocr_score": 0.7948584026104896
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_114631",
-    "page_number": 2,
-    "ocr_score": 0.665046285023386
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_114631",
-    "page_number": 3,
-    "ocr_score": 0.6669706193267564
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_114631",
-    "page_number": 4,
-    "ocr_score": 0.6432918371918014
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_114631",
-    "page_number": 5,
-    "ocr_score": 0.6510987228378159
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_114631",
-    "page_number": 6,
-    "ocr_score": 0.6957976476292058
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_114631",
-    "page_number": 7,
-    "ocr_score": 0.7541206255976916
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_115171",
-    "page_number": 1,
-    "ocr_score": 0.7860884267624414
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_115171",
-    "page_number": 2,
-    "ocr_score": 0.6407281798652229
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_115171",
-    "page_number": 3,
-    "ocr_score": 0.48209398911561313
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_115171",
-    "page_number": 4,
-    "ocr_score": 0.5064391387670396
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_115171",
-    "page_number": 5,
-    "ocr_score": 0.7009433580846965
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_115171",
-    "page_number": 6,
-    "ocr_score": 0.7367808283512302
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_115171",
-    "page_number": 7,
-    "ocr_score": 0.6675676202855934
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_115171",
-    "page_number": 8,
-    "ocr_score": 0.7253774366549287
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_117101",
-    "page_number": 1,
-    "ocr_score": 0.7810854958087764
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_117101",
-    "page_number": 2,
-    "ocr_score": 0.6413696867321752
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_117101",
-    "page_number": 3,
-    "ocr_score": 0.533923253528903
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_117101",
-    "page_number": 4,
-    "ocr_score": 0.4533209587281227
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_117101",
-    "page_number": 5,
-    "ocr_score": 0.7494565167334254
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_117101",
-    "page_number": 6,
-    "ocr_score": 0.7028249143616138
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_122882",
-    "page_number": 1,
-    "ocr_score": 0.778920645301974
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_122882",
-    "page_number": 2,
-    "ocr_score": 0.6305282519524096
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_122882",
-    "page_number": 3,
-    "ocr_score": 0.6531890057352412
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_122882",
-    "page_number": 4,
-    "ocr_score": 0.7838528549081424
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_122882",
-    "page_number": 5,
-    "ocr_score": 0.7666776550941851
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_122882",
-    "page_number": 6,
-    "ocr_score": 0.6710272422977069
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_124203",
-    "page_number": 1,
-    "ocr_score": 0.7696999337977775
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_124203",
-    "page_number": 2,
-    "ocr_score": 0.6350662635453069
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_124203",
-    "page_number": 3,
-    "ocr_score": 0.6350508625379878
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_124203",
-    "page_number": 4,
-    "ocr_score": 0.6529853029645076
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_124203",
-    "page_number": 5,
-    "ocr_score": 0.7110626537394221
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_124203",
-    "page_number": 6,
-    "ocr_score": 0.6866089208674061
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_124509",
-    "page_number": 1,
-    "ocr_score": 0.7639473823837628
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_124509",
-    "page_number": 2,
-    "ocr_score": 0.49105948170879377
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_124509",
-    "page_number": 3,
-    "ocr_score": 0.46176705613924923
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_124509",
-    "page_number": 4,
-    "ocr_score": 0.5439132080211587
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_124509",
-    "page_number": 5,
-    "ocr_score": 0.6813426665991793
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_124509",
-    "page_number": 6,
-    "ocr_score": 0.6746628380653559
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_124509",
-    "page_number": 7,
-    "ocr_score": 0.7096453547821062
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_126862",
-    "page_number": 1,
-    "ocr_score": 0.7719334755492624
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_126862",
-    "page_number": 2,
-    "ocr_score": 0.6639339750988451
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_126862",
-    "page_number": 3,
-    "ocr_score": 0.5252926661916446
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_126862",
-    "page_number": 4,
-    "ocr_score": 0.653285977984441
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_126862",
-    "page_number": 5,
-    "ocr_score": 0.7177981683399062
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_126862",
-    "page_number": 6,
-    "ocr_score": 0.7806818444773971
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_126862",
-    "page_number": 7,
-    "ocr_score": 0.6977064093578434
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_133200",
-    "page_number": 1,
-    "ocr_score": 0.7664671284841911
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_133200",
-    "page_number": 2,
-    "ocr_score": 0.4771864891816447
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_133200",
-    "page_number": 3,
-    "ocr_score": 0.5823810384290323
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_133200",
-    "page_number": 4,
-    "ocr_score": 0.6131846617518811
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_133200",
-    "page_number": 5,
-    "ocr_score": 0.6315201884508898
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_133200",
-    "page_number": 6,
-    "ocr_score": 0.6807947313055741
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_139169",
-    "page_number": 1,
-    "ocr_score": 0.7541314444467232
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_139169",
-    "page_number": 2,
-    "ocr_score": 0.583207836012619
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_139169",
-    "page_number": 3,
-    "ocr_score": 0.3660409956555739
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_139169",
-    "page_number": 4,
-    "ocr_score": 0.3266520596602111
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_139169",
-    "page_number": 5,
-    "ocr_score": 0.7781367049453577
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_139169",
-    "page_number": 6,
-    "ocr_score": 0.6219706180003709
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_139169",
-    "page_number": 7,
-    "ocr_score": 0.6175833071885783
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_139169",
-    "page_number": 8,
-    "ocr_score": 0.7622650678078132
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_139169",
+    "document_name": "cg_sic_contact_bilingual_all_questions_qna",
+    "sha256": "ccc867609d7d6df002c85cf55ca25d18cbfcf26539fde64142c0b9da26eb6d9d",
     "page_number": 9,
-    "ocr_score": 0.6139308116387672
+    "ocr_score": 0.5808734701908149
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_139169",
+    "document_name": "cg_sic_contact_bilingual_all_questions_qna",
+    "sha256": "ccc867609d7d6df002c85cf55ca25d18cbfcf26539fde64142c0b9da26eb6d9d",
     "page_number": 10,
-    "ocr_score": 0.6962307363232421
+    "ocr_score": 0.5467273058554167
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_142836",
-    "page_number": 1,
-    "ocr_score": 0.7591013743916497
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_142836",
-    "page_number": 2,
-    "ocr_score": 0.5586530002278649
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_142836",
-    "page_number": 3,
-    "ocr_score": 0.6043308334778168
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_142836",
-    "page_number": 4,
-    "ocr_score": 0.7321482772876958
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_142836",
-    "page_number": 5,
-    "ocr_score": 0.5257106368836565
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_142836",
-    "page_number": 6,
-    "ocr_score": 0.6426452132440356
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_142836",
-    "page_number": 7,
-    "ocr_score": 0.6483661047323663
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_142836",
-    "page_number": 8,
-    "ocr_score": 0.7170800683405879
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_148594",
-    "page_number": 1,
-    "ocr_score": 0.7185298820342723
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_148594",
-    "page_number": 2,
-    "ocr_score": 0.636517958783529
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_148594",
-    "page_number": 3,
-    "ocr_score": 0.5848143557231664
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_148594",
-    "page_number": 4,
-    "ocr_score": 0.7894318011945192
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_148594",
-    "page_number": 5,
-    "ocr_score": 0.6949796662389462
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_148594",
-    "page_number": 6,
-    "ocr_score": 0.6365896912147396
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_148594",
-    "page_number": 7,
-    "ocr_score": 0.7390344361792526
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_155260",
-    "page_number": 1,
-    "ocr_score": 0.750976940602432
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_155260",
-    "page_number": 2,
-    "ocr_score": 0.6063019175812052
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_155260",
-    "page_number": 3,
-    "ocr_score": 0.49452823803805196
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_155260",
-    "page_number": 4,
-    "ocr_score": 0.5196691743819373
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_155260",
-    "page_number": 5,
-    "ocr_score": 0.6000917526796473
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_155260",
-    "page_number": 6,
-    "ocr_score": 0.6265723402977131
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_155260",
-    "page_number": 7,
-    "ocr_score": 0.7240099560898546
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_155260",
-    "page_number": 8,
-    "ocr_score": 0.7762347311704914
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_155509",
-    "page_number": 1,
-    "ocr_score": 0.7315251782014859
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_155509",
-    "page_number": 2,
-    "ocr_score": 0.6681796666038637
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_155509",
-    "page_number": 3,
-    "ocr_score": 0.6048523451352087
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_155509",
-    "page_number": 4,
-    "ocr_score": 0.7229961660177777
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_155509",
-    "page_number": 5,
-    "ocr_score": 0.46948050772740746
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_155509",
-    "page_number": 6,
-    "ocr_score": 0.6850440154695906
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_155509",
-    "page_number": 7,
-    "ocr_score": 0.6880723397100407
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_155509",
-    "page_number": 8,
-    "ocr_score": 0.7100306707824809
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_601025",
-    "page_number": 1,
-    "ocr_score": 0.8102144692339038
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_601025",
-    "page_number": 2,
-    "ocr_score": 0.5624827209815588
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_601025",
-    "page_number": 3,
-    "ocr_score": 0.5106154936354848
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_601025",
-    "page_number": 4,
-    "ocr_score": 0.5076146731177853
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_601025",
-    "page_number": 5,
-    "ocr_score": 0.6780308975087243
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_601025",
-    "page_number": 6,
-    "ocr_score": 0.714073341261215
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_601025",
-    "page_number": 7,
-    "ocr_score": 0.7152787491029958
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_601177",
-    "page_number": 1,
-    "ocr_score": 0.7825603247902285
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_601177",
-    "page_number": 2,
-    "ocr_score": 0.658173368605865
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_601177",
-    "page_number": 3,
-    "ocr_score": 0.6565825511057085
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_601177",
-    "page_number": 4,
-    "ocr_score": 0.6833684747409614
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_601177",
-    "page_number": 5,
-    "ocr_score": 0.7659387735151082
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_601177",
-    "page_number": 6,
-    "ocr_score": 0.7986570350197107
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_601177",
-    "page_number": 7,
-    "ocr_score": 0.6710510789443981
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_601177",
-    "page_number": 8,
-    "ocr_score": 0.7077748153643622
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_601846",
-    "page_number": 1,
-    "ocr_score": 0.7749298862215923
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_601846",
-    "page_number": 2,
-    "ocr_score": 0.5874477386512318
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_601846",
-    "page_number": 3,
-    "ocr_score": 0.627037020894477
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_601846",
-    "page_number": 4,
-    "ocr_score": 0.6937129590842745
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_601846",
-    "page_number": 5,
-    "ocr_score": 0.5209775571322685
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_601846",
-    "page_number": 6,
-    "ocr_score": 0.4550919469684881
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_601846",
-    "page_number": 7,
-    "ocr_score": 0.7398579357134076
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_601846",
-    "page_number": 8,
-    "ocr_score": 0.6734914457874823
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_601846",
-    "page_number": 9,
-    "ocr_score": 0.744625653789648
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_602824",
-    "page_number": 1,
-    "ocr_score": 0.7671078603814638
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_602824",
-    "page_number": 2,
-    "ocr_score": 0.6639734100551654
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_602824",
-    "page_number": 3,
-    "ocr_score": 0.6519875888672313
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_602824",
-    "page_number": 4,
-    "ocr_score": 0.5058196921357646
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_602824",
-    "page_number": 5,
-    "ocr_score": 0.5879316802540944
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_602824",
-    "page_number": 6,
-    "ocr_score": 0.5798185773907584
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_602824",
-    "page_number": 7,
-    "ocr_score": 0.73136173953333
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_602824",
-    "page_number": 8,
-    "ocr_score": 0.7633001147373321
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_603782",
-    "page_number": 1,
-    "ocr_score": 0.7579280306184863
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_603782",
-    "page_number": 2,
-    "ocr_score": 0.5670283286555899
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_603782",
-    "page_number": 3,
-    "ocr_score": 0.6100850754377252
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_603782",
-    "page_number": 4,
-    "ocr_score": 0.7757069109550849
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_603782",
-    "page_number": 5,
-    "ocr_score": 0.42024296628348895
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_603782",
-    "page_number": 6,
-    "ocr_score": 0.5624457178543547
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_603782",
-    "page_number": 7,
-    "ocr_score": 0.7813645858757876
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_603782",
-    "page_number": 8,
-    "ocr_score": 0.769138612834896
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_605716",
-    "page_number": 1,
-    "ocr_score": 0.7862868069565445
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_605716",
-    "page_number": 2,
-    "ocr_score": 0.6713785431945966
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_605716",
-    "page_number": 3,
-    "ocr_score": 0.4697951659863117
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_605716",
-    "page_number": 4,
-    "ocr_score": 0.5479265104679744
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_605716",
-    "page_number": 5,
-    "ocr_score": 0.4700638474416989
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_605716",
-    "page_number": 6,
-    "ocr_score": 0.5043424626785967
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_605716",
-    "page_number": 7,
-    "ocr_score": 0.5519519700719383
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_605716",
-    "page_number": 8,
-    "ocr_score": 0.5686669274052166
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_605716",
-    "page_number": 9,
-    "ocr_score": 0.4808657065820133
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_605716",
-    "page_number": 10,
-    "ocr_score": 0.5087956624002141
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_605716",
+    "document_name": "cg_sic_contact_bilingual_all_questions_qna",
+    "sha256": "ccc867609d7d6df002c85cf55ca25d18cbfcf26539fde64142c0b9da26eb6d9d",
     "page_number": 11,
-    "ocr_score": 0.4543407218655325
+    "ocr_score": 0.506272519883999
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_605716",
+    "document_name": "cg_sic_contact_bilingual_all_questions_qna",
+    "sha256": "ccc867609d7d6df002c85cf55ca25d18cbfcf26539fde64142c0b9da26eb6d9d",
     "page_number": 12,
-    "ocr_score": 0.5452059714217378
+    "ocr_score": 0.5747201497120668
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_605716",
+    "document_name": "RTI_User_Manual_Comprehensive_Bilingual_QA",
+    "sha256": "0933f82647c41b8198cc1a2ba3ccacfcd70450935c9d853b3e9a65d982de35b1",
+    "page_number": 1,
+    "ocr_score": 0.7225012723435761
+  },
+  {
+    "document_name": "RTI_User_Manual_Comprehensive_Bilingual_QA",
+    "sha256": "0933f82647c41b8198cc1a2ba3ccacfcd70450935c9d853b3e9a65d982de35b1",
+    "page_number": 2,
+    "ocr_score": 0.6170085038584593
+  },
+  {
+    "document_name": "RTI_User_Manual_Comprehensive_Bilingual_QA",
+    "sha256": "0933f82647c41b8198cc1a2ba3ccacfcd70450935c9d853b3e9a65d982de35b1",
+    "page_number": 3,
+    "ocr_score": 0.5969310933210217
+  },
+  {
+    "document_name": "RTI_User_Manual_Comprehensive_Bilingual_QA",
+    "sha256": "0933f82647c41b8198cc1a2ba3ccacfcd70450935c9d853b3e9a65d982de35b1",
+    "page_number": 4,
+    "ocr_score": 0.6357361206446426
+  },
+  {
+    "document_name": "RTI_User_Manual_Comprehensive_Bilingual_QA",
+    "sha256": "0933f82647c41b8198cc1a2ba3ccacfcd70450935c9d853b3e9a65d982de35b1",
+    "page_number": 5,
+    "ocr_score": 0.5990167870886914
+  },
+  {
+    "document_name": "RTI_User_Manual_Comprehensive_Bilingual_QA",
+    "sha256": "0933f82647c41b8198cc1a2ba3ccacfcd70450935c9d853b3e9a65d982de35b1",
+    "page_number": 6,
+    "ocr_score": 0.6246545484890903
+  },
+  {
+    "document_name": "RTI_User_Manual_Comprehensive_Bilingual_QA",
+    "sha256": "0933f82647c41b8198cc1a2ba3ccacfcd70450935c9d853b3e9a65d982de35b1",
+    "page_number": 7,
+    "ocr_score": 0.5902792610382519
+  },
+  {
+    "document_name": "RTI_User_Manual_Comprehensive_Bilingual_QA",
+    "sha256": "0933f82647c41b8198cc1a2ba3ccacfcd70450935c9d853b3e9a65d982de35b1",
+    "page_number": 8,
+    "ocr_score": 0.5821611837406115
+  },
+  {
+    "document_name": "RTI_User_Manual_Comprehensive_Bilingual_QA",
+    "sha256": "0933f82647c41b8198cc1a2ba3ccacfcd70450935c9d853b3e9a65d982de35b1",
+    "page_number": 9,
+    "ocr_score": 0.6039533566011241
+  },
+  {
+    "document_name": "RTI_User_Manual_Comprehensive_Bilingual_QA",
+    "sha256": "0933f82647c41b8198cc1a2ba3ccacfcd70450935c9d853b3e9a65d982de35b1",
+    "page_number": 10,
+    "ocr_score": 0.6679705650631176
+  },
+  {
+    "document_name": "RTI_User_Manual_Comprehensive_Bilingual_QA",
+    "sha256": "0933f82647c41b8198cc1a2ba3ccacfcd70450935c9d853b3e9a65d982de35b1",
+    "page_number": 11,
+    "ocr_score": 0.6949100787246536
+  },
+  {
+    "document_name": "RTI_User_Manual_Comprehensive_Bilingual_QA",
+    "sha256": "0933f82647c41b8198cc1a2ba3ccacfcd70450935c9d853b3e9a65d982de35b1",
+    "page_number": 12,
+    "ocr_score": 0.594528996966021
+  },
+  {
+    "document_name": "RTI_User_Manual_Comprehensive_Bilingual_QA",
+    "sha256": "0933f82647c41b8198cc1a2ba3ccacfcd70450935c9d853b3e9a65d982de35b1",
     "page_number": 13,
-    "ocr_score": 0.4429604512502293
+    "ocr_score": 0.6316565686681237
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_605716",
+    "document_name": "RTI_User_Manual_Comprehensive_Bilingual_QA",
+    "sha256": "0933f82647c41b8198cc1a2ba3ccacfcd70450935c9d853b3e9a65d982de35b1",
     "page_number": 14,
-    "ocr_score": 0.40909723930153097
+    "ocr_score": 0.6310018757365433
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_605716",
+    "document_name": "RTI_User_Manual_Comprehensive_Bilingual_QA",
+    "sha256": "0933f82647c41b8198cc1a2ba3ccacfcd70450935c9d853b3e9a65d982de35b1",
     "page_number": 15,
-    "ocr_score": 0.6816084935005776
+    "ocr_score": 0.6405860667239426
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_605716",
+    "document_name": "RTI_User_Manual_Comprehensive_Bilingual_QA",
+    "sha256": "0933f82647c41b8198cc1a2ba3ccacfcd70450935c9d853b3e9a65d982de35b1",
     "page_number": 16,
-    "ocr_score": 0.43561937073299684
+    "ocr_score": 0.5857156794328513
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_605716",
+    "document_name": "RTI_User_Manual_Comprehensive_Bilingual_QA",
+    "sha256": "0933f82647c41b8198cc1a2ba3ccacfcd70450935c9d853b3e9a65d982de35b1",
     "page_number": 17,
-    "ocr_score": 0.7372596124011427
+    "ocr_score": 0.5920253548747485
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_605716",
+    "document_name": "RTI_User_Manual_Comprehensive_Bilingual_QA",
+    "sha256": "0933f82647c41b8198cc1a2ba3ccacfcd70450935c9d853b3e9a65d982de35b1",
     "page_number": 18,
-    "ocr_score": 0.7017749837857006
+    "ocr_score": 0.6333314529454446
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_605716",
+    "document_name": "RTI_User_Manual_Comprehensive_Bilingual_QA",
+    "sha256": "0933f82647c41b8198cc1a2ba3ccacfcd70450935c9d853b3e9a65d982de35b1",
     "page_number": 19,
-    "ocr_score": 0.657851001278185
+    "ocr_score": 0.6090764718684596
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_605716",
-    "page_number": 20,
-    "ocr_score": 0.7261889458099916
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_607496",
+    "document_name": "FAA_RTI_User_Manual_Comprehensive_Bilingual_QA",
+    "sha256": "fb9942a37c6e2c97031708d1677d4d903c6995fb80121a11bb13309a2af1fa84",
     "page_number": 1,
-    "ocr_score": 0.8069096197297865
+    "ocr_score": 0.6859602958225394
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_607496",
+    "document_name": "FAA_RTI_User_Manual_Comprehensive_Bilingual_QA",
+    "sha256": "fb9942a37c6e2c97031708d1677d4d903c6995fb80121a11bb13309a2af1fa84",
     "page_number": 2,
-    "ocr_score": 0.6702914023225578
+    "ocr_score": 0.7039840115292088
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_607496",
+    "document_name": "FAA_RTI_User_Manual_Comprehensive_Bilingual_QA",
+    "sha256": "fb9942a37c6e2c97031708d1677d4d903c6995fb80121a11bb13309a2af1fa84",
     "page_number": 3,
-    "ocr_score": 0.2951367050722476
+    "ocr_score": 0.6082323190117447
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_607496",
+    "document_name": "FAA_RTI_User_Manual_Comprehensive_Bilingual_QA",
+    "sha256": "fb9942a37c6e2c97031708d1677d4d903c6995fb80121a11bb13309a2af1fa84",
     "page_number": 4,
-    "ocr_score": 0.3118431986167172
+    "ocr_score": 0.6004058358583003
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_607496",
+    "document_name": "FAA_RTI_User_Manual_Comprehensive_Bilingual_QA",
+    "sha256": "fb9942a37c6e2c97031708d1677d4d903c6995fb80121a11bb13309a2af1fa84",
     "page_number": 5,
-    "ocr_score": 0.33314078190963925
+    "ocr_score": 0.6144731774745181
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_607496",
+    "document_name": "FAA_RTI_User_Manual_Comprehensive_Bilingual_QA",
+    "sha256": "fb9942a37c6e2c97031708d1677d4d903c6995fb80121a11bb13309a2af1fa84",
     "page_number": 6,
-    "ocr_score": 0.34233752359209413
+    "ocr_score": 0.6129127275168494
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_607496",
+    "document_name": "FAA_RTI_User_Manual_Comprehensive_Bilingual_QA",
+    "sha256": "fb9942a37c6e2c97031708d1677d4d903c6995fb80121a11bb13309a2af1fa84",
     "page_number": 7,
-    "ocr_score": 0.7498639640604198
+    "ocr_score": 0.7113290792644462
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_607496",
+    "document_name": "FAA_RTI_User_Manual_Comprehensive_Bilingual_QA",
+    "sha256": "fb9942a37c6e2c97031708d1677d4d903c6995fb80121a11bb13309a2af1fa84",
     "page_number": 8,
-    "ocr_score": 0.7132351753478157
+    "ocr_score": 0.5640353481519335
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_607496",
+    "document_name": "FAA_RTI_User_Manual_Comprehensive_Bilingual_QA",
+    "sha256": "fb9942a37c6e2c97031708d1677d4d903c6995fb80121a11bb13309a2af1fa84",
     "page_number": 9,
-    "ocr_score": 0.7333851764127685
+    "ocr_score": 0.6220375704742125
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_607496",
+    "document_name": "FAA_RTI_User_Manual_Comprehensive_Bilingual_QA",
+    "sha256": "fb9942a37c6e2c97031708d1677d4d903c6995fb80121a11bb13309a2af1fa84",
     "page_number": 10,
-    "ocr_score": 0.7089864771049854
+    "ocr_score": 0.5972855964834647
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_607496",
+    "document_name": "FAA_RTI_User_Manual_Comprehensive_Bilingual_QA",
+    "sha256": "fb9942a37c6e2c97031708d1677d4d903c6995fb80121a11bb13309a2af1fa84",
     "page_number": 11,
-    "ocr_score": 0.76643695639789
+    "ocr_score": 0.6000833255650699
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_607496",
+    "document_name": "FAA_RTI_User_Manual_Comprehensive_Bilingual_QA",
+    "sha256": "fb9942a37c6e2c97031708d1677d4d903c6995fb80121a11bb13309a2af1fa84",
     "page_number": 12,
-    "ocr_score": 0.7072615961085469
+    "ocr_score": 0.6597610799217759
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_607496",
+    "document_name": "FAA_RTI_User_Manual_Comprehensive_Bilingual_QA",
+    "sha256": "fb9942a37c6e2c97031708d1677d4d903c6995fb80121a11bb13309a2af1fa84",
     "page_number": 13,
-    "ocr_score": 0.7928373862974506
+    "ocr_score": 0.6132270019664297
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_607496",
+    "document_name": "FAA_RTI_User_Manual_Comprehensive_Bilingual_QA",
+    "sha256": "fb9942a37c6e2c97031708d1677d4d903c6995fb80121a11bb13309a2af1fa84",
     "page_number": 14,
-    "ocr_score": 0.7245120884241742
+    "ocr_score": 0.6427876634131979
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_607496",
+    "document_name": "FAA_RTI_User_Manual_Comprehensive_Bilingual_QA",
+    "sha256": "fb9942a37c6e2c97031708d1677d4d903c6995fb80121a11bb13309a2af1fa84",
     "page_number": 15,
-    "ocr_score": 0.726101733467817
+    "ocr_score": 0.6256551432630406
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_607496",
+    "document_name": "FAA_RTI_User_Manual_Comprehensive_Bilingual_QA",
+    "sha256": "fb9942a37c6e2c97031708d1677d4d903c6995fb80121a11bb13309a2af1fa84",
     "page_number": 16,
-    "ocr_score": 0.6856309586015704
+    "ocr_score": 0.6704483202083298
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_607496",
+    "document_name": "FAA_RTI_User_Manual_Comprehensive_Bilingual_QA",
+    "sha256": "fb9942a37c6e2c97031708d1677d4d903c6995fb80121a11bb13309a2af1fa84",
     "page_number": 17,
-    "ocr_score": 0.6864533381648156
+    "ocr_score": 0.6107652606491449
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_620046",
-    "page_number": 1,
-    "ocr_score": 0.7506071701318436
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_620046",
-    "page_number": 2,
-    "ocr_score": 0.7480335507609995
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_620046",
-    "page_number": 3,
-    "ocr_score": 0.6996968313025795
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_620046",
-    "page_number": 4,
-    "ocr_score": 0.6845586129326043
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_620046",
-    "page_number": 5,
-    "ocr_score": 0.5870396646353877
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_620046",
-    "page_number": 6,
-    "ocr_score": 0.6153940919549694
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_620046",
-    "page_number": 7,
-    "ocr_score": 0.6234934804028986
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_620046",
-    "page_number": 8,
-    "ocr_score": 0.6756588444809292
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_620046",
-    "page_number": 9,
-    "ocr_score": 0.6680659501496314
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_620046",
-    "page_number": 10,
-    "ocr_score": 0.7004653777293401
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_621212",
-    "page_number": 1,
-    "ocr_score": 0.7930274557602448
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_621212",
-    "page_number": 2,
-    "ocr_score": 0.6470880625632575
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_621212",
-    "page_number": 3,
-    "ocr_score": 0.5455043821100632
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_621212",
-    "page_number": 4,
-    "ocr_score": 0.5707276931082048
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_621212",
-    "page_number": 5,
-    "ocr_score": 0.5876667369675732
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_621212",
-    "page_number": 6,
-    "ocr_score": 0.5614829983078344
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_621212",
-    "page_number": 7,
-    "ocr_score": 0.6046540304899072
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_621212",
-    "page_number": 8,
-    "ocr_score": 0.578220293013871
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_621212",
-    "page_number": 9,
-    "ocr_score": 0.6329183851352825
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_621212",
-    "page_number": 10,
-    "ocr_score": 0.5967821793259681
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_621212",
-    "page_number": 11,
-    "ocr_score": 0.5515962036123343
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_621212",
-    "page_number": 12,
-    "ocr_score": 0.3693018154821504
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_621212",
-    "page_number": 13,
-    "ocr_score": 0.3652104201264453
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_621212",
-    "page_number": 14,
-    "ocr_score": 0.48237560559938636
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_621212",
-    "page_number": 15,
-    "ocr_score": 0.5448521423320666
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_621212",
-    "page_number": 16,
-    "ocr_score": 0.7546536898632654
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_621212",
-    "page_number": 17,
-    "ocr_score": 0.6986970853904518
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_621212",
+    "document_name": "FAA_RTI_User_Manual_Comprehensive_Bilingual_QA",
+    "sha256": "fb9942a37c6e2c97031708d1677d4d903c6995fb80121a11bb13309a2af1fa84",
     "page_number": 18,
-    "ocr_score": 0.7256479215031862
+    "ocr_score": 0.6902024327588082
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_623514",
+    "document_name": "FAA_RTI_User_Manual_Comprehensive_Bilingual_QA",
+    "sha256": "fb9942a37c6e2c97031708d1677d4d903c6995fb80121a11bb13309a2af1fa84",
+    "page_number": 19,
+    "ocr_score": 0.6428277070946353
+  },
+  {
+    "document_name": "FAA_RTI_User_Manual_Comprehensive_Bilingual_QA",
+    "sha256": "fb9942a37c6e2c97031708d1677d4d903c6995fb80121a11bb13309a2af1fa84",
+    "page_number": 20,
+    "ocr_score": 0.6314021638172865
+  },
+  {
+    "document_name": "FAA_RTI_User_Manual_Comprehensive_Bilingual_QA",
+    "sha256": "fb9942a37c6e2c97031708d1677d4d903c6995fb80121a11bb13309a2af1fa84",
+    "page_number": 21,
+    "ocr_score": 0.6496937406995905
+  },
+  {
+    "document_name": "FAA_RTI_User_Manual_Comprehensive_Bilingual_QA",
+    "sha256": "fb9942a37c6e2c97031708d1677d4d903c6995fb80121a11bb13309a2af1fa84",
+    "page_number": 22,
+    "ocr_score": 0.592255020369501
+  },
+  {
+    "document_name": "FAA_RTI_User_Manual_Comprehensive_Bilingual_QA",
+    "sha256": "fb9942a37c6e2c97031708d1677d4d903c6995fb80121a11bb13309a2af1fa84",
+    "page_number": 23,
+    "ocr_score": 0.5752475835928579
+  },
+  {
+    "document_name": "FAA_RTI_User_Manual_Comprehensive_Bilingual_QA",
+    "sha256": "fb9942a37c6e2c97031708d1677d4d903c6995fb80121a11bb13309a2af1fa84",
+    "page_number": 24,
+    "ocr_score": 0.6212395087942377
+  },
+  {
+    "document_name": "FAA_RTI_User_Manual_Comprehensive_Bilingual_QA",
+    "sha256": "fb9942a37c6e2c97031708d1677d4d903c6995fb80121a11bb13309a2af1fa84",
+    "page_number": 25,
+    "ocr_score": 0.6626673613084272
+  },
+  {
+    "document_name": "FAA_RTI_User_Manual_Comprehensive_Bilingual_QA",
+    "sha256": "fb9942a37c6e2c97031708d1677d4d903c6995fb80121a11bb13309a2af1fa84",
+    "page_number": 26,
+    "ocr_score": 0.6531290420864869
+  },
+  {
+    "document_name": "FAA_RTI_User_Manual_Comprehensive_Bilingual_QA",
+    "sha256": "fb9942a37c6e2c97031708d1677d4d903c6995fb80121a11bb13309a2af1fa84",
+    "page_number": 27,
+    "ocr_score": 0.6055064560337524
+  },
+  {
+    "document_name": "FAA_RTI_User_Manual_Comprehensive_Bilingual_QA",
+    "sha256": "fb9942a37c6e2c97031708d1677d4d903c6995fb80121a11bb13309a2af1fa84",
+    "page_number": 28,
+    "ocr_score": 0.6609219455801121
+  },
+  {
+    "document_name": "FAA_RTI_User_Manual_Comprehensive_Bilingual_QA",
+    "sha256": "fb9942a37c6e2c97031708d1677d4d903c6995fb80121a11bb13309a2af1fa84",
+    "page_number": 29,
+    "ocr_score": 0.6483776779583754
+  },
+  {
+    "document_name": "FAA_RTI_User_Manual_Comprehensive_Bilingual_QA",
+    "sha256": "fb9942a37c6e2c97031708d1677d4d903c6995fb80121a11bb13309a2af1fa84",
+    "page_number": 30,
+    "ocr_score": 0.7069247792563033
+  },
+  {
+    "document_name": "PIO_Onboarding_Process_Comprehensive_Bilingual_QA",
+    "sha256": "f982d6eaac1e3914af6dccc7ddbe6ef81da28a10a2f0b3d9261bc9ee03e785c3",
     "page_number": 1,
-    "ocr_score": 0.813620723237914
+    "ocr_score": 0.6432999686300912
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_623514",
+    "document_name": "PIO_Onboarding_Process_Comprehensive_Bilingual_QA",
+    "sha256": "f982d6eaac1e3914af6dccc7ddbe6ef81da28a10a2f0b3d9261bc9ee03e785c3",
     "page_number": 2,
-    "ocr_score": 0.5880564871111831
+    "ocr_score": 0.6343674621993207
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_623514",
+    "document_name": "PIO_Onboarding_Process_Comprehensive_Bilingual_QA",
+    "sha256": "f982d6eaac1e3914af6dccc7ddbe6ef81da28a10a2f0b3d9261bc9ee03e785c3",
     "page_number": 3,
-    "ocr_score": 0.5947488056832924
+    "ocr_score": 0.6515091855998019
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_623514",
+    "document_name": "PIO_Onboarding_Process_Comprehensive_Bilingual_QA",
+    "sha256": "f982d6eaac1e3914af6dccc7ddbe6ef81da28a10a2f0b3d9261bc9ee03e785c3",
     "page_number": 4,
-    "ocr_score": 0.6445425257376154
+    "ocr_score": 0.6294716725394056
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_623514",
+    "document_name": "PIO_Onboarding_Process_Comprehensive_Bilingual_QA",
+    "sha256": "f982d6eaac1e3914af6dccc7ddbe6ef81da28a10a2f0b3d9261bc9ee03e785c3",
     "page_number": 5,
-    "ocr_score": 0.6980009757230357
+    "ocr_score": 0.6050892923439612
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_623514",
+    "document_name": "PIO_Onboarding_Process_Comprehensive_Bilingual_QA",
+    "sha256": "f982d6eaac1e3914af6dccc7ddbe6ef81da28a10a2f0b3d9261bc9ee03e785c3",
     "page_number": 6,
-    "ocr_score": 0.6769442205030106
+    "ocr_score": 0.6442209504235207
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_623514",
+    "document_name": "PIO_Onboarding_Process_Comprehensive_Bilingual_QA",
+    "sha256": "f982d6eaac1e3914af6dccc7ddbe6ef81da28a10a2f0b3d9261bc9ee03e785c3",
     "page_number": 7,
-    "ocr_score": 0.6783986806302565
+    "ocr_score": 0.6346016375988753
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_623514",
+    "document_name": "PIO_Onboarding_Process_Comprehensive_Bilingual_QA",
+    "sha256": "f982d6eaac1e3914af6dccc7ddbe6ef81da28a10a2f0b3d9261bc9ee03e785c3",
     "page_number": 8,
-    "ocr_score": 0.689084156935215
+    "ocr_score": 0.61380862303915
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_623514",
+    "document_name": "PIO_Onboarding_Process_Comprehensive_Bilingual_QA",
+    "sha256": "f982d6eaac1e3914af6dccc7ddbe6ef81da28a10a2f0b3d9261bc9ee03e785c3",
     "page_number": 9,
-    "ocr_score": 0.6795350239625056
+    "ocr_score": 0.5936751294284116
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_623514",
+    "document_name": "PIO_Onboarding_Process_Comprehensive_Bilingual_QA",
+    "sha256": "f982d6eaac1e3914af6dccc7ddbe6ef81da28a10a2f0b3d9261bc9ee03e785c3",
     "page_number": 10,
-    "ocr_score": 0.7003324926946172
+    "ocr_score": 0.6027143712131806
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_623514",
+    "document_name": "PIO_Onboarding_Process_Comprehensive_Bilingual_QA",
+    "sha256": "f982d6eaac1e3914af6dccc7ddbe6ef81da28a10a2f0b3d9261bc9ee03e785c3",
     "page_number": 11,
-    "ocr_score": 0.6910040410300478
+    "ocr_score": 0.6292362121871368
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_623514",
+    "document_name": "RTI_PIO_Manual_30_Bilingual_QA",
+    "sha256": "ea017c6898437f1a35aa086b8d538ad25165eb61fc3860f106b2749f519199fc",
+    "page_number": 1,
+    "ocr_score": 0.6322628435599561
+  },
+  {
+    "document_name": "RTI_PIO_Manual_30_Bilingual_QA",
+    "sha256": "ea017c6898437f1a35aa086b8d538ad25165eb61fc3860f106b2749f519199fc",
+    "page_number": 2,
+    "ocr_score": 0.5951598838674806
+  },
+  {
+    "document_name": "RTI_PIO_Manual_30_Bilingual_QA",
+    "sha256": "ea017c6898437f1a35aa086b8d538ad25165eb61fc3860f106b2749f519199fc",
+    "page_number": 3,
+    "ocr_score": 0.5517657503526209
+  },
+  {
+    "document_name": "RTI_PIO_Manual_30_Bilingual_QA",
+    "sha256": "ea017c6898437f1a35aa086b8d538ad25165eb61fc3860f106b2749f519199fc",
+    "page_number": 4,
+    "ocr_score": 0.5829015288012328
+  },
+  {
+    "document_name": "RTI_PIO_Manual_30_Bilingual_QA",
+    "sha256": "ea017c6898437f1a35aa086b8d538ad25165eb61fc3860f106b2749f519199fc",
+    "page_number": 5,
+    "ocr_score": 0.5745494110267574
+  },
+  {
+    "document_name": "RTI_PIO_Manual_30_Bilingual_QA",
+    "sha256": "ea017c6898437f1a35aa086b8d538ad25165eb61fc3860f106b2749f519199fc",
+    "page_number": 6,
+    "ocr_score": 0.6161023456831041
+  },
+  {
+    "document_name": "RTI_PIO_Manual_30_Bilingual_QA",
+    "sha256": "ea017c6898437f1a35aa086b8d538ad25165eb61fc3860f106b2749f519199fc",
+    "page_number": 7,
+    "ocr_score": 0.6081911287430323
+  },
+  {
+    "document_name": "RTI_PIO_Manual_30_Bilingual_QA",
+    "sha256": "ea017c6898437f1a35aa086b8d538ad25165eb61fc3860f106b2749f519199fc",
+    "page_number": 8,
+    "ocr_score": 0.613828156284156
+  },
+  {
+    "document_name": "RTI_PIO_Manual_30_Bilingual_QA",
+    "sha256": "ea017c6898437f1a35aa086b8d538ad25165eb61fc3860f106b2749f519199fc",
+    "page_number": 9,
+    "ocr_score": 0.5483370479045465
+  },
+  {
+    "document_name": "RTI_PIO_Manual_30_Bilingual_QA",
+    "sha256": "ea017c6898437f1a35aa086b8d538ad25165eb61fc3860f106b2749f519199fc",
+    "page_number": 10,
+    "ocr_score": 0.592182452587208
+  },
+  {
+    "document_name": "RTI_SAA_Manual_60_Bilingual_QA_Reordered",
+    "sha256": "76a9f988a0f6608f479b122d30932d166348847cdee3618815cf92a130cf5940",
+    "page_number": 1,
+    "ocr_score": 0.664946942631263
+  },
+  {
+    "document_name": "RTI_SAA_Manual_60_Bilingual_QA_Reordered",
+    "sha256": "76a9f988a0f6608f479b122d30932d166348847cdee3618815cf92a130cf5940",
+    "page_number": 2,
+    "ocr_score": 0.6379674636790502
+  },
+  {
+    "document_name": "RTI_SAA_Manual_60_Bilingual_QA_Reordered",
+    "sha256": "76a9f988a0f6608f479b122d30932d166348847cdee3618815cf92a130cf5940",
+    "page_number": 3,
+    "ocr_score": 0.5563875380192449
+  },
+  {
+    "document_name": "RTI_SAA_Manual_60_Bilingual_QA_Reordered",
+    "sha256": "76a9f988a0f6608f479b122d30932d166348847cdee3618815cf92a130cf5940",
+    "page_number": 4,
+    "ocr_score": 0.6286742288402577
+  },
+  {
+    "document_name": "RTI_SAA_Manual_60_Bilingual_QA_Reordered",
+    "sha256": "76a9f988a0f6608f479b122d30932d166348847cdee3618815cf92a130cf5940",
+    "page_number": 5,
+    "ocr_score": 0.5905608534318996
+  },
+  {
+    "document_name": "RTI_SAA_Manual_60_Bilingual_QA_Reordered",
+    "sha256": "76a9f988a0f6608f479b122d30932d166348847cdee3618815cf92a130cf5940",
+    "page_number": 6,
+    "ocr_score": 0.5808047924114069
+  },
+  {
+    "document_name": "RTI_SAA_Manual_60_Bilingual_QA_Reordered",
+    "sha256": "76a9f988a0f6608f479b122d30932d166348847cdee3618815cf92a130cf5940",
+    "page_number": 7,
+    "ocr_score": 0.6356161279439143
+  },
+  {
+    "document_name": "RTI_SAA_Manual_60_Bilingual_QA_Reordered",
+    "sha256": "76a9f988a0f6608f479b122d30932d166348847cdee3618815cf92a130cf5940",
+    "page_number": 8,
+    "ocr_score": 0.6250348312119945
+  },
+  {
+    "document_name": "RTI_SAA_Manual_60_Bilingual_QA_Reordered",
+    "sha256": "76a9f988a0f6608f479b122d30932d166348847cdee3618815cf92a130cf5940",
+    "page_number": 9,
+    "ocr_score": 0.6124316493800083
+  },
+  {
+    "document_name": "RTI_SAA_Manual_60_Bilingual_QA_Reordered",
+    "sha256": "76a9f988a0f6608f479b122d30932d166348847cdee3618815cf92a130cf5940",
+    "page_number": 10,
+    "ocr_score": 0.590629046093538
+  },
+  {
+    "document_name": "RTI_SAA_Manual_60_Bilingual_QA_Reordered",
+    "sha256": "76a9f988a0f6608f479b122d30932d166348847cdee3618815cf92a130cf5940",
+    "page_number": 11,
+    "ocr_score": 0.6229477596291301
+  },
+  {
+    "document_name": "RTI_SAA_Manual_60_Bilingual_QA_Reordered",
+    "sha256": "76a9f988a0f6608f479b122d30932d166348847cdee3618815cf92a130cf5940",
     "page_number": 12,
-    "ocr_score": 0.36979234706234054
+    "ocr_score": 0.6280455285925645
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_623514",
+    "document_name": "RTI_SAA_Manual_60_Bilingual_QA_Reordered",
+    "sha256": "76a9f988a0f6608f479b122d30932d166348847cdee3618815cf92a130cf5940",
     "page_number": 13,
-    "ocr_score": 0.4222032438576228
+    "ocr_score": 0.6298380301445196
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_623514",
+    "document_name": "RTI_SAA_Manual_60_Bilingual_QA_Reordered",
+    "sha256": "76a9f988a0f6608f479b122d30932d166348847cdee3618815cf92a130cf5940",
     "page_number": 14,
-    "ocr_score": 0.5773651413715185
+    "ocr_score": 0.5910916473607059
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_623514",
+    "document_name": "RTI_SAA_Manual_60_Bilingual_QA_Reordered",
+    "sha256": "76a9f988a0f6608f479b122d30932d166348847cdee3618815cf92a130cf5940",
     "page_number": 15,
-    "ocr_score": 0.7597555260514988
+    "ocr_score": 0.6088952401886867
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_624678",
+    "document_name": "RTI_SAA_Manual_60_Bilingual_QA_Reordered",
+    "sha256": "76a9f988a0f6608f479b122d30932d166348847cdee3618815cf92a130cf5940",
+    "page_number": 16,
+    "ocr_score": 0.6341608181172279
+  },
+  {
+    "document_name": "RTI_SAA_Manual_60_Bilingual_QA_Reordered",
+    "sha256": "76a9f988a0f6608f479b122d30932d166348847cdee3618815cf92a130cf5940",
+    "page_number": 17,
+    "ocr_score": 0.6242009221172761
+  },
+  {
+    "document_name": "RTI_SAA_Manual_60_Bilingual_QA_Reordered",
+    "sha256": "76a9f988a0f6608f479b122d30932d166348847cdee3618815cf92a130cf5940",
+    "page_number": 18,
+    "ocr_score": 0.5930633258525709
+  },
+  {
+    "document_name": "RTI_SAA_Manual_60_Bilingual_QA_Reordered",
+    "sha256": "76a9f988a0f6608f479b122d30932d166348847cdee3618815cf92a130cf5940",
+    "page_number": 19,
+    "ocr_score": 0.6167348296335319
+  },
+  {
+    "document_name": "RTI_SAA_Manual_60_Bilingual_QA_Reordered",
+    "sha256": "76a9f988a0f6608f479b122d30932d166348847cdee3618815cf92a130cf5940",
+    "page_number": 20,
+    "ocr_score": 0.6253882408343181
+  },
+  {
+    "document_name": "RTI_SAA_Manual_60_Bilingual_QA_Reordered",
+    "sha256": "76a9f988a0f6608f479b122d30932d166348847cdee3618815cf92a130cf5940",
+    "page_number": 21,
+    "ocr_score": 0.62592956224105
+  },
+  {
+    "document_name": "RTI_SAA_Manual_60_Bilingual_QA_Reordered",
+    "sha256": "76a9f988a0f6608f479b122d30932d166348847cdee3618815cf92a130cf5940",
+    "page_number": 22,
+    "ocr_score": 0.6364089041077325
+  },
+  {
+    "document_name": "RTI_SAA_Manual_60_Bilingual_QA_Reordered",
+    "sha256": "76a9f988a0f6608f479b122d30932d166348847cdee3618815cf92a130cf5940",
+    "page_number": 23,
+    "ocr_score": 0.6081208122815777
+  },
+  {
+    "document_name": "RTI_SAA_Manual_60_Bilingual_QA_Reordered",
+    "sha256": "76a9f988a0f6608f479b122d30932d166348847cdee3618815cf92a130cf5940",
+    "page_number": 24,
+    "ocr_score": 0.6231120076985822
+  },
+  {
+    "document_name": "RTI_SAA_Manual_60_Bilingual_QA_Reordered",
+    "sha256": "76a9f988a0f6608f479b122d30932d166348847cdee3618815cf92a130cf5940",
+    "page_number": 25,
+    "ocr_score": 0.6102086668076113
+  },
+  {
+    "document_name": "RTI_SAA_Manual_60_Bilingual_QA_Reordered",
+    "sha256": "76a9f988a0f6608f479b122d30932d166348847cdee3618815cf92a130cf5940",
+    "page_number": 26,
+    "ocr_score": 0.6223629562609242
+  },
+  {
+    "document_name": "RTI_SAA_Manual_60_Bilingual_QA_Reordered",
+    "sha256": "76a9f988a0f6608f479b122d30932d166348847cdee3618815cf92a130cf5940",
+    "page_number": 27,
+    "ocr_score": 0.658751344060821
+  },
+  {
+    "document_name": "RTI_SAA_Manual_60_Bilingual_QA_Reordered",
+    "sha256": "76a9f988a0f6608f479b122d30932d166348847cdee3618815cf92a130cf5940",
+    "page_number": 28,
+    "ocr_score": 0.6177637893324526
+  },
+  {
+    "document_name": "RTI_SAA_Manual_60_Bilingual_QA_Reordered",
+    "sha256": "76a9f988a0f6608f479b122d30932d166348847cdee3618815cf92a130cf5940",
+    "page_number": 29,
+    "ocr_score": 0.6017414160045887
+  },
+  {
+    "document_name": "RTI_SAA_Manual_60_Bilingual_QA_Reordered",
+    "sha256": "76a9f988a0f6608f479b122d30932d166348847cdee3618815cf92a130cf5940",
+    "page_number": 30,
+    "ocr_score": 0.6121868395337081
+  },
+  {
+    "document_name": "RTI_SAA_Manual_60_Bilingual_QA_Reordered",
+    "sha256": "76a9f988a0f6608f479b122d30932d166348847cdee3618815cf92a130cf5940",
+    "page_number": 31,
+    "ocr_score": 0.6503861038662652
+  },
+  {
+    "document_name": "RTI_SAA_Manual_60_Bilingual_QA_Reordered",
+    "sha256": "76a9f988a0f6608f479b122d30932d166348847cdee3618815cf92a130cf5940",
+    "page_number": 32,
+    "ocr_score": 0.6279350386007664
+  },
+  {
+    "document_name": "RTI_Portal_flowchart_FAQ_Bilingual",
+    "sha256": "a7f8f49e96e316872b6b37484634b963880c189d1db9bd1abfdc011ee451f835",
     "page_number": 1,
-    "ocr_score": 0.8048330246515903
+    "ocr_score": 0.623870799842761
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_624678",
+    "document_name": "RTI_Portal_flowchart_FAQ_Bilingual",
+    "sha256": "a7f8f49e96e316872b6b37484634b963880c189d1db9bd1abfdc011ee451f835",
     "page_number": 2,
-    "ocr_score": 0.7246747643892014
+    "ocr_score": 0.6408655370056835
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_624678",
+    "document_name": "RTI_Portal_flowchart_FAQ_Bilingual",
+    "sha256": "a7f8f49e96e316872b6b37484634b963880c189d1db9bd1abfdc011ee451f835",
     "page_number": 3,
-    "ocr_score": 0.6722146009141251
+    "ocr_score": 0.6770701696168596
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_624678",
+    "document_name": "RTI_Portal_flowchart_FAQ_Bilingual",
+    "sha256": "a7f8f49e96e316872b6b37484634b963880c189d1db9bd1abfdc011ee451f835",
     "page_number": 4,
-    "ocr_score": 0.627439156284226
+    "ocr_score": 0.8200701397278626
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_624678",
+    "document_name": "RTI_Portal_flowchart_FAQ_Bilingual",
+    "sha256": "a7f8f49e96e316872b6b37484634b963880c189d1db9bd1abfdc011ee451f835",
     "page_number": 5,
-    "ocr_score": 0.7774520662077482
+    "ocr_score": 0.7943962844503956
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_624678",
+    "document_name": "RTI_Portal_flowchart_FAQ_Bilingual",
+    "sha256": "a7f8f49e96e316872b6b37484634b963880c189d1db9bd1abfdc011ee451f835",
     "page_number": 6,
-    "ocr_score": 0.7562377439802599
+    "ocr_score": 0.7670299168687617
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_625289",
-    "page_number": 1,
-    "ocr_score": 0.7810070790279703
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_625289",
-    "page_number": 2,
-    "ocr_score": 0.6853864133632585
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_625289",
-    "page_number": 3,
-    "ocr_score": 0.5700058727242336
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_625289",
-    "page_number": 4,
-    "ocr_score": 0.5795862060059346
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_625289",
-    "page_number": 5,
-    "ocr_score": 0.6279257850989246
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_625289",
-    "page_number": 6,
-    "ocr_score": 0.5418984413648295
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_625289",
+    "document_name": "RTI_Portal_flowchart_FAQ_Bilingual",
+    "sha256": "a7f8f49e96e316872b6b37484634b963880c189d1db9bd1abfdc011ee451f835",
     "page_number": 7,
-    "ocr_score": 0.6237125525237661
+    "ocr_score": 0.6556366348807342
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_625289",
+    "document_name": "RTI_Portal_flowchart_FAQ_Bilingual",
+    "sha256": "a7f8f49e96e316872b6b37484634b963880c189d1db9bd1abfdc011ee451f835",
     "page_number": 8,
-    "ocr_score": 0.6038210759544533
+    "ocr_score": 0.6770701696168596
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_625289",
+    "document_name": "RTI_Transfer_Officer_Module_Bilingual_FAQ",
+    "sha256": "cd60eff58f6c00dc45c2fc5c356cde9742d9f077deea00358b4fb0f477796100",
+    "page_number": 1,
+    "ocr_score": 0.6210371647437515
+  },
+  {
+    "document_name": "RTI_Transfer_Officer_Module_Bilingual_FAQ",
+    "sha256": "cd60eff58f6c00dc45c2fc5c356cde9742d9f077deea00358b4fb0f477796100",
+    "page_number": 2,
+    "ocr_score": 0.6030059328139256
+  },
+  {
+    "document_name": "RTI_Transfer_Officer_Module_Bilingual_FAQ",
+    "sha256": "cd60eff58f6c00dc45c2fc5c356cde9742d9f077deea00358b4fb0f477796100",
+    "page_number": 3,
+    "ocr_score": 0.6111626073034343
+  },
+  {
+    "document_name": "RTI_Transfer_Officer_Module_Bilingual_FAQ",
+    "sha256": "cd60eff58f6c00dc45c2fc5c356cde9742d9f077deea00358b4fb0f477796100",
+    "page_number": 4,
+    "ocr_score": 0.6097259181880041
+  },
+  {
+    "document_name": "RTI_Transfer_Officer_Module_Bilingual_FAQ",
+    "sha256": "cd60eff58f6c00dc45c2fc5c356cde9742d9f077deea00358b4fb0f477796100",
+    "page_number": 5,
+    "ocr_score": 0.6222383222490622
+  },
+  {
+    "document_name": "RTI_Transfer_Officer_Module_Bilingual_FAQ",
+    "sha256": "cd60eff58f6c00dc45c2fc5c356cde9742d9f077deea00358b4fb0f477796100",
+    "page_number": 6,
+    "ocr_score": 0.5810342867545498
+  },
+  {
+    "document_name": "RTI_Transfer_Officer_Module_Bilingual_FAQ",
+    "sha256": "cd60eff58f6c00dc45c2fc5c356cde9742d9f077deea00358b4fb0f477796100",
+    "page_number": 7,
+    "ocr_score": 0.6266479930407278
+  },
+  {
+    "document_name": "RTI_Transfer_Officer_Module_Bilingual_FAQ",
+    "sha256": "cd60eff58f6c00dc45c2fc5c356cde9742d9f077deea00358b4fb0f477796100",
+    "page_number": 8,
+    "ocr_score": 0.6413526977370956
+  },
+  {
+    "document_name": "RTI_Transfer_Officer_Module_Bilingual_FAQ",
+    "sha256": "cd60eff58f6c00dc45c2fc5c356cde9742d9f077deea00358b4fb0f477796100",
     "page_number": 9,
-    "ocr_score": 0.6354181097868915
+    "ocr_score": 0.6223656614121269
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_625289",
+    "document_name": "RTI_Transfer_Officer_Module_Bilingual_FAQ",
+    "sha256": "cd60eff58f6c00dc45c2fc5c356cde9742d9f077deea00358b4fb0f477796100",
     "page_number": 10,
-    "ocr_score": 0.7115707434882727
+    "ocr_score": 0.619597131520888
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_625289",
+    "document_name": "RTI_Transfer_Officer_Module_Bilingual_FAQ",
+    "sha256": "cd60eff58f6c00dc45c2fc5c356cde9742d9f077deea00358b4fb0f477796100",
     "page_number": 11,
-    "ocr_score": 0.6414437978273889
+    "ocr_score": 0.6390468436414359
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_625289",
+    "document_name": "RTI_Transfer_Officer_Module_Bilingual_FAQ",
+    "sha256": "cd60eff58f6c00dc45c2fc5c356cde9742d9f077deea00358b4fb0f477796100",
     "page_number": 12,
-    "ocr_score": 0.6134985423559429
+    "ocr_score": 0.6440774622899496
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_625289",
+    "document_name": "RTI_Transfer_Officer_Module_Bilingual_FAQ",
+    "sha256": "cd60eff58f6c00dc45c2fc5c356cde9742d9f077deea00358b4fb0f477796100",
     "page_number": 13,
-    "ocr_score": 0.7522803563530123
+    "ocr_score": 0.6225324590675915
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_625289",
+    "document_name": "RTI_Transfer_Officer_Module_Bilingual_FAQ",
+    "sha256": "cd60eff58f6c00dc45c2fc5c356cde9742d9f077deea00358b4fb0f477796100",
     "page_number": 14,
-    "ocr_score": 0.70894810211584
+    "ocr_score": 0.5882494589191389
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_625289",
+    "document_name": "RTI_Transfer_Officer_Module_Bilingual_FAQ",
+    "sha256": "cd60eff58f6c00dc45c2fc5c356cde9742d9f077deea00358b4fb0f477796100",
     "page_number": 15,
-    "ocr_score": 0.7088334281201191
+    "ocr_score": 0.6507877488973997
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_637383",
+    "document_name": "faa_user_mannual",
+    "sha256": "a6948cc31f1d26e46cb7d9baf474b028911df637b733909931ab44d16495516d",
     "page_number": 1,
-    "ocr_score": 0.7639541227383895
+    "ocr_score": 0.928755633720241
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_637383",
+    "document_name": "faa_user_mannual",
+    "sha256": "a6948cc31f1d26e46cb7d9baf474b028911df637b733909931ab44d16495516d",
     "page_number": 2,
-    "ocr_score": 0.6626108811337816
+    "ocr_score": 0.7953156121341276
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_637383",
+    "document_name": "faa_user_mannual",
+    "sha256": "a6948cc31f1d26e46cb7d9baf474b028911df637b733909931ab44d16495516d",
     "page_number": 3,
-    "ocr_score": 0.6241830151635913
+    "ocr_score": 0.5844564327596178
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_637383",
+    "document_name": "faa_user_mannual",
+    "sha256": "a6948cc31f1d26e46cb7d9baf474b028911df637b733909931ab44d16495516d",
     "page_number": 4,
-    "ocr_score": 0.7748554151000656
+    "ocr_score": 0.7146164642096712
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_637383",
+    "document_name": "faa_user_mannual",
+    "sha256": "a6948cc31f1d26e46cb7d9baf474b028911df637b733909931ab44d16495516d",
     "page_number": 5,
-    "ocr_score": 0.6491261493581851
+    "ocr_score": 0.6348053870585028
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_637383",
+    "document_name": "faa_user_mannual",
+    "sha256": "a6948cc31f1d26e46cb7d9baf474b028911df637b733909931ab44d16495516d",
     "page_number": 6,
-    "ocr_score": 0.6106151488292987
+    "ocr_score": 0.6702449802246623
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_637383",
+    "document_name": "faa_user_mannual",
+    "sha256": "a6948cc31f1d26e46cb7d9baf474b028911df637b733909931ab44d16495516d",
     "page_number": 7,
-    "ocr_score": 0.6884842099545483
+    "ocr_score": 0.7001876347203394
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_641742",
-    "page_number": 1,
-    "ocr_score": 0.7682622462997538
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_641742",
-    "page_number": 2,
-    "ocr_score": 0.3255788440674798
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_641742",
-    "page_number": 3,
-    "ocr_score": 0.6104247413404359
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_641742",
-    "page_number": 4,
-    "ocr_score": 0.527860600848055
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_641742",
-    "page_number": 5,
-    "ocr_score": 0.6598945520971061
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_641742",
-    "page_number": 6,
-    "ocr_score": 0.6814179151956623
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_641742",
-    "page_number": 7,
-    "ocr_score": 0.7753403257944731
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_641742",
+    "document_name": "faa_user_mannual",
+    "sha256": "a6948cc31f1d26e46cb7d9baf474b028911df637b733909931ab44d16495516d",
     "page_number": 8,
-    "ocr_score": 0.7490450888569669
+    "ocr_score": 0.5776155491106524
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_641742",
+    "document_name": "faa_user_mannual",
+    "sha256": "a6948cc31f1d26e46cb7d9baf474b028911df637b733909931ab44d16495516d",
     "page_number": 9,
-    "ocr_score": 0.7517766862999267
+    "ocr_score": 0.5380073221084425
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_643822",
-    "page_number": 1,
-    "ocr_score": 0.7951275551913748
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_643822",
-    "page_number": 2,
-    "ocr_score": 0.7632243175800831
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_643822",
-    "page_number": 3,
-    "ocr_score": 0.5647344374146915
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_643822",
-    "page_number": 4,
-    "ocr_score": 0.588318514436553
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_643822",
-    "page_number": 5,
-    "ocr_score": 0.7887144952684938
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_643822",
-    "page_number": 6,
-    "ocr_score": 0.6516860303219079
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_643822",
-    "page_number": 7,
-    "ocr_score": 0.7050718579047899
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_643822",
-    "page_number": 8,
-    "ocr_score": 0.7076577678184177
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_647057",
-    "page_number": 1,
-    "ocr_score": 0.7801567635726301
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_647057",
-    "page_number": 2,
-    "ocr_score": 0.4262437901641073
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_647057",
-    "page_number": 3,
-    "ocr_score": 0.633731793164009
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_647057",
-    "page_number": 4,
-    "ocr_score": 0.7199907879532159
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_647057",
-    "page_number": 5,
-    "ocr_score": 0.7402712974708735
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_647823",
-    "page_number": 1,
-    "ocr_score": 0.7890916948293105
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_647823",
-    "page_number": 2,
-    "ocr_score": 0.563947198161808
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_647823",
-    "page_number": 3,
-    "ocr_score": 0.47108367001303836
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_647823",
-    "page_number": 4,
-    "ocr_score": 0.5168896413541083
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_647823",
-    "page_number": 5,
-    "ocr_score": 0.7854565575526118
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_647823",
-    "page_number": 6,
-    "ocr_score": 0.6656654573731053
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_647823",
-    "page_number": 7,
-    "ocr_score": 0.6577346497095519
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_647823",
-    "page_number": 8,
-    "ocr_score": 0.606371447664572
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_647823",
-    "page_number": 9,
-    "ocr_score": 0.7318577550856376
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_649703",
-    "page_number": 1,
-    "ocr_score": 0.7712815162245068
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_649703",
-    "page_number": 2,
-    "ocr_score": 0.5890840502341533
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_649703",
-    "page_number": 3,
-    "ocr_score": 0.6978719387412209
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_649703",
-    "page_number": 4,
-    "ocr_score": 0.6845123174241116
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_649703",
-    "page_number": 5,
-    "ocr_score": 0.6728695663345534
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_649703",
-    "page_number": 6,
-    "ocr_score": 0.7026227271468641
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_649703",
-    "page_number": 7,
-    "ocr_score": 0.7688738256994256
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_652955",
-    "page_number": 1,
-    "ocr_score": 0.7406819388814736
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_652955",
-    "page_number": 2,
-    "ocr_score": 0.676687209465049
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_652955",
-    "page_number": 3,
-    "ocr_score": 0.7078086389936336
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_652955",
-    "page_number": 4,
-    "ocr_score": 0.5984904299047291
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_652955",
-    "page_number": 5,
-    "ocr_score": 0.713625308111308
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_652955",
-    "page_number": 6,
-    "ocr_score": 0.649486116238594
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_652955",
-    "page_number": 7,
-    "ocr_score": 0.710477638376416
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_656120",
-    "page_number": 1,
-    "ocr_score": 0.7639051068611792
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_656120",
-    "page_number": 2,
-    "ocr_score": 0.6501495793798387
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_656120",
-    "page_number": 3,
-    "ocr_score": 0.3502979695542325
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_656120",
-    "page_number": 4,
-    "ocr_score": 0.6652230374107286
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_656120",
-    "page_number": 5,
-    "ocr_score": 0.6079255277823404
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_656120",
-    "page_number": 6,
-    "ocr_score": 0.665013509818184
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_656120",
-    "page_number": 7,
-    "ocr_score": 0.6641319059631783
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_656120",
-    "page_number": 8,
-    "ocr_score": 0.6062235460937142
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_656120",
-    "page_number": 9,
-    "ocr_score": 0.668218368825357
-  },
-  {
-    "document_name": "CIC_AAOIN_A_2021_656120",
+    "document_name": "faa_user_mannual",
+    "sha256": "a6948cc31f1d26e46cb7d9baf474b028911df637b733909931ab44d16495516d",
     "page_number": 10,
-    "ocr_score": 0.7118604895142358
+    "ocr_score": 0.5047642633935782
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_656120",
+    "document_name": "faa_user_mannual",
+    "sha256": "a6948cc31f1d26e46cb7d9baf474b028911df637b733909931ab44d16495516d",
     "page_number": 11,
-    "ocr_score": 0.7252013105761026
+    "ocr_score": 0.5998973593922247
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_657148",
+    "document_name": "faa_user_mannual",
+    "sha256": "a6948cc31f1d26e46cb7d9baf474b028911df637b733909931ab44d16495516d",
+    "page_number": 12,
+    "ocr_score": 0.5183426644662764
+  },
+  {
+    "document_name": "faa_user_mannual",
+    "sha256": "a6948cc31f1d26e46cb7d9baf474b028911df637b733909931ab44d16495516d",
+    "page_number": 13,
+    "ocr_score": 0.5457783437419635
+  },
+  {
+    "document_name": "faa_user_mannual",
+    "sha256": "a6948cc31f1d26e46cb7d9baf474b028911df637b733909931ab44d16495516d",
+    "page_number": 14,
+    "ocr_score": 0.49279928496836417
+  },
+  {
+    "document_name": "flowchartRTI",
+    "sha256": "3b1b92ca8f7242aef16782627a8e54aa31a7fe9f8e8e78c48b6ab30fb39282ac",
     "page_number": 1,
-    "ocr_score": 0.7961357427285816
+    "ocr_score": 0.5708801682759349
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_657148",
+    "document_name": "flowchartRTI",
+    "sha256": "3b1b92ca8f7242aef16782627a8e54aa31a7fe9f8e8e78c48b6ab30fb39282ac",
     "page_number": 2,
-    "ocr_score": 0.5699716923243018
+    "ocr_score": 0.6060347930076267
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_657148",
+    "document_name": "flowchartRTI",
+    "sha256": "3b1b92ca8f7242aef16782627a8e54aa31a7fe9f8e8e78c48b6ab30fb39282ac",
     "page_number": 3,
-    "ocr_score": 0.6301294546442752
+    "ocr_score": 0.6220231904743945
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_657148",
+    "document_name": "pioOnboardingProcess",
+    "sha256": "0f78e99f6cfbba4a00997c3bd7ecc053d381177333253ff10322d7c2a34d5e2e",
+    "page_number": 1,
+    "ocr_score": 0.6868079895070028
+  },
+  {
+    "document_name": "pioOnboardingProcess",
+    "sha256": "0f78e99f6cfbba4a00997c3bd7ecc053d381177333253ff10322d7c2a34d5e2e",
+    "page_number": 2,
+    "ocr_score": 0.585525964742806
+  },
+  {
+    "document_name": "pioOnboardingProcess",
+    "sha256": "0f78e99f6cfbba4a00997c3bd7ecc053d381177333253ff10322d7c2a34d5e2e",
+    "page_number": 3,
+    "ocr_score": 0.5730687016890577
+  },
+  {
+    "document_name": "pioOnboardingProcess",
+    "sha256": "0f78e99f6cfbba4a00997c3bd7ecc053d381177333253ff10322d7c2a34d5e2e",
     "page_number": 4,
-    "ocr_score": 0.7136711218190672
+    "ocr_score": 0.5662936586816045
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_657148",
+    "document_name": "pioOnboardingProcess",
+    "sha256": "0f78e99f6cfbba4a00997c3bd7ecc053d381177333253ff10322d7c2a34d5e2e",
     "page_number": 5,
-    "ocr_score": 0.6550417934501537
+    "ocr_score": 0.618782020168192
   },
   {
-    "document_name": "CIC_AAOIN_A_2021_657148",
+    "document_name": "transfermanual",
+    "sha256": "3507b07825868c67cdaa0bd6992a9861d0239f6ff0d55a9864a1851795ae991d",
+    "page_number": 1,
+    "ocr_score": 0.45750082695026517
+  },
+  {
+    "document_name": "transfermanual",
+    "sha256": "3507b07825868c67cdaa0bd6992a9861d0239f6ff0d55a9864a1851795ae991d",
+    "page_number": 2,
+    "ocr_score": 0.8373514182955862
+  },
+  {
+    "document_name": "transfermanual",
+    "sha256": "3507b07825868c67cdaa0bd6992a9861d0239f6ff0d55a9864a1851795ae991d",
+    "page_number": 3,
+    "ocr_score": 0.5649969453340402
+  },
+  {
+    "document_name": "transfermanual",
+    "sha256": "3507b07825868c67cdaa0bd6992a9861d0239f6ff0d55a9864a1851795ae991d",
+    "page_number": 4,
+    "ocr_score": 0.6748659638865171
+  },
+  {
+    "document_name": "transfermanual",
+    "sha256": "3507b07825868c67cdaa0bd6992a9861d0239f6ff0d55a9864a1851795ae991d",
+    "page_number": 5,
+    "ocr_score": 0.716039477938859
+  },
+  {
+    "document_name": "transfermanual",
+    "sha256": "3507b07825868c67cdaa0bd6992a9861d0239f6ff0d55a9864a1851795ae991d",
     "page_number": 6,
-    "ocr_score": 0.7556594201479275
+    "ocr_score": 0.5893985597295623
+  },
+  {
+    "document_name": "transfermanual",
+    "sha256": "3507b07825868c67cdaa0bd6992a9861d0239f6ff0d55a9864a1851795ae991d",
+    "page_number": 7,
+    "ocr_score": 0.5914338133318912
+  },
+  {
+    "document_name": "transfermanual",
+    "sha256": "3507b07825868c67cdaa0bd6992a9861d0239f6ff0d55a9864a1851795ae991d",
+    "page_number": 8,
+    "ocr_score": 0.6236193026742551
+  },
+  {
+    "document_name": "transfermanual",
+    "sha256": "3507b07825868c67cdaa0bd6992a9861d0239f6ff0d55a9864a1851795ae991d",
+    "page_number": 9,
+    "ocr_score": 0.5444297651374974
+  },
+  {
+    "document_name": "transfermanual",
+    "sha256": "3507b07825868c67cdaa0bd6992a9861d0239f6ff0d55a9864a1851795ae991d",
+    "page_number": 10,
+    "ocr_score": 0.5718615247706607
+  },
+  {
+    "document_name": "transfermanual",
+    "sha256": "3507b07825868c67cdaa0bd6992a9861d0239f6ff0d55a9864a1851795ae991d",
+    "page_number": 11,
+    "ocr_score": 0.6039175847602726
+  },
+  {
+    "document_name": "transfermanual",
+    "sha256": "3507b07825868c67cdaa0bd6992a9861d0239f6ff0d55a9864a1851795ae991d",
+    "page_number": 12,
+    "ocr_score": 0.6670492194846448
+  },
+  {
+    "document_name": "00_front_matter_cover_messages_contents",
+    "sha256": "0bcd463276bd1ed94497793dad6d9f57d0a6a43368538ab2d98627200e0c8d88",
+    "page_number": 1,
+    "ocr_score": 0.6055671626712533
+  },
+  {
+    "document_name": "00_front_matter_cover_messages_contents",
+    "sha256": "0bcd463276bd1ed94497793dad6d9f57d0a6a43368538ab2d98627200e0c8d88",
+    "page_number": 2,
+    "ocr_score": 0.6497215628623962
+  },
+  {
+    "document_name": "00_front_matter_cover_messages_contents",
+    "sha256": "0bcd463276bd1ed94497793dad6d9f57d0a6a43368538ab2d98627200e0c8d88",
+    "page_number": 3,
+    "ocr_score": 0.5931474618424518
+  },
+  {
+    "document_name": "00_front_matter_cover_messages_contents",
+    "sha256": "0bcd463276bd1ed94497793dad6d9f57d0a6a43368538ab2d98627200e0c8d88",
+    "page_number": 4,
+    "ocr_score": 0.6497215628623962
+  },
+  {
+    "document_name": "00_front_matter_cover_messages_contents",
+    "sha256": "0bcd463276bd1ed94497793dad6d9f57d0a6a43368538ab2d98627200e0c8d88",
+    "page_number": 5,
+    "ocr_score": 0.5945824747322153
+  },
+  {
+    "document_name": "00_front_matter_cover_messages_contents",
+    "sha256": "0bcd463276bd1ed94497793dad6d9f57d0a6a43368538ab2d98627200e0c8d88",
+    "page_number": 6,
+    "ocr_score": 0.6497215628623962
+  },
+  {
+    "document_name": "00_front_matter_cover_messages_contents",
+    "sha256": "0bcd463276bd1ed94497793dad6d9f57d0a6a43368538ab2d98627200e0c8d88",
+    "page_number": 7,
+    "ocr_score": 0.6496415674116489
+  },
+  {
+    "document_name": "00_front_matter_cover_messages_contents",
+    "sha256": "0bcd463276bd1ed94497793dad6d9f57d0a6a43368538ab2d98627200e0c8d88",
+    "page_number": 8,
+    "ocr_score": 0.6525726818051124
+  },
+  {
+    "document_name": "00_front_matter_cover_messages_contents",
+    "sha256": "0bcd463276bd1ed94497793dad6d9f57d0a6a43368538ab2d98627200e0c8d88",
+    "page_number": 9,
+    "ocr_score": 0.7016853117778876
+  },
+  {
+    "document_name": "00_front_matter_cover_messages_contents",
+    "sha256": "0bcd463276bd1ed94497793dad6d9f57d0a6a43368538ab2d98627200e0c8d88",
+    "page_number": 10,
+    "ocr_score": 0.6929772416559167
+  },
+  {
+    "document_name": "00_front_matter_cover_messages_contents",
+    "sha256": "0bcd463276bd1ed94497793dad6d9f57d0a6a43368538ab2d98627200e0c8d88",
+    "page_number": 11,
+    "ocr_score": 0.7330513802767985
+  },
+  {
+    "document_name": "00_front_matter_cover_messages_contents",
+    "sha256": "0bcd463276bd1ed94497793dad6d9f57d0a6a43368538ab2d98627200e0c8d88",
+    "page_number": 12,
+    "ocr_score": 0.6687610159946316
+  },
+  {
+    "document_name": "01_right_to_information_act_2005_printed_001-048",
+    "sha256": "6a231d8b11dd5e791c50cfb6dea579a0388358d4cf88968dc0cf1370b238ff07",
+    "page_number": 1,
+    "ocr_score": 0.7580335630504887
+  },
+  {
+    "document_name": "01_right_to_information_act_2005_printed_001-048",
+    "sha256": "6a231d8b11dd5e791c50cfb6dea579a0388358d4cf88968dc0cf1370b238ff07",
+    "page_number": 2,
+    "ocr_score": 0.7409314663174222
+  },
+  {
+    "document_name": "01_right_to_information_act_2005_printed_001-048",
+    "sha256": "6a231d8b11dd5e791c50cfb6dea579a0388358d4cf88968dc0cf1370b238ff07",
+    "page_number": 3,
+    "ocr_score": 0.7332574675760977
+  },
+  {
+    "document_name": "01_right_to_information_act_2005_printed_001-048",
+    "sha256": "6a231d8b11dd5e791c50cfb6dea579a0388358d4cf88968dc0cf1370b238ff07",
+    "page_number": 4,
+    "ocr_score": 0.7466251907130005
+  },
+  {
+    "document_name": "01_right_to_information_act_2005_printed_001-048",
+    "sha256": "6a231d8b11dd5e791c50cfb6dea579a0388358d4cf88968dc0cf1370b238ff07",
+    "page_number": 5,
+    "ocr_score": 0.7324772641809961
+  },
+  {
+    "document_name": "01_right_to_information_act_2005_printed_001-048",
+    "sha256": "6a231d8b11dd5e791c50cfb6dea579a0388358d4cf88968dc0cf1370b238ff07",
+    "page_number": 6,
+    "ocr_score": 0.6965972974310382
+  },
+  {
+    "document_name": "01_right_to_information_act_2005_printed_001-048",
+    "sha256": "6a231d8b11dd5e791c50cfb6dea579a0388358d4cf88968dc0cf1370b238ff07",
+    "page_number": 7,
+    "ocr_score": 0.7262333732184569
+  },
+  {
+    "document_name": "01_right_to_information_act_2005_printed_001-048",
+    "sha256": "6a231d8b11dd5e791c50cfb6dea579a0388358d4cf88968dc0cf1370b238ff07",
+    "page_number": 8,
+    "ocr_score": 0.7314104425587487
+  },
+  {
+    "document_name": "01_right_to_information_act_2005_printed_001-048",
+    "sha256": "6a231d8b11dd5e791c50cfb6dea579a0388358d4cf88968dc0cf1370b238ff07",
+    "page_number": 9,
+    "ocr_score": 0.7422785642168255
+  },
+  {
+    "document_name": "01_right_to_information_act_2005_printed_001-048",
+    "sha256": "6a231d8b11dd5e791c50cfb6dea579a0388358d4cf88968dc0cf1370b238ff07",
+    "page_number": 10,
+    "ocr_score": 0.7420831621977534
+  },
+  {
+    "document_name": "01_right_to_information_act_2005_printed_001-048",
+    "sha256": "6a231d8b11dd5e791c50cfb6dea579a0388358d4cf88968dc0cf1370b238ff07",
+    "page_number": 11,
+    "ocr_score": 0.7651382161163213
+  },
+  {
+    "document_name": "01_right_to_information_act_2005_printed_001-048",
+    "sha256": "6a231d8b11dd5e791c50cfb6dea579a0388358d4cf88968dc0cf1370b238ff07",
+    "page_number": 12,
+    "ocr_score": 0.7517049375737381
+  },
+  {
+    "document_name": "01_right_to_information_act_2005_printed_001-048",
+    "sha256": "6a231d8b11dd5e791c50cfb6dea579a0388358d4cf88968dc0cf1370b238ff07",
+    "page_number": 13,
+    "ocr_score": 0.7398747638287896
+  },
+  {
+    "document_name": "01_right_to_information_act_2005_printed_001-048",
+    "sha256": "6a231d8b11dd5e791c50cfb6dea579a0388358d4cf88968dc0cf1370b238ff07",
+    "page_number": 14,
+    "ocr_score": 0.75640156771837
+  },
+  {
+    "document_name": "01_right_to_information_act_2005_printed_001-048",
+    "sha256": "6a231d8b11dd5e791c50cfb6dea579a0388358d4cf88968dc0cf1370b238ff07",
+    "page_number": 15,
+    "ocr_score": 0.7367389162801627
+  },
+  {
+    "document_name": "01_right_to_information_act_2005_printed_001-048",
+    "sha256": "6a231d8b11dd5e791c50cfb6dea579a0388358d4cf88968dc0cf1370b238ff07",
+    "page_number": 16,
+    "ocr_score": 0.7519743116816008
+  },
+  {
+    "document_name": "01_right_to_information_act_2005_printed_001-048",
+    "sha256": "6a231d8b11dd5e791c50cfb6dea579a0388358d4cf88968dc0cf1370b238ff07",
+    "page_number": 17,
+    "ocr_score": 0.7420844482549589
+  },
+  {
+    "document_name": "01_right_to_information_act_2005_printed_001-048",
+    "sha256": "6a231d8b11dd5e791c50cfb6dea579a0388358d4cf88968dc0cf1370b238ff07",
+    "page_number": 18,
+    "ocr_score": 0.7438208967117608
+  },
+  {
+    "document_name": "01_right_to_information_act_2005_printed_001-048",
+    "sha256": "6a231d8b11dd5e791c50cfb6dea579a0388358d4cf88968dc0cf1370b238ff07",
+    "page_number": 19,
+    "ocr_score": 0.7452079012694468
+  },
+  {
+    "document_name": "01_right_to_information_act_2005_printed_001-048",
+    "sha256": "6a231d8b11dd5e791c50cfb6dea579a0388358d4cf88968dc0cf1370b238ff07",
+    "page_number": 20,
+    "ocr_score": 0.7458946639747553
+  },
+  {
+    "document_name": "01_right_to_information_act_2005_printed_001-048",
+    "sha256": "6a231d8b11dd5e791c50cfb6dea579a0388358d4cf88968dc0cf1370b238ff07",
+    "page_number": 21,
+    "ocr_score": 0.7444651750080126
+  },
+  {
+    "document_name": "01_right_to_information_act_2005_printed_001-048",
+    "sha256": "6a231d8b11dd5e791c50cfb6dea579a0388358d4cf88968dc0cf1370b238ff07",
+    "page_number": 22,
+    "ocr_score": 0.7546308980507911
+  },
+  {
+    "document_name": "01_right_to_information_act_2005_printed_001-048",
+    "sha256": "6a231d8b11dd5e791c50cfb6dea579a0388358d4cf88968dc0cf1370b238ff07",
+    "page_number": 23,
+    "ocr_score": 0.7357659971787
+  },
+  {
+    "document_name": "01_right_to_information_act_2005_printed_001-048",
+    "sha256": "6a231d8b11dd5e791c50cfb6dea579a0388358d4cf88968dc0cf1370b238ff07",
+    "page_number": 24,
+    "ocr_score": 0.7123659291119026
+  },
+  {
+    "document_name": "01_right_to_information_act_2005_printed_001-048",
+    "sha256": "6a231d8b11dd5e791c50cfb6dea579a0388358d4cf88968dc0cf1370b238ff07",
+    "page_number": 25,
+    "ocr_score": 0.7445631385978556
+  },
+  {
+    "document_name": "01_right_to_information_act_2005_printed_001-048",
+    "sha256": "6a231d8b11dd5e791c50cfb6dea579a0388358d4cf88968dc0cf1370b238ff07",
+    "page_number": 26,
+    "ocr_score": 0.7249800196864139
+  },
+  {
+    "document_name": "01_right_to_information_act_2005_printed_001-048",
+    "sha256": "6a231d8b11dd5e791c50cfb6dea579a0388358d4cf88968dc0cf1370b238ff07",
+    "page_number": 27,
+    "ocr_score": 0.7580574396711091
+  },
+  {
+    "document_name": "01_right_to_information_act_2005_printed_001-048",
+    "sha256": "6a231d8b11dd5e791c50cfb6dea579a0388358d4cf88968dc0cf1370b238ff07",
+    "page_number": 28,
+    "ocr_score": 0.7099769035228706
+  },
+  {
+    "document_name": "01_right_to_information_act_2005_printed_001-048",
+    "sha256": "6a231d8b11dd5e791c50cfb6dea579a0388358d4cf88968dc0cf1370b238ff07",
+    "page_number": 29,
+    "ocr_score": 0.7176005990804695
+  },
+  {
+    "document_name": "01_right_to_information_act_2005_printed_001-048",
+    "sha256": "6a231d8b11dd5e791c50cfb6dea579a0388358d4cf88968dc0cf1370b238ff07",
+    "page_number": 30,
+    "ocr_score": 0.706123968563224
+  },
+  {
+    "document_name": "01_right_to_information_act_2005_printed_001-048",
+    "sha256": "6a231d8b11dd5e791c50cfb6dea579a0388358d4cf88968dc0cf1370b238ff07",
+    "page_number": 31,
+    "ocr_score": 0.7343517726906472
+  },
+  {
+    "document_name": "01_right_to_information_act_2005_printed_001-048",
+    "sha256": "6a231d8b11dd5e791c50cfb6dea579a0388358d4cf88968dc0cf1370b238ff07",
+    "page_number": 32,
+    "ocr_score": 0.7105624420058837
+  },
+  {
+    "document_name": "01_right_to_information_act_2005_printed_001-048",
+    "sha256": "6a231d8b11dd5e791c50cfb6dea579a0388358d4cf88968dc0cf1370b238ff07",
+    "page_number": 33,
+    "ocr_score": 0.7431357898115795
+  },
+  {
+    "document_name": "01_right_to_information_act_2005_printed_001-048",
+    "sha256": "6a231d8b11dd5e791c50cfb6dea579a0388358d4cf88968dc0cf1370b238ff07",
+    "page_number": 34,
+    "ocr_score": 0.7393888534673282
+  },
+  {
+    "document_name": "01_right_to_information_act_2005_printed_001-048",
+    "sha256": "6a231d8b11dd5e791c50cfb6dea579a0388358d4cf88968dc0cf1370b238ff07",
+    "page_number": 35,
+    "ocr_score": 0.7325225015654296
+  },
+  {
+    "document_name": "01_right_to_information_act_2005_printed_001-048",
+    "sha256": "6a231d8b11dd5e791c50cfb6dea579a0388358d4cf88968dc0cf1370b238ff07",
+    "page_number": 36,
+    "ocr_score": 0.7378652373000106
+  },
+  {
+    "document_name": "01_right_to_information_act_2005_printed_001-048",
+    "sha256": "6a231d8b11dd5e791c50cfb6dea579a0388358d4cf88968dc0cf1370b238ff07",
+    "page_number": 37,
+    "ocr_score": 0.751936542029788
+  },
+  {
+    "document_name": "01_right_to_information_act_2005_printed_001-048",
+    "sha256": "6a231d8b11dd5e791c50cfb6dea579a0388358d4cf88968dc0cf1370b238ff07",
+    "page_number": 38,
+    "ocr_score": 0.7570953836019677
+  },
+  {
+    "document_name": "01_right_to_information_act_2005_printed_001-048",
+    "sha256": "6a231d8b11dd5e791c50cfb6dea579a0388358d4cf88968dc0cf1370b238ff07",
+    "page_number": 39,
+    "ocr_score": 0.7367176479301073
+  },
+  {
+    "document_name": "01_right_to_information_act_2005_printed_001-048",
+    "sha256": "6a231d8b11dd5e791c50cfb6dea579a0388358d4cf88968dc0cf1370b238ff07",
+    "page_number": 40,
+    "ocr_score": 0.7694342715689032
+  },
+  {
+    "document_name": "01_right_to_information_act_2005_printed_001-048",
+    "sha256": "6a231d8b11dd5e791c50cfb6dea579a0388358d4cf88968dc0cf1370b238ff07",
+    "page_number": 41,
+    "ocr_score": 0.7466507602002476
+  },
+  {
+    "document_name": "01_right_to_information_act_2005_printed_001-048",
+    "sha256": "6a231d8b11dd5e791c50cfb6dea579a0388358d4cf88968dc0cf1370b238ff07",
+    "page_number": 42,
+    "ocr_score": 0.7141852118396411
+  },
+  {
+    "document_name": "01_right_to_information_act_2005_printed_001-048",
+    "sha256": "6a231d8b11dd5e791c50cfb6dea579a0388358d4cf88968dc0cf1370b238ff07",
+    "page_number": 43,
+    "ocr_score": 0.7712181633853467
+  },
+  {
+    "document_name": "01_right_to_information_act_2005_printed_001-048",
+    "sha256": "6a231d8b11dd5e791c50cfb6dea579a0388358d4cf88968dc0cf1370b238ff07",
+    "page_number": 44,
+    "ocr_score": 0.7056613770761515
+  },
+  {
+    "document_name": "01_right_to_information_act_2005_printed_001-048",
+    "sha256": "6a231d8b11dd5e791c50cfb6dea579a0388358d4cf88968dc0cf1370b238ff07",
+    "page_number": 45,
+    "ocr_score": 0.7306327898917381
+  },
+  {
+    "document_name": "01_right_to_information_act_2005_printed_001-048",
+    "sha256": "6a231d8b11dd5e791c50cfb6dea579a0388358d4cf88968dc0cf1370b238ff07",
+    "page_number": 46,
+    "ocr_score": 0.742721230332057
+  },
+  {
+    "document_name": "01_right_to_information_act_2005_printed_001-048",
+    "sha256": "6a231d8b11dd5e791c50cfb6dea579a0388358d4cf88968dc0cf1370b238ff07",
+    "page_number": 47,
+    "ocr_score": 0.7033835246621126
+  },
+  {
+    "document_name": "01_right_to_information_act_2005_printed_001-048",
+    "sha256": "6a231d8b11dd5e791c50cfb6dea579a0388358d4cf88968dc0cf1370b238ff07",
+    "page_number": 48,
+    "ocr_score": 0.762674329276984
+  },
+  {
+    "document_name": "02_rti_terms_of_office_rules_2019_printed_049-056",
+    "sha256": "b4a5ffac3dffc264b7f0c4dfb3823abcb0e828ee46e332378e6c7003461b84cf",
+    "page_number": 1,
+    "ocr_score": 0.6013817226178946
+  },
+  {
+    "document_name": "02_rti_terms_of_office_rules_2019_printed_049-056",
+    "sha256": "b4a5ffac3dffc264b7f0c4dfb3823abcb0e828ee46e332378e6c7003461b84cf",
+    "page_number": 2,
+    "ocr_score": 0.5738752244474621
+  },
+  {
+    "document_name": "02_rti_terms_of_office_rules_2019_printed_049-056",
+    "sha256": "b4a5ffac3dffc264b7f0c4dfb3823abcb0e828ee46e332378e6c7003461b84cf",
+    "page_number": 3,
+    "ocr_score": 0.6052156310700653
+  },
+  {
+    "document_name": "02_rti_terms_of_office_rules_2019_printed_049-056",
+    "sha256": "b4a5ffac3dffc264b7f0c4dfb3823abcb0e828ee46e332378e6c7003461b84cf",
+    "page_number": 4,
+    "ocr_score": 0.6297542449417481
+  },
+  {
+    "document_name": "02_rti_terms_of_office_rules_2019_printed_049-056",
+    "sha256": "b4a5ffac3dffc264b7f0c4dfb3823abcb0e828ee46e332378e6c7003461b84cf",
+    "page_number": 5,
+    "ocr_score": 0.7654557749763965
+  },
+  {
+    "document_name": "02_rti_terms_of_office_rules_2019_printed_049-056",
+    "sha256": "b4a5ffac3dffc264b7f0c4dfb3823abcb0e828ee46e332378e6c7003461b84cf",
+    "page_number": 6,
+    "ocr_score": 0.7279597728203363
+  },
+  {
+    "document_name": "02_rti_terms_of_office_rules_2019_printed_049-056",
+    "sha256": "b4a5ffac3dffc264b7f0c4dfb3823abcb0e828ee46e332378e6c7003461b84cf",
+    "page_number": 7,
+    "ocr_score": 0.7409861492583146
+  },
+  {
+    "document_name": "02_rti_terms_of_office_rules_2019_printed_049-056",
+    "sha256": "b4a5ffac3dffc264b7f0c4dfb3823abcb0e828ee46e332378e6c7003461b84cf",
+    "page_number": 8,
+    "ocr_score": 0.6742360535733406
+  },
+  {
+    "document_name": "04_cg_rti_application_submission_rules_2009_printed_059-060",
+    "sha256": "f368a6c8d9ffb2e479ea3fc4dc11b14972f3dc620825cad7c32811f41ab4702b",
+    "page_number": 1,
+    "ocr_score": 0.6957374618973293
+  },
+  {
+    "document_name": "04_cg_rti_application_submission_rules_2009_printed_059-060",
+    "sha256": "f368a6c8d9ffb2e479ea3fc4dc11b14972f3dc620825cad7c32811f41ab4702b",
+    "page_number": 2,
+    "ocr_score": 0.5803494985642244
+  },
+  {
+    "document_name": "08_clarification_on_meaning_of_information_printed_066-067",
+    "sha256": "ac104843ad049b34df2a648907d9e567b47d51e32f642fa7602080cbbf0e69ae",
+    "page_number": 1,
+    "ocr_score": 0.5655706716270757
+  },
+  {
+    "document_name": "08_clarification_on_meaning_of_information_printed_066-067",
+    "sha256": "ac104843ad049b34df2a648907d9e567b47d51e32f642fa7602080cbbf0e69ae",
+    "page_number": 2,
+    "ocr_score": 0.4736321656120306
+  },
+  {
+    "document_name": "09_cg_rti_appeal_rules_2006_printed_068-076",
+    "sha256": "ba974f8b5934c7a086c58e1d571b7910b7e217ac1d6deb7db85334578fc8988b",
+    "page_number": 1,
+    "ocr_score": 0.5703946636114867
+  },
+  {
+    "document_name": "09_cg_rti_appeal_rules_2006_printed_068-076",
+    "sha256": "ba974f8b5934c7a086c58e1d571b7910b7e217ac1d6deb7db85334578fc8988b",
+    "page_number": 2,
+    "ocr_score": 0.47710682678379657
+  },
+  {
+    "document_name": "09_cg_rti_appeal_rules_2006_printed_068-076",
+    "sha256": "ba974f8b5934c7a086c58e1d571b7910b7e217ac1d6deb7db85334578fc8988b",
+    "page_number": 3,
+    "ocr_score": 0.4949449859633369
+  },
+  {
+    "document_name": "09_cg_rti_appeal_rules_2006_printed_068-076",
+    "sha256": "ba974f8b5934c7a086c58e1d571b7910b7e217ac1d6deb7db85334578fc8988b",
+    "page_number": 4,
+    "ocr_score": 0.5156240023584633
+  },
+  {
+    "document_name": "09_cg_rti_appeal_rules_2006_printed_068-076",
+    "sha256": "ba974f8b5934c7a086c58e1d571b7910b7e217ac1d6deb7db85334578fc8988b",
+    "page_number": 5,
+    "ocr_score": 0.6569257385498584
+  },
+  {
+    "document_name": "09_cg_rti_appeal_rules_2006_printed_068-076",
+    "sha256": "ba974f8b5934c7a086c58e1d571b7910b7e217ac1d6deb7db85334578fc8988b",
+    "page_number": 6,
+    "ocr_score": 0.5827984219255746
+  },
+  {
+    "document_name": "09_cg_rti_appeal_rules_2006_printed_068-076",
+    "sha256": "ba974f8b5934c7a086c58e1d571b7910b7e217ac1d6deb7db85334578fc8988b",
+    "page_number": 7,
+    "ocr_score": 0.720331632228438
+  },
+  {
+    "document_name": "09_cg_rti_appeal_rules_2006_printed_068-076",
+    "sha256": "ba974f8b5934c7a086c58e1d571b7910b7e217ac1d6deb7db85334578fc8988b",
+    "page_number": 8,
+    "ocr_score": 0.5998595643345085
+  },
+  {
+    "document_name": "09_cg_rti_appeal_rules_2006_printed_068-076",
+    "sha256": "ba974f8b5934c7a086c58e1d571b7910b7e217ac1d6deb7db85334578fc8988b",
+    "page_number": 9,
+    "ocr_score": 0.6613343195896776
+  },
+  {
+    "document_name": "10_appeal_rules_amendment_23_may_2006_printed_076-077",
+    "sha256": "cc07d83c082af97523b96cf2671ea217aa3bae6719481bce376d6035413fb8fe",
+    "page_number": 1,
+    "ocr_score": 0.6613343195896776
+  },
+  {
+    "document_name": "10_appeal_rules_amendment_23_may_2006_printed_076-077",
+    "sha256": "cc07d83c082af97523b96cf2671ea217aa3bae6719481bce376d6035413fb8fe",
+    "page_number": 2,
+    "ocr_score": 0.6575575186310302
+  },
+  {
+    "document_name": "11_appeal_rules_amendment_04_nov_2011_printed_078-079",
+    "sha256": "5232081c0ec4b1fa88f8703ae764f6c13c41dcd67a5ccb6abde50c5373c21b00",
+    "page_number": 1,
+    "ocr_score": 0.5762266981091718
+  },
+  {
+    "document_name": "11_appeal_rules_amendment_04_nov_2011_printed_078-079",
+    "sha256": "5232081c0ec4b1fa88f8703ae764f6c13c41dcd67a5ccb6abde50c5373c21b00",
+    "page_number": 2,
+    "ocr_score": 0.6137828581378013
+  },
+  {
+    "document_name": "12_first_appeal_disposal_procedure_2006_printed_080-084",
+    "sha256": "5728baac4e8a1a9a66316ca8b80c3ca644cdd0339657d44c1386bb932ea199f6",
+    "page_number": 1,
+    "ocr_score": 0.6363591713452026
+  },
+  {
+    "document_name": "12_first_appeal_disposal_procedure_2006_printed_080-084",
+    "sha256": "5728baac4e8a1a9a66316ca8b80c3ca644cdd0339657d44c1386bb932ea199f6",
+    "page_number": 2,
+    "ocr_score": 0.6379005284808964
+  },
+  {
+    "document_name": "12_first_appeal_disposal_procedure_2006_printed_080-084",
+    "sha256": "5728baac4e8a1a9a66316ca8b80c3ca644cdd0339657d44c1386bb932ea199f6",
+    "page_number": 3,
+    "ocr_score": 0.6388937449005623
+  },
+  {
+    "document_name": "12_first_appeal_disposal_procedure_2006_printed_080-084",
+    "sha256": "5728baac4e8a1a9a66316ca8b80c3ca644cdd0339657d44c1386bb932ea199f6",
+    "page_number": 4,
+    "ocr_score": 0.6330650648402049
+  },
+  {
+    "document_name": "12_first_appeal_disposal_procedure_2006_printed_080-084",
+    "sha256": "5728baac4e8a1a9a66316ca8b80c3ca644cdd0339657d44c1386bb932ea199f6",
+    "page_number": 5,
+    "ocr_score": 0.5832252479740596
+  },
+  {
+    "document_name": "13_first_appeal_time_limit_2007_printed_085-085",
+    "sha256": "9098a09912bffb3122ace2628e2149f54388dbedea96cfc80bcc520ee1c0a6c3",
+    "page_number": 1,
+    "ocr_score": 0.5493586892528902
+  },
+  {
+    "document_name": "14_request_disposal_and_appeal_hearing_2010_printed_085-087",
+    "sha256": "856cab867f0d9860443cb99d995105537b2593601695867f2d23001e5cc00259",
+    "page_number": 1,
+    "ocr_score": 0.5493586892528902
+  },
+  {
+    "document_name": "14_request_disposal_and_appeal_hearing_2010_printed_085-087",
+    "sha256": "856cab867f0d9860443cb99d995105537b2593601695867f2d23001e5cc00259",
+    "page_number": 2,
+    "ocr_score": 0.6208688290639519
+  },
+  {
+    "document_name": "14_request_disposal_and_appeal_hearing_2010_printed_085-087",
+    "sha256": "856cab867f0d9860443cb99d995105537b2593601695867f2d23001e5cc00259",
+    "page_number": 3,
+    "ocr_score": 0.5785983631578018
+  },
+  {
+    "document_name": "15_first_appeal_disposal_time_limit_2013_printed_088-088",
+    "sha256": "2970c2c74d47397c499d1b665cfe059a6bd45e91c578b61ffe8627401481e7e3",
+    "page_number": 1,
+    "ocr_score": 0.578058073515831
+  },
+  {
+    "document_name": "16_faa_procedure_and_appeal_disposal_2014_printed_088-090",
+    "sha256": "c41acb350a05c3e5b2a27c5903cc119c7cbe9affee7772f1567f699259022a3e",
+    "page_number": 1,
+    "ocr_score": 0.578058073515831
+  },
+  {
+    "document_name": "16_faa_procedure_and_appeal_disposal_2014_printed_088-090",
+    "sha256": "c41acb350a05c3e5b2a27c5903cc119c7cbe9affee7772f1567f699259022a3e",
+    "page_number": 2,
+    "ocr_score": 0.525654069517792
+  },
+  {
+    "document_name": "16_faa_procedure_and_appeal_disposal_2014_printed_088-090",
+    "sha256": "c41acb350a05c3e5b2a27c5903cc119c7cbe9affee7772f1567f699259022a3e",
+    "page_number": 3,
+    "ocr_score": 0.699935768603907
+  },
+  {
+    "document_name": "19_appeal_guidance_12_april_2006_printed_093-093",
+    "sha256": "802e25b210d6d33e0ba067a693a15413039ddcae0f1c9d64accc7f7ef542b68c",
+    "page_number": 1,
+    "ocr_score": 0.5940752117566078
+  },
+  {
+    "document_name": "21_appeal_form_must_show_pio_faa_details_2011_printed_094-095",
+    "sha256": "19f95405ca5ac6e3c3de62fa17909f93ff6607247203d9e988f5ee143c0f115c",
+    "page_number": 1,
+    "ocr_score": 0.5693651384058764
+  },
+  {
+    "document_name": "21_appeal_form_must_show_pio_faa_details_2011_printed_094-095",
+    "sha256": "19f95405ca5ac6e3c3de62fa17909f93ff6607247203d9e988f5ee143c0f115c",
+    "page_number": 2,
+    "ocr_score": 0.5800629932165772
+  },
+  {
+    "document_name": "22_pio_faa_details_in_reply_and_order_2015_printed_095-096",
+    "sha256": "4a1d813f1749413e2b04728fbe550e811637b7bb1456406dcf55d41ce6293b46",
+    "page_number": 1,
+    "ocr_score": 0.5800629932165772
+  },
+  {
+    "document_name": "22_pio_faa_details_in_reply_and_order_2015_printed_095-096",
+    "sha256": "4a1d813f1749413e2b04728fbe550e811637b7bb1456406dcf55d41ce6293b46",
+    "page_number": 2,
+    "ocr_score": 0.6269965050067077
+  },
+  {
+    "document_name": "23_display_board_of_rti_officers_printed_096-096",
+    "sha256": "c4dff7f63dc7b48f3ab4419abfe1b122a648cd3a79a3e37f76a0b1054614f8bf",
+    "page_number": 1,
+    "ocr_score": 0.6269965050067077
+  },
+  {
+    "document_name": "24_cg_rti_fee_and_value_rules_2005_printed_097-098",
+    "sha256": "23eff03c9d389e8a1b01e059852163f83a672612fbb14e4ef3935940b37f3daf",
+    "page_number": 1,
+    "ocr_score": 0.6739292388927717
+  },
+  {
+    "document_name": "24_cg_rti_fee_and_value_rules_2005_printed_097-098",
+    "sha256": "23eff03c9d389e8a1b01e059852163f83a672612fbb14e4ef3935940b37f3daf",
+    "page_number": 2,
+    "ocr_score": 0.5735800193660731
+  },
+  {
+    "document_name": "26_fee_value_regulation_rules_amendment_2006_printed_100-100",
+    "sha256": "0b835ba54504407da54650e7cfcc251e7d1324d75d5f3d9f899c8dfaef3785b6",
+    "page_number": 1,
+    "ocr_score": 0.6395634399523059
+  },
+  {
+    "document_name": "30_fee_and_charge_rules_amendment_2013_printed_104-104",
+    "sha256": "47973464dca3735f328c9355f634d21bc73e0fc7adaf78bc600fc5fb16cb6340",
+    "page_number": 1,
+    "ocr_score": 0.5375978139139751
+  },
+  {
+    "document_name": "32_fees_and_charge_rules_2007_english_printed_105-105",
+    "sha256": "1d30d26aa9b789a90a9702942e19a9248b15fc21a35122938c55940d8cdfc0c2",
+    "page_number": 1,
+    "ocr_score": 0.7368334287989865
+  },
+  {
+    "document_name": "33_amendment_rules_2006_fee_and_charge_2008_printed_106-106",
+    "sha256": "738bbe3a813277e89b3d2120d15ddfd022ec2384a130389b3b97aa8b5ed72cce",
+    "page_number": 1,
+    "ocr_score": 0.6135260844296907
+  },
+  {
+    "document_name": "34_fee_clarification_13_september_2007_printed_107-107",
+    "sha256": "a0b042ef6d508e809bb24f483d4f46b1021c168c2c14cacf2ec79757572d771a",
+    "page_number": 1,
+    "ocr_score": 0.5499447546894001
+  },
+  {
+    "document_name": "37_use_of_electronic_indian_postal_order_2014_printed_109-109",
+    "sha256": "5abd8ad01ca90b02df3cef79abb7d226484bbd9bfcc6b0bc09c72d6b272d3f31",
+    "page_number": 1,
+    "ocr_score": 0.7020670369841141
+  },
+  {
+    "document_name": "39_electronic_indian_postal_order_launch_2013_printed_110-110",
+    "sha256": "953ea3b444267364c4716a8635243c988958ea931fcd8b3e6b97457dd4cf6b7c",
+    "page_number": 1,
+    "ocr_score": 0.7572322491731994
+  },
+  {
+    "document_name": "41_section_7_3_fee_payment_scope_2010_printed_112-113",
+    "sha256": "70ea2189147e2d418afdf742b408046326cd1e41d522daaeb0ce0452b4280006",
+    "page_number": 1,
+    "ocr_score": 0.5458347274952435
+  },
+  {
+    "document_name": "41_section_7_3_fee_payment_scope_2010_printed_112-113",
+    "sha256": "70ea2189147e2d418afdf742b408046326cd1e41d522daaeb0ce0452b4280006",
+    "page_number": 2,
+    "ocr_score": 0.586616041638742
+  },
+  {
+    "document_name": "42_section_7_3_a_direction_2014_printed_114-114",
+    "sha256": "65122c5de561b12c3894584f851ea4114cd0f976f9f363b6ecc72a0b5346cc72",
+    "page_number": 1,
+    "ocr_score": 0.5240515813977424
+  },
+  {
+    "document_name": "43_exemption_from_rti_provisions_printed_114-115",
+    "sha256": "88345e8919e1a9279f209a96dfb67c85c0db610a7882f3fe8952bf753a65b4d2",
+    "page_number": 1,
+    "ocr_score": 0.5240515813977424
+  },
+  {
+    "document_name": "43_exemption_from_rti_provisions_printed_114-115",
+    "sha256": "88345e8919e1a9279f209a96dfb67c85c0db610a7882f3fe8952bf753a65b4d2",
+    "page_number": 2,
+    "ocr_score": 0.5893650271966681
+  },
+  {
+    "document_name": "45_effective_implementation_instruction_2006_printed_116-117",
+    "sha256": "14d6a2022e1f45ade3c1418091d9526dcb565e75a8c037f9c1a68715bb8faf09",
+    "page_number": 1,
+    "ocr_score": 0.5438101178137231
+  },
+  {
+    "document_name": "45_effective_implementation_instruction_2006_printed_116-117",
+    "sha256": "14d6a2022e1f45ade3c1418091d9526dcb565e75a8c037f9c1a68715bb8faf09",
+    "page_number": 2,
+    "ocr_score": 0.5232856658417048
+  },
+  {
+    "document_name": "46_effective_implementation_instruction_2011_printed_117-118",
+    "sha256": "b55d4d2aa3f87637c2af0fa91696eb873bc143a1968a3007fbcda48f3f1a5d86",
+    "page_number": 1,
+    "ocr_score": 0.5232856658417048
+  },
+  {
+    "document_name": "46_effective_implementation_instruction_2011_printed_117-118",
+    "sha256": "b55d4d2aa3f87637c2af0fa91696eb873bc143a1968a3007fbcda48f3f1a5d86",
+    "page_number": 2,
+    "ocr_score": 0.730815896705365
+  },
+  {
+    "document_name": "47_strengthening_rti_implementation_2011_printed_118-119",
+    "sha256": "eec3220621e33454434dc0763c92eaca747b73cc42078d3627e259d89a012389",
+    "page_number": 1,
+    "ocr_score": 0.730815896705365
+  },
+  {
+    "document_name": "47_strengthening_rti_implementation_2011_printed_118-119",
+    "sha256": "eec3220621e33454434dc0763c92eaca747b73cc42078d3627e259d89a012389",
+    "page_number": 2,
+    "ocr_score": 0.7099999464340686
+  },
+  {
+    "document_name": "49_government_of_india_rti_manual_updated_printed_121-145",
+    "sha256": "0df6c97ff431a1a01b0a812240c5b326396e5865dd3f50f9e40a6794208bb3b8",
+    "page_number": 1,
+    "ocr_score": 0.6001694842515243
+  },
+  {
+    "document_name": "49_government_of_india_rti_manual_updated_printed_121-145",
+    "sha256": "0df6c97ff431a1a01b0a812240c5b326396e5865dd3f50f9e40a6794208bb3b8",
+    "page_number": 2,
+    "ocr_score": 0.5074392045309961
+  },
+  {
+    "document_name": "49_government_of_india_rti_manual_updated_printed_121-145",
+    "sha256": "0df6c97ff431a1a01b0a812240c5b326396e5865dd3f50f9e40a6794208bb3b8",
+    "page_number": 3,
+    "ocr_score": 0.552688549502595
+  },
+  {
+    "document_name": "49_government_of_india_rti_manual_updated_printed_121-145",
+    "sha256": "0df6c97ff431a1a01b0a812240c5b326396e5865dd3f50f9e40a6794208bb3b8",
+    "page_number": 4,
+    "ocr_score": 0.6222707052386702
+  },
+  {
+    "document_name": "49_government_of_india_rti_manual_updated_printed_121-145",
+    "sha256": "0df6c97ff431a1a01b0a812240c5b326396e5865dd3f50f9e40a6794208bb3b8",
+    "page_number": 5,
+    "ocr_score": 0.5516867970007026
+  },
+  {
+    "document_name": "49_government_of_india_rti_manual_updated_printed_121-145",
+    "sha256": "0df6c97ff431a1a01b0a812240c5b326396e5865dd3f50f9e40a6794208bb3b8",
+    "page_number": 6,
+    "ocr_score": 0.5602744312899456
+  },
+  {
+    "document_name": "49_government_of_india_rti_manual_updated_printed_121-145",
+    "sha256": "0df6c97ff431a1a01b0a812240c5b326396e5865dd3f50f9e40a6794208bb3b8",
+    "page_number": 7,
+    "ocr_score": 0.5843937418791044
+  },
+  {
+    "document_name": "49_government_of_india_rti_manual_updated_printed_121-145",
+    "sha256": "0df6c97ff431a1a01b0a812240c5b326396e5865dd3f50f9e40a6794208bb3b8",
+    "page_number": 8,
+    "ocr_score": 0.5403111196589223
+  },
+  {
+    "document_name": "49_government_of_india_rti_manual_updated_printed_121-145",
+    "sha256": "0df6c97ff431a1a01b0a812240c5b326396e5865dd3f50f9e40a6794208bb3b8",
+    "page_number": 9,
+    "ocr_score": 0.5784441068719441
+  },
+  {
+    "document_name": "49_government_of_india_rti_manual_updated_printed_121-145",
+    "sha256": "0df6c97ff431a1a01b0a812240c5b326396e5865dd3f50f9e40a6794208bb3b8",
+    "page_number": 10,
+    "ocr_score": 0.637204579218513
+  },
+  {
+    "document_name": "49_government_of_india_rti_manual_updated_printed_121-145",
+    "sha256": "0df6c97ff431a1a01b0a812240c5b326396e5865dd3f50f9e40a6794208bb3b8",
+    "page_number": 11,
+    "ocr_score": 0.6115643585174777
+  },
+  {
+    "document_name": "49_government_of_india_rti_manual_updated_printed_121-145",
+    "sha256": "0df6c97ff431a1a01b0a812240c5b326396e5865dd3f50f9e40a6794208bb3b8",
+    "page_number": 12,
+    "ocr_score": 0.6253627078074186
+  },
+  {
+    "document_name": "49_government_of_india_rti_manual_updated_printed_121-145",
+    "sha256": "0df6c97ff431a1a01b0a812240c5b326396e5865dd3f50f9e40a6794208bb3b8",
+    "page_number": 13,
+    "ocr_score": 0.5699652352667391
+  },
+  {
+    "document_name": "49_government_of_india_rti_manual_updated_printed_121-145",
+    "sha256": "0df6c97ff431a1a01b0a812240c5b326396e5865dd3f50f9e40a6794208bb3b8",
+    "page_number": 14,
+    "ocr_score": 0.5429359565621897
+  },
+  {
+    "document_name": "49_government_of_india_rti_manual_updated_printed_121-145",
+    "sha256": "0df6c97ff431a1a01b0a812240c5b326396e5865dd3f50f9e40a6794208bb3b8",
+    "page_number": 15,
+    "ocr_score": 0.5833034121178591
+  },
+  {
+    "document_name": "49_government_of_india_rti_manual_updated_printed_121-145",
+    "sha256": "0df6c97ff431a1a01b0a812240c5b326396e5865dd3f50f9e40a6794208bb3b8",
+    "page_number": 16,
+    "ocr_score": 0.6114702174678974
+  },
+  {
+    "document_name": "49_government_of_india_rti_manual_updated_printed_121-145",
+    "sha256": "0df6c97ff431a1a01b0a812240c5b326396e5865dd3f50f9e40a6794208bb3b8",
+    "page_number": 17,
+    "ocr_score": 0.5765174647453924
+  },
+  {
+    "document_name": "49_government_of_india_rti_manual_updated_printed_121-145",
+    "sha256": "0df6c97ff431a1a01b0a812240c5b326396e5865dd3f50f9e40a6794208bb3b8",
+    "page_number": 18,
+    "ocr_score": 0.66760632387801
+  },
+  {
+    "document_name": "49_government_of_india_rti_manual_updated_printed_121-145",
+    "sha256": "0df6c97ff431a1a01b0a812240c5b326396e5865dd3f50f9e40a6794208bb3b8",
+    "page_number": 19,
+    "ocr_score": 0.6153609657189779
+  },
+  {
+    "document_name": "49_government_of_india_rti_manual_updated_printed_121-145",
+    "sha256": "0df6c97ff431a1a01b0a812240c5b326396e5865dd3f50f9e40a6794208bb3b8",
+    "page_number": 20,
+    "ocr_score": 0.5323231019199985
+  },
+  {
+    "document_name": "49_government_of_india_rti_manual_updated_printed_121-145",
+    "sha256": "0df6c97ff431a1a01b0a812240c5b326396e5865dd3f50f9e40a6794208bb3b8",
+    "page_number": 21,
+    "ocr_score": 0.6075986427575589
+  },
+  {
+    "document_name": "49_government_of_india_rti_manual_updated_printed_121-145",
+    "sha256": "0df6c97ff431a1a01b0a812240c5b326396e5865dd3f50f9e40a6794208bb3b8",
+    "page_number": 22,
+    "ocr_score": 0.5838996261759425
+  },
+  {
+    "document_name": "49_government_of_india_rti_manual_updated_printed_121-145",
+    "sha256": "0df6c97ff431a1a01b0a812240c5b326396e5865dd3f50f9e40a6794208bb3b8",
+    "page_number": 23,
+    "ocr_score": 0.6224348684385413
+  },
+  {
+    "document_name": "49_government_of_india_rti_manual_updated_printed_121-145",
+    "sha256": "0df6c97ff431a1a01b0a812240c5b326396e5865dd3f50f9e40a6794208bb3b8",
+    "page_number": 24,
+    "ocr_score": 0.5837620482670577
+  },
+  {
+    "document_name": "49_government_of_india_rti_manual_updated_printed_121-145",
+    "sha256": "0df6c97ff431a1a01b0a812240c5b326396e5865dd3f50f9e40a6794208bb3b8",
+    "page_number": 25,
+    "ocr_score": 0.5933051871551075
+  },
+  {
+    "document_name": "51_section_4_suo_motu_disclosure_2015_printed_146-147",
+    "sha256": "4112de2ce2ddb0464aa6905140edef62651725a009eabbf4c1acc45eec86e144",
+    "page_number": 1,
+    "ocr_score": 0.6075057200379238
+  },
+  {
+    "document_name": "51_section_4_suo_motu_disclosure_2015_printed_146-147",
+    "sha256": "4112de2ce2ddb0464aa6905140edef62651725a009eabbf4c1acc45eec86e144",
+    "page_number": 2,
+    "ocr_score": 0.7616536607213389
+  },
+  {
+    "document_name": "54_section_19_8_a_records_availability_2014_printed_149-149",
+    "sha256": "0723873d2cdd3f8839c407a6670c239b90b38a8348932c29f3d7e2d493fd30b6",
+    "page_number": 1,
+    "ocr_score": 0.6376320279223887
+  },
+  {
+    "document_name": "56_cg_sic_annual_report_2011_action_printed_150-155",
+    "sha256": "a597a6c79307c4b9da71e37912c456e030cbe29ae67b537a603fdea5859c688a",
+    "page_number": 1,
+    "ocr_score": 0.5645230641003056
+  },
+  {
+    "document_name": "56_cg_sic_annual_report_2011_action_printed_150-155",
+    "sha256": "a597a6c79307c4b9da71e37912c456e030cbe29ae67b537a603fdea5859c688a",
+    "page_number": 2,
+    "ocr_score": 0.6087991957496428
+  },
+  {
+    "document_name": "56_cg_sic_annual_report_2011_action_printed_150-155",
+    "sha256": "a597a6c79307c4b9da71e37912c456e030cbe29ae67b537a603fdea5859c688a",
+    "page_number": 3,
+    "ocr_score": 0.5824406644707092
+  },
+  {
+    "document_name": "56_cg_sic_annual_report_2011_action_printed_150-155",
+    "sha256": "a597a6c79307c4b9da71e37912c456e030cbe29ae67b537a603fdea5859c688a",
+    "page_number": 4,
+    "ocr_score": 0.5738668387298539
+  },
+  {
+    "document_name": "56_cg_sic_annual_report_2011_action_printed_150-155",
+    "sha256": "a597a6c79307c4b9da71e37912c456e030cbe29ae67b537a603fdea5859c688a",
+    "page_number": 5,
+    "ocr_score": 0.630141291626913
+  },
+  {
+    "document_name": "56_cg_sic_annual_report_2011_action_printed_150-155",
+    "sha256": "a597a6c79307c4b9da71e37912c456e030cbe29ae67b537a603fdea5859c688a",
+    "page_number": 6,
+    "ocr_score": 0.5817060617458495
+  },
+  {
+    "document_name": "58_appointment_of_public_authority_2013_printed_156-156",
+    "sha256": "4d19c48ee77ad8ef21fbe7273b40d100934a4f4fb85982a5e2eb005c5554d460",
+    "page_number": 1,
+    "ocr_score": 0.5348492325335007
+  },
+  {
+    "document_name": "61_high_court_observations_sections_2_and_3_printed_158-158",
+    "sha256": "19fb7b20188099e9332ab3d509d35b908d95874b6aeaa987c690050cfd7109a9",
+    "page_number": 1,
+    "ocr_score": 0.538568711868873
+  },
+  {
+    "document_name": "62_supreme_court_cbse_vs_aditya_bandopadhyay_printed_159-161",
+    "sha256": "59076daaf9214b021a355d853f547b2ef53e7da938798cd18f1cea87f3b37123",
+    "page_number": 1,
+    "ocr_score": 0.7840934354222016
+  },
+  {
+    "document_name": "62_supreme_court_cbse_vs_aditya_bandopadhyay_printed_159-161",
+    "sha256": "59076daaf9214b021a355d853f547b2ef53e7da938798cd18f1cea87f3b37123",
+    "page_number": 2,
+    "ocr_score": 0.5532758779781352
+  },
+  {
+    "document_name": "62_supreme_court_cbse_vs_aditya_bandopadhyay_printed_159-161",
+    "sha256": "59076daaf9214b021a355d853f547b2ef53e7da938798cd18f1cea87f3b37123",
+    "page_number": 3,
+    "ocr_score": 0.611966184855013
+  },
+  {
+    "document_name": "64_submissions_of_respondent_and_third_party_printed_162-163",
+    "sha256": "0737fca68984507fe81aab742f2e0624a5db87711225d3c5feccb30e2f8a4a44",
+    "page_number": 1,
+    "ocr_score": 0.7315514906667893
+  },
+  {
+    "document_name": "64_submissions_of_respondent_and_third_party_printed_162-163",
+    "sha256": "0737fca68984507fe81aab742f2e0624a5db87711225d3c5feccb30e2f8a4a44",
+    "page_number": 2,
+    "ocr_score": 0.7295127726111317
+  },
+  {
+    "document_name": "65_maintenance_of_register_under_rti_2005_printed_164-164",
+    "sha256": "26e838a706a18590d06f3538a058bab9940a8a8acfa5c5046c9f03e9de98faa2",
+    "page_number": 1,
+    "ocr_score": 0.6700715393143218
+  },
+  {
+    "document_name": "66_review_of_rti_implementation_progress_2005_printed_165-165",
+    "sha256": "8902e78780a76840776380992715feb98dc2599e3d80778b49c47007ddbaf451",
+    "page_number": 1,
+    "ocr_score": 0.5372091178589959
+  },
+  {
+    "document_name": "67_confidential_character_roll_entries_2013_printed_165-166",
+    "sha256": "de575931478fec08cc33fb4e27dce708eea3d6224c32d5b0e28da71940c38334",
+    "page_number": 1,
+    "ocr_score": 0.5372091178589959
+  },
+  {
+    "document_name": "67_confidential_character_roll_entries_2013_printed_165-166",
+    "sha256": "de575931478fec08cc33fb4e27dce708eea3d6224c32d5b0e28da71940c38334",
+    "page_number": 2,
+    "ocr_score": 0.5080051144361537
+  },
+  {
+    "document_name": "68_validity_of_ration_card_2011_printed_166-167",
+    "sha256": "c1446b7e296f3008823adddb110155f7086a3ce9c33e6c7144e1c50b640bd628",
+    "page_number": 1,
+    "ocr_score": 0.5080051144361537
+  },
+  {
+    "document_name": "68_validity_of_ration_card_2011_printed_166-167",
+    "sha256": "c1446b7e296f3008823adddb110155f7086a3ce9c33e6c7144e1c50b640bd628",
+    "page_number": 2,
+    "ocr_score": 0.5490069910832053
+  },
+  {
+    "document_name": "69_cg_government_circular_416_th_668_2011_printed_167-168",
+    "sha256": "8946c4efe74f2e817c2cebdcec3a0def6ec05c950a3d65eccce53acedd84a2b1",
+    "page_number": 1,
+    "ocr_score": 0.5490069910832053
+  },
+  {
+    "document_name": "69_cg_government_circular_416_th_668_2011_printed_167-168",
+    "sha256": "8946c4efe74f2e817c2cebdcec3a0def6ec05c950a3d65eccce53acedd84a2b1",
+    "page_number": 2,
+    "ocr_score": 0.5979685723847005
+  },
+  {
+    "document_name": "70_proper_implementation_rti_act_2022_printed_168-170",
+    "sha256": "d4790d24b652ae48519c37e7555bbf84aef96098018d4916afc6f537523ceca2",
+    "page_number": 1,
+    "ocr_score": 0.5979685723847005
+  },
+  {
+    "document_name": "70_proper_implementation_rti_act_2022_printed_168-170",
+    "sha256": "d4790d24b652ae48519c37e7555bbf84aef96098018d4916afc6f537523ceca2",
+    "page_number": 2,
+    "ocr_score": 0.6506668064748918
+  },
+  {
+    "document_name": "70_proper_implementation_rti_act_2022_printed_168-170",
+    "sha256": "d4790d24b652ae48519c37e7555bbf84aef96098018d4916afc6f537523ceca2",
+    "page_number": 3,
+    "ocr_score": 0.6161161217819111
+  },
+  {
+    "document_name": "72_section_7_8_reason_for_rejection_2019_printed_171-172",
+    "sha256": "d49a23bc9934a7dc08fc4d03499b893ed741577f210f80deb8d4f733c14258ca",
+    "page_number": 1,
+    "ocr_score": 0.5998999869618722
+  },
+  {
+    "document_name": "72_section_7_8_reason_for_rejection_2019_printed_171-172",
+    "sha256": "d49a23bc9934a7dc08fc4d03499b893ed741577f210f80deb8d4f733c14258ca",
+    "page_number": 2,
+    "ocr_score": 0.5781003201710858
+  },
+  {
+    "document_name": "73_money_order_fee_deposit_2021_printed_172-172",
+    "sha256": "d720b82a248098202cc0102d9fef25ca852ad65fffe2844c07448951085abbc7",
+    "page_number": 1,
+    "ocr_score": 0.5781003201710858
+  },
+  {
+    "document_name": "75_postal_order_rti_fee_2019_printed_174-175",
+    "sha256": "7da1b62f6970127667ad92660d14435c39306e1962c078433b98ee97ef2013a8",
+    "page_number": 1,
+    "ocr_score": 0.5886295542459766
+  },
+  {
+    "document_name": "75_postal_order_rti_fee_2019_printed_174-175",
+    "sha256": "7da1b62f6970127667ad92660d14435c39306e1962c078433b98ee97ef2013a8",
+    "page_number": 2,
+    "ocr_score": 0.532780747067937
+  },
+  {
+    "document_name": "76_information_requested_under_rti_2024_printed_175-175",
+    "sha256": "c0b697660902b54dcee754cac1bffc8c41b6c3bad85c772dff64bd29ea512afc",
+    "page_number": 1,
+    "ocr_score": 0.532780747067937
+  },
+  {
+    "document_name": "77_supply_information_under_rti_2024_printed_175-176",
+    "sha256": "582e165a170562bcbdc3526b44bd3bcf5a40bd00e1b14601bab1d33d775fc922",
+    "page_number": 1,
+    "ocr_score": 0.532780747067937
+  },
+  {
+    "document_name": "77_supply_information_under_rti_2024_printed_175-176",
+    "sha256": "582e165a170562bcbdc3526b44bd3bcf5a40bd00e1b14601bab1d33d775fc922",
+    "page_number": 2,
+    "ocr_score": 0.5779110343058491
+  },
+  {
+    "document_name": "78_important_guidelines_for_pios_and_faas_printed_177-179",
+    "sha256": "790a0b9542aa44392af8a73e829cd4d735dbabeb1a46e8e780cfa6e83017200e",
+    "page_number": 1,
+    "ocr_score": 0.6087657567679974
+  },
+  {
+    "document_name": "78_important_guidelines_for_pios_and_faas_printed_177-179",
+    "sha256": "790a0b9542aa44392af8a73e829cd4d735dbabeb1a46e8e780cfa6e83017200e",
+    "page_number": 2,
+    "ocr_score": 0.5550937514029962
+  },
+  {
+    "document_name": "78_important_guidelines_for_pios_and_faas_printed_177-179",
+    "sha256": "790a0b9542aa44392af8a73e829cd4d735dbabeb1a46e8e780cfa6e83017200e",
+    "page_number": 3,
+    "ocr_score": 0.6114739151007182
+  },
+  {
+    "document_name": "79_form_1_rti_application_printed_180-180",
+    "sha256": "a16ff77b45d69c4e3ec542af8efcbadaf54c2ca18d0d22a0b56975e141536c91",
+    "page_number": 1,
+    "ocr_score": 0.6091775977330424
+  },
+  {
+    "document_name": "80_form_2_first_appeal_application_printed_181-182",
+    "sha256": "ac3ee1db04549f73935bcd0576ed86029ed25a64d6b1c36489e9f95af95a21ed",
+    "page_number": 1,
+    "ocr_score": 0.6100175096163031
+  },
+  {
+    "document_name": "80_form_2_first_appeal_application_printed_181-182",
+    "sha256": "ac3ee1db04549f73935bcd0576ed86029ed25a64d6b1c36489e9f95af95a21ed",
+    "page_number": 2,
+    "ocr_score": 0.6871860572241044
+  },
+  {
+    "document_name": "81_form_3_second_appeal_application_printed_183-185",
+    "sha256": "898fdf60a13e834872a95aa2c70e4d2c9c005390662116ce374e4784306c9416",
+    "page_number": 1,
+    "ocr_score": 0.644022016615004
+  },
+  {
+    "document_name": "81_form_3_second_appeal_application_printed_183-185",
+    "sha256": "898fdf60a13e834872a95aa2c70e4d2c9c005390662116ce374e4784306c9416",
+    "page_number": 2,
+    "ocr_score": 0.6750580369258651
+  },
+  {
+    "document_name": "81_form_3_second_appeal_application_printed_183-185",
+    "sha256": "898fdf60a13e834872a95aa2c70e4d2c9c005390662116ce374e4784306c9416",
+    "page_number": 3,
+    "ocr_score": 0.6165775009904916
+  },
+  {
+    "document_name": "claud-rti-rough",
+    "sha256": "d8bed53cff77da2a3c8ef176b96dab55853005e8b1a7cbe28523344160273ab5",
+    "page_number": 1,
+    "ocr_score": 0.6171110109768311
+  },
+  {
+    "document_name": "claud-rti-rough",
+    "sha256": "d8bed53cff77da2a3c8ef176b96dab55853005e8b1a7cbe28523344160273ab5",
+    "page_number": 2,
+    "ocr_score": 0.5765595629301965
+  },
+  {
+    "document_name": "claud-rti-rough",
+    "sha256": "d8bed53cff77da2a3c8ef176b96dab55853005e8b1a7cbe28523344160273ab5",
+    "page_number": 3,
+    "ocr_score": 0.5513681218270464
+  },
+  {
+    "document_name": "claud-rti-rough",
+    "sha256": "d8bed53cff77da2a3c8ef176b96dab55853005e8b1a7cbe28523344160273ab5",
+    "page_number": 4,
+    "ocr_score": 0.5928463728313962
+  },
+  {
+    "document_name": "claud-rti-rough",
+    "sha256": "d8bed53cff77da2a3c8ef176b96dab55853005e8b1a7cbe28523344160273ab5",
+    "page_number": 5,
+    "ocr_score": 0.6787424744361615
+  },
+  {
+    "document_name": "claud-rti-rough",
+    "sha256": "d8bed53cff77da2a3c8ef176b96dab55853005e8b1a7cbe28523344160273ab5",
+    "page_number": 6,
+    "ocr_score": 0.6266778232475488
+  },
+  {
+    "document_name": "claud-rti-rough",
+    "sha256": "d8bed53cff77da2a3c8ef176b96dab55853005e8b1a7cbe28523344160273ab5",
+    "page_number": 7,
+    "ocr_score": 0.6234109723323084
+  },
+  {
+    "document_name": "claud-rti-rough",
+    "sha256": "d8bed53cff77da2a3c8ef176b96dab55853005e8b1a7cbe28523344160273ab5",
+    "page_number": 8,
+    "ocr_score": 0.5591512759484365
+  },
+  {
+    "document_name": "claud-rti-rough",
+    "sha256": "d8bed53cff77da2a3c8ef176b96dab55853005e8b1a7cbe28523344160273ab5",
+    "page_number": 9,
+    "ocr_score": 0.676991439366374
+  },
+  {
+    "document_name": "claud-rti-rough",
+    "sha256": "d8bed53cff77da2a3c8ef176b96dab55853005e8b1a7cbe28523344160273ab5",
+    "page_number": 10,
+    "ocr_score": 0.455245891223739
+  },
+  {
+    "document_name": "claud-rti-rough",
+    "sha256": "d8bed53cff77da2a3c8ef176b96dab55853005e8b1a7cbe28523344160273ab5",
+    "page_number": 11,
+    "ocr_score": 0.5882491419579028
+  },
+  {
+    "document_name": "claud-rti-rough",
+    "sha256": "d8bed53cff77da2a3c8ef176b96dab55853005e8b1a7cbe28523344160273ab5",
+    "page_number": 12,
+    "ocr_score": 0.5982665942815893
+  },
+  {
+    "document_name": "claud-rti-rough",
+    "sha256": "d8bed53cff77da2a3c8ef176b96dab55853005e8b1a7cbe28523344160273ab5",
+    "page_number": 13,
+    "ocr_score": 0.587612120870655
+  },
+  {
+    "document_name": "claud-rti-rough",
+    "sha256": "d8bed53cff77da2a3c8ef176b96dab55853005e8b1a7cbe28523344160273ab5",
+    "page_number": 14,
+    "ocr_score": 0.4933501150433023
+  },
+  {
+    "document_name": "claud-rti-rough",
+    "sha256": "d8bed53cff77da2a3c8ef176b96dab55853005e8b1a7cbe28523344160273ab5",
+    "page_number": 15,
+    "ocr_score": 0.6278008918529759
+  },
+  {
+    "document_name": "claud-rti-rough",
+    "sha256": "d8bed53cff77da2a3c8ef176b96dab55853005e8b1a7cbe28523344160273ab5",
+    "page_number": 16,
+    "ocr_score": 0.6090007481461901
+  },
+  {
+    "document_name": "claud-rti-rough",
+    "sha256": "d8bed53cff77da2a3c8ef176b96dab55853005e8b1a7cbe28523344160273ab5",
+    "page_number": 17,
+    "ocr_score": 0.6674716580366686
+  },
+  {
+    "document_name": "claud-rti-rough",
+    "sha256": "d8bed53cff77da2a3c8ef176b96dab55853005e8b1a7cbe28523344160273ab5",
+    "page_number": 18,
+    "ocr_score": 0.6023560040109305
+  },
+  {
+    "document_name": "claud-rti-rough",
+    "sha256": "d8bed53cff77da2a3c8ef176b96dab55853005e8b1a7cbe28523344160273ab5",
+    "page_number": 19,
+    "ocr_score": 0.6260760130483104
+  },
+  {
+    "document_name": "claud-rti-rough",
+    "sha256": "d8bed53cff77da2a3c8ef176b96dab55853005e8b1a7cbe28523344160273ab5",
+    "page_number": 20,
+    "ocr_score": 0.6533609562714826
+  },
+  {
+    "document_name": "claud-rti-rough",
+    "sha256": "d8bed53cff77da2a3c8ef176b96dab55853005e8b1a7cbe28523344160273ab5",
+    "page_number": 21,
+    "ocr_score": 0.8125636449858273
+  },
+  {
+    "document_name": "RTI_circular_Bilingual_FAQ_94_QA",
+    "sha256": "979d5a02646f6af5ffb8e8cff9a592360cffe5643df031781731eb36dead8fc9",
+    "page_number": 1,
+    "ocr_score": 0.5656263263542308
+  },
+  {
+    "document_name": "RTI_circular_Bilingual_FAQ_94_QA",
+    "sha256": "979d5a02646f6af5ffb8e8cff9a592360cffe5643df031781731eb36dead8fc9",
+    "page_number": 2,
+    "ocr_score": 0.5225234923385659
+  },
+  {
+    "document_name": "RTI_circular_Bilingual_FAQ_94_QA",
+    "sha256": "979d5a02646f6af5ffb8e8cff9a592360cffe5643df031781731eb36dead8fc9",
+    "page_number": 3,
+    "ocr_score": 0.5665838377073766
+  },
+  {
+    "document_name": "RTI_circular_Bilingual_FAQ_94_QA",
+    "sha256": "979d5a02646f6af5ffb8e8cff9a592360cffe5643df031781731eb36dead8fc9",
+    "page_number": 4,
+    "ocr_score": 0.5764127739015821
+  },
+  {
+    "document_name": "RTI_circular_Bilingual_FAQ_94_QA",
+    "sha256": "979d5a02646f6af5ffb8e8cff9a592360cffe5643df031781731eb36dead8fc9",
+    "page_number": 5,
+    "ocr_score": 0.610556103422356
+  },
+  {
+    "document_name": "RTI_circular_Bilingual_FAQ_94_QA",
+    "sha256": "979d5a02646f6af5ffb8e8cff9a592360cffe5643df031781731eb36dead8fc9",
+    "page_number": 6,
+    "ocr_score": 0.5152060184078552
+  },
+  {
+    "document_name": "RTI_circular_Bilingual_FAQ_94_QA",
+    "sha256": "979d5a02646f6af5ffb8e8cff9a592360cffe5643df031781731eb36dead8fc9",
+    "page_number": 7,
+    "ocr_score": 0.5479766122574384
+  },
+  {
+    "document_name": "RTI_circular_Bilingual_FAQ_94_QA",
+    "sha256": "979d5a02646f6af5ffb8e8cff9a592360cffe5643df031781731eb36dead8fc9",
+    "page_number": 8,
+    "ocr_score": 0.5473191279836368
+  },
+  {
+    "document_name": "RTI_circular_Bilingual_FAQ_94_QA",
+    "sha256": "979d5a02646f6af5ffb8e8cff9a592360cffe5643df031781731eb36dead8fc9",
+    "page_number": 9,
+    "ocr_score": 0.5472839802178029
+  },
+  {
+    "document_name": "RTI_circular_Bilingual_FAQ_94_QA",
+    "sha256": "979d5a02646f6af5ffb8e8cff9a592360cffe5643df031781731eb36dead8fc9",
+    "page_number": 10,
+    "ocr_score": 0.5266169228433816
+  },
+  {
+    "document_name": "RTI_circular_Bilingual_FAQ_94_QA",
+    "sha256": "979d5a02646f6af5ffb8e8cff9a592360cffe5643df031781731eb36dead8fc9",
+    "page_number": 11,
+    "ocr_score": 0.5443262974283875
+  },
+  {
+    "document_name": "RTI_circular_Bilingual_FAQ_94_QA",
+    "sha256": "979d5a02646f6af5ffb8e8cff9a592360cffe5643df031781731eb36dead8fc9",
+    "page_number": 12,
+    "ocr_score": 0.6004573526046901
+  },
+  {
+    "document_name": "RTI_circular_Bilingual_FAQ_94_QA",
+    "sha256": "979d5a02646f6af5ffb8e8cff9a592360cffe5643df031781731eb36dead8fc9",
+    "page_number": 13,
+    "ocr_score": 0.5280096851820235
+  },
+  {
+    "document_name": "RTI_circular_Bilingual_FAQ_94_QA",
+    "sha256": "979d5a02646f6af5ffb8e8cff9a592360cffe5643df031781731eb36dead8fc9",
+    "page_number": 14,
+    "ocr_score": 0.5696696310747625
+  },
+  {
+    "document_name": "RTI_circular_Bilingual_FAQ_94_QA",
+    "sha256": "979d5a02646f6af5ffb8e8cff9a592360cffe5643df031781731eb36dead8fc9",
+    "page_number": 15,
+    "ocr_score": 0.54925263684723
+  },
+  {
+    "document_name": "RTI_circular_Bilingual_FAQ_94_QA",
+    "sha256": "979d5a02646f6af5ffb8e8cff9a592360cffe5643df031781731eb36dead8fc9",
+    "page_number": 16,
+    "ocr_score": 0.6280564193948611
+  },
+  {
+    "document_name": "RTI_circular_Bilingual_FAQ_94_QA",
+    "sha256": "979d5a02646f6af5ffb8e8cff9a592360cffe5643df031781731eb36dead8fc9",
+    "page_number": 17,
+    "ocr_score": 0.5368802039255289
+  },
+  {
+    "document_name": "RTI_circular_Bilingual_FAQ_94_QA",
+    "sha256": "979d5a02646f6af5ffb8e8cff9a592360cffe5643df031781731eb36dead8fc9",
+    "page_number": 18,
+    "ocr_score": 0.5479091097112676
+  },
+  {
+    "document_name": "RTI_circular_Bilingual_FAQ_94_QA",
+    "sha256": "979d5a02646f6af5ffb8e8cff9a592360cffe5643df031781731eb36dead8fc9",
+    "page_number": 19,
+    "ocr_score": 0.5408677203234383
+  },
+  {
+    "document_name": "RTI_circular_Bilingual_FAQ_94_QA",
+    "sha256": "979d5a02646f6af5ffb8e8cff9a592360cffe5643df031781731eb36dead8fc9",
+    "page_number": 20,
+    "ocr_score": 0.5577122520020884
+  },
+  {
+    "document_name": "RTI_circular_Bilingual_FAQ_94_QA",
+    "sha256": "979d5a02646f6af5ffb8e8cff9a592360cffe5643df031781731eb36dead8fc9",
+    "page_number": 21,
+    "ocr_score": 0.5363664639859826
+  },
+  {
+    "document_name": "RTI_circular_Bilingual_FAQ_94_QA",
+    "sha256": "979d5a02646f6af5ffb8e8cff9a592360cffe5643df031781731eb36dead8fc9",
+    "page_number": 22,
+    "ocr_score": 0.49269169588059214
+  },
+  {
+    "document_name": "RTI_circular_Bilingual_FAQ_94_QA",
+    "sha256": "979d5a02646f6af5ffb8e8cff9a592360cffe5643df031781731eb36dead8fc9",
+    "page_number": 23,
+    "ocr_score": 0.5856341372909009
+  },
+  {
+    "document_name": "RTI_circular_Bilingual_FAQ_94_QA",
+    "sha256": "979d5a02646f6af5ffb8e8cff9a592360cffe5643df031781731eb36dead8fc9",
+    "page_number": 24,
+    "ocr_score": 0.5430777621720961
+  },
+  {
+    "document_name": "RTI_circular_Bilingual_FAQ_94_QA",
+    "sha256": "979d5a02646f6af5ffb8e8cff9a592360cffe5643df031781731eb36dead8fc9",
+    "page_number": 25,
+    "ocr_score": 0.5731596768570916
+  },
+  {
+    "document_name": "RTI_circular_Bilingual_FAQ_94_QA",
+    "sha256": "979d5a02646f6af5ffb8e8cff9a592360cffe5643df031781731eb36dead8fc9",
+    "page_number": 26,
+    "ocr_score": 0.6107687787690287
+  },
+  {
+    "document_name": "RTI_circular_Bilingual_FAQ_94_QA",
+    "sha256": "979d5a02646f6af5ffb8e8cff9a592360cffe5643df031781731eb36dead8fc9",
+    "page_number": 27,
+    "ocr_score": 0.5949162724081485
+  },
+  {
+    "document_name": "claud-rti-rough-2",
+    "sha256": "3fe9f324b4075415dd89d25fd2c24fea380f7586f6a1e3acc844d060642a4a02",
+    "page_number": 1,
+    "ocr_score": 0.6377079405867684
+  },
+  {
+    "document_name": "claud-rti-rough-2",
+    "sha256": "3fe9f324b4075415dd89d25fd2c24fea380f7586f6a1e3acc844d060642a4a02",
+    "page_number": 2,
+    "ocr_score": 0.6040352441178894
+  },
+  {
+    "document_name": "claud-rti-rough-2",
+    "sha256": "3fe9f324b4075415dd89d25fd2c24fea380f7586f6a1e3acc844d060642a4a02",
+    "page_number": 3,
+    "ocr_score": 0.6409568334489042
+  },
+  {
+    "document_name": "claud-rti-rough-2",
+    "sha256": "3fe9f324b4075415dd89d25fd2c24fea380f7586f6a1e3acc844d060642a4a02",
+    "page_number": 4,
+    "ocr_score": 0.604347598680937
+  },
+  {
+    "document_name": "claud-rti-rough-2",
+    "sha256": "3fe9f324b4075415dd89d25fd2c24fea380f7586f6a1e3acc844d060642a4a02",
+    "page_number": 5,
+    "ocr_score": 0.7068988123749093
+  },
+  {
+    "document_name": "claud-rti-rough-2",
+    "sha256": "3fe9f324b4075415dd89d25fd2c24fea380f7586f6a1e3acc844d060642a4a02",
+    "page_number": 6,
+    "ocr_score": 0.60078464631308
+  },
+  {
+    "document_name": "claud-rti-rough-2",
+    "sha256": "3fe9f324b4075415dd89d25fd2c24fea380f7586f6a1e3acc844d060642a4a02",
+    "page_number": 7,
+    "ocr_score": 0.6605309784042943
+  },
+  {
+    "document_name": "claud-rti-rough-2",
+    "sha256": "3fe9f324b4075415dd89d25fd2c24fea380f7586f6a1e3acc844d060642a4a02",
+    "page_number": 8,
+    "ocr_score": 0.7285360414634651
+  },
+  {
+    "document_name": "claud-rti-rough-2",
+    "sha256": "3fe9f324b4075415dd89d25fd2c24fea380f7586f6a1e3acc844d060642a4a02",
+    "page_number": 9,
+    "ocr_score": 0.6824813654230656
+  },
+  {
+    "document_name": "claud-rti-rough-2",
+    "sha256": "3fe9f324b4075415dd89d25fd2c24fea380f7586f6a1e3acc844d060642a4a02",
+    "page_number": 10,
+    "ocr_score": 0.5580797837685891
+  },
+  {
+    "document_name": "claud-rti-rough-2",
+    "sha256": "3fe9f324b4075415dd89d25fd2c24fea380f7586f6a1e3acc844d060642a4a02",
+    "page_number": 11,
+    "ocr_score": 0.5074928626708799
+  },
+  {
+    "document_name": "claud-rti-rough-2",
+    "sha256": "3fe9f324b4075415dd89d25fd2c24fea380f7586f6a1e3acc844d060642a4a02",
+    "page_number": 12,
+    "ocr_score": 0.6494585159514543
+  },
+  {
+    "document_name": "claud-rti-rough-2",
+    "sha256": "3fe9f324b4075415dd89d25fd2c24fea380f7586f6a1e3acc844d060642a4a02",
+    "page_number": 13,
+    "ocr_score": 0.5813718787624841
+  },
+  {
+    "document_name": "claud-rti-rough-2",
+    "sha256": "3fe9f324b4075415dd89d25fd2c24fea380f7586f6a1e3acc844d060642a4a02",
+    "page_number": 14,
+    "ocr_score": 0.6482383051567031
+  },
+  {
+    "document_name": "claud-rti-rough-2",
+    "sha256": "3fe9f324b4075415dd89d25fd2c24fea380f7586f6a1e3acc844d060642a4a02",
+    "page_number": 15,
+    "ocr_score": 0.665110421391705
+  },
+  {
+    "document_name": "claud-rti-rough-2",
+    "sha256": "3fe9f324b4075415dd89d25fd2c24fea380f7586f6a1e3acc844d060642a4a02",
+    "page_number": 16,
+    "ocr_score": 0.5555857006446994
+  },
+  {
+    "document_name": "claud-rti-rough-2",
+    "sha256": "3fe9f324b4075415dd89d25fd2c24fea380f7586f6a1e3acc844d060642a4a02",
+    "page_number": 17,
+    "ocr_score": 0.6834089292623385
+  },
+  {
+    "document_name": "claud-rti-rough-2",
+    "sha256": "3fe9f324b4075415dd89d25fd2c24fea380f7586f6a1e3acc844d060642a4a02",
+    "page_number": 18,
+    "ocr_score": 0.6726565467389751
+  },
+  {
+    "document_name": "claud-rti-rough-2",
+    "sha256": "3fe9f324b4075415dd89d25fd2c24fea380f7586f6a1e3acc844d060642a4a02",
+    "page_number": 19,
+    "ocr_score": 0.6018244421868448
+  },
+  {
+    "document_name": "claud-rti-rough-2",
+    "sha256": "3fe9f324b4075415dd89d25fd2c24fea380f7586f6a1e3acc844d060642a4a02",
+    "page_number": 20,
+    "ocr_score": 0.7351788698691651
+  },
+  {
+    "document_name": "claud-rti-rough-2",
+    "sha256": "3fe9f324b4075415dd89d25fd2c24fea380f7586f6a1e3acc844d060642a4a02",
+    "page_number": 21,
+    "ocr_score": 0.691996221095544
+  },
+  {
+    "document_name": "claud-rti-rough-2",
+    "sha256": "3fe9f324b4075415dd89d25fd2c24fea380f7586f6a1e3acc844d060642a4a02",
+    "page_number": 22,
+    "ocr_score": 0.6394969545949204
+  },
+  {
+    "document_name": "claud-rti-rough-2",
+    "sha256": "3fe9f324b4075415dd89d25fd2c24fea380f7586f6a1e3acc844d060642a4a02",
+    "page_number": 23,
+    "ocr_score": 0.7015212247704196
+  },
+  {
+    "document_name": "claud-rti-rough-2",
+    "sha256": "3fe9f324b4075415dd89d25fd2c24fea380f7586f6a1e3acc844d060642a4a02",
+    "page_number": 24,
+    "ocr_score": 0.7575775753392376
+  },
+  {
+    "document_name": "claud-rti-rough-2",
+    "sha256": "3fe9f324b4075415dd89d25fd2c24fea380f7586f6a1e3acc844d060642a4a02",
+    "page_number": 25,
+    "ocr_score": 0.6323046275854266
+  },
+  {
+    "document_name": "claud-rti-rough-2",
+    "sha256": "3fe9f324b4075415dd89d25fd2c24fea380f7586f6a1e3acc844d060642a4a02",
+    "page_number": 26,
+    "ocr_score": 0.6179155911864783
+  },
+  {
+    "document_name": "claud-rti-rough-2",
+    "sha256": "3fe9f324b4075415dd89d25fd2c24fea380f7586f6a1e3acc844d060642a4a02",
+    "page_number": 27,
+    "ocr_score": 0.7750269660840208
+  },
+  {
+    "document_name": "claud-rti-rough-2",
+    "sha256": "3fe9f324b4075415dd89d25fd2c24fea380f7586f6a1e3acc844d060642a4a02",
+    "page_number": 28,
+    "ocr_score": 0.7316341425957323
+  },
+  {
+    "document_name": "claud-rti-rough-2",
+    "sha256": "3fe9f324b4075415dd89d25fd2c24fea380f7586f6a1e3acc844d060642a4a02",
+    "page_number": 29,
+    "ocr_score": 0.6376772415323982
+  },
+  {
+    "document_name": "claud-rti-rough-2",
+    "sha256": "3fe9f324b4075415dd89d25fd2c24fea380f7586f6a1e3acc844d060642a4a02",
+    "page_number": 30,
+    "ocr_score": 0.5812809029088497
+  },
+  {
+    "document_name": "claud-rti-rough-2",
+    "sha256": "3fe9f324b4075415dd89d25fd2c24fea380f7586f6a1e3acc844d060642a4a02",
+    "page_number": 31,
+    "ocr_score": 0.6856879854828379
+  },
+  {
+    "document_name": "claud-rti-rough-2",
+    "sha256": "3fe9f324b4075415dd89d25fd2c24fea380f7586f6a1e3acc844d060642a4a02",
+    "page_number": 32,
+    "ocr_score": 0.6489184291714885
+  },
+  {
+    "document_name": "claud-rti-rough-2",
+    "sha256": "3fe9f324b4075415dd89d25fd2c24fea380f7586f6a1e3acc844d060642a4a02",
+    "page_number": 33,
+    "ocr_score": 0.6875017186074828
+  },
+  {
+    "document_name": "claud-rti-rough-2",
+    "sha256": "3fe9f324b4075415dd89d25fd2c24fea380f7586f6a1e3acc844d060642a4a02",
+    "page_number": 34,
+    "ocr_score": 0.6608178005770617
+  },
+  {
+    "document_name": "claud-rti-rough-2",
+    "sha256": "3fe9f324b4075415dd89d25fd2c24fea380f7586f6a1e3acc844d060642a4a02",
+    "page_number": 35,
+    "ocr_score": 0.6048055353380811
+  },
+  {
+    "document_name": "claud-rti-rough-2",
+    "sha256": "3fe9f324b4075415dd89d25fd2c24fea380f7586f6a1e3acc844d060642a4a02",
+    "page_number": 36,
+    "ocr_score": 0.7338843965831541
+  },
+  {
+    "document_name": "claud-rti-rough-2",
+    "sha256": "3fe9f324b4075415dd89d25fd2c24fea380f7586f6a1e3acc844d060642a4a02",
+    "page_number": 37,
+    "ocr_score": 0.7701848450272151
+  },
+  {
+    "document_name": "claud-rti-rough-2",
+    "sha256": "3fe9f324b4075415dd89d25fd2c24fea380f7586f6a1e3acc844d060642a4a02",
+    "page_number": 38,
+    "ocr_score": 0.748775348885157
+  },
+  {
+    "document_name": "RTI_ACT_QA",
+    "sha256": "054d99bd1dc4e7f6697838756d69ab617d7d8767dfecde465c46a7ece6674b61",
+    "page_number": 1,
+    "ocr_score": 0.6275670076389139
+  },
+  {
+    "document_name": "RTI_ACT_QA",
+    "sha256": "054d99bd1dc4e7f6697838756d69ab617d7d8767dfecde465c46a7ece6674b61",
+    "page_number": 2,
+    "ocr_score": 0.5742665038784484
+  },
+  {
+    "document_name": "RTI_ACT_QA",
+    "sha256": "054d99bd1dc4e7f6697838756d69ab617d7d8767dfecde465c46a7ece6674b61",
+    "page_number": 3,
+    "ocr_score": 0.6205215090879258
+  },
+  {
+    "document_name": "RTI_ACT_QA",
+    "sha256": "054d99bd1dc4e7f6697838756d69ab617d7d8767dfecde465c46a7ece6674b61",
+    "page_number": 4,
+    "ocr_score": 0.5498515901629687
+  },
+  {
+    "document_name": "RTI_ACT_QA",
+    "sha256": "054d99bd1dc4e7f6697838756d69ab617d7d8767dfecde465c46a7ece6674b61",
+    "page_number": 5,
+    "ocr_score": 0.6084272436736392
+  },
+  {
+    "document_name": "RTI_ACT_QA",
+    "sha256": "054d99bd1dc4e7f6697838756d69ab617d7d8767dfecde465c46a7ece6674b61",
+    "page_number": 6,
+    "ocr_score": 0.619920402893541
+  },
+  {
+    "document_name": "RTI_ACT_QA",
+    "sha256": "054d99bd1dc4e7f6697838756d69ab617d7d8767dfecde465c46a7ece6674b61",
+    "page_number": 7,
+    "ocr_score": 0.5578518703848637
+  },
+  {
+    "document_name": "RTI_ACT_QA",
+    "sha256": "054d99bd1dc4e7f6697838756d69ab617d7d8767dfecde465c46a7ece6674b61",
+    "page_number": 8,
+    "ocr_score": 0.6340512679013008
+  },
+  {
+    "document_name": "RTI_ACT_QA",
+    "sha256": "054d99bd1dc4e7f6697838756d69ab617d7d8767dfecde465c46a7ece6674b61",
+    "page_number": 9,
+    "ocr_score": 0.44615037297131693
+  },
+  {
+    "document_name": "RTI_ACT_QA",
+    "sha256": "054d99bd1dc4e7f6697838756d69ab617d7d8767dfecde465c46a7ece6674b61",
+    "page_number": 10,
+    "ocr_score": 0.6054628853202503
+  },
+  {
+    "document_name": "RTI_ACT_QA",
+    "sha256": "054d99bd1dc4e7f6697838756d69ab617d7d8767dfecde465c46a7ece6674b61",
+    "page_number": 11,
+    "ocr_score": 0.5438377262054626
+  },
+  {
+    "document_name": "RTI_ACT_QA",
+    "sha256": "054d99bd1dc4e7f6697838756d69ab617d7d8767dfecde465c46a7ece6674b61",
+    "page_number": 12,
+    "ocr_score": 0.5419350998310986
+  },
+  {
+    "document_name": "RTI_ACT_QA",
+    "sha256": "054d99bd1dc4e7f6697838756d69ab617d7d8767dfecde465c46a7ece6674b61",
+    "page_number": 13,
+    "ocr_score": 0.5884396538604175
+  },
+  {
+    "document_name": "RTI_ACT_QA",
+    "sha256": "054d99bd1dc4e7f6697838756d69ab617d7d8767dfecde465c46a7ece6674b61",
+    "page_number": 14,
+    "ocr_score": 0.560668864238342
+  },
+  {
+    "document_name": "RTI_ACT_QA",
+    "sha256": "054d99bd1dc4e7f6697838756d69ab617d7d8767dfecde465c46a7ece6674b61",
+    "page_number": 15,
+    "ocr_score": 0.5882382197165095
+  },
+  {
+    "document_name": "RTI_ACT_QA",
+    "sha256": "054d99bd1dc4e7f6697838756d69ab617d7d8767dfecde465c46a7ece6674b61",
+    "page_number": 16,
+    "ocr_score": 0.5999931387198113
+  },
+  {
+    "document_name": "RTI_ACT_QA",
+    "sha256": "054d99bd1dc4e7f6697838756d69ab617d7d8767dfecde465c46a7ece6674b61",
+    "page_number": 17,
+    "ocr_score": 0.6120604436574367
+  },
+  {
+    "document_name": "RTI_ACT_QA",
+    "sha256": "054d99bd1dc4e7f6697838756d69ab617d7d8767dfecde465c46a7ece6674b61",
+    "page_number": 18,
+    "ocr_score": 0.6003111088231922
+  },
+  {
+    "document_name": "RTI_ACT_QA",
+    "sha256": "054d99bd1dc4e7f6697838756d69ab617d7d8767dfecde465c46a7ece6674b61",
+    "page_number": 19,
+    "ocr_score": 0.6509971110595905
+  },
+  {
+    "document_name": "RTI_ACT_QA",
+    "sha256": "054d99bd1dc4e7f6697838756d69ab617d7d8767dfecde465c46a7ece6674b61",
+    "page_number": 20,
+    "ocr_score": 0.5682436572848409
+  },
+  {
+    "document_name": "RTI_ACT_QA",
+    "sha256": "054d99bd1dc4e7f6697838756d69ab617d7d8767dfecde465c46a7ece6674b61",
+    "page_number": 21,
+    "ocr_score": 0.6498423769788644
+  },
+  {
+    "document_name": "RTI_ACT_QA",
+    "sha256": "054d99bd1dc4e7f6697838756d69ab617d7d8767dfecde465c46a7ece6674b61",
+    "page_number": 22,
+    "ocr_score": 0.6825923981455787
+  },
+  {
+    "document_name": "RTI_ACT_QA",
+    "sha256": "054d99bd1dc4e7f6697838756d69ab617d7d8767dfecde465c46a7ece6674b61",
+    "page_number": 23,
+    "ocr_score": 0.5897907994824123
+  },
+  {
+    "document_name": "RTI_ACT_QA",
+    "sha256": "054d99bd1dc4e7f6697838756d69ab617d7d8767dfecde465c46a7ece6674b61",
+    "page_number": 24,
+    "ocr_score": 0.5994339523095901
+  },
+  {
+    "document_name": "RTI_ACT_QA",
+    "sha256": "054d99bd1dc4e7f6697838756d69ab617d7d8767dfecde465c46a7ece6674b61",
+    "page_number": 25,
+    "ocr_score": 0.5521600725484448
+  },
+  {
+    "document_name": "500_cgrti",
+    "sha256": "f4b5901b61a9503ca6ce01bc11d92c6531c9c7c575186623a14da785124237b5",
+    "page_number": 1,
+    "ocr_score": 0.7150083733489461
+  },
+  {
+    "document_name": "500_cgrti",
+    "sha256": "f4b5901b61a9503ca6ce01bc11d92c6531c9c7c575186623a14da785124237b5",
+    "page_number": 2,
+    "ocr_score": 0.6252071749425306
+  },
+  {
+    "document_name": "500_cgrti",
+    "sha256": "f4b5901b61a9503ca6ce01bc11d92c6531c9c7c575186623a14da785124237b5",
+    "page_number": 3,
+    "ocr_score": 0.6110812151600206
+  },
+  {
+    "document_name": "500_cgrti",
+    "sha256": "f4b5901b61a9503ca6ce01bc11d92c6531c9c7c575186623a14da785124237b5",
+    "page_number": 4,
+    "ocr_score": 0.6770755112960946
+  },
+  {
+    "document_name": "500_cgrti",
+    "sha256": "f4b5901b61a9503ca6ce01bc11d92c6531c9c7c575186623a14da785124237b5",
+    "page_number": 5,
+    "ocr_score": 0.6374030532411152
+  },
+  {
+    "document_name": "500_cgrti",
+    "sha256": "f4b5901b61a9503ca6ce01bc11d92c6531c9c7c575186623a14da785124237b5",
+    "page_number": 6,
+    "ocr_score": 0.6520535908536103
+  },
+  {
+    "document_name": "500_cgrti",
+    "sha256": "f4b5901b61a9503ca6ce01bc11d92c6531c9c7c575186623a14da785124237b5",
+    "page_number": 7,
+    "ocr_score": 0.6674712473408622
+  },
+  {
+    "document_name": "500_cgrti",
+    "sha256": "f4b5901b61a9503ca6ce01bc11d92c6531c9c7c575186623a14da785124237b5",
+    "page_number": 8,
+    "ocr_score": 0.6475011376709333
+  },
+  {
+    "document_name": "500_cgrti",
+    "sha256": "f4b5901b61a9503ca6ce01bc11d92c6531c9c7c575186623a14da785124237b5",
+    "page_number": 9,
+    "ocr_score": 0.6595554681833634
+  },
+  {
+    "document_name": "500_cgrti",
+    "sha256": "f4b5901b61a9503ca6ce01bc11d92c6531c9c7c575186623a14da785124237b5",
+    "page_number": 10,
+    "ocr_score": 0.6037561095637609
+  },
+  {
+    "document_name": "500_cgrti",
+    "sha256": "f4b5901b61a9503ca6ce01bc11d92c6531c9c7c575186623a14da785124237b5",
+    "page_number": 11,
+    "ocr_score": 0.6248847580227405
+  },
+  {
+    "document_name": "500_cgrti",
+    "sha256": "f4b5901b61a9503ca6ce01bc11d92c6531c9c7c575186623a14da785124237b5",
+    "page_number": 12,
+    "ocr_score": 0.7008172524858095
+  },
+  {
+    "document_name": "500_cgrti",
+    "sha256": "f4b5901b61a9503ca6ce01bc11d92c6531c9c7c575186623a14da785124237b5",
+    "page_number": 13,
+    "ocr_score": 0.5849430554620876
+  },
+  {
+    "document_name": "500_cgrti",
+    "sha256": "f4b5901b61a9503ca6ce01bc11d92c6531c9c7c575186623a14da785124237b5",
+    "page_number": 14,
+    "ocr_score": 0.6574245271008597
+  },
+  {
+    "document_name": "500_cgrti",
+    "sha256": "f4b5901b61a9503ca6ce01bc11d92c6531c9c7c575186623a14da785124237b5",
+    "page_number": 15,
+    "ocr_score": 0.6661211581921844
+  },
+  {
+    "document_name": "500_cgrti",
+    "sha256": "f4b5901b61a9503ca6ce01bc11d92c6531c9c7c575186623a14da785124237b5",
+    "page_number": 16,
+    "ocr_score": 0.7194404267974274
+  },
+  {
+    "document_name": "500_cgrti",
+    "sha256": "f4b5901b61a9503ca6ce01bc11d92c6531c9c7c575186623a14da785124237b5",
+    "page_number": 17,
+    "ocr_score": 0.6150969789702622
+  },
+  {
+    "document_name": "500_cgrti",
+    "sha256": "f4b5901b61a9503ca6ce01bc11d92c6531c9c7c575186623a14da785124237b5",
+    "page_number": 18,
+    "ocr_score": 0.6452662151150529
+  },
+  {
+    "document_name": "500_cgrti",
+    "sha256": "f4b5901b61a9503ca6ce01bc11d92c6531c9c7c575186623a14da785124237b5",
+    "page_number": 19,
+    "ocr_score": 0.6623323443574348
+  },
+  {
+    "document_name": "500_cgrti",
+    "sha256": "f4b5901b61a9503ca6ce01bc11d92c6531c9c7c575186623a14da785124237b5",
+    "page_number": 20,
+    "ocr_score": 0.5885761663853464
+  },
+  {
+    "document_name": "500_cgrti",
+    "sha256": "f4b5901b61a9503ca6ce01bc11d92c6531c9c7c575186623a14da785124237b5",
+    "page_number": 21,
+    "ocr_score": 0.6754647936730921
+  },
+  {
+    "document_name": "500_cgrti",
+    "sha256": "f4b5901b61a9503ca6ce01bc11d92c6531c9c7c575186623a14da785124237b5",
+    "page_number": 22,
+    "ocr_score": 0.6052247254610231
+  },
+  {
+    "document_name": "500_cgrti",
+    "sha256": "f4b5901b61a9503ca6ce01bc11d92c6531c9c7c575186623a14da785124237b5",
+    "page_number": 23,
+    "ocr_score": 0.660115082819082
+  },
+  {
+    "document_name": "500_cgrti",
+    "sha256": "f4b5901b61a9503ca6ce01bc11d92c6531c9c7c575186623a14da785124237b5",
+    "page_number": 24,
+    "ocr_score": 0.6018113997815775
+  },
+  {
+    "document_name": "500_cgrti",
+    "sha256": "f4b5901b61a9503ca6ce01bc11d92c6531c9c7c575186623a14da785124237b5",
+    "page_number": 25,
+    "ocr_score": 0.6743712297884943
+  },
+  {
+    "document_name": "500_cgrti",
+    "sha256": "f4b5901b61a9503ca6ce01bc11d92c6531c9c7c575186623a14da785124237b5",
+    "page_number": 26,
+    "ocr_score": 0.6428664732576693
+  },
+  {
+    "document_name": "500_cgrti",
+    "sha256": "f4b5901b61a9503ca6ce01bc11d92c6531c9c7c575186623a14da785124237b5",
+    "page_number": 27,
+    "ocr_score": 0.680627671656293
+  },
+  {
+    "document_name": "500_cgrti",
+    "sha256": "f4b5901b61a9503ca6ce01bc11d92c6531c9c7c575186623a14da785124237b5",
+    "page_number": 28,
+    "ocr_score": 0.6551842948599168
+  },
+  {
+    "document_name": "500_cgrti",
+    "sha256": "f4b5901b61a9503ca6ce01bc11d92c6531c9c7c575186623a14da785124237b5",
+    "page_number": 29,
+    "ocr_score": 0.6529988960919698
+  },
+  {
+    "document_name": "500_cgrti",
+    "sha256": "f4b5901b61a9503ca6ce01bc11d92c6531c9c7c575186623a14da785124237b5",
+    "page_number": 30,
+    "ocr_score": 0.74330277831138
+  },
+  {
+    "document_name": "500_cgrti",
+    "sha256": "f4b5901b61a9503ca6ce01bc11d92c6531c9c7c575186623a14da785124237b5",
+    "page_number": 31,
+    "ocr_score": 0.841801870781096
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 1,
+    "ocr_score": 0.6326418584310673
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 2,
+    "ocr_score": 0.6907020833026456
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 3,
+    "ocr_score": 0.6899898094283943
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 4,
+    "ocr_score": 0.568166714767297
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 5,
+    "ocr_score": 0.608058069209216
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 6,
+    "ocr_score": 0.5746470842096457
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 7,
+    "ocr_score": 0.5841443058481626
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 8,
+    "ocr_score": 0.6190586434535635
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 9,
+    "ocr_score": 0.6196487017567788
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 10,
+    "ocr_score": 0.5986765591507152
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 11,
+    "ocr_score": 0.5944780972068469
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 12,
+    "ocr_score": 0.5727569424072745
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 13,
+    "ocr_score": 0.6117555265987705
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 14,
+    "ocr_score": 0.6057693821544656
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 15,
+    "ocr_score": 0.5927260496229206
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 16,
+    "ocr_score": 0.5742037256049045
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 17,
+    "ocr_score": 0.5790133273115432
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 18,
+    "ocr_score": 0.5512196952546947
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 19,
+    "ocr_score": 0.5813654009194869
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 20,
+    "ocr_score": 0.6106892435554753
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 21,
+    "ocr_score": 0.6246043747459674
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 22,
+    "ocr_score": 0.6070712845624315
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 23,
+    "ocr_score": 0.6371324815793096
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 24,
+    "ocr_score": 0.6148577346231101
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 25,
+    "ocr_score": 0.6072255245350091
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 26,
+    "ocr_score": 0.6317806437296777
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 27,
+    "ocr_score": 0.6009278615450642
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 28,
+    "ocr_score": 0.5855419035919177
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 29,
+    "ocr_score": 0.6070315352790635
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 30,
+    "ocr_score": 0.5967829431849381
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 31,
+    "ocr_score": 0.6011782957356204
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 32,
+    "ocr_score": 0.5680972909807899
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 33,
+    "ocr_score": 0.6214613171171148
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 34,
+    "ocr_score": 0.6041506706068417
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 35,
+    "ocr_score": 0.6008886164564118
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 36,
+    "ocr_score": 0.6265391242826768
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 37,
+    "ocr_score": 0.5988182057325734
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 38,
+    "ocr_score": 0.6301777975502121
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 39,
+    "ocr_score": 0.6242708941103715
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 40,
+    "ocr_score": 0.6045200608373946
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 41,
+    "ocr_score": 0.6078981096009474
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 42,
+    "ocr_score": 0.6082838060945895
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 43,
+    "ocr_score": 0.6343229998741148
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 44,
+    "ocr_score": 0.5976542408669234
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 45,
+    "ocr_score": 0.62260798838238
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 46,
+    "ocr_score": 0.6193027459220422
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 47,
+    "ocr_score": 0.6513307425319201
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 48,
+    "ocr_score": 0.5557128815853738
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 49,
+    "ocr_score": 0.5693439317364815
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 50,
+    "ocr_score": 0.5364592001840937
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 51,
+    "ocr_score": 0.5909161611322111
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 52,
+    "ocr_score": 0.5711268995812454
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 53,
+    "ocr_score": 0.6025650400337645
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 54,
+    "ocr_score": 0.5807053428039193
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 55,
+    "ocr_score": 0.5821892523594766
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 56,
+    "ocr_score": 0.5488331438575874
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 57,
+    "ocr_score": 0.5390383165924741
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 58,
+    "ocr_score": 0.5797410038343948
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 59,
+    "ocr_score": 0.5824763434818023
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 60,
+    "ocr_score": 0.5914271547707919
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 61,
+    "ocr_score": 0.615100216711442
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 62,
+    "ocr_score": 0.6269132242507901
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 63,
+    "ocr_score": 0.5866538351855574
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 64,
+    "ocr_score": 0.5910038576483083
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 65,
+    "ocr_score": 0.6182358423601021
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 66,
+    "ocr_score": 0.6463903510050092
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 67,
+    "ocr_score": 0.6061717832430166
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 68,
+    "ocr_score": 0.6035877386232293
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 69,
+    "ocr_score": 0.612034589470726
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 70,
+    "ocr_score": 0.6044117427939699
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 71,
+    "ocr_score": 0.5877042720470254
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 72,
+    "ocr_score": 0.6136190334809418
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 73,
+    "ocr_score": 0.5993740111642246
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 74,
+    "ocr_score": 0.5668544627133735
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 75,
+    "ocr_score": 0.6314078705559488
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 76,
+    "ocr_score": 0.5921519658622425
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 77,
+    "ocr_score": 0.5970703997239737
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 78,
+    "ocr_score": 0.6134110195518004
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 79,
+    "ocr_score": 0.5942775293774686
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 80,
+    "ocr_score": 0.5628877508508976
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 81,
+    "ocr_score": 0.5803580289272566
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 82,
+    "ocr_score": 0.6079657453625754
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 83,
+    "ocr_score": 0.6210887345270848
+  },
+  {
+    "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+    "sha256": "cd96078d389c32de3fd35fc65332fdd906f4fc777e8621b9ea3ab8ea97f6a7d6",
+    "page_number": 84,
+    "ocr_score": 0.6515995761965291
   }
 ]

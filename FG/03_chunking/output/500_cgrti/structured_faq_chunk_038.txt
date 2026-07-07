@@ -1,0 +1,16 @@
+# FAQ Chunk 38
+Document: 500_cgrti
+Source: structured.md
+Pages: 5
+Section: 2.1 What Information Can [ Request
+Question: Q41. Can I ask for information that doesn't exist yet? A: you can only request information that already exists If it doesn't exist, PIO must reject stating reason. No,
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 52
+
+---
+
+## 2.1 What Information Can [ Request
+
+Q41. Can I ask for information that doesn't exist yet? A: you can only request information that already exists If it doesn't exist, PIO must reject stating reason. No,

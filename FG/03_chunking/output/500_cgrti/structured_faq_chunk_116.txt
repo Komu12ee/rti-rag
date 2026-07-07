@@ -1,0 +1,16 @@
+# FAQ Chunk 116
+Document: 500_cgrti
+Source: structured.md
+Pages: 10
+Section: 3.3 Exemptions Advanced
+Question: Q120. Can "pending decision" be withheld as "draft"? A: No, pending decisions at final stage must be disclosed. Only internal draft (pre finalization) can be withheld.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 51
+
+---
+
+## 3.3 Exemptions Advanced
+
+Q120. Can "pending decision" be withheld as "draft"? A: No, pending decisions at final stage must be disclosed. Only internal draft (pre finalization) can be withheld.

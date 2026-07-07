@@ -1,0 +1,28 @@
+## Question variants all map to this one provision
+
+- 1. What does Section 6(3) of the Right to Information Act, 2005 provide?
+- 2. Explain RTI Act Section 6(3): Transfer of misdirected applications.
+- 3. What is Act 6(3) in RTI? I need the rule for application.
+- 5. धारा 683) का सरल अर्थ क्या है - गलत निर्दिष्ट आवेदनों का अंतरण?
+- 4. सूचना का अधिकार अधिनियम, 2005 की धारा 683) में क्या प्रावधान है?
+- 6. RTI Act 6(3) ka rule kya hai? गलत निर्दिष्ट आवेदनों का अंतरण के बारे में बताइए
+- 7. In this situation: Validating application format/language compliance. Does Section 6(3) apply, and what does it say?
+- 8. "6(3) RTI law me kya hai? " "6(3) ka matlab?"
+
+## Answer
+
+English definition: Where information is held by another public authority or more closely connected to its functions the application shall be transferred within 5 days and the applicant informed; the 3O-day clock under Section 7(1 ) restarts from the date of receipt by the correct authority
+
+हिंदी परिभाषाः जहां सूचना किसी अन्य लोक प्राधिकरण के पास है या उसके कार्यों से अधिक निकटता से जुड़ी है, आवेदन 5 दिनों के भीतर अंतरित किया जाएगा और आवेदक को सूचित किया जाएगाः धारा 71 ) की 30 दिवसीय अवधि सही प्राधिकरण द्वारा प्राप्ति की तारीख से पुनः आरंभ है| होती
+
+Retrieval anchors: Transfer of misdirected applications; गलत निर्दिष्ट आवेदनों का अंतरण; application; request format; fee; transfer of application; no reason required; language of application
+
+## Typical contexts
+
+- Validating application format language compliance
+- Information requested belongs to a different public authority trigger transfer procedure
+- Application demands a 'reason' from applicant non compliant practice to flag
+
+PIO implementation note: Never reject or delay an application merely because the applicant has not stated a reason. If the subject matter belongs to another public authority, transfer per 6(3) and notify the applicant do not silently reject.
+
+Source reference: RTI Rule Book, pp. 11-12

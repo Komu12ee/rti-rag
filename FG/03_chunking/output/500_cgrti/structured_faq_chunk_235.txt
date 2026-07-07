@@ -1,0 +1,16 @@
+# FAQ Chunk 235
+Document: 500_cgrti
+Source: structured.md
+Pages: 19
+Section: 5.5 Appointments & Recruitment Scenarios
+Question: Q239. "Selection marked confidential. Is this legal?" A: selection results are public. Request: open access to results, rejection only if personal info involved. NO,
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 49
+
+---
+
+## 5.5 Appointments & Recruitment Scenarios
+
+Q239. "Selection marked confidential. Is this legal?" A: selection results are public. Request: open access to results, rejection only if personal info involved. NO,

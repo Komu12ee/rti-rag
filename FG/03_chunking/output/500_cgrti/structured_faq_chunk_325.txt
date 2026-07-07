@@ -1,0 +1,16 @@
+# FAQ Chunk 325
+Document: 500_cgrti
+Source: structured.md
+Pages: 25-26
+Section: 7.3 Public Works Department ( PWD) RTI Questions
+Question: Q329. "Contract with contractor what are terms" A: Yes. Request: contract document, liability terms penalty clause, performance bond, payment schedule.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 53
+
+---
+
+## 7.3 Public Works Department ( PWD) RTI Questions
+
+Q329. "Contract with contractor what are terms" A: Yes. Request: contract document, liability terms penalty clause, performance bond, payment schedule.

@@ -1,0 +1,16 @@
+# FAQ Chunk 382
+Document: 500_cgrti
+Source: structured.md
+Pages: 29
+Section: BONUS SECTION: COMMON MISTAKES & HOWTO AVOID
+Question: Q385. "PIO asked for fee upfront, we paid, still delayed recourse?" A: If delayed beyond 30 days, information should be free ( Section 7(6) ). Demand refund + free info.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 64
+
+---
+
+## BONUS SECTION: COMMON MISTAKES & HOWTO AVOID
+
+Q385. "PIO asked for fee upfront, we paid, still delayed recourse?" A: If delayed beyond 30 days, information should be free ( Section 7(6) ). Demand refund + free info.

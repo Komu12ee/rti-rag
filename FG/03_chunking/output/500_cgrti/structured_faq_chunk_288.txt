@@ -1,0 +1,16 @@
+# FAQ Chunk 288
+Document: 500_cgrti
+Source: structured.md
+Pages: 23
+Section: 6.5 CG Government Websites & Online Systems
+Question: Q291. Where can [ access CG government notifications? A: cgstate govin or official CG Gazette website (check each department site for notifications).
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 47
+
+---
+
+## 6.5 CG Government Websites & Online Systems
+
+Q291. Where can [ access CG government notifications? A: cgstate govin or official CG Gazette website (check each department site for notifications).

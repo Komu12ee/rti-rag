@@ -1,0 +1,16 @@
+# FAQ Chunk 110
+Document: 500_cgrti
+Source: structured.md
+Pages: 10
+Section: 3.3 Exemptions Advanced
+Question: Q114. Can trade secret protection last forever? A: No, after 20 years, information becomes accessible ( Section 8(3) ) unless sovereignty cabinet papers.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 41
+
+---
+
+## 3.3 Exemptions Advanced
+
+Q114. Can trade secret protection last forever? A: No, after 20 years, information becomes accessible ( Section 8(3) ) unless sovereignty cabinet papers.

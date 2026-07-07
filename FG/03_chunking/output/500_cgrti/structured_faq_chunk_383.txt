@@ -1,0 +1,16 @@
+# FAQ Chunk 383
+Document: 500_cgrti
+Source: structured.md
+Pages: 29-30
+Section: BONUS SECTION: COMMON MISTAKES & HOWTO AVOID
+Question: Q386. "Information contained 5 pages 4 pages withheld, 1 given?" A: Should use Section 10 severability. Appeal for all non exempt portions
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 50
+
+---
+
+## BONUS SECTION: COMMON MISTAKES & HOWTO AVOID
+
+Q386. "Information contained 5 pages 4 pages withheld, 1 given?" A: Should use Section 10 severability. Appeal for all non exempt portions

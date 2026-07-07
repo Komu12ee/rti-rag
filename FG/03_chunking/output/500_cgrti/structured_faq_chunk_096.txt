@@ -1,0 +1,16 @@
+# FAQ Chunk 96
+Document: 500_cgrti
+Source: structured.md
+Pages: 9
+Section: 3.l Legal Framework & Interpretation
+Question: Q98. What is burden on government vs public interest? A: Section 8(2) test: Does benefit t0 public outweigh harm? Burden is not consideration -only exempt interests matter
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 51
+
+---
+
+## 3.l Legal Framework & Interpretation
+
+Q98. What is burden on government vs public interest? A: Section 8(2) test: Does benefit t0 public outweigh harm? Burden is not consideration -only exempt interests matter

@@ -1,0 +1,16 @@
+# FAQ Chunk 107
+Document: 500_cgrti
+Source: structured.md
+Pages: 10
+Section: 3.3 Exemptions Advanced
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 66
+
+---
+
+## 3.3 Exemptions Advanced
+
+Ql11. What is difference between Section 8(1)(g) and 8(1)(h )? A: 8(1) (g) = Lifelsafety danger. 8(l) (h) = Impedes investigation process. Both are mandatory (no public interest override).

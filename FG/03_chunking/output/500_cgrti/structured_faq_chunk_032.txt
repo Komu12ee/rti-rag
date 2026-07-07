@@ -1,0 +1,16 @@
+# FAQ Chunk 32
+Document: 500_cgrti
+Source: structured.md
+Pages: 4
+Section: L.4 Fees & Payment
+Question: Q35. What is the maximum fee I can be charged? A: For =2 per page standard rate. Actual cost if higher No arbitrary charges allowed. copies:
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 47
+
+---
+
+## L.4 Fees & Payment
+
+Q35. What is the maximum fee I can be charged? A: For =2 per page standard rate. Actual cost if higher No arbitrary charges allowed. copies:

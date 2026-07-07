@@ -1,0 +1,16 @@
+# FAQ Chunk 201
+Document: 500_cgrti
+Source: structured.md
+Pages: 17
+Section: 5.2 Education & Student Scenarios
+Question: Q205. "Principal misappropriated school funds. Wherels proof?" A: Request: budget, expense vouchers funds received vS. spent, audit report. SIC can order enquiry.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 56
+
+---
+
+## 5.2 Education & Student Scenarios
+
+Q205. "Principal misappropriated school funds. Wherels proof?" A: Request: budget, expense vouchers funds received vS. spent, audit report. SIC can order enquiry.

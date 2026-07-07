@@ -1,0 +1,16 @@
+# FAQ Chunk 167
+Document: 500_cgrti
+Source: structured.md
+Pages: 14
+Section: 4.4 Exemptions - Tricky Applications
+Question: Q171. If document contains some confidential + some public info, what happens? A: Partial disclosure - public parts given, confidential parts withheld with explanation (Section 10).
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 49
+
+---
+
+## 4.4 Exemptions - Tricky Applications
+
+Q171. If document contains some confidential + some public info, what happens? A: Partial disclosure - public parts given, confidential parts withheld with explanation (Section 10).

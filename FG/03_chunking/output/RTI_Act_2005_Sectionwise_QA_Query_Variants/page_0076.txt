@@ -1,0 +1,27 @@
+## Question variants all map to this one provision
+
+- 1. What does Section 24(other remedies) of the Right to Information Act, 2005 provide?
+- 2. Explain RTI Act Section 24(other remedies): Compensation, discipline prosecution.
+- 3. What is Act 24(other remedies) in RTI? 1 need the rule for commission recommended fine.
+- 4. सूचना का अधिकार अधिनियम, 2005 धारा 24(other remedies) में क्या प्रावधान है?
+- 5. धारा 24(other remedies) का सरल अर्थ क्या है मुआवजा, अनुशासन, अभियोजन?
+- 6. RTI Act 24(other remedies) ka rule kya hai? मुआवजा, अनुशासन, अभियोजन के बारे में बताइए|
+- 7. In this situation: A Second Appeal results in a finding of bad faith persistent non compliance, or serious misconduct by the PIO. Does Section 24(other remedies) apply, and what does it say?
+- 8. "24(other remedies) RTI law me kya hai? " II 24(other remedies ) ka matlab? "
+
+## Answer
+
+English definition: Compensation for loss hardship caused; disciplinary action including suspension dismissal; criminal prosecution for serious violations; criminal and disciplinary penalties can be cumulative; repeated violations attract higher penalties. Commission orders are binding unless challenged in High Court.
+
+हिंदीं परिभाषाः हानि| कठिनाई हेतु मुआवजा; निलंबन बर्खास्तगी सहित अनुशासनात्मक कार्रवाईः गंभीर उल्लंघनों हेतु आपराधिक अभियोजनः आपराधिक और अनुशासनात्मक दंड संचयी हो सकते हैंः दोहराए गए उल्लंघन उच्च दंड में परिणत हो सकते हैं| आयोग के आदेश बाध्यकारी होते हैं जब तक उच्च न्यायालय में न दी जाए| चुनौती
+
+Retrieval anchors: Compensation, discipline, prosecution; मुआवजा, अनुशासन अभियोजन; commission recommended fine; compensation; disciplinary action; criminal prosecution; cumulative penalties
+
+## Typical contexts
+
+- A Second Appeal results in a finding of bad faith, persistent non compliance, or serious misconduct by the PIO
+- Applicant seeks compensation for demonstrable loss hardship from delay or refusal
+
+PIO implementation note: Distinguish this Commission-level penalty regime from the statutory daily penalty under Section 20 this section is broader (criminal disciplinarylcompensatory) and triggered specifically through Commission adjudication.
+
+Source reference: RTI Rule Book, pp. 166-170

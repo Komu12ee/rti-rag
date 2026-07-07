@@ -1,0 +1,16 @@
+# FAQ Chunk 259
+Document: 500_cgrti
+Source: structured.md
+Pages: 21
+Section: 6.2 CG Online RTI Portal
+Question: Q262. How do I register on CG RTI portal? A: Visit https lrtionline cg govin User Registration Fill details Create username password Verify email.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 46
+
+---
+
+## 6.2 CG Online RTI Portal
+
+Q262. How do I register on CG RTI portal? A: Visit https lrtionline cg govin User Registration Fill details Create username password Verify email.

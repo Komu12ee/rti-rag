@@ -1,0 +1,16 @@
+# FAQ Chunk 380
+Document: 500_cgrti
+Source: structured.md
+Pages: 29
+Section: BONUS SECTION: COMMON MISTAKES & HOWTO AVOID
+Question: Q383. "Asked for analysis, denied saying "we don't create new reports" < correct?" A: correct. You can't ask for analysis. Ask for existing reports only. -es,
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 62
+
+---
+
+## BONUS SECTION: COMMON MISTAKES & HOWTO AVOID
+
+Q383. "Asked for analysis, denied saying "we don't create new reports" < correct?" A: correct. You can't ask for analysis. Ask for existing reports only. -es,

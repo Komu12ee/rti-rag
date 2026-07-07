@@ -1,0 +1,16 @@
+# FAQ Chunk 181
+Document: 500_cgrti
+Source: structured.md
+Pages: 15
+Section: 4.5 Appeal & Escalation Tricky Cases
+Question: Q185. Can [ appeal PIO decision to SIC within 30 days ( before first appeal)? Aः must first appeal to senior officer first ( 30 days). Only then appeal to SIC next 90 days). No,
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 57
+
+---
+
+## 4.5 Appeal & Escalation Tricky Cases
+
+Q185. Can [ appeal PIO decision to SIC within 30 days ( before first appeal)? Aः must first appeal to senior officer first ( 30 days). Only then appeal to SIC next 90 days). No,

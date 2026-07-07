@@ -1,0 +1,16 @@
+# FAQ Chunk 177
+Document: 500_cgrti
+Source: structured.md
+Pages: 15
+Section: 4.5 Appeal & Escalation Tricky Cases
+Question: Q181. What if first appeal officer says "agree with PIO, request denied"? A: You can appeal to SIC within 90 days citing reasons why officer was wrong
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 52
+
+---
+
+## 4.5 Appeal & Escalation Tricky Cases
+
+Q181. What if first appeal officer says "agree with PIO, request denied"? A: You can appeal to SIC within 90 days citing reasons why officer was wrong

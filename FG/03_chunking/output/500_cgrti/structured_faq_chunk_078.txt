@@ -1,0 +1,16 @@
+# FAQ Chunk 78
+Document: 500_cgrti
+Source: structured.md
+Pages: 8
+Section: 2.4 Format & Access Methods
+Question: Q81. Can [ request information about myself? A: Yes, you can always personal information held by government (if not restricted by other laws). get
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 39
+
+---
+
+## 2.4 Format & Access Methods
+
+Q81. Can [ request information about myself? A: Yes, you can always personal information held by government (if not restricted by other laws). get

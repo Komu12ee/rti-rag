@@ -1,0 +1,16 @@
+# FAQ Chunk 286
+Document: 500_cgrti
+Source: structured.md
+Pages: 23
+Section: 6.4 CG Specific Procedures & Rules
+Question: Q289. What is timeline for CG Lokayukta to handle complaints? A: Lokayukta handles corruption complaints (separate from RTI). Timeline depends on case complexity (3 6 months typical).
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 62
+
+---
+
+## 6.4 CG Specific Procedures & Rules
+
+Q289. What is timeline for CG Lokayukta to handle complaints? A: Lokayukta handles corruption complaints (separate from RTI). Timeline depends on case complexity (3 6 months typical).

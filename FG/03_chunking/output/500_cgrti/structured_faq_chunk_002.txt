@@ -1,0 +1,25 @@
+# FAQ Chunk 2
+Document: 500_cgrti
+Source: structured.md
+Pages: 1
+Section: TABLEOF CONTENTS
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 140
+
+---
+
+## TABLEOF CONTENTS
+
+- 1. BASIC RTI QUESTIONS (Level 1)
+- 2. INTERMEDIATE QUESTIONS (Level 2)
+- 3. ADVANCED QUESTIONS (Level 3)
+- 4. TRICKY QUESTIONS (Edge Cases)
+- 5. SCENARIO BASED QUESTIONS (Practical Situations)
+- 6. CG SPECIFIC QUESTIONS ( Chhattisgarh Government)
+- 7. DEPARTMENT SPECIFIC QUESTIONS
+- 8. EXEMPTION & SENSITIVE QUESTIONS
+- 9. TIMELINE & PROCEDURAL QUESTIONS
+- 10. APPEAL & ESCALATION QUESTIONS

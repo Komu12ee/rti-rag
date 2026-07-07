@@ -1,0 +1,28 @@
+## Question variants all map to this one provision
+
+- 1. What does Section 4(1 )d) of the Right to Information Act, 2005 provide?
+- 2. Explain RTI Act Section 4(1)d): Reasons for administrative quasi-judicial decisions.
+- 3. What is Act 4(1)d) in RTI? 1 need the rule for suo motu disclosure.
+- 5. धारा 4(1)(d) का सरल अर्थ क्या है प्रशासनिक न्यायिकल्प विनिश्चयों के कारण?
+- 4. सूचना का अधिकार अधिनियम, 2005 की धारा 4(1 )d) में क्या प्रावधान है?
+- 6. RTI Act 4(1 )d) ka rule kya hai? प्रशासनिक न्यायिकल्प विनिश्चयों के कारण के बारे में बताइए|
+- 7. In this situation: Information sought is already part of mandatory suo motu disclosure published manual. Does Section 4(1 ) (d) apply, and what does it say?
+- 8. "4(1)(d) RTI law me kya hai? " "4(1)(d) ka matlab?
+
+## Answer
+
+English definition: Provide reasons for administrative or quasi-judicial decisions to affected persons.
+
+हिंदी परिभाषाः प्रभावित व्यक्तियों को अपने प्रशासनिक या न्यायिकल्प विनिश्चयों के कारण उपलब्ध कराएगा|
+
+Retrieval anchors: Reasons for administrativel quasirjudicial decisions; प्रशासनिक न्यायिकल्प विनिश्चयों के कारण; suo motu disclosure; proactive disclosure record maintenance; computerisation; 17 categories; 120 days manual publication
+
+## Typical contexts
+
+- Information sought is already part of mandatory suo motu disclosure published manual
+- Determining whether refusal can be justified when information should already be publicly available
+- Validating whether public authority has fulfilled proactive disclosure obligations
+
+PIO implementation note: Before processing as a fresh RTI request, check whether the information is already covered under the public authoritys Section 4(1 )b) suo motu disclosure manual website if so, the PIO response should direct the applicant to that published source.
+
+Source reference: RTI Rule Book, pp. 6-11

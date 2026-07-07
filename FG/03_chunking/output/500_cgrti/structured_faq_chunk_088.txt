@@ -1,0 +1,16 @@
+# FAQ Chunk 88
+Document: 500_cgrti
+Source: structured.md
+Pages: 8
+Section: SECTION 3:ADVANCED QUESTIONS (Level 3)
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 26
+
+---
+
+## SECTION 3:ADVANCED QUESTIONS (Level 3)
+
+For Experienced RTI Users & Advocates

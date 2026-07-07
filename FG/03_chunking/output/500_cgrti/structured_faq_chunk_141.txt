@@ -1,0 +1,16 @@
+# FAQ Chunk 141
+Document: 500_cgrti
+Source: structured.md
+Pages: 12
+Section: 4.1 Timeline Complications
+Question: Q145. Does holiday affect the 3O day counting? A: No, 30 days means calendar including weekends holidays days,
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 35
+
+---
+
+## 4.1 Timeline Complications
+
+Q145. Does holiday affect the 3O day counting? A: No, 30 days means calendar including weekends holidays days,

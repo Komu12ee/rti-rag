@@ -1,0 +1,16 @@
+# FAQ Chunk 16
+Document: 500_cgrti
+Source: structured.md
+Pages: 3
+Section: QlL. How do I file an RTI request in Chhattisgarh? A:
+Question: Q19. Is there word limit for RTI request? A: No specific limit, but keep it concise and clear The book says text cannot exceed 5O0 characters on portal, but supporting documents can be uploaded.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 69
+
+---
+
+## QlL. How do I file an RTI request in Chhattisgarh? A:
+
+Q19. Is there word limit for RTI request? A: No specific limit, but keep it concise and clear The book says text cannot exceed 5O0 characters on portal, but supporting documents can be uploaded.

@@ -1,0 +1,16 @@
+# FAQ Chunk 346
+Document: 500_cgrti
+Source: structured.md
+Pages: 27
+Section: 7.5 Police Department RTI Questions
+Question: Q350. "Evidence destruction record available?" A: Tes. Request: evidence custody procedure, disposal authorization, destruction certificate, case file.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 42
+
+---
+
+## 7.5 Police Department RTI Questions
+
+Q350. "Evidence destruction record available?" A: Tes. Request: evidence custody procedure, disposal authorization, destruction certificate, case file.

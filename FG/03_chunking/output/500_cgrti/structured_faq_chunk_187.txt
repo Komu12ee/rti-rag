@@ -1,0 +1,16 @@
+# FAQ Chunk 187
+Document: 500_cgrti
+Source: structured.md
+Pages: 16
+Section: .1 Corruption & Transparency Scenarios
+Question: Q191. "I suspect corruption in school tender. Can I get proof through RTI?" A: Yes. Request: tender documents bid evaluation notes, contract file. If corruption found, public interest overrides exemptions ( Section 8(2)).
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 70
+
+---
+
+## .1 Corruption & Transparency Scenarios
+
+Q191. "I suspect corruption in school tender. Can I get proof through RTI?" A: Yes. Request: tender documents bid evaluation notes, contract file. If corruption found, public interest overrides exemptions ( Section 8(2)).

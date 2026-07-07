@@ -1,0 +1,16 @@
+# FAQ Chunk 6
+Document: 500_cgrti
+Source: structured.md
+Pages: 1-2
+Section: L.l What is RTI & Basic Rights
+Question: Q4. Do I need to give a reason for requesting information? A: No. You can request any information without giving any reason or justification. Section 6(2) explicitly states you don't need to provide reasons.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 58
+
+---
+
+## L.l What is RTI & Basic Rights
+
+Q4. Do I need to give a reason for requesting information? A: No. You can request any information without giving any reason or justification. Section 6(2) explicitly states you don't need to provide reasons.

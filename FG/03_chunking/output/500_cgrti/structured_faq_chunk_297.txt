@@ -1,0 +1,16 @@
+# FAQ Chunk 297
+Document: 500_cgrti
+Source: structured.md
+Pages: 23-24
+Section: 6.5 CG Government Websites & Online Systems
+Question: Q300. What is CG government grievance redressal process? A: CG has separate Grievance Redressal Mechanism. File online at cgstate govin. RTI is different from grievance.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 59
+
+---
+
+## 6.5 CG Government Websites & Online Systems
+
+Q300. What is CG government grievance redressal process? A: CG has separate Grievance Redressal Mechanism. File online at cgstate govin. RTI is different from grievance.

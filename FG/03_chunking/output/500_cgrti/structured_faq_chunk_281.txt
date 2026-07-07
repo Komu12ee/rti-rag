@@ -1,0 +1,16 @@
+# FAQ Chunk 281
+Document: 500_cgrti
+Source: structured.md
+Pages: 22
+Section: 6.4 CG Specific Procedures & Rules
+Question: Q284. Can I file RTI in CG regional languages ( Chhattisgarhi)? A: Technically yes (Section 6 allows regional language). But official response in Hindi English only Not recommended.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 57
+
+---
+
+## 6.4 CG Specific Procedures & Rules
+
+Q284. Can I file RTI in CG regional languages ( Chhattisgarhi)? A: Technically yes (Section 6 allows regional language). But official response in Hindi English only Not recommended.

@@ -1,0 +1,16 @@
+# FAQ Chunk 200
+Document: 500_cgrti
+Source: structured.md
+Pages: 17
+Section: 5.2 Education & Student Scenarios
+Question: Q204. "Midday meal quality is poor. Can [ get records?" A: Request: menu prescribed, bills of ingredients, vendor contracts, inspection reports, audit findings
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 50
+
+---
+
+## 5.2 Education & Student Scenarios
+
+Q204. "Midday meal quality is poor. Can [ get records?" A: Request: menu prescribed, bills of ingredients, vendor contracts, inspection reports, audit findings

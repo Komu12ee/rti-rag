@@ -1,0 +1,28 @@
+## Question variants all map to this one provision
+
+- 1. What does Section 16(as amended 2019) of the Right to Information Act, 2005 provide?
+- 2. Explain RTI Act Section 16(as amended 2019): Post zo19 tenure.
+- 3. What is Act 16(as amended 2019) in RTI? - need the rule for state secretary rank.
+- 4. सूचना का अधिकार अधिनियम, 2005 धारा 16(as amended 2019) में क्या प्रावधान है?
+- 5. धारा 16(as amended 2019) का सरल अर्थ क्या है 2019 के बाद कार्यकाल?
+- 6. RTI Act 16las amended 2019) ka rule kya hai? 2019 के बाद कार्यकाल के बारे में बताइए|
+- 7. In this situation: Query about eligibility qualification of a State Information Commissioner. Does Section 16(as amended 2019) apply, and what does it say?
+- 8. "16(as amended 2019) RTI law me kya hai? " "16(as amended 2019) ka matlab?"
+
+## Answer
+
+English definition: The 2019 Amendment made tenure flexible, to be prescribed by State Government instead of a fixed five years.
+
+हिंदीं परिभाषाः 2019 संशोधन ने कार्यकाल को निश्चित पांच वर्ष के बजाय राज्य सरकार द्वारा निर्धारित जाने जितना लचीला बनाया| किए
+
+Retrieval anchors: Post 2019 tenure; 2019 के बाद कार्यकाल; state secretary rank; high court judge; domain expertise; 2019 amendment state
+
+## Typical contexts
+
+- Query about eligibility/qualification of a State Information Commissioner
+
+PIO implementation note: Same caution as Section 13 cite the post 2019 prescribed tenure regime as current law for State Commissioners.
+
+- Tenure disputes for State CICIIC apply 2019 amendment, not original fixed term
+
+Source reference: RTI Rule Book, Section 16 (cross reference to 2019 Amendment)

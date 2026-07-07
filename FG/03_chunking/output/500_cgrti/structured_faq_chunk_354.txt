@@ -1,0 +1,16 @@
+# FAQ Chunk 354
+Document: 500_cgrti
+Source: structured.md
+Pages: 27
+Section: Complex Exemption Questions
+Question: Q358. "Sealed bid of losing company - pre opening?" A: commercial confidentiality (Section 8(l) (d) ). Available after bid opening. No,
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 47
+
+---
+
+## Complex Exemption Questions
+
+Q358. "Sealed bid of losing company - pre opening?" A: commercial confidentiality (Section 8(l) (d) ). Available after bid opening. No,

@@ -1,0 +1,16 @@
+# FAQ Chunk 272
+Document: 500_cgrti
+Source: structured.md
+Pages: 22
+Section: 6.3 CG Departments & PIOs
+Question: Q275. Does Secretariat ( Chief Secretary ) office have PIO? A: Yes, and can help if you dont know which department has information. They route accordingly they
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 46
+
+---
+
+## 6.3 CG Departments & PIOs
+
+Q275. Does Secretariat ( Chief Secretary ) office have PIO? A: Yes, and can help if you dont know which department has information. They route accordingly they

@@ -1,0 +1,16 @@
+# FAQ Chunk 261
+Document: 500_cgrti
+Source: structured.md
+Pages: 21
+Section: 6.2 CG Online RTI Portal
+Question: Q264. Can I file RTI without registering on portal? A: Yes, you can file offline with department PIO directly or via post. But online is faster better
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 45
+
+---
+
+## 6.2 CG Online RTI Portal
+
+Q264. Can I file RTI without registering on portal? A: Yes, you can file offline with department PIO directly or via post. But online is faster better

@@ -1,0 +1,16 @@
+# FAQ Chunk 279
+Document: 500_cgrti
+Source: structured.md
+Pages: 22
+Section: 6.4 CG Specific Procedures & Rules
+Question: Q282. Are there any CG specific exemptions beyond national RTI Act? A: CG follows national RTI Act 2005. No state specific additional exemptions. NO,
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 48
+
+---
+
+## 6.4 CG Specific Procedures & Rules
+
+Q282. Are there any CG specific exemptions beyond national RTI Act? A: CG follows national RTI Act 2005. No state specific additional exemptions. NO,

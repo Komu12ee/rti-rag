@@ -1,0 +1,28 @@
+## Question variants all map to this one provision
+
+- 1. What does Section 7(2) of the Right to Information Act, 2005 provide?
+- 2. Explain RTI Act Section 7(2): Deemed refusal.
+- 3. What is Act 7(2) in RTI? I need the rule for 30 days
+- 4. सूचना का अधिकार अधिनियम, 2005 की धारा 72) में क्या प्रावधान है?
+- 5. धारा 7(2) का सरल अर्थ क्या है - समझी गई अस्वीकृतिः
+- 6. RTI Act 7(2 ) ka rule kya hai? समझी गई अस्वीकृति के बारे में बताइए|
+- 7. In this situation: Calculating whether PIO is within statutory response deadline. Does Section 7(2) apply, and what does it say? 8. "7(2) RTI law me kya hai? " "7(2) ka matlab?"
+
+## Answer
+
+English definition: If the PIO fails to give a decision within the specified time, it shall be deemed that the PIO has refused the request.
+
+हिंदीं परिभाषाः यदि PIO विनिर्दिष्ट समय के विनिश्चय देने में विफल रहता है, तो समझा जाएगा कि उसने अनुरोध को अस्वीकार कर दिया हैl भीतर
+
+Retrieval anchors: Deemed refusal; समझी गई अस्वीकृति; 30 days; 48 hours life and liberty; further fee; sensorily disabled; free of charge; rejection reasons
+
+## Typical contexts
+
+- Calculating whether PIO is within statutory response deadline
+- PIO missed deadline trigger free of charge and deemed refusal logic
+- Query relates to a person's life or liberty apply 48-hour rule
+- Drafting a rejection must include reasons, appeal window, appellate authority
+
+PIO implementation note: Always check the urgency flag (lifelliberty) first to apply the 48-hour rule instead of 30 If the 3O-day (or 48-hour) deadline has lapsed, the response must note that the information is to be supplied free of charge and that a deemed refusal has occurred, which is independently appealable. days.
+
+Source reference: RTI Rule Book, pp. 13-14

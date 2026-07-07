@@ -1,0 +1,16 @@
+# FAQ Chunk 57
+Document: 500_cgrti
+Source: structured.md
+Pages: 6
+Section: 2.2 Exemptions & What Cannot Be Requested
+Question: Q60. What is Section 8(2) -Public Interest Override? A: Even exempt information can be disclosed if public interest in disclosure outweighs harm. Example: Corruption evidence overrides commercial confidentiality.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 66
+
+---
+
+## 2.2 Exemptions & What Cannot Be Requested
+
+Q60. What is Section 8(2) -Public Interest Override? A: Even exempt information can be disclosed if public interest in disclosure outweighs harm. Example: Corruption evidence overrides commercial confidentiality.

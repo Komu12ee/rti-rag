@@ -1,0 +1,16 @@
+# FAQ Chunk 29
+Document: 500_cgrti
+Source: structured.md
+Pages: 4
+Section: L.4 Fees & Payment
+Question: Q32. If PIO doesn t respond within 30 days, do I get free information? A: Yes! Per Section 7(6), if PIO fails to meet deadline, information is provided free of charge.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 53
+
+---
+
+## L.4 Fees & Payment
+
+Q32. If PIO doesn t respond within 30 days, do I get free information? A: Yes! Per Section 7(6), if PIO fails to meet deadline, information is provided free of charge.

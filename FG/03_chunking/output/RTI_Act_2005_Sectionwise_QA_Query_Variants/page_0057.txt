@@ -1,0 +1,27 @@
+## Question variants all map to this one provision
+
+- 1. What does Section 1 4(powers) of the Right to Information Act, 2005 provide?
+- 2. Explain RTI Act Section 1 4(powers): Enumerated powers.
+- 3. What is Act 14(powers) in RTI? I need the rule for quasi-judicial powers.
+- 5. धारा 14(powers) का सरल अर्थ क्या है सूचीबद्ध शक्तियां?
+- 4. सूचना का अधिकार अधिनियम, 2005 की धारा 14(powers) नें क्या प्रावधान है?
+- 6. RTI Act 14(powers) ka rule kya hai? सूचीबद्ध शक्तियां के बारे में बताइए|
+- 7. In this situation: An appeal complaint requires the Commission to compel production of withheld records. Does Section 14(powers) apply, and what does it say?
+- 8. "14(powers) RTI law me kya hai?" II 14(powers) ka matlab?"
+
+## Answer
+
+English definition: Power to summon examine public officials demand production of records documents from any public authority; call for information explanations; conduct inquiries with civil court authority pass orders directing disclosure; recommend penalties for non compliance; award compensation for loss hardship; exercise jurisdiction over appeals complaints on RTI implementation.
+
+हिंदी परिभाषाः किसी सार्वजनिक अधिकारी को बुलाने | परीक्षा करने की शक्तिः किसी लोक प्राधिकरण से अभिलेख दस्तावेज मांगने की शक्तिः सूचना स्पष्टीकरण मांगने की शक्तिः नागरिक अदालत के अधिकार से जांच करने की शक्तिः प्रकटीकरण निर्देश देने वाला आदेश पास करने की शक्तिः गैर अनुपालन हेतु दंड की सिफारिशः हानि कठिनाई हेतु मुआवजा देनाः RTI कार्यान्वयन से संबंधित अपील शिकायतों पर अधिकारिता|
+
+Retrieval anchors: Enumerated powers; सूचीबद्ध शक्तियां; quasirjudicial powers; summon; civil court powers compensation; penalty recommendation; inquiry
+
+## Typical contexts
+
+- An appeallcomplaint requires the Commission to compel production of withheld records
+- Validating the legal basis for Commission-ordered compensation or penalty recommendations
+
+PIO implementation note: If a PIO is non compliant despite a Commission order, this section confirms the Commission s authority to compel compliance, recommend disciplinary penalties, and award compensation to the complainant.
+
+Source reference: RTI Rule Book, Section 14 (cross reference)

@@ -1,0 +1,28 @@
+## Question variants all map to this one provision
+
+- 1. What does Section Z22(scope) of the Right to Information Act, 2005 provide?
+- 2. Explain RTI Act Section 22(scope): Scope and limits of exemption.
+- 3. What is Act 22(scope) in RTI? I need the rule for intelligence bureau.
+- 5. धारा 22(scope) का सरल अर्थ क्या है - छूट का दायरा और सीमाएं?
+- 4. सूचना का अधिकार अधिनियम, 2005 धारा 22(scope ) में क्या प्रावधान है?
+- 6. RTI Act 22(scope) ka rule kya hai? छूट का दायरा और सीमाएं के बारे में बताइए|
+- 7. In this situation: RTI request is addressed to a body on the Second Schedule list of intelligencelsecurity organisations. Does Section 22(scope) apply, and what does it say?
+- 8. "22(scope) RTI law me kya hai? " "22(scope) ka matlab? '
+
+## Answer
+
+English definition: Exempted agencies must still comply with RTI Act to some extent requests are processed with Section 8 exemptions applied; appeals still available; routine administrative information cannot be withheld; corruption allegations are not covered by this exemption; subject to Section 8(2) public interest override.
+
+हिंदी परिभाषाः छूट प्राप्त एजेंसियों को फिर भी कुछ हद तक RTI अधिनियम का पालन करना चाहिएः को धारा 8 के साथ संसाधित किया जाता हैः अपील अभी भी उपलब्ध हैः दिनचर्या प्रशासनिक सूचना नहीं रोकी जा सकतीः भ्रष्टाचार के अभिकथन इस छूट के अंतर्गत नहीं आते; धारा 82 ) सार्वजनिक हित अधिरूहण के अधीन| अनुरोधों छूटों
+
+Retrieval anchors: Scope and limits of exemption; छूट का दायरा और सीोमाएं; intelligence bureau; CBI; security organisations; second schedule; corruption exception; human rights exception
+
+## Typical contexts
+
+- RTI request is addressed to a body on the Second Schedule list of intelligencelsecurity organisations
+
+PIO implementation note: Before invoking a blanket Section 22-type exemption, verify the request does not concern corruption or human rights violations these categories must still be processed (human rights related disclosure requires CIC approval per the broader Section 24 schedule mechanism).
+
+- Request specifically alleges corruption or human rights violation against an exempted agency exemption does NOT apply
+
+Source reference: RTI Rule Book, Section 22 (cross reference)

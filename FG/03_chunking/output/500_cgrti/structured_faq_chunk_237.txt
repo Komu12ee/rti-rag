@@ -1,0 +1,16 @@
+# FAQ Chunk 237
+Document: 500_cgrti
+Source: structured.md
+Pages: 19
+Section: 5.6 Welfare & Benefit Schemes Scenarios
+Question: Q241. "I'm eligible for subsidy but denied. Check list " A: Request: beneficiary list for the scheme, selection criteria, rejection reasons for your application, appeal process
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 59
+
+---
+
+## 5.6 Welfare & Benefit Schemes Scenarios
+
+Q241. "I'm eligible for subsidy but denied. Check list " A: Request: beneficiary list for the scheme, selection criteria, rejection reasons for your application, appeal process

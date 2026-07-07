@@ -1,0 +1,27 @@
+## Question variants all map to this one provision
+
+- 1. What does Section 27(2019 amendment) of the Right to Information Act, 2005 provide?
+- 2. Explain RTI Act Section 27(2019 amendment): RTI (Amendment) Act, 2019.
+- 3. What is Act 27(201 9 amendment) in RTI? 1 need the rule for amendment power.
+- 4. सूचना का अधिकार अधिनियम, 2005 धारा 27(2019 amendment) में क्या प्रावधान है?
+- 5. धारा 27(2019 amendment) का सरल अर्थ क्या है RTI ( संशोधन) अधिनियम, 2019?
+- 6. RTI Act 27(2019 amendment) ka rule kya hai? RTI ( संशोधन) अधिनियम , 2019 के बारे में बताइए|
+- 7. In this situation: Validating which version (pre- or post 2o19) of a Commission tenurelsalary provision governs a query. Does Section 27(2019 amendment) apply and what does it say?
+- 8. "27(2019 amendment) RTI law me kya hai? "27(2019 amendment) ka matlab?"
+
+## Answer
+
+English definition: Gazette dated 29 October 2019; changed tenure of CICISIC from fixed 5 years to 'such term as may be prescribed' by the Central Government, making tenure flexible rather than statutory; included some procedural amendments. Fees also revised through rules across multiple amendments 2005-2013.
+
+हिंदी परिभाषाः 29 अक्तूबर 2019 को राजपत्रितः CICISIC के कार्यकाल को 5 वर्ष से केंद्र सरकार द्वारा 'यथा-विहित अवधि' में बदला, जिससे कार्यकाल वैधानिक के बजाय लचीला बनाः कुछ प्रक्रियात्मक संशोधन शामिल थे| 2005-2013 के बीच कई संशोधनों के माध्यम से शुल्क भी संशोधित गए| निश्चित किए
+
+Retrieval anchors: RTI (Amendment Act, 2019; RTI संशोधन) अधिनियम, 2019; amendment power; 2019 amendment; tenure flexibility; legislative process
+
+## Typical contexts
+
+- Validating which version (pre- or post 2o19) of a Commission tenurelsalary provision governs a query
+- Query about the legislative history or amendment process of the Act
+
+PIO implementation note: Always apply the 2019 Amendment as current law for any CICISIC tenure or salary related response, given it supersedes the original Sections 13 and 16 provisions.
+
+Source reference: RTI Rule Book, Section 27 (cross reference to 2019 Amendment notification dated 29 October 2019)

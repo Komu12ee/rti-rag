@@ -1,0 +1,16 @@
+# FAQ Chunk 254
+Document: 500_cgrti
+Source: structured.md
+Pages: 20-21
+Section: Chhattisgarh Government & State RTI Details
+Question: Q257. Does CG SIC accept email appeals? A: Yes, email appeals to SIC email address (check website) or use online portal. Keep copy of email receipt.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 54
+
+---
+
+## Chhattisgarh Government & State RTI Details
+
+Q257. Does CG SIC accept email appeals? A: Yes, email appeals to SIC email address (check website) or use online portal. Keep copy of email receipt.

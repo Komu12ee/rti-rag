@@ -1,0 +1,16 @@
+# FAQ Chunk 70
+Document: 500_cgrti
+Source: structured.md
+Pages: 7
+Section: 2.4 Format & Access Methods
+Question: Q73. Can information be provided via email? A: Tes, if applicant provides email address and PIO can digitize. Email is usually free.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 39
+
+---
+
+## 2.4 Format & Access Methods
+
+Q73. Can information be provided via email? A: Tes, if applicant provides email address and PIO can digitize. Email is usually free.

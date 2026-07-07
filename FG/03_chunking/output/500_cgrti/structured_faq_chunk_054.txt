@@ -1,0 +1,16 @@
+# FAQ Chunk 54
+Document: 500_cgrti
+Source: structured.md
+Pages: 6
+Section: 2.2 Exemptions & What Cannot Be Requested
+Question: Q57. Are government employee personal details protected? A: Personal details (address, phone, family info) are protected. But official designation, salary performance is public.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 50
+
+---
+
+## 2.2 Exemptions & What Cannot Be Requested
+
+Q57. Are government employee personal details protected? A: Personal details (address, phone, family info) are protected. But official designation, salary performance is public.

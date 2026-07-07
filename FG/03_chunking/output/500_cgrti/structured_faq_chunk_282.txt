@@ -1,0 +1,16 @@
+# FAQ Chunk 282
+Document: 500_cgrti
+Source: structured.md
+Pages: 22
+Section: 6.4 CG Specific Procedures & Rules
+Question: Q285. What first appeal procedure in Chhattisgarh? A: Designate senior officer (usually Additional Secretary Joint Secretary level) handles first appeal. Timeline: 30 45 days
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 53
+
+---
+
+## 6.4 CG Specific Procedures & Rules
+
+Q285. What first appeal procedure in Chhattisgarh? A: Designate senior officer (usually Additional Secretary Joint Secretary level) handles first appeal. Timeline: 30 45 days

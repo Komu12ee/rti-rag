@@ -1,0 +1,16 @@
+# FAQ Chunk 59
+Document: 500_cgrti
+Source: structured.md
+Pages: 6
+Section: 2.3 Third Party Information
+Question: Q62. How is third party information handled? A: PIO notifies third party within 5 gives them 10 days to object, then decides within 40 days ( not 30). days,
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 46
+
+---
+
+## 2.3 Third Party Information
+
+Q62. How is third party information handled? A: PIO notifies third party within 5 gives them 10 days to object, then decides within 40 days ( not 30). days,

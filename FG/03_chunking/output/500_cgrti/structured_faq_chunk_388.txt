@@ -1,0 +1,16 @@
+# FAQ Chunk 388
+Document: 500_cgrti
+Source: structured.md
+Pages: 30
+Section: QUICK ANSWER KEYS FOR CHATBOT
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 22
+
+---
+
+## QUICK ANSWER KEYS FOR CHATBOT
+
+These should be programmed for quick responses:

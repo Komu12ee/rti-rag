@@ -1,0 +1,16 @@
+# FAQ Chunk 104
+Document: 500_cgrti
+Source: structured.md
+Pages: 9-10
+Section: 3.2 Procedural Technicalities
+Question: Q108. Is there deadline for PIO to even register application? A: No explicit deadline but application is deemed received on receipt date ( for timeline calculation).
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 45
+
+---
+
+## 3.2 Procedural Technicalities
+
+Q108. Is there deadline for PIO to even register application? A: No explicit deadline but application is deemed received on receipt date ( for timeline calculation).

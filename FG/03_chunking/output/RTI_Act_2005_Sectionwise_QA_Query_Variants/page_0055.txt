@@ -1,0 +1,26 @@
+## Question variants all map to this one provision
+
+- 1. What does Section 1 3(original) of the Right to Information Act, 2005 provide?
+- 2. Explain RTI Act Section 1 3(original): Original 5ryear tenure
+- 4. सूचना का अधिकार अधिनियम, 2005 धारा 13(original) में क्या प्रावधान है?
+- 3. What is Act 1 3(original) in RTI? 1 need the rule for qualification.
+- 5. धारा 13(original) का सरल अर्थ क्या है मूल 5-वर्ष कार्यकाल?
+- 6. RTI Act 1 3original) ka rule kya hai? मूल 5-वर्ष कार्यकाल के बारे में बताइए|
+- 7. In this situation: Query about CICs current tenure or removal grounds. Does Section 1 3(original) apply, and what does it say? 8 "13(original) RTI law me kya hai? " / "13(original) ka matlab? "
+
+## Answer
+
+English definition: Original Act: CIC qualification = held office of Secretary to Government of India or equivalent; tenure of five years from date of entering office or till age 65, whichever earlier; not eligible for reappointment.
+
+हिंदीं परिभाषाः मूल अधिनियमः CIC योग्यता = भारत सरकार के सचिव या समकक्ष पदः पद ग्रहण की तारीख से पांच वर्ष या 65 वर्ष की आयु, जो भी पूर्वतर होः पुनर्नियुक्ति के अपात्र| लिए
+
+Retrieval anchors: Original Sryear tenure; मूल 5वर्ष कार्यकाल; qualification; tenure; secretary level; 2019 amendment
+
+## Typical contexts
+
+- Query about CIC's current tenure or removal grounds
+- Determining whether the original Act text or the 2019 Amendment governs a specific tenure dispute
+
+PIO implementation note: When responding to queries about CIC tenure, cite the 201 9 Amendment as the currently governing provision rather than the original 5-year fixed term since the latter has been superseded.
+
+Source reference: RTI Rule Book, Section 13 (cross reference to 2019 Amendment)

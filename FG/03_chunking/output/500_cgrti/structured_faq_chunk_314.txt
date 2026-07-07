@@ -1,0 +1,16 @@
+# FAQ Chunk 314
+Document: 500_cgrti
+Source: structured.md
+Pages: 25
+Section: 7.2 Health Department RTI Questions
+Question: Q318. "Hygiene standards are they followed?" A: Yes. Request: hospital infection control policy waste management procedure, audit reports, violations.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 44
+
+---
+
+## 7.2 Health Department RTI Questions
+
+Q318. "Hygiene standards are they followed?" A: Yes. Request: hospital infection control policy waste management procedure, audit reports, violations.

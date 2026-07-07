@@ -1,0 +1,16 @@
+# FAQ Chunk 330
+Document: 500_cgrti
+Source: structured.md
+Pages: 26
+Section: 7.4 Revenue Department RTI Questions
+Question: Q334. "Ration card why not issued?" A: Yes. Requestः application status, BPL assessment, family details verification, rejection reason if any.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 48
+
+---
+
+## 7.4 Revenue Department RTI Questions
+
+Q334. "Ration card why not issued?" A: Yes. Requestः application status, BPL assessment, family details verification, rejection reason if any.

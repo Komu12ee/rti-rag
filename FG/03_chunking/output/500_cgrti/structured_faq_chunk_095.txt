@@ -1,0 +1,16 @@
+# FAQ Chunk 95
+Document: 500_cgrti
+Source: structured.md
+Pages: 9
+Section: 3.l Legal Framework & Interpretation
+Question: Q97. Can PIO refuse if applicant is serial RTI filer? A: frequency of applications doesnt matter Each application must be processed on merit. NO,
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 45
+
+---
+
+## 3.l Legal Framework & Interpretation
+
+Q97. Can PIO refuse if applicant is serial RTI filer? A: frequency of applications doesnt matter Each application must be processed on merit. NO,

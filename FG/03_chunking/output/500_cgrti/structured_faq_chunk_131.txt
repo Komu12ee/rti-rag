@@ -1,0 +1,16 @@
+# FAQ Chunk 131
+Document: 500_cgrti
+Source: structured.md
+Pages: 11
+Section: 3.5 Information Commission Powers
+Question: Q135. Can SIC modify PIO's decision? A: Yes, in appeal, SIC can order disclosure of previously withheld information if it disagrees with exemption claim.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 47
+
+---
+
+## 3.5 Information Commission Powers
+
+Q135. Can SIC modify PIO's decision? A: Yes, in appeal, SIC can order disclosure of previously withheld information if it disagrees with exemption claim.

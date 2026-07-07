@@ -1,0 +1,16 @@
+# FAQ Chunk 344
+Document: 500_cgrti
+Source: structured.md
+Pages: 27
+Section: 7.5 Police Department RTI Questions
+Question: Q348. "Lost property follow up?" A: Yes. Request: lost property register, recovery process, identification procedure, compensation.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 39
+
+---
+
+## 7.5 Police Department RTI Questions
+
+Q348. "Lost property follow up?" A: Yes. Request: lost property register, recovery process, identification procedure, compensation.

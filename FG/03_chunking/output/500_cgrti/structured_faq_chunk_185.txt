@@ -1,0 +1,16 @@
+# FAQ Chunk 185
+Document: 500_cgrti
+Source: structured.md
+Pages: 15
+Section: 4.5 Appeal & Escalation Tricky Cases
+Question: Q189. What if SIC takes >90 days for decision? A: You can file High Court writ petition for delay. Or complain to Chief Commissioner
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 46
+
+---
+
+## 4.5 Appeal & Escalation Tricky Cases
+
+Q189. What if SIC takes >90 days for decision? A: You can file High Court writ petition for delay. Or complain to Chief Commissioner

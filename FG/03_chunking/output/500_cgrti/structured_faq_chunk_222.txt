@@ -1,0 +1,16 @@
+# FAQ Chunk 222
+Document: 500_cgrti
+Source: structured.md
+Pages: 18
+Section: 5.4 Infrastructure & Public Works Scenarios
+Question: Q226. "Bridge announced 2 years ago, still foundation only Why delay?" A: Requestः project approval, tender, contractor selected, payment milestones, delay reasons from government.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 56
+
+---
+
+## 5.4 Infrastructure & Public Works Scenarios
+
+Q226. "Bridge announced 2 years ago, still foundation only Why delay?" A: Requestः project approval, tender, contractor selected, payment milestones, delay reasons from government.

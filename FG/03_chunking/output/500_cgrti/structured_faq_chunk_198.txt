@@ -1,0 +1,16 @@
+# FAQ Chunk 198
+Document: 500_cgrti
+Source: structured.md
+Pages: 17
+Section: 5.2 Education & Student Scenarios
+Question: Q202. "Teacher is unqualified. Can RTI prove this?" A: Request: teacher's appointment letter, qualifications submitted, verification done, appointment order basis.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 48
+
+---
+
+## 5.2 Education & Student Scenarios
+
+Q202. "Teacher is unqualified. Can RTI prove this?" A: Request: teacher's appointment letter, qualifications submitted, verification done, appointment order basis.

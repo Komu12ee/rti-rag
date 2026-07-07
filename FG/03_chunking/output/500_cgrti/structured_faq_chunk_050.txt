@@ -1,0 +1,16 @@
+# FAQ Chunk 50
+Document: 500_cgrti
+Source: structured.md
+Pages: 6
+Section: 2.2 Exemptions & What Cannot Be Requested
+Question: Q53. Can [ request information about Cabinet discussions? A: internal Cabinet deliberations are protected ( Section 8(1) (i)). But final Cabinet decisions must be disclosed. No,
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 53
+
+---
+
+## 2.2 Exemptions & What Cannot Be Requested
+
+Q53. Can [ request information about Cabinet discussions? A: internal Cabinet deliberations are protected ( Section 8(1) (i)). But final Cabinet decisions must be disclosed. No,

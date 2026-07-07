@@ -1,0 +1,16 @@
+# FAQ Chunk 69
+Document: 500_cgrti
+Source: structured.md
+Pages: 7
+Section: 2.4 Format & Access Methods
+Question: Q72. Can I ask to inspect records instead of getting copies? A: Tes, you have right to inspect ( Section 2(j)) this is often free and faster
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 45
+
+---
+
+## 2.4 Format & Access Methods
+
+Q72. Can I ask to inspect records instead of getting copies? A: Tes, you have right to inspect ( Section 2(j)) this is often free and faster

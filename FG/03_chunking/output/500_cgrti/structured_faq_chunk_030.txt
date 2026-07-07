@@ -1,0 +1,16 @@
+# FAQ Chunk 30
+Document: 500_cgrti
+Source: structured.md
+Pages: 4
+Section: L.4 Fees & Payment
+Question: Q33. Can fees be refunded if application is rejected? A: No, application fee is non- refundable even if request is rejected.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 43
+
+---
+
+## L.4 Fees & Payment
+
+Q33. Can fees be refunded if application is rejected? A: No, application fee is non- refundable even if request is rejected.

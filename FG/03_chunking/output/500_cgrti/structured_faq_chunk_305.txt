@@ -1,0 +1,16 @@
+# FAQ Chunk 305
+Document: 500_cgrti
+Source: structured.md
+Pages: 24
+Section: 7.1 Education Department RTI Questions
+Question: Q308. "School building - is it safe?" A: Yes. Request structural audit report, safety inspection, pending repairs budget allocation, timeline.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 46
+
+---
+
+## 7.1 Education Department RTI Questions
+
+Q308. "School building - is it safe?" A: Yes. Request structural audit report, safety inspection, pending repairs budget allocation, timeline.

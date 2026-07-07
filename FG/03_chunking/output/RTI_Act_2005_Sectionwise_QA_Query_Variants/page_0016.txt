@@ -1,0 +1,30 @@
+## Question variants all map to this one provision
+
+- 1. What does Section 4(1 )b) of the Right to Information Act, 2005 provide?
+- 2. Explain RTI Act Section 4(1 )b): Suo motu publication (1 7 categories).
+- 3. What is Act 4(1)b) in RTI? 1 need the rule for suo motu disclosure.
+- 5. धारा 4(1 )b) का सरल अर्थ क्या है - स्वप्रेरणा प्रकाशन (17 श्रेणियां)?
+- 4. सूचना का अधिकार अधिनियम, 2005 की धारा 4(1 )b) में क्या प्रावधान है?
+- 6. RTI Act 4(1 )(b) ka rule kya hai? स्वप्रेरणा प्रकाशन (17 श्रेणियां) के बारे में बताइए|
+- 7. In this situation: Information sought is already part of mandatory suo motu disclosure published manual. Does Section 4(1 ) (b) apply, and what does it say?
+- 8. "4(1)(b) RTI law me kya hai? "4(1)(b) ka matlab?
+
+## Answer
+
+English definition: Within 120 days of enactment publish: (i) organisation particulars functions duties (ii) powers &
+
+duties of officers; (iii) decision making procedure; (iv) norms for discharge of functions; (v rules regulations manuals records; (vi) categories of documents held; (vii) consultative arrangements; (viii) boards councils committees details; (ix) directory of officerslemployees; (x) monthly remuneration of each officer employee; (xi) budget allocated to each agency; (xii) manner of execution of subsidy programmes; (xiii) particulars of concessionslpermitslauthorisations (xiv) details of information held in electronic form; (xv) facilities available to citizens for obtaining information; (xvi) names designations of PIOs; (xvii) other prescribed information.
+
+हिंदीं परिभाषाः अधिनियमन के 120 दिनों के भीतर प्रकाशित करेंः (i) संगठन विशिष्टियां कार्य कर्तव्यः (ii) अधिकारियों की शक्तियां और कर्तव्यः liii) निर्णय प्रक्रिया; liv) कार्यों के निर्वहन हेतु मानदंड; (v) नियम | विनियम मैनुअल| अभिलेख; (vi) धारित दस्तावेजों की श्रेणियां; (vii) परामर्श व्यवस्थाः (viii) बोर्ड| परिषद समिति विवरण; (ix) अधिकारियों /कर्मचारियों की निर्देशिकाः (x) प्रत्येक अधिकारी कर्मचारी का मासिक पारिश्रमिकः xi) प्रत्येक को आवंटित बजट; (xii) सब्सिडी कार्यक्रमों के निष्पादन की रीतिः (xiii) रियायतों | अनुमतियों | प्राधिकारों की विशिष्टियां; (xiv) इलेक्ट्रॉनिक रूप में सूचना का विवरणः (xv) नागरिक सुविधाएं; (xvi) PIO नाम| पदनाम; Izvii) अन्य विहित सूचना| एजेंसी
+
+Retrieval anchors: Suo motu publication (1 7 categories) स्चप्रेरणा प्रकाशन (17 श्रेणियां ; suo motu disclosure; proactive disclosure; record maintenance; computerisation; 17 categories 120 days manual publication
+
+## Typical contexts
+
+- Information sought is already part of mandatory suo motu disclosure published manual
+- Determining whether refusal can be justified when information should already be publicly available
+- Validating whether public authority has fulfilled proactive disclosure obligations
+
+PIO implementation note: Before processing as a fresh RTI request, check whether the information is already covered under the public authority's Section 4(1 )b) suo motu disclosure manual website if so, the PIO response should direct the applicant to that published source.
+
+Source reference: RTI Rule Book, pp. 6-11

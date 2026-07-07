@@ -1,0 +1,16 @@
+# FAQ Chunk 211
+Document: 500_cgrti
+Source: structured.md
+Pages: 17
+Section: 5.3 Health & Safety Scenarios
+Question: Q215. "Vaccination camp not reaching villages. Why?" A: Request: immunization policy, camp schedule, resource allocation, coverage data, challenges faced.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 48
+
+---
+
+## 5.3 Health & Safety Scenarios
+
+Q215. "Vaccination camp not reaching villages. Why?" A: Request: immunization policy, camp schedule, resource allocation, coverage data, challenges faced.

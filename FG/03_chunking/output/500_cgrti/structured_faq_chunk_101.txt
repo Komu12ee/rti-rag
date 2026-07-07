@@ -1,0 +1,18 @@
+# FAQ Chunk 101
+Document: 500_cgrti
+Source: structured.md
+Pages: 9
+Section: 3.2 Procedural Technicalities
+Question: Q104. What if PIO asks for more fee than prescribed? A: This is illegal. Appeal immediately citing overcharging. PIO can only charge prescribed amount.
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 105
+
+---
+
+## 3.2 Procedural Technicalities
+
+Q104. What if PIO asks for more fee than prescribed? A: This is illegal. Appeal immediately citing overcharging. PIO can only charge prescribed amount.
+
+Q1O5. Can PIO time limit the application (e g., "only current year data" )? A: you can ask any date range. PIO must provide all data you request ( unless very old under 2O year rule ). No,

@@ -1,0 +1,16 @@
+# FAQ Chunk 257
+Document: 500_cgrti
+Source: structured.md
+Pages: 21
+Section: Chhattisgarh Government & State RTI Details
+Question: Q260. Can I request annual report of CG SIC? A: Yes, SIC publishes annual reports on website. Can request if not available online.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 45
+
+---
+
+## Chhattisgarh Government & State RTI Details
+
+Q260. Can I request annual report of CG SIC? A: Yes, SIC publishes annual reports on website. Can request if not available online.

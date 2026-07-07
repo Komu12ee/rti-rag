@@ -1,0 +1,25 @@
+## Question variants all map to this one provision
+
+- 1. What does Section 25(reporting duty) of the Right to Information Act, 2005 provide?
+- 2. Explain RTI Act Section 25(reporting duty): Reporting duty and content.
+- 3. What is Act 25(reporting duty) in RTI? 1 need the rule for annual report.
+- 5. धारा 25(reporting duty) का सरल अर्थ क्या है - रिपोर्टिंग कर्तव्य और विषय वस्तुः
+- 4. सूचना का अधिकार अधिनियम, 2005 धारा 25 reporting duty) में क्या प्रावधान है?
+- 6. RTI Act 25 reporting duty) ka rule kya hai? रिपोर्टिंग कर्तव्य और विषय वस्तु के बारे में बताइए|
+- 7. In this situation: Query about systemiclstatistical RTI implementation data rather than an individual case Does Section 25(reporting duty) apply, and what does it say?
+- 8. "25(reporting duty ) RTI law me kya hai? ' "25(reporting duty) ka matlab? "
+
+## Answer
+
+English definition: Commission must prepare annual reports; Central Commission submits to Parliament; State Commissions submit to State Legislatures; reports must include recommendations on amendment of RTI revision of fees charges procedural improvements, training needs, resource requirements, statutory improvements, and statistical data on appeals disposal times trends; reports are public and published on websites Act,
+
+हिंदीं परिभाषाः आयोग को वार्षिक रिपोर्ट तैयार करनी चाहिएः केंद्रीय आयोग संसद को जमा करता हैः राज्य आयोग राज्य विधानमंडल को जमा करते हैंः रिपोर्ट में RTI अधिनियम संशोधन, शुल्क संशोधन , प्रक्रियात्मक सुधार , प्रशिक्षण आवश्यकताएं संसाधन आवश्यकताएं वैधानिक सुधार पर सिफारिशें और अपील निपटान समय रुझानों पर सांख्यिकीय डेटा होना चाहिएः रिपोर्ट सार्वजनिक हैं और वेबसाइटों प्रकाशित हैं|
+
+Retrieval anchors: Reporting duty and content; रिपोर्टिंग कर्तव्य और विषय वस्तु; annual report; parliament submission; state legislature submission; statistics; recommendations
+
+## Typical contexts
+
+- Query about systemiclstatistical RTI implementation data rather than an individual case
+- PIO implementation note: If the query is a request for the public authority's Commission's published annual report statistics, this should ordinarily be available via suo motu disclosure (Section 4) and the Commission's published reports applicant there rather than treating it as a novel disclosure request. point
+
+Source reference: RTI Rule Book, pp. 146-155 (SIC Reports and Recommendations)

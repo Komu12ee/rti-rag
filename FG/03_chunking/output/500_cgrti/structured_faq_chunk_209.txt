@@ -1,0 +1,16 @@
+# FAQ Chunk 209
+Document: 500_cgrti
+Source: structured.md
+Pages: 17
+Section: 5.3 Health & Safety Scenarios
+Question: Q213. "Hospital denied me treatment. Is this right?" A: Request: hospital admission policy, eligibility criteria, fee structure, complaint procedure, action taken.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 48
+
+---
+
+## 5.3 Health & Safety Scenarios
+
+Q213. "Hospital denied me treatment. Is this right?" A: Request: hospital admission policy, eligibility criteria, fee structure, complaint procedure, action taken.

@@ -1,0 +1,16 @@
+# FAQ Chunk 124
+Document: 500_cgrti
+Source: structured.md
+Pages: 11
+Section: 3.4 Suo Motu Disclosure
+Question: Q128. Can departments choose what to disclose suo motu? A: Section 4(1)(b) mandates 17 specific categories. Departments cannot selectively disclose. NO,
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 48
+
+---
+
+## 3.4 Suo Motu Disclosure
+
+Q128. Can departments choose what to disclose suo motu? A: Section 4(1)(b) mandates 17 specific categories. Departments cannot selectively disclose. NO,

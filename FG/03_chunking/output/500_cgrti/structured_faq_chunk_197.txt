@@ -1,0 +1,16 @@
+# FAQ Chunk 197
+Document: 500_cgrti
+Source: structured.md
+Pages: 17
+Section: 5.2 Education & Student Scenarios
+Question: Q201. was my child not selected for school? Can RTI help?" A: Yes. Request: merit list, selection criteria, marks of selected students, your child's scores and ranking "Why
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 53
+
+---
+
+## 5.2 Education & Student Scenarios
+
+Q201. was my child not selected for school? Can RTI help?" A: Yes. Request: merit list, selection criteria, marks of selected students, your child's scores and ranking "Why

@@ -1,0 +1,16 @@
+# FAQ Chunk 46
+Document: 500_cgrti
+Source: structured.md
+Pages: 5
+Section: 2.1 What Information Can [ Request
+Question: Q49. Can I request list of beneficiaries of government scheme? A: you can request complete list of who received benefits under any government program. Yes,
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 40
+
+---
+
+## 2.1 What Information Can [ Request
+
+Q49. Can I request list of beneficiaries of government scheme? A: you can request complete list of who received benefits under any government program. Yes,

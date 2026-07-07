@@ -1,0 +1,16 @@
+# FAQ Chunk 321
+Document: 500_cgrti
+Source: structured.md
+Pages: 25
+Section: 7.3 Public Works Department ( PWD) RTI Questions
+Question: Q325. "Building construction quality inspection?" A: Yes. Request: building plan approval, site inspection reports, material testing quality certification, issues found.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 52
+
+---
+
+## 7.3 Public Works Department ( PWD) RTI Questions
+
+Q325. "Building construction quality inspection?" A: Yes. Request: building plan approval, site inspection reports, material testing quality certification, issues found.

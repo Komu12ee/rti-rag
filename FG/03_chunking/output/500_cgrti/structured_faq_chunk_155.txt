@@ -1,0 +1,16 @@
+# FAQ Chunk 155
+Document: 500_cgrti
+Source: structured.md
+Pages: 13
+Section: 4.2 Information Existence & Scope Confusion
+Question: Q159. If computer system has partial data for period, must full period be searched? Aः Yes, PIO must search all systems ( digital and paper). Cannot give partial just because some data is missing
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 56
+
+---
+
+## 4.2 Information Existence & Scope Confusion
+
+Q159. If computer system has partial data for period, must full period be searched? Aः Yes, PIO must search all systems ( digital and paper). Cannot give partial just because some data is missing

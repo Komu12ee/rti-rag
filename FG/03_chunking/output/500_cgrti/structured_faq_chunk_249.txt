@@ -1,0 +1,16 @@
+# FAQ Chunk 249
+Document: 500_cgrti
+Source: structured.md
+Pages: 20
+Section: Chhattisgarh Government & State RTI Details
+Question: Q252. What is contact details of CG Suchna Aayog ( SIC)? A: Phone: (0771) 2512107 Fax: (0771) 2512102 Website: WWW siccg govin Online portal: https rtionline cg govin
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 68
+
+---
+
+## Chhattisgarh Government & State RTI Details
+
+Q252. What is contact details of CG Suchna Aayog ( SIC)? A: Phone: (0771) 2512107 Fax: (0771) 2512102 Website: WWW siccg govin Online portal: https rtionline cg govin

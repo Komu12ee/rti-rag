@@ -1,0 +1,16 @@
+# FAQ Chunk 293
+Document: 500_cgrti
+Source: structured.md
+Pages: 23
+Section: 6.5 CG Government Websites & Online Systems
+Question: Q296. Where to find CG government policies? A: Search cgstate govin or specific department website. Can also file RTI if not online.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 43
+
+---
+
+## 6.5 CG Government Websites & Online Systems
+
+Q296. Where to find CG government policies? A: Search cgstate govin or specific department website. Can also file RTI if not online.

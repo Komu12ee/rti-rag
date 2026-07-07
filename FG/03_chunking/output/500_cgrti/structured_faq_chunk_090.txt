@@ -1,0 +1,16 @@
+# FAQ Chunk 90
+Document: 500_cgrti
+Source: structured.md
+Pages: 8-9
+Section: 3.l Legal Framework & Interpretation
+Question: Q92. How is "reasonable time " defined for computerization? A: Not specifically defined courts interpret based on departmentis capacity. Generally 2 3 years is reasonable.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 48
+
+---
+
+## 3.l Legal Framework & Interpretation
+
+Q92. How is "reasonable time " defined for computerization? A: Not specifically defined courts interpret based on departmentis capacity. Generally 2 3 years is reasonable.

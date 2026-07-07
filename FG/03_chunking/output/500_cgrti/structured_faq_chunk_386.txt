@@ -1,0 +1,16 @@
+# FAQ Chunk 386
+Document: 500_cgrti
+Source: structured.md
+Pages: 30
+Section: BONUS SECTION: COMMON MISTAKES & HOWTO AVOID
+Question: Q389. "Information available online for free but PIO charges?" A: Correct if already public, cannot charge. Challenge the fee, appeal for free access
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 49
+
+---
+
+## BONUS SECTION: COMMON MISTAKES & HOWTO AVOID
+
+Q389. "Information available online for free but PIO charges?" A: Correct if already public, cannot charge. Challenge the fee, appeal for free access

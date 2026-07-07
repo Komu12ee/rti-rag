@@ -1,0 +1,16 @@
+# FAQ Chunk 299
+Document: 500_cgrti
+Source: structured.md
+Pages: 24
+Section: 7.1 Education Department RTI Questions
+Question: Q302. "What is teacher student ratio in our school?" A: Yes. Request: sanctioned teacher posts, actual staff deployed, current enrollment, by subject.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 48
+
+---
+
+## 7.1 Education Department RTI Questions
+
+Q302. "What is teacher student ratio in our school?" A: Yes. Request: sanctioned teacher posts, actual staff deployed, current enrollment, by subject.

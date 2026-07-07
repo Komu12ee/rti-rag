@@ -1,0 +1,29 @@
+## Question variants all map to this one provision
+
+- 1. What does Section 7(6) of the Right to Information Act, 2005 provide?
+- 2. Explain RTI Act Section 7(6): Free information on default.
+- 3. What is Act 7(6) in RTI? I need the rule for 30 days.
+- 5. धारा 7(6) का सरल अर्थ क्या है चूक पर सूचना? निःशुल्क
+- 4. सूचना का अधिकार अधिनियम, 2005 की धारा 76) में क्या प्रावधान है?
+- 6. RTI Act 7(6) ka rule kya hai? चूक पर निःशुल्क सूचना के बारे में बताइए|
+- 7. In this situation: Calculating whether PIO is within statutory response deadline. Does Section 7(6) apply, and what does it say?
+- 8. "7(6) RTI law me kya hai?" "7(6) ka matlab?"
+
+## Answer
+
+English definition: If the PIO fails to comply with the time limits in Section 7(1 ), information shall be provided free of charge.
+
+हिंदीं परिभाषाः यदि PIO धारा 71 ) में समय सीमा का पालन करने में विफल रहता है, तो सूचना निःशुल्क प्रदान की जाएगी|
+
+Retrieval anchors: Free information on default; चूक पर निःशुल्क सूचना; 30 days 48 hours deemed refusal; life and liberty; further fee; sensorily disabled; free of charge; rejection reasons
+
+## Typical contexts
+
+- Calculating whether PIO is within statutory response deadline
+- PIO missed deadline trigger free-of-charge and deemed refusal logic
+- Query relates to a person s life or liberty apply 48-hour rule
+- Drafting a rejection must include reasons, appeal window appellate authority
+
+PIO implementation note: Always check the urgency flag (lifelliberty) first to apply the 48-hour rule instead of 30 days. If the 3Oday (or 48-hour) deadline has lapsed, the response must note that the information is to be supplied free of charge and that a deemed refusal has occurred, which is independently appealable.
+
+Source reference: RTI Rule Book, pp. 13 14

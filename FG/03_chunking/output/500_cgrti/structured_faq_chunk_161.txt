@@ -1,0 +1,16 @@
+# FAQ Chunk 161
+Document: 500_cgrti
+Source: structured.md
+Pages: 14
+Section: 4.3 Department Confusion & Routing
+Question: Q165. What if one department says "not with us, contact XYZ department"? A: Should be formal transfer (Section 6(3) ). If informal, you can file separately or appeal for proper transfer.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 54
+
+---
+
+## 4.3 Department Confusion & Routing
+
+Q165. What if one department says "not with us, contact XYZ department"? A: Should be formal transfer (Section 6(3) ). If informal, you can file separately or appeal for proper transfer.

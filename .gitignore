@@ -42,3 +42,7 @@ FG/03_chunking/cgsic_output/
 FG/04_embeddings_and_kg/db/*
 !FG/04_embeddings_and_kg/db/.gitkeep
 FG/04_embeddings_and_kg/db/qdrant_local/
+
+# Local model weights
+FG/models/*
+!FG/models/.gitkeep

@@ -1,0 +1,22 @@
+# FAQ Chunk 9
+Document: 500_cgrti
+Source: structured.md
+Pages: 2
+Section: QlL. How do I file an RTI request in Chhattisgarh? A:
+Question: Q12. What should I include in an RTI application? A:
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 73
+
+---
+
+## QlL. How do I file an RTI request in Chhattisgarh? A:
+
+Q12. What should I include in an RTI application? A:
+
+- Your name and contact details
+- Clear description of information needed
+- Preferred format (printed, email,etc. )
+- application fee
+- Specific dates years if applicable

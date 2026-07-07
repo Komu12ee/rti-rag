@@ -1,0 +1,16 @@
+# FAQ Chunk 366
+Document: 500_cgrti
+Source: structured.md
+Pages: 28
+Section: Advanced Timeline & Procedural Issues
+Question: Q370. "Appeal fee charged when it shouldnt what to do?" A: File SIC complaint about illegal appeal fee. SIC will direct refund.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 43
+
+---
+
+## Advanced Timeline & Procedural Issues
+
+Q370. "Appeal fee charged when it shouldnt what to do?" A: File SIC complaint about illegal appeal fee. SIC will direct refund.

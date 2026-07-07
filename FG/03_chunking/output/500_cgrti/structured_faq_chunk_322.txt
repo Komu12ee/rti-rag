@@ -1,0 +1,16 @@
+# FAQ Chunk 322
+Document: 500_cgrti
+Source: structured.md
+Pages: 25
+Section: 7.3 Public Works Department ( PWD) RTI Questions
+Question: Q326. "Tender for supplies how awarded?" A: Yes. Request: tender document, bidders names, marks awarded, selection criteria, contract copy.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 55
+
+---
+
+## 7.3 Public Works Department ( PWD) RTI Questions
+
+Q326. "Tender for supplies how awarded?" A: Yes. Request: tender document, bidders names, marks awarded, selection criteria, contract copy.

@@ -1,0 +1,28 @@
+## Question variants all map to this one provision
+
+- 1. What does Section 10(2) of the Right to Information Act, 2005 provide?
+- 2. Explain RTI Act Section 10(2): Notice requirements for partial disclosure.
+- 4. सूचना का अधिकार अधिनियम, 2005 की धारा 10(2) में क्या प्रावधान है?
+- 3. What is Act 10K2) in RTI? 1 need the rule for severability.
+- 5. धारा 10(2) का सरल अर्थ क्या है आंशिक प्रकटीकरण हेतु सूचना अपेक्षाएं?
+- 6. RTI Act 10(2) ka rule kya hai? आंशिक प्रकटीकरण हेतु सूचना अपेक्षाएं के बारे में बताइए|
+- 7. In this situation: A document contains both exempt and non exempt content a report with one confidential annexure). Does Section 10(2) apply, and what does it say? (e.g.
+- 8. "10(2) RTI law me kya hai?" / "10(2) ka matlab?"
+
+## Answer
+
+English definition: When granting access to part of a record, the PIO shall notify the applicant: (a) that only part is being provided; (b) reasons for the decision including findings on material facts; (c) name designation of decision maker; (d) fee details and deposit amount; (e) applicants reviewlappeal rights, appellate authority particulars and time limits.
+
+हिंदी परिभाषाः अभिलेख के किसी भाग तक पहुंच देते समय, PIO आवेदक को सूचित करेगाः (क) केवल एक भाग प्रदान किया जा रहा हैः (ख) विनिश्चय के कारणः (ग) विनिश्चयकर्ता का नाम| पदनामः (घ॰ शुल्क विवरण और जमा राशिः (ङ) आवेदक के समीक्षा अपील अधिकार, अपीलीय प्राधिकरण विवरण और समय-सीमा|
+
+Retrieval anchors: Notice requirements for partial disclosure; आंशिक प्रकटीकरण हेतु सूचना अपेक्षाएं; severability partial access; redaction; part of record
+
+## Typical contexts
+
+- A document contains both exempt and non exempt content a report with one confidential annexure) (e.g.
+
+PIO implementation note: Never use a partial exemption in one paragraph annexure to justify withholding an entire multi-part document. Apply redaction and issue the Section 10(2) notice with full reasons for the redacted portion.
+
+- Validating whether a blanket rejection should instead be a redactedlpartial disclosure
+
+Source reference: RTI Rule Book, pp. 17 18

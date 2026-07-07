@@ -1,0 +1,16 @@
+# FAQ Chunk 156
+Document: 500_cgrti
+Source: structured.md
+Pages: 13
+Section: 4.2 Information Existence & Scope Confusion
+Question: Q160. Can [ ask "provide proof that decision was made transparently"? A: Too vague. Ask specifically: "minutes of meeting " "file noting " "approval email," etc.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 57
+
+---
+
+## 4.2 Information Existence & Scope Confusion
+
+Q160. Can [ ask "provide proof that decision was made transparently"? A: Too vague. Ask specifically: "minutes of meeting " "file noting " "approval email," etc.

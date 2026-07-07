@@ -1,0 +1,16 @@
+# FAQ Chunk 271
+Document: 500_cgrti
+Source: structured.md
+Pages: 22
+Section: 6.3 CG Departments & PIOs
+Question: Q274. Can I file RTI to Chief Minister's office (CMO)? A: Yes, CMO has PIO. But for policyrelated information, specific department is better.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 50
+
+---
+
+## 6.3 CG Departments & PIOs
+
+Q274. Can I file RTI to Chief Minister's office (CMO)? A: Yes, CMO has PIO. But for policyrelated information, specific department is better.

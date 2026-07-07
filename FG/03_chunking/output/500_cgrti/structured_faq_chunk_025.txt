@@ -1,0 +1,16 @@
+# FAQ Chunk 25
+Document: 500_cgrti
+Source: structured.md
+Pages: 3
+Section: L.4 Fees & Payment
+Question: Q28. What if 1 want information in digital format ( CD, email)? A: You may pay cost of medium (CDIDVD) typically 310 20. Email delivery is usually free.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 48
+
+---
+
+## L.4 Fees & Payment
+
+Q28. What if 1 want information in digital format ( CD, email)? A: You may pay cost of medium (CDIDVD) typically 310 20. Email delivery is usually free.

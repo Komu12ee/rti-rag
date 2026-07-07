@@ -1,0 +1,16 @@
+# FAQ Chunk 10
+Document: 500_cgrti
+Source: structured.md
+Pages: 2
+Section: QlL. How do I file an RTI request in Chhattisgarh? A:
+Question: Q13. Can I file RTI online in Chhattisgarh? A: Yes! Visit https   rtionlinecg govin to file online. You can upload documents pay fee online, and track your application status
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 66
+
+---
+
+## QlL. How do I file an RTI request in Chhattisgarh? A:
+
+Q13. Can I file RTI online in Chhattisgarh? A: Yes! Visit https   rtionlinecg govin to file online. You can upload documents pay fee online, and track your application status

@@ -1,0 +1,16 @@
+# FAQ Chunk 91
+Document: 500_cgrti
+Source: structured.md
+Pages: 9
+Section: 3.l Legal Framework & Interpretation
+Question: Q93. What is "disproportionate diversion of resources"? A: PIO can refuse if responding would excessively strain resources. But threshold is high must be proven.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 48
+
+---
+
+## 3.l Legal Framework & Interpretation
+
+Q93. What is "disproportionate diversion of resources"? A: PIO can refuse if responding would excessively strain resources. But threshold is high must be proven.

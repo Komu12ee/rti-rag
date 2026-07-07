@@ -1,0 +1,24 @@
+# FAQ Chunk 48
+Document: 500_cgrti
+Source: structured.md
+Pages: 5-6
+Section: 2.2 Exemptions & What Cannot Be Requested
+Question: Q51. What information is NOT provided under RTI? A: Information falling under Sections 8&9:
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 74
+
+---
+
+## 2.2 Exemptions & What Cannot Be Requested
+
+Q51. What information is NOT provided under RTI? A: Information falling under Sections 8&9:
+
+- Sovereignty security matters
+- Court forbidden information
+- Cabinet deliberations
+- Trade secrets
+- Personal privacy
+- Investigation details (confidential)
+- Copyright protected material

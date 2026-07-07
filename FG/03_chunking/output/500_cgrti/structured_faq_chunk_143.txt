@@ -1,0 +1,16 @@
+# FAQ Chunk 143
+Document: 500_cgrti
+Source: structured.md
+Pages: 12
+Section: 4.1 Timeline Complications
+Question: Q1477. What if transfer happens on day 291 A: Receiving department full 30 days from transfer date, not remaining 1 gets day.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 39
+
+---
+
+## 4.1 Timeline Complications
+
+Q1477. What if transfer happens on day 291 A: Receiving department full 30 days from transfer date, not remaining 1 gets day.

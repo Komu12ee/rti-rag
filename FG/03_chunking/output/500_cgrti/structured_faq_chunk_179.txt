@@ -1,0 +1,16 @@
+# FAQ Chunk 179
+Document: 500_cgrti
+Source: structured.md
+Pages: 15
+Section: 4.5 Appeal & Escalation Tricky Cases
+Question: Q183. What if appeal officer delays beyond 45 days? A: Deemed approval information must be disclosed. You can also escalate to SIC.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 49
+
+---
+
+## 4.5 Appeal & Escalation Tricky Cases
+
+Q183. What if appeal officer delays beyond 45 days? A: Deemed approval information must be disclosed. You can also escalate to SIC.

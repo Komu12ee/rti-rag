@@ -1,0 +1,22 @@
+# FAQ Chunk 27
+Document: 500_cgrti
+Source: structured.md
+Pages: 3-4
+Section: L.4 Fees & Payment
+Question: Q30. How do I pay the 3l0 fee? A: Tou can pay through:
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 71
+
+---
+
+## L.4 Fees & Payment
+
+Q30. How do I pay the 3l0 fee? A: Tou can pay through:
+
+- Online portal (rtionline cg govin ) via card UPI
+- Post office (postal order)
+- Bank draft
+- Direct payment at PIO office
+- Cash (if deposited directly)

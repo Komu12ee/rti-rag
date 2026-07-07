@@ -1,0 +1,16 @@
+# FAQ Chunk 140
+Document: 500_cgrti
+Source: structured.md
+Pages: 12
+Section: 4.1 Timeline Complications
+Question: Q144. What if received on 3lst, how is 30 days counted? A: From 3lst, counting 30 you to 3Oth of next month (or last day if shorter month). days gets
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 54
+
+---
+
+## 4.1 Timeline Complications
+
+Q144. What if received on 3lst, how is 30 days counted? A: From 3lst, counting 30 you to 3Oth of next month (or last day if shorter month). days gets

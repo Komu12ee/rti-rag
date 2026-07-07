@@ -1,0 +1,29 @@
+## Question variants all map to this one provision
+
+- 1. What does Section 2(c) of the Right to Information Act, 2005 provide?
+- 2. Explain RTI Act Section 2(c): Central Public Information Officer (CPIO).
+- 3. What is Act 2(c) in RTI? I need the rule for definitions.
+- 5. धारा 2c) का सरल अर्थ क्या है केंद्रीय लोक सूचना अधिकारी?
+- 4. सूचना का अधिकार अधिनियम, 2005 की धारा 2c) में क्या प्रावधान है?
+- 6. RTI Act 2(c) ka rule kya hai? केंद्रीय लोक सूचना अधिकारी के बारे में बताइए|
+- 7. In this situation: query requiring interpretation of a statutory term. Does Section 2(c) apply, and what does it say? Any
+- 8. "2(c) RTI law me kya hai? " "2(c) ka matlab? "
+
+## Answer
+
+English definition: An officer designated as such under Section 5(1 ) by a central public authority, responsible for providing information to RTI applicants.
+
+हिंदीं परिभाषाः किसी केंद्रीय सार्वजनिक प्राधिकरण द्वारा धारा 581 ) के अधीन पदाभिहित अधिकारी, जो RTI आवेदकों को सूचना प्रदान करने हेतु उत्तरदायी है|
+
+Retrieval anchors: Central Public Information Officer (CPIO); केंद्रीय लोक सूचना अधिकारी; definitions; appropriate government; public authority; information; record; third party CPIO; SPIO
+
+## Typical contexts
+
+- query requiring interpretation of a statutory term Any
+- Determining whether a body qualifies as a 'Public Authority (e.g. NGO substantially financed by government)
+- Determining which ' Government' is appropriate for an application
+- Determining if requested material qualifies as 'Information' under the Act
+
+PIO implementation note: Use this section first when validating whether the receiving the RTI query is in fact a 'public authority obligated to respond, and whether the material sought falls within the definition of 'information'. body
+
+Source reference: RTI Rule Book, pp. 2 6

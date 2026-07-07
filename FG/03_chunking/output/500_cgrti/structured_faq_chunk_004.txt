@@ -1,0 +1,16 @@
+# FAQ Chunk 4
+Document: 500_cgrti
+Source: structured.md
+Pages: 1
+Section: L.l What is RTI & Basic Rights
+Question: Q2. Who can file an RTI request? A: Any person can file an RTI request - citizens, businesses, NGOs, and even non citizens. There is no age restriction ( though minors typically require guardian assistance ).
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 62
+
+---
+
+## L.l What is RTI & Basic Rights
+
+Q2. Who can file an RTI request? A: Any person can file an RTI request - citizens, businesses, NGOs, and even non citizens. There is no age restriction ( though minors typically require guardian assistance ).

@@ -1,0 +1,16 @@
+# FAQ Chunk 150
+Document: 500_cgrti
+Source: structured.md
+Pages: 13
+Section: 4.2 Information Existence & Scope Confusion
+Question: Q154. Can I ask for "all communications" between two people? A: Too vague. You must specify: emails, letters, meetings or which specific period project.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 50
+
+---
+
+## 4.2 Information Existence & Scope Confusion
+
+Q154. Can I ask for "all communications" between two people? A: Too vague. You must specify: emails, letters, meetings or which specific period project.

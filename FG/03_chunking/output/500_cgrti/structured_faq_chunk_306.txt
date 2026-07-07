@@ -1,0 +1,16 @@
+# FAQ Chunk 306
+Document: 500_cgrti
+Source: structured.md
+Pages: 24
+Section: 7.1 Education Department RTI Questions
+Question: Q309. "Are books and study material available?" A: Yes. Request: annual budget, books purchased, supply list, inventory, damage replacement record.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 45
+
+---
+
+## 7.1 Education Department RTI Questions
+
+Q309. "Are books and study material available?" A: Yes. Request: annual budget, books purchased, supply list, inventory, damage replacement record.

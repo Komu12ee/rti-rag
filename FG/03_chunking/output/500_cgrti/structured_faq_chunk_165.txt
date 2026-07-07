@@ -1,0 +1,16 @@
+# FAQ Chunk 165
+Document: 500_cgrti
+Source: structured.md
+Pages: 14
+Section: 4.3 Department Confusion & Routing
+Question: Q169. If information is held by both state and district office, whom do L approach? A: State level office ( SIC supervises state level) . They coordinate with district if needed.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 51
+
+---
+
+## 4.3 Department Confusion & Routing
+
+Q169. If information is held by both state and district office, whom do L approach? A: State level office ( SIC supervises state level) . They coordinate with district if needed.

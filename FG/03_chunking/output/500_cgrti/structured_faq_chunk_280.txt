@@ -1,0 +1,16 @@
+# FAQ Chunk 280
+Document: 500_cgrti
+Source: structured.md
+Pages: 22
+Section: 6.4 CG Specific Procedures & Rules
+Question: Q283. What is typical timeline for CG departments to respond? A: Standard: 30 With third party notification: 40 days. Many departments comply by day 30. days.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 52
+
+---
+
+## 6.4 CG Specific Procedures & Rules
+
+Q283. What is typical timeline for CG departments to respond? A: Standard: 30 With third party notification: 40 days. Many departments comply by day 30. days.

@@ -1,0 +1,16 @@
+# FAQ Chunk 22
+Document: 500_cgrti
+Source: structured.md
+Pages: 3
+Section: 13 Timeline & Response
+Question: Q25. Will [ get response on the exact 3Oth day? A: No, deadline is "within 30 days" meaning by the end of 3Oth Response can come any up to day 30. day. day
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 53
+
+---
+
+## 13 Timeline & Response
+
+Q25. Will [ get response on the exact 3Oth day? A: No, deadline is "within 30 days" meaning by the end of 3Oth Response can come any up to day 30. day. day

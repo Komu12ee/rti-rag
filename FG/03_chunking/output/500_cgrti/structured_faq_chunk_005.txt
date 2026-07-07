@@ -1,0 +1,16 @@
+# FAQ Chunk 5
+Document: 500_cgrti
+Source: structured.md
+Pages: 1
+Section: L.l What is RTI & Basic Rights
+Question: Q3. Is RTI available in Chhattisgarh? A: Yes, completely. Chhattisgarh State Information Commission (SIC) is operational at Naya Raipur and handles all RTI matters at state level. All state departments must comply.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 69
+
+---
+
+## L.l What is RTI & Basic Rights
+
+Q3. Is RTI available in Chhattisgarh? A: Yes, completely. Chhattisgarh State Information Commission (SIC) is operational at Naya Raipur and handles all RTI matters at state level. All state departments must comply.

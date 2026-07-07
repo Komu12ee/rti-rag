@@ -1,0 +1,26 @@
+## Question variants all map to this one provision
+
+- 1. What does Section 2O(transfer grounds) of the Right to Information Act, 2005 provide?
+- 2. Explain RTI Act Section 2O(transfer grounds): Grounds for transfer.
+- 3. What is Act 2O(transfer grounds) in RTI? I need the rule for transfer between commissions.
+- 4. सूचना का अधिकार अधिनियम, 2005 की धारा 2o(transfer grounds) में क्या प्रावधान है?
+- 5. धारा 2O(transfer grounds) का सरल अर्थ क्या है - हस्तांतरण के आधार?
+- 6. RTI Act 2O(transfer grounds) ka rule kya hai? हस्तांतरण के आधार के बारे में बताइए|
+- 7. In this situation: An appeal involves overlapping central and state public authority jurisdictions. Does Section 2o(transfer grounds) apply, and what does it say?
+- 8. "2o(transfer grounds) RTI law me kya hai? " 2o(transfer grounds ) ka matlab? "
+
+## Answer
+
+English definition: Matter involves both central and state authorities issue has multi-state implications; central authority is primarily involved; interest requires transfer. public
+
+हिंदीं परिभाषाः मामले में केंद्रीय और राज्य दोनों प्राधिकार शामिल हों; मुद्दे के बहु राज्य निहितार्थ हों; केंद्रीय प्राधिकार मुख्य रूप से शामिल होः लोकहित को हस्तांतरण की आवश्यकता होl
+
+Retrieval anchorsः Grounds for transfer; हस्तांतरण के आधार; transfer between commissions multi-state; coordination
+
+## Typical contexts
+
+- An appeal involves overlapping central and state public authority jurisdictions
+
+PIO implementation note: Rarely invoked; flag only in cases with genuine multi-jurisdictional overlap.
+
+Source reference: RTI Rule Book, Section 20 (cross reference)

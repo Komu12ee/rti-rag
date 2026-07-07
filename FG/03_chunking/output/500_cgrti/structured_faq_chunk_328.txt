@@ -1,0 +1,16 @@
+# FAQ Chunk 328
+Document: 500_cgrti
+Source: structured.md
+Pages: 26
+Section: 7.4 Revenue Department RTI Questions
+Question: Q332. "Property tax how is it calculated?" A: Yes. Request: tax assessment, property value, tax rate applied, bills, payment history
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 46
+
+---
+
+## 7.4 Revenue Department RTI Questions
+
+Q332. "Property tax how is it calculated?" A: Yes. Request: tax assessment, property value, tax rate applied, bills, payment history

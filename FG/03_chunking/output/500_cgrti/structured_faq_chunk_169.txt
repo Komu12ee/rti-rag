@@ -1,0 +1,16 @@
+# FAQ Chunk 169
+Document: 500_cgrti
+Source: structured.md
+Pages: 14
+Section: 4.4 Exemptions - Tricky Applications
+Question: Q173. What if cabinet paper discusses corruption must it still be hidden? A: Section 8(2 ) public interest override applies Corruption disclosure overrides cabinet confidentiality
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 52
+
+---
+
+## 4.4 Exemptions - Tricky Applications
+
+Q173. What if cabinet paper discusses corruption must it still be hidden? A: Section 8(2 ) public interest override applies Corruption disclosure overrides cabinet confidentiality

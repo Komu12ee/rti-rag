@@ -1,0 +1,16 @@
+# FAQ Chunk 186
+Document: 500_cgrti
+Source: structured.md
+Pages: 15-16
+Section: 4.5 Appeal & Escalation Tricky Cases
+Question: Q190. Can [ appeal High Court decision to Supreme Court? A: Tes, via Special Leave Petition to Supreme Court if High Court verdict is unreasonable.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 47
+
+---
+
+## 4.5 Appeal & Escalation Tricky Cases
+
+Q190. Can [ appeal High Court decision to Supreme Court? A: Tes, via Special Leave Petition to Supreme Court if High Court verdict is unreasonable.

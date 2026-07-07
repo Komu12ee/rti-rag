@@ -1,0 +1,16 @@
+# FAQ Chunk 72
+Document: 500_cgrti
+Source: structured.md
+Pages: 7
+Section: 2.4 Format & Access Methods
+Question: Q75. Can I ask for soft copies instead of printed copies? A: Yes, this reduces cost ( =2 page for vs. few rupees for CDlemail). print
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 48
+
+---
+
+## 2.4 Format & Access Methods
+
+Q75. Can I ask for soft copies instead of printed copies? A: Yes, this reduces cost ( =2 page for vs. few rupees for CDlemail). print

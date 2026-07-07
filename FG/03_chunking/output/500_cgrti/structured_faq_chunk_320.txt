@@ -1,0 +1,16 @@
+# FAQ Chunk 320
+Document: 500_cgrti
+Source: structured.md
+Pages: 25
+Section: 7.3 Public Works Department ( PWD) RTI Questions
+Question: Q324. "Water pipeline no construction progress?" A: Tes. Request: project details, work plan, contractor selected, payment released, completion status. why
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 52
+
+---
+
+## 7.3 Public Works Department ( PWD) RTI Questions
+
+Q324. "Water pipeline no construction progress?" A: Tes. Request: project details, work plan, contractor selected, payment released, completion status. why

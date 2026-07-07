@@ -1,0 +1,16 @@
+# FAQ Chunk 123
+Document: 500_cgrti
+Source: structured.md
+Pages: 11
+Section: 3.4 Suo Motu Disclosure
+Question: Q127. How is suo motu disclosure monitored? A: State Information Commission prepares annual report on compliance. Citizens can also file complaints
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 39
+
+---
+
+## 3.4 Suo Motu Disclosure
+
+Q127. How is suo motu disclosure monitored? A: State Information Commission prepares annual report on compliance. Citizens can also file complaints

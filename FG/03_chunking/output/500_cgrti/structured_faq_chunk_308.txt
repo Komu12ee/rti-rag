@@ -1,0 +1,16 @@
+# FAQ Chunk 308
+Document: 500_cgrti
+Source: structured.md
+Pages: 24
+Section: 7.2 Health Department RTI Questions
+Question: Q311. "How many doctors are working in hospital?" A: Tes. File RTI requesting authorized staff position, actual staff deployed, sanctioned strength, vacancies.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 50
+
+---
+
+## 7.2 Health Department RTI Questions
+
+Q311. "How many doctors are working in hospital?" A: Tes. File RTI requesting authorized staff position, actual staff deployed, sanctioned strength, vacancies.

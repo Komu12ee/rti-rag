@@ -1,0 +1,16 @@
+# FAQ Chunk 269
+Document: 500_cgrti
+Source: structured.md
+Pages: 22
+Section: 6.3 CG Departments & PIOs
+Question: Q272. What are major departments in Chhattisgarh where I can file RTI? A: Secretariat, Finance, Revenue, PWD, Health, Education, Water Resources, Forest, Agriculture, Urban Development, Panchayat & Rural Development, Police, etc.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 69
+
+---
+
+## 6.3 CG Departments & PIOs
+
+Q272. What are major departments in Chhattisgarh where I can file RTI? A: Secretariat, Finance, Revenue, PWD, Health, Education, Water Resources, Forest, Agriculture, Urban Development, Panchayat & Rural Development, Police, etc.

@@ -1,0 +1,16 @@
+# FAQ Chunk 82
+Document: 500_cgrti
+Source: structured.md
+Pages: 8
+Section: 2.4 Format & Access Methods
+Question: Q85. Can [ request information about police cases? A: You can request FIR details, charge sheet if you're stakeholder Investigation techniques sources are protected (Section 8(1 ) (h)).
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 50
+
+---
+
+## 2.4 Format & Access Methods
+
+Q85. Can [ request information about police cases? A: You can request FIR details, charge sheet if you're stakeholder Investigation techniques sources are protected (Section 8(1 ) (h)).

@@ -1,0 +1,16 @@
+# FAQ Chunk 24
+Document: 500_cgrti
+Source: structured.md
+Pages: 3
+Section: L.4 Fees & Payment
+Question: Q27. Are there additional charges if I want printed copies? A: Yes, copy charge is =2 per page for black & white printouts.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 43
+
+---
+
+## L.4 Fees & Payment
+
+Q27. Are there additional charges if I want printed copies? A: Yes, copy charge is =2 per page for black & white printouts.

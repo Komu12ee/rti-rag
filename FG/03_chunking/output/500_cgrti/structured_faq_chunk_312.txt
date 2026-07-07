@@ -1,0 +1,16 @@
+# FAQ Chunk 312
+Document: 500_cgrti
+Source: structured.md
+Pages: 25
+Section: 7.2 Health Department RTI Questions
+Question: Q316. "Hospital cleanliness any inspection?" A: Yes. Request: sanitation audit report, cleanliness inspection, violations found, corrective action timeline.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 49
+
+---
+
+## 7.2 Health Department RTI Questions
+
+Q316. "Hospital cleanliness any inspection?" A: Yes. Request: sanitation audit report, cleanliness inspection, violations found, corrective action timeline.

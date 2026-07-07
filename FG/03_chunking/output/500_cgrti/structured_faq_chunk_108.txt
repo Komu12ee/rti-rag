@@ -1,0 +1,16 @@
+# FAQ Chunk 108
+Document: 500_cgrti
+Source: structured.md
+Pages: 10
+Section: 3.3 Exemptions Advanced
+Question: Q112. Can "official secrets" always be withheld? A: No, Section 8(2) allows disclosure if public interest outweighs official secrecy. RTI supersedes Official Secrets Act, 1923.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 54
+
+---
+
+## 3.3 Exemptions Advanced
+
+Q112. Can "official secrets" always be withheld? A: No, Section 8(2) allows disclosure if public interest outweighs official secrecy. RTI supersedes Official Secrets Act, 1923.

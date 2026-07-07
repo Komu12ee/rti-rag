@@ -1,0 +1,16 @@
+# FAQ Chunk 157
+Document: 500_cgrti
+Source: structured.md
+Pages: 13
+Section: 4.3 Department Confusion & Routing
+Question: Q161. 1 don't know which department has information can [ ask multiple? A: Better to file to likely department. If wrong, they transfer (5 days). Alternatively, file to Chief Secretary who can route.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 53
+
+---
+
+## 4.3 Department Confusion & Routing
+
+Q161. 1 don't know which department has information can [ ask multiple? A: Better to file to likely department. If wrong, they transfer (5 days). Alternatively, file to Chief Secretary who can route.

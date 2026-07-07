@@ -3,11 +3,25 @@ import json
 import atexit
 import time
 import sys
+import re
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 import requests
 from qdrant_client import QdrantClient
 from FlagEmbedding import BGEM3FlagModel, FlagReranker
+
+WEBUI_DIR = Path(__file__).resolve().parents[2] / "05_webui"
+
+if str(WEBUI_DIR) not in sys.path:
+    sys.path.insert(0, str(WEBUI_DIR))
+
+from services.llm_provider import (
+    LLMProviderError,
+    current_llm_label,
+    generate_text,
+    stream_text,
+)
+
 
 for stream_name in ("stdout", "stderr"):
     stream = getattr(sys, stream_name, None)
@@ -57,7 +71,7 @@ def _get_config():
             if name.strip()
         ]
         if configured_collections
-        else [primary_collection, "cgsic_important_decisions_v1"]
+        else [primary_collection]
     )
     return {
         "chunk_dir": Path(os.getenv("CHIPPY_CHUNK_DIR", str(root.parent / "chunking" / "output_child_first"))),
@@ -74,6 +88,14 @@ def _get_config():
         "qdrant_port": int(os.getenv("QDRANT_PORT", "6333")),
         "qdrant_api_key": os.getenv("QDRANT_API_KEY", None),
         "qdrant_timeout": int(os.getenv("QDRANT_TIMEOUT", "60")),
+        "embedding_model": os.getenv(
+            "EMBEDDING_MODEL",
+            str(root / "models" / "bge-m3"),
+        ),
+        "reranker_model": os.getenv(
+            "RERANKER_MODEL",
+            str(root / "models" / "bge-reranker-v2-m3"),
+        ),
         "encode_batch_size": 8,
         "max_length": 1024,
         "qdrant_connect_retries": int(os.getenv("CHIPPY_QDRANT_CONNECT_RETRIES", "3")),
@@ -84,30 +106,11 @@ CFG = _get_config()
 CHUNK_DIR = CFG["chunk_dir"]
 COLLECTION_NAME = CFG["collection"]
 COLLECTION_NAMES = list(dict.fromkeys(CFG["collections"] or [COLLECTION_NAME]))
+EMBEDDING_MODEL = CFG["embedding_model"]
+RERANKER_MODEL = CFG["reranker_model"]
 ENCODE_BATCH_SIZE = CFG["encode_batch_size"]
 MAX_LENGTH = CFG["max_length"]
 
-# ──────────────────────────────────────────────────────────────
-# GROQ API Configuration (COMMENTED OUT - kept for future use)
-# ──────────────────────────────────────────────────────────────
-# GROQ_API_KEY = os.getenv("GROQ_API_KEY", None)
-# GROQ_MODEL = os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile")
-# GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions"
-
-# ──────────────────────────────────────────────────────────────
-# OLLAMA Local API Configuration (ACTIVE)
-# ──────────────────────────────────────────────────────────────
-OLLAMA_HOST = os.getenv("OLLAMA_HOST", "localhost")
-OLLAMA_PORT = int(os.getenv("OLLAMA_PORT", "11434"))
-OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "qwen2.5:3b")
-OLLAMA_API_URL = f"http://{OLLAMA_HOST}:{OLLAMA_PORT}/api/generate"
-
-# ──────────────────────────────────────────────────────────────
-# SARVAM AI API Configuration (COMMENTED OUT)
-# ──────────────────────────────────────────────────────────────
-# SARVAM_API_KEY = os.getenv("SARVAM_API_KEY", "sk_hhusezzy_cnfsLw6EbCOox523LJGXm15G")
-# SARVAM_MODEL = os.getenv("SARVAM_MODEL", "sarvam-105b")  # Sarvam AI's 105B model
-# SARVAM_API_URL = "https://api.sarvam.ai/v1/chat/completions"
 
 # ── Retrieval Configuration ────────────────────────────────────
 HYBRID_ALPHA = 0.6           # 0.0 = pure sparse, 1.0 = pure dense (0.6 = 60% dense, 40% sparse)
@@ -183,18 +186,34 @@ kg_retriever = None
 kg = None
 _models_loaded = False
 
+def ensure_embedding_model_loaded():
+    """
+    Load only BGE-M3.
+
+    PIO directory fallback needs dense + sparse embeddings but does not need the
+    legal reranker or knowledge graph. Keeping this separate avoids expensive
+    first-query startup for an officer lookup.
+    """
+    global model
+
+    if model is not None:
+        return
+
+    print(f"Loading embedding model (deferred): {EMBEDDING_MODEL}")
+    model = BGEM3FlagModel(EMBEDDING_MODEL, use_fp16=True)
+    model.return_sparse = True
+
+
 def ensure_models_loaded():
-    """Load embedding, reranker and KG models on first use."""
-    global model, reranker, kg_retriever, kg, _models_loaded
+    """Load embedding, reranker and KG models for legal RAG retrieval."""
+    global reranker, kg_retriever, kg, _models_loaded
     if _models_loaded:
         return
 
-    print("Loading embedding model (deferred)...")
-    model = BGEM3FlagModel("BAAI/bge-m3", use_fp16=True)
-    model.return_sparse = True
+    ensure_embedding_model_loaded()
 
-    print("Loading reranker model (deferred)...")
-    reranker = FlagReranker("BAAI/bge-reranker-v2-m3", use_fp16=True)
+    print(f"Loading reranker model (deferred): {RERANKER_MODEL}")
+    reranker = FlagReranker(RERANKER_MODEL, use_fp16=True)
 
     # Load Knowledge Graph (if available)
     if USE_KNOWLEDGE_GRAPH:
@@ -286,7 +305,7 @@ def _cleanup_qdrant():
 atexit.register(_cleanup_qdrant)
 
 # ── Validate LLM Configuration ───────────────────────────────
-print(f"✓ Ollama local configured with model: {OLLAMA_MODEL} at {OLLAMA_HOST}:{OLLAMA_PORT}")
+print(f"✓ LLM provider configured: {current_llm_label()}")
 
 # # ── Validate Groq Configuration (COMMENTED OUT) ──────────────
 # if not GROQ_API_KEY:
@@ -314,46 +333,38 @@ def point_identity(point):
 
 # ── Helper: Expand query into multiple perspectives ────────────
 def expand_query(original_query):
-    """Generate multiple query variations to improve retrieval coverage.
-    
-    Uses keyword expansion and perspective shifts:
-    - Original query
-    - Query + context keywords (approval, implementation, decision, etc.)
-    - Query + document type keywords (agenda, minutes, meeting, etc.)
-    - Query with synonyms
     """
-    variations = [original_query]  # Always include original
-    
-    # Add context-specific variations for government documents
-    context_keywords = ["approval", "decision", "implementation", "status", "progress"]
-    doc_keywords = ["meeting", "agenda", "minutes", "committee", "approval"]
-    
-    for keyword in context_keywords:
-        if keyword not in original_query.lower():
-            variations.append(f"{original_query} {keyword}")
-    
-    for keyword in doc_keywords:
-        if keyword not in original_query.lower():
-            variations.append(f"{original_query} {keyword}")
-    
-    # Add detail-focused variations
-    variations.append(f"{original_query} details implementation")
-    variations.append(f"{original_query} decision taken")
-    
-    # Remove duplicates while preserving order
-    seen = set()
-    unique_variations = []
-    for v in variations:
-        v_lower = v.lower()
-        if v_lower not in seen:
-            seen.add(v_lower)
-            unique_variations.append(v)
-    
-    return unique_variations[:5]  # Cap at 5 variations to avoid excessive querying
+    Keep retrieval focused.
+
+    Generic additions such as 'approval', 'decision', and 'implementation'
+    pollute RTI Act and FAQ retrieval, especially for legal-section queries.
+    """
+    query = (original_query or "").strip()
+    return [query] if query else []
+# ── Helper: Active collection selection ─────────────────────────
+def _resolve_active_collections(collection_names=None):
+    """Return a de-duplicated per-call collection set without changing defaults."""
+    raw_names = collection_names if collection_names is not None else COLLECTION_NAMES
+    if isinstance(raw_names, str):
+        raw_names = [raw_names]
+
+    cleaned = []
+    for value in raw_names or []:
+        name = str(value or "").strip()
+        if name and name not in cleaned:
+            cleaned.append(name)
+
+    return cleaned
+
 
 # ── Helper: Single query retrieval ─────────────────────────────
-def perform_single_retrieval(query):
-    """Perform single query retrieval and return results."""
+def perform_single_retrieval(query, collection_names=None, per_collection_limit=20):
+    """Perform one retrieval pass against the selected Qdrant collections."""
+    active_collections = _resolve_active_collections(collection_names)
+    if not active_collections:
+        print("  No active Qdrant collections were selected.")
+        return None
+
     try:
         ensure_models_loaded()
         qdrant = ensure_qdrant_client()
@@ -392,7 +403,9 @@ def perform_single_retrieval(query):
             result = qdrant.query_points(
                 collection_name=collection_name,
                 query=query_dense,
-                limit=20,
+                limit=max(1, int(per_collection_limit)),
+                with_payload=True,
+                with_vectors=False,
             )
             points = list(result.points) if result and result.points else []
             for point in points:
@@ -401,11 +414,11 @@ def perform_single_retrieval(query):
             return points
 
         collection_points = []
-        workers = max(1, min(len(COLLECTION_NAMES), 4))
+        workers = max(1, min(len(active_collections), 4))
         with ThreadPoolExecutor(max_workers=workers) as executor:
             futures = {
                 executor.submit(search_collection, collection): collection
-                for collection in COLLECTION_NAMES
+                for collection in active_collections
             }
             for future in as_completed(futures):
                 collection = futures[future]
@@ -439,7 +452,7 @@ def perform_single_retrieval(query):
         return None
 
 # ── Helper: Multi-query retrieval ──────────────────────────────
-def multi_query_retrieval(query):
+def multi_query_retrieval(query, collection_names=None, per_collection_limit=20):
     """Retrieve results using multiple query variations and merge them.
     
     Benefits:
@@ -452,9 +465,13 @@ def multi_query_retrieval(query):
     
     if not USE_MULTI_QUERY:
         # Fall back to single query
-        result = perform_single_retrieval(query)
+        result = perform_single_retrieval(
+            query,
+            collection_names=collection_names,
+            per_collection_limit=per_collection_limit,
+        )
         if result is None:
-            return None, []
+            return None, [], {}
         return result["dense_results"], result["dense_scores"], result["query_sparse"]
     
     # Expand query into multiple variations
@@ -467,7 +484,11 @@ def multi_query_retrieval(query):
     all_sparse_queries = {}
     
     for i, q_variant in enumerate(query_variations):
-        retrieval_result = perform_single_retrieval(q_variant)
+        retrieval_result = perform_single_retrieval(
+            q_variant,
+            collection_names=collection_names,
+            per_collection_limit=per_collection_limit,
+        )
         if retrieval_result is None:
             continue
         
@@ -608,14 +629,16 @@ def apply_legal_priority(hybrid_scores, points):
     return sorted(boosted, key=lambda x: x[1], reverse=True)
 
 
-def retrieve_context(query, num_context=5, use_kg=True):
+def retrieve_context(query, num_context=5, use_kg=True, collection_names=None, per_collection_limit=20):
     """Retrieve context documents with optional knowledge graph enhancement.
     
     Args:
         query: Search query
         num_context: Number of context results to return
         use_kg: Whether to use KG enhancement (if available)
-    
+        collection_names: Optional per-call Qdrant collection override.
+        per_collection_limit: Candidate count requested from each selected collection.
+
     Returns:
         List of result dicts with 'point', 'score', 'rank', and optionally KG info
     """
@@ -625,7 +648,11 @@ def retrieve_context(query, num_context=5, use_kg=True):
         print("🔍 Retrieving context...")
         
         # Multi-query retrieval (or single-query fallback)
-        dense_results, aggregated_scores, query_sparse = multi_query_retrieval(query)
+        dense_results, aggregated_scores, query_sparse = multi_query_retrieval(
+            query,
+            collection_names=collection_names,
+            per_collection_limit=per_collection_limit,
+        )
         
         if dense_results is None or not dense_results.points:
             print("Error: No results from retrieval.")
@@ -802,160 +829,383 @@ def retrieve_context(query, num_context=5, use_kg=True):
         traceback.print_exc()
         _mark_time("RETRIEVE_CONTEXT")
         return None
+SECTION_QUERY_PATTERN = re.compile(
+    r"(?:\bsection\b|\bsec\.?\b|धारा)\s*"
+    r"([0-9]+(?:\s*\(\s*[0-9A-Za-z]+\s*\))*)",
+    flags=re.IGNORECASE,
+)
 
+
+def _extract_requested_section(query):
+    match = SECTION_QUERY_PATTERN.search(query or "")
+    return match.group(1) if match else None
+
+
+def _normalise_section(value):
+    return re.sub(r"\s+", "", str(value or "").casefold())
+
+
+def _matches_requested_section(payload, section):
+    """
+    Check whether a chunk is specifically about the statutory section
+    asked by the user, for example Section 10 or Section 8(1)(j).
+    """
+    if not section:
+        return False
+
+    fields = (
+        payload.get("legal_reference", ""),
+        payload.get("section", ""),
+        payload.get("question", ""),
+        payload.get("title", ""),
+        payload.get("text", ""),
+    )
+
+    reference_text = " ".join(str(value or "") for value in fields)
+    compact_text = re.sub(r"\s+", "", reference_text.casefold())
+    target = _normalise_section(section)
+
+    if f"section{target}" in compact_text:
+        return True
+
+    if f"धारा{target}" in compact_text:
+        return True
+
+    # Matches statutory text such as: "10. (1) ..."
+    return bool(
+        re.search(
+            rf"(?<![0-9]){re.escape(target)}\.",
+            compact_text,
+        )
+    )
+
+
+def _is_statutory_rti_source(payload):
+    source_name = str(
+        payload.get("actual_pdf")
+        or payload.get("source")
+        or ""
+    ).casefold()
+
+    return any(
+        marker in source_name
+        for marker in (
+            "structured_rti",
+            "rti_act",
+            "rti act",
+            "statutory",
+        )
+    )
+
+
+def _select_context_for_generation(query, context_results):
+    """
+    Give the LLM only the strongest evidence.
+
+    Exact RTI Act section query:
+    - Prefer matching statutory chunks.
+    - Do not mix unrelated FAQ chunks.
+
+    Other queries:
+    - Use only the top two retrieved chunks.
+    """
+    if not context_results:
+        return []
+
+    requested_section = _extract_requested_section(query)
+
+    if requested_section:
+        exact_matches = [
+            result
+            for result in context_results
+            if _matches_requested_section(
+                result["point"].payload,
+                requested_section,
+            )
+        ]
+
+        if exact_matches:
+            statutory_matches = [
+                result
+                for result in exact_matches
+                if _is_statutory_rti_source(
+                    result["point"].payload
+                )
+            ]
+
+            return (statutory_matches or exact_matches)[:2]
+
+    return context_results[:2]
+
+
+def _clean_generated_answer(answer):
+    """
+    Remove accidental source sections and raw Markdown because the UI
+    already has a separate 'View sources' control.
+    """
+    cleaned = str(answer or "").strip()
+
+    cleaned = re.split(
+        r"\n\s*(?:\*\*)?"
+        r"(?:sources?|sources?\s+used|source references?)"
+        r"(?:\*\*)?\s*:",
+        cleaned,
+        maxsplit=1,
+        flags=re.IGNORECASE,
+    )[0].strip()
+
+    cleaned = re.sub(
+        r"(?im)^\s*(?:direct answer|explanation)\s*:\s*",
+        "",
+        cleaned,
+    )
+
+    cleaned = cleaned.replace("**", "").replace(">", "")
+    return cleaned.strip()
+
+
+def _env_int(name, default, minimum=1):
+    try:
+        value = int(os.getenv(name, str(default)))
+    except ValueError:
+        value = default
+
+    return max(minimum, value)
+
+
+def _env_reasoning_effort(name, default):
+    value = os.getenv(name, default).strip().casefold()
+    if value in {"", "0", "false", "none", "off"}:
+        return None
+    return value
+
+
+def _is_sarvam_empty_length_error(error):
+    message = str(error)
+    return (
+        "Sarvam returned empty content" in message
+        and '"finish_reason": "length"' in message
+    )
+
+
+def _direct_answer_retry_prompt(prompt):
+    return f"""
+{prompt}
+
+IMPORTANT:
+The previous generation did not produce visible answer text.
+Return the final user-facing answer immediately.
+Do not spend tokens on analysis, internal reasoning, headings, or prefaces.
+Keep the answer concise and grounded only in the reference material.
+""".strip()
+
+
+def _generate_rag_answer_text(prompt):
+    base_max_tokens = _env_int("RAG_ANSWER_MAX_TOKENS", 2500)
+    retry_max_tokens = _env_int("RAG_ANSWER_RETRY_MAX_TOKENS", 6000)
+    timeout_seconds = _env_int("RAG_ANSWER_TIMEOUT_SECONDS", 240)
+    reasoning_effort = _env_reasoning_effort(
+        "RAG_ANSWER_REASONING_EFFORT",
+        "low",
+    )
+
+    attempts = [
+        (prompt, base_max_tokens),
+        (_direct_answer_retry_prompt(prompt), retry_max_tokens),
+    ]
+
+    last_error = None
+
+    for attempt_index, (attempt_prompt, attempt_max_tokens) in enumerate(
+        attempts,
+        start=1,
+    ):
+        try:
+            return generate_text(
+                prompt=attempt_prompt,
+                temperature=0.0,
+                max_tokens=attempt_max_tokens,
+                timeout_seconds=timeout_seconds,
+                reasoning_effort=reasoning_effort,
+            )
+        except LLMProviderError as error:
+            last_error = error
+            if attempt_index == 1 and _is_sarvam_empty_length_error(error):
+                print(
+                    "[Sarvam] Empty visible answer after length stop; "
+                    "retrying normal RAG answer with direct prompt."
+                )
+                continue
+            raise
+
+    raise last_error
+
+
+def _build_rag_answer_prompt(query, context_results):
+    selected_results = _select_context_for_generation(
+        query=query,
+        context_results=context_results,
+    )
+
+    if not selected_results:
+        return None, "No relevant context was found to generate an answer."
+
+    context_parts = []
+
+    for index, result in enumerate(selected_results, start=1):
+        payload = result["point"].payload
+        text = str(payload.get("text", "")).strip()
+
+        if text:
+            context_parts.append(
+                f"[REFERENCE {index}]\n{text}"
+            )
+
+    context_text = "\n\n".join(context_parts)
+
+    if not context_text:
+        return None, "No usable reference text was found to generate an answer."
+
+    system_content = """
+You are an RTI information assistant.
+
+Answer only from the REFERENCE MATERIAL.
+
+Your task is to identify the exact answer and explain it clearly in simple
+language. Do not copy long passages unless the user explicitly asks for
+the exact statutory text.
+
+Rules:
+1. Answer the user's actual question directly.
+2. Do not mention PDFs, files, chunks, sources, databases, retrieved context,
+   or document processing.
+3. Do not output a Sources section. Sources are displayed separately in the UI.
+4. Do not use headings such as "Direct answer" or "Explanation".
+5. Do not invent legal sections, deadlines, facts, cases, names, or examples.
+6. For a statutory section question, explain only the specific statutory rule
+   supported by the reference material.
+7. Do not mix unrelated FAQ information into a statutory-section answer.
+8. For Hindi questions, write natural and clear Devanagari Hindi.
+9. Keep essential legal terms in English only where needed, such as
+   severability, disclosure, exempt information, or public authority.
+10. If the material does not establish the exact answer, state:
+    "I am here to help you find the information from suchna aayog."
+11. Return only the final user-facing answer.
+""".strip()
+
+    prompt = f"""
+SYSTEM RULES:
+{system_content}
+
+REFERENCE MATERIAL:
+---START---
+{context_text}
+---END---
+
+USER QUESTION:
+{query}
+
+FINAL ANSWER:
+""".strip()
+
+    return prompt, None
+
+
+def _stream_rag_answer_text(prompt):
+    max_tokens = _env_int("RAG_ANSWER_MAX_TOKENS", 2500)
+    timeout_seconds = _env_int("RAG_ANSWER_TIMEOUT_SECONDS", 240)
+    reasoning_effort = _env_reasoning_effort(
+        "RAG_ANSWER_REASONING_EFFORT",
+        "low",
+    )
+
+    yield from stream_text(
+        prompt=prompt,
+        temperature=0.0,
+        max_tokens=max_tokens,
+        timeout_seconds=timeout_seconds,
+        reasoning_effort=reasoning_effort,
+    )
 # ── Helper: Generate answer with Llama 3.3 70B via Groq API ─────
 def generate_answer(query, context_results):
-    """Generate answer using local Ollama LLM with retrieved context.
-    
-    Enhanced with knowledge graph information when available:
-    - Mentions key entities found in results
-    - Uses entity relationships for better context
-    - Improves answer grounding with KG data
-    - Shows source PDFs and highlighted excerpts
+    """
+    Generate a concise, grounded answer from the strongest retrieved chunks.
+
+    Sources are shown separately in the Web UI through 'View sources'.
+    They must not be repeated inside the generated answer.
     """
     _mark_time("ANSWER_GENERATION")
-    
-    if not context_results:
-        return "No context found to generate an answer."
-    
-    # Extract query words for highlighting
-    query_words = [w for w in query.lower().split() if len(w) > 3]
-    
-    # Build context string from retrieved documents with source PDFs and highlights
-    context_parts = []
-    source_references = []  # Store source PDF references
-    all_entities = set()  # Collect all entities from results
-    
-    for i, r in enumerate(context_results, 1):
-        payload = r['point'].payload
-        actual_pdf = get_payload_actual_filename(payload)
-        text = payload['text']
-        
-        # Track source PDFs
-        if actual_pdf not in source_references:
-            source_references.append(actual_pdf)
-        
-        # Add KG entities info if available
-        entities_info = ""
-        if "entities" in r and r.get("entities"):
-            entities = r["entities"][:3]  # Top 3 entities
-            entities_info = f" [Entities: {', '.join(entities)}]"
-            all_entities.update(r.get("entities", []))
-        
-        # Format context with source PDF and FULL CHUNK TEXT (not excerpt)
-        context_parts.append(
-            f"[Source {i}: {actual_pdf}]{entities_info}\n{text}"
-        )
-    
-    context_text = "\n\n".join(context_parts)
-    sources_str = ", ".join(source_references)
-    
-    # Build prompt with entity context
-    entity_context = ""
-    if all_entities:
-        entity_context = f"\n\nKey entities found: {', '.join(list(all_entities)[:10])}"
-    
-    system_content = f"""You are a helpful assistant that answers questions based on government and organizational documents. 
-Answer the user's question based on the provided context and key entities found in the documents.
-If the context doesn't contain the information, say so clearly.
 
-IMPORTANT INSTRUCTIONS:
-1. Always mention the specific source PDFs you referenced: {sources_str}
-2. When citing information, explicitly mention which PDF it came from
-3. Use the key entities to provide more contextual and accurate answers{entity_context}
-4. Quote relevant sections when appropriate
-5. Be precise and cite specific dates, decisions, or approvals when available
-6. Format your response clearly with source references"""
-    
-    prompt = f"""<system>
-{system_content}
-</system>
+    prompt, fallback = _build_rag_answer_prompt(query, context_results)
+    if fallback:
+        return fallback
 
-Context from documents:
-{context_text}
-
-Question: {query}
-
-Answer (make sure to cite sources):"""
-    
     try:
-        print(f"\n🤖 Generating answer with local Ollama ({OLLAMA_MODEL})...")
-        response = requests.post(
-            OLLAMA_API_URL,
-            json={
-                "model": OLLAMA_MODEL,
-                "prompt": prompt,
-                "stream": False,
-                "temperature": 0.3,
-            },
-            timeout=180  # 3 minute timeout
+        print(
+            f"\n🤖 Generating answer via "
+            f"{current_llm_label()}..."
         )
-        
-        if response.status_code != 200:
-            return f"Error from local Ollama service: {response.status_code} - {response.text}"
-        
-        result = response.json()
-        answer = result.get("response", "No response generated")
-        
-        # Append source information to the answer
-        answer += f"\n\n**Sources used:**\n" + "\n".join([f"• {pdf}" for pdf in source_references])
-        
+
+        answer = _generate_rag_answer_text(prompt)
+
+        answer = _clean_generated_answer(answer)
+
+        if not answer:
+            return "The model returned an empty answer."
+
         _mark_time("ANSWER_GENERATION")
         return answer
-        
-    except requests.exceptions.ConnectionError:
-        _mark_time("ANSWER_GENERATION")
-        return f"Error: Could not connect to local Ollama service at {OLLAMA_HOST}:{OLLAMA_PORT}. Make sure Ollama is running and has the '{OLLAMA_MODEL}' model downloaded."
-    except Exception as e:
-        _mark_time("ANSWER_GENERATION")
-        return f"Error generating answer via Ollama: {e}"
-    
-    # ── COMMENTED OUT GROQ CODE (for future use) ──────────────────
-    # try:
-    #     print("\n🤖 Generating answer with Groq (Llama 3.3 70B)...")
-    #     response = requests.post(
-    #         GROQ_API_URL,
-    #         headers={
-    #             "Authorization": f"Bearer {GROQ_API_KEY}",
-    #             "Content-Type": "application/json"
-    #         },
-    #         json={
-    #             "model": GROQ_MODEL,
-    #             "messages": [
-    #                 {"role": "system", "content": system_content},
-    #                 {"role": "user", "content": user_message}
-    #             ],
-    #             "temperature": 0.7,
-    #             "max_tokens": 2048,
-    #         },
-    #         timeout=300  # 5 minute timeout
-    #     )
-    #     
-    #     if response.status_code != 200:
-    #         error_msg = response.text
-    #         try:
-    #             error_data = response.json()
-    #             error_msg = error_data.get("error", {}).get("message", error_msg)
-    #         except:
-    #             pass
-    #         return f"Error from Groq API: {response.status_code} - {error_msg}"
-    #     
-    #     result = response.json()
-    #     answer = result.get("choices", [{}])[0].get("message", {}).get("content", "No response generated")
-    #     
-    #     # Append source information to the answer
-    #     answer += f"\n\n**Sources used:**\n" + "\n".join([f"• {pdf}" for pdf in source_references])
-    #     
-    #     return answer
-    # 
-    # except requests.exceptions.ConnectionError:
-    #     return f"Error: Cannot connect to Groq API. Check your internet connection and GROQ_API_KEY."
-    # except requests.exceptions.Timeout:
-    #     return "Error: Groq API request timed out. Please try again."
-    # except Exception as e:
-    #     return f"Error generating answer: {e}"
 
-# ── Main RAG Pipeline ──────────────────────────────────────────
+    except LLMProviderError as error:
+        _mark_time("ANSWER_GENERATION")
+        return (
+            f"Error generating answer via "
+            f"{current_llm_label()}: {error}"
+        )
+
+    except Exception as error:
+        _mark_time("ANSWER_GENERATION")
+        return f"Unexpected answer-generation error: {error}"
+
+
+def generate_answer_stream(query, context_results):
+    """Stream a concise, grounded answer from the strongest retrieved chunks."""
+    _mark_time("ANSWER_GENERATION")
+
+    prompt, fallback = _build_rag_answer_prompt(query, context_results)
+    if fallback:
+        yield fallback
+        _mark_time("ANSWER_GENERATION")
+        return
+
+    try:
+        print(
+            f"\nðŸ¤– Streaming answer via "
+            f"{current_llm_label()}..."
+        )
+
+        yielded = False
+        for chunk in _stream_rag_answer_text(prompt):
+            yielded = True
+            yield chunk
+
+        if not yielded:
+            yield "The model returned an empty answer."
+
+        _mark_time("ANSWER_GENERATION")
+
+    except LLMProviderError as error:
+        _mark_time("ANSWER_GENERATION")
+        yield (
+            f"Error generating answer via "
+            f"{current_llm_label()}: {error}"
+        )
+
+    except Exception as error:
+        _mark_time("ANSWER_GENERATION")
+        yield f"Unexpected answer-generation error: {error}"
+
+
 def rag_query(query):
     """Full RAG pipeline: retrieve context → generate answer.
     

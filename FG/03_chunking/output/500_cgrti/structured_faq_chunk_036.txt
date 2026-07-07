@@ -1,0 +1,16 @@
+# FAQ Chunk 36
+Document: 500_cgrti
+Source: structured.md
+Pages: 4
+Section: L.5 PIO - Public Information Officer
+Question: Q39. What if PIO doesn't respond? A: Per Section 7(2), this is "deemed refusal" and you can appeal immediately
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 43
+
+---
+
+## L.5 PIO - Public Information Officer
+
+Q39. What if PIO doesn't respond? A: Per Section 7(2), this is "deemed refusal" and you can appeal immediately

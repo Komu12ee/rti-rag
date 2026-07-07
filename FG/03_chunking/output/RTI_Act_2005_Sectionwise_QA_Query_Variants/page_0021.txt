@@ -1,0 +1,28 @@
+## Question variants all map to this one provision
+
+- 1. What does Section 5(1 ) of the Right to Information Act, 2005 provide?
+- 2. Explain RTI Act Section 5(1 ): Designation of CPIOISPIO.
+- 3. What is Act 5(1) in RTI? ] need the rule for CPIO.
+- 4. सूचना का अधिकार अधिनियम, 2005 धारा 581 ) में क्या प्रावधान है?
+- 5. धारा 5(1 ) का सरल अर्थ क्या है CPIOISPIO का पदाभिहितकरण?
+- 6. RTI Act 5(1 ) ka rule kya hai? CPIOJSPIO का पदाभिहितकरण के बारे में बताइए|
+- 7. In this situation: Validating whether the application was correctly addressed to a designated CPIOISPIO. Does Section 5(1 ) apply, and what does it say?
+- 8. "5(1) RTI law me kya hai? " "5(1) ka matlab?"
+
+## Answer
+
+English definition: Within 100 days of enactment, every public authority shall designate as many CPIOSISPIOs in all administrative units as necessary to provide information to RTI applicants
+
+हिंदी परिभाषाः अधिनियमन के 100 दिनों के भीतर, प्रत्येक लोक प्राधिकरण सभी प्रशासनिक इकाइयों में उतने CPIOJSPIO पदाभिहित करेगा जितने RTI आवेदकों को सूचना देने हेतु आवश्यक हों|
+
+Retrieval anchors: Designation of CPIOISPIO; CPIOISPIO का पदाभिहितकरण; CPIO; SPIO; CAPIO; SAPIO; assistant public information officer; 100 days; designation
+
+## Typical contexts
+
+- Validating whether the application was correctly addressed to a designated CPIOISPIO
+- No CPIOISPIO designated escalation complaint scenario under Section 18
+- Application submitted through an Assistant PIO recalculate response deadline (+5 days)
+
+PIO implementation note: If application was received via CAPIOISAPIO, add 5 days to the standard 3O-day computation in Section 7 before flagging a delay.
+
+Source reference: RTI Rule Book, p. 10

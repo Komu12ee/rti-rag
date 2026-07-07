@@ -1,0 +1,643 @@
+{
+  "metadata": {
+    "act_name": "The Right to Information Act, 2005",
+    "act_name_hindi": "सूचना का अधिकार अधिनियम, 2005",
+    "enacted_date": "2005-06-15",
+    "total_sections": 10,
+    "source": "RTI Rule Book (10th Edition, 2025)",
+    "source_document": "rti-rule-book.pdf",
+    "purpose": "Reference dataset for validating incoming RTI queries against applicable Act provisions and generating PIO (Public Information Officer) responses",
+    "note": "Section numbers reflect rule-book document structure (28 consolidated provisions). Where the original Act splits clauses across more granular numbering (e.g., separate Sections 22/23 for overriding effect / bar of jurisdiction), both mappings are captured in 'also_known_as' fields where relevant.",
+    "languages": [
+      "en",
+      "hi"
+    ],
+    "source_total_sections": 28,
+    "selected_section_numbers": [
+      "2",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "19"
+    ],
+    "dataset_scope": "PIO response reference subset containing only Sections 2, 4, 5, 6, 7, 8, 9, 10, 11, and 19."
+  },
+  "sections": [
+    {
+      "section_number": "2",
+      "title_en": "Definitions",
+      "title_hi": "परिभाषाएँ",
+      "keywords": [
+        "definitions",
+        "appropriate government",
+        "public authority",
+        "information",
+        "record",
+        "third party",
+        "CPIO",
+        "SPIO",
+        "competent authority"
+      ],
+      "summary_en": "Provides comprehensive definitions of 19 key terms essential for implementing the RTI Act, including 'Appropriate Government', 'Information', 'Public Authority', 'Right to Information', and 'Third Party'.",
+      "summary_hi": "RTI अधिनियम के कार्यान्वयन के लिए आवश्यक 19 प्रमुख शब्दों की व्यापक परिभाषाएं प्रदान करती है, जिसमें 'उपयुक्त सरकार', 'सूचना', 'सार्वजनिक प्राधिकरण', 'सूचना का अधिकार' और 'तीसरा पक्ष' शामिल हैं।",
+      "subsections": [
+        {
+          "subsection_id": "2(a)",
+          "title_en": "Appropriate Government",
+          "title_hi": "उपयुक्त सरकार",
+          "definition_en": "Central Government for public authorities established under the Constitution, an Act of Parliament, or a Proclamation under Article 356; State Government for those established under State Legislature law or a Governor's Proclamation under Article 356; otherwise whichever of Central/State Government is appropriate.",
+          "definition_hi": "संविधान, संसद अधिनियम या अनुच्छेद 356 के तहत जारी घोषणा के तहत स्थापित सार्वजनिक प्राधिकरणों के लिए केंद्रीय सरकार; राज्य विधान मंडल के कानून या राज्यपाल की घोषणा के तहत स्थापित हेतु राज्य सरकार; अन्यथा जो भी उपयुक्त हो।"
+        },
+        {
+          "subsection_id": "2(b)",
+          "title_en": "Central Information Commission",
+          "title_hi": "केंद्रीय सूचना आयोग",
+          "definition_en": "The Commission constituted under Section 12(1), the apex body for hearing second appeals against decisions of Central PIOs.",
+          "definition_hi": "धारा 12(1) के अधीन गठित आयोग, केंद्रीय PIOs के निर्णयों के विरुद्ध द्वितीय अपील सुनने वाला शीर्ष निकाय।"
+        },
+        {
+          "subsection_id": "2(c)",
+          "title_en": "Central Public Information Officer (CPIO)",
+          "title_hi": "केंद्रीय लोक सूचना अधिकारी",
+          "definition_en": "An officer designated as such under Section 5(1) by a central public authority, responsible for providing information to RTI applicants.",
+          "definition_hi": "किसी केंद्रीय सार्वजनिक प्राधिकरण द्वारा धारा 5(1) के अधीन पदाभिहित अधिकारी, जो RTI आवेदकों को सूचना प्रदान करने हेतु उत्तरदायी है।"
+        },
+        {
+          "subsection_id": "2(f)",
+          "title_en": "Information",
+          "title_hi": "सूचना",
+          "definition_en": "Any material in any form including records, documents, memos, e-mails, opinions, advices, press releases, circulars, orders, logbooks, contracts, reports, papers, samples, models, and data material held in electronic form.",
+          "definition_hi": "किसी भी रूप में कोई सामग्री जिसमें अभिलेख, दस्तावेज, ज्ञापन, ई-मेल, मत, सलाह, प्रेस विज्ञप्ति, परिपत्र, आदेश, लॉगबुक, संविदा, रिपोर्ट, कागजपत्र, नमूने, मॉडल, इलेक्ट्रॉनिक रूप में डेटा सामग्री सम्मिलित है।"
+        },
+        {
+          "subsection_id": "2(h)",
+          "title_en": "Public Authority",
+          "title_hi": "लोक प्राधिकरण",
+          "definition_en": "Any authority, body or institution of self-government established by the Constitution, Parliament law, State law, government notification, or substantially financed by government funds.",
+          "definition_hi": "संविधान, संसद विधि, राज्य विधान, अधिसूचना द्वारा या सरकारी निधि से पर्याप्त वित्तपोषित कोई भी प्राधिकरण, निकाय या स्वशासन संस्था।"
+        },
+        {
+          "subsection_id": "2(j)",
+          "title_en": "Right to Information",
+          "title_hi": "सूचना का अधिकार",
+          "definition_en": "The right to information accessible under this Act, held by or under the control of any public authority, including the right to inspect work/documents/records, take notes/extracts/certified copies, take certified samples of material, and obtain information in electronic form.",
+          "definition_hi": "इस अधिनियम के अधीन किसी लोक प्राधिकरण द्वारा धारित या नियंत्रण में सुलभ सूचना का अधिकार, जिसमें कार्य/दस्तावेजों/अभिलेखों का निरीक्षण, टिप्पणियाँ/उद्धरण/प्रमाणित प्रतियां लेना, सामग्री के प्रमाणित नमूने लेना, और इलेक्ट्रॉनिक रूप में सूचना प्राप्त करना शामिल है।"
+        },
+        {
+          "subsection_id": "2(n)",
+          "title_en": "Third Party",
+          "title_hi": "तीसरा पक्ष / पर व्यक्ति",
+          "definition_en": "A person other than the citizen making the request for information, and includes a public authority.",
+          "definition_hi": "सूचना के लिए अनुरोध करने वाले नागरिक से भिन्न कोई व्यक्ति, जिसमें कोई लोक प्राधिकरण भी सम्मिलित है।"
+        }
+      ],
+      "applies_when": [
+        "Any query requiring interpretation of a statutory term",
+        "Determining which 'Government' is appropriate for an application",
+        "Determining whether a body qualifies as a 'Public Authority' (e.g. NGO substantially financed by government)",
+        "Determining if requested material qualifies as 'Information' under the Act"
+      ],
+      "pio_response_note": "Use this section first when validating whether the body receiving the RTI query is in fact a 'public authority' obligated to respond, and whether the material sought falls within the definition of 'information'.",
+      "source_reference": "RTI Rule Book, pp. 2-6"
+    },
+    {
+      "section_number": "4",
+      "title_en": "Obligations of Public Authorities",
+      "title_hi": "लोक प्राधिकारियों की बाध्यताएं",
+      "keywords": [
+        "suo motu disclosure",
+        "proactive disclosure",
+        "record maintenance",
+        "computerisation",
+        "17 categories",
+        "120 days",
+        "manual publication"
+      ],
+      "summary_en": "Mandates every public authority to maintain records for easy access, computerise records, and proactively publish 17 categories of information within 120 days of enactment (organisation structure, powers/duties, decision-making procedures, norms, rules/manuals, budget, subsidy programmes, PIO details, etc.), minimising the need for citizens to file individual RTI applications.",
+      "summary_hi": "प्रत्येक लोक प्राधिकरण को आसान पहुंच के लिए अभिलेख बनाए रखने, उन्हें कंप्यूटरीकृत करने, और अधिनियमन के 120 दिनों के भीतर सूचना की 17 श्रेणियों (संगठन संरचना, शक्तियां/कर्तव्य, निर्णय प्रक्रिया, मानदंड, नियम/मैनुअल, बजट, सब्सिडी कार्यक्रम, PIO विवरण आदि) को स्व-प्रेरणा से प्रकाशित करने हेतु अनिवार्य करती है।",
+      "subsections": [
+        {
+          "subsection_id": "4(1)(a)",
+          "title_en": "Record maintenance and computerisation",
+          "title_hi": "अभिलेख रखरखाव और कंप्यूटरीकरण",
+          "definition_en": "Every public authority shall maintain all records duly catalogued and indexed to facilitate access; appropriate records shall be computerised and networked within a reasonable time.",
+          "definition_hi": "प्रत्येक लोक प्राधिकरण सभी अभिलेखों को सम्यक् रूप से सूचीपत्रित और अनुक्रमणिकाबद्ध रखेगा; उपयुक्त अभिलेखों को उचित समय में कंप्यूटरीकृत और नेटवर्कयुक्त किया जाएगा।"
+        },
+        {
+          "subsection_id": "4(1)(b)",
+          "title_en": "Suo motu publication (17 categories)",
+          "title_hi": "स्वप्रेरणा प्रकाशन (17 श्रेणियां)",
+          "definition_en": "Within 120 days of enactment, publish: (i) organisation particulars/functions/duties; (ii) powers & duties of officers; (iii) decision-making procedure; (iv) norms for discharge of functions; (v) rules/regulations/manuals/records; (vi) categories of documents held; (vii) consultative arrangements; (viii) boards/councils/committees details; (ix) directory of officers/employees; (x) monthly remuneration of each officer/employee; (xi) budget allocated to each agency; (xii) manner of execution of subsidy programmes; (xiii) particulars of concessions/permits/authorisations; (xiv) details of information held in electronic form; (xv) facilities available to citizens for obtaining information; (xvi) names/designations of PIOs; (xvii) other prescribed information.",
+          "definition_hi": "अधिनियमन के 120 दिनों के भीतर प्रकाशित करें: (i) संगठन विशिष्टियां/कार्य/कर्तव्य; (ii) अधिकारियों की शक्तियां और कर्तव्य; (iii) निर्णय प्रक्रिया; (iv) कार्यों के निर्वहन हेतु मानदंड; (v) नियम/विनियम/मैनुअल/अभिलेख; (vi) धारित दस्तावेजों की श्रेणियां; (vii) परामर्श व्यवस्था; (viii) बोर्ड/परिषद/समिति विवरण; (ix) अधिकारियों/कर्मचारियों की निर्देशिका; (x) प्रत्येक अधिकारी/कर्मचारी का मासिक पारिश्रमिक; (xi) प्रत्येक एजेंसी को आवंटित बजट; (xii) सब्सिडी कार्यक्रमों के निष्पादन की रीति; (xiii) रियायतों/अनुमतियों/प्राधिकारों की विशिष्टियां; (xiv) इलेक्ट्रॉनिक रूप में सूचना का विवरण; (xv) नागरिक सुविधाएं; (xvi) PIO नाम/पदनाम; (xvii) अन्य विहित सूचना।"
+        },
+        {
+          "subsection_id": "4(1)(c)",
+          "title_en": "Publishing facts on policy formulation",
+          "title_hi": "नीति निर्माण में तथ्यों का प्रकाशन",
+          "definition_en": "Publish all relevant facts while formulating important policies or announcing decisions affecting the public.",
+          "definition_hi": "महत्त्वपूर्ण नीतियों की विरचना करते समय या जनता को प्रभावित करने वाले विनिश्चयों की घोषणा करते समय सभी सुसंगत तथ्यों को प्रकाशित करेगा।"
+        },
+        {
+          "subsection_id": "4(1)(d)",
+          "title_en": "Reasons for administrative/quasi-judicial decisions",
+          "title_hi": "प्रशासनिक/न्यायिकल्प विनिश्चयों के कारण",
+          "definition_en": "Provide reasons for administrative or quasi-judicial decisions to affected persons.",
+          "definition_hi": "प्रभावित व्यक्तियों को अपने प्रशासनिक या न्यायिकल्प विनिश्चयों के कारण उपलब्ध कराएगा।"
+        },
+        {
+          "subsection_id": "4(2)",
+          "title_en": "Constant endeavour to proactively disclose",
+          "title_hi": "स्वप्रेरणा से सूचना देने का निरंतर प्रयास",
+          "definition_en": "Constant endeavour of every public authority to provide as much information suo motu at regular intervals through various means including internet, so the public has minimum need to use the Act.",
+          "definition_hi": "प्रत्येक लोक प्राधिकरण का निरंतर प्रयास होगा कि नियमित अंतरालों पर इंटरनेट सहित विभिन्न माध्यमों से अधिकतम सूचना स्वप्रेरणा से उपलब्ध कराए, ताकि अधिनियम के उपयोग की न्यूनतम आवश्यकता हो।"
+        },
+        {
+          "subsection_id": "4(3)-4(4)",
+          "title_en": "Form, cost, and accessibility of dissemination",
+          "title_hi": "प्रसार का रूप, लागत और सुगम्यता",
+          "definition_en": "Information shall be disseminated widely and in such form which is easily accessible, considering cost-effectiveness, local language, and most effective method in that locality.",
+          "definition_hi": "सूचना व्यापक रूप से सुलभ रूप में, लागत प्रभावशीलता, स्थानीय भाषा, और उस इलाके के लिए सबसे प्रभावी पद्धति को ध्यान में रखते हुए प्रसारित की जाएगी।"
+        }
+      ],
+      "applies_when": [
+        "Information sought is already part of mandatory suo motu disclosure / published manual",
+        "Validating whether public authority has fulfilled proactive disclosure obligations",
+        "Determining whether refusal can be justified when information should already be publicly available"
+      ],
+      "pio_response_note": "Before processing as a fresh RTI request, check whether the information is already covered under the public authority's Section 4(1)(b) suo motu disclosure manual/website — if so, the PIO response should direct the applicant to that published source.",
+      "source_reference": "RTI Rule Book, pp. 6-11"
+    },
+    {
+      "section_number": "5",
+      "title_en": "Designation of Public Information Officers",
+      "title_hi": "लोक सूचना अधिकारियों का पदाभिहितकरण",
+      "keywords": [
+        "CPIO",
+        "SPIO",
+        "CAPIO",
+        "SAPIO",
+        "assistant public information officer",
+        "100 days",
+        "designation"
+      ],
+      "summary_en": "Mandates every public authority to designate CPIOs/SPIOs within 100 days, and Assistant PIOs (CAPIO/SAPIO) at sub-divisional level to receive and forward applications; time limit extends by 5 days when application is received through an Assistant PIO.",
+      "summary_hi": "प्रत्येक लोक प्राधिकरण को 100 दिनों के भीतर CPIO/SPIO तथा उपमंडल स्तर पर सहायक PIO (CAPIO/SAPIO) पदाभिहित करने हेतु अनिवार्य करती है, जो आवेदन प्राप्त कर अग्रेषित करेंगे; सहायक PIO के माध्यम से प्राप्त आवेदन पर समय-सीमा 5 दिन बढ़ जाती है।",
+      "subsections": [
+        {
+          "subsection_id": "5(1)",
+          "title_en": "Designation of CPIO/SPIO",
+          "title_hi": "CPIO/SPIO का पदाभिहितकरण",
+          "definition_en": "Within 100 days of enactment, every public authority shall designate as many CPIOs/SPIOs in all administrative units as necessary to provide information to RTI applicants.",
+          "definition_hi": "अधिनियमन के 100 दिनों के भीतर, प्रत्येक लोक प्राधिकरण सभी प्रशासनिक इकाइयों में उतने CPIO/SPIO पदाभिहित करेगा जितने RTI आवेदकों को सूचना देने हेतु आवश्यक हों।"
+        },
+        {
+          "subsection_id": "5(2)",
+          "title_en": "Designation of Assistant PIO (CAPIO/SAPIO)",
+          "title_hi": "सहायक PIO (CAPIO/SAPIO) का पदाभिहितकरण",
+          "definition_en": "At sub-divisional/sub-district level, a CAPIO/SAPIO shall be designated to receive applications/appeals and forward to the CPIO/SPIO; response time extends by 5 days when received via Assistant PIO.",
+          "definition_hi": "उपमंडल/उपजिला स्तर पर CAPIO/SAPIO पदाभिहित किया जाएगा जो आवेदन/अपील प्राप्त कर CPIO/SPIO को अग्रेषित करेगा; सहायक PIO के माध्यम से प्राप्त आवेदन पर समय-सीमा 5 दिन बढ़ जाती है।"
+        },
+        {
+          "subsection_id": "5(3)",
+          "title_en": "Duty of CPIO/SPIO to assist applicant",
+          "title_hi": "आवेदक की सहायता का कर्तव्य",
+          "definition_en": "Every CPIO/SPIO shall deal with requests and render reasonable assistance to reduce oral requests to writing if required.",
+          "definition_hi": "प्रत्येक CPIO/SPIO अनुरोधों पर कार्य करेगा और आवश्यक होने पर उन्हें लिखित रूप में कम करने में युक्तियुक्त सहायता देगा।"
+        },
+        {
+          "subsection_id": "5(4)-5(5)",
+          "title_en": "Assistance from other officers",
+          "title_hi": "अन्य अधिकारियों से सहायता",
+          "definition_en": "CPIO/SPIO may seek assistance from any other officer as necessary; that officer is deemed to act as CPIO/SPIO for purposes of the Act and shall render all assistance.",
+          "definition_hi": "CPIO/SPIO आवश्यक होने पर किसी अन्य अधिकारी से सहायता मांग सकता है; ऐसा अधिकारी इस अधिनियम के प्रयोजनों के लिए CPIO/SPIO के रूप में कार्य करता हुआ माना जाएगा।"
+        }
+      ],
+      "applies_when": [
+        "Validating whether the application was correctly addressed to a designated CPIO/SPIO",
+        "Application submitted through an Assistant PIO — recalculate response deadline (+5 days)",
+        "No CPIO/SPIO designated — escalation/complaint scenario under Section 18"
+      ],
+      "pio_response_note": "If application was received via CAPIO/SAPIO, add 5 days to the standard 30-day computation in Section 7 before flagging a delay.",
+      "source_reference": "RTI Rule Book, p. 10"
+    },
+    {
+      "section_number": "6",
+      "title_en": "Procedure for Requesting Information",
+      "title_hi": "सूचना के लिए अनुरोध की प्रक्रिया",
+      "keywords": [
+        "application",
+        "request format",
+        "fee",
+        "transfer of application",
+        "no reason required",
+        "language of application"
+      ],
+      "summary_en": "Sets out how a citizen may apply: in writing or electronically, in English/Hindi/local official language, with prescribed fee, without needing to state reasons. Misdirected applications must be transferred to the correct public authority within 5 days.",
+      "summary_hi": "नागरिक कैसे आवेदन कर सकता है, यह स्थापित करती है: लिखित या इलेक्ट्रॉनिक रूप में, अंग्रेजी/हिंदी/स्थानीय राजभाषा में, निर्धारित शुल्क के साथ, बिना कारण बताए। गलत प्राधिकरण को भेजे गए आवेदन 5 दिनों के भीतर सही प्राधिकरण को अंतरित किए जाने चाहिए।",
+      "subsections": [
+        {
+          "subsection_id": "6(1)",
+          "title_en": "Mode and content of request",
+          "title_hi": "अनुरोध का रूप और विषय-वस्तु",
+          "definition_en": "Request in writing or electronic means, in English, Hindi, or official language of the area, accompanied by prescribed fee, addressed to CPIO/SPIO or CAPIO/SAPIO, with sufficient particulars to identify the information sought.",
+          "definition_hi": "लिखित या इलेक्ट्रॉनिक माध्यम से, अंग्रेजी, हिंदी, या क्षेत्र की राजभाषा में, निर्धारित शुल्क सहित, CPIO/SPIO या CAPIO/SAPIO को संबोधित, मांगी गई सूचना की पर्याप्त विशिष्टियों के साथ अनुरोध।"
+        },
+        {
+          "subsection_id": "6(2)",
+          "title_en": "No reason required",
+          "title_hi": "कारण देने की आवश्यकता नहीं",
+          "definition_en": "Applicant not required to give any reason for the request or any personal details except those necessary for contact.",
+          "definition_hi": "आवेदक से अनुरोध का कारण या संपर्क हेतु आवश्यक के सिवाय कोई व्यक्तिगत विवरण देने की अपेक्षा नहीं की जाएगी।"
+        },
+        {
+          "subsection_id": "6(3)",
+          "title_en": "Transfer of misdirected applications",
+          "title_hi": "गलत-निर्दिष्ट आवेदनों का अंतरण",
+          "definition_en": "Where information is held by another public authority or more closely connected to its functions, the application shall be transferred within 5 days and the applicant informed; the 30-day clock under Section 7(1) restarts from the date of receipt by the correct authority.",
+          "definition_hi": "जहां सूचना किसी अन्य लोक प्राधिकरण के पास है या उसके कार्यों से अधिक निकटता से जुड़ी है, आवेदन 5 दिनों के भीतर अंतरित किया जाएगा और आवेदक को सूचित किया जाएगा; धारा 7(1) की 30-दिवसीय अवधि सही प्राधिकरण द्वारा प्राप्ति की तारीख से पुनः आरंभ होती है।"
+        }
+      ],
+      "applies_when": [
+        "Validating application format/language compliance",
+        "Application demands a 'reason' from applicant — non-compliant practice to flag",
+        "Information requested belongs to a different public authority — trigger transfer procedure"
+      ],
+      "pio_response_note": "Never reject or delay an application merely because the applicant has not stated a reason. If the subject matter belongs to another public authority, transfer per 6(3) and notify the applicant; do not silently reject.",
+      "source_reference": "RTI Rule Book, pp. 11-12"
+    },
+    {
+      "section_number": "7",
+      "title_en": "Time Limit for Furnishing Information",
+      "title_hi": "सूचना प्रदान करने हेतु समय सीमा",
+      "keywords": [
+        "30 days",
+        "48 hours",
+        "deemed refusal",
+        "life and liberty",
+        "further fee",
+        "sensorily disabled",
+        "free of charge",
+        "rejection reasons"
+      ],
+      "summary_en": "Mandates response within 30 days (48 hours for life/liberty matters); failure to respond in time is a deemed refusal; failure to meet timelines also makes the information free of charge; rejection must state reasons, appeal period and appellate authority details.",
+      "summary_hi": "30 दिनों के भीतर (जीवन/स्वतंत्रता मामलों हेतु 48 घंटे) उत्तर देना अनिवार्य; समय पर उत्तर न देने को अस्वीकृति माना जाता है; समय-सीमा का पालन न करने पर सूचना निःशुल्क दी जाएगी; अस्वीकृति में कारण, अपील अवधि और अपीलीय प्राधिकरण का विवरण होना चाहिए।",
+      "subsections": [
+        {
+          "subsection_id": "7(1)",
+          "title_en": "Standard 30-day response / 48-hour exception",
+          "title_hi": "मानक 30-दिवसीय उत्तर / 48-घंटे का अपवाद",
+          "definition_en": "Subject to provisos in Sections 5(2)/6(3), provide information within 30 days on payment of fee, or reject under Sections 8/9. If the information concerns life or physical liberty of a person, provide within 48 hours.",
+          "definition_hi": "धारा 5(2)/6(3) के प्रावधानों के अधीन, शुल्क के संदाय पर 30 दिनों के भीतर सूचना दें, या धारा 8/9 के अधीन अस्वीकार करें। यदि सूचना किसी व्यक्ति के जीवन या शारीरिक स्वतंत्रता से संबंधित है तो 48 घंटों के भीतर प्रदान करें।"
+        },
+        {
+          "subsection_id": "7(2)",
+          "title_en": "Deemed refusal",
+          "title_hi": "समझी गई अस्वीकृति",
+          "definition_en": "If the PIO fails to give a decision within the specified time, it shall be deemed that the PIO has refused the request.",
+          "definition_hi": "यदि PIO विनिर्दिष्ट समय के भीतर विनिश्चय देने में विफल रहता है, तो समझा जाएगा कि उसने अनुरोध को अस्वीकार कर दिया है।"
+        },
+        {
+          "subsection_id": "7(3)",
+          "title_en": "Intimation of further fee",
+          "title_hi": "अतिरिक्त शुल्क की सूचना",
+          "definition_en": "Where further fee is required, the PIO shall communicate the fee, payment details, and the applicant's right to seek review of the fee amount; the time taken between intimation and payment is excluded from the response period.",
+          "definition_hi": "जहां अतिरिक्त शुल्क आवश्यक है, PIO शुल्क, भुगतान विवरण और शुल्क राशि की समीक्षा मांगने के अधिकार की सूचना देगा; सूचना और भुगतान के बीच की अवधि उत्तर अवधि से बाहर है।"
+        },
+        {
+          "subsection_id": "7(4)",
+          "title_en": "Assistance for sensorily disabled persons",
+          "title_hi": "संवेदनात्मक रूप से निःशक्त व्यक्तियों हेतु सहायता",
+          "definition_en": "Where access is required by a sensorily disabled person, the PIO shall provide reasonable assistance for inspection.",
+          "definition_hi": "जहां संवेदनात्मक रूप से निःशक्त व्यक्ति को पहुंच आवश्यक है, PIO निरीक्षण हेतु युक्तियुक्त सहायता प्रदान करेगा।"
+        },
+        {
+          "subsection_id": "7(5)",
+          "title_en": "Form of information requested",
+          "title_hi": "मांगी गई सूचना का रूप",
+          "definition_en": "Information shall ordinarily be provided in the form requested, unless it would disproportionately divert resources or harm the safety/preservation of the record.",
+          "definition_hi": "सूचना साधारणतया उसी रूप में दी जाएगी जिसमें मांगी गई है, जब तक कि यह संसाधनों का अनुपातहीन उपयोग न करे या अभिलेख की सुरक्षा/संरक्षण को नुकसान न पहुंचाए।"
+        },
+        {
+          "subsection_id": "7(6)",
+          "title_en": "Free information on default",
+          "title_hi": "चूक पर निःशुल्क सूचना",
+          "definition_en": "If the PIO fails to comply with the time limits in Section 7(1), information shall be provided free of charge.",
+          "definition_hi": "यदि PIO धारा 7(1) में समय-सीमा का पालन करने में विफल रहता है, तो सूचना निःशुल्क प्रदान की जाएगी।"
+        },
+        {
+          "subsection_id": "7(8)",
+          "title_en": "Reasons for rejection",
+          "title_hi": "अस्वीकृति के कारण",
+          "definition_en": "When rejecting a request, the PIO must communicate the reasons, the period within which an appeal may be preferred, and the particulars of the appellate authority.",
+          "definition_hi": "अनुरोध अस्वीकार करते समय, PIO को कारण, अपील की अवधि, और अपीलीय प्राधिकरण का विवरण संप्रेषित करना चाहिए।"
+        }
+      ],
+      "applies_when": [
+        "Calculating whether PIO is within statutory response deadline",
+        "Query relates to a person's life or liberty — apply 48-hour rule",
+        "PIO missed deadline — trigger free-of-charge and deemed-refusal logic",
+        "Drafting a rejection — must include reasons, appeal window, appellate authority"
+      ],
+      "pio_response_note": "Always check the urgency flag (life/liberty) first to apply the 48-hour rule instead of 30 days. If the 30-day (or 48-hour) deadline has lapsed, the response must note that the information is to be supplied free of charge and that a deemed refusal has occurred, which is independently appealable.",
+      "source_reference": "RTI Rule Book, pp. 13-14"
+    },
+    {
+      "section_number": "8",
+      "title_en": "Exemption from Disclosure of Information",
+      "title_hi": "सूचना के प्रकटन से छूट",
+      "keywords": [
+        "exemptions",
+        "sovereignty",
+        "security",
+        "contempt of court",
+        "parliamentary privilege",
+        "commercial confidence",
+        "trade secrets",
+        "fiduciary",
+        "foreign government",
+        "life and safety",
+        "investigation",
+        "cabinet papers",
+        "personal privacy",
+        "public interest override",
+        "20 year rule"
+      ],
+      "summary_en": "Lists ten categories of information exempt from mandatory disclosure (sovereignty/security, court-gagged info, parliamentary privilege, commercial confidence, fiduciary info, foreign government info, life/safety/source-of-information, ongoing investigation, cabinet papers, personal privacy). Subject to a public interest override (8(2)) and a 20-year disclosure rule (8(3)) for most categories.",
+      "summary_hi": "अनिवार्य प्रकटीकरण से छूट प्राप्त सूचना की दस श्रेणियां सूचीबद्ध करती है (संप्रभुता/सुरक्षा, अदालत-निषिद्ध सूचना, संसदीय विशेषाधिकार, वाणिज्यिक गोपनीयता, विश्वासाश्रित सूचना, विदेशी सरकार की सूचना, जीवन/सुरक्षा/सूचना-स्रोत, चल रही जांच, मंत्रिमंडल कागजात, व्यक्तिगत गोपनीयता)। यह सार्वजनिक हित अधिरूहण (8(2)) और अधिकांश श्रेणियों हेतु 20-वर्ष प्रकटीकरण नियम (8(3)) के अधीन है।",
+      "subsections": [
+        {
+          "subsection_id": "8(1)(a)",
+          "title_en": "Sovereignty and Security",
+          "title_hi": "संप्रभुता और सुरक्षा",
+          "definition_en": "Information whose disclosure would prejudicially affect the sovereignty/integrity of India, security of the State, strategic/scientific/economic interests, relations with foreign States, or lead to incitement of an offence.",
+          "definition_hi": "वह सूचना जिसका प्रकटीकरण भारत की संप्रभुता/अखंडता, राज्य की सुरक्षा, रणनीतिक/वैज्ञानिक/आर्थिक हितों या विदेशी राज्यों के संबंधों को प्रतिकूल रूप से प्रभावित करेगा, या अपराध को उकसाएगा।"
+        },
+        {
+          "subsection_id": "8(1)(b)",
+          "title_en": "Court Orders / Contempt",
+          "title_hi": "अदालत के आदेश / अवमानना",
+          "definition_en": "Information expressly forbidden to be published by any court or tribunal, or whose disclosure may constitute contempt of court.",
+          "definition_hi": "वह सूचना जिसे किसी अदालत या न्यायाधिकरण द्वारा प्रकाशित करने हेतु स्पष्ट रूप से मना किया गया है, या जिसका प्रकटीकरण अदालत की अवमानना हो सकता है।"
+        },
+        {
+          "subsection_id": "8(1)(c)",
+          "title_en": "Parliamentary/Legislative Privilege",
+          "title_hi": "संसदीय/विधायी विशेषाधिकार",
+          "definition_en": "Information the disclosure of which would cause a breach of privilege of Parliament or the State Legislature.",
+          "definition_hi": "वह सूचना जिसका प्रकटीकरण संसद या राज्य विधान मंडल के विशेषाधिकार का उल्लंघन करेगा।"
+        },
+        {
+          "subsection_id": "8(1)(d)",
+          "title_en": "Commercial Confidence / Trade Secrets / IP",
+          "title_hi": "वाणिज्यिक गोपनीयता / व्यापार रहस्य / बौद्धिक संपदा",
+          "definition_en": "Information including commercial confidence, trade secrets or intellectual property whose disclosure would harm a third party's competitive position, unless the competent authority is satisfied larger public interest warrants disclosure.",
+          "definition_hi": "वाणिज्यिक गोपनीयता, व्यापार रहस्य या बौद्धिक संपदा सहित सूचना जिसके प्रकटन से तीसरे पक्ष की प्रतिस्पर्धी स्थिति को नुकसान होगा, जब तक सक्षम प्राधिकारी का समाधान न हो कि व्यापक लोकहित प्रकटन का समर्थन करता है।"
+        },
+        {
+          "subsection_id": "8(1)(e)",
+          "title_en": "Fiduciary Relationship",
+          "title_hi": "विश्वासाश्रित संबंध",
+          "definition_en": "Information available to a person in his fiduciary relationship, unless competent authority is satisfied larger public interest warrants disclosure.",
+          "definition_hi": "किसी व्यक्ति को उसके वैश्वासिक नातेदारी में उपलब्ध सूचना, जब तक सक्षम प्राधिकारी का समाधान न हो कि व्यापक लोकहित प्रकटन का समर्थन करता है।"
+        },
+        {
+          "subsection_id": "8(1)(f)",
+          "title_en": "Foreign Government Information",
+          "title_hi": "विदेशी सरकार की सूचना",
+          "definition_en": "Information received in confidence from a foreign Government.",
+          "definition_hi": "किसी विदेशी सरकार से विश्वास में प्राप्त सूचना।"
+        },
+        {
+          "subsection_id": "8(1)(g)",
+          "title_en": "Life, Safety, Source Protection",
+          "title_hi": "जीवन, सुरक्षा, स्रोत संरक्षण",
+          "definition_en": "Information that would endanger the life/physical safety of any person, or identify the source of confidential information/assistance given for law enforcement or security purposes.",
+          "definition_hi": "सूचना जिससे किसी व्यक्ति का जीवन/शारीरिक सुरक्षा खतरे में पड़े, या विधि प्रवर्तन/सुरक्षा प्रयोजनों हेतु विश्वास में दी गई सूचना/सहायता के स्रोत की पहचान हो।"
+        },
+        {
+          "subsection_id": "8(1)(h)",
+          "title_en": "Investigation / Prosecution",
+          "title_hi": "जांच / अभियोजन",
+          "definition_en": "Information which would impede the process of investigation, apprehension, or prosecution of offenders.",
+          "definition_hi": "सूचना जिससे अपराधियों के अन्वेषण, पकड़े जाने या अभियोजन की प्रक्रिया में अड़चन पड़े।"
+        },
+        {
+          "subsection_id": "8(1)(i)",
+          "title_en": "Cabinet Papers",
+          "title_hi": "मंत्रिमंडल के कागजात",
+          "definition_en": "Cabinet papers including records of deliberations of the Council of Ministers, Secretaries and other officers; however decisions, their reasons, and supporting material shall be made public after the decision is taken and the matter is complete/over.",
+          "definition_hi": "मंत्रिमंडल के कागजपत्र जिसमें मंत्रिपरिषद, सचिवों और अन्य अधिकारियों के विचार-विमर्श के अभिलेख सम्मिलित हैं; तथापि निर्णय, उनके कारण और सहायक सामग्री निर्णय लिए जाने और विषय पूर्ण होने के बाद सार्वजनिक की जाएगी।"
+        },
+        {
+          "subsection_id": "8(1)(j)",
+          "title_en": "Personal Privacy",
+          "title_hi": "व्यक्तिगत गोपनीयता",
+          "definition_en": "Personal information with no relationship to public activity/interest, or which would cause unwarranted invasion of privacy, unless PIO/appellate authority is satisfied larger public interest justifies disclosure; provided information that cannot be denied to Parliament/State Legislature shall not be denied to any person.",
+          "definition_hi": "व्यक्तिगत सूचना जिसका सार्वजनिक गतिविधि/हित से कोई संबंध नहीं या जो निजता का अनुचित अतिक्रमण करेगी, जब तक PIO/अपीलीय प्राधिकारी संतुष्ट न हो कि व्यापक लोकहित प्रकटन को न्यायोचित ठहराता है; परंतु जो सूचना संसद/राज्य विधानमंडल को देने से इनकार नहीं की जा सकती, वह किसी व्यक्ति को भी अस्वीकार नहीं की जाएगी।"
+        },
+        {
+          "subsection_id": "8(2)",
+          "title_en": "Public Interest Override",
+          "title_hi": "सार्वजनिक हित अधिरूहण",
+          "definition_en": "Notwithstanding the Official Secrets Act, 1923 or any exemption under this Act, a public authority may allow access if public interest in disclosure outweighs the harm to protected interests.",
+          "definition_hi": "शासकीय गुप्त बात अधिनियम, 1923 या इस अधिनियम के अधीन किसी छूट के होते हुए भी, यदि प्रकटीकरण में लोकहित संरक्षित हितों को होने वाले नुकसान से अधिक हो तो लोक प्राधिकरण पहुंच की अनुमति दे सकता है।"
+        },
+        {
+          "subsection_id": "8(3)",
+          "title_en": "20-Year Rule",
+          "title_hi": "20-वर्ष का नियम",
+          "definition_en": "Information relating to an occurrence/event/matter twenty years before the date of request shall be provided, unless it falls under 8(1)(a), (c), or (i).",
+          "definition_hi": "अनुरोध की तारीख से बीस वर्ष पहले हुई किसी घटना/घटनाक्रम/विषय से संबंधित सूचना प्रदान की जाएगी, जब तक यह 8(1)(क), (ग), या (झ) के अंतर्गत न आती हो।"
+        }
+      ],
+      "applies_when": [
+        "Information relates to national security, sovereignty, or foreign relations → 8(1)(a)",
+        "Information is under active court gag order → 8(1)(b)",
+        "Information would breach legislative privilege → 8(1)(c)",
+        "Information is a trade secret / commercial confidence of a third party → 8(1)(d)",
+        "Information was shared in fiduciary trust → 8(1)(e)",
+        "Information from foreign government in confidence → 8(1)(f)",
+        "Disclosure endangers life/safety or reveals a confidential informant → 8(1)(g)",
+        "Active criminal investigation would be impeded → 8(1)(h)",
+        "Pre-decisional Cabinet deliberation → 8(1)(i) (but check if decision is now final/complete)",
+        "Purely personal information unconnected to public activity → 8(1)(j)",
+        "Any exemption claimed — must additionally check Section 8(2) public interest override and 8(3) 20-year rule before finalizing refusal"
+      ],
+      "pio_response_note": "This is the primary exemption-screening section. For ANY refusal under 8(1)(a)-(j), the response MUST also document why Section 8(2) public interest override does not apply, and (except for 8(1)(a)/(c)/(i)) confirm the information is not older than 20 years under 8(3). A bare citation of a clause without this analysis is an incomplete/defective PIO response.",
+      "source_reference": "RTI Rule Book, pp. 15-17"
+    },
+    {
+      "section_number": "9",
+      "title_en": "Information Exempted from Disclosure (Copyright)",
+      "title_hi": "प्रकटीकरण से छूट प्राप्त सूचना (कॉपीराइट)",
+      "keywords": [
+        "copyright",
+        "infringement",
+        "intellectual property",
+        "third party copyright"
+      ],
+      "summary_en": "Allows a CPIO/SPIO to reject a request where providing access would infringe copyright vested in a person other than the State. Does not apply to government-held copyright (subject to Section 8(2)).",
+      "summary_hi": "CPIO/SPIO को किसी अनुरोध को अस्वीकार करने की अनुमति देती है जहां पहुंच प्रदान करने से राज्य से भिन्न किसी व्यक्ति में निहित कॉपीराइट का उल्लंघन होगा। सरकार द्वारा धारित कॉपीराइट पर लागू नहीं होती (धारा 8(2) के अधीन)।",
+      "subsections": [
+        {
+          "subsection_id": "9",
+          "title_en": "Copyright-based rejection",
+          "title_hi": "कॉपीराइट-आधारित अस्वीकृति",
+          "definition_en": "Notwithstanding Section 8, a CPIO/SPIO may reject a request for information where providing such access would involve an infringement of copyright subsisting in a person other than the State.",
+          "definition_hi": "धारा 8 के होते हुए भी, CPIO/SPIO सूचना के लिए अनुरोध को अस्वीकार कर सकता है जहां ऐसी पहुंच प्रदान करने में राज्य से भिन्न किसी व्यक्ति में निहित कॉपीराइट का उल्लंघन होगा।"
+        }
+      ],
+      "applies_when": [
+        "Requested material (book, manuscript, design, software, etc.) is third-party copyrighted content held by the public authority",
+        "Distinguishing private-party copyright (exempt) from government-owned copyright (not exempt, subject to 8(2))"
+      ],
+      "pio_response_note": "Verify copyright ownership before invoking this section — if the copyright is held by the government itself, Section 9 does not apply and the request must be evaluated under Section 8 instead.",
+      "source_reference": "RTI Rule Book, p. 17"
+    },
+    {
+      "section_number": "10",
+      "title_en": "Severability / Partial Disclosure",
+      "title_hi": "विभाज्यता / आंशिक प्रकटीकरण",
+      "keywords": [
+        "severability",
+        "partial access",
+        "redaction",
+        "part of record"
+      ],
+      "summary_en": "Where part of a record is exempt, the non-exempt part that can reasonably be severed must still be disclosed, with a notice explaining what part is withheld, the reasons, the decision-maker, fee details, and review rights.",
+      "summary_hi": "जहां अभिलेख का कोई भाग छूट प्राप्त है, युक्तियुक्त रूप से पृथक् किया जा सकने वाला गैर-छूट भाग फिर भी प्रकट किया जाना चाहिए, जिसके साथ रोके गए भाग, कारण, विनिश्चयकर्ता, शुल्क विवरण और समीक्षा अधिकारों की सूचना दी जाए।",
+      "subsections": [
+        {
+          "subsection_id": "10(1)",
+          "title_en": "Severability principle",
+          "title_hi": "विभाज्यता का सिद्धांत",
+          "definition_en": "Where a request is rejected because part of the record is exempt, access shall be provided to the part not containing exempt information, if it can reasonably be severed from the exempt part.",
+          "definition_hi": "जहां किसी अनुरोध को इस कारण अस्वीकार किया जाता है कि अभिलेख का एक भाग छूट प्राप्त है, उस भाग तक पहुंच दी जाएगी जिसमें छूट प्राप्त सूचना नहीं है, यदि उसे युक्तियुक्त रूप से छूट प्राप्त भाग से पृथक् किया जा सकता हो।"
+        },
+        {
+          "subsection_id": "10(2)",
+          "title_en": "Notice requirements for partial disclosure",
+          "title_hi": "आंशिक प्रकटीकरण हेतु सूचना अपेक्षाएं",
+          "definition_en": "When granting access to part of a record, the PIO shall notify the applicant: (a) that only part is being provided; (b) reasons for the decision including findings on material facts; (c) name/designation of decision-maker; (d) fee details and deposit amount; (e) applicant's review/appeal rights, appellate authority particulars, and time limits.",
+          "definition_hi": "अभिलेख के किसी भाग तक पहुंच देते समय, PIO आवेदक को सूचित करेगा: (क) केवल एक भाग प्रदान किया जा रहा है; (ख) विनिश्चय के कारण; (ग) विनिश्चयकर्ता का नाम/पदनाम; (घ) शुल्क विवरण और जमा राशि; (ङ) आवेदक के समीक्षा/अपील अधिकार, अपीलीय प्राधिकरण विवरण और समय-सीमा।"
+        }
+      ],
+      "applies_when": [
+        "A document contains both exempt and non-exempt content (e.g., a report with one confidential annexure)",
+        "Validating whether a blanket rejection should instead be a redacted/partial disclosure"
+      ],
+      "pio_response_note": "Never use a partial exemption in one paragraph/annexure to justify withholding an entire multi-part document. Apply redaction and issue the Section 10(2) notice with full reasons for the redacted portion.",
+      "source_reference": "RTI Rule Book, pp. 17-18"
+    },
+    {
+      "section_number": "11",
+      "title_en": "Third Party Information",
+      "title_hi": "तीसरे पक्ष की सूचना",
+      "keywords": [
+        "third party notice",
+        "confidential information supplied by third party",
+        "representation",
+        "40 days",
+        "10 days"
+      ],
+      "summary_en": "When disclosure involves information supplied by and treated as confidential by a third party, the PIO must notify that third party within 5 days, allow 10 days for their representation, and decide within 40 days — disclosing only if public interest outweighs harm to the third party (except protected trade/commercial secrets).",
+      "summary_hi": "जब प्रकटीकरण में किसी तीसरे पक्ष द्वारा प्रदाय और गोपनीय मानी गई सूचना शामिल हो, PIO को 5 दिनों के भीतर उस तीसरे पक्ष को सूचित करना चाहिए, उसके प्रतिनिधित्व हेतु 10 दिन देना चाहिए, और 40 दिनों के भीतर विनिश्चय करना चाहिए — प्रकटीकरण तभी जब लोकहित तीसरे पक्ष को होने वाले नुकसान से अधिक हो (संरक्षित व्यापार/वाणिज्यिक रहस्यों को छोड़कर)।",
+      "subsections": [
+        {
+          "subsection_id": "11(1)",
+          "title_en": "Notice to third party",
+          "title_hi": "तीसरे पक्ष को सूचना",
+          "definition_en": "Where the CPIO/SPIO intends to disclose information supplied by and treated as confidential by a third party, written notice must be given to that third party within 5 days of receipt of the request, inviting written/oral representation on whether the information should be disclosed; such submission shall be considered. Except for protected trade/commercial secrets, disclosure may proceed if competent authority is satisfied public interest outweighs harm to the third party.",
+          "definition_hi": "जहां CPIO/SPIO किसी तीसरे पक्ष द्वारा प्रदाय और गोपनीय मानी गई सूचना को प्रकट करने का इरादा रखता है, अनुरोध की प्राप्ति के 5 दिनों के भीतर उस तीसरे पक्ष को लिखित सूचना दी जाएगी, जिसमें लिखित/मौखिक प्रतिनिधित्व हेतु आमंत्रित किया जाएगा; ऐसी प्रस्तुति पर विचार किया जाएगा। संरक्षित व्यापार/वाणिज्यिक रहस्यों को छोड़कर, यदि सक्षम प्राधिकारी संतुष्ट हो कि लोकहित तीसरे पक्ष को नुकसान से अधिक है, तो प्रकटीकरण किया जा सकता है।"
+        },
+        {
+          "subsection_id": "11(2)",
+          "title_en": "Third party's representation window",
+          "title_hi": "तीसरे पक्ष की प्रतिनिधित्व अवधि",
+          "definition_en": "Where notice is served on a third party, they shall be given 10 days from receipt of notice to make representation against the proposed disclosure.",
+          "definition_hi": "जहां तीसरे पक्ष को नोटिस दिया जाता है, उसे नोटिस की प्राप्ति की तारीख से 10 दिनों के भीतर प्रस्तावित प्रकटीकरण के विरुद्ध प्रतिनिधित्व करने का अवसर दिया जाएगा।"
+        },
+        {
+          "subsection_id": "11(3)",
+          "title_en": "40-day decision timeline",
+          "title_hi": "40-दिवसीय विनिश्चय समय-सीमा",
+          "definition_en": "Notwithstanding Section 7, if the third party was given opportunity under 11(2), the CPIO/SPIO shall, within 40 days of receipt of the request, decide whether to disclose and give written notice of the decision to the third party.",
+          "definition_hi": "धारा 7 के होते हुए भी, यदि तीसरे पक्ष को 11(2) के अधीन अवसर दिया गया है, CPIO/SPIO अनुरोध की प्राप्ति के 40 दिनों के भीतर विनिश्चय करेगा और लिखित रूप में तीसरे पक्ष को सूचित करेगा।"
+        },
+        {
+          "subsection_id": "11(4)",
+          "title_en": "Third party's appeal right",
+          "title_hi": "तीसरे पक्ष का अपील अधिकार",
+          "definition_en": "The notice given shall include a statement that the third party is entitled to prefer an appeal under Section 19 against the decision.",
+          "definition_hi": "दिया गया नोटिस यह बयान शामिल करेगा कि तीसरा पक्ष विनिश्चय के विरुद्ध धारा 19 के अधीन अपील दायर करने का हकदार है।"
+        }
+      ],
+      "applies_when": [
+        "Requested record contains information supplied by/relating to a third party that was marked or treated as confidential",
+        "Computing the modified response deadline — use 40 days, not the standard 30 days, when third-party consultation is triggered"
+      ],
+      "pio_response_note": "If third-party information is involved, the standard Section 7 30-day timeline is superseded by the Section 11(3) 40-day timeline. The third party must be notified and given 10 days before a final decision, and must be informed of their own Section 19 appeal right if disclosure is decided against their wishes.",
+      "source_reference": "RTI Rule Book, p. 19"
+    },
+    {
+      "section_number": "19",
+      "title_en": "Appeal",
+      "title_hi": "अपील",
+      "keywords": [
+        "first appeal",
+        "second appeal",
+        "30 days",
+        "45 days",
+        "90 days",
+        "senior officer",
+        "appellate authority",
+        "burden of proof"
+      ],
+      "summary_en": "Establishes a two-tier appeal system: First Appeal to a senior officer (or directly to SIC if none designated) within 30 days of PIO decision, decided within 30-45 days; Second Appeal to CIC/SIC within 90 days of first appeal decision, decided within 90 days (extendable). Burden of proof that refusal was justified lies on the PIO.",
+      "summary_hi": "दो-स्तरीय अपील प्रणाली स्थापित करती है: प्रथम अपील वरिष्ठ अधिकारी को (या यदि कोई नामित नहीं तो सीधे SIC को) PIO विनिश्चय के 30 दिनों के भीतर, 30-45 दिनों में विनिश्चित; द्वितीय अपील CIC/SIC को प्रथम अपील विनिश्चय के 90 दिनों के भीतर, 90 दिनों में विनिश्चित (विस्तारणीय)। अस्वीकृति के न्यायोचित होने का भार PIO पर है।",
+      "subsections": [
+        {
+          "subsection_id": "19(1)-19(5)",
+          "title_en": "First Appeal",
+          "title_hi": "प्रथम अपील",
+          "definition_en": "Filed to the senior officer designated by the public authority, or directly to the SIC/CIC if no senior officer is designated; must be filed within 30 days of the PIO's decision or deemed refusal; the senior officer must decide within 30 days (extendable to 45 days with reasons); can direct disclosure, reduce fees, or change the form of access.",
+          "definition_hi": "लोक प्राधिकरण द्वारा नामित वरिष्ठ अधिकारी को, या यदि कोई वरिष्ठ अधिकारी नामित नहीं है तो सीधे SIC/CIC को दाखिल; PIO के विनिश्चय या समझी गई अस्वीकृति के 30 दिनों के भीतर दाखिल करना चाहिए; वरिष्ठ अधिकारी को 30 दिनों के भीतर (कारणों सहित 45 दिनों तक विस्तारणीय) विनिश्चय करना चाहिए; प्रकटीकरण का निर्देश दे सकता है, शुल्क घटा सकता है, पहुंच का रूप बदल सकता है।"
+        },
+        {
+          "subsection_id": "19(10)",
+          "title_en": "Second Appeal",
+          "title_hi": "द्वितीय अपील",
+          "definition_en": "To SIC for state matters or CIC for central matters; must be filed within 90 days of the first appeal decision; the Commission must decide within 90 days (extendable); can pass binding orders, recommend penalties, and recommend compensation for loss/hardship.",
+          "definition_hi": "राज्य मामलों हेतु SIC को या केंद्रीय मामलों हेतु CIC को; प्रथम अपील विनिश्चय के 90 दिनों के भीतर दाखिल करना चाहिए; आयोग को 90 दिनों के भीतर (विस्तारणीय) विनिश्चय करना चाहिए; बाध्यकारी आदेश पास कर सकता है, दंड की सिफारिश कर सकता है, और हानि/कठिनाई हेतु मुआवजे की सिफारिश कर सकता है।"
+        },
+        {
+          "subsection_id": "19(burden of proof)",
+          "title_en": "Burden of proof on PIO",
+          "title_hi": "PIO पर साबित करने का भार",
+          "definition_en": "In any appeal proceeding, the onus to prove that the denial of a request was justified lies on the CPIO/SPIO who denied the request.",
+          "definition_hi": "किसी अपील कार्यवाही में, यह साबित करने का भार कि अनुरोध को अस्वीकार करना न्यायोचित था, उस CPIO/SPIO पर होगा जिसने अनुरोध से इनकार किया।"
+        },
+        {
+          "subsection_id": "19(special provisions)",
+          "title_en": "Life/liberty expedited processing & natural justice",
+          "title_hi": "जीवन/स्वतंत्रता त्वरित प्रसंस्करण और प्राकृतिक न्याय",
+          "definition_en": "Life/liberty cases get expedited processing; both appeal levels follow natural justice; detailed written orders with reasons are mandatory.",
+          "definition_hi": "जीवन/स्वतंत्रता मामलों को त्वरित प्रसंस्करण मिलता है; दोनों अपील स्तर प्राकृतिक न्याय का पालन करते हैं; कारणों सहित विस्तृत लिखित आदेश अनिवार्य हैं।"
+        }
+      ],
+      "applies_when": [
+        "Applicant did not receive a decision within Section 7 timelines, or is aggrieved by a PIO decision — eligible for First Appeal",
+        "First Appeal decision received/lapsed and applicant wishes to escalate — eligible for Second Appeal",
+        "Drafting any rejection — must inform applicant of appeal rights, forum, and timeline",
+        "Evaluating whether a PIO's stated justification for refusal meets the evidentiary burden"
+      ],
+      "pio_response_note": "Every PIO rejection or partial-disclosure response MUST cite the First Appeal forum (senior officer of the public authority) and the 30-day appeal window, per Section 19(1) read with Section 7(8). The PIO bears the burden of proof for any denial if challenged in appeal.",
+      "source_reference": "RTI Rule Book, pp. 76-96 (Appeals Rules 2006 and amendments)"
+    }
+  ]
+}

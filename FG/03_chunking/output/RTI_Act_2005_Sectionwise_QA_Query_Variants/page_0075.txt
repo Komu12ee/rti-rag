@@ -1,0 +1,27 @@
+## Question variants all map to this one provision
+
+- 1. What does Section 24(fines) of the Right to Information Act, 2005 provide?
+- 2. Explain RTI Act Section 24(fines): Fine recommendations.
+- 3. What is Act 24(fines) in RTI? 1 need the rule for commission recommended fine.
+- 5. धारा 24(fines) का सरल अर्थ क्या है जुर्माना सिफारिशें?
+- 4. सूचना का अधिकार अधिनियम, 2005 की धारा 24(fines) में क्या प्रावधान है?
+- 6. RTI Act 24( fines ) ka rule kya hai? सिफारिशें के बारे में बताइए| जुर्माना
+- 7. In this situation: A Second Appeal results in a finding of bad faith persistent non compliance, or serious misconduct by the PIO. Does Section 24(fines) apply, and what does it say?
+- 8. "24(fines) RTI law me kya hai? " "24(fines) ka matlab?"
+
+## Answer
+
+English definition: Fine up to Rs. 25,000 for obstruction; fine up to Rs. 10,000 for destruction willful withholding.
+
+हिंदी परिभाषाः बाधा हेतु 325,000 तक जुर्माना; विनाश| जानबूझकर रोकने हेतु 310,000 तक जुर्माना|
+
+Retrieval anchors: Fine recommendations; जुर्माना सिफारिशें; commission recommended fine; compensation; disciplinary action; criminal prosecution; cumulative penalties
+
+## Typical contexts
+
+- A Secona Appeal results in a finding of bad faith persistent non compliance, or serious misconduct by the PIO
+- Applicant seeks compensation for demonstrable loss hardship from delay or refusal
+
+PIO implementation note: Distinguish this Commission-level penalty regime from the statutory daily penalty under Section 20 this section is broader (criminal disciplinary compensatory) and triggered specifically through Commission adjudication.
+
+Source reference: RTI Rule Book, pp. 166-170

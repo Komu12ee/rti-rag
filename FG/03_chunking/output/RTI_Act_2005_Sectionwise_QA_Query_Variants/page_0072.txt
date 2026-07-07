@@ -1,0 +1,27 @@
+## Question variants all map to this one provision
+
+- 1. What does Section 23(false information) of the Right to Information Act, 2005 provide?
+- 2. Explain RTI Act Section 23(false information): False information by PIO.
+- 3. What is Act 23(false information) in RTI? 1 need the rule for obstruction.
+- 5. धारा 23(false information) का सरल अर्थ क्या है PIO द्वारा जानकारी? झूठी
+- 4. सूचना का अधिकार अधिनियम, 2005 धारा 23( false information ) में क्या प्रावधान है?
+- 6. RTI Act 23(false information ) ka rule kya hai? PIO द्वारा जानकारी के बारे में बताइए| झूठी
+- 7. In this situation: Determining criminal quasi criminal liability for a PIO's deliberate misconduct (as distinct from the administrative Section 20 monetary penalty). Does Section 23(false information) apply, and what does it say?
+- Il 8. "23(false information ) RTI law me kya hai? ' "23(false information) ka matlab? "
+
+## Answer
+
+English definition: Imprisonment up to 2 years OR fine up to Rs. 500.
+
+हिंदी परिभाषाः 2 वर्ष तक कारावास या 2500 तक जुर्माना|
+
+Retrieval anchors: False information by PIO; PIO द्वारा जानकारीो; obstruction; destruction of records; false information; willful withholding imprisonment; fine झूठी
+
+## Typical contexts
+
+- Determining criminal quasi-criminal liability for a PIO's deliberate misconduct (as distinct from the administrative Section 20 monetary penalty)
+- An applicant alleges falsified or maliciously withheld information
+
+PIO implementation note: Distinct from Section 2O's Rs. 25O /day administrative penalty (max Rs. 25,000) this section addresses imprisonment/fine for more serious misconduct such as record destruction or deliberate falsification.
+
+Source reference: RTI Rule Book, pp. 166-170 (Penalties and Implementation)

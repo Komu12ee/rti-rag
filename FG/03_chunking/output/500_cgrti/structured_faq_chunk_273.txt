@@ -1,0 +1,16 @@
+# FAQ Chunk 273
+Document: 500_cgrti
+Source: structured.md
+Pages: 22
+Section: 6.3 CG Departments & PIOs
+Question: Q276. How do I file RTI for local body ( municipality)? A: File with municipal corporation nagar palika PIO, not state government. Each municipality has own PIO.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 52
+
+---
+
+## 6.3 CG Departments & PIOs
+
+Q276. How do I file RTI for local body ( municipality)? A: File with municipal corporation nagar palika PIO, not state government. Each municipality has own PIO.

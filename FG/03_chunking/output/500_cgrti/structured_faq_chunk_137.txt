@@ -1,0 +1,16 @@
+# FAQ Chunk 137
+Document: 500_cgrti
+Source: structured.md
+Pages: 12
+Section: 4.1 Timeline Complications
+Question: Q141. What if PIO says "file is with another department, we'll get it after 15 days"? A: PIO still has 3O day obligation. Internal delays are not excuse. You should escalate if deadline isnt met.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 62
+
+---
+
+## 4.1 Timeline Complications
+
+Q141. What if PIO says "file is with another department, we'll get it after 15 days"? A: PIO still has 3O day obligation. Internal delays are not excuse. You should escalate if deadline isnt met.

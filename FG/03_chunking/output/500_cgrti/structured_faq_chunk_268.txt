@@ -1,0 +1,16 @@
+# FAQ Chunk 268
+Document: 500_cgrti
+Source: structured.md
+Pages: 21-22
+Section: 6.3 CG Departments & PIOs
+Question: Q271. How do I find PIO details of a CG department? A: Visit department website Usually has "RTI Corner" with PIO name, phone, email, address. Or call department main office.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 56
+
+---
+
+## 6.3 CG Departments & PIOs
+
+Q271. How do I find PIO details of a CG department? A: Visit department website Usually has "RTI Corner" with PIO name, phone, email, address. Or call department main office.

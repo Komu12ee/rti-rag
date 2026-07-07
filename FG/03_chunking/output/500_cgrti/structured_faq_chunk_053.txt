@@ -1,0 +1,16 @@
+# FAQ Chunk 53
+Document: 500_cgrti
+Source: structured.md
+Pages: 6
+Section: 2.2 Exemptions & What Cannot Be Requested
+Question: Q56. Can I request sealed tender bids of other companies? A: No, sealed bids are confidential ( Section 8(1) (d)). After bid opening winners bid becomes public.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 56
+
+---
+
+## 2.2 Exemptions & What Cannot Be Requested
+
+Q56. Can I request sealed tender bids of other companies? A: No, sealed bids are confidential ( Section 8(1) (d)). After bid opening winners bid becomes public.

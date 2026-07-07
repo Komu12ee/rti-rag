@@ -1,0 +1,16 @@
+# FAQ Chunk 337
+Document: 500_cgrti
+Source: structured.md
+Pages: 26
+Section: 7.5 Police Department RTI Questions
+Question: Q341. "FIR filed whats status?" A: Yes. Request: FIR copy, investigation status, chargesheet if filed, closure report if closed.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 47
+
+---
+
+## 7.5 Police Department RTI Questions
+
+Q341. "FIR filed whats status?" A: Yes. Request: FIR copy, investigation status, chargesheet if filed, closure report if closed.

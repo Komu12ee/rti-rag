@@ -1,0 +1,16 @@
+# FAQ Chunk 174
+Document: 500_cgrti
+Source: structured.md
+Pages: 15
+Section: 4.4 Exemptions - Tricky Applications
+Question: Q178. If government admits information would cause "embarrassment " can it refuse? A: No, embarrassment is not valid exemption. Only specific Section 8 categories apply.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 54
+
+---
+
+## 4.4 Exemptions - Tricky Applications
+
+Q178. If government admits information would cause "embarrassment " can it refuse? A: No, embarrassment is not valid exemption. Only specific Section 8 categories apply.

@@ -1,0 +1,16 @@
+# FAQ Chunk 300
+Document: 500_cgrti
+Source: structured.md
+Pages: 24
+Section: 7.1 Education Department RTI Questions
+Question: Q303. "Is teacher qualified as per requirement?" A: Yes. Request: teacher appointment letter qualifications submitted, recruitment criteria, subject eligibility.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 44
+
+---
+
+## 7.1 Education Department RTI Questions
+
+Q303. "Is teacher qualified as per requirement?" A: Yes. Request: teacher appointment letter qualifications submitted, recruitment criteria, subject eligibility.

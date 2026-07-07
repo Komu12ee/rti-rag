@@ -1,0 +1,16 @@
+# FAQ Chunk 168
+Document: 500_cgrti
+Source: structured.md
+Pages: 14
+Section: 4.4 Exemptions - Tricky Applications
+Question: Q172. Can "investigation ongoing" forever prevent disclosure? A: No, once investigation closes, information becomes accessible. 2ryear limit should be applied.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 47
+
+---
+
+## 4.4 Exemptions - Tricky Applications
+
+Q172. Can "investigation ongoing" forever prevent disclosure? A: No, once investigation closes, information becomes accessible. 2ryear limit should be applied.

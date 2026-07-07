@@ -1,0 +1,16 @@
+# FAQ Chunk 378
+Document: 500_cgrti
+Source: structured.md
+Pages: 29
+Section: BONUS SECTION: COMMON MISTAKES & HOWTO AVOID
+Question: Q381. "I filed RTI too vague - rejected. Lesson?" A: Always be specific mention subject, year, department, type of document, names if relevant.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 56
+
+---
+
+## BONUS SECTION: COMMON MISTAKES & HOWTO AVOID
+
+Q381. "I filed RTI too vague - rejected. Lesson?" A: Always be specific mention subject, year, department, type of document, names if relevant.

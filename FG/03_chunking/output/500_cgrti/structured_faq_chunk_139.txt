@@ -1,0 +1,16 @@
+# FAQ Chunk 139
+Document: 500_cgrti
+Source: structured.md
+Pages: 12
+Section: 4.1 Timeline Complications
+Question: Q143. If 1 file RTIon 3Oth of month, when is deadline - 29th or 3Oth? A: Deadline is 30 days from receipt. If received on 3Oth, deadline is 3Oth of next month (or last day of month if shorter ).
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 71
+
+---
+
+## 4.1 Timeline Complications
+
+Q143. If 1 file RTIon 3Oth of month, when is deadline - 29th or 3Oth? A: Deadline is 30 days from receipt. If received on 3Oth, deadline is 3Oth of next month (or last day of month if shorter ).

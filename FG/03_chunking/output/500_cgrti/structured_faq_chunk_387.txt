@@ -1,0 +1,16 @@
+# FAQ Chunk 387
+Document: 500_cgrti
+Source: structured.md
+Pages: 30
+Section: BONUS SECTION: COMMON MISTAKES & HOWTO AVOID
+Question: Q390. "PIO keeps asking for more documents - delaying tactic?" A: If beyond 2 3 clarifications seems deliberate escalate to senior officer SIC. delay,
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 56
+
+---
+
+## BONUS SECTION: COMMON MISTAKES & HOWTO AVOID
+
+Q390. "PIO keeps asking for more documents - delaying tactic?" A: If beyond 2 3 clarifications seems deliberate escalate to senior officer SIC. delay,

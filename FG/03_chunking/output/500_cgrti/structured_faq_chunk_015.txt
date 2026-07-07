@@ -1,0 +1,16 @@
+# FAQ Chunk 15
+Document: 500_cgrti
+Source: structured.md
+Pages: 3
+Section: QlL. How do I file an RTI request in Chhattisgarh? A:
+Question: Q18. Can I file one RTI for multiple departments? A: No, each department requires separate RTI. However, if information is jointly held, one application can be filed to coordinating department.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 66
+
+---
+
+## QlL. How do I file an RTI request in Chhattisgarh? A:
+
+Q18. Can I file one RTI for multiple departments? A: No, each department requires separate RTI. However, if information is jointly held, one application can be filed to coordinating department.

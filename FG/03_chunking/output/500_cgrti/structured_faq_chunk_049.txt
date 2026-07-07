@@ -1,0 +1,16 @@
+# FAQ Chunk 49
+Document: 500_cgrti
+Source: structured.md
+Pages: 6
+Section: 2.2 Exemptions & What Cannot Be Requested
+Question: Q52. Can I get information about national security? A: No, national security is exempt (Section 8(l) (a) ). But public interest can override in some cases.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 55
+
+---
+
+## 2.2 Exemptions & What Cannot Be Requested
+
+Q52. Can I get information about national security? A: No, national security is exempt (Section 8(l) (a) ). But public interest can override in some cases.

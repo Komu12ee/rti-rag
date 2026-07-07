@@ -1,0 +1,16 @@
+# FAQ Chunk 103
+Document: 500_cgrti
+Source: structured.md
+Pages: 9
+Section: 3.2 Procedural Technicalities
+Question: Q107. Can PIO delay saying "awaiting superior approval"? A: PIO has 30 Getting internal approval must happen within this time. days. NO,
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 44
+
+---
+
+## 3.2 Procedural Technicalities
+
+Q107. Can PIO delay saying "awaiting superior approval"? A: PIO has 30 Getting internal approval must happen within this time. days. NO,

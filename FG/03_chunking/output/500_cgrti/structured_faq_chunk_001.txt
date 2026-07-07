@@ -1,0 +1,16 @@
+# FAQ Chunk 1
+Document: 500_cgrti
+Source: structured.md
+Pages: 1
+Section: 5O0+ Questions Organized by Difficulty & Topic
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 27
+
+---
+
+## 5O0+ Questions Organized by Difficulty & Topic
+
+Complete Training Dataset for Chhattisgarh RTI Website

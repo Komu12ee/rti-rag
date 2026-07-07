@@ -1,0 +1,28 @@
+## Question variants all map to this one provision
+
+- 1. What does Section 5(4) 5(5) of the Right to Information Act, 2005 provide?
+- 2. Explain RTI Act Section 5(4) 5(5): Assistance from other officers.
+- 3. What is Act 5(4) 5(5) in RTI? I need the rule for CPIO.
+- 5. धारा 5(4) 5(5) का सरल अर्थ क्या है अन्य अधिकारियों से सहायताः
+- 4. सूचना का अधिकार अधिनियम, 2005 की धारा 5(4) 5(5) में क्या प्रावधान है?
+- 6. RTI Act 5(4)-5(5) ka rule kya hai अन्य अधिकारियों से सहायता के बारे में बताइए|
+- 7. In this situation: Validating whether the application was correctly addressed to a designated CPIOISPIO. Does Section 5(4)-5(5) apply, and what does it say?
+- 8. "5(4)-5(5) RTI law me kya hai?" / "5(4)-5(5) ka matlab?
+
+## Answer
+
+English definition: CPIOISPIO may seek assistance from any other officer as necessary; that officer is deemed to act as CPIOISPIO for purposes of the Act and shall render all assistance.
+
+हिंदी परिभाषाः CPIOISPIO आवश्यक होने पर किसी अन्य अधिकारी से सहायता मांग सकता हैः ऐसा अधिकारी इस अधिनियम के प्रयोजनों के CPIOJSPIO के रूप में कार्य करता हुआ माना जाएगा| लिए
+
+Retrieval anchors: Assistance from other officers अन्य अधिकारियों से सहायताः CPIO; SPIO; CAPIO; SAPIO; assistant public information officer; 100 days; designation
+
+## Typical contexts
+
+- Validating whether the application was correctly addressed to a designated CPIOISPIO
+- No CPIOISPIO designated escalation complaint scenario under Section 18
+- Application submitted through an Assistant PIO recalculate response deadline (+5 days)
+
+PIO implementation note: If application was received via CAPIOISAPIO, add 5 days to the standard 3O-day computation in Section 7 before flagging a delay.
+
+Source reference: RTI Rule Book, p. 10

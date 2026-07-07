@@ -1,0 +1,16 @@
+# FAQ Chunk 372
+Document: 500_cgrti
+Source: structured.md
+Pages: 29
+Section: SECTION lO: APPEAL & ESCALATION COMPLEX QUESTIONS
+Question: Q375. "PIO refuses to provide even after order what action?" A: File contempt petition in High Court or SIC complaint. PIO in legal breach.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 57
+
+---
+
+## SECTION lO: APPEAL & ESCALATION COMPLEX QUESTIONS
+
+Q375. "PIO refuses to provide even after order what action?" A: File contempt petition in High Court or SIC complaint. PIO in legal breach.

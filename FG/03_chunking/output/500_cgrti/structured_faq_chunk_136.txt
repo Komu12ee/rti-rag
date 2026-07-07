@@ -1,0 +1,16 @@
+# FAQ Chunk 136
+Document: 500_cgrti
+Source: structured.md
+Pages: 12
+Section: 3.5 Information Commission Powers
+Question: Q140. Can SIC order interim relief? A: Yes, SIC can pass interim orders directing immediate disclosure while case is ongoing.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 39
+
+---
+
+## 3.5 Information Commission Powers
+
+Q140. Can SIC order interim relief? A: Yes, SIC can pass interim orders directing immediate disclosure while case is ongoing.

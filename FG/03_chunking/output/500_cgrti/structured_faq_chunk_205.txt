@@ -1,0 +1,16 @@
+# FAQ Chunk 205
+Document: 500_cgrti
+Source: structured.md
+Pages: 17
+Section: 5.2 Education & Student Scenarios
+Question: Q209. "Computer lab equipment bought but not installed?" A: Request: purchase order, delivery receipt, installation work order, utilization certificate.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 42
+
+---
+
+## 5.2 Education & Student Scenarios
+
+Q209. "Computer lab equipment bought but not installed?" A: Request: purchase order, delivery receipt, installation work order, utilization certificate.

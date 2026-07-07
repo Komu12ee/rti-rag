@@ -1,0 +1,16 @@
+# FAQ Chunk 151
+Document: 500_cgrti
+Source: structured.md
+Pages: 13
+Section: 4.2 Information Existence & Scope Confusion
+Question: Q155. If data is partly digital and partly paper, can cost be charged for compilation? A: compilation and search is free. Only copy cost ( =2l page) can be charged. No,
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 58
+
+---
+
+## 4.2 Information Existence & Scope Confusion
+
+Q155. If data is partly digital and partly paper, can cost be charged for compilation? A: compilation and search is free. Only copy cost ( =2l page) can be charged. No,

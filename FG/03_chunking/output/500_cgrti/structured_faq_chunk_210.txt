@@ -1,0 +1,16 @@
+# FAQ Chunk 210
+Document: 500_cgrti
+Source: structured.md
+Pages: 17
+Section: 5.3 Health & Safety Scenarios
+Question: Q214. "Paramedic asked bribe. Can T lodge complaint?" A: Request: complaint procedure, previous complaints against him, disciplinary action taken. Also file FIR.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 47
+
+---
+
+## 5.3 Health & Safety Scenarios
+
+Q214. "Paramedic asked bribe. Can T lodge complaint?" A: Request: complaint procedure, previous complaints against him, disciplinary action taken. Also file FIR.

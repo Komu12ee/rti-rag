@@ -1,0 +1,16 @@
+# FAQ Chunk 119
+Document: 500_cgrti
+Source: structured.md
+Pages: 11
+Section: 3.4 Suo Motu Disclosure
+Question: Q123. Does suo motu disclosure reduce RTI applications? A: Yes, and that's the goal. If information is already published, RTI process is faster
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 44
+
+---
+
+## 3.4 Suo Motu Disclosure
+
+Q123. Does suo motu disclosure reduce RTI applications? A: Yes, and that's the goal. If information is already published, RTI process is faster

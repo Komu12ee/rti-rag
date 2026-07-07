@@ -1,0 +1,16 @@
+# FAQ Chunk 164
+Document: 500_cgrti
+Source: structured.md
+Pages: 14
+Section: 4.3 Department Confusion & Routing
+Question: Q168. Local body ( municipality ) vs state government which should I approach? A: Depends on what information. Municipal matters municipality PIO. State level state department PIO.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 49
+
+---
+
+## 4.3 Department Confusion & Routing
+
+Q168. Local body ( municipality ) vs state government which should I approach? A: Depends on what information. Municipal matters municipality PIO. State level state department PIO.

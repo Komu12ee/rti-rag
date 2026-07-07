@@ -1,0 +1,16 @@
+# FAQ Chunk 240
+Document: 500_cgrti
+Source: structured.md
+Pages: 19-20
+Section: 5.6 Welfare & Benefit Schemes Scenarios
+Question: Q244. "Disabled person denied disability certificate. Unfair?" A: Request: assessment criteria, your assessment report, medical examination results, rejection reason, appeal procedure.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 57
+
+---
+
+## 5.6 Welfare & Benefit Schemes Scenarios
+
+Q244. "Disabled person denied disability certificate. Unfair?" A: Request: assessment criteria, your assessment report, medical examination results, rejection reason, appeal procedure.

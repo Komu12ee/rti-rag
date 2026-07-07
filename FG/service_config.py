@@ -12,6 +12,7 @@ Usage:
 """
 
 import os
+from pathlib import Path
 from typing import Optional
 from dotenv import load_dotenv
 
@@ -36,8 +37,15 @@ class ServiceConfig:
         self.groq_enabled = os.getenv("GROQ_ENABLED", "true").lower() == "true"
         
         # Embedding Model Configuration
-        self.embedding_model = os.getenv("EMBEDDING_MODEL", "BAAI/bge-m3")
-        self.reranker_model = os.getenv("RERANKER_MODEL", "BAAI/bge-reranker-large")
+        models_dir = Path(__file__).resolve().parent / "models"
+        self.embedding_model = os.getenv(
+            "EMBEDDING_MODEL",
+            str(models_dir / "bge-m3"),
+        )
+        self.reranker_model = os.getenv(
+            "RERANKER_MODEL",
+            str(models_dir / "bge-reranker-v2-m3"),
+        )
         
         # OCR Configuration
         self.ocr_engine = os.getenv("OCR_ENGINE", "docling")

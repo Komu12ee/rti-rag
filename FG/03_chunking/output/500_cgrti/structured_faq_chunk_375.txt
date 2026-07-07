@@ -1,0 +1,16 @@
+# FAQ Chunk 375
+Document: 500_cgrti
+Source: structured.md
+Pages: 29
+Section: SECTION lO: APPEAL & ESCALATION COMPLEX QUESTIONS
+Question: Q378. "RTI involves trade secret when does protection end?" A: After 20 years ( Section 8(3)),or when secret becomes public knowledge information becomes accessible.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 54
+
+---
+
+## SECTION lO: APPEAL & ESCALATION COMPLEX QUESTIONS
+
+Q378. "RTI involves trade secret when does protection end?" A: After 20 years ( Section 8(3)),or when secret becomes public knowledge information becomes accessible.

@@ -1,0 +1,16 @@
+# FAQ Chunk 275
+Document: 500_cgrti
+Source: structured.md
+Pages: 22
+Section: 6.3 CG Departments & PIOs
+Question: Q278. How do I contact a Police Station PIO for FIR details? A: Each police station has designated PIO or ASI. Call police station, ask for PIO. File written request.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 52
+
+---
+
+## 6.3 CG Departments & PIOs
+
+Q278. How do I contact a Police Station PIO for FIR details? A: Each police station has designated PIO or ASI. Call police station, ask for PIO. File written request.

@@ -1,0 +1,16 @@
+# FAQ Chunk 144
+Document: 500_cgrti
+Source: structured.md
+Pages: 12
+Section: 4.1 Timeline Complications
+Question: Q148. If third party objects late ( day 15 instead of day 1O), what happens? A: Depends if genuinely late (beyond 10), PIO may not consider. Or may extension if for good cause. day grant
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 59
+
+---
+
+## 4.1 Timeline Complications
+
+Q148. If third party objects late ( day 15 instead of day 1O), what happens? A: Depends if genuinely late (beyond 10), PIO may not consider. Or may extension if for good cause. day grant

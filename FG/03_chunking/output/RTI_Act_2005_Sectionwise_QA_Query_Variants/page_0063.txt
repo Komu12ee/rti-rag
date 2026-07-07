@@ -1,0 +1,29 @@
+## Question variants all map to this one provision
+
+- 1. What does Section 19(1 ) 19(5) of the Right to Information Act, 2005 provide?
+- 2. Explain RTI Act Section 19(1 ) 19(5): First Appeal.
+- 3. What is Act 19(1 ) 19(5) in RTI? I need the rule for first appeal.
+- 4. सूचना का अधिकार अधिनियम, 2005 धारा 19(1 ) 19(5) में क्या प्रावधान है?
+- 5. धारा 19(1) 1985) का सरल अर्थ क्या है प्रथम अपील?
+- 6. RTI Act 19(1 ) 19(5) ka rule kya hai? प्रथम अपील के बारे में बताइए|
+- 7. In this situation: Applicant did not receive a decision within Section 7 timelines, or is aggrieved by a PIO decision eligible for First Appeal. Does Section 19(1 ) 19(5) apply, and what does it say?
+- 8. "19(1)-19(5) RTI law me kya hai?" "19(1)-19(5) ka matlab?"
+
+## Answer
+
+English definition: Filed to the senior officer designated by the public authority or directly to the SICICIC if no senior officer is designated; must be filed within 30 days of the PIO's decision or deemed refusal; the senior officer must decide within 30 days (extendable to 45 days with reasons); can direct disclosure reduce fees, or change the form of access.
+
+हिंदी परिभाषाः लोक प्राधिकरण द्वारा नामित वरिष्ठ अधिकारी को, या यदि कोई वरिष्ठ अधिकारी नामित नहीं है तो सीधे SICICIC को दाखिलः PIO के विनिश्चय या समझी गई अस्वीकृति के 30 दिनों के भीतर दाखिल करना चाहिएः वरिष्ठ अधिकारी को 30 दिनों के भीतर (कारणों सहित 45 दिनों तक विस्तारणीय) विनिश्चय करना चाहिएः प्रकटीकरण का निर्देश दे सकता है, शुल्क घटा सकता है, पहुंच का रूप बदल सकता हैl
+
+Retrieval anchors: First Appeal; प्रथम अपील; second appeal; 30 days; 45 days; 90 days; senior officer; appellate authority; burden of proof
+
+## Typical contexts
+
+- Applicant did not receive a decision within Section 7 timelines, or is aggrieved by a PIO decision eligible for First Appeal
+- Drafting any rejection must inform applicant of appeal rights, forum, and timeline
+- First Appeal decision receivedllapsed and applicant wishes to escalate eligible for Second Appeal
+- Evaluating whether a PIO's stated justification for refusal meets the evidentiary burden
+
+PIO implementation note: Every PIO rejection or partial-disclosure response MUST cite the First Appeal forum (senior officer of the public authority) and the 3O-day appeal window per Section 19(1 ) read with Section 7(8). The PIO bears the burden of proof for any denial if challenged in appeal.
+
+Source reference: RTI Rule Book, pp. 76-96 (Appeals Rules 2006 and amendments)

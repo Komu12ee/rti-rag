@@ -1,0 +1,18 @@
+# FAQ Chunk 97
+Document: 500_cgrti
+Source: structured.md
+Pages: 9
+Section: 3.l Legal Framework & Interpretation
+Question: Q99. How is "public activity" defined for privacy? A: Activities related to government functions, public interest, democratic participation. Personal hobbies medical aren t "public activity"
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 95
+
+---
+
+## 3.l Legal Framework & Interpretation
+
+Q99. How is "public activity" defined for privacy? A: Activities related to government functions, public interest, democratic participation. Personal hobbies medical aren t "public activity"
+
+Q0O0. Can PIO ask for too much detail and refuse? A: if description is reasonably clear PIO must try to locate. If still unclear PIO asks for clarification. No,

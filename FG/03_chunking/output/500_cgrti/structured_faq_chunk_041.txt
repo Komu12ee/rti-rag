@@ -1,0 +1,16 @@
+# FAQ Chunk 41
+Document: 500_cgrti
+Source: structured.md
+Pages: 5
+Section: 2.1 What Information Can [ Request
+Question: Q44. Can [ ask for copies of government contracts? A: Yes, government contracts are public information. You can request copies of contracts between government and vendors.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 47
+
+---
+
+## 2.1 What Information Can [ Request
+
+Q44. Can [ ask for copies of government contracts? A: Yes, government contracts are public information. You can request copies of contracts between government and vendors.

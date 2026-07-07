@@ -1,0 +1,20 @@
+# FAQ Chunk 384
+Document: 500_cgrti
+Source: structured.md
+Pages: 30
+Section: BONUS SECTION: COMMON MISTAKES & HOWTO AVOID
+Question: Q387. "Threatened by official for filing RTI - complaint?" A: File:
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 66
+
+---
+
+## BONUS SECTION: COMMON MISTAKES & HOWTO AVOID
+
+Q387. "Threatened by official for filing RTI - complaint?" A: File:
+
+- 1. FIR with police (intimidation)
+- 2. Complaint to SIC (RTI intimidation )
+- 3. Grievance with department

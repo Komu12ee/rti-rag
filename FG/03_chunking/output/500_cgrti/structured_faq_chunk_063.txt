@@ -1,0 +1,16 @@
+# FAQ Chunk 63
+Document: 500_cgrti
+Source: structured.md
+Pages: 7
+Section: 2.3 Third Party Information
+Question: Q66. How long does third party notification add to timeline? A: 1O additional days (third party 10 days to respond) . Total: 40 days instead of 30. gets
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 45
+
+---
+
+## 2.3 Third Party Information
+
+Q66. How long does third party notification add to timeline? A: 1O additional days (third party 10 days to respond) . Total: 40 days instead of 30. gets

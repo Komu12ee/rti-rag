@@ -1,0 +1,16 @@
+# FAQ Chunk 45
+Document: 500_cgrti
+Source: structured.md
+Pages: 5
+Section: 2.1 What Information Can [ Request
+Question: Q48. Can I ask for details about government tenders? A: Yes, all tender documents, criteria, and award details are public. Sealed bids of other companies are confidential until opening.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 50
+
+---
+
+## 2.1 What Information Can [ Request
+
+Q48. Can I ask for details about government tenders? A: Yes, all tender documents, criteria, and award details are public. Sealed bids of other companies are confidential until opening.

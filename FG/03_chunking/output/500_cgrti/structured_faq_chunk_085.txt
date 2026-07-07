@@ -1,0 +1,16 @@
+# FAQ Chunk 85
+Document: 500_cgrti
+Source: structured.md
+Pages: 8
+Section: 2.4 Format & Access Methods
+Question: Q88. Can [ get old historical documents? A: Yes, documents 20+ years old are automatically disclosed ( Section 8(3) ) except sovereigntyllegislative privilege cabinet papers.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 48
+
+---
+
+## 2.4 Format & Access Methods
+
+Q88. Can [ get old historical documents? A: Yes, documents 20+ years old are automatically disclosed ( Section 8(3) ) except sovereigntyllegislative privilege cabinet papers.

@@ -1,0 +1,16 @@
+# FAQ Chunk 74
+Document: 500_cgrti
+Source: structured.md
+Pages: 7
+Section: 2.4 Format & Access Methods
+Question: Q77. Can I photograph documents during inspection? A: Personal copies during inspection are not charged (Section 7(5)).
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 36
+
+---
+
+## 2.4 Format & Access Methods
+
+Q77. Can I photograph documents during inspection? A: Personal copies during inspection are not charged (Section 7(5)).

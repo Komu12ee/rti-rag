@@ -1,0 +1,16 @@
+# FAQ Chunk 121
+Document: 500_cgrti
+Source: structured.md
+Pages: 11
+Section: 3.4 Suo Motu Disclosure
+Question: Q125. Can department fail suo motu disclosure? A: Yes, many departments are noncompliant. You can complain to SIC about inadequate suo motu disclosure.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 48
+
+---
+
+## 3.4 Suo Motu Disclosure
+
+Q125. Can department fail suo motu disclosure? A: Yes, many departments are noncompliant. You can complain to SIC about inadequate suo motu disclosure.

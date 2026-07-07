@@ -1,0 +1,16 @@
+# FAQ Chunk 334
+Document: 500_cgrti
+Source: structured.md
+Pages: 26
+Section: 7.4 Revenue Department RTI Questions
+Question: Q338. "Tehsil office what's the structure?" A: Yes. Request: organization chart, staff designation, functions, contact details.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 44
+
+---
+
+## 7.4 Revenue Department RTI Questions
+
+Q338. "Tehsil office what's the structure?" A: Yes. Request: organization chart, staff designation, functions, contact details.

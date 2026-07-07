@@ -1,0 +1,16 @@
+# FAQ Chunk 357
+Document: 500_cgrti
+Source: structured.md
+Pages: 28
+Section: Advanced Timeline & Procedural Issues
+Question: Q361. "File transferred on day 25 new 30 days from transfer?" A: Yes, receiving department gets fresh 30 from transfer receipt date. days
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 42
+
+---
+
+## Advanced Timeline & Procedural Issues
+
+Q361. "File transferred on day 25 new 30 days from transfer?" A: Yes, receiving department gets fresh 30 from transfer receipt date. days

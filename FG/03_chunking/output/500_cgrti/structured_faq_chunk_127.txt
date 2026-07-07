@@ -1,0 +1,16 @@
+# FAQ Chunk 127
+Document: 500_cgrti
+Source: structured.md
+Pages: 11
+Section: 3.5 Information Commission Powers
+Question: Q131. What can State Information Commission do? A: Pass binding orders on PIOs, recommend penalties (up to =25,OOO) , award compensation, initiate suo motu investigations.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 52
+
+---
+
+## 3.5 Information Commission Powers
+
+Q131. What can State Information Commission do? A: Pass binding orders on PIOs, recommend penalties (up to =25,OOO) , award compensation, initiate suo motu investigations.

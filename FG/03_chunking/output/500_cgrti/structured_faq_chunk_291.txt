@@ -1,0 +1,16 @@
+# FAQ Chunk 291
+Document: 500_cgrti
+Source: structured.md
+Pages: 23
+Section: 6.5 CG Government Websites & Online Systems
+Question: Q294. Can I track status of government work project online? A: Not all departments have tracking. RTI is best way. File RTI requesting project status progress reports.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 50
+
+---
+
+## 6.5 CG Government Websites & Online Systems
+
+Q294. Can I track status of government work project online? A: Not all departments have tracking. RTI is best way. File RTI requesting project status progress reports.

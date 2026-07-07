@@ -1,0 +1,16 @@
+# FAQ Chunk 18
+Document: 500_cgrti
+Source: structured.md
+Pages: 3
+Section: 13 Timeline & Response
+Question: Q21. How long does it take to get RTI response in Chhattisgarh? A: Standard: 30 days from receipt of application. Emergency (life liberty cases): 48 hours
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 49
+
+---
+
+## 13 Timeline & Response
+
+Q21. How long does it take to get RTI response in Chhattisgarh? A: Standard: 30 days from receipt of application. Emergency (life liberty cases): 48 hours

@@ -1,0 +1,16 @@
+# FAQ Chunk 376
+Document: 500_cgrti
+Source: structured.md
+Pages: 29
+Section: SECTION lO: APPEAL & ESCALATION COMPLEX QUESTIONS
+Question: Q379. "Confidentiality ends old information now public?" Aः If confidentiality period over, can refiled and should get disclosure. File new RTI.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 57
+
+---
+
+## SECTION lO: APPEAL & ESCALATION COMPLEX QUESTIONS
+
+Q379. "Confidentiality ends old information now public?" Aः If confidentiality period over, can refiled and should get disclosure. File new RTI.

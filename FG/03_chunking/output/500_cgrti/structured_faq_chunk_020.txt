@@ -1,0 +1,16 @@
+# FAQ Chunk 20
+Document: 500_cgrti
+Source: structured.md
+Pages: 3
+Section: 13 Timeline & Response
+Question: Q23. Can the 3O day deadline be extended? A: Yes if third party notification is required (Section ll ) , the deadline extends to 40 days.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 44
+
+---
+
+## 13 Timeline & Response
+
+Q23. Can the 3O day deadline be extended? A: Yes if third party notification is required (Section ll ) , the deadline extends to 40 days.

@@ -1,0 +1,16 @@
+# FAQ Chunk 142
+Document: 500_cgrti
+Source: structured.md
+Pages: 12
+Section: 4.1 Timeline Complications
+Question: Q146. Can PIO claim "we have to check 1O0 files for one piece of data"? A: No, compilation time is included in 3O-day deadline. Cannot demand extension for compilation.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 53
+
+---
+
+## 4.1 Timeline Complications
+
+Q146. Can PIO claim "we have to check 1O0 files for one piece of data"? A: No, compilation time is included in 3O-day deadline. Cannot demand extension for compilation.

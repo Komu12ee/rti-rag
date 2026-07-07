@@ -1,0 +1,16 @@
+# FAQ Chunk 14
+Document: 500_cgrti
+Source: structured.md
+Pages: 3
+Section: QlL. How do I file an RTI request in Chhattisgarh? A:
+Question: Q17. Do I need specificforms to file RTI? A: No, any format works. You can use official forms if available, but a letter or email with details is sufficient. plain
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 64
+
+---
+
+## QlL. How do I file an RTI request in Chhattisgarh? A:
+
+Q17. Do I need specificforms to file RTI? A: No, any format works. You can use official forms if available, but a letter or email with details is sufficient. plain

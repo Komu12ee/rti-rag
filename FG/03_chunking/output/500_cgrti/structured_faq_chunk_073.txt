@@ -1,0 +1,16 @@
+# FAQ Chunk 73
+Document: 500_cgrti
+Source: structured.md
+Pages: 7
+Section: 2.4 Format & Access Methods
+Question: Q76. Is there charge for inspection without copying? A: No, inspection is usually free. You only pay if you want copies.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 39
+
+---
+
+## 2.4 Format & Access Methods
+
+Q76. Is there charge for inspection without copying? A: No, inspection is usually free. You only pay if you want copies.

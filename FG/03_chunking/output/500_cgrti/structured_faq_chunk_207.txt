@@ -1,0 +1,16 @@
+# FAQ Chunk 207
+Document: 500_cgrti
+Source: structured.md
+Pages: 17
+Section: 5.3 Health & Safety Scenarios
+Question: Q211. "Hospital lacks medicines. Is there budget?" A: Request: annual budget allocation, expenditure on medicines, inventory records, purchase orders.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 47
+
+---
+
+## 5.3 Health & Safety Scenarios
+
+Q211. "Hospital lacks medicines. Is there budget?" A: Request: annual budget allocation, expenditure on medicines, inventory records, purchase orders.

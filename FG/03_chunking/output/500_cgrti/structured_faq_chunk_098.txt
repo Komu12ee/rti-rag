@@ -1,0 +1,16 @@
+# FAQ Chunk 98
+Document: 500_cgrti
+Source: structured.md
+Pages: 9
+Section: 3.2 Procedural Technicalities
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 43
+
+---
+
+## 3.2 Procedural Technicalities
+
+Q1O1. What if application is incomplete? A: PIO can ask for clarification but cannot summarily reject. Must give reasonable opportunity to correct.

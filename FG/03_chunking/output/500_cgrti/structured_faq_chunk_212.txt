@@ -1,0 +1,16 @@
+# FAQ Chunk 212
+Document: 500_cgrti
+Source: structured.md
+Pages: 17-18
+Section: 5.3 Health & Safety Scenarios
+Question: Q216. "Drugs seized at hospital. How did they enter?" A: Request: drug procurement policy, supplier verification, batch testing storage security, audit reports
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 47
+
+---
+
+## 5.3 Health & Safety Scenarios
+
+Q216. "Drugs seized at hospital. How did they enter?" A: Request: drug procurement policy, supplier verification, batch testing storage security, audit reports

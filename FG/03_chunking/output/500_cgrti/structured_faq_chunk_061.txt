@@ -1,0 +1,16 @@
+# FAQ Chunk 61
+Document: 500_cgrti
+Source: structured.md
+Pages: 6
+Section: 2.3 Third Party Information
+Question: Q64. Can I request tender details of competing companies? A: Preraward: NO (confidential). Post award: YES for winning company details.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 41
+
+---
+
+## 2.3 Third Party Information
+
+Q64. Can I request tender details of competing companies? A: Preraward: NO (confidential). Post award: YES for winning company details.

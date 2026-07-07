@@ -1,0 +1,16 @@
+# FAQ Chunk 172
+Document: 500_cgrti
+Source: structured.md
+Pages: 14
+Section: 4.4 Exemptions - Tricky Applications
+Question: Q176. What if information reveals security lapse can itbe withheld? A: Tricky - security breach is public interest, but disclosing details might compound breach. Typically withheld initially.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 55
+
+---
+
+## 4.4 Exemptions - Tricky Applications
+
+Q176. What if information reveals security lapse can itbe withheld? A: Tricky - security breach is public interest, but disclosing details might compound breach. Typically withheld initially.

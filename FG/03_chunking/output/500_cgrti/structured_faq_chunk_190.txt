@@ -1,0 +1,16 @@
+# FAQ Chunk 190
+Document: 500_cgrti
+Source: structured.md
+Pages: 16
+Section: .1 Corruption & Transparency Scenarios
+Question: Q194. "Daughter got government job. Is it due to corruption? Can RTI help?" A: Request: recruitment notification, merit list, selection criteria, interview scores. Anomalies will show pattern.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 65
+
+---
+
+## .1 Corruption & Transparency Scenarios
+
+Q194. "Daughter got government job. Is it due to corruption? Can RTI help?" A: Request: recruitment notification, merit list, selection criteria, interview scores. Anomalies will show pattern.

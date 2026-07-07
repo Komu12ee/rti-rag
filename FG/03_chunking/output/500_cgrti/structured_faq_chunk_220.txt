@@ -1,0 +1,16 @@
+# FAQ Chunk 220
+Document: 500_cgrti
+Source: structured.md
+Pages: 18
+Section: 5.4 Infrastructure & Public Works Scenarios
+Question: Q224. "Street light broken for months, not repaired. Why?" A: Request: maintenance contract, complaint records, repair requests, budget for maintenance, payment status.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 51
+
+---
+
+## 5.4 Infrastructure & Public Works Scenarios
+
+Q224. "Street light broken for months, not repaired. Why?" A: Request: maintenance contract, complaint records, repair requests, budget for maintenance, payment status.

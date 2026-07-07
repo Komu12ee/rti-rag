@@ -1,0 +1,16 @@
+# FAQ Chunk 234
+Document: 500_cgrti
+Source: structured.md
+Pages: 19
+Section: 5.5 Appointments & Recruitment Scenarios
+Question: Q238. "Post advertised but interview cancelled. Explain?" A: Request: vacancy advertisement, applications received, interview scheduled, cancellation order, reasons, readvertisement status.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 54
+
+---
+
+## 5.5 Appointments & Recruitment Scenarios
+
+Q238. "Post advertised but interview cancelled. Explain?" A: Request: vacancy advertisement, applications received, interview scheduled, cancellation order, reasons, readvertisement status.

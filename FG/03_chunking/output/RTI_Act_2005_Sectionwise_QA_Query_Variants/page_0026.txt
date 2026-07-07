@@ -1,0 +1,28 @@
+## Question variants all map to this one provision
+
+- 1. What does Section 6(2) of the Right to Information Act, 2005 provide?
+- 2. Explain RTI Act Section 6(2): No reason required.
+- 3. What is Act 6(2) in RTI? I need the rule for application.
+- 5. धारा 6(2) का सरल अर्थ क्या है कारण देने की आवश्यकता नहीं?
+- 4. सूचना का अधिकार अधिनियम, 2005 धारा 6(2) में क्या प्रावधान है?
+- 6. RTI Act 6(2 ) ka rule kya hai? कारण देने की आवश्यकता नहीं के बारे में बताइए|
+- 7. In this situation: Validating application format/language compliance. Does Section 6(2) apply, and what does it say?
+- 8. "6(2) RTI law me kya hai? " "6(2) ka matlab?"
+
+## Answer
+
+English definition: Applicant not required to give any reason for the request or any personal details except those necessary for contact.
+
+हिंदीं परिभाषाः आवेदक से अनुरोध का कारण या संपर्क हेतु आवश्यक के सिवाय कोई व्यक्तिगत विवरण देने की अपेक्षा नहीं की जाएगी|
+
+Retrieval anchors: No reason required; कारण देने को आवश्यकता नहों ; application; request format; fee; transfer of application; language of application
+
+## Typical contexts
+
+- Validating application format language compliance
+- Information requested belongs to a different public authority trigger transfer procedure
+- Application demands a 'reason' from applicant non-compliant practice to flag
+
+PIO implementation note: Never reject or delay an application merely because the applicant has not stated a reason. If the subject matter belongs to another public authority transfer per 6(3) and notify the applicant; do not silently reject.
+
+Source reference: RTI Rule Book, pp. 11-12

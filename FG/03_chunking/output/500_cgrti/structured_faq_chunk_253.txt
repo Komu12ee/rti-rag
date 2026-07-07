@@ -1,0 +1,16 @@
+# FAQ Chunk 253
+Document: 500_cgrti
+Source: structured.md
+Pages: 20
+Section: Chhattisgarh Government & State RTI Details
+Question: Q256. Can I visit SIC office directly to file appeal? A: Yes, you can visit in person. Better to file online for record. In-person filing also accepted.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 51
+
+---
+
+## Chhattisgarh Government & State RTI Details
+
+Q256. Can I visit SIC office directly to file appeal? A: Yes, you can visit in person. Better to file online for record. In-person filing also accepted.

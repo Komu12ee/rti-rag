@@ -1,0 +1,16 @@
+# FAQ Chunk 251
+Document: 500_cgrti
+Source: structured.md
+Pages: 20
+Section: Chhattisgarh Government & State RTI Details
+Question: Q254. How many Information Commissioners are in Chhattisgarh SIC? A: One Chief Information Commissioner + up to 10 Information Commissioners (exact number varies with appointments).
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 53
+
+---
+
+## Chhattisgarh Government & State RTI Details
+
+Q254. How many Information Commissioners are in Chhattisgarh SIC? A: One Chief Information Commissioner + up to 10 Information Commissioners (exact number varies with appointments).

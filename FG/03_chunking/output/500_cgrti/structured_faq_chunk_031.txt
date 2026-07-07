@@ -1,0 +1,16 @@
+# FAQ Chunk 31
+Document: 500_cgrti
+Source: structured.md
+Pages: 4
+Section: L.4 Fees & Payment
+Question: Q34. Are there fees for First Appeal or Second Appeal? A: No appeals to SIC senior officer are free. No fee charged.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 42
+
+---
+
+## L.4 Fees & Payment
+
+Q34. Are there fees for First Appeal or Second Appeal? A: No appeals to SIC senior officer are free. No fee charged.

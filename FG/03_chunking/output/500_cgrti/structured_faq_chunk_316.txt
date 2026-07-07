@@ -1,0 +1,16 @@
+# FAQ Chunk 316
+Document: 500_cgrti
+Source: structured.md
+Pages: 25
+Section: 7.2 Health Department RTI Questions
+Question: Q320. "Why is maternity ward never open?" A: Yes. Request: functional status, staffing availability of equipment, daily deliveries, referral cases.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 47
+
+---
+
+## 7.2 Health Department RTI Questions
+
+Q320. "Why is maternity ward never open?" A: Yes. Request: functional status, staffing availability of equipment, daily deliveries, referral cases.

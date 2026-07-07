@@ -1,0 +1,16 @@
+# FAQ Chunk 126
+Document: 500_cgrti
+Source: structured.md
+Pages: 11
+Section: 3.4 Suo Motu Disclosure
+Question: Q130. What if department's website information is incomplete? A: You can file RTI for missing information, or complaint to SIC about non compliance with Section 4.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 43
+
+---
+
+## 3.4 Suo Motu Disclosure
+
+Q130. What if department's website information is incomplete? A: You can file RTI for missing information, or complaint to SIC about non compliance with Section 4.

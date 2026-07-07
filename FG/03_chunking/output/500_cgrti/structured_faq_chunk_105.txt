@@ -1,0 +1,16 @@
+# FAQ Chunk 105
+Document: 500_cgrti
+Source: structured.md
+Pages: 10
+Section: 3.2 Procedural Technicalities
+Question: Q109. What if PIO transfers application to another department? A: Original timeline pauses, receiving department gets new 30 days. You should be informed within 5 Of transfer. days
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 47
+
+---
+
+## 3.2 Procedural Technicalities
+
+Q109. What if PIO transfers application to another department? A: Original timeline pauses, receiving department gets new 30 days. You should be informed within 5 Of transfer. days

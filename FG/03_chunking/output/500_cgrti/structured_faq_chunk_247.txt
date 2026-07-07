@@ -1,0 +1,16 @@
+# FAQ Chunk 247
+Document: 500_cgrti
+Source: structured.md
+Pages: 20
+Section: Chhattisgarh Government & State RTI Details
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 19
+
+---
+
+## Chhattisgarh Government & State RTI Details
+
+6.1 Chhattisgarh State Information Commission

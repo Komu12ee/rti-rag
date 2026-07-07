@@ -1,0 +1,16 @@
+# FAQ Chunk 11
+Document: 500_cgrti
+Source: structured.md
+Pages: 2
+Section: QlL. How do I file an RTI request in Chhattisgarh? A:
+Question: Q14. Can I submit RTI by email? A: Tes, you can email your RTI request to the department's PIO email address (if provided on their website) along with fee proof
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 64
+
+---
+
+## QlL. How do I file an RTI request in Chhattisgarh? A:
+
+Q14. Can I submit RTI by email? A: Tes, you can email your RTI request to the department's PIO email address (if provided on their website) along with fee proof

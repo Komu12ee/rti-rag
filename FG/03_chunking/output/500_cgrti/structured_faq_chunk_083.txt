@@ -1,0 +1,16 @@
+# FAQ Chunk 83
+Document: 500_cgrti
+Source: structured.md
+Pages: 8
+Section: 2.4 Format & Access Methods
+Question: Q86. Can I get information about election? A: Tes, election data is public. But candidate personal details and voting patterns are confidential.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 39
+
+---
+
+## 2.4 Format & Access Methods
+
+Q86. Can I get information about election? A: Tes, election data is public. But candidate personal details and voting patterns are confidential.

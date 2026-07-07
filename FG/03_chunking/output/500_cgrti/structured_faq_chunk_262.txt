@@ -1,0 +1,16 @@
+# FAQ Chunk 262
+Document: 500_cgrti
+Source: structured.md
+Pages: 21
+Section: 6.2 CG Online RTI Portal
+Question: Q265. How long does portal registration take? A: Usually instant or within 24 hours if email is verified properly
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 33
+
+---
+
+## 6.2 CG Online RTI Portal
+
+Q265. How long does portal registration take? A: Usually instant or within 24 hours if email is verified properly

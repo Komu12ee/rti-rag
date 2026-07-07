@@ -1,0 +1,1017 @@
+{
+  "document_name": "RTI_Act_2005_Sectionwise_QA_Query_Variants",
+  "source_markdown": "C:\\Users\\hp\\current_status\\CHiPS-RTI-Project\\citizen\\rti_sarvam copy\\data\\rti-rag\\FG\\01_preprocessing\\stage2_output\\RTI_Act_2005_Sectionwise_QA_Query_Variants\\structured.md",
+  "chunking_strategy": "strict_one_page_one_chunk",
+  "total_chunks": 84,
+  "confidence_file": "C:\\Users\\hp\\current_status\\CHiPS-RTI-Project\\citizen\\rti_sarvam copy\\data\\rti-rag\\FG\\01_preprocessing\\stage2_output\\RTI_Act_2005_Sectionwise_QA_Query_Variants\\RTI_Act_2005_Sectionwise_QA_Query_Variants.pdf_confidence.json",
+  "chunks": [
+    {
+      "chunk_index": 1,
+      "page_number": 1,
+      "filename": "page_0001.txt",
+      "character_count": 1179,
+      "word_count": 172,
+      "page_confidence": {
+        "page_number": 1,
+        "ocr_score": 0.6326418584310673,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 2,
+      "page_number": 2,
+      "filename": "page_0002.txt",
+      "character_count": 2332,
+      "word_count": 269,
+      "page_confidence": {
+        "page_number": 2,
+        "ocr_score": 0.6907020833026456,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 3,
+      "page_number": 3,
+      "filename": "page_0003.txt",
+      "character_count": 1363,
+      "word_count": 137,
+      "page_confidence": {
+        "page_number": 3,
+        "ocr_score": 0.6899898094283943,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 4,
+      "page_number": 4,
+      "filename": "page_0004.txt",
+      "character_count": 1294,
+      "word_count": 228,
+      "page_confidence": {
+        "page_number": 4,
+        "ocr_score": 0.568166714767297,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 5,
+      "page_number": 5,
+      "filename": "page_0005.txt",
+      "character_count": 1283,
+      "word_count": 220,
+      "page_confidence": {
+        "page_number": 5,
+        "ocr_score": 0.608058069209216,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 6,
+      "page_number": 6,
+      "filename": "page_0006.txt",
+      "character_count": 1426,
+      "word_count": 249,
+      "page_confidence": {
+        "page_number": 6,
+        "ocr_score": 0.5746470842096457,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 7,
+      "page_number": 7,
+      "filename": "page_0007.txt",
+      "character_count": 1967,
+      "word_count": 319,
+      "page_confidence": {
+        "page_number": 7,
+        "ocr_score": 0.5841443058481626,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 8,
+      "page_number": 8,
+      "filename": "page_0008.txt",
+      "character_count": 1692,
+      "word_count": 278,
+      "page_confidence": {
+        "page_number": 8,
+        "ocr_score": 0.6190586434535635,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 9,
+      "page_number": 9,
+      "filename": "page_0009.txt",
+      "character_count": 1781,
+      "word_count": 292,
+      "page_confidence": {
+        "page_number": 9,
+        "ocr_score": 0.6196487017567788,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 10,
+      "page_number": 10,
+      "filename": "page_0010.txt",
+      "character_count": 1807,
+      "word_count": 291,
+      "page_confidence": {
+        "page_number": 10,
+        "ocr_score": 0.5986765591507152,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 11,
+      "page_number": 11,
+      "filename": "page_0011.txt",
+      "character_count": 1738,
+      "word_count": 279,
+      "page_confidence": {
+        "page_number": 11,
+        "ocr_score": 0.5944780972068469,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 12,
+      "page_number": 12,
+      "filename": "page_0012.txt",
+      "character_count": 1973,
+      "word_count": 323,
+      "page_confidence": {
+        "page_number": 12,
+        "ocr_score": 0.5727569424072745,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 13,
+      "page_number": 13,
+      "filename": "page_0013.txt",
+      "character_count": 1644,
+      "word_count": 280,
+      "page_confidence": {
+        "page_number": 13,
+        "ocr_score": 0.6117555265987705,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 14,
+      "page_number": 14,
+      "filename": "page_0014.txt",
+      "character_count": 1468,
+      "word_count": 254,
+      "page_confidence": {
+        "page_number": 14,
+        "ocr_score": 0.6057693821544656,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 15,
+      "page_number": 15,
+      "filename": "page_0015.txt",
+      "character_count": 1959,
+      "word_count": 310,
+      "page_confidence": {
+        "page_number": 15,
+        "ocr_score": 0.5927260496229206,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 16,
+      "page_number": 16,
+      "filename": "page_0016.txt",
+      "character_count": 3032,
+      "word_count": 459,
+      "page_confidence": {
+        "page_number": 16,
+        "ocr_score": 0.5742037256049045,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 17,
+      "page_number": 17,
+      "filename": "page_0017.txt",
+      "character_count": 1923,
+      "word_count": 316,
+      "page_confidence": {
+        "page_number": 17,
+        "ocr_score": 0.5790133273115432,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 18,
+      "page_number": 18,
+      "filename": "page_0018.txt",
+      "character_count": 1826,
+      "word_count": 283,
+      "page_confidence": {
+        "page_number": 18,
+        "ocr_score": 0.5512196952546947,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 19,
+      "page_number": 19,
+      "filename": "page_0019.txt",
+      "character_count": 2007,
+      "word_count": 327,
+      "page_confidence": {
+        "page_number": 19,
+        "ocr_score": 0.5813654009194869,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 20,
+      "page_number": 20,
+      "filename": "page_0020.txt",
+      "character_count": 1964,
+      "word_count": 320,
+      "page_confidence": {
+        "page_number": 20,
+        "ocr_score": 0.6106892435554753,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 21,
+      "page_number": 21,
+      "filename": "page_0021.txt",
+      "character_count": 1666,
+      "word_count": 275,
+      "page_confidence": {
+        "page_number": 21,
+        "ocr_score": 0.6246043747459674,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 22,
+      "page_number": 22,
+      "filename": "page_0022.txt",
+      "character_count": 1784,
+      "word_count": 291,
+      "page_confidence": {
+        "page_number": 22,
+        "ocr_score": 0.6070712845624315,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 23,
+      "page_number": 23,
+      "filename": "page_0023.txt",
+      "character_count": 1605,
+      "word_count": 269,
+      "page_confidence": {
+        "page_number": 23,
+        "ocr_score": 0.6371324815793096,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 24,
+      "page_number": 24,
+      "filename": "page_0024.txt",
+      "character_count": 1716,
+      "word_count": 286,
+      "page_confidence": {
+        "page_number": 24,
+        "ocr_score": 0.6148577346231101,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 25,
+      "page_number": 25,
+      "filename": "page_0025.txt",
+      "character_count": 1824,
+      "word_count": 303,
+      "page_confidence": {
+        "page_number": 25,
+        "ocr_score": 0.6072255245350091,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 26,
+      "page_number": 26,
+      "filename": "page_0026.txt",
+      "character_count": 1585,
+      "word_count": 266,
+      "page_confidence": {
+        "page_number": 26,
+        "ocr_score": 0.6317806437296777,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 27,
+      "page_number": 27,
+      "filename": "page_0027.txt",
+      "character_count": 1949,
+      "word_count": 327,
+      "page_confidence": {
+        "page_number": 27,
+        "ocr_score": 0.6009278615450642,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 28,
+      "page_number": 28,
+      "filename": "page_0028.txt",
+      "character_count": 2062,
+      "word_count": 360,
+      "page_confidence": {
+        "page_number": 28,
+        "ocr_score": 0.5855419035919177,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 29,
+      "page_number": 29,
+      "filename": "page_0029.txt",
+      "character_count": 1728,
+      "word_count": 305,
+      "page_confidence": {
+        "page_number": 29,
+        "ocr_score": 0.6070315352790635,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 30,
+      "page_number": 30,
+      "filename": "page_0030.txt",
+      "character_count": 1933,
+      "word_count": 336,
+      "page_confidence": {
+        "page_number": 30,
+        "ocr_score": 0.5967829431849381,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 31,
+      "page_number": 31,
+      "filename": "page_0031.txt",
+      "character_count": 1880,
+      "word_count": 311,
+      "page_confidence": {
+        "page_number": 31,
+        "ocr_score": 0.6011782957356204,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 32,
+      "page_number": 32,
+      "filename": "page_0032.txt",
+      "character_count": 1863,
+      "word_count": 321,
+      "page_confidence": {
+        "page_number": 32,
+        "ocr_score": 0.5680972909807899,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 33,
+      "page_number": 33,
+      "filename": "page_0033.txt",
+      "character_count": 1750,
+      "word_count": 308,
+      "page_confidence": {
+        "page_number": 33,
+        "ocr_score": 0.6214613171171148,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 34,
+      "page_number": 34,
+      "filename": "page_0034.txt",
+      "character_count": 1786,
+      "word_count": 307,
+      "page_confidence": {
+        "page_number": 34,
+        "ocr_score": 0.6041506706068417,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 35,
+      "page_number": 35,
+      "filename": "page_0035.txt",
+      "character_count": 2621,
+      "word_count": 407,
+      "page_confidence": {
+        "page_number": 35,
+        "ocr_score": 0.6008886164564118,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 36,
+      "page_number": 36,
+      "filename": "page_0036.txt",
+      "character_count": 2473,
+      "word_count": 394,
+      "page_confidence": {
+        "page_number": 36,
+        "ocr_score": 0.6265391242826768,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 37,
+      "page_number": 37,
+      "filename": "page_0037.txt",
+      "character_count": 2441,
+      "word_count": 378,
+      "page_confidence": {
+        "page_number": 37,
+        "ocr_score": 0.5988182057325734,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 38,
+      "page_number": 38,
+      "filename": "page_0038.txt",
+      "character_count": 2767,
+      "word_count": 430,
+      "page_confidence": {
+        "page_number": 38,
+        "ocr_score": 0.6301777975502121,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 39,
+      "page_number": 39,
+      "filename": "page_0039.txt",
+      "character_count": 2487,
+      "word_count": 386,
+      "page_confidence": {
+        "page_number": 39,
+        "ocr_score": 0.6242708941103715,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 40,
+      "page_number": 40,
+      "filename": "page_0040.txt",
+      "character_count": 2331,
+      "word_count": 367,
+      "page_confidence": {
+        "page_number": 40,
+        "ocr_score": 0.6045200608373946,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 41,
+      "page_number": 41,
+      "filename": "page_0041.txt",
+      "character_count": 2581,
+      "word_count": 406,
+      "page_confidence": {
+        "page_number": 41,
+        "ocr_score": 0.6078981096009474,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 42,
+      "page_number": 42,
+      "filename": "page_0042.txt",
+      "character_count": 2373,
+      "word_count": 368,
+      "page_confidence": {
+        "page_number": 42,
+        "ocr_score": 0.6082838060945895,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 43,
+      "page_number": 43,
+      "filename": "page_0043.txt",
+      "character_count": 2646,
+      "word_count": 417,
+      "page_confidence": {
+        "page_number": 43,
+        "ocr_score": 0.6343229998741148,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 44,
+      "page_number": 44,
+      "filename": "page_0044.txt",
+      "character_count": 2806,
+      "word_count": 436,
+      "page_confidence": {
+        "page_number": 44,
+        "ocr_score": 0.5976542408669234,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 45,
+      "page_number": 45,
+      "filename": "page_0045.txt",
+      "character_count": 2566,
+      "word_count": 409,
+      "page_confidence": {
+        "page_number": 45,
+        "ocr_score": 0.62260798838238,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 46,
+      "page_number": 46,
+      "filename": "page_0046.txt",
+      "character_count": 2438,
+      "word_count": 400,
+      "page_confidence": {
+        "page_number": 46,
+        "ocr_score": 0.6193027459220422,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 47,
+      "page_number": 47,
+      "filename": "page_0047.txt",
+      "character_count": 1755,
+      "word_count": 294,
+      "page_confidence": {
+        "page_number": 47,
+        "ocr_score": 0.6513307425319201,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 48,
+      "page_number": 48,
+      "filename": "page_0048.txt",
+      "character_count": 1764,
+      "word_count": 311,
+      "page_confidence": {
+        "page_number": 48,
+        "ocr_score": 0.5557128815853738,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 49,
+      "page_number": 49,
+      "filename": "page_0049.txt",
+      "character_count": 2036,
+      "word_count": 337,
+      "page_confidence": {
+        "page_number": 49,
+        "ocr_score": 0.5693439317364815,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 50,
+      "page_number": 50,
+      "filename": "page_0050.txt",
+      "character_count": 2472,
+      "word_count": 423,
+      "page_confidence": {
+        "page_number": 50,
+        "ocr_score": 0.5364592001840937,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 51,
+      "page_number": 51,
+      "filename": "page_0051.txt",
+      "character_count": 1937,
+      "word_count": 328,
+      "page_confidence": {
+        "page_number": 51,
+        "ocr_score": 0.5909161611322111,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 52,
+      "page_number": 52,
+      "filename": "page_0052.txt",
+      "character_count": 2009,
+      "word_count": 347,
+      "page_confidence": {
+        "page_number": 52,
+        "ocr_score": 0.5711268995812454,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 53,
+      "page_number": 53,
+      "filename": "page_0053.txt",
+      "character_count": 1841,
+      "word_count": 321,
+      "page_confidence": {
+        "page_number": 53,
+        "ocr_score": 0.6025650400337645,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 54,
+      "page_number": 54,
+      "filename": "page_0054.txt",
+      "character_count": 1792,
+      "word_count": 286,
+      "page_confidence": {
+        "page_number": 54,
+        "ocr_score": 0.5807053428039193,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 55,
+      "page_number": 55,
+      "filename": "page_0055.txt",
+      "character_count": 1706,
+      "word_count": 287,
+      "page_confidence": {
+        "page_number": 55,
+        "ocr_score": 0.5821892523594766,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 56,
+      "page_number": 56,
+      "filename": "page_0056.txt",
+      "character_count": 1807,
+      "word_count": 311,
+      "page_confidence": {
+        "page_number": 56,
+        "ocr_score": 0.5488331438575874,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 57,
+      "page_number": 57,
+      "filename": "page_0057.txt",
+      "character_count": 2139,
+      "word_count": 324,
+      "page_confidence": {
+        "page_number": 57,
+        "ocr_score": 0.5390383165924741,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 58,
+      "page_number": 58,
+      "filename": "page_0058.txt",
+      "character_count": 1733,
+      "word_count": 278,
+      "page_confidence": {
+        "page_number": 58,
+        "ocr_score": 0.5797410038343948,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 59,
+      "page_number": 59,
+      "filename": "page_0059.txt",
+      "character_count": 1862,
+      "word_count": 289,
+      "page_confidence": {
+        "page_number": 59,
+        "ocr_score": 0.5824763434818023,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 60,
+      "page_number": 60,
+      "filename": "page_0060.txt",
+      "character_count": 1587,
+      "word_count": 266,
+      "page_confidence": {
+        "page_number": 60,
+        "ocr_score": 0.5914271547707919,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 61,
+      "page_number": 61,
+      "filename": "page_0061.txt",
+      "character_count": 1680,
+      "word_count": 273,
+      "page_confidence": {
+        "page_number": 61,
+        "ocr_score": 0.615100216711442,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 62,
+      "page_number": 62,
+      "filename": "page_0062.txt",
+      "character_count": 1886,
+      "word_count": 303,
+      "page_confidence": {
+        "page_number": 62,
+        "ocr_score": 0.6269132242507901,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 63,
+      "page_number": 63,
+      "filename": "page_0063.txt",
+      "character_count": 2428,
+      "word_count": 423,
+      "page_confidence": {
+        "page_number": 63,
+        "ocr_score": 0.5866538351855574,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 64,
+      "page_number": 64,
+      "filename": "page_0064.txt",
+      "character_count": 2227,
+      "word_count": 386,
+      "page_confidence": {
+        "page_number": 64,
+        "ocr_score": 0.5910038576483083,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 65,
+      "page_number": 65,
+      "filename": "page_0065.txt",
+      "character_count": 2132,
+      "word_count": 373,
+      "page_confidence": {
+        "page_number": 65,
+        "ocr_score": 0.6182358423601021,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 66,
+      "page_number": 66,
+      "filename": "page_0066.txt",
+      "character_count": 2323,
+      "word_count": 363,
+      "page_confidence": {
+        "page_number": 66,
+        "ocr_score": 0.6463903510050092,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 67,
+      "page_number": 67,
+      "filename": "page_0067.txt",
+      "character_count": 1576,
+      "word_count": 242,
+      "page_confidence": {
+        "page_number": 67,
+        "ocr_score": 0.6061717832430166,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 68,
+      "page_number": 68,
+      "filename": "page_0068.txt",
+      "character_count": 2033,
+      "word_count": 321,
+      "page_confidence": {
+        "page_number": 68,
+        "ocr_score": 0.6035877386232293,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 69,
+      "page_number": 69,
+      "filename": "page_0069.txt",
+      "character_count": 2179,
+      "word_count": 353,
+      "page_confidence": {
+        "page_number": 69,
+        "ocr_score": 0.612034589470726,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 70,
+      "page_number": 70,
+      "filename": "page_0070.txt",
+      "character_count": 1631,
+      "word_count": 247,
+      "page_confidence": {
+        "page_number": 70,
+        "ocr_score": 0.6044117427939699,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 71,
+      "page_number": 71,
+      "filename": "page_0071.txt",
+      "character_count": 1635,
+      "word_count": 249,
+      "page_confidence": {
+        "page_number": 71,
+        "ocr_score": 0.5877042720470254,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 72,
+      "page_number": 72,
+      "filename": "page_0072.txt",
+      "character_count": 1736,
+      "word_count": 267,
+      "page_confidence": {
+        "page_number": 72,
+        "ocr_score": 0.6136190334809418,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 73,
+      "page_number": 73,
+      "filename": "page_0073.txt",
+      "character_count": 1689,
+      "word_count": 252,
+      "page_confidence": {
+        "page_number": 73,
+        "ocr_score": 0.5993740111642246,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 74,
+      "page_number": 74,
+      "filename": "page_0074.txt",
+      "character_count": 1970,
+      "word_count": 301,
+      "page_confidence": {
+        "page_number": 74,
+        "ocr_score": 0.5668544627133735,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 75,
+      "page_number": 75,
+      "filename": "page_0075.txt",
+      "character_count": 1644,
+      "word_count": 256,
+      "page_confidence": {
+        "page_number": 75,
+        "ocr_score": 0.6314078705559488,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 76,
+      "page_number": 76,
+      "filename": "page_0076.txt",
+      "character_count": 2179,
+      "word_count": 324,
+      "page_confidence": {
+        "page_number": 76,
+        "ocr_score": 0.5921519658622425,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 77,
+      "page_number": 77,
+      "filename": "page_0077.txt",
+      "character_count": 2321,
+      "word_count": 354,
+      "page_confidence": {
+        "page_number": 77,
+        "ocr_score": 0.5970703997239737,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 78,
+      "page_number": 78,
+      "filename": "page_0078.txt",
+      "character_count": 2195,
+      "word_count": 340,
+      "page_confidence": {
+        "page_number": 78,
+        "ocr_score": 0.6134110195518004,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 79,
+      "page_number": 79,
+      "filename": "page_0079.txt",
+      "character_count": 1709,
+      "word_count": 277,
+      "page_confidence": {
+        "page_number": 79,
+        "ocr_score": 0.5942775293774686,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 80,
+      "page_number": 80,
+      "filename": "page_0080.txt",
+      "character_count": 2064,
+      "word_count": 334,
+      "page_confidence": {
+        "page_number": 80,
+        "ocr_score": 0.5628877508508976,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 81,
+      "page_number": 81,
+      "filename": "page_0081.txt",
+      "character_count": 2535,
+      "word_count": 402,
+      "page_confidence": {
+        "page_number": 81,
+        "ocr_score": 0.5803580289272566,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 82,
+      "page_number": 82,
+      "filename": "page_0082.txt",
+      "character_count": 2140,
+      "word_count": 331,
+      "page_confidence": {
+        "page_number": 82,
+        "ocr_score": 0.6079657453625754,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 83,
+      "page_number": 83,
+      "filename": "page_0083.txt",
+      "character_count": 2041,
+      "word_count": 327,
+      "page_confidence": {
+        "page_number": 83,
+        "ocr_score": 0.6210887345270848,
+        "source": "docling"
+      }
+    },
+    {
+      "chunk_index": 84,
+      "page_number": 84,
+      "filename": "page_0084.txt",
+      "character_count": 932,
+      "word_count": 133,
+      "page_confidence": {
+        "page_number": 84,
+        "ocr_score": 0.6515995761965291,
+        "source": "docling"
+      }
+    }
+  ]
+}

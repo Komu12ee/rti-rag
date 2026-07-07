@@ -1,0 +1,16 @@
+# FAQ Chunk 342
+Document: 500_cgrti
+Source: structured.md
+Pages: 27
+Section: 7.5 Police Department RTI Questions
+Question: Q346. "Police harassment file complaint?" A: Yes, to police station or Human Rights Commission. RTI can help get police record FIR details.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 44
+
+---
+
+## 7.5 Police Department RTI Questions
+
+Q346. "Police harassment file complaint?" A: Yes, to police station or Human Rights Commission. RTI can help get police record FIR details.

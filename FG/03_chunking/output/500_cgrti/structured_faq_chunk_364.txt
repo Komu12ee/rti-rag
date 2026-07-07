@@ -1,0 +1,16 @@
+# FAQ Chunk 364
+Document: 500_cgrti
+Source: structured.md
+Pages: 28
+Section: Advanced Timeline & Procedural Issues
+Question: Q368. "Department merged with another which one responds?" A: Merged department (or successor) must respond. If unclear, file to Chief Secretary.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 47
+
+---
+
+## Advanced Timeline & Procedural Issues
+
+Q368. "Department merged with another which one responds?" A: Merged department (or successor) must respond. If unclear, file to Chief Secretary.

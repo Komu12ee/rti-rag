@@ -1,0 +1,16 @@
+# FAQ Chunk 94
+Document: 500_cgrti
+Source: structured.md
+Pages: 9
+Section: 3.l Legal Framework & Interpretation
+Question: Q96. What is "prescribed fee" vs "actual cost"? A: Prescribed fee is per regulation (=2 page). If actual cost is higher, PIO must justify charging more.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 53
+
+---
+
+## 3.l Legal Framework & Interpretation
+
+Q96. What is "prescribed fee" vs "actual cost"? A: Prescribed fee is per regulation (=2 page). If actual cost is higher, PIO must justify charging more.

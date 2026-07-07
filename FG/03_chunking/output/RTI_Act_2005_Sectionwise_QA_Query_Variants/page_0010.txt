@@ -1,0 +1,29 @@
+## Question variants all map to this one provision
+
+- 1. What does Section 2(f) of the Right to Information Act, 2005 provide?
+- 2. Explain RTI Act Section 2(f): Information.
+- 3. What is Act 2f in RTI? 1 need the rule for definitions
+- 4. सूचना का अधिकार अधिनियम, 2005 की धारा 2f) में क्या प्रावधान है?
+- 5. धारा 2f) का सरल अर्थ क्या है सूचना?
+- 6. RTI Act 2(f) ka rule kya hai? सूचना के बारे में बताइए|
+- 7. In this situation: query requiring interpretation of a statutory term. Does Section 2(f) apply, and what does it say? Any
+- 8. "2(f) RTI law me kya hai? " "2(f) ka matlab? "
+
+## Answer
+
+English definition: material in any form including records documents memos, emails, opinions, advices press releases, circulars, orders, logbooks, contracts, reports papers samples, models, and data material held in electronic form. Any
+
+हिंदी परिभाषाः किसी भी रूप में कोई सामग्री जिसमें अभिलेख दस्तावेज, ज्ञापन, ई॰मेल, मत, सलाह, प्रेस विज्ञप्ति परिपत्र, आदेश लॉगबुक संविदा, रिपोर्ट, कागजपत्र नमूने, मॉडल, इलेक्ट्रॉनिक रूप में डेटा सामग्री सम्मिलित हैl
+
+Retrieval anchors: Information; सूचना; definitions; appropriate government; public authority; record; third party CPIO; SPIO; competent authority
+
+## Typical contexts
+
+- query requiring interpretation of a statutory term Any
+- Determining whether a body qualifies as a 'Public Authority (e.g. NGO substantially financed by government)
+- Determining which ' Government' is appropriate for an application
+- Determining if requested material qualifies as 'Information' under the Act
+
+PIO implementation note: Use this section first when validating whether the body receiving the RTI query is in fact a 'public authority obligated to respond and whether the material sought falls within the definition of 'information'.
+
+Source reference: RTI Rule Book, pp. 2-6

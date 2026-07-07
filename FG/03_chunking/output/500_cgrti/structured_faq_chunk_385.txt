@@ -1,0 +1,16 @@
+# FAQ Chunk 385
+Document: 500_cgrti
+Source: structured.md
+Pages: 30
+Section: BONUS SECTION: COMMON MISTAKES & HOWTO AVOID
+Question: Q388. "Got information but seems doctored - verify?" Aः You can file follow up RTI asking for audit trail / original file. Also appeal to SIC.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 54
+
+---
+
+## BONUS SECTION: COMMON MISTAKES & HOWTO AVOID
+
+Q388. "Got information but seems doctored - verify?" Aः You can file follow up RTI asking for audit trail / original file. Also appeal to SIC.

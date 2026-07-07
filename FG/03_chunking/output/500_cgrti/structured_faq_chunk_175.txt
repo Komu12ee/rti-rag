@@ -1,0 +1,16 @@
+# FAQ Chunk 175
+Document: 500_cgrti
+Source: structured.md
+Pages: 15
+Section: 4.4 Exemptions - Tricky Applications
+Question: Q179. Can government refuse saying "will set bad precedent"? A: precedent concerns are not valid exemptions under RTI. Each request judged on merits. No,
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 47
+
+---
+
+## 4.4 Exemptions - Tricky Applications
+
+Q179. Can government refuse saying "will set bad precedent"? A: precedent concerns are not valid exemptions under RTI. Each request judged on merits. No,

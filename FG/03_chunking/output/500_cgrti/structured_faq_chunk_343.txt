@@ -1,0 +1,16 @@
+# FAQ Chunk 343
+Document: 500_cgrti
+Source: structured.md
+Pages: 27
+Section: 7.5 Police Department RTI Questions
+Question: Q347. "Traffic violation - is challan proper?" A: Yes. Request: traffic rule enforcement, challan procedure, your challan details, appeal process.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 45
+
+---
+
+## 7.5 Police Department RTI Questions
+
+Q347. "Traffic violation - is challan proper?" A: Yes. Request: traffic rule enforcement, challan procedure, your challan details, appeal process.

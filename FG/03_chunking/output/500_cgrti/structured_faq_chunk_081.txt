@@ -1,0 +1,16 @@
+# FAQ Chunk 81
+Document: 500_cgrti
+Source: structured.md
+Pages: 8
+Section: 2.4 Format & Access Methods
+Question: Q84. Can I get information during emergency? A: Yes, life liberty information 48hour deadline. Other emergencies don't have special timeline. gets
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 42
+
+---
+
+## 2.4 Format & Access Methods
+
+Q84. Can I get information during emergency? A: Yes, life liberty information 48hour deadline. Other emergencies don't have special timeline. gets

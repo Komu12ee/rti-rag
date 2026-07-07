@@ -1,0 +1,16 @@
+# FAQ Chunk 250
+Document: 500_cgrti
+Source: structured.md
+Pages: 20
+Section: Chhattisgarh Government & State RTI Details
+Question: Q253. Can I file appeal directly to SIC or must go through first appeal? A: Normally first appeal to designated senior officer first. Can directly approach SIC if: (a) no senior officer designated, (b) senior officer refuses to hear appeal, or (c) after first appeal.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 78
+
+---
+
+## Chhattisgarh Government & State RTI Details
+
+Q253. Can I file appeal directly to SIC or must go through first appeal? A: Normally first appeal to designated senior officer first. Can directly approach SIC if: (a) no senior officer designated, (b) senior officer refuses to hear appeal, or (c) after first appeal.

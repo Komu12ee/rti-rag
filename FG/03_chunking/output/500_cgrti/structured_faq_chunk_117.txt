@@ -1,0 +1,16 @@
+# FAQ Chunk 117
+Document: 500_cgrti
+Source: structured.md
+Pages: 10-11
+Section: 3.4 Suo Motu Disclosure
+Question: Q121. What is suo motu disclosure obligation? A: Section 4(2) - Every department must proactively publish information regularly, not wait for RTI requests
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 43
+
+---
+
+## 3.4 Suo Motu Disclosure
+
+Q121. What is suo motu disclosure obligation? A: Section 4(2) - Every department must proactively publish information regularly, not wait for RTI requests

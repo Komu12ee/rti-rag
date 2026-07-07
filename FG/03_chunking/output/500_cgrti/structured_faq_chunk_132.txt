@@ -1,0 +1,16 @@
+# FAQ Chunk 132
+Document: 500_cgrti
+Source: structured.md
+Pages: 11
+Section: 3.5 Information Commission Powers
+Question: Q136. Can SIC conduct suo motu investigation? A: Yes, SIC can take up suo motu cases based on media reports or public knowledge about RTI violations.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 44
+
+---
+
+## 3.5 Information Commission Powers
+
+Q136. Can SIC conduct suo motu investigation? A: Yes, SIC can take up suo motu cases based on media reports or public knowledge about RTI violations.

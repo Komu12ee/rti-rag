@@ -1,0 +1,16 @@
+# FAQ Chunk 265
+Document: 500_cgrti
+Source: structured.md
+Pages: 21
+Section: 6.2 CG Online RTI Portal
+Question: Q268. How do I track my RTI application status online? A: After filing you get registration number. Login to portal > View application Check status pending, approved, etc.).
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 49
+
+---
+
+## 6.2 CG Online RTI Portal
+
+Q268. How do I track my RTI application status online? A: After filing you get registration number. Login to portal > View application Check status pending, approved, etc.).

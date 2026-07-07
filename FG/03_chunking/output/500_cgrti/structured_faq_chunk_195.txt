@@ -1,0 +1,16 @@
+# FAQ Chunk 195
+Document: 500_cgrti
+Source: structured.md
+Pages: 16
+Section: .1 Corruption & Transparency Scenarios
+Question: Q199. "Government claims project complete but I don't see it. Can I verify?" A: Requestः project completion certificate, photographs, utilization certificate. Compare with ground reality
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 58
+
+---
+
+## .1 Corruption & Transparency Scenarios
+
+Q199. "Government claims project complete but I don't see it. Can I verify?" A: Requestः project completion certificate, photographs, utilization certificate. Compare with ground reality

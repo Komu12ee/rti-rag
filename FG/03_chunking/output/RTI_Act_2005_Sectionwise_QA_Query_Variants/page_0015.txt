@@ -1,0 +1,28 @@
+## Question variants all map to this one provision
+
+- 1. What does Section 4(1 )a) of the Right to Information Act, 2005 provide?
+- 2. Explain RTI Act Section 4(1 )a): Record maintenance and computerisation.
+- 3. What is Act 4(1 )a) in RTI? I need the rule for suo motu disclosure.
+- 5. धारा 4(1 )a) का सरल अर्थ क्या है - अभिलेख रखरखाव और कंप्यूटरीकरण?
+- 4. सूचना का अधिकार अधिनियम, 2005 की धारा 4(1 )a) में क्या प्रावधान है?
+- 6. RTI Act 4(1 )(a) ka rule kya hai? अभिलेख रखरखाव और कंप्यूटरीकरण के बारे में बताइए|
+- 7. In this situation: Information sought is already part of mandatory suo motu disclosure published manual. Does Section 4(1 ) (a) apply, and what does it say?
+- II 8. "4(1)(a) RTI law me kya hai?' /"4(1)(a) ka matlab?'
+
+## Answer
+
+English definition: Every public authority shall maintain all records duly catalogued and indexed to facilitate access; appropriate records shall be computerised and networked within a reasonable time.
+
+हिंदीं परिभाषाः प्रत्येक लोक प्राधिकरण सभी अभिलेखों को सम्यक् रूप से सूचीपत्रित और अनुक्रमणिकाबद्ध रखेगा; उपयुक्त अभिलेखों को उचित समय में कंप्यूटरीकृत और नेटवर्कयुक्त किया जाएगा|
+
+Retrieval anchors: Record maintenance and computerisation; अभिलेख रखरखाव और कंप्यूटरीकरण; suo motu disclosure; proactive disclosure; record maintenance; computerisation; 17 categories; 120 manual publication days;
+
+## Typical contexts
+
+- Information sought is already part of mandatory suo motu disclosure published manual
+- Determining whether refusal can be justified when information should already be publicly available
+- Validating whether public authority has fulfilled proactive disclosure obligations
+
+PIO implementation note: Before processing as a fresh RTI request, check whether the information is already covered under the public authoritys Section 4(1 )(b) suo motu disclosure manual website if so, the PIO response should direct the applicant to that published source.
+
+Source reference: RTI Rule Book, pp. 6-1 1

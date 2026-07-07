@@ -1,0 +1,16 @@
+# FAQ Chunk 23
+Document: 500_cgrti
+Source: structured.md
+Pages: 3
+Section: L.4 Fees & Payment
+Question: Q26. How much is the RTI application fee in Chhattisgarh? A: 3l0 per application (onetime fee)
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 38
+
+---
+
+## L.4 Fees & Payment
+
+Q26. How much is the RTI application fee in Chhattisgarh? A: 3l0 per application (onetime fee)

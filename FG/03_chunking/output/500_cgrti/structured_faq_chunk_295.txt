@@ -1,0 +1,16 @@
+# FAQ Chunk 295
+Document: 500_cgrti
+Source: structured.md
+Pages: 23
+Section: 6.5 CG Government Websites & Online Systems
+Question: Q298. Can ] verify CG government employee details online? A: Limited info on directory. For detailed information (designation, salary, qualifications), file RTI.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 49
+
+---
+
+## 6.5 CG Government Websites & Online Systems
+
+Q298. Can ] verify CG government employee details online? A: Limited info on directory. For detailed information (designation, salary, qualifications), file RTI.

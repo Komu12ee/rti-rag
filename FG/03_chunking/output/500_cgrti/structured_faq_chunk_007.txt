@@ -1,0 +1,23 @@
+# FAQ Chunk 7
+Document: 500_cgrti
+Source: structured.md
+Pages: 2
+Section: L.l What is RTI & Basic Rights
+Question: Q5. What is public authority? A: Any organization established by the government (central, state, local) or substantially financed by government. Includes ministries, departments boards, corporations, PSUs, schools, hospitals, etc.
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 303
+
+---
+
+## L.l What is RTI & Basic Rights
+
+Q5. What is public authority? A: Any organization established by the government (central, state, local) or substantially financed by government. Includes ministries, departments boards, corporations, PSUs, schools, hospitals, etc.
+
+- Q6. Can I request information about private organizations? A: Not directly However, if a private company receives government contracts or subsidies, you can request information about that contract from the government body.
+- Q7. Is RTI free? A: Mostly yes. Application fee is only 310 in Chhattisgarh. Copy charges are minimal ( =2 per page). Below Poverty Line (BPL ) persons complete exemption. get
+- Q8. What is the main purpose of RTI Act? A: To promote transparency and accountability in government by ensuring citizens can access information, reduce corruption, and participate in informed decision making
+- Q9. Which law governs RTIin India? A: The Right to Information Act, 2005 ( Act No. 22 of 2005),as amended by the Right to Information ( Amendment) Act, 2019.
+
+Q1O. Is RTI information confidential or public? A: Once provided to you, RTI information is completely public. You can share it with anyone, use it for publications, social media, etc.

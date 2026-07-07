@@ -1,0 +1,27 @@
+## Question variants all map to this one provision
+
+- 1. What does Section 26(handling rules) of the Right to Information Act, 2005 provide?
+- 3. What is Act 26(handling rules) in RTI? I need the rule for return of documents
+- 2. Explain RTI Act Section 26(handling rules): Document handling rules.
+- 4. सूचना का अधिकार अधिनियम, 2005 धारा 26(handling rules) में क्या प्रावधान है?
+- 5. धारा 26(handling rules) का सरल अर्थ क्या है दस्तावेज प्रबंधन नियमः
+- 6. RTI Act 26(handling rules) ka rule kya hai? दस्तावेज प्रबंधन नियम के बारे में बताइए|
+- 7. In this situation: Post appeal cleanup disposal of original documents submitted as evidence. Does Section 26(handling rules) apply, and what does it say?
+- 8. "26(handling rules) RTI law me kya hai? " "26(handling rules) ka matlab? "
+
+## Answer
+
+English definition: Applicant submitted documents may be required to be returned; evidence records may be retained by the Commission if needed; originals generally returned to providing authority; certified copies retained for appeal records; confidential third party documents returned after decision and not publicly disclosed if confidential; Commission may retain copies for its own records.
+
+हिंदी परिभाषाः आवेदक प्रस्तुत दस्तावेज वापस करने की आवश्यकता हो सकती हैः आवश्यक होने पर साक्ष्य अभिलेख आयोग द्वारा जा सकते हैंः मूल दस्तावेज सामान्यतः प्रदान करने वाले प्राधिकरण को जाते हैंः अपील रिकॉर्ड हेतु प्रमाणित प्रतियां रखी जाती हैं गोपनीय तीसरे पक्ष के दस्तावेज विनिश्चय के बाद लौटाए जाते हैं और गोपनीय होने पर सार्वजनिक नहीं जातेः आयोग अपने अभिलेखों हेतु प्रतियां रख सकता है| लौटाए किए
+
+Retrieval anchors: Document handling rules; दस्तावेज प्रबंधन नियम; return of documents evidence retention; certified copies; confidential third party documents
+
+## Typical contexts
+
+- Postappeal cleanup disposal of original documents submitted as evidence
+- Third partys confidential documents need post decision handling
+
+PIO implementation note: Mostly relevant to Commission registryladministrative procedure rather than the initial PIO response, but if an applicant or third party requests return of their originally submitted documents. flag
+
+Source reference: RTI Rule Book, Section 26 (cross reference)

@@ -1,0 +1,29 @@
+## Question variants all map to this one provision
+
+- 1. What does Section 19(special provisions) of the Right to Information Act, 2005 provide?
+- 3. What is Act 19(special provisions) in RTI? I need the rule for first appeal.
+- 2. Explain RTI Act Section 19(special provisions): Lifelliberty expedited processing & natural justice.
+- 4. सूचना का अधिकार अधिनियम, 2005 धारा 19(special provisions) में क्या प्रावधान है?
+- 6. RTI Act 19(special provisions) ka rule kya hai? जीवन स्वतंत्रता त्वरित प्रसंस्करण और प्राकृतिक न्याय के बारे में बताइए|
+- 5. धारा 19(special provisions) का सरल अर्थ क्या है - जीवन स्वतंत्रता त्वरित प्रसंस्करण और न्याय? प्राकृतिक
+- 7. In this situation: Applicant did not receive a decision within Section 7 timelines or is aggrieved by a PIO decision eligible for First Appeal. Does Section 19(special provisions) apply, and what does it say?
+- 8 "19(special provisions ) RTI law me kya hai?" 19(special provisions) ka matlab? "
+
+## Answer
+
+English definition: Lifelliberty cases expedited processing; both appeal levels follow natural justice; detailed written orders with reasons are mandatory. get
+
+हिंदी परिभाषाः जीवन स्वतंत्रता मामलों को त्वरित प्रसंस्करण मिलता हैः दोनों अपील स्तर न्याय का पालन करते हैं; कारणों सहित विस्तृत लिखित आदेश अनिवार्य हैं| प्राकृतिक
+
+Retrieval anchors: Lifelliberty expedited processing & natural justice; जोवन स्चतंत्रता त्वरित प्रसंस्करण और प्राकृतिक न्यायः first appeal; second appeal; 30 days 45 days; 90 days; senior officer; appellate authority burden of proof
+
+## Typical contexts
+
+- Applicant did not receive a decision within Section 7 timelines, or is aggrieved by a PIO decision eligible for First Appeal
+- Drafting any rejection must inform applicant of appeal rights, forum, and timeline
+- First Appeal decision received/lapsed and applicant wishes to escalate eligible for Second Appeal
+- Evaluating whether a PIO's stated justification for refusal meets the evidentiary burden
+
+PIO implementation note: Every PIO rejection or partial-disclosure response MUST cite the First Appeal forum (senior officer of the public authority) and the 3O day appeal window per Section 19(1) read with Section 7(8). The PIO bears the burden of proof for any denial if challenged in appeal.
+
+Source reference: RTI Rule Book, pp. 76-96 (Appeals Rules 2006 and amendments)

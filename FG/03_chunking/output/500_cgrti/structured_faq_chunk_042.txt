@@ -1,0 +1,16 @@
+# FAQ Chunk 42
+Document: 500_cgrti
+Source: structured.md
+Pages: 5
+Section: 2.1 What Information Can [ Request
+Question: Q45. Can I request salary details of government employees? A: Yes, salary information of all government officers is public ( Section 4 requires this publication) . But personal details oflower staff may be protected.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 54
+
+---
+
+## 2.1 What Information Can [ Request
+
+Q45. Can I request salary details of government employees? A: Yes, salary information of all government officers is public ( Section 4 requires this publication) . But personal details oflower staff may be protected.

@@ -1,0 +1,16 @@
+# FAQ Chunk 338
+Document: 500_cgrti
+Source: structured.md
+Pages: 26
+Section: 7.5 Police Department RTI Questions
+Question: Q342. "Police complaint was it registered?" A: Yes. Request: registration status, FIR number, action taken, disposal timeline.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 40
+
+---
+
+## 7.5 Police Department RTI Questions
+
+Q342. "Police complaint was it registered?" A: Yes. Request: registration status, FIR number, action taken, disposal timeline.

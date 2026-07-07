@@ -1,0 +1,16 @@
+# FAQ Chunk 138
+Document: 500_cgrti
+Source: structured.md
+Pages: 12
+Section: 4.1 Timeline Complications
+Question: Q142. Can PIO extend 3O day deadline by claiming "voluminous information"? A: voluminous data is not valid reason per Section 7. PIO must manage within 30 days. No,
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 50
+
+---
+
+## 4.1 Timeline Complications
+
+Q142. Can PIO extend 3O day deadline by claiming "voluminous information"? A: voluminous data is not valid reason per Section 7. PIO must manage within 30 days. No,

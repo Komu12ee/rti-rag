@@ -1,0 +1,16 @@
+# FAQ Chunk 180
+Document: 500_cgrti
+Source: structured.md
+Pages: 15
+Section: 4.5 Appeal & Escalation Tricky Cases
+Question: Q184. Can first appeal be rejected saying "no new evidence"? A: appeal officer must review PIO decision afresh, not just accept PIO reasoning. No,
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 50
+
+---
+
+## 4.5 Appeal & Escalation Tricky Cases
+
+Q184. Can first appeal be rejected saying "no new evidence"? A: appeal officer must review PIO decision afresh, not just accept PIO reasoning. No,

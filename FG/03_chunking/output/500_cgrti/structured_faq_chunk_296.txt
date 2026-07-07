@@ -1,0 +1,16 @@
+# FAQ Chunk 296
+Document: 500_cgrti
+Source: structured.md
+Pages: 23
+Section: 6.5 CG Government Websites & Online Systems
+Question: Q299. Where to file complaint against CG government official? A: CG Lokayukta (corruption), Police (crime), SIC (RTI violation) . Each has separate procedure.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 53
+
+---
+
+## 6.5 CG Government Websites & Online Systems
+
+Q299. Where to file complaint against CG government official? A: CG Lokayukta (corruption), Police (crime), SIC (RTI violation) . Each has separate procedure.

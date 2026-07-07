@@ -1,0 +1,16 @@
+# FAQ Chunk 389
+Document: 500_cgrti
+Source: structured.md
+Pages: 30
+Section: QUICK ANSWER KEYS FOR CHATBOT
+Question: Q391. 400: Instant Response Questions
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 21
+
+---
+
+## QUICK ANSWER KEYS FOR CHATBOT
+
+Q391. 400: Instant Response Questions

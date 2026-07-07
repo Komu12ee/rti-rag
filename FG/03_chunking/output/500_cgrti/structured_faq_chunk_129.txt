@@ -1,0 +1,16 @@
+# FAQ Chunk 129
+Document: 500_cgrti
+Source: structured.md
+Pages: 11
+Section: 3.5 Information Commission Powers
+Question: Q133. Can SIC penalize PIO for slow response? A: Tes, can recommend penalties for repeated violations (up to 325,OO0) or disciplinary action including dismissal.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 49
+
+---
+
+## 3.5 Information Commission Powers
+
+Q133. Can SIC penalize PIO for slow response? A: Tes, can recommend penalties for repeated violations (up to 325,OO0) or disciplinary action including dismissal.

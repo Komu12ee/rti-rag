@@ -1,0 +1,16 @@
+# FAQ Chunk 135
+Document: 500_cgrti
+Source: structured.md
+Pages: 12
+Section: 3.5 Information Commission Powers
+Question: Q139. Can SIC recommend criminal action? A: Tes, SIC can recommend police prosecution for willful violations Section 23 penalties).
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 38
+
+---
+
+## 3.5 Information Commission Powers
+
+Q139. Can SIC recommend criminal action? A: Tes, SIC can recommend police prosecution for willful violations Section 23 penalties).

@@ -1,0 +1,29 @@
+## Question variants all map to this one provision
+
+- 1. What does Section 2() of the Right to Information Act, 2005 provide?
+- 2. Explain RTI Act Section 2(j): Right to Information.
+- 3. What is Act 2() in RTI? I need the rule for definitions.
+- 4. सूचना का अधिकार अधिनियम, 2005 धारा 2() में क्या प्रावधान है?
+- 5. धारा 2(j) का सरल अर्थ क्या है सूचना का अधिकार?
+- 6. RTI Act 2lj) ka rule kya hai? सूचना का अधिकार के बारे में बताइए|
+- 7. In this situation: query requiring interpretation of a statutory term. Does Section 2() apply, and what does it say? Any
+- 8. "2(j) RTI law me kya hai? " "2(j) ka matlab? "
+
+## Answer
+
+English definition: The right to information accessible under this Act, held by or under the control of public authority including the right to inspect work/documents records, take noteslextracts certified copies, take certified samples of material, and obtain information in electronic form. any
+
+हिंदी परिभाषाः इस अधिनियम के अधीन किसी लोक प्राधिकरण द्वारा धारित या नियंत्रण में सुलभ सूचना का अधिकार, जिसमें कार्य/ दस्तावेजों अभिलेखों का निरीक्षण, टिप्पणियाँ / उद्धरण| प्रमाणित प्रतियां लेना, सामग्री के प्रमाणित नमूने लेना, और इलेक्ट्रॉनिक रूप में सूचना प्राप्त करना शामिल है|
+
+Retrieval anchorsः Right to Information; सूचना का अधिकार; definitions appropriate government public authority; information; record; third party CPIO; SPIO
+
+## Typical contexts
+
+- query requiring interpretation of a statutory term Any
+- Determining whether a body qualifies as a 'Public Authority' (e.g. NGO substantially financed by government)
+- Determining which ' Government' is appropriate for an application
+- Determining if requested material qualifies as IInformation' under the Act
+
+PIO / implementation note: Use this section first when validating whether the body receiving the RTI query is in fact a 'public authority obligated to respond, and whether the material sought falls within the definition of 'information'.
+
+Source reference: RTI Rule Book, pp. 2-6

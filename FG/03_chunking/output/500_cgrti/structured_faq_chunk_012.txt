@@ -1,0 +1,16 @@
+# FAQ Chunk 12
+Document: 500_cgrti
+Source: structured.md
+Pages: 2-3
+Section: QlL. How do I file an RTI request in Chhattisgarh? A:
+Question: Q15. Can [ file RTI by telephone? A: RTI must be filed in writing or electronically. However, per Section 5(3) , if you can't write, PIO must help reduce your request to writing NO,
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 72
+
+---
+
+## QlL. How do I file an RTI request in Chhattisgarh? A:
+
+Q15. Can [ file RTI by telephone? A: RTI must be filed in writing or electronically. However, per Section 5(3) , if you can't write, PIO must help reduce your request to writing NO,

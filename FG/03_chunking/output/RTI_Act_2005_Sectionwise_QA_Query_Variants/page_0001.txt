@@ -1,0 +1,17 @@
+## RTI Act, 2005
+
+## Section-wise Q&A and High Coverage Query Variant Guide
+
+सूचना का अधिकार अधिनियम, 2005 धारा / उपधारा आधारित प्रश्न-उत्तर एवं क्वेरी वैरिएंट गाइड
+
+28 sections 80 provision specific Q&A units 640 English, Hindi, Hinglish, and informal question variants
+
+Purpose: Use this as a human-readable and model training reference. Every answer unit is tied to exactly one section subsection reference from the supplied dataset.
+
+## Coverage note
+
+- Language can generate infinitely many phrasings. This therefore provides eight diverse, high coverage question forms per provision legal , plain English, intentlsearch, Hindi, simple Hindi, Hinglish, contextual and shortlrough form. guide
+- Definitions, section titles, applicability notes, and PIO response notes are derived from the supplied JSON dataset. Verify current law, amendments, state rules, and notifications before issuing an official decision.
+- Each question variant is an example retrieval anchor. For reliable handling of completely new wording, use semantic retrieval plus section number and keyword matching rather than relying only on exact wording.
+
+Source datasetः RTI Rule Book (1Oth Edition, 2025)

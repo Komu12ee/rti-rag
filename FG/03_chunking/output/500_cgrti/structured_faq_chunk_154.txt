@@ -1,0 +1,16 @@
+# FAQ Chunk 154
+Document: 500_cgrti
+Source: structured.md
+Pages: 13
+Section: 4.2 Information Existence & Scope Confusion
+Question: Q158. Can [ ask "what information does PIO have about X subject"? A: Too vague. You must be specific documents, reports, correspondence, etc.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 46
+
+---
+
+## 4.2 Information Existence & Scope Confusion
+
+Q158. Can [ ask "what information does PIO have about X subject"? A: Too vague. You must be specific documents, reports, correspondence, etc.

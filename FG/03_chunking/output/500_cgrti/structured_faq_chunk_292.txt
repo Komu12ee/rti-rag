@@ -1,0 +1,16 @@
+# FAQ Chunk 292
+Document: 500_cgrti
+Source: structured.md
+Pages: 23
+Section: 6.5 CG Government Websites & Online Systems
+Question: Q295. Are CG government budget documents online? A: Finance Department publishes budget documents. Search cgstate govin Finance Department section.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 41
+
+---
+
+## 6.5 CG Government Websites & Online Systems
+
+Q295. Are CG government budget documents online? A: Finance Department publishes budget documents. Search cgstate govin Finance Department section.

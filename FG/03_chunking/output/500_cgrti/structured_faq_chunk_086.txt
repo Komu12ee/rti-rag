@@ -1,0 +1,16 @@
+# FAQ Chunk 86
+Document: 500_cgrti
+Source: structured.md
+Pages: 8
+Section: 2.4 Format & Access Methods
+Question: Q89. Can government say "file will be searched" and delay? A: No, if information exists, PIO must provide within 30 days. "File not found" is not valid excuse.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 51
+
+---
+
+## 2.4 Format & Access Methods
+
+Q89. Can government say "file will be searched" and delay? A: No, if information exists, PIO must provide within 30 days. "File not found" is not valid excuse.

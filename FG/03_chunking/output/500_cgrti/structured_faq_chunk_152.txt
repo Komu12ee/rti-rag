@@ -1,0 +1,16 @@
+# FAQ Chunk 152
+Document: 500_cgrti
+Source: structured.md
+Pages: 13
+Section: 4.2 Information Existence & Scope Confusion
+Question: Q156. Can I ask for information from before RTI Act came ( pre zOOS)? A: Yes, historical records are accessible. After 20 years ( 2025 for pre zoO5) , automatically accessible.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 55
+
+---
+
+## 4.2 Information Existence & Scope Confusion
+
+Q156. Can I ask for information from before RTI Act came ( pre zOOS)? A: Yes, historical records are accessible. After 20 years ( 2025 for pre zoO5) , automatically accessible.

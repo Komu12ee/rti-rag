@@ -1,0 +1,11 @@
+|   19 | Appeal अपील                                                                                                | 4   |
+|------|------------------------------------------------------------------------------------------------------------|-----|
+|   20 | Transfer of Cases मामलों का हस्तांतरण                                                                      |     |
+|   21 | Jurisdiction of High Court उच्च न्यायालय का अधिकार क्षेत्र                                                 |     |
+|   22 | Exemption to Intelligence Agencies (Second Schedule ) / खुफिया एजेंसियों को छूट अनुसूची) (दूसरी            |     |
+|   23 | Penalties (Imprisonment Fine for Specific Violations) / शास्तियाँ (विशिष्ट उल्लंघनों हेतु कारावास जुर्माना | 5   |
+|   24 | Penalties Recommended by Information Commissions सूचना आयोगों द्वारा अनुशंसित दंड                          | 2   |
+|   25 | Annual Reports / वार्षिक रिपोर्ट                                                                           |     |
+|   26 | Return of Documents दस्तावेजों की वापसी                                                                    |     |
+|   27 | Amendments to the RTI Act RTI अधिनियम में संशोधन                                                           | 2   |
+|   28 | Rule Making Power नियम बनाने की शक्ति                                                                      | 3   |

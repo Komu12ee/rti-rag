@@ -1,0 +1,16 @@
+# FAQ Chunk 62
+Document: 500_cgrti
+Source: structured.md
+Pages: 6-7
+Section: 2.3 Third Party Information
+Question: Q65. What happens if third party objects to disclosure? A: PIO considers objection, applies public interest test. Objection is not automatic reason for denial.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 44
+
+---
+
+## 2.3 Third Party Information
+
+Q65. What happens if third party objects to disclosure? A: PIO considers objection, applies public interest test. Objection is not automatic reason for denial.

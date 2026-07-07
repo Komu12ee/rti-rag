@@ -1,0 +1,16 @@
+# FAQ Chunk 214
+Document: 500_cgrti
+Source: structured.md
+Pages: 18
+Section: 5.3 Health & Safety Scenarios
+Question: Q218. "Medical staff never available. Check roster?" A: Request: authorized strength, sanctioned positions, actual staff, duty roster absenteeism record.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 48
+
+---
+
+## 5.3 Health & Safety Scenarios
+
+Q218. "Medical staff never available. Check roster?" A: Request: authorized strength, sanctioned positions, actual staff, duty roster absenteeism record.

@@ -1,0 +1,16 @@
+# FAQ Chunk 176
+Document: 500_cgrti
+Source: structured.md
+Pages: 15
+Section: 4.4 Exemptions - Tricky Applications
+Question: Q180. If both Section 8(l)(h) and 8(1) (i) apply which takes precedence? A: No precedence if any exemption applies, information can be withheld (unless Section 8(2) override applies).
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 63
+
+---
+
+## 4.4 Exemptions - Tricky Applications
+
+Q180. If both Section 8(l)(h) and 8(1) (i) apply which takes precedence? A: No precedence if any exemption applies, information can be withheld (unless Section 8(2) override applies).

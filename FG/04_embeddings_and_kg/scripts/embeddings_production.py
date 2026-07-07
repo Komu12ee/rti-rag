@@ -16,7 +16,7 @@ import argparse
 import logging
 from pathlib import Path
 from datetime import datetime
-from typing import Dict, List, Set
+from typing import Dict, List, Set, Tuple, Union
 import atexit
 
 try:
@@ -49,6 +49,14 @@ MANIFEST_FILE = PROJECT_ROOT / "04_embeddings_and_kg" / ".embeddings_manifest.js
 
 # Configuration
 COLLECTION_NAME = "db3"
+EMBEDDING_MODEL = os.getenv(
+    "EMBEDDING_MODEL",
+    str(PROJECT_ROOT / "models" / "bge-m3"),
+)
+RERANKER_MODEL = os.getenv(
+    "RERANKER_MODEL",
+    str(PROJECT_ROOT / "models" / "bge-reranker-v2-m3"),
+)
 ENCODE_BATCH_SIZE = 8
 UPSERT_BATCH_SIZE = 100
 MAX_LENGTH = 1024
@@ -83,7 +91,7 @@ class EmbeddingsManifest:
     def _empty() -> dict:
         """Create empty manifest structure."""
         return {
-            "version": "1.0",
+            "version": "1.1",
             "created_at": datetime.now().isoformat(),
             "last_updated": None,
             "indexed_chunks": {},  # {filename: {id, hash}}
@@ -92,31 +100,84 @@ class EmbeddingsManifest:
         }
     
     def save(self):
-        """Save manifest to file."""
+        """Save the manifest atomically."""
         self.data["last_updated"] = datetime.now().isoformat()
         self.path.parent.mkdir(parents=True, exist_ok=True)
-        with open(self.path, 'w', encoding='utf-8') as f:
-            json.dump(self.data, f, indent=2)
-    
-    def add_chunk(self, filename: str, point_id: int):
-        """Mark chunk as indexed."""
+
+        temp_path = self.path.with_suffix(self.path.suffix + ".tmp")
+        with open(temp_path, "w", encoding="utf-8") as f:
+            json.dump(self.data, f, indent=2, ensure_ascii=False)
+
+        temp_path.replace(self.path)
+
+    def add_chunk(
+        self,
+        filename: str,
+        point_id: Union[int, str],
+        save: bool = True
+    ):
+        """Mark one chunk as indexed."""
         self.data["indexed_chunks"][filename] = {
             "id": point_id,
             "indexed_at": datetime.now().isoformat()
         }
         self.data["total_indexed"] = len(self.data["indexed_chunks"])
+
+        if save:
+            self.save()
+
+    def add_chunks(self, entries: List[Tuple[str, Union[int, str]]]):
+        """Mark multiple chunks as indexed, then write one manifest update."""
+        now = datetime.now().isoformat()
+
+        for filename, point_id in entries:
+            self.data["indexed_chunks"][filename] = {
+                "id": point_id,
+                "indexed_at": now
+            }
+
+        self.data["total_indexed"] = len(self.data["indexed_chunks"])
         self.save()
-    
+
     def get_indexed_files(self) -> Set[str]:
-        """Get set of already-indexed chunk files."""
-        return set(self.data["indexed_chunks"].keys())
-    
+        """Get the set of already-indexed relative chunk paths."""
+        return set(self.data.get("indexed_chunks", {}).keys())
+
     def get_next_id(self) -> int:
-        """Get next available point ID."""
-        if not self.data["indexed_chunks"]:
-            return 0
-        return max(chunk["id"] for chunk in self.data["indexed_chunks"].values()) + 1
-    
+        """
+        Get the next numeric Qdrant point ID safely.
+
+        Older manifests may contain string IDs from another indexing script.
+        Numeric strings are converted; non-numeric strings are ignored instead
+        of being compared with integers.
+        """
+        numeric_ids = []
+        invalid_ids = []
+
+        for filename, chunk in self.data.get("indexed_chunks", {}).items():
+            point_id = chunk.get("id")
+
+            if isinstance(point_id, bool):
+                # bool is a subclass of int in Python; do not accept it as an ID.
+                invalid_ids.append((filename, point_id))
+            elif isinstance(point_id, int):
+                numeric_ids.append(point_id)
+            elif isinstance(point_id, str) and point_id.strip().isdigit():
+                numeric_ids.append(int(point_id.strip()))
+            else:
+                invalid_ids.append((filename, point_id))
+
+        if invalid_ids:
+            logger.warning(
+                "Manifest contains %d non-numeric point ID(s); "
+                "they will not be used to calculate the next numeric ID. "
+                "Examples: %s",
+                len(invalid_ids),
+                invalid_ids[:3]
+            )
+
+        return max(numeric_ids, default=-1) + 1
+
     def clear(self):
         """Reset manifest."""
         self.data = self._empty()
@@ -129,17 +190,17 @@ manifest = EmbeddingsManifest(MANIFEST_FILE)
 # Load Models
 # ────────────────────────────────────────────────────────────────
 
-logger.info("Loading BGE-M3 embedding model...")
+logger.info(f"Loading BGE-M3 embedding model from: {EMBEDDING_MODEL}")
 try:
-    model = BGEM3FlagModel("BAAI/bge-m3", use_fp16=True)
+    model = BGEM3FlagModel(EMBEDDING_MODEL, use_fp16=True)
     model.return_sparse = True
 except Exception as e:
     logger.error(f"Failed to load embedding model: {e}")
     exit(1)
 
-logger.info("Loading BGE-Reranker model...")
+logger.info(f"Loading BGE-Reranker model from: {RERANKER_MODEL}")
 try:
-    reranker = FlagReranker("BAAI/bge-reranker-v2-m3", use_fp16=True)
+    reranker = FlagReranker(RERANKER_MODEL, use_fp16=True)
 except Exception as e:
     logger.error(f"Failed to load reranker: {e}")
     exit(1)
@@ -263,43 +324,51 @@ def index_new_chunks():
     dense_embeddings = encoding_result["dense_vecs"]
     sparse_embeddings = encoding_result.get("lexical_weights", [None] * len(chunks_data))
     
-    # Build points with incremental IDs
+    # Build points with incremental numeric IDs.
+    # get_next_id() safely ignores legacy non-numeric IDs in the manifest.
     next_id = manifest.get_next_id()
     points = []
-    
+    point_chunk_pairs = []
+
     logger.info("Building point objects...")
     for i, (chunk_data, d_vector, s_embedding) in enumerate(
         zip(chunks_data, dense_embeddings, sparse_embeddings)
     ):
         point_id = next_id + i
-        
+
         payload = {
             "text": chunk_data["text"],
             "source": chunk_data["source"],
             "chunk": chunk_data["chunk"],
             "file": chunk_data["file"]
         }
-        
-        # Store sparse embeddings
+
+        # Store sparse embeddings in the payload for the current sparse scorer.
         if s_embedding is not None:
             try:
-                sparse_dict = {str(k): float(v) for k, v in s_embedding.items()}
-                payload["sparse_embedding"] = sparse_dict
+                payload["sparse_embedding"] = {
+                    str(k): float(v) for k, v in s_embedding.items()
+                }
             except Exception as e:
-                logger.warning(f"Could not serialize sparse embedding {point_id}: {e}")
-        
-        try:
-            points.append(
-                PointStruct(
-                    id=point_id,
-                    vector=d_vector.tolist(),
-                    payload=payload
+                logger.warning(
+                    f"Could not serialize sparse embedding for point {point_id}: {e}"
                 )
+
+        try:
+            point = PointStruct(
+                id=point_id,
+                vector=d_vector.tolist(),
+                payload=payload
             )
+            points.append(point)
+            point_chunk_pairs.append((point, chunk_data))
         except Exception as e:
             logger.warning(f"Could not create point {point_id}: {e}")
-            continue
-    
+
+    if not points:
+        logger.error("No Qdrant point objects could be created")
+        return 0
+
     # Upsert to Qdrant
     logger.info(f"Uploading {len(points)} points to Qdrant...")
     try:
@@ -308,14 +377,17 @@ def index_new_chunks():
                 collection_name=COLLECTION_NAME,
                 points=points[batch_idx:batch_idx + UPSERT_BATCH_SIZE]
             )
-        
-        # Update manifest
-        for point, chunk_data in zip(points, chunks_data):
-            manifest.add_chunk(chunk_data["file"], point.id)
-        
+
+        # Update the manifest only after every Qdrant upsert succeeded.
+        # point_chunk_pairs prevents a mismatch if PointStruct creation failed.
+        manifest.add_chunks([
+            (chunk_data["file"], point.id)
+            for point, chunk_data in point_chunk_pairs
+        ])
+
         logger.info(f"\n✅ Indexed {len(points)} new chunks successfully")
         return len(points)
-    
+
     except Exception as e:
         logger.error(f"Upsert failed: {e}")
         return 0
@@ -502,7 +574,7 @@ def show_status():
     # Chunk files
     logger.info(f"\n📁 Chunk Files:")
     if CHUNK_DIR.exists():
-        chunk_files = list(CHUNK_DIR.glob("*_chunk_*.txt"))
+        chunk_files = list(CHUNK_DIR.rglob("*_chunk_*.txt"))
         logger.info(f"  Total on disk: {len(chunk_files)}")
         new_chunks = find_new_chunks()
         logger.info(f"  New (not indexed): {len(new_chunks)}")

@@ -1,0 +1,16 @@
+# FAQ Chunk 114
+Document: 500_cgrti
+Source: structured.md
+Pages: 10
+Section: 3.3 Exemptions Advanced
+Question: Q118. Can live investigation details be withheld? A: Yes, Section 8(1) (h) applies. But once case is closed, information becomes accessible.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 41
+
+---
+
+## 3.3 Exemptions Advanced
+
+Q118. Can live investigation details be withheld? A: Yes, Section 8(1) (h) applies. But once case is closed, information becomes accessible.

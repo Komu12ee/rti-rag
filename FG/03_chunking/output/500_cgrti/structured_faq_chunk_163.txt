@@ -1,0 +1,16 @@
+# FAQ Chunk 163
+Document: 500_cgrti
+Source: structured.md
+Pages: 14
+Section: 4.3 Department Confusion & Routing
+Question: Q167. What if ministry says "this is handled by state, file there"? A: If its truly state matter they must formally transfer Cannot verbally redirect without formal procedure.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 49
+
+---
+
+## 4.3 Department Confusion & Routing
+
+Q167. What if ministry says "this is handled by state, file there"? A: If its truly state matter they must formally transfer Cannot verbally redirect without formal procedure.

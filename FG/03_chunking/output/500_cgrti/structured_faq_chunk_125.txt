@@ -1,0 +1,16 @@
+# FAQ Chunk 125
+Document: 500_cgrti
+Source: structured.md
+Pages: 11
+Section: 3.4 Suo Motu Disclosure
+Question: Q129. Is department website updating considered suo motu disclosure? A: Partially yes, but Section 4 requires specific 17 items to be published within prescribed format.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 44
+
+---
+
+## 3.4 Suo Motu Disclosure
+
+Q129. Is department website updating considered suo motu disclosure? A: Partially yes, but Section 4 requires specific 17 items to be published within prescribed format.

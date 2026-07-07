@@ -1,0 +1,16 @@
+# FAQ Chunk 339
+Document: 500_cgrti
+Source: structured.md
+Pages: 26
+Section: 7.5 Police Department RTI Questions
+Question: Q343. "Crime statistics what's the data?" A: Yes. Request: crimes in district, conviction rate, pending cases, clearance rate.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 47
+
+---
+
+## 7.5 Police Department RTI Questions
+
+Q343. "Crime statistics what's the data?" A: Yes. Request: crimes in district, conviction rate, pending cases, clearance rate.

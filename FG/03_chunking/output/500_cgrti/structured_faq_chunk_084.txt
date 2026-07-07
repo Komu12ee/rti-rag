@@ -1,0 +1,16 @@
+# FAQ Chunk 84
+Document: 500_cgrti
+Source: structured.md
+Pages: 8
+Section: 2.4 Format & Access Methods
+Question: Q87. Can I request information about propertylland? A: Yes, land records, property tax, ownership details are public information.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 36
+
+---
+
+## 2.4 Format & Access Methods
+
+Q87. Can I request information about propertylland? A: Yes, land records, property tax, ownership details are public information.

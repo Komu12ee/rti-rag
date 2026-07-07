@@ -1,0 +1,16 @@
+# FAQ Chunk 333
+Document: 500_cgrti
+Source: structured.md
+Pages: 26
+Section: 7.4 Revenue Department RTI Questions
+Question: Q337. "Caste certificate verification status?" Aः Yes. Requestः application received, verification stage, documents required, timeline.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 41
+
+---
+
+## 7.4 Revenue Department RTI Questions
+
+Q337. "Caste certificate verification status?" Aः Yes. Requestः application received, verification stage, documents required, timeline.

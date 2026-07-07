@@ -1,0 +1,16 @@
+# FAQ Chunk 356
+Document: 500_cgrti
+Source: structured.md
+Pages: 28
+Section: Complex Exemption Questions
+Question: Q360. "Judge's internal correspondence available?" A: No, judicial independence protected. Court documents filed publicly are available.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 38
+
+---
+
+## Complex Exemption Questions
+
+Q360. "Judge's internal correspondence available?" A: No, judicial independence protected. Court documents filed publicly are available.

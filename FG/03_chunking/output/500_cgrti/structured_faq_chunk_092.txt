@@ -1,0 +1,16 @@
+# FAQ Chunk 92
+Document: 500_cgrti
+Source: structured.md
+Pages: 9
+Section: 3.l Legal Framework & Interpretation
+Question: Q94. Can PIO charge for "search and retrieval"? A: No, PIO cannot charge for finding and preparing information. Only copy costs can be charged.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 46
+
+---
+
+## 3.l Legal Framework & Interpretation
+
+Q94. Can PIO charge for "search and retrieval"? A: No, PIO cannot charge for finding and preparing information. Only copy costs can be charged.

@@ -1,0 +1,16 @@
+# FAQ Chunk 221
+Document: 500_cgrti
+Source: structured.md
+Pages: 18
+Section: 5.4 Infrastructure & Public Works Scenarios
+Question: Q225. "Bus stand roof is damaged, rain floods inside. Why no repair?" A: Request: asset ownership, maintenance responsibility, repair approvals, budget released, work status.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 56
+
+---
+
+## 5.4 Infrastructure & Public Works Scenarios
+
+Q225. "Bus stand roof is damaged, rain floods inside. Why no repair?" A: Request: asset ownership, maintenance responsibility, repair approvals, budget released, work status.

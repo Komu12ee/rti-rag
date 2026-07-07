@@ -1,0 +1,16 @@
+# FAQ Chunk 353
+Document: 500_cgrti
+Source: structured.md
+Pages: 27
+Section: Complex Exemption Questions
+Question: Q357. "Investigation technique can it be disclosed?" A: No, disclosure might compromise future investigations ( Section 8(1) (h)).
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 42
+
+---
+
+## Complex Exemption Questions
+
+Q357. "Investigation technique can it be disclosed?" A: No, disclosure might compromise future investigations ( Section 8(1) (h)).

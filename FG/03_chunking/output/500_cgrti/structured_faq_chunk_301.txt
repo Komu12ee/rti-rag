@@ -1,0 +1,16 @@
+# FAQ Chunk 301
+Document: 500_cgrti
+Source: structured.md
+Pages: 24
+Section: 7.1 Education Department RTI Questions
+Question: Q304. "Can [ get annual school results?" A: Yes. Request: board exam pass percentage, subject wise results, district comparison, improvement metrics.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 43
+
+---
+
+## 7.1 Education Department RTI Questions
+
+Q304. "Can [ get annual school results?" A: Yes. Request: board exam pass percentage, subject wise results, district comparison, improvement metrics.

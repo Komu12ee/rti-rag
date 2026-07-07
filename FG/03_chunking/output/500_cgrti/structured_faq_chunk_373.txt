@@ -1,0 +1,16 @@
+# FAQ Chunk 373
+Document: 500_cgrti
+Source: structured.md
+Pages: 29
+Section: SECTION lO: APPEAL & ESCALATION COMPLEX QUESTIONS
+Question: Q376. "Multiple RTIs filed by different people - coordinated response?" A: Each must be responded separately within 30 days. Cannot batch delay one for another
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 61
+
+---
+
+## SECTION lO: APPEAL & ESCALATION COMPLEX QUESTIONS
+
+Q376. "Multiple RTIs filed by different people - coordinated response?" A: Each must be responded separately within 30 days. Cannot batch delay one for another

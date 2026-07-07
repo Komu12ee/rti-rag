@@ -1,0 +1,16 @@
+# FAQ Chunk 362
+Document: 500_cgrti
+Source: structured.md
+Pages: 28
+Section: Advanced Timeline & Procedural Issues
+Question: Q366. "PIO verbally said "will provide" but deadline passed recourse?" A: Verbal promise doesn't count. If deadline missed, file deemed refusal appeal.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 50
+
+---
+
+## Advanced Timeline & Procedural Issues
+
+Q366. "PIO verbally said "will provide" but deadline passed recourse?" A: Verbal promise doesn't count. If deadline missed, file deemed refusal appeal.

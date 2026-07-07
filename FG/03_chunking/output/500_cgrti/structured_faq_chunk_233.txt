@@ -1,0 +1,16 @@
+# FAQ Chunk 233
+Document: 500_cgrti
+Source: structured.md
+Pages: 19
+Section: 5.5 Appointments & Recruitment Scenarios
+Question: Q237. "Exam appeared but result not published. Check status?" A: Request: exam conducted, answer sheets received, evaluation status, timeline for result, no. of candidates.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 53
+
+---
+
+## 5.5 Appointments & Recruitment Scenarios
+
+Q237. "Exam appeared but result not published. Check status?" A: Request: exam conducted, answer sheets received, evaluation status, timeline for result, no. of candidates.

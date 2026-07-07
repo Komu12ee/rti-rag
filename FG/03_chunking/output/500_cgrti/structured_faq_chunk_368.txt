@@ -1,0 +1,18 @@
+# FAQ Chunk 368
+Document: 500_cgrti
+Source: structured.md
+Pages: 28-29
+Section: SECTION lO: APPEAL & ESCALATION COMPLEX QUESTIONS
+Question: Q371. "First appeal dismissed wrongly = direct to SIC?" A: Yes, you can appeal to SIC
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 56
+
+---
+
+## SECTION lO: APPEAL & ESCALATION COMPLEX QUESTIONS
+
+Q371. "First appeal dismissed wrongly = direct to SIC?" A: Yes, you can appeal to SIC
+
+within 90 days citing first appeal officer's error

@@ -1,0 +1,16 @@
+# FAQ Chunk 145
+Document: 500_cgrti
+Source: structured.md
+Pages: 12-13
+Section: 4.1 Timeline Complications
+Question: Q149. Can multiple extensions make it 6O 90 days total? A: No, standard timeline is 30 days (or 40 with third party). Extensions only for specific circumstances.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 46
+
+---
+
+## 4.1 Timeline Complications
+
+Q149. Can multiple extensions make it 6O 90 days total? A: No, standard timeline is 30 days (or 40 with third party). Extensions only for specific circumstances.

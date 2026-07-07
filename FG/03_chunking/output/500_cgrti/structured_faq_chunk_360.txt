@@ -1,0 +1,16 @@
+# FAQ Chunk 360
+Document: 500_cgrti
+Source: structured.md
+Pages: 28
+Section: Advanced Timeline & Procedural Issues
+Question: Q364. "Appeal not decided in 45 days = can [ escalate?" A: Yes, deemed approval after 45 days. Or file SIC complaint for delay.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 49
+
+---
+
+## Advanced Timeline & Procedural Issues
+
+Q364. "Appeal not decided in 45 days = can [ escalate?" A: Yes, deemed approval after 45 days. Or file SIC complaint for delay.

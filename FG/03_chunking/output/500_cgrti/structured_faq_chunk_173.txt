@@ -1,0 +1,16 @@
+# FAQ Chunk 173
+Document: 500_cgrti
+Source: structured.md
+Pages: 14-15
+Section: 4.4 Exemptions - Tricky Applications
+Question: Q177. Can draft policy be withheld forever as "draft"? A: No, once 1 2 years old, draft becomes "historical" and should be disclosed.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 49
+
+---
+
+## 4.4 Exemptions - Tricky Applications
+
+Q177. Can draft policy be withheld forever as "draft"? A: No, once 1 2 years old, draft becomes "historical" and should be disclosed.

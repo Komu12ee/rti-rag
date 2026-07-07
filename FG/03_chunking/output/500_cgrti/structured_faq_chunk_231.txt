@@ -1,0 +1,16 @@
+# FAQ Chunk 231
+Document: 500_cgrti
+Source: structured.md
+Pages: 19
+Section: 5.5 Appointments & Recruitment Scenarios
+Question: Q235. "Job vacancy was filled on contract, why not permanent?" A: Request: position category budget allocation, recruitment approval, advertisement issued, contract VS. permanent policy.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 52
+
+---
+
+## 5.5 Appointments & Recruitment Scenarios
+
+Q235. "Job vacancy was filled on contract, why not permanent?" A: Request: position category budget allocation, recruitment approval, advertisement issued, contract VS. permanent policy.

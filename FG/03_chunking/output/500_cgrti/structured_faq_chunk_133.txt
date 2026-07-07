@@ -1,0 +1,16 @@
+# FAQ Chunk 133
+Document: 500_cgrti
+Source: structured.md
+Pages: 11-12
+Section: 3.5 Information Commission Powers
+Question: Q137. What is "larger public interest" per SIC interpretation? A: Varies by case, but generally includes corruption exposure, health safety risks constitutional violations environmental threats.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 49
+
+---
+
+## 3.5 Information Commission Powers
+
+Q137. What is "larger public interest" per SIC interpretation? A: Varies by case, but generally includes corruption exposure, health safety risks constitutional violations environmental threats.

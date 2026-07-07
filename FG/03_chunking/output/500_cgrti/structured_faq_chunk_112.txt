@@ -1,0 +1,16 @@
+# FAQ Chunk 112
+Document: 500_cgrti
+Source: structured.md
+Pages: 10
+Section: 3.3 Exemptions Advanced
+Question: Q116. Can "preliminary assessment" stage be withheld? A: Not as blanket exemption. Investigation details can be withheld under Section 8(1) (h), not preliminary stage alone.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 51
+
+---
+
+## 3.3 Exemptions Advanced
+
+Q116. Can "preliminary assessment" stage be withheld? A: Not as blanket exemption. Investigation details can be withheld under Section 8(1) (h), not preliminary stage alone.

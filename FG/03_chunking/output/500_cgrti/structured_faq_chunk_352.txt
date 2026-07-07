@@ -1,0 +1,16 @@
+# FAQ Chunk 352
+Document: 500_cgrti
+Source: structured.md
+Pages: 27
+Section: Complex Exemption Questions
+Question: Q356. "Foreign government correspondence - available?" A: No, diplomacy related info protected (Section 8(1) (f) ). Disclosed after diplomatic sensitivity passes.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 50
+
+---
+
+## Complex Exemption Questions
+
+Q356. "Foreign government correspondence - available?" A: No, diplomacy related info protected (Section 8(1) (f) ). Disclosed after diplomatic sensitivity passes.

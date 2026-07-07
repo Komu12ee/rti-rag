@@ -1,0 +1,16 @@
+# FAQ Chunk 128
+Document: 500_cgrti
+Source: structured.md
+Pages: 11
+Section: 3.5 Information Commission Powers
+Question: Q132. Can SIC order compensation for delay ? Aः Yes, SIC can award compensation if delay caused hardship. Amount is discretionary ( =5OO 5,OOO typical).
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 51
+
+---
+
+## 3.5 Information Commission Powers
+
+Q132. Can SIC order compensation for delay ? Aः Yes, SIC can award compensation if delay caused hardship. Amount is discretionary ( =5OO 5,OOO typical).

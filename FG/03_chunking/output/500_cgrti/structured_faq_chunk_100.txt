@@ -1,0 +1,16 @@
+# FAQ Chunk 100
+Document: 500_cgrti
+Source: structured.md
+Pages: 9
+Section: 3.2 Procedural Technicalities
+Question: Q103. Can PIO refuse application because "not in prescribed format"? A: any format (plain letter, email, portal) is acceptable. Cannot demand specific format. NO,
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 48
+
+---
+
+## 3.2 Procedural Technicalities
+
+Q103. Can PIO refuse application because "not in prescribed format"? A: any format (plain letter, email, portal) is acceptable. Cannot demand specific format. NO,

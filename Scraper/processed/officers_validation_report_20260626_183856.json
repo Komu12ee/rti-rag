@@ -1,0 +1,53 @@
+{
+  "generated_at_utc": "2026-06-26T13:08:57.049007+00:00",
+  "source_file": "C:\\Users\\hp\\current_status\\CHiPS-RTI-Project\\citizen\\rti_sarvam copy\\data\\rti-rag\\Scraper\\raw\\officers_raw_20260626_174315.json",
+  "source_record_count": 30810,
+  "clean_record_count": 30810,
+  "unique_officer_record_ids": 30809,
+  "duplicate_officer_record_ids": 1,
+  "duplicate_id_examples": [
+    "RTI_OFF_c3e18d1a06226ee8455d"
+  ],
+  "role_counts": {
+    "FAA": 12373,
+    "PIO": 18437
+  },
+  "unique_districts": 33,
+  "unique_departments": 49,
+  "blank_field_counts": {
+    "officer_name": 1,
+    "email": 0,
+    "office_code": 0,
+    "department_name": 0,
+    "district": 0
+  },
+  "top_10_districts_by_records": {
+    "BALRAMPUR": 4944,
+    "SURAJPUR": 2576,
+    "KANKER": 2148,
+    "SURGUJA": 2115,
+    "RAIGARH": 1536,
+    "MAHASAMUND": 1398,
+    "DHAMTARI": 1392,
+    "KONDAGAON": 1137,
+    "BILASPUR": 1130,
+    "RAIPUR": 1068
+  },
+  "top_10_departments_by_records": {
+    "Panchayat and Rural Development Department": 13258,
+    "School Education Department": 8857,
+    "Home department": 1255,
+    "Forest Department": 1033,
+    "Food Civil Supplies and Consumer Protection Department": 964,
+    "Agriculture Department": 504,
+    "Technical Education and Manpower Planning Department": 462,
+    "Urban Administration and Development Department": 429,
+    "Revenue Department": 399,
+    "Women and Child Development Department": 350
+  },
+  "notes": [
+    "Blank names are retained because some valid official records may only provide office email/designation.",
+    "No rows are automatically removed at this cleaning stage.",
+    "officer_record_id includes office code, RTI role, email, name, designation code and department code."
+  ]
+}

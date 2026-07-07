@@ -1,0 +1,16 @@
+# FAQ Chunk 182
+Document: 500_cgrti
+Source: structured.md
+Pages: 15
+Section: 4.5 Appeal & Escalation Tricky Cases
+Question: Q186. If first appeal officer is also biased, can I directly approach SIC? A: Tes SIC can review PIO + appeal officer decisions if bias collusion evident.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 52
+
+---
+
+## 4.5 Appeal & Escalation Tricky Cases
+
+Q186. If first appeal officer is also biased, can I directly approach SIC? A: Tes SIC can review PIO + appeal officer decisions if bias collusion evident.

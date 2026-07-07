@@ -1,0 +1,16 @@
+# FAQ Chunk 216
+Document: 500_cgrti
+Source: structured.md
+Pages: 18
+Section: 5.3 Health & Safety Scenarios
+Question: Q220. "PHC medicines show as supplied but not used. Why?" A: Request: medicine supply record, expiry date action, destruction certificate, utilization report.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 47
+
+---
+
+## 5.3 Health & Safety Scenarios
+
+Q220. "PHC medicines show as supplied but not used. Why?" A: Request: medicine supply record, expiry date action, destruction certificate, utilization report.

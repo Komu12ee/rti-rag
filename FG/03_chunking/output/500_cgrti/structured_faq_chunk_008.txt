@@ -1,0 +1,20 @@
+# FAQ Chunk 8
+Document: 500_cgrti
+Source: structured.md
+Pages: 2
+Section: QlL. How do I file an RTI request in Chhattisgarh? A:
+Question: (section note)
+Part: 1/1
+Kind: section_note
+Has answer: no
+Content tokens: 77
+
+---
+
+## QlL. How do I file an RTI request in Chhattisgarh? A:
+
+- 1. Identify the public authority
+- 2 Find the Public Information Officer (PIO )
+- 3. Write your information request clearly
+- 4. =10 fee Pay
+- 5. Submit to PIO in person, by post, or online through https rtionline cg govin

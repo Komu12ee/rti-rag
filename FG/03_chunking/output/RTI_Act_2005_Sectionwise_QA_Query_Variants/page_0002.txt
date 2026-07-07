@@ -1,0 +1,23 @@
+## Contents Provision Coverage Index
+
+Each section below is expanded into one Q&A unit for every subsection provision supplied in the source file.
+
+|    | Short Title and Extent / लघु शीर्षक और विस्तार                                                      | 3   |
+|----|-----------------------------------------------------------------------------------------------------|-----|
+| 2  | Definitions / परिभाषाएँ                                                                             |     |
+| 3  | Right to Information सूचना का अधकार                                                                 |     |
+|    | Obligations of Public Authorities लोक प्राधिकारियों की बाध्यताएं                                    |     |
+| 5  | Designation of Public Information Officers / लोक सूचना अधिकारियों का पदाभिहितकरण                    |     |
+|    | Procedure for Requesting Information सूचना के अनुरोध की प्रक्रिया लिए                               | 3   |
+|    | Time Limit for Furnishing Information सूचना प्रदान करने हेतु समय सीमा                               |     |
+| 8  | Exemption from Disclosure of Information सूचना के प्रकटन से छूट                                     | 12  |
+|    | Information Exempted from Disclosure (Copyright) / प्रकटीकरण से छूट प्राप्त सूचना (कॉपीराइट         |     |
+| 10 | Severability Partial Disclosure विभाज्यता आंशिक प्रकटीकरण                                           | 2   |
+| 11 | Third Party Information / तीसरे पक्ष की सूचना                                                       |     |
+| 12 | Central Information Commission केंद्रीय सूचना आयोग                                                  |     |
+| 13 | Chief Information Commissioner (Qualifications & Tenure) / मुख्य सूचना आयुक्त (योग्यता और कार्यकाल) | 2   |
+| 14 | Powers of Information Commissioners सूचना आयुक्तों की शक्तियां                                      |     |
+| 15 | State Information Commission राज्य सूचना आयोग                                                       |     |
+| 16 | State Chief Information Commissioner (Qualifications) / राज्य मुख्य सूचना आयुक्त (योग्यता)          | 2   |
+| 17 | Powers of State Information Commission राज्य सूचना आयोग की शक्तियां                                 |     |
+| 18 | Procedure for Inquiries जांच की प्रक्रिया                                                           |     |

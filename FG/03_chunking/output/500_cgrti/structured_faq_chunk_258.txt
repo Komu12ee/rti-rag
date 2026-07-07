@@ -1,0 +1,16 @@
+# FAQ Chunk 258
+Document: 500_cgrti
+Source: structured.md
+Pages: 21
+Section: 6.2 CG Online RTI Portal
+Question: Q261. What is the URL for CG online RTI portal? A: https rtionline cg govin this is official portal for filing RTI in Chhattisgarh.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 49
+
+---
+
+## 6.2 CG Online RTI Portal
+
+Q261. What is the URL for CG online RTI portal? A: https rtionline cg govin this is official portal for filing RTI in Chhattisgarh.

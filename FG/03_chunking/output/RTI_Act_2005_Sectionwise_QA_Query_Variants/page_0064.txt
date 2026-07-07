@@ -1,0 +1,29 @@
+## Question variants all map to this one provision
+
+- 1. What does Section 19(10) of the Right to Information Act, 2005 provide?
+- 2. Explain RTI Act Section 19(10): Second Appeal.
+- 3. What is Act 19(10) in RTI? I need the rule for first appeal.
+- 5. धारा 19(10) का सरल अर्थ क्या है - द्वितीय अपील?
+- 4. सूचना का अधिकार अधिनियम, 2005 की धारा 1910) में क्या प्रावधान है?
+- 6. RTI Act 19( 10) ka rule kya hai? द्वितीय अपील के बारे में बताइए|
+- 7. In this situation: Applicant did not receive a decision within Section 7 timelines, or is aggrieved by a PIO decision eligible for First Appeal. Does Section 19(1O) apply, and what does it say?
+- 8. "19(10) RTI law me kya hai? " "19(10) ka matlab?"
+
+## Answer
+
+English definition: To SIC for state matters or CIC for central matters must be filed within 90 days of the first appeal decision; the Commission must decide within 90 days (extendable); can pass binding orders, recommend penalties, and recommend compensation for loss hardship.
+
+हिंदीं परिभाषाः राज्य मामलों हेतु SIC को या केंद्रीय मामलों हेतु CIC कोः प्रथम अपील विनिश्चय के 90 दिनों के भीतर दाखिल करना चाहिएः आयोग को 90 दिनों के (विस्तारणीय) विनिश्चय करना चाहिएः बाध्यकारी आदेश पास कर सकता है, दंड की सिफारिश कर सकता है, और हानि कठिनाई हेतु मुआवजे की सिफारिश कर सकता है| भीतर
+
+Retrieval anchors: Second Appeal; द्वितीय अपील; first appeal; 30 days; 45 days; 90 days senior officer; appellate authority; burden of proof
+
+## Typical contexts
+
+- Applicant did not receive a decision within Section 7 timelines, or is aggrieved by a PIO decision eligible for First Appeal
+- Drafting any rejection must inform applicant of appeal rights forum and timeline
+- First Appeal decision received lapsed and applicant wishes to escalate eligible for Second Appeal
+- Evaluating whether a PIO's stated justification for refusal meets the evidentiary burden
+
+PIO implementation note: Every PIO rejection or partial disclosure response MUST cite the First Appeal forum (senior officer of the public authority) and the 3O day appeal window, per Section 19(1 ) read with Section 7(8). The PIO bears the burden of proof for any denial if challenged in appeal.
+
+Source reference: RTI Rule Book, pp. 76-96 (Appeals Rules 2006 and amendments)

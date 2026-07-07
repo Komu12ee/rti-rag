@@ -1,0 +1,16 @@
+# FAQ Chunk 318
+Document: 500_cgrti
+Source: structured.md
+Pages: 25
+Section: 7.3 Public Works Department ( PWD) RTI Questions
+Question: Q322. "Bridge project - Why is it delayed?" A: Yes. Request: completion timeline, work progress, pending approvals, contractor reasons, financial status.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 58
+
+---
+
+## 7.3 Public Works Department ( PWD) RTI Questions
+
+Q322. "Bridge project - Why is it delayed?" A: Yes. Request: completion timeline, work progress, pending approvals, contractor reasons, financial status.

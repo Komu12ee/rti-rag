@@ -1,0 +1,27 @@
+## Question variants all map to this one provision
+
+- 1. What does Section 21 (jurisdiction) of the Right to Information Act, 2005 provide?
+- 2. Explain RTI Act Section 21(jurisdiction): Writ jurisdiction scope.
+- 3. What is Act 21 (jurisdiction) in RTI? I need the rule for writ jurisdiction.
+- 5. धारा 21 (jurisdiction) का सरल अर्थ क्या है - रिट अधिकारिता का दायरा?
+- 4. सूचना का अधिकार अधिनियम, 2005 धारा 21 (jurisdiction) में क्या प्रावधान है?
+- 6. RTI Act 21 (jurisdiction ) ka rule hai? रिट अधिकारिता का दायरा के बारे में बताइए| kya
+- 7. In this situation: Applicant has exhausted both First and Second Appeal and remains aggrieved. Does Section 21 (jurisdiction) apply, and what does it say?
+- 8. "21(jurisdiction ) RTI law me kya hai? "21(jurisdiction ) ka matlab? "
+
+## Answer
+
+English definition: High Courts can issue writs of habeas corpus, mandamus prohibition, certiorari, and quo warranto; review CICISIC decisions; examine constitutional violations; check procedural irregularities intervene where jurisdiction is exceeded. Acts as final recourse after RTI appeal exhaustion.
+
+हिंदीं परिभाषाः उच्च न्यायालय बंदी प्रत्यक्षीकरण , परमादेश प्रतिषेध उत्प्रेषण, और अधिकार पृच्छा के रिट जारी कर सकते हैंः CICISIC विनिश्चयों की समीक्षा कर सकते हैंः संवैधानिक उल्लंघनों की जांच कर सकते हैंः प्रक्रियात्मक अनियमितताओं की जांच कर सकते हैंः अधिकारिता अतिक्रमण होने पर हस्तक्षेप कर सकते हैं| RTI अपील समाप्ति के बाद अंतिम सहारे के रूप में कार्य करते हैंl
+
+Retrieval anchors: Writ jurisdiction scope; रिट अधिकारिता का दायरा; writ jurisdiction; judicial review; habeas corpus mandamus; certiorari; final recourse
+
+## Typical contexts
+
+- Applicant has exhausted both First and Second Appeal and remains aggrieved
+- Constitutional or jurisdictional challenge to a Commission decision
+
+PIO implementation noteः Not part of routine PIO response inform applicant only after Second Appeal is exhausted that further recourse lies with the High Court via writ petition.
+
+Source reference RTI Rule Book, pp. 157 161 (High Court observations)

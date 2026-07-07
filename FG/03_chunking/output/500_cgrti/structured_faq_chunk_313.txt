@@ -1,0 +1,16 @@
+# FAQ Chunk 313
+Document: 500_cgrti
+Source: structured.md
+Pages: 25
+Section: 7.2 Health Department RTI Questions
+Question: Q317. "What's the water quality in hospital?" A: Yes. Request: water testing reports, purification system details, testing frequency, any contamination.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 47
+
+---
+
+## 7.2 Health Department RTI Questions
+
+Q317. "What's the water quality in hospital?" A: Yes. Request: water testing reports, purification system details, testing frequency, any contamination.

@@ -1,0 +1,27 @@
+## Question variants all map to this one provision
+
+- 1. What does Section 11(2) of the Right to Information Act, 2005 provide?
+- 2. Explain RTI Act Section 1 1(2): Third partys representation window.
+- 3. What is Act 11(2) in RTI? 1 need the rule for third party notice.
+- 5. धारा 11(2) का सरल अर्थ क्या है - तीसरे पक्ष की प्रतिनिधित्व अवधिः
+- 4. सूचना का अधिकार अधिनियम, 2005 धारा 11(2) में क्या प्रावधान है?
+- 6. RTI Act 11(2) ka rule kya hai? तीसरे पक्ष की प्रतिनिधित्व अवधि के बारे में बताइए|
+- 7. In this situation: Requested record contains information supplied bylrelating to a third party that was marked or treated as confidential. Does Section 11(2) apply, and what does it say?
+- 8. "11(2) RTI law me kya hai?" / "11(2) ka matlab?"
+
+## Answer
+
+English definition: Where notice is served on a third party shall be given 10 days from receipt of notice to make representation against the proposed disclosure. they
+
+हिंदी परिभाषाः जहां तीसरे पक्ष को नोटिस दिया जाता है, उसे नोटिस की प्राप्ति की तारीख से 10 दिनों के भीतर प्रस्तावित प्रकटीकरण के विरुद्ध प्रतिनिधित्व करने का अवसर दिया जाएगा|
+
+Retrieval anchors: Third party's representation window; तीसरे पक्ष को प्रतिनिधित्व अवधि; third party notice; confidential information supplied by third party; representation; 40 days; 10 days
+
+## Typical contexts
+
+- Requested record contains information supplied bylrelating to a third party that was marked or treated as confidential
+- Computing the modified response deadline use 40 days, not the standard 30 days, when third party consultation is triggered
+
+PIO implementation note: If third party information is involved, the standard Section 7 3O-day timeline is superseded by the Section 11(3) 4O-day timeline. The third party must be notified and given 10 days before a final decision, and must be informed of their own Section 19 appeal right if disclosure is decided against their wishes.
+
+Source reference: RTI Rule Book, p. 19

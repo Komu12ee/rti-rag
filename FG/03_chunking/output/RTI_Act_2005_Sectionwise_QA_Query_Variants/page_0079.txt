@@ -1,0 +1,28 @@
+## Question variants all map to this one provision
+
+- 1. What does Section 27(amendment power) of the Right to Information Act, 2005 provide?
+- 2. Explain RTI Act Section 27(amendment power): Amendment power confirmed.
+- 3. What is Act 27(amendment power) in RTI? I need the rule for amendment power.
+- 5. धारा 27(amendment power) का सरल अर्थ क्या है - संशोधन शक्ति की पुष्टि?
+- 4. सूचना का अधिकार अधिनियम, 2005 धारा 27(amendment power) में क्या प्रावधान है?
+- 6. RTI Act 27(amendment power) ka rule kya hai? संशोधन शक्ति की पुष्टि के बारे में बताइए|
+- 7. In this situation: Validating which version (pre- or post 2019) of a Commission tenurelsalary provision governs a query. Does Section 27(amendment power) apply, and what does it say?
+- Il 8. "27(amendment power ) RTI law me kya hai?" "27(amendment power ) ka matlab?'
+
+## Answer
+
+English definition: Parliament can amend any provision of the RTI Act through its normal legislative process.
+
+हिंदीं परिभाषाः संसद अपनी सामान्य विधायी प्रक्रिया के माध्यम से RTI अधिनियम के किसी भी प्रावधान में संशोधन कर सकती हैl
+
+Retrieval anchors: Amendment power confirmed; संशोधन शक्ति की पुष्टि; amendment power; 2019 amendment; tenure flexibility; legislative process
+
+## Typical contexts
+
+- Validating which version (pre- or post 2019) of a Commission tenurelsalary provision governs a query
+
+PIO implementation note: Always apply the 2019 Amendment as current law for any CICISIC tenure or salary related response, given it supersedes the original Sections 13 and 16 provisions.
+
+- Query about the legislative history or amendment process of the Act
+
+Source reference: RTI Rule Book, Section 27 (cross reference to 2019 Amendment notification dated 29 October 2019)

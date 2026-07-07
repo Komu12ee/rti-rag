@@ -1,0 +1,16 @@
+# FAQ Chunk 37
+Document: 500_cgrti
+Source: structured.md
+Pages: 4-5
+Section: L.5 PIO - Public Information Officer
+Question: Q40. Can I ask who the PIO is? A: Tes, every department must publish PIO's name and contact details. You can request this information itself.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 46
+
+---
+
+## L.5 PIO - Public Information Officer
+
+Q40. Can I ask who the PIO is? A: Tes, every department must publish PIO's name and contact details. You can request this information itself.

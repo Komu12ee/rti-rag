@@ -1,0 +1,16 @@
+# FAQ Chunk 13
+Document: 500_cgrti
+Source: structured.md
+Pages: 3
+Section: QlL. How do I file an RTI request in Chhattisgarh? A:
+Question: Q16. What is the correct format for filing RTI? A: Simply write in plain language describing what information you need. Use official form if available, or write a plain letter
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 61
+
+---
+
+## QlL. How do I file an RTI request in Chhattisgarh? A:
+
+Q16. What is the correct format for filing RTI? A: Simply write in plain language describing what information you need. Use official form if available, or write a plain letter

@@ -1,0 +1,16 @@
+# FAQ Chunk 26
+Document: 500_cgrti
+Source: structured.md
+Pages: 3
+Section: L.4 Fees & Payment
+Question: Q29. Are BPL persons required to pay RTI fees? A: No, completely exempt. Just provide BPL certificate copy with application
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 39
+
+---
+
+## L.4 Fees & Payment
+
+Q29. Are BPL persons required to pay RTI fees? A: No, completely exempt. Just provide BPL certificate copy with application

@@ -1,0 +1,16 @@
+# FAQ Chunk 347
+Document: 500_cgrti
+Source: structured.md
+Pages: 27
+Section: Complex Exemption Questions
+Question: Q351. "Can [ get cabinet meeting minutes?" A: internal deliberations protected (Section 8(l) (i) ). But final Cabinet decision can be requested. No,
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 47
+
+---
+
+## Complex Exemption Questions
+
+Q351. "Can [ get cabinet meeting minutes?" A: internal deliberations protected (Section 8(l) (i) ). But final Cabinet decision can be requested. No,

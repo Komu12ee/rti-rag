@@ -1,0 +1,16 @@
+# FAQ Chunk 189
+Document: 500_cgrti
+Source: structured.md
+Pages: 16
+Section: .1 Corruption & Transparency Scenarios
+Question: Q193. "Contractor got extension without bidding. Is this legal disclosure?" A: Yes, you can request: amendment order justification, why extension instead of rebid. Public interest applies
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 59
+
+---
+
+## .1 Corruption & Transparency Scenarios
+
+Q193. "Contractor got extension without bidding. Is this legal disclosure?" A: Yes, you can request: amendment order justification, why extension instead of rebid. Public interest applies

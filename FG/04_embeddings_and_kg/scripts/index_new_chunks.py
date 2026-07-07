@@ -5,6 +5,7 @@ Appends 14 new structured chunks to existing db3 collection.
 """
 
 import json
+import os
 import sys
 from pathlib import Path
 from qdrant_client import QdrantClient
@@ -17,6 +18,10 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 CHUNK_DIR = PROJECT_ROOT / "03_chunking" / "output"
 QDRANT_PATH = PROJECT_ROOT / "04_embeddings_and_kg" / "db" / "qdrant_local"
 COLLECTION_NAME = "db3"
+EMBEDDING_MODEL = os.getenv(
+    "EMBEDDING_MODEL",
+    str(PROJECT_ROOT / "models" / "bge-m3"),
+)
 
 print("="*70)
 print("Indexing New Chunks to Qdrant")
@@ -24,7 +29,7 @@ print("="*70)
 
 # Load model
 print("\n📦 Loading BGE-M3 embedding model...")
-model = BGEM3FlagModel("BAAI/bge-m3", use_fp16=True)
+model = BGEM3FlagModel(EMBEDDING_MODEL, use_fp16=True)
 print("✓ Model loaded")
 
 # Connect to Qdrant

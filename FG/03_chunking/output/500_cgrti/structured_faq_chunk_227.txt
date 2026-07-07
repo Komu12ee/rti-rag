@@ -1,0 +1,16 @@
+# FAQ Chunk 227
+Document: 500_cgrti
+Source: structured.md
+Pages: 19
+Section: 5.5 Appointments & Recruitment Scenarios
+Question: Q231. "My friend got job with lower qualification. Unfair?" A: Request: recruitment notification, eligibility criteria, merit list, selected candidate's qualifications, your score.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 54
+
+---
+
+## 5.5 Appointments & Recruitment Scenarios
+
+Q231. "My friend got job with lower qualification. Unfair?" A: Request: recruitment notification, eligibility criteria, merit list, selected candidate's qualifications, your score.

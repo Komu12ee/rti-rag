@@ -1,0 +1,18 @@
+# FAQ Chunk 311
+Document: 500_cgrti
+Source: structured.md
+Pages: 25
+Section: 7.2 Health Department RTI Questions
+Question: Q314. "Hospital fee structure is it accurate?" A: Yes. Request: government approved fee structure, exemption policy payment procedure, complaint against overcharging
+Part: 1/1
+Kind: faq
+Has answer: yes
+Content tokens: 80
+
+---
+
+## 7.2 Health Department RTI Questions
+
+Q314. "Hospital fee structure is it accurate?" A: Yes. Request: government approved fee structure, exemption policy payment procedure, complaint against overcharging
+
+0315. medicines always out of stock?" A: Yes. Request: medicine procurement budget, supplier details, supply schedule, stock status, issues faced. "Why

@@ -1,0 +1,28 @@
+## Question variants all map to this one provision
+
+- 1. What does Section 12(1 ) 12(2) of the Right to Information Act, 2005 provide?
+- 2. Explain RTI Act Section 1 2(1 ) 12(2): Constitution and composition.
+- 3. What is Act 12(1) 12(2) in RTI? I need the rule for CIC.
+- 4. सूचना का अधिकार अधिनियम, 2005 धारा 12(1 ) 122) में क्या प्रावधान है?
+- 5. धारा 12(1) 12(2) का सरल अर्थ क्या है गठन और संरचना?
+- 6. RTI Act 12(1 ) 12(2) ka rule kya hai? गठन और संरचना के बारे में बताइए|
+- 7. In this situation: Query is about jurisdiction of the second appeal authority for central public authorities. Does Section 12(1)12(2) apply, and what does it say?
+- 8. "12(1)-12(2) RTI law me kya hai?" "12(1)-12(2) ka matlab?"
+
+## Answer
+
+English definition: The Central Government shall constitute the Central Information Commission, consisting of the Chief Information Commissioner (CIC) and such number of Information Commissioners (not exceeding 10) as determined by the Central Government.
+
+हिंदीं परिभाषाः केंद्रीय सरकार केंद्रीय सूचना आयोग का गठन करेगी, जिसमें मुख्य सूचना आयुक्त और केंद्रीय सरकार द्वारा निर्धारित (दस से अनधिक) सूचना आयुक्त शामिल होंगे|
+
+Retrieval anchorsः Constitution and composition; गठन और संरचना; CIC; Chief Information Commissioner Information Commissioners; constitution of commission
+
+## Typical contexts
+
+- Query is about jurisdiction of the second appeal authority for central public authorities
+
+PIO implementation note: Used mainly for institutional jurisdictional validation rather than direct PIO response content; relevant when informing an applicant of the correct second appeal forum for a central public authority
+
+- Validating whether a body claiming to be the 'Information Commission' is properly constituted
+
+Source reference: RTI Rule Book, pp. 12 13 (reference)

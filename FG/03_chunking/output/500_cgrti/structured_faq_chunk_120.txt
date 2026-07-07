@@ -1,0 +1,16 @@
+# FAQ Chunk 120
+Document: 500_cgrti
+Source: structured.md
+Pages: 11
+Section: 3.4 Suo Motu Disclosure
+Question: Q124. What is timeline for suo motu disclosure? A: Within 120 days of RTI Act enactment (already passed), then ongoing annual updates required.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 46
+
+---
+
+## 3.4 Suo Motu Disclosure
+
+Q124. What is timeline for suo motu disclosure? A: Within 120 days of RTI Act enactment (already passed), then ongoing annual updates required.

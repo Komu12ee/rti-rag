@@ -1,0 +1,16 @@
+# FAQ Chunk 294
+Document: 500_cgrti
+Source: structured.md
+Pages: 23
+Section: 6.5 CG Government Websites & Online Systems
+Question: Q297. How to download forms from CG government? A: Visit cgstate govin Find department Download forms section. If not available, file RTI request.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 47
+
+---
+
+## 6.5 CG Government Websites & Online Systems
+
+Q297. How to download forms from CG government? A: Visit cgstate govin Find department Download forms section. If not available, file RTI request.

@@ -1,0 +1,16 @@
+# FAQ Chunk 166
+Document: 500_cgrti
+Source: structured.md
+Pages: 14
+Section: 4.3 Department Confusion & Routing
+Question: Q170. Can I file RTI asking "which department has this information"? A: Yes, you can file meta RTI. Department should respond or direct you to correct department.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 45
+
+---
+
+## 4.3 Department Confusion & Routing
+
+Q170. Can I file RTI asking "which department has this information"? A: Yes, you can file meta RTI. Department should respond or direct you to correct department.

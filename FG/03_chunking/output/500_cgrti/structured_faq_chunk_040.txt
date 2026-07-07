@@ -1,0 +1,16 @@
+# FAQ Chunk 40
+Document: 500_cgrti
+Source: structured.md
+Pages: 5
+Section: 2.1 What Information Can [ Request
+Question: Q43. Can [ request information about a specific person? A: Only if it's related to public activity or government function. Personal information unrelated to public activity is protected ( Section 8(1) (j)).
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 52
+
+---
+
+## 2.1 What Information Can [ Request
+
+Q43. Can [ request information about a specific person? A: Only if it's related to public activity or government function. Personal information unrelated to public activity is protected ( Section 8(1) (j)).

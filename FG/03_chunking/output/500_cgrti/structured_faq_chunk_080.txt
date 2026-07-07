@@ -1,0 +1,16 @@
+# FAQ Chunk 80
+Document: 500_cgrti
+Source: structured.md
+Pages: 8
+Section: 2.4 Format & Access Methods
+Question: Q83. Can I request information about ongoing court case? A: Limited yes - you can request government documents filed in court. Internal investigation details may be withheld.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 43
+
+---
+
+## 2.4 Format & Access Methods
+
+Q83. Can I request information about ongoing court case? A: Limited yes - you can request government documents filed in court. Internal investigation details may be withheld.

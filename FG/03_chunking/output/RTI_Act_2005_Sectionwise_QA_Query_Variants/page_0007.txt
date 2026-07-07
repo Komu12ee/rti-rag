@@ -1,0 +1,29 @@
+## Question variants all map to this one provision
+
+- 1. What does Section 2(a) of the Right to Information Act, 2005 provide?
+- 2. Explain RTI Act Section 2(a): Appropriate Government.
+- 3. What is Act 2(a) in RTI? 1 need the rule for definitions.
+- 4. सूचना का अधिकार अधिनियम, 2005 की धारा 2a) में क्या प्रावधान है?
+- 5. धारा 2(a) का सरल अर्थ क्या है - उपयुक्त सरकार?
+- 6. RTI Act 2(a ) ka rule kya hai? उपयुक्त सरकार के बारे में बताइए|
+- 7. In this situation: query requiring interpretation of a statutory term. Does Section 2(a) apply, and what does it say? Any
+- 8. "2(a) RTI law me kya hai?" "2(a) ka matlab? "
+
+## Answer
+
+English definition: Central Government for public authorities established under the Constitution, an Act of Parliament or a Proclamation under Article 356; State Government for those established under State Legislature law or a Governors Proclamation under Article 356; otherwise whichever of Central State Government is appropriate.
+
+हिंदी परिभाषाः संविधान, संसद अधिनियम या अनुच्छेद 356 के तहत जारी घोषणा के तहत स्थापित सार्वजनिक प्राधिकरणों के लिए केंद्रीय सरकारः राज्य विधान मंडल के कानून या राज्यपाल की घोषणा के तहत स्थापित हेतु राज्य सरकार; अन्यथा जो भी उपयुक्त होl
+
+Retrieval anchors: Appropriate Government; उपयुक्त सरकार; definitions; public authority; information; record; third party; CPIO; SPIO; competent authority
+
+## Typical contexts
+
+- query requiring interpretation of a statutory term Any
+- Determining whether a body qualifies as a 'Public Authority (e.g. NGO substantially financed by government)
+- Determining which ' Government' is appropriate for an application
+- Determining if requested material qualifies as 'Information' under the Act
+
+PIO implementation note: Use this section first when validating whether the body receiving the RTI query is in fact a 'public authority obligated to respond and whether the material sought falls within the definition of 'information'.
+
+Source reference: RTI Rule Book, pp. 2-6

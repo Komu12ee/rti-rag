@@ -1,0 +1,16 @@
+# FAQ Chunk 44
+Document: 500_cgrti
+Source: structured.md
+Pages: 5
+Section: 2.1 What Information Can [ Request
+Question: Q47. Can I request information about government meetings? A: Yes, you can request minutes of meetings, decisions taken, but not internal deliberations ( those are Cabinet papers).
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 47
+
+---
+
+## 2.1 What Information Can [ Request
+
+Q47. Can I request information about government meetings? A: Yes, you can request minutes of meetings, decisions taken, but not internal deliberations ( those are Cabinet papers).

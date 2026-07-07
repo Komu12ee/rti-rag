@@ -1,0 +1,16 @@
+# FAQ Chunk 203
+Document: 500_cgrti
+Source: structured.md
+Pages: 17
+Section: 5.2 Education & Student Scenarios
+Question: Q207. "School building is in ruins. no repair?" A: Request: maintenance budget allocated, repair proposals submitted, approvals, inspection reports. Why
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 47
+
+---
+
+## 5.2 Education & Student Scenarios
+
+Q207. "School building is in ruins. no repair?" A: Request: maintenance budget allocated, repair proposals submitted, approvals, inspection reports. Why

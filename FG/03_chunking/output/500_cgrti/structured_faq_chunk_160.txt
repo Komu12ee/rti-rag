@@ -1,0 +1,16 @@
+# FAQ Chunk 160
+Document: 500_cgrti
+Source: structured.md
+Pages: 14
+Section: 4.3 Department Confusion & Routing
+Question: Q164. Can I file same RTI to both departments to be safe? A: Technically yes but wasteful. Both will respond (you pay 3l0 each time). Better to file to primary source.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 54
+
+---
+
+## 4.3 Department Confusion & Routing
+
+Q164. Can I file same RTI to both departments to be safe? A: Technically yes but wasteful. Both will respond (you pay 3l0 each time). Better to file to primary source.

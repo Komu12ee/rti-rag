@@ -1,0 +1,16 @@
+# FAQ Chunk 58
+Document: 500_cgrti
+Source: structured.md
+Pages: 6
+Section: 2.3 Third Party Information
+Question: Q61. What is thirdrparty information? A: Information relating to another person (company, individual) provided to government in confidence.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 34
+
+---
+
+## 2.3 Third Party Information
+
+Q61. What is thirdrparty information? A: Information relating to another person (company, individual) provided to government in confidence.

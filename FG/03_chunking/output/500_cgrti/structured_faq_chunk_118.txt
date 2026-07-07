@@ -1,0 +1,16 @@
+# FAQ Chunk 118
+Document: 500_cgrti
+Source: structured.md
+Pages: 11
+Section: 3.4 Suo Motu Disclosure
+Question: Q122. What information must be published suo motu? A: Everything listed in Section 4(1)(b) 17 categories structure, budgets, contracts, beneficiaries, procedures, etc.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 49
+
+---
+
+## 3.4 Suo Motu Disclosure
+
+Q122. What information must be published suo motu? A: Everything listed in Section 4(1)(b) 17 categories structure, budgets, contracts, beneficiaries, procedures, etc.

@@ -1,0 +1,16 @@
+# FAQ Chunk 236
+Document: 500_cgrti
+Source: structured.md
+Pages: 19
+Section: 5.5 Appointments & Recruitment Scenarios
+Question: Q240. "Iscored more but rank below in list. Scoring error?" A: Request: answer keys, your marks for each question, weightage applied, final calculation, discrepancy explanation.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 57
+
+---
+
+## 5.5 Appointments & Recruitment Scenarios
+
+Q240. "Iscored more but rank below in list. Scoring error?" A: Request: answer keys, your marks for each question, weightage applied, final calculation, discrepancy explanation.

@@ -1,0 +1,16 @@
+# FAQ Chunk 324
+Document: 500_cgrti
+Source: structured.md
+Pages: 25
+Section: 7.3 Public Works Department ( PWD) RTI Questions
+Question: Q328. "How much did the project cost?" A: Yes. Request: approved cost, actual expenditure, variation reasons, bills paid, completion cost.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 53
+
+---
+
+## 7.3 Public Works Department ( PWD) RTI Questions
+
+Q328. "How much did the project cost?" A: Yes. Request: approved cost, actual expenditure, variation reasons, bills paid, completion cost.

@@ -1,0 +1,16 @@
+# FAQ Chunk 331
+Document: 500_cgrti
+Source: structured.md
+Pages: 26
+Section: 7.4 Revenue Department RTI Questions
+Question: Q335. "BPL status = how determined?" A: Yes. Request: income assessment procedure, criteria, your case assessment, verification done.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 45
+
+---
+
+## 7.4 Revenue Department RTI Questions
+
+Q335. "BPL status = how determined?" A: Yes. Request: income assessment procedure, criteria, your case assessment, verification done.

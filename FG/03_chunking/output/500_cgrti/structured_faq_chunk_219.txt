@@ -1,0 +1,16 @@
+# FAQ Chunk 219
+Document: 500_cgrti
+Source: structured.md
+Pages: 18
+Section: 5.4 Infrastructure & Public Works Scenarios
+Question: Q223. "Water supply promised but pipeline not laid. Status?" A: Request: project DPR, tender awarded, timeline, work progress payment to contractor, completion certificate.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 56
+
+---
+
+## 5.4 Infrastructure & Public Works Scenarios
+
+Q223. "Water supply promised but pipeline not laid. Status?" A: Request: project DPR, tender awarded, timeline, work progress payment to contractor, completion certificate.

@@ -1,0 +1,28 @@
+## Question variants all map to this one provision
+
+- 1. What does Section 28(matters covered) of the Right to Information Act, 2005 provide?
+- 2. Explain RTI Act Section 28(matters covered): Matters covered by rule making power.
+- 4. सूचना का अधिकार अधिनियम, 2005 धारा 28(matters covered) में क्या प्रावधान है?
+- 3. What is Act 28 matters covered) in RTI? 1 need the rule for rule making.
+- 5. धारा 28 matters covered) का सरल अर्थ क्या है - नियम निर्माण शक्ति द्वारा कवर गए मामले? किए
+- 6. RTI Act 28 matters covered) ka rule kya hai? नियम निर्माण शक्ति द्वारा कवर गए मामले के बारे में बताइए| किए
+- 7. In this situation: Validating fee charged against an application (application fee, copy charges, electronic format costs). Does Section 28(matters covered) apply, and what does it say?
+- 8. "28(matters covered) RTI law me kya hai? " "28(matters covered) ka matlab?
+
+## Answer
+
+English definition: Section 4ः cost of dissemination materials, suo motu print costs; Section 5ः PIOISPIO designation and appointment procedures; Section 6ः application fees (prescribed amount; Section 7ः response procedures, copy and electronic format fees; Sections 13 & 16ः salaries and conditions of CICISIC members; Section 19ः appeal procedures and timelines other matters as prescribed for implementing the Act.
+
+हिंदी परिभाषाः धारा 4: प्रसार सामग्री की लागत , स्वप्रेरणा मुद्रण लागतः धारा 5ः PIOJSPIO पदाभिहितकरण और नियुक्ति प्रक्रियाएं धारा 6ः आवेदन शुल्क ( निर्धारित राशि ; धारा 7ः उत्तर प्रक्रियाएं प्रति और इलेक्ट्रॉनिक प्रारूप शुल्कः धारा 13 और 16ः CICISIC सदस्यों का वेतन और शर्तेंः धारा 19ः अपील प्रक्रियाएं और समय सीमाः अधिनियम कार्यान्वयन हेतु अन्य विहित मामले|
+
+Retrieval anchors: Matters covered by rule making power; नियम निर्माण शक्ति द्वारा कवर किए गए मामले; rule making; fee structure; application fee; copy charges; BP \_ exemption; Chhattisgarh rules
+
+## Typical contexts
+
+- Validating fee charged against an application (application fee, copy charges, electronic format costs)
+- Query relates to a Chhattisgarh specific procedural rule rather than the central Act provision
+- Applicant claims BPL status validate fee exemption eligibility
+
+PIO implementation note: When computing fees for a PIO response, apply the current fee structure (Rs. 10 application fee, Rs. 2/page copies, BPL exemption) and verify any BPL claim per applicable state rules before billing the applicant.
+
+Source reference: RTI Rule Book, pp. 61 -174 (Complete Rules, RTI Application Submission Rules 2009, Fees and Charges Regulations, Appeals Rules 2006)

@@ -1,0 +1,16 @@
+# FAQ Chunk 202
+Document: 500_cgrti
+Source: structured.md
+Pages: 17
+Section: 5.2 Education & Student Scenarios
+Question: Q206. "Why were merit students denied scholarship?" A: Request: scholarship policy, eligible list, selected list, selection criteria, rejection reasons.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 45
+
+---
+
+## 5.2 Education & Student Scenarios
+
+Q206. "Why were merit students denied scholarship?" A: Request: scholarship policy, eligible list, selected list, selection criteria, rejection reasons.

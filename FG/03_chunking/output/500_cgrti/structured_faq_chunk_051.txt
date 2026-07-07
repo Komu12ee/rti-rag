@@ -1,0 +1,16 @@
+# FAQ Chunk 51
+Document: 500_cgrti
+Source: structured.md
+Pages: 6
+Section: 2.2 Exemptions & What Cannot Be Requested
+Question: Q54. What if I want competitor information? A: Commercial confidentiality ( trade secrets) cannot be disclosed ( Section 8(a)(d) ) unless public interest is strong
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 55
+
+---
+
+## 2.2 Exemptions & What Cannot Be Requested
+
+Q54. What if I want competitor information? A: Commercial confidentiality ( trade secrets) cannot be disclosed ( Section 8(a)(d) ) unless public interest is strong

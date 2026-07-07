@@ -1,0 +1,16 @@
+# FAQ Chunk 192
+Document: 500_cgrti
+Source: structured.md
+Pages: 16
+Section: .1 Corruption & Transparency Scenarios
+Question: Q196. "MLA allocated funds but work not visible. Can I track?" A: Yes. Request: work order, execution photographs, payment bills, inspection reports. Track every rupee
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 61
+
+---
+
+## .1 Corruption & Transparency Scenarios
+
+Q196. "MLA allocated funds but work not visible. Can I track?" A: Yes. Request: work order, execution photographs, payment bills, inspection reports. Track every rupee

@@ -1,0 +1,28 @@
+## Question variants all map to this one provision
+
+- 1. What does Section 11(1 ) of the Right to Information Act, 2005 provide?
+- 2. Explain RTI Act Section 1 1(1 ): Notice to third party
+- 3. What is Act 11(1 ) in RTI? 1 need the rule for third party notice.
+- 5. धारा 111) का सरल अर्थ क्या है - तीसरे पक्ष को सूचनाः
+- 4. सूचना का अधिकार अधिनियम, 2005 की धारा 111) में क्या प्रावधान है?
+- 6. RTI Act 11(1 ) ka rule kya hai? तीसरे पक्ष को सूचना के बारे में बताइए|
+- 7. In this situation: Requested record contains information supplied bylrelating to a third party that was marked or treated as confidential. Does Section 11(1 ) apply, and what does it say?
+- 8. "11(1) RTI law me kya hai?" / "11(1) ka matlab?"
+
+## Answer
+
+English definition: Where the CPIOISPIO intends to disclose information supplied by and treated as confidential by a third party, written notice must be given to that third party within 5 days of receipt of the request, inviting written oral representation whether the information should be disclosed; such submission shall be considered. Except for protected trade commercial secrets, disclosure may proceed if competent authority is satisfied public interest outweighs harm to the third party On
+
+हिंदी परिभाषाः जहां CPIOISPIO किसी तीसरे पक्ष द्वारा प्रदाय और गोपनीय मानी गई सूचना को प्रकट करने का इरादा रखता है, अनुरोध की प्राप्ति के 5 दिनों के भीतर उस तीसरे पक्ष को लिखित सूचना दी जाएगी, जिसमें लिखित मौखिक प्रतिनिधित्व हेतु आमंत्रित किया जाएगाः ऐसी प्रस्तुति पर विचार किया जाएगा| संरक्षित व्यापार | वाणिज्यिक रहस्यों को छोड़कर, यदि सक्षम प्राधिकारी संतुष्ट हो कि लोकहित तीसरे पक्ष को नुकसान से अधिक है, तो प्रकटीकरण किया जा सकता है|
+
+Retrieval anchorsः Notice to third party; तोसरे पक्ष को सूचना; third party notice confidential information supplied by third party; representation; 40 days 10 days
+
+## Typical contexts
+
+- Requested record contains information supplied bylrelating to a third party that was marked or treated as confidential
+
+PIO implementation note: If third-party information is involved, the standard Section 7 3O-day timeline is superseded by the Section 11(3) 4O-day timeline. The third party must be notified and given 10 days before a final decision, and must be informed of their own Section 19 appeal right if disclosure is decided against their wishes.
+
+- Computing the modified response deadline use 40 days, not the standard 30 days, when third-party consultation is triggered
+
+Source reference: RTI Rule Book, p. 19

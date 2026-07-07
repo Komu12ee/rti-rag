@@ -1,0 +1,18 @@
+{
+  "imported_at_utc": "2026-06-26T14:16:54.347960+00:00",
+  "clean_file": "C:\\Users\\hp\\current_status\\CHiPS-RTI-Project\\citizen\\rti_sarvam copy\\data\\rti-rag\\Scraper\\processed\\officers_clean_latest.json",
+  "source_file": "officers_raw_20260626_174315.json",
+  "ingestion_run_id": 1,
+  "input_clean_records": 30810,
+  "staging_records": 30809,
+  "departments": 49,
+  "districts": 33,
+  "offices": 27550,
+  "officers": 18590,
+  "active_assignment_role_counts": {
+    "FAA": 12372,
+    "PIO": 18437
+  },
+  "skipped_no_office_code": 0,
+  "skipped_unknown_role": 0
+}

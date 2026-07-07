@@ -1,0 +1,16 @@
+# FAQ Chunk 130
+Document: 500_cgrti
+Source: structured.md
+Pages: 11
+Section: 3.5 Information Commission Powers
+Question: Q134. What if SIC order is not complied? A: You can file contempt petition in High Court against non compliance.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 36
+
+---
+
+## 3.5 Information Commission Powers
+
+Q134. What if SIC order is not complied? A: You can file contempt petition in High Court against non compliance.

@@ -1,0 +1,16 @@
+# FAQ Chunk 102
+Document: 500_cgrti
+Source: structured.md
+Pages: 9
+Section: 3.2 Procedural Technicalities
+Question: Q106. What if multiple people request same information? A: PIO must process each separately and within 3O-day deadline for each. Cannot batch process to save time.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 46
+
+---
+
+## 3.2 Procedural Technicalities
+
+Q106. What if multiple people request same information? A: PIO must process each separately and within 3O-day deadline for each. Cannot batch process to save time.

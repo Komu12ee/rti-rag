@@ -1,0 +1,28 @@
+## Question variants all map to this one provision
+
+- 1. What does Section 10(1 ) of the Right to Information Act, 2005 provide?
+- 3. What is Act 10K1 ) in RTI? 1 need the rule for severability.
+- 2. Explain RTI Act Section 10(1 ): Severability principle.
+- 4. सूचना का अधिकार अधिनियम, 2005 की धारा 1081) में क्या प्रावधान है?
+- 6. RTI Act 10(1 ) ka rule kya hai? विभाज्यता का सिद्धांत के बारे में बताइए|
+- 5. धारा 10(1) का सरल अर्थ क्या है - विभाज्यता का सिद्धांतः
+- 7. In this situation: A document contains both exempt and non exempt content a report with one confidential annexure). Does Section 10(1 ) apply, and what does it say? (e.g.
+- 8. "10(1 ) RTI law me kya hai?" / "10( 1 ) ka matlab?"
+
+## Answer
+
+English definition: Where a request is rejected because part of the record is exempt, access shall be provided to the part not containing exempt information, if it can reasonably be severed from the exempt part.
+
+हिंदी परिभाषाः जहां किसी अनुरोध को इस कारण अस्वीकार किया जाता है कि अभिलेख का एक भाग छूट प्राप्त है, उस भाग तक पहुंच दी जिसमें छूट प्राप्त सूचना नहीं है, यदि उसे युक्तियुक्त रूप से छूट प्राप्त भाग से पृथक् किया जा सकता होl जाएगी
+
+Retrieval anchors: Severability principle; विभाज्यता का सिद्धांत; severability partial access; redaction; part of record
+
+## Typical contexts
+
+- A document contains both exempt and non exempt content a report with one confidential annexure) (e.g.
+
+PIO implementation note: Never use a partial exemption in one paragraph annexure to justify withholding an entire multipart document. Apply redaction and issue the Section 10(2) notice with full reasons for the redacted portion.
+
+- Validating whether a blanket rejection should instead be a redacted partial disclosure
+
+Source reference: RTI Rule Book, pp. 17 18

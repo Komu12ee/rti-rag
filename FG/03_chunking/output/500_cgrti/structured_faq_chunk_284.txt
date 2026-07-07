@@ -1,0 +1,16 @@
+# FAQ Chunk 284
+Document: 500_cgrti
+Source: structured.md
+Pages: 23
+Section: 6.4 CG Specific Procedures & Rules
+Question: Q287. Does CG have suo motu disclosure website? A: Yes, each department website should have RTIIsuo motu section per Section 4. Check cgstate govin for portal wide disclosure.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 57
+
+---
+
+## 6.4 CG Specific Procedures & Rules
+
+Q287. Does CG have suo motu disclosure website? A: Yes, each department website should have RTIIsuo motu section per Section 4. Check cgstate govin for portal wide disclosure.

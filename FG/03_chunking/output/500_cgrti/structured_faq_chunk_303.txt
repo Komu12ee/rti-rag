@@ -1,0 +1,16 @@
+# FAQ Chunk 303
+Document: 500_cgrti
+Source: structured.md
+Pages: 24
+Section: 7.1 Education Department RTI Questions
+Question: Q306. "Midday meal what's the menu?" A: Yes. Request prescribed menu, nutritional standards, actual meal provided, cost per meal, tender for supply
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 49
+
+---
+
+## 7.1 Education Department RTI Questions
+
+Q306. "Midday meal what's the menu?" A: Yes. Request prescribed menu, nutritional standards, actual meal provided, cost per meal, tender for supply

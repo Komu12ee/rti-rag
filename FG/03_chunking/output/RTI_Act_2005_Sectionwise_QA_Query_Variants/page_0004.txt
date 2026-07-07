@@ -1,0 +1,28 @@
+## Question variants all map to this one provision
+
+- 1. What does Section 1(1 ) of the Right to Information Act, 2005 provide?
+- 2. Explain RTI Act Section 1(1 ): Short title.
+- 3. What is Act 1(1) in RTI? I need the rule for short title.
+- 4. सूचना का अधिकार अधिनियम, 2005 की धारा 11 ) में क्या प्रावधान है?
+- 5. धारा 191 ) का सरल अर्थ क्या है - लघु शीर्षकः
+- 6. RTI Act 1(1 ) ka rule kya hai? लघु शीर्षक के बारे में बताइए|
+- 7. In this situation: Query about geographic applicability of RTI Act. Does Section 1(1) apply, and what does it say?
+- 8. "1(1 ) RTI law me kya hai?" / "1(1 ) ka matlab?"
+
+## Answer
+
+English definition: This Act may be called the Right to Information Act, 2005.
+
+हिंदीं परिभाषाः इस अधिनियम का संक्षिप्त नाम सूचना का अधिकार अधिनियम, 2005 हैl
+
+Retrieval anchors: Short title; लघु शोर्षक; extent; commencement; applicability jammu and kashmir; geographic scope
+
+## Typical contexts
+
+- Query about geographic applicability of RTI Act
+- Query about when a specific provision came into effect
+- Query from about Jammu & Kashmir jurisdiction
+
+PIO implementation note: If application originates from a public authority outside India's RTI jurisdiction (pre-2019 J&K reorganization context), confirm applicability before processing.
+
+Source reference: RTI Rule Book, pp. 1-2

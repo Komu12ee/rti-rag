@@ -1,0 +1,16 @@
+# FAQ Chunk 111
+Document: 500_cgrti
+Source: structured.md
+Pages: 10
+Section: 3.3 Exemptions Advanced
+Question: Q115. What if information is both personal AND public interest? A: Balance is applied. Public interest (corruption, illegality health safety) usually overrides personal privacy.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 43
+
+---
+
+## 3.3 Exemptions Advanced
+
+Q115. What if information is both personal AND public interest? A: Balance is applied. Public interest (corruption, illegality health safety) usually overrides personal privacy.

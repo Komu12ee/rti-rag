@@ -1,0 +1,16 @@
+# FAQ Chunk 358
+Document: 500_cgrti
+Source: structured.md
+Pages: 28
+Section: Advanced Timeline & Procedural Issues
+Question: Q362. "Third party objects on day 15 -= still within 10 days?" A: Day 15 is beyond 1O day window (days 1 10). PIO may not consider late objection (discretionary .
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 59
+
+---
+
+## Advanced Timeline & Procedural Issues
+
+Q362. "Third party objects on day 15 -= still within 10 days?" A: Day 15 is beyond 1O day window (days 1 10). PIO may not consider late objection (discretionary .

@@ -1,0 +1,16 @@
+# FAQ Chunk 278
+Document: 500_cgrti
+Source: structured.md
+Pages: 22
+Section: 6.4 CG Specific Procedures & Rules
+Question: Q281. What is CG fee structure for RTI? A: Application fee: 310 | Copy charges: =2 per page (B&W) BPL exemption: Complete
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 51
+
+---
+
+## 6.4 CG Specific Procedures & Rules
+
+Q281. What is CG fee structure for RTI? A: Application fee: 310 | Copy charges: =2 per page (B&W) BPL exemption: Complete

@@ -1,0 +1,16 @@
+# FAQ Chunk 188
+Document: 500_cgrti
+Source: structured.md
+Pages: 16
+Section: .1 Corruption & Transparency Scenarios
+Question: Q192. "Government spent 350 lakh on consultancy but no outcome. Can I get details?" A: Yes. Request: consultancy contract, scope of work, deliverables, payment receipts. This is public interest information.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 66
+
+---
+
+## .1 Corruption & Transparency Scenarios
+
+Q192. "Government spent 350 lakh on consultancy but no outcome. Can I get details?" A: Yes. Request: consultancy contract, scope of work, deliverables, payment receipts. This is public interest information.

@@ -1,0 +1,16 @@
+# FAQ Chunk 68
+Document: 500_cgrti
+Source: structured.md
+Pages: 7
+Section: 2.4 Format & Access Methods
+Question: Q71. Can I ask for information in specific format? A: Yes, you can request printed, email, CD,or inspection. PIO should provide requested format unless resource intensive.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 49
+
+---
+
+## 2.4 Format & Access Methods
+
+Q71. Can I ask for information in specific format? A: Yes, you can request printed, email, CD,or inspection. PIO should provide requested format unless resource intensive.

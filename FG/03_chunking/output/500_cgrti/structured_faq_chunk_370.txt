@@ -1,0 +1,16 @@
+# FAQ Chunk 370
+Document: 500_cgrti
+Source: structured.md
+Pages: 29
+Section: SECTION lO: APPEAL & ESCALATION COMPLEX QUESTIONS
+Question: Q373. "SIC verdict unfair can Tapproach High Court?" A: Tes, file writ petition in High Court for judicial review on grounds of illegality unreasonableness.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 63
+
+---
+
+## SECTION lO: APPEAL & ESCALATION COMPLEX QUESTIONS
+
+Q373. "SIC verdict unfair can Tapproach High Court?" A: Tes, file writ petition in High Court for judicial review on grounds of illegality unreasonableness.

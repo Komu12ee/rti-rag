@@ -1,0 +1,16 @@
+# FAQ Chunk 47
+Document: 500_cgrti
+Source: structured.md
+Pages: 5
+Section: 2.1 What Information Can [ Request
+Question: Q50. Can Iask for copies of FIRs ( Police complaints)? A: Partially yes you can get details if you're a victim stakeholder Investigation details may be withheld (Section 8(1) (h)).
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 59
+
+---
+
+## 2.1 What Information Can [ Request
+
+Q50. Can Iask for copies of FIRs ( Police complaints)? A: Partially yes you can get details if you're a victim stakeholder Investigation details may be withheld (Section 8(1) (h)).

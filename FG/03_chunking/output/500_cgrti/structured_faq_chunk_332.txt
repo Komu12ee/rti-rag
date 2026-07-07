@@ -1,0 +1,16 @@
+# FAQ Chunk 332
+Document: 500_cgrti
+Source: structured.md
+Pages: 26
+Section: 7.4 Revenue Department RTI Questions
+Question: Q336. "Land allotment when will my turn come?" A: Yes. Request: allotment scheme, applications list, selection criteria, your position, timeline.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 50
+
+---
+
+## 7.4 Revenue Department RTI Questions
+
+Q336. "Land allotment when will my turn come?" A: Yes. Request: allotment scheme, applications list, selection criteria, your position, timeline.

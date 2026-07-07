@@ -1,0 +1,16 @@
+# FAQ Chunk 196
+Document: 500_cgrti
+Source: structured.md
+Pages: 16-17
+Section: .1 Corruption & Transparency Scenarios
+Question: Q200. "Budget was allocated but no spending shows. Where did money A: Request: allocation details, spending ledgers, unused budget carryforward. Accounts will reveal truth. 80?"
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 59
+
+---
+
+## .1 Corruption & Transparency Scenarios
+
+Q200. "Budget was allocated but no spending shows. Where did money A: Request: allocation details, spending ledgers, unused budget carryforward. Accounts will reveal truth. 80?"

@@ -1,0 +1,1331 @@
+{
+  "metadata": {
+    "act_name": "The Right to Information Act, 2005",
+    "act_name_hindi": "सूचना का अधिकार अधिनियम, 2005",
+    "enacted_date": "2005-06-15",
+    "total_sections": 28,
+    "source": "RTI Rule Book (10th Edition, 2025)",
+    "source_document": "rti-rule-book.pdf",
+    "purpose": "Reference dataset for validating incoming RTI queries against applicable Act provisions and generating PIO (Public Information Officer) responses",
+    "note": "Section numbers reflect rule-book document structure (28 consolidated provisions). Where the original Act splits clauses across more granular numbering (e.g., separate Sections 22/23 for overriding effect / bar of jurisdiction), both mappings are captured in 'also_known_as' fields where relevant.",
+    "languages": [
+      "en",
+      "hi"
+    ]
+  },
+  "sections": [
+    {
+      "section_number": "1",
+      "title_en": "Short Title and Extent",
+      "title_hi": "लघु शीर्षक और विस्तार",
+      "keywords": [
+        "short title",
+        "extent",
+        "commencement",
+        "applicability",
+        "jammu and kashmir",
+        "geographic scope"
+      ],
+      "summary_en": "Establishes the official name of the Act as 'The Right to Information Act, 2005', enacted on 15th June 2005. Extends to the whole of India except the State of Jammu and Kashmir.",
+      "summary_hi": "अधिनियम का आधिकारिक नाम 'सूचना का अधिकार अधिनियम, 2005' स्थापित करती है, जिसे 15 जून 2005 को अधिनियमित किया गया। यह जम्मू और कश्मीर राज्य को छोड़कर पूरे भारत में लागू होता है।",
+      "subsections": [
+        {
+          "subsection_id": "1(1)",
+          "title_en": "Short title",
+          "title_hi": "लघु शीर्षक",
+          "definition_en": "This Act may be called the Right to Information Act, 2005.",
+          "definition_hi": "इस अधिनियम का संक्षिप्त नाम सूचना का अधिकार अधिनियम, 2005 है।"
+        },
+        {
+          "subsection_id": "1(2)",
+          "title_en": "Extent",
+          "title_hi": "विस्तार",
+          "definition_en": "It extends to the whole of India except the State of Jammu and Kashmir.",
+          "definition_hi": "इसका विस्तार जम्मू और कश्मीर राज्य के सिवाय संपूर्ण भारत पर है।"
+        },
+        {
+          "subsection_id": "1(3)",
+          "title_en": "Commencement",
+          "title_hi": "प्रारंभ",
+          "definition_en": "Sections 4(1), 5(1), 5(2), 12, 13, 15, 16, 24, 27 and 28 came into force at once; remaining provisions came into force on the 120th day of enactment.",
+          "definition_hi": "धारा 4(1), 5(1), 5(2), 12, 13, 15, 16, 24, 27 और 28 तुरंत प्रभावी हुईं; शेष उपबंध अधिनियमन के 120वें दिन प्रवृत्त हुए।"
+        }
+      ],
+      "applies_when": [
+        "Query about geographic applicability of RTI Act",
+        "Query from/about Jammu & Kashmir jurisdiction",
+        "Query about when a specific provision came into effect"
+      ],
+      "pio_response_note": "If application originates from a public authority outside India's RTI jurisdiction (pre-2019 J&K reorganization context), confirm applicability before processing.",
+      "source_reference": "RTI Rule Book, pp. 1-2"
+    },
+    {
+      "section_number": "2",
+      "title_en": "Definitions",
+      "title_hi": "परिभाषाएँ",
+      "keywords": [
+        "definitions",
+        "appropriate government",
+        "public authority",
+        "information",
+        "record",
+        "third party",
+        "CPIO",
+        "SPIO",
+        "competent authority"
+      ],
+      "summary_en": "Provides comprehensive definitions of 19 key terms essential for implementing the RTI Act, including 'Appropriate Government', 'Information', 'Public Authority', 'Right to Information', and 'Third Party'.",
+      "summary_hi": "RTI अधिनियम के कार्यान्वयन के लिए आवश्यक 19 प्रमुख शब्दों की व्यापक परिभाषाएं प्रदान करती है, जिसमें 'उपयुक्त सरकार', 'सूचना', 'सार्वजनिक प्राधिकरण', 'सूचना का अधिकार' और 'तीसरा पक्ष' शामिल हैं।",
+      "subsections": [
+        {
+          "subsection_id": "2(a)",
+          "title_en": "Appropriate Government",
+          "title_hi": "उपयुक्त सरकार",
+          "definition_en": "Central Government for public authorities established under the Constitution, an Act of Parliament, or a Proclamation under Article 356; State Government for those established under State Legislature law or a Governor's Proclamation under Article 356; otherwise whichever of Central/State Government is appropriate.",
+          "definition_hi": "संविधान, संसद अधिनियम या अनुच्छेद 356 के तहत जारी घोषणा के तहत स्थापित सार्वजनिक प्राधिकरणों के लिए केंद्रीय सरकार; राज्य विधान मंडल के कानून या राज्यपाल की घोषणा के तहत स्थापित हेतु राज्य सरकार; अन्यथा जो भी उपयुक्त हो।"
+        },
+        {
+          "subsection_id": "2(b)",
+          "title_en": "Central Information Commission",
+          "title_hi": "केंद्रीय सूचना आयोग",
+          "definition_en": "The Commission constituted under Section 12(1), the apex body for hearing second appeals against decisions of Central PIOs.",
+          "definition_hi": "धारा 12(1) के अधीन गठित आयोग, केंद्रीय PIOs के निर्णयों के विरुद्ध द्वितीय अपील सुनने वाला शीर्ष निकाय।"
+        },
+        {
+          "subsection_id": "2(c)",
+          "title_en": "Central Public Information Officer (CPIO)",
+          "title_hi": "केंद्रीय लोक सूचना अधिकारी",
+          "definition_en": "An officer designated as such under Section 5(1) by a central public authority, responsible for providing information to RTI applicants.",
+          "definition_hi": "किसी केंद्रीय सार्वजनिक प्राधिकरण द्वारा धारा 5(1) के अधीन पदाभिहित अधिकारी, जो RTI आवेदकों को सूचना प्रदान करने हेतु उत्तरदायी है।"
+        },
+        {
+          "subsection_id": "2(f)",
+          "title_en": "Information",
+          "title_hi": "सूचना",
+          "definition_en": "Any material in any form including records, documents, memos, e-mails, opinions, advices, press releases, circulars, orders, logbooks, contracts, reports, papers, samples, models, and data material held in electronic form.",
+          "definition_hi": "किसी भी रूप में कोई सामग्री जिसमें अभिलेख, दस्तावेज, ज्ञापन, ई-मेल, मत, सलाह, प्रेस विज्ञप्ति, परिपत्र, आदेश, लॉगबुक, संविदा, रिपोर्ट, कागजपत्र, नमूने, मॉडल, इलेक्ट्रॉनिक रूप में डेटा सामग्री सम्मिलित है।"
+        },
+        {
+          "subsection_id": "2(h)",
+          "title_en": "Public Authority",
+          "title_hi": "लोक प्राधिकरण",
+          "definition_en": "Any authority, body or institution of self-government established by the Constitution, Parliament law, State law, government notification, or substantially financed by government funds.",
+          "definition_hi": "संविधान, संसद विधि, राज्य विधान, अधिसूचना द्वारा या सरकारी निधि से पर्याप्त वित्तपोषित कोई भी प्राधिकरण, निकाय या स्वशासन संस्था।"
+        },
+        {
+          "subsection_id": "2(j)",
+          "title_en": "Right to Information",
+          "title_hi": "सूचना का अधिकार",
+          "definition_en": "The right to information accessible under this Act, held by or under the control of any public authority, including the right to inspect work/documents/records, take notes/extracts/certified copies, take certified samples of material, and obtain information in electronic form.",
+          "definition_hi": "इस अधिनियम के अधीन किसी लोक प्राधिकरण द्वारा धारित या नियंत्रण में सुलभ सूचना का अधिकार, जिसमें कार्य/दस्तावेजों/अभिलेखों का निरीक्षण, टिप्पणियाँ/उद्धरण/प्रमाणित प्रतियां लेना, सामग्री के प्रमाणित नमूने लेना, और इलेक्ट्रॉनिक रूप में सूचना प्राप्त करना शामिल है।"
+        },
+        {
+          "subsection_id": "2(n)",
+          "title_en": "Third Party",
+          "title_hi": "तीसरा पक्ष / पर व्यक्ति",
+          "definition_en": "A person other than the citizen making the request for information, and includes a public authority.",
+          "definition_hi": "सूचना के लिए अनुरोध करने वाले नागरिक से भिन्न कोई व्यक्ति, जिसमें कोई लोक प्राधिकरण भी सम्मिलित है।"
+        }
+      ],
+      "applies_when": [
+        "Any query requiring interpretation of a statutory term",
+        "Determining which 'Government' is appropriate for an application",
+        "Determining whether a body qualifies as a 'Public Authority' (e.g. NGO substantially financed by government)",
+        "Determining if requested material qualifies as 'Information' under the Act"
+      ],
+      "pio_response_note": "Use this section first when validating whether the body receiving the RTI query is in fact a 'public authority' obligated to respond, and whether the material sought falls within the definition of 'information'.",
+      "source_reference": "RTI Rule Book, pp. 2-6"
+    },
+    {
+      "section_number": "3",
+      "title_en": "Right to Information",
+      "title_hi": "सूचना का अधिकार",
+      "keywords": [
+        "fundamental right",
+        "all citizens",
+        "core right",
+        "universal access"
+      ],
+      "summary_en": "Establishes the fundamental, universal right: 'All citizens shall have the right to information', subject to the Act's provisions (i.e., subject to exemptions in Sections 8 and 9).",
+      "summary_hi": "मौलिक, सार्वभौमिक अधिकार स्थापित करती है: 'सभी नागरिकों को सूचना का अधिकार होगा', जो अधिनियम के प्रावधानों (अर्थात धारा 8 और 9 की छूटों) के अधीन है।",
+      "subsections": [
+        {
+          "subsection_id": "3",
+          "title_en": "Right to Information (single provision)",
+          "title_hi": "सूचना का अधिकार (एकल उपबंध)",
+          "definition_en": "Subject to the provisions of this Act, all citizens shall have the right to information.",
+          "definition_hi": "इस अधिनियम के उपबंधों के अधीन रहते हुए, सभी नागरिकों को सूचना का अधिकार होगा।"
+        }
+      ],
+      "applies_when": [
+        "Validating that the applicant is an Indian citizen (eligibility check)",
+        "Establishing the baseline entitlement before applying any exemption"
+      ],
+      "pio_response_note": "Confirm applicant citizenship/eligibility is not in dispute before evaluating exemptions; this section is the entitlement baseline, not itself a ground for refusal.",
+      "source_reference": "RTI Rule Book, p. 6"
+    },
+    {
+      "section_number": "4",
+      "title_en": "Obligations of Public Authorities",
+      "title_hi": "लोक प्राधिकारियों की बाध्यताएं",
+      "keywords": [
+        "suo motu disclosure",
+        "proactive disclosure",
+        "record maintenance",
+        "computerisation",
+        "17 categories",
+        "120 days",
+        "manual publication"
+      ],
+      "summary_en": "Mandates every public authority to maintain records for easy access, computerise records, and proactively publish 17 categories of information within 120 days of enactment (organisation structure, powers/duties, decision-making procedures, norms, rules/manuals, budget, subsidy programmes, PIO details, etc.), minimising the need for citizens to file individual RTI applications.",
+      "summary_hi": "प्रत्येक लोक प्राधिकरण को आसान पहुंच के लिए अभिलेख बनाए रखने, उन्हें कंप्यूटरीकृत करने, और अधिनियमन के 120 दिनों के भीतर सूचना की 17 श्रेणियों (संगठन संरचना, शक्तियां/कर्तव्य, निर्णय प्रक्रिया, मानदंड, नियम/मैनुअल, बजट, सब्सिडी कार्यक्रम, PIO विवरण आदि) को स्व-प्रेरणा से प्रकाशित करने हेतु अनिवार्य करती है।",
+      "subsections": [
+        {
+          "subsection_id": "4(1)(a)",
+          "title_en": "Record maintenance and computerisation",
+          "title_hi": "अभिलेख रखरखाव और कंप्यूटरीकरण",
+          "definition_en": "Every public authority shall maintain all records duly catalogued and indexed to facilitate access; appropriate records shall be computerised and networked within a reasonable time.",
+          "definition_hi": "प्रत्येक लोक प्राधिकरण सभी अभिलेखों को सम्यक् रूप से सूचीपत्रित और अनुक्रमणिकाबद्ध रखेगा; उपयुक्त अभिलेखों को उचित समय में कंप्यूटरीकृत और नेटवर्कयुक्त किया जाएगा।"
+        },
+        {
+          "subsection_id": "4(1)(b)",
+          "title_en": "Suo motu publication (17 categories)",
+          "title_hi": "स्वप्रेरणा प्रकाशन (17 श्रेणियां)",
+          "definition_en": "Within 120 days of enactment, publish: (i) organisation particulars/functions/duties; (ii) powers & duties of officers; (iii) decision-making procedure; (iv) norms for discharge of functions; (v) rules/regulations/manuals/records; (vi) categories of documents held; (vii) consultative arrangements; (viii) boards/councils/committees details; (ix) directory of officers/employees; (x) monthly remuneration of each officer/employee; (xi) budget allocated to each agency; (xii) manner of execution of subsidy programmes; (xiii) particulars of concessions/permits/authorisations; (xiv) details of information held in electronic form; (xv) facilities available to citizens for obtaining information; (xvi) names/designations of PIOs; (xvii) other prescribed information.",
+          "definition_hi": "अधिनियमन के 120 दिनों के भीतर प्रकाशित करें: (i) संगठन विशिष्टियां/कार्य/कर्तव्य; (ii) अधिकारियों की शक्तियां और कर्तव्य; (iii) निर्णय प्रक्रिया; (iv) कार्यों के निर्वहन हेतु मानदंड; (v) नियम/विनियम/मैनुअल/अभिलेख; (vi) धारित दस्तावेजों की श्रेणियां; (vii) परामर्श व्यवस्था; (viii) बोर्ड/परिषद/समिति विवरण; (ix) अधिकारियों/कर्मचारियों की निर्देशिका; (x) प्रत्येक अधिकारी/कर्मचारी का मासिक पारिश्रमिक; (xi) प्रत्येक एजेंसी को आवंटित बजट; (xii) सब्सिडी कार्यक्रमों के निष्पादन की रीति; (xiii) रियायतों/अनुमतियों/प्राधिकारों की विशिष्टियां; (xiv) इलेक्ट्रॉनिक रूप में सूचना का विवरण; (xv) नागरिक सुविधाएं; (xvi) PIO नाम/पदनाम; (xvii) अन्य विहित सूचना।"
+        },
+        {
+          "subsection_id": "4(1)(c)",
+          "title_en": "Publishing facts on policy formulation",
+          "title_hi": "नीति निर्माण में तथ्यों का प्रकाशन",
+          "definition_en": "Publish all relevant facts while formulating important policies or announcing decisions affecting the public.",
+          "definition_hi": "महत्त्वपूर्ण नीतियों की विरचना करते समय या जनता को प्रभावित करने वाले विनिश्चयों की घोषणा करते समय सभी सुसंगत तथ्यों को प्रकाशित करेगा।"
+        },
+        {
+          "subsection_id": "4(1)(d)",
+          "title_en": "Reasons for administrative/quasi-judicial decisions",
+          "title_hi": "प्रशासनिक/न्यायिकल्प विनिश्चयों के कारण",
+          "definition_en": "Provide reasons for administrative or quasi-judicial decisions to affected persons.",
+          "definition_hi": "प्रभावित व्यक्तियों को अपने प्रशासनिक या न्यायिकल्प विनिश्चयों के कारण उपलब्ध कराएगा।"
+        },
+        {
+          "subsection_id": "4(2)",
+          "title_en": "Constant endeavour to proactively disclose",
+          "title_hi": "स्वप्रेरणा से सूचना देने का निरंतर प्रयास",
+          "definition_en": "Constant endeavour of every public authority to provide as much information suo motu at regular intervals through various means including internet, so the public has minimum need to use the Act.",
+          "definition_hi": "प्रत्येक लोक प्राधिकरण का निरंतर प्रयास होगा कि नियमित अंतरालों पर इंटरनेट सहित विभिन्न माध्यमों से अधिकतम सूचना स्वप्रेरणा से उपलब्ध कराए, ताकि अधिनियम के उपयोग की न्यूनतम आवश्यकता हो।"
+        },
+        {
+          "subsection_id": "4(3)-4(4)",
+          "title_en": "Form, cost, and accessibility of dissemination",
+          "title_hi": "प्रसार का रूप, लागत और सुगम्यता",
+          "definition_en": "Information shall be disseminated widely and in such form which is easily accessible, considering cost-effectiveness, local language, and most effective method in that locality.",
+          "definition_hi": "सूचना व्यापक रूप से सुलभ रूप में, लागत प्रभावशीलता, स्थानीय भाषा, और उस इलाके के लिए सबसे प्रभावी पद्धति को ध्यान में रखते हुए प्रसारित की जाएगी।"
+        }
+      ],
+      "applies_when": [
+        "Information sought is already part of mandatory suo motu disclosure / published manual",
+        "Validating whether public authority has fulfilled proactive disclosure obligations",
+        "Determining whether refusal can be justified when information should already be publicly available"
+      ],
+      "pio_response_note": "Before processing as a fresh RTI request, check whether the information is already covered under the public authority's Section 4(1)(b) suo motu disclosure manual/website — if so, the PIO response should direct the applicant to that published source.",
+      "source_reference": "RTI Rule Book, pp. 6-11"
+    },
+    {
+      "section_number": "5",
+      "title_en": "Designation of Public Information Officers",
+      "title_hi": "लोक सूचना अधिकारियों का पदाभिहितकरण",
+      "keywords": [
+        "CPIO",
+        "SPIO",
+        "CAPIO",
+        "SAPIO",
+        "assistant public information officer",
+        "100 days",
+        "designation"
+      ],
+      "summary_en": "Mandates every public authority to designate CPIOs/SPIOs within 100 days, and Assistant PIOs (CAPIO/SAPIO) at sub-divisional level to receive and forward applications; time limit extends by 5 days when application is received through an Assistant PIO.",
+      "summary_hi": "प्रत्येक लोक प्राधिकरण को 100 दिनों के भीतर CPIO/SPIO तथा उपमंडल स्तर पर सहायक PIO (CAPIO/SAPIO) पदाभिहित करने हेतु अनिवार्य करती है, जो आवेदन प्राप्त कर अग्रेषित करेंगे; सहायक PIO के माध्यम से प्राप्त आवेदन पर समय-सीमा 5 दिन बढ़ जाती है।",
+      "subsections": [
+        {
+          "subsection_id": "5(1)",
+          "title_en": "Designation of CPIO/SPIO",
+          "title_hi": "CPIO/SPIO का पदाभिहितकरण",
+          "definition_en": "Within 100 days of enactment, every public authority shall designate as many CPIOs/SPIOs in all administrative units as necessary to provide information to RTI applicants.",
+          "definition_hi": "अधिनियमन के 100 दिनों के भीतर, प्रत्येक लोक प्राधिकरण सभी प्रशासनिक इकाइयों में उतने CPIO/SPIO पदाभिहित करेगा जितने RTI आवेदकों को सूचना देने हेतु आवश्यक हों।"
+        },
+        {
+          "subsection_id": "5(2)",
+          "title_en": "Designation of Assistant PIO (CAPIO/SAPIO)",
+          "title_hi": "सहायक PIO (CAPIO/SAPIO) का पदाभिहितकरण",
+          "definition_en": "At sub-divisional/sub-district level, a CAPIO/SAPIO shall be designated to receive applications/appeals and forward to the CPIO/SPIO; response time extends by 5 days when received via Assistant PIO.",
+          "definition_hi": "उपमंडल/उपजिला स्तर पर CAPIO/SAPIO पदाभिहित किया जाएगा जो आवेदन/अपील प्राप्त कर CPIO/SPIO को अग्रेषित करेगा; सहायक PIO के माध्यम से प्राप्त आवेदन पर समय-सीमा 5 दिन बढ़ जाती है।"
+        },
+        {
+          "subsection_id": "5(3)",
+          "title_en": "Duty of CPIO/SPIO to assist applicant",
+          "title_hi": "आवेदक की सहायता का कर्तव्य",
+          "definition_en": "Every CPIO/SPIO shall deal with requests and render reasonable assistance to reduce oral requests to writing if required.",
+          "definition_hi": "प्रत्येक CPIO/SPIO अनुरोधों पर कार्य करेगा और आवश्यक होने पर उन्हें लिखित रूप में कम करने में युक्तियुक्त सहायता देगा।"
+        },
+        {
+          "subsection_id": "5(4)-5(5)",
+          "title_en": "Assistance from other officers",
+          "title_hi": "अन्य अधिकारियों से सहायता",
+          "definition_en": "CPIO/SPIO may seek assistance from any other officer as necessary; that officer is deemed to act as CPIO/SPIO for purposes of the Act and shall render all assistance.",
+          "definition_hi": "CPIO/SPIO आवश्यक होने पर किसी अन्य अधिकारी से सहायता मांग सकता है; ऐसा अधिकारी इस अधिनियम के प्रयोजनों के लिए CPIO/SPIO के रूप में कार्य करता हुआ माना जाएगा।"
+        }
+      ],
+      "applies_when": [
+        "Validating whether the application was correctly addressed to a designated CPIO/SPIO",
+        "Application submitted through an Assistant PIO — recalculate response deadline (+5 days)",
+        "No CPIO/SPIO designated — escalation/complaint scenario under Section 18"
+      ],
+      "pio_response_note": "If application was received via CAPIO/SAPIO, add 5 days to the standard 30-day computation in Section 7 before flagging a delay.",
+      "source_reference": "RTI Rule Book, p. 10"
+    },
+    {
+      "section_number": "6",
+      "title_en": "Procedure for Requesting Information",
+      "title_hi": "सूचना के लिए अनुरोध की प्रक्रिया",
+      "keywords": [
+        "application",
+        "request format",
+        "fee",
+        "transfer of application",
+        "no reason required",
+        "language of application"
+      ],
+      "summary_en": "Sets out how a citizen may apply: in writing or electronically, in English/Hindi/local official language, with prescribed fee, without needing to state reasons. Misdirected applications must be transferred to the correct public authority within 5 days.",
+      "summary_hi": "नागरिक कैसे आवेदन कर सकता है, यह स्थापित करती है: लिखित या इलेक्ट्रॉनिक रूप में, अंग्रेजी/हिंदी/स्थानीय राजभाषा में, निर्धारित शुल्क के साथ, बिना कारण बताए। गलत प्राधिकरण को भेजे गए आवेदन 5 दिनों के भीतर सही प्राधिकरण को अंतरित किए जाने चाहिए।",
+      "subsections": [
+        {
+          "subsection_id": "6(1)",
+          "title_en": "Mode and content of request",
+          "title_hi": "अनुरोध का रूप और विषय-वस्तु",
+          "definition_en": "Request in writing or electronic means, in English, Hindi, or official language of the area, accompanied by prescribed fee, addressed to CPIO/SPIO or CAPIO/SAPIO, with sufficient particulars to identify the information sought.",
+          "definition_hi": "लिखित या इलेक्ट्रॉनिक माध्यम से, अंग्रेजी, हिंदी, या क्षेत्र की राजभाषा में, निर्धारित शुल्क सहित, CPIO/SPIO या CAPIO/SAPIO को संबोधित, मांगी गई सूचना की पर्याप्त विशिष्टियों के साथ अनुरोध।"
+        },
+        {
+          "subsection_id": "6(2)",
+          "title_en": "No reason required",
+          "title_hi": "कारण देने की आवश्यकता नहीं",
+          "definition_en": "Applicant not required to give any reason for the request or any personal details except those necessary for contact.",
+          "definition_hi": "आवेदक से अनुरोध का कारण या संपर्क हेतु आवश्यक के सिवाय कोई व्यक्तिगत विवरण देने की अपेक्षा नहीं की जाएगी।"
+        },
+        {
+          "subsection_id": "6(3)",
+          "title_en": "Transfer of misdirected applications",
+          "title_hi": "गलत-निर्दिष्ट आवेदनों का अंतरण",
+          "definition_en": "Where information is held by another public authority or more closely connected to its functions, the application shall be transferred within 5 days and the applicant informed; the 30-day clock under Section 7(1) restarts from the date of receipt by the correct authority.",
+          "definition_hi": "जहां सूचना किसी अन्य लोक प्राधिकरण के पास है या उसके कार्यों से अधिक निकटता से जुड़ी है, आवेदन 5 दिनों के भीतर अंतरित किया जाएगा और आवेदक को सूचित किया जाएगा; धारा 7(1) की 30-दिवसीय अवधि सही प्राधिकरण द्वारा प्राप्ति की तारीख से पुनः आरंभ होती है।"
+        }
+      ],
+      "applies_when": [
+        "Validating application format/language compliance",
+        "Application demands a 'reason' from applicant — non-compliant practice to flag",
+        "Information requested belongs to a different public authority — trigger transfer procedure"
+      ],
+      "pio_response_note": "Never reject or delay an application merely because the applicant has not stated a reason. If the subject matter belongs to another public authority, transfer per 6(3) and notify the applicant; do not silently reject.",
+      "source_reference": "RTI Rule Book, pp. 11-12"
+    },
+    {
+      "section_number": "7",
+      "title_en": "Time Limit for Furnishing Information",
+      "title_hi": "सूचना प्रदान करने हेतु समय सीमा",
+      "keywords": [
+        "30 days",
+        "48 hours",
+        "deemed refusal",
+        "life and liberty",
+        "further fee",
+        "sensorily disabled",
+        "free of charge",
+        "rejection reasons"
+      ],
+      "summary_en": "Mandates response within 30 days (48 hours for life/liberty matters); failure to respond in time is a deemed refusal; failure to meet timelines also makes the information free of charge; rejection must state reasons, appeal period and appellate authority details.",
+      "summary_hi": "30 दिनों के भीतर (जीवन/स्वतंत्रता मामलों हेतु 48 घंटे) उत्तर देना अनिवार्य; समय पर उत्तर न देने को अस्वीकृति माना जाता है; समय-सीमा का पालन न करने पर सूचना निःशुल्क दी जाएगी; अस्वीकृति में कारण, अपील अवधि और अपीलीय प्राधिकरण का विवरण होना चाहिए।",
+      "subsections": [
+        {
+          "subsection_id": "7(1)",
+          "title_en": "Standard 30-day response / 48-hour exception",
+          "title_hi": "मानक 30-दिवसीय उत्तर / 48-घंटे का अपवाद",
+          "definition_en": "Subject to provisos in Sections 5(2)/6(3), provide information within 30 days on payment of fee, or reject under Sections 8/9. If the information concerns life or physical liberty of a person, provide within 48 hours.",
+          "definition_hi": "धारा 5(2)/6(3) के प्रावधानों के अधीन, शुल्क के संदाय पर 30 दिनों के भीतर सूचना दें, या धारा 8/9 के अधीन अस्वीकार करें। यदि सूचना किसी व्यक्ति के जीवन या शारीरिक स्वतंत्रता से संबंधित है तो 48 घंटों के भीतर प्रदान करें।"
+        },
+        {
+          "subsection_id": "7(2)",
+          "title_en": "Deemed refusal",
+          "title_hi": "समझी गई अस्वीकृति",
+          "definition_en": "If the PIO fails to give a decision within the specified time, it shall be deemed that the PIO has refused the request.",
+          "definition_hi": "यदि PIO विनिर्दिष्ट समय के भीतर विनिश्चय देने में विफल रहता है, तो समझा जाएगा कि उसने अनुरोध को अस्वीकार कर दिया है।"
+        },
+        {
+          "subsection_id": "7(3)",
+          "title_en": "Intimation of further fee",
+          "title_hi": "अतिरिक्त शुल्क की सूचना",
+          "definition_en": "Where further fee is required, the PIO shall communicate the fee, payment details, and the applicant's right to seek review of the fee amount; the time taken between intimation and payment is excluded from the response period.",
+          "definition_hi": "जहां अतिरिक्त शुल्क आवश्यक है, PIO शुल्क, भुगतान विवरण और शुल्क राशि की समीक्षा मांगने के अधिकार की सूचना देगा; सूचना और भुगतान के बीच की अवधि उत्तर अवधि से बाहर है।"
+        },
+        {
+          "subsection_id": "7(4)",
+          "title_en": "Assistance for sensorily disabled persons",
+          "title_hi": "संवेदनात्मक रूप से निःशक्त व्यक्तियों हेतु सहायता",
+          "definition_en": "Where access is required by a sensorily disabled person, the PIO shall provide reasonable assistance for inspection.",
+          "definition_hi": "जहां संवेदनात्मक रूप से निःशक्त व्यक्ति को पहुंच आवश्यक है, PIO निरीक्षण हेतु युक्तियुक्त सहायता प्रदान करेगा।"
+        },
+        {
+          "subsection_id": "7(5)",
+          "title_en": "Form of information requested",
+          "title_hi": "मांगी गई सूचना का रूप",
+          "definition_en": "Information shall ordinarily be provided in the form requested, unless it would disproportionately divert resources or harm the safety/preservation of the record.",
+          "definition_hi": "सूचना साधारणतया उसी रूप में दी जाएगी जिसमें मांगी गई है, जब तक कि यह संसाधनों का अनुपातहीन उपयोग न करे या अभिलेख की सुरक्षा/संरक्षण को नुकसान न पहुंचाए।"
+        },
+        {
+          "subsection_id": "7(6)",
+          "title_en": "Free information on default",
+          "title_hi": "चूक पर निःशुल्क सूचना",
+          "definition_en": "If the PIO fails to comply with the time limits in Section 7(1), information shall be provided free of charge.",
+          "definition_hi": "यदि PIO धारा 7(1) में समय-सीमा का पालन करने में विफल रहता है, तो सूचना निःशुल्क प्रदान की जाएगी।"
+        },
+        {
+          "subsection_id": "7(8)",
+          "title_en": "Reasons for rejection",
+          "title_hi": "अस्वीकृति के कारण",
+          "definition_en": "When rejecting a request, the PIO must communicate the reasons, the period within which an appeal may be preferred, and the particulars of the appellate authority.",
+          "definition_hi": "अनुरोध अस्वीकार करते समय, PIO को कारण, अपील की अवधि, और अपीलीय प्राधिकरण का विवरण संप्रेषित करना चाहिए।"
+        }
+      ],
+      "applies_when": [
+        "Calculating whether PIO is within statutory response deadline",
+        "Query relates to a person's life or liberty — apply 48-hour rule",
+        "PIO missed deadline — trigger free-of-charge and deemed-refusal logic",
+        "Drafting a rejection — must include reasons, appeal window, appellate authority"
+      ],
+      "pio_response_note": "Always check the urgency flag (life/liberty) first to apply the 48-hour rule instead of 30 days. If the 30-day (or 48-hour) deadline has lapsed, the response must note that the information is to be supplied free of charge and that a deemed refusal has occurred, which is independently appealable.",
+      "source_reference": "RTI Rule Book, pp. 13-14"
+    },
+    {
+      "section_number": "8",
+      "title_en": "Exemption from Disclosure of Information",
+      "title_hi": "सूचना के प्रकटन से छूट",
+      "keywords": [
+        "exemptions",
+        "sovereignty",
+        "security",
+        "contempt of court",
+        "parliamentary privilege",
+        "commercial confidence",
+        "trade secrets",
+        "fiduciary",
+        "foreign government",
+        "life and safety",
+        "investigation",
+        "cabinet papers",
+        "personal privacy",
+        "public interest override",
+        "20 year rule"
+      ],
+      "summary_en": "Lists ten categories of information exempt from mandatory disclosure (sovereignty/security, court-gagged info, parliamentary privilege, commercial confidence, fiduciary info, foreign government info, life/safety/source-of-information, ongoing investigation, cabinet papers, personal privacy). Subject to a public interest override (8(2)) and a 20-year disclosure rule (8(3)) for most categories.",
+      "summary_hi": "अनिवार्य प्रकटीकरण से छूट प्राप्त सूचना की दस श्रेणियां सूचीबद्ध करती है (संप्रभुता/सुरक्षा, अदालत-निषिद्ध सूचना, संसदीय विशेषाधिकार, वाणिज्यिक गोपनीयता, विश्वासाश्रित सूचना, विदेशी सरकार की सूचना, जीवन/सुरक्षा/सूचना-स्रोत, चल रही जांच, मंत्रिमंडल कागजात, व्यक्तिगत गोपनीयता)। यह सार्वजनिक हित अधिरूहण (8(2)) और अधिकांश श्रेणियों हेतु 20-वर्ष प्रकटीकरण नियम (8(3)) के अधीन है।",
+      "subsections": [
+        {
+          "subsection_id": "8(1)(a)",
+          "title_en": "Sovereignty and Security",
+          "title_hi": "संप्रभुता और सुरक्षा",
+          "definition_en": "Information whose disclosure would prejudicially affect the sovereignty/integrity of India, security of the State, strategic/scientific/economic interests, relations with foreign States, or lead to incitement of an offence.",
+          "definition_hi": "वह सूचना जिसका प्रकटीकरण भारत की संप्रभुता/अखंडता, राज्य की सुरक्षा, रणनीतिक/वैज्ञानिक/आर्थिक हितों या विदेशी राज्यों के संबंधों को प्रतिकूल रूप से प्रभावित करेगा, या अपराध को उकसाएगा।"
+        },
+        {
+          "subsection_id": "8(1)(b)",
+          "title_en": "Court Orders / Contempt",
+          "title_hi": "अदालत के आदेश / अवमानना",
+          "definition_en": "Information expressly forbidden to be published by any court or tribunal, or whose disclosure may constitute contempt of court.",
+          "definition_hi": "वह सूचना जिसे किसी अदालत या न्यायाधिकरण द्वारा प्रकाशित करने हेतु स्पष्ट रूप से मना किया गया है, या जिसका प्रकटीकरण अदालत की अवमानना हो सकता है।"
+        },
+        {
+          "subsection_id": "8(1)(c)",
+          "title_en": "Parliamentary/Legislative Privilege",
+          "title_hi": "संसदीय/विधायी विशेषाधिकार",
+          "definition_en": "Information the disclosure of which would cause a breach of privilege of Parliament or the State Legislature.",
+          "definition_hi": "वह सूचना जिसका प्रकटीकरण संसद या राज्य विधान मंडल के विशेषाधिकार का उल्लंघन करेगा।"
+        },
+        {
+          "subsection_id": "8(1)(d)",
+          "title_en": "Commercial Confidence / Trade Secrets / IP",
+          "title_hi": "वाणिज्यिक गोपनीयता / व्यापार रहस्य / बौद्धिक संपदा",
+          "definition_en": "Information including commercial confidence, trade secrets or intellectual property whose disclosure would harm a third party's competitive position, unless the competent authority is satisfied larger public interest warrants disclosure.",
+          "definition_hi": "वाणिज्यिक गोपनीयता, व्यापार रहस्य या बौद्धिक संपदा सहित सूचना जिसके प्रकटन से तीसरे पक्ष की प्रतिस्पर्धी स्थिति को नुकसान होगा, जब तक सक्षम प्राधिकारी का समाधान न हो कि व्यापक लोकहित प्रकटन का समर्थन करता है।"
+        },
+        {
+          "subsection_id": "8(1)(e)",
+          "title_en": "Fiduciary Relationship",
+          "title_hi": "विश्वासाश्रित संबंध",
+          "definition_en": "Information available to a person in his fiduciary relationship, unless competent authority is satisfied larger public interest warrants disclosure.",
+          "definition_hi": "किसी व्यक्ति को उसके वैश्वासिक नातेदारी में उपलब्ध सूचना, जब तक सक्षम प्राधिकारी का समाधान न हो कि व्यापक लोकहित प्रकटन का समर्थन करता है।"
+        },
+        {
+          "subsection_id": "8(1)(f)",
+          "title_en": "Foreign Government Information",
+          "title_hi": "विदेशी सरकार की सूचना",
+          "definition_en": "Information received in confidence from a foreign Government.",
+          "definition_hi": "किसी विदेशी सरकार से विश्वास में प्राप्त सूचना।"
+        },
+        {
+          "subsection_id": "8(1)(g)",
+          "title_en": "Life, Safety, Source Protection",
+          "title_hi": "जीवन, सुरक्षा, स्रोत संरक्षण",
+          "definition_en": "Information that would endanger the life/physical safety of any person, or identify the source of confidential information/assistance given for law enforcement or security purposes.",
+          "definition_hi": "सूचना जिससे किसी व्यक्ति का जीवन/शारीरिक सुरक्षा खतरे में पड़े, या विधि प्रवर्तन/सुरक्षा प्रयोजनों हेतु विश्वास में दी गई सूचना/सहायता के स्रोत की पहचान हो।"
+        },
+        {
+          "subsection_id": "8(1)(h)",
+          "title_en": "Investigation / Prosecution",
+          "title_hi": "जांच / अभियोजन",
+          "definition_en": "Information which would impede the process of investigation, apprehension, or prosecution of offenders.",
+          "definition_hi": "सूचना जिससे अपराधियों के अन्वेषण, पकड़े जाने या अभियोजन की प्रक्रिया में अड़चन पड़े।"
+        },
+        {
+          "subsection_id": "8(1)(i)",
+          "title_en": "Cabinet Papers",
+          "title_hi": "मंत्रिमंडल के कागजात",
+          "definition_en": "Cabinet papers including records of deliberations of the Council of Ministers, Secretaries and other officers; however decisions, their reasons, and supporting material shall be made public after the decision is taken and the matter is complete/over.",
+          "definition_hi": "मंत्रिमंडल के कागजपत्र जिसमें मंत्रिपरिषद, सचिवों और अन्य अधिकारियों के विचार-विमर्श के अभिलेख सम्मिलित हैं; तथापि निर्णय, उनके कारण और सहायक सामग्री निर्णय लिए जाने और विषय पूर्ण होने के बाद सार्वजनिक की जाएगी।"
+        },
+        {
+          "subsection_id": "8(1)(j)",
+          "title_en": "Personal Privacy",
+          "title_hi": "व्यक्तिगत गोपनीयता",
+          "definition_en": "Personal information with no relationship to public activity/interest, or which would cause unwarranted invasion of privacy, unless PIO/appellate authority is satisfied larger public interest justifies disclosure; provided information that cannot be denied to Parliament/State Legislature shall not be denied to any person.",
+          "definition_hi": "व्यक्तिगत सूचना जिसका सार्वजनिक गतिविधि/हित से कोई संबंध नहीं या जो निजता का अनुचित अतिक्रमण करेगी, जब तक PIO/अपीलीय प्राधिकारी संतुष्ट न हो कि व्यापक लोकहित प्रकटन को न्यायोचित ठहराता है; परंतु जो सूचना संसद/राज्य विधानमंडल को देने से इनकार नहीं की जा सकती, वह किसी व्यक्ति को भी अस्वीकार नहीं की जाएगी।"
+        },
+        {
+          "subsection_id": "8(2)",
+          "title_en": "Public Interest Override",
+          "title_hi": "सार्वजनिक हित अधिरूहण",
+          "definition_en": "Notwithstanding the Official Secrets Act, 1923 or any exemption under this Act, a public authority may allow access if public interest in disclosure outweighs the harm to protected interests.",
+          "definition_hi": "शासकीय गुप्त बात अधिनियम, 1923 या इस अधिनियम के अधीन किसी छूट के होते हुए भी, यदि प्रकटीकरण में लोकहित संरक्षित हितों को होने वाले नुकसान से अधिक हो तो लोक प्राधिकरण पहुंच की अनुमति दे सकता है।"
+        },
+        {
+          "subsection_id": "8(3)",
+          "title_en": "20-Year Rule",
+          "title_hi": "20-वर्ष का नियम",
+          "definition_en": "Information relating to an occurrence/event/matter twenty years before the date of request shall be provided, unless it falls under 8(1)(a), (c), or (i).",
+          "definition_hi": "अनुरोध की तारीख से बीस वर्ष पहले हुई किसी घटना/घटनाक्रम/विषय से संबंधित सूचना प्रदान की जाएगी, जब तक यह 8(1)(क), (ग), या (झ) के अंतर्गत न आती हो।"
+        }
+      ],
+      "applies_when": [
+        "Information relates to national security, sovereignty, or foreign relations → 8(1)(a)",
+        "Information is under active court gag order → 8(1)(b)",
+        "Information would breach legislative privilege → 8(1)(c)",
+        "Information is a trade secret / commercial confidence of a third party → 8(1)(d)",
+        "Information was shared in fiduciary trust → 8(1)(e)",
+        "Information from foreign government in confidence → 8(1)(f)",
+        "Disclosure endangers life/safety or reveals a confidential informant → 8(1)(g)",
+        "Active criminal investigation would be impeded → 8(1)(h)",
+        "Pre-decisional Cabinet deliberation → 8(1)(i) (but check if decision is now final/complete)",
+        "Purely personal information unconnected to public activity → 8(1)(j)",
+        "Any exemption claimed — must additionally check Section 8(2) public interest override and 8(3) 20-year rule before finalizing refusal"
+      ],
+      "pio_response_note": "This is the primary exemption-screening section. For ANY refusal under 8(1)(a)-(j), the response MUST also document why Section 8(2) public interest override does not apply, and (except for 8(1)(a)/(c)/(i)) confirm the information is not older than 20 years under 8(3). A bare citation of a clause without this analysis is an incomplete/defective PIO response.",
+      "source_reference": "RTI Rule Book, pp. 15-17"
+    },
+    {
+      "section_number": "9",
+      "title_en": "Information Exempted from Disclosure (Copyright)",
+      "title_hi": "प्रकटीकरण से छूट प्राप्त सूचना (कॉपीराइट)",
+      "keywords": [
+        "copyright",
+        "infringement",
+        "intellectual property",
+        "third party copyright"
+      ],
+      "summary_en": "Allows a CPIO/SPIO to reject a request where providing access would infringe copyright vested in a person other than the State. Does not apply to government-held copyright (subject to Section 8(2)).",
+      "summary_hi": "CPIO/SPIO को किसी अनुरोध को अस्वीकार करने की अनुमति देती है जहां पहुंच प्रदान करने से राज्य से भिन्न किसी व्यक्ति में निहित कॉपीराइट का उल्लंघन होगा। सरकार द्वारा धारित कॉपीराइट पर लागू नहीं होती (धारा 8(2) के अधीन)।",
+      "subsections": [
+        {
+          "subsection_id": "9",
+          "title_en": "Copyright-based rejection",
+          "title_hi": "कॉपीराइट-आधारित अस्वीकृति",
+          "definition_en": "Notwithstanding Section 8, a CPIO/SPIO may reject a request for information where providing such access would involve an infringement of copyright subsisting in a person other than the State.",
+          "definition_hi": "धारा 8 के होते हुए भी, CPIO/SPIO सूचना के लिए अनुरोध को अस्वीकार कर सकता है जहां ऐसी पहुंच प्रदान करने में राज्य से भिन्न किसी व्यक्ति में निहित कॉपीराइट का उल्लंघन होगा।"
+        }
+      ],
+      "applies_when": [
+        "Requested material (book, manuscript, design, software, etc.) is third-party copyrighted content held by the public authority",
+        "Distinguishing private-party copyright (exempt) from government-owned copyright (not exempt, subject to 8(2))"
+      ],
+      "pio_response_note": "Verify copyright ownership before invoking this section — if the copyright is held by the government itself, Section 9 does not apply and the request must be evaluated under Section 8 instead.",
+      "source_reference": "RTI Rule Book, p. 17"
+    },
+    {
+      "section_number": "10",
+      "title_en": "Severability / Partial Disclosure",
+      "title_hi": "विभाज्यता / आंशिक प्रकटीकरण",
+      "keywords": [
+        "severability",
+        "partial access",
+        "redaction",
+        "part of record"
+      ],
+      "summary_en": "Where part of a record is exempt, the non-exempt part that can reasonably be severed must still be disclosed, with a notice explaining what part is withheld, the reasons, the decision-maker, fee details, and review rights.",
+      "summary_hi": "जहां अभिलेख का कोई भाग छूट प्राप्त है, युक्तियुक्त रूप से पृथक् किया जा सकने वाला गैर-छूट भाग फिर भी प्रकट किया जाना चाहिए, जिसके साथ रोके गए भाग, कारण, विनिश्चयकर्ता, शुल्क विवरण और समीक्षा अधिकारों की सूचना दी जाए।",
+      "subsections": [
+        {
+          "subsection_id": "10(1)",
+          "title_en": "Severability principle",
+          "title_hi": "विभाज्यता का सिद्धांत",
+          "definition_en": "Where a request is rejected because part of the record is exempt, access shall be provided to the part not containing exempt information, if it can reasonably be severed from the exempt part.",
+          "definition_hi": "जहां किसी अनुरोध को इस कारण अस्वीकार किया जाता है कि अभिलेख का एक भाग छूट प्राप्त है, उस भाग तक पहुंच दी जाएगी जिसमें छूट प्राप्त सूचना नहीं है, यदि उसे युक्तियुक्त रूप से छूट प्राप्त भाग से पृथक् किया जा सकता हो।"
+        },
+        {
+          "subsection_id": "10(2)",
+          "title_en": "Notice requirements for partial disclosure",
+          "title_hi": "आंशिक प्रकटीकरण हेतु सूचना अपेक्षाएं",
+          "definition_en": "When granting access to part of a record, the PIO shall notify the applicant: (a) that only part is being provided; (b) reasons for the decision including findings on material facts; (c) name/designation of decision-maker; (d) fee details and deposit amount; (e) applicant's review/appeal rights, appellate authority particulars, and time limits.",
+          "definition_hi": "अभिलेख के किसी भाग तक पहुंच देते समय, PIO आवेदक को सूचित करेगा: (क) केवल एक भाग प्रदान किया जा रहा है; (ख) विनिश्चय के कारण; (ग) विनिश्चयकर्ता का नाम/पदनाम; (घ) शुल्क विवरण और जमा राशि; (ङ) आवेदक के समीक्षा/अपील अधिकार, अपीलीय प्राधिकरण विवरण और समय-सीमा।"
+        }
+      ],
+      "applies_when": [
+        "A document contains both exempt and non-exempt content (e.g., a report with one confidential annexure)",
+        "Validating whether a blanket rejection should instead be a redacted/partial disclosure"
+      ],
+      "pio_response_note": "Never use a partial exemption in one paragraph/annexure to justify withholding an entire multi-part document. Apply redaction and issue the Section 10(2) notice with full reasons for the redacted portion.",
+      "source_reference": "RTI Rule Book, pp. 17-18"
+    },
+    {
+      "section_number": "11",
+      "title_en": "Third Party Information",
+      "title_hi": "तीसरे पक्ष की सूचना",
+      "keywords": [
+        "third party notice",
+        "confidential information supplied by third party",
+        "representation",
+        "40 days",
+        "10 days"
+      ],
+      "summary_en": "When disclosure involves information supplied by and treated as confidential by a third party, the PIO must notify that third party within 5 days, allow 10 days for their representation, and decide within 40 days — disclosing only if public interest outweighs harm to the third party (except protected trade/commercial secrets).",
+      "summary_hi": "जब प्रकटीकरण में किसी तीसरे पक्ष द्वारा प्रदाय और गोपनीय मानी गई सूचना शामिल हो, PIO को 5 दिनों के भीतर उस तीसरे पक्ष को सूचित करना चाहिए, उसके प्रतिनिधित्व हेतु 10 दिन देना चाहिए, और 40 दिनों के भीतर विनिश्चय करना चाहिए — प्रकटीकरण तभी जब लोकहित तीसरे पक्ष को होने वाले नुकसान से अधिक हो (संरक्षित व्यापार/वाणिज्यिक रहस्यों को छोड़कर)।",
+      "subsections": [
+        {
+          "subsection_id": "11(1)",
+          "title_en": "Notice to third party",
+          "title_hi": "तीसरे पक्ष को सूचना",
+          "definition_en": "Where the CPIO/SPIO intends to disclose information supplied by and treated as confidential by a third party, written notice must be given to that third party within 5 days of receipt of the request, inviting written/oral representation on whether the information should be disclosed; such submission shall be considered. Except for protected trade/commercial secrets, disclosure may proceed if competent authority is satisfied public interest outweighs harm to the third party.",
+          "definition_hi": "जहां CPIO/SPIO किसी तीसरे पक्ष द्वारा प्रदाय और गोपनीय मानी गई सूचना को प्रकट करने का इरादा रखता है, अनुरोध की प्राप्ति के 5 दिनों के भीतर उस तीसरे पक्ष को लिखित सूचना दी जाएगी, जिसमें लिखित/मौखिक प्रतिनिधित्व हेतु आमंत्रित किया जाएगा; ऐसी प्रस्तुति पर विचार किया जाएगा। संरक्षित व्यापार/वाणिज्यिक रहस्यों को छोड़कर, यदि सक्षम प्राधिकारी संतुष्ट हो कि लोकहित तीसरे पक्ष को नुकसान से अधिक है, तो प्रकटीकरण किया जा सकता है।"
+        },
+        {
+          "subsection_id": "11(2)",
+          "title_en": "Third party's representation window",
+          "title_hi": "तीसरे पक्ष की प्रतिनिधित्व अवधि",
+          "definition_en": "Where notice is served on a third party, they shall be given 10 days from receipt of notice to make representation against the proposed disclosure.",
+          "definition_hi": "जहां तीसरे पक्ष को नोटिस दिया जाता है, उसे नोटिस की प्राप्ति की तारीख से 10 दिनों के भीतर प्रस्तावित प्रकटीकरण के विरुद्ध प्रतिनिधित्व करने का अवसर दिया जाएगा।"
+        },
+        {
+          "subsection_id": "11(3)",
+          "title_en": "40-day decision timeline",
+          "title_hi": "40-दिवसीय विनिश्चय समय-सीमा",
+          "definition_en": "Notwithstanding Section 7, if the third party was given opportunity under 11(2), the CPIO/SPIO shall, within 40 days of receipt of the request, decide whether to disclose and give written notice of the decision to the third party.",
+          "definition_hi": "धारा 7 के होते हुए भी, यदि तीसरे पक्ष को 11(2) के अधीन अवसर दिया गया है, CPIO/SPIO अनुरोध की प्राप्ति के 40 दिनों के भीतर विनिश्चय करेगा और लिखित रूप में तीसरे पक्ष को सूचित करेगा।"
+        },
+        {
+          "subsection_id": "11(4)",
+          "title_en": "Third party's appeal right",
+          "title_hi": "तीसरे पक्ष का अपील अधिकार",
+          "definition_en": "The notice given shall include a statement that the third party is entitled to prefer an appeal under Section 19 against the decision.",
+          "definition_hi": "दिया गया नोटिस यह बयान शामिल करेगा कि तीसरा पक्ष विनिश्चय के विरुद्ध धारा 19 के अधीन अपील दायर करने का हकदार है।"
+        }
+      ],
+      "applies_when": [
+        "Requested record contains information supplied by/relating to a third party that was marked or treated as confidential",
+        "Computing the modified response deadline — use 40 days, not the standard 30 days, when third-party consultation is triggered"
+      ],
+      "pio_response_note": "If third-party information is involved, the standard Section 7 30-day timeline is superseded by the Section 11(3) 40-day timeline. The third party must be notified and given 10 days before a final decision, and must be informed of their own Section 19 appeal right if disclosure is decided against their wishes.",
+      "source_reference": "RTI Rule Book, p. 19"
+    },
+    {
+      "section_number": "12",
+      "title_en": "Central Information Commission",
+      "title_hi": "केंद्रीय सूचना आयोग",
+      "keywords": [
+        "CIC",
+        "Chief Information Commissioner",
+        "Information Commissioners",
+        "constitution of commission"
+      ],
+      "summary_en": "Establishes the Central Information Commission, comprising a Chief Information Commissioner and up to ten Information Commissioners, constituted by the Central Government, to hear second appeals/complaints against decisions of Central PIOs.",
+      "summary_hi": "केंद्रीय सूचना आयोग की स्थापना करती है, जिसमें मुख्य सूचना आयुक्त और दस तक सूचना आयुक्त शामिल हैं, केंद्रीय सरकार द्वारा गठित, जो केंद्रीय PIOs के विनिश्चयों के विरुद्ध द्वितीय अपील/शिकायतें सुनता है।",
+      "subsections": [
+        {
+          "subsection_id": "12(1)-12(2)",
+          "title_en": "Constitution and composition",
+          "title_hi": "गठन और संरचना",
+          "definition_en": "The Central Government shall constitute the Central Information Commission, consisting of the Chief Information Commissioner (CIC) and such number of Information Commissioners (not exceeding 10) as determined by the Central Government.",
+          "definition_hi": "केंद्रीय सरकार केंद्रीय सूचना आयोग का गठन करेगी, जिसमें मुख्य सूचना आयुक्त और केंद्रीय सरकार द्वारा निर्धारित (दस से अनधिक) सूचना आयुक्त शामिल होंगे।"
+        }
+      ],
+      "applies_when": [
+        "Query is about jurisdiction of the second-appeal authority for central public authorities",
+        "Validating whether a body claiming to be the 'Information Commission' is properly constituted"
+      ],
+      "pio_response_note": "Used mainly for institutional/jurisdictional validation rather than direct PIO response content; relevant when informing an applicant of the correct second-appeal forum for a central public authority.",
+      "source_reference": "RTI Rule Book, pp. 12-13 (reference)"
+    },
+    {
+      "section_number": "13",
+      "title_en": "Chief Information Commissioner (Qualifications & Tenure)",
+      "title_hi": "मुख्य सूचना आयुक्त (योग्यता और कार्यकाल)",
+      "keywords": [
+        "qualification",
+        "tenure",
+        "secretary level",
+        "2019 amendment"
+      ],
+      "summary_en": "Specifies the CIC should be of Secretary-to-Government-of-India rank or equivalent. Originally a fixed 5-year tenure; amended by the RTI (Amendment) Act, 2019 to a tenure 'as may be prescribed' by the Central Government, making it flexible.",
+      "summary_hi": "CIC को भारत सरकार के सचिव के समकक्ष पद का होना चाहिए, यह निर्दिष्ट करती है। मूल रूप से निश्चित 5-वर्ष कार्यकाल था; RTI (संशोधन) अधिनियम, 2019 द्वारा संशोधित कर केंद्र सरकार द्वारा 'यथा-विहित' कार्यकाल किया गया, जिससे यह लचीला हो गया।",
+      "subsections": [
+        {
+          "subsection_id": "13(original)",
+          "title_en": "Original 5-year tenure",
+          "title_hi": "मूल 5-वर्ष कार्यकाल",
+          "definition_en": "Original Act: CIC qualification = held office of Secretary to Government of India or equivalent; tenure of five years from date of entering office or till age 65, whichever earlier; not eligible for reappointment.",
+          "definition_hi": "मूल अधिनियम: CIC योग्यता = भारत सरकार के सचिव या समकक्ष पद; पद ग्रहण की तारीख से पांच वर्ष या 65 वर्ष की आयु, जो भी पूर्वतर हो; पुनर्नियुक्ति के लिए अपात्र।"
+        },
+        {
+          "subsection_id": "13(as amended 2019)",
+          "title_en": "Post-2019 amendment tenure",
+          "title_hi": "2019 संशोधन के बाद का कार्यकाल",
+          "definition_en": "RTI (Amendment) Act, 2019 amended Section 13 so that the term of office is 'such term as may be prescribed' by the Central Government via Rules, removing the fixed five-year statutory tenure.",
+          "definition_hi": "RTI (संशोधन) अधिनियम, 2019 ने धारा 13 में संशोधन किया जिससे पदावधि केंद्र सरकार द्वारा नियमों के माध्यम से 'यथा-विहित अवधि' हो गई, निश्चित पांच वर्ष की वैधानिक पदावधि हटा दी गई।"
+        }
+      ],
+      "applies_when": [
+        "Query about CIC's current tenure or removal grounds",
+        "Determining whether the original Act text or the 2019 Amendment governs a specific tenure dispute"
+      ],
+      "pio_response_note": "When responding to queries about CIC tenure, cite the 2019 Amendment as the currently governing provision rather than the original 5-year fixed term, since the latter has been superseded.",
+      "source_reference": "RTI Rule Book, Section 13 (cross reference to 2019 Amendment)"
+    },
+    {
+      "section_number": "14",
+      "title_en": "Powers of Information Commissioners",
+      "title_hi": "सूचना आयुक्तों की शक्तियां",
+      "keywords": [
+        "quasi-judicial powers",
+        "summon",
+        "civil court powers",
+        "compensation",
+        "penalty recommendation",
+        "inquiry"
+      ],
+      "summary_en": "Grants Information Commissioners broad quasi-judicial powers: summoning/examining officials, demanding production of records, conducting inquiries with civil court authority, ordering disclosure, recommending penalties, and awarding compensation.",
+      "summary_hi": "सूचना आयुक्तों को व्यापक अर्द्ध-न्यायिक शक्तियां प्रदान करती है: अधिकारियों को बुलाना/परीक्षा करना, अभिलेखों का उत्पादन मांगना, नागरिक अदालत के अधिकार से जांच करना, प्रकटीकरण का आदेश देना, दंड की सिफारिश करना और मुआवजा देना।",
+      "subsections": [
+        {
+          "subsection_id": "14(powers)",
+          "title_en": "Enumerated powers",
+          "title_hi": "सूचीबद्ध शक्तियां",
+          "definition_en": "Power to summon/examine public officials; demand production of records/documents from any public authority; call for information/explanations; conduct inquiries with civil court authority; pass orders directing disclosure; recommend penalties for non-compliance; award compensation for loss/hardship; exercise jurisdiction over appeals/complaints on RTI implementation.",
+          "definition_hi": "किसी सार्वजनिक अधिकारी को बुलाने/परीक्षा करने की शक्ति; किसी लोक प्राधिकरण से अभिलेख/दस्तावेज मांगने की शक्ति; सूचना/स्पष्टीकरण मांगने की शक्ति; नागरिक अदालत के अधिकार से जांच करने की शक्ति; प्रकटीकरण निर्देश देने वाला आदेश पास करने की शक्ति; गैर-अनुपालन हेतु दंड की सिफारिश; हानि/कठिनाई हेतु मुआवजा देना; RTI कार्यान्वयन से संबंधित अपील/शिकायतों पर अधिकारिता।"
+        }
+      ],
+      "applies_when": [
+        "An appeal/complaint requires the Commission to compel production of withheld records",
+        "Validating the legal basis for Commission-ordered compensation or penalty recommendations"
+      ],
+      "pio_response_note": "If a PIO is non-compliant despite a Commission order, this section confirms the Commission's authority to compel compliance, recommend disciplinary penalties, and award compensation to the complainant.",
+      "source_reference": "RTI Rule Book, Section 14 (cross reference)"
+    },
+    {
+      "section_number": "15",
+      "title_en": "State Information Commission",
+      "title_hi": "राज्य सूचना आयोग",
+      "keywords": [
+        "SIC",
+        "State Chief Information Commissioner",
+        "State Information Commissioners",
+        "state-level appeals"
+      ],
+      "summary_en": "Mandates every State Government to constitute a State Information Commission with composition mirroring the Central Commission, having jurisdiction limited to state public authorities and state-level matters.",
+      "summary_hi": "प्रत्येक राज्य सरकार को केंद्रीय आयोग के समान संरचना वाला राज्य सूचना आयोग गठित करने हेतु अनिवार्य करती है, जिसकी अधिकारिता राज्य लोक प्राधिकरणों और राज्य-स्तरीय मामलों तक सीमित है।",
+      "subsections": [
+        {
+          "subsection_id": "15(composition)",
+          "title_en": "Composition",
+          "title_hi": "संरचना",
+          "definition_en": "Every State Government shall constitute a State Information Commission consisting of a State Chief Information Commissioner and such number of State Information Commissioners (not exceeding 10) as determined by the State Government.",
+          "definition_hi": "प्रत्येक राज्य सरकार राज्य मुख्य सूचना आयुक्त और राज्य सरकार द्वारा निर्धारित (दस से अनधिक) राज्य सूचना आयुक्तों से युक्त राज्य सूचना आयोग गठित करेगी।"
+        }
+      ],
+      "applies_when": [
+        "Query concerns the second-appeal forum for a STATE public authority (as opposed to central)",
+        "Validating jurisdiction split between CIC and SIC"
+      ],
+      "pio_response_note": "When a PIO belongs to a state public authority, the correct second-appeal forum to cite in the rejection notice is the State Information Commission, not the CIC.",
+      "source_reference": "RTI Rule Book, p. 15, Section 15 (multiple references throughout)"
+    },
+    {
+      "section_number": "16",
+      "title_en": "State Chief Information Commissioner (Qualifications)",
+      "title_hi": "राज्य मुख्य सूचना आयुक्त (योग्यता)",
+      "keywords": [
+        "state secretary rank",
+        "high court judge",
+        "domain expertise",
+        "2019 amendment state"
+      ],
+      "summary_en": "State CIC must have held office equivalent to Secretary to State Government or High Court Judge; State ICs must have domain expertise in law/management/social-political affairs. 2019 Amendment made tenure flexible (prescribed by State Government) instead of a fixed five years.",
+      "summary_hi": "राज्य CIC को राज्य सरकार के सचिव या उच्च न्यायालय न्यायाधीश के समकक्ष पद पर रहा होना चाहिए; राज्य ICs को विधि/प्रबंधन/सामाजिक-राजनीतिक मामलों में विशेषज्ञता होनी चाहिए। 2019 संशोधन ने कार्यकाल को निश्चित पांच वर्ष के बजाय राज्य सरकार द्वारा निर्धारित किए जाने जितना लचीला बनाया।",
+      "subsections": [
+        {
+          "subsection_id": "16(qualifications)",
+          "title_en": "Qualifications",
+          "title_hi": "योग्यताएं",
+          "definition_en": "State CIC must have held office equivalent to Secretary to State Government, OR held office of Judge of High Court. State ICs are persons with domain expertise in law, management, or social and political affairs; appointment by State Government in consultation with prescribed officials.",
+          "definition_hi": "राज्य CIC को राज्य सरकार के सचिव के समकक्ष पद पर, या उच्च न्यायालय न्यायाधीश के पद पर रहा होना चाहिए। राज्य ICs विधि, प्रबंधन या सामाजिक राजनीतिक मामलों में विशेषज्ञता वाले व्यक्ति हैं; नियुक्ति निर्धारित अधिकारियों के परामर्श में राज्य सरकार द्वारा।"
+        },
+        {
+          "subsection_id": "16(as amended 2019)",
+          "title_en": "Post-2019 tenure",
+          "title_hi": "2019 के बाद कार्यकाल",
+          "definition_en": "The 2019 Amendment made tenure flexible, to be prescribed by State Government, instead of a fixed five years.",
+          "definition_hi": "2019 संशोधन ने कार्यकाल को निश्चित पांच वर्ष के बजाय राज्य सरकार द्वारा निर्धारित किए जाने जितना लचीला बनाया।"
+        }
+      ],
+      "applies_when": [
+        "Query about eligibility/qualification of a State Information Commissioner",
+        "Tenure disputes for State CIC/IC — apply 2019 amendment, not original fixed term"
+      ],
+      "pio_response_note": "Same caution as Section 13 — cite the post-2019 prescribed-tenure regime as current law for State Commissioners.",
+      "source_reference": "RTI Rule Book, Section 16 (cross reference to 2019 Amendment)"
+    },
+    {
+      "section_number": "17",
+      "title_en": "Powers of State Information Commission",
+      "title_hi": "राज्य सूचना आयोग की शक्तियां",
+      "keywords": [
+        "state appellate jurisdiction",
+        "suo motu investigation",
+        "state complaints"
+      ],
+      "summary_en": "Grants State Information Commissions powers similar to the Central Commission but limited to state matters: appellate jurisdiction over state PIO decisions, inquiry powers, order-issuing powers, penalty recommendations, suo motu investigations, and complaint hearings.",
+      "summary_hi": "राज्य सूचना आयोगों को केंद्रीय आयोग के समान शक्तियां देती है किंतु राज्य मामलों तक सीमित: राज्य PIO विनिश्चयों पर अपीलीय अधिकारिता, जांच शक्ति, आदेश-जारी शक्ति, दंड सिफारिशें, स्वप्रेरणा जांच, और शिकायत सुनवाई।",
+      "subsections": [
+        {
+          "subsection_id": "17(powers)",
+          "title_en": "Enumerated state powers",
+          "title_hi": "सूचीबद्ध राज्य शक्तियां",
+          "definition_en": "Appellate jurisdiction over decisions of state PIOs; power to conduct inquiries; power to issue orders; power to recommend penalties; power to conduct suo motu investigations; power to hear complaints about RTI implementation.",
+          "definition_hi": "राज्य PIOs के विनिश्चयों पर अपीलीय अधिकारिता; जांच करने की शक्ति; आदेश जारी करने की शक्ति; दंड की सिफारिश करने की शक्ति; स्वप्रेरणा जांच करने की शक्ति; RTI कार्यान्वयन संबंधी शिकायतें सुनने की शक्ति।"
+        }
+      ],
+      "applies_when": [
+        "Validating SIC's authority to act suo motu on a systemic non-compliance issue at state level"
+      ],
+      "pio_response_note": "Relevant context when the State Commission itself initiates inquiry rather than waiting for an appeal.",
+      "source_reference": "RTI Rule Book, pp. 60-174 (SIC procedures and powers)"
+    },
+    {
+      "section_number": "18",
+      "title_en": "Procedure for Inquiries",
+      "title_hi": "जांच की प्रक्रिया",
+      "keywords": [
+        "natural justice",
+        "notice",
+        "written reply",
+        "hearing",
+        "90 days decision"
+      ],
+      "summary_en": "Information Commissions must follow principles of natural justice when conducting inquiries: notice to the public authority, opportunity to reply, hearing, examination of evidence, written reasoned orders, decision within 90 days of receipt of the appeal.",
+      "summary_hi": "सूचना आयोगों को जांच करते समय प्राकृतिक न्याय के सिद्धांतों का पालन करना चाहिए: लोक प्राधिकरण को सूचना, उत्तर का अवसर, सुनवाई, साक्ष्य की परीक्षा, लिखित तर्कसंगत आदेश, अपील की प्राप्ति के 90 दिनों के भीतर विनिश्चय।",
+      "subsections": [
+        {
+          "subsection_id": "18(procedure)",
+          "title_en": "Inquiry procedure steps",
+          "title_hi": "जांच प्रक्रिया के चरण",
+          "definition_en": "Issuance of notice to concerned public authority; opportunity to file written reply; hearing process (oral or written); examination of persons and documents; passing written orders with detailed reasons; decision within 90 days of receipt of appeal. The Commission has powers of a civil court while conducting inquiries.",
+          "definition_hi": "संबंधित लोक प्राधिकरण को नोटिस जारी करना; लिखित जवाब दाखिल करने का अवसर; सुनवाई प्रक्रिया (मौखिक या लिखित); व्यक्तियों और दस्तावेजों की परीक्षा; विस्तृत कारणों सहित लिखित आदेश पास करना; अपील की प्राप्ति के 90 दिनों के भीतर विनिश्चय। आयोग को जांच के दौरान नागरिक अदालत की शक्तियां प्राप्त हैं।"
+        }
+      ],
+      "applies_when": [
+        "Tracking timeline compliance for an ongoing Commission inquiry"
+      ],
+      "pio_response_note": "If a complaint/appeal has been pending before the Commission beyond 90 days without resolution, flag for status check, though extensions for cause are recognized in practice.",
+      "source_reference": "RTI Rule Book, pp. 76-96 (Appeal procedures and hearings)"
+    },
+    {
+      "section_number": "19",
+      "title_en": "Appeal",
+      "title_hi": "अपील",
+      "keywords": [
+        "first appeal",
+        "second appeal",
+        "30 days",
+        "45 days",
+        "90 days",
+        "senior officer",
+        "appellate authority",
+        "burden of proof"
+      ],
+      "summary_en": "Establishes a two-tier appeal system: First Appeal to a senior officer (or directly to SIC if none designated) within 30 days of PIO decision, decided within 30-45 days; Second Appeal to CIC/SIC within 90 days of first appeal decision, decided within 90 days (extendable). Burden of proof that refusal was justified lies on the PIO.",
+      "summary_hi": "दो-स्तरीय अपील प्रणाली स्थापित करती है: प्रथम अपील वरिष्ठ अधिकारी को (या यदि कोई नामित नहीं तो सीधे SIC को) PIO विनिश्चय के 30 दिनों के भीतर, 30-45 दिनों में विनिश्चित; द्वितीय अपील CIC/SIC को प्रथम अपील विनिश्चय के 90 दिनों के भीतर, 90 दिनों में विनिश्चित (विस्तारणीय)। अस्वीकृति के न्यायोचित होने का भार PIO पर है।",
+      "subsections": [
+        {
+          "subsection_id": "19(1)-19(5)",
+          "title_en": "First Appeal",
+          "title_hi": "प्रथम अपील",
+          "definition_en": "Filed to the senior officer designated by the public authority, or directly to the SIC/CIC if no senior officer is designated; must be filed within 30 days of the PIO's decision or deemed refusal; the senior officer must decide within 30 days (extendable to 45 days with reasons); can direct disclosure, reduce fees, or change the form of access.",
+          "definition_hi": "लोक प्राधिकरण द्वारा नामित वरिष्ठ अधिकारी को, या यदि कोई वरिष्ठ अधिकारी नामित नहीं है तो सीधे SIC/CIC को दाखिल; PIO के विनिश्चय या समझी गई अस्वीकृति के 30 दिनों के भीतर दाखिल करना चाहिए; वरिष्ठ अधिकारी को 30 दिनों के भीतर (कारणों सहित 45 दिनों तक विस्तारणीय) विनिश्चय करना चाहिए; प्रकटीकरण का निर्देश दे सकता है, शुल्क घटा सकता है, पहुंच का रूप बदल सकता है।"
+        },
+        {
+          "subsection_id": "19(10)",
+          "title_en": "Second Appeal",
+          "title_hi": "द्वितीय अपील",
+          "definition_en": "To SIC for state matters or CIC for central matters; must be filed within 90 days of the first appeal decision; the Commission must decide within 90 days (extendable); can pass binding orders, recommend penalties, and recommend compensation for loss/hardship.",
+          "definition_hi": "राज्य मामलों हेतु SIC को या केंद्रीय मामलों हेतु CIC को; प्रथम अपील विनिश्चय के 90 दिनों के भीतर दाखिल करना चाहिए; आयोग को 90 दिनों के भीतर (विस्तारणीय) विनिश्चय करना चाहिए; बाध्यकारी आदेश पास कर सकता है, दंड की सिफारिश कर सकता है, और हानि/कठिनाई हेतु मुआवजे की सिफारिश कर सकता है।"
+        },
+        {
+          "subsection_id": "19(burden of proof)",
+          "title_en": "Burden of proof on PIO",
+          "title_hi": "PIO पर साबित करने का भार",
+          "definition_en": "In any appeal proceeding, the onus to prove that the denial of a request was justified lies on the CPIO/SPIO who denied the request.",
+          "definition_hi": "किसी अपील कार्यवाही में, यह साबित करने का भार कि अनुरोध को अस्वीकार करना न्यायोचित था, उस CPIO/SPIO पर होगा जिसने अनुरोध से इनकार किया।"
+        },
+        {
+          "subsection_id": "19(special provisions)",
+          "title_en": "Life/liberty expedited processing & natural justice",
+          "title_hi": "जीवन/स्वतंत्रता त्वरित प्रसंस्करण और प्राकृतिक न्याय",
+          "definition_en": "Life/liberty cases get expedited processing; both appeal levels follow natural justice; detailed written orders with reasons are mandatory.",
+          "definition_hi": "जीवन/स्वतंत्रता मामलों को त्वरित प्रसंस्करण मिलता है; दोनों अपील स्तर प्राकृतिक न्याय का पालन करते हैं; कारणों सहित विस्तृत लिखित आदेश अनिवार्य हैं।"
+        }
+      ],
+      "applies_when": [
+        "Applicant did not receive a decision within Section 7 timelines, or is aggrieved by a PIO decision — eligible for First Appeal",
+        "First Appeal decision received/lapsed and applicant wishes to escalate — eligible for Second Appeal",
+        "Drafting any rejection — must inform applicant of appeal rights, forum, and timeline",
+        "Evaluating whether a PIO's stated justification for refusal meets the evidentiary burden"
+      ],
+      "pio_response_note": "Every PIO rejection or partial-disclosure response MUST cite the First Appeal forum (senior officer of the public authority) and the 30-day appeal window, per Section 19(1) read with Section 7(8). The PIO bears the burden of proof for any denial if challenged in appeal.",
+      "source_reference": "RTI Rule Book, pp. 76-96 (Appeals Rules 2006 and amendments)"
+    },
+    {
+      "section_number": "20",
+      "title_en": "Transfer of Cases",
+      "title_hi": "मामलों का हस्तांतरण",
+      "keywords": [
+        "transfer between commissions",
+        "multi-state",
+        "coordination"
+      ],
+      "summary_en": "Provides for transfer of cases between Central and State Information Commissions where the matter involves both central/state authorities, has multi-state implications, or where public interest requires transfer. Rarely used in practice.",
+      "summary_hi": "केंद्रीय और राज्य सूचना आयोगों के बीच मामलों के हस्तांतरण का प्रावधान करती है जहां मामले में केंद्रीय/राज्य दोनों प्राधिकार शामिल हों, बहु-राज्य निहितार्थ हों, या लोकहित को हस्तांतरण की आवश्यकता हो। व्यवहार में शायद ही उपयोग होती है।",
+      "subsections": [
+        {
+          "subsection_id": "20(transfer grounds)",
+          "title_en": "Grounds for transfer",
+          "title_hi": "हस्तांतरण के आधार",
+          "definition_en": "Matter involves both central and state authorities; issue has multi-state implications; central authority is primarily involved; public interest requires transfer.",
+          "definition_hi": "मामले में केंद्रीय और राज्य दोनों प्राधिकार शामिल हों; मुद्दे के बहु-राज्य निहितार्थ हों; केंद्रीय प्राधिकार मुख्य रूप से शामिल हो; लोकहित को हस्तांतरण की आवश्यकता हो।"
+        }
+      ],
+      "applies_when": [
+        "An appeal involves overlapping central and state public authority jurisdictions"
+      ],
+      "pio_response_note": "Rarely invoked; flag only in cases with genuine multi-jurisdictional overlap.",
+      "source_reference": "RTI Rule Book, Section 20 (cross reference)"
+    },
+    {
+      "section_number": "21",
+      "title_en": "Jurisdiction of High Court",
+      "title_hi": "उच्च न्यायालय का अधिकार क्षेत्र",
+      "keywords": [
+        "writ jurisdiction",
+        "judicial review",
+        "habeas corpus",
+        "mandamus",
+        "certiorari",
+        "final recourse"
+      ],
+      "summary_en": "Preserves High Courts' inherent jurisdiction to review Commission decisions via writs (habeas corpus, mandamus, prohibition, certiorari, quo warranto), for constitutional violations, procedural irregularities, or jurisdictional overreach, after the RTI appeal process is exhausted.",
+      "summary_hi": "उच्च न्यायालयों के अंतर्निहित अधिकार क्षेत्र को संरक्षित रखती है ताकि वे रिट (बंदी प्रत्यक्षीकरण, परमादेश, प्रतिषेध, उत्प्रेषण, अधिकार-पृच्छा) के माध्यम से आयोग के विनिश्चयों की समीक्षा कर सकें, संवैधानिक उल्लंघन, प्रक्रियात्मक अनियमितताओं, या अधिकारिता अतिक्रमण हेतु, RTI अपील प्रक्रिया समाप्त होने के बाद।",
+      "subsections": [
+        {
+          "subsection_id": "21(jurisdiction)",
+          "title_en": "Writ jurisdiction scope",
+          "title_hi": "रिट अधिकारिता का दायरा",
+          "definition_en": "High Courts can issue writs of habeas corpus, mandamus, prohibition, certiorari, and quo warranto; review CIC/SIC decisions; examine constitutional violations; check procedural irregularities; intervene where jurisdiction is exceeded. Acts as final recourse after RTI appeal exhaustion.",
+          "definition_hi": "उच्च न्यायालय बंदी प्रत्यक्षीकरण, परमादेश, प्रतिषेध, उत्प्रेषण, और अधिकार-पृच्छा के रिट जारी कर सकते हैं; CIC/SIC विनिश्चयों की समीक्षा कर सकते हैं; संवैधानिक उल्लंघनों की जांच कर सकते हैं; प्रक्रियात्मक अनियमितताओं की जांच कर सकते हैं; अधिकारिता अतिक्रमण होने पर हस्तक्षेप कर सकते हैं। RTI अपील समाप्ति के बाद अंतिम सहारे के रूप में कार्य करते हैं।"
+        }
+      ],
+      "applies_when": [
+        "Applicant has exhausted both First and Second Appeal and remains aggrieved",
+        "Constitutional or jurisdictional challenge to a Commission decision"
+      ],
+      "pio_response_note": "Not part of routine PIO response — inform applicant only after Second Appeal is exhausted that further recourse lies with the High Court via writ petition.",
+      "source_reference": "RTI Rule Book, pp. 157-161 (High Court observations)"
+    },
+    {
+      "section_number": "22",
+      "title_en": "Exemption to Intelligence Agencies (Second Schedule)",
+      "title_hi": "खुफिया एजेंसियों को छूट (दूसरी अनुसूची)",
+      "keywords": [
+        "intelligence bureau",
+        "CBI",
+        "security organisations",
+        "second schedule",
+        "corruption exception",
+        "human rights exception"
+      ],
+      "summary_en": "Provides limited exemption to specified intelligence/security agencies (e.g., Intelligence Bureau, CBI, and others notified by Central Government). NOT a complete exemption — corruption allegations and human rights violations remain subject to disclosure (human rights info only after CIC approval), and routine administrative information cannot be withheld.",
+      "summary_hi": "विनिर्दिष्ट खुफिया/सुरक्षा एजेंसियों (जैसे आसूचना ब्यूरो, CBI, और केंद्र सरकार द्वारा अधिसूचित अन्य) को सीमित छूट प्रदान करती है। यह पूर्ण छूट नहीं है — भ्रष्टाचार के अभिकथन और मानव अधिकार उल्लंघन प्रकटीकरण के अधीन रहते हैं (मानव अधिकार सूचना केवल CIC अनुमोदन के बाद), और दिनचर्या प्रशासनिक सूचना नहीं रोकी जा सकती।",
+      "subsections": [
+        {
+          "subsection_id": "22(scope)",
+          "title_en": "Scope and limits of exemption",
+          "title_hi": "छूट का दायरा और सीमाएं",
+          "definition_en": "Exempted agencies must still comply with RTI Act to some extent; requests are processed with Section 8 exemptions applied; appeals still available; routine administrative information cannot be withheld; corruption allegations are not covered by this exemption; subject to Section 8(2) public interest override.",
+          "definition_hi": "छूट प्राप्त एजेंसियों को फिर भी कुछ हद तक RTI अधिनियम का पालन करना चाहिए; अनुरोधों को धारा 8 छूटों के साथ संसाधित किया जाता है; अपील अभी भी उपलब्ध है; दिनचर्या प्रशासनिक सूचना नहीं रोकी जा सकती; भ्रष्टाचार के अभिकथन इस छूट के अंतर्गत नहीं आते; धारा 8(2) सार्वजनिक हित अधिरूहण के अधीन।"
+        }
+      ],
+      "applies_when": [
+        "RTI request is addressed to a body on the Second Schedule list of intelligence/security organisations",
+        "Request specifically alleges corruption or human rights violation against an exempted agency — exemption does NOT apply"
+      ],
+      "pio_response_note": "Before invoking a blanket Section 22-type exemption, verify the request does not concern corruption or human rights violations — these categories must still be processed (human-rights-related disclosure requires CIC approval per the broader Section 24 schedule mechanism).",
+      "source_reference": "RTI Rule Book, Section 22 (cross reference)"
+    },
+    {
+      "section_number": "23",
+      "title_en": "Penalties (Imprisonment/Fine for Specific Violations)",
+      "title_hi": "शास्तियाँ (विशिष्ट उल्लंघनों हेतु कारावास/जुर्माना)",
+      "keywords": [
+        "obstruction",
+        "destruction of records",
+        "false information",
+        "willful withholding",
+        "imprisonment",
+        "fine"
+      ],
+      "summary_en": "Prescribes penalties for specific violations: obstruction of PIO (up to 3 months imprisonment or Rs.250 fine), destruction of records (same), false information by PIO (up to 2 years imprisonment or Rs.500 fine), willful withholding (up to 3 months or Rs.250), and penalties for officers directing a PIO to violate the Act.",
+      "summary_hi": "विशिष्ट उल्लंघनों हेतु दंड निर्धारित करती है: PIO में बाधा (3 माह तक कारावास या ₹250 जुर्माना), अभिलेखों का विनाश (समान), PIO द्वारा झूठी जानकारी (2 वर्ष तक कारावास या ₹500 जुर्माना), जानबूझकर रोकना (3 माह तक या ₹250), और PIO को उल्लंघन हेतु निर्देश देने वाले अधिकारियों हेतु दंड।",
+      "subsections": [
+        {
+          "subsection_id": "23(obstruction)",
+          "title_en": "Obstruction of PIO",
+          "title_hi": "PIO में बाधा",
+          "definition_en": "Imprisonment up to 3 months OR fine up to Rs. 250.",
+          "definition_hi": "3 महीने तक कारावास या ₹250 तक जुर्माना।"
+        },
+        {
+          "subsection_id": "23(destruction)",
+          "title_en": "Destruction of records",
+          "title_hi": "अभिलेखों का विनाश",
+          "definition_en": "Imprisonment up to 3 months OR fine up to Rs. 250.",
+          "definition_hi": "3 महीने तक कारावास या ₹250 तक जुर्माना।"
+        },
+        {
+          "subsection_id": "23(false information)",
+          "title_en": "False information by PIO",
+          "title_hi": "PIO द्वारा झूठी जानकारी",
+          "definition_en": "Imprisonment up to 2 years OR fine up to Rs. 500.",
+          "definition_hi": "2 वर्ष तक कारावास या ₹500 तक जुर्माना।"
+        },
+        {
+          "subsection_id": "23(willful withholding)",
+          "title_en": "Willful withholding",
+          "title_hi": "जानबूझकर रोकना",
+          "definition_en": "Imprisonment up to 3 months OR fine up to Rs. 250.",
+          "definition_hi": "3 महीने तक कारावास या ₹250 तक जुर्माना।"
+        },
+        {
+          "subsection_id": "23(commissioning violation)",
+          "title_en": "Officer directing PIO to violate Act",
+          "title_hi": "PIO को उल्लंघन हेतु निर्देश देने वाला अधिकारी",
+          "definition_en": "An officer who directs a PIO to act in violation of the Act is also subject to penalties.",
+          "definition_hi": "PIO को अधिनियम के उल्लंघन में कार्य करने का निर्देश देने वाला अधिकारी भी दंड के अधीन है।"
+        }
+      ],
+      "applies_when": [
+        "Determining criminal/quasi-criminal liability for a PIO's deliberate misconduct (as distinct from the administrative Section 20 monetary penalty)",
+        "An applicant alleges falsified or maliciously withheld information"
+      ],
+      "pio_response_note": "Distinct from Section 20's Rs. 250/day administrative penalty (max Rs. 25,000) — this section addresses imprisonment/fine for more serious misconduct such as record destruction or deliberate falsification.",
+      "source_reference": "RTI Rule Book, pp. 166-170 (Penalties and Implementation)"
+    },
+    {
+      "section_number": "24",
+      "title_en": "Penalties Recommended by Information Commissions",
+      "title_hi": "सूचना आयोगों द्वारा अनुशंसित दंड",
+      "keywords": [
+        "commission recommended fine",
+        "compensation",
+        "disciplinary action",
+        "criminal prosecution",
+        "cumulative penalties"
+      ],
+      "summary_en": "Grants Information Commissions authority to recommend fines (up to Rs.25,000 for obstruction; up to Rs.10,000 for destruction/willful withholding), compensation for loss/hardship, disciplinary action (including suspension/dismissal), and criminal prosecution for serious violations — penalties can be cumulative and repeated violations attract higher penalties.",
+      "summary_hi": "सूचना आयोगों को जुर्माना (बाधा हेतु ₹25,000 तक; विनाश/जानबूझकर रोकने हेतु ₹10,000 तक), हानि/कठिनाई हेतु मुआवजा, अनुशासनात्मक कार्रवाई (निलंबन/बर्खास्तगी सहित), और गंभीर उल्लंघनों हेतु आपराधिक अभियोजन की सिफारिश करने का अधिकार देती है — दंड संचयी हो सकते हैं और दोहराए गए उल्लंघन उच्च दंड में परिणत हो सकते हैं।",
+      "subsections": [
+        {
+          "subsection_id": "24(fines)",
+          "title_en": "Fine recommendations",
+          "title_hi": "जुर्माना सिफारिशें",
+          "definition_en": "Fine up to Rs. 25,000 for obstruction; fine up to Rs. 10,000 for destruction/willful withholding.",
+          "definition_hi": "बाधा हेतु ₹25,000 तक जुर्माना; विनाश/जानबूझकर रोकने हेतु ₹10,000 तक जुर्माना।"
+        },
+        {
+          "subsection_id": "24(other remedies)",
+          "title_en": "Compensation, discipline, prosecution",
+          "title_hi": "मुआवजा, अनुशासन, अभियोजन",
+          "definition_en": "Compensation for loss/hardship caused; disciplinary action including suspension/dismissal; criminal prosecution for serious violations; criminal and disciplinary penalties can be cumulative; repeated violations attract higher penalties. Commission orders are binding unless challenged in High Court.",
+          "definition_hi": "हानि/कठिनाई हेतु मुआवजा; निलंबन/बर्खास्तगी सहित अनुशासनात्मक कार्रवाई; गंभीर उल्लंघनों हेतु आपराधिक अभियोजन; आपराधिक और अनुशासनात्मक दंड संचयी हो सकते हैं; दोहराए गए उल्लंघन उच्च दंड में परिणत हो सकते हैं। आयोग के आदेश बाध्यकारी होते हैं जब तक उच्च न्यायालय में चुनौती न दी जाए।"
+        }
+      ],
+      "applies_when": [
+        "A Second Appeal results in a finding of bad faith, persistent non-compliance, or serious misconduct by the PIO",
+        "Applicant seeks compensation for demonstrable loss/hardship from delay or refusal"
+      ],
+      "pio_response_note": "Distinguish this Commission-level penalty regime from the statutory daily penalty under Section 20 — this section is broader (criminal/disciplinary/compensatory) and triggered specifically through Commission adjudication.",
+      "source_reference": "RTI Rule Book, pp. 166-170"
+    },
+    {
+      "section_number": "25",
+      "title_en": "Annual Reports",
+      "title_hi": "वार्षिक रिपोर्ट",
+      "keywords": [
+        "annual report",
+        "parliament submission",
+        "state legislature submission",
+        "statistics",
+        "recommendations"
+      ],
+      "summary_en": "Mandates Information Commissions to prepare annual reports on RTI Act implementation (Central Commission to Parliament, State Commissions to State Legislatures), including statistical data on appeals/disposal times/trends and recommendations on amendments, fee revisions, procedural improvements, training, and resources. Reports are made public.",
+      "summary_hi": "सूचना आयोगों को RTI अधिनियम के कार्यान्वयन पर वार्षिक रिपोर्ट तैयार करने हेतु अनिवार्य करती है (केंद्रीय आयोग संसद को, राज्य आयोग राज्य विधानमंडल को), जिसमें अपील/निपटान समय/रुझानों पर सांख्यिकीय डेटा और संशोधन, शुल्क संशोधन, प्रक्रियात्मक सुधार, प्रशिक्षण और संसाधनों पर सिफारिशें शामिल हैं। रिपोर्ट सार्वजनिक की जाती हैं।",
+      "subsections": [
+        {
+          "subsection_id": "25(reporting duty)",
+          "title_en": "Reporting duty and content",
+          "title_hi": "रिपोर्टिंग कर्तव्य और विषय-वस्तु",
+          "definition_en": "Commission must prepare annual reports; Central Commission submits to Parliament; State Commissions submit to State Legislatures; reports must include recommendations on amendment of RTI Act, revision of fees/charges, procedural improvements, training needs, resource requirements, statutory improvements, and statistical data on appeals/disposal times/trends; reports are public and published on websites.",
+          "definition_hi": "आयोग को वार्षिक रिपोर्ट तैयार करनी चाहिए; केंद्रीय आयोग संसद को जमा करता है; राज्य आयोग राज्य विधानमंडल को जमा करते हैं; रिपोर्ट में RTI अधिनियम संशोधन, शुल्क संशोधन, प्रक्रियात्मक सुधार, प्रशिक्षण आवश्यकताएं, संसाधन आवश्यकताएं, वैधानिक सुधार पर सिफारिशें और अपील/निपटान समय/रुझानों पर सांख्यिकीय डेटा होना चाहिए; रिपोर्ट सार्वजनिक हैं और वेबसाइटों पर प्रकाशित हैं।"
+        }
+      ],
+      "applies_when": [
+        "Query about systemic/statistical RTI implementation data rather than an individual case"
+      ],
+      "pio_response_note": "If the query is a request for the public authority's/Commission's published annual report statistics, this should ordinarily be available via suo motu disclosure (Section 4) and the Commission's published reports — point applicant there rather than treating it as a novel disclosure request.",
+      "source_reference": "RTI Rule Book, pp. 146-155 (SIC Reports and Recommendations)"
+    },
+    {
+      "section_number": "26",
+      "title_en": "Return of Documents",
+      "title_hi": "दस्तावेजों की वापसी",
+      "keywords": [
+        "return of documents",
+        "evidence retention",
+        "certified copies",
+        "confidential third party documents"
+      ],
+      "summary_en": "Addresses handling of documents submitted during RTI proceedings: applicant-submitted documents may need to be returned after proceedings; records used as evidence may be retained by the Commission for reference; originals generally returned to the providing authority; certified copies retained for appeal records; confidential third-party documents returned after decision and not publicly disclosed.",
+      "summary_hi": "RTI कार्यवाही के दौरान प्रस्तुत दस्तावेजों के प्रबंधन को संबोधित करती है: आवेदक द्वारा प्रस्तुत दस्तावेज कार्यवाही के बाद वापस किए जाने की आवश्यकता हो सकती है; साक्ष्य के रूप में उपयोग किए गए अभिलेख आयोग द्वारा संदर्भ हेतु रखे जा सकते हैं; मूल दस्तावेज सामान्यतः प्रदान करने वाले प्राधिकरण को लौटाए जाते हैं; अपील रिकॉर्ड हेतु प्रमाणित प्रतियां रखी जाती हैं; तीसरे पक्ष के गोपनीय दस्तावेज विनिश्चय के बाद लौटाए जाते हैं और सार्वजनिक रूप से प्रकट नहीं किए जाते।",
+      "subsections": [
+        {
+          "subsection_id": "26(handling rules)",
+          "title_en": "Document handling rules",
+          "title_hi": "दस्तावेज प्रबंधन नियम",
+          "definition_en": "Applicant-submitted documents may be required to be returned; evidence records may be retained by the Commission if needed; originals generally returned to providing authority; certified copies retained for appeal records; confidential third-party documents returned after decision and not publicly disclosed if confidential; Commission may retain copies for its own records.",
+          "definition_hi": "आवेदक-प्रस्तुत दस्तावेज वापस करने की आवश्यकता हो सकती है; आवश्यक होने पर साक्ष्य अभिलेख आयोग द्वारा रखे जा सकते हैं; मूल दस्तावेज सामान्यतः प्रदान करने वाले प्राधिकरण को लौटाए जाते हैं; अपील रिकॉर्ड हेतु प्रमाणित प्रतियां रखी जाती हैं; गोपनीय तीसरे पक्ष के दस्तावेज विनिश्चय के बाद लौटाए जाते हैं और गोपनीय होने पर सार्वजनिक नहीं किए जाते; आयोग अपने अभिलेखों हेतु प्रतियां रख सकता है।"
+        }
+      ],
+      "applies_when": [
+        "Post-appeal cleanup/disposal of original documents submitted as evidence",
+        "Third party's confidential documents need post-decision handling"
+      ],
+      "pio_response_note": "Mostly relevant to Commission registry/administrative procedure rather than the initial PIO response, but flag if an applicant or third party requests return of their originally-submitted documents.",
+      "source_reference": "RTI Rule Book, Section 26 (cross reference)"
+    },
+    {
+      "section_number": "27",
+      "title_en": "Amendments to the RTI Act",
+      "title_hi": "RTI अधिनियम में संशोधन",
+      "keywords": [
+        "amendment power",
+        "2019 amendment",
+        "tenure flexibility",
+        "legislative process"
+      ],
+      "summary_en": "Confirms Parliament can amend any provision of the RTI Act via normal legislative process. Key amendment: RTI (Amendment) Act, 2019 (Gazette dated 29 October 2019) changed CIC/SIC tenure from a fixed 5 years to 'such term as may be prescribed', making tenure flexible rather than statutory; some procedural amendments and multiple fee revisions (2005-2013) also occurred.",
+      "summary_hi": "संसद अपनी सामान्य विधायी प्रक्रिया के माध्यम से RTI अधिनियम के किसी भी प्रावधान में संशोधन कर सकती है, यह पुष्टि करती है। मुख्य संशोधन: RTI (संशोधन) अधिनियम, 2019 (29 अक्तूबर 2019 राजपत्रित) ने CIC/SIC कार्यकाल को निश्चित 5 वर्ष से 'यथा-विहित अवधि' में बदला, जिससे कार्यकाल वैधानिक के बजाय लचीला बना; कुछ प्रक्रियात्मक संशोधन और कई शुल्क संशोधन (2005-2013) भी हुए।",
+      "subsections": [
+        {
+          "subsection_id": "27(amendment power)",
+          "title_en": "Amendment power confirmed",
+          "title_hi": "संशोधन शक्ति की पुष्टि",
+          "definition_en": "Parliament can amend any provision of the RTI Act through its normal legislative process.",
+          "definition_hi": "संसद अपनी सामान्य विधायी प्रक्रिया के माध्यम से RTI अधिनियम के किसी भी प्रावधान में संशोधन कर सकती है।"
+        },
+        {
+          "subsection_id": "27(2019 amendment)",
+          "title_en": "RTI (Amendment) Act, 2019",
+          "title_hi": "RTI (संशोधन) अधिनियम, 2019",
+          "definition_en": "Gazette dated 29 October 2019; changed tenure of CIC/SIC from fixed 5 years to 'such term as may be prescribed' by the Central Government, making tenure flexible rather than statutory; included some procedural amendments. Fees also revised through rules across multiple amendments 2005-2013.",
+          "definition_hi": "29 अक्तूबर 2019 को राजपत्रित; CIC/SIC के कार्यकाल को निश्चित 5 वर्ष से केंद्र सरकार द्वारा 'यथा-विहित अवधि' में बदला, जिससे कार्यकाल वैधानिक के बजाय लचीला बना; कुछ प्रक्रियात्मक संशोधन शामिल थे। 2005-2013 के बीच कई संशोधनों के माध्यम से शुल्क भी संशोधित किए गए।"
+        }
+      ],
+      "applies_when": [
+        "Validating which version (pre- or post-2019) of a Commission tenure/salary provision governs a query",
+        "Query about the legislative history or amendment process of the Act"
+      ],
+      "pio_response_note": "Always apply the 2019 Amendment as current law for any CIC/SIC tenure or salary related response, given it supersedes the original Sections 13 and 16 provisions.",
+      "source_reference": "RTI Rule Book, Section 27 (cross reference to 2019 Amendment notification dated 29 October 2019)"
+    },
+    {
+      "section_number": "28",
+      "title_en": "Rule Making Power",
+      "title_hi": "नियम बनाने की शक्ति",
+      "keywords": [
+        "rule making",
+        "fee structure",
+        "application fee",
+        "copy charges",
+        "BPL exemption",
+        "Chhattisgarh rules"
+      ],
+      "summary_en": "Establishes comprehensive rule-making authority for Central and State Governments covering: dissemination/print costs (Sec 4), PIO designation procedures (Sec 5), application fees (Sec 6), response/copy/electronic-format fees (Sec 7), CIC/SIC salaries (Sec 13/16), appeal procedures (Sec 19), and other implementation matters. Includes specific Chhattisgarh Rules and the current fee structure.",
+      "summary_hi": "केंद्रीय और राज्य सरकारों के लिए व्यापक नियम-निर्माण अधिकार स्थापित करती है, जिसमें शामिल हैं: प्रसार/मुद्रण लागत (धारा 4), PIO पदाभिहित प्रक्रियाएं (धारा 5), आवेदन शुल्क (धारा 6), उत्तर/प्रति/इलेक्ट्रॉनिक-प्रारूप शुल्क (धारा 7), CIC/SIC वेतन (धारा 13/16), अपील प्रक्रियाएं (धारा 19), और अन्य कार्यान्वयन मामले। विशिष्ट छत्तीसगढ़ नियम और वर्तमान शुल्क संरचना शामिल हैं।",
+      "subsections": [
+        {
+          "subsection_id": "28(matters covered)",
+          "title_en": "Matters covered by rule-making power",
+          "title_hi": "नियम-निर्माण शक्ति द्वारा कवर किए गए मामले",
+          "definition_en": "Section 4: cost of dissemination materials, suo motu print costs; Section 5: PIO/SPIO designation and appointment procedures; Section 6: application fees (prescribed amount); Section 7: response procedures, copy and electronic format fees; Sections 13 & 16: salaries and conditions of CIC/SIC members; Section 19: appeal procedures and timelines; other matters as prescribed for implementing the Act.",
+          "definition_hi": "धारा 4: प्रसार सामग्री की लागत, स्वप्रेरणा मुद्रण लागत; धारा 5: PIO/SPIO पदाभिहितकरण और नियुक्ति प्रक्रियाएं; धारा 6: आवेदन शुल्क (निर्धारित राशि); धारा 7: उत्तर प्रक्रियाएं, प्रति और इलेक्ट्रॉनिक प्रारूप शुल्क; धारा 13 और 16: CIC/SIC सदस्यों का वेतन और शर्तें; धारा 19: अपील प्रक्रियाएं और समय-सीमा; अधिनियम कार्यान्वयन हेतु अन्य विहित मामले।"
+        },
+        {
+          "subsection_id": "28(chhattisgarh rules)",
+          "title_en": "Chhattisgarh-specific Rules",
+          "title_hi": "छत्तीसगढ़-विशिष्ट नियम",
+          "definition_en": "RTI (Application Submission) Rules, 2009; RTI (Fees and Charges) Regulations, 2005 (amended 2006, 2012, 2013); RTI (Appeals) Rules, 2006 (amendments 2006, 2011); various departmental guidelines and circulars.",
+          "definition_hi": "RTI (आवेदन प्रस्तुति) नियम, 2009; RTI (शुल्क और प्रभार) विनियम, 2005 (संशोधित 2006, 2012, 2013); RTI (अपील) नियम, 2006 (संशोधन 2006, 2011); विभिन्न विभागीय दिशानिर्देश और परिपत्र।"
+        },
+        {
+          "subsection_id": "28(fee structure)",
+          "title_en": "Current Fee Structure",
+          "title_hi": "वर्तमान शुल्क संरचना",
+          "definition_en": "Application fee: Rs. 10 per application; copy charges: Rs. 2 per page (black & white); electronic format: cost of medium/disc; BPL exemption: no fees for economically poor applicants.",
+          "definition_hi": "आवेदन शुल्क: प्रति आवेदन ₹10; प्रतियों के शुल्क: प्रति पृष्ठ ₹2 (काला और सफेद); इलेक्ट्रॉनिक प्रारूप: माध्यम/डिस्क की लागत; BPL छूट: आर्थिक रूप से गरीब आवेदकों हेतु कोई शुल्क नहीं।"
+        }
+      ],
+      "applies_when": [
+        "Validating fee charged against an application (application fee, copy charges, electronic format costs)",
+        "Applicant claims BPL status — validate fee exemption eligibility",
+        "Query relates to a Chhattisgarh-specific procedural rule rather than the central Act provision"
+      ],
+      "pio_response_note": "When computing fees for a PIO response, apply the current fee structure (Rs. 10 application fee, Rs. 2/page copies, BPL exemption) and verify any BPL claim per applicable state rules before billing the applicant.",
+      "source_reference": "RTI Rule Book, pp. 61-174 (Complete Rules, RTI Application Submission Rules 2009, Fees and Charges Regulations, Appeals Rules 2006)"
+    }
+  ],
+  "validation_helpers": {
+    "deadline_rules": [
+      {
+        "condition": "standard request",
+        "deadline_days": 30,
+        "section": "7(1)"
+      },
+      {
+        "condition": "life or liberty concerned",
+        "deadline_hours": 48,
+        "section": "7(1)"
+      },
+      {
+        "condition": "received via Assistant PIO (CAPIO/SAPIO)",
+        "deadline_days": 35,
+        "section": "5(2)",
+        "note": "30 days + 5 day extension"
+      },
+      {
+        "condition": "third party information involved",
+        "deadline_days": 40,
+        "section": "11(3)"
+      },
+      {
+        "condition": "first appeal",
+        "deadline_days": "30 (extendable to 45 with reasons)",
+        "section": "19(1)-19(5)"
+      },
+      {
+        "condition": "second appeal",
+        "deadline_days": "90 (extendable)",
+        "section": "19(10)"
+      },
+      {
+        "condition": "PIO misses deadline",
+        "consequence": "deemed refusal + information must be provided free of charge",
+        "section": "7(2), 7(6)"
+      }
+    ],
+    "exemption_checklist": [
+      "Identify if any Section 8(1)(a)-(j) ground applies",
+      "If yes, verify Section 8(2) public interest override does not displace the exemption",
+      "If applicable clause is not (a)/(c)/(i), verify Section 8(3) 20-year rule does not force disclosure",
+      "If copyright is the issue, check Section 9 (third-party copyright only, not government copyright)",
+      "If only part of the record is exempt, apply Section 10 severability — do not withhold the whole record",
+      "If information concerns/was supplied by a third party in confidence, trigger Section 11 procedure (notice, 10-day representation window, 40-day decision)",
+      "If the public authority is on the Second Schedule (intelligence/security), check Section 22 — exemption does NOT cover corruption or human rights allegations"
+    ],
+    "fee_structure": {
+      "application_fee_inr": 10,
+      "copy_charge_per_page_bw_inr": 2,
+      "electronic_format": "cost of medium/disc",
+      "bpl_exemption": true,
+      "free_on_pio_default": true,
+      "source_reference": "RTI Rule Book, pp. 61-174; Section 28"
+    },
+    "penalty_quick_reference": {
+      "commission_administrative_penalty": {
+        "amount_per_day_inr": 250,
+        "max_inr": 25000,
+        "section": "20"
+      },
+      "obstruction_of_pio": {
+        "imprisonment_max": "3 months",
+        "fine_max_inr": 250,
+        "section": "23"
+      },
+      "destruction_of_records": {
+        "imprisonment_max": "3 months",
+        "fine_max_inr": 250,
+        "section": "23"
+      },
+      "false_information_by_pio": {
+        "imprisonment_max": "2 years",
+        "fine_max_inr": 500,
+        "section": "23"
+      },
+      "willful_withholding": {
+        "imprisonment_max": "3 months",
+        "fine_max_inr": 250,
+        "section": "23"
+      },
+      "commission_recommended_fine_obstruction": {
+        "max_inr": 25000,
+        "section": "24"
+      },
+      "commission_recommended_fine_destruction_withholding": {
+        "max_inr": 10000,
+        "section": "24"
+      }
+    },
+    "appeal_forum_routing": {
+      "central_public_authority": {
+        "first_appeal": "Senior officer of the public authority",
+        "second_appeal": "Central Information Commission (CIC)"
+      },
+      "state_public_authority": {
+        "first_appeal": "Senior officer of the public authority",
+        "second_appeal": "State Information Commission (SIC)"
+      },
+      "final_recourse": "High Court (writ jurisdiction) after Second Appeal is exhausted — Section 21"
+    }
+  }
+}

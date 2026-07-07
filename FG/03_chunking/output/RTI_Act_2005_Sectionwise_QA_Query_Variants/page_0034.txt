@@ -1,0 +1,29 @@
+## Question variants all map to this one provision
+
+- 1. What does Section 7(8) of the Right to Information Act, 2005 provide?
+- 2. Explain RTI Act Section 7(8): Reasons for rejection.
+- 3. What is Act 7(8) in RTI? I need the rule for 30 days
+- 5. धारा 7(8) का सरल अर्थ क्या है अस्वीकृति के कारण?
+- 4. सूचना का अधिकार अधिनियम, 2005 की धारा 78) में क्या प्रावधान है?
+- 6. RTI Act 7(8) ka rule kya hai? अस्वीकृति के कारण के बारे में बताइए|
+- 7. In this situation: Calculating whether PIO is within statutory response deadline. Does Section 7(8) apply, and what does it say?
+- 8. "7(8) RTI law me kya hai? " "7(8) ka matlab?"
+
+## Answer
+
+English definition: When rejecting a request, the PIO must communicate the reasons, the period within which an appeal may be preferred, and the particulars of the appellate authority
+
+हिंदी परिभाषाः अस्वीकार करते समय, PIO को कारण, अपील की अवधि और अपीलीय प्राधिकरण का विवरण संप्रेषित करना चाहिए| अनुरोध
+
+Retrieval anchors: Reasons for rejection; अस्वीकृति के कारण; 30 days; 48 hours; deemed refusal ; life and liberty further fee; sensorily disabled; free of charge; rejection reasons
+
+## Typical contexts
+
+- Calculating whether PIO is within statutory response deadline
+- PIO missed deadline trigger free of charge and deemed refusal logic
+- Query relates to a person's life or liberty apply 48-hour rule
+- Drafting a rejection must include reasons, appeal window, appellate authority
+
+PIO implementation note: Always check the urgency flag (lifelliberty) first to apply the 48-hour rule instead of 30 If the 3O-day (or 48-hour) deadline has lapsed, the response must note that the information is to be supplied free of charge and that a deemed refusal has occurred, which is independently appealable. days.
+
+Source reference: RTI Rule Book, pp. 13-14

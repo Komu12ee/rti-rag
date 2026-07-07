@@ -1,0 +1,16 @@
+# FAQ Chunk 267
+Document: 500_cgrti
+Source: structured.md
+Pages: 21
+Section: 6.2 CG Online RTI Portal
+Question: Q270. Can ] withdraw RTI application after filing? A: Technically yes, but better to wait for response. If withdrawn, 310 fee is not refunded.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 45
+
+---
+
+## 6.2 CG Online RTI Portal
+
+Q270. Can ] withdraw RTI application after filing? A: Technically yes, but better to wait for response. If withdrawn, 310 fee is not refunded.

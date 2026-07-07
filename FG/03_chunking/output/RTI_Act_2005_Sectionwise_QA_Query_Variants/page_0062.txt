@@ -1,0 +1,26 @@
+## Question variants all map to this one provision
+
+- 1. What does Section 18(procedure) of the Right to Information Act, 2005 provide?
+- 2. Explain RTI Act Section 1 8(procedure): Inquiry procedure steps.
+- 3. What is Act 18(procedure) in RTI? I need the rule for natural justice.
+- 4. सूचना का अधिकार अधिनियम, 2005 की धारा 18(procedure) में क्या प्रावधान है?
+- 5. धारा 18(procedure) का सरल अर्थ क्या है जांच प्रक्रिया के चरण?
+- 6. RTI Act 18lprocedurel ka rule kya hai? जांच प्रक्रिया के चरण के बारे में बताइए|
+- 7. In this situation: Tracking timeline compliance for an ongoing Commission inquiry. Does Section 18(procedure) apply and what does it say?
+- 8. "18(procedure) RTI law me kya hai? "18(procedure) ka matlab? "
+
+## Answer
+
+English definition: Issuance of notice to concerned public authority; opportunity to file written reply; hearing process (oral or written); examination of persons and documents; passing written orders with detailed reasons; decision within 90 days of receipt of appeal. The Commission has powers of a civil court while conducting inquiries
+
+हिंदी परिभाषाः संबंधित लोक प्राधिकरण को नोटिस जारी करना; लिखित जवाब दाखिल करने का अवसर; सुनवाई प्रक्रिया ( मौखिक या लिखित); व्यक्तियों और दस्तावेजों की परीक्षाः कारणों सहित लिखित आदेश पास करनाः अपील की प्राप्ति के 90 दिनों के विनिश्चय| आयोग को जांच के दौरान नागरिक अदालत की शक्तियां प्राप्त हैं| विस्तृत भीतर
+
+Retrieval anchors: Inquiry procedure steps जांच प्रक्रिया के चरण ; natural justice; notice; written reply; hearing; 90 days decision
+
+## Typical contexts
+
+- Tracking timeline compliance for an ongoing Commission inquiry
+
+PIO / implementation noteः If a complaint/appeal has been pending before the Commission beyond 90 days without resolution, for status check, though extensions for cause are recognized in practice. flag
+
+Source reference: RTI Rule Book, pp. 76-96 (Appeal procedures and hearings)

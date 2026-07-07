@@ -1,0 +1,16 @@
+# FAQ Chunk 329
+Document: 500_cgrti
+Source: structured.md
+Pages: 26
+Section: 7.4 Revenue Department RTI Questions
+Question: Q333. "Land revenue -correct amount?" A: Yes. Request: assessment procedure, land classification, revenue rate applicable, bills, arrears.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 45
+
+---
+
+## 7.4 Revenue Department RTI Questions
+
+Q333. "Land revenue -correct amount?" A: Yes. Request: assessment procedure, land classification, revenue rate applicable, bills, arrears.

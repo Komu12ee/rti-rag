@@ -1,0 +1,16 @@
+# FAQ Chunk 77
+Document: 500_cgrti
+Source: structured.md
+Pages: 7-8
+Section: 2.4 Format & Access Methods
+Question: Q80. What if document is in poor condition? A: PIO will provide best available copy. If not reproducible, must inform and may deny copy (but must allow inspection). they
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 48
+
+---
+
+## 2.4 Format & Access Methods
+
+Q80. What if document is in poor condition? A: PIO will provide best available copy. If not reproducible, must inform and may deny copy (but must allow inspection). they

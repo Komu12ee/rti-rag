@@ -1,0 +1,30 @@
+## Question variants all map to this one provision
+
+- 1. What does Section 7(1 ) of the Right to Information Act, 2005 provide?
+- 2. Explain RTI Act Section 7(1 ): Standard 33O-day response 48-hour exception.
+- 4. सूचना का अधिकार अधिनियम, 2005 धारा 71 ) में क्या प्रावधान है?
+- 3. What is Act 7(1) in RTI? I need the rule for 30 days.
+- 5. धारा 71 ) का सरल अर्थ क्या है मानक 30 दिवसीय उत्तर 48-घंटे का अपवादः
+- 6. RTI Act 7(1 ) ka rule kya hai? मानक 30 दिवसीय उत्तर 48-घंटे का अपवाद के बारे में बताइए|
+- 7. In this situation: Calculating whether PIO is within statutory response deadline. Does Section 7(1 ) apply, and what does it say? 8. "7(1) RTI law me kya hai? " "7(1) ka matlab?"
+
+## Answer
+
+English definition: Subject to provisos in Sections 5(2)/6(3), provide information within 30 days on payment of fee, or reject under Sections 8/9. If the information concerns life or physical liberty of a person, provide within 48 hours.
+
+हिंदी परिभाषाः धारा 5(2) /6(3) के प्रावधानों के अधीन, शुल्क के संदाय पर 30 दिनों के सूचना दें, या धारा 89 के अधीन अस्वीकार करें| यदि सूचना किसी व्यक्ति के जीवन या शारीरिक स्वतंत्रता से संबंधित है तो 48 घंटों के भीतर प्रदान करें| भीतर
+
+Retrieval anchors: Standard 3O-day response 48-hour exception; मानक 30 दिवसीय उत्तर 48-घंटे का अपवाद; 30 48 hours; deemed refusal; life and liberty; further fee; sensorily disabled; free of charge; rejection reasons days;
+
+## Typical contexts
+
+- Calculating whether PIO is within statutory response deadline
+- PIO missed deadline trigger free of charge and deemed refusal logic
+- Query relates to a person's life or liberty apply 48-hour rule
+- Drafting a rejection must include reasons, appeal window, appellate authority
+
+charge and that a deemed refusal has occurred, which is independently appealable.
+
+PIO implementation note: Always check the urgency flag (lifelliberty) first to apply the 48-hour rule instead of 30 If the 3O-day (or 48-hour) deadline has lapsed, the response must note that the information is to be supplied free of days.
+
+Source reference: RTI Rule Book, pp. 13-14

@@ -1,0 +1,30 @@
+## Question variants all map to this one provision
+
+- 1. What does Section 4(1 )c) of the Right to Information Act, 2005 provide?
+- 2. Explain RTI Act Section 4(1 )c): Publishing facts on policy formulation.
+- 3. What is Act 4(1)c) in RTI? I need the rule for suo motu disclosure.
+- 5. धारा 4(1 )c) का सरल अर्थ क्या है - नीति निर्माण में तथ्यों का प्रकाशन?
+- 4. सूचना का अधिकार अधिनियम, 2005 की धारा 4(1 )c में क्या प्रावधान है?
+- 6. RTI Act 4(1 )(c) ka rule kya hai? नीति निर्माण में तथ्यों का प्रकाशन के बारे में बताइए|
+- 7. In this situation: Information sought is already part of mandatory suo motu disclosure published manual. Does Section 4(1 )c) apply, and what does it say?
+- 8. "4(1)(c) RTI law me kya hai?" / "4(1 )(c) ka matlab? "
+
+## Answer
+
+English definition: Publish all relevant facts while formulating important policies or announcing decisions affecting the public.
+
+हिंदीं परिभाषाः महत्त्वपूर्ण नीतियों की विरचना करते समय या जनता को प्रभावित करने वाले विनिश्चयों की घोषणा करते समय सभी सुसंगत तथ्यों को प्रकाशित करेगा|
+
+Retrieval anchors: Publishing facts on policy formulation; नीति निर्माण में तथ्यों का प्रकाशन; suo motu disclosure; proactive disclosure; record maintenance; computerisation; 17 categories; 120 manual publication days;
+
+## Typical contexts
+
+- Information sought is already part of mandatory suo motu disclosure published manual
+- Determining whether refusal can be justified when information should already be publicly available
+- Validating whether public authority has fulfilled proactive disclosure obligations
+
+PIO implementation note: Before processing as a fresh RTI request, check whether the information is already covered under the public authoritys Section 4(1 )(b) suo motu disclosure manual website if so, the PIO response should direct the applicant to that published source.
+
+Source reference: RTI Rule Book, pp. 6-1 1
+
+RTI Act 2005 Section wise Q&A / Query Variant Guide

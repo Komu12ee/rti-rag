@@ -1,0 +1,16 @@
+# FAQ Chunk 252
+Document: 500_cgrti
+Source: structured.md
+Pages: 20
+Section: Chhattisgarh Government & State RTI Details
+Question: Q255. What is the office hours of Chhattisgarh SIC? A: Typically 10 AM to 5 PM, MondayFriday. Closed on weekends and public holidays. Check website for exact hours.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 58
+
+---
+
+## Chhattisgarh Government & State RTI Details
+
+Q255. What is the office hours of Chhattisgarh SIC? A: Typically 10 AM to 5 PM, MondayFriday. Closed on weekends and public holidays. Check website for exact hours.

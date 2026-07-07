@@ -1,0 +1,29 @@
+## Question variants all map to this one provision
+
+- 1. What does Section 19(burden of proof) of the Right to Information Act, 2005 provide?
+- 2. Explain RTI Act Section 19(burden of proof: Burden of proof on PIO.
+- 3. What is Act 19(burden of proof) in RTI? I need the rule for first appeal.
+- 4. सूचना का अधिकार अधिनियम, 2005 धारा 19burden of proof) में क्या प्रावधान है?
+- 5. धारा 19(burden of proof) का सरल अर्थ क्या है PIO पर साबित करने का भार?
+- 6. RTI Act 19burden of proof) ka rule kya hai? PIO पर साबित करने का भार के बारे में बताइए|
+- 7. In this situation: Applicant did not receive a decision within Section 7 timelines, or is aggrieved by a PIO decision eligible for First Appeal. Does Section 19(burden of proof) apply, and what does it say?
+- 8. "19(burden of proof) RTI law me kya hai? " "19(burden of proof) ka matlab? "
+
+## Answer
+
+English definition: In any appeal proceeding the onus to prove that the denial of a request was justified lies on the CPIOISPIO who denied the request.
+
+हिंदी परिभाषाः किसी अपील कार्यवाही में, यह साबित करने का भार कि को अस्वीकार करना न्यायोचित था, उस CPIOISPIO पर होगा जिसने से इनकार किया| अनुरोध अनुरोध
+
+Retrieval anchors: Burden of proof on PIO; PIO पर साबित करने का भार; first appeal; second appeal; 30 days 45 days; 90 days; senior officer; appellate authority; burden of proof
+
+## Typical contexts
+
+- Applicant did not receive a decision within Section 7 timelines, or is aggrieved by a PIO decision eligible for First Appeal
+- Drafting any rejection must inform applicant of appeal rights, forum, and timeline
+- First Appeal decision receivedllapsed and applicant wishes to escalate eligible for Second Appeal
+- Evaluating whether a PIO's stated justification for refusal meets the evidentiary burden
+
+PIO implementation note: Every PIO rejection or partial disclosure response MUST cite the First Appeal forum (senior officer of the public authority) and the 3O-day appeal window per Section 19(1) read with Section 7(8). The PIO bears the burden of proof for any denial if challenged in appeal.
+
+Source reference: RTI Rule Book, pp. 76-96 (Appeals Rules 2006 and amendments)

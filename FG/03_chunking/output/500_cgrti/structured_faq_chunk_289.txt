@@ -1,0 +1,16 @@
+# FAQ Chunk 289
+Document: 500_cgrti
+Source: structured.md
+Pages: 23
+Section: 6.5 CG Government Websites & Online Systems
+Question: Q292. How do I file RTI for cgstate portal information? A: File to Department of Information Technology (DIT) for portal maintenance, or specific department for content.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 48
+
+---
+
+## 6.5 CG Government Websites & Online Systems
+
+Q292. How do I file RTI for cgstate portal information? A: File to Department of Information Technology (DIT) for portal maintenance, or specific department for content.

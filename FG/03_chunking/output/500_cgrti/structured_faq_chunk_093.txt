@@ -1,0 +1,16 @@
+# FAQ Chunk 93
+Document: 500_cgrti
+Source: structured.md
+Pages: 9
+Section: 3.l Legal Framework & Interpretation
+Question: Q95. Is RTI fee an application fee or information fee? A: Application fee only. You pay 310 to register request. Copy charges are separate.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 40
+
+---
+
+## 3.l Legal Framework & Interpretation
+
+Q95. Is RTI fee an application fee or information fee? A: Application fee only. You pay 310 to register request. Copy charges are separate.

@@ -1,0 +1,16 @@
+# FAQ Chunk 377
+Document: 500_cgrti
+Source: structured.md
+Pages: 29
+Section: SECTION lO: APPEAL & ESCALATION COMPLEX QUESTIONS
+Question: Q380. "Government delays despite SIC order - legal recourse?" A: File High Court contempt petition. Non compliance with SIC order is serious breach.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 60
+
+---
+
+## SECTION lO: APPEAL & ESCALATION COMPLEX QUESTIONS
+
+Q380. "Government delays despite SIC order - legal recourse?" A: File High Court contempt petition. Non compliance with SIC order is serious breach.

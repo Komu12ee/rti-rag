@@ -1,0 +1,16 @@
+# FAQ Chunk 248
+Document: 500_cgrti
+Source: structured.md
+Pages: 20
+Section: Chhattisgarh Government & State RTI Details
+Question: Q251. Where is Chhattisgarh State Information Commission located? A: North Block, Sector 19, Naya Raipur Raipur, Chhattisgarh 492002
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 46
+
+---
+
+## Chhattisgarh Government & State RTI Details
+
+Q251. Where is Chhattisgarh State Information Commission located? A: North Block, Sector 19, Naya Raipur Raipur, Chhattisgarh 492002

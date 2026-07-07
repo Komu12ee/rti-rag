@@ -1,0 +1,16 @@
+# FAQ Chunk 99
+Document: 500_cgrti
+Source: structured.md
+Pages: 9
+Section: 3.2 Procedural Technicalities
+Question: Q102. Can PIO demand "why" for information? A: No, Section 6(2) explicitly says reason is NOT required. Asking why is violation.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 42
+
+---
+
+## 3.2 Procedural Technicalities
+
+Q102. Can PIO demand "why" for information? A: No, Section 6(2) explicitly says reason is NOT required. Asking why is violation.

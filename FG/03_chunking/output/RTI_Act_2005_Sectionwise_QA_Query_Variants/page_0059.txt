@@ -1,0 +1,27 @@
+## Question variants all map to this one provision
+
+- 1. What does Section 16(qualifications) of the Right to Information Act, 2005 provide?
+- 2. Explain RTI Act Section 1 6(qualifications): Qualifications.
+- 4. सूचना का अधिकार अधिनियम, 2005 धारा 16(qualifications ) में क्या प्रावधान है?
+- 3. What is Act 1 6(qualifications) in RTI? I need the rule for state secretary rank.
+- 5. धारा 16(qualifications) का सरल अर्थ क्या है - योग्यताएं?
+- 6. RTI Act 16(qualifications ) ka rule kya hai? योग्यताएं के बारे में बताइए|
+- 7. In this situation: Query about eligibilitylqualification of a State Information Commissioner. Does Section 16(qualifications) apply, and what does it say?
+- 8. "16(qualifications) RTI law me kya hai?" "16(qualifications ) ka matlab?
+
+## Answer
+
+English definition: State CIC must have held office equivalent to Secretary to State Government, OR held office of Judge of High Court. State ICs are persons with domain expertise in law management or social and political affairs; appointment by State Government in consultation with prescribed officials.
+
+हिंदी परिभाषाः राज्य CIC को राज्य सरकार के सचिव के समकक्ष पद पर, या उच्च न्यायालय न्यायाधीश के पद पर रहा होना चाहिए| राज्य ICs विधि, प्रबंधन या सामाजिक राजनीतिक मामलों में विशेषज्ञता वाले व्यक्ति हैंः नियुक्ति निर्धारित अधिकारियों के परामर्श में राज्य सरकार द्वारा|
+
+Retrieval anchors: Qualifications; योग्यताएं; state secretary rank; high court judge; domain expertise; 2019 amendment state
+
+## Typical contexts
+
+- Query about eligibility/qualification of a State Information Commissioner
+- Tenure disputes for State CICIIC apply 2019 amendment, not original fixed term
+
+PIO implementation noteः Same caution as Section 13 cite the post 2019 prescribed tenure regime as current law for State Commissioners.
+
+Source reference: RTI Rule Book, Section 16 (cross reference to 2019 Amendment)

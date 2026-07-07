@@ -1,0 +1,16 @@
+# FAQ Chunk 371
+Document: 500_cgrti
+Source: structured.md
+Pages: 29
+Section: SECTION lO: APPEAL & ESCALATION COMPLEX QUESTIONS
+Question: Q374. "High Court dismissed writ - Supreme Court appeal?" A: Yes file Special Leave Petition to Supreme Court if High Court decision is significantly wrong
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 52
+
+---
+
+## SECTION lO: APPEAL & ESCALATION COMPLEX QUESTIONS
+
+Q374. "High Court dismissed writ - Supreme Court appeal?" A: Yes file Special Leave Petition to Supreme Court if High Court decision is significantly wrong

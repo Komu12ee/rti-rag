@@ -1,0 +1,16 @@
+# FAQ Chunk 34
+Document: 500_cgrti
+Source: structured.md
+Pages: 4
+Section: L.5 PIO - Public Information Officer
+Question: Q37. How do I find the PIO of a department? A: Check the departments website name, email, phone), ask at department office, or call Suchna Aayog helpline.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 52
+
+---
+
+## L.5 PIO - Public Information Officer
+
+Q37. How do I find the PIO of a department? A: Check the departments website name, email, phone), ask at department office, or call Suchna Aayog helpline.

@@ -23,6 +23,8 @@ def _default_paths() -> dict:
             )
         ),
         "files_mapping": root.parent / "files.txt",
+        "embedding_model": os.getenv("EMBEDDING_MODEL", str(root / "models" / "bge-m3")),
+        "reranker_model": os.getenv("RERANKER_MODEL", str(root / "models" / "bge-reranker-v2-m3")),
         "encode_batch_size": 8,
         "upsert_batch_size": 100,
         "max_length": 1024,
@@ -34,6 +36,8 @@ CHUNK_DIR = DEFAULTS["chunk_dir"]
 COLLECTION_NAME = DEFAULTS["collection"]
 QDRANT_LOCAL_PATH = DEFAULTS["qdrant_local_path"]
 FILES_MAPPING = DEFAULTS["files_mapping"]
+EMBEDDING_MODEL = DEFAULTS["embedding_model"]
+RERANKER_MODEL = DEFAULTS["reranker_model"]
 ENCODE_BATCH_SIZE = DEFAULTS["encode_batch_size"]
 UPSERT_BATCH_SIZE = DEFAULTS["upsert_batch_size"]
 MAX_LENGTH = DEFAULTS["max_length"]
@@ -73,12 +77,12 @@ def get_actual_filename(chunk_source: str) -> str:
     return f"{chunk_source}.pdf"
 
 # ── Load models ────────────────────────────────────────────────
-print("[Embeddings] Loading BGE-M3 model...")
-model = BGEM3FlagModel("BAAI/bge-m3", use_fp16=True)
+print(f"[Embeddings] Loading BGE-M3 model from: {EMBEDDING_MODEL}")
+model = BGEM3FlagModel(EMBEDDING_MODEL, use_fp16=True)
 model.return_sparse = True
 
-print("[Embeddings] Loading reranker model...")
-reranker = FlagReranker("BAAI/bge-reranker-v2-m3", use_fp16=True)
+print(f"[Embeddings] Loading reranker model from: {RERANKER_MODEL}")
+reranker = FlagReranker(RERANKER_MODEL, use_fp16=True)
 
 # ── Connect to Qdrant (local embedded mode) ────────────────────
 print(f"[Embeddings] Connecting to local Qdrant at {QDRANT_LOCAL_PATH}...")

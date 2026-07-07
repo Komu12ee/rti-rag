@@ -1,0 +1,16 @@
+# FAQ Chunk 226
+Document: 500_cgrti
+Source: structured.md
+Pages: 18-19
+Section: 5.4 Infrastructure & Public Works Scenarios
+Question: Q230. "Parking lot built but vehicles not allowed why?" A: Request: construction cost, capacity designed, operational rules, reason for restrictions fee structure.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 47
+
+---
+
+## 5.4 Infrastructure & Public Works Scenarios
+
+Q230. "Parking lot built but vehicles not allowed why?" A: Request: construction cost, capacity designed, operational rules, reason for restrictions fee structure.

@@ -1,0 +1,16 @@
+# FAQ Chunk 230
+Document: 500_cgrti
+Source: structured.md
+Pages: 19
+Section: 5.5 Appointments & Recruitment Scenarios
+Question: Q234. "Promotion given to junior despite Tm senior. Why?" A: Request: promotion criteria, seniority list, applicants, marks grades, selection committee minutes.
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 52
+
+---
+
+## 5.5 Appointments & Recruitment Scenarios
+
+Q234. "Promotion given to junior despite Tm senior. Why?" A: Request: promotion criteria, seniority list, applicants, marks grades, selection committee minutes.

@@ -1,0 +1,16 @@
+# FAQ Chunk 379
+Document: 500_cgrti
+Source: structured.md
+Pages: 29
+Section: BONUS SECTION: COMMON MISTAKES & HOWTO AVOID
+Question: Q382. "PIO said "not in prescribed format" valid?" A: any format works. Appeal immediately if refused on format grounds. No,
+Part: 1/1
+Kind: faq
+Has answer: no
+Content tokens: 52
+
+---
+
+## BONUS SECTION: COMMON MISTAKES & HOWTO AVOID
+
+Q382. "PIO said "not in prescribed format" valid?" A: any format works. Appeal immediately if refused on format grounds. No,
