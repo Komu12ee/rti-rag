@@ -3,6 +3,7 @@
 const STORAGE_KEY = 'cg_rti_assistant_conversations_v1';
 const ACTIVE_KEY = 'cg_rti_assistant_active_conversation_v1';
 const PIO_MODE_KEY = 'cg_rti_assistant_pio_mode_v1';
+const LANGUAGE_MODE_KEY = 'cg_rti_assistant_language_mode_v1';
 const MAX_CONTEXT_MESSAGES = 8;
 const MAX_HISTORY_ITEMS = 24;
 
@@ -52,6 +53,7 @@ const ui = {
   historyList: $('history-list'),
   btnInit: $('btn-init'),
   btnSend: $('btn-send'),
+  languageOptions: Array.from(document.querySelectorAll('[data-language-mode]')),
   pioModeToggle: $('pio-mode-toggle'),
   pioModeState: $('pio-mode-state'),
   headModeLabel: $('head-mode-label'),
@@ -91,6 +93,7 @@ const state = {
   initialized: false,
   loading: false,
   pioMode: localStorage.getItem(PIO_MODE_KEY) === 'true',
+  languageMode: normaliseLanguageMode(localStorage.getItem(LANGUAGE_MODE_KEY)),
   pdfBlobUrl: null,
   conversations: [],
   activeId: null
@@ -159,17 +162,19 @@ const api = {
   health: () => api.request('GET', '/api/health'),
   init: () => api.request('POST', '/api/init'),
   dbStatus: () => api.request('GET', '/api/db-status'),
-query: (query, numResults, pioMode) =>
-  api.request('POST', '/api/query', {
-    query,
-    num_results: numResults,
-    pio_mode: Boolean(pioMode)
-  }),
-  queryStream: (query, numResults, pioMode, handlers) =>
+  query: (query, numResults, pioMode, answerLanguage) =>
+    api.request('POST', '/api/query', {
+      query,
+      num_results: numResults,
+      pio_mode: Boolean(pioMode),
+      answer_language: normaliseLanguageMode(answerLanguage)
+    }),
+  queryStream: (query, numResults, pioMode, answerLanguage, handlers) =>
     api.streamRequest('/api/query/stream', {
       query,
       num_results: numResults,
-      pio_mode: Boolean(pioMode)
+      pio_mode: Boolean(pioMode),
+      answer_language: normaliseLanguageMode(answerLanguage)
     }, handlers),
   pioPrecedents: (advisoryId, numResults = 5) =>
     api.request('POST', '/api/pio/precedents', {
@@ -200,6 +205,16 @@ function nowIso() {
 
 function newId() {
   return `chat-${Date.now()}-${Math.random().toString(16).slice(2)}`;
+}
+
+function normaliseLanguageMode(mode) {
+  return String(mode || '').toLowerCase() === 'hi' ? 'hi' : 'en';
+}
+
+function answerLanguageInstruction(mode) {
+  return normaliseLanguageMode(mode) === 'hi'
+    ? 'Answer in Hindi using Devanagari script. Keep official names, emails, office codes, Acts, and section numbers unchanged.'
+    : 'Answer in English. Keep official names, emails, office codes, Acts, and section numbers unchanged.';
 }
 
 function escapeHtml(value) {
@@ -894,6 +909,24 @@ function setPioMode(enabled) {
   updatePioModeUi();
 }
 
+function updateLanguageModeUi() {
+  const mode = normaliseLanguageMode(state.languageMode);
+  state.languageMode = mode;
+  document.documentElement.lang = mode === 'hi' ? 'hi' : 'en';
+
+  ui.languageOptions.forEach(button => {
+    const active = button.dataset.languageMode === mode;
+    button.classList.toggle('is-active', active);
+    button.setAttribute('aria-pressed', active ? 'true' : 'false');
+  });
+}
+
+function setLanguageMode(mode) {
+  state.languageMode = normaliseLanguageMode(mode);
+  localStorage.setItem(LANGUAGE_MODE_KEY, state.languageMode);
+  updateLanguageModeUi();
+}
+
 function autoResize() {
   ui.queryInput.style.height = 'auto';
   ui.queryInput.style.height = `${Math.min(ui.queryInput.scrollHeight, 160)}px`;
@@ -1033,6 +1066,7 @@ function buildScopedQuery(userText) {
   return [
     `Current user question: ${backendQuestion}`,
     recent ? `Recent conversation context:\n${recent}` : '',
+    `Required answer language:\n${answerLanguageInstruction(state.languageMode)}`,
     `Assistant role and answer scope:\n${
       state.pioMode ? PIO_ASSISTANT_SCOPE : ASSISTANT_SCOPE
     }`
@@ -1104,6 +1138,7 @@ async function sendQuery() {
       scopedQuery,
       5,
       state.pioMode,
+      state.languageMode,
       {
         status(data) {
           if (data.message) disableQueryBar(data.message);
@@ -1428,6 +1463,9 @@ function setupEvents() {
   ui.clearChat.addEventListener('click', clearActiveChat);
   ui.btnInit.addEventListener('click', initPipeline);
   ui.btnSend.addEventListener('click', sendQuery);
+  ui.languageOptions.forEach(button => {
+    button.addEventListener('click', () => setLanguageMode(button.dataset.languageMode));
+  });
   ui.pioModeToggle.addEventListener('change', () => setPioMode(ui.pioModeToggle.checked));
   ui.queryInput.addEventListener('input', autoResize);
   ui.queryInput.addEventListener('keydown', event => {
@@ -1452,6 +1490,7 @@ function setupEvents() {
 function boot() {
   loadConversations();
   updatePioModeUi();
+  updateLanguageModeUi();
   setupEvents();
   renderAll();
   initPipeline();

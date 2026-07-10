@@ -7,6 +7,7 @@ Usage:
     python embeddings_production.py                  # Index new chunks
     python embeddings_production.py --query         # Interactive query mode
     python embeddings_production.py --recreate      # Delete and rebuild DB
+    python embeddings_production.py --force         # Alias for --recreate
     python embeddings_production.py --status        # Show indexing status
 """
 
@@ -235,6 +236,48 @@ atexit.register(_cleanup_qdrant)
 # Incremental Indexing
 # ════════════════════════════════════════════════════════════════
 
+def split_chunk_header(raw_text: str) -> Tuple[Dict[str, str], str]:
+    """Return chunk header metadata and body text."""
+    marker = "\n---\n"
+    if marker not in raw_text:
+        return {}, raw_text.strip()
+
+    header_text, body = raw_text.split(marker, 1)
+    headers: Dict[str, str] = {}
+
+    for line in header_text.splitlines():
+        line = line.strip()
+        if not line or line.startswith("#") or ":" not in line:
+            continue
+
+        key, value = line.split(":", 1)
+        headers[key.strip().casefold()] = value.strip()
+
+    return headers, body.strip()
+
+
+def get_chunk_source(
+    chunk_file: Path,
+    headers: Dict[str, str],
+    fallback_doc_name: str
+) -> str:
+    """
+    Resolve the original document/PDF stem for a chunk.
+
+    FAQ and stage2 chunk files are often named structured*_chunk_NNN.txt, so the
+    filename stem is not enough. Prefer the chunk header written by the chunker,
+    then the parent output folder, and only then the legacy filename-derived name.
+    """
+    header_document = headers.get("document", "").strip()
+    if header_document:
+        return Path(header_document).stem
+
+    if chunk_file.parent != CHUNK_DIR and chunk_file.parent.name:
+        return chunk_file.parent.name
+
+    return fallback_doc_name
+
+
 def find_new_chunks() -> List[Path]:
     """Find chunk files not yet indexed (recursively in subdirectories)."""
     if not CHUNK_DIR.exists():
@@ -277,8 +320,8 @@ def index_new_chunks():
     chunks_data = []
     for chunk_file in new_chunks:
         try:
-            text = chunk_file.read_text(encoding='utf-8').strip()
-            
+            raw_text = chunk_file.read_text(encoding='utf-8').strip()
+
             # Extract metadata from filename
             name = chunk_file.stem
             chunk_marker = "_chunk_"
@@ -287,14 +330,18 @@ def index_new_chunks():
             else:
                 doc_name = name
                 chunk_id = "0"
-            
+
+            headers, _body = split_chunk_header(raw_text)
+            source = get_chunk_source(chunk_file, headers, doc_name)
+
             # Store relative path for manifest tracking
             relative_path = str(chunk_file.relative_to(CHUNK_DIR))
-            
+
             chunks_data.append({
                 "file": relative_path,  # Use relative path for manifest
-                "text": text,
-                "source": doc_name,
+                "text": raw_text,
+                "source": source,
+                "chunk_source": doc_name,
                 "chunk": chunk_id
             })
         except Exception as e:
@@ -339,6 +386,7 @@ def index_new_chunks():
         payload = {
             "text": chunk_data["text"],
             "source": chunk_data["source"],
+            "chunk_source": chunk_data["chunk_source"],
             "chunk": chunk_data["chunk"],
             "file": chunk_data["file"]
         }
@@ -460,7 +508,7 @@ def run_query_loop():
     if not client.collection_exists(COLLECTION_NAME):
         logger.error(f"Collection '{COLLECTION_NAME}' not found. Run indexing first.")
         return
-    
+
     logger.info("\n" + "="*70)
     logger.info("Ready for queries. Type 'exit' to quit.")
     logger.info("="*70 + "\n")
@@ -591,7 +639,7 @@ def main():
     )
     parser.add_argument('--query', action='store_true',
                        help='Enter interactive query mode')
-    parser.add_argument('--recreate', action='store_true',
+    parser.add_argument('--recreate', '--force', action='store_true',
                        help='Delete and recreate collection')
     parser.add_argument('--status', action='store_true',
                        help='Show indexing status')
@@ -605,8 +653,9 @@ def main():
             client.delete_collection(collection_name=COLLECTION_NAME)
             manifest.clear()
             logger.info("✓ Collection deleted and manifest reset")
-        return
-    
+        if not client.collection_exists(COLLECTION_NAME):
+            manifest.clear()
+
     # Handle status
     if args.status:
         show_status()

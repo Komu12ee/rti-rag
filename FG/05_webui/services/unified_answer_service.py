@@ -21,6 +21,41 @@ def _contains_hindi(text: str) -> bool:
     return bool(re.search(r"[\u0900-\u097F]", text or ""))
 
 
+def normalise_answer_language(value: Any = "en") -> str:
+    text = str(value or "en").strip().casefold()
+    hindi_labels = {
+        "hi",
+        "hin",
+        "hindi",
+        "\u0939\u093f\u0902\u0926\u0940",
+        "\u0939\u093f\u0928\u094d\u0926\u0940",
+    }
+    return "hi" if text in hindi_labels else "en"
+
+
+def _wants_hindi(answer_language: Any) -> bool:
+    return normalise_answer_language(answer_language) == "hi"
+
+
+def answer_language_instruction(answer_language: Any) -> str:
+    if _wants_hindi(answer_language):
+        return (
+            "Reply in Hindi using Devanagari script. Keep official names, "
+            "emails, office codes, Acts, section numbers, and quoted source "
+            "terms unchanged."
+        )
+    return (
+        "Reply in English. Keep official names, emails, office codes, Acts, "
+        "section numbers, and quoted source terms unchanged."
+    )
+
+
+def with_answer_language_instruction(query: str, answer_language: Any) -> str:
+    clean_query = str(query or "").strip()
+    instruction = answer_language_instruction(answer_language)
+    return f"{clean_query}\n\nAnswer language instruction: {instruction}"
+
+
 def _safe_text(value: Any, fallback: str = "Not listed") -> str:
     text = str(value or "").strip()
     return text if text else fallback
@@ -57,13 +92,19 @@ def _build_sources(result: UnifiedRetrievalResult) -> list[dict[str, Any]]:
     return sources
 
 
-def _general_rti_knowledge_answer(query: str) -> tuple[str, bool]:
+def _general_rti_knowledge_answer(
+    query: str,
+    answer_language: Any = "en",
+) -> tuple[str, bool]:
     prompt = f"""
 You are the Chhattisgarh RTI Assistant.
 
 No relevant local source was retrieved for this question. Answer from general
 RTI Act knowledge and clearly avoid claiming that the answer is based on a
 local database.
+
+Answer language:
+{answer_language_instruction(answer_language)}
 
 Keep the answer practical, concise, and safe. If the user asks about obtaining
 information under RTI, explain the lawful RTI route and avoid making factual
@@ -88,7 +129,7 @@ User question:
     if answer:
         return answer, True
 
-    if _contains_hindi(query):
+    if _wants_hindi(answer_language):
         return (
             "स्थानीय स्रोतों से संबंधित सामग्री नहीं मिली। सामान्य RTI जानकारी "
             "के अनुसार आप संबंधित लोक प्राधिकरण के PIO को धारा 6 के तहत "
@@ -108,12 +149,13 @@ User question:
 def _ambiguous_officer_answer(
     evidence: list[dict[str, Any]],
     query: str,
+    answer_language: Any = "en",
 ) -> str:
     query_name = (
         evidence[0].get("metadata", {}).get("_name_query", "")
     )
 
-    if _contains_hindi(query):
+    if _wants_hindi(answer_language):
         lines = [
             f'"{query_name}" नाम से एक से अधिक अधिकारी मिलते हैं।',
             "",
@@ -130,14 +172,28 @@ def _ambiguous_officer_answer(
             "Possible matches:",
         ]
 
+    field_labels = (
+        {
+            "role": "भूमिका",
+            "email": "ईमेल",
+            "district": "जिला",
+        }
+        if _wants_hindi(answer_language)
+        else {
+            "role": "Role",
+            "email": "Email",
+            "district": "District",
+        }
+    )
+
     for index, item in enumerate(evidence[:5], start=1):
         row = item.get("metadata") or {}
         lines.extend(
             [
                 f"{index}. {_safe_text(row.get('officer_name'))}",
-                f"   Role: {_safe_text(row.get('rti_role'))}",
-                f"   Email: {_safe_text(row.get('email'))}",
-                f"   District: {_safe_text(row.get('district_name') or row.get('district'))}",
+                f"   {field_labels['role']}: {_safe_text(row.get('rti_role'))}",
+                f"   {field_labels['email']}: {_safe_text(row.get('email'))}",
+                f"   {field_labels['district']}: {_safe_text(row.get('district_name') or row.get('district'))}",
             ]
         )
 
@@ -148,6 +204,7 @@ def _directory_evidence_answer(
     evidence: list[dict[str, Any]],
     query: str,
     source_label: str,
+    answer_language: Any = "en",
 ) -> str:
     """
     Render both PostgreSQL and PIO-Qdrant officer records deterministically.
@@ -156,7 +213,7 @@ def _directory_evidence_answer(
     accidental changes to official contact information.
     """
     if not evidence:
-        if _contains_hindi(query):
+        if _wants_hindi(answer_language):
             return (
                 "दिए गए विवरण के आधार पर सक्रिय CG RTI Officer Registry में "
                 "कोई मिलान रिकॉर्ड नहीं मिला। कार्यालय/स्कूल का नाम, जिला, "
@@ -170,9 +227,13 @@ def _directory_evidence_answer(
 
     first_metadata = evidence[0].get("metadata") or {}
     if first_metadata.get("_lookup_ambiguous"):
-        return _ambiguous_officer_answer(evidence=evidence, query=query)
+        return _ambiguous_officer_answer(
+            evidence=evidence,
+            query=query,
+            answer_language=answer_language,
+        )
 
-    is_hindi = _contains_hindi(query)
+    is_hindi = _wants_hindi(answer_language)
     source_is_qdrant = any(
         item.get("mode") == "PIO_QDRANT"
         for item in evidence
@@ -192,6 +253,33 @@ def _directory_evidence_answer(
         )
 
     lines = [heading + ":", ""]
+    field_labels = (
+        {
+            "role": "भूमिका",
+            "officer": "अधिकारी",
+            "email": "ईमेल",
+            "designation": "पदनाम",
+            "office": "कार्यालय",
+            "office_code": "कार्यालय कोड",
+            "department": "विभाग",
+            "district": "जिला",
+            "address": "पता",
+            "directory_updated": "निर्देशिका अपडेट",
+        }
+        if is_hindi
+        else {
+            "role": "Role",
+            "officer": "Officer",
+            "email": "Email",
+            "designation": "Designation",
+            "office": "Office",
+            "office_code": "Office code",
+            "department": "Department",
+            "district": "District",
+            "address": "Address",
+            "directory_updated": "Directory data updated",
+        }
+    )
 
     for index, item in enumerate(evidence[:5], start=1):
         row = item.get("metadata") or {}
@@ -203,23 +291,23 @@ def _directory_evidence_answer(
 
         lines.extend(
             [
-                f"{index}. Role: {_safe_text(row.get('rti_role'))}",
-                f"   Officer: {_safe_text(row.get('officer_name'))}",
-                f"   Email: {_safe_text(row.get('email'))}",
-                f"   Designation: {_safe_join(designation)}",
-                f"   Office: {_safe_join(office)}",
-                f"   Office code: {_safe_text(row.get('office_code'))}",
-                f"   Department: {_safe_join(department)}",
-                f"   District: {_safe_join(district)}",
+                f"{index}. {field_labels['role']}: {_safe_text(row.get('rti_role'))}",
+                f"   {field_labels['officer']}: {_safe_text(row.get('officer_name'))}",
+                f"   {field_labels['email']}: {_safe_text(row.get('email'))}",
+                f"   {field_labels['designation']}: {_safe_join(designation)}",
+                f"   {field_labels['office']}: {_safe_join(office)}",
+                f"   {field_labels['office_code']}: {_safe_text(row.get('office_code'))}",
+                f"   {field_labels['department']}: {_safe_join(department)}",
+                f"   {field_labels['district']}: {_safe_join(district)}",
             ]
         )
 
         if address:
-            lines.append(f"   Address: {_safe_text(address)}")
+            lines.append(f"   {field_labels['address']}: {_safe_text(address)}")
 
         if source_is_qdrant:
             lines.append(
-                f"   Directory data updated: "
+                f"   {field_labels['directory_updated']}: "
                 f"{_safe_text(row.get('source_generated_at'))}"
             )
 
@@ -229,7 +317,11 @@ def _directory_evidence_answer(
     return "\n".join(lines)
 
 
-def _officer_answer(result: UnifiedRetrievalResult, query: str) -> str:
+def _officer_answer(
+    result: UnifiedRetrievalResult,
+    query: str,
+    answer_language: Any = "en",
+) -> str:
     """
     PostgreSQL always has priority; pio_directory_v1 is only used when PG
     supplied no rows.
@@ -239,17 +331,19 @@ def _officer_answer(result: UnifiedRetrievalResult, query: str) -> str:
             result.postgres_evidence,
             query=query,
             source_label="postgres",
+            answer_language=answer_language,
         )
 
     return _directory_evidence_answer(
         result.pio_qdrant_evidence,
         query=query,
         source_label="pio_qdrant",
+        answer_language=answer_language,
     )
 
 
-def _no_legal_context_answer(query: str) -> str:
-    if _contains_hindi(query):
+def _no_legal_context_answer(query: str, answer_language: Any = "en") -> str:
+    if _wants_hindi(answer_language):
         return "इस प्रश्न के लिए संबंधित कानूनी संदर्भ प्राप्त नहीं हुआ।"
     return "No related legal context was retrieved for this question."
 
@@ -271,11 +365,12 @@ def _generate_legal_answer(
     query: str,
     result: UnifiedRetrievalResult,
     generate_answer_fn: Callable[[str, list[dict[str, Any]]], str] | None,
+    answer_language: Any = "en",
 ) -> tuple[str, bool]:
     legal_query, context_results = _qdrant_generation_inputs(query, result)
 
     if not context_results:
-        return _no_legal_context_answer(query), False
+        return _no_legal_context_answer(query, answer_language), False
 
     if generate_answer_fn is None:
         return (
@@ -284,7 +379,11 @@ def _generate_legal_answer(
             False,
         )
 
-    answer = str(generate_answer_fn(legal_query, context_results) or "").strip()
+    answer_query = with_answer_language_instruction(
+        legal_query,
+        answer_language,
+    )
+    answer = str(generate_answer_fn(answer_query, context_results) or "").strip()
     if not answer:
         raise RuntimeError("Existing RAG generate_answer() returned an empty answer.")
 
@@ -295,8 +394,9 @@ def _combine_hybrid_answer(
     officer_answer: str,
     legal_answer: str,
     query: str,
+    answer_language: Any = "en",
 ) -> str:
-    if _contains_hindi(query):
+    if _wants_hindi(answer_language):
         return (
             "अधिकारी जानकारी:\n"
             f"{officer_answer}\n\n"
@@ -316,6 +416,7 @@ def generate_unified_answer(
     query: str,
     result: UnifiedRetrievalResult,
     generate_answer_fn: Callable[[str, list[dict[str, Any]]], str] | None = None,
+    answer_language: Any = "en",
 ) -> UnifiedAnswer:
     """
     POSTGRES:
@@ -327,6 +428,7 @@ def generate_unified_answer(
     HYBRID:
         Officer result (PG -> PIO Qdrant fallback) plus legal RAG.
     """
+    answer_language = normalise_answer_language(answer_language)
     route = result.resolution.final.route
     sources = _build_sources(result)
 
@@ -337,6 +439,7 @@ def generate_unified_answer(
                     query=query,
                     result=result,
                     generate_answer_fn=generate_answer_fn,
+                    answer_language=answer_language,
                 )
                 if used_llm:
                     return UnifiedAnswer(
@@ -351,7 +454,10 @@ def generate_unified_answer(
                     f"{type(error).__name__}: {error}"
                 )
 
-        answer, used_llm = _general_rti_knowledge_answer(query)
+        answer, used_llm = _general_rti_knowledge_answer(
+            query,
+            answer_language=answer_language,
+        )
         return UnifiedAnswer(
             answer=answer,
             used_llm=used_llm,
@@ -361,7 +467,11 @@ def generate_unified_answer(
 
     if route == Route.POSTGRES:
         return UnifiedAnswer(
-            answer=_officer_answer(result, query),
+            answer=_officer_answer(
+                result,
+                query,
+                answer_language=answer_language,
+            ),
             used_llm=False,
             needs_clarification=False,
             sources=sources,
@@ -373,6 +483,7 @@ def generate_unified_answer(
                 query=query,
                 result=result,
                 generate_answer_fn=generate_answer_fn,
+                answer_language=answer_language,
             )
             return UnifiedAnswer(
                 answer=answer,
@@ -382,11 +493,16 @@ def generate_unified_answer(
             )
 
         if route == Route.HYBRID:
-            officer_answer = _officer_answer(result, query)
+            officer_answer = _officer_answer(
+                result,
+                query,
+                answer_language=answer_language,
+            )
             legal_answer, used_llm = _generate_legal_answer(
                 query=query,
                 result=result,
                 generate_answer_fn=generate_answer_fn,
+                answer_language=answer_language,
             )
 
             return UnifiedAnswer(
@@ -394,6 +510,7 @@ def generate_unified_answer(
                     officer_answer=officer_answer,
                     legal_answer=legal_answer,
                     query=query,
+                    answer_language=answer_language,
                 ),
                 used_llm=used_llm,
                 needs_clarification=False,
@@ -408,7 +525,7 @@ def generate_unified_answer(
         )
 
     except Exception as error:
-        if _contains_hindi(query):
+        if _wants_hindi(answer_language):
             fallback = (
                 "कानूनी संदर्भ प्राप्त हुआ, लेकिन उत्तर बनाने में त्रुटि हुई: "
                 f"{type(error).__name__}"

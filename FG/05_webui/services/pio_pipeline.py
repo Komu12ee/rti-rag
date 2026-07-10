@@ -4,7 +4,7 @@ import json
 import os
 import re
 from pathlib import Path
-from typing import Any, Callable, Iterator
+from typing import Any, Callable, Iterator, Optional
 
 from services.llm_provider import LLMProviderError, generate_text, stream_text
 
@@ -229,6 +229,44 @@ def _load_rti_act() -> tuple[dict[str, Any], Path]:
 
 def _json_for_prompt(value: Any) -> str:
     return json.dumps(value, ensure_ascii=False, indent=2)
+
+
+def _normalise_answer_language(value: Any) -> Optional[str]:
+    if value is None:
+        return None
+    text = str(value or "").strip().casefold()
+    hindi_labels = {
+        "hi",
+        "hin",
+        "hindi",
+        "\u0939\u093f\u0902\u0926\u0940",
+        "\u0939\u093f\u0928\u094d\u0926\u0940",
+    }
+    if text in hindi_labels:
+        return "hi"
+    if text in {"en", "eng", "english"}:
+        return "en"
+    return None
+
+
+def _pio_answer_language_instruction(answer_language: Any) -> str:
+    language = _normalise_answer_language(answer_language)
+    if language == "hi":
+        return (
+            "Write the visible advisory answer in Hindi using Devanagari "
+            "script. Keep official names, emails, office codes, RTI Act "
+            "section numbers, and quoted source terms unchanged."
+        )
+    if language == "en":
+        return (
+            "Write the visible advisory answer in English. Keep official "
+            "names, emails, office codes, RTI Act section numbers, and quoted "
+            "source terms unchanged."
+        )
+    return (
+        "Use the RTI application's language. For Hindi RTI applications, "
+        "write natural professional Hindi."
+    )
 
 
 def _parse_json_object(raw_text: str, stage_name: str) -> dict[str, Any]:
@@ -750,11 +788,15 @@ def _build_cited_act_packet(
         "selected_provision_ids": cited_ids,
         "sections": selected_sections,
     }
+
+
 def _build_response_prompt(
     rti_extraction: dict[str, Any],
     legal_analysis: dict[str, Any],
     cited_act_packet: dict[str, Any],
+    answer_language: Any = None,
 ) -> str:
+    language_instruction = _pio_answer_language_instruction(answer_language)
     return  f"""
 You are an RTI advisory assistant for a Public Information Officer.
 
@@ -763,8 +805,7 @@ Generate a concise, human-readable PIO advisory summary from the validated
 RTI extraction, validated legal analysis, and cited RTI Act packet.
 The visible response must be useful to a PIO, but it must not expose raw JSON,
 internal schemas, repeated legal reasoning, or long procedural lists.
-Use the RTI application's language. For Hindi RTI applications, write natural
-professional Hindi.
+{language_instruction}
 
 DATA REALITY CHECK (read before writing):
 The extraction may be a fresh, undecided application, OR — far more often in
@@ -871,9 +912,8 @@ STRICT LEGAL RULES:
    fresh advisory judgment.
 
 VISIBLE ANSWER STYLE:
-Write a concise, natural, human-readable advisory answer in the RTI
-application's language. Prefer 3 to 5 short Hindi paragraphs when the RTI
-application is in Hindi.
+Write a concise, natural, human-readable advisory answer.
+{language_instruction}
 Cover these points naturally, without exposing the internal JSON:
 - what the applicant requested;
 - what is already established about the record (including any past
@@ -1269,7 +1309,10 @@ def _stream_advisory_report(response_prompt: str) -> Iterator[str]:
     _validate_advisory_report(generated)
 
 
-def _prepare_pio_advisory_context(rti_text: str) -> dict[str, Any]:
+def _prepare_pio_advisory_context(
+    rti_text: str,
+    answer_language: Any = None,
+) -> dict[str, Any]:
     rti_text = str(rti_text or "").strip()
     if not rti_text:
         raise PIOPipelineError("RTI application text cannot be empty.")
@@ -1314,6 +1357,7 @@ def _prepare_pio_advisory_context(rti_text: str) -> dict[str, Any]:
         rti_extraction=rti_extraction,
         legal_analysis=legal_analysis,
         cited_act_packet=cited_act_packet,
+        answer_language=answer_language,
     )
 
     return {
@@ -1324,6 +1368,7 @@ def _prepare_pio_advisory_context(rti_text: str) -> dict[str, Any]:
         "valid_provision_count": len(valid_provisions),
         "rti_act_json_path": str(act_path),
     }
+
 
 def _build_pio_result(context: dict[str, Any], final_report: str) -> dict[str, Any]:
     return {
@@ -1343,7 +1388,10 @@ def _build_pio_result(context: dict[str, Any], final_report: str) -> dict[str, A
     }
 
 
-def analyze_pio_application(rti_text: str) -> dict[str, Any]:
+def analyze_pio_application(
+    rti_text: str,
+    answer_language: Any = None,
+) -> dict[str, Any]:
     """
     Run the three-call PIO advisory workflow.
 
@@ -1351,7 +1399,10 @@ def analyze_pio_application(rti_text: str) -> dict[str, Any]:
     Call 2: Extraction JSON + complete RTI Act JSON -> legal analysis JSON
     Call 3: Extraction JSON + validated analysis + Act JSON -> readable advisory
     """
-    context = _prepare_pio_advisory_context(rti_text)
+    context = _prepare_pio_advisory_context(
+        rti_text,
+        answer_language=answer_language,
+    )
     generated_report = _generate_advisory_report_with_one_retry(
         response_prompt=context["response_prompt"],
     )
@@ -1359,9 +1410,15 @@ def analyze_pio_application(rti_text: str) -> dict[str, Any]:
     return _build_pio_result(context, final_report)
 
 
-def analyze_pio_application_stream(rti_text: str) -> Iterator[tuple[str, Any]]:
+def analyze_pio_application_stream(
+    rti_text: str,
+    answer_language: Any = None,
+) -> Iterator[tuple[str, Any]]:
     """Stream Call 3 advisory text while returning the normal final result."""
-    context = _prepare_pio_advisory_context(rti_text)
+    context = _prepare_pio_advisory_context(
+        rti_text,
+        answer_language=answer_language,
+    )
     chunks: list[str] = []
 
     for chunk in _stream_advisory_report(context["response_prompt"]):

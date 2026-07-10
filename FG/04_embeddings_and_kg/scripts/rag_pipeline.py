@@ -1085,7 +1085,8 @@ Rules:
 6. For a statutory section question, explain only the specific statutory rule
    supported by the reference material.
 7. Do not mix unrelated FAQ information into a statutory-section answer.
-8. For Hindi questions, write natural and clear Devanagari Hindi.
+8. If the user question includes an answer language instruction, follow it.
+   Otherwise, for Hindi questions, write natural and clear Devanagari Hindi.
 9. Keep essential legal terms in English only where needed, such as
    severability, disclosure, exempt information, or public authority.
 10. If the material does not establish the exact answer, state:

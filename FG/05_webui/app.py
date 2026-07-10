@@ -6,6 +6,10 @@ from dotenv import load_dotenv
 from services.hybrid_retriever import retrieve_from_all_sources
 from services.query_scope import extract_current_user_question
 from services.unified_answer_service import generate_unified_answer
+from services.unified_answer_service import (
+    normalise_answer_language,
+    with_answer_language_instruction,
+)
 from services.pio_pipeline import (
     PIOPipelineError,
     analyze_pio_application,
@@ -853,8 +857,11 @@ def _looks_like_rti_application_text(rti_text: str) -> bool:
     return marker_count >= 1 and "\n" in text and len(text) >= 180
 
 
-def _pio_application_required_answer(query_text: str) -> str:
-    if re.search(r"[\u0900-\u097F]", query_text or ""):
+def _pio_application_required_answer(
+    query_text: str,
+    answer_language: str = "en",
+) -> str:
+    if normalise_answer_language(answer_language) == "hi":
         return (
             "PIO सलाहकार विश्लेषण के लिए पूरा RTI आवेदन आवश्यक है।\n\n"
             "कृपया उसी संदेश में पूरा आवेदन चिपकाएँ और स्पष्ट रूप से लिखें "
@@ -885,6 +892,7 @@ def query_stream():
     raw_query_text = str(data.get("query", ""))
     query_text = extract_current_user_question(raw_query_text)
     pio_mode = _as_bool(data.get("pio_mode", False))
+    answer_language = normalise_answer_language(data.get("answer_language", "en"))
     try:
         requested_limit = int(data.get("num_results", num_results))
     except (TypeError, ValueError):
@@ -903,7 +911,10 @@ def query_stream():
                 rti_application_text = _extract_rti_application_text(query_text)
 
                 if not _looks_like_rti_application_text(rti_application_text):
-                    answer = _pio_application_required_answer(query_text)
+                    answer = _pio_application_required_answer(
+                        query_text,
+                        answer_language=answer_language,
+                    )
                     yield _sse("token", {"text": answer})
                     yield _sse(
                         "done",
@@ -916,6 +927,7 @@ def query_stream():
                             "execution_time": f"{time.time() - query_start_time:.2f}s",
                             "route": "PIO_ADVISORY",
                             "pio_mode": True,
+                            "answer_language": answer_language,
                             "pio_pipeline_used": True,
                             "needs_clarification": True,
                         },
@@ -929,7 +941,8 @@ def query_stream():
 
                 pio_result = None
                 for event_type, payload in analyze_pio_application_stream(
-                    rti_text=rti_application_text
+                    rti_text=rti_application_text,
+                    answer_language=answer_language,
                 ):
                     if event_type == "token":
                         answer_chunks.append(str(payload))
@@ -957,6 +970,7 @@ def query_stream():
                         "execution_time": f"{elapsed:.2f}s",
                         "route": "PIO_ADVISORY",
                         "pio_mode": True,
+                        "answer_language": answer_language,
                         "pio_pipeline_used": True,
                         "needs_clarification": False,
                         "validation": pio_result["validation"],
@@ -1001,7 +1015,10 @@ def query_stream():
 
             if can_stream_legal:
                 yield _sse("status", {"message": "Generating answer..."})
-                legal_query = qdrant_result.lookup_query or query_text
+                legal_query = with_answer_language_instruction(
+                    qdrant_result.lookup_query or query_text,
+                    answer_language,
+                )
                 for chunk in generate_answer_stream_fn(
                     legal_query,
                     qdrant_result.context_results,
@@ -1021,6 +1038,7 @@ def query_stream():
                     query=query_text,
                     result=retrieval,
                     generate_answer_fn=generate_answer,
+                    answer_language=answer_language,
                 )
                 answer = answer_result.answer
                 used_llm_answer = answer_result.used_llm
@@ -1040,6 +1058,7 @@ def query_stream():
                 "used_llm_fallback": retrieval.resolution.used_llm_fallback,
                 "used_llm_answer": used_llm_answer,
                 "needs_clarification": needs_clarification,
+                "answer_language": answer_language,
             }
 
             if retrieval.errors:
@@ -1081,6 +1100,7 @@ def query():
     raw_query_text = str(data.get("query", ""))
     query_text = extract_current_user_question(raw_query_text)
     pio_mode = _as_bool(data.get("pio_mode", False))
+    answer_language = normalise_answer_language(data.get("answer_language", "en"))
     try:
         requested_limit = int(data.get("num_results", num_results))
     except (TypeError, ValueError):
@@ -1113,7 +1133,8 @@ def query():
         try:
             print("[PIO Router] Starting three-call PIO advisory workflow")
             pio_result = analyze_pio_application(
-                rti_text=rti_application_text
+                rti_text=rti_application_text,
+                answer_language=answer_language,
             )
 
             elapsed = time.time() - query_start_time
@@ -1138,6 +1159,7 @@ def query():
                     "execution_time": f"{elapsed:.2f}s",
                     "route": "PIO_ADVISORY",
                     "pio_mode": True,
+                    "answer_language": answer_language,
                     "pio_pipeline_used": True,
                     "needs_clarification": False,
                     "validation": pio_result["validation"],
@@ -1163,6 +1185,7 @@ def query():
                     "results": [],
                     "route": "PIO_ADVISORY",
                     "pio_mode": True,
+                    "answer_language": answer_language,
                     "pio_pipeline_used": True,
                 }
             ), 422
@@ -1180,6 +1203,7 @@ def query():
                     "results": [],
                     "route": "PIO_ADVISORY",
                     "pio_mode": True,
+                    "answer_language": answer_language,
                     "pio_pipeline_used": True,
                 }
             ), 500
@@ -1199,6 +1223,7 @@ def query():
             query=query_text,
             result=retrieval,
             generate_answer_fn=generate_answer,
+            answer_language=answer_language,
         )
 
         formatted_results = _format_unified_evidence_for_frontend(
@@ -1230,6 +1255,7 @@ def query():
             "used_llm_fallback": retrieval.resolution.used_llm_fallback,
             "used_llm_answer": answer_result.used_llm,
             "needs_clarification": answer_result.needs_clarification,
+            "answer_language": answer_language,
         }
 
         if retrieval.errors:
@@ -1273,6 +1299,7 @@ def pio_analyze():
         or data.get('query')
         or ''
     ).strip()
+    answer_language = normalise_answer_language(data.get("answer_language", "en"))
 
     if not rti_text:
         return jsonify({
@@ -1282,7 +1309,10 @@ def pio_analyze():
 
     try:
         print("\n[PIO] Advisory analysis started")
-        result = analyze_pio_application(rti_text=rti_text)
+        result = analyze_pio_application(
+            rti_text=rti_text,
+            answer_language=answer_language,
+        )
         elapsed = time.time() - request_started_at
         print(f"[PIO] Advisory analysis completed in {elapsed:.2f}s")
 
@@ -1294,6 +1324,7 @@ def pio_analyze():
         return jsonify({
             'success': True,
             'execution_time': f'{elapsed:.2f}s',
+            'answer_language': answer_language,
             'rti_extraction': result['rti_extraction'],
             'legal_analysis': result['legal_analysis'],
             'pio_advisory_report': result['pio_advisory_report'],
