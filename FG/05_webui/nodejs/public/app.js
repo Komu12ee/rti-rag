@@ -541,59 +541,8 @@ function createPrecedentReferencesDropdown(message) {
   }
 
   if (results.length) {
-    const list = document.createElement('div');
-    list.className = 'precedent-reference-list';
-
-    results.forEach((result, index) => {
-      const card = document.createElement('div');
-      card.className = 'precedent-reference-card';
-      const verification = result.case_verification || {};
-
-      const title = result.case_number ||
-        result.title ||
-        result.document_id ||
-        `Decision ${index + 1}`;
-
-      const meta = [
-        result.retrieval_collection,
-        result.decision_date,
-        typeof result.score === 'number' ? `score ${result.score.toFixed(3)}` : ''
-      ].filter(Boolean).join(' | ');
-
-      const fields = [
-        ['Information sought', verification.information_sought],
-        ['PIO/FAA response', verification.pio_faa_response],
-        ['CIC observations', verification.cic_observations],
-        ['Final decision', verification.final_decision],
-        ['Use in present case', verification.use_in_present_case],
-        ['Source', verification.source_file || result.actual_pdf || result.source]
-      ];
-
-      const fieldHtml = fields
-        .map(([label, value]) => {
-          const text = value || 'Not found in retrieved case text.';
-          return `
-            <div class="precedent-reference-field">
-              <span>${escapeHtml(label)}</span>
-              <p>${escapeHtml(text)}</p>
-            </div>
-          `;
-        })
-        .join('');
-
-      card.innerHTML = `
-        <div class="precedent-reference-title">${escapeHtml(title)}</div>
-        ${meta ? `<div class="precedent-reference-meta">${escapeHtml(meta)}</div>` : ''}
-        <div class="precedent-reference-fields">${fieldHtml}</div>
-        <details class="precedent-reference-raw">
-          <summary>Retrieved case text</summary>
-          <p>${escapeHtml(result.excerpt || result.text || 'No excerpt available.')}</p>
-        </details>
-      `;
-      list.appendChild(card);
-    });
-
-    details.appendChild(list);
+    const sourceList = createPrecedentPdfLinks(results);
+    details.appendChild(sourceList);
   } else {
     const empty = document.createElement('p');
     empty.className = 'precedent-reference-empty';
@@ -602,6 +551,63 @@ function createPrecedentReferencesDropdown(message) {
   }
 
   return details;
+}
+
+function normalizePdfFilename(value) {
+  const raw = String(value || '').trim();
+  if (!raw) return '';
+  const filename = raw.replace(/\\/g, '/').split('/').pop().trim();
+  if (!filename) return '';
+  return filename.toLowerCase().endsWith('.pdf') ? filename : `${filename}.pdf`;
+}
+
+function precedentPdfFilename(result) {
+  const verification = result.case_verification || {};
+  return normalizePdfFilename(
+    verification.source_file ||
+    result.actual_pdf ||
+    result.decision_pdf ||
+    result.source ||
+    result.document_id
+  );
+}
+
+function createPrecedentPdfLinks(results) {
+  const sourceList = document.createElement('div');
+  sourceList.className = 'precedent-pdf-links';
+
+  const seen = new Set();
+  const filenames = [];
+  results.forEach(result => {
+    const filename = precedentPdfFilename(result);
+    const key = filename.toLowerCase();
+    if (!filename || seen.has(key)) return;
+    seen.add(key);
+    filenames.push(filename);
+  });
+
+  if (!filenames.length) {
+    const empty = document.createElement('p');
+    empty.className = 'precedent-reference-empty';
+    empty.textContent = 'No source PDF file name was attached.';
+    sourceList.appendChild(empty);
+    return sourceList;
+  }
+
+  filenames.forEach(filename => {
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'precedent-pdf-link';
+    button.title = `Open ${filename}`;
+    button.innerHTML = `
+      <span aria-hidden="true" class="precedent-pdf-icon">PDF</span>
+      <span>${escapeHtml(filename)}</span>
+    `;
+    button.addEventListener('click', () => openPdfPanel(filename));
+    sourceList.appendChild(button);
+  });
+
+  return sourceList;
 }
 
 function createPrecedentActionControls(message) {
