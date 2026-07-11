@@ -6,6 +6,7 @@ import sys
 import re
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
+from types import SimpleNamespace
 import requests
 from qdrant_client import QdrantClient
 from FlagEmbedding import BGEM3FlagModel, FlagReranker
@@ -122,6 +123,68 @@ USE_KNOWLEDGE_GRAPH = True   # Enable knowledge graph enhancement
 KG_WEIGHT = 0.3              # Weight of KG in combined score (0-1)
 KG_EXPANSION_DEPTH = 2       # Entity graph traversal depth
 
+
+def _config_int(name, default, minimum=1):
+    try:
+        value = int(os.getenv(name, str(default)))
+    except ValueError:
+        value = default
+    return max(minimum, value)
+
+
+def _config_bool(name, default=True):
+    raw = os.getenv(name)
+    if raw is None:
+        return default
+    return raw.strip().casefold() not in {"", "0", "false", "no", "off"}
+
+
+PRECEDENT_CASE_EXPANSION_ENABLED = _config_bool(
+    "RAG_EXPAND_PRECEDENT_CASES",
+    True,
+)
+PRECEDENT_CASE_LIMIT = _config_int("RAG_PRECEDENT_CASE_LIMIT", 3)
+PRECEDENT_SEED_LIMIT = _config_int("RAG_PRECEDENT_SEED_LIMIT", 20)
+PRECEDENT_TRIGGER_TOP_K = _config_int("RAG_PRECEDENT_TRIGGER_TOP_K", 5)
+PRECEDENT_SCROLL_BATCH_SIZE = _config_int("RAG_PRECEDENT_SCROLL_BATCH_SIZE", 64)
+PRECEDENT_MAX_CHUNKS_PER_CASE = _config_int(
+    "RAG_PRECEDENT_MAX_CHUNKS_PER_CASE",
+    200,
+)
+PRECEDENT_MAX_CASE_CHARS = _config_int(
+    "RAG_PRECEDENT_MAX_CASE_CHARS",
+    60000,
+)
+
+PRECEDENT_COLLECTION_NAMES = {
+    "cic",
+    "cgsic_important_decisions_v1",
+}
+
+CASE_LOOKUP_FIELDS = (
+    "source_pdf",
+    "actual_pdf",
+    "decision_pdf",
+    "source",
+    "case_id",
+    "decision_number",
+    "case_number",
+    "case_no",
+    "appeal_number",
+    "file_no",
+    "reference_number",
+)
+
+CASE_DISPLAY_FIELDS = (
+    "case_id",
+    "decision_number",
+    "case_number",
+    "case_no",
+    "appeal_number",
+    "file_no",
+    "reference_number",
+)
+
 # ── Helper: Get file number from chunk source ───────────────────
 def extract_file_number(chunk_source):
     """Extract file number from chunk source (e.g., 'output_corrected2' → 2)."""
@@ -147,6 +210,462 @@ def get_payload_actual_filename(payload):
     if actual_pdf:
         return Path(str(actual_pdf)).name
     return get_actual_filename(payload.get("source", ""))
+
+
+def _payload_text(payload, *keys):
+    payload = payload or {}
+    for key in keys:
+        value = payload.get(key)
+        if value is None:
+            continue
+        text = str(value).strip()
+        if text:
+            return text
+    return ""
+
+
+def _payload_value(payload, key):
+    payload = payload or {}
+    value = payload.get(key)
+    if value is None or not str(value).strip():
+        return None
+    return value
+
+
+def _path_name(value):
+    text = str(value or "").strip().replace("\\", "/")
+    return text.rsplit("/", 1)[-1] if text else ""
+
+
+def _pdf_stem(value):
+    name = _path_name(value)
+    return name[:-4] if name.casefold().endswith(".pdf") else name
+
+
+def _case_lookup_from_payload(payload):
+    """Return the payload field that can pull sibling chunks for one case."""
+    payload = payload or {}
+    for field in CASE_LOOKUP_FIELDS:
+        value = _payload_value(payload, field)
+        if value is None:
+            continue
+        label = _pdf_stem(value) if field.endswith("pdf") else str(value).strip()
+        return {
+            "field": field,
+            "value": value,
+            "label": label,
+        }
+    return None
+
+
+def _case_display_id(payload, lookup):
+    for field in CASE_DISPLAY_FIELDS:
+        value = _payload_text(payload, field)
+        if value:
+            return value
+    if lookup:
+        return str(lookup.get("label") or lookup.get("value") or "").strip()
+    return _payload_text(payload, "title", "case_title", "subject") or "Unknown case"
+
+
+def _case_file_name(payload, lookup):
+    explicit = _payload_text(payload, "actual_pdf", "decision_pdf", "source_pdf")
+    if explicit:
+        return _path_name(explicit)
+
+    source = _payload_text(payload, "source")
+    if source:
+        source_name = _path_name(source)
+        if source_name.casefold().endswith(".pdf"):
+            return source_name
+        return get_actual_filename(source_name)
+
+    if lookup:
+        label = str(lookup.get("label") or lookup.get("value") or "").strip()
+        if label:
+            if label.casefold().endswith(".pdf"):
+                return _path_name(label)
+            return get_actual_filename(label)
+
+    return "Unknown source PDF"
+
+
+def _case_source_stem(payload, lookup):
+    source = _payload_text(payload, "source")
+    if source and not source.casefold().endswith(".pdf"):
+        return source
+    filename = _case_file_name(payload, lookup)
+    return _pdf_stem(filename)
+
+
+def _is_precedent_payload(payload):
+    """Detect CIC/CGSIC decision material without expanding ordinary RTI Act chunks."""
+    payload = payload or {}
+    collection = _payload_text(payload, "_retrieval_collection").casefold()
+    if collection in PRECEDENT_COLLECTION_NAMES:
+        return True
+
+    if any(marker in collection for marker in ("cic", "cgsic", "decision")):
+        return True
+
+    if any(_payload_text(payload, key) for key in CASE_DISPLAY_FIELDS):
+        return True
+
+    source_hint = " ".join(
+        _payload_text(payload, key)
+        for key in ("source", "actual_pdf", "decision_pdf", "source_pdf", "file")
+    ).casefold()
+    return (
+        source_hint.startswith("cic_")
+        or "cg sic" in source_hint
+        or "cgsic" in source_hint
+        or "cic/" in source_hint
+        or "cic_" in source_hint
+    )
+
+
+def _point_payload(point):
+    payload = dict(getattr(point, "payload", {}) or {})
+    return payload
+
+
+def _point_collection(payload):
+    return _payload_text(payload, "_retrieval_collection") or COLLECTION_NAME
+
+
+def _safe_float(value, default=0.0):
+    try:
+        return float(value)
+    except (TypeError, ValueError):
+        return default
+
+
+def _chunk_number(value):
+    text = str(value or "")
+    matches = re.findall(r"\d+", text)
+    return int(matches[-1]) if matches else 10**9
+
+
+def _chunk_sort_key(point):
+    payload = _point_payload(point)
+    page = payload.get("page_start", payload.get("printed_page_start"))
+    try:
+        page_value = int(page)
+    except (TypeError, ValueError):
+        page_value = 10**9
+
+    chunk_value = payload.get("chunk", payload.get("chunk_id", payload.get("file", "")))
+    return (
+        page_value,
+        _chunk_number(chunk_value),
+        str(payload.get("file", "")),
+        str(getattr(point, "id", "")),
+    )
+
+
+def _case_group_sort_score(group):
+    hit_boost = min(group["hit_count"], 5) * 0.01
+    priority_boost = group["priority"] / 100.0 * 0.01
+    rank_penalty = group["first_rank"] * 0.000001
+    return group["best_score"] + hit_boost + priority_boost - rank_penalty
+
+
+def _group_seed_results_by_case(seed_results):
+    groups = {}
+
+    for result in seed_results:
+        point = result.get("point")
+        if point is None:
+            continue
+
+        payload = _point_payload(point)
+        if not _is_precedent_payload(payload):
+            continue
+
+        lookup = _case_lookup_from_payload(payload)
+        if not lookup:
+            continue
+
+        collection = _point_collection(payload)
+        key = (
+            collection,
+            lookup["field"],
+            str(lookup["value"]).strip().casefold(),
+        )
+        score = _safe_float(result.get("score"))
+        rank = int(result.get("rank") or 10**6)
+        priority = _safe_float(payload.get("retrieval_priority"))
+
+        if key not in groups:
+            groups[key] = {
+                "collection": collection,
+                "lookup": lookup,
+                "seed_payload": payload,
+                "seed_results": [],
+                "best_score": score,
+                "first_rank": rank,
+                "hit_count": 0,
+                "priority": priority,
+            }
+
+        group = groups[key]
+        group["seed_results"].append(result)
+        group["best_score"] = max(group["best_score"], score)
+        group["first_rank"] = min(group["first_rank"], rank)
+        group["hit_count"] += 1
+        group["priority"] = max(group["priority"], priority)
+
+    return sorted(
+        groups.values(),
+        key=_case_group_sort_score,
+        reverse=True,
+    )
+
+
+def _scroll_case_points(collection, lookup):
+    """Fetch all chunks with the same case/source key from Qdrant."""
+    try:
+        from qdrant_client.models import FieldCondition, Filter, MatchValue
+    except Exception as exc:
+        print(f"  Case expansion unavailable: could not import Qdrant filters ({exc})")
+        return []
+
+    qdrant = ensure_qdrant_client()
+    scroll_filter = Filter(
+        must=[
+            FieldCondition(
+                key=lookup["field"],
+                match=MatchValue(value=lookup["value"]),
+            )
+        ]
+    )
+
+    points = []
+    offset = None
+
+    while len(points) < PRECEDENT_MAX_CHUNKS_PER_CASE:
+        batch, offset = qdrant.scroll(
+            collection_name=collection,
+            scroll_filter=scroll_filter,
+            limit=min(
+                PRECEDENT_SCROLL_BATCH_SIZE,
+                PRECEDENT_MAX_CHUNKS_PER_CASE - len(points),
+            ),
+            offset=offset,
+            with_payload=True,
+            with_vectors=False,
+        )
+
+        for point in batch or []:
+            point.payload = dict(point.payload or {})
+            point.payload["_retrieval_collection"] = collection
+            points.append(point)
+
+        if offset is None:
+            break
+
+    return points
+
+
+def _dedupe_points(points):
+    seen = set()
+    unique = []
+    for point in points:
+        identity = point_identity(point)
+        if identity in seen:
+            continue
+        seen.add(identity)
+        unique.append(point)
+    return unique
+
+
+def _chunk_heading(payload, index):
+    parts = [f"Chunk {index}"]
+    chunk_type = _payload_text(payload, "chunk_type", "section")
+    if chunk_type:
+        parts.append(chunk_type)
+
+    page_start = payload.get("page_start", payload.get("printed_page_start"))
+    page_end = payload.get("page_end", payload.get("printed_page_end"))
+    if page_start and page_end:
+        parts.append(f"pages {page_start}-{page_end}")
+    elif page_start:
+        parts.append(f"page {page_start}")
+
+    chunk_id = _payload_text(payload, "chunk", "chunk_id", "parent_id", "file")
+    if chunk_id:
+        parts.append(str(chunk_id))
+
+    return " | ".join(parts)
+
+
+def _format_full_case_context(group, case_points):
+    seed_payload = group["seed_payload"]
+    lookup = group["lookup"]
+    case_file = _case_file_name(seed_payload, lookup)
+    case_id = _case_display_id(seed_payload, lookup)
+
+    lines = [
+        f"Case file: {case_file}",
+        f"Case identifier: {case_id}",
+    ]
+
+    for label, keys in (
+        ("Decision date", ("decision_date", "hearing_date", "date")),
+        ("Public authority", ("public_authority", "authority")),
+        ("Outcome/final order", ("outcome", "final_order", "decision_outcome")),
+    ):
+        value = _payload_text(seed_payload, *keys)
+        if value:
+            lines.append(f"{label}: {value}")
+
+    matched = []
+    for seed in group["seed_results"][:5]:
+        payload = _point_payload(seed.get("point"))
+        chunk_type = _payload_text(payload, "chunk_type", "section") or "retrieved chunk"
+        score = _safe_float(seed.get("score"))
+        matched.append(f"{chunk_type} (score {score:.4f})")
+    if matched:
+        lines.append("Top matching chunks: " + "; ".join(matched))
+
+    lines.append("")
+    lines.append("Full decision chunks:")
+
+    included = 0
+    truncated = False
+    current_chars = sum(len(line) + 1 for line in lines)
+
+    for index, point in enumerate(sorted(case_points, key=_chunk_sort_key), start=1):
+        payload = _point_payload(point)
+        text = str(payload.get("text", "")).strip()
+        if not text:
+            continue
+
+        block = f"[{_chunk_heading(payload, index)}]\n{text}"
+        projected = current_chars + len(block) + 2
+
+        if projected > PRECEDENT_MAX_CASE_CHARS:
+            truncated = True
+            break
+
+        lines.append(block)
+        current_chars = projected
+        included += 1
+
+    if truncated:
+        lines.append(
+            "[Additional chunks from this case were omitted because the case "
+            "context exceeded RAG_PRECEDENT_MAX_CASE_CHARS.]"
+        )
+
+    return "\n\n".join(lines), included, truncated
+
+
+def _build_expanded_case_result(group, rank):
+    seed_payload = group["seed_payload"]
+    lookup = group["lookup"]
+    collection = group["collection"]
+
+    try:
+        case_points = _scroll_case_points(collection, lookup)
+    except Exception as exc:
+        print(
+            "  Case expansion failed for "
+            f"{_case_display_id(seed_payload, lookup)}: {exc}"
+        )
+        case_points = []
+
+    if not case_points:
+        case_points = [
+            seed.get("point")
+            for seed in group["seed_results"]
+            if seed.get("point") is not None
+        ]
+
+    case_points = _dedupe_points(case_points)
+    if not case_points:
+        return None
+
+    context_text, included_count, truncated = _format_full_case_context(
+        group,
+        case_points,
+    )
+    case_file = _case_file_name(seed_payload, lookup)
+    source_stem = _case_source_stem(seed_payload, lookup)
+    case_id = _case_display_id(seed_payload, lookup)
+
+    payload = dict(seed_payload)
+    payload.update(
+        {
+            "text": context_text,
+            "source": source_stem,
+            "actual_pdf": case_file,
+            "case_file": case_file,
+            "case_identity": case_id,
+            "context_expansion": "full_case",
+            "expanded_case": True,
+            "expanded_chunk_count": len(case_points),
+            "included_chunk_count": included_count,
+            "case_context_truncated": truncated,
+            "_retrieval_collection": collection,
+        }
+    )
+
+    point = SimpleNamespace(
+        id=f"case:{collection}:{lookup['field']}:{str(lookup['value'])}",
+        payload=payload,
+    )
+
+    return {
+        "point": point,
+        "score": group["best_score"],
+        "rank": rank,
+        "expanded_case": True,
+        "expanded_chunk_count": len(case_points),
+        "included_chunk_count": included_count,
+        "case_context_truncated": truncated,
+    }
+
+
+def _expand_precedent_cases(seed_results, requested_cases=None):
+    if not PRECEDENT_CASE_EXPANSION_ENABLED:
+        return []
+
+    trigger_candidates = seed_results[:PRECEDENT_TRIGGER_TOP_K]
+    if not any(
+        _is_precedent_payload(_point_payload(result.get("point")))
+        for result in trigger_candidates
+    ):
+        return []
+
+    groups = _group_seed_results_by_case(seed_results)
+    if not groups:
+        return []
+
+    case_limit = requested_cases or PRECEDENT_CASE_LIMIT
+    selected_groups = groups[: max(1, case_limit)]
+    expanded = []
+
+    print(
+        "  Expanding precedent context for "
+        f"{len(selected_groups)} case(s)..."
+    )
+
+    for rank, group in enumerate(selected_groups, start=1):
+        result = _build_expanded_case_result(group, rank)
+        if result is None:
+            continue
+        expanded.append(result)
+
+        payload = result["point"].payload
+        print(
+            "  Case "
+            f"{rank}: {payload.get('case_file')} "
+            f"({result.get('included_chunk_count', 0)}/"
+            f"{result.get('expanded_chunk_count', 0)} chunks included)"
+        )
+
+    return expanded
 
 # ── Helper: Extract highlighted excerpt from chunk text ─────────
 def extract_highlighted_excerpt(chunk_text, query_words, max_length=300):
@@ -782,9 +1301,11 @@ def retrieve_context(query, num_context=5, use_kg=True, collection_names=None, p
         # ════════════════════════════════════════════════════════════════════
         print("⚡ Using hybrid search results directly (reranking disabled)")
         
-        # Convert hybrid scores to result format
-        results = []
-        for rank, (point_id, score) in enumerate(hybrid_scores[:num_context], 1):
+        # Convert hybrid scores to result format. Keep a wider seed set so
+        # CIC precedent retrieval can select top unique cases before expansion.
+        seed_limit = max(num_context, PRECEDENT_SEED_LIMIT)
+        seed_results = []
+        for rank, (point_id, score) in enumerate(hybrid_scores[:seed_limit], 1):
             # Find the point with this ID
             point = next(
                 (
@@ -818,7 +1339,14 @@ def retrieve_context(query, num_context=5, use_kg=True, collection_names=None, p
                     result["entities"] = []
                     result["related_entities"] = {}
                 
-                results.append(result)
+                seed_results.append(result)
+
+        expanded_cases = _expand_precedent_cases(
+            seed_results,
+            requested_cases=PRECEDENT_CASE_LIMIT,
+        )
+
+        results = expanded_cases or seed_results[:num_context]
         
         _mark_time("RETRIEVE_CONTEXT")
         return results
@@ -902,6 +1430,9 @@ def _select_context_for_generation(query, context_results):
     """
     Give the LLM only the strongest evidence.
 
+    Expanded precedent cases:
+    - Use the selected full-case contexts as-is.
+
     Exact RTI Act section query:
     - Prefer matching statutory chunks.
     - Do not mix unrelated FAQ chunks.
@@ -911,6 +1442,16 @@ def _select_context_for_generation(query, context_results):
     """
     if not context_results:
         return []
+
+    expanded_cases = [
+        result
+        for result in context_results
+        if result.get("point") is not None
+        and _point_payload(result["point"]).get("context_expansion") == "full_case"
+    ]
+
+    if expanded_cases:
+        return expanded_cases[:PRECEDENT_CASE_LIMIT]
 
     requested_section = _extract_requested_section(query)
 
@@ -1051,14 +1592,25 @@ def _build_rag_answer_prompt(query, context_results):
         return None, "No relevant context was found to generate an answer."
 
     context_parts = []
+    uses_expanded_cases = False
 
     for index, result in enumerate(selected_results, start=1):
         payload = result["point"].payload
         text = str(payload.get("text", "")).strip()
+        is_expanded_case = payload.get("context_expansion") == "full_case"
+        uses_expanded_cases = uses_expanded_cases or is_expanded_case
 
         if text:
+            label = f"REFERENCE {index}"
+            if is_expanded_case:
+                case_file = (
+                    payload.get("case_file")
+                    or payload.get("actual_pdf")
+                    or get_payload_actual_filename(payload)
+                )
+                label = f"{label}: {case_file}"
             context_parts.append(
-                f"[REFERENCE {index}]\n{text}"
+                f"[{label}]\n{text}"
             )
 
     context_text = "\n\n".join(context_parts)
@@ -1066,7 +1618,18 @@ def _build_rag_answer_prompt(query, context_results):
     if not context_text:
         return None, "No usable reference text was found to generate an answer."
 
-    system_content = """
+    if uses_expanded_cases:
+        source_visibility_rule = (
+            "Do not mention chunks, databases, retrieved context, "
+            "or document processing."
+        )
+    else:
+        source_visibility_rule = (
+            "Do not mention PDFs, files, chunks, sources, databases, "
+            "retrieved context,\n   or document processing."
+        )
+
+    system_content = f"""
 You are an RTI information assistant.
 
 Answer only from the REFERENCE MATERIAL.
@@ -1077,8 +1640,7 @@ the exact statutory text.
 
 Rules:
 1. Answer the user's actual question directly.
-2. Do not mention PDFs, files, chunks, sources, databases, retrieved context,
-   or document processing.
+2. {source_visibility_rule}
 3. Do not output a Sources section. Sources are displayed separately in the UI.
 4. Do not use headings such as "Direct answer" or "Explanation".
 5. Do not invent legal sections, deadlines, facts, cases, names, or examples.
@@ -1092,6 +1654,16 @@ Rules:
 10. If the material does not establish the exact answer, state:
     "I am here to help you find the information from suchna aayog."
 11. Return only the final user-facing answer.
+""".strip()
+
+    if uses_expanded_cases:
+        system_content += "\n\n" + """
+Precedent citation rules:
+12. The REFERENCE MATERIAL contains full CIC/CGSIC case contexts.
+13. When relying on a precedent, cite the case file name in square brackets,
+    for example [CIC_XXXX.pdf].
+14. Explain the Commission's reasoning and final direction only when it is
+    present in the case context.
 """.strip()
 
     prompt = f"""

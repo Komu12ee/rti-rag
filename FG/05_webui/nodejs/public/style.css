@@ -1387,3 +1387,42 @@ button {
   font-size: 11.5px;
   line-height: 1.5;
 }
+
+.precedent-reference-fields {
+  display: grid;
+  gap: 7px;
+  margin-top: 9px;
+}
+
+.precedent-reference-field {
+  border-top: 1px solid var(--border);
+  padding-top: 7px;
+}
+
+.precedent-reference-field span {
+  display: block;
+  color: var(--ink);
+  font-size: 11px;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+
+.precedent-reference-field p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 11.5px;
+  line-height: 1.45;
+}
+
+.precedent-reference-raw {
+  margin-top: 8px;
+  border-top: 1px solid var(--border);
+  padding-top: 7px;
+}
+
+.precedent-reference-raw summary {
+  cursor: pointer;
+  color: var(--faint);
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+}

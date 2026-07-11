@@ -15,6 +15,29 @@ PRECEDENT_COLLECTIONS = (
     "cic",
 )
 MAX_RESULTS_PER_COLLECTION = 3
+NOT_FOUND = "Not found in retrieved case text."
+
+CASE_FIELD_BOUNDARIES = (
+    "information sought",
+    "information requested",
+    "rti application",
+    "pio reply",
+    "cpio reply",
+    "spio reply",
+    "faa order",
+    "first appeal",
+    "respondent",
+    "appellant",
+    "commission",
+    "observations",
+    "decision",
+    "final decision",
+    "order",
+    "direction",
+    "facts",
+    "grounds",
+    "prayer",
+)
 
 
 class PIOPrecedentError(RuntimeError):
@@ -129,6 +152,240 @@ def _payload_value(payload: dict[str, Any], *keys: str) -> str:
     return ""
 
 
+def _clean_case_field(value: Any, limit: int = 700) -> str:
+    text = _compact(value, limit)
+    text = re.sub(r"^(?:[:\-\s])+|(?:[:\-\s])+$", "", text).strip()
+    return text or NOT_FOUND
+
+
+def _case_text(result: dict[str, Any]) -> str:
+    return str(result.get("text") or "").strip()
+
+
+def _extract_after_labels(
+    text: str,
+    labels: tuple[str, ...],
+    *,
+    limit: int = 700,
+) -> str:
+    if not text:
+        return NOT_FOUND
+
+    label_pattern = "|".join(re.escape(label) for label in labels)
+    boundary_pattern = "|".join(re.escape(label) for label in CASE_FIELD_BOUNDARIES)
+    pattern = re.compile(
+        rf"(?is)\b(?:{label_pattern})\b\s*(?:[:\-]\s*)?"
+        rf"(.{{20,{limit * 2}}}?)(?=\b(?:{boundary_pattern})\b\s*(?:[:\-]|$)|$)"
+    )
+
+    match = pattern.search(text)
+    if not match:
+        return NOT_FOUND
+
+    return _clean_case_field(match.group(1), limit)
+
+
+def _extract_sentence_with_terms(
+    text: str,
+    terms: tuple[str, ...],
+    *,
+    limit: int = 700,
+) -> str:
+    if not text:
+        return NOT_FOUND
+
+    sentences = re.split(r"(?<=[.!?])\s+", text)
+    selected: list[str] = []
+    for sentence in sentences:
+        lowered = sentence.casefold()
+        if any(term.casefold() in lowered for term in terms):
+            selected.append(_compact(sentence, 320))
+        if len(" ".join(selected)) >= limit or len(selected) >= 3:
+            break
+
+    if not selected:
+        return NOT_FOUND
+
+    return _clean_case_field(" ".join(selected), limit)
+
+
+def _extract_information_sought(text: str) -> str:
+    labelled = _extract_after_labels(
+        text,
+        (
+            "Information sought",
+            "Information requested",
+            "RTI application",
+            "Facts",
+        ),
+    )
+    if labelled != NOT_FOUND:
+        return labelled
+
+    return _extract_sentence_with_terms(
+        text,
+        (
+            "information sought",
+            "information requested",
+            "sought vide RTI",
+            "requested information",
+            "RTI application dated",
+        ),
+    )
+
+
+def _extract_pio_faa_response(text: str) -> str:
+    labelled = _extract_after_labels(
+        text,
+        (
+            "PIO reply",
+            "CPIO reply",
+            "SPIO reply",
+            "FAA order",
+            "First Appeal",
+            "Respondent",
+        ),
+    )
+    if labelled != NOT_FOUND:
+        return labelled
+
+    return _extract_sentence_with_terms(
+        text,
+        (
+            "CPIO reply",
+            "PIO reply",
+            "FAA order",
+            "denied",
+            "rejected",
+            "8(1)",
+            "not provided",
+            "no reply",
+        ),
+    )
+
+
+def _extract_cic_observations(text: str) -> str:
+    labelled = _extract_after_labels(
+        text,
+        (
+            "CIC observations",
+            "Commission observations",
+            "Commission observed",
+            "Observations",
+        ),
+    )
+    if labelled != NOT_FOUND:
+        return labelled
+
+    return _extract_sentence_with_terms(
+        text,
+        (
+            "Commission observed",
+            "Commission noted",
+            "Commission found",
+            "Commission is of the view",
+            "the Commission",
+        ),
+    )
+
+
+def _extract_final_decision(text: str) -> str:
+    labelled = _extract_after_labels(
+        text,
+        (
+            "Final decision",
+            "Decision",
+            "Order",
+            "Direction",
+            "Final order",
+        ),
+    )
+    if labelled != NOT_FOUND:
+        return labelled
+
+    return _extract_sentence_with_terms(
+        text,
+        (
+            "directed",
+            "disposed of",
+            "appeal is disposed",
+            "complaint is disposed",
+            "furnish",
+            "provide information",
+            "no further intervention",
+        ),
+    )
+
+
+def _use_in_present_case(
+    *,
+    text: str,
+    issue_summary: dict[str, list[str]],
+    final_decision: str,
+    observations: str,
+) -> str:
+    combined = " ".join(
+        [
+            text,
+            " ".join(issue_summary.get("legal_issues", [])),
+            " ".join(issue_summary.get("response_paths", [])),
+        ]
+    ).casefold()
+
+    if any(term in combined for term in ("8(1)", "exemption", "denied", "rejected")):
+        return (
+            "Useful if records exist and the proposed denial relies on broad or "
+            "unverified exemption grounds; the PIO should verify records and give "
+            "section-specific reasons."
+        )
+
+    if any(term in combined for term in ("pointwise", "point-wise", "proper reply")):
+        return (
+            "Useful where the present application requires a clear, point-wise "
+            "reply based on available records."
+        )
+
+    if any(term in combined for term in ("furnish", "provide information", "directed")):
+        return (
+            "Useful where the record is available and no specific RTI Act exemption "
+            "is established after verification."
+        )
+
+    if final_decision == NOT_FOUND and observations == NOT_FOUND:
+        return NOT_FOUND
+
+    return (
+        "Useful only to the extent the present RTI has similar verified facts, "
+        "record availability, and applicable RTI Act provisions."
+    )
+
+
+def _case_verification_card(
+    result: dict[str, Any],
+    issue_summary: dict[str, list[str]],
+) -> dict[str, str]:
+    text = _case_text(result)
+    observations = _extract_cic_observations(text)
+    final_decision = _extract_final_decision(text)
+
+    return {
+        "information_sought": _extract_information_sought(text),
+        "pio_faa_response": _extract_pio_faa_response(text),
+        "cic_observations": observations,
+        "final_decision": final_decision,
+        "use_in_present_case": _use_in_present_case(
+            text=text,
+            issue_summary=issue_summary,
+            final_decision=final_decision,
+            observations=observations,
+        ),
+        "source_file": result.get("actual_pdf")
+        or result.get("source")
+        or result.get("document_id")
+        or NOT_FOUND,
+    }
+
+
 def _decision_identity(point: Any) -> str:
     payload = dict(getattr(point, "payload", {}) or {})
     collection = _payload_value(payload, "_retrieval_collection") or "unknown"
@@ -149,12 +406,17 @@ def _decision_identity(point: Any) -> str:
     return f"{collection}|{stable or getattr(point, 'id', '')}"
 
 
-def _to_frontend_result(retrieval_result: dict[str, Any], rank: int) -> dict[str, Any]:
+def _to_frontend_result(
+    retrieval_result: dict[str, Any],
+    rank: int,
+    issue_summary: dict[str, list[str]],
+) -> dict[str, Any]:
     point = retrieval_result["point"]
     payload = dict(getattr(point, "payload", {}) or {})
-    text = _compact(payload.get("text"), 6000)
+    raw_text = str(payload.get("text") or "")
+    text = _compact(raw_text, 8000)
     source = _payload_value(payload, "source", "file", "actual_pdf", "decision_pdf")
-    actual_pdf = _payload_value(payload, "actual_pdf", "decision_pdf")
+    actual_pdf = _payload_value(payload, "actual_pdf", "decision_pdf", "case_file")
     document_id = _payload_value(
         payload,
         "decision_number",
@@ -166,7 +428,7 @@ def _to_frontend_result(retrieval_result: dict[str, Any], rank: int) -> dict[str
         "source",
     ) or str(getattr(point, "id", ""))
 
-    return {
+    result = {
         "rank": rank,
         "score": float(retrieval_result.get("score", 0.0) or 0.0),
         "retrieval_collection": _payload_value(payload, "_retrieval_collection") or "precedent_qdrant",
@@ -183,6 +445,13 @@ def _to_frontend_result(retrieval_result: dict[str, Any], rank: int) -> dict[str
         "structured_md_available": False,
         "structured_json_available": False,
     }
+    verification_input = dict(result)
+    verification_input["text"] = raw_text
+    result["case_verification"] = _case_verification_card(
+        verification_input,
+        issue_summary,
+    )
+    return result
 
 
 def _select_balanced_results(
@@ -224,12 +493,19 @@ def _reference_context(results: list[dict[str, Any]]) -> str:
         case_label = result.get("case_number") or "Not stated in indexed passage"
         date_label = result.get("decision_date") or "Not stated in indexed passage"
         title_label = result.get("title") or "Not stated in indexed passage"
+        verification = result.get("case_verification") or {}
         parts.append(
             f"[REFERENCE {index}]\n"
             f"Collection: {result.get('retrieval_collection', '')}\n"
             f"Decision identifier: {case_label}\n"
             f"Decision date: {date_label}\n"
             f"Title/subject: {title_label}\n"
+            f"Extracted information sought: {verification.get('information_sought', NOT_FOUND)}\n"
+            f"Extracted PIO/FAA response: {verification.get('pio_faa_response', NOT_FOUND)}\n"
+            f"Extracted CIC observations: {verification.get('cic_observations', NOT_FOUND)}\n"
+            f"Extracted final decision: {verification.get('final_decision', NOT_FOUND)}\n"
+            f"Extracted present-case use: {verification.get('use_in_present_case', NOT_FOUND)}\n"
+            f"Source file: {verification.get('source_file') or result.get('actual_pdf') or NOT_FOUND}\n"
             f"Passage:\n{result.get('text', '')}"
         )
     return "\n\n".join(parts)
@@ -262,18 +538,22 @@ Do not state or imply that a final decision has been made in the present RTI mat
 Do not mention chat history, previous PIO responses, prompts, retrieval, databases,
 or that this content was generated from earlier material.
 
-Write a self-contained supporting-reference note. Use natural professional Hindi
+Write self-contained case verification cards. Use natural professional Hindi
 when the current RTI language is Hindi; otherwise write professional English.
 Use this structure only:
-### Relevant CIC/CGSIC Decision References
+### CIC/CGSIC Decision Verification Cards
 1. **Decision:** [only verified identifier/title, or collection label if none]
-   **Principle:** [what the passage establishes]
-   **Relevance:** [how it may assist PIO consideration of the present issues]
+   **Information sought:** [what the applicant sought in that CIC/CGSIC case; if absent write "{NOT_FOUND}"]
+   **PIO/FAA response:** [PIO/FAA reply, denial ground, exemption, no-reply status, or "{NOT_FOUND}"]
+   **CIC observations:** [what the Commission found/observed; if absent write "{NOT_FOUND}"]
+   **Final decision:** [final direction/order/disposal in that case; if absent write "{NOT_FOUND}"]
+   **Use in present case:** [how this decision may assist the present PIO analysis, stated conditionally]
+   **Source:** [source file name]
 
 Include only references that have a clear connection to the stated issues.
 Keep the response to at most {len(results)} numbered entries and finish with one
-short caution that the final action must be taken on verified records and the
-applicable RTI Act provisions.
+short caution that these are precedent indicators only; final action must be
+taken on verified records and the applicable RTI Act provisions.
 
 CURRENT RTI ISSUE SUMMARY:
 {json.dumps(issue_summary, ensure_ascii=False, indent=2)}
@@ -304,7 +584,7 @@ def _generate_precedent_answer(
         answer = generate_text(
             prompt=prompt,
             temperature=0.0,
-            max_tokens=int(os.getenv("PIO_PRECEDENT_MAX_TOKENS", "2200")),
+            max_tokens=int(os.getenv("PIO_PRECEDENT_MAX_TOKENS", "3600")),
             timeout_seconds=int(os.getenv("PIO_PRECEDENT_LLM_TIMEOUT_SECONDS", "180")),
             reasoning_effort="low",
         )
@@ -336,7 +616,7 @@ def _stream_precedent_answer(
         for chunk in stream_text(
             prompt=prompt,
             temperature=0.0,
-            max_tokens=int(os.getenv("PIO_PRECEDENT_MAX_TOKENS", "2200")),
+            max_tokens=int(os.getenv("PIO_PRECEDENT_MAX_TOKENS", "3600")),
             timeout_seconds=int(os.getenv("PIO_PRECEDENT_LLM_TIMEOUT_SECONDS", "180")),
             reasoning_effort="low",
         ):
@@ -859,6 +1139,7 @@ def _retrieve_precedent_context(
     search_query = build_precedent_query(rti_extraction, legal_analysis)
     if not search_query:
         raise PIOPrecedentError("A focused precedent query could not be built from the PIO advisory.")
+    issue_summary = _extract_issue_summary(rti_extraction, legal_analysis)
 
     candidate_limit = max(8, requested_limit * 2)
     retrieved = rag_module.retrieve_context(
@@ -876,7 +1157,7 @@ def _retrieve_precedent_context(
         )
 
     frontend_results = [
-        _to_frontend_result(item, rank=index)
+        _to_frontend_result(item, rank=index, issue_summary=issue_summary)
         for index, item in enumerate(balanced, start=1)
     ]
 

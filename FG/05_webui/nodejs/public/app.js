@@ -547,6 +547,7 @@ function createPrecedentReferencesDropdown(message) {
     results.forEach((result, index) => {
       const card = document.createElement('div');
       card.className = 'precedent-reference-card';
+      const verification = result.case_verification || {};
 
       const title = result.case_number ||
         result.title ||
@@ -559,10 +560,35 @@ function createPrecedentReferencesDropdown(message) {
         typeof result.score === 'number' ? `score ${result.score.toFixed(3)}` : ''
       ].filter(Boolean).join(' | ');
 
+      const fields = [
+        ['Information sought', verification.information_sought],
+        ['PIO/FAA response', verification.pio_faa_response],
+        ['CIC observations', verification.cic_observations],
+        ['Final decision', verification.final_decision],
+        ['Use in present case', verification.use_in_present_case],
+        ['Source', verification.source_file || result.actual_pdf || result.source]
+      ];
+
+      const fieldHtml = fields
+        .map(([label, value]) => {
+          const text = value || 'Not found in retrieved case text.';
+          return `
+            <div class="precedent-reference-field">
+              <span>${escapeHtml(label)}</span>
+              <p>${escapeHtml(text)}</p>
+            </div>
+          `;
+        })
+        .join('');
+
       card.innerHTML = `
         <div class="precedent-reference-title">${escapeHtml(title)}</div>
         ${meta ? `<div class="precedent-reference-meta">${escapeHtml(meta)}</div>` : ''}
-        <p>${escapeHtml(result.excerpt || result.text || 'No excerpt available.')}</p>
+        <div class="precedent-reference-fields">${fieldHtml}</div>
+        <details class="precedent-reference-raw">
+          <summary>Retrieved case text</summary>
+          <p>${escapeHtml(result.excerpt || result.text || 'No excerpt available.')}</p>
+        </details>
       `;
       list.appendChild(card);
     });

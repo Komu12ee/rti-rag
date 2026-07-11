@@ -512,16 +512,18 @@ def _validate_legal_analysis(
 
 def _build_extraction_prompt(rti_text: str) -> str:
     return f"""
-You are a strict RTI application extraction system for a Public Information Officer.
+You are a strict RTI request/scenario extraction system for a Public Information Officer.
 
-Extract facts only from the RTI application. Do not perform legal reasoning.
+The input may be a formal RTI application or a scenario-based description of
+an RTI request. Extract facts only from the user-provided text. Do not perform
+legal reasoning.
 
 Mandatory rules:
 1. Return a single valid JSON object only. Do not use Markdown fences.
 2. Do not invent names, departments, dates, document names, identifiers, or records.
 3. Use null for a scalar value that is absent or uncertain.
 4. Keep each distinct request in a separate information_points item.
-5. Preserve the RTI application's language where practical.
+5. Preserve the RTI request/scenario language where practical.
 6. If a request is vague, record the uncertainty instead of guessing.
 
 Return exactly this object shape:
@@ -547,9 +549,9 @@ Return exactly this object shape:
   "extraction_uncertainties": []
 }}
 
-<rti_application>
+<rti_request_or_scenario>
 {rti_text}
-</rti_application>
+</rti_request_or_scenario>
 """.strip()
 
 

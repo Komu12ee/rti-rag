@@ -835,26 +835,25 @@ def _extract_rti_application_text(query_text: str) -> str:
     return text
 
 
-def _looks_like_rti_application_text(rti_text: str) -> bool:
+def _has_pio_advisory_material(advisory_text: str) -> bool:
     """
-    Avoid expensive PIO calls for short requests such as:
-    'Prepare a reply for this RTI.'
-    """
-    text = str(rti_text or "").strip()
+    Accept either a formal RTI application or a scenario-based PIO reply brief.
 
-    if len(text) < 120:
+    The explicit advisory intent is checked separately. This gate only avoids
+    running the PIO pipeline for empty/near-empty requests such as
+    "prepare a reply" with no facts to analyse.
+    """
+    text = str(advisory_text or "").strip()
+    if len(text) < 40:
         return False
 
-    marker_count = sum(
-        1
-        for marker in RTI_DOCUMENT_MARKERS
-        if marker.search(text)
+    intent_words = re.compile(
+        r"\b(?:prepare|draft|generate|write|create|make|pio|rti|reply|"
+        r"response|advisory|application|for|this|the|a|an)\b",
+        re.IGNORECASE,
     )
-
-    if marker_count >= 2:
-        return True
-
-    return marker_count >= 1 and "\n" in text and len(text) >= 180
+    remaining = intent_words.sub(" ", text)
+    return bool(re.search(r"[A-Za-z\u0900-\u097F]{3,}", remaining))
 
 
 def _pio_application_required_answer(
@@ -873,13 +872,15 @@ def _pio_application_required_answer(
         )
 
     return (
-        "The PIO advisory workflow requires the complete RTI application text.\n\n"
-        "Paste the full application in the same message and explicitly request "
-        "a PIO reply or advisory report.\n\n"
+        "The PIO advisory workflow needs either the full RTI application text "
+        "or a scenario with enough facts to analyse.\n\n"
+        "Paste the application or describe what the applicant asked for, what "
+        "records are available or unavailable, and what kind of PIO reply you "
+        "want.\n\n"
         "Example:\n"
-        "RTI Application:\n"
-        "[full RTI application]\n\n"
-        "Prepare a PIO advisory response for this RTI."
+        "Scenario: The applicant asked for certified copies of payment "
+        "records for 2022-23. The office has vouchers but no consolidated "
+        "report. Prepare a PIO advisory response."
     )
 
 
@@ -910,7 +911,7 @@ def query_stream():
             if pio_mode and _is_pio_advisory_request(query_text):
                 rti_application_text = _extract_rti_application_text(query_text)
 
-                if not _looks_like_rti_application_text(rti_application_text):
+                if not _has_pio_advisory_material(rti_application_text):
                     answer = _pio_application_required_answer(
                         query_text,
                         answer_language=answer_language,
