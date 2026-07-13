@@ -57,6 +57,8 @@ const ui = {
   pioModeToggle: $('pio-mode-toggle'),
   pioModeState: $('pio-mode-state'),
   headModeLabel: $('head-mode-label'),
+  uploadPdf: $('upload-pdf'),
+  pdfUploadInput: $('pdf-upload-input'),
   queryInput: $('query-input'),
   queryStatus: $('query-status'),
   queryTiming: $('query-timing'),
@@ -91,6 +93,9 @@ const ui = {
 
 const state = {
   initialized: false,
+  ocrReady: true,
+  ocrModel: 'ollama',
+  ocrError: '',
   loading: false,
   pioMode: localStorage.getItem(PIO_MODE_KEY) === 'true',
   languageMode: normaliseLanguageMode(localStorage.getItem(LANGUAGE_MODE_KEY)),
@@ -190,6 +195,18 @@ const api = {
     api.streamRequest('/api/pio/precedent-advisory/stream', {
       advisory_id: advisoryId
     }, handlers),
+  async uploadPioPdf(file, answerLanguage) {
+    const body = new FormData();
+    body.append('pdf', file);
+    body.append('answer_language', normaliseLanguageMode(answerLanguage));
+
+    const res = await fetch('/api/pio/upload-pdf', {
+      method: 'POST',
+      body
+    });
+    const data = await res.json().catch(() => ({}));
+    return { ok: res.ok, status: res.status, data };
+  },
 
   documentStructure: actualPdf => api.request('POST', '/api/document-structure', { actual_pdf: actualPdf }),
   async fetchPdf(path) {
@@ -985,6 +1002,8 @@ function setAllStatus(ps, pt, ds, dt, qs, qt) {
     setBotStatus('loading', 'Checking bot status');
   } else if (states.includes('error')) {
     setBotStatus('error', 'Bot needs attention');
+  } else if (!state.ocrReady) {
+    setBotStatus('error', `OCR unavailable (${state.ocrModel})`);
   } else if (states.every(state => state === 'ok')) {
     setBotStatus('ok', 'All systems operational');
   } else {
@@ -1003,11 +1022,13 @@ function updateFooterTime() {
 
 function enableQueryBar(message = 'Ready') {
   ui.btnSend.disabled = false;
+  if (ui.uploadPdf) ui.uploadPdf.disabled = false;
   ui.queryStatus.textContent = message;
 }
 
 function disableQueryBar(message = 'Loading...') {
   ui.btnSend.disabled = true;
+  if (ui.uploadPdf) ui.uploadPdf.disabled = true;
   ui.queryStatus.textContent = message;
 }
 
@@ -1070,6 +1091,10 @@ async function bootStatus() {
     const { ok, data } = await api.health();
     if (ok && data.rag_pipeline === 'available') {
       state.initialized = Boolean(data.pipeline_initialized);
+      state.ocrReady = data.ocr_ready !== false;
+      state.ocrModel = String(data.ocr_model || 'ollama');
+      state.ocrError = String(data.ocr_error || '');
+      ui.botStatusPanel.title = state.ocrError;
       await refreshDbStatus();
       if (state.initialized) enableQueryBar();
     } else {
@@ -1103,6 +1128,38 @@ function buildScopedQuery(userText) {
       state.pioMode ? PIO_ASSISTANT_SCOPE : ASSISTANT_SCOPE
     }`
   ].filter(Boolean).join('\n\n');
+}
+
+
+function buildAssistantResponseMessage(messageId, data, fallbackAnswer = '') {
+  const answer = data.answer || data.pio_advisory_report || fallbackAnswer || '';
+  return {
+    id: messageId,
+    role: 'assistant',
+    content: answer,
+    display: answer,
+    results: data.results || [],
+    pioDetails: buildPioDetails(data),
+    advisoryId: data.advisory_id || null,
+    precedentSearchAvailable: Boolean(
+      data.precedent_search_available && data.advisory_id
+    ),
+    precedentDecision: (
+      data.precedent_search_available && data.advisory_id
+        ? 'pending'
+        : null
+    ),
+    precedentSearchCompleted: Boolean(data.precedent_search_completed),
+    timing: data.execution_time || '',
+    uploadMeta: data.source_pdf
+      ? {
+          sourcePdf: data.source_pdf,
+          structuredMdPath: data.structured_md_path || '',
+          extractedMarkdownChars: data.extracted_markdown_chars || 0
+        }
+      : null,
+    createdAt: nowIso()
+  };
 }
 
 
@@ -1208,27 +1265,11 @@ async function sendQuery() {
     const data = finalData || {};
 
     if (data.success) {
-      const answer = data.answer || streamedAnswer || '';
-      conversation.messages[index] = {
-        id: pendingMessage.id,
-        role: 'assistant',
-        content: answer,
-        display: answer,
-        results: data.results || [],
-        pioDetails: buildPioDetails(data),
-        advisoryId: data.advisory_id || null,
-        precedentSearchAvailable: Boolean(
-          data.precedent_search_available && data.advisory_id
-        ),
-        precedentDecision: (
-          data.precedent_search_available && data.advisory_id
-            ? 'pending'
-            : null
-        ),
-        precedentSearchCompleted: Boolean(data.precedent_search_completed),
-        timing: data.execution_time || '',
-        createdAt: nowIso()
-      };
+      conversation.messages[index] = buildAssistantResponseMessage(
+        pendingMessage.id,
+        data,
+        streamedAnswer
+      );
       ui.queryTiming.textContent = data.execution_time || '';
     } else {
       const errorMessage = data.error || 'Query failed';
@@ -1252,6 +1293,89 @@ async function sendQuery() {
         role: 'assistant',
         content: errorMessage,
         display: `Unable to answer: ${errorMessage}`,
+        createdAt: nowIso()
+      };
+    }
+    toast(errorMessage, 'error');
+  } finally {
+    state.loading = false;
+    enableQueryBar();
+    touchConversation(conversation);
+    renderAll();
+    updateFooterTime();
+  }
+}
+
+async function handlePdfUpload(event) {
+  const file = event.target.files && event.target.files[0];
+  event.target.value = '';
+
+  if (!file || state.loading) return;
+  if (!file.name.toLowerCase().endsWith('.pdf')) {
+    toast('Please upload a PDF file.', 'error');
+    return;
+  }
+
+  const conversation = activeConversation();
+  const displayName = `Uploaded PDF: ${file.name}`;
+  const userMessage = {
+    id: newId(),
+    role: 'user',
+    content: displayName,
+    display: displayName,
+    createdAt: nowIso()
+  };
+  conversation.messages.push(userMessage);
+  touchConversation(conversation);
+
+  const pendingMessage = {
+    id: newId(),
+    role: 'assistant',
+    content: '',
+    pending: true,
+    createdAt: nowIso()
+  };
+  conversation.messages.push(pendingMessage);
+  state.loading = true;
+  ui.queryTiming.textContent = '';
+  disableQueryBar('Uploading PDF...');
+  renderAll();
+
+  try {
+    disableQueryBar('Extracting PDF text...');
+    const { ok, status, data } = await api.uploadPioPdf(file, state.languageMode);
+    const index = conversation.messages.findIndex(m => m.id === pendingMessage.id);
+    if (index < 0) return;
+
+    if (ok && data.success) {
+      conversation.messages[index] = buildAssistantResponseMessage(
+        pendingMessage.id,
+        data
+      );
+      ui.queryTiming.textContent = data.execution_time || '';
+      toast('PDF processed and PIO advisory generated.', 'success');
+    } else {
+      const errorMessage = data.error || `Upload failed (HTTP ${status})`;
+      conversation.messages[index] = {
+        id: pendingMessage.id,
+        role: 'assistant',
+        content: errorMessage,
+        display: `Unable to process uploaded PDF: ${errorMessage}`,
+        createdAt: nowIso()
+      };
+      toast(errorMessage, 'error');
+    }
+  } catch (err) {
+    const index = conversation.messages.findIndex(m => m.id === pendingMessage.id);
+    const errorMessage = err && err.message
+      ? err.message
+      : 'Network error while uploading PDF.';
+    if (index >= 0) {
+      conversation.messages[index] = {
+        id: pendingMessage.id,
+        role: 'assistant',
+        content: errorMessage,
+        display: `Unable to process uploaded PDF: ${errorMessage}`,
         createdAt: nowIso()
       };
     }
@@ -1495,6 +1619,12 @@ function setupEvents() {
   ui.clearChat.addEventListener('click', clearActiveChat);
   ui.btnInit.addEventListener('click', initPipeline);
   ui.btnSend.addEventListener('click', sendQuery);
+  if (ui.uploadPdf && ui.pdfUploadInput) {
+    ui.uploadPdf.addEventListener('click', () => {
+      if (!state.loading) ui.pdfUploadInput.click();
+    });
+    ui.pdfUploadInput.addEventListener('change', handlePdfUpload);
+  }
   ui.languageOptions.forEach(button => {
     button.addEventListener('click', () => setLanguageMode(button.dataset.languageMode));
   });

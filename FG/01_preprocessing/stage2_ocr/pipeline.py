@@ -9,11 +9,13 @@ Writes to:  stage2_output/<doc_name>/structured.json + structured.md
 """
 
 import gc
+import importlib
 import math
 import json
 import logging
 import os
 import shutil
+import sys
 import tempfile
 import zipfile
 from pathlib import Path
@@ -24,37 +26,36 @@ import fitz
 from .config import (
     DEFAULT_OUTPUT_DIR,
     OUTPUT_FORMATS,
-    PAGE_CONFIDENCE_THRESHOLD,
     SARVAM_OCR_THRESHOLD,
 )
-from .docling_ocr import create_converter, process_image
 from .models import DocumentOCRResult, PageOCRResult, DocumentElement, ElementType
+from .ollama_ocr import run_ollama_page_ocr
 from .postprocess import postprocess_page_text, extract_critical_fields
-
 logger = logging.getLogger(__name__)
-load_dotenv()
+
+FG_DIR = Path(__file__).resolve().parents[2]
+WEBUI_ENV_PATH = FG_DIR / "05_webui" / ".env"
+load_dotenv(WEBUI_ENV_PATH, override=False)
+load_dotenv(override=False)
+
+DEFAULT_OCR_MODEL = "ollama"
+SUPPORTED_OCR_MODELS = {"ollama", "sarvam"}
+SARVAM_SDK_REQUIREMENT = "sarvamai>=0.1.28,<0.2.0"
 
 
-def _low_confidence_pages(
-    page_confidences: dict[int, float | None],
-    threshold: float,
-) -> list[int]:
-    return sorted(
-        page_no
-        for page_no, score in page_confidences.items()
-        if score is None or score < threshold
+def normalize_ocr_model(value: str | None) -> str:
+    """Return the configured OCR backend name or reject a typo."""
+    model = (value or DEFAULT_OCR_MODEL).strip().lower()
+    if model in SUPPORTED_OCR_MODELS:
+        return model
+    raise ValueError(
+        "Invalid OCR_MODEL. Use either 'ollama' or 'sarvam'."
     )
 
 
-def _source_map_from_confidences(
-    page_confidences: dict[int, float | None],
-    low_pages: list[int],
-) -> dict[int, str]:
-    low_set = set(low_pages)
-    return {
-        page_no: ("sarvam" if page_no in low_set else "docling")
-        for page_no in sorted(page_confidences.keys())
-    }
+# Provider failures are fatal for OCR-required upload pages.
+class OCRProviderError(RuntimeError):
+    """Raised when the selected OCR provider cannot process a page."""
 
 
 class OCRPipeline:
@@ -67,23 +68,44 @@ class OCRPipeline:
     >>> print(result.to_markdown())
     """
 
-    def __init__(self, output_dir: str | Path = DEFAULT_OUTPUT_DIR):
+    def __init__(self, output_dir: str | Path = DEFAULT_OUTPUT_DIR, ocr_model: str | None = None):
         self.output_dir = Path(output_dir)
+        self.ocr_model = normalize_ocr_model(ocr_model or os.getenv("OCR_MODEL"))
         self._converter = None
 
     def _get_converter(self):
-        """Lazy-load the Docling converter (models loaded once)."""
+        """Lazy-load the legacy Docling converter only when Stage 2 uses it."""
         if self._converter is None:
+            from .docling_ocr import create_converter
+
             self._converter = create_converter()
         return self._converter
-
-    def process_single_image(self, image_path: str | Path, page_num: int) -> PageOCRResult:
+    def process_single_image(
+        self,
+        image_path: str | Path,
+        page_num: int,
+        ocr_model: str | None = None,
+    ) -> PageOCRResult:
         """Run OCR on one prepared page image.
 
         The smart extractor calls this only for pages that require OCR. Keeping
-        this wrapper here avoids duplicating Docling setup or OCR internals.
+        this wrapper here avoids duplicating OCR setup or internals.
         """
-        return process_image(self._get_converter(), Path(image_path), page_num)
+        selected_model = normalize_ocr_model(ocr_model or self.ocr_model)
+        try:
+            if selected_model == "sarvam":
+                return _run_sarvam_single_page(
+                    image_path=Path(image_path),
+                    page_num=page_num,
+                    output_dir=self.output_dir,
+                )
+            return run_ollama_page_ocr(Path(image_path), page_num)
+        except OCRProviderError:
+            raise
+        except Exception as error:
+            raise OCRProviderError(
+                f"{selected_model} OCR failed on page {page_num + 1}: {error}"
+            ) from error
 
     def process(self, stage1_dir: str | Path) -> DocumentOCRResult:
         """Run OCR on all page images from a Stage 1 output directory.
@@ -121,6 +143,8 @@ class OCRPipeline:
         doc_output_dir = self.output_dir / doc_name
         doc_output_dir.mkdir(parents=True, exist_ok=True)
 
+        from .docling_ocr import process_image
+
         converter = self._get_converter()
 
         result = DocumentOCRResult(
@@ -147,7 +171,7 @@ class OCRPipeline:
 
             try:
                 page_result = process_image(converter, image_path, page_num)
-            except (MemoryError, Exception) as e:
+            except Exception as e:
                 logger.error(f"    Page {page_num + 1} failed: {e}")
                 # Create an empty result for this page so numbering stays correct
                 page_result = PageOCRResult(
@@ -264,7 +288,8 @@ class OCRPipeline:
             for p in result.pages
         }
 
-        # Sarvam fallback OCR for low-confidence pages (per-page)
+        # Legacy full Stage 2 keeps its existing low-confidence Sarvam fallback.
+        # The smart + upload path uses process_single_image() and is exclusive.
         page_image_paths = getattr(result, "_page_image_paths", {})
         sarvam_outputs = _run_sarvam_fallback(
             output_dir=output_dir,
@@ -273,7 +298,6 @@ class OCRPipeline:
             threshold=SARVAM_OCR_THRESHOLD,
         )
 
-        # Build accurate source map based on whether Sarvam succeeded
         source_map = {
             page_no: ("sarvam" if page_no in sarvam_outputs else "docling")
             for page_no in sorted(page_confidences.keys())
@@ -391,19 +415,34 @@ def _run_sarvam_fallback(
     page_image_paths: dict[int, Path],
     page_confidences: dict[int, float | None],
     threshold: float,
+    strict: bool = False,
 ) -> dict[int, dict[str, Path]]:
     """Run Sarvam Document Intelligence for low-confidence pages."""
     max_pdf_bytes = 5 * 1024 * 1024
     max_downscale_attempts = 3
-    api_key = os.getenv("SARVAM_API_KEY", "")
+    api_key = os.getenv("SARVAM_API_KEY", "").strip()
     if not api_key:
-        logger.warning("SARVAM_API_KEY not set; skipping Sarvam OCR fallback.")
+        message = "SARVAM_API_KEY is missing or blank; cannot use OCR_MODEL=sarvam."
+        if strict:
+            raise OCRProviderError(message)
+        logger.warning("%s Skipping Sarvam OCR fallback.", message)
         return {}
 
     try:
-        from sarvamai import SarvamAI
-    except ImportError:
-        logger.warning("sarvamai package not installed; skipping Sarvam OCR fallback.")
+        sarvam_module = importlib.import_module("sarvamai")
+        SarvamAI = sarvam_module.SarvamAI
+    except Exception as error:
+        install_command = (
+            f'"{sys.executable}" -m pip install "{SARVAM_SDK_REQUIREMENT}"'
+        )
+        message = (
+            "OCR_MODEL=sarvam requires the Sarvam Document Intelligence SDK in "
+            f"the same Python environment used for OCR ({sys.executable}). "
+            f"Install it with: {install_command}"
+        )
+        if strict:
+            raise OCRProviderError(message) from error
+        logger.warning("%s Skipping Sarvam OCR fallback.", message)
         return {}
 
     client = SarvamAI(api_subscription_key=api_key)
@@ -480,6 +519,49 @@ def _run_sarvam_fallback(
                 }
 
     return outputs
+
+
+def _run_sarvam_single_page(image_path: Path, page_num: int, output_dir: Path) -> PageOCRResult:
+    """Run Sarvam OCR for one prepared page image and return a PageOCRResult."""
+    output_dir.mkdir(parents=True, exist_ok=True)
+    page_no = page_num + 1
+    logger.info("    Sarvam OCR on page %s...", page_no)
+
+    sarvam_outputs = _run_sarvam_fallback(
+        output_dir=output_dir,
+        page_image_paths={page_no: image_path},
+        page_confidences={page_no: 0.0},
+        threshold=1.0,
+        strict=True,
+    )
+    page_outputs = sarvam_outputs.get(page_no)
+    md_path = page_outputs.get("md") if page_outputs else None
+    if not md_path:
+        raise RuntimeError(f"Sarvam OCR did not return markdown for page {page_no}.")
+
+    raw_text = _strip_embedded_images(Path(md_path).read_text(encoding="utf-8")).strip()
+    elements = []
+    if raw_text:
+        elements.append(DocumentElement(
+            element_type=ElementType.PARAGRAPH,
+            text=raw_text,
+            page_num=page_num,
+        ))
+
+    json_path = page_outputs.get("json") if page_outputs else None
+    for generated_path in (md_path, json_path):
+        if generated_path:
+            try:
+                Path(generated_path).unlink(missing_ok=True)
+            except OSError:
+                logger.debug("Could not remove temporary Sarvam output %s", generated_path)
+
+    return PageOCRResult(
+        page_num=page_num,
+        elements=elements,
+        raw_text=raw_text,
+        confidence=None,
+    )
 
 
 def _merge_markdown(result: DocumentOCRResult, sarvam_outputs: dict[int, dict[str, Path]]) -> str:

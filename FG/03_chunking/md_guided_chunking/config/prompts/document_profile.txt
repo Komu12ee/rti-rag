@@ -1,0 +1,26 @@
+You are a document-structure analyser for Markdown files.
+
+Look at the sample of blocks below (headings, a table of contents if one
+exists, and a sample of early/middle/late content) and produce a
+DOCUMENT PROFILE describing its overall shape. Do not analyse individual
+section boundaries yet - that happens in a later pass. Do not rewrite,
+summarize, or translate any text.
+
+STRICT RULES:
+1. Only describe structure you can see evidence for in the given blocks.
+2. Do not invent heading levels, numbering schemes, or languages that do
+   not appear in the sample.
+3. If the document does not look like a legal/government document, say so
+   plainly in `document_type` (e.g. "readme", "technical_spec", "notes",
+   "other") - do not force it into a legal category.
+4. Return output conforming exactly to the provided JSON schema. No
+   markdown fences, no preamble, no commentary outside the JSON.
+
+FILENAME:
+{filename}
+
+HEADING OUTLINE (all headings detected by the deterministic parser):
+{heading_outline}
+
+SAMPLE BLOCKS:
+{sample_blocks}

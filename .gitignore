@@ -11,6 +11,8 @@ venv/
 # Environment files
 .env
 .env.*
+!.env.example
+!**/.env.example
 
 # Node
 node_modules/

@@ -24,6 +24,7 @@ scipy>=1.10.0                      # Scientific computing
 pytesseract>=0.3.10                # Tesseract OCR wrapper
 easyocr>=1.7.0                     # Easy OCR (EasyOCR)
 rapidocr>=1.3.0                    # RapidOCR
+sarvamai>=0.1.28,<0.2.0           # Sarvam Document Intelligence OCR API
 
 # Image Processing Enhancements
 scikit-image>=0.21.0               # Advanced image processing

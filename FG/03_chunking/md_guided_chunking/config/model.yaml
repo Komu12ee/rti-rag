@@ -1,0 +1,25 @@
+# Runtime configuration for the local LLM used at build time only.
+# The generated chunker scripts in output/ never read this file.
+
+model:
+  name: "qwen3:14b"
+  host: "http://127.0.0.1:11434"
+  temperature: 0
+  num_ctx: 16384
+  # Set to true to ask the model for a brief reasoning pass before
+  # committing to boundaries. Leave false for normal/fast operation;
+  # you can flip this per-call with --thinking on the CLI too.
+  thinking_mode: false
+
+windowing:
+  # Default window size in blocks (can be overridden via --window-size)
+  default_window_size: 30
+  # Blocks of context pulled in from before/after the window
+  context_overlap: 3
+
+paths:
+  blocks_dir: "analysis"
+  profile_dir: "analysis"
+  decision_dir: "analysis"
+  review_dir: "analysis"
+  output_dir: "output"

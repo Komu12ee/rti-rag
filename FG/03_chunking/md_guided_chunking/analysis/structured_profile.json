@@ -1,0 +1,17 @@
+{
+  "document_type": "technical_spec",
+  "languages": [
+    "hi",
+    "en",
+    "mixed"
+  ],
+  "hierarchy": [
+    "heading_level_2"
+  ],
+  "expected_unit_types": [],
+  "numbering_patterns": [],
+  "special_observations": [
+    "The document contains a mix of Hindi and English text, with some blocks marked as 'mixed' language.",
+    "The document appears to be a technical guide or specification related to the registration process for information officers and related roles, likely in an official or governmental context."
+  ]
+}

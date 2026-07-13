@@ -1,0 +1,392 @@
+[
+  {
+    "block_id": "b0001",
+    "block_type": "paragraph",
+    "text": "<!-- Page 1 -->",
+    "line_start": 0,
+    "line_end": 1,
+    "heading_level": null,
+    "detected_language": "en",
+    "content_hash": "608536c437e7dbb8"
+  },
+  {
+    "block_id": "b0002",
+    "block_type": "paragraph",
+    "text": "अल",
+    "line_start": 2,
+    "line_end": 3,
+    "heading_level": null,
+    "detected_language": "hi",
+    "content_hash": "eddcec42c10010c7"
+  },
+  {
+    "block_id": "b0003",
+    "block_type": "paragraph",
+    "text": "जन सूचना अधिकारी तथा प्रथम अपीलीय अधिकारी <ल. ः ` के कार्यभार लेने और के सम्बन्ध में",
+    "line_start": 4,
+    "line_end": 5,
+    "heading_level": null,
+    "detected_language": "hi",
+    "content_hash": "5fcfc858b1be6df0"
+  },
+  {
+    "block_id": "b0004",
+    "block_type": "paragraph",
+    "text": "<!-- Page 2 -->",
+    "line_start": 8,
+    "line_end": 9,
+    "heading_level": null,
+    "detected_language": "en",
+    "content_hash": "b7244f29c133b416"
+  },
+  {
+    "block_id": "b0005",
+    "block_type": "table",
+    "text": "| 1.   | जन सूचना अधिकारी (PIOJ डैशबोर्डः 3   |\n|------|--------------------------------------|\n| 2.   | स्थानांतरण (Transfer) 3              |\n| 2.1. | कार्यभार देना .                      |\n| 2.2. | कार्यभार लेना                        |\n| 2.3. | स्थानांतरण अनुरोध फाइल अपलोड         |\n| 2.4. | नाम परिवर्तन अनुरोध 9                |",
+    "line_start": 10,
+    "line_end": 16,
+    "heading_level": null,
+    "detected_language": null,
+    "content_hash": "4d2fd29913f1fb6b"
+  },
+  {
+    "block_id": "b0006",
+    "block_type": "paragraph",
+    "text": "<!-- Page 3 -->",
+    "line_start": 20,
+    "line_end": 21,
+    "heading_level": null,
+    "detected_language": "en",
+    "content_hash": "76503e1b4ec5c57d"
+  },
+  {
+    "block_id": "b0007",
+    "block_type": "list_item",
+    "text": "- निम्नलिखित विंडो (PIO/FAO /Nodal) का डैशबोर्ड है जहाँ RTI Applications का लाइव स्टेटस दर्शाया गया है-\n- स्थानान्तरण अधिकारी के कार्यक्षेत्र के अंतर्गत निम्नलिखित शीर्ष आता है, जो निम्नानुसार है",
+    "line_start": 22,
+    "line_end": 23,
+    "heading_level": null,
+    "detected_language": "mixed",
+    "content_hash": "8057b2e241deaeec"
+  },
+  {
+    "block_id": "b0008",
+    "block_type": "paragraph",
+    "text": "<!-- Page 4 -->",
+    "line_start": 27,
+    "line_end": 28,
+    "heading_level": null,
+    "detected_language": "en",
+    "content_hash": "49b84dd36f8cd73b"
+  },
+  {
+    "block_id": "b0009",
+    "block_type": "list_item",
+    "text": "- निचे प्रस्तुत विंडो में कार्यभार देना ' ऑप्शन पर क्लिक करें- (लाल गोले से चिन्हित)\n- क्या आप अलग ईमेल आईडी वाले किसी अन्य व्यक्ति को चार्ज देना चाहते हैं? ऑप्शन को सेलेक्ट करे\n- उपरोक्त विंडो में RTI पोर्टल पर कार्यभार चार्ज की सूचि दर्शायी गयी है, जिनमे से कार्यभार सेलेक्ट कर, निचे दिए हुए विवरण को भरें\n- विवरण में सौपे जाने वाले अधिकारी के डिटेल्स को एंटर करें |\n- विवरण दर्ज करने के बाद, सबमिट बटन पर क्लिक करें |\n- फॉर्म सबमिट होते ही, इस मैसेज के साथ एक विंडो दिखाई देगी- 'Role Allocation has been done successfully",
+    "line_start": 29,
+    "line_end": 34,
+    "heading_level": null,
+    "detected_language": "mixed",
+    "content_hash": "72a957733ecc539d"
+  },
+  {
+    "block_id": "b0010",
+    "block_type": "paragraph",
+    "text": "<!-- Page 5 -->",
+    "line_start": 38,
+    "line_end": 39,
+    "heading_level": null,
+    "detected_language": "en",
+    "content_hash": "52ee45c2632de2d9"
+  },
+  {
+    "block_id": "b0011",
+    "block_type": "list_item",
+    "text": "- चार्ज लेने वाले (Charge Taken over) अधिकारी के डैशबोर्ड में यूजर स्थानांतरण टैब पर क्लिक करे\n- अब, यूजर कार्यभार लेना' ऑप्शन पर क्लिक करे\n- प्रभारो की सूचि को अप्रूव करें के यूजर Proceed बटन पर क्लिक करें लिए\n- निचे दिए गए विंडो में पदभार ग्रहण करने वाले कार्यभार का विवरण दिया गया है, यूजर दिए गए ऑप्शन्स को सेलेक्ट कर, सबमिट बटन पर क्लिक करें\n- फॉर्म सबमिट करते ही यूजर का अप्रूवल स्टेटस अपडेट हो जाएगा |\n- दिए गए डिस्प्ले के माध्यम View Details पर क्लिक करके , जाने वाले प्रभारो की जानकारी ले सकता है. से यूजर लिए",
+    "line_start": 40,
+    "line_end": 45,
+    "heading_level": null,
+    "detected_language": "mixed",
+    "content_hash": "f2123c1d676f213f"
+  },
+  {
+    "block_id": "b0012",
+    "block_type": "paragraph",
+    "text": "<!-- Page 6 -->",
+    "line_start": 49,
+    "line_end": 50,
+    "heading_level": null,
+    "detected_language": "en",
+    "content_hash": "afa57aa157a8ea7d"
+  },
+  {
+    "block_id": "b0013",
+    "block_type": "heading",
+    "text": "कार्यभार के डिटेल्स पर जाने के लिए View बटन पर क्लिक करें",
+    "line_start": 51,
+    "line_end": 51,
+    "heading_level": 2,
+    "detected_language": "mixed",
+    "content_hash": "4451b28f093d15be"
+  },
+  {
+    "block_id": "b0014",
+    "block_type": "paragraph",
+    "text": "<!-- Page 7 -->",
+    "line_start": 55,
+    "line_end": 56,
+    "heading_level": null,
+    "detected_language": "en",
+    "content_hash": "d08be7479df1559f"
+  },
+  {
+    "block_id": "b0015",
+    "block_type": "list_item",
+    "text": "- चार्ज लेने वाले अधिकारी द्वारा अप्रूवल होजाने के बाद गए कार्यभार की सूचि स्थानांतरण विवरण के साथ इस टैब में दिखयी देती है, दिए\n- Relieving Letter जनरेट करने के यूजर Generate Relieving Letter पर क्लिक करें लिए\n- Relieving Letter प्रीव्यू के साथ निचे दिए गए डिस्प्ले में दिखाई देगा\n- प्रभार गए अधिकारी का विवरण एवं प्रभार की सूचि, दोनों अधिकारियो के डिजिटल हस्ताक्षर के साथ विंडो में दिखाई देगा लिए\n- Relieving Letter को प्रिंट करने के लिए\n- पर क्लिक करें\n- File upload करने के लिए निचे दिए हुए टैब के ब्राउज ऑप्शन को क्लिक करें",
+    "line_start": 57,
+    "line_end": 63,
+    "heading_level": null,
+    "detected_language": "mixed",
+    "content_hash": "5e0ed1ce14e5eb38"
+  },
+  {
+    "block_id": "b0016",
+    "block_type": "paragraph",
+    "text": "<!-- Page 8 -->",
+    "line_start": 67,
+    "line_end": 68,
+    "heading_level": null,
+    "detected_language": "en",
+    "content_hash": "c9c5413e16729f8e"
+  },
+  {
+    "block_id": "b0017",
+    "block_type": "paragraph",
+    "text": "उपरोक्त फाइल सेलेक्ट कर अपलोड बटन  पर क्लीक करें",
+    "line_start": 69,
+    "line_end": 70,
+    "heading_level": null,
+    "detected_language": "hi",
+    "content_hash": "7f03dc1f06c5cdb7"
+  },
+  {
+    "block_id": "b0018",
+    "block_type": "paragraph",
+    "text": "निचे दिए गए डिस्प्ले में कार्यभार का स्थानांतरण सर्टिफिकेट दर्शाया गया है , जिसमे कार्यभार लेने और देने वाले, दोनों अधिकारियो का विवरण है",
+    "line_start": 71,
+    "line_end": 72,
+    "heading_level": null,
+    "detected_language": "hi",
+    "content_hash": "5b02b1ed064bc5dd"
+  },
+  {
+    "block_id": "b0019",
+    "block_type": "paragraph",
+    "text": "<!-- Page 9 -->",
+    "line_start": 75,
+    "line_end": 76,
+    "heading_level": null,
+    "detected_language": "en",
+    "content_hash": "6cabeda0c4666a89"
+  },
+  {
+    "block_id": "b0020",
+    "block_type": "list_item",
+    "text": "- यदि आप ईमेल आईडी के किसी अन्य व्यक्ति को चार्ज देना चाहते हैं? नीचे दिए गए विंडो पर कार्यभार देना टैब पर (लाल गोले से चिन्हित) ऑप्शन को सेलेक्ट करे | मौजूदा लिए\n- नाम परिवर्तन हेतु नया नाम , मोबाइल नंबर और पदनाम एंटर करके Submit बटन पर क्लिक करे\n- दिए गए सूची से Upload File For Name Change ऑप्शन पर क्लिक करे  और अपना आदेश फाइल अपलोड करे\n- नाम परिवर्तन आदेश फाइल अपलोड करने हेतु स्थानान्तर की स्थिति पर क्लिक करे अनुरोथ",
+    "line_start": 77,
+    "line_end": 80,
+    "heading_level": null,
+    "detected_language": "mixed",
+    "content_hash": "5b3d6df35b77bae5"
+  },
+  {
+    "block_id": "b0021",
+    "block_type": "paragraph",
+    "text": "<!-- Page 10 -->",
+    "line_start": 84,
+    "line_end": 85,
+    "heading_level": null,
+    "detected_language": "en",
+    "content_hash": "8a408192975a9c6c"
+  },
+  {
+    "block_id": "b0022",
+    "block_type": "heading",
+    "text": "RTI Portal",
+    "line_start": 86,
+    "line_end": 86,
+    "heading_level": 2,
+    "detected_language": "en",
+    "content_hash": "9089ddcb3dbcca21"
+  },
+  {
+    "block_id": "b0023",
+    "block_type": "heading",
+    "text": "Charge handed over and taken over certificate",
+    "line_start": 88,
+    "line_end": 88,
+    "heading_level": 2,
+    "detected_language": "en",
+    "content_hash": "77c2abc2e5f63e09"
+  },
+  {
+    "block_id": "b0024",
+    "block_type": "heading",
+    "text": "https/Irtionline cg govin",
+    "line_start": 90,
+    "line_end": 90,
+    "heading_level": 2,
+    "detected_language": "en",
+    "content_hash": "43576215ce5bb6ac"
+  },
+  {
+    "block_id": "b0025",
+    "block_type": "paragraph",
+    "text": "08-12-2023, 4:01:-1 pm",
+    "line_start": 92,
+    "line_end": 93,
+    "heading_level": null,
+    "detected_language": "en",
+    "content_hash": "45d001666a65f99e"
+  },
+  {
+    "block_id": "b0026",
+    "block_type": "heading",
+    "text": "CERTIFICATE OF TRANSFER OF CHARGE",
+    "line_start": 94,
+    "line_end": 94,
+    "heading_level": 2,
+    "detected_language": "en",
+    "content_hash": "2a7e38ca2a0b38aa"
+  },
+  {
+    "block_id": "b0027",
+    "block_type": "paragraph",
+    "text": "Certified that we have respectively handed over and taken over the following charge",
+    "line_start": 96,
+    "line_end": 97,
+    "heading_level": null,
+    "detected_language": "en",
+    "content_hash": "f29cce636712022c"
+  },
+  {
+    "block_id": "b0028",
+    "block_type": "table",
+    "text": "| Charge Type         | Office Name                                                                              | Date Of Charge Given   |\n|---------------------|------------------------------------------------------------------------------------------|------------------------|\n| First -EpEal Orrcer | Crrarr sgarh Siaiट H-nian Rarrs comimission Behird DKS Super specaty Hosp ra Raipur ICG) | 08-12-2023             |\n| Nodal Orricer       | CrnartEgarh Siaiट Human Rarr CamniEsian B=hira DKS SpEr spEcaty Hosp ral Ra Dur CG)      | 08-12-2023             |",
+    "line_start": 98,
+    "line_end": 101,
+    "heading_level": null,
+    "detected_language": null,
+    "content_hash": "2df4932e60e743da"
+  },
+  {
+    "block_id": "b0029",
+    "block_type": "heading",
+    "text": "Signature of the Officer Taking Over the Charge",
+    "line_start": 103,
+    "line_end": 103,
+    "heading_level": 2,
+    "detected_language": "en",
+    "content_hash": "1ab9915b0045d996"
+  },
+  {
+    "block_id": "b0030",
+    "block_type": "paragraph",
+    "text": "Ivianisha Mishra hrc rpr cg@goviin.Additional Exam Controller Dateः",
+    "line_start": 105,
+    "line_end": 106,
+    "heading_level": null,
+    "detected_language": "mixed",
+    "content_hash": "7cd7322abcac991d"
+  },
+  {
+    "block_id": "b0031",
+    "block_type": "heading",
+    "text": "Signature of the Officer Handing Over the Charge",
+    "line_start": 107,
+    "line_end": 107,
+    "heading_level": 2,
+    "detected_language": "en",
+    "content_hash": "9357612560c0aad6"
+  },
+  {
+    "block_id": "b0032",
+    "block_type": "paragraph",
+    "text": "iianish Miishra",
+    "line_start": 109,
+    "line_end": 110,
+    "heading_level": null,
+    "detected_language": "en",
+    "content_hash": "c493687fe7a0eeee"
+  },
+  {
+    "block_id": "b0033",
+    "block_type": "paragraph",
+    "text": "hrc rpr cg@govin.Public Information Officer",
+    "line_start": 111,
+    "line_end": 112,
+    "heading_level": null,
+    "detected_language": "en",
+    "content_hash": "eee5e11fb3e0a7e6"
+  },
+  {
+    "block_id": "b0034",
+    "block_type": "paragraph",
+    "text": "Date",
+    "line_start": 113,
+    "line_end": 114,
+    "heading_level": null,
+    "detected_language": "en",
+    "content_hash": "99c40ab405926cb5"
+  },
+  {
+    "block_id": "b0035",
+    "block_type": "list_item",
+    "text": "- यदि आपके ऑफिस चार्ज में नोडल और प्रथम अपील के चार्ज है, तो नाम परिवर्तन स्वयं स्वीकृत हो जाएगा और नाम परिवर्तित हो जाएगा | मौजूदा\n- यदि आपके ऑफिस चार्ज में केवल जन सुचना अधिकारी के चार्ज है, तो नाम परिवर्तन आपके प्रथम अपील द्वारा स्वीकृत होगा मौजूदा\n- प्रथम अपील अधिकारी के लॉग इन पर पीआइओ द्वारा नाम परिवर्तन अनुरोध की स्वीकृति ऑप्शन पर क्लिक करे",
+    "line_start": 115,
+    "line_end": 117,
+    "heading_level": null,
+    "detected_language": "hi",
+    "content_hash": "b91b4d1ef6d6375e"
+  },
+  {
+    "block_id": "b0036",
+    "block_type": "paragraph",
+    "text": "<!-- Page 11 -->",
+    "line_start": 121,
+    "line_end": 122,
+    "heading_level": null,
+    "detected_language": "en",
+    "content_hash": "2466838bd20cde0d"
+  },
+  {
+    "block_id": "b0037",
+    "block_type": "heading",
+    "text": "नाम परिवर्तन लिस्ट पर Approve बटन पर क्लिक करके स्वीकृत करे |",
+    "line_start": 123,
+    "line_end": 123,
+    "heading_level": 2,
+    "detected_language": "mixed",
+    "content_hash": "d790c76225a250e6"
+  },
+  {
+    "block_id": "b0038",
+    "block_type": "paragraph",
+    "text": "<!-- Page 12 -->",
+    "line_start": 127,
+    "line_end": 128,
+    "heading_level": null,
+    "detected_language": "en",
+    "content_hash": "90f0fd376cda75f2"
+  },
+  {
+    "block_id": "b0039",
+    "block_type": "list_item",
+    "text": "- नाम परिवर्तन होने के पश्चात् अपना नया नाम   लॉग इन करके देख सकते है|",
+    "line_start": 129,
+    "line_end": 129,
+    "heading_level": null,
+    "detected_language": "hi",
+    "content_hash": "0707ec5bc7bbc479"
+  }
+]

@@ -1,0 +1,53 @@
+62520, 5:39 PM
+
+Action History
+
+## ACTION HISTORY OF RTI REQUEST No.BBNLD/R/T/26/00916
+
+*Applicant Name*
+
+## Nikita
+
+Applicant Name
+
+Text of Application
+
+Please provide complete details of all payments made by CHIPS - Chattisgarh Infotech Promotion Society - to Tata Projects Limited TPL under the Master System Integrator contract for BharatNet Phase-II Project in the State of Chhattisgarh - Tender Reference No. 05 CEO CHIPS MSI BHARATNET 2018 dated 31.01.2018 issue of Tender from the commencement of the project till date for CLUSTER C for the following Blocks Bakawand Charama Farasgaon Narharpur Jagdalpur Keshkal Makdi Antagarh Bastanar Bhairamgarh Darbha Durgkondal Geedam Katekalyan Koyalibeda Lohandiguda The details are required as under Quarter-wise breakup of all payments made for T and D works across all clusters and blocks Quarter-wise breakup of all payments made for O and M services across all clusters and blocks Block-wise breakup of payments made upon achievement of Go-Live for each block Any amounts withheld or deducted from TPL invoices with reasons for such deductions Current outstanding amounts payable by CHIPS to TPL if any
+
+Reply of Application
+
+<table>
+<thead>
+<tr>
+<th>SN.</th>
+<th>Action Taken</th>
+<th>Date of<br/>Action</th>
+<th>Action<br/>Taken By</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>RTI REQUEST<br/>RECEIVED</td>
+<td>20/06/2026</td>
+<td>Nodal Officer</td>
+<td>BSNCG/R/T/26/00005</td>
+</tr>
+<tr>
+<td>2</td>
+<td>REQUEST<br/>FORWARDED TO CPIO</td>
+<td>23/06/2026</td>
+<td>Nodal Officer</td>
+<td>Forwarded to CPIO(s) : (1) SANDEEP<br/>KUMAR KESHKAR(CHHATTISGARH)</td>
+</tr>
+</tbody>
+</table>
+
+111
+
+https://rtimiss/cpiolprint_history.php?reg=NDErNXdFZUNaSWdoT1ExWkuCQW1SM0YvdmnhdEw4Wky2bkU4Y0xZVWNLdz06CO...
+
+Scanned with OKEN Scanner
+
+Scanned with OKEN Scanner

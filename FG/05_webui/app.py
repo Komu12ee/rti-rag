@@ -28,12 +28,17 @@ import sys
 import importlib.util
 import json
 import re
+import subprocess
 import time
+from urllib.parse import urlsplit
+
+import requests
 from flask import Flask, Response, request, jsonify, send_file, stream_with_context
 from datetime import datetime
 from pathlib import Path
 from threading import Lock
 from uuid import uuid4
+from werkzeug.utils import secure_filename
 
 for stream_name in ('stdout', 'stderr'):
     stream = getattr(sys, stream_name, None)
@@ -251,6 +256,21 @@ app = Flask(
     static_url_path=''
 )
 app.config['JSON_SORT_KEYS'] = False
+app.config['MAX_CONTENT_LENGTH'] = int(os.getenv("PIO_PDF_UPLOAD_MAX_BYTES", str(25 * 1024 * 1024)))
+
+PREPROCESSING_DIR = PROJECT_ROOT / '01_preprocessing'
+SMART_EXTRACT_SCRIPT = PREPROCESSING_DIR / 'run_smart_extract.py'
+PIO_PDF_UPLOAD_ROOT = Path(
+    os.getenv(
+        "PIO_PDF_UPLOAD_ROOT",
+        str(SCRIPT_DIR / "uploads" / "pio_pdf_advisory"),
+    )
+)
+PIO_PDF_PREPROCESS_TIMEOUT_SECONDS = int(
+    os.getenv("PIO_PDF_PREPROCESS_TIMEOUT_SECONDS", "300")
+)
+SUPPORTED_OCR_MODELS = {"ollama", "sarvam"}
+SARVAM_SDK_REQUIREMENT = "sarvamai>=0.1.28,<0.2.0"
 
 @app.route('/')
 def serve_index():
@@ -378,6 +398,326 @@ def _sse_response(generator):
     )
 
 
+def _safe_uploaded_pdf_name(filename: str, upload_id: str) -> str:
+    safe_name = secure_filename(filename or "")
+    if not safe_name:
+        safe_name = f"{upload_id}.pdf"
+    if not safe_name.lower().endswith(".pdf"):
+        safe_name = f"{Path(safe_name).stem or upload_id}.pdf"
+    return safe_name
+
+
+def _assert_pdf_signature(pdf_path: Path) -> None:
+    with pdf_path.open("rb") as handle:
+        signature = handle.read(5)
+    if signature != b"%PDF-":
+        raise ValueError("Uploaded file is not a valid PDF.")
+
+
+def _find_structured_markdown(output_root: Path, pdf_stem: str) -> Path:
+    expected = output_root / pdf_stem / "structured.md"
+    if expected.exists():
+        return expected
+
+    matches = sorted(output_root.rglob("structured.md"))
+    if not matches:
+        raise RuntimeError("PDF preprocessing completed but structured.md was not generated.")
+    return matches[0]
+
+
+def _configured_ocr_model() -> str:
+    """Read and validate the upload OCR provider from the shared .env."""
+    ocr_model = os.getenv("OCR_MODEL", "ollama").strip().lower()
+    if ocr_model not in SUPPORTED_OCR_MODELS:
+        raise RuntimeError(
+            "Invalid OCR_MODEL. Use either 'ollama' or 'sarvam'."
+        )
+    return ocr_model
+
+
+def _ollama_ocr_tags_url() -> str:
+    configured_base_url = os.getenv("OLLAMA_BASE_URL", "").strip()
+    if configured_base_url:
+        base_url = configured_base_url
+    else:
+        host = os.getenv("OLLAMA_HOST", "localhost").strip() or "localhost"
+        port = os.getenv("OLLAMA_PORT", "11434").strip() or "11434"
+        if not host.startswith(("http://", "https://")):
+            host = f"http://{host}"
+        try:
+            has_port = urlsplit(host).port is not None
+        except ValueError as error:
+            raise RuntimeError("OLLAMA_HOST contains an invalid port.") from error
+        base_url = host if has_port else f"{host.rstrip('/')}:{port}"
+
+    if not base_url.startswith(("http://", "https://")):
+        base_url = f"http://{base_url}"
+    return f"{base_url.rstrip('/')}/api/tags"
+
+
+def _ocr_runtime_status() -> dict:
+    """Report whether the configured OCR provider can start in this runtime."""
+    try:
+        ocr_model = _configured_ocr_model()
+    except RuntimeError as error:
+        return {
+            "model": os.getenv("OCR_MODEL", "ollama").strip().lower(),
+            "ready": False,
+            "error": str(error),
+        }
+
+    status = {
+        "model": ocr_model,
+        "ready": True,
+        "error": None,
+    }
+    if ocr_model == "ollama":
+        model = (
+            os.getenv("OLLAMA_OCR_MODEL", "").strip()
+            or "qwen3-vl:4b-instruct"
+        )
+        try:
+            response = requests.get(_ollama_ocr_tags_url(), timeout=2)
+            response.raise_for_status()
+            available_models = {
+                str(item.get("name") or item.get("model") or "").strip()
+                for item in response.json().get("models", [])
+                if isinstance(item, dict)
+            }
+            if model not in available_models:
+                status.update({
+                    "ready": False,
+                    "error": (
+                        f"OCR_MODEL=ollama is selected, but vision model '{model}' "
+                        f"is not installed. Run: ollama pull {model}"
+                    ),
+                })
+        except (requests.RequestException, ValueError, TypeError, RuntimeError) as error:
+            status.update({
+                "ready": False,
+                "error": (
+                    "OCR_MODEL=ollama is selected, but the local Ollama service "
+                    "is unavailable."
+                ),
+            })
+            print(f"[OCR status] Ollama readiness check failed: {error}")
+        return status
+
+    if not os.getenv("SARVAM_API_KEY", "").strip():
+        status.update({
+            "ready": False,
+            "error": (
+                "OCR_MODEL=sarvam is selected, but SARVAM_API_KEY is missing "
+                "or blank in the Web UI environment."
+            ),
+        })
+        return status
+
+    try:
+        sarvam_module = importlib.import_module("sarvamai")
+        if not hasattr(sarvam_module, "SarvamAI"):
+            raise ImportError("sarvamai.SarvamAI is unavailable")
+    except Exception as error:
+        install_command = (
+            f'"{sys.executable}" -m pip install "{SARVAM_SDK_REQUIREMENT}"'
+        )
+        status.update({
+            "ready": False,
+            "error": (
+                "OCR_MODEL=sarvam needs the Sarvam Document Intelligence SDK "
+                "in the web server Python environment. Install the project "
+                "requirements in that environment."
+            ),
+        })
+        print(
+            f"[OCR status] Sarvam SDK import failed: {error}. "
+            f"Install with: {install_command}"
+        )
+
+    return status
+
+
+class PDFPreprocessingError(RuntimeError):
+    """Raised when smart extraction fails with a concise client-safe message."""
+
+
+class OCRProviderUnavailableError(PDFPreprocessingError):
+    """Raised when an OCR-required page cannot start its selected provider."""
+
+
+def _preprocessing_error_summary(completed: subprocess.CompletedProcess) -> str:
+    """Extract the useful provider failure instead of returning every child log."""
+    combined = "\n".join(
+        part.strip()
+        for part in (completed.stderr or "", completed.stdout or "")
+        if part and part.strip()
+    )
+    if not combined:
+        return "PDF preprocessing failed."
+
+    lines = [line.strip() for line in combined.splitlines() if line.strip()]
+    candidate = ""
+    for marker in (
+        "[ERROR] Smart extraction failed:",
+        "OCR failed on page",
+        "OCR_MODEL=",
+    ):
+        matches = [line for line in lines if marker in line]
+        if matches:
+            candidate = matches[-1]
+            break
+    if not candidate:
+        candidate = lines[-1]
+
+    marker = "[ERROR] Smart extraction failed:"
+    if marker in candidate:
+        candidate = candidate.split(marker, 1)[1].strip()
+        candidate = re.sub(r"^.*?\.pdf:\s*", "", candidate, count=1)
+    else:
+        candidate = re.sub(
+            r"^.*?\|\s*(?:ERROR|WARNING)\s*\|\s*",
+            "",
+            candidate,
+            count=1,
+        )
+
+    duplicate_prefix = re.compile(
+        r"^((?:sarvam|ollama) OCR failed on page \d+:\s*)\1",
+        flags=re.IGNORECASE,
+    )
+    while duplicate_prefix.search(candidate):
+        candidate = duplicate_prefix.sub(r"\1", candidate, count=1)
+
+    return candidate[:1200] or "PDF preprocessing failed."
+
+
+def _client_safe_preprocessing_error(summary: str) -> str:
+    """Map child failures to useful messages without exposing server paths/logs."""
+    page_match = re.search(
+        r"(?:sarvam|ollama) OCR failed on page (\d+)",
+        summary,
+        flags=re.IGNORECASE,
+    )
+    page_suffix = f" on page {page_match.group(1)}" if page_match else ""
+
+    if "Sarvam Document Intelligence SDK" in summary:
+        return (
+            f"Sarvam OCR cannot start{page_suffix}: its Document Intelligence "
+            "SDK is not installed in the Flask Python environment. Install the "
+            "project requirements and retry."
+        )
+    if "SARVAM_API_KEY is missing or blank" in summary:
+        return (
+            f"Sarvam OCR cannot start{page_suffix}: SARVAM_API_KEY is missing "
+            "or blank in the Web UI environment."
+        )
+    if summary.lower().startswith("ollama ocr failed on page"):
+        return (
+            f"Local Ollama OCR could not process the document{page_suffix}. "
+            "Check that Ollama is running and OLLAMA_OCR_MODEL is installed."
+        )
+    if summary.lower().startswith("sarvam ocr failed on page"):
+        return (
+            f"Sarvam OCR could not process the document{page_suffix}. "
+            "Check the Sarvam credentials/service and retry."
+        )
+    return "PDF preprocessing failed. Check the server log for details."
+
+
+def _run_uploaded_pdf_preprocessing(pdf_path: Path, output_root: Path) -> tuple[Path, subprocess.CompletedProcess]:
+    if not SMART_EXTRACT_SCRIPT.exists():
+        raise RuntimeError(f"Preprocessing script not found: {SMART_EXTRACT_SCRIPT}")
+
+    output_root.mkdir(parents=True, exist_ok=True)
+    ocr_model = _configured_ocr_model()
+    command = [
+        sys.executable,
+        str(SMART_EXTRACT_SCRIPT),
+        str(pdf_path),
+        "--output",
+        str(output_root),
+        "--force",
+        "--ocr-model",
+        ocr_model,
+    ]
+    completed = subprocess.run(
+        command,
+        cwd=str(PREPROCESSING_DIR),
+        capture_output=True,
+        text=True,
+        encoding="utf-8",
+        errors="replace",
+        timeout=PIO_PDF_PREPROCESS_TIMEOUT_SECONDS,
+    )
+    if completed.returncode != 0:
+        details = "\n".join(
+            part.strip()
+            for part in (completed.stderr or "", completed.stdout or "")
+            if part and part.strip()
+        )
+        if details:
+            print(f"[PIO PDF Upload] Full preprocessing failure log:\n{details}")
+        raw_summary = _preprocessing_error_summary(completed)
+        summary = _client_safe_preprocessing_error(raw_summary)
+        provider_unavailable_markers = (
+            "requires the Sarvam Document Intelligence SDK",
+            "needs the Sarvam Document Intelligence SDK",
+            "SARVAM_API_KEY is missing or blank",
+        )
+        is_provider_failure = bool(re.match(
+            r"^(?:sarvam|ollama) OCR failed on page \d+:",
+            raw_summary,
+            flags=re.IGNORECASE,
+        ))
+        if (
+            is_provider_failure
+            or any(marker in raw_summary for marker in provider_unavailable_markers)
+        ):
+            raise OCRProviderUnavailableError(summary)
+        raise PDFPreprocessingError(summary)
+
+    return _find_structured_markdown(output_root, pdf_path.stem), completed
+
+
+def _pio_json_response_from_result(
+    *,
+    pio_result: dict,
+    query_label: str,
+    answer_language: str,
+    started_at: float,
+    extra: dict | None = None,
+) -> dict:
+    advisory_id = _store_pio_advisory(pio_result)
+    available_precedent_collections, missing_precedent_collections = (
+        _precedent_collection_status()
+    )
+    payload = {
+        "success": True,
+        "query": query_label,
+        "answer": pio_result["pio_advisory_report"],
+        "results": [],
+        "result_count": 0,
+        "execution_time": f"{time.time() - started_at:.2f}s",
+        "route": "PIO_ADVISORY",
+        "pio_mode": True,
+        "answer_language": answer_language,
+        "pio_pipeline_used": True,
+        "needs_clarification": False,
+        "validation": pio_result["validation"],
+        "rti_extraction": pio_result["rti_extraction"],
+        "legal_analysis": pio_result["legal_analysis"],
+        "advisory_id": advisory_id,
+        "precedent_search_available": bool(available_precedent_collections),
+        "precedent_collections_available": available_precedent_collections,
+        "precedent_collections_missing": missing_precedent_collections,
+        "precedent_search_completed": False,
+        "next_action": "precedent_confirmation",
+    }
+    if extra:
+        payload.update(extra)
+    return payload
+
+
 def safe_pdf_stem(actual_pdf: str) -> str:
     """Return a filename-only PDF stem suitable for artifact lookup."""
     filename = Path(actual_pdf).name
@@ -442,11 +782,15 @@ def _retry_initialize_once_on_qdrant_failure(error_text):
 @app.route('/api/health', methods=['GET'])
 def health():
     """Check system health"""
+    ocr_status = _ocr_runtime_status()
     return jsonify({
-        'status': 'ok',
+        'status': 'ok' if ocr_status['ready'] else 'degraded',
         'rag_pipeline': 'available',
         'rag_module_loaded': _rag_module is not None,
         'pipeline_initialized': pipeline_initialized,
+        'ocr_model': ocr_status['model'],
+        'ocr_ready': ocr_status['ready'],
+        'ocr_error': ocr_status['error'],
         'timestamp': datetime.now().isoformat()
     })
 
@@ -1353,6 +1697,135 @@ def pio_analyze():
             'success': False,
             'error': 'PIO analysis could not be completed.',
         }), 500
+
+
+@app.route('/api/pio/upload-pdf', methods=['POST'])
+def pio_upload_pdf():
+    """Upload an RTI PDF, extract Markdown, and run the PIO advisory workflow."""
+    request_started_at = time.time()
+    uploaded = request.files.get("pdf") or request.files.get("file")
+    answer_language = normalise_answer_language(
+        request.form.get("answer_language", "en")
+    )
+
+    if uploaded is None or not uploaded.filename:
+        return jsonify({
+            "success": False,
+            "error": "A PDF file is required.",
+        }), 400
+
+    if Path(uploaded.filename).suffix.lower() != ".pdf":
+        return jsonify({
+            "success": False,
+            "error": "Only .pdf uploads are supported.",
+        }), 400
+
+    upload_id = uuid4().hex
+    original_filename = Path(uploaded.filename).name
+    safe_filename = _safe_uploaded_pdf_name(original_filename, upload_id)
+    upload_dir = PIO_PDF_UPLOAD_ROOT / upload_id
+    input_dir = upload_dir / "input"
+    output_root = upload_dir / "stage2_output"
+    input_dir.mkdir(parents=True, exist_ok=True)
+    pdf_path = input_dir / safe_filename
+
+    try:
+        uploaded.save(pdf_path)
+        _assert_pdf_signature(pdf_path)
+
+        ocr_model = _configured_ocr_model()
+        print(
+            f"\n[PIO PDF Upload] Preprocessing uploaded PDF: {original_filename} "
+            f"(OCR provider: {ocr_model})"
+        )
+        structured_md_path, _ = _run_uploaded_pdf_preprocessing(
+            pdf_path=pdf_path,
+            output_root=output_root,
+        )
+        extracted_markdown = structured_md_path.read_text(encoding="utf-8").strip()
+        if not extracted_markdown:
+            return jsonify({
+                "success": False,
+                "error": "The uploaded PDF was processed, but no readable text was extracted.",
+                "source_pdf": original_filename,
+            }), 422
+
+        print(
+            "[PIO PDF Upload] Starting three-call PIO advisory workflow "
+            f"from extracted Markdown ({len(extracted_markdown)} chars)"
+        )
+        pio_result = analyze_pio_application(
+            rti_text=extracted_markdown,
+            answer_language=answer_language,
+        )
+        print("[PIO PDF Upload] PIO advisory workflow completed")
+
+        payload = _pio_json_response_from_result(
+            pio_result=pio_result,
+            query_label=f"Uploaded PDF: {original_filename}",
+            answer_language=answer_language,
+            started_at=request_started_at,
+            extra={
+                "source_pdf": original_filename,
+                "upload_id": upload_id,
+                "extracted_markdown_chars": len(extracted_markdown),
+                "ocr_model": ocr_model,
+            },
+        )
+        return jsonify(payload), 200
+
+    except ValueError as error:
+        return jsonify({
+            "success": False,
+            "error": str(error),
+        }), 400
+
+    except subprocess.TimeoutExpired:
+        return jsonify({
+            "success": False,
+            "error": "PDF preprocessing timed out. Try a smaller PDF or increase PIO_PDF_PREPROCESS_TIMEOUT_SECONDS.",
+        }), 504
+
+    except OCRProviderUnavailableError as error:
+        print(f"[PIO PDF Upload] OCR provider unavailable: {error}")
+        return jsonify({
+            "success": False,
+            "error": str(error),
+            "source_pdf": original_filename,
+            "ocr_model": _configured_ocr_model(),
+        }), 503
+
+    except PDFPreprocessingError as error:
+        print(f"[PIO PDF Upload] Preprocessing error: {error}")
+        return jsonify({
+            "success": False,
+            "error": str(error),
+            "source_pdf": original_filename,
+            "ocr_model": _configured_ocr_model(),
+        }), 422
+
+    except PIOPipelineError as error:
+        print(f"[PIO PDF Upload] PIO advisory error: {error}")
+        return jsonify({
+            "success": False,
+            "error": str(error),
+            "source_pdf": original_filename,
+            "route": "PIO_ADVISORY",
+            "pio_mode": True,
+            "answer_language": answer_language,
+            "pio_pipeline_used": True,
+        }), 422
+
+    except Exception as error:
+        print(f"[PIO PDF Upload] Unexpected error: {error}")
+        import traceback
+        traceback.print_exc()
+        return jsonify({
+            "success": False,
+            "error": f"PDF upload advisory could not be completed: {error}",
+            "source_pdf": original_filename,
+        }), 500
+
 
 @app.route('/api/pio/precedents/stream', methods=['POST'])
 def pio_precedents_stream():

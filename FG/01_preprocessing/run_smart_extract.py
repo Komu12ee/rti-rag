@@ -10,6 +10,7 @@ from __future__ import annotations
 import argparse
 import json
 import logging
+import os
 import re
 import shutil
 import sys
@@ -20,12 +21,17 @@ from typing import Any
 import fitz
 import pdfplumber
 
+try:
+    from dotenv import load_dotenv
+except ImportError:  # pragma: no cover - direct env inheritance still works.
+    load_dotenv = None
+
 SCRIPT_DIR = Path(__file__).resolve().parent
 if str(SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPT_DIR))
 
-from page_classifier import PageResult, classify_page
-from processing_manifest import (
+from page_classifier import PageResult, classify_page  # noqa: E402
+from processing_manifest import (  # noqa: E402
     find_entry,
     load_manifest,
     make_base_entry,
@@ -33,11 +39,49 @@ from processing_manifest import (
     sha256_file,
     upsert_entry,
 )
+from output_paths import output_dir_for_pdf_input  # noqa: E402
 
 
 DEFAULT_INPUT = SCRIPT_DIR / "input_pdfs"
-DEFAULT_OUTPUT = SCRIPT_DIR / "stage2_output"
+DEFAULT_OCR_MODEL = "ollama"
+SUPPORTED_OCR_MODELS = {"ollama", "sarvam"}
 logger = logging.getLogger(__name__)
+
+
+class OCRExecutionError(RuntimeError):
+    """Raised when an OCR-required page cannot be processed."""
+
+
+def _load_simple_env_file(env_path: Path) -> None:
+    """Minimal .env reader used only when python-dotenv is unavailable."""
+    for raw_line in env_path.read_text(encoding="utf-8").splitlines():
+        line = raw_line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, value = line.split("=", 1)
+        key = key.strip()
+        if key and key not in os.environ:
+            os.environ[key] = value.strip().strip('"').strip("'")
+
+
+def load_preprocessing_env() -> None:
+    """Load the shared Web UI .env before OCR components are imported."""
+    for env_path in (SCRIPT_DIR.parent / "05_webui" / ".env", SCRIPT_DIR / ".env"):
+        if not env_path.exists():
+            continue
+        if load_dotenv is not None:
+            load_dotenv(env_path, override=False)
+        else:
+            _load_simple_env_file(env_path)
+
+
+def normalize_ocr_model(value: str | None) -> str:
+    model = (value or DEFAULT_OCR_MODEL).strip().lower()
+    if model in SUPPORTED_OCR_MODELS:
+        return model
+    raise ValueError(
+        "Invalid OCR_MODEL. Use either 'ollama' or 'sarvam'."
+    )
 
 
 def collect_pdfs(path: Path) -> list[Path]:
@@ -75,6 +119,23 @@ def extract_text_with_fallback(pdf_path: Path, page_index: int, plumber_page: An
     except Exception as exc:
         logger.warning("%s page %s: PyMuPDF text fallback failed: %s", pdf_path.name, page_index + 1, exc)
         return ""
+
+
+def count_page_images(pdf_path: Path, page_index: int, plumber_page: Any) -> int:
+    """Count embedded/raster images on a page for OCR routing."""
+    try:
+        images = getattr(plumber_page, "images", None) or []
+        if images:
+            return len(images)
+    except Exception as exc:
+        logger.warning("%s page %s: pdfplumber image count failed: %s", pdf_path.name, page_index + 1, exc)
+
+    try:
+        with fitz.open(str(pdf_path)) as doc:
+            return len(doc[page_index].get_images(full=True))
+    except Exception as exc:
+        logger.warning("%s page %s: PyMuPDF image count failed: %s", pdf_path.name, page_index + 1, exc)
+        return 0
 
 
 def extract_critical_fields(text: str) -> dict[str, list[str]]:
@@ -132,6 +193,7 @@ def write_outputs(
     started_at: float,
     warnings: list[str],
     threshold: float,
+    ocr_model: str,
 ) -> dict[str, Any]:
     """Write structured.md/json, extraction report, and page debug files."""
     doc_dir = output_root / pdf_path.stem
@@ -144,10 +206,13 @@ def write_outputs(
         final_text = page["final_text"]
         total_text_chars += len(final_text)
         md_parts.append(f"<!-- Page {page['page_num']} -->")
-        md_parts.append(
+        extraction_metadata = (
             f"<!-- extraction_method: {page['extraction_method']} | "
-            f"confidence: {page['direct_text_confidence']:.2f} -->"
+            f"confidence: {page['direct_text_confidence']:.2f}"
         )
+        if page["extraction_method"] in {"ocr", "hybrid"}:
+            extraction_metadata += f" | ocr_provider: {ocr_model}"
+        md_parts.append(f"{extraction_metadata} -->")
         md_parts.append(final_text)
         md_parts.append("")
         (debug_dir / f"page_{page['page_num']:03d}.txt").write_text(final_text, encoding="utf-8")
@@ -163,6 +228,7 @@ def write_outputs(
         "total_pages": len(page_results),
         "total_text_chars": total_text_chars,
         "overall_confidence": confidence,
+        "ocr_model": ocr_model,
         "pages": page_results,
         "critical_fields": extract_critical_fields(merged_text),
         "quality_flags": quality_flags,
@@ -180,6 +246,7 @@ def write_outputs(
         "hybrid_pages": method_summary.get("hybrid", 0),
         "failed_pages": method_summary.get("failed", 0),
         "overall_confidence": confidence,
+        "ocr_model": ocr_model,
         "processing_time_seconds": round(time.perf_counter() - started_at, 2),
         "warnings": warnings,
     }
@@ -203,6 +270,7 @@ def process_pdf(
     dry_run: bool,
     ocr_only: bool,
     direct_text_only: bool,
+    ocr_model: str = DEFAULT_OCR_MODEL,
 ) -> tuple[list[PageResult], dict[str, Any] | None]:
     """Process or preview one PDF with page-level routing."""
     started_at = time.perf_counter()
@@ -222,9 +290,11 @@ def process_pdf(
             total_pages = len(pdf.pages)
             for index, page in enumerate(pdf.pages):
                 page_num = index + 1
+                image_count = 0
                 try:
                     direct_text = extract_text_with_fallback(pdf_path, index, page)
-                    result = classify_page(page_num, direct_text, threshold)
+                    image_count = count_page_images(pdf_path, index, page)
+                    result = classify_page(page_num, direct_text, image_count)
 
                     if ocr_only:
                         result["needs_ocr"] = True
@@ -241,24 +311,35 @@ def process_pdf(
                         if result["needs_ocr"]:
                             result["final_text"] = direct_text
                     elif result["needs_ocr"]:
-                        if image_prep is None or ocr_pipeline is None or postprocess_page_text is None:
-                            from stage1_image_prep import ImagePrepPipeline
-                            from stage2_ocr import OCRPipeline
-                            from stage2_ocr.postprocess import postprocess_page_text as _postprocess_page_text
+                        try:
+                            if image_prep is None or ocr_pipeline is None or postprocess_page_text is None:
+                                from stage1_image_prep import ImagePrepPipeline
+                                from stage2_ocr import OCRPipeline
+                                from stage2_ocr.postprocess import postprocess_page_text as _postprocess_page_text
 
-                            image_prep = ImagePrepPipeline(output_dir=doc_dir / "ocr_pages")
-                            ocr_pipeline = OCRPipeline(output_dir=output_root)
-                            postprocess_page_text = _postprocess_page_text
-                        page_output_dir = doc_dir / "ocr_pages"
-                        stage1_page = image_prep.process_single_page(pdf_path, index, page_output_dir)
-                        ocr_page = ocr_pipeline.process_single_image(Path(stage1_page.image_path), index)
-                        ocr_text = postprocess_page_text(ocr_page.raw_text)
-                        result["ocr_text"] = ocr_text
-                        result["final_text"] = ocr_text
-                        result["extraction_method"] = "hybrid" if direct_text.strip() else "ocr"
+                                image_prep = ImagePrepPipeline(output_dir=doc_dir / "ocr_pages")
+                                ocr_pipeline = OCRPipeline(output_dir=output_root, ocr_model=ocr_model)
+                                postprocess_page_text = _postprocess_page_text
+                            page_output_dir = doc_dir / "ocr_pages"
+                            stage1_page = image_prep.process_single_page(pdf_path, index, page_output_dir)
+                            ocr_page = ocr_pipeline.process_single_image(
+                                Path(stage1_page.image_path),
+                                index,
+                                ocr_model=ocr_model,
+                            )
+                            ocr_text = postprocess_page_text(ocr_page.raw_text)
+                            result["ocr_text"] = ocr_text
+                            result["final_text"] = ocr_text
+                            result["extraction_method"] = "hybrid" if direct_text.strip() else "ocr"
+                        except Exception as exc:
+                            raise OCRExecutionError(
+                                f"{ocr_model} OCR failed on page {page_num}: {exc}"
+                            ) from exc
                     else:
                         result["final_text"] = direct_text
 
+                except OCRExecutionError:
+                    raise
                 except Exception as exc:
                     warnings.append(f"page {page_num} failed: {type(exc).__name__}: {exc}")
                     result = PageResult(
@@ -273,6 +354,7 @@ def process_pdf(
                         legal_markers_found=[],
                         char_count=0,
                         word_count=0,
+                        image_count=image_count,
                         reason=f"page extraction failed: {type(exc).__name__}",
                     )
 
@@ -286,6 +368,8 @@ def process_pdf(
                     result["direct_text_confidence"],
                     result["reason"],
                 )
+    except OCRExecutionError:
+        raise
     except Exception as exc:
         raise RuntimeError(f"could not open PDF: {exc}") from exc
 
@@ -302,20 +386,29 @@ def process_pdf(
         )
         return page_results, None
 
-    output_info = write_outputs(pdf_path, page_results, output_root, started_at, warnings, threshold)
+    output_info = write_outputs(
+        pdf_path,
+        page_results,
+        output_root,
+        started_at,
+        warnings,
+        threshold,
+        ocr_model,
+    )
     return page_results, output_info
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Smart page-level PDF extraction")
     parser.add_argument("input", nargs="?", default=str(DEFAULT_INPUT), help="PDF file or folder containing PDFs")
-    parser.add_argument("--output", "-o", default=str(DEFAULT_OUTPUT), help="Stage 2 output directory")
+    parser.add_argument("--output", "-o", help="Stage 2 output directory. Defaults to <input-name>_stage2_output.")
     parser.add_argument("--text-confidence-threshold", type=float, default=0.60, help="Direct text confidence threshold")
     parser.add_argument("--force", action="store_true", help="Reprocess PDFs even when already processed")
     parser.add_argument("--dry-run", action="store_true", help="Classify pages and print actions without writing files")
     parser.add_argument("--limit", type=int, help="Process only the first N eligible PDFs")
     parser.add_argument("--ocr-only", action="store_true", help="Force every page through OCR")
     parser.add_argument("--direct-text-only", action="store_true", help="Never invoke OCR, even for low-confidence pages")
+    parser.add_argument("--ocr-model", choices=sorted(SUPPORTED_OCR_MODELS), help="Override OCR_MODEL for this run")
     parser.add_argument("--verbose", action="store_true", help="Enable debug logging")
     args = parser.parse_args()
 
@@ -328,8 +421,19 @@ def main() -> None:
         datefmt="%H:%M:%S",
     )
 
+    load_preprocessing_env()
+    try:
+        ocr_model = normalize_ocr_model(args.ocr_model or os.getenv("OCR_MODEL"))
+    except ValueError as error:
+        parser.error(str(error))
+
     input_path = Path(args.input)
-    output_root = Path(args.output)
+    output_root = Path(args.output) if args.output else output_dir_for_pdf_input(input_path, "stage2")
+    logger.info("Smart extraction")
+    logger.info("Input: %s", input_path)
+    logger.info("Output: %s", output_root)
+    logger.info("OCR model: %s", ocr_model)
+
     pdfs = collect_pdfs(input_path)
     if not pdfs:
         logger.error("No PDF files found at %s", input_path)
@@ -342,6 +446,7 @@ def main() -> None:
 
     manifest = load_manifest()
     processed_count = 0
+    failure_count = 0
 
     for pdf_path in pdfs:
         entry = find_entry(manifest, pdf_stem=pdf_path.stem)
@@ -371,6 +476,7 @@ def main() -> None:
                 dry_run=args.dry_run,
                 ocr_only=args.ocr_only,
                 direct_text_only=args.direct_text_only,
+                ocr_model=ocr_model,
             )
             processed_count += 1
 
@@ -391,6 +497,7 @@ def main() -> None:
                 "stage2_structured_md": str(output_info["structured_md"]),
                 "stage2_structured_json": str(output_info["structured_json"]),
                 "overall_confidence": overall_confidence(page_results),
+                "ocr_model": ocr_model,
                 "extraction_method_summary": method_summary,
                 "error": None,
             })
@@ -405,6 +512,7 @@ def main() -> None:
                 method_summary.get("failed", 0),
             )
         except Exception as exc:
+            failure_count += 1
             logger.error("[ERROR] Smart extraction failed: %s: %s", pdf_path.name, exc)
             if not args.dry_run:
                 entry.update({
@@ -417,6 +525,9 @@ def main() -> None:
 
     if args.dry_run:
         logger.info("[DRY-RUN] Smart extraction check complete.")
+    elif failure_count:
+        logger.error("Smart extraction failed for %s PDF(s).", failure_count)
+        sys.exit(1)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,66 @@
+Printed On: 03/06/2026 11:45 am
+
+आर. टी. आई. सूचना :
+
+With reference to your RTI application, it is informed that the
+information sought by you is already available in the public domain
+and may be accessed through the official websites of the respective
+Courts, details of which are given below: (by searching chhattisgarh
+infotech promotion society /CHiPS)
+
+1.Chhattisgarh High Court
+
+Official Website: https://highcourt.cg.gov.in
+
+Case Status Link:
+
+https://hcservices.ecourts.gov.in/ecourtindiaHC/cases/ki_petres.php?
+state_cd=18&dist_cd=1&court_code=1&stateNm=Chhattisgarh
+
+The required information may be obtained through the "Case Status"
+section available on the above website.
+
+2.Supreme Court of India
+Official Website: https://www.sci.gov.in
+Case Status Link:
+https://www.sci.gov.in/case-status/
+3.District and Subordinate Courts (Chhattisgarh)
+Official Website: https://raipur.dcourts.gov.in
+Case Status Link:
+https://raipur.dcourts.gov.in/case-status-search-by-petitioner-
+respondent/
+01/06/2026
+
+## जवाब की तिथि :
+
+*RTI
+Do
+Up - 01-
+06-*
+
+*जन सूचना अधिकारी कार्यवाही विवरण*
+
+<table>
+<thead>
+<tr>
+<th>Application Id</th>
+<th>Action Taken By</th>
+<th>Forwarded To</th>
+<th>Action<br/>Details</th>
+<th>Status &<br/>Action<br/>Date</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>220260503001167</td>
+<td>Shridhar Diwan<br/>(shridhar.diwan@cgchips.in)<br/>चिप्स ऑफिस<br/>(Ministry of Information<br/>Technology)<br/>SDC Building, opp. New<br/>Circuit House, Civil Lines,<br/>Raipur, छत्तीसगढ़.</td>
+<td>सुरेश कुमार मकम<br/>(Sureshyogaacharyamd@nucleustechworks.com)</td>
+<td>Letter<br/>attached</td>
+<td>Completed<br/>01/06/2026</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+
+Page 2 of 2 | Application Id - 220260503001167

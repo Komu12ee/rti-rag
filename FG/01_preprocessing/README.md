@@ -9,8 +9,8 @@ There are now two supported preprocessing paths:
 - **Legacy two-stage path**: `run_stage1.py` rasterizes every PDF page, then
   `run_stage2.py` OCRs every page image.
 - **Smart page-level path**: `run_smart_extract.py` first checks whether each
-  PDF page already has usable selectable text. Only low-confidence pages are
-  rasterized and OCRed.
+  PDF page contains an image. Image-bearing pages are rasterized and OCRed;
+  pages without images keep their selectable text.
 
 The chunker contract is unchanged:
 
@@ -36,7 +36,7 @@ FG/01_preprocessing/
   run_stage2.py                   # Legacy Stage 2 plus --smart wrapper
   stage1_image_prep/              # Rendering, deskew, stamp detection, image prep
   stage1_output/                  # Temporary legacy image output
-  stage2_ocr/                     # Docling/EasyOCR OCR and structure extraction
+  stage2_ocr/                     # Docling plus upload Ollama/Sarvam adapters
   stage2_output/                  # Final structured outputs consumed by chunking
 ```
 
@@ -70,7 +70,8 @@ input                         PDF file or folder containing PDFs
 --dry-run                     Classify pages and log actions, but write nothing
 --limit N                     Process only first N eligible PDFs
 --ocr-only                    Force every page through OCR
---direct-text-only            Never invoke OCR, even for low-confidence pages
+--direct-text-only            Never invoke OCR, even for image-bearing pages
+--ocr-model                    Override OCR_MODEL with ollama or sarvam
 --verbose                     Enable debug logging
 ```
 
@@ -85,14 +86,14 @@ PDF
        extract direct text
        if pdfplumber fails or returns empty text:
          try PyMuPDF text fallback
-       score direct text confidence
-       if confidence >= threshold:
+       count embedded/raster images
+       if the page has no image:
          use direct text
          do not rasterize this page
          do not call OCR for this page
        else:
          render only this page with ImagePrepPipeline.process_single_page()
-         OCR only this prepared image with OCRPipeline.process_single_image()
+         OCR only this prepared image with the configured provider
          use OCR text as final page text
   -> merge pages in original order
   -> write structured.md
@@ -104,6 +105,47 @@ PDF
 
 The important rule is page-level routing. One PDF may contain both direct-text
 pages and OCR pages.
+
+### Upload OCR Provider
+
+The `+` upload flow reads `FG/05_webui/.env`. The default is local Ollama:
+
+```dotenv
+OCR_MODEL=ollama
+OLLAMA_OCR_MODEL=qwen3-vl:4b-instruct
+```
+
+Install the configured vision model once on the machine running Flask:
+
+```powershell
+ollama pull qwen3-vl:4b-instruct
+```
+
+To use Sarvam Document Intelligence instead:
+
+```dotenv
+OCR_MODEL=sarvam
+SARVAM_API_KEY=replace_with_your_key
+```
+
+Install the Document Intelligence SDK into the same Python environment that
+runs `FG/05_webui/app.py`:
+
+```powershell
+python -m pip install "sarvamai>=0.1.28,<0.2.0"
+```
+
+`LLM_MODE=sarvam` uses Sarvam's chat-completions HTTP API, while
+`OCR_MODEL=sarvam` uses the separate Document Intelligence SDK. Therefore a
+working Sarvam LLM does not by itself prove that the OCR dependency is
+installed. Restart Flask after changing `.env`; package installation alone is
+picked up by the next upload subprocess.
+
+`OCR_MODEL` accepts only `ollama` or `sarvam`. It is an exclusive choice in the
+smart extraction and `+` upload path: that path does not call the other provider
+as a fallback. Pages that do not need OCR call neither provider.
+`OLLAMA_OCR_MODEL` is deliberately separate from `OLLAMA_MODEL`, which remains
+the model used for answer generation.
 
 ## Smart Output Structure
 

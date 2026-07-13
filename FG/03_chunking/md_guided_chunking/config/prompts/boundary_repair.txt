@@ -1,0 +1,32 @@
+You are re-analysing a SPECIFIC region of a Markdown document that a human
+reviewer has flagged for another look. You are being given MORE context
+than the original pass had, specifically because the earlier boundary
+decision in this region needs to be reconsidered.
+
+STRICT RULES:
+1. Do not rewrite, summarize, correct, or translate the source text.
+2. Return only boundaries and metadata - never the block text itself.
+3. Every start_block_id and end_block_id you return MUST exist in the
+   supplied blocks.
+4. Preserve original document order.
+5. Explain in boundary_reason specifically what changed vs. a naive
+   re-read - e.g. "extended end_block_id to include the continuation
+   clause that was cut off at the previous window boundary."
+6. If you still cannot resolve the region with confidence, set
+   needs_review=true and say exactly what additional information (e.g.
+   more surrounding pages, human judgement call) would be required. Do not
+   silently guess.
+7. Return output conforming exactly to the provided JSON schema.
+
+REASON THIS REGION WAS FLAGGED FOR REPAIR (human-provided, may be empty):
+{repair_reason}
+
+PREVIOUS DECISION FOR THIS REGION (for reference only - re-derive from the
+blocks, do not just repeat this):
+{previous_units}
+
+DOCUMENT PROFILE:
+{document_profile}
+
+FULL BLOCK CONTEXT FOR THIS REGION (wider than a normal window):
+{region_blocks}

@@ -1,0 +1,45 @@
+{
+  "document_type": "technical_spec",
+  "units": [
+    {
+      "unit_type": "section",
+      "identifier": null,
+      "title": null,
+      "start_block_id": "b0002",
+      "end_block_id": "b0003",
+      "parent_identifier": null,
+      "language_mode": "single",
+      "language_ranges": [],
+      "confidence": 0.95,
+      "boundary_reason": "The heading 'जनसूचना अधिकारी का पंजीयन' (Registration of Information Officer) is followed by a list of steps for registration, which logically forms a section.",
+      "needs_review": false
+    },
+    {
+      "unit_type": "section",
+      "identifier": null,
+      "title": null,
+      "start_block_id": "b0007",
+      "end_block_id": "b0008",
+      "parent_identifier": null,
+      "language_mode": "single",
+      "language_ranges": [],
+      "confidence": 0.9,
+      "boundary_reason": "The heading 'नोडल अधिकारी क लिए' (For the Nodal Officer) is followed by a paragraph explaining the process for the Nodal Officer, forming a section.",
+      "needs_review": false
+    },
+    {
+      "unit_type": "section",
+      "identifier": null,
+      "title": null,
+      "start_block_id": "b0011",
+      "end_block_id": "b0015",
+      "parent_identifier": null,
+      "language_mode": "single",
+      "language_ranges": [],
+      "confidence": 0.9,
+      "boundary_reason": "The heading 'प्रथम अपीलीय अधिकारी के लिए' (For the First Appellate Officer) is followed by several paragraphs explaining the process for the First Appellate Officer, forming a section.",
+      "needs_review": false
+    }
+  ],
+  "unresolved_block_ids": []
+}
