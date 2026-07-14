@@ -21,20 +21,199 @@ const PIO_ASSISTANT_SCOPE = [
   'Use the PIO advisory workflow only when the user explicitly asks to prepare, draft, or analyse a response to a complete RTI application.'
 ].join(' ');
 
-const DEFAULT_QUERY_PLACEHOLDER =
-  'Ask about RTI portal steps, fees, appeals, status, PIO details, or RTI Act sections...';
-
-const PIO_QUERY_PLACEHOLDER =
-  'Ask any RTI question, or paste an RTI application and request a PIO advisory response...';
-
-const DEFAULT_PROMPTS = [
-  'How do I register on the CG RTI portal?',
-  'How do I file an RTI application?',
-  'How do I pay RTI fees?',
-  'How do I file a first appeal?',
-  'How can I check application status?',
-  'How do I find PIO contact details?'
+const DEFAULT_PROMPT_KEYS = [
+  'promptRegister',
+  'promptFileRti',
+  'promptPayFees',
+  'promptFirstAppeal',
+  'promptCheckStatus',
+  'promptFindPio'
 ];
+
+const TRANSLATIONS = {
+  en: {
+    documentTitle: 'RTI Assistant - CG Portal',
+    chatHistory: 'Chat history',
+    cgGovernmentLogo: 'Chhattisgarh government logo',
+    brandTitle: 'RTI Assistant',
+    brandSubtitle: 'CG RTI Portal',
+    newChat: 'New chat',
+    botStatus: 'Bot status',
+    checkingBotStatus: 'Checking bot status',
+    assistant: 'Assistant',
+    knowledgeBase: 'Knowledge base',
+    documents: 'Documents',
+    refreshBot: 'Refresh bot',
+    history: 'History',
+    citizenHelpdesk: 'Chhattisgarh citizen helpdesk',
+    languageToggleLabel: 'Site and answer language',
+    englishLanguage: 'English',
+    hindiLanguage: 'Hindi',
+    pioMode: 'PIO Mode',
+    on: 'On', off: 'Off',
+    pioAdvisoryEnabled: 'PIO advisory enabled',
+    publicGuidance: 'Public guidance',
+    clear: 'Clear',
+    welcomeTitle: 'How can I help with RTI?',
+    welcomeDescription: 'Ask about the CG RTI portal, filing steps, fees, appeals, application status, PIO contacts, RTI Act basics, or portal documents.',
+    promptRegister: 'How do I register on the CG RTI portal?',
+    promptFileRti: 'How do I file an RTI application?',
+    promptPayFees: 'How do I pay RTI fees?',
+    promptFirstAppeal: 'How do I file a first appeal?',
+    promptCheckStatus: 'How can I check application status?',
+    promptFindPio: 'How do I find PIO contact details?',
+    uploadPdf: 'Upload PDF', send: 'Send',
+    checkingAssistantStatus: 'Checking assistant status',
+    sourceChunks: 'Source chunks', sources: 'Sources', close: 'Close',
+    documentPreview: 'Document preview', document: 'Document', closePdf: 'Close PDF',
+    loadingDocument: 'Loading document', pdfViewer: 'PDF viewer',
+    defaultQueryPlaceholder: 'Ask about RTI portal steps, fees, appeals, status, PIO details, or RTI Act sections...',
+    pioQueryPlaceholder: 'Ask any RTI question, or paste an RTI application and request a PIO advisory response...',
+    noHistory: 'No history yet.', you: 'YOU',
+    answeredIn: 'Answered in {time}', viewSources: 'View sources',
+    analysisDetails: 'Analysis details', rtiExtraction: 'RTI extraction',
+    legalAnalysis: 'Legal analysis', appliedProvisions: 'Applied RTI Act provisions',
+    validationResult: 'Validation result',
+    decisionReferences: 'CIC/CGSIC decision references ({count})',
+    noDecisionReferences: 'No decision references were attached.',
+    noSourcePdfName: 'No source PDF file name was attached.', openFile: 'Open {filename}',
+    generatingPrecedentAdvisory: 'Generating precedent-informed advisory...',
+    precedentAdvisoryGenerated: 'Precedent-informed advisory generated',
+    generatePrecedentAdvisory: 'Generate precedent-informed PIO advisory',
+    referencesNotAdded: 'CIC/CGSIC references were not added.',
+    searchingDecisions: 'Searching CIC/CGSIC decisions...',
+    addSupportingReferences: 'Add supporting CIC/CGSIC decision references?',
+    yesAddReferences: 'Yes, add references',
+    yesAddReferencesMessage: 'Yes, add CIC/CGSIC references', no: 'No',
+    advisoryNotLinkable: 'This advisory cannot be linked to a precedent search.',
+    referenceSearchFailed: 'CIC/CGSIC reference search failed.',
+    networkRetrievingReferences: 'Network error while retrieving CIC/CGSIC references.',
+    generateReferencesFirst: 'Generate CIC/CGSIC references first.',
+    advisoryGenerationFailed: 'Precedent-informed advisory generation failed.',
+    networkGeneratingAdvisory: 'Network error while generating precedent-informed advisory.',
+    unableGenerateAdvisory: 'Unable to generate precedent-informed advisory: {error}',
+    networkError: 'Network error.', ready: 'Ready', loading: 'Loading...',
+    botNeedsAttention: 'Bot needs attention', ocrUnavailable: 'OCR unavailable ({model})',
+    allSystemsOperational: 'All systems operational', botStatusPending: 'Bot status pending',
+    refreshing: 'Refreshing...', refreshingBot: 'Refreshing bot...',
+    botRefreshed: 'Bot refreshed successfully', refreshFailed: 'Refresh failed',
+    refreshBeforeAsking: 'Refresh bot before asking', backendUnavailable: 'Backend unavailable',
+    cannotReachBackend: 'Cannot reach backend', dbStatusFailed: 'Database status check failed',
+    checking: 'checking', failed: 'failed',
+    offline: 'offline', available: 'available', unavailable: 'unavailable', statusReady: 'ready',
+    assistantUnavailable: 'Assistant unavailable', points: '{count} pts', retrieving: 'Retrieving...',
+    analysingRti: 'Analysing RTI application and legal provisions...',
+    retrievingContext: 'Retrieving relevant context...', generatingAnswer: 'Generating answer...',
+    queryFailed: 'Query failed', unableToAnswer: 'Unable to answer: {error}',
+    backendNetworkError: 'Network error - is the backend running?',
+    pleaseUploadPdf: 'Please upload a PDF file.', uploadedPdf: 'Uploaded PDF: {filename}',
+    uploadingPdf: 'Uploading PDF...', extractingPdf: 'Extracting PDF text...',
+    pdfProcessed: 'PDF processed and PIO advisory generated.',
+    uploadFailed: 'Upload failed (HTTP {status})',
+    unableProcessPdf: 'Unable to process uploaded PDF: {error}',
+    networkUploadingPdf: 'Network error while uploading PDF.',
+    informationRequested: 'Information Requested', commissionObservation: 'Commission Observation',
+    commissionFinding: 'Commission Finding', finalOrder: 'Final Order', pioLearning: 'PIO Learning',
+    precedentSummary: 'Precedent Summary', groundsForAppeal: 'Grounds for Appeal',
+    hearingSubmissions: 'Hearing Submissions', caseMetadata: 'Case Metadata',
+    relevantPassage: 'Relevant Passage', officerDirectory: 'CG RTI Officer Directory',
+    officerRegistry: 'CG RTI Officer Registry', role: 'Role', officer: 'Officer',
+    designation: 'Designation', department: 'Department', district: 'District', office: 'Office',
+    officeCode: 'Office code', email: 'Email', address: 'Address',
+    officerDirectoryRecord: 'Officer directory record', unknown: 'unknown',
+    case: 'Case: {value}', authority: 'Authority: {value}', hearing: 'Hearing: {value}',
+    outcome: 'Outcome: {value}', expandPassage: 'Expand passage', passage: 'Passage',
+    viewPdf: 'View PDF', viewStructure: 'View structure',
+    structureUnavailable: 'structured.md is not available for this document',
+    openMarkdown: 'Open extracted Markdown', loadingPdf: 'Loading PDF',
+    pdfFetchFailed: 'PDF fetch failed: {status}', couldNotLoadPdf: 'Could not load PDF: {error}',
+    loadingStructure: 'Loading structure', structureRequestFailed: 'structured.md request failed',
+    couldNotLoadStructure: 'Could not load structure: {error}'
+  },
+  hi: {
+    documentTitle: 'आरटीआई सहायक - छत्तीसगढ़ पोर्टल', chatHistory: 'चैट इतिहास',
+    cgGovernmentLogo: 'छत्तीसगढ़ शासन का प्रतीक', brandTitle: 'आरटीआई सहायक',
+    brandSubtitle: 'छत्तीसगढ़ आरटीआई पोर्टल', newChat: 'नई चैट',
+    botStatus: 'बॉट की स्थिति', checkingBotStatus: 'बॉट की स्थिति जाँची जा रही है',
+    assistant: 'सहायक', knowledgeBase: 'ज्ञान आधार', documents: 'दस्तावेज़',
+    refreshBot: 'बॉट रीफ़्रेश करें', history: 'इतिहास',
+    citizenHelpdesk: 'छत्तीसगढ़ नागरिक सहायता केंद्र',
+    languageToggleLabel: 'वेबसाइट और उत्तर की भाषा',
+    englishLanguage: 'अंग्रेज़ी', hindiLanguage: 'हिंदी', pioMode: 'PIO मोड',
+    on: 'चालू', off: 'बंद', pioAdvisoryEnabled: 'PIO सलाह सक्षम',
+    publicGuidance: 'सार्वजनिक मार्गदर्शन', clear: 'साफ़ करें',
+    welcomeTitle: 'आरटीआई में मैं आपकी कैसे सहायता कर सकता हूँ?',
+    welcomeDescription: 'छत्तीसगढ़ आरटीआई पोर्टल, आवेदन प्रक्रिया, शुल्क, अपील, आवेदन की स्थिति, PIO संपर्क, आरटीआई अधिनियम या पोर्टल दस्तावेज़ों के बारे में पूछें।',
+    promptRegister: 'छत्तीसगढ़ आरटीआई पोर्टल पर पंजीकरण कैसे करें?',
+    promptFileRti: 'आरटीआई आवेदन कैसे दाखिल करें?', promptPayFees: 'आरटीआई शुल्क का भुगतान कैसे करें?',
+    promptFirstAppeal: 'प्रथम अपील कैसे दाखिल करें?', promptCheckStatus: 'आवेदन की स्थिति कैसे जाँचें?',
+    promptFindPio: 'PIO के संपर्क विवरण कैसे खोजें?', uploadPdf: 'PDF अपलोड करें', send: 'भेजें',
+    checkingAssistantStatus: 'सहायक की स्थिति जाँची जा रही है', sourceChunks: 'स्रोत अंश',
+    sources: 'स्रोत', close: 'बंद करें', documentPreview: 'दस्तावेज़ पूर्वावलोकन',
+    document: 'दस्तावेज़', closePdf: 'PDF बंद करें', loadingDocument: 'दस्तावेज़ लोड हो रहा है',
+    pdfViewer: 'PDF दर्शक',
+    defaultQueryPlaceholder: 'आरटीआई पोर्टल प्रक्रिया, शुल्क, अपील, स्थिति, PIO विवरण या आरटीआई अधिनियम की धाराओं के बारे में पूछें...',
+    pioQueryPlaceholder: 'आरटीआई से जुड़ा कोई भी प्रश्न पूछें, या आरटीआई आवेदन चिपकाकर PIO सलाह माँगें...',
+    noHistory: 'अभी कोई इतिहास नहीं है।', you: 'आप', answeredIn: '{time} में उत्तर दिया गया',
+    viewSources: 'स्रोत देखें', analysisDetails: 'विश्लेषण विवरण', rtiExtraction: 'आरटीआई निष्कर्षण',
+    legalAnalysis: 'कानूनी विश्लेषण', appliedProvisions: 'लागू आरटीआई अधिनियम प्रावधान',
+    validationResult: 'सत्यापन परिणाम', decisionReferences: 'CIC/CGSIC निर्णय संदर्भ ({count})',
+    noDecisionReferences: 'कोई निर्णय संदर्भ संलग्न नहीं किया गया।',
+    noSourcePdfName: 'स्रोत PDF फ़ाइल का नाम संलग्न नहीं किया गया।', openFile: '{filename} खोलें',
+    generatingPrecedentAdvisory: 'नज़ीर-आधारित सलाह तैयार की जा रही है...',
+    precedentAdvisoryGenerated: 'नज़ीर-आधारित सलाह तैयार हो गई',
+    generatePrecedentAdvisory: 'नज़ीर-आधारित PIO सलाह तैयार करें',
+    referencesNotAdded: 'CIC/CGSIC संदर्भ नहीं जोड़े गए।',
+    searchingDecisions: 'CIC/CGSIC निर्णय खोजे जा रहे हैं...',
+    addSupportingReferences: 'समर्थन में CIC/CGSIC निर्णय संदर्भ जोड़ें?',
+    yesAddReferences: 'हाँ, संदर्भ जोड़ें', yesAddReferencesMessage: 'हाँ, CIC/CGSIC संदर्भ जोड़ें', no: 'नहीं',
+    advisoryNotLinkable: 'इस सलाह को नज़ीर खोज से नहीं जोड़ा जा सकता।',
+    referenceSearchFailed: 'CIC/CGSIC संदर्भ खोज विफल रही।',
+    networkRetrievingReferences: 'CIC/CGSIC संदर्भ प्राप्त करते समय नेटवर्क त्रुटि हुई।',
+    generateReferencesFirst: 'पहले CIC/CGSIC संदर्भ तैयार करें।',
+    advisoryGenerationFailed: 'नज़ीर-आधारित सलाह तैयार नहीं हो सकी।',
+    networkGeneratingAdvisory: 'नज़ीर-आधारित सलाह तैयार करते समय नेटवर्क त्रुटि हुई।',
+    unableGenerateAdvisory: 'नज़ीर-आधारित सलाह तैयार नहीं की जा सकी: {error}',
+    networkError: 'नेटवर्क त्रुटि।', ready: 'तैयार', loading: 'लोड हो रहा है...',
+    botNeedsAttention: 'बॉट पर ध्यान देना आवश्यक है', ocrUnavailable: 'OCR उपलब्ध नहीं है ({model})',
+    allSystemsOperational: 'सभी प्रणालियाँ कार्यरत हैं', botStatusPending: 'बॉट की स्थिति लंबित है',
+    refreshing: 'रीफ़्रेश हो रहा है...', refreshingBot: 'बॉट रीफ़्रेश हो रहा है...',
+    botRefreshed: 'बॉट सफलतापूर्वक रीफ़्रेश हुआ', refreshFailed: 'रीफ़्रेश विफल रहा',
+    refreshBeforeAsking: 'प्रश्न पूछने से पहले बॉट रीफ़्रेश करें', backendUnavailable: 'बैकएंड उपलब्ध नहीं है',
+    cannotReachBackend: 'बैकएंड से संपर्क नहीं हो सका', dbStatusFailed: 'डेटाबेस स्थिति की जाँच विफल रही',
+    checking: 'जाँच जारी', failed: 'विफल',
+    offline: 'ऑफ़लाइन', available: 'उपलब्ध', unavailable: 'अनुपलब्ध', statusReady: 'तैयार',
+    assistantUnavailable: 'सहायक उपलब्ध नहीं है', points: '{count} बिंदु',
+    retrieving: 'जानकारी प्राप्त की जा रही है...', queryFailed: 'प्रश्न संसाधित नहीं हो सका',
+    analysingRti: 'RTI आवेदन और कानूनी प्रावधानों का विश्लेषण किया जा रहा है...',
+    retrievingContext: 'संबंधित संदर्भ प्राप्त किया जा रहा है...', generatingAnswer: 'उत्तर तैयार किया जा रहा है...',
+    unableToAnswer: 'उत्तर नहीं दिया जा सका: {error}',
+    backendNetworkError: 'नेटवर्क त्रुटि - क्या बैकएंड चल रहा है?',
+    pleaseUploadPdf: 'कृपया PDF फ़ाइल अपलोड करें।', uploadedPdf: 'अपलोड की गई PDF: {filename}',
+    uploadingPdf: 'PDF अपलोड हो रही है...', extractingPdf: 'PDF से पाठ निकाला जा रहा है...',
+    pdfProcessed: 'PDF संसाधित हुई और PIO सलाह तैयार हो गई।',
+    uploadFailed: 'अपलोड विफल रहा (HTTP {status})',
+    unableProcessPdf: 'अपलोड की गई PDF संसाधित नहीं हो सकी: {error}',
+    networkUploadingPdf: 'PDF अपलोड करते समय नेटवर्क त्रुटि हुई।',
+    informationRequested: 'माँगी गई जानकारी', commissionObservation: 'आयोग की टिप्पणी',
+    commissionFinding: 'आयोग का निष्कर्ष', finalOrder: 'अंतिम आदेश', pioLearning: 'PIO सीख',
+    precedentSummary: 'नज़ीर सारांश', groundsForAppeal: 'अपील के आधार',
+    hearingSubmissions: 'सुनवाई में प्रस्तुतियाँ', caseMetadata: 'प्रकरण मेटाडेटा',
+    relevantPassage: 'प्रासंगिक अंश', officerDirectory: 'छत्तीसगढ़ आरटीआई अधिकारी निर्देशिका',
+    officerRegistry: 'छत्तीसगढ़ आरटीआई अधिकारी रजिस्ट्री', role: 'भूमिका', officer: 'अधिकारी',
+    designation: 'पदनाम', department: 'विभाग', district: 'जिला', office: 'कार्यालय',
+    officeCode: 'कार्यालय कोड', email: 'ईमेल', address: 'पता',
+    officerDirectoryRecord: 'अधिकारी निर्देशिका रिकॉर्ड', unknown: 'अज्ञात',
+    case: 'प्रकरण: {value}', authority: 'प्राधिकरण: {value}', hearing: 'सुनवाई: {value}',
+    outcome: 'परिणाम: {value}', expandPassage: 'अंश विस्तार से देखें', passage: 'अंश',
+    viewPdf: 'PDF देखें', viewStructure: 'संरचना देखें',
+    structureUnavailable: 'इस दस्तावेज़ के लिए structured.md उपलब्ध नहीं है',
+    openMarkdown: 'निकाला गया Markdown खोलें', loadingPdf: 'PDF लोड हो रही है',
+    pdfFetchFailed: 'PDF प्राप्त नहीं हो सकी: {status}', couldNotLoadPdf: 'PDF लोड नहीं हो सकी: {error}',
+    loadingStructure: 'संरचना लोड हो रही है', structureRequestFailed: 'structured.md अनुरोध विफल रहा',
+    couldNotLoadStructure: 'संरचना लोड नहीं हो सकी: {error}'
+  }
+};
 
 const CG_GOV_LOGO = '/assets/cg_gov_logo.png';
 const PRECEDENT_YES_CONFIRMATIONS = new Set([
@@ -181,19 +360,22 @@ const api = {
       pio_mode: Boolean(pioMode),
       answer_language: normaliseLanguageMode(answerLanguage)
     }, handlers),
-  pioPrecedents: (advisoryId, numResults = 5) =>
+  pioPrecedents: (advisoryId, numResults = 5, answerLanguage) =>
     api.request('POST', '/api/pio/precedents', {
       advisory_id: advisoryId,
-      num_results: numResults
+      num_results: numResults,
+      answer_language: normaliseLanguageMode(answerLanguage)
     }),
-  pioPrecedentsStream: (advisoryId, numResults = 5, handlers) =>
+  pioPrecedentsStream: (advisoryId, numResults = 5, answerLanguage, handlers) =>
     api.streamRequest('/api/pio/precedents/stream', {
       advisory_id: advisoryId,
-      num_results: numResults
+      num_results: numResults,
+      answer_language: normaliseLanguageMode(answerLanguage)
     }, handlers),
-  pioPrecedentAdvisoryStream: (advisoryId, handlers) =>
+  pioPrecedentAdvisoryStream: (advisoryId, answerLanguage, handlers) =>
     api.streamRequest('/api/pio/precedent-advisory/stream', {
-      advisory_id: advisoryId
+      advisory_id: advisoryId,
+      answer_language: normaliseLanguageMode(answerLanguage)
     }, handlers),
   async uploadPioPdf(file, answerLanguage) {
     const body = new FormData();
@@ -211,7 +393,7 @@ const api = {
   documentStructure: actualPdf => api.request('POST', '/api/document-structure', { actual_pdf: actualPdf }),
   async fetchPdf(path) {
     const res = await fetch(path);
-    if (!res.ok) throw new Error(`PDF fetch failed: ${res.status}`);
+    if (!res.ok) throw new Error(t('pdfFetchFailed', { status: res.status }));
     return res.blob();
   }
 };
@@ -226,6 +408,96 @@ function newId() {
 
 function normaliseLanguageMode(mode) {
   return String(mode || '').toLowerCase() === 'hi' ? 'hi' : 'en';
+}
+
+function localeTag() {
+  return normaliseLanguageMode(state?.languageMode) === 'hi' ? 'hi-IN' : 'en-IN';
+}
+
+function t(key, variables = {}) {
+  const mode = normaliseLanguageMode(state?.languageMode);
+  const template = TRANSLATIONS[mode]?.[key] ?? TRANSLATIONS.en[key] ?? key;
+  return String(template).replace(/\{(\w+)\}/g, (_, name) =>
+    Object.prototype.hasOwnProperty.call(variables, name) ? String(variables[name]) : `{${name}}`
+  );
+}
+
+function applyTranslations() {
+  const mode = normaliseLanguageMode(state.languageMode);
+  document.documentElement.lang = mode;
+
+  document.querySelectorAll('[data-i18n]').forEach(element => {
+    element.textContent = t(element.dataset.i18n);
+  });
+
+  [
+    ['data-i18n-aria-label', 'aria-label'],
+    ['data-i18n-title', 'title'],
+    ['data-i18n-placeholder', 'placeholder'],
+    ['data-i18n-alt', 'alt']
+  ].forEach(([dataAttribute, targetAttribute]) => {
+    document.querySelectorAll(`[${dataAttribute}]`).forEach(element => {
+      element.setAttribute(targetAttribute, t(element.getAttribute(dataAttribute)));
+    });
+  });
+}
+
+const KNOWN_UI_MESSAGE_KEYS = [
+  'checkingAssistantStatus',
+  'checkingBotStatus',
+  'searchingDecisions',
+  'generatingPrecedentAdvisory',
+  'referenceSearchFailed',
+  'advisoryGenerationFailed',
+  'queryFailed',
+  'refreshFailed',
+  'refreshBot',
+  'refreshing',
+  'refreshingBot',
+  'backendUnavailable',
+  'assistantUnavailable',
+  'botNeedsAttention',
+  'allSystemsOperational',
+  'botStatusPending',
+  'checking',
+  'failed',
+  'offline',
+  'available',
+  'unavailable',
+  'statusReady',
+  'loadingDocument',
+  'loadingPdf',
+  'loadingStructure',
+  'retrieving',
+  'analysingRti',
+  'retrievingContext',
+  'generatingAnswer',
+  'uploadingPdf',
+  'extractingPdf',
+  'ready'
+];
+
+function localizeKnownUiMessage(message, fallbackKey = '') {
+  const value = String(message || '').trim();
+  const key = KNOWN_UI_MESSAGE_KEYS.find(candidate =>
+    Object.values(TRANSLATIONS).some(catalog => catalog[candidate] === value)
+  );
+  if (key) return t(key);
+
+  const ocrMatch = value.match(/^(?:OCR unavailable|OCR उपलब्ध नहीं है) \((.+)\)$/u);
+  if (ocrMatch) return t('ocrUnavailable', { model: ocrMatch[1] });
+
+  return value || (fallbackKey ? t(fallbackKey) : '');
+}
+
+function localizeStatusRowValue(value) {
+  const text = String(value || '').trim();
+  if (!text || text === '-') return text;
+
+  const pointMatch = text.match(/^(.+?)\s+(?:pts|बिंदु)$/u);
+  if (pointMatch) return t('points', { count: pointMatch[1] });
+
+  return localizeKnownUiMessage(text);
 }
 
 function answerLanguageInstruction(mode) {
@@ -309,7 +581,7 @@ function renderHistory() {
   if (!state.conversations.length) {
     const empty = document.createElement('div');
     empty.className = 'history-empty';
-    empty.textContent = 'No history yet.';
+    empty.textContent = t('noHistory');
     ui.historyList.appendChild(empty);
     return;
   }
@@ -319,7 +591,11 @@ function renderHistory() {
     item.type = 'button';
     item.className = `history-item${conversation.id === state.activeId ? ' active' : ''}`;
     item.innerHTML = `
-      <span class="history-title">${escapeHtml(conversation.title || 'New chat')}</span>
+      <span class="history-title">${escapeHtml(
+        !conversation.title || conversation.title === 'New chat'
+          ? t('newChat')
+          : conversation.title
+      )}</span>
       <span class="history-date">${formatHistoryDate(conversation.updatedAt)}</span>
     `;
     item.addEventListener('click', () => {
@@ -334,7 +610,12 @@ function renderHistory() {
 function formatHistoryDate(value) {
   const date = new Date(value);
   if (Number.isNaN(date.getTime())) return '';
-  return date.toLocaleString([], { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' });
+  return date.toLocaleString(localeTag(), {
+    month: 'short',
+    day: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit'
+  });
 }
 
 function renderWelcome() {
@@ -342,10 +623,10 @@ function renderWelcome() {
   wrap.className = 'welcome';
   wrap.id = 'welcome';
   wrap.innerHTML = `
-    <h1>How can I help with RTI?</h1>
-    <p>Ask about the CG RTI portal, filing steps, fees, appeals, application status, PIO contacts, RTI Act basics, or portal documents.</p>
+    <h1>${escapeHtml(t('welcomeTitle'))}</h1>
+    <p>${escapeHtml(t('welcomeDescription'))}</p>
     <div class="chips">
-      ${DEFAULT_PROMPTS.map(prompt => `<button class="chip" type="button">${escapeHtml(prompt)}</button>`).join('')}
+      ${DEFAULT_PROMPT_KEYS.map(key => `<button class="chip" type="button">${escapeHtml(t(key))}</button>`).join('')}
     </div>
   `;
   wrap.querySelectorAll('.chip').forEach(chip => {
@@ -395,11 +676,11 @@ function createMessageElement(message) {
   const who = document.createElement('div');
   who.className = 'who';
   if (message.role === 'user') {
-    who.textContent = 'YOU';
+    who.textContent = t('you');
   } else {
     const logo = document.createElement('img');
     logo.src = CG_GOV_LOGO;
-    logo.alt = 'Chhattisgarh government logo';
+    logo.alt = t('cgGovernmentLogo');
     logo.loading = 'lazy';
     who.appendChild(logo);
   }
@@ -427,7 +708,7 @@ function createMessageElement(message) {
     if (!message.pending && message.role === 'assistant' && message.timing) {
       const meta = document.createElement('div');
       meta.className = 'message-meta';
-      meta.textContent = `Answered in ${message.timing}`;
+      meta.textContent = t('answeredIn', { time: message.timing });
       bubble.appendChild(meta);
     }
 
@@ -435,7 +716,7 @@ function createMessageElement(message) {
       const btn = document.createElement('button');
       btn.className = 'sources-btn';
       btn.type = 'button';
-      btn.innerHTML = `<span class="source-count">${message.results.length}</span> View sources`;
+      btn.innerHTML = `<span class="source-count">${message.results.length}</span> ${escapeHtml(t('viewSources'))}`;
       btn.addEventListener('click', () => openDrawer(message.results));
       bubble.appendChild(btn);
     }
@@ -507,14 +788,14 @@ function createPioAnalysisDetails(details) {
   outer.className = 'analysis-details';
 
   const summary = document.createElement('summary');
-  summary.textContent = 'Analysis details';
+  summary.textContent = t('analysisDetails');
   outer.appendChild(summary);
 
   const sections = [
-    ['RTI extraction', details.rtiExtraction],
-    ['Legal analysis', details.legalAnalysis],
-    ['Applied RTI Act provisions', details.appliedProvisions],
-    ['Validation result', details.validation]
+    [t('rtiExtraction'), details.rtiExtraction],
+    [t('legalAnalysis'), details.legalAnalysis],
+    [t('appliedProvisions'), details.appliedProvisions],
+    [t('validationResult'), details.validation]
   ];
 
   sections.forEach(([title, value]) => {
@@ -547,7 +828,7 @@ function createPrecedentReferencesDropdown(message) {
   details.className = 'precedent-reference-details';
 
   const summary = document.createElement('summary');
-  summary.textContent = `CIC/CGSIC decision references (${results.length})`;
+  summary.textContent = t('decisionReferences', { count: results.length });
   details.appendChild(summary);
 
   if (message.precedentReferenceNote) {
@@ -563,7 +844,7 @@ function createPrecedentReferencesDropdown(message) {
   } else {
     const empty = document.createElement('p');
     empty.className = 'precedent-reference-empty';
-    empty.textContent = 'No decision references were attached.';
+    empty.textContent = t('noDecisionReferences');
     details.appendChild(empty);
   }
 
@@ -606,7 +887,7 @@ function createPrecedentPdfLinks(results) {
   if (!filenames.length) {
     const empty = document.createElement('p');
     empty.className = 'precedent-reference-empty';
-    empty.textContent = 'No source PDF file name was attached.';
+    empty.textContent = t('noSourcePdfName');
     sourceList.appendChild(empty);
     return sourceList;
   }
@@ -615,7 +896,7 @@ function createPrecedentPdfLinks(results) {
     const button = document.createElement('button');
     button.type = 'button';
     button.className = 'precedent-pdf-link';
-    button.title = `Open ${filename}`;
+    button.title = t('openFile', { filename });
     button.innerHTML = `
       <span aria-hidden="true" class="precedent-pdf-icon">PDF</span>
       <span>${escapeHtml(filename)}</span>
@@ -644,13 +925,13 @@ function createPrecedentActionControls(message) {
     button.className = 'precedent-action-btn';
 
     if (message.precedentAdvisoryStatus === 'generating') {
-      button.textContent = 'Generating precedent-informed advisory...';
+      button.textContent = t('generatingPrecedentAdvisory');
       button.disabled = true;
     } else if (message.precedentAdvisoryGenerated) {
-      button.textContent = 'Precedent-informed advisory generated';
+      button.textContent = t('precedentAdvisoryGenerated');
       button.disabled = true;
     } else {
-      button.textContent = 'Generate precedent-informed PIO advisory';
+      button.textContent = t('generatePrecedentAdvisory');
       button.disabled = state.loading;
       button.addEventListener('click', () => {
         handleGeneratePrecedentAdvisory(message.id);
@@ -663,18 +944,18 @@ function createPrecedentActionControls(message) {
   }
 
   if (decision === 'declined') {
-    container.innerHTML = '<span class="precedent-status">CIC/CGSIC references were not added.</span>';
+    container.innerHTML = `<span class="precedent-status">${escapeHtml(t('referencesNotAdded'))}</span>`;
     return container;
   }
 
   if (decision === 'accepted') {
-    container.innerHTML = '<span class="precedent-status">Searching CIC/CGSIC decisions…</span>';
+    container.innerHTML = `<span class="precedent-status">${escapeHtml(t('searchingDecisions'))}</span>`;
     return container;
   }
 
   const label = document.createElement('div');
   label.className = 'precedent-action-label';
-  label.textContent = 'Add supporting CIC/CGSIC decision references?';
+  label.textContent = t('addSupportingReferences');
   container.appendChild(label);
 
   const buttonRow = document.createElement('div');
@@ -683,17 +964,17 @@ function createPrecedentActionControls(message) {
   const yesButton = document.createElement('button');
   yesButton.type = 'button';
   yesButton.className = 'precedent-action-btn';
-  yesButton.textContent = 'Yes, add references';
+  yesButton.textContent = t('yesAddReferences');
   yesButton.addEventListener('click', () => {
-    handlePrecedentChoice(message.id, 'yes', 'Yes, add CIC/CGSIC references');
+    handlePrecedentChoice(message.id, 'yes', t('yesAddReferencesMessage'));
   });
 
   const noButton = document.createElement('button');
   noButton.type = 'button';
   noButton.className = 'precedent-action-btn secondary';
-  noButton.textContent = 'No';
+  noButton.textContent = t('no');
   noButton.addEventListener('click', () => {
-    handlePrecedentChoice(message.id, 'no', 'No');
+    handlePrecedentChoice(message.id, 'no', t('no'));
   });
 
   buttonRow.appendChild(yesButton);
@@ -758,12 +1039,12 @@ async function handlePrecedentChoice(advisoryMessageId, choice, displayText) {
 
   if (choice === 'no') {
     advisoryMessage.precedentDecision = 'declined';
-    appendUserChoice(conversation, displayText || 'No');
+    appendUserChoice(conversation, displayText || t('no'));
     conversation.messages.push({
       id: newId(),
       role: 'assistant',
-      content: 'CIC/CGSIC references were not added.',
-      display: 'CIC/CGSIC references were not added.',
+      content: t('referencesNotAdded'),
+      display: t('referencesNotAdded'),
       createdAt: nowIso()
     });
     touchConversation(conversation);
@@ -772,13 +1053,13 @@ async function handlePrecedentChoice(advisoryMessageId, choice, displayText) {
   }
 
   if (!advisoryMessage.advisoryId) {
-    toast('This advisory cannot be linked to a precedent search.', 'error');
+    toast(t('advisoryNotLinkable'), 'error');
     return;
   }
 
   advisoryMessage.precedentDecision = 'accepted';
   state.loading = true;
-  disableQueryBar('Searching CIC/CGSIC decisions...');
+  disableQueryBar(t('searchingDecisions'));
   touchConversation(conversation);
   renderAll();
 
@@ -786,15 +1067,15 @@ async function handlePrecedentChoice(advisoryMessageId, choice, displayText) {
     let finalData = null;
     let streamError = null;
 
-    await api.pioPrecedentsStream(advisoryMessage.advisoryId, 5, {
+    await api.pioPrecedentsStream(advisoryMessage.advisoryId, 5, state.languageMode, {
       status(data) {
-        disableQueryBar(data.message || 'Searching CIC/CGSIC decisions...');
+        disableQueryBar(localizeKnownUiMessage(data.message, 'searchingDecisions'));
       },
       done(data) {
         finalData = data;
       },
       error(data) {
-        streamError = data.error || 'CIC/CGSIC reference search failed.';
+        streamError = data.error || t('referenceSearchFailed');
       }
     });
 
@@ -813,7 +1094,7 @@ async function handlePrecedentChoice(advisoryMessageId, choice, displayText) {
     ui.queryTiming.textContent = data.execution_time || '';
   } catch (error) {
     advisoryMessage.precedentDecision = 'pending';
-    toast(error.message || 'Network error while retrieving CIC/CGSIC references.', 'error');
+    toast(error.message || t('networkRetrievingReferences'), 'error');
   } finally {
     state.loading = false;
     enableQueryBar();
@@ -829,7 +1110,7 @@ async function handleGeneratePrecedentAdvisory(advisoryMessageId) {
   if (!advisoryMessage || state.loading) return;
 
   if (!advisoryMessage.advisoryId || !advisoryMessage.precedentSearchCompleted) {
-    toast('Generate CIC/CGSIC references first.', 'error');
+    toast(t('generateReferencesFirst'), 'error');
     return;
   }
 
@@ -845,7 +1126,7 @@ async function handleGeneratePrecedentAdvisory(advisoryMessageId) {
 
   conversation.messages.push(pendingMessage);
   state.loading = true;
-  disableQueryBar('Generating precedent-informed advisory...');
+  disableQueryBar(t('generatingPrecedentAdvisory'));
   touchConversation(conversation);
   renderAll();
 
@@ -854,9 +1135,9 @@ async function handleGeneratePrecedentAdvisory(advisoryMessageId) {
     let streamError = null;
     let streamedAnswer = '';
 
-    await api.pioPrecedentAdvisoryStream(advisoryMessage.advisoryId, {
+    await api.pioPrecedentAdvisoryStream(advisoryMessage.advisoryId, state.languageMode, {
       status(data) {
-        disableQueryBar(data.message || 'Generating precedent-informed advisory...');
+        disableQueryBar(localizeKnownUiMessage(data.message, 'generatingPrecedentAdvisory'));
       },
       token(data) {
         const chunk = String(data.text || '');
@@ -878,7 +1159,7 @@ async function handleGeneratePrecedentAdvisory(advisoryMessageId) {
         finalData = data;
       },
       error(data) {
-        streamError = data.error || 'Precedent-informed advisory generation failed.';
+        streamError = data.error || t('advisoryGenerationFailed');
       }
     });
 
@@ -910,13 +1191,13 @@ async function handleGeneratePrecedentAdvisory(advisoryMessageId) {
       conversation.messages[index] = {
         id: pendingMessage.id,
         role: 'assistant',
-        content: error.message || 'Network error while generating precedent-informed advisory.',
-        display: `Unable to generate precedent-informed advisory: ${error.message || 'Network error.'}`,
+        content: error.message || t('networkGeneratingAdvisory'),
+        display: t('unableGenerateAdvisory', { error: error.message || t('networkError') }),
         createdAt: nowIso()
       };
     }
     advisoryMessage.precedentAdvisoryStatus = null;
-    toast(error.message || 'Network error while generating precedent-informed advisory.', 'error');
+    toast(error.message || t('networkGeneratingAdvisory'), 'error');
   } finally {
     state.loading = false;
     enableQueryBar();
@@ -945,11 +1226,13 @@ function usePrompt(prompt) {
 
 function updatePioModeUi() {
   ui.pioModeToggle.checked = state.pioMode;
-  ui.pioModeState.textContent = state.pioMode ? 'On' : 'Off';
+  ui.pioModeState.textContent = state.pioMode ? t('on') : t('off');
   ui.headModeLabel.textContent = state.pioMode
-    ? 'PIO advisory enabled'
-    : 'Public guidance';
-  ui.queryInput.placeholder = state.pioMode ? PIO_QUERY_PLACEHOLDER : DEFAULT_QUERY_PLACEHOLDER;
+    ? t('pioAdvisoryEnabled')
+    : t('publicGuidance');
+  ui.queryInput.placeholder = state.pioMode
+    ? t('pioQueryPlaceholder')
+    : t('defaultQueryPlaceholder');
 }
 
 function setPioMode(enabled) {
@@ -961,19 +1244,37 @@ function setPioMode(enabled) {
 function updateLanguageModeUi() {
   const mode = normaliseLanguageMode(state.languageMode);
   state.languageMode = mode;
-  document.documentElement.lang = mode === 'hi' ? 'hi' : 'en';
 
   ui.languageOptions.forEach(button => {
     const active = button.dataset.languageMode === mode;
     button.classList.toggle('is-active', active);
     button.setAttribute('aria-pressed', active ? 'true' : 'false');
   });
+
+  [ui.stPipelineVal, ui.stDbVal, ui.stDocsVal].forEach(statusValue => {
+    statusValue.textContent = localizeStatusRowValue(statusValue.textContent);
+  });
 }
 
 function setLanguageMode(mode) {
+  const currentDynamicText = {
+    queryStatus: ui.queryStatus.textContent,
+    botStatus: ui.botStatusText.textContent,
+    refreshButton: ui.btnInit.textContent,
+    documentLoading: ui.documentLoadingLabel.textContent
+  };
+
   state.languageMode = normaliseLanguageMode(mode);
   localStorage.setItem(LANGUAGE_MODE_KEY, state.languageMode);
   updateLanguageModeUi();
+  applyTranslations();
+  ui.queryStatus.textContent = localizeKnownUiMessage(currentDynamicText.queryStatus, 'checkingAssistantStatus');
+  ui.botStatusText.textContent = localizeKnownUiMessage(currentDynamicText.botStatus, 'checkingBotStatus');
+  ui.btnInit.textContent = localizeKnownUiMessage(currentDynamicText.refreshButton, 'refreshBot');
+  ui.documentLoadingLabel.textContent = localizeKnownUiMessage(currentDynamicText.documentLoading, 'loadingDocument');
+  updatePioModeUi();
+  renderAll();
+  updateFooterTime();
 }
 
 function autoResize() {
@@ -999,34 +1300,34 @@ function setAllStatus(ps, pt, ds, dt, qs, qt) {
 
   const states = [ps, ds, qs];
   if (states.includes('loading')) {
-    setBotStatus('loading', 'Checking bot status');
+    setBotStatus('loading', t('checkingBotStatus'));
   } else if (states.includes('error')) {
-    setBotStatus('error', 'Bot needs attention');
+    setBotStatus('error', t('botNeedsAttention'));
   } else if (!state.ocrReady) {
-    setBotStatus('error', `OCR unavailable (${state.ocrModel})`);
+    setBotStatus('error', t('ocrUnavailable', { model: state.ocrModel }));
   } else if (states.every(state => state === 'ok')) {
-    setBotStatus('ok', 'All systems operational');
+    setBotStatus('ok', t('allSystemsOperational'));
   } else {
-    setBotStatus('loading', 'Bot status pending');
+    setBotStatus('loading', t('botStatusPending'));
   }
 }
 
 function updateFooterTime() {
   const now = new Date();
-  ui.footerTime.textContent = now.toLocaleTimeString([], {
+  ui.footerTime.textContent = now.toLocaleTimeString(localeTag(), {
     hour: '2-digit',
     minute: '2-digit',
     second: '2-digit'
   });
 }
 
-function enableQueryBar(message = 'Ready') {
+function enableQueryBar(message = t('ready')) {
   ui.btnSend.disabled = false;
   if (ui.uploadPdf) ui.uploadPdf.disabled = false;
   ui.queryStatus.textContent = message;
 }
 
-function disableQueryBar(message = 'Loading...') {
+function disableQueryBar(message = t('loading')) {
   ui.btnSend.disabled = true;
   if (ui.uploadPdf) ui.uploadPdf.disabled = true;
   ui.queryStatus.textContent = message;
@@ -1034,29 +1335,29 @@ function disableQueryBar(message = 'Loading...') {
 
 async function initPipeline() {
   ui.btnInit.disabled = true;
-  ui.btnInit.textContent = 'Refreshing...';
-  disableQueryBar('Refreshing bot...');
-  setAllStatus('loading', 'checking', 'loading', 'checking', 'loading', 'checking');
+  ui.btnInit.textContent = t('refreshing');
+  disableQueryBar(t('refreshingBot'));
+  setAllStatus('loading', t('checking'), 'loading', t('checking'), 'loading', t('checking'));
 
   try {
     const { ok, data } = await api.init();
     if (ok && data.success) {
       state.initialized = true;
-      toast('Bot refreshed successfully', 'success');
+      toast(t('botRefreshed'), 'success');
       await refreshDbStatus();
       enableQueryBar();
     } else {
-      setAllStatus('error', 'failed', 'error', '-', 'error', '-');
-      disableQueryBar('Refresh bot before asking');
-      toast(data.error || 'Refresh failed', 'error', 5000);
+      setAllStatus('error', t('failed'), 'error', '-', 'error', '-');
+      disableQueryBar(t('refreshBeforeAsking'));
+      toast(data.error || t('refreshFailed'), 'error', 5000);
     }
   } catch (err) {
-    setAllStatus('error', 'offline', 'error', '-', 'error', '-');
-    disableQueryBar('Backend unavailable');
-    toast('Cannot reach backend', 'error');
+    setAllStatus('error', t('offline'), 'error', '-', 'error', '-');
+    disableQueryBar(t('backendUnavailable'));
+    toast(t('cannotReachBackend'), 'error');
   } finally {
     ui.btnInit.disabled = false;
-    ui.btnInit.textContent = 'Refresh bot';
+    ui.btnInit.textContent = t('refreshBot');
     updateFooterTime();
   }
 }
@@ -1064,24 +1365,24 @@ async function initPipeline() {
 async function refreshDbStatus() {
   try {
     const { ok, data } = await api.dbStatus();
-    if (!ok) throw new Error(data.error || 'DB status failed');
+    if (!ok) throw new Error(data.error || t('dbStatusFailed'));
 
     const dbReady = data.db_connected && data.collection_exists;
     const count = data.points_count ?? 0;
     setAllStatus(
       dbReady || state.initialized ? 'ok' : 'idle',
-      dbReady || state.initialized ? 'ready' : '-',
+      dbReady || state.initialized ? t('statusReady') : '-',
       data.db_connected ? 'ok' : 'error',
-      data.db_connected ? 'ready' : 'offline',
+      data.db_connected ? t('statusReady') : t('offline'),
       data.db_connected ? 'ok' : 'idle',
-      data.db_connected ? `${count.toLocaleString()} pts` : '-'
+      data.db_connected ? t('points', { count: count.toLocaleString(localeTag()) }) : '-'
     );
 
     if (dbReady || state.initialized) enableQueryBar();
-    else disableQueryBar('Refresh bot before asking');
+    else disableQueryBar(t('refreshBeforeAsking'));
   } catch (_) {
-    setAllStatus('error', 'offline', 'error', '-', 'error', '-');
-    disableQueryBar('Backend unavailable');
+    setAllStatus('error', t('offline'), 'error', '-', 'error', '-');
+    disableQueryBar(t('backendUnavailable'));
   }
   updateFooterTime();
 }
@@ -1098,12 +1399,12 @@ async function bootStatus() {
       await refreshDbStatus();
       if (state.initialized) enableQueryBar();
     } else {
-      setAllStatus('error', 'unavailable', 'idle', '-', 'idle', '-');
-      disableQueryBar('Assistant unavailable');
+      setAllStatus('error', t('unavailable'), 'idle', '-', 'idle', '-');
+      disableQueryBar(t('assistantUnavailable'));
     }
   } catch (_) {
-    setAllStatus('error', 'offline', 'error', '-', 'error', '-');
-    disableQueryBar('Backend unavailable');
+    setAllStatus('error', t('offline'), 'error', '-', 'error', '-');
+    disableQueryBar(t('backendUnavailable'));
   }
 }
 
@@ -1214,7 +1515,7 @@ async function sendQuery() {
   };
   conversation.messages.push(pendingMessage);
   state.loading = true;
-  disableQueryBar('Retrieving...');
+  disableQueryBar(t('retrieving'));
   renderAll();
 
   try {
@@ -1230,7 +1531,7 @@ async function sendQuery() {
       state.languageMode,
       {
         status(data) {
-          if (data.message) disableQueryBar(data.message);
+          if (data.message) disableQueryBar(localizeKnownUiMessage(data.message));
         },
         token(data) {
           const chunk = String(data.text || '');
@@ -1252,7 +1553,7 @@ async function sendQuery() {
           finalData = data;
         },
         error(data) {
-          streamError = data.error || 'Query failed';
+          streamError = data.error || t('queryFailed');
         }
       }
     );
@@ -1272,12 +1573,12 @@ async function sendQuery() {
       );
       ui.queryTiming.textContent = data.execution_time || '';
     } else {
-      const errorMessage = data.error || 'Query failed';
+      const errorMessage = data.error || t('queryFailed');
       conversation.messages[index] = {
         id: pendingMessage.id,
         role: 'assistant',
         content: errorMessage,
-        display: `Unable to answer: ${errorMessage}`,
+        display: t('unableToAnswer', { error: errorMessage }),
         createdAt: nowIso()
       };
       toast(errorMessage, 'error');
@@ -1286,13 +1587,13 @@ async function sendQuery() {
     const index = conversation.messages.findIndex(m => m.id === pendingMessage.id);
     const errorMessage = err && err.message
       ? err.message
-      : 'Network error - is the backend running?';
+      : t('backendNetworkError');
     if (index >= 0) {
       conversation.messages[index] = {
         id: pendingMessage.id,
         role: 'assistant',
         content: errorMessage,
-        display: `Unable to answer: ${errorMessage}`,
+        display: t('unableToAnswer', { error: errorMessage }),
         createdAt: nowIso()
       };
     }
@@ -1312,12 +1613,12 @@ async function handlePdfUpload(event) {
 
   if (!file || state.loading) return;
   if (!file.name.toLowerCase().endsWith('.pdf')) {
-    toast('Please upload a PDF file.', 'error');
+    toast(t('pleaseUploadPdf'), 'error');
     return;
   }
 
   const conversation = activeConversation();
-  const displayName = `Uploaded PDF: ${file.name}`;
+  const displayName = t('uploadedPdf', { filename: file.name });
   const userMessage = {
     id: newId(),
     role: 'user',
@@ -1338,11 +1639,11 @@ async function handlePdfUpload(event) {
   conversation.messages.push(pendingMessage);
   state.loading = true;
   ui.queryTiming.textContent = '';
-  disableQueryBar('Uploading PDF...');
+  disableQueryBar(t('uploadingPdf'));
   renderAll();
 
   try {
-    disableQueryBar('Extracting PDF text...');
+    disableQueryBar(t('extractingPdf'));
     const { ok, status, data } = await api.uploadPioPdf(file, state.languageMode);
     const index = conversation.messages.findIndex(m => m.id === pendingMessage.id);
     if (index < 0) return;
@@ -1353,14 +1654,14 @@ async function handlePdfUpload(event) {
         data
       );
       ui.queryTiming.textContent = data.execution_time || '';
-      toast('PDF processed and PIO advisory generated.', 'success');
+      toast(t('pdfProcessed'), 'success');
     } else {
-      const errorMessage = data.error || `Upload failed (HTTP ${status})`;
+      const errorMessage = data.error || t('uploadFailed', { status });
       conversation.messages[index] = {
         id: pendingMessage.id,
         role: 'assistant',
         content: errorMessage,
-        display: `Unable to process uploaded PDF: ${errorMessage}`,
+        display: t('unableProcessPdf', { error: errorMessage }),
         createdAt: nowIso()
       };
       toast(errorMessage, 'error');
@@ -1369,13 +1670,13 @@ async function handlePdfUpload(event) {
     const index = conversation.messages.findIndex(m => m.id === pendingMessage.id);
     const errorMessage = err && err.message
       ? err.message
-      : 'Network error while uploading PDF.';
+      : t('networkUploadingPdf');
     if (index >= 0) {
       conversation.messages[index] = {
         id: pendingMessage.id,
         role: 'assistant',
         content: errorMessage,
-        display: `Unable to process uploaded PDF: ${errorMessage}`,
+        display: t('unableProcessPdf', { error: errorMessage }),
         createdAt: nowIso()
       };
     }
@@ -1391,17 +1692,17 @@ async function handlePdfUpload(event) {
 
 function legalChunkLabel(chunkType) {
   const labels = {
-    INFORMATION_REQUESTED: 'Information Requested',
-    COMMISSION_OBSERVATIONS: 'Commission Observation',
-    COMMISSION_FINDINGS: 'Commission Finding',
-    FINAL_ORDER: 'Final Order',
-    PIO_LEARNING_SIGNAL: 'PIO Learning',
-    PRECEDENT_SUMMARY: 'Precedent Summary',
-    GROUNDS_FOR_APPEAL: 'Grounds for Appeal',
-    HEARING_SUBMISSIONS: 'Hearing Submissions',
-    CASE_METADATA: 'Case Metadata'
+    INFORMATION_REQUESTED: t('informationRequested'),
+    COMMISSION_OBSERVATIONS: t('commissionObservation'),
+    COMMISSION_FINDINGS: t('commissionFinding'),
+    FINAL_ORDER: t('finalOrder'),
+    PIO_LEARNING_SIGNAL: t('pioLearning'),
+    PRECEDENT_SUMMARY: t('precedentSummary'),
+    GROUNDS_FOR_APPEAL: t('groundsForAppeal'),
+    HEARING_SUBMISSIONS: t('hearingSubmissions'),
+    CASE_METADATA: t('caseMetadata')
   };
-  return labels[chunkType] || 'Relevant Passage';
+  return labels[chunkType] || t('relevantPassage');
 }
 
 function isOfficerDirectoryResult(result) {
@@ -1422,19 +1723,19 @@ function openDrawer(results) {
 
     if (isOfficerDirectoryResult(result)) {
       const sourceLabel = result.retrieval_collection === 'pio_directory_qdrant'
-        ? 'CG RTI Officer Directory'
-        : 'CG RTI Officer Registry';
+        ? t('officerDirectory')
+        : t('officerRegistry');
 
       const officerRows = [
-        ['Role', result.rti_role],
-        ['Officer', result.officer_name],
-        ['Designation', result.designation],
-        ['Department', result.department_name],
-        ['District', result.district_name],
-        ['Office', result.office_name],
-        ['Office code', result.office_code],
-        ['Email', result.email],
-        ['Address', result.office_address]
+        [t('role'), result.rti_role],
+        [t('officer'), result.officer_name],
+        [t('designation'), result.designation],
+        [t('department'), result.department_name],
+        [t('district'), result.district_name],
+        [t('office'), result.office_name],
+        [t('officeCode'), result.office_code],
+        [t('email'), result.email],
+        [t('address'), result.office_address]
       ].filter(([, value]) => String(value || '').trim());
 
       card.innerHTML = `
@@ -1443,7 +1744,7 @@ function openDrawer(results) {
           <span class="source-filename">${escapeHtml(sourceLabel)}</span>
           <span class="source-score">${score}</span>
         </div>
-        <div class="source-label">Officer directory record</div>
+        <div class="source-label">${escapeHtml(t('officerDirectoryRecord'))}</div>
         <div class="officer-source-fields">
           ${officerRows.map(([label, value]) => `
             <div class="officer-source-row">
@@ -1458,14 +1759,14 @@ function openDrawer(results) {
       return;
     }
 
-    const fname = result.actual_pdf || result.source || 'unknown';
+    const fname = result.actual_pdf || result.source || t('unknown');
     const chunkType = result.chunk_type || '';
     const passage = result.text || result.excerpt || '';
     const metaParts = [
-      result.case_number ? `Case: ${escapeHtml(result.case_number)}` : '',
-      result.public_authority ? `Authority: ${escapeHtml(result.public_authority)}` : '',
-      result.hearing_date ? `Hearing: ${escapeHtml(result.hearing_date)}` : '',
-      result.outcome ? `Outcome: ${escapeHtml(result.outcome)}` : ''
+      result.case_number ? escapeHtml(t('case', { value: result.case_number })) : '',
+      result.public_authority ? escapeHtml(t('authority', { value: result.public_authority })) : '',
+      result.hearing_date ? escapeHtml(t('hearing', { value: result.hearing_date })) : '',
+      result.outcome ? escapeHtml(t('outcome', { value: result.outcome })) : ''
     ].filter(Boolean);
 
     card.innerHTML = `
@@ -1477,7 +1778,7 @@ function openDrawer(results) {
       ${metaParts.length ? `<div class="source-meta">${metaParts.join(' | ')}</div>` : ''}
       <div class="source-label">${escapeHtml(legalChunkLabel(chunkType))}${chunkType ? ` <span>${escapeHtml(chunkType)}</span>` : ''}</div>
       <details class="source-passage" ${passage.length < 700 ? 'open' : ''}>
-        <summary>${passage.length > 700 ? 'Expand passage' : 'Passage'}</summary>
+        <summary>${escapeHtml(passage.length > 700 ? t('expandPassage') : t('passage'))}</summary>
         <div>${escapeHtml(passage)}</div>
       </details>
     `;
@@ -1488,18 +1789,18 @@ function openDrawer(results) {
     const pdfBtn = document.createElement('button');
     pdfBtn.className = 'pdf-open-btn';
     pdfBtn.type = 'button';
-    pdfBtn.textContent = 'View PDF';
+    pdfBtn.textContent = t('viewPdf');
     pdfBtn.addEventListener('click', () => openPdfPanel(fname));
     actionRow.appendChild(pdfBtn);
 
     const structureBtn = document.createElement('button');
     structureBtn.className = 'structure-open-btn';
     structureBtn.type = 'button';
-    structureBtn.textContent = 'View structure';
+    structureBtn.textContent = t('viewStructure');
     structureBtn.disabled = result.structured_md_available === false;
     structureBtn.title = structureBtn.disabled
-      ? 'structured.md is not available for this document'
-      : 'Open extracted Markdown';
+      ? t('structureUnavailable')
+      : t('openMarkdown');
     structureBtn.addEventListener('click', () => openStructurePanel(fname));
     actionRow.appendChild(structureBtn);
 
@@ -1523,7 +1824,7 @@ async function openPdfPanel(fname) {
   ui.structureContent.classList.add('hidden');
   ui.documentError.textContent = '';
   ui.documentError.classList.add('hidden');
-  ui.documentLoadingLabel.textContent = 'Loading PDF';
+  ui.documentLoadingLabel.textContent = t('loadingPdf');
   ui.pdfLoading.classList.remove('hidden');
   ui.pdfIframe.classList.add('hidden');
   ui.pdfPanel.classList.remove('hidden');
@@ -1540,9 +1841,9 @@ async function openPdfPanel(fname) {
     };
   } catch (err) {
     ui.pdfLoading.classList.add('hidden');
-    ui.documentError.textContent = `Could not load PDF: ${err.message}`;
+    ui.documentError.textContent = t('couldNotLoadPdf', { error: err.message });
     ui.documentError.classList.remove('hidden');
-    toast('Could not load PDF', 'error');
+    toast(t('couldNotLoadPdf', { error: err.message }), 'error');
   }
 }
 
@@ -1554,7 +1855,7 @@ async function openStructurePanel(fname) {
   ui.structureContent.classList.add('hidden');
   ui.documentError.textContent = '';
   ui.documentError.classList.add('hidden');
-  ui.documentLoadingLabel.textContent = 'Loading structure';
+  ui.documentLoadingLabel.textContent = t('loadingStructure');
   ui.pdfLoading.classList.remove('hidden');
   ui.pdfPanel.classList.remove('hidden');
   ui.pdfOverlay.classList.remove('hidden');
@@ -1562,14 +1863,14 @@ async function openStructurePanel(fname) {
   try {
     const { ok, data } = await api.documentStructure(fname);
     ui.pdfLoading.classList.add('hidden');
-    if (!ok || !data.success) throw new Error(data.error || 'structured.md request failed');
+    if (!ok || !data.success) throw new Error(data.error || t('structureRequestFailed'));
     ui.structureContent.textContent = data.structured_md || '';
     ui.structureContent.classList.remove('hidden');
   } catch (err) {
     ui.pdfLoading.classList.add('hidden');
-    ui.documentError.textContent = `Could not load structure: ${err.message}`;
+    ui.documentError.textContent = t('couldNotLoadStructure', { error: err.message });
     ui.documentError.classList.remove('hidden');
-    toast('Could not load structure', 'error');
+    toast(t('couldNotLoadStructure', { error: err.message }), 'error');
   }
 }
 
@@ -1651,8 +1952,9 @@ function setupEvents() {
 
 function boot() {
   loadConversations();
-  updatePioModeUi();
   updateLanguageModeUi();
+  applyTranslations();
+  updatePioModeUi();
   setupEvents();
   renderAll();
   initPipeline();

@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RTI Assistant - CG Portal</title>
+  <title data-i18n="documentTitle">RTI Assistant - CG Portal</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -16,51 +16,51 @@
 
 <body>
   <div id="app-shell">
-    <aside id="history-sidebar" aria-label="Chat history">
+    <aside id="history-sidebar" aria-label="Chat history" data-i18n-aria-label="chatHistory">
       <div class="side-brand">
-        <img class="side-brand-logo" src="/assets/cg_gov_logo.png" alt="Chhattisgarh government logo" />
+        <img class="side-brand-logo" src="/assets/cg_gov_logo.png" alt="Chhattisgarh government logo" data-i18n-alt="cgGovernmentLogo" />
         <div>
-          <div class="brand-title">RTI Assistant</div>
-          <div class="brand-subtitle">CG RTI Portal</div>
+          <div class="brand-title" data-i18n="brandTitle">RTI Assistant</div>
+          <div class="brand-subtitle" data-i18n="brandSubtitle">CG RTI Portal</div>
         </div>
       </div>
 
       <button id="new-chat" class="new-chat" type="button">
         <span aria-hidden="true">+</span>
-        New chat
+        <span data-i18n="newChat">New chat</span>
       </button>
 
       <section class="sidebar-section">
-        <div class="section-label">Bot status</div>
+        <div class="section-label" data-i18n="botStatus">Bot status</div>
         <details class="bot-status" id="bot-status-panel">
           <summary class="bot-status-summary">
             <span class="status-dot" id="bot-status-dot" data-state="loading"></span>
-            <span class="bot-status-text" id="bot-status-text">Checking bot status</span>
+            <span class="bot-status-text" id="bot-status-text" data-i18n="checkingBotStatus">Checking bot status</span>
             <span class="bot-status-caret" aria-hidden="true">v</span>
           </summary>
           <div class="status-grid">
           <div class="status-row" id="st-pipeline">
             <span class="status-dot" data-state="idle"></span>
-            <span class="status-label">Assistant</span>
+            <span class="status-label" data-i18n="assistant">Assistant</span>
             <span class="status-val" id="st-pipeline-val">-</span>
           </div>
           <div class="status-row" id="st-db">
             <span class="status-dot" data-state="idle"></span>
-            <span class="status-label">Knowledge base</span>
+            <span class="status-label" data-i18n="knowledgeBase">Knowledge base</span>
             <span class="status-val" id="st-db-val">-</span>
           </div>
           <div class="status-row" id="st-docs">
             <span class="status-dot" data-state="idle"></span>
-            <span class="status-label">Documents</span>
+            <span class="status-label" data-i18n="documents">Documents</span>
             <span class="status-val" id="st-docs-val">-</span>
           </div>
           </div>
-          <button class="btn-init" id="btn-init" type="button">Refresh bot</button>
+          <button class="btn-init" id="btn-init" type="button" data-i18n="refreshBot">Refresh bot</button>
         </details>
       </section>
 
       <section class="sidebar-section history-section">
-        <div class="section-label">History</div>
+        <div class="section-label" data-i18n="history">History</div>
         <div id="history-list" class="history-list"></div>
       </section>
 
@@ -72,48 +72,48 @@
     <main id="main">
       <header id="topbar">
         <div class="brand-line">
-          <span class="brand-mark">RTI Assistant</span>
+          <span class="brand-mark" data-i18n="brandTitle">RTI Assistant</span>
           <span class="brand-rule"></span>
-          <span class="brand-meta">Chhattisgarh citizen helpdesk</span>
+          <span class="brand-meta" data-i18n="citizenHelpdesk">Chhattisgarh citizen helpdesk</span>
         </div>
         <div class="top-actions">
-          <div id="language-toggle" class="language-toggle" role="group" aria-label="Answer language">
+          <div id="language-toggle" class="language-toggle" role="group" aria-label="Site and answer language" data-i18n-aria-label="languageToggleLabel">
             <button class="language-option" type="button" data-language-mode="en" aria-pressed="true">
               <span class="language-option-icon" aria-hidden="true">EN</span>
-              <span class="language-option-label">English</span>
+              <span class="language-option-label" data-i18n="englishLanguage">English</span>
             </button>
             <button class="language-option" type="button" data-language-mode="hi" aria-pressed="false">
               <span class="language-option-icon" aria-hidden="true">&#2309;</span>
-              <span class="language-option-label" lang="hi">&#2361;&#2367;&#2306;&#2342;&#2368;</span>
+              <span class="language-option-label" lang="hi" data-i18n="hindiLanguage">&#2361;&#2367;&#2306;&#2342;&#2368;</span>
             </button>
           </div>
           <label class="pio-mode-toggle" for="pio-mode-toggle">
-            <span class="pio-mode-label">PIO Mode</span>
+            <span class="pio-mode-label" data-i18n="pioMode">PIO Mode</span>
             <span class="pio-switch">
-              <input id="pio-mode-toggle" type="checkbox" aria-label="PIO Mode" autocomplete="off" />
+              <input id="pio-mode-toggle" type="checkbox" aria-label="PIO Mode" data-i18n-aria-label="pioMode" autocomplete="off" />
               <span class="pio-switch-track">
-                <span id="pio-mode-state" class="pio-switch-state">Off</span>
+                <span id="pio-mode-state" class="pio-switch-state" data-i18n="off">Off</span>
                 <span class="pio-switch-thumb" aria-hidden="true"></span>
               </span>
             </span>
           </label>
-          <span class="head-meta"><span class="head-dot"></span><span id="head-mode-label">Public guidance</span></span>
-          <button id="clear-chat" class="reset" type="button">Clear</button>
+          <span class="head-meta"><span class="head-dot"></span><span id="head-mode-label" data-i18n="publicGuidance">Public guidance</span></span>
+          <button id="clear-chat" class="reset" type="button" data-i18n="clear">Clear</button>
         </div>
       </header>
 
       <section id="chat-pane" aria-live="polite">
         <div id="chat-inner">
           <div class="welcome" id="welcome">
-            <h1>How can I help with RTI?</h1>
-            <p>Ask about the CG RTI portal, filing steps, fees, appeals, application status, PIO contacts, RTI Act basics, or portal documents.</p>
+            <h1 data-i18n="welcomeTitle">How can I help with RTI?</h1>
+            <p data-i18n="welcomeDescription">Ask about the CG RTI portal, filing steps, fees, appeals, application status, PIO contacts, RTI Act basics, or portal documents.</p>
             <div class="chips" id="prompt-chips">
-              <button class="chip" type="button">How do I register on the CG RTI portal?</button>
-              <button class="chip" type="button">How do I file an RTI application?</button>
-              <button class="chip" type="button">How do I pay RTI fees?</button>
-              <button class="chip" type="button">How do I file a first appeal?</button>
-              <button class="chip" type="button">How can I check application status?</button>
-              <button class="chip" type="button">How do I find PIO contact details?</button>
+              <button class="chip" type="button" data-i18n="promptRegister">How do I register on the CG RTI portal?</button>
+              <button class="chip" type="button" data-i18n="promptFileRti">How do I file an RTI application?</button>
+              <button class="chip" type="button" data-i18n="promptPayFees">How do I pay RTI fees?</button>
+              <button class="chip" type="button" data-i18n="promptFirstAppeal">How do I file a first appeal?</button>
+              <button class="chip" type="button" data-i18n="promptCheckStatus">How can I check application status?</button>
+              <button class="chip" type="button" data-i18n="promptFindPio">How do I find PIO contact details?</button>
             </div>
           </div>
         </div>
@@ -121,13 +121,13 @@
 
       <section id="query-bar">
         <div id="query-wrap">
-          <button id="upload-pdf" class="upload-pdf-btn" type="button" title="Upload PDF" aria-label="Upload PDF">
+          <button id="upload-pdf" class="upload-pdf-btn" type="button" title="Upload PDF" aria-label="Upload PDF" data-i18n-title="uploadPdf" data-i18n-aria-label="uploadPdf">
             <span aria-hidden="true">+</span>
           </button>
           <input id="pdf-upload-input" class="file-input-hidden" type="file" accept="application/pdf,.pdf" />
-          <textarea id="query-input" rows="1" placeholder="Ask about RTI portal steps, fees, appeals, status, PIO details, or RTI Act sections..."
+          <textarea id="query-input" rows="1" placeholder="Ask about RTI portal steps, fees, appeals, status, PIO details, or RTI Act sections..." data-i18n-placeholder="defaultQueryPlaceholder"
             spellcheck="false"></textarea>
-          <button id="btn-send" disabled type="button" title="Send">
+          <button id="btn-send" disabled type="button" title="Send" aria-label="Send" data-i18n-title="send" data-i18n-aria-label="send">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <path d="M6 12 3.27 3.13A59.77 59.77 0 0 1 21.49 12 59.77 59.77 0 0 1 3.27 20.88L6 12Z"></path>
@@ -136,7 +136,7 @@
           </button>
         </div>
         <div id="query-meta">
-          <span id="query-status">Checking assistant status</span>
+          <span id="query-status" data-i18n="checkingAssistantStatus">Checking assistant status</span>
           <span id="query-timing"></span>
         </div>
       </section>
@@ -144,20 +144,20 @@
   </div>
 
   <div id="drawer-overlay" class="hidden"></div>
-  <aside id="source-drawer" class="hidden" aria-label="Source chunks">
+  <aside id="source-drawer" class="hidden" aria-label="Source chunks" data-i18n-aria-label="sourceChunks">
     <div class="drawer-header">
-      <span class="section-label">Sources</span>
-      <button id="drawer-close" type="button" aria-label="Close">x</button>
+      <span class="section-label" data-i18n="sources">Sources</span>
+      <button id="drawer-close" type="button" aria-label="Close" data-i18n-aria-label="close">x</button>
     </div>
     <div id="drawer-body"></div>
   </aside>
 
   <div id="pdf-overlay" class="hidden"></div>
-  <aside id="pdf-panel" class="hidden" aria-label="Document preview">
+  <aside id="pdf-panel" class="hidden" aria-label="Document preview" data-i18n-aria-label="documentPreview">
     <div class="pdf-panel-header">
       <div class="pdf-panel-title-row">
-        <span class="section-label">Document</span>
-        <button id="pdf-close" type="button" aria-label="Close PDF">x</button>
+        <span class="section-label" data-i18n="document">Document</span>
+        <button id="pdf-close" type="button" aria-label="Close PDF" data-i18n-aria-label="closePdf">x</button>
       </div>
       <div id="pdf-title" class="pdf-filename"></div>
     </div>
@@ -166,10 +166,10 @@
         <div class="thinking-dot"></div>
         <div class="thinking-dot"></div>
         <div class="thinking-dot"></div>
-        <span id="document-loading-label">Loading document</span>
+        <span id="document-loading-label" data-i18n="loadingDocument">Loading document</span>
       </div>
       <div id="document-error" class="pdf-error hidden"></div>
-      <iframe id="pdf-iframe" class="hidden" title="PDF viewer"></iframe>
+      <iframe id="pdf-iframe" class="hidden" title="PDF viewer" data-i18n-title="pdfViewer"></iframe>
       <pre id="structure-content" class="structure-content hidden"></pre>
     </div>
   </aside>

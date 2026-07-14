@@ -305,6 +305,19 @@ pio_advisory_cache: dict[str, dict] = {}
 pio_advisory_cache_lock = Lock()
 
 
+def _localized_message(answer_language: str, english: str, hindi: str) -> str:
+    return hindi if normalise_answer_language(answer_language) == "hi" else english
+
+
+def _pio_request_answer_language(data: dict, advisory: dict | None = None) -> str:
+    """Use an explicit request choice, then the language saved with the advisory."""
+    if "answer_language" in data:
+        return normalise_answer_language(data.get("answer_language"))
+    if advisory is not None:
+        return normalise_answer_language(advisory.get("answer_language", "en"))
+    return "en"
+
+
 def _purge_expired_pio_advisories() -> None:
     now = time.time()
     with pio_advisory_cache_lock:
@@ -326,7 +339,10 @@ def _purge_expired_pio_advisories() -> None:
                 pio_advisory_cache.pop(advisory_id, None)
 
 
-def _store_pio_advisory(pio_result: dict) -> str:
+def _store_pio_advisory(
+    pio_result: dict,
+    answer_language: str = "en",
+) -> str:
     _purge_expired_pio_advisories()
     advisory_id = str(uuid4())
     now = time.time()
@@ -339,6 +355,7 @@ def _store_pio_advisory(pio_result: dict) -> str:
             "legal_analysis": pio_result["legal_analysis"],
             "pio_advisory_report": pio_result["pio_advisory_report"],
             "validation": pio_result["validation"],
+            "answer_language": normalise_answer_language(answer_language),
             "precedent_result": None,
             "precedent_in_progress": False,
             "precedent_advisory_result": None,
@@ -687,7 +704,7 @@ def _pio_json_response_from_result(
     started_at: float,
     extra: dict | None = None,
 ) -> dict:
-    advisory_id = _store_pio_advisory(pio_result)
+    advisory_id = _store_pio_advisory(pio_result, answer_language)
     available_precedent_collections, missing_precedent_collections = (
         _precedent_collection_status()
     )
@@ -1249,7 +1266,14 @@ def query_stream():
 
         try:
             if not query_text:
-                yield _sse("error", {"error": "Query cannot be empty", "query": ""})
+                yield _sse("error", {
+                    "error": _localized_message(
+                        answer_language,
+                        "Query cannot be empty",
+                        "प्रश्न खाली नहीं हो सकता।",
+                    ),
+                    "query": "",
+                })
                 return
 
             if pio_mode and _is_pio_advisory_request(query_text):
@@ -1281,7 +1305,11 @@ def query_stream():
 
                 yield _sse(
                     "status",
-                    {"message": "Analysing RTI application and legal provisions..."},
+                    {"message": _localized_message(
+                        answer_language,
+                        "Analysing RTI application and legal provisions...",
+                        "RTI आवेदन और कानूनी प्रावधानों का विश्लेषण किया जा रहा है...",
+                    )},
                 )
 
                 pio_result = None
@@ -1299,7 +1327,7 @@ def query_stream():
                     raise PIOPipelineError("PIO advisory stream finished without a result.")
 
                 elapsed = time.time() - query_start_time
-                advisory_id = _store_pio_advisory(pio_result)
+                advisory_id = _store_pio_advisory(pio_result, answer_language)
                 available_precedent_collections, missing_precedent_collections = (
                     _precedent_collection_status()
                 )
@@ -1331,7 +1359,11 @@ def query_stream():
                 )
                 return
 
-            yield _sse("status", {"message": "Retrieving relevant context..."})
+            yield _sse("status", {"message": _localized_message(
+                answer_language,
+                "Retrieving relevant context...",
+                "संबंधित संदर्भ प्राप्त किया जा रहा है...",
+            )})
             retrieval = retrieve_from_all_sources(
                 query=query_text,
                 retrieve_context_fn=_retrieve_context_for_unified,
@@ -1359,7 +1391,11 @@ def query_stream():
             )
 
             if can_stream_legal:
-                yield _sse("status", {"message": "Generating answer..."})
+                yield _sse("status", {"message": _localized_message(
+                    answer_language,
+                    "Generating answer...",
+                    "उत्तर तैयार किया जा रहा है...",
+                )})
                 legal_query = with_answer_language_instruction(
                     qdrant_result.lookup_query or query_text,
                     answer_language,
@@ -1419,7 +1455,11 @@ def query_stream():
                 "error",
                 {
                     "success": False,
-                    "error": f"Error processing query: {str(error)}",
+                    "error": _localized_message(
+                        answer_language,
+                        f"Error processing query: {str(error)}",
+                        "प्रश्न संसाधित करते समय त्रुटि हुई।",
+                    ),
                     "query": query_text,
                 },
             )
@@ -1457,7 +1497,11 @@ def query():
         return jsonify(
             {
                 "success": False,
-                "error": "Query cannot be empty",
+                "error": _localized_message(
+                    answer_language,
+                    "Query cannot be empty",
+                    "प्रश्न खाली नहीं हो सकता।",
+                ),
                 "query": "",
                 "results": [],
             }
@@ -1489,7 +1533,7 @@ def query():
                 f"{elapsed:.2f}s"
             )
 
-            advisory_id = _store_pio_advisory(pio_result)
+            advisory_id = _store_pio_advisory(pio_result, answer_language)
             available_precedent_collections, missing_precedent_collections = (
                 _precedent_collection_status()
             )
@@ -1525,7 +1569,11 @@ def query():
             return jsonify(
                 {
                     "success": False,
-                    "error": str(error),
+                    "error": _localized_message(
+                        answer_language,
+                        str(error),
+                        "PIO सलाह का विश्लेषण पूरा नहीं किया जा सका।",
+                    ),
                     "query": query_text,
                     "results": [],
                     "route": "PIO_ADVISORY",
@@ -1543,7 +1591,11 @@ def query():
             return jsonify(
                 {
                     "success": False,
-                    "error": "PIO advisory analysis could not be completed.",
+                    "error": _localized_message(
+                        answer_language,
+                        "PIO advisory analysis could not be completed.",
+                        "PIO सलाह का विश्लेषण पूरा नहीं किया जा सका।",
+                    ),
                     "query": query_text,
                     "results": [],
                     "route": "PIO_ADVISORY",
@@ -1617,7 +1669,11 @@ def query():
         return jsonify(
             {
                 "success": False,
-                "error": f"Error processing query: {str(error)}",
+                "error": _localized_message(
+                    answer_language,
+                    f"Error processing query: {str(error)}",
+                    "प्रश्न संसाधित करते समय त्रुटि हुई।",
+                ),
                 "query": query_text,
                 "results": [],
             }
@@ -1649,7 +1705,11 @@ def pio_analyze():
     if not rti_text:
         return jsonify({
             'success': False,
-            'error': 'rti_text is required.',
+            'error': _localized_message(
+                answer_language,
+                'rti_text is required.',
+                'rti_text आवश्यक है।',
+            ),
         }), 400
 
     try:
@@ -1661,7 +1721,7 @@ def pio_analyze():
         elapsed = time.time() - request_started_at
         print(f"[PIO] Advisory analysis completed in {elapsed:.2f}s")
 
-        advisory_id = _store_pio_advisory(result)
+        advisory_id = _store_pio_advisory(result, answer_language)
         available_precedent_collections, missing_precedent_collections = (
             _precedent_collection_status()
         )
@@ -1686,7 +1746,11 @@ def pio_analyze():
         print(f"[PIO] Analysis validation/provider error: {error}")
         return jsonify({
             'success': False,
-            'error': str(error),
+            'error': _localized_message(
+                answer_language,
+                str(error),
+                'PIO सलाह का विश्लेषण पूरा नहीं किया जा सका।',
+            ),
         }), 422
 
     except Exception as error:
@@ -1695,7 +1759,11 @@ def pio_analyze():
         traceback.print_exc()
         return jsonify({
             'success': False,
-            'error': 'PIO analysis could not be completed.',
+            'error': _localized_message(
+                answer_language,
+                'PIO analysis could not be completed.',
+                'PIO विश्लेषण पूरा नहीं किया जा सका।',
+            ),
         }), 500
 
 
@@ -1711,13 +1779,21 @@ def pio_upload_pdf():
     if uploaded is None or not uploaded.filename:
         return jsonify({
             "success": False,
-            "error": "A PDF file is required.",
+            "error": _localized_message(
+                answer_language,
+                "A PDF file is required.",
+                "PDF फ़ाइल आवश्यक है।",
+            ),
         }), 400
 
     if Path(uploaded.filename).suffix.lower() != ".pdf":
         return jsonify({
             "success": False,
-            "error": "Only .pdf uploads are supported.",
+            "error": _localized_message(
+                answer_language,
+                "Only .pdf uploads are supported.",
+                "केवल .pdf फ़ाइल अपलोड समर्थित है।",
+            ),
         }), 400
 
     upload_id = uuid4().hex
@@ -1746,7 +1822,11 @@ def pio_upload_pdf():
         if not extracted_markdown:
             return jsonify({
                 "success": False,
-                "error": "The uploaded PDF was processed, but no readable text was extracted.",
+                "error": _localized_message(
+                    answer_language,
+                    "The uploaded PDF was processed, but no readable text was extracted.",
+                    "अपलोड की गई PDF संसाधित हुई, लेकिन कोई पढ़ने योग्य पाठ नहीं मिला।",
+                ),
                 "source_pdf": original_filename,
             }), 422
 
@@ -1762,7 +1842,11 @@ def pio_upload_pdf():
 
         payload = _pio_json_response_from_result(
             pio_result=pio_result,
-            query_label=f"Uploaded PDF: {original_filename}",
+            query_label=_localized_message(
+                answer_language,
+                f"Uploaded PDF: {original_filename}",
+                f"अपलोड की गई PDF: {original_filename}",
+            ),
             answer_language=answer_language,
             started_at=request_started_at,
             extra={
@@ -1777,20 +1861,32 @@ def pio_upload_pdf():
     except ValueError as error:
         return jsonify({
             "success": False,
-            "error": str(error),
+            "error": _localized_message(
+                answer_language,
+                str(error),
+                f"PDF फ़ाइल मान्य नहीं है: {error}",
+            ),
         }), 400
 
     except subprocess.TimeoutExpired:
         return jsonify({
             "success": False,
-            "error": "PDF preprocessing timed out. Try a smaller PDF or increase PIO_PDF_PREPROCESS_TIMEOUT_SECONDS.",
+            "error": _localized_message(
+                answer_language,
+                "PDF preprocessing timed out. Try a smaller PDF or increase PIO_PDF_PREPROCESS_TIMEOUT_SECONDS.",
+                "PDF पूर्व-संसाधन का समय समाप्त हो गया। छोटी PDF से पुनः प्रयास करें।",
+            ),
         }), 504
 
     except OCRProviderUnavailableError as error:
         print(f"[PIO PDF Upload] OCR provider unavailable: {error}")
         return jsonify({
             "success": False,
-            "error": str(error),
+            "error": _localized_message(
+                answer_language,
+                str(error),
+                f"OCR प्रदाता उपलब्ध नहीं है: {error}",
+            ),
             "source_pdf": original_filename,
             "ocr_model": _configured_ocr_model(),
         }), 503
@@ -1799,7 +1895,11 @@ def pio_upload_pdf():
         print(f"[PIO PDF Upload] Preprocessing error: {error}")
         return jsonify({
             "success": False,
-            "error": str(error),
+            "error": _localized_message(
+                answer_language,
+                str(error),
+                f"PDF पूर्व-संसाधन विफल हुआ: {error}",
+            ),
             "source_pdf": original_filename,
             "ocr_model": _configured_ocr_model(),
         }), 422
@@ -1822,7 +1922,11 @@ def pio_upload_pdf():
         traceback.print_exc()
         return jsonify({
             "success": False,
-            "error": f"PDF upload advisory could not be completed: {error}",
+            "error": _localized_message(
+                answer_language,
+                f"PDF upload advisory could not be completed: {error}",
+                "PDF अपलोड की PIO सलाह पूरी नहीं की जा सकी।",
+            ),
             "source_pdf": original_filename,
         }), 500
 
@@ -1833,6 +1937,7 @@ def pio_precedents_stream():
     request_started_at = time.time()
     data = request.get_json(silent=True) or {}
     advisory_id = str(data.get("advisory_id") or "").strip()
+    request_answer_language = _pio_request_answer_language(data)
 
     try:
         requested_limit = int(data.get("num_results", 5))
@@ -1842,7 +1947,14 @@ def pio_precedents_stream():
 
     def generate():
         if not advisory_id:
-            yield _sse("error", {"success": False, "error": "advisory_id is required."})
+            yield _sse("error", {
+                "success": False,
+                "error": _localized_message(
+                    request_answer_language,
+                    "advisory_id is required.",
+                    "advisory_id आवश्यक है।",
+                ),
+            })
             return
 
         advisory = _get_pio_advisory(advisory_id)
@@ -1851,15 +1963,26 @@ def pio_precedents_stream():
                 "error",
                 {
                     "success": False,
-                    "error": "This PIO advisory has expired or is no longer available. Generate the advisory again and retry.",
+                    "error": _localized_message(
+                        request_answer_language,
+                        "This PIO advisory has expired or is no longer available. Generate the advisory again and retry.",
+                        "यह PIO सलाह समाप्त हो गई है या अब उपलब्ध नहीं है। सलाह दोबारा बनाकर पुनः प्रयास करें।",
+                    ),
                     "advisory_id": advisory_id,
                 },
             )
             return
 
+        answer_language = _pio_request_answer_language(data, advisory)
+
         with pio_advisory_cache_lock:
             cached_result = advisory.get("precedent_result")
-            if cached_result is not None:
+            if (
+                cached_result is not None
+                and normalise_answer_language(
+                    cached_result.get("answer_language", advisory.get("answer_language", "en"))
+                ) == answer_language
+            ):
                 cached_response = dict(cached_result)
                 cached_response.update({
                     "success": True,
@@ -1875,7 +1998,11 @@ def pio_precedents_stream():
                     "error",
                     {
                         "success": False,
-                        "error": "Precedent references are already being prepared for this advisory.",
+                        "error": _localized_message(
+                            answer_language,
+                            "Precedent references are already being prepared for this advisory.",
+                            "इस सलाह के लिए पूर्वनिर्णय संदर्भ पहले से तैयार किए जा रहे हैं।",
+                        ),
                         "advisory_id": advisory_id,
                     },
                 )
@@ -1884,7 +2011,11 @@ def pio_precedents_stream():
             advisory["precedent_in_progress"] = True
 
         try:
-            yield _sse("status", {"message": "Searching CIC/CGSIC decisions..."})
+            yield _sse("status", {"message": _localized_message(
+                answer_language,
+                "Searching CIC/CGSIC decisions...",
+                "CIC/CGSIC निर्णय खोजे जा रहे हैं...",
+            )})
             rag_module = _load_rag_module()
             if rag_module is None:
                 raise PIOPrecedentError(
@@ -1900,6 +2031,7 @@ def pio_precedents_stream():
                 legal_analysis=advisory["legal_analysis"],
                 rag_module=rag_module,
                 num_results=requested_limit,
+                answer_language=answer_language,
             ):
                 if event_type == "token":
                     text = str(payload)
@@ -1923,6 +2055,7 @@ def pio_precedents_stream():
                 "precedent_search_completed": True,
                 "precedent_collections_used": precedent_result["available_collections"],
                 "warnings": precedent_result.get("warnings", []),
+                "answer_language": answer_language,
                 "cached": False,
             }
 
@@ -1941,7 +2074,11 @@ def pio_precedents_stream():
                 "error",
                 {
                     "success": False,
-                    "error": str(error),
+                    "error": _localized_message(
+                        answer_language,
+                        str(error),
+                        "CIC/CGSIC पूर्वनिर्णय संदर्भ तैयार नहीं किए जा सके।",
+                    ),
                     "advisory_id": advisory_id,
                 },
             )
@@ -1961,10 +2098,18 @@ def pio_precedent_advisory_stream():
     request_started_at = time.time()
     data = request.get_json(silent=True) or {}
     advisory_id = str(data.get("advisory_id") or "").strip()
+    request_answer_language = _pio_request_answer_language(data)
 
     def generate():
         if not advisory_id:
-            yield _sse("error", {"success": False, "error": "advisory_id is required."})
+            yield _sse("error", {
+                "success": False,
+                "error": _localized_message(
+                    request_answer_language,
+                    "advisory_id is required.",
+                    "advisory_id आवश्यक है।",
+                ),
+            })
             return
 
         advisory = _get_pio_advisory(advisory_id)
@@ -1973,15 +2118,26 @@ def pio_precedent_advisory_stream():
                 "error",
                 {
                     "success": False,
-                    "error": "This PIO advisory has expired or is no longer available. Generate the advisory again and retry.",
+                    "error": _localized_message(
+                        request_answer_language,
+                        "This PIO advisory has expired or is no longer available. Generate the advisory again and retry.",
+                        "यह PIO सलाह समाप्त हो गई है या अब उपलब्ध नहीं है। सलाह दोबारा बनाकर पुनः प्रयास करें।",
+                    ),
                     "advisory_id": advisory_id,
                 },
             )
             return
 
+        answer_language = _pio_request_answer_language(data, advisory)
+
         with pio_advisory_cache_lock:
             cached_result = advisory.get("precedent_advisory_result")
-            if cached_result is not None:
+            if (
+                cached_result is not None
+                and normalise_answer_language(
+                    cached_result.get("answer_language", advisory.get("answer_language", "en"))
+                ) == answer_language
+            ):
                 cached_response = dict(cached_result)
                 cached_response.update({
                     "success": True,
@@ -1998,7 +2154,11 @@ def pio_precedent_advisory_stream():
                     "error",
                     {
                         "success": False,
-                        "error": "Generate CIC/CGSIC references before creating the precedent-informed advisory.",
+                        "error": _localized_message(
+                            answer_language,
+                            "Generate CIC/CGSIC references before creating the precedent-informed advisory.",
+                            "पूर्वनिर्णय-आधारित सलाह बनाने से पहले CIC/CGSIC संदर्भ तैयार करें।",
+                        ),
                         "advisory_id": advisory_id,
                     },
                 )
@@ -2009,7 +2169,11 @@ def pio_precedent_advisory_stream():
                     "error",
                     {
                         "success": False,
-                        "error": "A precedent-informed advisory is already being generated for this RTI.",
+                        "error": _localized_message(
+                            answer_language,
+                            "A precedent-informed advisory is already being generated for this RTI.",
+                            "इस RTI के लिए पूर्वनिर्णय-आधारित सलाह पहले से तैयार की जा रही है।",
+                        ),
                         "advisory_id": advisory_id,
                     },
                 )
@@ -2018,15 +2182,26 @@ def pio_precedent_advisory_stream():
             advisory["precedent_advisory_in_progress"] = True
 
         try:
-            yield _sse("status", {"message": "Generating precedent-informed advisory..."})
+            yield _sse("status", {"message": _localized_message(
+                answer_language,
+                "Generating precedent-informed advisory...",
+                "पूर्वनिर्णय-आधारित सलाह तैयार की जा रही है...",
+            )})
             print("[PIO Precedents] Streaming precedent-informed PIO advisory")
 
             chunks: list[str] = []
             for chunk in stream_precedent_informed_advisory(
                 rti_extraction=advisory["rti_extraction"],
                 legal_analysis=advisory["legal_analysis"],
-                original_advisory=advisory.get("pio_advisory_report", ""),
+                original_advisory=(
+                    advisory.get("pio_advisory_report", "")
+                    if normalise_answer_language(
+                        advisory.get("answer_language", "en")
+                    ) == answer_language
+                    else ""
+                ),
                 precedent_result=precedent_result,
+                answer_language=answer_language,
             ):
                 text = str(chunk)
                 chunks.append(text)
@@ -2044,6 +2219,7 @@ def pio_precedent_advisory_stream():
                 "execution_time": f"{elapsed:.2f}s",
                 "precedent_collections_used": precedent_result.get("precedent_collections_used")
                 or precedent_result.get("available_collections", []),
+                "answer_language": answer_language,
                 "cached": False,
             }
 
@@ -2062,7 +2238,11 @@ def pio_precedent_advisory_stream():
                 "error",
                 {
                     "success": False,
-                    "error": str(error),
+                    "error": _localized_message(
+                        answer_language,
+                        str(error),
+                        "पूर्वनिर्णय-आधारित PIO सलाह तैयार नहीं की जा सकी।",
+                    ),
                     "advisory_id": advisory_id,
                 },
             )
@@ -2082,11 +2262,16 @@ def pio_precedents():
     request_started_at = time.time()
     data = request.get_json(silent=True) or {}
     advisory_id = str(data.get("advisory_id") or "").strip()
+    request_answer_language = _pio_request_answer_language(data)
 
     if not advisory_id:
         return jsonify({
             "success": False,
-            "error": "advisory_id is required.",
+            "error": _localized_message(
+                request_answer_language,
+                "advisory_id is required.",
+                "advisory_id आवश्यक है।",
+            ),
         }), 400
 
     try:
@@ -2099,13 +2284,24 @@ def pio_precedents():
     if advisory is None:
         return jsonify({
             "success": False,
-            "error": "This PIO advisory has expired or is no longer available. Generate the advisory again and retry.",
+            "error": _localized_message(
+                request_answer_language,
+                "This PIO advisory has expired or is no longer available. Generate the advisory again and retry.",
+                "यह PIO सलाह समाप्त हो गई है या अब उपलब्ध नहीं है। सलाह दोबारा बनाकर पुनः प्रयास करें।",
+            ),
             "advisory_id": advisory_id,
         }), 410
 
+    answer_language = _pio_request_answer_language(data, advisory)
+
     with pio_advisory_cache_lock:
         cached_result = advisory.get("precedent_result")
-        if cached_result is not None:
+        if (
+            cached_result is not None
+            and normalise_answer_language(
+                cached_result.get("answer_language", advisory.get("answer_language", "en"))
+            ) == answer_language
+        ):
             cached_response = dict(cached_result)
             cached_response.update({
                 "success": True,
@@ -2117,7 +2313,11 @@ def pio_precedents():
         if advisory.get("precedent_in_progress"):
             return jsonify({
                 "success": False,
-                "error": "Precedent references are already being prepared for this advisory.",
+                "error": _localized_message(
+                    answer_language,
+                    "Precedent references are already being prepared for this advisory.",
+                    "इस सलाह के लिए पूर्वनिर्णय संदर्भ पहले से तैयार किए जा रहे हैं।",
+                ),
                 "advisory_id": advisory_id,
             }), 409
 
@@ -2136,6 +2336,7 @@ def pio_precedents():
             legal_analysis=advisory["legal_analysis"],
             rag_module=rag_module,
             num_results=requested_limit,
+            answer_language=answer_language,
         )
         elapsed = time.time() - request_started_at
 
@@ -2150,6 +2351,7 @@ def pio_precedents():
             "precedent_search_completed": True,
             "precedent_collections_used": precedent_result["available_collections"],
             "warnings": precedent_result.get("warnings", []),
+            "answer_language": answer_language,
             "cached": False,
         }
 
@@ -2164,7 +2366,11 @@ def pio_precedents():
         print(f"[PIO Precedents] Safe retrieval error: {error}")
         return jsonify({
             "success": False,
-            "error": str(error),
+            "error": _localized_message(
+                answer_language,
+                str(error),
+                "CIC/CGSIC पूर्वनिर्णय संदर्भ तैयार नहीं किए जा सके।",
+            ),
             "advisory_id": advisory_id,
         }), 422
 
@@ -2174,7 +2380,11 @@ def pio_precedents():
         traceback.print_exc()
         return jsonify({
             "success": False,
-            "error": "CIC/CGSIC precedent references could not be prepared.",
+            "error": _localized_message(
+                answer_language,
+                "CIC/CGSIC precedent references could not be prepared.",
+                "CIC/CGSIC पूर्वनिर्णय संदर्भ तैयार नहीं किए जा सके।",
+            ),
             "advisory_id": advisory_id,
         }), 500
 

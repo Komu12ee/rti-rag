@@ -72,6 +72,10 @@ def _safe_join(value: Any, fallback: str = "Not listed") -> str:
     return _safe_text(value, fallback)
 
 
+def _not_listed(answer_language: Any) -> str:
+    return "उल्लेखित नहीं" if _wants_hindi(answer_language) else "Not listed"
+
+
 def _build_sources(result: UnifiedRetrievalResult) -> list[dict[str, Any]]:
     sources: list[dict[str, Any]] = []
 
@@ -151,6 +155,7 @@ def _ambiguous_officer_answer(
     query: str,
     answer_language: Any = "en",
 ) -> str:
+    missing = _not_listed(answer_language)
     query_name = (
         evidence[0].get("metadata", {}).get("_name_query", "")
     )
@@ -190,10 +195,10 @@ def _ambiguous_officer_answer(
         row = item.get("metadata") or {}
         lines.extend(
             [
-                f"{index}. {_safe_text(row.get('officer_name'))}",
-                f"   {field_labels['role']}: {_safe_text(row.get('rti_role'))}",
-                f"   {field_labels['email']}: {_safe_text(row.get('email'))}",
-                f"   {field_labels['district']}: {_safe_text(row.get('district_name') or row.get('district'))}",
+                f"{index}. {_safe_text(row.get('officer_name'), missing)}",
+                f"   {field_labels['role']}: {_safe_text(row.get('rti_role'), missing)}",
+                f"   {field_labels['email']}: {_safe_text(row.get('email'), missing)}",
+                f"   {field_labels['district']}: {_safe_text(row.get('district_name') or row.get('district'), missing)}",
             ]
         )
 
@@ -234,6 +239,7 @@ def _directory_evidence_answer(
         )
 
     is_hindi = _wants_hindi(answer_language)
+    missing = _not_listed(answer_language)
     source_is_qdrant = any(
         item.get("mode") == "PIO_QDRANT"
         for item in evidence
@@ -291,24 +297,24 @@ def _directory_evidence_answer(
 
         lines.extend(
             [
-                f"{index}. {field_labels['role']}: {_safe_text(row.get('rti_role'))}",
-                f"   {field_labels['officer']}: {_safe_text(row.get('officer_name'))}",
-                f"   {field_labels['email']}: {_safe_text(row.get('email'))}",
-                f"   {field_labels['designation']}: {_safe_join(designation)}",
-                f"   {field_labels['office']}: {_safe_join(office)}",
-                f"   {field_labels['office_code']}: {_safe_text(row.get('office_code'))}",
-                f"   {field_labels['department']}: {_safe_join(department)}",
-                f"   {field_labels['district']}: {_safe_join(district)}",
+                f"{index}. {field_labels['role']}: {_safe_text(row.get('rti_role'), missing)}",
+                f"   {field_labels['officer']}: {_safe_text(row.get('officer_name'), missing)}",
+                f"   {field_labels['email']}: {_safe_text(row.get('email'), missing)}",
+                f"   {field_labels['designation']}: {_safe_join(designation, missing)}",
+                f"   {field_labels['office']}: {_safe_join(office, missing)}",
+                f"   {field_labels['office_code']}: {_safe_text(row.get('office_code'), missing)}",
+                f"   {field_labels['department']}: {_safe_join(department, missing)}",
+                f"   {field_labels['district']}: {_safe_join(district, missing)}",
             ]
         )
 
         if address:
-            lines.append(f"   {field_labels['address']}: {_safe_text(address)}")
+            lines.append(f"   {field_labels['address']}: {_safe_text(address, missing)}")
 
         if source_is_qdrant:
             lines.append(
                 f"   {field_labels['directory_updated']}: "
-                f"{_safe_text(row.get('source_generated_at'))}"
+                f"{_safe_text(row.get('source_generated_at'), missing)}"
             )
 
         if index < min(len(evidence), 5):
@@ -373,6 +379,11 @@ def _generate_legal_answer(
         return _no_legal_context_answer(query, answer_language), False
 
     if generate_answer_fn is None:
+        if _wants_hindi(answer_language):
+            return (
+                "कानूनी संदर्भ प्राप्त हुआ, लेकिन मौजूदा RAG उत्तर जनरेटर उपलब्ध नहीं है।",
+                False,
+            )
         return (
             "Legal context was retrieved, but the existing RAG answer generator "
             "is unavailable.",
@@ -518,7 +529,11 @@ def generate_unified_answer(
             )
 
         return UnifiedAnswer(
-            answer="No supported route was selected.",
+            answer=(
+                "कोई समर्थित उत्तर मार्ग नहीं चुना गया।"
+                if _wants_hindi(answer_language)
+                else "No supported route was selected."
+            ),
             used_llm=False,
             needs_clarification=True,
             sources=sources,
