@@ -48,3 +48,10 @@ FG/04_embeddings_and_kg/db/qdrant_local/
 # Local model weights
 FG/models/*
 !FG/models/.gitkeep
+
+# Local Section 4 web-verification cache (contains retrieved public documents)
+FG/05_webui/cache/section4_verification.sqlite3*
+
+# Local JSON authentication records (contains account data)
+FG/05_webui/data/users.json
+FG/05_webui/data/pio_users.json

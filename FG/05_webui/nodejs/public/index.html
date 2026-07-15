@@ -15,7 +15,70 @@
 </head>
 
 <body>
-  <div id="app-shell">
+  <section id="auth-screen" class="auth-screen" aria-label="RTI Assistant account access">
+    <div class="auth-backdrop-mark" aria-hidden="true"></div>
+    <div class="auth-wrap">
+      <article class="auth-card">
+        <img class="auth-logo" src="/assets/cg_gov_logo.png" alt="Chhattisgarh government emblem" />
+
+        <header class="auth-heading">
+          <p class="auth-eyebrow">Government of Chhattisgarh</p>
+          <h1>RTI Assistant<br></h1>
+          <p>ChatBot</p>
+        </header>
+
+        <div id="auth-role-selector" class="auth-role-selector" role="group" aria-label="Choose login type">
+          <button class="auth-role-option is-active" type="button" data-login-role="citizen" aria-pressed="true">Citizen Login</button>
+          <button class="auth-role-option" type="button" data-login-role="pio" aria-pressed="false">PIO Login</button>
+        </div>
+
+        <form id="login-form" class="auth-form" autocomplete="on" novalidate>
+          <div class="auth-field">
+            <label for="login-identifier">Official User ID or Email</label>
+            <div class="auth-input-wrap">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 21a8 8 0 0 0-16 0M12 13a5 5 0 1 0 0-10 5 5 0 0 0 0 10Z"/></svg>
+              <input id="login-identifier" name="identifier" type="text" placeholder="Enter your ID..." autocomplete="username" required />
+            </div>
+          </div>
+          <div class="auth-field">
+            <label for="login-password">Password</label>
+            <div class="auth-input-wrap">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+              <input id="login-password" name="password" type="password" placeholder="Enter your password..." autocomplete="current-password" required />
+              <button class="password-toggle" type="button" data-password-target="login-password" aria-label="Show password">Show</button>
+            </div>
+          </div>
+          <label class="remember-row"><input id="remember-login" type="checkbox" /> <span>Remember me</span></label>
+          <div id="login-error" class="auth-message error hidden" role="alert"></div>
+          <button id="login-submit" class="auth-submit" type="submit">Sign In as Citizen</button>
+          <div class="auth-register-block">
+            <span>New to the RTI Assistant?</span>
+            <button id="show-signup" class="auth-register-button" type="button">Sign Up / Register New User</button>
+          </div>
+        </form>
+
+        <form id="signup-form" class="auth-form hidden" autocomplete="on" novalidate>
+          <div class="signup-grid">
+            <div class="auth-field full"><label for="signup-name">Full Name</label><input id="signup-name" type="text" autocomplete="name" placeholder="Enter your full name" required /></div>
+            <div class="auth-field"><label for="signup-username">Official User ID</label><input id="signup-username" type="text" autocomplete="username" placeholder="Create a User ID" required /></div>
+            <div class="auth-field"><label for="signup-email">Official Email</label><input id="signup-email" type="email" autocomplete="email" placeholder="name@department.gov.in" required /></div>
+            <div class="auth-field"><label for="signup-password">Password</label><input id="signup-password" type="password" autocomplete="new-password" placeholder="Minimum 8 characters" required /></div>
+            <div class="auth-field"><label for="signup-confirm">Confirm Password</label><input id="signup-confirm" type="password" autocomplete="new-password" placeholder="Repeat password" required /></div>
+          </div>
+          <div id="signup-message" class="auth-message hidden" role="alert"></div>
+          <button id="signup-submit" class="auth-submit" type="submit">Create Account</button>
+        </form>
+      </article>
+
+      <nav class="auth-links" aria-label="Account options">
+        <button id="forgot-password" type="button">Forgot Password?</button>
+        <button id="show-login" class="hidden" type="button">Back to Sign In</button>
+      </nav>
+      <footer class="auth-footer"><strong>CHHATTISGARH CITIZEN HELPDESK</strong><span>© 2026 Government of Chhattisgarh</span></footer>
+    </div>
+  </section>
+
+  <div id="app-shell" class="hidden">
     <aside id="history-sidebar" aria-label="Chat history" data-i18n-aria-label="chatHistory">
       <div class="side-brand">
         <img class="side-brand-logo" src="/assets/cg_gov_logo.png" alt="Chhattisgarh government logo" data-i18n-alt="cgGovernmentLogo" />
@@ -77,6 +140,11 @@
           <span class="brand-meta" data-i18n="citizenHelpdesk">Chhattisgarh citizen helpdesk</span>
         </div>
         <div class="top-actions">
+          <div class="signed-in-user" title="Signed-in account">
+            <span id="signed-in-avatar" class="signed-in-avatar" aria-hidden="true">User</span>
+            <span id="signed-in-name">User</span>
+            <button id="logout-button" type="button">Sign out</button>
+          </div>
           <div id="language-toggle" class="language-toggle" role="group" aria-label="Site and answer language" data-i18n-aria-label="languageToggleLabel">
             <button class="language-option" type="button" data-language-mode="en" aria-pressed="true">
               <span class="language-option-icon" aria-hidden="true">EN</span>
@@ -87,7 +155,7 @@
               <span class="language-option-label" lang="hi" data-i18n="hindiLanguage">&#2361;&#2367;&#2306;&#2342;&#2368;</span>
             </button>
           </div>
-          <label class="pio-mode-toggle" for="pio-mode-toggle">
+          <label id="pio-mode-control" class="pio-mode-toggle" for="pio-mode-toggle">
             <span class="pio-mode-label" data-i18n="pioMode">PIO Mode</span>
             <span class="pio-switch">
               <input id="pio-mode-toggle" type="checkbox" aria-label="PIO Mode" data-i18n-aria-label="pioMode" autocomplete="off" />

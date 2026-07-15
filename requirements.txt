@@ -102,6 +102,7 @@ typing-extensions>=3.7.4.3         # Extended typing support
 tqdm>=4.60.0                       # Progress bars
 python-dotenv>=1.0.0               # Environment variable management
 requests>=2.31.0                   # HTTP library
+beautifulsoup4>=4.12.0             # Safe HTML text/link extraction for approved sources
 
 # ============================================================================
 # LOGGING & DEBUGGING

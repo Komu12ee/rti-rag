@@ -4,6 +4,9 @@ const express = require('express');
 const { createProxyMiddleware } = require('http-proxy-middleware');
 const morgan = require('morgan');
 const path = require('path');
+const { router: authRouter } = require('./routes/auth-json');
+const jsonAuth = require('./middleware/json-auth');
+const { ensureStore } = require('./auth-store');
 
 const PORT = process.env.PORT || 3002;
 const FLASK_PORT = process.env.FLASK_PORT || 5000;
@@ -11,6 +14,8 @@ const FLASK_URL = `http://localhost:${FLASK_PORT}`;
 const IS_PROD = process.env.NODE_ENV === 'production';
 
 const app = express();
+ensureStore();
+app.use(express.json({ limit: '32kb' }));
 
 // Allow selection server (http://localhost:3000) to access pipeline UIs
 app.use(require('cors')({ origin: 'http://localhost:3000', credentials: true }));
@@ -77,8 +82,18 @@ const pdfProxy = createProxyMiddleware({
 });
 
 // No JWT guard — 2nd layer auth removed
-app.use('/api', apiProxy);
-app.use('/01_preprocessing', pdfProxy);
+app.use('/auth', authRouter);
+app.use('/api', jsonAuth, (req, res, next) => {
+  const pioModeValue = String(req.body?.pio_mode ?? '').trim().toLowerCase();
+  const requestsPioAccess = req.path.startsWith('/pio/')
+    || req.path.startsWith('/web-verification/')
+    || ['true', '1', 'yes', 'on'].includes(pioModeValue);
+  if (req.user.role !== 'pio' && requestsPioAccess) {
+    return res.status(403).json({ success: false, error: 'PIO mode is restricted to authorised PIO accounts.' });
+  }
+  next();
+}, apiProxy);
+app.use('/01_preprocessing', jsonAuth, pdfProxy);
 
 // ─── SPA fallback ───────────────────────────────────────────────────────────
 app.get('*', (_req, res) => {
