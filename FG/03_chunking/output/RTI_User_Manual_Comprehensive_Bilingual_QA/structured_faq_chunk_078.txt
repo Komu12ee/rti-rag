@@ -1,5 +1,5 @@
 # FAQ Chunk 78
-Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Document: rtiUserManual
 Source: structured.md
 Pages: 13
 Section: Question: What do 1 enter in the RTI Application Details section?

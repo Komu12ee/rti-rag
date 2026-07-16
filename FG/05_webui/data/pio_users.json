@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "pios": [
+    {
+      "name": "shridhar diwan",
+      "email": "shridhar.diwan@cgchips.in",
+      "password": "Chips#1234@",
+      "active": true
+    }
+  ]
+}

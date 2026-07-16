@@ -1,5 +1,5 @@
 # FAQ Chunk 68
-Document: claud-rti-rough-2
+Document: rti-rule-book
 Source: structured.md
 Pages: 11
 Section: (2) अधिकार क्षेत्र की सीमाएंः

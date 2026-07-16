@@ -1,5 +1,5 @@
 # FAQ Chunk 78
-Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Document: transfermanual
 Source: structured.md
 Pages: 8-9
 Section: Q42. Which file formats are allowed for the upload shown in the manual?

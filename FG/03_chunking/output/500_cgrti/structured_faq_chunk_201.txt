@@ -1,5 +1,5 @@
 # FAQ Chunk 201
-Document: 500_cgrti
+Document: rti-rule-book
 Source: structured.md
 Pages: 17
 Section: 5.2 Education & Student Scenarios

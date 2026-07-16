@@ -1,5 +1,5 @@
 # FAQ Chunk 27
-Document: claud-rti-rough-2
+Document: rti-rule-book
 Source: structured.md
 Pages: 5
 Section: (5) Time Period for Decision:

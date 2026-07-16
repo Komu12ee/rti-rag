@@ -1,5 +1,5 @@
 # FAQ Chunk 7
-Document: RTI_ACT_QA
+Document: rti-rule-book
 Source: structured.md
 Pages: 2-3
 Section: SECTION 3: RIGHT TO INFORMATION

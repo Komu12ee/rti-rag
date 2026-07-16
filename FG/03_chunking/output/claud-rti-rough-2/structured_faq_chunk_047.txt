@@ -1,5 +1,5 @@
 # FAQ Chunk 47
-Document: claud-rti-rough-2
+Document: rti-rule-book
 Source: structured.md
 Pages: 8
 Section: (4) Application Format:

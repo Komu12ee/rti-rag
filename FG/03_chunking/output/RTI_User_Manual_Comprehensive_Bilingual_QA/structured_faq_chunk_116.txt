@@ -1,5 +1,5 @@
 # FAQ Chunk 116
-Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Document: rtiUserManual
 Source: structured.md
 Pages: 18-19
 Section: Question: How do I choose a bank and finalise the online payment?

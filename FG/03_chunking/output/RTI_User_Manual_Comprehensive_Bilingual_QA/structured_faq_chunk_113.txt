@@ -1,5 +1,5 @@
 # FAQ Chunk 113
-Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Document: rtiUserManual
 Source: structured.md
 Pages: 18
 Section: प्रश्नः भुगतान स्क्रीनशॉट में कौन॰कौन से शुल्क विकल्प दिखाई देते हैं?

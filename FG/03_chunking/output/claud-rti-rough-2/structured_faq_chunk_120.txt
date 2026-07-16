@@ -1,5 +1,5 @@
 # FAQ Chunk 120
-Document: claud-rti-rough-2
+Document: rti-rule-book
 Source: structured.md
 Pages: 19
 Section: SECTION 23: PENALTIES

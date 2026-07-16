@@ -1,5 +1,5 @@
 # FAQ Chunk 217
-Document: claud-rti-rough-2
+Document: rti-rule-book
 Source: structured.md
 Pages: 36
 Section: (10) प्रभावशीलताः

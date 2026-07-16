@@ -1,5 +1,5 @@
 # FAQ Chunk 88
-Document: claud-rti-rough-2
+Document: rti-rule-book
 Source: structured.md
 Pages: 14
 Section: (3) Limitations:

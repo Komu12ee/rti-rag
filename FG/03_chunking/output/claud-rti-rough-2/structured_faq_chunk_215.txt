@@ -1,5 +1,5 @@
 # FAQ Chunk 215
-Document: claud-rti-rough-2
+Document: rti-rule-book
 Source: structured.md
 Pages: 35-36
 Section: (8) छत्तीसगढ़ मेंः

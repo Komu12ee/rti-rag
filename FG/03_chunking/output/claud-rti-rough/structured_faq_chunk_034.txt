@@ -1,5 +1,5 @@
 # FAQ Chunk 34
-Document: claud-rti-rough
+Document: rti-rule-book
 Source: structured.md
 Pages: 15-16
 Section: (1) Qualifications for Appointment:

@@ -1,5 +1,5 @@
 # FAQ Chunk 9
-Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Document: rtiUserManual
 Source: structured.md
 Pages: 2
 Section: प्रश्नः आरटीआई पोर्टल पर लॉगिन क्रेडेंशियल कैसे बनाऊँ?

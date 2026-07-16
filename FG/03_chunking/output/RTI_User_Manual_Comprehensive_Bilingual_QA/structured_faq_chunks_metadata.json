@@ -1,7 +1,7 @@
 {
   "document": "structured.md",
-  "document_name": "RTI_User_Manual_Comprehensive_Bilingual_QA",
-  "source_path": "..\\01_preprocessing\\stage2_output\\mannuals\\RTI_User_Manual_Comprehensive_Bilingual_QA\\structured.md",
+  "document_name": "rtiUserManual",
+  "source_path": "..\\01_preprocessing\\stage2_output\\mannuals\\rtiUserManual\\structured.md",
   "chunking_method": "bilingual_faq_rule_based",
   "supported_languages": [
     "Hindi",

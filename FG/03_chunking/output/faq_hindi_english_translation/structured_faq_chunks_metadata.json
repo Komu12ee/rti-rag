@@ -1,7 +1,7 @@
 {
   "document": "structured.md",
-  "document_name": "faq_hindi_english_translation",
-  "source_path": "C:\\Users\\hp\\current_status\\CHiPS-RTI-Project\\citizen\\rti_sarvam copy\\data\\rti-rag\\FG\\01_preprocessing\\stage2_output\\faq_hindi_english_translation\\structured.md",
+  "document_name": "faq_hindi",
+  "source_path": "C:\\Users\\hp\\current_status\\CHiPS-RTI-Project\\citizen\\rti_sarvam copy\\data\\rti-rag\\FG\\01_preprocessing\\stage2_output\\faq_hindi\\structured.md",
   "chunking_method": "bilingual_faq_rule_based",
   "supported_languages": [
     "Hindi",

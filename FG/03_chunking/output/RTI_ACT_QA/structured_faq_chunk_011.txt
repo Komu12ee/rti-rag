@@ -1,5 +1,5 @@
 # FAQ Chunk 11
-Document: RTI_ACT_QA
+Document: rti-rule-book
 Source: structured.md
 Pages: 4-5
 Section: SECTION 5: DESIGNATION OF PUBLIC INFORMATION OFFICERS

@@ -1,5 +1,5 @@
 # FAQ Chunk 206
-Document: claud-rti-rough-2
+Document: rti-rule-book
 Source: structured.md
 Pages: 34
 Section: (l0) Effectiveness:

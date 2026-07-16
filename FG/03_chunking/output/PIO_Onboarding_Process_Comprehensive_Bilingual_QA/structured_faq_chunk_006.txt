@@ -1,5 +1,5 @@
 # FAQ Chunk 6
-Document: PIO_Onboarding_Process_Comprehensive_Bilingual_QA
+Document: pioOnboardingProcess
 Source: structured.md
 Pages: 1
 Section: Q3 (English ). How does a PIO start registration?

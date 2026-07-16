@@ -1,5 +1,5 @@
 # FAQ Chunk 192
-Document: claud-rti-rough-2
+Document: rti-rule-book
 Source: structured.md
 Pages: 31
 Section: (2) Amendment Procedure: Follows constitutional amendment process

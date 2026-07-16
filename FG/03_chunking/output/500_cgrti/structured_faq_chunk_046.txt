@@ -1,5 +1,5 @@
 # FAQ Chunk 46
-Document: 500_cgrti
+Document: rti-rule-book
 Source: structured.md
 Pages: 5
 Section: 2.1 What Information Can [ Request

@@ -1,5 +1,5 @@
 # FAQ Chunk 66
-Document: claud-rti-rough-2
+Document: rti-rule-book
 Source: structured.md
 Pages: 11
 Section: (6) आयोग की शक्तियां [धारा 19(7)-(9)]:

@@ -1,5 +1,5 @@
 # RTI Legal Chunk 78
-Document: RTI_Act_2005_Source_Text_QA
+Document: rti-rule-book
 Input source: structured.md
 Input pages: 38
 Chapter: Chapter VI - Miscellaneous

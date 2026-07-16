@@ -1,5 +1,5 @@
 # FAQ Chunk 17
-Document: claud-rti-rough
+Document: rti-rule-book
 Source: structured.md
 Pages: 10-11
 Section: SECTION 8: EXEMPTIONS FROM DISCLOSURE

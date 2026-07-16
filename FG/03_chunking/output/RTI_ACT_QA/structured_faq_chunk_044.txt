@@ -1,5 +1,5 @@
 # FAQ Chunk 44
-Document: RTI_ACT_QA
+Document: rti-rule-book
 Source: structured.md
 Pages: 17-18
 Section: अपील [धारा 19(10)]: टूसरी -

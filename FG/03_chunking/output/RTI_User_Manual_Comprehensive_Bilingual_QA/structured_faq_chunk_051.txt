@@ -1,5 +1,5 @@
 # FAQ Chunk 51
-Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Document: rtiUserManual
 Source: structured.md
 Pages: 9
 Section: Question: Does the manual mention an RTI fee for a person below the poverty line ?

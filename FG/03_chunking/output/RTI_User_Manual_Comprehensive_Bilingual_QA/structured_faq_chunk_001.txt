@@ -1,5 +1,5 @@
 # FAQ Chunk 1
-Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Document: rtiUserManual
 Source: structured.md
 Pages: 1
 Section: Comprehensive English Hindi User Questions and Answers

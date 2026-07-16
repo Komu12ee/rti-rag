@@ -1,5 +1,5 @@
 # FAQ Chunk 46
-Document: RTI_ACT_QA
+Document: rti-rule-book
 Source: structured.md
 Pages: 18
 Section: SECTION 20: TRANSFER OF CASES

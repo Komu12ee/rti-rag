@@ -1,5 +1,5 @@
 # FAQ Chunk 52
-Document: claud-rti-rough
+Document: rti-rule-book
 Source: structured.md
 Pages: 19-20
 Section: (5) कार्यकाल ( संशोधित 2019):

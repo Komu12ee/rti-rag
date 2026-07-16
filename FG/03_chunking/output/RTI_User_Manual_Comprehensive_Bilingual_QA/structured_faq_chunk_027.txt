@@ -1,5 +1,5 @@
 # FAQ Chunk 27
-Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Document: rtiUserManual
 Source: structured.md
 Pages: 5
 Section: Question: What should I do with the verification email received after registration?

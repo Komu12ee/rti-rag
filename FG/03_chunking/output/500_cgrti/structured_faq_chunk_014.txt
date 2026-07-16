@@ -1,5 +1,5 @@
 # FAQ Chunk 14
-Document: 500_cgrti
+Document: rti-rule-book
 Source: structured.md
 Pages: 3
 Section: QlL. How do I file an RTI request in Chhattisgarh? A:

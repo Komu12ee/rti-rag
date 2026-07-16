@@ -1,5 +1,5 @@
 # FAQ Chunk 112
-Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Document: rtiUserManual
 Source: structured.md
 Pages: 18
 Section: Question: Does the manual display more than one payment amount?

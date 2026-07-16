@@ -1,5 +1,5 @@
 # FAQ Chunk 147
-Document: claud-rti-rough-2
+Document: rti-rule-book
 Source: structured.md
 Pages: 23-24
 Section: (5) Process for Commission Penaltyः

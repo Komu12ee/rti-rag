@@ -1,5 +1,5 @@
 # FAQ Chunk 12
-Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Document: rtiUserManual
 Source: structured.md
 Pages: 3
 Section: Question: What should I do on the User Registration General Information screen ?

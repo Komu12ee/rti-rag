@@ -1,5 +1,5 @@
 # FAQ Chunk 199
-Document: claud-rti-rough-2
+Document: rti-rule-book
 Source: structured.md
 Pages: 33
 Section: (3) Types of Rules

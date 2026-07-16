@@ -1,5 +1,5 @@
 # FAQ Chunk 108
-Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Document: rtiUserManual
 Source: structured.md
 Pages: 17-18
 Section: Question: What should 1 do on the Payment Details screen ?

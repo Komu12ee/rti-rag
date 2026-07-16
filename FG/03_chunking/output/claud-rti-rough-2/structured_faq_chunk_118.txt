@@ -1,5 +1,5 @@
 # FAQ Chunk 118
-Document: claud-rti-rough-2
+Document: rti-rule-book
 Source: structured.md
 Pages: 19
 Section: (7) व्यावहारिक कार्यान्वयनः

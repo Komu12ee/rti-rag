@@ -1,5 +1,5 @@
 # FAQ Chunk 70
-Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Document: rtiUserManual
 Source: structured.md
 Pages: 11-12
 Section: Question: What happens if 1 select Tes for BPL card holder status?

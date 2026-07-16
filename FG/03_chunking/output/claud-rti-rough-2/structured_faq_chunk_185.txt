@@ -1,5 +1,5 @@
 # FAQ Chunk 185
-Document: claud-rti-rough-2
+Document: rti-rule-book
 Source: structured.md
 Pages: 30-31
 Section: (10) सिफारिशों का अनुपालनः

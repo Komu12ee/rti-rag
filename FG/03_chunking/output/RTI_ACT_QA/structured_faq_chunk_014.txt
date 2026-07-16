@@ -1,5 +1,5 @@
 # FAQ Chunk 14
-Document: RTI_ACT_QA
+Document: rti-rule-book
 Source: structured.md
 Pages: 6-7
 Section: SECTION 7: TIME LIMIT FOR FURNISHING INFORMATION

@@ -1,5 +1,5 @@
 # RTI Legal Chunk 44
-Document: RTI_Act_2005_Source_Text_QA
+Document: rti-rule-book
 Input source: structured.md
 Input pages: 21-23
 Chapter: Chapter III - The Central Information Commission

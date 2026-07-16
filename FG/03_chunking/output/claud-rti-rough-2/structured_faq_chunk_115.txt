@@ -1,5 +1,5 @@
 # FAQ Chunk 115
-Document: claud-rti-rough-2
+Document: rti-rule-book
 Source: structured.md
 Pages: 18-19
 Section: (3) पूर्ण नहीं बल्कि सीमित छूटः

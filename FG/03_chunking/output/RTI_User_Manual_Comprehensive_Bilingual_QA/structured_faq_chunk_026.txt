@@ -1,5 +1,5 @@
 # FAQ Chunk 26
-Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Document: rtiUserManual
 Source: structured.md
 Pages: 5
 Section: Question: How do [ activate my RTI portal account after registration?

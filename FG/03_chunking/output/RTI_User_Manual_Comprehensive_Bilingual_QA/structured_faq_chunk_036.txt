@@ -1,5 +1,5 @@
 # FAQ Chunk 36
-Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Document: rtiUserManual
 Source: structured.md
 Pages: 6-7
 Section: प्रश्नः पासवर्ड विवरण भरने के बाद किस बटन पर क्लिक करना है?

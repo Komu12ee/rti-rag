@@ -1,5 +1,5 @@
 # FAQ Chunk 43
-Document: RTI_ACT_QA
+Document: rti-rule-book
 Source: structured.md
 Pages: 17
 Section: प्रथम अपील [धारा 19(1)-(5)]:

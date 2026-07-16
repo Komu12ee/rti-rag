@@ -1,5 +1,5 @@
 # FAQ Chunk 27
-Document: claud-rti-rough
+Document: rti-rule-book
 Source: structured.md
 Pages: 14
 Section: SECTION ll: THIRD PARTY INFORMATION

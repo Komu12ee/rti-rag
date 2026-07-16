@@ -1,5 +1,5 @@
 # FAQ Chunk 8
-Document: claud-rti-rough
+Document: rti-rule-book
 Source: structured.md
 Pages: 2-4
 Section: SECTION 4: OBLIGATIONS OF PUBLIC AUTHORITIES

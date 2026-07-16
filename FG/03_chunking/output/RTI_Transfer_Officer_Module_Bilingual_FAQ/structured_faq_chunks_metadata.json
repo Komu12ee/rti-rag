@@ -1,7 +1,7 @@
 {
   "document": "structured.md",
-  "document_name": "RTI_Transfer_Officer_Module_Bilingual_FAQ",
-  "source_path": "..\\01_preprocessing\\stage2_output\\mannuals\\RTI_Transfer_Officer_Module_Bilingual_FAQ\\structured.md",
+  "document_name": "transfermanual",
+  "source_path": "..\\01_preprocessing\\stage2_output\\mannuals\\transfermanual\\structured.md",
   "chunking_method": "bilingual_faq_rule_based",
   "supported_languages": [
     "Hindi",

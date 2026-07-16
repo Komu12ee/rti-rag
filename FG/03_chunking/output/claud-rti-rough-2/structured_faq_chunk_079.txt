@@ -1,5 +1,5 @@
 # FAQ Chunk 79
-Document: claud-rti-rough-2
+Document: rti-rule-book
 Source: structured.md
 Pages: 13
 Section: (1) अधिकार क्षेत्र हस्तांतरणः

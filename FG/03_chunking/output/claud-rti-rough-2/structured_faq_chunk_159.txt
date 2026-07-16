@@ -1,5 +1,5 @@
 # FAQ Chunk 159
-Document: claud-rti-rough-2
+Document: rti-rule-book
 Source: structured.md
 Pages: 25-26
 Section: (6) कार्यान्वयन प्राधिकरणः

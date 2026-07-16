@@ -1,5 +1,5 @@
 # FAQ Chunk 2
-Document: RTI_ACT_QA
+Document: rti-rule-book
 Source: structured.md
 Pages: 1
 Section: Ql. What is Section 1 (Short Title and Extent) of the Right to Information Act?

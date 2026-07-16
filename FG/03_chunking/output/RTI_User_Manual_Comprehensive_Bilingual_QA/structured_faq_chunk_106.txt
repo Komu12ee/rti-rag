@@ -1,5 +1,5 @@
 # FAQ Chunk 106
-Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Document: rtiUserManual
 Source: structured.md
 Pages: 17
 Section: प्रश्नः Document Details से भुगतान चरण पर कैसे जाएँ?

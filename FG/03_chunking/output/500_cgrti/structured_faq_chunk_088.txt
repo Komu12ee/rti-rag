@@ -1,5 +1,5 @@
 # FAQ Chunk 88
-Document: 500_cgrti
+Document: rti-rule-book
 Source: structured.md
 Pages: 8
 Section: SECTION 3:ADVANCED QUESTIONS (Level 3)

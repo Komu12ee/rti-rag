@@ -1,5 +1,5 @@
 # FAQ Chunk 37
-Document: RTI_ACT_QA
+Document: rti-rule-book
 Source: structured.md
 Pages: 16-17
 Section: SECTION 1B: PROCEDURE FOR INQUIRIES

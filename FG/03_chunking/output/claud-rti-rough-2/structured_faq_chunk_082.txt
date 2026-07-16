@@ -1,5 +1,5 @@
 # FAQ Chunk 82
-Document: claud-rti-rough-2
+Document: rti-rule-book
 Source: structured.md
 Pages: 13
 Section: (4) हस्तांतरण का प्रभावः

@@ -1,5 +1,5 @@
 # FAQ Chunk 126
-Document: claud-rti-rough-2
+Document: rti-rule-book
 Source: structured.md
 Pages: 20
 Section: (6) Types of Penalties:

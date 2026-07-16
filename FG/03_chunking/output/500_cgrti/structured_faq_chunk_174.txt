@@ -1,5 +1,5 @@
 # FAQ Chunk 174
-Document: 500_cgrti
+Document: rti-rule-book
 Source: structured.md
 Pages: 15
 Section: 4.4 Exemptions - Tricky Applications

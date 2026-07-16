@@ -1,5 +1,5 @@
 # FAQ Chunk 54
-Document: claud-rti-rough
+Document: rti-rule-book
 Source: structured.md
 Pages: 21
 Section: REFERENCE GUIDE ALL SECTIONS MAPPED TO RTI RULE BOOK PAGES

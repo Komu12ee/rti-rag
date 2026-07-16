@@ -1,7 +1,7 @@
 {
   "document": "structured.md",
-  "document_name": "claud_User_Manual_Detailed_FAQ",
-  "source_path": "..\\01_preprocessing\\stage2_output\\claud_User_Manual_Detailed_FAQ\\structured.md",
+  "document_name": "rtiUserManual",
+  "source_path": "..\\01_preprocessing\\stage2_output\\rtiUserManual\\structured.md",
   "chunking_method": "bilingual_faq_rule_based",
   "supported_languages": [
     "Hindi",

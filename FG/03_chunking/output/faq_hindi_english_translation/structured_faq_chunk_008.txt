@@ -1,5 +1,5 @@
 # FAQ Chunk 8
-Document: faq_hindi_english_translation
+Document: faq_hindi
 Source: structured.md
 Pages: 3-4
 Section: Untitled section

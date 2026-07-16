@@ -1,5 +1,5 @@
 # FAQ Chunk 46
-Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Document: rtiUserManual
 Source: structured.md
 Pages: 8
 Section: Question: Can Indian citizens use the portal for RTI applications and first appeals?

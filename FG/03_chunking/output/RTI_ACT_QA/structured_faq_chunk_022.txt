@@ -1,5 +1,5 @@
 # FAQ Chunk 22
-Document: RTI_ACT_QA
+Document: rti-rule-book
 Source: structured.md
 Pages: 11
 Section: SECTION ll: THIRD PARTY INFORMATION

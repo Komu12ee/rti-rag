@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "users": [
+    {
+      "id": "a70c6f8d-f6fa-4d5b-91cc-59350efee8cc",
+      "fullName": "Komendra Sahu",
+      "username": "qwertyuiop",
+      "email": "komendra25302@iiitnr.edu.in",
+      "role": "citizen",
+      "passwordHash": "pbkdf2_sha256$210000$zgo7G2zPlhSmXZW4f2xBaA==$pDYd4wEe0K6lQxvASQu2cfHWRjoRJEgidmBke4oxfaM=",
+      "createdAt": "2026-07-15T11:01:26.636218+00:00",
+      "updatedAt": "2026-07-15T11:01:26.636218+00:00"
+    }
+  ]
+}

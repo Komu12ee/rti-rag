@@ -1,5 +1,5 @@
 # FAQ Chunk 67
-Document: RTI_ACT_QA
+Document: rti-rule-book
 Source: structured.md
 Pages: 25
 Section: शुल्क संरचना ( नवीनतम नियमों के अनुसार):

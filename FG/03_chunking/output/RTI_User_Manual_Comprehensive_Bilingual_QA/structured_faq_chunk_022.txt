@@ -1,5 +1,5 @@
 # FAQ Chunk 22
-Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Document: rtiUserManual
 Source: structured.md
 Pages: 4
 Section: Question: Can 1 correct my registration details before submitting?

@@ -1,5 +1,5 @@
 # FAQ Chunk 119
-Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Document: rtiUserManual
 Source: structured.md
 Pages: 19
 Section: Question: Does the manual show a receipt option after payment?

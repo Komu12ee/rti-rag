@@ -1,5 +1,5 @@
 # FAQ Chunk 39
-Document: RTI_ACT_QA
+Document: rti-rule-book
 Source: structured.md
 Pages: 17
 Section: First Appeal [Section 19(1)-(5)]:

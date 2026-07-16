@@ -1,5 +1,5 @@
 # FAQ Chunk 24
-Document: claud-rti-rough
+Document: rti-rule-book
 Source: structured.md
 Pages: 11-12
 Section: SECTION 1O: PARTIAL DISCLOSURE

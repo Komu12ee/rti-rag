@@ -1,5 +1,5 @@
 # FAQ Chunk 60
-Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Document: rtiUserManual
 Source: structured.md
 Pages: 10
 Section: Question: Which registration number is used when referring to an original RTI application?

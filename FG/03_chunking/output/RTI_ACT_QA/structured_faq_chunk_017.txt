@@ -1,5 +1,5 @@
 # FAQ Chunk 17
-Document: RTI_ACT_QA
+Document: rti-rule-book
 Source: structured.md
 Pages: 8-9
 Section: SECTION 8: EXEMPTIONS FROM DISCLOSURE

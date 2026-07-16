@@ -1,5 +1,5 @@
 # FAQ Chunk 345
-Document: 500_cgrti
+Document: rti-rule-book
 Source: structured.md
 Pages: 27
 Section: 7.5 Police Department RTI Questions

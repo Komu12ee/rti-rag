@@ -1,5 +1,5 @@
 # FAQ Chunk 19
-Document: RTI_ACT_QA
+Document: rti-rule-book
 Source: structured.md
 Pages: 10
 Section: SECTION 9: INFORMATION EXEMPTED FROM DISCLOSURE

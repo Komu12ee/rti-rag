@@ -1,5 +1,5 @@
 # FAQ Chunk 61
-Document: 500_cgrti
+Document: rti-rule-book
 Source: structured.md
 Pages: 6
 Section: 2.3 Third Party Information

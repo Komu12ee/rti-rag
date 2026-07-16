@@ -1,5 +1,5 @@
 # FAQ Chunk 198
-Document: claud-rti-rough-2
+Document: rti-rule-book
 Source: structured.md
 Pages: 32-33
 Section: (1) Rule Making Authority:

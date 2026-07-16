@@ -1,5 +1,5 @@
 # FAQ Chunk 65
-Document: RTI_ACT_QA
+Document: rti-rule-book
 Source: structured.md
 Pages: 24-25
 Section: Fee Structure (As per latest rules):

@@ -1,5 +1,5 @@
 # FAQ Chunk 59
-Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Document: rtiUserManual
 Source: structured.md
 Pages: 10
 Section: Question: How does the manual say to make an appeal to the First Appellate Authority?

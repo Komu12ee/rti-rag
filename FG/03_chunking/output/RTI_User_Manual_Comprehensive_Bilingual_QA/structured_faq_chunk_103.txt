@@ -1,5 +1,5 @@
 # FAQ Chunk 103
-Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Document: rtiUserManual
 Source: structured.md
 Pages: 17
 Section: Question: What should 1 do after finishing document uploads?

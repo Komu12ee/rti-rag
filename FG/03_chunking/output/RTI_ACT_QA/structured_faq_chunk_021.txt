@@ -1,5 +1,5 @@
 # FAQ Chunk 21
-Document: RTI_ACT_QA
+Document: rti-rule-book
 Source: structured.md
 Pages: 10-11
 Section: SECTION 1O: PARTIAL DISCLOSURE

@@ -1,5 +1,5 @@
 # FAQ Chunk 264
-Document: 500_cgrti
+Document: rti-rule-book
 Source: structured.md
 Pages: 21
 Section: 6.2 CG Online RTI Portal

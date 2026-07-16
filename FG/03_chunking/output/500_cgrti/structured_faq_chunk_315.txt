@@ -1,5 +1,5 @@
 # FAQ Chunk 315
-Document: 500_cgrti
+Document: rti-rule-book
 Source: structured.md
 Pages: 25
 Section: 7.2 Health Department RTI Questions

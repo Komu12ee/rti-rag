@@ -1,5 +1,5 @@
 # FAQ Chunk 4
-Document: RTI_Portal_flowchart_FAQ_Bilingual
+Document: flowchartRTI
 Source: structured.md
 Pages: 2-6
 Section: B. PIO registration and account activation

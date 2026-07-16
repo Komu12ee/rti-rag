@@ -1,5 +1,5 @@
 # FAQ Chunk 106
-Document: claud-rti-rough-2
+Document: rti-rule-book
 Source: structured.md
 Pages: 17
 Section: (3) Limited NOT Complete Exemption:

@@ -1,5 +1,5 @@
 # FAQ Chunk 241
-Document: 500_cgrti
+Document: rti-rule-book
 Source: structured.md
 Pages: 20
 Section: 5.6 Welfare & Benefit Schemes Scenarios

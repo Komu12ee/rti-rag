@@ -1,5 +1,5 @@
 # FAQ Chunk 70
-Document: claud-rti-rough-2
+Document: rti-rule-book
 Source: structured.md
 Pages: 11-12
 Section: छत्तीसगढ़ विशिष्ट विवरण

@@ -1,5 +1,5 @@
 # FAQ Chunk 96
-Document: claud-rti-rough-2
+Document: rti-rule-book
 Source: structured.md
 Pages: 15-16
 Section: (2) न्यायिक समीक्षा के आधारः

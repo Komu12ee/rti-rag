@@ -1,5 +1,5 @@
 # FAQ Chunk 12
-Document: RTI_ACT_QA
+Document: rti-rule-book
 Source: structured.md
 Pages: 5
 Section: SECTION 6: PROCEDURE FOR REQUESTING INFORMATION

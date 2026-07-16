@@ -1,7 +1,7 @@
 {
   "document": "structured.md",
-  "document_name": "CG_RTI_Portal_Citizen_FAQ",
-  "source_path": "..\\01_preprocessing\\stage2_output\\CG_RTI_Portal_Citizen_FAQ\\structured.md",
+  "document_name": "rtiUserManual",
+  "source_path": "..\\01_preprocessing\\stage2_output\\rtiUserManual\\structured.md",
   "chunking_method": "bilingual_faq_rule_based",
   "supported_languages": [
     "Hindi",

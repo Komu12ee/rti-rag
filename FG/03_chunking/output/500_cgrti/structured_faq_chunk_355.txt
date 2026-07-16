@@ -1,5 +1,5 @@
 # FAQ Chunk 355
-Document: 500_cgrti
+Document: rti-rule-book
 Source: structured.md
 Pages: 27-28
 Section: Complex Exemption Questions

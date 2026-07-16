@@ -1,5 +1,5 @@
 # FAQ Chunk 30
-Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Document: rtiUserManual
 Source: structured.md
 Pages: 5
 Section: Question: What should 1 use as my login ID while creating the password?

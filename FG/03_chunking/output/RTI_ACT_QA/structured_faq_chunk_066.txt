@@ -1,5 +1,5 @@
 # FAQ Chunk 66
-Document: RTI_ACT_QA
+Document: rti-rule-book
 Source: structured.md
 Pages: 25
 Section: छत्तीसगढ़ नियमः

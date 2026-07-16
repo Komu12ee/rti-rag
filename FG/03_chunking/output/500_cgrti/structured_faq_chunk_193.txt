@@ -1,5 +1,5 @@
 # FAQ Chunk 193
-Document: 500_cgrti
+Document: rti-rule-book
 Source: structured.md
 Pages: 16
 Section: .1 Corruption & Transparency Scenarios

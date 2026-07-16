@@ -1,5 +1,5 @@
 # FAQ Chunk 128
-Document: claud-rti-rough-2
+Document: rti-rule-book
 Source: structured.md
 Pages: 20-21
 Section: (8) Procedure:

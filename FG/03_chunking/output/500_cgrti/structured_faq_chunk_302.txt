@@ -1,5 +1,5 @@
 # FAQ Chunk 302
-Document: 500_cgrti
+Document: rti-rule-book
 Source: structured.md
 Pages: 24
 Section: 7.1 Education Department RTI Questions

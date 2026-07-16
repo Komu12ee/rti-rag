@@ -1,5 +1,5 @@
 # FAQ Chunk 162
-Document: 500_cgrti
+Document: rti-rule-book
 Source: structured.md
 Pages: 14
 Section: 4.3 Department Confusion & Routing

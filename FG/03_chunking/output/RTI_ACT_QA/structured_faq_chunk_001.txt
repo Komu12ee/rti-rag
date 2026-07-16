@@ -1,5 +1,5 @@
 # FAQ Chunk 1
-Document: RTI_ACT_QA
+Document: rti-rule-book
 Source: structured.md
 Pages: 1
 Section: RIGHTTO INFORMATION ACT, 2OO5: ALL PROVISIONS & DETAILED DEFINITIONS

@@ -1,5 +1,5 @@
 # FAQ Chunk 31
-Document: RTI_ACT_QA
+Document: rti-rule-book
 Source: structured.md
 Pages: 14-15
 Section: SECTION l6: STATE CHIEF INFORMATION COMMISSIONER

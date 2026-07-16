@@ -1,5 +1,5 @@
 # FAQ Chunk 230
-Document: 500_cgrti
+Document: rti-rule-book
 Source: structured.md
 Pages: 19
 Section: 5.5 Appointments & Recruitment Scenarios

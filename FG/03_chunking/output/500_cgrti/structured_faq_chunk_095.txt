@@ -1,5 +1,5 @@
 # FAQ Chunk 95
-Document: 500_cgrti
+Document: rti-rule-book
 Source: structured.md
 Pages: 9
 Section: 3.l Legal Framework & Interpretation

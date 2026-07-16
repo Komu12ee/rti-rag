@@ -1,5 +1,5 @@
 # FAQ Chunk 21
-Document: 500_cgrti
+Document: rti-rule-book
 Source: structured.md
 Pages: 3
 Section: 13 Timeline & Response

@@ -1,5 +1,5 @@
 # FAQ Chunk 11
-Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Document: rtiUserManual
 Source: structured.md
 Pages: 3
 Section: Question: Do I need to accept the registration instructions before continuing?

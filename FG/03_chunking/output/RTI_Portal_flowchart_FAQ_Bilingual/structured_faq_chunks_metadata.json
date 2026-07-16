@@ -1,7 +1,7 @@
 {
   "document": "structured.md",
-  "document_name": "RTI_Portal_flowchart_FAQ_Bilingual",
-  "source_path": "..\\01_preprocessing\\stage2_output\\mannuals\\RTI_Portal_flowchart_FAQ_Bilingual\\structured.md",
+  "document_name": "flowchartRTI",
+  "source_path": "..\\01_preprocessing\\stage2_output\\mannuals\\flowchartRTI\\structured.md",
   "chunking_method": "bilingual_faq_rule_based",
   "supported_languages": [
     "Hindi",

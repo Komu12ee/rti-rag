@@ -1,5 +1,5 @@
 # FAQ Chunk 106
-Document: claud_User_Manual_Detailed_FAQ
+Document: rtiUserManual
 Source: structured.md
 Pages: 17-18
 Section: Untitled section

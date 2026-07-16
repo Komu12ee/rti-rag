@@ -1,5 +1,5 @@
 # FAQ Chunk 181
-Document: claud-rti-rough-2
+Document: rti-rule-book
 Source: structured.md
 Pages: 29-30
 Section: (6) प्रचारः

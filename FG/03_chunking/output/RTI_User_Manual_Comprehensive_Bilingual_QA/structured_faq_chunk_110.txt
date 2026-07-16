@@ -1,5 +1,5 @@
 # FAQ Chunk 110
-Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Document: rtiUserManual
 Source: structured.md
 Pages: 18
 Section: प्रश्नः Payment Details स्क्रीन पर क्या करना चाहिए?

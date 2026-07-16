@@ -1,5 +1,5 @@
 # FAQ Chunk 153
-Document: 500_cgrti
+Document: rti-rule-book
 Source: structured.md
 Pages: 13
 Section: 4.2 Information Existence & Scope Confusion

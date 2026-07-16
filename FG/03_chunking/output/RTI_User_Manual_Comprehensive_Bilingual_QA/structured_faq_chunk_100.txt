@@ -1,5 +1,5 @@
 # FAQ Chunk 100
-Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Document: rtiUserManual
 Source: structured.md
 Pages: 16-17
 Section: Question: What file formats and size limit are shown on the document upload screen ?

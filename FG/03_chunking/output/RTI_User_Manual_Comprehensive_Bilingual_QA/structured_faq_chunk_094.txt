@@ -1,5 +1,5 @@
 # FAQ Chunk 94
-Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Document: rtiUserManual
 Source: structured.md
 Pages: 16
 Section: Question: What are the steps to upload a file on the Document Details page?

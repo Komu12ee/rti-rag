@@ -1,5 +1,5 @@
 # FAQ Chunk 29
-Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Document: rtiUserManual
 Source: structured.md
 Pages: 5
 Section: प्रश्नः रजिस्ट्रेशन के बाद प्राप्त सत्यापन ई-मेल के साथ क्या करना चाहिए?

@@ -1,5 +1,5 @@
 # FAQ Chunk 71
-Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Document: transfermanual
 Source: structured.md
 Pages: 8
 Section: Q37 . What does Generate Relieving Letter do?

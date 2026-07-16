@@ -1,5 +1,5 @@
 # FAQ Chunk 34
-Document: claud-rti-rough-2
+Document: rti-rule-book
 Source: structured.md
 Pages: 6
 Section: (4) गोपनीयता पर विचारः

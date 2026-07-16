@@ -1,5 +1,5 @@
 # FAQ Chunk 254
-Document: 500_cgrti
+Document: rti-rule-book
 Source: structured.md
 Pages: 20-21
 Section: Chhattisgarh Government & State RTI Details

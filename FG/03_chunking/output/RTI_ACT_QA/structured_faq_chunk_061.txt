@@ -1,5 +1,5 @@
 # FAQ Chunk 61
-Document: RTI_ACT_QA
+Document: rti-rule-book
 Source: structured.md
 Pages: 23-24
 Section: SECTION 27: AMENDMENTS

@@ -1,5 +1,5 @@
 # FAQ Chunk 40
-Document: claud-rti-rough
+Document: rti-rule-book
 Source: structured.md
 Pages: 16-17
 Section: (4) हटाया जानाः

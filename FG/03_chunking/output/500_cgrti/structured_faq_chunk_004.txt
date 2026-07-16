@@ -1,5 +1,5 @@
 # FAQ Chunk 4
-Document: 500_cgrti
+Document: rti-rule-book
 Source: structured.md
 Pages: 1
 Section: L.l What is RTI & Basic Rights

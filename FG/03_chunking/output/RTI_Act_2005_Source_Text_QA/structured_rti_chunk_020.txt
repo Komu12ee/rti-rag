@@ -1,5 +1,5 @@
 # RTI Legal Chunk 20
-Document: RTI_Act_2005_Source_Text_QA
+Document: rti-rule-book
 Input source: structured.md
 Input pages: 8-10
 Chapter: Chapter II - Right to information and obligations of public authorities

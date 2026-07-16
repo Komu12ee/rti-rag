@@ -1,5 +1,5 @@
 # FAQ Chunk 8
-Document: RTI_ACT_QA
+Document: rti-rule-book
 Source: structured.md
 Pages: 3
 Section: SECTION 4: OBLIGATIONS OF PUBLIC AUTHORITIES

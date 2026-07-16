@@ -1,7 +1,7 @@
 {
   "document": "structured.md",
-  "document_name": "500_cgrti",
-  "source_path": "C:\\Users\\hp\\current_status\\CHiPS-RTI-Project\\citizen\\rti_sarvam copy\\data\\rti-rag\\FG\\01_preprocessing\\stage2_output\\500_cgrti\\structured.md",
+  "document_name": "rti-rule-book",
+  "source_path": "C:\\Users\\hp\\current_status\\CHiPS-RTI-Project\\citizen\\rti_sarvam copy\\data\\rti-rag\\FG\\01_preprocessing\\stage2_output\\rti-rule-book\\structured.md",
   "chunking_method": "bilingual_faq_rule_based",
   "supported_languages": [
     "Hindi",

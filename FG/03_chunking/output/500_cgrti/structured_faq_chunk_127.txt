@@ -1,5 +1,5 @@
 # FAQ Chunk 127
-Document: 500_cgrti
+Document: rti-rule-book
 Source: structured.md
 Pages: 11
 Section: 3.5 Information Commission Powers

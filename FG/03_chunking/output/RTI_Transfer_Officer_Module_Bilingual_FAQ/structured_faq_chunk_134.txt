@@ -1,5 +1,5 @@
 # FAQ Chunk 134
-Document: RTI_Transfer_Officer_Module_Bilingual_FAQ
+Document: transfermanual
 Source: structured.md
 Pages: 14
 Section: Q73. Does the manual explain password reset, user activation or first time login ?

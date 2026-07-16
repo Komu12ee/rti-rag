@@ -1,7 +1,7 @@
 {
   "document": "structured.md",
-  "document_name": "RTI_ACT_QA",
-  "source_path": "..\\01_preprocessing\\stage2_output\\RTI_ACT_QA\\structured.md",
+  "document_name": "rti-rule-book",
+  "source_path": "..\\01_preprocessing\\stage2_output\\rti-rule-book\\structured.md",
   "chunking_method": "bilingual_faq_rule_based",
   "supported_languages": [
     "Hindi",

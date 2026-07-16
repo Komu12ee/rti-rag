@@ -1,5 +1,5 @@
 # FAQ Chunk 52
-Document: RTI_ACT_QA
+Document: rti-rule-book
 Source: structured.md
 Pages: 20
 Section: SECTION 23: PENALTIES

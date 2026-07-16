@@ -1,5 +1,5 @@
 # FAQ Chunk 45
-Document: claud-rti-rough
+Document: rti-rule-book
 Source: structured.md
 Pages: 18-19
 Section: (2) Composition:

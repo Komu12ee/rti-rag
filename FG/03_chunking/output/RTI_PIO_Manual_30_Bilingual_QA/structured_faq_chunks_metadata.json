@@ -1,7 +1,7 @@
 {
   "document": "structured.md",
-  "document_name": "RTI_PIO_Manual_30_Bilingual_QA",
-  "source_path": "..\\01_preprocessing\\stage2_output\\mannuals\\RTI_PIO_Manual_30_Bilingual_QA\\structured.md",
+  "document_name": "pio_user_mannual",
+  "source_path": "..\\01_preprocessing\\stage2_output\\mannuals\\pio_user_mannual\\structured.md",
   "chunking_method": "bilingual_faq_rule_based",
   "supported_languages": [
     "Hindi",

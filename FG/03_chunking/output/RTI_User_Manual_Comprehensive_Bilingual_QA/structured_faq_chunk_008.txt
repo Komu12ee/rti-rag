@@ -1,5 +1,5 @@
 # FAQ Chunk 8
-Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Document: rtiUserManual
 Source: structured.md
 Pages: 2
 Section: Question: Where should T start to register as a user on the portal?

@@ -1,5 +1,5 @@
 # FAQ Chunk 53
-Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Document: rtiUserManual
 Source: structured.md
 Pages: 9
 Section: प्रश्नः क्या मैनुअल गरीबी रेखा से नीचे के व्यक्ति के आरटीआई शुल्क का उल्लेख करता है? लिए

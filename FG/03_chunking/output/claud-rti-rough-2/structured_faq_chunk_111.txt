@@ -1,5 +1,5 @@
 # FAQ Chunk 111
-Document: claud-rti-rough-2
+Document: rti-rule-book
 Source: structured.md
 Pages: 18
 Section: (8) Transparency Within Limits:

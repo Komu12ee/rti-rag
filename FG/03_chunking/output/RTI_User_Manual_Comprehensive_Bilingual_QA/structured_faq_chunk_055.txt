@@ -1,5 +1,5 @@
 # FAQ Chunk 55
-Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Document: rtiUserManual
 Source: structured.md
 Pages: 9
 Section: Question: Will 1 receive a registration number after submitting an application?

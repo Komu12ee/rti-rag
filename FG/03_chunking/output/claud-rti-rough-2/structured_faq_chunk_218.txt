@@ -1,5 +1,5 @@
 # FAQ Chunk 218
-Document: claud-rti-rough-2
+Document: rti-rule-book
 Source: structured.md
 Pages: 36-37
 Section: COMPREHENSIVEINDEX AND QUICK REFERENCE

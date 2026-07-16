@@ -1,5 +1,5 @@
 # FAQ Chunk 130
-Document: claud-rti-rough-2
+Document: rti-rule-book
 Source: structured.md
 Pages: 21
 Section: (10) Practical Impact:

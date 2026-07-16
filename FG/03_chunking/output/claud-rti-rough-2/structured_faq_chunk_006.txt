@@ -1,5 +1,5 @@
 # FAQ Chunk 6
-Document: claud-rti-rough-2
+Document: rti-rule-book
 Source: structured.md
 Pages: 2
 Section: (1) योग्यताः

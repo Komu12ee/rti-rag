@@ -1,5 +1,5 @@
 # FAQ Chunk 38
-Document: claud-rti-rough
+Document: rti-rule-book
 Source: structured.md
 Pages: 16
 Section: (1) नियुक्ति के लिए योग्यताः

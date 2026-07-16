@@ -1,7 +1,7 @@
 {
   "document": "structured.md",
-  "document_name": "RTI_Act_2005_Source_Text_QA",
-  "source_path": "..\\01_preprocessing\\stage2_output\\RTI_Act_2005_Source_Text_QA\\structured.md",
+  "document_name": "rti-rule-book",
+  "source_path": "..\\01_preprocessing\\stage2_output\\rti-rule-book\\structured.md",
   "chunking_method": "rti_legal_qa_rule_based",
   "key_guarantees": {
     "supports_Q_dot_and_Q_colon": true,

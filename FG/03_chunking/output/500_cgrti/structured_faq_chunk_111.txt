@@ -1,5 +1,5 @@
 # FAQ Chunk 111
-Document: 500_cgrti
+Document: rti-rule-book
 Source: structured.md
 Pages: 10
 Section: 3.3 Exemptions Advanced

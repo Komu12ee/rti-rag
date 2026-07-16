@@ -1,5 +1,5 @@
 # FAQ Chunk 380
-Document: 500_cgrti
+Document: rti-rule-book
 Source: structured.md
 Pages: 29
 Section: BONUS SECTION: COMMON MISTAKES & HOWTO AVOID

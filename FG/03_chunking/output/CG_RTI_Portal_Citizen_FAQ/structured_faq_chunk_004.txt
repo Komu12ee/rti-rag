@@ -1,5 +1,5 @@
 # FAQ Chunk 4
-Document: CG_RTI_Portal_Citizen_FAQ
+Document: rtiUserManual
 Source: structured.md
 Pages: 1-3
 Section: Untitled section

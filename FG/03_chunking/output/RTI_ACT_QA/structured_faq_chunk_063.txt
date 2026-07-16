@@ -1,5 +1,5 @@
 # FAQ Chunk 63
-Document: RTI_ACT_QA
+Document: rti-rule-book
 Source: structured.md
 Pages: 24
 Section: Chhattisgarh Rules:

@@ -1,5 +1,5 @@
 # FAQ Chunk 170
-Document: claud-rti-rough-2
+Document: rti-rule-book
 Source: structured.md
 Pages: 27-28
 Section: Publicity:

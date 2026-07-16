@@ -1,5 +1,5 @@
 # FAQ Chunk 48
-Document: RTI_ACT_QA
+Document: rti-rule-book
 Source: structured.md
 Pages: 18-19
 Section: SECTION 21: JURISDICTION OF HIGH COURT

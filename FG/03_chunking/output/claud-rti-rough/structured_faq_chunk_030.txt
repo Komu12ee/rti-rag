@@ -1,5 +1,5 @@
 # FAQ Chunk 30
-Document: claud-rti-rough
+Document: rti-rule-book
 Source: structured.md
 Pages: 14-15
 Section: Key Features:

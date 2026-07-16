@@ -1,5 +1,5 @@
 # FAQ Chunk 40
-Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Document: rtiUserManual
 Source: structured.md
 Pages: 7
 Section: प्रश्नः पोर्टल पर द्वितीय अपील आवेदन कैसे शुरू करें?

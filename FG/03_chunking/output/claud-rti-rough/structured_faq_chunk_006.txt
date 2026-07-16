@@ -1,5 +1,5 @@
 # FAQ Chunk 6
-Document: claud-rti-rough
+Document: rti-rule-book
 Source: structured.md
 Pages: 2
 Section: SECTION 3: RIGHTTO INFORMATION

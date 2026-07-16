@@ -1,7 +1,7 @@
 {
   "document": "structured.md",
-  "document_name": "RTI_SAA_Manual_60_Bilingual_QA_Reordered",
-  "source_path": "..\\01_preprocessing\\stage2_output\\mannuals\\RTI_SAA_Manual_60_Bilingual_QA_Reordered\\structured.md",
+  "document_name": "saa_user_mannual",
+  "source_path": "..\\01_preprocessing\\stage2_output\\mannuals\\saa_user_mannual\\structured.md",
   "chunking_method": "bilingual_faq_rule_based",
   "supported_languages": [
     "Hindi",

@@ -1,5 +1,5 @@
 # FAQ Chunk 53
-Document: claud-rti-rough
+Document: rti-rule-book
 Source: structured.md
 Pages: 20-21
 Section: SECTIONS 16 28: ADDITIONAL PROVISIONS

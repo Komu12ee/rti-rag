@@ -1,5 +1,5 @@
 # FAQ Chunk 84
-Document: 500_cgrti
+Document: rti-rule-book
 Source: structured.md
 Pages: 8
 Section: 2.4 Format & Access Methods

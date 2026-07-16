@@ -1,5 +1,5 @@
 # RTI Legal Chunk 7
-Document: RTI_Act_2005_Source_Text_QA
+Document: rti-rule-book
 Input source: structured.md
 Input pages: 5
 Chapter: Chapter I - Preliminary

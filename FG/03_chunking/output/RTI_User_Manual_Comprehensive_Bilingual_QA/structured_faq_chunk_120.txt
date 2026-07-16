@@ -1,5 +1,5 @@
 # FAQ Chunk 120
-Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Document: rtiUserManual
 Source: structured.md
 Pages: 19
 Section: प्रश्नः क्या मैनुअल भुगतान के बाद रसीद का विकल्प दिखाता है?

@@ -1,5 +1,5 @@
 # FAQ Chunk 2
-Document: claud-rti-rough
+Document: rti-rule-book
 Source: structured.md
 Pages: 1
 Section: Ql. What is the official name and geographical scope of the Right to Information Act?

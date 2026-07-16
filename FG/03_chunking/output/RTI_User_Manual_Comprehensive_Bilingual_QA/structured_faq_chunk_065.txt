@@ -1,5 +1,5 @@
 # FAQ Chunk 65
-Document: RTI_User_Manual_Comprehensive_Bilingual_QA
+Document: rtiUserManual
 Source: structured.md
 Pages: 10-11
 Section: प्रश्नः द्वितीय अपील विवरण अनुभाग में कौन॰कौन से विवरण दर्ज जाते हैं? किए

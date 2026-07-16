@@ -1,5 +1,5 @@
 # FAQ Chunk 50
-Document: 500_cgrti
+Document: rti-rule-book
 Source: structured.md
 Pages: 6
 Section: 2.2 Exemptions & What Cannot Be Requested

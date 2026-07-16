@@ -1,5 +1,5 @@
 # FAQ Chunk 28
-Document: 500_cgrti
+Document: rti-rule-book
 Source: structured.md
 Pages: 4
 Section: L.4 Fees & Payment
