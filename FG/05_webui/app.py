@@ -28,13 +28,17 @@ import sys
 import importlib.util
 import json
 import re
+import secrets
+import base64
+import hashlib
+import hmac
 import subprocess
 import time
 from urllib.parse import urlsplit
 
 import requests
 from flask import Flask, Response, request, jsonify, send_file, stream_with_context
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 from threading import Lock
 from uuid import uuid4
@@ -277,19 +281,272 @@ def serve_index():
     """Serve index.html from static folder"""
     return send_file(os.path.join(app.static_folder, 'index.html'))
 
+AUTH_USERS_PATH = SCRIPT_DIR / "data" / "users.json"
+AUTH_PIO_USERS_PATH = SCRIPT_DIR / "data" / "pio_users.json"
+AUTH_SESSION_TTL_SECONDS = max(300, int(os.getenv("AUTH_SESSION_TTL_SECONDS", "28800")))
+AUTH_PASSWORD_ITERATIONS = 210_000
+auth_store_lock = Lock()
+auth_sessions: dict[str, dict] = {}
+
+
+def _normalise_auth_identity(value) -> str:
+    return str(value or "").strip().casefold()
+
+
+def _ensure_auth_store(path: Path | None = None, collection: str = "users") -> None:
+    path = path or AUTH_USERS_PATH
+    path.parent.mkdir(parents=True, exist_ok=True)
+    if not path.exists():
+        path.write_text(
+            json.dumps({"version": 1, collection: []}, indent=2) + "\n",
+            encoding="utf-8",
+        )
+
+
+def _read_auth_store() -> dict:
+    _ensure_auth_store()
+    store = json.loads(AUTH_USERS_PATH.read_text(encoding="utf-8"))
+    if not isinstance(store, dict) or not isinstance(store.get("users"), list):
+        raise ValueError("The JSON user store is invalid.")
+    return store
+
+
+def _read_pio_auth_store() -> dict:
+    _ensure_auth_store(AUTH_PIO_USERS_PATH, "pios")
+    store = json.loads(AUTH_PIO_USERS_PATH.read_text(encoding="utf-8"))
+    if not isinstance(store, dict) or not isinstance(store.get("pios"), list):
+        raise ValueError("The JSON PIO user store is invalid.")
+    return store
+
+
+def _write_auth_store(store: dict) -> None:
+    temporary = AUTH_USERS_PATH.with_suffix(".json.tmp")
+    temporary.write_text(
+        json.dumps(store, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+    temporary.replace(AUTH_USERS_PATH)
+
+
+def _hash_auth_password(password: str) -> str:
+    salt = secrets.token_bytes(16)
+    derived = hashlib.pbkdf2_hmac(
+        "sha256", password.encode("utf-8"), salt, AUTH_PASSWORD_ITERATIONS
+    )
+    return "$".join((
+        "pbkdf2_sha256",
+        str(AUTH_PASSWORD_ITERATIONS),
+        base64.b64encode(salt).decode("ascii"),
+        base64.b64encode(derived).decode("ascii"),
+    ))
+
+
+def _verify_auth_password(password: str, stored_hash: str) -> bool:
+    try:
+        scheme, iterations_text, salt_text, expected_text = stored_hash.split("$", 3)
+        if scheme != "pbkdf2_sha256":
+            return False
+        iterations = int(iterations_text)
+        if iterations < 100_000:
+            return False
+        salt = base64.b64decode(salt_text, validate=True)
+        expected = base64.b64decode(expected_text, validate=True)
+        actual = hashlib.pbkdf2_hmac(
+            "sha256", password.encode("utf-8"), salt, iterations, dklen=len(expected)
+        )
+        return hmac.compare_digest(actual, expected)
+    except (ValueError, TypeError):
+        return False
+
+
+def _public_auth_user(user: dict, role: str | None = None) -> dict:
+    public_user = {
+        key: user.get(key)
+        for key in ("id", "fullName", "username", "email", "createdAt")
+    }
+    public_user["role"] = role or user.get("role") or "citizen"
+    return public_user
+
+
+def _normalise_pio_user(user: dict) -> dict | None:
+    if not isinstance(user, dict) or user.get("active", True) is False:
+        return None
+    email = _normalise_auth_identity(user.get("email"))
+    username = _normalise_auth_identity(user.get("username"))
+    full_name = str(user.get("fullName") or user.get("name") or "").strip()
+    if not email or not full_name or not (user.get("password") or user.get("passwordHash")):
+        return None
+    return {
+        **user,
+        "id": str(user.get("id") or f"pio:{email}"),
+        "fullName": full_name,
+        "username": username,
+        "email": email,
+        "role": "pio",
+    }
+
+
+def _pio_password_matches(password: str, user: dict) -> bool:
+    if user.get("passwordHash"):
+        return _verify_auth_password(password, str(user.get("passwordHash")))
+    stored_password = str(user.get("password") or "")
+    return bool(stored_password) and secrets.compare_digest(password, stored_password)
+
+
+def _auth_bearer_token() -> str:
+    header = str(request.headers.get("Authorization") or "")
+    return header[7:].strip() if header.startswith("Bearer ") else ""
+
+
+@app.route('/auth/signup', methods=['POST'])
+def auth_signup():
+    data = request.get_json(silent=True)
+    if not isinstance(data, dict):
+        return jsonify({'success': False, 'error': 'A JSON request object is required.'}), 400
+
+    full_name = str(data.get("fullName") or "").strip()
+    username = _normalise_auth_identity(data.get("username"))
+    email = _normalise_auth_identity(data.get("email"))
+    password = str(data.get("password") or "")
+    if not 2 <= len(full_name) <= 100:
+        return jsonify({'success': False, 'error': 'Full name must be between 2 and 100 characters.'}), 400
+    if not re.fullmatch(r"[a-z0-9._-]{3,40}", username):
+        return jsonify({'success': False, 'error': 'User ID must be 3-40 characters using letters, numbers, dot, underscore, or hyphen.'}), 400
+    if len(email) > 160 or not re.fullmatch(r"[^\s@]+@[^\s@]+\.[^\s@]+", email):
+        return jsonify({'success': False, 'error': 'Enter a valid official email address.'}), 400
+    if not 8 <= len(password) <= 128:
+        return jsonify({'success': False, 'error': 'Password must be between 8 and 128 characters.'}), 400
+
+    try:
+        with auth_store_lock:
+            store = _read_auth_store()
+            duplicate = any(
+                _normalise_auth_identity(user.get("username")) == username
+                or _normalise_auth_identity(user.get("email")) == email
+                for user in store["users"]
+                if isinstance(user, dict)
+            )
+            pio_duplicate = any(
+                pio and (
+                    _normalise_auth_identity(pio.get("username")) == username
+                    or _normalise_auth_identity(pio.get("email")) == email
+                )
+                for pio in (
+                    _normalise_pio_user(item)
+                    for item in _read_pio_auth_store()["pios"]
+                )
+            )
+            if duplicate or pio_duplicate:
+                return jsonify({'success': False, 'error': 'An account already exists for this User ID or email.'}), 409
+            now = datetime.now(timezone.utc).isoformat()
+            user = {
+                "id": str(uuid4()), "fullName": full_name, "username": username,
+                "email": email, "role": "citizen", "passwordHash": _hash_auth_password(password),
+                "createdAt": now, "updatedAt": now,
+            }
+            store["users"].append(user)
+            _write_auth_store(store)
+        return jsonify({'success': True, 'user': _public_auth_user(user)}), 201
+    except Exception as error:
+        print(f"[Auth] Signup failed: {error}")
+        return jsonify({'success': False, 'error': 'Account could not be created.'}), 500
+
+
 @app.route('/auth/login', methods=['POST'])
 def auth_login():
-    """Dummy login route for front-end compatibility"""
-    return jsonify({
-        'success': True,
-        'token': 'dummy-token',
-        'user': {'username': 'admin'}
-    }), 200
+    data = request.get_json(silent=True) or {}
+    identifier = _normalise_auth_identity(data.get("identifier") or data.get("username"))
+    password = str(data.get("password") or "")
+    account_type = _normalise_auth_identity(data.get("accountType") or "citizen")
+    if account_type not in {"citizen", "pio"}:
+        return jsonify({'success': False, 'error': 'Choose Citizen Login or PIO Login.'}), 400
+    try:
+        with auth_store_lock:
+            store = _read_auth_store()
+            pio_store = _read_pio_auth_store()
+        pio_user = next((
+            pio for pio in (
+                _normalise_pio_user(item) for item in pio_store["pios"]
+            )
+            if pio and (
+                _normalise_auth_identity(pio.get("username")) == identifier
+                or _normalise_auth_identity(pio.get("email")) == identifier
+            )
+        ), None)
+        citizen_user = next((
+            item for item in store["users"]
+            if isinstance(item, dict) and (
+                _normalise_auth_identity(item.get("username")) == identifier
+                or _normalise_auth_identity(item.get("email")) == identifier
+            )
+        ), None)
+        if account_type == "pio" and pio_user:
+            if not _pio_password_matches(password, pio_user):
+                return jsonify({'success': False, 'error': 'Invalid User ID/email or password.'}), 401
+            user = _public_auth_user(pio_user, "pio")
+        elif account_type == "citizen" and citizen_user and _verify_auth_password(
+            password, str(citizen_user.get("passwordHash") or "")
+        ):
+            user = _public_auth_user(citizen_user, "citizen")
+        else:
+            return jsonify({'success': False, 'error': 'Invalid User ID/email or password.'}), 401
+        token = secrets.token_urlsafe(32)
+        auth_sessions[token] = {
+            "user": user,
+            "expires_at": time.time() + AUTH_SESSION_TTL_SECONDS,
+        }
+        return jsonify({'success': True, 'token': token, 'user': user}), 200
+    except Exception as error:
+        print(f"[Auth] Login failed: {error}")
+        return jsonify({'success': False, 'error': 'Sign in is temporarily unavailable.'}), 500
+
+
+@app.route('/auth/session', methods=['GET'])
+def auth_session():
+    token = _auth_bearer_token()
+    session = auth_sessions.get(token)
+    if not session or float(session.get("expires_at", 0)) <= time.time():
+        auth_sessions.pop(token, None)
+        return jsonify({'success': False, 'error': 'Session expired.'}), 401
+    return jsonify({'success': True, 'user': session["user"]}), 200
+
 
 @app.route('/auth/logout', methods=['POST'])
 def auth_logout():
-    """Dummy logout route for front-end compatibility"""
+    auth_sessions.pop(_auth_bearer_token(), None)
     return jsonify({'success': True}), 200
+
+
+def _current_auth_user() -> dict | None:
+    token = _auth_bearer_token()
+    session = auth_sessions.get(token)
+    if not session or float(session.get("expires_at", 0)) <= time.time():
+        auth_sessions.pop(token, None)
+        return None
+    return session.get("user")
+
+
+@app.before_request
+def enforce_pio_access_control():
+    """Citizens may use normal chat, but only manual PIO accounts may use PIO APIs."""
+    if request.method == "OPTIONS":
+        return None
+    path = request.path
+    pio_endpoint = path.startswith("/api/pio/") or path.startswith("/api/web-verification/")
+    pio_query = path in {"/api/query", "/api/query/stream"} and _as_bool(
+        (request.get_json(silent=True) or {}).get("pio_mode", False)
+    )
+    if not (pio_endpoint or pio_query):
+        return None
+    user = _current_auth_user()
+    if not user:
+        return jsonify({"success": False, "error": "Authentication required."}), 401
+    if user.get("role") != "pio":
+        return jsonify({
+            "success": False,
+            "error": "PIO mode is restricted to authorised PIO accounts.",
+        }), 403
+    return None
 
 # Store settings
 pipeline_initialized = False
@@ -307,6 +564,25 @@ pio_advisory_cache_lock = Lock()
 
 def _localized_message(answer_language: str, english: str, hindi: str) -> str:
     return hindi if normalise_answer_language(answer_language) == "hi" else english
+
+
+def _section4_verification_service():
+    """Load the optional verifier lazily so normal chat startup remains safe."""
+    from services.section4_web_verification import get_default_service
+
+    return get_default_service()
+
+
+def _section4_force_refresh_authorised(service) -> bool:
+    expected = str(getattr(service.config, "force_refresh_token", "") or "")
+    if not expected:
+        return False
+    supplied = request.headers.get("X-Section4-Force-Refresh-Token", "").strip()
+    if not supplied:
+        authorization = request.headers.get("Authorization", "").strip()
+        if authorization.casefold().startswith("bearer "):
+            supplied = authorization[7:].strip()
+    return bool(supplied) and secrets.compare_digest(supplied, expected)
 
 
 def _pio_request_answer_language(data: dict, advisory: dict | None = None) -> str:
@@ -353,6 +629,8 @@ def _store_pio_advisory(
             "expires_at": now + PIO_ADVISORY_TTL_SECONDS,
             "rti_extraction": pio_result["rti_extraction"],
             "legal_analysis": pio_result["legal_analysis"],
+            "rti_text": str(pio_result.get("rti_text") or "").strip(),
+            "web_verification": pio_result.get("web_verification"),
             "pio_advisory_report": pio_result["pio_advisory_report"],
             "validation": pio_result["validation"],
             "answer_language": normalise_answer_language(answer_language),
@@ -723,6 +1001,7 @@ def _pio_json_response_from_result(
         "validation": pio_result["validation"],
         "rti_extraction": pio_result["rti_extraction"],
         "legal_analysis": pio_result["legal_analysis"],
+        "web_verification": pio_result.get("web_verification"),
         "advisory_id": advisory_id,
         "precedent_search_available": bool(available_precedent_collections),
         "precedent_collections_available": available_precedent_collections,
@@ -1349,6 +1628,7 @@ def query_stream():
                         "validation": pio_result["validation"],
                         "rti_extraction": pio_result["rti_extraction"],
                         "legal_analysis": pio_result["legal_analysis"],
+                        "web_verification": pio_result.get("web_verification"),
                         "advisory_id": advisory_id,
                         "precedent_search_available": bool(available_precedent_collections),
                         "precedent_collections_available": available_precedent_collections,
@@ -1554,6 +1834,7 @@ def query():
                     "validation": pio_result["validation"],
                     "rti_extraction": pio_result["rti_extraction"],
                     "legal_analysis": pio_result["legal_analysis"],
+                    "web_verification": pio_result.get("web_verification"),
                     "advisory_id": advisory_id,
                     "precedent_search_available": bool(available_precedent_collections),
                     "precedent_collections_available": available_precedent_collections,
@@ -1680,6 +1961,127 @@ def query():
         ), 500
     
 
+@app.route('/api/web-verification/section-4', methods=['POST'])
+def section4_web_verification():
+    """Run the restricted Section 4 verifier without invoking normal chat twice."""
+    data = request.get_json(silent=True)
+    if not isinstance(data, dict):
+        return jsonify({"success": False, "error": "A JSON request object is required."}), 400
+
+    advisory_id = str(data.get("advisory_id") or "").strip()
+    advisory = _get_pio_advisory(advisory_id) if advisory_id else None
+    if advisory_id and advisory is None:
+        return jsonify({
+            "success": False,
+            "error": "The linked PIO advisory was not found or has expired.",
+        }), 404
+
+    query_text = str(data.get("query") or "").strip()
+    if advisory is not None:
+        query_text = str(advisory.get("rti_text") or "").strip()
+        rti_extraction = advisory.get("rti_extraction") or {}
+        legal_analysis = advisory.get("legal_analysis") or {}
+    else:
+        rti_extraction = data.get("rti_extraction")
+        legal_analysis = data.get("legal_analysis")
+
+    if not query_text:
+        return jsonify({"success": False, "error": "query is required."}), 400
+    if len(query_text) > 50_000:
+        return jsonify({"success": False, "error": "query exceeds the 50000 character limit."}), 413
+
+    if rti_extraction is None:
+        rti_extraction = {}
+    if legal_analysis is None:
+        legal_analysis = {}
+    if not isinstance(rti_extraction, dict) or not isinstance(legal_analysis, dict):
+        return jsonify({
+            "success": False,
+            "error": "rti_extraction and legal_analysis must be JSON objects.",
+        }), 400
+
+    force_refresh = _as_bool(data.get("force_refresh", False))
+    try:
+        service = _section4_verification_service()
+        if force_refresh and not _section4_force_refresh_authorised(service):
+            return jsonify({
+                "success": False,
+                "error": "force_refresh is not authorised.",
+            }), 403
+        result = service.verify(
+            query=query_text,
+            rti_extraction=rti_extraction,
+            legal_analysis=legal_analysis,
+            force_refresh=force_refresh,
+        )
+        if advisory_id:
+            with pio_advisory_cache_lock:
+                current = pio_advisory_cache.get(advisory_id)
+                if current is not None:
+                    current["web_verification"] = result
+        return jsonify(result), 200
+    except Exception:
+        return jsonify({
+            "success": False,
+            "triggered": True,
+            "status": "SOURCE_UNAVAILABLE",
+            "found_items": [],
+            "warnings": [
+                "Public-domain verification could not be completed; departmental records must still be checked."
+            ],
+            "errors": [{
+                "code": "VERIFIER_UNAVAILABLE",
+                "message": "The restricted verifier could not run safely.",
+            }],
+        }), 503
+
+
+@app.route('/api/web-verification/sources/<verification_id>', methods=['GET'])
+def section4_web_verification_sources(verification_id: str):
+    try:
+        result = _section4_verification_service().sources(verification_id)
+    except Exception:
+        result = None
+    if result is None:
+        return jsonify({"success": False, "error": "Verification result was not found or has expired."}), 404
+    return jsonify(result), 200
+
+
+@app.route('/api/web-verification/<verification_id>/retry', methods=['POST'])
+def retry_section4_web_verification(verification_id: str):
+    try:
+        result = _section4_verification_service().retry(verification_id)
+    except Exception:
+        return jsonify({
+            "success": False,
+            "verification_id": verification_id,
+            "triggered": True,
+            "status": "SOURCE_UNAVAILABLE",
+            "found_items": [],
+            "warnings": ["The approved sources remain temporarily unavailable."],
+            "errors": [{
+                "code": "RETRY_FAILED",
+                "message": "The restricted retry could not be completed safely.",
+            }],
+        }), 503
+    if result is None:
+        return jsonify({"success": False, "error": "Verification result was not found or has expired."}), 404
+    return jsonify(result), 200
+
+
+@app.route('/api/web-verification/health', methods=['GET'])
+def section4_web_verification_health():
+    try:
+        return jsonify(_section4_verification_service().health()), 200
+    except Exception:
+        return jsonify({
+            "enabled": False,
+            "status": "SOURCE_UNAVAILABLE",
+            "cache": "unavailable",
+            "sources": [],
+        }), 503
+
+
 @app.route('/api/pio/analyze', methods=['POST'])
 def pio_analyze():
     """
@@ -1732,6 +2134,7 @@ def pio_analyze():
             'answer_language': answer_language,
             'rti_extraction': result['rti_extraction'],
             'legal_analysis': result['legal_analysis'],
+            'web_verification': result.get('web_verification'),
             'pio_advisory_report': result['pio_advisory_report'],
             'validation': result['validation'],
             'advisory_id': advisory_id,
@@ -2524,8 +2927,9 @@ if __name__ == '__main__':
     print("="*70)
     print("\nRAG Pipeline Status: Deferred (loaded on demand)")
     print(f"Environment: {os.getenv('ENVIRONMENT', 'development')}")
-    print("\nThis Flask server is INTERNAL ONLY.")
-    print("Authentication is handled by Express.js at :3000")
+    print("\nJSON authentication and role access control are enabled.")
+    print(f"Citizen accounts: {AUTH_USERS_PATH}")
+    print(f"Manual PIO accounts: {AUTH_PIO_USERS_PATH}")
     
     flask_host = os.getenv('FLASK_HOST', '0.0.0.0')
     flask_port = int(os.getenv('FLASK_PORT', '5000'))

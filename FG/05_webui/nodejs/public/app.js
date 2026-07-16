@@ -6,6 +6,31 @@ const PIO_MODE_KEY = 'cg_rti_assistant_pio_mode_v1';
 const LANGUAGE_MODE_KEY = 'cg_rti_assistant_language_mode_v1';
 const MAX_CONTEXT_MESSAGES = 8;
 const MAX_HISTORY_ITEMS = 24;
+const AUTH_TOKEN_KEY = 'cg_rti_auth_token';
+const AUTH_USER_KEY = 'cg_rti_auth_user';
+
+function authToken() {
+  return localStorage.getItem(AUTH_TOKEN_KEY) || sessionStorage.getItem(AUTH_TOKEN_KEY) || '';
+}
+
+function authUser() {
+  const value = localStorage.getItem(AUTH_USER_KEY) || sessionStorage.getItem(AUTH_USER_KEY);
+  try { return value ? JSON.parse(value) : null; } catch (_) { return null; }
+}
+
+function clearAuth() {
+  [localStorage, sessionStorage].forEach(storage => {
+    storage.removeItem(AUTH_TOKEN_KEY);
+    storage.removeItem(AUTH_USER_KEY);
+  });
+}
+
+function saveAuth(token, user, remember) {
+  clearAuth();
+  const storage = remember ? localStorage : sessionStorage;
+  storage.setItem(AUTH_TOKEN_KEY, token);
+  storage.setItem(AUTH_USER_KEY, JSON.stringify(user));
+}
 
 const ASSISTANT_SCOPE = [
   'You are the Chhattisgarh CG RTI portal assistant for citizens.',
@@ -128,7 +153,23 @@ const TRANSLATIONS = {
     openMarkdown: 'Open extracted Markdown', loadingPdf: 'Loading PDF',
     pdfFetchFailed: 'PDF fetch failed: {status}', couldNotLoadPdf: 'Could not load PDF: {error}',
     loadingStructure: 'Loading structure', structureRequestFailed: 'structured.md request failed',
-    couldNotLoadStructure: 'Could not load structure: {error}'
+    couldNotLoadStructure: 'Could not load structure: {error}',
+    publicDomainVerification: 'Public-domain verification', verificationStatus: 'Status',
+    verificationFound: 'Found', verificationPartiallyFound: 'Partially found',
+    verificationNotFound: 'Not found', verificationSourceUnavailable: 'Source unavailable',
+    verifiedOfficialDocuments: 'Verified official documents: {count}',
+    searchedOfficialDomains: 'Searched official domains', lastChecked: 'Last checked',
+    availableFields: 'Available', missingFields: 'Missing', noneReported: 'None reported',
+    officialSource: 'Official source', publicationDate: 'Publication date',
+    pageNumber: 'Page', sectionHeading: 'Section', matchedEvidence: 'Matched evidence',
+    openOfficialSource: 'Open official source: {domain}',
+    someOfficialSourcesUnavailable: 'Some official sources could not be checked.',
+    retryUnavailableSources: 'Retry unavailable sources',
+    retryingVerification: 'Retrying verification...',
+    verificationRetryFailed: 'Public-domain verification retry failed.',
+    searchOfficialWeb: 'Search official websites',
+    searchingOfficialWeb: 'Searching official websites...',
+    officialWebSearchFailed: 'Official website search failed.'
   },
   hi: {
     documentTitle: 'आरटीआई सहायक - छत्तीसगढ़ पोर्टल', chatHistory: 'चैट इतिहास',
@@ -211,7 +252,23 @@ const TRANSLATIONS = {
     openMarkdown: 'निकाला गया Markdown खोलें', loadingPdf: 'PDF लोड हो रही है',
     pdfFetchFailed: 'PDF प्राप्त नहीं हो सकी: {status}', couldNotLoadPdf: 'PDF लोड नहीं हो सकी: {error}',
     loadingStructure: 'संरचना लोड हो रही है', structureRequestFailed: 'structured.md अनुरोध विफल रहा',
-    couldNotLoadStructure: 'संरचना लोड नहीं हो सकी: {error}'
+    couldNotLoadStructure: 'संरचना लोड नहीं हो सकी: {error}',
+    publicDomainVerification: 'सार्वजनिक-डोमेन सत्यापन', verificationStatus: 'स्थिति',
+    verificationFound: 'मिला', verificationPartiallyFound: 'आंशिक रूप से मिला',
+    verificationNotFound: 'नहीं मिला', verificationSourceUnavailable: 'स्रोत अनुपलब्ध',
+    verifiedOfficialDocuments: 'सत्यापित आधिकारिक दस्तावेज़: {count}',
+    searchedOfficialDomains: 'खोजे गए आधिकारिक डोमेन', lastChecked: 'अंतिम जाँच',
+    availableFields: 'उपलब्ध', missingFields: 'अनुपलब्ध', noneReported: 'कोई विवरण नहीं',
+    officialSource: 'आधिकारिक स्रोत', publicationDate: 'प्रकाशन तिथि',
+    pageNumber: 'पृष्ठ', sectionHeading: 'अनुभाग', matchedEvidence: 'मिलान किया गया साक्ष्य',
+    openOfficialSource: 'आधिकारिक स्रोत खोलें: {domain}',
+    someOfficialSourcesUnavailable: 'कुछ आधिकारिक स्रोतों की जाँच नहीं हो सकी।',
+    retryUnavailableSources: 'अनुपलब्ध स्रोतों को पुनः जाँचें',
+    retryingVerification: 'सत्यापन की पुनः जाँच जारी है...',
+    verificationRetryFailed: 'सार्वजनिक-डोमेन सत्यापन की पुनः जाँच विफल रही।',
+    searchOfficialWeb: 'आधिकारिक वेबसाइट खोजें',
+    searchingOfficialWeb: 'आधिकारिक वेबसाइटों पर खोज जारी है...',
+    officialWebSearchFailed: 'आधिकारिक वेबसाइट खोज विफल रही।'
   }
 };
 
@@ -222,17 +279,54 @@ const PRECEDENT_YES_CONFIRMATIONS = new Set([
 const PRECEDENT_NO_CONFIRMATIONS = new Set([
   'no', 'n', 'nahin', 'nahi', 'नहीं', 'नहि', 'ना'
 ]);
+const WEB_VERIFICATION_VISIBLE_STATUSES = new Set([
+  'FOUND',
+  'PARTIALLY_FOUND',
+  'NOT_FOUND',
+  'SOURCE_UNAVAILABLE'
+]);
+const WEB_VERIFICATION_STATUS_KEYS = {
+  FOUND: 'verificationFound',
+  PARTIALLY_FOUND: 'verificationPartiallyFound',
+  NOT_FOUND: 'verificationNotFound',
+  SOURCE_UNAVAILABLE: 'verificationSourceUnavailable'
+};
 
 
 const $ = id => document.getElementById(id);
 
 const ui = {
+  authScreen: $('auth-screen'),
+  appShell: $('app-shell'),
+  authRoleSelector: $('auth-role-selector'),
+  authRoleOptions: Array.from(document.querySelectorAll('[data-login-role]')),
+  loginForm: $('login-form'),
+  loginIdentifier: $('login-identifier'),
+  loginPassword: $('login-password'),
+  rememberLogin: $('remember-login'),
+  loginError: $('login-error'),
+  loginSubmit: $('login-submit'),
+  signupForm: $('signup-form'),
+  signupName: $('signup-name'),
+  signupUsername: $('signup-username'),
+  signupEmail: $('signup-email'),
+  signupPassword: $('signup-password'),
+  signupConfirm: $('signup-confirm'),
+  signupMessage: $('signup-message'),
+  signupSubmit: $('signup-submit'),
+  showSignup: $('show-signup'),
+  showLogin: $('show-login'),
+  forgotPassword: $('forgot-password'),
+  signedInAvatar: $('signed-in-avatar'),
+  signedInName: $('signed-in-name'),
+  logoutButton: $('logout-button'),
   newChat: $('new-chat'),
   clearChat: $('clear-chat'),
   historyList: $('history-list'),
   btnInit: $('btn-init'),
   btnSend: $('btn-send'),
   languageOptions: Array.from(document.querySelectorAll('[data-language-mode]')),
+  pioModeControl: $('pio-mode-control'),
   pioModeToggle: $('pio-mode-toggle'),
   pioModeState: $('pio-mode-state'),
   headModeLabel: $('head-mode-label'),
@@ -276,6 +370,8 @@ const state = {
   ocrModel: 'ollama',
   ocrError: '',
   loading: false,
+  authenticatedUser: null,
+  loginAccountType: 'citizen',
   pioMode: localStorage.getItem(PIO_MODE_KEY) === 'true',
   languageMode: normaliseLanguageMode(localStorage.getItem(LANGUAGE_MODE_KEY)),
   pdfBlobUrl: null,
@@ -284,21 +380,31 @@ const state = {
 };
 
 const api = {
-  async request(method, path, body) {
-    const opts = { method, headers: { 'Content-Type': 'application/json' } };
+  async request(method, path, body, requiresAuth = true) {
+    const headers = { 'Content-Type': 'application/json' };
+    if (requiresAuth && authToken()) headers.Authorization = `Bearer ${authToken()}`;
+    const opts = { method, headers };
     if (body !== undefined) opts.body = JSON.stringify(body);
 
     const res = await fetch(path, opts);
     const data = await res.json().catch(() => ({}));
+    if (requiresAuth && res.status === 401) handleUnauthorized();
     return { ok: res.ok, status: res.status, data };
   },
   async streamRequest(path, body, handlers = {}) {
     const res = await fetch(path, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${authToken()}`
+      },
       body: JSON.stringify(body || {})
     });
 
+    if (res.status === 401) {
+      handleUnauthorized();
+      throw new Error('Authentication required.');
+    }
     if (!res.body) {
       const data = await res.json().catch(() => ({}));
       throw new Error(data.error || `HTTP ${res.status}`);
@@ -343,6 +449,11 @@ const api = {
     buffer += decoder.decode();
     if (buffer.trim()) dispatchSseFrame(buffer);
   },
+  login: (identifier, password, accountType) =>
+    api.request('POST', '/auth/login', { identifier, password, accountType }, false),
+  signup: details => api.request('POST', '/auth/signup', details, false),
+  session: () => api.request('GET', '/auth/session'),
+  logout: () => api.request('POST', '/auth/logout'),
   health: () => api.request('GET', '/api/health'),
   init: () => api.request('POST', '/api/init'),
   dbStatus: () => api.request('GET', '/api/db-status'),
@@ -377,6 +488,16 @@ const api = {
       advisory_id: advisoryId,
       answer_language: normaliseLanguageMode(answerLanguage)
     }, handlers),
+  webVerification: advisoryId =>
+    api.request('POST', '/api/web-verification/section-4', {
+      advisory_id: advisoryId
+    }),
+  retryWebVerification: (verificationId, answerLanguage) =>
+    api.request(
+      'POST',
+      `/api/web-verification/${encodeURIComponent(verificationId)}/retry`,
+      { answer_language: normaliseLanguageMode(answerLanguage) }
+    ),
   async uploadPioPdf(file, answerLanguage) {
     const body = new FormData();
     body.append('pdf', file);
@@ -384,6 +505,7 @@ const api = {
 
     const res = await fetch('/api/pio/upload-pdf', {
       method: 'POST',
+      headers: { Authorization: `Bearer ${authToken()}` },
       body
     });
     const data = await res.json().catch(() => ({}));
@@ -392,7 +514,9 @@ const api = {
 
   documentStructure: actualPdf => api.request('POST', '/api/document-structure', { actual_pdf: actualPdf }),
   async fetchPdf(path) {
-    const res = await fetch(path);
+    const res = await fetch(path, {
+      headers: { Authorization: `Bearer ${authToken()}` }
+    });
     if (!res.ok) throw new Error(t('pdfFetchFailed', { status: res.status }));
     return res.blob();
   }
@@ -517,6 +641,360 @@ function escapeHtml(value) {
 function truncate(value, max = 700) {
   const text = String(value ?? '').trim();
   return text.length > max ? `${text.slice(0, max)}...` : text;
+}
+
+function normaliseWebVerificationStatus(value) {
+  const status = String(value || '').trim().toUpperCase();
+  if (status === 'SEARCH_NOT_TRIGGERED') return status;
+  return WEB_VERIFICATION_VISIBLE_STATUSES.has(status) ? status : '';
+}
+
+function isOfficialVerificationHostname(hostname) {
+  const value = String(hostname || '').trim().toLowerCase().replace(/\.$/, '');
+  return (
+    value === 'gov.in' ||
+    value.endsWith('.gov.in') ||
+    value === 'nic.in' ||
+    value.endsWith('.nic.in')
+  );
+}
+
+function officialVerificationUrl(value) {
+  try {
+    const url = new URL(String(value || '').trim());
+    if (url.protocol !== 'https:') return null;
+    if (url.username || url.password) return null;
+    if (url.port && url.port !== '443') return null;
+    if (!isOfficialVerificationHostname(url.hostname)) return null;
+    return url;
+  } catch (_) {
+    return null;
+  }
+}
+
+function verificationValues(value) {
+  const items = Array.isArray(value) ? value : value == null ? [] : [value];
+  const seen = new Set();
+  const values = [];
+
+  items.forEach(item => {
+    const candidate = typeof item === 'object' && item !== null
+      ? item.name || item.label || item.field || item.domain || item.value || ''
+      : item;
+    const text = String(candidate || '').trim();
+    const key = text.toLocaleLowerCase();
+    if (!text || seen.has(key)) return;
+    seen.add(key);
+    values.push(text);
+  });
+
+  return values;
+}
+
+function officialDomainFromValue(value) {
+  const directUrl = officialVerificationUrl(value);
+  if (directUrl) return directUrl.hostname.toLowerCase().replace(/\.$/, '');
+
+  try {
+    const candidate = new URL(`https://${String(value || '').trim()}`);
+    return isOfficialVerificationHostname(candidate.hostname)
+      ? candidate.hostname.toLowerCase().replace(/\.$/, '')
+      : '';
+  } catch (_) {
+    return '';
+  }
+}
+
+function verifiedWebSources(verification) {
+  const candidates = verification?.found_items
+    || verification?.verified_sources
+    || verification?.evidence
+    || verification?.evidence_items
+    || verification?.sources
+    || [];
+  if (!Array.isArray(candidates)) return [];
+
+  return candidates.reduce((sources, source) => {
+    if (!source || typeof source !== 'object' || source.verified !== true) {
+      return sources;
+    }
+
+    const url = officialVerificationUrl(source.final_url || source.url);
+    if (!url) return sources;
+    sources.push({ source, url });
+    return sources;
+  }, []);
+}
+
+function searchedOfficialDomains(verification, sources) {
+  const configured = verification?.searched_domains
+    || verification?.searched_sources
+    || verification?.official_domains
+    || [];
+  const domains = verificationValues(configured)
+    .map(officialDomainFromValue)
+    .filter(Boolean);
+  sources.forEach(({ url }) => domains.push(url.hostname.toLowerCase().replace(/\.$/, '')));
+  return [...new Set(domains)];
+}
+
+function effectiveWebVerificationStatus(verification, sources) {
+  const status = normaliseWebVerificationStatus(verification?.status);
+  if (['FOUND', 'PARTIALLY_FOUND'].includes(status) && !sources.length) {
+    return 'SOURCE_UNAVAILABLE';
+  }
+  return status;
+}
+
+function formatVerificationTimestamp(value) {
+  const date = new Date(value);
+  if (!value || Number.isNaN(date.getTime())) return '';
+  return new Intl.DateTimeFormat(localeTag(), {
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit',
+    timeZone: 'Asia/Kolkata',
+    timeZoneName: 'short'
+  }).format(date);
+}
+
+function formatVerificationDate(value) {
+  const date = new Date(value);
+  if (!value || Number.isNaN(date.getTime())) return String(value || '').trim();
+  return new Intl.DateTimeFormat(localeTag(), {
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric',
+    timeZone: 'Asia/Kolkata'
+  }).format(date);
+}
+
+function appendVerificationMeta(parent, label, value) {
+  const text = String(value || '').trim();
+  if (!text) return;
+
+  const item = document.createElement('div');
+  item.className = 'web-verification-meta-item';
+
+  const term = document.createElement('dt');
+  term.textContent = label;
+  const description = document.createElement('dd');
+  description.textContent = text;
+
+  item.appendChild(term);
+  item.appendChild(description);
+  parent.appendChild(item);
+}
+
+function appendVerificationFields(parent, label, values, modifier) {
+  const section = document.createElement('section');
+  section.className = `web-verification-field-group ${modifier}`;
+
+  const heading = document.createElement('h4');
+  heading.textContent = label;
+  section.appendChild(heading);
+
+  const list = document.createElement('ul');
+  const items = values.length ? values : [t('noneReported')];
+  items.forEach(value => {
+    const item = document.createElement('li');
+    item.textContent = value;
+    list.appendChild(item);
+  });
+  section.appendChild(list);
+  parent.appendChild(section);
+}
+
+function createWebVerificationSource(item, index) {
+  const { source, url } = item;
+  const card = document.createElement('article');
+  card.className = 'web-verification-source';
+
+  const title = document.createElement('h4');
+  title.textContent = truncate(
+    source.title || source.document_title || `${t('officialSource')} ${index + 1}`,
+    180
+  );
+  card.appendChild(title);
+
+  const metadata = document.createElement('dl');
+  metadata.className = 'web-verification-source-meta';
+  appendVerificationMeta(
+    metadata,
+    t('publicationDate'),
+    formatVerificationDate(source.publication_date || source.published_at)
+  );
+  appendVerificationMeta(metadata, t('pageNumber'), source.page_number);
+  appendVerificationMeta(metadata, t('sectionHeading'), source.section_heading || source.section);
+  if (metadata.childElementCount) card.appendChild(metadata);
+
+  const matchedText = truncate(
+    source.matched_text || source.matched_passage || source.passage || source.excerpt,
+    480
+  );
+  if (matchedText) {
+    const evidence = document.createElement('div');
+    evidence.className = 'web-verification-evidence';
+
+    const label = document.createElement('div');
+    label.className = 'web-verification-evidence-label';
+    label.textContent = t('matchedEvidence');
+
+    const quote = document.createElement('blockquote');
+    quote.textContent = matchedText;
+
+    evidence.appendChild(label);
+    evidence.appendChild(quote);
+    card.appendChild(evidence);
+  }
+
+  const link = document.createElement('a');
+  link.className = 'web-verification-source-link';
+  link.href = url.href;
+  link.target = '_blank';
+  link.rel = 'noopener noreferrer';
+  link.textContent = t('openOfficialSource', { domain: url.hostname });
+  link.setAttribute('aria-label', t('openOfficialSource', { domain: url.hostname }));
+  card.appendChild(link);
+
+  return card;
+}
+
+function createWebVerificationCard(message) {
+  const verification = message?.webVerification;
+  if (!verification || typeof verification !== 'object' || verification.triggered === false) {
+    return null;
+  }
+
+  const sources = verifiedWebSources(verification);
+  const status = effectiveWebVerificationStatus(verification, sources);
+  if (!WEB_VERIFICATION_VISIBLE_STATUSES.has(status)) return null;
+
+  const card = document.createElement('section');
+  card.className = 'web-verification-card';
+  card.dataset.status = status;
+  card.setAttribute('role', 'region');
+  card.setAttribute('aria-label', t('publicDomainVerification'));
+
+  const header = document.createElement('div');
+  header.className = 'web-verification-header';
+
+  const title = document.createElement('h3');
+  title.textContent = t('publicDomainVerification');
+  header.appendChild(title);
+
+  const statusLabel = document.createElement('span');
+  statusLabel.className = 'web-verification-status';
+  statusLabel.textContent = `${t('verificationStatus')}: ${t(WEB_VERIFICATION_STATUS_KEYS[status])}`;
+  header.appendChild(statusLabel);
+  card.appendChild(header);
+
+  const overview = document.createElement('dl');
+  overview.className = 'web-verification-overview';
+  appendVerificationMeta(
+    overview,
+    t('officialSource'),
+    t('verifiedOfficialDocuments', { count: sources.length })
+  );
+
+  const domains = searchedOfficialDomains(verification, sources);
+  appendVerificationMeta(overview, t('searchedOfficialDomains'), domains.join(', '));
+
+  const checkedAt = verification.checked_at
+    || verification.verified_at
+    || verification.verification_timestamp
+    || verification.completed_at;
+  appendVerificationMeta(overview, t('lastChecked'), formatVerificationTimestamp(checkedAt));
+  card.appendChild(overview);
+
+  const fields = document.createElement('div');
+  fields.className = 'web-verification-fields';
+  appendVerificationFields(
+    fields,
+    t('availableFields'),
+    verificationValues(verification.available_fields || verification.supported_fields),
+    'available'
+  );
+  appendVerificationFields(
+    fields,
+    t('missingFields'),
+    verificationValues(verification.missing_fields || verification.unsupported_fields),
+    'missing'
+  );
+  card.appendChild(fields);
+
+  if (status === 'SOURCE_UNAVAILABLE') {
+    const warning = document.createElement('p');
+    warning.className = 'web-verification-warning';
+    warning.textContent = t('someOfficialSourcesUnavailable');
+    card.appendChild(warning);
+  }
+
+  if (sources.length) {
+    const sourceList = document.createElement('div');
+    sourceList.className = 'web-verification-source-list';
+    sources.forEach((source, index) => {
+      sourceList.appendChild(createWebVerificationSource(source, index));
+    });
+    card.appendChild(sourceList);
+  }
+
+  const verificationId = String(verification.verification_id || verification.id || '').trim();
+  if (status === 'SOURCE_UNAVAILABLE' && verificationId) {
+    const actions = document.createElement('div');
+    actions.className = 'web-verification-actions';
+
+    const retry = document.createElement('button');
+    retry.type = 'button';
+    retry.className = 'web-verification-retry';
+    retry.disabled = Boolean(message.webVerificationRetrying);
+    retry.textContent = message.webVerificationRetrying
+      ? t('retryingVerification')
+      : t('retryUnavailableSources');
+    retry.addEventListener('click', () => handleWebVerificationRetry(message.id));
+    actions.appendChild(retry);
+    card.appendChild(actions);
+  }
+
+  return card;
+}
+
+async function handleWebVerificationRetry(messageId) {
+  const conversation = activeConversation();
+  const message = findConversationMessage(conversation, messageId);
+  if (!message || message.webVerificationRetrying) return;
+
+  const verification = message.webVerification;
+  const sources = verifiedWebSources(verification);
+  if (effectiveWebVerificationStatus(verification, sources) !== 'SOURCE_UNAVAILABLE') return;
+
+  const verificationId = String(verification?.verification_id || verification?.id || '').trim();
+  if (!verificationId) return;
+
+  message.webVerificationRetrying = true;
+  renderAll();
+
+  try {
+    const { ok, data } = await api.retryWebVerification(verificationId, state.languageMode);
+    if (!ok || data?.success === false) throw new Error('verification retry failed');
+
+    const refreshed = data?.web_verification || data?.verification || data?.result || data;
+    if (!refreshed || typeof refreshed !== 'object') {
+      throw new Error('invalid verification response');
+    }
+    const refreshedStatus = normaliseWebVerificationStatus(refreshed.status);
+    if (!refreshedStatus) throw new Error('missing verification status');
+
+    message.webVerification = refreshed;
+  } catch (_) {
+    toast(t('verificationRetryFailed'), 'error');
+  } finally {
+    message.webVerificationRetrying = false;
+    touchConversation(conversation);
+    renderAll();
+  }
 }
 
 function loadConversations() {
@@ -697,11 +1175,20 @@ function createMessageElement(message) {
     text.innerHTML = formatMessageText(visibleText);
     bubble.appendChild(text);
 
+    if (!message.pending && message.role === 'assistant' && message.webVerification) {
+      const verificationCard = createWebVerificationCard(message);
+      if (verificationCard) bubble.appendChild(verificationCard);
+    }
+
     if (!message.pending && message.role === 'assistant' && message.pioDetails) {
       bubble.appendChild(createPioAnalysisDetails(message.pioDetails));
     }
 
-    if (!message.pending && message.role === 'assistant' && message.precedentSearchAvailable) {
+    if (
+      !message.pending &&
+      message.role === 'assistant' &&
+      (message.precedentSearchAvailable || message.webSearchAvailable)
+    ) {
       bubble.appendChild(createPrecedentActionControls(message));
     }
 
@@ -914,6 +1401,19 @@ function createPrecedentActionControls(message) {
 
   const decision = message.precedentDecision || 'pending';
 
+  const appendWebButton = buttonRow => {
+    if (!message.webSearchAvailable) return;
+    const webButton = document.createElement('button');
+    webButton.type = 'button';
+    webButton.className = 'precedent-action-btn secondary web-search-action-btn';
+    webButton.textContent = message.webSearchInProgress
+      ? t('searchingOfficialWeb')
+      : t('searchOfficialWeb');
+    webButton.disabled = state.loading || message.webSearchInProgress;
+    webButton.addEventListener('click', () => handleWebSearch(message.id));
+    buttonRow.appendChild(webButton);
+  };
+
   if (decision === 'completed') {
     container.appendChild(createPrecedentReferencesDropdown(message));
 
@@ -939,17 +1439,26 @@ function createPrecedentActionControls(message) {
     }
 
     buttonRow.appendChild(button);
+    appendWebButton(buttonRow);
     container.appendChild(buttonRow);
     return container;
   }
 
   if (decision === 'declined') {
     container.innerHTML = `<span class="precedent-status">${escapeHtml(t('referencesNotAdded'))}</span>`;
+    const buttonRow = document.createElement('div');
+    buttonRow.className = 'precedent-action-buttons';
+    appendWebButton(buttonRow);
+    container.appendChild(buttonRow);
     return container;
   }
 
   if (decision === 'accepted') {
     container.innerHTML = `<span class="precedent-status">${escapeHtml(t('searchingDecisions'))}</span>`;
+    const buttonRow = document.createElement('div');
+    buttonRow.className = 'precedent-action-buttons';
+    appendWebButton(buttonRow);
+    container.appendChild(buttonRow);
     return container;
   }
 
@@ -979,8 +1488,39 @@ function createPrecedentActionControls(message) {
 
   buttonRow.appendChild(yesButton);
   buttonRow.appendChild(noButton);
+  appendWebButton(buttonRow);
   container.appendChild(buttonRow);
   return container;
+}
+
+async function handleWebSearch(advisoryMessageId) {
+  const conversation = activeConversation();
+  const advisoryMessage = findConversationMessage(conversation, advisoryMessageId);
+  if (!advisoryMessage || state.loading || !advisoryMessage.advisoryId) return;
+
+  advisoryMessage.webSearchInProgress = true;
+  state.loading = true;
+  disableQueryBar(t('searchingOfficialWeb'));
+  touchConversation(conversation);
+  renderAll();
+
+  try {
+    const { ok, data } = await api.webVerification(advisoryMessage.advisoryId);
+    if (!ok || data?.success === false) {
+      throw new Error(data?.error || t('officialWebSearchFailed'));
+    }
+    advisoryMessage.webVerification = data;
+    advisoryMessage.webSearchAvailable = false;
+  } catch (error) {
+    toast(error.message || t('officialWebSearchFailed'), 'error');
+  } finally {
+    advisoryMessage.webSearchInProgress = false;
+    state.loading = false;
+    enableQueryBar();
+    touchConversation(conversation);
+    renderAll();
+    updateFooterTime();
+  }
 }
 
 function normaliseConfirmation(text) {
@@ -1225,6 +1765,9 @@ function usePrompt(prompt) {
 }
 
 function updatePioModeUi() {
+  const pioAccess = state.authenticatedUser?.role === 'pio';
+  ui.pioModeControl.classList.toggle('hidden', !pioAccess);
+  if (!pioAccess) state.pioMode = false;
   ui.pioModeToggle.checked = state.pioMode;
   ui.pioModeState.textContent = state.pioMode ? t('on') : t('off');
   ui.headModeLabel.textContent = state.pioMode
@@ -1236,7 +1779,7 @@ function updatePioModeUi() {
 }
 
 function setPioMode(enabled) {
-  state.pioMode = Boolean(enabled);
+  state.pioMode = state.authenticatedUser?.role === 'pio' && Boolean(enabled);
   localStorage.setItem(PIO_MODE_KEY, state.pioMode ? 'true' : 'false');
   updatePioModeUi();
 }
@@ -1440,8 +1983,10 @@ function buildAssistantResponseMessage(messageId, data, fallbackAnswer = '') {
     content: answer,
     display: answer,
     results: data.results || [],
+    webVerification: data.web_verification || null,
     pioDetails: buildPioDetails(data),
     advisoryId: data.advisory_id || null,
+    webSearchAvailable: Boolean(data.advisory_id),
     precedentSearchAvailable: Boolean(
       data.precedent_search_available && data.advisory_id
     ),
@@ -1896,6 +2441,141 @@ function toast(message, type = 'info', duration = 3500) {
   setTimeout(() => el.remove(), duration);
 }
 
+function setAuthMessage(element, message = '', type = 'error') {
+  element.textContent = message;
+  element.classList.toggle('hidden', !message);
+  element.classList.toggle('error', Boolean(message) && type === 'error');
+  element.classList.toggle('success', Boolean(message) && type === 'success');
+}
+
+function updateLoginRoleUi() {
+  const pioLogin = state.loginAccountType === 'pio';
+  const signupVisible = !ui.signupForm.classList.contains('hidden');
+  ui.authRoleOptions.forEach(button => {
+    const active = button.dataset.loginRole === state.loginAccountType;
+    button.classList.toggle('is-active', active);
+    button.setAttribute('aria-pressed', active ? 'true' : 'false');
+  });
+  ui.loginSubmit.textContent = pioLogin ? 'Sign In as PIO' : 'Sign In as Citizen';
+  ui.loginIdentifier.placeholder = pioLogin ? 'Enter PIO email or User ID...' : 'Enter your ID...';
+  ui.showSignup.classList.toggle('hidden', pioLogin || signupVisible);
+}
+
+function setLoginAccountType(role) {
+  state.loginAccountType = role === 'pio' ? 'pio' : 'citizen';
+  setAuthMessage(ui.loginError);
+  updateLoginRoleUi();
+  ui.loginIdentifier.focus();
+}
+
+function showAuthView(view = 'login') {
+  const signup = view === 'signup';
+  ui.authScreen.classList.remove('hidden');
+  ui.appShell.classList.add('hidden');
+  ui.loginForm.classList.toggle('hidden', signup);
+  ui.signupForm.classList.toggle('hidden', !signup);
+  ui.authRoleSelector.classList.toggle('hidden', signup);
+  ui.showSignup.classList.toggle('hidden', signup || state.loginAccountType === 'pio');
+  ui.forgotPassword.classList.toggle('hidden', signup);
+  ui.showLogin.classList.toggle('hidden', !signup);
+  setAuthMessage(ui.loginError);
+  setAuthMessage(ui.signupMessage);
+  updateLoginRoleUi();
+  setTimeout(() => (signup ? ui.signupName : ui.loginIdentifier).focus(), 0);
+}
+
+function showAuthenticatedApp(user = authUser()) {
+  state.authenticatedUser = user || null;
+  ui.authScreen.classList.add('hidden');
+  ui.appShell.classList.remove('hidden');
+  ui.signedInName.textContent = user?.fullName || user?.username || 'User';
+  ui.signedInAvatar.textContent = user?.role === 'pio' ? 'PIO' : 'Citizen';
+  if (user?.role !== 'pio') localStorage.removeItem(PIO_MODE_KEY);
+  updatePioModeUi();
+}
+
+function handleUnauthorized() {
+  state.authenticatedUser = null;
+  setPioMode(false);
+  clearAuth();
+  showAuthView('login');
+  setAuthMessage(ui.loginError, 'Your session expired. Please sign in again.');
+}
+
+async function handleLogin(event) {
+  event.preventDefault();
+  const identifier = ui.loginIdentifier.value.trim();
+  const password = ui.loginPassword.value;
+  setAuthMessage(ui.loginError);
+  if (!identifier || !password) {
+    setAuthMessage(ui.loginError, 'Enter your User ID/email and password.');
+    return;
+  }
+
+  ui.loginSubmit.disabled = true;
+  ui.loginSubmit.textContent = 'Signing in...';
+  try {
+    const { ok, data } = await api.login(identifier, password, state.loginAccountType);
+    if (!ok || !data.success) throw new Error(data.error || 'Sign in failed.');
+    saveAuth(data.token, data.user, ui.rememberLogin.checked);
+    showAuthenticatedApp(data.user);
+    await initPipeline();
+  } catch (error) {
+    setAuthMessage(ui.loginError, error.message || 'Sign in failed.');
+  } finally {
+    ui.loginSubmit.disabled = false;
+    updateLoginRoleUi();
+  }
+}
+
+async function handleSignup(event) {
+  event.preventDefault();
+  setAuthMessage(ui.signupMessage);
+  if (ui.signupPassword.value !== ui.signupConfirm.value) {
+    setAuthMessage(ui.signupMessage, 'Passwords do not match.');
+    return;
+  }
+
+  ui.signupSubmit.disabled = true;
+  ui.signupSubmit.textContent = 'Creating account...';
+  try {
+    const { ok, data } = await api.signup({
+      fullName: ui.signupName.value,
+      username: ui.signupUsername.value,
+      email: ui.signupEmail.value,
+      password: ui.signupPassword.value,
+    });
+    if (!ok || !data.success) throw new Error(data.error || 'Account creation failed.');
+    ui.loginIdentifier.value = data.user?.username || ui.signupUsername.value.trim();
+    ui.signupForm.reset();
+    showAuthView('login');
+    setAuthMessage(ui.loginError, 'Account created. You can now sign in.', 'success');
+  } catch (error) {
+    setAuthMessage(ui.signupMessage, error.message || 'Account creation failed.');
+  } finally {
+    ui.signupSubmit.disabled = false;
+    ui.signupSubmit.textContent = 'Create Account';
+  }
+}
+
+async function handleLogout() {
+  await api.logout().catch(() => {});
+  state.authenticatedUser = null;
+  setPioMode(false);
+  clearAuth();
+  ui.loginForm.reset();
+  showAuthView('login');
+}
+
+function togglePassword(button) {
+  const input = $(button.dataset.passwordTarget);
+  if (!input) return;
+  const reveal = input.type === 'password';
+  input.type = reveal ? 'text' : 'password';
+  button.textContent = reveal ? 'Hide' : 'Show';
+  button.setAttribute('aria-label', reveal ? 'Hide password' : 'Show password');
+}
+
 function startNewChat() {
   createConversation(true);
   saveConversations();
@@ -1916,6 +2596,20 @@ function clearActiveChat() {
 }
 
 function setupEvents() {
+  ui.loginForm.addEventListener('submit', handleLogin);
+  ui.signupForm.addEventListener('submit', handleSignup);
+  ui.showSignup.addEventListener('click', () => showAuthView('signup'));
+  ui.showLogin.addEventListener('click', () => showAuthView('login'));
+  ui.authRoleOptions.forEach(button => {
+    button.addEventListener('click', () => setLoginAccountType(button.dataset.loginRole));
+  });
+  ui.logoutButton.addEventListener('click', handleLogout);
+  ui.forgotPassword.addEventListener('click', () => {
+    setAuthMessage(ui.loginError, 'Contact the Chhattisgarh Citizen Helpdesk to reset your password.');
+  });
+  document.querySelectorAll('[data-password-target]').forEach(button => {
+    button.addEventListener('click', () => togglePassword(button));
+  });
   ui.newChat.addEventListener('click', startNewChat);
   ui.clearChat.addEventListener('click', clearActiveChat);
   ui.btnInit.addEventListener('click', initPipeline);
@@ -1950,14 +2644,28 @@ function setupEvents() {
   });
 }
 
-function boot() {
+async function boot() {
   loadConversations();
   updateLanguageModeUi();
   applyTranslations();
   updatePioModeUi();
   setupEvents();
   renderAll();
-  initPipeline();
+  if (authToken()) {
+    try {
+      const { ok, data } = await api.session();
+      if (ok && data.success) {
+        showAuthenticatedApp(data.user);
+        await initPipeline();
+      } else {
+        handleUnauthorized();
+      }
+    } catch (_) {
+      handleUnauthorized();
+    }
+  } else {
+    showAuthView('login');
+  }
   updateFooterTime();
   setInterval(updateFooterTime, 1000);
 }

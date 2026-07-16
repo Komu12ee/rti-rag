@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "pios": [
+    {
+      "name": "Authorised PIO Name",
+      "email": "pio@department.gov.in",
+      "password": "replace-with-password",
+      "active": true
+    }
+  ]
+}

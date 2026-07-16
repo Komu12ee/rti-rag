@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node server.js",
     "dev": "NODE_ENV=development node server.js",
-    "add-user": "node scripts/add-user.js"
+    "add-user": "node scripts/add-user.js",
+    "test": "node --test auth-store.test.js"
   },
   "engines": {
     "node": ">=18"
