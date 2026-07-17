@@ -6,6 +6,12 @@
       "email": "shridhar.diwan@cgchips.in",
       "password": "Chips#1234@",
       "active": true
+    },
+    {
+      "name": "admin",
+      "email": "admin@gmail.com",
+      "password": "StrongPass123",
+      "active": true
     }
   ]
 }
