@@ -1311,29 +1311,36 @@ def _generate_json_with_one_retry(
     reasoning_effort: str,
     json_schema: dict[str, Any],
     json_schema_name: str,
+    retry_max_tokens: int | None = None,
+    retry_reasoning_effort: str | None = None,
 ) -> dict[str, Any]:
     """Generate and validate JSON, with one correction retry for malformed output."""
     last_error: Exception | None = None
 
     for attempt in range(2):
         correction = ""
+        request_max_tokens = max_tokens
+        request_reasoning_effort: str | None = reasoning_effort
         if attempt == 1:
+            request_max_tokens = retry_max_tokens or max(max_tokens * 2, 6000)
+            request_reasoning_effort = retry_reasoning_effort
             correction = f"""
 
 Your previous output failed backend validation:
 {last_error}
 
-Correct the issue. Return the complete JSON object only; do not add explanation.
+Correct the issue. Return the complete JSON object only; do not add explanation
+or reasoning. Keep the response concise and satisfy the supplied JSON schema.
 """
 
         try:
             generated = generate_text(
                 prompt=f"{prompt}{correction}",
                 temperature=0.0,
-                max_tokens=max_tokens,
+                max_tokens=request_max_tokens,
                 timeout_seconds=int(os.getenv("PIO_LLM_TIMEOUT_SECONDS", "240")),
                 json_mode=True,
-                reasoning_effort=reasoning_effort,
+                reasoning_effort=request_reasoning_effort,
                 json_schema=json_schema,
                 json_schema_name=json_schema_name,
             )
@@ -1499,10 +1506,12 @@ def _prepare_pio_advisory_context(
         stage_name="Sarvam Call 1 (RTI extraction)",
         prompt=_build_extraction_prompt(rti_text),
         validate=_validate_extraction,
-        max_tokens=int(os.getenv("PIO_EXTRACTION_MAX_TOKENS", "3000")),
+        max_tokens=int(os.getenv("PIO_EXTRACTION_MAX_TOKENS", "6000")),
         reasoning_effort="low",
         json_schema=RTI_EXTRACTION_SCHEMA,
         json_schema_name="rti_extraction",
+        retry_max_tokens=int(os.getenv("PIO_EXTRACTION_RETRY_MAX_TOKENS", "8000")),
+        retry_reasoning_effort=None,
     )
 
     legal_analysis = _generate_json_with_one_retry(

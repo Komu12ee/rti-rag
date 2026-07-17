@@ -1,0 +1,12 @@
+{
+  "pdf_name": "visal-fresh.pdf",
+  "total_pages": 2,
+  "direct_text_pages": 2,
+  "ocr_pages": 0,
+  "hybrid_pages": 0,
+  "failed_pages": 0,
+  "overall_confidence": 0.6,
+  "ocr_model": "sarvam",
+  "processing_time_seconds": 0.16,
+  "warnings": []
+}
