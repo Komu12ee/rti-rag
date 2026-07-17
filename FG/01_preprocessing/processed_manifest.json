@@ -64402,6 +64402,29 @@
         "hybrid": 0,
         "failed": 0
       }
+    },
+    {
+      "pdf_name": "443.pdf",
+      "pdf_stem": "443",
+      "source_path": "C:\\Users\\hp\\current_status\\CHiPS-RTI-Project\\rti-rag\\FG\\05_webui\\uploads\\pio_pdf_advisory\\1c291ea0acfa4323a3c90223ef18eb51\\input\\443.pdf",
+      "file_size": 580208,
+      "sha256": "c19d65a8860ec46eb84e3ab975d2bfbcaabb910fa04a4722ad1477bc69461aae",
+      "stage1_status": "completed_smart",
+      "stage2_status": "completed_smart",
+      "stage1_output_dir": "",
+      "stage2_structured_md": "C:\\Users\\hp\\current_status\\CHiPS-RTI-Project\\rti-rag\\FG\\05_webui\\uploads\\pio_pdf_advisory\\1c291ea0acfa4323a3c90223ef18eb51\\stage2_output\\443\\structured.md",
+      "stage2_structured_json": "C:\\Users\\hp\\current_status\\CHiPS-RTI-Project\\rti-rag\\FG\\05_webui\\uploads\\pio_pdf_advisory\\1c291ea0acfa4323a3c90223ef18eb51\\stage2_output\\443\\structured.json",
+      "processed_at": "2026-07-17T05:22:58Z",
+      "updated_at": "2026-07-17T05:23:48Z",
+      "error": null,
+      "overall_confidence": 0.0,
+      "ocr_model": "sarvam",
+      "extraction_method_summary": {
+        "direct_text": 0,
+        "ocr": 3,
+        "hybrid": 0,
+        "failed": 0
+      }
     }
   ]
 }

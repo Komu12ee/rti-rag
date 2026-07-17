@@ -1322,7 +1322,11 @@ def _generate_json_with_one_retry(
         request_max_tokens = max_tokens
         request_reasoning_effort: str | None = reasoning_effort
         if attempt == 1:
-            request_max_tokens = retry_max_tokens or max(max_tokens * 2, 6000)
+            sarvam_max_tokens = int(os.getenv("SARVAM_MAX_TOKENS", "4090"))
+            request_max_tokens = min(
+                retry_max_tokens or max(max_tokens * 2, 4090),
+                sarvam_max_tokens,
+            )
             request_reasoning_effort = retry_reasoning_effort
             correction = f"""
 
@@ -1506,11 +1510,11 @@ def _prepare_pio_advisory_context(
         stage_name="Sarvam Call 1 (RTI extraction)",
         prompt=_build_extraction_prompt(rti_text),
         validate=_validate_extraction,
-        max_tokens=int(os.getenv("PIO_EXTRACTION_MAX_TOKENS", "6000")),
+        max_tokens=int(os.getenv("PIO_EXTRACTION_MAX_TOKENS", "4090")),
         reasoning_effort="low",
         json_schema=RTI_EXTRACTION_SCHEMA,
         json_schema_name="rti_extraction",
-        retry_max_tokens=int(os.getenv("PIO_EXTRACTION_RETRY_MAX_TOKENS", "8000")),
+        retry_max_tokens=int(os.getenv("PIO_EXTRACTION_RETRY_MAX_TOKENS", "4090")),
         retry_reasoning_effort=None,
     )
 
