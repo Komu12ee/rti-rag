@@ -277,6 +277,7 @@ PIO_PDF_UPLOAD_ROOT = Path(
 PIO_PDF_PREPROCESS_TIMEOUT_SECONDS = int(
     os.getenv("PIO_PDF_PREPROCESS_TIMEOUT_SECONDS", "300")
 )
+CIC_PDF_ROOT_OVERRIDE = os.getenv("CIC_PDF_ROOT", "").strip()
 SUPPORTED_OCR_MODELS = {"ollama", "sarvam"}
 SARVAM_SDK_REQUIREMENT = "sarvamai>=0.1.28,<0.2.0"
 
@@ -1028,6 +1029,16 @@ def get_document_artifact_paths(actual_pdf: str):
     """Return the precomputed ingestion artifacts associated with a PDF."""
     pdf_stem = safe_pdf_stem(actual_pdf)
     stage2_dir = PROJECT_ROOT / "01_preprocessing" / "stage2_output" / pdf_stem
+    cic_pdf_roots = []
+    if CIC_PDF_ROOT_OVERRIDE:
+        cic_pdf_roots.append(Path(CIC_PDF_ROOT_OVERRIDE))
+    cic_pdf_roots.extend(
+        [
+            PROJECT_ROOT / "01_preprocessing" / "cic_pdfs_past_cases",
+            PROJECT_ROOT / "01_preprocessing" / "cic_past_cases",
+            Path("/data/Rag2/FG/01_preprocessing/cic_past_cases"),
+        ]
+    )
     return {
         "doc_id": pdf_stem,
         "stage2_dir": stage2_dir,
@@ -1035,7 +1046,7 @@ def get_document_artifact_paths(actual_pdf: str):
         "structured_json": stage2_dir / "structured.json",
         "page_debug_dir": stage2_dir / "page_debug",
         "pdf_candidates": [
-            PROJECT_ROOT / "01_preprocessing" / "cic_pdfs_past_cases" / f"{pdf_stem}.pdf",
+            *(root / f"{pdf_stem}.pdf" for root in cic_pdf_roots),
             PROJECT_ROOT / "01_preprocessing" / "used_files" / f"{pdf_stem}.pdf",
         ],
     }
@@ -2916,9 +2927,16 @@ def serve_pdf(filename):
     if Path(filename).name != filename or '..' in filename:
         return jsonify({'error': 'Invalid filename'}), 403
 
-    pdf_roots = (
-        PROJECT_ROOT / '01_preprocessing' / 'cic_pdfs_past_cases',
-        PROJECT_ROOT / '01_preprocessing' / 'used_files',
+    pdf_roots = []
+    if CIC_PDF_ROOT_OVERRIDE:
+        pdf_roots.append(Path(CIC_PDF_ROOT_OVERRIDE))
+    pdf_roots.extend(
+        [
+            PROJECT_ROOT / '01_preprocessing' / 'cic_pdfs_past_cases',
+            PROJECT_ROOT / '01_preprocessing' / 'cic_past_cases',
+            Path('/data/Rag2/FG/01_preprocessing/cic_past_cases'),
+            PROJECT_ROOT / '01_preprocessing' / 'used_files',
+        ]
     )
     pdf_path = next(
         (root / filename for root in pdf_roots if (root / filename).is_file()),
