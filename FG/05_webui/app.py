@@ -4,7 +4,11 @@ Simple Flask-based interface for document question-answering
 """
 from dotenv import load_dotenv
 from services.hybrid_retriever import retrieve_from_all_sources
-from services.query_scope import extract_current_user_question
+from services.query_scope import (
+    extract_current_user_question,
+    format_conversation_context,
+    normalise_conversation_context,
+)
 from services.unified_answer_service import generate_unified_answer
 from services.unified_answer_service import (
     normalise_answer_language,
@@ -1532,6 +1536,9 @@ def query_stream():
 
     raw_query_text = str(data.get("query", ""))
     query_text = extract_current_user_question(raw_query_text)
+    conversation_context = format_conversation_context(
+        normalise_conversation_context(data.get("conversation_context"))
+    )
     pio_mode = _as_bool(data.get("pio_mode", False))
     answer_language = normalise_answer_language(data.get("answer_language", "en"))
     try:
@@ -1595,6 +1602,7 @@ def query_stream():
                 for event_type, payload in analyze_pio_application_stream(
                     rti_text=rti_application_text,
                     answer_language=answer_language,
+                    conversation_context=conversation_context,
                 ):
                     if event_type == "token":
                         answer_chunks.append(str(payload))
@@ -1683,6 +1691,7 @@ def query_stream():
                 for chunk in generate_answer_stream_fn(
                     legal_query,
                     qdrant_result.context_results,
+                    conversation_context=conversation_context,
                 ):
                     text = str(chunk)
                     answer_chunks.append(text)
@@ -1700,6 +1709,7 @@ def query_stream():
                     result=retrieval,
                     generate_answer_fn=generate_answer,
                     answer_language=answer_language,
+                    conversation_context=conversation_context,
                 )
                 answer = answer_result.answer
                 used_llm_answer = answer_result.used_llm
@@ -1764,6 +1774,9 @@ def query():
 
     raw_query_text = str(data.get("query", ""))
     query_text = extract_current_user_question(raw_query_text)
+    conversation_context = format_conversation_context(
+        normalise_conversation_context(data.get("conversation_context"))
+    )
     pio_mode = _as_bool(data.get("pio_mode", False))
     answer_language = normalise_answer_language(data.get("answer_language", "en"))
     try:
@@ -1804,6 +1817,7 @@ def query():
             pio_result = analyze_pio_application(
                 rti_text=rti_application_text,
                 answer_language=answer_language,
+                conversation_context=conversation_context,
             )
 
             elapsed = time.time() - query_start_time
@@ -1902,6 +1916,7 @@ def query():
             result=retrieval,
             generate_answer_fn=generate_answer,
             answer_language=answer_language,
+            conversation_context=conversation_context,
         )
 
         formatted_results = _format_unified_evidence_for_frontend(

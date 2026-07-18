@@ -4,7 +4,8 @@ const STORAGE_KEY = 'cg_rti_assistant_conversations_v1';
 const ACTIVE_KEY = 'cg_rti_assistant_active_conversation_v1';
 const PIO_MODE_KEY = 'cg_rti_assistant_pio_mode_v1';
 const LANGUAGE_MODE_KEY = 'cg_rti_assistant_language_mode_v1';
-const MAX_CONTEXT_MESSAGES = 8;
+const MAX_CONVERSATION_CONTEXT_MESSAGES = 5;
+const MAX_CONVERSATION_CONTEXT_MESSAGE_CHARS = 1200;
 const MAX_HISTORY_ITEMS = 24;
 const AUTH_TOKEN_KEY = 'cg_rti_auth_token';
 const AUTH_USER_KEY = 'cg_rti_auth_user';
@@ -31,20 +32,6 @@ function saveAuth(token, user, remember) {
   storage.setItem(AUTH_TOKEN_KEY, token);
   storage.setItem(AUTH_USER_KEY, JSON.stringify(user));
 }
-
-const ASSISTANT_SCOPE = [
-  'You are the Chhattisgarh CG RTI portal assistant for citizens.',
-  'Answer questions about how to use the CG RTI portal: registration, filing RTI, fee payment, first appeal, status tracking, and PIO or department contact details.',
-  'Answer basic RTI Act questions: what RTI is, time limits, fees, first appeal process, and the basics of Sections 6, 7, 8, and 19.',
-  'Answer questions about portal documents: manuals, FAQs, circulars, process charts, public notices, and PIO or department directories.',
-  'If the question is outside this scope, briefly redirect the user to CG RTI portal help or RTI Act basics.'
-].join(' ');
-
-const PIO_ASSISTANT_SCOPE = [
-  'PIO Mode is enabled.',
-  'Keep normal citizen guidance, RTI Act questions, PIO/FAA lookup, legal retrieval, and document questions available.',
-  'Use the PIO advisory workflow only when the user explicitly asks to prepare, draft, or analyse a response to a complete RTI application.'
-].join(' ');
 
 const DEFAULT_PROMPT_KEYS = [
   'promptRegister',
@@ -457,19 +444,21 @@ const api = {
   health: () => api.request('GET', '/api/health'),
   init: () => api.request('POST', '/api/init'),
   dbStatus: () => api.request('GET', '/api/db-status'),
-  query: (query, numResults, pioMode, answerLanguage) =>
+  query: (query, numResults, pioMode, answerLanguage, conversationContext = []) =>
     api.request('POST', '/api/query', {
       query,
       num_results: numResults,
       pio_mode: Boolean(pioMode),
-      answer_language: normaliseLanguageMode(answerLanguage)
+      answer_language: normaliseLanguageMode(answerLanguage),
+      conversation_context: conversationContext
     }),
-  queryStream: (query, numResults, pioMode, answerLanguage, handlers) =>
+  queryStream: (query, numResults, pioMode, answerLanguage, handlers, conversationContext = []) =>
     api.streamRequest('/api/query/stream', {
       query,
       num_results: numResults,
       pio_mode: Boolean(pioMode),
-      answer_language: normaliseLanguageMode(answerLanguage)
+      answer_language: normaliseLanguageMode(answerLanguage),
+      conversation_context: conversationContext
     }, handlers),
   pioPrecedents: (advisoryId, numResults = 5, answerLanguage) =>
     api.request('POST', '/api/pio/precedents', {
@@ -1951,27 +1940,21 @@ async function bootStatus() {
   }
 }
 
-function buildScopedQuery(userText) {
-  const conversation = activeConversation();
-  const backendQuestion = String(userText || '').trim();
-
-  const recent = conversation.messages
-    .filter(m => !m.pending)
-    .slice(-MAX_CONTEXT_MESSAGES)
-    .map(m => {
-      const role = m.role === 'user' ? 'User' : 'Assistant';
-      return `${role}: ${truncate(m.display || m.content, 700)}`;
-    })
-    .join('\n');
-
-  return [
-    `Current user question: ${backendQuestion}`,
-    recent ? `Recent conversation context:\n${recent}` : '',
-    `Required answer language:\n${answerLanguageInstruction(state.languageMode)}`,
-    `Assistant role and answer scope:\n${
-      state.pioMode ? PIO_ASSISTANT_SCOPE : ASSISTANT_SCOPE
-    }`
-  ].filter(Boolean).join('\n\n');
+function buildConversationContext(conversation) {
+  return conversation.messages
+    .filter(message => (
+      !message.pending &&
+      (message.role === 'user' || message.role === 'assistant')
+    ))
+    .slice(-MAX_CONVERSATION_CONTEXT_MESSAGES)
+    .map(message => ({
+      role: message.role,
+      content: truncate(
+        String(message.content || message.display || ''),
+        MAX_CONVERSATION_CONTEXT_MESSAGE_CHARS
+      ).trim()
+    }))
+    .filter(message => message.content);
 }
 
 
@@ -2015,6 +1998,7 @@ async function sendQuery() {
   if (!text || state.loading) return;
 
   const conversation = activeConversation();
+  const conversationContext = buildConversationContext(conversation);
   const pendingOffer = getPendingPrecedentOffer(conversation);
   if (pendingOffer && isPrecedentYes(text)) {
     ui.queryInput.value = '';
@@ -2064,13 +2048,12 @@ async function sendQuery() {
   renderAll();
 
   try {
-    const scopedQuery = buildScopedQuery(text);
     let finalData = null;
     let streamError = null;
     let streamedAnswer = '';
 
     await api.queryStream(
-      scopedQuery,
+      text,
       5,
       state.pioMode,
       state.languageMode,
@@ -2100,7 +2083,8 @@ async function sendQuery() {
         error(data) {
           streamError = data.error || t('queryFailed');
         }
-      }
+      },
+      conversationContext
     );
 
     const index = conversation.messages.findIndex(m => m.id === pendingMessage.id);
