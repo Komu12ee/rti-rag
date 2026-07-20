@@ -6,6 +6,8 @@ from services.query_router import route_query
 
 
 TEST_QUERIES = [
+    "get me the email of balod collectorate",
+    "pio of the raipur chips department ?",
     "पकराड़ी स्कूल का PIO कौन है?",
     "बलरामपुर जिले के PIO का email दिखाइए",
     "rr1901138@gmail.com का officer record दिखाओ",

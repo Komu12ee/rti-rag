@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 from typing import Any, Literal
 
 from services.officer_query_parser import (
@@ -48,6 +48,23 @@ def _deduplicate_assignment_rows(
         unique_rows.append(row)
 
     return unique_rows
+
+
+def _prefer_office_name_matches(
+    rows: list[dict[str, Any]],
+    search_text: str | None,
+) -> list[dict[str, Any]]:
+    """Discard incidental address matches when an office-name match exists."""
+    needle = str(search_text or "").strip().casefold()
+    if not needle:
+        return rows
+
+    office_matches = [
+        row
+        for row in rows
+        if needle in str(row.get("office_name") or "").casefold()
+    ]
+    return office_matches or rows
 
 
 def _is_broad_directory_query(
@@ -134,9 +151,19 @@ def _choose_name_candidates(
 def lookup_officers(
     query: str,
     limit: int = 10,
+    default_role: str | None = None,
 ) -> OfficerLookupResult:
     criteria = parse_officer_query(query)
     limit = max(1, min(int(limit), 20))
+
+    if default_role and not criteria.rti_role:
+        normalized_default_role = default_role.strip().upper()
+        if normalized_default_role not in {"PIO", "FAA"}:
+            raise ValueError("default_role must be PIO, FAA, or None.")
+        criteria = replace(
+            criteria,
+            rti_role=normalized_default_role,
+        )
 
     if criteria.is_empty():
         return OfficerLookupResult(
@@ -221,6 +248,7 @@ def lookup_officers(
         department=criteria.department,
         limit=candidate_limit,
     )
+    rows = _prefer_office_name_matches(rows, criteria.search_text)
 
     return OfficerLookupResult(
         criteria=criteria,

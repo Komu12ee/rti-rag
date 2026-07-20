@@ -27,7 +27,7 @@ TEST_CASES = [
 
 def main() -> None:
     print("\n" + "=" * 95)
-    print("ROUTER A + ROUTER B RESOLVER TEST")
+    print("LLM ROUTE RESOLVER TEST")
     print("=" * 95)
 
     passed = 0
@@ -47,7 +47,7 @@ def main() -> None:
         print(f"\nQuery: {query}")
         print(f"Router A route:       {result.router_a.route.value}")
         print(f"Router A confidence:  {result.router_a.confidence}")
-        print(f"LLM fallback used:    {result.used_llm_fallback}")
+        print(f"LLM router used:      {result.used_llm_router}")
         print(f"Final route:          {actual_route}")
         print(f"Final confidence:     {result.final.confidence}")
         print(f"Final reason:         {result.final.reason}")

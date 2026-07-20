@@ -61,6 +61,8 @@ REMOVABLE_QUERY_TERMS = (
 "above",
 "given",
     "find",
+    "get me",
+    "get",
     "show",
     "list",
     "give",

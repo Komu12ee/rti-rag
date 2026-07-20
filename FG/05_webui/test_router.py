@@ -4,6 +4,8 @@ from services.retrieval_plan import Route
 
 TEST_CASES = [
     # PostgreSQL: officer registry facts
+    ("get me the email of balod collectorate", Route.POSTGRES),
+    ("pio of the raipur chips department ?", Route.POSTGRES),
     ("पकराड़ी स्कूल का PIO कौन है?", Route.POSTGRES),
     ("Who is the FAA for School Education Department in Balrampur?", Route.POSTGRES),
     ("Find officer using email rr1901138@gmail.com", Route.POSTGRES),
@@ -29,7 +31,7 @@ TEST_CASES = [
     ("पकराड़ी स्कूल के PIO का email और प्रथम अपील की प्रक्रिया बताओ", Route.HYBRID),
     ("मुंगेली के FAA का नाम और RTI Act में उनकी भूमिका बताओ", Route.HYBRID),
 
-    # Unclear: Router B should decide later
+    # The LLM router should reject vague or unsupported requests.
     ("मेरे स्कूल की RTI वाली जानकारी बताओ", Route.UNCLEAR),
     ("मुझे मदद चाहिए", Route.UNCLEAR),
     ("220260521007149 का status बताओ", Route.UNCLEAR),
@@ -40,7 +42,7 @@ def main() -> None:
     passed = 0
 
     print("\n" + "=" * 80)
-    print("ROUTER A TEST RESULTS")
+    print("LLM QUERY ROUTER TEST RESULTS")
     print("=" * 80)
 
     for query, expected_route in TEST_CASES:

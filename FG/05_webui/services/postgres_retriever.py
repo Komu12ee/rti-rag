@@ -43,6 +43,10 @@ def retrieve_officer_registry(
     lookup = lookup_officers(
         query=lookup_query,
         limit=limit,
+        # In an RTI assistant, a named public-authority contact request with
+        # no explicit role means its registered PIO contact. An explicit FAA
+        # role parsed from the query still takes precedence.
+        default_role="PIO",
     )
 
     return PostgresRetrievalResult(

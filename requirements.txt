@@ -78,6 +78,9 @@ transformers>=4.30.0               # Hugging Face transformers
 # STAGE 5: WEB UI & RETRIEVAL
 # ============================================================================
 
+# LLM orchestration
+langchain-core>=1.1.0,<2.0.0       # Sarvam chat-model interface and runnables
+
 # Web Framework
 Flask>=2.3.0                       # Web framework
 flask-cors>=4.0.0                  # CORS support

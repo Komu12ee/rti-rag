@@ -106,6 +106,7 @@ def _generate_with_sarvam(
     timeout_seconds: int,
     json_mode: bool,
     reasoning_effort: str | None,
+    disable_reasoning: bool = False,
     json_schema: dict[str, Any] | None = None,
     json_schema_name: str | None = None,
 ) -> str:
@@ -127,6 +128,11 @@ def _generate_with_sarvam(
             "Invalid reasoning_effort. Use low, medium, high, or None."
         )
 
+    if disable_reasoning and reasoning_effort is not None:
+        raise LLMProviderError(
+            "Use either disable_reasoning=True or reasoning_effort, not both."
+        )
+
     payload = {
         "model": model,
         "messages": [
@@ -140,7 +146,12 @@ def _generate_with_sarvam(
         "stream": False,
     }
 
-    if reasoning_effort is not None:
+    if disable_reasoning:
+        # Sarvam requires an explicit JSON null to disable thinking. Omitting
+        # this field enables the provider default, whose hidden reasoning
+        # tokens count against max_tokens and can leave content empty.
+        payload["reasoning_effort"] = None
+    elif reasoning_effort is not None:
         payload["reasoning_effort"] = reasoning_effort
 
     if json_schema is not None:
@@ -211,7 +222,7 @@ def _generate_with_sarvam(
             f"Sarvam returned empty content. Diagnostic: "
             f"{json.dumps(debug_info, ensure_ascii=False)}"
         )
-    
+
     return answer
 
 
@@ -345,11 +356,12 @@ def generate_text(
     timeout_seconds: int = 180,
     json_mode: bool = False,
     reasoning_effort: str | None = None,
+    disable_reasoning: bool = False,
     json_schema: dict[str, Any] | None = None,
     json_schema_name: str | None = None,
 ) -> str:
     """
-    One provider entry point for answer generation and Router B.
+    One provider entry point for answer generation and semantic routing.
 
     LLM_MODE=ollama -> local Ollama
     LLM_MODE=sarvam -> Sarvam API
@@ -375,6 +387,7 @@ def generate_text(
             timeout_seconds=sarvam_timeout,
             json_mode=json_mode,
             reasoning_effort=reasoning_effort,
+            disable_reasoning=disable_reasoning,
             json_schema=json_schema,
             json_schema_name=json_schema_name,
         )

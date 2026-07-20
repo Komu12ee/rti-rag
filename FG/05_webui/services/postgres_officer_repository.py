@@ -445,6 +445,7 @@ def search_active_officers(
 
     conditions = ["oa.is_active = TRUE"]
     params: list[Any] = []
+    relevance_order = ""
 
     if role:
         conditions.append("oa.rti_role = %s")
@@ -478,6 +479,20 @@ def search_active_officers(
             """
         )
         params.extend([pattern] * 8)
+        relevance_order = """
+            CASE
+                WHEN ofc.office_name ILIKE %s THEN 0
+                WHEN ofc.office_section_name ILIKE %s THEN 1
+                WHEN d.department_name ILIKE %s THEN 2
+                WHEN o.officer_name ILIKE %s THEN 3
+                WHEN o.email ILIKE %s THEN 4
+                WHEN o.designation ILIKE %s THEN 5
+                WHEN ofc.office_address ILIKE %s THEN 6
+                WHEN dis.district_name ILIKE %s THEN 7
+                ELSE 8
+            END,
+        """
+        params.extend([pattern] * 8)
 
     where_clause = " AND ".join(conditions)
 
@@ -485,7 +500,12 @@ def search_active_officers(
         {BASE_SELECT}
         WHERE {where_clause}
         ORDER BY
-            oa.rti_role,
+            {relevance_order}
+            CASE oa.rti_role
+                WHEN 'PIO' THEN 0
+                WHEN 'FAA' THEN 1
+                ELSE 2
+            END,
             dis.district_name,
             d.department_name,
             ofc.office_name,

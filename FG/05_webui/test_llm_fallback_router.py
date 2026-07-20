@@ -1,4 +1,4 @@
-from services.llm_fallback_router import classify_with_llm
+from services.query_router import route_query
 
 
 TEST_QUERIES = [
@@ -12,11 +12,11 @@ TEST_QUERIES = [
 
 def main() -> None:
     print("\n" + "=" * 95)
-    print("ROUTER B — OLLAMA FALLBACK CLASSIFIER TEST")
+    print("LLM QUERY ROUTER TEST")
     print("=" * 95)
 
     for query in TEST_QUERIES:
-        decision = classify_with_llm(query)
+        decision = route_query(query)
 
         print(f"\nQuery: {query}")
         print(f"Route: {decision.route.value}")
