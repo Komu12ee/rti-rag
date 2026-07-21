@@ -3,7 +3,7 @@ name: Deploy RTI-RAG
 on:
   push:
     branches:
-      - citizen-facing
+      - main
 
 jobs:
   deploy:

@@ -1,0 +1,224 @@
+{
+  "schema_version": "1.0",
+  "name": "CG RTI reviewed starter benchmark",
+  "description": "Eight reviewed cases covering PostgreSQL officer lookup, legal Qdrant retrieval, and hybrid routing.",
+  "reviewed_on": "2026-07-20",
+  "cases": [
+    {
+      "question": "CHiPS PIO",
+      "expected_answer": "The CHiPS Public Information Officer is Amitabh Sharma (\u0905\u092e\u093f\u0924\u093e\u092d \u0936\u0930\u094d\u092e\u093e), Chief Operating Officer. The official email is coo@cgchips.in and the office code is 9220007482.",
+      "relevant_documents": [
+        "9220007482"
+      ],
+      "expected_citations": [
+        "CG RTI Officer Registry"
+      ],
+      "expected_route": "POSTGRES",
+      "language": "en",
+      "category": "officer_lookup",
+      "tags": [
+        "postgresql",
+        "pio",
+        "chips",
+        "reviewed"
+      ],
+      "metadata": {
+        "case_id": "directory-chips-pio-001",
+        "difficulty": "basic",
+        "review_status": "reviewed",
+        "reviewed_on": "2026-07-20",
+        "ground_truth_basis": "Live PostgreSQL officer registry lookup"
+      }
+    },
+    {
+      "question": "Balod Collectorate PIO",
+      "expected_answer": "The PIO for Collectorate Office Balod is SMT PRACHI THAKUR, Deputy Collector. The official email is pio-balod@cg.gov.in and the office code is 9220003622.",
+      "relevant_documents": [
+        "9220003622"
+      ],
+      "expected_citations": [
+        "CG RTI Officer Registry"
+      ],
+      "expected_route": "POSTGRES",
+      "language": "en",
+      "category": "officer_lookup",
+      "tags": [
+        "postgresql",
+        "pio",
+        "balod",
+        "collectorate",
+        "reviewed"
+      ],
+      "metadata": {
+        "case_id": "directory-balod-pio-002",
+        "difficulty": "basic",
+        "review_status": "reviewed",
+        "reviewed_on": "2026-07-20",
+        "ground_truth_basis": "Live PostgreSQL officer registry lookup"
+      }
+    },
+    {
+      "question": "FAA Revenue Department in Balod",
+      "expected_answer": "The First Appellate Authority for the Revenue Department in Balod is Shri Chandrakant Kaushik (\u0936\u094d\u0930\u0940 \u091a\u0928\u094d\u0926\u094d\u0930\u0915\u093e\u0902\u0924 \u0915\u094c\u0936\u093f\u0915), Additional Collector. The official email is faa-balod57@cg.gov.in.",
+      "relevant_documents": [
+        "faa-balod57@cg.gov.in"
+      ],
+      "expected_citations": [
+        "CG RTI Officer Registry"
+      ],
+      "expected_route": "POSTGRES",
+      "language": "en",
+      "category": "officer_lookup",
+      "tags": [
+        "postgresql",
+        "faa",
+        "balod",
+        "revenue",
+        "reviewed"
+      ],
+      "metadata": {
+        "case_id": "directory-balod-faa-003",
+        "difficulty": "basic",
+        "review_status": "reviewed",
+        "reviewed_on": "2026-07-20",
+        "ground_truth_basis": "Live PostgreSQL officer registry lookup"
+      }
+    },
+    {
+      "question": "Under Section 7(1) of the RTI Act, how long does a public authority have to respond to a normal RTI application?",
+      "expected_answer": "A normal RTI request must be decided within 30 days of receipt. If the requested information concerns a person's life or physical liberty, it must be provided within 48 hours.",
+      "relevant_documents": [
+        "rti-rule-book"
+      ],
+      "expected_citations": [
+        "rti-rule-book"
+      ],
+      "expected_route": "QDRANT",
+      "language": "en",
+      "category": "section_7",
+      "tags": [
+        "qdrant",
+        "legal",
+        "response-deadline",
+        "reviewed"
+      ],
+      "metadata": {
+        "case_id": "legal-section-7-1-004",
+        "difficulty": "basic",
+        "review_status": "reviewed",
+        "reviewed_on": "2026-07-20",
+        "ground_truth_basis": "RTI Act Section 7(1) source material and indexed rti-rule-book"
+      }
+    },
+    {
+      "question": "If an RTI application is sent to the wrong public authority, what must happen under Section 6(3)?",
+      "expected_answer": "The receiving public authority must transfer the application, or the relevant part of it, to the appropriate public authority as soon as practicable and no later than five days after receipt. It must immediately inform the applicant of the transfer.",
+      "relevant_documents": [
+        "RTI_Act_2005_Source_Text_QA"
+      ],
+      "expected_citations": [
+        "RTI_Act_2005_Source_Text_QA"
+      ],
+      "expected_route": "QDRANT",
+      "language": "en",
+      "category": "section_6",
+      "tags": [
+        "qdrant",
+        "legal",
+        "application-transfer",
+        "reviewed"
+      ],
+      "metadata": {
+        "case_id": "legal-section-6-3-005",
+        "difficulty": "intermediate",
+        "review_status": "reviewed",
+        "reviewed_on": "2026-07-20",
+        "ground_truth_basis": "RTI Act Section 6(3) source material and indexed source-text QA"
+      }
+    },
+    {
+      "question": "What is the deadline for filing a first appeal under Section 19 of the RTI Act?",
+      "expected_answer": "A first appeal should be filed within 30 days from expiry of the response period or receipt of the PIO's decision. The appellate authority may admit a late appeal when sufficient cause prevented timely filing.",
+      "relevant_documents": [
+        "rti-rule-book"
+      ],
+      "expected_citations": [
+        "rti-rule-book"
+      ],
+      "expected_route": "QDRANT",
+      "language": "en",
+      "category": "section_19",
+      "tags": [
+        "qdrant",
+        "legal",
+        "first-appeal",
+        "reviewed"
+      ],
+      "metadata": {
+        "case_id": "legal-section-19-006",
+        "difficulty": "intermediate",
+        "review_status": "reviewed",
+        "reviewed_on": "2026-07-20",
+        "ground_truth_basis": "RTI Act Section 19 source material and indexed rti-rule-book"
+      }
+    },
+    {
+      "question": "If the PIO misses the RTI response time limit, what does Section 7(6) require?",
+      "expected_answer": "When the public authority fails to comply with the applicable response time limit, the information must be provided free of charge under Section 7(6).",
+      "relevant_documents": [
+        "rti-rule-book"
+      ],
+      "expected_citations": [
+        "rti-rule-book"
+      ],
+      "expected_route": "QDRANT",
+      "language": "en",
+      "category": "section_7",
+      "tags": [
+        "qdrant",
+        "legal",
+        "late-response",
+        "language-regression",
+        "reviewed"
+      ],
+      "metadata": {
+        "case_id": "legal-section-7-6-007",
+        "difficulty": "basic",
+        "review_status": "reviewed",
+        "reviewed_on": "2026-07-20",
+        "ground_truth_basis": "RTI Act Section 7(6) source material and indexed rti-rule-book",
+        "review_note": "Also detects an English-to-Hindi answer-language regression observed during verification."
+      }
+    },
+    {
+      "question": "Who is the CHiPS PIO, and what is the normal response deadline under Section 7(1) of the RTI Act?",
+      "expected_answer": "The CHiPS PIO is Amitabh Sharma (\u0905\u092e\u093f\u0924\u093e\u092d \u0936\u0930\u094d\u092e\u093e), Chief Operating Officer, at coo@cgchips.in. A normal RTI request must be decided within 30 days of receipt.",
+      "relevant_documents": [
+        "9220007482",
+        "rti-rule-book"
+      ],
+      "expected_citations": [
+        "CG RTI Officer Registry",
+        "rti-rule-book"
+      ],
+      "expected_route": "HYBRID",
+      "language": "en",
+      "category": "hybrid_officer_and_law",
+      "tags": [
+        "hybrid",
+        "postgresql",
+        "qdrant",
+        "chips",
+        "section-7",
+        "reviewed"
+      ],
+      "metadata": {
+        "case_id": "hybrid-chips-section-7-008",
+        "difficulty": "intermediate",
+        "review_status": "reviewed",
+        "reviewed_on": "2026-07-20",
+        "ground_truth_basis": "Live PostgreSQL officer registry plus RTI Act Section 7(1) source material"
+      }
+    }
+  ]
+}

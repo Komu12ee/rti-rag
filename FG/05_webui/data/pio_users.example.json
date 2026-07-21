@@ -3,9 +3,19 @@
   "pios": [
     {
       "name": "Authorised PIO Name",
+      "username": "pio-user",
       "email": "pio@department.gov.in",
       "password": "replace-with-password",
-      "active": true
+      "active": true,
+      "isAdmin": false
+    },
+    {
+      "name": "Evaluation Administrator",
+      "username": "admin",
+      "email": "admin@department.gov.in",
+      "password": "replace-with-a-strong-private-password",
+      "active": true,
+      "isAdmin": true
     }
   ]
 }

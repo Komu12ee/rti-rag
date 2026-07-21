@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RAG Evaluation &amp; LLMOps Control Center</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/evaluation.css" />
+</head>
+<body>
+  <div class="eval-shell">
+    <aside class="eval-sidebar">
+      <a class="eval-brand" href="/">
+        <img src="/assets/cg_gov_logo.png" alt="Chhattisgarh Government" />
+        <span><strong>RAG Control Center</strong><small>CHiPS RTI Assistant</small></span>
+      </a>
+
+      <nav id="eval-nav" aria-label="Evaluation sections">
+        <button class="nav-item is-active" data-view="overview" type="button"><span>01</span>Overview</button>
+        <button class="nav-item" data-view="datasets" type="button"><span>02</span>Benchmarks</button>
+        <button class="nav-item" data-view="experiments" type="button"><span>03</span>Experiments</button>
+        <button class="nav-item" data-view="review" type="button"><span>04</span>Human review</button>
+        <button class="nav-item" data-view="versions" type="button"><span>05</span>Versions</button>
+        <button class="nav-item" data-view="monitoring" type="button"><span>06</span>Monitoring</button>
+      </nav>
+
+      <div class="sidebar-system">
+        <span class="system-light"></span>
+        <div><strong id="system-state">Connecting</strong><small id="system-model">Model unavailable</small></div>
+      </div>
+    </aside>
+
+    <main class="eval-main">
+      <header class="eval-topbar">
+        <div>
+          <p class="eyebrow">Evaluation workspace</p>
+          <h1 id="view-title">System overview</h1>
+        </div>
+        <div class="topbar-actions">
+          <button id="refresh-all" class="button ghost" type="button">Refresh</button>
+          <a class="button ghost" href="/">Back to assistant</a>
+          <div class="admin-chip"><span>AD</span><div><strong id="admin-name">Administrator</strong><small>PIO admin</small></div></div>
+        </div>
+      </header>
+
+      <div id="global-message" class="global-message hidden" role="alert"></div>
+
+      <section class="view is-active" data-view-panel="overview">
+        <div id="metric-cards" class="metric-grid"></div>
+
+        <div class="split-grid wide-left">
+          <article class="panel">
+            <div class="panel-heading">
+              <div><p class="panel-kicker">Quality trend</p><h2>Recent experiments</h2></div>
+              <button class="text-button" data-go-view="experiments" type="button">View all</button>
+            </div>
+            <div id="overview-experiments" class="table-wrap"></div>
+          </article>
+          <article class="panel">
+            <div class="panel-heading"><div><p class="panel-kicker">Failure analysis</p><h2>Case clusters</h2></div></div>
+            <div id="failure-clusters" class="cluster-list empty-state">No evaluated cases yet.</div>
+          </article>
+        </div>
+
+        <article class="panel">
+          <div class="panel-heading"><div><p class="panel-kicker">Operational risk</p><h2>Regression &amp; drift alerts</h2></div></div>
+          <div id="overview-alerts" class="alert-list empty-state">No alerts.</div>
+        </article>
+      </section>
+
+      <section class="view" data-view-panel="datasets">
+        <div class="split-grid form-left">
+          <article class="panel sticky-panel">
+            <div class="panel-heading"><div><p class="panel-kicker">Ground truth</p><h2>Upload benchmark</h2></div></div>
+            <form id="dataset-form" class="stack-form">
+              <label>Dataset name<input id="dataset-name" maxlength="160" required placeholder="CG RTI legal benchmark v1" /></label>
+              <label>Description<textarea id="dataset-description" rows="3" placeholder="Scope, source, and review notes"></textarea></label>
+              <label class="file-drop" for="dataset-file">
+                <input id="dataset-file" type="file" accept=".csv,.json,text/csv,application/json" required />
+                <span>Drop or choose CSV / JSON</span>
+                <small>question, expected_answer, relevant_documents, expected_citations</small>
+              </label>
+              <button class="button primary" type="submit">Upload benchmark</button>
+            </form>
+            <details class="format-help">
+              <summary>Accepted format</summary>
+              <pre>question,expected_answer,relevant_documents,expected_citations
+"What is Section 7?","30-day response...","rti-act.pdf","rti-act.pdf#section-7"</pre>
+            </details>
+          </article>
+          <article class="panel">
+            <div class="panel-heading"><div><p class="panel-kicker">Catalog</p><h2>Benchmark datasets</h2></div><span id="dataset-total" class="count-pill">0</span></div>
+            <div id="dataset-list" class="card-list empty-state">No datasets uploaded.</div>
+          </article>
+        </div>
+      </section>
+
+      <section class="view" data-view-panel="experiments">
+        <article class="panel">
+          <div class="panel-heading"><div><p class="panel-kicker">Immutable configuration</p><h2>Run an experiment</h2></div></div>
+          <form id="experiment-form" class="experiment-form">
+            <label>Experiment name<input id="experiment-name" required placeholder="Hybrid retrieval baseline" /></label>
+            <label>Benchmark<select id="experiment-dataset" required><option value="">Choose dataset</option></select></label>
+            <label>Baseline<select id="experiment-baseline"><option value="">No baseline</option></select></label>
+            <label>Chunking<select id="experiment-chunking"></select></label>
+            <label>Chunk size<input id="experiment-chunk-size" type="number" min="64" max="8192" value="512" /></label>
+            <label>Chunk overlap<input id="experiment-chunk-overlap" type="number" min="0" max="2048" value="64" /></label>
+            <label>Embedding model<input id="experiment-embedding" value="BAAI/bge-m3" /></label>
+            <label>Qdrant collections<input id="experiment-collections" placeholder="db3 (comma-separated)" /></label>
+            <label>Retrieval<select id="experiment-retrieval"></select></label>
+            <label>Hybrid dense weight<input id="experiment-hybrid-alpha" type="number" min="0" max="1" step="0.05" value="0.6" /></label>
+            <label>Top K<input id="experiment-top-k" type="number" min="1" max="20" value="5" /></label>
+            <label>Candidate K<input id="experiment-candidate-k" type="number" min="1" max="100" value="20" /></label>
+            <label>Prompt version<input id="experiment-prompt" value="current" /></label>
+            <label>Model version<input id="experiment-model" value="sarvam-105b" /></label>
+            <label>Reranker model<input id="experiment-reranker-model" value="BAAI/bge-reranker-v2-m3" /></label>
+            <label>Judge model<input id="experiment-judge-model" value="sarvam-105b" /></label>
+            <label>Prompt instruction<textarea id="experiment-prompt-instruction" rows="2" placeholder="Optional experiment-specific answer instruction"></textarea></label>
+            <div class="check-row">
+              <label><input id="experiment-reranker" type="checkbox" /> Cross-encoder reranker</label>
+              <label><input id="experiment-kg" type="checkbox" checked /> Knowledge graph</label>
+              <label><input id="experiment-multi-query" type="checkbox" checked /> Multi-query</label>
+              <label><input id="experiment-judge" type="checkbox" checked /> LLM quality judge</label>
+            </div>
+            <button class="button primary" type="submit">Queue experiment</button>
+          </form>
+          <p class="form-note">Chunking and embedding comparisons use the selected pre-indexed Qdrant collection. The recorded configuration never changes after the run starts.</p>
+        </article>
+
+        <article class="panel">
+          <div class="panel-heading">
+            <div><p class="panel-kicker">Runs</p><h2>Experiment history</h2></div>
+            <div class="heading-actions"><button id="compare-selected" class="button ghost" type="button">Compare selected</button></div>
+          </div>
+          <div id="experiment-list" class="table-wrap empty-state">No experiments yet.</div>
+        </article>
+
+        <article id="comparison-panel" class="panel hidden">
+          <div class="panel-heading"><div><p class="panel-kicker">Side by side</p><h2>Experiment comparison</h2></div></div>
+          <div id="comparison-table" class="table-wrap"></div>
+        </article>
+
+        <article id="experiment-detail-panel" class="panel hidden">
+          <div class="panel-heading">
+            <div><p class="panel-kicker">Case-level evidence</p><h2 id="experiment-detail-title">Experiment details</h2></div>
+            <button id="export-experiment" class="button ghost" type="button">Export CSV</button>
+          </div>
+          <div id="experiment-detail-metrics" class="metric-grid compact"></div>
+          <div id="experiment-results" class="result-list"></div>
+        </article>
+      </section>
+
+      <section class="view" data-view-panel="review">
+        <article class="panel">
+          <div class="panel-heading"><div><p class="panel-kicker">Expert oversight</p><h2>Human evaluation queue</h2></div><select id="review-experiment"><option value="">Choose experiment</option></select></div>
+          <p class="form-note">Select a completed experiment, inspect its answer and evidence, then score each dimension from 1 (poor) to 5 (excellent).</p>
+          <div id="review-list" class="result-list empty-state">Choose an experiment to begin review.</div>
+        </article>
+      </section>
+
+      <section class="view" data-view-panel="versions">
+        <div class="split-grid form-left">
+          <article class="panel sticky-panel">
+            <div class="panel-heading"><div><p class="panel-kicker">Governance</p><h2>Register version</h2></div></div>
+            <form id="version-form" class="stack-form">
+              <label>Type<select id="version-type"><option>chunking</option><option>embedding</option><option>retrieval</option><option>reranker</option><option>prompt</option><option>llm</option></select></label>
+              <label>Name<input id="version-name" required placeholder="answer_prompt" /></label>
+              <label>Version<input id="version-value" required placeholder="v1.2.0" /></label>
+              <label>Configuration JSON<textarea id="version-config" rows="6" placeholder='{"temperature": 0.0}'></textarea></label>
+              <button class="button primary" type="submit">Register version</button>
+            </form>
+          </article>
+          <article class="panel">
+            <div class="panel-heading"><div><p class="panel-kicker">Audit trail</p><h2>Version registry</h2></div></div>
+            <div id="version-list" class="table-wrap empty-state">No versions registered.</div>
+          </article>
+        </div>
+      </section>
+
+      <section class="view" data-view-panel="monitoring">
+        <div class="metric-grid" id="monitoring-cards"></div>
+        <div class="split-grid">
+          <article class="panel">
+            <div class="panel-heading"><div><p class="panel-kicker">Prometheus</p><h2>Metrics endpoint</h2></div></div>
+            <div class="endpoint-box"><code>/api/evaluation/metrics</code><button id="copy-metrics-endpoint" type="button">Copy</button></div>
+            <p class="form-note">Use an admin bearer token when scraping this protected endpoint. Grafana can visualize these Prometheus series.</p>
+          </article>
+          <article class="panel">
+            <div class="panel-heading"><div><p class="panel-kicker">Integrations</p><h2>LLMOps connectors</h2></div></div>
+            <div id="integration-status" class="integration-list"></div>
+          </article>
+        </div>
+        <article class="panel">
+          <div class="panel-heading"><div><p class="panel-kicker">Drift log</p><h2>All alerts</h2></div></div>
+          <div id="monitoring-alerts" class="alert-list empty-state">No alerts.</div>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <div id="toast-stack" class="toast-stack" aria-live="polite"></div>
+  <script type="module" src="/evaluation.js"></script>
+</body>
+</html>

@@ -27,6 +27,12 @@ from services.pio_precedent_service import (
     stream_precedent_informed_advisory,
 )
 from services.pio_qdrant_retriever import retrieve_pio_directory_references
+from services import evaluation_service as rag_evaluation
+from services.llm_provider import (
+    capture_llm_usage,
+    current_llm_label,
+    current_llm_model_name,
+)
 import os
 import sys
 import importlib.util
@@ -45,6 +51,7 @@ from flask import Flask, Response, request, jsonify, send_file, stream_with_cont
 from datetime import datetime, timezone
 from pathlib import Path
 from threading import Lock
+from concurrent.futures import Future, ThreadPoolExecutor
 from uuid import uuid4
 from werkzeug.utils import secure_filename
 
@@ -286,6 +293,12 @@ def serve_index():
     """Serve index.html from static folder"""
     return send_file(os.path.join(app.static_folder, 'index.html'))
 
+
+@app.route('/evaluation')
+def serve_evaluation_center():
+    """Serve the admin UI; its data APIs remain server-authorized."""
+    return send_file(os.path.join(app.static_folder, 'evaluation.html'))
+
 AUTH_USERS_PATH = SCRIPT_DIR / "data" / "users.json"
 AUTH_PIO_USERS_PATH = SCRIPT_DIR / "data" / "pio_users.json"
 AUTH_SESSION_TTL_SECONDS = max(300, int(os.getenv("AUTH_SESSION_TTL_SECONDS", "28800")))
@@ -370,6 +383,7 @@ def _public_auth_user(user: dict, role: str | None = None) -> dict:
         for key in ("id", "fullName", "username", "email", "createdAt")
     }
     public_user["role"] = role or user.get("role") or "citizen"
+    public_user["isAdmin"] = bool(user.get("isAdmin", False))
     return public_user
 
 
@@ -377,10 +391,15 @@ def _normalise_pio_user(user: dict) -> dict | None:
     if not isinstance(user, dict) or user.get("active", True) is False:
         return None
     email = _normalise_auth_identity(user.get("email"))
-    username = _normalise_auth_identity(user.get("username"))
+    username = _normalise_auth_identity(
+        user.get("username") or user.get("name")
+    )
     full_name = str(user.get("fullName") or user.get("name") or "").strip()
     if not email or not full_name or not (user.get("password") or user.get("passwordHash")):
         return None
+    admin_username = _normalise_auth_identity(
+        os.getenv("EVALUATION_ADMIN_USERNAME", "admin")
+    )
     return {
         **user,
         "id": str(user.get("id") or f"pio:{email}"),
@@ -388,6 +407,7 @@ def _normalise_pio_user(user: dict) -> dict | None:
         "username": username,
         "email": email,
         "role": "pio",
+        "isAdmin": bool(user.get("isAdmin")) or username == admin_username,
     }
 
 
@@ -537,11 +557,12 @@ def enforce_pio_access_control():
     if request.method == "OPTIONS":
         return None
     path = request.path
+    evaluation_endpoint = path.startswith("/api/evaluation")
     pio_endpoint = path.startswith("/api/pio/") or path.startswith("/api/web-verification/")
     pio_query = path in {"/api/query", "/api/query/stream"} and _as_bool(
         (request.get_json(silent=True) or {}).get("pio_mode", False)
     )
-    if not (pio_endpoint or pio_query):
+    if not (evaluation_endpoint or pio_endpoint or pio_query):
         return None
     user = _current_auth_user()
     if not user:
@@ -550,6 +571,11 @@ def enforce_pio_access_control():
         return jsonify({
             "success": False,
             "error": "PIO mode is restricted to authorised PIO accounts.",
+        }), 403
+    if evaluation_endpoint and not user.get("isAdmin"):
+        return jsonify({
+            "success": False,
+            "error": "The evaluation control center is restricted to the PIO administrator.",
         }), 403
     return None
 
@@ -2888,6 +2914,437 @@ def document_structure():
             response['structured_json_error'] = f'Invalid structured.json: {e}'
 
     return jsonify(response), 200
+
+
+EVALUATION_EXECUTOR = ThreadPoolExecutor(
+    max_workers=max(1, int(os.getenv("RAG_EVAL_MAX_WORKERS", "1"))),
+    thread_name_prefix="rag-evaluation",
+)
+evaluation_jobs: dict[str, Future] = {}
+evaluation_jobs_lock = Lock()
+
+
+def _evaluation_user_key(user: dict | None = None) -> str:
+    user = user or _current_auth_user() or {}
+    return str(user.get("email") or user.get("username") or user.get("id") or "admin")
+
+
+def _evaluation_retriever(config: dict):
+    def retrieve_for_experiment(query_text: str, num_context: int):
+        if _load_rag_module() is None or retrieve_context is None:
+            raise RuntimeError(
+                _rag_import_error or "RAG pipeline is unavailable for evaluation."
+            )
+        return retrieve_context(
+            query_text,
+            num_context=num_context,
+            use_kg=bool(config.get("use_kg", True)),
+            collection_names=config.get("collection_names") or None,
+            per_collection_limit=int(config.get("candidate_k") or 20),
+            embedding_model=str(config.get("embedding_model") or "").strip() or None,
+            retrieval_mode=str(config.get("retrieval_mode") or "hybrid"),
+            hybrid_alpha=float(config.get("hybrid_alpha", 0.6)),
+            reranker_enabled=bool(config.get("reranker_enabled", False)),
+            reranker_model=str(config.get("reranker_model") or "").strip() or None,
+            use_multi_query=bool(config.get("use_multi_query", True)),
+        )
+
+    return retrieve_for_experiment
+
+
+def _evaluation_answer_generator(config: dict):
+    def generate_for_experiment(
+        query_text: str,
+        context_results: list[dict],
+        conversation_context: str = "",
+    ):
+        if generate_answer is None:
+            raise RuntimeError("RAG answer generation is unavailable for evaluation.")
+        return generate_answer(
+            query_text,
+            context_results,
+            conversation_context=conversation_context,
+            model_override=str(config.get("model_version") or "").strip() or None,
+            prompt_instruction=str(config.get("prompt_instruction") or "").strip(),
+        )
+
+    return generate_for_experiment
+
+
+def _execute_evaluation_case(case: dict, config: dict) -> dict:
+    started = time.perf_counter()
+    usage_records: list[dict] = []
+    try:
+        with capture_llm_usage() as captured_usage:
+            try:
+                retrieval = retrieve_from_all_sources(
+                    query=case["question"],
+                    retrieve_context_fn=_evaluation_retriever(config),
+                    retrieve_pio_directory_fn=_retrieve_pio_directory_for_unified,
+                    limit=int(config.get("top_k") or 5),
+                    router_timeout_seconds=int(
+                        os.getenv("RAG_EVAL_ROUTER_TIMEOUT_SECONDS", "60")
+                    ),
+                )
+                answer_result = generate_unified_answer(
+                    query=case["question"],
+                    result=retrieval,
+                    generate_answer_fn=_evaluation_answer_generator(config),
+                    answer_language=str((case.get("metadata") or {}).get("language") or "en"),
+                    model_override=str(config.get("model_version") or "").strip() or None,
+                )
+            finally:
+                usage_records = list(captured_usage)
+
+        documents = _format_unified_evidence_for_frontend(
+            retrieval.combined_evidence
+        )
+        citations = list(dict.fromkeys(
+            str(item.get("source") or item.get("document_id") or "").strip()
+            for item in documents
+            if str(item.get("source") or item.get("document_id") or "").strip()
+        ))
+        return {
+            "answer": answer_result.answer,
+            "route": retrieval.resolution.final.route.value,
+            "retrieved_documents": documents,
+            "actual_citations": citations,
+            "latency_ms": (time.perf_counter() - started) * 1000,
+            "usage_records": usage_records,
+            "warnings": retrieval.errors,
+            "error": "",
+        }
+    except Exception as error:
+        return {
+            "answer": "",
+            "route": "ERROR",
+            "retrieved_documents": [],
+            "actual_citations": [],
+            "latency_ms": (time.perf_counter() - started) * 1000,
+            "usage_records": usage_records,
+            "warnings": [],
+            "error": f"{type(error).__name__}: {error}",
+        }
+
+
+def _run_evaluation_experiment(experiment_id: str) -> None:
+    try:
+        rag_evaluation.set_experiment_running(experiment_id)
+        experiment = rag_evaluation.get_experiment(
+            experiment_id,
+            include_results=False,
+        )
+        if not experiment:
+            raise ValueError("Experiment was not found after creation.")
+        config = experiment["config"]
+        for case in rag_evaluation.experiment_cases(experiment_id):
+            output = _execute_evaluation_case(case, config)
+            evaluation = rag_evaluation.evaluate_pipeline_output(
+                case,
+                output,
+                config,
+            )
+            rag_evaluation.save_result(
+                experiment_id,
+                case["id"],
+                output,
+                evaluation,
+            )
+        rag_evaluation.complete_experiment(experiment_id)
+    except Exception as error:
+        print(f"[RAG Evaluation] Experiment {experiment_id} failed: {error}")
+        rag_evaluation.fail_experiment(
+            experiment_id,
+            f"{type(error).__name__}: {error}",
+        )
+
+
+def _submit_evaluation_experiment(experiment_id: str) -> None:
+    with evaluation_jobs_lock:
+        active = evaluation_jobs.get(experiment_id)
+        if active and not active.done():
+            return
+        future = EVALUATION_EXECUTOR.submit(
+            _run_evaluation_experiment,
+            experiment_id,
+        )
+        evaluation_jobs[experiment_id] = future
+        future.add_done_callback(
+            lambda _future: evaluation_jobs.pop(experiment_id, None)
+        )
+
+
+def _evaluation_error(error: Exception | str, status: int = 400):
+    message = str(error or "Evaluation request failed.")
+    return jsonify({"success": False, "error": message}), status
+
+
+@app.route('/api/evaluation/config', methods=['GET'])
+def evaluation_config():
+    collections: list[str] = []
+    qdrant_error = ""
+    current_embedding_model = os.getenv("EMBEDDING_MODEL", "BAAI/bge-m3")
+    current_reranker_model = os.getenv(
+        "RERANKER_MODEL",
+        "BAAI/bge-reranker-v2-m3",
+    )
+    try:
+        rag_module = _load_rag_module()
+        if rag_module is not None:
+            current_embedding_model = str(
+                getattr(rag_module, "EMBEDDING_MODEL", current_embedding_model)
+            )
+            current_reranker_model = str(
+                getattr(rag_module, "RERANKER_MODEL", current_reranker_model)
+            )
+            qdrant = rag_module.ensure_qdrant_client()
+            collections = sorted(
+                item.name for item in qdrant.get_collections().collections
+            )
+    except Exception as error:
+        qdrant_error = f"{type(error).__name__}: {error}"
+    return jsonify({
+        "success": True,
+        "chunking_strategies": sorted(rag_evaluation.ALLOWED_CHUNKING_STRATEGIES),
+        "retrieval_modes": sorted(rag_evaluation.ALLOWED_RETRIEVAL_MODES),
+        "collections": collections,
+        "qdrant_error": qdrant_error,
+        "current_model": current_llm_model_name(),
+        "current_model_label": current_llm_label(),
+        "current_embedding_model": current_embedding_model,
+        "current_reranker_model": current_reranker_model,
+        "observability": {
+            "prometheus_endpoint": "/api/evaluation/metrics",
+            "mlflow_configured": bool(os.getenv("MLFLOW_TRACKING_URI", "").strip()),
+            "langfuse_configured": bool(os.getenv("LANGFUSE_PUBLIC_KEY", "").strip()),
+        },
+    }), 200
+
+
+@app.route('/api/evaluation/dashboard', methods=['GET'])
+def evaluation_dashboard():
+    try:
+        return jsonify({
+            "success": True,
+            "dashboard": rag_evaluation.dashboard_summary(),
+        }), 200
+    except Exception as error:
+        return _evaluation_error(error, 500)
+
+
+@app.route('/api/evaluation/datasets', methods=['GET', 'POST'])
+def evaluation_datasets():
+    try:
+        if request.method == 'GET':
+            return jsonify({
+                "success": True,
+                "datasets": rag_evaluation.list_datasets(),
+            }), 200
+        data = request.get_json(silent=True)
+        if not isinstance(data, dict) or not isinstance(data.get("cases"), list):
+            return _evaluation_error("A JSON object with a cases list is required.")
+        cases = [
+            rag_evaluation.normalise_case(item, index)
+            for index, item in enumerate(data["cases"], start=1)
+        ]
+        dataset = rag_evaluation.create_dataset(
+            data.get("name"),
+            data.get("description", ""),
+            cases,
+            _evaluation_user_key(),
+        )
+        return jsonify({"success": True, "dataset": dataset}), 201
+    except (ValueError, json.JSONDecodeError) as error:
+        return _evaluation_error(error)
+    except Exception as error:
+        return _evaluation_error(error, 500)
+
+
+@app.route('/api/evaluation/datasets/upload', methods=['POST'])
+def evaluation_dataset_upload():
+    try:
+        benchmark = request.files.get("file")
+        if benchmark is None or not benchmark.filename:
+            return _evaluation_error("Choose a benchmark CSV or JSON file.")
+        content = benchmark.read(
+            int(os.getenv("RAG_EVAL_MAX_UPLOAD_BYTES", str(10 * 1024 * 1024))) + 1
+        )
+        if len(content) > int(os.getenv("RAG_EVAL_MAX_UPLOAD_BYTES", str(10 * 1024 * 1024))):
+            return _evaluation_error("Benchmark file exceeds the upload limit.", 413)
+        cases = rag_evaluation.parse_benchmark_file(benchmark.filename, content)
+        dataset = rag_evaluation.create_dataset(
+            request.form.get("name") or Path(benchmark.filename).stem,
+            request.form.get("description", ""),
+            cases,
+            _evaluation_user_key(),
+        )
+        return jsonify({"success": True, "dataset": dataset}), 201
+    except (ValueError, UnicodeDecodeError, json.JSONDecodeError) as error:
+        return _evaluation_error(error)
+    except Exception as error:
+        return _evaluation_error(error, 500)
+
+
+@app.route('/api/evaluation/datasets/<dataset_id>', methods=['GET', 'DELETE'])
+def evaluation_dataset_detail(dataset_id: str):
+    try:
+        if request.method == 'DELETE':
+            if not rag_evaluation.delete_dataset(dataset_id):
+                return _evaluation_error("Dataset was not found.", 404)
+            return jsonify({"success": True}), 200
+        dataset = rag_evaluation.get_dataset(dataset_id, include_cases=True)
+        if not dataset:
+            return _evaluation_error("Dataset was not found.", 404)
+        return jsonify({"success": True, "dataset": dataset}), 200
+    except Exception as error:
+        return _evaluation_error(error, 500)
+
+
+@app.route('/api/evaluation/experiments', methods=['GET', 'POST'])
+def evaluation_experiments():
+    try:
+        if request.method == 'GET':
+            return jsonify({
+                "success": True,
+                "experiments": rag_evaluation.list_experiments(),
+            }), 200
+        data = request.get_json(silent=True)
+        if not isinstance(data, dict):
+            return _evaluation_error("A JSON request object is required.")
+        experiment = rag_evaluation.create_experiment(
+            dataset_id=str(data.get("dataset_id") or ""),
+            name=data.get("name"),
+            config=data.get("config"),
+            created_by=_evaluation_user_key(),
+            baseline_experiment_id=(str(data.get("baseline_experiment_id") or "").strip() or None),
+        )
+        _submit_evaluation_experiment(experiment["id"])
+        return jsonify({"success": True, "experiment": experiment}), 202
+    except ValueError as error:
+        return _evaluation_error(error)
+    except Exception as error:
+        return _evaluation_error(error, 500)
+
+
+@app.route('/api/evaluation/experiments/<experiment_id>', methods=['GET'])
+def evaluation_experiment_detail(experiment_id: str):
+    try:
+        experiment = rag_evaluation.get_experiment(experiment_id, include_results=True)
+        if not experiment:
+            return _evaluation_error("Experiment was not found.", 404)
+        return jsonify({"success": True, "experiment": experiment}), 200
+    except Exception as error:
+        return _evaluation_error(error, 500)
+
+
+@app.route('/api/evaluation/experiments/<experiment_id>/export.csv', methods=['GET'])
+def evaluation_experiment_export(experiment_id: str):
+    try:
+        csv_text = rag_evaluation.experiment_csv(experiment_id)
+        return Response(
+            csv_text,
+            mimetype="text/csv",
+            headers={
+                "Content-Disposition": f'attachment; filename="rag-evaluation-{experiment_id}.csv"'
+            },
+        )
+    except ValueError as error:
+        return _evaluation_error(error, 404)
+    except Exception as error:
+        return _evaluation_error(error, 500)
+
+
+@app.route('/api/evaluation/compare', methods=['POST'])
+def evaluation_compare():
+    data = request.get_json(silent=True) or {}
+    experiment_ids = data.get("experiment_ids")
+    if not isinstance(experiment_ids, list) or len(experiment_ids) < 2:
+        return _evaluation_error("Choose at least two experiments to compare.")
+    try:
+        return jsonify({
+            "success": True,
+            "experiments": rag_evaluation.compare_experiments(experiment_ids),
+        }), 200
+    except Exception as error:
+        return _evaluation_error(error, 500)
+
+
+@app.route('/api/evaluation/results/<result_id>/review', methods=['POST'])
+def evaluation_human_review(result_id: str):
+    data = request.get_json(silent=True) or {}
+    try:
+        review = rag_evaluation.upsert_human_review(
+            result_id,
+            _evaluation_user_key(),
+            data,
+            data.get("notes", ""),
+        )
+        return jsonify({"success": True, "review": review}), 200
+    except ValueError as error:
+        return _evaluation_error(error)
+    except Exception as error:
+        return _evaluation_error(error, 500)
+
+
+@app.route('/api/evaluation/versions', methods=['GET', 'POST'])
+def evaluation_versions():
+    try:
+        if request.method == 'GET':
+            return jsonify({"success": True, "versions": rag_evaluation.list_versions()}), 200
+        data = request.get_json(silent=True) or {}
+        version = rag_evaluation.create_version(
+            data.get("version_type"), data.get("name"), data.get("version"),
+            data.get("config") or {}, _evaluation_user_key(),
+        )
+        return jsonify({"success": True, "version": version}), 201
+    except ValueError as error:
+        return _evaluation_error(error)
+    except Exception as error:
+        return _evaluation_error(error, 500)
+
+
+@app.route('/api/evaluation/alerts/<alert_id>/acknowledge', methods=['POST'])
+def evaluation_acknowledge_alert(alert_id: str):
+    try:
+        if not rag_evaluation.acknowledge_alert(alert_id):
+            return _evaluation_error("Alert was not found.", 404)
+        return jsonify({"success": True}), 200
+    except Exception as error:
+        return _evaluation_error(error, 500)
+
+
+@app.route('/api/evaluation/metrics', methods=['GET'])
+def evaluation_prometheus_metrics():
+    try:
+        dashboard = rag_evaluation.dashboard_summary()
+        counts = dashboard["counts"]
+        lines = [
+            "# HELP rag_eval_datasets_total Number of benchmark datasets.",
+            "# TYPE rag_eval_datasets_total gauge",
+            f"rag_eval_datasets_total {counts.get('datasets', 0)}",
+            "# HELP rag_eval_experiments_total Number of evaluation experiments.",
+            "# TYPE rag_eval_experiments_total gauge",
+            f"rag_eval_experiments_total {counts.get('experiments', 0)}",
+            "# HELP rag_eval_experiments_running Running evaluation experiments.",
+            "# TYPE rag_eval_experiments_running gauge",
+            f"rag_eval_experiments_running {counts.get('running', 0)}",
+            "# HELP rag_eval_alerts_open Unacknowledged regression or drift alerts.",
+            "# TYPE rag_eval_alerts_open gauge",
+            f"rag_eval_alerts_open {counts.get('open_alerts', 0)}",
+        ]
+        for experiment in dashboard.get("recent_experiments", []):
+            if experiment.get("status") != "COMPLETED":
+                continue
+            label = re.sub(r"[^a-zA-Z0-9_-]", "_", experiment["id"])
+            for metric, value in (experiment.get("aggregate_metrics") or {}).items():
+                if isinstance(value, (int, float)):
+                    metric_name = re.sub(r"[^a-zA-Z0-9_]", "_", metric)
+                    lines.append(
+                        f'rag_eval_experiment_{metric_name}{{experiment_id="{label}"}} {value}'
+                    )
+        return Response("\n".join(lines) + "\n", mimetype="text/plain; version=0.0.4")
+    except Exception as error:
+        return Response(f"# evaluation metrics unavailable: {error}\n", status=500, mimetype="text/plain")
 
 
 @app.route('/api/settings', methods=['GET', 'POST'])

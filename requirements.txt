@@ -84,6 +84,7 @@ langchain-core>=1.1.0,<2.0.0       # Sarvam chat-model interface and runnables
 # Web Framework
 Flask>=2.3.0                       # Web framework
 flask-cors>=4.0.0                  # CORS support
+psycopg[binary]>=3.1.0             # PostgreSQL officer registry and evaluation store
 
 # Optional: For FastAPI-based implementation
 fastapi>=0.68.0                    # Alternative web framework

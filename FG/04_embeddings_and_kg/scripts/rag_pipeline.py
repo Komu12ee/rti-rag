@@ -5,6 +5,7 @@ import time
 import sys
 import re
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from threading import Lock
 from pathlib import Path
 from types import SimpleNamespace
 import requests
@@ -700,12 +701,17 @@ def extract_highlighted_excerpt(chunk_text, query_words, max_length=300):
 
 # Models and KG will be lazy-loaded on first retrieval to avoid heavy import-time work
 model = None
+loaded_embedding_model = None
+embedding_load_lock = Lock()
 reranker = None
+loaded_reranker_model = None
+reranker_load_lock = Lock()
 kg_retriever = None
+kg_retriever_model = None
 kg = None
 _models_loaded = False
 
-def ensure_embedding_model_loaded():
+def ensure_embedding_model_loaded(model_name=None):
     """
     Load only BGE-M3.
 
@@ -713,26 +719,37 @@ def ensure_embedding_model_loaded():
     legal reranker or knowledge graph. Keeping this separate avoids expensive
     first-query startup for an officer lookup.
     """
-    global model
+    global model, loaded_embedding_model
 
-    if model is not None:
-        return
+    selected_model = str(model_name or EMBEDDING_MODEL).strip()
+    if model is not None and loaded_embedding_model == selected_model:
+        return model
 
-    print(f"Loading embedding model (deferred): {EMBEDDING_MODEL}")
-    model = BGEM3FlagModel(EMBEDDING_MODEL, use_fp16=True)
-    model.return_sparse = True
+    with embedding_load_lock:
+        if model is not None and loaded_embedding_model == selected_model:
+            return model
+        print(f"Loading embedding model (deferred): {selected_model}")
+        loaded = BGEM3FlagModel(selected_model, use_fp16=True)
+        loaded.return_sparse = True
+        model = loaded
+        loaded_embedding_model = selected_model
+        return loaded
 
 
-def ensure_models_loaded():
-    """Load embedding, reranker and KG models for legal RAG retrieval."""
-    global reranker, kg_retriever, kg, _models_loaded
+def ensure_models_loaded(embedding_model=None):
+    """Load the embedding and KG models needed for legal RAG retrieval."""
+    global kg_retriever, kg_retriever_model, kg, _models_loaded
+    selected_embedding = ensure_embedding_model_loaded(embedding_model)
     if _models_loaded:
-        return
-
-    ensure_embedding_model_loaded()
-
-    print(f"Loading reranker model (deferred): {RERANKER_MODEL}")
-    reranker = FlagReranker(RERANKER_MODEL, use_fp16=True)
+        if (
+            USE_KNOWLEDGE_GRAPH
+            and kg is not None
+            and kg_retriever_model != loaded_embedding_model
+        ):
+            from kg_retriever import KnowledgeGraphRetriever
+            kg_retriever = KnowledgeGraphRetriever(kg, selected_embedding)
+            kg_retriever_model = loaded_embedding_model
+        return selected_embedding
 
     # Load Knowledge Graph (if available)
     if USE_KNOWLEDGE_GRAPH:
@@ -746,7 +763,7 @@ def ensure_models_loaded():
 
             if os.path.exists(kg_path):
                 kg.load(kg_path)
-                kg_retriever = KnowledgeGraphRetriever(kg, model)
+                kg_retriever = KnowledgeGraphRetriever(kg, selected_embedding)
                 print(f"✓ Knowledge graph loaded: {len(kg.entities)} entities")
             else:
                 print(f"⚠ Knowledge graph not found at {kg_path}")
@@ -756,7 +773,25 @@ def ensure_models_loaded():
             print(f"⚠ Could not import knowledge graph modules: {e}")
             kg_retriever = None
 
+    kg_retriever_model = loaded_embedding_model
     _models_loaded = True
+    return selected_embedding
+
+
+def ensure_reranker_model_loaded(model_name=None):
+    """Load the selected reranker only when an experiment enables reranking."""
+    global reranker, loaded_reranker_model
+    selected_model = str(model_name or RERANKER_MODEL).strip()
+    if reranker is not None and loaded_reranker_model == selected_model:
+        return reranker
+    with reranker_load_lock:
+        if reranker is not None and loaded_reranker_model == selected_model:
+            return reranker
+        print(f"Loading reranker model (deferred): {selected_model}")
+        loaded = FlagReranker(selected_model, use_fp16=True)
+        reranker = loaded
+        loaded_reranker_model = selected_model
+        return loaded
 
 client = None
 
@@ -877,7 +912,12 @@ def _resolve_active_collections(collection_names=None):
 
 
 # ── Helper: Single query retrieval ─────────────────────────────
-def perform_single_retrieval(query, collection_names=None, per_collection_limit=20):
+def perform_single_retrieval(
+    query,
+    collection_names=None,
+    per_collection_limit=20,
+    embedding_model=None,
+):
     """Perform one retrieval pass against the selected Qdrant collections."""
     active_collections = _resolve_active_collections(collection_names)
     if not active_collections:
@@ -885,12 +925,12 @@ def perform_single_retrieval(query, collection_names=None, per_collection_limit=
         return None
 
     try:
-        ensure_models_loaded()
+        selected_embedding = ensure_models_loaded(embedding_model)
         qdrant = ensure_qdrant_client()
 
         # Encode query with explicit batch_size to ensure sparse embeddings are generated
         # Using batch_size=1 explicitly ensures consistent behavior with batch encoding
-        query_encoding = model.encode(
+        query_encoding = selected_embedding.encode(
             [query],
             batch_size=1,  # Explicit batch size for single query
             max_length=MAX_LENGTH
@@ -971,7 +1011,13 @@ def perform_single_retrieval(query, collection_names=None, per_collection_limit=
         return None
 
 # ── Helper: Multi-query retrieval ──────────────────────────────
-def multi_query_retrieval(query, collection_names=None, per_collection_limit=20):
+def multi_query_retrieval(
+    query,
+    collection_names=None,
+    per_collection_limit=20,
+    use_multi_query=None,
+    embedding_model=None,
+):
     """Retrieve results using multiple query variations and merge them.
     
     Benefits:
@@ -980,14 +1026,21 @@ def multi_query_retrieval(query, collection_names=None, per_collection_limit=20)
     - More robust to query phrasing variations
     """
     _mark_time("MULTI_QUERY_RETRIEVAL")
-    ensure_models_loaded()
+    ensure_models_loaded(embedding_model)
     
-    if not USE_MULTI_QUERY:
+    multi_query_enabled = (
+        USE_MULTI_QUERY
+        if use_multi_query is None
+        else bool(use_multi_query)
+    )
+
+    if not multi_query_enabled:
         # Fall back to single query
         result = perform_single_retrieval(
             query,
             collection_names=collection_names,
             per_collection_limit=per_collection_limit,
+            embedding_model=embedding_model,
         )
         if result is None:
             return None, [], {}
@@ -1007,6 +1060,7 @@ def multi_query_retrieval(query, collection_names=None, per_collection_limit=20)
             q_variant,
             collection_names=collection_names,
             per_collection_limit=per_collection_limit,
+            embedding_model=embedding_model,
         )
         if retrieval_result is None:
             continue
@@ -1060,7 +1114,14 @@ def multi_query_retrieval(query, collection_names=None, per_collection_limit=20)
     return sorted(rrf_scores.items(), key=lambda x: x[1], reverse=True)
 
 # ── Helper: Rerank search results (Hybrid Threshold) ──────────
-def rerank_results(query, candidate_points, min_k=3, max_k=6, threshold=0.65):
+def rerank_results(
+    query,
+    candidate_points,
+    min_k=3,
+    max_k=6,
+    threshold=0.65,
+    reranker_model=None,
+):
     """Rerank with hybrid method: threshold-based with min/max bounds.
     
     Args:
@@ -1091,7 +1152,8 @@ def rerank_results(query, candidate_points, min_k=3, max_k=6, threshold=0.65):
     
     # Score with reranker
     print(f"  📊 Reranking {len(pairs)} candidates...")
-    rerank_scores = reranker.compute_score(pairs, normalize=True)
+    selected_reranker = ensure_reranker_model_loaded(reranker_model)
+    rerank_scores = selected_reranker.compute_score(pairs, normalize=True)
     
     # Sort by reranker scores (descending)
     ranked_indices = sorted(range(len(rerank_scores)), key=lambda i: rerank_scores[i], reverse=True)
@@ -1148,7 +1210,19 @@ def apply_legal_priority(hybrid_scores, points):
     return sorted(boosted, key=lambda x: x[1], reverse=True)
 
 
-def retrieve_context(query, num_context=5, use_kg=True, collection_names=None, per_collection_limit=20):
+def retrieve_context(
+    query,
+    num_context=5,
+    use_kg=True,
+    collection_names=None,
+    per_collection_limit=20,
+    embedding_model=None,
+    retrieval_mode="hybrid",
+    hybrid_alpha=None,
+    reranker_enabled=False,
+    reranker_model=None,
+    use_multi_query=None,
+):
     """Retrieve context documents with optional knowledge graph enhancement.
     
     Args:
@@ -1157,12 +1231,28 @@ def retrieve_context(query, num_context=5, use_kg=True, collection_names=None, p
         use_kg: Whether to use KG enhancement (if available)
         collection_names: Optional per-call Qdrant collection override.
         per_collection_limit: Candidate count requested from each selected collection.
+        embedding_model: Optional per-experiment BGE-M3-compatible model override.
+        retrieval_mode: dense, sparse, or hybrid candidate scoring.
+        hybrid_alpha: Optional dense weight for hybrid reciprocal-rank fusion.
+        reranker_enabled: Apply the configured cross-encoder reranker when true.
+        reranker_model: Optional per-experiment FlagReranker model override.
+        use_multi_query: Optional per-call override for query expansion.
 
     Returns:
         List of result dicts with 'point', 'score', 'rank', and optionally KG info
     """
     _mark_time("RETRIEVE_CONTEXT")
     try:
+        retrieval_mode = str(retrieval_mode or "hybrid").strip().casefold()
+        if retrieval_mode not in {"dense", "sparse", "hybrid"}:
+            raise ValueError(
+                "retrieval_mode must be dense, sparse, or hybrid."
+            )
+        effective_alpha = HYBRID_ALPHA if hybrid_alpha is None else max(
+            0.0,
+            min(float(hybrid_alpha), 1.0),
+        )
+
         # Step 1: Perform embedding-based retrieval
         print("🔍 Retrieving context...")
         
@@ -1171,6 +1261,8 @@ def retrieve_context(query, num_context=5, use_kg=True, collection_names=None, p
             query,
             collection_names=collection_names,
             per_collection_limit=per_collection_limit,
+            use_multi_query=use_multi_query,
+            embedding_model=embedding_model,
         )
         
         if dense_results is None or not dense_results.points:
@@ -1180,15 +1272,32 @@ def retrieve_context(query, num_context=5, use_kg=True, collection_names=None, p
         # Sort aggregated scores
         dense_scores = sorted(aggregated_scores, key=lambda x: x[1], reverse=True)
         
-        # Sparse search (if available)
-        if query_sparse:
-            sparse_scores = sparse_search(query_sparse, dense_results.points, limit=20)
-            # Use configurable HYBRID_ALPHA
-            hybrid_scores = hybrid_search(dense_scores, sparse_scores, alpha=HYBRID_ALPHA)
-            print(f"  ⚡ Using hybrid search (α={HYBRID_ALPHA}: {int(HYBRID_ALPHA*100)}% dense, {int((1-HYBRID_ALPHA)*100)}% sparse)")
+        # Select a per-experiment ranking mode without changing production globals.
+        sparse_scores = (
+            sparse_search(query_sparse, dense_results.points, limit=20)
+            if query_sparse
+            else []
+        )
+        if retrieval_mode == "dense":
+            hybrid_scores = list(dense_scores)
+            print("  ⚡ Using dense-only candidate scoring")
+        elif retrieval_mode == "sparse" and sparse_scores:
+            hybrid_scores = list(sparse_scores)
+            print("  ⚡ Using sparse candidate scoring")
+        elif retrieval_mode == "hybrid" and sparse_scores:
+            hybrid_scores = hybrid_search(
+                dense_scores,
+                sparse_scores,
+                alpha=effective_alpha,
+            )
+            print(
+                "  ⚡ Using hybrid search "
+                f"(α={effective_alpha}: {int(effective_alpha * 100)}% dense, "
+                f"{int((1 - effective_alpha) * 100)}% sparse)"
+            )
         else:
-            hybrid_scores = [(pid, score) for rank, (pid, score) in enumerate(dense_scores)]
-            print(f"  ⚡ Using dense-only search (sparse embeddings unavailable)")
+            hybrid_scores = list(dense_scores)
+            print("  ⚡ Sparse scores unavailable; using dense candidate scoring")
         
         hybrid_scores = apply_legal_priority(hybrid_scores, dense_results.points)
 
@@ -1263,6 +1372,33 @@ def retrieve_context(query, num_context=5, use_kg=True, collection_names=None, p
                 enhanced_points = None
         else:
             enhanced_points = None
+
+        if reranker_enabled:
+            print("🔄 Applying experiment reranker...")
+            reranked_results = rerank_results(
+                query,
+                candidate_points,
+                min_k=min(max(1, num_context), RERANK_MIN_K),
+                max_k=max(num_context, RERANK_MAX_K),
+                threshold=RERANK_THRESHOLD,
+                reranker_model=reranker_model,
+            )
+            if enhanced_points:
+                enhanced_by_id = {
+                    point_identity(item["point"]): item
+                    for item in enhanced_points
+                }
+                for result in reranked_results:
+                    enhanced = enhanced_by_id.get(point_identity(result["point"]), {})
+                    result["kg_score"] = enhanced.get("kg_score", 0.0)
+                    result["entities"] = enhanced.get("entities", [])
+                    result["related_entities"] = enhanced.get("related_entities", {})
+            expanded_cases = _expand_precedent_cases(
+                reranked_results,
+                requested_cases=PRECEDENT_CASE_LIMIT,
+            )
+            _mark_time("RETRIEVE_CONTEXT")
+            return expanded_cases or reranked_results[:num_context]
         
         # ════════════════════════════════════════════════════════════════════
         # RERANKING DISABLED FOR PERFORMANCE
@@ -1541,7 +1677,7 @@ Keep the answer concise and grounded only in the reference material.
 """.strip()
 
 
-def _generate_rag_answer_text(prompt):
+def _generate_rag_answer_text(prompt, model_override=None):
     base_max_tokens = _env_int("RAG_ANSWER_MAX_TOKENS", 2500)
     retry_max_tokens = _env_int("RAG_ANSWER_RETRY_MAX_TOKENS", 6000)
     timeout_seconds = _env_int("RAG_ANSWER_TIMEOUT_SECONDS", 240)
@@ -1568,6 +1704,7 @@ def _generate_rag_answer_text(prompt):
                 max_tokens=attempt_max_tokens,
                 timeout_seconds=timeout_seconds,
                 reasoning_effort=reasoning_effort,
+                model_override=model_override,
             )
         except LLMProviderError as error:
             last_error = error
@@ -1582,7 +1719,12 @@ def _generate_rag_answer_text(prompt):
     raise last_error
 
 
-def _build_rag_answer_prompt(query, context_results, conversation_context=""):
+def _build_rag_answer_prompt(
+    query,
+    context_results,
+    conversation_context="",
+    prompt_instruction="",
+):
     selected_results = _select_context_for_generation(
         query=query,
         context_results=context_results,
@@ -1671,6 +1813,14 @@ Precedent citation rules:
     present in the case context.
 """.strip()
 
+    prompt_instruction = str(prompt_instruction or "").strip()
+    if prompt_instruction:
+        system_content += "\n\n" + (
+            "EXPERIMENT PROMPT VARIANT (supplementary; the grounding and safety "
+            "rules above take precedence):\n"
+            f"{prompt_instruction}"
+        )
+
     conversation_context = str(conversation_context or "").strip()
     conversation_section = ""
     if conversation_context:
@@ -1701,7 +1851,7 @@ FINAL ANSWER:
     return prompt, None
 
 
-def _stream_rag_answer_text(prompt):
+def _stream_rag_answer_text(prompt, model_override=None):
     max_tokens = _env_int("RAG_ANSWER_MAX_TOKENS", 2500)
     timeout_seconds = _env_int("RAG_ANSWER_TIMEOUT_SECONDS", 240)
     reasoning_effort = _env_reasoning_effort(
@@ -1715,9 +1865,16 @@ def _stream_rag_answer_text(prompt):
         max_tokens=max_tokens,
         timeout_seconds=timeout_seconds,
         reasoning_effort=reasoning_effort,
+        model_override=model_override,
     )
 # ── Helper: Generate answer with Llama 3.3 70B via Groq API ─────
-def generate_answer(query, context_results, conversation_context=""):
+def generate_answer(
+    query,
+    context_results,
+    conversation_context="",
+    model_override=None,
+    prompt_instruction="",
+):
     """
     Generate a concise, grounded answer from the strongest retrieved chunks.
 
@@ -1730,6 +1887,7 @@ def generate_answer(query, context_results, conversation_context=""):
         query,
         context_results,
         conversation_context=conversation_context,
+        prompt_instruction=prompt_instruction,
     )
     if fallback:
         return fallback
@@ -1740,7 +1898,10 @@ def generate_answer(query, context_results, conversation_context=""):
             f"{current_llm_label()}..."
         )
 
-        answer = _generate_rag_answer_text(prompt)
+        answer = _generate_rag_answer_text(
+            prompt,
+            model_override=model_override,
+        )
 
         answer = _clean_generated_answer(answer)
 
@@ -1762,7 +1923,13 @@ def generate_answer(query, context_results, conversation_context=""):
         return f"Unexpected answer-generation error: {error}"
 
 
-def generate_answer_stream(query, context_results, conversation_context=""):
+def generate_answer_stream(
+    query,
+    context_results,
+    conversation_context="",
+    model_override=None,
+    prompt_instruction="",
+):
     """Stream a concise, grounded answer from the strongest retrieved chunks."""
     _mark_time("ANSWER_GENERATION")
 
@@ -1770,6 +1937,7 @@ def generate_answer_stream(query, context_results, conversation_context=""):
         query,
         context_results,
         conversation_context=conversation_context,
+        prompt_instruction=prompt_instruction,
     )
     if fallback:
         yield fallback
@@ -1783,7 +1951,10 @@ def generate_answer_stream(query, context_results, conversation_context=""):
         )
 
         yielded = False
-        for chunk in _stream_rag_answer_text(prompt):
+        for chunk in _stream_rag_answer_text(
+            prompt,
+            model_override=model_override,
+        ):
             yielded = True
             yield chunk
 

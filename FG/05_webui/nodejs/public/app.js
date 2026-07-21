@@ -307,6 +307,7 @@ const ui = {
   signedInAvatar: $('signed-in-avatar'),
   signedInName: $('signed-in-name'),
   logoutButton: $('logout-button'),
+  evaluationCenterButton: $('evaluation-center-button'),
   newChat: $('new-chat'),
   clearChat: $('clear-chat'),
   historyList: $('history-list'),
@@ -2474,6 +2475,10 @@ function showAuthenticatedApp(user = authUser()) {
   ui.appShell.classList.remove('hidden');
   ui.signedInName.textContent = user?.fullName || user?.username || 'User';
   ui.signedInAvatar.textContent = user?.role === 'pio' ? 'PIO' : 'Citizen';
+  ui.evaluationCenterButton?.classList.toggle(
+    'hidden',
+    !(user?.role === 'pio' && user?.isAdmin),
+  );
   if (user?.role !== 'pio') localStorage.removeItem(PIO_MODE_KEY);
   updatePioModeUi();
 }
@@ -2588,6 +2593,9 @@ function setupEvents() {
     button.addEventListener('click', () => setLoginAccountType(button.dataset.loginRole));
   });
   ui.logoutButton.addEventListener('click', handleLogout);
+  ui.evaluationCenterButton?.addEventListener('click', () => {
+    window.location.assign('/evaluation');
+  });
   ui.forgotPassword.addEventListener('click', () => {
     setAuthMessage(ui.loginError, 'Contact the Chhattisgarh Citizen Helpdesk to reset your password.');
   });

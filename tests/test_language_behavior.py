@@ -55,7 +55,18 @@ def _sse_events(response) -> list[tuple[str, dict]]:
 
 
 @pytest.fixture(autouse=True)
-def clear_pio_advisory_cache():
+def clear_pio_advisory_cache(monkeypatch):
+    monkeypatch.setattr(
+        web_app,
+        "_current_auth_user",
+        lambda: {
+            "id": "test-pio",
+            "username": "test-pio",
+            "email": "test-pio@example.gov.in",
+            "role": "pio",
+            "isAdmin": False,
+        },
+    )
     with web_app.pio_advisory_cache_lock:
         web_app.pio_advisory_cache.clear()
     yield

@@ -100,6 +100,7 @@ def _general_rti_knowledge_answer(
     query: str,
     answer_language: Any = "en",
     conversation_context: str = "",
+    model_override: str | None = None,
 ) -> tuple[str, bool]:
     conversation_section = ""
     if conversation_context:
@@ -140,6 +141,7 @@ User question:
             timeout_seconds=120,
             json_mode=False,
             reasoning_effort="low",
+            model_override=model_override,
         ).strip()
     except LLMProviderError:
         answer = ""
@@ -454,6 +456,7 @@ def generate_unified_answer(
     generate_answer_fn: Callable[..., str] | None = None,
     answer_language: Any = "en",
     conversation_context: str = "",
+    model_override: str | None = None,
 ) -> UnifiedAnswer:
     """
     POSTGRES:
@@ -496,6 +499,7 @@ def generate_unified_answer(
             query,
             answer_language=answer_language,
             conversation_context=conversation_context,
+            model_override=model_override,
         )
         return UnifiedAnswer(
             answer=answer,

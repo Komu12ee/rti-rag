@@ -1,5 +1,7 @@
 from __future__ import annotations
 from typing import Any, Iterator
+from contextlib import contextmanager
+from contextvars import ContextVar
 import os
 from pathlib import Path
 import json
@@ -15,6 +17,62 @@ class LLMProviderError(RuntimeError):
     """Raised when the selected LLM provider cannot generate a response."""
 
 
+_LLM_USAGE_RECORDS: ContextVar[list[dict[str, Any]] | None] = ContextVar(
+    "llm_usage_records",
+    default=None,
+)
+
+
+@contextmanager
+def capture_llm_usage() -> Iterator[list[dict[str, Any]]]:
+    """Capture non-streaming provider token usage in the current execution context."""
+    records: list[dict[str, Any]] = []
+    token = _LLM_USAGE_RECORDS.set(records)
+    try:
+        yield records
+    finally:
+        _LLM_USAGE_RECORDS.reset(token)
+
+
+def _record_llm_usage(
+    provider: str,
+    model: str,
+    usage: dict[str, Any] | None,
+) -> None:
+    records = _LLM_USAGE_RECORDS.get()
+    if records is None:
+        return
+
+    usage = usage or {}
+
+    def _integer(*keys: str) -> int:
+        for key in keys:
+            try:
+                return max(0, int(usage.get(key) or 0))
+            except (TypeError, ValueError):
+                continue
+        return 0
+
+    prompt_tokens = _integer("prompt_tokens", "prompt_eval_count")
+    completion_tokens = _integer("completion_tokens", "eval_count")
+    cached_tokens = 0
+    details = usage.get("prompt_tokens_details")
+    if isinstance(details, dict):
+        try:
+            cached_tokens = max(0, int(details.get("cached_tokens") or 0))
+        except (TypeError, ValueError):
+            cached_tokens = 0
+
+    records.append({
+        "provider": provider,
+        "model": model,
+        "prompt_tokens": prompt_tokens,
+        "cached_prompt_tokens": min(cached_tokens, prompt_tokens),
+        "completion_tokens": completion_tokens,
+        "total_tokens": _integer("total_tokens") or prompt_tokens + completion_tokens,
+    })
+
+
 def get_llm_mode() -> str:
     mode = os.getenv("LLM_MODE", "ollama").strip().casefold()
 
@@ -28,13 +86,22 @@ def get_llm_mode() -> str:
 
 def current_llm_label() -> str:
     mode = get_llm_mode()
+    model = current_llm_model_name()
+    return f"{'Sarvam' if mode == 'sarvam' else 'Ollama'} ({model})"
 
-    if mode == "sarvam":
-        model = os.getenv("SARVAM_MODEL", "sarvam-105b").strip()
-        return f"Sarvam ({model})"
 
-    model = os.getenv("OLLAMA_MODEL", "qwen2.5:3b").strip()
-    return f"Ollama ({model})"
+def current_llm_model_name() -> str:
+    """Return the exact runtime model identifier rather than a display label."""
+    if get_llm_mode() == "sarvam":
+        return os.getenv("SARVAM_MODEL", "sarvam-105b").strip()
+    return os.getenv("OLLAMA_MODEL", "qwen2.5:3b").strip()
+
+
+def _model_name(override: str | None, environment_key: str, default: str) -> str:
+    model = str(override or os.getenv(environment_key, default)).strip()
+    if not model or len(model) > 240 or any(ord(character) < 32 for character in model):
+        raise LLMProviderError("The model identifier is invalid.")
+    return model
 
 
 def _generate_with_ollama(
@@ -43,10 +110,11 @@ def _generate_with_ollama(
     max_tokens: int,
     timeout_seconds: int,
     json_mode: bool,
+    model_override: str | None = None,
 ) -> str:
     host = os.getenv("OLLAMA_HOST", "localhost").strip()
     port = os.getenv("OLLAMA_PORT", "11434").strip()
-    model = os.getenv("OLLAMA_MODEL", "qwen2.5:3b").strip()
+    model = _model_name(model_override, "OLLAMA_MODEL", "qwen2.5:3b")
 
     if not host.startswith(("http://", "https://")):
         host = f"http://{host}"
@@ -91,6 +159,7 @@ def _generate_with_ollama(
             "Ollama returned invalid JSON."
         ) from error
 
+    _record_llm_usage("ollama", model, data)
     answer = str(data.get("response", "")).strip()
 
     if not answer:
@@ -109,10 +178,11 @@ def _generate_with_sarvam(
     disable_reasoning: bool = False,
     json_schema: dict[str, Any] | None = None,
     json_schema_name: str | None = None,
+    model_override: str | None = None,
 ) -> str:
     """Send a request to Sarvam Chat Completions with optional JSON mode."""
     api_key = os.getenv("SARVAM_API_KEY", "").strip()
-    model = os.getenv("SARVAM_MODEL", "sarvam-105b").strip()
+    model = _model_name(model_override, "SARVAM_MODEL", "sarvam-105b")
     url = os.getenv(
         "SARVAM_API_URL",
         "https://api.sarvam.ai/v1/chat/completions",
@@ -206,6 +276,8 @@ def _generate_with_sarvam(
             f"Sarvam returned an unexpected response format: {response.text[:1500]}"
         ) from error
 
+    _record_llm_usage("sarvam", model, data.get("usage"))
+
     answer = str(answer or "").strip()
 
     if not answer:
@@ -254,10 +326,11 @@ def _stream_with_sarvam(
     max_tokens: int,
     timeout_seconds: int,
     reasoning_effort: str | None,
+    model_override: str | None = None,
 ) -> Iterator[str]:
     """Stream visible text from Sarvam Chat Completions SSE."""
     api_key = os.getenv("SARVAM_API_KEY", "").strip()
-    model = os.getenv("SARVAM_MODEL", "sarvam-105b").strip()
+    model = _model_name(model_override, "SARVAM_MODEL", "sarvam-105b")
     url = os.getenv(
         "SARVAM_API_URL",
         "https://api.sarvam.ai/v1/chat/completions",
@@ -359,6 +432,7 @@ def generate_text(
     disable_reasoning: bool = False,
     json_schema: dict[str, Any] | None = None,
     json_schema_name: str | None = None,
+    model_override: str | None = None,
 ) -> str:
     """
     One provider entry point for answer generation and semantic routing.
@@ -390,6 +464,7 @@ def generate_text(
             disable_reasoning=disable_reasoning,
             json_schema=json_schema,
             json_schema_name=json_schema_name,
+            model_override=model_override,
         )
 
     ollama_timeout = int(
@@ -405,6 +480,7 @@ def generate_text(
         max_tokens=max_tokens,
         timeout_seconds=ollama_timeout,
         json_mode=json_mode,
+        model_override=model_override,
     )
 
 
@@ -414,6 +490,7 @@ def stream_text(
     max_tokens: int = 350,
     timeout_seconds: int = 180,
     reasoning_effort: str | None = None,
+    model_override: str | None = None,
 ) -> Iterator[str]:
     """
     Stream only visible user-facing text.
@@ -437,6 +514,7 @@ def stream_text(
             max_tokens=max_tokens,
             timeout_seconds=sarvam_timeout,
             reasoning_effort=reasoning_effort,
+            model_override=model_override,
         )
         return
 
@@ -447,4 +525,5 @@ def stream_text(
         timeout_seconds=timeout_seconds,
         json_mode=False,
         reasoning_effort=reasoning_effort,
+        model_override=model_override,
     )
