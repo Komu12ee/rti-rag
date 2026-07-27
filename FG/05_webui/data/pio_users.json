@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "pios": [
+    {
+      "name": "shridhar diwan",
+      "email": "shridhar.diwan@cgchips.in",
+      "passwordHash": "pbkdf2_sha256$210000$jgXvvWsuxOycAa1/GMLCRw==$QvNSbq8GBxbaR/kxgfs3zClNg3F4rg8TfmYPGyikykI=",
+      "active": true
+    },
+    {
+      "name": "admin",
+      "username": "admin",
+      "email": "admin@gmail.com",
+      "passwordHash": "pbkdf2_sha256$210000$ryITAPbTyQuVQszSFK0p8A==$0+NTKzrktppLVJC7bekGW8Fi7dQZZPQilmXyhz4KRt0=",
+      "active": true,
+      "isAdmin": true
+    }
+  ]
+}

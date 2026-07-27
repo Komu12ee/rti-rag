@@ -49,12 +49,18 @@ FG/04_embeddings_and_kg/db/qdrant_local/
 FG/models/*
 !FG/models/.gitkeep
 
+# Pytest cache and temporary files
+.pytest_cache/
+.pytest_tmp/
+**/.pytest_cache/
+**/.pytest_tmp/
+
 # Local Section 4 web-verification cache (contains retrieved public documents)
 FG/05_webui/cache/section4_verification.sqlite3*
 
 # Local JSON authentication records (contains account data)
-FG/05_webui/data/users.json
-FG/05_webui/data/pio_users.json
+# FG/05_webui/data/users.json
+# FG/05_webui/data/pio_users.json
 
 # Local OTP/authentication state. Never commit users, OTPs, WAL data, or hashes.
 selection/data/auth.db
