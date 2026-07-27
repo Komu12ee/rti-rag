@@ -2,6 +2,7 @@
 
 const express = require('express');
 const { launchPipeline, PORTS } = require('../server/utils/pipelines');
+const { verifyToken } = require('../utils/security');
 
 const router = express.Router();
 
@@ -9,7 +10,7 @@ const router = express.Router();
  * Check if user has an active session (simple cookie-based check)
  */
 function isAuthenticated(req) {
-  return !!req.cookies?.chips_rag_session;
+  return Boolean(verifyToken(req.cookies?.chips_rag_session, 'session'));
 }
 
 /**

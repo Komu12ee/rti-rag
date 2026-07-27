@@ -1,4 +1,5 @@
 'use strict';
+const { verifyToken } = require('../utils/security');
 
 /**
  * Authentication middleware
@@ -7,7 +8,9 @@
  */
 module.exports = (req, res, next) => {
     // Check if user has an active session
-    if (req.cookies?.chips_rag_session) {
+    const session = verifyToken(req.cookies?.chips_rag_session, 'session');
+    if (session) {
+        req.user = { email: session.email };
         // User is authenticated, continue
         return next();
     }

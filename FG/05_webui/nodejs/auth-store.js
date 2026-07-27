@@ -8,7 +8,8 @@ const bcrypt = require('bcryptjs');
 const DEFAULT_DATA_DIR = path.resolve(__dirname, '..', 'data');
 const USERS_FILE = process.env.AUTH_USERS_FILE || path.join(DEFAULT_DATA_DIR, 'users.json');
 const PIO_USERS_FILE = process.env.AUTH_PIO_USERS_FILE || path.join(DEFAULT_DATA_DIR, 'pio_users.json');
-const SESSION_TTL_MS = 8 * 60 * 60 * 1000;
+const SESSION_TTL_MS = Math.max(5 * 60 * 1000, Number(process.env.AUTH_SESSION_TTL_MS || 8 * 60 * 60 * 1000));
+const SESSION_MAX_ITEMS = Math.max(100, Number(process.env.AUTH_SESSION_MAX_ITEMS || 10000));
 const PASSWORD_ITERATIONS = 210000;
 const sessions = new Map();
 
@@ -52,6 +53,7 @@ function publicUser(user) {
   return {
     id: user.id, fullName: user.fullName, username: user.username,
     email: user.email, role: user.role, createdAt: user.createdAt,
+    isAdmin: Boolean(user.isAdmin),
   };
 }
 
@@ -60,9 +62,12 @@ function normalizePioUser(user) {
   const email = normalize(user.email);
   const username = normalize(user.username);
   const fullName = String(user.fullName || user.name || '').trim();
-  if (!email || !fullName || (!user.password && !user.passwordHash)) return null;
+  // Plaintext PIO credentials are rejected. Use a PBKDF2/bcrypt passwordHash.
+  if (!email || !fullName || !user.passwordHash) return null;
+  const adminUsername = normalize(process.env.EVALUATION_ADMIN_USERNAME || 'admin');
   return {
     ...user, id: String(user.id || `pio:${email}`), fullName, username, email, role: 'pio',
+    isAdmin: Boolean(user.isAdmin) || username === adminUsername,
   };
 }
 
@@ -99,7 +104,8 @@ function validateSignup(input) {
   if (fullName.length < 2 || fullName.length > 100) return { error: 'Full name must be between 2 and 100 characters.' };
   if (!/^[a-z0-9._-]{3,40}$/.test(username)) return { error: 'User ID must be 3-40 characters using letters, numbers, dot, underscore, or hyphen.' };
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) || email.length > 160) return { error: 'Enter a valid official email address.' };
-  if (password.length < 8 || password.length > 128) return { error: 'Password must be between 8 and 128 characters.' };
+  if (password.length < 12 || password.length > 128) return { error: 'Password must be between 12 and 128 characters.' };
+  if (!/[a-z]/i.test(password) || !/\d/.test(password)) return { error: 'Password must contain at least one letter and one number.' };
   return { fullName, username, email, password };
 }
 
@@ -130,14 +136,7 @@ async function authenticate(identifier, password, accountType = 'citizen') {
   const pioUser = readPioStore().pios.map(normalizePioUser).filter(Boolean)
     .find(item => normalize(item.username) === key || normalize(item.email) === key);
   if (requestedRole === 'pio' && pioUser) {
-    let matches;
-    if (pioUser.passwordHash) {
-      matches = await verifyPassword(suppliedPassword, pioUser.passwordHash);
-    } else {
-      const supplied = Buffer.from(suppliedPassword);
-      const stored = Buffer.from(String(pioUser.password));
-      matches = supplied.length === stored.length && crypto.timingSafeEqual(supplied, stored);
-    }
+    const matches = await verifyPassword(suppliedPassword, pioUser.passwordHash);
     return matches ? publicUser({ ...pioUser, role: 'pio' }) : null;
   }
   if (requestedRole === 'pio') return null;
@@ -148,6 +147,14 @@ async function authenticate(identifier, password, accountType = 'citizen') {
 }
 
 function createSession(user) {
+  if (sessions.size >= SESSION_MAX_ITEMS) {
+    const now = Date.now();
+    for (const [key, session] of sessions) {
+      if (session.expiresAt <= now) sessions.delete(key);
+      if (sessions.size < SESSION_MAX_ITEMS) break;
+    }
+    if (sessions.size >= SESSION_MAX_ITEMS) sessions.delete(sessions.keys().next().value);
+  }
   const token = crypto.randomBytes(32).toString('base64url');
   sessions.set(token, { user, expiresAt: Date.now() + SESSION_TTL_MS });
   return token;

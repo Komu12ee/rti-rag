@@ -1757,6 +1757,14 @@ function usePrompt(prompt) {
 function updatePioModeUi() {
   const pioAccess = state.authenticatedUser?.role === 'pio';
   ui.pioModeControl.classList.toggle('hidden', !pioAccess);
+  if (ui.uploadPdf) {
+    ui.uploadPdf.classList.toggle('hidden', !pioAccess);
+    ui.uploadPdf.disabled = !pioAccess || state.loading;
+    ui.uploadPdf.setAttribute('aria-hidden', pioAccess ? 'false' : 'true');
+  }
+  if (ui.pdfUploadInput) {
+    ui.pdfUploadInput.disabled = !pioAccess || state.loading;
+  }
   if (!pioAccess) state.pioMode = false;
   ui.pioModeToggle.checked = state.pioMode;
   ui.pioModeState.textContent = state.pioMode ? t('on') : t('off');
@@ -1856,13 +1864,16 @@ function updateFooterTime() {
 
 function enableQueryBar(message = t('ready')) {
   ui.btnSend.disabled = false;
-  if (ui.uploadPdf) ui.uploadPdf.disabled = false;
+  const pioAccess = state.authenticatedUser?.role === 'pio';
+  if (ui.uploadPdf) ui.uploadPdf.disabled = !pioAccess;
+  if (ui.pdfUploadInput) ui.pdfUploadInput.disabled = !pioAccess;
   ui.queryStatus.textContent = message;
 }
 
 function disableQueryBar(message = t('loading')) {
   ui.btnSend.disabled = true;
   if (ui.uploadPdf) ui.uploadPdf.disabled = true;
+  if (ui.pdfUploadInput) ui.pdfUploadInput.disabled = true;
   ui.queryStatus.textContent = message;
 }
 
@@ -2141,6 +2152,7 @@ async function handlePdfUpload(event) {
   const file = event.target.files && event.target.files[0];
   event.target.value = '';
 
+  if (state.authenticatedUser?.role !== 'pio') return;
   if (!file || state.loading) return;
   if (!file.name.toLowerCase().endsWith('.pdf')) {
     toast(t('pleaseUploadPdf'), 'error');
@@ -2608,7 +2620,9 @@ function setupEvents() {
   ui.btnSend.addEventListener('click', sendQuery);
   if (ui.uploadPdf && ui.pdfUploadInput) {
     ui.uploadPdf.addEventListener('click', () => {
-      if (!state.loading) ui.pdfUploadInput.click();
+      if (state.authenticatedUser?.role === 'pio' && !state.loading) {
+        ui.pdfUploadInput.click();
+      }
     });
     ui.pdfUploadInput.addEventListener('change', handlePdfUpload);
   }

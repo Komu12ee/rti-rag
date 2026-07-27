@@ -1,0 +1,12 @@
+{
+  "pdf_name": "443.pdf",
+  "total_pages": 3,
+  "direct_text_pages": 0,
+  "ocr_pages": 3,
+  "hybrid_pages": 0,
+  "failed_pages": 0,
+  "overall_confidence": 0.0,
+  "ocr_model": "sarvam",
+  "processing_time_seconds": 91.45,
+  "warnings": []
+}

@@ -13,6 +13,7 @@ const DB_DIR = path.dirname(DB_PATH);
 
 // Ensure data directory exists
 const fs = require('fs');
+const { otpDigest, safeEqual } = require('./security');
 if (!fs.existsSync(DB_DIR)) {
     fs.mkdirSync(DB_DIR, { recursive: true });
 }
@@ -55,12 +56,18 @@ function createTables() {
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       email TEXT NOT NULL COLLATE NOCASE,
       otp_code TEXT NOT NULL,
+      attempts INTEGER NOT NULL DEFAULT 0,
       expires_at INTEGER NOT NULL,
       verified INTEGER DEFAULT 0,
       created_at INTEGER NOT NULL,
       verified_at INTEGER
     );
   `);
+
+    const otpColumns = db.prepare('PRAGMA table_info(otp_requests)').all();
+    if (!otpColumns.some(column => column.name === 'attempts')) {
+        db.exec('ALTER TABLE otp_requests ADD COLUMN attempts INTEGER NOT NULL DEFAULT 0');
+    }
 
     // Create indexes for common queries
     db.exec(`
@@ -97,7 +104,7 @@ function storeOTP(email, otpCode, expiryMinutes = 10) {
     VALUES (?, ?, ?, ?)
   `);
 
-    const result = stmt.run(email.toLowerCase(), otpCode, expiresAt, now);
+    const result = stmt.run(email.toLowerCase(), otpDigest(email, otpCode), expiresAt, now);
     return result.lastInsertRowid;
 }
 
@@ -112,13 +119,13 @@ function verifyOTP(email, otpCode) {
     const now = Math.floor(Date.now() / 1000);
 
     const stmt = db.prepare(`
-    SELECT id, expires_at, verified FROM otp_requests
-    WHERE email = ? AND otp_code = ?
+    SELECT id, otp_code, expires_at, verified, attempts FROM otp_requests
+    WHERE email = ?
     ORDER BY created_at DESC
     LIMIT 1
   `);
 
-    const record = stmt.get(email.toLowerCase(), otpCode);
+    const record = stmt.get(email.toLowerCase());
 
     if (!record) {
         return { valid: false, reason: 'Invalid OTP' };
@@ -128,8 +135,17 @@ function verifyOTP(email, otpCode) {
         return { valid: false, reason: 'OTP already verified' };
     }
 
+    if (record.attempts >= 5) {
+        return { valid: false, reason: 'Too many invalid OTP attempts' };
+    }
+
     if (record.expires_at < now) {
         return { valid: false, reason: 'OTP expired' };
+    }
+
+    if (!safeEqual(record.otp_code, otpDigest(email, otpCode))) {
+        db.prepare('UPDATE otp_requests SET attempts = attempts + 1 WHERE id = ?').run(record.id);
+        return { valid: false, reason: 'Invalid OTP' };
     }
 
     // Mark as verified

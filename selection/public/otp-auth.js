@@ -199,10 +199,12 @@ class OTPAuthGate {
               <input 
                 id="otp-password-input"
                 type="password"
-                placeholder="At least 8 characters"
+                minlength="12"
+                maxlength="128"
+                placeholder="At least 12 characters"
                 autocomplete="new-password"
               />
-              <small class="otp-field-hint">Minimum 8 characters</small>
+              <small class="otp-field-hint">Minimum 12 characters with a letter and number</small>
             </div>
 
             <div class="otp-field">
@@ -510,8 +512,13 @@ class OTPAuthGate {
     const password = document.getElementById('otp-password-input').value;
     const confirmPassword = document.getElementById('otp-confirm-input').value;
 
-    if (!password || password.length < 8) {
-      this.showError('otp-password-error', 'Password must be at least 8 characters');
+    if (!password || password.length < 12) {
+      this.showError('otp-password-error', 'Password must be at least 12 characters');
+      return;
+    }
+
+    if (!/[a-z]/i.test(password) || !/\d/.test(password)) {
+      this.showError('otp-password-error', 'Password must contain at least one letter and one number');
       return;
     }
 

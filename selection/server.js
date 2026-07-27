@@ -18,6 +18,10 @@ const selectRouter = require('./routes/select');
 const { launchPipeline } = require('./server/utils/pipelines');
 const http = require('http');
 const { URL } = require('url');
+const {
+    createRateLimiter,
+    securityHeaders,
+} = require('./utils/security');
 
 const app = express();
 
@@ -32,17 +36,14 @@ if (OTP_AUTH_ENABLED) {
         console.log('[server] OTP authentication enabled');
     } catch (err) {
         console.error('[server] Failed to initialize OTP auth:', err.message);
-        // Continue anyway - system can still run
+        if (IS_PROD) {
+            throw err;
+        }
     }
 }
 
 // ─── Security headers ───────────────────────────────────────────────────────
-app.use((_req, res, next) => {
-    res.setHeader('X-Content-Type-Options', 'nosniff');
-    res.setHeader('X-Frame-Options', 'DENY');
-    res.setHeader('Referrer-Policy', 'strict-origin-when-cross-origin');
-    next();
-});
+app.use(securityHeaders);
 
 // ─── Cookie parsing ─────────────────────────────────────────────────────────
 app.use(cookieParser());
@@ -61,13 +62,18 @@ app.get('/health', (_req, res) => {
 // ─── OTP Auth routes (/otp-auth/send-otp, /otp-auth/verify-otp, /otp-auth/register, /otp-auth/login, /otp-auth/logout) ───
 // express.json() scoped ONLY to /otp-auth — never globally.
 if (OTP_AUTH_ENABLED) {
-    app.use('/otp-auth', express.json(), otpAuthRouter);
+    const otpLimiter = createRateLimiter({
+        name: 'otp',
+        limit: Number(process.env.OTP_RATE_LIMIT || 10),
+        windowMs: 15 * 60 * 1000,
+    });
+    app.use('/otp-auth', otpLimiter, express.json({ limit: '32kb' }), otpAuthRouter);
 } else {
     console.warn('[server] WARNING: OTP authentication is disabled');
 }
 
 // ─── Pipeline Selection routes (/select, /select/launch) ───────────────────
-app.use('/select', express.json(), selectRouter);
+app.use('/select', express.json({ limit: '16kb' }), selectRouter);
 
 // ─── SPA fallback ───────────────────────────────────────────────────────────
 app.get('*', (_req, res) => {
@@ -137,7 +143,9 @@ async function autoLaunchAndInit() {
 }
 
 // Run auto-launch but don't block server startup
-autoLaunchAndInit().catch(err => console.error('[auto-launch] Unexpected error:', err));
+if (!IS_PROD || process.env.AUTO_LAUNCH_ENABLED === 'true') {
+    autoLaunchAndInit().catch(err => console.error('[auto-launch] Unexpected error:', err));
+}
 
 // ─── Graceful shutdown ───────────────────────────────────────────────────────
 process.on('SIGTERM', () => {

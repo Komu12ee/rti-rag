@@ -32,15 +32,29 @@ test('creates a citizen account with a password hash and authenticates it', asyn
 });
 
 test('authenticates a manually managed PIO from the separate JSON store', async () => {
+  const passwordHash = await new Promise((resolve, reject) => {
+    require('crypto').pbkdf2('ManualPass123', Buffer.from('0123456789abcdef'), 210000, 32, 'sha256', (error, value) => {
+      if (error) reject(error);
+      else resolve(`pbkdf2_sha256$210000$${Buffer.from('0123456789abcdef').toString('base64')}$${value.toString('base64')}`);
+    });
+  });
   fs.writeFileSync(store.PIO_USERS_FILE, JSON.stringify({
     version: 1,
-    pios: [{ name: 'Manual PIO', email: 'manual.pio@example.gov.in', password: 'ManualPass123', active: true }],
+    pios: [{ name: 'Manual PIO', email: 'manual.pio@example.gov.in', passwordHash, active: true }],
   }));
   const user = await store.authenticate('manual.pio@example.gov.in', 'ManualPass123', 'pio');
   assert.equal(user.fullName, 'Manual PIO');
   assert.equal(user.role, 'pio');
   assert.equal(await store.authenticate('manual.pio@example.gov.in', 'ManualPass123'), null);
   assert.equal(await store.authenticate('manual.pio@example.gov.in', 'wrong-password', 'pio'), null);
+});
+
+test('rejects plaintext PIO credentials', async () => {
+  fs.writeFileSync(store.PIO_USERS_FILE, JSON.stringify({
+    version: 1,
+    pios: [{ name: 'Unsafe PIO', email: 'unsafe.pio@example.gov.in', password: 'PlaintextPass123', active: true }],
+  }));
+  assert.equal(await store.authenticate('unsafe.pio@example.gov.in', 'PlaintextPass123', 'pio'), null);
 });
 
 test('rejects duplicate identity and supports expiring server sessions', async () => {

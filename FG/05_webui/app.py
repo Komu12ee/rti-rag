@@ -33,6 +33,7 @@ from services.llm_provider import (
     current_llm_label,
     current_llm_model_name,
 )
+from services.security_controls import SlidingWindowRateLimiter
 import os
 import sys
 import importlib.util
@@ -272,6 +273,7 @@ app = Flask(
 )
 app.config['JSON_SORT_KEYS'] = False
 app.config['MAX_CONTENT_LENGTH'] = int(os.getenv("PIO_PDF_UPLOAD_MAX_BYTES", str(25 * 1024 * 1024)))
+app.config['MAX_FORM_MEMORY_SIZE'] = int(os.getenv("MAX_FORM_MEMORY_BYTES", str(2 * 1024 * 1024)))
 
 PREPROCESSING_DIR = PROJECT_ROOT / '01_preprocessing'
 SMART_EXTRACT_SCRIPT = PREPROCESSING_DIR / 'run_smart_extract.py'
@@ -305,6 +307,41 @@ AUTH_SESSION_TTL_SECONDS = max(300, int(os.getenv("AUTH_SESSION_TTL_SECONDS", "2
 AUTH_PASSWORD_ITERATIONS = 210_000
 auth_store_lock = Lock()
 auth_sessions: dict[str, dict] = {}
+security_rate_limiter = SlidingWindowRateLimiter(
+    max_keys=int(os.getenv("SECURITY_RATE_LIMIT_MAX_KEYS", "20000"))
+)
+
+
+def _env_bool(name: str, default: bool = False) -> bool:
+    return str(os.getenv(name, str(default))).strip().casefold() in {
+        "1", "true", "yes", "on",
+    }
+
+
+def _security_client_ip() -> str:
+    if _env_bool("TRUST_PROXY_HEADERS", False):
+        forwarded = str(request.headers.get("X-Forwarded-For") or "").split(",", 1)[0].strip()
+        if forwarded:
+            return forwarded[:64]
+    return str(request.remote_addr or "unknown")[:64]
+
+
+def _allowed_browser_origins() -> set[str]:
+    configured = os.getenv(
+        "SECURITY_ALLOWED_ORIGINS",
+        "http://localhost:5000,http://127.0.0.1:5000,"
+        "http://localhost:3000,http://localhost:3002,"
+        "http://127.0.0.1:3000,http://127.0.0.1:3002",
+    )
+    return {item.strip().rstrip("/") for item in configured.split(",") if item.strip()}
+
+
+def _metrics_service_token_valid() -> bool:
+    expected = str(os.getenv("METRICS_SERVICE_TOKEN") or "")
+    if len(expected) < 32:
+        return False
+    supplied = _auth_bearer_token()
+    return bool(supplied) and secrets.compare_digest(supplied, expected)
 
 
 def _normalise_auth_identity(value) -> str:
@@ -395,7 +432,9 @@ def _normalise_pio_user(user: dict) -> dict | None:
         user.get("username") or user.get("name")
     )
     full_name = str(user.get("fullName") or user.get("name") or "").strip()
-    if not email or not full_name or not (user.get("password") or user.get("passwordHash")):
+    # Plaintext PIO passwords are intentionally rejected. Migrate accounts with
+    # scripts/hash_pio_password.py before enabling them.
+    if not email or not full_name or not user.get("passwordHash"):
         return None
     admin_username = _normalise_auth_identity(
         os.getenv("EVALUATION_ADMIN_USERNAME", "admin")
@@ -412,15 +451,78 @@ def _normalise_pio_user(user: dict) -> dict | None:
 
 
 def _pio_password_matches(password: str, user: dict) -> bool:
-    if user.get("passwordHash"):
-        return _verify_auth_password(password, str(user.get("passwordHash")))
-    stored_password = str(user.get("password") or "")
-    return bool(stored_password) and secrets.compare_digest(password, stored_password)
+    return _verify_auth_password(password, str(user.get("passwordHash") or ""))
 
 
 def _auth_bearer_token() -> str:
     header = str(request.headers.get("Authorization") or "")
     return header[7:].strip() if header.startswith("Bearer ") else ""
+
+
+@app.before_request
+def enforce_origin_and_rate_limits():
+    """Apply same-origin checks and abuse limits even when Flask is called directly."""
+    if request.method == "OPTIONS":
+        return None
+
+    origin = str(request.headers.get("Origin") or "").rstrip("/")
+    request_origin = str(request.host_url or "").rstrip("/")
+    if (
+        origin
+        and request.method in {"POST", "PUT", "PATCH", "DELETE"}
+        and origin != request_origin
+        and origin not in _allowed_browser_origins()
+    ):
+        return jsonify({"success": False, "error": "Request origin is not allowed."}), 403
+
+    path = request.path
+    method = request.method
+    if path in {"/auth/login", "/auth/signup"}:
+        scope, limit, window = "auth", int(os.getenv("AUTH_RATE_LIMIT", "10")), 60
+    elif path == "/api/pio/upload-pdf":
+        scope, limit, window = "upload", int(os.getenv("UPLOAD_RATE_LIMIT", "5")), 3600
+    elif path.startswith("/api/evaluation"):
+        scope, limit, window = "evaluation", int(os.getenv("EVALUATION_RATE_LIMIT", "120")), 60
+    elif path in {"/api/query", "/api/query/stream", "/api/pio/analyze"}:
+        scope, limit, window = "query", int(os.getenv("QUERY_RATE_LIMIT", "30")), 60
+    else:
+        return None
+
+    decision = security_rate_limiter.check(
+        f"{scope}:{method}:{_security_client_ip()}",
+        limit=limit,
+        window_seconds=window,
+    )
+    if decision.allowed:
+        return None
+    response = jsonify({
+        "success": False,
+        "error": "Too many requests. Please try again later.",
+    })
+    response.status_code = 429
+    response.headers["Retry-After"] = str(decision.retry_after_seconds)
+    return response
+
+
+@app.after_request
+def apply_security_headers(response):
+    response.headers["X-Content-Type-Options"] = "nosniff"
+    response.headers["X-Frame-Options"] = "DENY"
+    response.headers["Referrer-Policy"] = "no-referrer"
+    response.headers["Permissions-Policy"] = (
+        "camera=(), microphone=(), geolocation=(), payment=(), usb=()"
+    )
+    response.headers["Content-Security-Policy"] = (
+        "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; "
+        "img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; "
+        "object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'"
+    )
+    if request.path.startswith(("/auth/", "/api/")):
+        response.headers["Cache-Control"] = "no-store"
+        response.headers["Pragma"] = "no-cache"
+    if _env_bool("ENABLE_HSTS", False):
+        response.headers["Strict-Transport-Security"] = "max-age=31536000; includeSubDomains"
+    return response
 
 
 @app.route('/auth/signup', methods=['POST'])
@@ -439,8 +541,10 @@ def auth_signup():
         return jsonify({'success': False, 'error': 'User ID must be 3-40 characters using letters, numbers, dot, underscore, or hyphen.'}), 400
     if len(email) > 160 or not re.fullmatch(r"[^\s@]+@[^\s@]+\.[^\s@]+", email):
         return jsonify({'success': False, 'error': 'Enter a valid official email address.'}), 400
-    if not 8 <= len(password) <= 128:
-        return jsonify({'success': False, 'error': 'Password must be between 8 and 128 characters.'}), 400
+    if not 12 <= len(password) <= 128:
+        return jsonify({'success': False, 'error': 'Password must be between 12 and 128 characters.'}), 400
+    if not re.search(r"[A-Za-z]", password) or not re.search(r"\d", password):
+        return jsonify({'success': False, 'error': 'Password must contain at least one letter and one number.'}), 400
 
     try:
         with auth_store_lock:
@@ -557,6 +661,8 @@ def enforce_pio_access_control():
     if request.method == "OPTIONS":
         return None
     path = request.path
+    if path == "/api/evaluation/metrics" and _metrics_service_token_valid():
+        return None
     evaluation_endpoint = path.startswith("/api/evaluation")
     pio_endpoint = path.startswith("/api/pio/") or path.startswith("/api/web-verification/")
     pio_query = path in {"/api/query", "/api/query/stream"} and _as_bool(

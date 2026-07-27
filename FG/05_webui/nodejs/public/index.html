@@ -62,7 +62,7 @@
             <div class="auth-field full"><label for="signup-name">Full Name</label><input id="signup-name" type="text" autocomplete="name" placeholder="Enter your full name" required /></div>
             <div class="auth-field"><label for="signup-username">Official User ID</label><input id="signup-username" type="text" autocomplete="username" placeholder="Create a User ID" required /></div>
             <div class="auth-field"><label for="signup-email">Official Email</label><input id="signup-email" type="email" autocomplete="email" placeholder="name@department.gov.in" required /></div>
-            <div class="auth-field"><label for="signup-password">Password</label><input id="signup-password" type="password" autocomplete="new-password" placeholder="Minimum 8 characters" required /></div>
+            <div class="auth-field"><label for="signup-password">Password</label><input id="signup-password" type="password" minlength="12" maxlength="128" autocomplete="new-password" placeholder="Minimum 12 characters" required /></div>
             <div class="auth-field"><label for="signup-confirm">Confirm Password</label><input id="signup-confirm" type="password" autocomplete="new-password" placeholder="Repeat password" required /></div>
           </div>
           <div id="signup-message" class="auth-message hidden" role="alert"></div>
@@ -192,10 +192,10 @@
 
       <section id="query-bar">
         <div id="query-wrap">
-          <button id="upload-pdf" class="upload-pdf-btn" type="button" title="Upload PDF" aria-label="Upload PDF" data-i18n-title="uploadPdf" data-i18n-aria-label="uploadPdf">
+          <button id="upload-pdf" class="upload-pdf-btn hidden" type="button" title="Upload PDF" aria-label="Upload PDF" aria-hidden="true" data-i18n-title="uploadPdf" data-i18n-aria-label="uploadPdf" disabled>
             <span aria-hidden="true">+</span>
           </button>
-          <input id="pdf-upload-input" class="file-input-hidden" type="file" accept="application/pdf,.pdf" />
+          <input id="pdf-upload-input" class="file-input-hidden" type="file" accept="application/pdf,.pdf" disabled />
           <textarea id="query-input" rows="1" placeholder="Ask about RTI portal steps, fees, appeals, status, PIO details, or RTI Act sections..." data-i18n-placeholder="defaultQueryPlaceholder"
             spellcheck="false"></textarea>
           <button id="btn-send" disabled type="button" title="Send" aria-label="Send" data-i18n-title="send" data-i18n-aria-label="send">

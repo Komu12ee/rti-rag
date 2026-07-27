@@ -5,7 +5,7 @@
       "name": "Authorised PIO Name",
       "username": "pio-user",
       "email": "pio@department.gov.in",
-      "password": "replace-with-password",
+      "passwordHash": "replace-with-a-pbkdf2-password-hash",
       "active": true,
       "isAdmin": false
     },
@@ -13,7 +13,7 @@
       "name": "Evaluation Administrator",
       "username": "admin",
       "email": "admin@department.gov.in",
-      "password": "replace-with-a-strong-private-password",
+      "passwordHash": "replace-with-a-pbkdf2-password-hash",
       "active": true,
       "isAdmin": true
     }

@@ -55,3 +55,8 @@ FG/05_webui/cache/section4_verification.sqlite3*
 # Local JSON authentication records (contains account data)
 FG/05_webui/data/users.json
 FG/05_webui/data/pio_users.json
+
+# Local OTP/authentication state. Never commit users, OTPs, WAL data, or hashes.
+selection/data/auth.db
+selection/data/auth.db-shm
+selection/data/auth.db-wal

@@ -5,12 +5,17 @@ const bcrypt = require('bcryptjs');
 const { generateOTP, isValidOTPFormat } = require('../utils/otp-utils');
 const { sendOTPEmail } = require('../utils/email-utils');
 const { storeOTP, verifyOTP, createUser, getUserByEmail } = require('../utils/db-utils');
+const {
+    issueToken,
+    sessionCookieOptions,
+    verifyToken,
+} = require('../utils/security');
 
 const router = express.Router();
 
 // Email validation regex
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-const PASSWORD_MIN_LENGTH = 8;
+const PASSWORD_MIN_LENGTH = 12;
 
 /**
  * POST /otp-auth/send-otp
@@ -37,8 +42,6 @@ router.post('/send-otp', async (req, res) => {
 
     // Generate OTP
     const otp = generateOTP();
-    console.log(`[otp-auth] Generated OTP for ${cleanEmail}: ${otp}`);
-
     // Store OTP (10 minute expiry)
     try {
         storeOTP(cleanEmail, otp, 10);
@@ -93,11 +96,11 @@ router.post('/verify-otp', (req, res) => {
     }
 
     // Generate verification token (short-lived, contains email)
-    const verificationToken = Buffer.from(JSON.stringify({
+    const verificationToken = issueToken({
+        type: 'email-verification',
         email: cleanEmail,
         verified: true,
-        iat: Math.floor(Date.now() / 1000),
-    })).toString('base64');
+    }, 10 * 60);
 
     return res.status(200).json({
         success: true,
@@ -122,10 +125,8 @@ router.post('/register', async (req, res) => {
         return res.status(400).json({ success: false, error: 'Verification token is required' });
     }
 
-    let tokenData;
-    try {
-        tokenData = JSON.parse(Buffer.from(verificationToken, 'base64').toString());
-    } catch (err) {
+    const tokenData = verifyToken(verificationToken, 'email-verification');
+    if (!tokenData) {
         return res.status(400).json({ success: false, error: 'Invalid verification token' });
     }
 
@@ -149,6 +150,12 @@ router.post('/register', async (req, res) => {
         return res.status(400).json({
             success: false,
             error: `Password must be at least ${PASSWORD_MIN_LENGTH} characters`
+        });
+    }
+    if (!/[a-z]/i.test(password) || !/\d/.test(password)) {
+        return res.status(400).json({
+            success: false,
+            error: 'Password must contain at least one letter and one number'
         });
     }
 
@@ -225,12 +232,10 @@ router.post('/login', async (req, res) => {
 
     console.log(`[otp-auth] Login successful: ${cleanEmail}`);
 
-    // Set session cookie (simple, no JWT)
-    res.cookie('chips_rag_session', cleanEmail, {
-        httpOnly: true,
-        sameSite: 'strict',
-        maxAge: 7 * 24 * 60 * 60 * 1000 // 7 days
-    });
+    const sessionToken = issueToken({ type: 'session', email: cleanEmail }, Math.floor(
+        Number(process.env.AUTH_SESSION_TTL_MS || 8 * 60 * 60 * 1000) / 1000
+    ));
+    res.cookie('chips_rag_session', sessionToken, sessionCookieOptions());
 
     return res.status(200).json({
         success: true,
@@ -240,10 +245,11 @@ router.post('/login', async (req, res) => {
 
 /**
  * POST /otp-auth/logout
- * Client-side logout — tells frontend to clear its token.
- * (Stateless JWT: no server-side invalidation unless you add a denylist.)
+ * Clear the signed session cookie. A deployment that needs immediate
+ * cross-device revocation should use a shared server-side session store.
  */
 router.post('/logout', (_req, res) => {
+    res.clearCookie('chips_rag_session', { ...sessionCookieOptions(), maxAge: undefined });
     res.json({ success: true });
 });
 
